@@ -15,13 +15,12 @@ import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
 @Repository
-public class UserDatabaseDao {
-    private static final Logger LOG = LoggerFactory.getLogger(UserDatabaseDao.class);
+public class UserDao {
+    private static final Logger LOG = LoggerFactory.getLogger(UserDao.class);
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;

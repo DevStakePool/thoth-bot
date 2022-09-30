@@ -1,6 +1,6 @@
 package com.devpool.thothBot.telegram;
 
-import com.devpool.thothBot.dao.UserDatabaseDao;
+import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.telegram.command.AbstractCommand;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
@@ -23,7 +23,7 @@ public class TelegramFacade {
     private static final Logger LOG = LoggerFactory.getLogger(TelegramFacade.class);
 
     @Autowired
-    private UserDatabaseDao userDatabaseDao;
+    private UserDao userDao;
 
     @Autowired
     private List<AbstractCommand> commands;

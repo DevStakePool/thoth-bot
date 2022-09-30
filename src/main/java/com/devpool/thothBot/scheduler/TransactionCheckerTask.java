@@ -1,6 +1,8 @@
 package com.devpool.thothBot.scheduler;
 
-import com.devpool.thothBot.dao.UserDatabaseDao;
+import com.devpool.thothBot.dao.AssetsDao;
+import com.devpool.thothBot.dao.UserDao;
+import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
@@ -30,9 +32,13 @@ public class TransactionCheckerTask implements Runnable {
     private static final long DEFAULT_PAGINATION_SIZE = 1000;
     private static final double LOVELACE = 1000000.0;
     private static final String ADA_SYMBOL = " " + '\u20B3';
+    private static final boolean TEST_DATA = true;
 
     @Autowired
-    private UserDatabaseDao userDatabaseDao;
+    private UserDao userDao;
+
+    @Autowired
+    private AssetsDao assetsDao;
 
     @Autowired
     private KoiosFacade koiosFacade;
@@ -43,8 +49,8 @@ public class TransactionCheckerTask implements Runnable {
     @Override
     public void run() {
         try {
-            LOG.info("Checking activities for {} wallets", this.userDatabaseDao.getUsers().size());
-            for (User u : userDatabaseDao.getUsers()) {
+            LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
+            for (User u : userDao.getUsers()) {
                 // Retrieve all the wallet addresses
                 Options options = Options.builder()
                         .option(Limit.of(DEFAULT_PAGINATION_SIZE))
@@ -103,20 +109,21 @@ public class TransactionCheckerTask implements Runnable {
                         .option(Offset.of(0))
                         .build();
 
+                Result<List<TxInfo>> txInfoResult = null;
                 // Test data
-                /*
-                List<String> testTxs = Arrays.asList("570d5996d8ac85f1f019a6ccb8b8b926b32839a59e58b6376dc62d78944a4501", // RECEIVED
-                        "81dcc3b330aa8b24375232c8191702f6c34858e5004be9d7dbea29bc36f20e2b", // SENT
-                        "43e091f2833595bab44516521e55e9967a603015ed539d4ba003b21b959de3a8", // SENT + Tokens
-                        "73be7fb0d15a5d63a4d5e5ca10df55d9fcaba7a3b6a885acc3d79a0506d0a12b", // Received + Tokens
-                        "ba38cd0fca387c28987696dff1af4545f9698cb9f184dcd7609112c4e185bae5", // Issue here to investigate
-                        "91c38684180b6b0334583b86e90dc23e7c4309a409373840cc4b225bf619f47f"); // Received + Tokens
-                Result<List<TxInfo>> txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
-                        testTxs, options);
-                */
-                Result<List<TxInfo>> txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
-                        allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
-
+                if (TEST_DATA) {
+                    List<String> testTxs = Arrays.asList("570d5996d8ac85f1f019a6ccb8b8b926b32839a59e58b6376dc62d78944a4501", // RECEIVED
+                            "81dcc3b330aa8b24375232c8191702f6c34858e5004be9d7dbea29bc36f20e2b", // SENT
+                            "43e091f2833595bab44516521e55e9967a603015ed539d4ba003b21b959de3a8", // SENT + Tokens
+                            "73be7fb0d15a5d63a4d5e5ca10df55d9fcaba7a3b6a885acc3d79a0506d0a12b", // Received + Tokens
+                            "ba38cd0fca387c28987696dff1af4545f9698cb9f184dcd7609112c4e185bae5", // Issue here to investigate
+                            "91c38684180b6b0334583b86e90dc23e7c4309a409373840cc4b225bf619f47f"); // Received + Tokens
+                    txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
+                            testTxs, options);
+                } else {
+                    txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
+                            allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
+                }
                 if (!txInfoResult.isSuccessful()) {
                     LOG.warn("The call to get the transaction information {} for user {} was not successful due to {} ({})",
                             allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.joining(",")),
@@ -178,17 +185,30 @@ public class TransactionCheckerTask implements Runnable {
                     // Any assets?
                     if (!allAssets.isEmpty()) {
                         for (TxAsset asset : allAssets) {
-                            // We need to get the decimals for the asset. TODO this must be cached
-                            Result<AssetInformation> assetInfoResult = this.koiosFacade.getKoiosService().getAssetService().getAssetInformation(asset.getPolicyId(), asset.getAssetName());
-                            if (!assetInfoResult.isSuccessful()) {
-                                LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
-                                        asset.getPolicyId(), assetInfoResult.getResponse(), assetInfoResult.getCode());
+                            Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(asset.getPolicyId(), asset.getAssetName());
+                            Object assetQuantity = Long.valueOf(asset.getQuantity());
+                            if (cachedAsset.isEmpty()) {
+                                // We need to get the decimals for the asset. Note, this will be cached
+                                Result<AssetInformation> assetInfoResult = this.koiosFacade.getKoiosService().getAssetService().getAssetInformation(asset.getPolicyId(), asset.getAssetName());
+                                if (!assetInfoResult.isSuccessful()) {
+                                    LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
+                                            asset.getPolicyId(), assetInfoResult.getResponse(), assetInfoResult.getCode());
+                                }
+
+                                if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
+                                    assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
+                                }
+
+                                // Cache it
+                                this.assetsDao.addNewAsset(asset.getPolicyId(), asset.getAssetName(),
+                                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
+                                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+                            } else {
+                                // We have it cached
+                                if (cachedAsset.get().getDecimals() != -1)
+                                    assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, cachedAsset.get().getDecimals()));
                             }
 
-                            Object assetQuantity = Long.valueOf(asset.getQuantity());
-                            if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
-                                assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
-                            }
                             messageBuilder.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
                                     .append(hexToAscii(asset.getAssetName()))
                                     .append(" ")
@@ -204,7 +224,7 @@ public class TransactionCheckerTask implements Runnable {
                 this.telegramFacade.sendMessageTo(u.getChatId(), messageBuilder.toString());
 
                 // Update the user with the new block height plus 1 to avoid picking the last TX
-                this.userDatabaseDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
+                this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
             }
         } catch (Throwable t) {
             LOG.error("Caught throwable while checking wallet transaction", t);

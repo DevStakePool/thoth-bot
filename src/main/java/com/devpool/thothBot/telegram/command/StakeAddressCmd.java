@@ -1,6 +1,6 @@
 package com.devpool.thothBot.telegram.command;
 
-import com.devpool.thothBot.dao.UserDatabaseDao;
+import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.koios.KoiosFacade;
@@ -23,7 +23,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.stream.Collectors;
 
 @Component
 public class StakeAddressCmd extends AbstractCommand {
@@ -41,7 +40,7 @@ public class StakeAddressCmd extends AbstractCommand {
     private KoiosFacade koiosFacade;
 
     @Autowired
-    private UserDatabaseDao userDatabaseDao;
+    private UserDao userDao;
 
     @Override
     public boolean canTrigger(String message) {
@@ -100,7 +99,7 @@ public class StakeAddressCmd extends AbstractCommand {
 
             // TODO check if the result is successful
 
-            userDatabaseDao.addNewUser(
+            userDao.addNewUser(
                     new User(update.message().chat().id(),
                             stakeAddr, tipResult.getValue().getBlockNo()));
 
