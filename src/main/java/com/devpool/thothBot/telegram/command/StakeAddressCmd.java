@@ -89,7 +89,15 @@ public class StakeAddressCmd extends AbstractCommand {
         try {
             Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(stakeAddr, options);
 
-            // TODO check if the result is successful
+            if (!addresses.isSuccessful()) {
+                LOG.warn("Unsuccessful KOIOS call during the subscribe of the stake address {}. {} {}",
+                        stakeAddr, addresses.getCode(), addresses.getResponse());
+
+                bot.execute(new SendMessage(update.message().chat().id(),
+                        String.format("Sorry %s! Something went wrong when collecting the information about the stake address %s", name, stakeAddr)));
+
+                return;
+            }
 
             LOG.info(String.valueOf(addresses.getValue()));
             if (addresses.getValue().isEmpty()) throw new ApiException("Cannot find stake address");
@@ -97,14 +105,21 @@ public class StakeAddressCmd extends AbstractCommand {
             // Get block height
             Result<Tip> tipResult = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
 
-            // TODO check if the result is successful
+            if (!tipResult.isSuccessful()) {
+                LOG.warn("Unsuccessful KOIOS call during the subscribe of the stake address {}. {} {}",
+                        stakeAddr, tipResult.getCode(), tipResult.getResponse());
 
+                bot.execute(new SendMessage(update.message().chat().id(),
+                        String.format("Sorry %s! Something went wrong when collecting the mainnet tip", name)));
+
+                return;
+            }
             userDao.addNewUser(
                     new User(update.message().chat().id(),
                             stakeAddr, tipResult.getValue().getBlockNo()));
 
         } catch (ApiException e) {
-            LOG.error("Error in command stake address: " + e);
+            LOG.warn("Error in command stake address: " + e);
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("The stake address seems to be invalid: %s", e.getMessage())));
             return;

@@ -5,6 +5,7 @@ import com.devpool.thothBot.telegram.command.AbstractCommand;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.Update;
+import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.response.SendResponse;
 import org.slf4j.Logger;
@@ -80,7 +81,10 @@ public class TelegramFacade {
     }
 
     public void sendMessageTo(Long chatId, String message) {
-        SendResponse outcome = bot.execute(new SendMessage(chatId, message));
+        SendMessage sm = new SendMessage(chatId, message)
+                .parseMode(ParseMode.Markdown)
+                .disableWebPagePreview(true);
+        SendResponse outcome = bot.execute(sm);
         LOG.trace("Sent message to {} with result {}", chatId, outcome);
     }
 

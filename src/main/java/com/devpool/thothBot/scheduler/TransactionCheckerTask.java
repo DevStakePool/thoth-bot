@@ -32,6 +32,8 @@ public class TransactionCheckerTask implements Runnable {
     private static final long DEFAULT_PAGINATION_SIZE = 1000;
     private static final double LOVELACE = 1000000.0;
     private static final String ADA_SYMBOL = " " + '\u20B3';
+    private static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
+    /* Testing flag */
     private static final boolean TEST_DATA = true;
 
     @Autowired
@@ -96,7 +98,7 @@ public class TransactionCheckerTask implements Runnable {
                 });
 
                 // We have an empty result (no TX to process)
-                if (maxBlockHeight.isEmpty()) {
+                if (maxBlockHeight.isEmpty() && !TEST_DATA) {
                     // nothing to do for this user
                     LOG.debug("Nothing to do for the user {}. No TXs found", u);
                     continue;
@@ -163,18 +165,22 @@ public class TransactionCheckerTask implements Runnable {
                         receivedOrSentFunds *= -1.0d;
 
                     LOG.debug("fee={} ADA, {}}={} ADA", fee, (isReceiveTx ? "received" : "sent"), receivedOrSentFunds);
-                    String fundsTokenText = String.format("Funds %s\n", allAssets.isEmpty() ? "" : " and Tokens");
+                    String fundsTokenText = String.format("Funds %s ", allAssets.isEmpty() ? "" : " and Tokens");
                     if (isReceiveTx) {
-                        messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_down: Received "))
-                                .append(fundsTokenText)
+                        messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_down: "))
+                                .append("[Received ").append(fundsTokenText)
+                                .append("]").append("(").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append(")")
+                                .append("\n")
                                 .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
                                 .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
                                 .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
                                 .append("Input ").append(String.format("%,.2f", receivedOrSentFunds))
                                 .append(" ").append(ADA_SYMBOL);
                     } else {
-                        messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_up: Sent "))
-                                .append(fundsTokenText)
+                        messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_up: "))
+                                .append("[Sent ").append(fundsTokenText)
+                                .append("]").append("(").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append(")")
+                                .append("\n")
                                 .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
                                 .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
                                 .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
