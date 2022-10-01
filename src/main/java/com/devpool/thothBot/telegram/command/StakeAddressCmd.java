@@ -67,14 +67,25 @@ public class StakeAddressCmd extends AbstractCommand {
             unsubscribeNewStakeAddress(update, bot);
         else {
             LOG.debug("Called Stake Address command but the chat id was not found in both SUBSCRIBE and UNSUBSCRIBE queues");
-            // FIXME when unsubscribe command is ready
             bot.execute(new SendMessage(update.message().chat().id(),
-                    String.format("Please indicate the operation first: %s or %s", SubscribeCmd.CMD_PREFIX, "TODO-UNSUBSCRIBE")));
+                    String.format("Please indicate the operation first: %s or %s", SubscribeCmd.CMD_PREFIX, UnsubscribeCmd.CMD_PREFIX)));
         }
     }
 
     private void unsubscribeNewStakeAddress(Update update, TelegramBot bot) {
-        // TODO
+        String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
+        String stakeAddr = update.message().text().trim();
+
+        boolean outcome = this.userDao.removeStakeAddress(update.message().chat().id(), stakeAddr);
+
+        if (outcome) {
+            bot.execute(new SendMessage(update.message().chat().id(),
+                    String.format("You have successfully unsubscribed the stake address %s", stakeAddr)));
+            this.operationsQueue.get(StakeOperation.UNSUBSCRIBE).remove(update.message().chat().id());
+        } else {
+            bot.execute(new SendMessage(update.message().chat().id(),
+                    String.format("Sorry %s! I could not find the stake address %s associated to this chat", name, stakeAddr)));
+        }
     }
 
     public void subscribeNewStakeAddress(Update update, TelegramBot bot) {

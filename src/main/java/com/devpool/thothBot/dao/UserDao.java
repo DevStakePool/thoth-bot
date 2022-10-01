@@ -92,4 +92,20 @@ public class UserDao {
             LOG.debug("Updated block height to {} for user ID {}", blockHeight, id);
         }
     }
+
+    public boolean removeStakeAddress(Long chatId, String stakeAddr) {
+        int removedRows = this.namedParameterJdbcTemplate.update(
+                "delete from users where chat_id = :chat_id and stake_addr = :stake_addr;",
+                Map.of("chat_id", chatId,
+                        "stake_addr", stakeAddr));
+
+        if (removedRows > 1)
+            LOG.error("Unexpected deletion of stake address {} for chat-id {}. The expected removed rows was 1 but got {}",
+                    stakeAddr, chatId, removedRows);
+
+        if (removedRows == 0)
+            LOG.warn("Cannot remove the stake address {} with chat-id {}. Entry not found", stakeAddr, chatId);
+
+        return removedRows == 1;
+    }
 }
