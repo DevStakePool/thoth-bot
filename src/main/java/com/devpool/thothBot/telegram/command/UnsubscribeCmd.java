@@ -33,4 +33,14 @@ public class UnsubscribeCmd extends AbstractCommand {
         bot.execute(new SendMessage(update.message().chat().id(), String.format("Hi %s, please specify your stake address (stake1u8yxtug...)", name))
                 .replyMarkup(new ForceReply(true)));
     }
+
+    @Override
+    public boolean showHelp() {
+        return true;
+    }
+
+    @Override
+    public String getDescription() {
+        return "Unsubscribe to stop receiving transaction notifications for a specific wallet";
+    }
 }

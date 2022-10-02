@@ -21,6 +21,19 @@ public abstract class AbstractCommand {
     public abstract String getCommandPrefix();
 
     /**
+     * If this command has to be shown in the help description
+     *
+     * @return true if the command is included in the help, false otherwise
+     */
+    public abstract boolean showHelp();
+
+    /**
+     * The description of this command
+     * @return the description to show in the help
+     */
+    public abstract String getDescription();
+
+    /**
      * Execute the command
      *
      * @param update the Telegram update received

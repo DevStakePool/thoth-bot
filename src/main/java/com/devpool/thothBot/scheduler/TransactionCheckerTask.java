@@ -59,13 +59,13 @@ public class TransactionCheckerTask implements Runnable {
                         .option(Offset.of(0))
                         .build();
 
-                Result<List<AccountAddress>> addressesRes = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(u.getStakeAddr(), options);
+                Result<List<AccountAddress>> addressesRes = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(Arrays.asList(u.getStakeAddr()), null);
                 if (!addressesRes.isSuccessful()) {
                     LOG.warn("Cannot fetch addresses for user {}" + u);
                     continue;
                 }
 
-                List<String> addresses = addressesRes.getValue().stream().map(a -> a.getAddress()).collect(Collectors.toList());
+                List<String> addresses = addressesRes.getValue().get(0).getAddresses();
 
                 // Retrieve all TXs with pagination starting from the last block height
                 Result<List<TxHash>> txResult = null;
@@ -230,7 +230,8 @@ public class TransactionCheckerTask implements Runnable {
                 this.telegramFacade.sendMessageTo(u.getChatId(), messageBuilder.toString());
 
                 // Update the user with the new block height plus 1 to avoid picking the last TX
-                this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
+                if (!TEST_DATA)
+                    this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
             }
         } catch (Throwable t) {
             LOG.error("Caught throwable while checking wallet transaction", t);

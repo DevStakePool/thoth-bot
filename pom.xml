@@ -19,7 +19,7 @@
         <java.version>11</java.version>
         <telegram-java-bot-api.version>6.2.0</telegram-java-bot-api.version>
         <spring-cloud.version>2021.0.4</spring-cloud.version>
-        <koios-java.version>1.13</koios-java.version>
+        <koios-java.version>1.14</koios-java.version>
         <emoji-java.version>5.1.1</emoji-java.version>
     </properties>
     <dependencyManagement>
@@ -34,12 +34,6 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
-        <!--
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jdbc</artifactId>
-		</dependency>-->
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>

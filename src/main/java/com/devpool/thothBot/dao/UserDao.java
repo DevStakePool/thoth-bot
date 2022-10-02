@@ -106,6 +106,9 @@ public class UserDao {
         if (removedRows == 0)
             LOG.warn("Cannot remove the stake address {} with chat-id {}. Entry not found", stakeAddr, chatId);
 
+        if (removedRows == 1)
+            LOG.debug("Successfully unsubscribed the stake address {} with chat-id {}", stakeAddr, chatId);
+
         return removedRows == 1;
     }
 }

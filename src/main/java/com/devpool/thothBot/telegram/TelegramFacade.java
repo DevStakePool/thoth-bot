@@ -2,6 +2,7 @@ package com.devpool.thothBot.telegram;
 
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.telegram.command.AbstractCommand;
+import com.devpool.thothBot.telegram.command.HelpCmd;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.Update;
@@ -58,10 +59,10 @@ public class TelegramFacade {
             return;
         }
 
-        List<AbstractCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(update.message().text())).collect(Collectors.toList());
+        List<AbstractCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(update.message().text().trim())).collect(Collectors.toList());
         if (matchingCommands.isEmpty()) {
-            LOG.debug("Unknown command");
-            bot.execute(new SendMessage(update.message().chat().id(), "Unknown command"));
+            LOG.debug("Unknown command {}", update.message().text());
+            bot.execute(new SendMessage(update.message().chat().id(), "Unknown command. Try " + HelpCmd.CMD_PREFIX));
             return;
         }
 

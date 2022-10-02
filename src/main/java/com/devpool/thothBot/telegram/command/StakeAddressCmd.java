@@ -15,10 +15,8 @@ import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.model.Tip;
-import rest.koios.client.backend.factory.options.Limit;
-import rest.koios.client.backend.factory.options.Offset;
-import rest.koios.client.backend.factory.options.Options;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -52,6 +50,17 @@ public class StakeAddressCmd extends AbstractCommand {
         return CMD_PREFIX;
     }
 
+    @Override
+    public boolean showHelp() {
+        return false;
+    }
+
+    @Override
+    public String getDescription() {
+        // Not in the help
+        return null;
+    }
+
     public StakeAddressCmd() {
         this.operationsQueue = new ConcurrentHashMap<>();
         this.operationsQueue.put(StakeOperation.SUBSCRIBE, new CopyOnWriteArrayList<>());
@@ -68,7 +77,7 @@ public class StakeAddressCmd extends AbstractCommand {
         else {
             LOG.debug("Called Stake Address command but the chat id was not found in both SUBSCRIBE and UNSUBSCRIBE queues");
             bot.execute(new SendMessage(update.message().chat().id(),
-                    String.format("Please indicate the operation first: %s or %s", SubscribeCmd.CMD_PREFIX, UnsubscribeCmd.CMD_PREFIX)));
+                    String.format("Please specify the operation first: %s or %s", SubscribeCmd.CMD_PREFIX, UnsubscribeCmd.CMD_PREFIX)));
         }
     }
 
@@ -93,12 +102,8 @@ public class StakeAddressCmd extends AbstractCommand {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
         String stakeAddr = update.message().text().trim();
 
-        Options options = Options.builder()
-                .option(Limit.of(100))
-                .option(Offset.of(0))
-                .build();
         try {
-            Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(stakeAddr, options);
+            Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(Arrays.asList(stakeAddr), null);
 
             if (!addresses.isSuccessful()) {
                 LOG.warn("Unsuccessful KOIOS call during the subscribe of the stake address {}. {} {}",
