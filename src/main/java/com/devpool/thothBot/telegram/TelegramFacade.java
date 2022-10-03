@@ -83,10 +83,14 @@ public class TelegramFacade {
 
     public void sendMessageTo(Long chatId, String message) {
         SendMessage sm = new SendMessage(chatId, message)
-                .parseMode(ParseMode.Markdown)
+                .parseMode(ParseMode.HTML)
                 .disableWebPagePreview(true);
         SendResponse outcome = bot.execute(sm);
-        LOG.trace("Sent message to {} with result {}", chatId, outcome);
+        if (outcome.isOk())
+            LOG.debug("Sent message to {} with result isOk={} errorCode={} description={} ",
+                chatId, outcome.isOk(), outcome.errorCode(), outcome.description());
+        else
+            LOG.error("Can't send message due to code={} description={} message={}", outcome.errorCode(), outcome.description(), message);
     }
 
     public void setBot(TelegramBot bot) {

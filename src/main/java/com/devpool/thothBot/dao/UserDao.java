@@ -15,8 +15,8 @@ import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
-import java.util.Collection;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Repository
 public class UserDao {
@@ -28,7 +28,7 @@ public class UserDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @Value("${thoth.max.user.registrations:5}")
+    @Value("${thoth.max-user-registrations:5}")
     private Integer maxUserRegistrations;
 
     @PostConstruct
@@ -36,7 +36,7 @@ public class UserDao {
         LOG.info("User DAO initialised");
     }
 
-    public Collection<User> getUsers() {
+    public List<User> getUsers() {
         SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
                 "select id, chat_id, stake_addr, last_block_height from users");
         Map<Long, User> users = new HashedMap<>();
@@ -52,7 +52,7 @@ public class UserDao {
                 users.put(userId, u);
             }
         }
-        return users.values();
+        return users.values().stream().collect(Collectors.toCollection(ArrayList::new));
     }
 
     public void addNewUser(User user) throws MaxRegistrationsExceededException {

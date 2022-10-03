@@ -15,6 +15,7 @@ import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.model.Tip;
+import rest.koios.client.backend.factory.options.Options;
 
 import java.util.Arrays;
 import java.util.List;
@@ -103,7 +104,8 @@ public class StakeAddressCmd extends AbstractCommand {
         String stakeAddr = update.message().text().trim();
 
         try {
-            Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(Arrays.asList(stakeAddr), null);
+            Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
+                    Arrays.asList(stakeAddr), null, null);
 
             if (!addresses.isSuccessful()) {
                 LOG.warn("Unsuccessful KOIOS call during the subscribe of the stake address {}. {} {}",
