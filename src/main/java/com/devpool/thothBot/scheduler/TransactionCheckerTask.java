@@ -8,7 +8,6 @@ import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
-import org.apache.commons.text.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +23,9 @@ import rest.koios.client.backend.api.transactions.model.TxIO;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 import rest.koios.client.backend.factory.options.*;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -36,7 +38,9 @@ public class TransactionCheckerTask implements Runnable {
     private static final double LOVELACE = 1000000.0;
     private static final String ADA_SYMBOL = " " + '\u20B3';
     private static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
+    private static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
     private static final int USERS_BATCH_SIZE = 50;
+    private static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
 
 
     @Value("${thoth.test-mode:false}")
@@ -90,10 +94,9 @@ public class TransactionCheckerTask implements Runnable {
                                 .collect(Collectors.toList())
                                 .forEach(u -> u.setAccountAddresses(accountAddress.getAddresses()));
                     }
-
-                    checkTransactionsForUsers(usersBatch);
-
                 } while (accountAddrResult != null && accountAddrResult.isSuccessful() && !accountAddrResult.getValue().isEmpty());
+
+                checkTransactionsForUsers(usersBatch);
             }
         } catch (Throwable t) {
             LOG.error("Caught throwable while checking wallet transaction", t);
@@ -153,7 +156,6 @@ public class TransactionCheckerTask implements Runnable {
             Result<List<TxInfo>> txInfoResult = null;
             // Test data
             if (testMode) {
-
                 List<String> testTxs;
                 if (u.getStakeAddr().equals("stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")) {
                     testTxs = Arrays.asList("570d5996d8ac85f1f019a6ccb8b8b926b32839a59e58b6376dc62d78944a4501", // RECEIVED
@@ -169,12 +171,16 @@ public class TransactionCheckerTask implements Runnable {
                     LOG.error("We have no test data for this stake address {}", u.getStakeAddr());
                     continue;
                 }
+
                 txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
                         testTxs, options);
+                LOG.warn("TEST MODE transactions: {}", txInfoResult);
+
             } else {
                 txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
                         allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
             }
+
             if (!txInfoResult.isSuccessful()) {
                 LOG.warn("The call to get the transaction information {} for user {} was not successful due to {} ({})",
                         allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.joining(",")),
@@ -183,6 +189,15 @@ public class TransactionCheckerTask implements Runnable {
             }
 
             StringBuilder messageBuilder = new StringBuilder();
+            messageBuilder.append(EmojiParser.parseToUnicode(":briefcase: <a href=\""))
+                    .append(CARDANO_SCAN_STAKE_KEY)
+                    .append(u.getStakeAddr())
+                    .append("\">")
+                    .append(shortenStakeAddr(u.getStakeAddr()))
+                    .append("</a>\n")
+                    .append(EmojiParser.parseToUnicode(":page_facing_up: "))
+                    .append(txInfoResult.getValue().size())
+                    .append(" new transaction(s)\n\n");
             for (TxInfo txInfo : txInfoResult.getValue()) {
                 // Understand if it's a reception or send by looking at the inputs
                 boolean isReceiveTx = txInfo.getInputs().stream().filter(tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())).count() == 0;
@@ -213,28 +228,22 @@ public class TransactionCheckerTask implements Runnable {
                 if (!isReceiveTx)
                     receivedOrSentFunds *= -1.0d;
 
+                Date txTime = new Date(txInfo.getTxTimestamp());
                 LOG.debug("fee={} ADA, {}}={} ADA", fee, (isReceiveTx ? "received" : "sent"), receivedOrSentFunds);
                 String fundsTokenText = String.format("Funds %s ", allAssets.isEmpty() ? "" : " and Tokens");
-                if (isReceiveTx) {
-                    messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_down: "))
 
-                            .append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
-                            .append("Received ").append(fundsTokenText).append("</a>").append("\n")
-                            .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
-                            .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
-                            .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
-                            .append("Input ").append(String.format("%,.2f", receivedOrSentFunds))
-                            .append(" ").append(ADA_SYMBOL);
-                } else {
-                    messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_up: "))
-                            .append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
-                            .append("Sent ").append(fundsTokenText).append("</a>").append("\n")
-                            .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
-                            .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
-                            .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
-                            .append("Output ").append(String.format("%,.2f", receivedOrSentFunds))
-                            .append(" ").append(ADA_SYMBOL);
-                }
+                messageBuilder.append(EmojiParser.parseToUnicode(isReceiveTx ? ":arrow_heading_down: " : ":arrow_heading_up: "))
+                        .append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
+                        .append(isReceiveTx ? "Received " : "Sent ").append(fundsTokenText).append("</a>")
+                        .append(" <i>")
+                        .append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(txInfo.getTxTimestamp(), 0, ZoneOffset.UTC)))
+                        .append("</i>")
+                        .append("\n")
+                        .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
+                        .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
+                        .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
+                        .append("Input ").append(String.format("%,.2f", receivedOrSentFunds))
+                        .append(" ").append(ADA_SYMBOL);
 
                 // Any assets?
                 if (!allAssets.isEmpty()) {
@@ -253,7 +262,7 @@ public class TransactionCheckerTask implements Runnable {
                                 assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
                             }
 
-                            // Cache it
+                            // Cache it for the future
                             this.assetsDao.addNewAsset(asset.getPolicyId(), asset.getAssetName(),
                                     assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
                                             assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
@@ -281,6 +290,10 @@ public class TransactionCheckerTask implements Runnable {
             if (!testMode)
                 this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
         }
+    }
+
+    private String shortenStakeAddr(String stakeAddr) {
+        return "stake1u..." + stakeAddr.substring(stakeAddr.length() - 8);
     }
 
     private static String hexToAscii(String hexStr) {

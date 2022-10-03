@@ -10,6 +10,7 @@ import com.pengrad.telegrambot.request.SendMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
@@ -71,10 +72,10 @@ public class StakeAddressCmd extends AbstractCommand {
     @Override
     public void execute(Update update, TelegramBot bot) {
         Long chatId = update.message().chat().id();
-        if (this.operationsQueue.get(StakeOperation.SUBSCRIBE).contains(chatId))
-            subscribeNewStakeAddress(update, bot);
-        else if (this.operationsQueue.get(StakeOperation.UNSUBSCRIBE).contains(chatId))
+        if (this.operationsQueue.get(StakeOperation.UNSUBSCRIBE).contains(chatId))
             unsubscribeNewStakeAddress(update, bot);
+        else if (this.operationsQueue.get(StakeOperation.SUBSCRIBE).contains(chatId))
+            subscribeNewStakeAddress(update, bot);
         else {
             LOG.debug("Called Stake Address command but the chat id was not found in both SUBSCRIBE and UNSUBSCRIBE queues");
             bot.execute(new SendMessage(update.message().chat().id(),
@@ -136,6 +137,10 @@ public class StakeAddressCmd extends AbstractCommand {
                     new User(update.message().chat().id(),
                             stakeAddr, tipResult.getValue().getBlockNo()));
 
+            bot.execute(new SendMessage(update.message().chat().id(),
+                    String.format("Thank you %s! From now on you will receive updates every time a transaction appears or when you receive funds", name)));
+
+            this.operationsQueue.get(StakeOperation.SUBSCRIBE).remove(update.message().chat().id());
         } catch (ApiException e) {
             LOG.warn("Error in command stake address: " + e);
             bot.execute(new SendMessage(update.message().chat().id(),
@@ -147,13 +152,11 @@ public class StakeAddressCmd extends AbstractCommand {
                     String.format("Max number of registrations exceeded. You can only register a maximum of %d wallets. Try to de-register some.",
                             e.getMaxRegistrationsAllowed())));
             return;
+        } catch (DuplicateKeyException e) {
+            LOG.info("Duplicated key when registering a new wallet {}", e.toString());
+            bot.execute(new SendMessage(update.message().chat().id(),
+                    String.format("It looks like the stake address %s has been already registered in this chat.", stakeAddr)));
         }
-
-        bot.execute(new SendMessage(update.message().chat().id(),
-                String.format("Thank you %s! From now on you will receive updates every time a transaction appears or when you receive funds", name)));
-
-        this.operationsQueue.get(StakeOperation.SUBSCRIBE).remove(update.message().chat().id());
-
     }
 
 
