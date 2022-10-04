@@ -6,6 +6,7 @@ import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
@@ -23,6 +24,9 @@ import rest.koios.client.backend.api.transactions.model.TxIO;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 import rest.koios.client.backend.factory.options.*;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
@@ -42,9 +46,16 @@ public class TransactionCheckerTask implements Runnable {
     private static final int USERS_BATCH_SIZE = 50;
     private static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
 
+    private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
+    private Instant lastSampleInstant;
+    private long txCounter;
+    private long usersCounter;
 
     @Value("${thoth.test-mode:false}")
     private Boolean testMode;
+
+    @Autowired
+    private MetricsHelper metricsHelper;
 
     @Autowired
     private UserDao userDao;
@@ -57,6 +68,43 @@ public class TransactionCheckerTask implements Runnable {
 
     @Autowired
     private TelegramFacade telegramFacade;
+
+    @PostConstruct
+    public void post() {
+        // Create performance samples
+        performanceSampler.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                sampleMetrics();
+            }
+        }, 1000, 5000);
+    }
+
+    private void sampleMetrics() {
+        synchronized (this.performanceSampler) {
+            Instant now = Instant.now();
+            this.usersCounter = this.userDao.countUsers();
+            if (this.lastSampleInstant == null) {
+                this.lastSampleInstant = now;
+                this.txCounter = 0;
+            } else {
+                long txCounterCurr = this.txCounter;
+                this.txCounter = 0;
+                int millis = (int) (now.toEpochMilli() - lastSampleInstant.toEpochMilli());
+                lastSampleInstant = now;
+                double txPerSec = (txCounterCurr / (millis / 1000.0));
+                // Update gauge metric
+                this.metricsHelper.hitGauge("tx_per_sec", (long) txPerSec);
+                this.metricsHelper.hitGauge("total_users", usersCounter);
+                LOG.trace("Calculated new gauge sample for TX processing: {} tx/sec, {} user(s)", txPerSec, usersCounter);
+            }
+        }
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        this.performanceSampler.cancel();
+    }
 
     @Override
     public void run() {
@@ -138,6 +186,11 @@ public class TransactionCheckerTask implements Runnable {
                 if (o1.getBlockHeight() > o2.getBlockHeight()) return 1;
                 return 0;
             });
+
+            // Update metrics about TXs
+            synchronized (this.performanceSampler) {
+                this.txCounter += allTx.size();
+            }
 
             // We have an empty result (no TX to process)
             if (maxBlockHeight.isEmpty() && !testMode) {
@@ -307,7 +360,7 @@ public class TransactionCheckerTask implements Runnable {
         return output.toString();
     }
 
-    public static <T> Stream<List<T>> batches(List<T> source, int length) {
+    public <T> Stream<List<T>> batches(List<T> source, int length) {
         if (length <= 0)
             throw new IllegalArgumentException("length cannot be negative, length=" + length);
         int size = source.size();

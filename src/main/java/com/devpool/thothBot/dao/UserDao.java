@@ -55,6 +55,10 @@ public class UserDao {
         return users.values().stream().collect(Collectors.toCollection(ArrayList::new));
     }
 
+    public long countUsers() {
+        return this.jdbcTemplate.queryForObject("select count(id) as users_counter from users", Long.class);
+    }
+
     public void addNewUser(User user) throws MaxRegistrationsExceededException {
         // First, check if the user exists, and it has more than this.maxUserRegistrations address already registered
         Long counter = this.namedParameterJdbcTemplate.queryForObject("select count(u.id) as registrations from users as u where chat_id = :chat_id",
