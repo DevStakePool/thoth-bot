@@ -9,11 +9,13 @@ After             = network-online.target
  [Service]
 User              = pi
 Type              = simple
+Environment       = "TELEGRAM_BOT_TOKEN_ENV=CHANGE_ME"
 WorkingDirectory  = /home/pi/cardano/thoth-bot
 ExecStart         = /bin/bash -c '/home/pi/cardano/thoth-bot/scripts/start.sh'
 KillSignal        = SIGINT
 RestartKillSignal = SIGINT
-TimeoutStopSec    = 30
+TimeoutStopSec    = 50
+TimeoutSec        = 50
 LimitNOFILE       = 32768
 Restart           = always
 RestartSec        = 5
