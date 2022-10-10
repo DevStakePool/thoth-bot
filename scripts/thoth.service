@@ -1,0 +1,23 @@
+# The Thoth Bot service (part of systemd)
+# file: /etc/systemd/system/thoth.service
+
+ [Unit]
+Description       = Thoth Bot Service
+Wants             = network-online.target
+After             = network-online.target
+
+ [Service]
+User              = pi
+Type              = simple
+WorkingDirectory  = /home/pi/cardano/thoth-bot
+ExecStart         = /bin/bash -c '/home/pi/cardano/thoth-bot/scripts/start.sh'
+KillSignal        = SIGINT
+RestartKillSignal = SIGINT
+TimeoutStopSec    = 30
+LimitNOFILE       = 32768
+Restart           = always
+RestartSec        = 5
+SyslogIdentifier  = thoth
+
+ [Install]
+WantedBy          = multi-user.target
