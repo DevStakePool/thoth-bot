@@ -50,6 +50,16 @@ public class TelegramFacade {
     }
 
     private void processUpdate(Update update, TelegramBot bot) {
+        if(update == null) {
+            LOG.warn("Update is null");
+            return;
+        }
+
+        if (update.message() == null) {
+            LOG.warn("Update.message is null");
+            return;
+        }
+
         LOG.debug("Received message {} from {}",
                 update.message().text(),
                 update.message().from());
