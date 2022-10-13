@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
 public class HelpCmd extends AbstractCommand {
 
     public static final String CMD_PREFIX = "/help";
+    public static final String CMD_PREFIX_ALIAS = "/start";
 
     private static final Logger LOG = LoggerFactory.getLogger(HelpCmd.class);
 
@@ -42,12 +43,12 @@ public class HelpCmd extends AbstractCommand {
 
     @Override
     public boolean canTrigger(String message) {
-        return message.equals(CMD_PREFIX);
+        return message.equals(CMD_PREFIX) || message.equals(CMD_PREFIX_ALIAS);
     }
 
     @Override
     public String getCommandPrefix() {
-        return CMD_PREFIX;
+        return CMD_PREFIX + " or " + CMD_PREFIX_ALIAS;
     }
 
     @Override
