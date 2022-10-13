@@ -72,7 +72,7 @@ public class TelegramFacade {
         List<AbstractCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(update.message().text().trim())).collect(Collectors.toList());
         if (matchingCommands.isEmpty()) {
             LOG.debug("Unknown command {}", update.message().text());
-            bot.execute(new SendMessage(update.message().chat().id(), "Unknown command. Try " + HelpCmd.CMD_PREFIX));
+            bot.execute(new SendMessage(update.message().chat().id(), "Unknown command. Try " + HelpCmd.CMD_PREFIX + " or " + HelpCmd.CMD_PREFIX_ALIAS));
             return;
         }
 
