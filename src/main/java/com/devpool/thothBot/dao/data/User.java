@@ -10,12 +10,14 @@ public class User {
     private Long chatId;
     private String stakeAddr;
     private Integer lastBlockHeight;
+    private Integer lastEpochNumber;
     private List<String> accountAddresses;
 
-    public User(Long chatId, String stakeAddr, Integer blockNumber) {
+    public User(Long chatId, String stakeAddr, Integer blockNumber, Integer lastEpochNumber) {
         this.chatId = chatId;
         this.stakeAddr = stakeAddr;
         this.lastBlockHeight = blockNumber;
+        this.lastEpochNumber = lastEpochNumber;
     }
 
     public User() {
@@ -28,6 +30,7 @@ public class User {
                 ", stakeAddr='" + stakeAddr + '\'' +
                 ", accountAddresses.size()=" + (accountAddresses != null ? accountAddresses.size() : "null") +
                 ", lastBlockHeight=" + lastBlockHeight +
+                ", lastEpochNumber=" + lastEpochNumber +
                 '}';
     }
 
@@ -69,5 +72,13 @@ public class User {
 
     public void setAccountAddresses(List<String> accountAddresses) {
         this.accountAddresses = accountAddresses;
+    }
+
+    public Integer getLastEpochNumber() {
+        return lastEpochNumber;
+    }
+
+    public void setLastEpochNumber(Integer lastEpochNumber) {
+        this.lastEpochNumber = lastEpochNumber;
     }
 }

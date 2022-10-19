@@ -135,7 +135,7 @@ public class StakeAddressCmd extends AbstractCommand {
             }
             userDao.addNewUser(
                     new User(update.message().chat().id(),
-                            stakeAddr, tipResult.getValue().getBlockNo()));
+                            stakeAddr, tipResult.getValue().getBlockNo(), tipResult.getValue().getEpochNo()));
 
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Thank you %s! From now on you will receive updates every time a transaction appears or when you receive funds", name)));
