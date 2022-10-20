@@ -57,7 +57,7 @@ public class StakingRewardsCheckerTask implements Runnable {
         LOG.debug("Starting thread in {} mode", this.testMode ? "TEST" : "PRODUCTION");
 
         try {
-            Integer currentEpochNumber = 346;
+            Integer currentEpochNumber = 343;
 
             if (!testMode) {
                 Result<Tip> chainTipRes = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
@@ -115,7 +115,7 @@ public class StakingRewardsCheckerTask implements Runnable {
             }
 
             Set<String> allPoolIds = rewardsRes.getValue().stream().flatMap(ar -> ar.getRewards().stream()).map(r -> r.getPoolId()).collect(Collectors.toSet());
-
+            allPoolIds.remove(null); // The rest API can return nulls on pool IDs
             List<PoolInfo> poolInfoList = null;
 
             try {
@@ -131,20 +131,24 @@ public class StakingRewardsCheckerTask implements Runnable {
                 if (accountRewards.getRewards().isEmpty()) continue;
 
                 StringBuilder sb = new StringBuilder();
-                sb.append(EmojiParser.parseToUnicode(":briefcase: <a href=\""))
+                sb.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                         .append(CARDANO_SCAN_STAKE_KEY)
                         .append(accountRewards.getStakeAddress())
                         .append("\">")
                         .append(shortenStakeAddr(accountRewards.getStakeAddress()))
                         .append("</a>\n")
-                        .append((EmojiParser.parseToUnicode(":page_facing_up: ")))
+                        .append((EmojiParser.parseToUnicode(":envelope: ")))
                         .append(accountRewards.getRewards().size())
                         .append(" reward(s)\n\n");
                 for (AccountReward reward : accountRewards.getRewards()) {
-                    sb.append(EmojiParser.parseToUnicode(":arrow_heading_down: <a href=\""));
-                    sb.append(CARDANO_SCAN_STAKE_POOL).append(reward.getPoolId()).append("\">");
-                    sb.append(getPoolName(poolInfoList, reward.getPoolId())).append("</a>");
-                    sb.append("\nEpoch ").append(reward.getEarnedEpoch());
+                    sb.append(EmojiParser.parseToUnicode(":arrow_heading_down: "));
+                    String poolName = getPoolName(poolInfoList, reward.getPoolId());
+                    if (poolName != null) {
+                        sb.append("<a href=\"");
+                        sb.append(CARDANO_SCAN_STAKE_POOL).append(reward.getPoolId()).append("\">");
+                        sb.append(poolName).append("</a> - ");
+                    }
+                    sb.append("Epoch ").append(reward.getEarnedEpoch());
                     sb.append("\n").append(translateRewardsType(reward.getType()));
                     sb.append(" ");
                     sb.append(String.format("%,.2f", Long.valueOf(reward.getAmount()) / LOVELACE));
@@ -172,7 +176,7 @@ public class StakingRewardsCheckerTask implements Runnable {
     }
 
     private String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
-        if (poolAddress == null) return "unknown pool ID";
+        if (poolAddress == null) return null;
 
         if (poolIds != null) {
             Optional<PoolInfo> poolInfo = poolIds.stream().filter(pi -> pi.getPoolIdBech32().equals(poolAddress)).findFirst();
@@ -193,17 +197,6 @@ public class StakingRewardsCheckerTask implements Runnable {
 
     private String shortenStakeAddr(String stakeAddr) {
         return "stake1u..." + stakeAddr.substring(stakeAddr.length() - 8);
-    }
-
-    private static String hexToAscii(String hexStr) {
-        StringBuilder output = new StringBuilder("");
-
-        for (int i = 0; i < hexStr.length(); i += 2) {
-            String str = hexStr.substring(i, i + 2);
-            output.append((char) Integer.parseInt(str, 16));
-        }
-
-        return output.toString();
     }
 
     public <T> Stream<List<T>> batches(List<T> source, int length) {

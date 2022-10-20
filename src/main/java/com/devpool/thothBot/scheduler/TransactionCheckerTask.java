@@ -242,13 +242,13 @@ public class TransactionCheckerTask implements Runnable {
             }
 
             StringBuilder messageBuilder = new StringBuilder();
-            messageBuilder.append(EmojiParser.parseToUnicode(":briefcase: <a href=\""))
+            messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                     .append(CARDANO_SCAN_STAKE_KEY)
                     .append(u.getStakeAddr())
                     .append("\">")
                     .append(shortenStakeAddr(u.getStakeAddr()))
                     .append("</a>\n")
-                    .append(EmojiParser.parseToUnicode(":page_facing_up: "))
+                    .append(EmojiParser.parseToUnicode(":envelope: "))
                     .append(txInfoResult.getValue().size())
                     .append(" new transaction(s)\n\n");
             for (TxInfo txInfo : txInfoResult.getValue()) {
