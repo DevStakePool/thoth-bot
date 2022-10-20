@@ -38,7 +38,7 @@ public class UserDao {
 
     public List<User> getUsers() {
         SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
-                "select id, chat_id, stake_addr, last_block_height from users");
+                "select id, chat_id, stake_addr, last_block_height, last_epoch_number from users");
         Map<Long, User> users = new HashedMap<>();
         while (rs.next()) {
             Long userId = rs.getLong("id");
@@ -49,6 +49,7 @@ public class UserDao {
                 u.setChatId(rs.getLong("chat_id"));
                 u.setStakeAddr(rs.getString("stake_addr"));
                 u.setLastBlockHeight(rs.getInt("last_block_height"));
+                u.setLastEpochNumber(rs.getInt("last_epoch_number"));
                 users.put(userId, u);
             }
         }
@@ -73,11 +74,12 @@ public class UserDao {
 
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
         namedParameterJdbcTemplate.update(
-                "insert into users (chat_id, stake_addr, last_block_height) values (:chat_id, :stake_addr, :last_block_height)",
+                "insert into users (chat_id, stake_addr, last_block_height, last_epoch_number) values (:chat_id, :stake_addr, :last_block_height, :last_epoch_number)",
                 new MapSqlParameterSource(Map.of(
                         "chat_id", user.getChatId(),
                         "stake_addr", user.getStakeAddr(),
-                        "last_block_height", user.getLastBlockHeight())), keyHolder, new String[]{"id"});
+                        "last_block_height", user.getLastBlockHeight(),
+                        "last_epoch_number", user.getLastEpochNumber())), keyHolder, new String[]{"id"});
 
         LOG.debug("Inserted new user with key {}: {}", keyHolder.getKeyAs(Long.class), user);
     }
@@ -94,6 +96,21 @@ public class UserDao {
                     ", when updating the block height. This is a bug!");
         } else {
             LOG.debug("Updated block height to {} for user ID {}", blockHeight, id);
+        }
+    }
+
+    public void updateUserEpochNumber(Long id, Integer epochNumber) {
+        int updatedNumOfRows = namedParameterJdbcTemplate.update(
+                "update users set last_epoch_number = :last_epoch_number where id = :id",
+                new MapSqlParameterSource(Map.of(
+                        "last_epoch_number", epochNumber,
+                        "id", id)));
+
+        if (updatedNumOfRows != 1) {
+            LOG.error("Unexpected updated number of rows for the user with id " + id +
+                    ", when updating the epoch number. This is a bug!");
+        } else {
+            LOG.debug("Updated user epoch number to {} for user ID {}", epochNumber, id);
         }
     }
 
