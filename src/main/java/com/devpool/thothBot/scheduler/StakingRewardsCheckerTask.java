@@ -31,10 +31,10 @@ import java.util.stream.Stream;
 public class StakingRewardsCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(StakingRewardsCheckerTask.class);
     private static final long DEFAULT_PAGINATION_SIZE = 1000;
-    private static final double LOVELACE = 1000000.0;
-    private static final String ADA_SYMBOL = " " + '\u20B3';
-    private static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
-    private static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
+    public static final double LOVELACE = 1000000.0;
+    public static final String ADA_SYMBOL = " " + '\u20B3';
+    public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
+    public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
     private static final int USERS_BATCH_SIZE = 50;
 
     @Value("${thoth.test-mode:false}")

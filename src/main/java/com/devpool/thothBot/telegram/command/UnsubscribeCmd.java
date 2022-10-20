@@ -41,6 +41,6 @@ public class UnsubscribeCmd extends AbstractCommand {
 
     @Override
     public String getDescription() {
-        return "Unsubscribe to stop receiving transaction notifications for a specific wallet";
+        return "Unsubscribes to stop receiving transaction notifications for a specific wallet";
     }
 }

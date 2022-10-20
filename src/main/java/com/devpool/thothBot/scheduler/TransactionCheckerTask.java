@@ -42,7 +42,7 @@ public class TransactionCheckerTask implements Runnable {
     private static final double LOVELACE = 1000000.0;
     private static final String ADA_SYMBOL = " " + '\u20B3';
     private static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
-    private static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
+    public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
     private static final int USERS_BATCH_SIZE = 50;
     private static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
 
@@ -296,7 +296,7 @@ public class TransactionCheckerTask implements Runnable {
                         .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
                         .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
                         .append("Input ").append(String.format("%,.2f", receivedOrSentFunds))
-                        .append(" ").append(ADA_SYMBOL);
+                        .append(ADA_SYMBOL);
 
                 // Any assets?
                 if (!allAssets.isEmpty()) {
@@ -345,7 +345,7 @@ public class TransactionCheckerTask implements Runnable {
         }
     }
 
-    private String shortenStakeAddr(String stakeAddr) {
+    public static String shortenStakeAddr(String stakeAddr) {
         return "stake1u..." + stakeAddr.substring(stakeAddr.length() - 8);
     }
 

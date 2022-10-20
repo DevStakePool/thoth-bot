@@ -58,7 +58,7 @@ public class HelpCmd extends AbstractCommand {
 
     @Override
     public String getDescription() {
-        return "Show this message";
+        return "Shows this message";
     }
 
     @Override

@@ -32,7 +32,7 @@ public class SubscribeCmd extends AbstractCommand {
 
     @Override
     public String getDescription() {
-        return "Subscribe to receive transaction notifications for a specific wallet";
+        return "Subscribes to receive transaction notifications for a specific wallet";
     }
 
     @Override
