@@ -78,7 +78,7 @@ public class AccountInfoCmd extends AbstractCommand {
 
         try {
             List<String> stakeAddresses = this.userDao.getUsers().stream().filter(
-                    u -> u.getChatId() != chatId).map(
+                    u -> u.getChatId().equals(chatId)).map(
                     u -> u.getStakeAddr()).collect(Collectors.toList());
 
             if (stakeAddresses.isEmpty()) {
