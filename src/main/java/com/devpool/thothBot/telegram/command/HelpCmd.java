@@ -31,7 +31,7 @@ public class HelpCmd extends AbstractCommand {
      * Some global constants
      */
     public static final Map<String, String> CONSTANTS = Map.of(
-            "$thoth.version", "1.0.0-beta",
+            "$thoth.version", "1.0.0-rc1",
             "$donation.handle", "$thoth-bot",
             "$url", "https://github.com/DevStakePool/thoth-bot");
 
