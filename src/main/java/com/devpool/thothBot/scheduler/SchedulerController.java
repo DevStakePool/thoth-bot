@@ -35,8 +35,8 @@ public class SchedulerController {
 
         if (this.testMode) {
             LOG.warn("Scheduling in TEST mode");
-            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 20, TimeUnit.SECONDS);
-            this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 30, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 5, 60, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 5, 60, TimeUnit.SECONDS);
         } else {
             this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 30, 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 2, 10, TimeUnit.MINUTES);

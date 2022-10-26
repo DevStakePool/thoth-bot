@@ -102,8 +102,4 @@ public class TelegramFacade {
         else
             LOG.error("Can't send message due to code={} description={} message={}", outcome.errorCode(), outcome.description(), message);
     }
-
-    public void setBot(TelegramBot bot) {
-        this.bot = bot;
-    }
 }

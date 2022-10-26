@@ -216,12 +216,15 @@ public class TransactionCheckerTask implements Runnable {
                             "43e091f2833595bab44516521e55e9967a603015ed539d4ba003b21b959de3a8", // SENT + Tokens
                             "73be7fb0d15a5d63a4d5e5ca10df55d9fcaba7a3b6a885acc3d79a0506d0a12b", // Received + Tokens
                             "ba38cd0fca387c28987696dff1af4545f9698cb9f184dcd7609112c4e185bae5", // Issue here to investigate
-                            "91c38684180b6b0334583b86e90dc23e7c4309a409373840cc4b225bf619f47f", // Received + Tokens
-                            "55b58c4b566fd02019967096db5e5b3a96922eb0bf419d386788516a0e2c9ff3");
+                            "91c38684180b6b0334583b86e90dc23e7c4309a409373840cc4b225bf619f47f"); // Received + Tokens
+
 
                 } else if (u.getStakeAddr().equals("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
                     testTxs = Arrays.asList("a5383435fb2ccab887ad227cbcd084332e0c9e82594a1a0d128e9f64b22317ef",
+                            "55b58c4b566fd02019967096db5e5b3a96922eb0bf419d386788516a0e2c9ff3",
                             "6c54b27ed8e102b8f0891c7e84d1587d7188cd43f79bcc7e2897a004dc9ac879");
+                } else if (u.getStakeAddr().equals("stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr")) {
+                    testTxs = Arrays.asList("b2123e17f181919f82afd6c589ab3e308ef625c4ee3649fd62b67ed2a48fcf14");
                 } else {
                     LOG.error("We have no test data for this stake address {}", u.getStakeAddr());
                     continue;
