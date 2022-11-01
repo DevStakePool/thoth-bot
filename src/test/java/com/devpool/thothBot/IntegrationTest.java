@@ -109,7 +109,7 @@ public class IntegrationTest {
                 } else if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("Fee 0.47"));
                     Assertions.assertTrue(msg.contains("Input 2.03"));
-                    Assertions.assertTrue(msg.contains("Output -78.21"));
+                    Assertions.assertTrue(msg.contains("Output -2.38"));
                     Assertions.assertTrue(msg.contains("AncerstorEggFB 1"));
                     Assertions.assertTrue(msg.contains("Empowa 20.00"));
                 } else {

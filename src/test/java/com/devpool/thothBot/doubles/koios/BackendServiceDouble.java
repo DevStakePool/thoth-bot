@@ -43,8 +43,7 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public AddressService getAddressService() {
-        //TODO
-        return null;
+        return new AddressServiceDouble();
     }
 
     @Override
@@ -54,8 +53,7 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public AssetService getAssetService() {
-        return null;
-        //TODO
+        return new AssetServiceDouble();
     }
 
     @Override
