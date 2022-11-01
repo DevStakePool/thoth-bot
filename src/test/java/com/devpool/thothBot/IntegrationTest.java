@@ -3,6 +3,8 @@ package com.devpool.thothBot;
 import com.devpool.thothBot.dao.AssetsDao;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
+import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +18,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.util.Assert;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -36,6 +37,9 @@ public class IntegrationTest {
     @MockBean
     private TelegramFacade telegramFacadeMock;
 
+    @MockBean
+    private KoiosFacade koiosFacade;
+
     @Captor
     private ArgumentCaptor<String> messageArgCaptor;
 
@@ -51,8 +55,12 @@ public class IntegrationTest {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    private BackendServiceDouble backendServiceDouble;
+
     @BeforeEach
     public void beforeEach() throws Exception {
+        this.backendServiceDouble = new BackendServiceDouble();
+
         // Purge data
         int affectedRows = jdbcTemplate.update("DELETE FROM users");
         LOG.info("Deleted {} rows in table users", affectedRows);
@@ -65,6 +73,8 @@ public class IntegrationTest {
             LOG.debug("Adding user {}", testUser);
             this.userDao.addNewUser(testUser);
         }
+
+        Mockito.when(this.koiosFacade.getKoiosService()).thenReturn(this.backendServiceDouble);
     }
 
     @Test

@@ -1,0 +1,50 @@
+[
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "rewards": [
+      {
+        "earned_epoch": 341,
+        "spendable_epoch": 342,
+        "amount": "146343308",
+        "type": "treasury",
+        "pool_id": null
+      }
+    ]
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "rewards": [
+      {
+        "earned_epoch": 341,
+        "spendable_epoch": 342,
+        "amount": "93421843",
+        "type": "treasury",
+        "pool_id": null
+      }
+    ]
+  },
+  {
+    "stake_address": "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+    "rewards": [
+      {
+        "earned_epoch": 341,
+        "spendable_epoch": 343,
+        "amount": "1180610",
+        "type": "member",
+        "pool_id": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct"
+      }
+    ]
+  },
+  {
+    "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
+    "rewards": [
+      {
+        "earned_epoch": 341,
+        "spendable_epoch": 343,
+        "amount": "8607338",
+        "type": "member",
+        "pool_id": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt"
+      }
+    ]
+  }
+]

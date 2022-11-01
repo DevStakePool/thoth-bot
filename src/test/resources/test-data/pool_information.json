@@ -1,0 +1,84 @@
+[
+  {
+    "pool_id_bech32": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt",
+    "pool_id_hex": "f66a36de855d53b9d5110bd46640f48dbab1c848c9e2f5c36d8c12dc",
+    "active_epoch_no": 345,
+    "vrf_key_hash": "fe0f1606128e07d43104aeaf5a346e2eb659994d9c06f7e8ca86bd872345a470",
+    "margin": 0.03,
+    "fixed_cost": "340000000",
+    "pledge": "20000000000",
+    "reward_addr": "stake1u8ee40mnyyur684z7evy7x64djf8dx22yy5vam9yh0thtwgeknqrh",
+    "owners": [
+      "stake1uy7s2y8s0vsa37mnajx8rdmcexfsaly6sudlstrupq906xcxc4dzx"
+    ],
+    "relays": [
+      {
+        "dns": null,
+        "srv": null,
+        "ipv4": "51.38.117.203",
+        "ipv6": null,
+        "port": 3001
+      }
+    ],
+    "meta_url": "https://meta.pools.pm/gaia-m1653027742.json",
+    "meta_hash": "0ca43f9eedd16f3ef28755e10b7e20b0f482ee16c1edd56f6ea37371abbd94bf",
+    "meta_json": {
+      "name": "GAIA Stake Pool",
+      "ticker": "GAIA",
+      "homepage": "https://www.gaiastakepool.com",
+      "description": "GAIA cares about our planet - we donate 1/2 our profits to charities that heal the Earth. Awesome monthly digital art rewards for delegators, and world-changing impact! Planting trees and cleaning up the oceans is how we make a difference together."
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "d37823059d6560e7e59ff414fee83fd9c260fee2cde1e03e08d04aebd9982f76",
+    "op_cert_counter": 10,
+    "active_stake": "2726398130894",
+    "sigma": 0.0001086767446608662,
+    "block_count": 464,
+    "live_pledge": "20039587529",
+    "live_stake": "2748926402601",
+    "live_delegators": 309,
+    "live_saturation": 3.92
+  },
+  {
+    "pool_id_bech32": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct",
+    "pool_id_hex": "4ebf3e184e2bf7b6c4a5998126088432369ade380fa5a08690f1b618",
+    "active_epoch_no": 370,
+    "vrf_key_hash": "251b8e3537b2e1a7e196609587d617d1d2f4bdee23594a178bd92abd81dfca0a",
+    "margin": 0,
+    "fixed_cost": "340000000",
+    "pledge": "10000000000",
+    "reward_addr": "stake1u9dukhhhce7har55kgspepgz3f94sdaq3rgph5rthswykvqchzkys",
+    "owners": [
+      "stake1u9dukhhhce7har55kgspepgz3f94sdaq3rgph5rthswykvqchzkys"
+    ],
+    "relays": [
+      {
+        "dns": "relaynode1.dynopool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6000
+      }
+    ],
+    "meta_url": "https://git.io/JyBRa",
+    "meta_hash": "d34fd00085427c9626ee4798da068c1ac085d2e44cfae15d6d2e77e5acf2bb2d",
+    "meta_json": {
+      "name": "Dyno Pool",
+      "ticker": "DYNO",
+      "homepage": "https://dynopool.com",
+      "description": "Support a decentralized network, stake with small pools"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "c828b94bcec9471ca8a82fa8adbfcaa9e6afe0dbf410247424bf49d3458128b7",
+    "op_cert_counter": 3,
+    "active_stake": "295262305655",
+    "sigma": 0.000011769427889508272,
+    "block_count": 23,
+    "live_pledge": "10689555502",
+    "live_stake": "135271934291",
+    "live_delegators": 35,
+    "live_saturation": 0.19
+  }
+]

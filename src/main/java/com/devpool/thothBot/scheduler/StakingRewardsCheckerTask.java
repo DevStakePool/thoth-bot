@@ -81,7 +81,6 @@ public class StakingRewardsCheckerTask implements Runnable {
         } catch (Throwable t) {
             LOG.error("Caught throwable while checking wallet staking rewards", t);
         }
-
     }
 
     private void processUserBatch(List<User> usersBatch, Integer currentEpochNumber) {

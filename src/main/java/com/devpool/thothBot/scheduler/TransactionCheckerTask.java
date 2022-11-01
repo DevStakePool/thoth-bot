@@ -154,6 +154,9 @@ public class TransactionCheckerTask implements Runnable {
     private void checkTransactionsForUsers(List<User> users) throws ApiException, MaxRegistrationsExceededException {
         LOG.debug("Checking transactions for batch of users {}", users.size());
         for (User u : users) {
+            if (u.getAccountAddresses() == null)
+                continue; // The previous call failed, probably due to unavailability of Koios
+
             // Retrieve all TXs with pagination starting from the last block height
             Result<List<TxHash>> txResult = null;
             List<TxHash> allTx = new ArrayList<>();
