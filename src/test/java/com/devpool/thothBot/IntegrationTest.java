@@ -81,8 +81,8 @@ public class IntegrationTest {
     @Test
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
-                Mockito.timeout(60 * 1000)
-                        .times(4))
+                        Mockito.timeout(60 * 1000)
+                                .times(4))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 
         List<User> allUsers = this.userDao.getUsers();
@@ -90,54 +90,77 @@ public class IntegrationTest {
         LOG.info("UserChatIDs={}", allChatIds);
         LOG.info("ChatIDs={}", this.chatIdArgCaptor.getAllValues().stream().sorted().collect(Collectors.toList()));
 
+        int accountsTransactionsChecked = 0;
         for (String msg : this.messageArgCaptor.getAllValues()) {
             LOG.debug("Message\n{}", msg);
-            /*
-            if (msg.contains("stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr")) {
-                // Verify account 1
+            if (msg.contains("stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")) {
                 if (msg.contains("reward(s)")) {
+                    /*
                     Assertions.assertTrue(msg.contains("Staking Rewards"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("8.61"));
+                    TODO
+                     */
                 } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("Fee 0.23"));
-                    Assertions.assertTrue(msg.contains("Input 1.86"));
+                    Assertions.assertTrue(msg.contains("Fee 0.17"));
+                    Assertions.assertTrue(msg.contains("Input 1,221.32"));
+                    Assertions.assertTrue(msg.contains("MIN 245.82"));
+                    Assertions.assertTrue(msg.contains("thoth-bot 1"));
+                    accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
                 }
-            } else if (msg.contains("stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")) {
-                // Verify account 2
+            } else if (msg.contains("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy")) {
                 if (msg.contains("reward(s)")) {
+                    /*
                     Assertions.assertTrue(msg.contains("Catalyst Voting"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("146.34"));
+                    */
                 } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("Fee 0.47"));
-                    Assertions.assertTrue(msg.contains("Input 2.03"));
-                    Assertions.assertTrue(msg.contains("Output -2.38"));
-                    Assertions.assertTrue(msg.contains("AncerstorEggFB 1"));
-                    Assertions.assertTrue(msg.contains("Empowa 20.00"));
+                    Assertions.assertTrue(msg.contains("Fee 0.58"));
+                    Assertions.assertTrue(msg.contains("Input 1.38"));
+                    Assertions.assertTrue(msg.contains("Output -1.35"));
+                    Assertions.assertTrue(msg.contains("CashewF 373.00"));
+                    Assertions.assertTrue(msg.contains("Output -4,200.18"));
+                    accountsTransactionsChecked++;
+                } else {
+                    Assertions.fail("Unknown message " + msg);
+                }
+            } else if (msg.contains("stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr")) {
+                if (msg.contains("reward(s)")) {
+                    /*
+                    Assertions.assertTrue(msg.contains("Staking Rewards 1.18"));
+                    Assertions.assertTrue(msg.contains("Epoch 341"));
+                    Assertions.assertTrue(msg.contains("[DYNO]"));
+                    */
+                } else if (msg.contains("transaction(s)")) {
+                    Assertions.assertTrue(msg.contains("2 new transaction(s)"));
+                    Assertions.assertTrue(msg.contains("Output -9,872.71"));
+                    Assertions.assertTrue(msg.contains("CULO 100,000"));
+                    accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
                 }
             } else if (msg.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
-                // Verify account 3
                 if (msg.contains("reward(s)")) {
+                    /*
                     Assertions.assertTrue(msg.contains("Staking Rewards 1.18"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("[DYNO]"));
+                    */
                 } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("3 new transaction(s)"));
-                    Assertions.assertTrue(msg.contains("Output -2.23"));
-                    Assertions.assertTrue(msg.contains("MIN 245.82"));
+                    Assertions.assertTrue(msg.contains("4 new transaction(s)"));
+                    Assertions.assertTrue(msg.contains("hvMIN 245,820,436.00"));
+                    Assertions.assertTrue(msg.contains("1612572528 1"));
+                    accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
                 }
             } else {
                 Assertions.fail("Unknown message " + msg);
             }
-
-             */
         }
+        Assertions.assertEquals(4, accountsTransactionsChecked);
     }
 }
