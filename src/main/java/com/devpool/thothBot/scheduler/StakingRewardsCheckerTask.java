@@ -9,7 +9,6 @@ import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountReward;
@@ -37,9 +36,6 @@ public class StakingRewardsCheckerTask implements Runnable {
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
     private static final int USERS_BATCH_SIZE = 50;
 
-    @Value("${thoth.test-mode:false}")
-    private Boolean testMode;
-
     @Autowired
     private UserDao userDao;
 
@@ -54,20 +50,16 @@ public class StakingRewardsCheckerTask implements Runnable {
 
     @Override
     public void run() {
-        LOG.debug("Starting thread in {} mode", this.testMode ? "TEST" : "PRODUCTION");
+        LOG.debug("Starting thread to check staking rewards");
 
         try {
-            Integer currentEpochNumber = 343;
-
-            if (!testMode) {
-                Result<Tip> chainTipRes = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
-                if (!chainTipRes.isSuccessful()) {
-                    LOG.warn("Cannot get the chain tip from main-net: {}", chainTipRes.getResponse());
-                    return;
-                }
-
-                currentEpochNumber = chainTipRes.getValue().getEpochNo();
+            Result<Tip> chainTipRes = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
+            if (!chainTipRes.isSuccessful()) {
+                LOG.warn("Cannot get the chain tip from main-net: {}", chainTipRes.getResponse());
+                return;
             }
+
+            Integer currentEpochNumber = chainTipRes.getValue().getEpochNo();
 
             LOG.info("Checking staking rewards for {} wallets", this.userDao.getUsers().size());
             Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
@@ -86,8 +78,6 @@ public class StakingRewardsCheckerTask implements Runnable {
     private void processUserBatch(List<User> usersBatch, Integer currentEpochNumber) {
         Map<String, User> accountsToProcess = new HashMap<>();
         for (User u : usersBatch) {
-            if (testMode) u.setLastEpochNumber(currentEpochNumber - 1);
-
             if (Objects.equals(u.getLastEpochNumber(), currentEpochNumber))
                 continue;
 

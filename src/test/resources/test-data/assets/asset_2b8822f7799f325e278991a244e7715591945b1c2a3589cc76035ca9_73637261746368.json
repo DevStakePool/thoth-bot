@@ -1,0 +1,77 @@
+[
+  {
+    "policy_id": "2b8822f7799f325e278991a244e7715591945b1c2a3589cc76035ca9",
+    "asset_name": "73637261746368",
+    "asset_name_ascii": "scratch",
+    "fingerprint": "asset14dratxvjt8gffly250q4hz2hzuvnjp8etlzve2",
+    "minting_tx_hash": "546ad430c274630feb4fa658631e94f1897ae52f503ccb21d5654c3e794b6a8a",
+    "total_supply": "300442832000000",
+    "mint_cnt": 927,
+    "burn_cnt": 0,
+    "creation_time": 1640145029,
+    "minting_tx_metadata": {
+      "721": {
+        "0fe7b9c1abbf139414d8e138721a85dd8d6e24ee7dc0d895587b4f57": {
+          "jc00023569": {
+            "name": "jetchicken #00023569",
+            "image": "ipfs://QmPd9xxaxuPiRQXLqVHqPF54iHNe8DRrEiQKEqJ73jTvwC",
+            "mediaType": "image/png",
+            "attributes": {
+              "feet": "white sneakers",
+              "chicken": "elpollo",
+              "jetpack": "red rocket",
+              "spacehat": "brown sombrero",
+              "weakness": "old timer",
+              "homeworld": "native",
+              "strength1": "whippets can",
+              "strength2": "reserve can",
+              "wing_guns": "incendiary darts",
+              "power_color": "red",
+              "necklace_type": "titanium",
+              "power_ratings": {
+                "luck": 7,
+                "health": 8,
+                "defense": 8,
+                "accuracy": 7,
+                "strength": 8,
+                "oxygen_tank": 7,
+                "intelligence": 7
+              },
+              "powerup_slots": 5,
+              "currency_slots": 2,
+              "necklace_symbol": "brass knuckles",
+              "powerdown_slots": 2,
+              "shoulder_weapon": "mini nuke"
+            }
+          }
+        },
+        "2b8822f7799f325e278991a244e7715591945b1c2a3589cc76035ca9": {
+          "scratch": {
+            "name": "scratch",
+            "image": "ipfs://QmcH1Yari82nXfwmbikeTu9PzddegkHTEoXCN1i4ifbe5j",
+            "mediaType": "image/png",
+            "Learn More": "https://jetchicken.io"
+          }
+        },
+        "bcb62273595d960480021536c8dca6171f01f91f16da3f19d2b09b2f": {
+          "spacelands0000926": {
+            "name": "Extinction",
+            "image": "ipfs://QmfA1XSZmmEr45s1ydLdneMpAHqjhidLHBLdyWbCKxRLYj",
+            "mediaType": "image/png",
+            "attributes": {
+              "cover": "1",
+              "water": "4",
+              "danger": "5"
+            },
+            "coordinates": {
+              "x": "55",
+              "y": "71",
+              "z": "45"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

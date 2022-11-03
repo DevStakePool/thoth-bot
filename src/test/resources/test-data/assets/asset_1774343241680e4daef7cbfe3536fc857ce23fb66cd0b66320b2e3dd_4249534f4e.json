@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "1774343241680e4daef7cbfe3536fc857ce23fb66cd0b66320b2e3dd",
+    "asset_name": "4249534f4e",
+    "asset_name_ascii": "BISON",
+    "fingerprint": "asset14xzpy96kemahz30xa8qz0zzsdntdte6tz8re4s",
+    "minting_tx_hash": "96985bee7d57000e70ab444fe44e94767ef6dc1ccc721e46b026651cd5566d69",
+    "total_supply": "1000000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1637499725,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "1774343241680e4daef7cbfe3536fc857ce23fb66cd0b66320b2e3dd": {
+          "BISON": {
+            "name": "Bison Coin",
+            "files": [
+              {
+                "src": "ipfs://QmPk6SY8P4yWekK1Z9BSrLfQ8bPDHZiirWVgi5hdsyvnvd",
+                "name": "BISON",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPk6SY8P4yWekK1Z9BSrLfQ8bPDHZiirWVgi5hdsyvnvd",
+            "symbol": "BISON",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 45933708
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Bison Coin is a decentralized meme coin on cardano network.",
+            "totalSupply": 1000000000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

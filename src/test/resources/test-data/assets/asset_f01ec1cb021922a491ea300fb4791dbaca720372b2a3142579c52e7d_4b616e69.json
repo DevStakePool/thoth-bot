@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "f01ec1cb021922a491ea300fb4791dbaca720372b2a3142579c52e7d",
+    "asset_name": "4b616e69",
+    "asset_name_ascii": "Kani",
+    "fingerprint": "asset1fyze0cdzkuxcs38syqsppfmty9qglfxj5retzw",
+    "minting_tx_hash": "b054ae506eb3e3c7bacd9a6d3c8c26e1e3f48abb02b0c1a96d7f47bc85b17f2f",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1637071602,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "f01ec1cb021922a491ea300fb4791dbaca720372b2a3142579c52e7d": {
+          "Kani": {
+            "name": "Kani Token",
+            "files": [
+              {
+                "src": "ipfs://QmdV8AmFvCpHGBmegBuuxfR3mxzuwY1TLgfKvjbGrNuVuu",
+                "name": "Kani",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdV8AmFvCpHGBmegBuuxfR3mxzuwY1TLgfKvjbGrNuVuu",
+            "symbol": "Kani",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 45505591
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Utility Token",
+            "totalSupply": 100000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

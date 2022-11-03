@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "902387fb6b2d0ddf709c54e9a89f708e50e98600696f881830167120",
+    "asset_name": "5449434b4554",
+    "asset_name_ascii": "TICKET",
+    "fingerprint": "asset1vq8lxp5xlq8496wg4ps9vq06wrg2lvynlvltwu",
+    "minting_tx_hash": "3564add0032500402a59d7196e4c0d96806aaff48efcd72c8eead78ffb55d777",
+    "total_supply": "21000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1660060682,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "902387fb6b2d0ddf709c54e9a89f708e50e98600696f881830167120": {
+          "TICKET": {
+            "url": "https://rafflesocial.com/",
+            "name": "TICKET",
+            "files": [
+              {
+                "src": "ipfs://QmQvh7veRAt85S3eTWs4VdGMr97Xn19vncvXEaxndLZuDw",
+                "name": "TICKET",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQvh7veRAt85S3eTWs4VdGMr97Xn19vncvXEaxndLZuDw",
+            "symbol": "TICKET",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 68496128
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "",
+            "totalSupply": 21000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

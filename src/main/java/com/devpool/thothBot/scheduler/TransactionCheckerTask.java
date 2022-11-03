@@ -51,9 +51,6 @@ public class TransactionCheckerTask implements Runnable {
     private long txCounter;
     private long usersCounter;
 
-    @Value("${thoth.test-mode:false}")
-    private Boolean testMode;
-
     @Autowired
     private MetricsHelper metricsHelper;
 
@@ -108,8 +105,6 @@ public class TransactionCheckerTask implements Runnable {
 
     @Override
     public void run() {
-        LOG.debug("Starting thread in {} mode", this.testMode ? "TEST" : "PRODUCTION");
-
         LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
 
         try {
@@ -121,7 +116,7 @@ public class TransactionCheckerTask implements Runnable {
                 Result<List<AccountAddress>> accountAddrResult;
                 long offset = 0;
                 do {
-                    Options options = options = Options.builder()
+                    Options options = Options.builder()
                             .option(Limit.of(DEFAULT_PAGINATION_SIZE))
                             .option(Offset.of(offset))
                             .build();
@@ -196,7 +191,7 @@ public class TransactionCheckerTask implements Runnable {
             }
 
             // We have an empty result (no TX to process)
-            if (maxBlockHeight.isEmpty() && !testMode) {
+            if (maxBlockHeight.isEmpty()) {
                 // nothing to do for this user
                 LOG.debug("Nothing to do for the user {}. No TXs found", u);
                 continue;
@@ -209,38 +204,8 @@ public class TransactionCheckerTask implements Runnable {
                     .option(Offset.of(0))
                     .build();
 
-            Result<List<TxInfo>> txInfoResult = null;
-            // Test data
-            if (testMode) {
-                List<String> testTxs;
-                if (u.getStakeAddr().equals("stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")) {
-                    testTxs = Arrays.asList("570d5996d8ac85f1f019a6ccb8b8b926b32839a59e58b6376dc62d78944a4501", // RECEIVED
-                            "81dcc3b330aa8b24375232c8191702f6c34858e5004be9d7dbea29bc36f20e2b", // SENT
-                            "43e091f2833595bab44516521e55e9967a603015ed539d4ba003b21b959de3a8", // SENT + Tokens
-                            "73be7fb0d15a5d63a4d5e5ca10df55d9fcaba7a3b6a885acc3d79a0506d0a12b", // Received + Tokens
-                            "ba38cd0fca387c28987696dff1af4545f9698cb9f184dcd7609112c4e185bae5", // Issue here to investigate
-                            "91c38684180b6b0334583b86e90dc23e7c4309a409373840cc4b225bf619f47f"); // Received + Tokens
-
-
-                } else if (u.getStakeAddr().equals("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
-                    testTxs = Arrays.asList("a5383435fb2ccab887ad227cbcd084332e0c9e82594a1a0d128e9f64b22317ef",
-                            "55b58c4b566fd02019967096db5e5b3a96922eb0bf419d386788516a0e2c9ff3",
-                            "6c54b27ed8e102b8f0891c7e84d1587d7188cd43f79bcc7e2897a004dc9ac879");
-                } else if (u.getStakeAddr().equals("stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr")) {
-                    testTxs = Arrays.asList("b2123e17f181919f82afd6c589ab3e308ef625c4ee3649fd62b67ed2a48fcf14");
-                } else {
-                    LOG.error("We have no test data for this stake address {}", u.getStakeAddr());
-                    continue;
-                }
-
-                txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
-                        testTxs, options);
-                LOG.warn("TEST MODE transactions: {}", txInfoResult);
-
-            } else {
-                txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
-                        allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
-            }
+            Result<List<TxInfo>> txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
+                    allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
 
             if (!txInfoResult.isSuccessful()) {
                 LOG.warn("The call to get the transaction information {} for user {} was not successful due to {} ({})",
@@ -296,7 +261,7 @@ public class TransactionCheckerTask implements Runnable {
                     receivedOrSentFunds *= -1.0d;
 
                 Date txTime = new Date(txInfo.getTxTimestamp());
-                LOG.debug("fee={} ADA, {}}={} ADA", fee, (isReceiveTx ? "received" : "sent"), receivedOrSentFunds);
+                LOG.debug("fee={} ADA, {}={} ADA", fee, (isReceiveTx ? "received" : "sent"), receivedOrSentFunds);
                 String fundsTokenText = String.format("Funds %s ", allAssets.isEmpty() ? "" : " and Tokens");
 
                 messageBuilder.append(EmojiParser.parseToUnicode(isReceiveTx ? ":arrow_heading_down: " : ":arrow_heading_up: "))
@@ -354,8 +319,7 @@ public class TransactionCheckerTask implements Runnable {
             this.telegramFacade.sendMessageTo(u.getChatId(), messageBuilder.toString());
 
             // Update the user with the new block height plus 1 to avoid picking the last TX
-            if (!testMode)
-                this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
+            this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
         }
     }
 

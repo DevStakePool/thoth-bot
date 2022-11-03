@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "10d7152c587c24d59ece1ec566d28e5647a24d32992a50c7f247c6e6",
+    "asset_name": "6b616e6976657273653136",
+    "asset_name_ascii": "kaniverse16",
+    "fingerprint": "asset1mye49alcp0w7k269s79zm8fjsdfjmu66xqtwdl",
+    "minting_tx_hash": "55022b8e144d0f4eacbe093069bfa0539d02e7277e0fb86fcfbf8636de0d6d79",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1655581843,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "10d7152c587c24d59ece1ec566d28e5647a24d32992a50c7f247c6e6": {
+          "kaniverse16": {
+            "name": "Kaniverse #00016",
+            "files": [
+              {
+                "src": "ipfs://QmbUGYNZm1Dvf2eVebkznK9RhviHfdEu8pRwJBZ75qw4dK",
+                "name": "Kani",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbUGYNZm1Dvf2eVebkznK9RhviHfdEu8pRwJBZ75qw4dK",
+            "Rarity": "Rare",
+            "Traits": {
+              "Body": "Pastel Green",
+              "Eyes": "White",
+              "Type": "Kani",
+              "Background": "Black"
+            },
+            "Website": "http://www.Kaniverse.org",
+            "mediaType": "image/png",
+            "Collection": "Kaniverse"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

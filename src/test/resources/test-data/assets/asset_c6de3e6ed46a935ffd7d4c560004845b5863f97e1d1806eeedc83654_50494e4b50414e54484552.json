@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "c6de3e6ed46a935ffd7d4c560004845b5863f97e1d1806eeedc83654",
+    "asset_name": "50494e4b50414e54484552",
+    "asset_name_ascii": "PINKPANTHER",
+    "fingerprint": "asset1u5tnwu2lyjr68kzgkmtf4wsmj8jdjs5mr80t93",
+    "minting_tx_hash": "438adbb88a218f487439f61a6d56dec0fbbafb3ca3f392e8fcb815e81f2d666f",
+    "total_supply": "1000000000000",
+    "mint_cnt": 2,
+    "burn_cnt": 0,
+    "creation_time": 1659216472,
+    "minting_tx_metadata": {
+      "20": {
+        "c6de3e6ed46a935ffd7d4c560004845b5863f97e1d1806eeedc83654": {
+          "50494E4B2050414E54484552": {
+            "url": "https://www.stakecardanopool.com",
+            "desc": "RCADA Pool loyalty & governance token",
+            "icon": "ipfs://QmTMc3hpxAg6kNNo1eunNdvUQ9suiw3BxQX73KLwR8rvDL",
+            "logo": "ipfs://QmTMc3hpxAg6kNNo1eunNdvUQ9suiw3BxQX73KLwR8rvDL",
+            "ticker": "PPTS",
+            "icon-16": "ipfs://QmTMc3hpxAg6kNNo1eunNdvUQ9suiw3BxQX73KLwR8rvDL",
+            "version": "1.0",
+            "decimals": 6
+          }
+        }
+      },
+      "721": {
+        "c6de3e6ed46a935ffd7d4c560004845b5863f97e1d1806eeedc83654": {
+          "PINK PANTHER": {
+            "name": "PINK PANTHER",
+            "image": "ipfs://QmTMc3hpxAg6kNNo1eunNdvUQ9suiw3BxQX73KLwR8rvDL",
+            "ticker": "PPTS",
+            "mediaType": "image/png",
+            "meta-name": "Pink Panther",
+            "attributes": {
+              "Artist:": "RCADA Pool",
+              "Minted:": "Epoch 354",
+              "Series:": "Special Edition",
+              "Publisher": "https://www.stakecardanopool.com",
+              "Description:": "RCADA Pool loyalty & governance token"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

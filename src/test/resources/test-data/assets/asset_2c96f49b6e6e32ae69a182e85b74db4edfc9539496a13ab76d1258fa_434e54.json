@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "2c96f49b6e6e32ae69a182e85b74db4edfc9539496a13ab76d1258fa",
+    "asset_name": "434e54",
+    "asset_name_ascii": "CNT",
+    "fingerprint": "asset1fa78plmfzrv0wmdraf8u8dr9aj8erssls46ujj",
+    "minting_tx_hash": "4a20dfc94b93c4be09418fe11dbeccea0212e2e2b9bbff08e5de32f1eb0a2e4d",
+    "total_supply": "21000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633343157,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "2c96f49b6e6e32ae69a182e85b74db4edfc9539496a13ab76d1258fa": {
+          "CNT": {
+            "name": "CardanoNativeToken",
+            "files": [
+              {
+                "src": "ipfs://QmWwKLGrt1mhKDkQkq1srVXyuNDTaCht82omFdiDb7dqkU",
+                "name": "CNT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWwKLGrt1mhKDkQkq1srVXyuNDTaCht82omFdiDb7dqkU",
+            "symbol": "CNT",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 41777136
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Cardano Native Token",
+            "totalSupply": 21000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

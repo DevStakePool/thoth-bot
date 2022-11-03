@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "9f3bb93558a866958108c929fae490a210909b831624fcfca39a98be",
+    "asset_name": "616e6f6e",
+    "asset_name_ascii": "anon",
+    "fingerprint": "asset1kv2tpgzazxzvmyy83f9nsgyxcdpmhjtxn60n7e",
+    "minting_tx_hash": "56edc07a955711faea1e8b8e97429f0a9c15541b1e0f058639678a103cd88b50",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1661371241,
+    "minting_tx_metadata": {
+      "721": {
+        "9f3bb93558a866958108c929fae490a210909b831624fcfca39a98be": {
+          "anon": {
+            "name": "Anonymous Token",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafybeiep3p4c666cj3si5ffl",
+                  "sjivjwlze7kwnksey3rcgxy5cntbob73la"
+                ],
+                "name": "Anonymous Cardano token",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": [
+              "ipfs://bafkreiedtcsq3qbmmg3x45npqey",
+              "cam6l3gzkmuobw2og7grlw5wjkqmste"
+            ],
+            "symbol": "ANON",
+            "Discord": "Anonymous",
+            "Twitter": "Anonymous",
+            "Website": "Anonymous",
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Copy Right": "Anonymous",
+            "totalSupply": 100000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

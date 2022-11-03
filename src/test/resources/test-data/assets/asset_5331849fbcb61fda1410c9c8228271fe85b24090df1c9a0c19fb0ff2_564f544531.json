@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "5331849fbcb61fda1410c9c8228271fe85b24090df1c9a0c19fb0ff2",
+    "asset_name": "564f544531",
+    "asset_name_ascii": "VOTE1",
+    "fingerprint": "asset1k2k9vy85zuu96jvsepg80ymaws793vh86h6snf",
+    "minting_tx_hash": "af30bfbc0b85261b0a8cf16d5b4d24a7ed2f67c905e906e5f2df6b5e570eed05",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1664228403,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "5331849fbcb61fda1410c9c8228271fe85b24090df1c9a0c19fb0ff2": {
+          "VOTE1": {
+            "name": "VOTE1",
+            "files": [
+              {
+                "src": "ipfs://QmTZEQoJ2d2ybk7accq1qk9Kab3XVRWMwnyZUuzzGDMFAT",
+                "name": "VOTE1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTZEQoJ2d2ybk7accq1qk9Kab3XVRWMwnyZUuzzGDMFAT",
+            "symbol": "VOTE1",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 72663846
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Voting token for 1st anetaBTC governance vote",
+            "totalSupply": 1000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "67696f636f6e6461",
+    "asset_name_ascii": "gioconda",
+    "fingerprint": "asset1zqjy7fye4s5s5j4p8j0v5zeasp33wvskx35js6",
+    "minting_tx_hash": "bae077c951c8fbf13320e0c893abc4c768d28e8981de85de075903fd5408c19a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1663244358,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "gioconda": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$gioconda",
+            "image": "ipfs://QmQA7amr68czvqvcPY9sxL2WD8izpUJVKJmCry9366Si92",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "paciariello": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$paciariello",
+            "image": "ipfs://QmSrqQzP98MpP2HsYe5TikqYshzUerbsXeYeiUWQPKXwNK",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

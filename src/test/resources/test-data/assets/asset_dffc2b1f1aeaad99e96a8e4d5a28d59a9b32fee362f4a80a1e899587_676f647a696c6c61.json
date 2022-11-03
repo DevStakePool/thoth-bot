@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "dffc2b1f1aeaad99e96a8e4d5a28d59a9b32fee362f4a80a1e899587",
+    "asset_name": "676f647a696c6c61",
+    "asset_name_ascii": "godzilla",
+    "fingerprint": "asset1vewy56c9qav8w2dzm6zdh3xm5ps7rcndzartq4",
+    "minting_tx_hash": "8ce4fa55ccff985b33da1965d41763e1a5cc320223297f71cfd5ade9a12ede1c",
+    "total_supply": "10000",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1643736390,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dffc2b1f1aeaad99e96a8e4d5a28d59a9b32fee362f4a80a1e899587": {
+          "godzilla": {
+            "name": "Godzilla",
+            "files": [
+              {
+                "src": "ipfs://QmbBZWeKi4oxUbmRPWu46626MG8uqAV9mEmhs25Cp8yVoE",
+                "name": "Magnetron",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmNTuXzmnbGF3WXesDR9spf3oQ3c1R9pCRk8jwm5HknEHF",
+            "mediaType": "image/jpg",
+            "description": "Godzilla must go so you cannot see the depth of his loneliness"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

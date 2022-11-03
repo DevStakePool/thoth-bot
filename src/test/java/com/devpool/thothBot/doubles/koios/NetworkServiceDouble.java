@@ -14,7 +14,7 @@ public class NetworkServiceDouble implements NetworkService {
     @Override
     public Result<Tip> getChainTip() throws ApiException {
         Tip tip = new Tip();
-        tip.setEpochNo(500);
+        tip.setEpochNo(343);
         return Result.<Tip>builder().successful(true).response("").code(200).value(tip).build();
     }
 

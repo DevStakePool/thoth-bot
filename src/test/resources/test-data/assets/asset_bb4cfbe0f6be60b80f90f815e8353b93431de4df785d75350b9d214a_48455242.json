@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a",
+    "asset_name": "48455242",
+    "asset_name_ascii": "HERB",
+    "fingerprint": "asset1asdkfh37k5vvxs8p0qgl2qckxtyds3gu4pxsf9",
+    "minting_tx_hash": "2554c9e6bfac9512c14a3d97af390289e57a0e6cbd9afdde2ea5ce762d347da1",
+    "total_supply": "420000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658707427,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "bb4cfbe0f6be60b80f90f815e8353b93431de4df785d75350b9d214a": {
+          "HERB": {
+            "name": "ADA BUDZ HERB",
+            "files": [
+              {
+                "src": "ipfs://QmexXPYdTFmFfH3ezvS6Jz9Ae7GRxYGMPWWeK9vS3SP6cH",
+                "name": "HERB",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmexXPYdTFmFfH3ezvS6Jz9Ae7GRxYGMPWWeK9vS3SP6cH",
+            "symbol": "HERB",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 67142873
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "The official native token of the ADA BUDZ NFT project.",
+            "totalSupply": 420000000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

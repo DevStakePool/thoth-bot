@@ -24,7 +24,7 @@ public class KoiosDataBuilder {
     private static final String ACCOUNT_REWARDS_341_JSON_FILE = "test-data/account_rewards_341.json";
     private static final String ACCOUNT_REWARDS_369_JSON_FILE = "test-data/account_rewards_369.json";
     private static final String POOL_INFORMATION_JSON_FILE = "test-data/pool_information.json";
-    private static final String ADDRESS_TRANSACTIONS_JSON_FILE = "test-data/address_transactions.json";
+    private static final String ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE = "test-data/address_txs_";
     private static final String ASSET_INFORMATION_PREFIX_JSON_FILE = "test-data/assets/asset_";
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
@@ -81,9 +81,9 @@ public class KoiosDataBuilder {
     }
 
 
-    public static List<TxHash> getAddressTransactionTestData() throws IOException {
+    public static List<TxHash> getAddressTransactionTestData(String stakeAddress) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(ADDRESS_TRANSACTIONS_JSON_FILE).getFile();
+        String f = classLoader.getResource(ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE + stakeAddress + ".json").getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
@@ -105,7 +105,7 @@ public class KoiosDataBuilder {
     public static AssetInformation getAssetInformation(String policyId, String policyName) throws IOException {
         String fileName = ASSET_INFORMATION_PREFIX_JSON_FILE + policyId + "_" + policyName + ".json";
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        LOG.warn(fileName);
+        LOG.info("Reading asset file {}", fileName);
         String f = classLoader.getResource(fileName).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()

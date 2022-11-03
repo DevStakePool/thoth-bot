@@ -16,7 +16,6 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class AddressServiceDouble implements AddressService {
     @Override
@@ -44,7 +43,12 @@ public class AddressServiceDouble implements AddressService {
         }
 
         try {
-            List<TxHash> data = KoiosDataBuilder.getAddressTransactionTestData();
+            List<AccountAddress> accountAddresses = KoiosDataBuilder.getAccountAddressesTestData();
+            Optional<AccountAddress> accountAddressMatchingInput = accountAddresses.stream().filter(aa -> aa.getAddresses().containsAll(addressList)).findFirst();
+            if (accountAddressMatchingInput.isEmpty())
+                throw new RuntimeException("Cannot find account address for the list of addresses " + addressList);
+
+            List<TxHash> data = KoiosDataBuilder.getAddressTransactionTestData(accountAddressMatchingInput.get().getStakeAddress());
             return Result.<List<TxHash>>builder().code(200).response("").successful(true).value(data).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);

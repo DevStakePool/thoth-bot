@@ -1,0 +1,27 @@
+[
+  {
+    "policy_id": "436649cee1a57ab2ab38a8be97003870b7fe7f1489706090e5be4b64",
+    "asset_name": "636c616d73",
+    "asset_name_ascii": "clams",
+    "fingerprint": "asset1d43k4azgjlu7uhvdlurxk5n8kd0dn7ftj9ehrm",
+    "minting_tx_hash": "ca4b66b996f4d6a9292f4d0754898f1c45b09104454152a564b2f05f908e7509",
+    "total_supply": "30000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643876973,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "436649cee1a57ab2ab38a8be97003870b7fe7f1489706090e5be4b64": {
+          "clams": {
+            "name": "Clams",
+            "image": "ipfs://QmY14EQ6asfFoS5iPZ8WTpMNJdc1uMbddCHmM718vojT2u",
+            "mediaType": "image/png",
+            "description": "Clam machine go shloop"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]
