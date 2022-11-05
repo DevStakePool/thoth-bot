@@ -49,7 +49,7 @@ public class TelegramFacade {
         LOG.info("Telegram Facade initialised");
     }
 
-    private void processUpdate(Update update, TelegramBot bot) {
+    public void processUpdate(Update update, TelegramBot bot) {
         if(update == null) {
             LOG.warn("Update is null");
             return;
@@ -66,6 +66,11 @@ public class TelegramFacade {
 
         if (update.message().from().isBot()) {
             LOG.debug("It's just a bot");
+            return;
+        }
+
+        if (update.message().text() == null) {
+            LOG.debug("Not a text message");
             return;
         }
 
