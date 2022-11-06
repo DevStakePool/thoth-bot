@@ -1,0 +1,33 @@
+{
+  "ok":true,
+  "result":[
+    {
+      "update_id":560604467,
+      "message":{
+        "message_id":226,
+        "from":{
+          "id":1683539744,
+          "is_bot":false,
+          "first_name":"Alessio",
+          "username":"adf_username",
+          "language_code":"en"
+        },
+        "chat":{
+          "id":1683539744,
+          "first_name":"Alessio",
+          "username":"adf_username",
+          "type":"private"
+        },
+        "date":1667733818,
+        "text":"/info",
+        "entities":[
+          {
+            "offset":0,
+            "length":5,
+            "type":"bot_command"
+          }
+        ]
+      }
+    }
+  ]
+}

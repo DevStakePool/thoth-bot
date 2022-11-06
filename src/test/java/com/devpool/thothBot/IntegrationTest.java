@@ -6,6 +6,11 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.devpool.thothBot.telegram.command.HelpCmd;
+import com.devpool.thothBot.util.TelegramUtils;
+import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.Update;
+import com.pengrad.telegrambot.request.SendMessage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,6 +44,9 @@ public class IntegrationTest {
     private TelegramFacade telegramFacadeMock;
 
     @MockBean
+    private TelegramBot telegramBotMock;
+
+    @MockBean
     private KoiosFacade koiosFacade;
 
     @Captor
@@ -46,6 +54,9 @@ public class IntegrationTest {
 
     @Captor
     private ArgumentCaptor<Long> chatIdArgCaptor;
+
+    @Captor
+    private ArgumentCaptor<SendMessage> sendMessageArgCaptor;
 
     @Autowired
     private UserDao userDao;
@@ -57,6 +68,10 @@ public class IntegrationTest {
     private JdbcTemplate jdbcTemplate;
 
     private BackendServiceDouble backendServiceDouble;
+
+    // Commands
+    @Autowired
+    private HelpCmd helpCmd;
 
     @BeforeEach
     public void beforeEach() throws Exception {
@@ -76,6 +91,31 @@ public class IntegrationTest {
         }
 
         Mockito.when(this.koiosFacade.getKoiosService()).thenReturn(this.backendServiceDouble);
+    }
+
+    @Test
+    public void userCommandHelpTest() throws Exception {
+        // Testing Help command
+        Update helpCmdUpdate = TelegramUtils.buildHelpCommandUpdate(false);
+        Update startCmdUpdate = TelegramUtils.buildHelpCommandUpdate(true);
+        this.helpCmd.execute(helpCmdUpdate, this.telegramBotMock);
+        this.helpCmd.execute(startCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(2, sendMessages.size());
+        for (SendMessage sendMessage : sendMessages) {
+            LOG.debug("Message params: {}", sendMessage.getParameters());
+            Map<String, Object> params = sendMessage.getParameters();
+            Assertions.assertEquals(Long.valueOf(1683539744L), params.get("chat_id"));
+            Assertions.assertEquals(Boolean.valueOf(true), params.get("disable_web_page_preview"));
+            Assertions.assertEquals("HTML", params.get("parse_mode"));
+            Assertions.assertTrue(params.get("text").toString().contains("THOTH BOT"));
+            Assertions.assertTrue(params.get("text").toString().contains("/help or /start"));
+        }
     }
 
     @Test
