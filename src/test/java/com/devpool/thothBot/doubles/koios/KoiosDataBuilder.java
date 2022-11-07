@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import rest.koios.client.backend.api.TxHash;
 import rest.koios.client.backend.api.account.model.AccountAddress;
+import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.account.model.AccountRewards;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
@@ -24,6 +25,7 @@ public class KoiosDataBuilder {
     private static final String ACCOUNT_REWARDS_341_JSON_FILE = "test-data/account_rewards_341.json";
     private static final String ACCOUNT_REWARDS_369_JSON_FILE = "test-data/account_rewards_369.json";
     private static final String POOL_INFORMATION_JSON_FILE = "test-data/pool_information.json";
+    private static final String ACCOUNT_INFORMATION_JSON_FILE = "test-data/account_information.json";
     private static final String ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE = "test-data/address_txs_";
     private static final String ASSET_INFORMATION_PREFIX_JSON_FILE = "test-data/assets/asset_";
 
@@ -59,6 +61,18 @@ public class KoiosDataBuilder {
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
 
         List<PoolInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+        return data;
+    }
+
+    public static List<AccountInfo> getAccountInformationTestData() throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = classLoader.getResource(ACCOUNT_INFORMATION_JSON_FILE).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+
+        List<AccountInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
         return data;
     }

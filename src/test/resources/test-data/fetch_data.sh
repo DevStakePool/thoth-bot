@@ -8,6 +8,13 @@ curl -s -X POST "https://api.koios.rest/api/v0/account_addresses" \
  -H "Content-Type: application/json" \
  -d '{"_stake_addresses":["stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32","stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz","stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr","stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"]}' | jq > account_addresses.json
 
+## Account Information
+echo "Fetching data for account information"
+curl -s -X POST "https://api.koios.rest/api/v0/account_info" \
+ -H "Accept: application/json" \
+ -H "Content-Type: application/json" \
+ -d '{"_stake_addresses":["stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz"]}' | jq > account_information.json
+
 ## Address Transactions
 ### stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32
 echo "Fetching data for address transactions stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"
@@ -38,6 +45,14 @@ curl -s -X POST "https://api.koios.rest/api/v0/address_txs" \
  -H "Accept: application/json" \
  -H "Content-Type: application/json" \
  -d '{"_addresses":["addr1q924ga6skag2xj75u6fhnnh9nvzklecgytdgwlwcy9sevu87jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69s74tk5s","addr1q8ctprzrqzap07uxemfq80ru4jqude5tuxglhkyt5wmy0kh7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69sh6qryx","addr1q98cuvdld6q3zyekhgpp2fjt47sm7rw98gmtttsekzfz6wl7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69s9atrfg","addr1q9js3gx0r0wnu2z837jsa2e8a6fz400wt3q04c6s9c4w6m07jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69sv475wl","addr1qxrcrpa22z2ndeydh838nld2ldcsf9y2mqpas24t8dcpws87jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69scf0pjj","addr1qyzxyf9nd56n5m5q44y0y5kj9vmg3dyh2xrx55wc7vvsnzh7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69syllpdy","addr1qxwhkr2t9kf6k2svj47ya7hwdlw9hx6gwdyfefmfzjghwdl7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69s8xzkh7","addr1q8ct2vw7fsak50khxhweklh0vk2tm8n2lx86nlmdkravj8h7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69s6s4g3n","addr1q8xaxj0kzkds0a08nlycu3p8c6dllkn6xeyql23dquhpqkh7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69swfrs5t","addr1qx0stwwpjmk94e657c8rqflwq0ff0jpt2c8cj28r6pnl4fh7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69szmsxgq","addr1qxsr2uy22t48rgy3nrnad4eeepqccsudvl90xknd507yzg07jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69svkgz2m","addr1q9n7465wlvvj2ehuks84ykqj0z9gd3uqyj94upxrwcf732l7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69ss0yuv9","addr1q8t26uv5rax0ym9shh5r6xthwgemm63kr8erq6hmfku88e07jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69snz7n94","addr1q9wf0ayz7h7a7dwdr7ec6jnmed34fudxh4k2jyazv8c4hs87jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69ssm0602","addr1q87jp2wfzmt55js88056aket8rw8knpzv960zknajcezsvh7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69sy34e40","addr1q9n8ws5eh8lgd5uutq36vxlngj9gcmfknlems3u9upuu5kh7jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69s5jvq4v","addr1q8ekg0jj9d4ecedug6rge9engn8wvuqwwhy5d8xel245vj07jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69s2yu9rh","addr1q9velr05v9w6lv2lsr5crzhweyw3ugwgfms6xhtqdhxnrd87jjzm20pp2j5rj78009tx4jmvsalz0p3772j2ntzgl69swv4c3r"],"_after_block_height":7900000}' > address_txs_stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr.json
+
+## Fetching pool information
+echo "Fetching data for pool information"
+curl -s -X POST "https://api.koios.rest/api/v0/pool_info" \
+ -H "Accept: application/json" \
+ -H "Content-Type: application/json" \
+ -d '{"_pool_bech32_ids":["pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv","pool10q33p4hx4wqum6thmglw7z5l2vaay4w6m5cdq8fnurw7vjdppcf","pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt","pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct"]}' | jq > pool_information.json
+
 
 echo "Fetching data for transactions info"
 ALL_TX_HASHES=$(for i in `ls address_txs_*.json`; do cat $i | jq -r '"\""+.[].tx_hash + "\","'; done)

@@ -6,6 +6,7 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.devpool.thothBot.telegram.command.AccountInfoCmd;
 import com.devpool.thothBot.telegram.command.HelpCmd;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
@@ -73,6 +74,9 @@ public class IntegrationTest {
     @Autowired
     private HelpCmd helpCmd;
 
+    @Autowired
+    private AccountInfoCmd infoCmd;
+
     @BeforeEach
     public void beforeEach() throws Exception {
         this.backendServiceDouble = new BackendServiceDouble();
@@ -116,6 +120,31 @@ public class IntegrationTest {
             Assertions.assertTrue(params.get("text").toString().contains("THOTH BOT"));
             Assertions.assertTrue(params.get("text").toString().contains("/help or /start"));
         }
+    }
+
+    @Test
+    public void userCommandInfoTest() throws Exception {
+        // Testing Help command
+        Update infoCmdUpdate = TelegramUtils.buildInfoCommandUpdate();
+        this.infoCmd.execute(infoCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+        Assertions.assertEquals(Long.valueOf(-2), params.get("chat_id"));
+        Assertions.assertEquals(Boolean.valueOf(true), params.get("disable_web_page_preview"));
+        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
+        Assertions.assertTrue(params.get("text").toString().contains("[SPKL]"));
+        Assertions.assertTrue(params.get("text").toString().contains("Status: registered"));
+        Assertions.assertTrue(params.get("text").toString().contains("Rewards: 5,569.97"));
+        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,013.78"));
     }
 
     @Test

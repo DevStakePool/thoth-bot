@@ -22,8 +22,13 @@ public class AccountServiceDouble implements AccountService {
 
     @Override
     public Result<List<AccountInfo>> getAccountInformation(List<String> addressList, Options options) throws ApiException {
-        return null;
-        //TODO
+        try {
+            List<AccountInfo> data = KoiosDataBuilder.getAccountInformationTestData();
+            List<AccountInfo> filteredList = data.stream().filter(r -> addressList.contains(r.getStakeAddress())).collect(Collectors.toList());
+            return Result.<List<AccountInfo>>builder().code(200).response("").successful(true).value(filteredList).build();
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override

@@ -1,5 +1,54 @@
 [
   {
+    "pool_id_bech32": "pool10q33p4hx4wqum6thmglw7z5l2vaay4w6m5cdq8fnurw7vjdppcf",
+    "pool_id_hex": "782310d6e6ab81cde977da3eef0a9f533bd255dadd30d01d33e0dde6",
+    "active_epoch_no": 292,
+    "vrf_key_hash": "688cc03b16a599d5f48cd963eef3eedb48fceecba038202f7df0a10eeeff3c76",
+    "margin": 0,
+    "fixed_cost": "340000000",
+    "pledge": "50000000000",
+    "reward_addr": "stake1u84j3fxsrjucg3vvlv2zzglym0ar4hc6su4s6rw2ralul6clp0dpq",
+    "owners": [
+      "stake1ux8qkd6ltq7hj8vcuv38hn5gwj2m67999gz799a65xxda4s97sr7p",
+      "stake1u84j3fxsrjucg3vvlv2zzglym0ar4hc6su4s6rw2ralul6clp0dpq"
+    ],
+    "relays": [
+      {
+        "dns": "relay1.spklpool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 60001
+      },
+      {
+        "dns": "relay2.spklpool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 60001
+      }
+    ],
+    "meta_url": "https://sparklestatic.s3.ca-central-1.amazonaws.com/meta.json",
+    "meta_hash": "4ef6f87e5a8eff518a1000be4475d5b84be4d3eb9210cd437189115a2be8e322",
+    "meta_json": {
+      "name": "Sparkle",
+      "ticker": "SPKL",
+      "homepage": "http://spklpool.com",
+      "description": "Sparkle stake pool"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "b2d63a689823b6f434ee2d2e6d18d90cc0cece73b2b09504a398162b6d3e38b2",
+    "op_cert_counter": 7,
+    "active_stake": "794661966044",
+    "sigma": 3.166263417941575e-05,
+    "block_count": 43,
+    "live_pledge": "57725648223",
+    "live_stake": "732906701651",
+    "live_delegators": 46,
+    "live_saturation": 1.04
+  },
+  {
     "pool_id_bech32": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt",
     "pool_id_hex": "f66a36de855d53b9d5110bd46640f48dbab1c848c9e2f5c36d8c12dc",
     "active_epoch_no": 345,
@@ -32,13 +81,54 @@
     "retiring_epoch": null,
     "op_cert": "d37823059d6560e7e59ff414fee83fd9c260fee2cde1e03e08d04aebd9982f76",
     "op_cert_counter": 10,
-    "active_stake": "2726398130894",
-    "sigma": 0.0001086767446608662,
+    "active_stake": "2743964518377",
+    "sigma": 0.00010933094631316119,
     "block_count": 464,
     "live_pledge": "20039587529",
-    "live_stake": "2748926402601",
-    "live_delegators": 309,
-    "live_saturation": 3.92
+    "live_stake": "2700397736037",
+    "live_delegators": 303,
+    "live_saturation": 3.84
+  },
+  {
+    "pool_id_bech32": "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
+    "pool_id_hex": "ca97f539e6a878e7a7d87d762982a016ac6959d76719c8212a4a39e0",
+    "active_epoch_no": 327,
+    "vrf_key_hash": "7812dbbc40f7782c43f36fd3a571f82d75f4ab38c1c6d0cc53cf18b9faba0e42",
+    "margin": 0,
+    "fixed_cost": "340000000",
+    "pledge": "30000000000",
+    "reward_addr": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "owners": [
+      "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"
+    ],
+    "relays": [
+      {
+        "dns": "dev-relay1.vpsgh.it",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6000
+      }
+    ],
+    "meta_url": "https://raw.githubusercontent.com/DevStakePool/s/main/m/m.json",
+    "meta_hash": "9d6f69d03df0024da24d646c70888cea03f86d62958dd3efdbf2b0c85d356042",
+    "meta_json": {
+      "name": "Development Stake Pool",
+      "ticker": "DEV",
+      "homepage": "https://devstakepool.github.io/",
+      "description": "Supporting people in accessing education and career development in underdeveloped countries"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "38cd000574443b99af0dc522c8d67ad67f4cae97c290c01faecbedd67ad86ced",
+    "op_cert_counter": 3,
+    "active_stake": "548110301390",
+    "sigma": 2.1838991551685722e-05,
+    "block_count": 13,
+    "live_pledge": "71992401698",
+    "live_stake": "549459708851",
+    "live_delegators": 26,
+    "live_saturation": 0.78
   },
   {
     "pool_id_bech32": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct",
@@ -73,12 +163,12 @@
     "retiring_epoch": null,
     "op_cert": "c828b94bcec9471ca8a82fa8adbfcaa9e6afe0dbf410247424bf49d3458128b7",
     "op_cert_counter": 3,
-    "active_stake": "295262305655",
-    "sigma": 0.000011769427889508272,
+    "active_stake": "135271934291",
+    "sigma": 5.389795854355445e-06,
     "block_count": 23,
     "live_pledge": "10689555502",
-    "live_stake": "135271934291",
-    "live_delegators": 35,
-    "live_saturation": 0.19
+    "live_stake": "138131120186",
+    "live_delegators": 34,
+    "live_saturation": 0.2
   }
 ]
