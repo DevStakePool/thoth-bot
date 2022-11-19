@@ -6,11 +6,11 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
-import com.devpool.thothBot.telegram.command.AccountInfoCmd;
-import com.devpool.thothBot.telegram.command.HelpCmd;
+import com.devpool.thothBot.telegram.command.*;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
+import com.pengrad.telegrambot.model.request.ForceReply;
 import com.pengrad.telegrambot.request.SendMessage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -77,6 +77,15 @@ public class IntegrationTest {
     @Autowired
     private AccountInfoCmd infoCmd;
 
+    @Autowired
+    private SubscribeCmd subscribeCmd;
+
+    @Autowired
+    private UnsubscribeCmd unsubscribeCmd;
+
+    @Autowired
+    private StakeAddressCmd stakeCmd;
+
     @BeforeEach
     public void beforeEach() throws Exception {
         this.backendServiceDouble = new BackendServiceDouble();
@@ -114,8 +123,8 @@ public class IntegrationTest {
         for (SendMessage sendMessage : sendMessages) {
             LOG.debug("Message params: {}", sendMessage.getParameters());
             Map<String, Object> params = sendMessage.getParameters();
-            Assertions.assertEquals(Long.valueOf(1683539744L), params.get("chat_id"));
-            Assertions.assertEquals(Boolean.valueOf(true), params.get("disable_web_page_preview"));
+            Assertions.assertEquals(1683539744L, params.get("chat_id"));
+            Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
             Assertions.assertEquals("HTML", params.get("parse_mode"));
             Assertions.assertTrue(params.get("text").toString().contains("THOTH BOT"));
             Assertions.assertTrue(params.get("text").toString().contains("/help or /start"));
@@ -137,14 +146,100 @@ public class IntegrationTest {
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
-        Assertions.assertEquals(Long.valueOf(-2), params.get("chat_id"));
-        Assertions.assertEquals(Boolean.valueOf(true), params.get("disable_web_page_preview"));
+        Assertions.assertEquals((long) -2, params.get("chat_id"));
+        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
         Assertions.assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
         Assertions.assertTrue(params.get("text").toString().contains("[SPKL]"));
         Assertions.assertTrue(params.get("text").toString().contains("Status: registered"));
         Assertions.assertTrue(params.get("text").toString().contains("Rewards: 5,569.97"));
         Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,013.78"));
+    }
+
+    @Test
+    public void userCommandSubscribeTest() throws Exception {
+        // Testing Help command
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate();
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals(-1000L, params.get("chat_id"));
+        Assertions.assertEquals(ForceReply.class, params.get("reply_markup").getClass());
+        Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please send your stake address"));
+    }
+
+    @Test
+    public void userCommandUnsubscribeTest() throws Exception {
+        // Testing Help command
+        Update unsubscribeCmdUpdate = TelegramUtils.buildUnsubscribeCommandUpdate();
+        this.unsubscribeCmd.execute(unsubscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals(-1000L, params.get("chat_id"));
+        Assertions.assertEquals(ForceReply.class, params.get("reply_markup").getClass());
+        Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please specify your stake address"));
+    }
+
+    //@Test
+    public void userCommandStakeTest() throws Exception {
+        // Testing Help command
+        Update stakeCmdUpdate = TelegramUtils.buildStakeCommandUpdate(
+                "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", -1000);
+        this.stakeCmd.execute(stakeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
+
+        // First specify the /subscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate();
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(argumentCaptor.capture());
+
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.stakeCmd.execute(stakeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(argumentCaptor.capture());
+        sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        params = sendMessage.getParameters();
+        System.out.println(params);
     }
 
     @Test

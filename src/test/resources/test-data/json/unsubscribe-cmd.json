@@ -1,0 +1,33 @@
+{
+  "ok":true,
+  "result":[
+    {
+      "update_id":560604466,
+      "message":{
+        "message_id":224,
+        "from":{
+          "id":-1000,
+          "is_bot":false,
+          "first_name":"Alessio",
+          "username":"alessio_username",
+          "language_code":"en"
+        },
+        "chat":{
+          "id":-1000,
+          "first_name":"Alessio",
+          "username":"adf_username",
+          "type":"private"
+        },
+        "date":1667733684,
+        "text":"/unsubscribe",
+        "entities":[
+          {
+            "offset":0,
+            "length":5,
+            "type":"bot_command"
+          }
+        ]
+      }
+    }
+  ]
+}

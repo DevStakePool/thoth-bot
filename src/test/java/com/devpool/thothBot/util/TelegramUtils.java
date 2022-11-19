@@ -13,6 +13,9 @@ public class TelegramUtils {
 
     private static final String HELP_CMD_JSON = "test-data/json/help-cmd.json";
     private static final String INFO_CMD_JSON = "test-data/json/info-cmd.json";
+    private static final String SUBSCRIBE_CMD_JSON = "test-data/json/subscribe-cmd.json";
+    private static final String UNSUBSCRIBE_CMD_JSON = "test-data/json/unsubscribe-cmd.json";
+    private static final String STAKE_CMD_JSON = "test-data/json/stake-cmd.json";
 
     private static final Gson GSON = new Gson();
 
@@ -24,6 +27,22 @@ public class TelegramUtils {
 
     public static Update buildInfoCommandUpdate() throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(INFO_CMD_JSON, null);
+        return resp.updates().get(0);
+    }
+
+    public static Update buildSubscribeCommandUpdate() throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(SUBSCRIBE_CMD_JSON, null);
+        return resp.updates().get(0);
+    }
+
+    public static Update buildUnsubscribeCommandUpdate() throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(UNSUBSCRIBE_CMD_JSON, null);
+        return resp.updates().get(0);
+    }
+
+    public static Update buildStakeCommandUpdate(String stakeAddress, int chatId) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(STAKE_CMD_JSON,
+                jsonContent -> jsonContent.replace("$stake_addr", stakeAddress).replace("-1000", Integer.toString(chatId)));
         return resp.updates().get(0);
     }
 
