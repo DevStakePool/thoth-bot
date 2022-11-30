@@ -198,50 +198,6 @@ public class IntegrationTest {
         Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please specify your stake address"));
     }
 
-    //@Test
-    public void userCommandStakeTest() throws Exception {
-        // Testing Help command
-        Update stakeCmdUpdate = TelegramUtils.buildStakeCommandUpdate(
-                "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", -1000);
-        this.stakeCmd.execute(stakeCmdUpdate, this.telegramBotMock);
-        Mockito.verify(this.telegramBotMock,
-                        Mockito.timeout(10 * 1000)
-                                .times(1))
-                .execute(this.sendMessageArgCaptor.capture());
-        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
-
-        Assertions.assertEquals(1, sendMessages.size());
-        SendMessage sendMessage = sendMessages.get(0);
-        LOG.debug("Message params: {}", sendMessage.getParameters());
-        Map<String, Object> params = sendMessage.getParameters();
-
-        Assertions.assertEquals((long) -1000, params.get("chat_id"));
-        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
-
-        // First specify the /subscribe
-        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate();
-        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
-        Mockito.verify(this.telegramBotMock,
-                        Mockito.timeout(10 * 1000)
-                                .times(1))
-                .execute(argumentCaptor.capture());
-
-        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        this.stakeCmd.execute(stakeCmdUpdate, this.telegramBotMock);
-        Mockito.verify(this.telegramBotMock,
-                        Mockito.timeout(10 * 1000)
-                                .times(1))
-                .execute(argumentCaptor.capture());
-        sendMessages = argumentCaptor.getAllValues();
-
-        Assertions.assertEquals(1, sendMessages.size());
-        sendMessage = sendMessages.get(0);
-        LOG.debug("Message params: {}", sendMessage.getParameters());
-        params = sendMessage.getParameters();
-        System.out.println(params);
-    }
-
     @Test
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,

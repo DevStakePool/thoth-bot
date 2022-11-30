@@ -15,6 +15,7 @@ public class NetworkServiceDouble implements NetworkService {
     public Result<Tip> getChainTip() throws ApiException {
         Tip tip = new Tip();
         tip.setEpochNo(343);
+        tip.setBlockNo(1234);
         return Result.<Tip>builder().successful(true).response("").code(200).value(tip).build();
     }
 

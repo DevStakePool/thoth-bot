@@ -24,8 +24,17 @@ public class SchedulerController {
     @Autowired
     private StakingRewardsCheckerTask stakingRewardsCheckerTask;
 
+
+    @Value("${thoth.disable-scheduler:false}")
+    private Boolean disableScheduler;
+
     @PostConstruct
     public void post() {
+        if (this.disableScheduler) {
+            LOG.warn("Running with scheduler disabled!");
+            return;
+        }
+
         LOG.info("Creating Scheduling Controller");
         this.executorService = Executors.newScheduledThreadPool(4,
                 new CustomizableThreadFactory("WalletActivityChecker"));
@@ -36,7 +45,9 @@ public class SchedulerController {
 
     @PreDestroy
     public void shutdown() {
-        LOG.info("Shutting down scheduler");
-        this.executorService.shutdown();
+        if (!disableScheduler) {
+            LOG.info("Shutting down scheduler");
+            this.executorService.shutdown();
+        }
     }
 }
