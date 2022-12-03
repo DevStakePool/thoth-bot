@@ -5,11 +5,11 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import rest.koios.client.backend.api.TxHash;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.account.model.AccountRewards;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
+import rest.koios.client.backend.api.common.TxHash;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 

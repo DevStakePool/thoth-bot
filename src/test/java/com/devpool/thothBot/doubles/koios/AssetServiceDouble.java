@@ -1,10 +1,10 @@
 package com.devpool.thothBot.doubles.koios;
 
-import rest.koios.client.backend.api.TxHash;
 import rest.koios.client.backend.api.asset.AssetService;
 import rest.koios.client.backend.api.asset.model.*;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
+import rest.koios.client.backend.api.common.TxHash;
 import rest.koios.client.backend.factory.options.Options;
 
 import java.io.IOException;
@@ -48,7 +48,12 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
-    public Result<List<TxHash>> getAssetTransactionHistory(String assetPolicy, String assetName, Options options) throws ApiException {
+    public Result<List<TxHash>> getAssetTransactions(String assetPolicy, String assetName, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<TxHash>> getAssetTransactions(String assetPolicy, String assetName, Integer afterBlockHeight, boolean history, Options options) throws ApiException {
         return null;
     }
 }

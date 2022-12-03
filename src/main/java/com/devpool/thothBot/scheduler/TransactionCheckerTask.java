@@ -12,14 +12,12 @@ import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import rest.koios.client.backend.api.TxHash;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
-import rest.koios.client.backend.api.transactions.model.TxAsset;
+import rest.koios.client.backend.api.common.TxHash;
 import rest.koios.client.backend.api.transactions.model.TxIO;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 import rest.koios.client.backend.factory.options.*;
@@ -243,7 +241,7 @@ public class TransactionCheckerTask implements Runnable {
                 List<TxIO> accountInputs = txInfo.getInputs().stream().filter(
                                 tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()))
                         .collect(Collectors.toList());
-                List<TxAsset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
+                List<rest.koios.client.backend.api.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
 
                 LOG.debug("All assets:\n{}", allAssets);
                 Double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
@@ -279,7 +277,7 @@ public class TransactionCheckerTask implements Runnable {
 
                 // Any assets?
                 if (!allAssets.isEmpty()) {
-                    for (TxAsset asset : allAssets) {
+                    for (rest.koios.client.backend.api.common.Asset asset : allAssets) {
                         Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(asset.getPolicyId(), asset.getAssetName());
                         Object assetQuantity = Long.valueOf(asset.getQuantity());
                         if (cachedAsset.isEmpty()) {

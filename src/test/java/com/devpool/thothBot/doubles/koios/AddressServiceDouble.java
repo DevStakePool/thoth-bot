@@ -1,12 +1,12 @@
 package com.devpool.thothBot.doubles.koios;
 
-import rest.koios.client.backend.api.TxHash;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.address.AddressService;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
+import rest.koios.client.backend.api.common.TxHash;
 import rest.koios.client.backend.factory.options.Option;
 import rest.koios.client.backend.factory.options.OptionType;
 import rest.koios.client.backend.factory.options.Options;

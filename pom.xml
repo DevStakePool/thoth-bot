@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.devpool</groupId>
     <artifactId>thoth-bot</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <name>Thoth Bot Cardano</name>
     <description>A Telegram Bot for the Cardano blockchain that monitors wallet activities and notifies users about TXs,
         etc.
@@ -19,7 +19,7 @@
         <java.version>11</java.version>
         <telegram-java-bot-api.version>6.2.0</telegram-java-bot-api.version>
         <spring-cloud.version>2021.0.4</spring-cloud.version>
-        <koios-java.version>1.15.1</koios-java.version>
+        <koios-java.version>1.16.0</koios-java.version>
         <emoji-java.version>5.1.1</emoji-java.version>
     </properties>
     <dependencyManagement>

@@ -32,6 +32,11 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
+    public Result<List<AccountInfo>> getCachedAccountInformation(List<String> stakeAddresses, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<AccountRewards>> getAccountRewards(List<String> addressList, Integer epochNo, Options options) throws ApiException {
         try {
             List<AccountRewards> data = KoiosDataBuilder.getAccountRewardsTestData(epochNo);
