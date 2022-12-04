@@ -147,177 +147,181 @@ public class TransactionCheckerTask implements Runnable {
     private void checkTransactionsForUsers(List<User> users) throws ApiException, MaxRegistrationsExceededException {
         LOG.debug("Checking transactions for batch of users {}", users.size());
         for (User u : users) {
-            if (u.getAccountAddresses() == null)
-                continue; // The previous call failed, probably due to unavailability of Koios
+            try {
+                if (u.getAccountAddresses() == null)
+                    continue; // The previous call failed, probably due to unavailability of Koios
 
-            // Retrieve all TXs with pagination starting from the last block height
-            Result<List<TxHash>> txResult = null;
-            List<TxHash> allTx = new ArrayList<>();
-            long offset = 0;
-            do {
-                Options options = Options.builder()
-                        .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                        .option(Offset.of(offset))
-                        .option(Order.by("block_height", SortType.DESC))
-                        .build();
-                offset += DEFAULT_PAGINATION_SIZE;
+                // Retrieve all TXs with pagination starting from the last block height
+                Result<List<TxHash>> txResult = null;
+                List<TxHash> allTx = new ArrayList<>();
+                long offset = 0;
+                do {
+                    Options options = Options.builder()
+                            .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                            .option(Offset.of(offset))
+                            .option(Order.by("block_height", SortType.DESC))
+                            .build();
+                    offset += DEFAULT_PAGINATION_SIZE;
 
-                txResult = this.koiosFacade.getKoiosService().getAddressService().getAddressTransactions(
-                        u.getAccountAddresses(), u.getLastBlockHeight(), options);
+                    txResult = this.koiosFacade.getKoiosService().getAddressService().getAddressTransactions(
+                            u.getAccountAddresses(), u.getLastBlockHeight(), options);
 
-                LOG.trace("TXs {} {}:  {}", txResult.getCode(), txResult.getResponse(), txResult.getValue());
+                    LOG.trace("TXs {} {}:  {}", txResult.getCode(), txResult.getResponse(), txResult.getValue());
 
-                if (!txResult.isSuccessful()) {
-                    LOG.warn("The call to get the transactions for user {} was not successful due to {} ({})",
-                            u, txResult.getResponse(), txResult.getCode());
+                    if (!txResult.isSuccessful()) {
+                        LOG.warn("The call to get the transactions for user {} was not successful due to {} ({})",
+                                u, txResult.getResponse(), txResult.getCode());
+                        continue;
+                    }
+
+                    allTx.addAll(txResult.getValue());
+                } while (txResult != null && txResult.isSuccessful() && !txResult.getValue().isEmpty());
+
+                // update the highest block for the user
+                Optional<TxHash> maxBlockHeight = allTx.stream().max((o1, o2) -> {
+                    if (o1.getBlockHeight() < o2.getBlockHeight()) return -1;
+                    if (o1.getBlockHeight() > o2.getBlockHeight()) return 1;
+                    return 0;
+                });
+
+                // Update metrics about TXs
+                synchronized (this.performanceSampler) {
+                    this.txCounter += allTx.size();
+                }
+
+                // We have an empty result (no TX to process)
+                if (maxBlockHeight.isEmpty()) {
+                    // nothing to do for this user
+                    LOG.debug("Nothing to do for the user {}. No TXs found", u);
                     continue;
                 }
 
-                allTx.addAll(txResult.getValue());
-            } while (txResult != null && txResult.isSuccessful() && !txResult.getValue().isEmpty());
+                // Now we need to analyse all the TXs and notify the user.
+                // No need to do multi queries here unless you got 1000+ transactions since the last check
+                Options options = Options.builder()
+                        .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                        .option(Offset.of(0))
+                        .build();
 
-            // update the highest block for the user
-            Optional<TxHash> maxBlockHeight = allTx.stream().max((o1, o2) -> {
-                if (o1.getBlockHeight() < o2.getBlockHeight()) return -1;
-                if (o1.getBlockHeight() > o2.getBlockHeight()) return 1;
-                return 0;
-            });
+                Result<List<TxInfo>> txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
+                        allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
 
-            // Update metrics about TXs
-            synchronized (this.performanceSampler) {
-                this.txCounter += allTx.size();
-            }
+                if (!txInfoResult.isSuccessful()) {
+                    LOG.warn("The call to get the transaction information {} for user {} was not successful due to {} ({})",
+                            allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.joining(",")),
+                            u, txInfoResult.getResponse(), txInfoResult.getCode());
+                    continue;
+                }
 
-            // We have an empty result (no TX to process)
-            if (maxBlockHeight.isEmpty()) {
-                // nothing to do for this user
-                LOG.debug("Nothing to do for the user {}. No TXs found", u);
-                continue;
-            }
+                StringBuilder messageBuilder = new StringBuilder();
+                messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
+                        .append(CARDANO_SCAN_STAKE_KEY)
+                        .append(u.getStakeAddr())
+                        .append("\">")
+                        .append(shortenStakeAddr(u.getStakeAddr()))
+                        .append("</a>\n")
+                        .append(EmojiParser.parseToUnicode(":envelope: "))
+                        .append(txInfoResult.getValue().size())
+                        .append(" new transaction(s)\n\n");
 
-            // Now we need to analyse all the TXs and notify the user.
-            // No need to do multi queries here unless you got 1000+ transactions since the last check
-            Options options = Options.builder()
-                    .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                    .option(Offset.of(0))
-                    .build();
+                if (txInfoResult.getValue().isEmpty()) {
+                    LOG.warn("TX Info empty. Probably db-sync did not complete adding this part. Let's try later");
+                    continue;
+                }
 
-            Result<List<TxInfo>> txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(
-                    allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
-
-            if (!txInfoResult.isSuccessful()) {
-                LOG.warn("The call to get the transaction information {} for user {} was not successful due to {} ({})",
-                        allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.joining(",")),
-                        u, txInfoResult.getResponse(), txInfoResult.getCode());
-                continue;
-            }
-
-            StringBuilder messageBuilder = new StringBuilder();
-            messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
-                    .append(CARDANO_SCAN_STAKE_KEY)
-                    .append(u.getStakeAddr())
-                    .append("\">")
-                    .append(shortenStakeAddr(u.getStakeAddr()))
-                    .append("</a>\n")
-                    .append(EmojiParser.parseToUnicode(":envelope: "))
-                    .append(txInfoResult.getValue().size())
-                    .append(" new transaction(s)\n\n");
-
-            if (txInfoResult.getValue().isEmpty()) {
-                LOG.warn("TX Info empty. Probably db-sync did not complete adding this part. Let's try later");
-                continue;
-            }
-
-            for (TxInfo txInfo : txInfoResult.getValue()) {
-                // Understand if it's a reception or send by looking at the inputs
-                boolean isReceiveTx = txInfo.getInputs().stream().filter(tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())).count() == 0;
-                LOG.trace("TX {}\n{}", isReceiveTx ? "RECEIVED FUNDS" : "SENT FUNDS", txInfo);
-                Double fee = Long.valueOf(txInfo.getFee()) / LOVELACE;
-                List<TxIO> accountOutputs = txInfo.getOutputs().stream().filter(
-                                tx -> (isReceiveTx ?
-                                        u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()) :
-                                        !u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())))
-                        .collect(Collectors.toList());
-                List<TxIO> accountInputs = txInfo.getInputs().stream().filter(
-                                tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()))
-                        .collect(Collectors.toList());
-                List<rest.koios.client.backend.api.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
-
-                LOG.debug("All assets:\n{}", allAssets);
-                Double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-
-                // If it's a SET funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
-                if (!isReceiveTx && !accountInputs.isEmpty()) {
-                    accountOutputs = txInfo.getOutputs().stream().filter(
+                for (TxInfo txInfo : txInfoResult.getValue()) {
+                    // Understand if it's a reception or send by looking at the inputs
+                    boolean isReceiveTx = txInfo.getInputs().stream().filter(tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())).count() == 0;
+                    LOG.trace("TX {}\n{}", isReceiveTx ? "RECEIVED FUNDS" : "SENT FUNDS", txInfo);
+                    Double fee = Long.valueOf(txInfo.getFee()) / LOVELACE;
+                    List<TxIO> accountOutputs = txInfo.getOutputs().stream().filter(
+                                    tx -> (isReceiveTx ?
+                                            u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()) :
+                                            !u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())))
+                            .collect(Collectors.toList());
+                    List<TxIO> accountInputs = txInfo.getInputs().stream().filter(
                                     tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()))
                             .collect(Collectors.toList());
-                    Double inputFunds = accountInputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-                    Double outputFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-                    receivedOrSentFunds = inputFunds - outputFunds;
-                }
-                if (!isReceiveTx)
-                    receivedOrSentFunds *= -1.0d;
+                    List<rest.koios.client.backend.api.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
 
-                Date txTime = new Date(txInfo.getTxTimestamp());
-                LOG.debug("fee={} ADA, {}={} ADA", fee, (isReceiveTx ? "received" : "sent"), receivedOrSentFunds);
-                String fundsTokenText = String.format("Funds %s ", allAssets.isEmpty() ? "" : " and Tokens");
+                    LOG.debug("All assets:\n{}", allAssets);
+                    Double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
 
-                messageBuilder.append(EmojiParser.parseToUnicode(isReceiveTx ? ":arrow_heading_down: " : ":arrow_heading_up: "))
-                        .append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
-                        .append(isReceiveTx ? "Received " : "Sent ").append(fundsTokenText).append("</a>")
-                        .append(" <i>")
-                        .append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(txInfo.getTxTimestamp(), 0, ZoneOffset.UTC)))
-                        .append("</i>")
-                        .append("\n")
-                        .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
-                        .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
-                        .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
-                        .append(isReceiveTx ? "Input " : "Output ").append(String.format("%,.2f", receivedOrSentFunds))
-                        .append(ADA_SYMBOL);
-
-                // Any assets?
-                if (!allAssets.isEmpty()) {
-                    for (rest.koios.client.backend.api.common.Asset asset : allAssets) {
-                        Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(asset.getPolicyId(), asset.getAssetName());
-                        Object assetQuantity = Long.valueOf(asset.getQuantity());
-                        if (cachedAsset.isEmpty()) {
-                            // We need to get the decimals for the asset. Note, this will be cached
-                            Result<AssetInformation> assetInfoResult = this.koiosFacade.getKoiosService().getAssetService().getAssetInformation(asset.getPolicyId(), asset.getAssetName());
-                            if (!assetInfoResult.isSuccessful()) {
-                                LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
-                                        asset.getPolicyId(), assetInfoResult.getResponse(), assetInfoResult.getCode());
-                            }
-
-                            if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
-                                assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
-                            }
-
-                            // Cache it for the future
-                            this.assetsDao.addNewAsset(asset.getPolicyId(), asset.getAssetName(),
-                                    assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
-                                            assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
-                        } else {
-                            // We have it cached
-                            if (cachedAsset.get().getDecimals() != -1)
-                                assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, cachedAsset.get().getDecimals()));
-                        }
-
-                        messageBuilder.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
-                                .append(hexToAscii(asset.getAssetName()))
-                                .append(" ")
-                                .append(assetQuantity instanceof Double ?
-                                        String.format("%,.2f", assetQuantity) :
-                                        String.format("%,d", assetQuantity));
+                    // If it's a SET funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
+                    if (!isReceiveTx && !accountInputs.isEmpty()) {
+                        accountOutputs = txInfo.getOutputs().stream().filter(
+                                        tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()))
+                                .collect(Collectors.toList());
+                        Double inputFunds = accountInputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
+                        Double outputFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
+                        receivedOrSentFunds = inputFunds - outputFunds;
                     }
+                    if (!isReceiveTx)
+                        receivedOrSentFunds *= -1.0d;
+
+                    Date txTime = new Date(txInfo.getTxTimestamp());
+                    LOG.debug("fee={} ADA, {}={} ADA", fee, (isReceiveTx ? "received" : "sent"), receivedOrSentFunds);
+                    String fundsTokenText = String.format("Funds %s ", allAssets.isEmpty() ? "" : " and Tokens");
+
+                    messageBuilder.append(EmojiParser.parseToUnicode(isReceiveTx ? ":arrow_heading_down: " : ":arrow_heading_up: "))
+                            .append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
+                            .append(isReceiveTx ? "Received " : "Sent ").append(fundsTokenText).append("</a>")
+                            .append(" <i>")
+                            .append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(txInfo.getTxTimestamp(), 0, ZoneOffset.UTC)))
+                            .append("</i>")
+                            .append("\n")
+                            .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
+                            .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
+                            .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
+                            .append(isReceiveTx ? "Input " : "Output ").append(String.format("%,.2f", receivedOrSentFunds))
+                            .append(ADA_SYMBOL);
+
+                    // Any assets?
+                    if (!allAssets.isEmpty()) {
+                        for (rest.koios.client.backend.api.common.Asset asset : allAssets) {
+                            Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(asset.getPolicyId(), asset.getAssetName());
+                            Object assetQuantity = Long.valueOf(asset.getQuantity());
+                            if (cachedAsset.isEmpty()) {
+                                // We need to get the decimals for the asset. Note, this will be cached
+                                Result<AssetInformation> assetInfoResult = this.koiosFacade.getKoiosService().getAssetService().getAssetInformation(asset.getPolicyId(), asset.getAssetName());
+                                if (!assetInfoResult.isSuccessful()) {
+                                    LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
+                                            asset.getPolicyId(), assetInfoResult.getResponse(), assetInfoResult.getCode());
+                                }
+
+                                if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
+                                    assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
+                                }
+
+                                // Cache it for the future
+                                this.assetsDao.addNewAsset(asset.getPolicyId(), asset.getAssetName(),
+                                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
+                                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+                            } else {
+                                // We have it cached
+                                if (cachedAsset.get().getDecimals() != -1)
+                                    assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, cachedAsset.get().getDecimals()));
+                            }
+
+                            messageBuilder.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
+                                    .append(hexToAscii(asset.getAssetName()))
+                                    .append(" ")
+                                    .append(assetQuantity instanceof Double ?
+                                            String.format("%,.2f", assetQuantity) :
+                                            String.format("%,d", assetQuantity));
+                        }
+                    }
+
+                    messageBuilder.append("\n\n"); // Some padding between TXs
                 }
 
-                messageBuilder.append("\n\n"); // Some padding between TXs
+                this.telegramFacade.sendMessageTo(u.getChatId(), messageBuilder.toString());
+
+                // Update the user with the new block height plus 1 to avoid picking the last TX
+                this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
+            } catch (Throwable t) {
+                LOG.error("Cannot process account {} due to exception {}", u.getStakeAddr(), t, t);
             }
-
-            this.telegramFacade.sendMessageTo(u.getChatId(), messageBuilder.toString());
-
-            // Update the user with the new block height plus 1 to avoid picking the last TX
-            this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
         }
     }
 
