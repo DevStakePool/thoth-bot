@@ -121,7 +121,7 @@ public class TransactionCheckerTask implements Runnable {
                     offset += DEFAULT_PAGINATION_SIZE;
 
                     accountAddrResult = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
-                            usersBatch.stream().map(u -> u.getStakeAddr()).collect(Collectors.toList()), null, options);
+                            usersBatch.stream().map(u -> u.getStakeAddr()).collect(Collectors.toList()), options);
                     if (!accountAddrResult.isSuccessful()) {
                         LOG.warn("The call to get the account addresses for stake addresses {} was not successful due to {} ({})",
                                 usersBatch.stream().map(u -> u.getStakeAddr()).collect(Collectors.toList()),

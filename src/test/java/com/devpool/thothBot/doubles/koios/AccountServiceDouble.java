@@ -48,12 +48,12 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
-    public Result<List<AccountUpdates>> getAccountUpdates(List<String> addressList, Integer epochNo, Options options) throws ApiException {
+    public Result<List<AccountUpdates>> getAccountUpdates(List<String> addressList, Options options) throws ApiException {
         return null;
     }
 
     @Override
-    public Result<List<AccountAddress>> getAccountAddresses(List<String> addressList, Integer epochNo, Options options) throws ApiException {
+    public Result<List<AccountAddress>> getAccountAddresses(List<String> addressList, Options options) throws ApiException {
         if (options != null) {
             // Check the offset
             Optional<Option> optionOffset = options.getOptions().stream().filter(o -> o.getOptionType().equals(OptionType.OFFSET)).findFirst();

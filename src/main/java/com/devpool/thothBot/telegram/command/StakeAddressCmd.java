@@ -106,7 +106,7 @@ public class StakeAddressCmd extends AbstractCommand {
 
         try {
             Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
-                    Arrays.asList(stakeAddr), null, null);
+                    Arrays.asList(stakeAddr),null);
 
             if (!addresses.isSuccessful()) {
                 LOG.warn("Unsuccessful KOIOS call during the subscribe of the stake address {}. {} {}",
