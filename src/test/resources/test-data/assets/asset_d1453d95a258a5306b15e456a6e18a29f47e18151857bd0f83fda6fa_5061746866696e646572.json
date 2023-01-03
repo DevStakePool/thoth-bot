@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "d1453d95a258a5306b15e456a6e18a29f47e18151857bd0f83fda6fa",
+    "asset_name": "5061746866696e646572",
+    "asset_name_ascii": "Pathfinder",
+    "fingerprint": "asset160p2c8fzkjmr74lcjx8c39nfgcdwqgqra0q509",
+    "minting_tx_hash": "f9a6dc5bf646d9e91922051028d3d0f77eea3981ef4f1975b604812de724d0ae",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1624050047,
+    "minting_tx_metadata": {
+      "721": {
+        "d1453d95a258a5306b15e456a6e18a29f47e18151857bd0f83fda6fa": {
+          "Pathfinder": {
+            "name": "Pathfinder NFT by APEX Pool",
+            "image": "ipfs://QmWBw7XkEPV62PqzjEQbBKwNs4QReVDtwz95fhSRumDq5b",
+            "version": "1.1",
+            "mediaType": "image/png",
+            "sha256sum": "a88461ca7d74685ae54c03b545cb5b97badd6fbb988a29f0bbf4749ccf2a460d",
+            "attributes": {
+              "publisher": [
+                "https://twitter.com/cardanoapexpool",
+                "https://apexpool.info"
+              ],
+              "collection": "Apex Legends"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

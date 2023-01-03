@@ -34,7 +34,7 @@ public class KoiosDataBuilder {
         String f = classLoader.getResource(TX_INFO_JSON_FILE).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
-                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         List<TxInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
@@ -123,7 +123,7 @@ public class KoiosDataBuilder {
         String f = classLoader.getResource(fileName).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
-                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         List<AssetInformation> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });

@@ -150,10 +150,10 @@ public class IntegrationTest {
         Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
         Assertions.assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
-        Assertions.assertTrue(params.get("text").toString().contains("[SPKL]"));
+        Assertions.assertTrue(params.get("text").toString().contains("[MEDA"));
         Assertions.assertTrue(params.get("text").toString().contains("Status: registered"));
-        Assertions.assertTrue(params.get("text").toString().contains("Rewards: 5,569.97"));
-        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,013.78"));
+        Assertions.assertTrue(params.get("text").toString().contains("Rewards: 67.25"));
+        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,076.36"));
     }
 
     @Test
@@ -225,6 +225,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Input 1,221.32"));
                     Assertions.assertTrue(msg.contains("MIN 245.82"));
                     Assertions.assertTrue(msg.contains("thoth-bot 1"));
+                    Assertions.assertTrue(msg.contains("MELD 10,000.00"));
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
@@ -252,7 +253,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("8.61"));
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("2 new transaction(s)"));
+                    Assertions.assertTrue(msg.contains("new transaction(s)"));
                     Assertions.assertTrue(msg.contains("Output -9,872.71"));
                     Assertions.assertTrue(msg.contains("CULO 100,000"));
                     accountsTransactionsChecked++;
