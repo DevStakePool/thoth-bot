@@ -271,6 +271,11 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("4 new transaction(s)"));
                     Assertions.assertTrue(msg.contains("hvMIN 245,820,436.00"));
                     Assertions.assertTrue(msg.contains("1612572528 1"));
+
+                    // Internal TX (issue #3)
+                    Assertions.assertTrue(msg.contains("3d7d75beafc89efdc06dfadd0823b357bdb0b7c4ed22cea31eb77105d7df1738"));
+                    Assertions.assertTrue(msg.contains("Output -0.18"));
+                    
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
