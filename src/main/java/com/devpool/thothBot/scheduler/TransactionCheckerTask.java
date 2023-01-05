@@ -34,15 +34,8 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 @Component
-public class TransactionCheckerTask implements Runnable {
+public class TransactionCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTask.class);
-    private static final long DEFAULT_PAGINATION_SIZE = 1000;
-    private static final double LOVELACE = 1000000.0;
-    private static final String ADA_SYMBOL = " " + '\u20B3';
-    private static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
-    public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
-    private static final int USERS_BATCH_SIZE = 50;
-    private static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
 
     private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
     private Instant lastSampleInstant;
@@ -51,18 +44,6 @@ public class TransactionCheckerTask implements Runnable {
 
     @Autowired
     private MetricsHelper metricsHelper;
-
-    @Autowired
-    private UserDao userDao;
-
-    @Autowired
-    private AssetsDao assetsDao;
-
-    @Autowired
-    private KoiosFacade koiosFacade;
-
-    @Autowired
-    private TelegramFacade telegramFacade;
 
     @PostConstruct
     public void post() {
@@ -323,21 +304,6 @@ public class TransactionCheckerTask implements Runnable {
                 LOG.error("Cannot process account {} due to exception {}", u.getStakeAddr(), t, t);
             }
         }
-    }
-
-    public static String shortenStakeAddr(String stakeAddr) {
-        return "stake1u..." + stakeAddr.substring(stakeAddr.length() - 8);
-    }
-
-    private static String hexToAscii(String hexStr) {
-        StringBuilder output = new StringBuilder("");
-
-        for (int i = 0; i < hexStr.length(); i += 2) {
-            String str = hexStr.substring(i, i + 2);
-            output.append((char) Integer.parseInt(str, 16));
-        }
-
-        return output.toString();
     }
 
     public <T> Stream<List<T>> batches(List<T> source, int length) {

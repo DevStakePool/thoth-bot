@@ -27,26 +27,8 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 @Component
-public class StakingRewardsCheckerTask implements Runnable {
+public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(StakingRewardsCheckerTask.class);
-    private static final long DEFAULT_PAGINATION_SIZE = 1000;
-    public static final double LOVELACE = 1000000.0;
-    public static final String ADA_SYMBOL = " " + '\u20B3';
-    public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
-    public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
-    private static final int USERS_BATCH_SIZE = 50;
-
-    @Autowired
-    private UserDao userDao;
-
-    @Autowired
-    private AssetsDao assetsDao;
-
-    @Autowired
-    private KoiosFacade koiosFacade;
-
-    @Autowired
-    private TelegramFacade telegramFacade;
 
     @Override
     public void run() {
@@ -162,30 +144,6 @@ public class StakingRewardsCheckerTask implements Runnable {
         if ("treasury".equals(type))
             return "Catalyst Voting";
         return type;
-    }
-
-    private String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
-        if (poolAddress == null) return null;
-
-        if (poolIds != null) {
-            Optional<PoolInfo> poolInfo = poolIds.stream().filter(pi -> pi.getPoolIdBech32().equals(poolAddress)).findFirst();
-            if (poolInfo.isPresent() && poolInfo.get().getMetaJson() != null && poolInfo.get().getMetaJson().getTicker() != null) {
-                StringBuilder sb = new StringBuilder();
-                sb.append("[");
-                sb.append(poolInfo.get().getMetaJson().getTicker());
-                sb.append("]");
-                if (poolInfo.get().getMetaJson().getName() != null)
-                    sb.append(" ").append(poolInfo.get().getMetaJson().getName());
-
-                return sb.toString();
-            }
-        }
-
-        return "pool1..." + poolAddress.substring(poolAddress.length() - 8);
-    }
-
-    private String shortenStakeAddr(String stakeAddr) {
-        return "stake1u..." + stakeAddr.substring(stakeAddr.length() - 8);
     }
 
     public <T> Stream<List<T>> batches(List<T> source, int length) {

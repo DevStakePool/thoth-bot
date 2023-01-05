@@ -4,6 +4,7 @@ import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
 import com.devpool.thothBot.scheduler.TransactionCheckerTask;
 import com.devpool.thothBot.telegram.TelegramFacade;
@@ -100,7 +101,7 @@ public class AccountInfoCmd extends AbstractCommand {
                             .append(TransactionCheckerTask.CARDANO_SCAN_STAKE_KEY)
                             .append(accountInfo.getStakeAddress())
                             .append("\">")
-                            .append(shortenStakeAddr(accountInfo.getStakeAddress()))
+                            .append(AbstractCheckerTask.shortenStakeAddr(accountInfo.getStakeAddress()))
                             .append("</a>\n");
 
                     if (accountInfo.getDelegatedPool() != null) {
