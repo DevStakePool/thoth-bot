@@ -16,7 +16,6 @@ import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.model.Tip;
-import rest.koios.client.backend.factory.options.Options;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,7 +24,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @Component
-public class StakeAddressCmd extends AbstractCommand {
+public class StakeAddressCmd implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(StakeAddressCmd.class);
     public static final String CMD_PREFIX = "stake1";
 

@@ -1,13 +1,9 @@
 package com.devpool.thothBot.scheduler;
 
-import com.devpool.thothBot.dao.AssetsDao;
-import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
-import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.monitoring.MetricsHelper;
-import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +23,6 @@ import javax.annotation.PreDestroy;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -127,6 +122,10 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
     private void checkTransactionsForUsers(List<User> users) throws ApiException, MaxRegistrationsExceededException {
         LOG.debug("Checking transactions for batch of users {}", users.size());
+
+        // Get ADA Handles
+        Map<String, String> handles = getAdaHandleForAccount(users.stream().map(User::getStakeAddr).collect(Collectors.toList()).toArray(new String[0]));
+
         for (User u : users) {
             try {
                 if (u.getAccountAddresses() == null)
@@ -199,7 +198,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                         .append(CARDANO_SCAN_STAKE_KEY)
                         .append(u.getStakeAddr())
                         .append("\">")
-                        .append(shortenStakeAddr(u.getStakeAddr()))
+                        .append(handles.get(u.getStakeAddr()))
                         .append("</a>\n")
                         .append(EmojiParser.parseToUnicode(":envelope: "))
                         .append(txInfoResult.getValue().size())

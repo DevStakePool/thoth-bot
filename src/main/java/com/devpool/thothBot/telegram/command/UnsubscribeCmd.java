@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UnsubscribeCmd extends AbstractCommand {
+public class UnsubscribeCmd implements IBotCommand {
 
     public static final String CMD_PREFIX = "/unsubscribe";
 

@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
-public class HelpCmd extends AbstractCommand {
+public class HelpCmd implements IBotCommand {
 
     public static final String CMD_PREFIX = "/help";
     public static final String CMD_PREFIX_ALIAS = "/start";
@@ -39,7 +39,7 @@ public class HelpCmd extends AbstractCommand {
     private Resource helpTextResource;
 
     @Autowired
-    private List<AbstractCommand> commands;
+    private List<IBotCommand> commands;
 
     @Override
     public boolean canTrigger(String message) {
@@ -85,7 +85,7 @@ public class HelpCmd extends AbstractCommand {
                     .append(" - ")
                     .append(this.getDescription())
                     .append("\n");
-            for (AbstractCommand command : this.commands) {
+            for (IBotCommand command : this.commands) {
                 if (!command.showHelp()) continue;
 
                 commandsHelp

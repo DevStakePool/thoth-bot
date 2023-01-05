@@ -1,7 +1,7 @@
 package com.devpool.thothBot.telegram;
 
 import com.devpool.thothBot.dao.UserDao;
-import com.devpool.thothBot.telegram.command.AbstractCommand;
+import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.devpool.thothBot.telegram.command.HelpCmd;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
@@ -28,7 +28,7 @@ public class TelegramFacade {
     private UserDao userDao;
 
     @Autowired
-    private List<AbstractCommand> commands;
+    private List<IBotCommand> commands;
 
     private TelegramBot bot;
 
@@ -74,7 +74,7 @@ public class TelegramFacade {
             return;
         }
 
-        List<AbstractCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(update.message().text().trim())).collect(Collectors.toList());
+        List<IBotCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(update.message().text().trim())).collect(Collectors.toList());
         if (matchingCommands.isEmpty()) {
             LOG.debug("Unknown command {}", update.message().text());
             bot.execute(new SendMessage(update.message().chat().id(), "Unknown command. Try " + HelpCmd.CMD_PREFIX + " or " + HelpCmd.CMD_PREFIX_ALIAS));
@@ -85,7 +85,7 @@ public class TelegramFacade {
             LOG.warn("Message {} is matching more than ne command", update.message().text());
         }
 
-        AbstractCommand command = matchingCommands.get(0);
+        IBotCommand command = matchingCommands.get(0);
 
         command.execute(update, this.bot);
     }

@@ -1,14 +1,9 @@
 package com.devpool.thothBot.scheduler;
 
-import com.devpool.thothBot.dao.AssetsDao;
-import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
-import com.devpool.thothBot.koios.KoiosFacade;
-import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountReward;
@@ -85,6 +80,9 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                 return;
             }
 
+            // Get ADA Handles
+            Map<String, String> handles = getAdaHandleForAccount(accountsToProcess.keySet().toArray(new String[0]));
+
             Set<String> allPoolIds = rewardsRes.getValue().stream().flatMap(ar -> ar.getRewards().stream()).map(r -> r.getPoolId()).collect(Collectors.toSet());
             allPoolIds.remove(null); // The rest API can return nulls on pool IDs
             List<PoolInfo> poolInfoList = null;
@@ -106,7 +104,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                         .append(CARDANO_SCAN_STAKE_KEY)
                         .append(accountRewards.getStakeAddress())
                         .append("\">")
-                        .append(shortenStakeAddr(accountRewards.getStakeAddress()))
+                        .append(handles.get(accountRewards.getStakeAddress()))
                         .append("</a>\n")
                         .append((EmojiParser.parseToUnicode(":envelope: ")))
                         .append(accountRewards.getRewards().size())

@@ -1,13 +1,8 @@
 package com.devpool.thothBot.telegram.command;
 
-import com.devpool.thothBot.dao.UserDao;
-import com.devpool.thothBot.dao.data.User;
-import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
-import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
 import com.devpool.thothBot.scheduler.TransactionCheckerTask;
-import com.devpool.thothBot.telegram.TelegramFacade;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
@@ -15,39 +10,21 @@ import com.pengrad.telegrambot.request.SendMessage;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Component;
-import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
-import rest.koios.client.backend.api.network.model.Tip;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
-import rest.koios.client.backend.factory.options.Options;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
-import static com.devpool.thothBot.scheduler.StakingRewardsCheckerTask.CARDANO_SCAN_STAKE_POOL;
-import static com.devpool.thothBot.scheduler.TransactionCheckerTask.shortenStakeAddr;
-
 @Component
-public class AccountInfoCmd extends AbstractCommand {
+public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AccountInfoCmd.class);
     public static final String CMD_PREFIX = "/info";
-
-    @Autowired
-    private KoiosFacade koiosFacade;
-
-    @Autowired
-    private UserDao userDao;
-
 
     @Override
     public boolean canTrigger(String message) {
@@ -95,13 +72,16 @@ public class AccountInfoCmd extends AbstractCommand {
                 LOG.warn("Koios call failed when retrieving the account information for chat-id {}: {}", chatId, accountInfoRes.getResponse());
                 failure = true;
             } else {
+                // Get accounts ADA Handles
+                Map<String, String> handles = getAdaHandleForAccount(stakeAddresses.toArray(new String[0]));
+
                 StringBuilder messageBuilder = new StringBuilder();
                 for (AccountInfo accountInfo : accountInfoRes.getValue()) {
                     messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                             .append(TransactionCheckerTask.CARDANO_SCAN_STAKE_KEY)
                             .append(accountInfo.getStakeAddress())
                             .append("\">")
-                            .append(AbstractCheckerTask.shortenStakeAddr(accountInfo.getStakeAddress()))
+                            .append(handles.get(accountInfo.getStakeAddress()))
                             .append("</a>\n");
 
                     if (accountInfo.getDelegatedPool() != null) {

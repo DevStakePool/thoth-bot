@@ -52,7 +52,14 @@ curl -s -X POST "https://api.koios.rest/api/v0/pool_info" \
  -H "Content-Type: application/json" \
  -d '{"_pool_bech32_ids":["pool1rthy0xp2syng0cydp85wvz973szmq2ns8u5p4hdedkwlyhry27w","pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv","pool10q33p4hx4wqum6thmglw7z5l2vaay4w6m5cdq8fnurw7vjdppcf","pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt","pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct"]}' | jq > pool_information.json
 
+#Fetching account assests
+echo "Fetching account assets"
+curl -s -X POST "https://api.koios.rest/api/v0/account_assets" \
+ -H "Accept: application/json" \
+ -H "Content-Type: application/json" \
+ -d '{"_stake_addresses":["stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr","stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32","stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz","stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"]}' | jq > account_assets.json
 
+# Fetching data for TX info
 echo "Fetching data for transactions info"
 ALL_TX_HASHES=$(for i in `ls address_txs_*.json`; do cat $i | jq -r '"\""+.[].tx_hash + "\","'; done)
 ALL_TX_HASHES=$(echo ${ALL_TX_HASHES} | sed 's/.$//')
@@ -61,7 +68,7 @@ curl -s -X POST "https://api.koios.rest/api/v0/tx_info" \
  -H "Content-Type: application/json" \
  -d "{\"_tx_hashes\":[${ALL_TX_HASHES}]}" | jq > txs_info.json
 
-echo "Fetching all assets"
+echo "Fetching all assets in all TXs"
 for asset in `grep -A1 policy_id txs_info.json  | \
   awk -vFS=":" '{print $2}' | \
   awk -vFS="\n" -vRS="\n\n" '{gsub(" ", "", $0); gsub("\"", "", $0); gsub(",", "", $0); print "_asset_policy="$1 "&_asset_name=" $2}' \

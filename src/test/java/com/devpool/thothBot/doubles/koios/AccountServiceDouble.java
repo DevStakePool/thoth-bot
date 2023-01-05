@@ -1,5 +1,6 @@
 package com.devpool.thothBot.doubles.koios;
 
+import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import rest.koios.client.backend.api.account.AccountService;
 import rest.koios.client.backend.api.account.model.*;
 import rest.koios.client.backend.api.base.Result;
@@ -72,7 +73,18 @@ public class AccountServiceDouble implements AccountService {
 
     @Override
     public Result<List<AccountAssets>> getAccountAssets(List<String> addressList, Integer epochNo, Options options) throws ApiException {
-        return null;
+        try {
+            List<AccountAssets> data = KoiosDataBuilder.getAccountAssets();
+            // For testing purposes, we make sure the account "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy" does not have any handle
+            for (AccountAssets aa : data) {
+                if (aa.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy")) {
+                    aa.getAssetList().removeIf(a -> a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
+                }
+            }
+            return Result.<List<AccountAssets>>builder().code(200).response("").successful(true).value(data).build();
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override

@@ -153,6 +153,7 @@ public class IntegrationTest {
         Assertions.assertTrue(params.get("text").toString().contains("[MEDA"));
         Assertions.assertTrue(params.get("text").toString().contains("Status: registered"));
         Assertions.assertTrue(params.get("text").toString().contains("Rewards: 67.25"));
+        Assertions.assertTrue(params.get("text").toString().contains("$0x616461"));
         Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,076.36"));
     }
 
@@ -214,11 +215,13 @@ public class IntegrationTest {
         int accountsRewardsChecked = 0;
         for (String msg : this.messageArgCaptor.getAllValues()) {
             LOG.debug("Message\n{}", msg);
+            Assertions.assertFalse(msg.contains("null"));
             if (msg.contains("stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")) {
                 if (msg.contains("reward(s)")) {
                     Assertions.assertTrue(msg.contains("Catalyst Voting"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("146.34"));
+                    Assertions.assertTrue(msg.contains("$alessio.dev"));
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("Fee 0.17"));
@@ -226,6 +229,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("MIN 245.82"));
                     Assertions.assertTrue(msg.contains("thoth-bot 1"));
                     Assertions.assertTrue(msg.contains("MELD 10,000.00"));
+                    Assertions.assertTrue(msg.contains("$alessio.dev"));
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
@@ -235,6 +239,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Catalyst Voting"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("93.42"));
+                    Assertions.assertTrue(msg.contains("stake1u...yqhf9jhy")); // No handle
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("Fee 0.58"));
@@ -242,6 +247,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Output -1.35"));
                     Assertions.assertTrue(msg.contains("CashewF 373.00"));
                     Assertions.assertTrue(msg.contains("Output -4,200.18"));
+                    Assertions.assertTrue(msg.contains("stake1u...yqhf9jhy")); // No handle
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
@@ -251,11 +257,13 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Staking Rewards"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("8.61"));
+                    Assertions.assertTrue(msg.contains("$gioconda"));
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("new transaction(s)"));
                     Assertions.assertTrue(msg.contains("Output -9,872.71"));
                     Assertions.assertTrue(msg.contains("CULO 100,000"));
+                    Assertions.assertTrue(msg.contains("$gioconda"));
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
