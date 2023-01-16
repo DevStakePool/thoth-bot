@@ -8,7 +8,7 @@ DB_PASSWORD="postgres"
 DB_HOST="localhost"
 DB_PORT="5432"
 DB_NAME="thoth"
-THOTH_VERSION="1.1.0"
+THOTH_VERSION="1.2.0"
 LOGS_FOLDER="${DIR}/logs"
 
 echo "TOKEN: ${TELEGRAM_BOT_TOKEN_ENV}"
