@@ -4,6 +4,7 @@ import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.monitoring.MetricsHelper;
+import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,6 +32,9 @@ import java.util.stream.Stream;
 @Component
 public class TransactionCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTask.class);
+
+    @Autowired
+    private TelegramFacade telegramFacade;
 
     private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
     private Instant lastSampleInstant;

@@ -1,9 +1,11 @@
 package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountReward;
@@ -24,6 +26,9 @@ import java.util.stream.Stream;
 @Component
 public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(StakingRewardsCheckerTask.class);
+
+    @Autowired
+    private TelegramFacade telegramFacade;
 
     @Override
     public void run() {

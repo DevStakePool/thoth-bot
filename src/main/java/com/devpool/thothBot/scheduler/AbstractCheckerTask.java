@@ -3,14 +3,11 @@ package com.devpool.thothBot.scheduler;
 import com.devpool.thothBot.dao.AssetsDao;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.koios.KoiosFacade;
-import com.devpool.thothBot.telegram.TelegramFacade;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAssets;
 import rest.koios.client.backend.api.base.Result;
-import rest.koios.client.backend.api.common.Asset;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
 import java.time.format.DateTimeFormatter;
@@ -46,9 +43,6 @@ public abstract class AbstractCheckerTask {
 
     @Autowired
     protected KoiosFacade koiosFacade;
-
-    @Autowired
-    protected TelegramFacade telegramFacade;
 
     protected String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
         if (poolAddress == null) return null;
