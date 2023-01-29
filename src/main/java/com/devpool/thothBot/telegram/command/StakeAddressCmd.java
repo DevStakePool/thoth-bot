@@ -71,11 +71,14 @@ public class StakeAddressCmd implements IBotCommand {
     @Override
     public void execute(Update update, TelegramBot bot) {
         Long chatId = update.message().chat().id();
-        if (this.operationsQueue.get(StakeOperation.UNSUBSCRIBE).contains(chatId))
+
+        if (this.operationsQueue.get(StakeOperation.UNSUBSCRIBE).contains(chatId)) {
             unsubscribeNewStakeAddress(update, bot);
-        else if (this.operationsQueue.get(StakeOperation.SUBSCRIBE).contains(chatId))
+            this.operationsQueue.get(StakeOperation.UNSUBSCRIBE).remove(chatId);
+        } else if (this.operationsQueue.get(StakeOperation.SUBSCRIBE).contains(chatId)) {
             subscribeNewStakeAddress(update, bot);
-        else {
+            this.operationsQueue.get(StakeOperation.SUBSCRIBE).remove(chatId);
+        } else {
             LOG.debug("Called Stake Address command but the chat id was not found in both SUBSCRIBE and UNSUBSCRIBE queues");
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Please specify the operation first: %s or %s", SubscribeCmd.CMD_PREFIX, UnsubscribeCmd.CMD_PREFIX)));
@@ -91,7 +94,6 @@ public class StakeAddressCmd implements IBotCommand {
         if (outcome) {
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("You have successfully unsubscribed the stake address %s", stakeAddr)));
-            this.operationsQueue.get(StakeOperation.UNSUBSCRIBE).remove(update.message().chat().id());
         } else {
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Sorry %s! I could not find the stake address %s associated to this chat", name, stakeAddr)));
@@ -105,7 +107,7 @@ public class StakeAddressCmd implements IBotCommand {
 
         try {
             Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
-                    Arrays.asList(stakeAddr),null);
+                    Arrays.asList(stakeAddr), null);
 
             if (!addresses.isSuccessful()) {
                 LOG.warn("Unsuccessful KOIOS call during the subscribe of the stake address {}. {} {}",
@@ -139,7 +141,6 @@ public class StakeAddressCmd implements IBotCommand {
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Thank you %s! From now on you will receive updates every time a transaction appears or when you receive funds", name)));
 
-            this.operationsQueue.get(StakeOperation.SUBSCRIBE).remove(update.message().chat().id());
         } catch (ApiException e) {
             LOG.warn("Error in command stake address: " + e);
             bot.execute(new SendMessage(update.message().chat().id(),
@@ -155,6 +156,7 @@ public class StakeAddressCmd implements IBotCommand {
             LOG.info("Duplicated key when registering a new wallet {}", e.toString());
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("It looks like the stake address %s has been already registered in this chat.", stakeAddr)));
+            return;
         }
     }
 
