@@ -33,6 +33,22 @@ import java.util.stream.Stream;
 public class TransactionCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTask.class);
 
+    public enum TxType {
+        TX_RECEIVED("Received"),
+        TX_SENT("Sent"),
+        TX_INTERNAL("Internal");
+
+        private String humanReadableText;
+
+        public String getHumanReadableText() {
+            return this.humanReadableText;
+        }
+
+        TxType(String humanReadableText) {
+            this.humanReadableText = humanReadableText;
+        }
+    }
+
     @Autowired
     private TelegramFacade telegramFacade;
 
@@ -215,24 +231,53 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                 for (TxInfo txInfo : txInfoResult.getValue()) {
                     // Understand if it's a reception or send by looking at the inputs
-                    boolean isReceiveTx = txInfo.getInputs().stream().filter(tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())).count() == 0;
-                    LOG.trace("TX {}\n{}", isReceiveTx ? "RECEIVED FUNDS" : "SENT FUNDS", txInfo);
+                    // Check if it's an internal TX where all inputs and outputs belong to the user account
+                    TxType txType;
+                    boolean isInternalTx = u.getAccountAddresses().containsAll(txInfo.getInputs().stream().map(tx -> tx.getPaymentAddr().getBech32()).collect(Collectors.toList())) &&
+                            u.getAccountAddresses().containsAll(txInfo.getOutputs().stream().map(tx -> tx.getPaymentAddr().getBech32()).collect(Collectors.toList()));
+                    if (isInternalTx)
+                        txType = TxType.TX_INTERNAL;
+                    else if (txInfo.getInputs().stream().filter(tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())).count() == 0)
+                        txType = TxType.TX_RECEIVED;
+                    else
+                        txType = TxType.TX_SENT;
+
+                    LOG.trace("Type {} \n {}", txType, txInfo);
                     Double fee = Long.valueOf(txInfo.getFee()) / LOVELACE;
-                    List<TxIO> accountOutputs = txInfo.getOutputs().stream().filter(
-                                    tx -> (isReceiveTx ?
-                                            u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()) :
-                                            !u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())))
+
+                    List<TxIO> accountOutputs = null;
+                    List<TxIO> accountInputs = txInfo.getInputs().stream()
+                            .filter(tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()))
                             .collect(Collectors.toList());
-                    List<TxIO> accountInputs = txInfo.getInputs().stream().filter(
-                                    tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()))
-                            .collect(Collectors.toList());
-                    List<rest.koios.client.backend.api.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
+
+                    switch (txType) {
+                        case TX_INTERNAL: {
+                            accountOutputs = Collections.emptyList();
+                            accountInputs = Collections.emptyList();
+                            break;
+                        }
+                        case TX_RECEIVED: {
+                            accountOutputs = txInfo.getOutputs().stream()
+                                    .filter(tx -> (u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())))
+                                    .collect(Collectors.toList());
+                            break;
+                        }
+                        case TX_SENT: {
+                            accountOutputs = txInfo.getOutputs().stream()
+                                    .filter(tx -> (!u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32())))
+                                    .collect(Collectors.toList());
+                            break;
+                        }
+                    }
+
+                    List<rest.koios.client.backend.api.common.Asset> allAssets = accountOutputs.stream()
+                            .flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
 
                     LOG.debug("All assets:\n{}", allAssets);
                     Double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
 
-                    // If it's a SET funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
-                    if (!isReceiveTx && !accountInputs.isEmpty()) {
+                    // If it's a SENT funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
+                    if (txType == TxType.TX_SENT && !accountInputs.isEmpty()) {
                         accountOutputs = txInfo.getOutputs().stream().filter(
                                         tx -> u.getAccountAddresses().contains(tx.getPaymentAddr().getBech32()))
                                 .collect(Collectors.toList());
@@ -240,25 +285,39 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                         Double outputFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
                         receivedOrSentFunds = inputFunds - outputFunds;
                     }
-                    if (!isReceiveTx)
+                    if (txType == TxType.TX_SENT)
                         receivedOrSentFunds *= -1.0d;
 
-                    Date txTime = new Date(txInfo.getTxTimestamp());
-                    LOG.debug("fee={} ADA, {}={} ADA", fee, (isReceiveTx ? "received" : "sent"), receivedOrSentFunds);
-                    String fundsTokenText = String.format("Funds %s ", allAssets.isEmpty() ? "" : " and Tokens");
+                    LOG.debug("fee={} ADA, {}={} ADA", fee, txType, receivedOrSentFunds);
+                    String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
+                    switch (txType) {
+                        case TX_RECEIVED:
+                            messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_down: "));
+                            break;
+                        case TX_SENT:
+                            messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_up: "));
+                            break;
+                        case TX_INTERNAL:
+                            messageBuilder.append(EmojiParser.parseToUnicode(":repeat: "));
+                            fundsTokenText = String.format("Transfer %s", allAssets.isEmpty() ? "" : "and Tokens");
 
-                    messageBuilder.append(EmojiParser.parseToUnicode(isReceiveTx ? ":arrow_heading_down: " : ":arrow_heading_up: "))
-                            .append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
-                            .append(isReceiveTx ? "Received " : "Sent ").append(fundsTokenText).append("</a>")
+                            break;
+                    }
+                    messageBuilder.append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
+                            .append(txType.getHumanReadableText()).append(" ").append(fundsTokenText).append("</a>")
                             .append(" <i>")
                             .append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(txInfo.getTxTimestamp(), 0, ZoneOffset.UTC)))
                             .append("</i>")
                             .append("\n")
                             .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
-                            .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL)
-                            .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
-                            .append(isReceiveTx ? "Input " : "Output ").append(String.format("%,.2f", receivedOrSentFunds))
-                            .append(ADA_SYMBOL);
+                            .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL);
+
+                    if (txType != TxType.TX_INTERNAL) {
+                        messageBuilder
+                                .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
+                                .append(txType == TxType.TX_RECEIVED ? "Input " : "Output ").append(String.format("%,.2f", receivedOrSentFunds))
+                                .append(ADA_SYMBOL);
+                    }
 
                     // Any assets?
                     if (!allAssets.isEmpty()) {

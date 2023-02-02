@@ -282,8 +282,9 @@ public class IntegrationTest {
 
                     // Internal TX (issue #3)
                     Assertions.assertTrue(msg.contains("3d7d75beafc89efdc06dfadd0823b357bdb0b7c4ed22cea31eb77105d7df1738"));
-                    Assertions.assertTrue(msg.contains("Output -0.18"));
-                    
+                    Assertions.assertTrue(msg.contains("Internal Transfer"));
+                    Assertions.assertTrue(msg.contains("Fee 0.18"));
+
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
