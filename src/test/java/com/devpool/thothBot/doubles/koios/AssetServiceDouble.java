@@ -28,7 +28,7 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
-    public Result<List<PolicyAsset>> getAssetPolicyInformation(String assetPolicy) throws ApiException {
+    public Result<List<PolicyAsset>> getAssetPolicyInformation(String s, Options options) throws ApiException {
         return null;
     }
 
