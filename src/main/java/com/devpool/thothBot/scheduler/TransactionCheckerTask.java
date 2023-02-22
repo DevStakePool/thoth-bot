@@ -15,6 +15,8 @@ import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.common.TxHash;
+import rest.koios.client.backend.api.pool.model.PoolInfo;
+import rest.koios.client.backend.api.transactions.model.TxCertificate;
 import rest.koios.client.backend.api.transactions.model.TxIO;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 import rest.koios.client.backend.factory.options.*;
@@ -32,6 +34,7 @@ import java.util.stream.Stream;
 @Component
 public class TransactionCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTask.class);
+    private static final String DELEGATION_CERTIFICATE = "delegation";
 
     public enum TxType {
         TX_RECEIVED("Received"),
@@ -288,6 +291,33 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     if (txType == TxType.TX_SENT)
                         receivedOrSentFunds *= -1.0d;
 
+                    // Check for certificates in case it's a delegation TX
+                    String delegateToPoolName = null;
+                    String delegateToPoolId = null;
+                    if (txType == TxType.TX_INTERNAL && txInfo.getCertificates() != null && !txInfo.getCertificates().isEmpty()) {
+                        LOG.debug("The TX {} has {} certificates", txInfo.getTxHash(), txInfo.getCertificates().size());
+                        Optional<TxCertificate> delegationCertOpt = txInfo.getCertificates().stream().filter(c -> c.getType().equals(DELEGATION_CERTIFICATE)).findFirst();
+                        if (delegationCertOpt.isEmpty())
+                            LOG.debug("None of the TX {} certificates are of type {}", txInfo.getTxHash(), DELEGATION_CERTIFICATE);
+                        else {
+                            delegateToPoolId = delegationCertOpt.get().getInfo().getPoolIdBech32();
+                            LOG.debug("New delegation for TX {} on pool-id {}", txInfo.getTxHash(), delegateToPoolId);
+                            List<PoolInfo> poolInfoList = null;
+
+                            try {
+                                Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(Arrays.asList(delegateToPoolId), options);
+                                if (poolInfoRes.isSuccessful())
+                                    poolInfoList = poolInfoRes.getValue();
+                                else
+                                    LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
+                            } catch (ApiException e) {
+                                LOG.warn("Cannot retrieve pool information: {}", e);
+                            }
+
+                            delegateToPoolName = getPoolName(poolInfoList, delegateToPoolId);
+                        }
+                    }
+
                     LOG.debug("fee={} ADA, {}={} ADA", fee, txType, receivedOrSentFunds);
                     String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
                     switch (txType) {
@@ -317,6 +347,14 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                                 .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
                                 .append(txType == TxType.TX_RECEIVED ? "Input " : "Output ").append(String.format("%,.2f", receivedOrSentFunds))
                                 .append(ADA_SYMBOL);
+                    }
+
+                    // delegation?
+                    if (delegateToPoolName != null && delegateToPoolId != null) {
+                        messageBuilder.append(EmojiParser.parseToUnicode("\n:classical_building:"))
+                                .append(" Delegated to ").append("<a href=\"").
+                                append(CARDANO_SCAN_STAKE_POOL).append(delegateToPoolId).append("\">")
+                                .append(delegateToPoolName).append("</a>");
                     }
 
                     // Any assets?

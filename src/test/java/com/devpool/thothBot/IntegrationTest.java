@@ -285,6 +285,10 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Internal Transfer"));
                     Assertions.assertTrue(msg.contains("Fee 0.18"));
 
+                    // Internal TX with delegation (issue #5)
+                    Assertions.assertTrue(msg.contains("75f166b393900406dd1ecb28713c9b1e1f0a0a1b1efcbb85914fbc023278e35a"));
+                    Assertions.assertTrue(msg.contains("Delegated to"));
+                    Assertions.assertTrue(msg.contains("pool1...kqq6yjvr"));
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
