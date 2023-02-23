@@ -1,0 +1,33 @@
+[
+  {
+    "policy_id": "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc",
+    "asset_name": "4d495241",
+    "asset_name_ascii": "MIRA",
+    "fingerprint": "asset1zcd6nnrd7ctjy9ss80zmkh4npvfpqqv8gtcz3g",
+    "minting_tx_hash": "d9335ebd091c1a6bf8989c6f91a47295a6bca35a6cbe2df3178d9ad019fac3e6",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1663684703,
+    "minting_tx_metadata": {
+      "721": {
+        "160a880d9fc45380737cb7e57ff859763230aab28b3ef6a84007bfcc": {
+          "MIRA": {
+            "url": "https://chainsofwar.io/",
+            "name": "MIRA - Chains of War",
+            "files": [
+              {
+                "src": "ipfs://QmXKCxrBEqXn9qiSeAutZM8BLTjJADcU3wpWSkY98xcSpE",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXKCxrBEqXn9qiSeAutZM8BLTjJADcU3wpWSkY98xcSpE",
+            "ticker": "MIRA",
+            "description": "The Official Chains of War Token"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]
