@@ -50,39 +50,45 @@ public class TelegramFacade {
     }
 
     public void processUpdate(Update update, TelegramBot bot) {
-        if(update == null) {
+        if (update == null) {
             LOG.warn("Update is null");
             return;
         }
 
-        if (update.message() == null) {
-            LOG.warn("Update.message is null");
+        if (update.message() == null && update.callbackQuery() == null) {
             return;
         }
 
-        LOG.debug("Received message {} from {}",
-                update.message().text(),
-                update.message().from());
-
-        if (update.message().from().isBot()) {
-            LOG.debug("It's just a bot");
+        String payload;
+        String from;
+        Long id;
+        if (update.message() != null) {
+            payload = update.message().text().trim();
+            from = update.message().from().username();
+            id = update.message().chat().id();
+        } else if (update.callbackQuery() != null) {
+            payload = update.callbackQuery().data();
+            from = update.callbackQuery().from().username();
+            id = update.callbackQuery().message().chat().id();
+        } else {
+            LOG.warn("Update.message and callbackQuery are null");
             return;
         }
 
-        if (update.message().text() == null) {
-            LOG.debug("Not a text message");
-            return;
-        }
+        LOG.debug("Received message {} from {} on chat {}",
+                payload, from, id);
 
-        List<IBotCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(update.message().text().trim())).collect(Collectors.toList());
+
+        List<IBotCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(payload)).collect(Collectors.toList());
         if (matchingCommands.isEmpty()) {
-            LOG.debug("Unknown command {}", update.message().text());
-            bot.execute(new SendMessage(update.message().chat().id(), "Unknown command. Try " + HelpCmd.CMD_PREFIX + " or " + HelpCmd.CMD_PREFIX_ALIAS));
+            LOG.debug("Unknown command {}", payload);
+            bot.execute(new SendMessage(id,
+                    "Unknown command. Try " + HelpCmd.CMD_PREFIX + " or " + HelpCmd.CMD_PREFIX_ALIAS));
             return;
         }
 
         if (matchingCommands.size() > 1) {
-            LOG.warn("Message {} is matching more than ne command", update.message().text());
+            LOG.warn("Message {} is matching more than ne command", payload);
         }
 
         IBotCommand command = matchingCommands.get(0);
@@ -103,7 +109,7 @@ public class TelegramFacade {
         SendResponse outcome = bot.execute(sm);
         if (outcome.isOk())
             LOG.debug("Sent message to {} with result isOk={} errorCode={} description={} ",
-                chatId, outcome.isOk(), outcome.errorCode(), outcome.description());
+                    chatId, outcome.isOk(), outcome.errorCode(), outcome.description());
         else
             LOG.error("Can't send message due to code={} description={} message={}", outcome.errorCode(), outcome.description(), message);
     }

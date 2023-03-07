@@ -2,6 +2,7 @@ package com.devpool.thothBot.dao;
 
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
+import com.devpool.thothBot.exceptions.UserNotFoundException;
 import org.apache.commons.collections4.map.HashedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,9 @@ import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Repository
@@ -45,7 +48,7 @@ public class UserDao {
             User u = users.get(userId);
             if (u == null) {
                 u = new User();
-                u.setId(rs.getLong("id"));
+                u.setId(userId);
                 u.setChatId(rs.getLong("chat_id"));
                 u.setStakeAddr(rs.getString("stake_addr"));
                 u.setLastBlockHeight(rs.getInt("last_block_height"));
@@ -131,5 +134,25 @@ public class UserDao {
             LOG.debug("Successfully unsubscribed the stake address {} with chat-id {}", stakeAddr, chatId);
 
         return removedRows == 1;
+    }
+
+    public User getUser(long id) throws UserNotFoundException {
+        SqlRowSet rs = this.namedParameterJdbcTemplate.queryForRowSet(
+                "select id, chat_id, stake_addr, last_block_height, last_epoch_number from users where id = :id",
+                Map.of("id", id));
+
+        if (!rs.next()) {
+            LOG.warn("Cannot find the user with ID {}", id);
+            throw new UserNotFoundException("Cannot find the user with ID " + id);
+        }
+
+        User u = new User();
+        u.setId(rs.getLong("id"));
+        u.setChatId(rs.getLong("chat_id"));
+        u.setStakeAddr(rs.getString("stake_addr"));
+        u.setLastBlockHeight(rs.getInt("last_block_height"));
+        u.setLastEpochNumber(rs.getInt("last_epoch_number"));
+
+        return u;
     }
 }
