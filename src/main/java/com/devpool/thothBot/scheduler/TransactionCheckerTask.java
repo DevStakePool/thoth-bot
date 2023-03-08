@@ -3,6 +3,7 @@ package com.devpool.thothBot.scheduler;
 import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
+import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
@@ -54,6 +55,9 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
     @Autowired
     private TelegramFacade telegramFacade;
+
+    @Autowired
+    private AssetFacade assetFacade;
 
     private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
     private Instant lastSampleInstant;
@@ -360,36 +364,13 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     // Any assets?
                     if (!allAssets.isEmpty()) {
                         for (rest.koios.client.backend.api.common.Asset asset : allAssets) {
-                            Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(asset.getPolicyId(), asset.getAssetName());
-                            Object assetQuantity = Long.valueOf(asset.getQuantity());
-                            if (cachedAsset.isEmpty()) {
-                                // We need to get the decimals for the asset. Note, this will be cached
-                                Result<AssetInformation> assetInfoResult = this.koiosFacade.getKoiosService().getAssetService().getAssetInformation(asset.getPolicyId(), asset.getAssetName());
-                                if (!assetInfoResult.isSuccessful()) {
-                                    LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
-                                            asset.getPolicyId(), assetInfoResult.getResponse(), assetInfoResult.getCode());
-                                }
-
-                                if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
-                                    assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
-                                }
-
-                                // Cache it for the future
-                                this.assetsDao.addNewAsset(asset.getPolicyId(), asset.getAssetName(),
-                                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
-                                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
-                            } else {
-                                // We have it cached
-                                if (cachedAsset.get().getDecimals() != -1)
-                                    assetQuantity = Long.valueOf(asset.getQuantity()) / (1.0 * Math.pow(10, cachedAsset.get().getDecimals()));
-                            }
+                            Object assetQuantity = this.assetFacade.getAssetQuantity(
+                                    asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
 
                             messageBuilder.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
                                     .append(hexToAscii(asset.getAssetName()))
                                     .append(" ")
-                                    .append(assetQuantity instanceof Double ?
-                                            String.format("%,.2f", assetQuantity) :
-                                            String.format("%,d", assetQuantity));
+                                    .append(this.assetFacade.formatAssetQuantity(assetQuantity));
                         }
                     }
 
