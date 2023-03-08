@@ -39,9 +39,6 @@ public abstract class AbstractCheckerTask {
     protected UserDao userDao;
 
     @Autowired
-    protected AssetsDao assetsDao;
-
-    @Autowired
     protected KoiosFacade koiosFacade;
 
     protected String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
