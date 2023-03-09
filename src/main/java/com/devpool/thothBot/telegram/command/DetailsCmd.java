@@ -7,6 +7,7 @@ import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.SendResponse;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,10 +22,13 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+// TODO: make this class active and prefetching the registered wallet assets. Also refresh any obsolete stored assets (optional)
 @Component
 public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(DetailsCmd.class);
     public static final String CMD_PREFIX = "/d";
+
+    private static final int MAX_MSG_PAYLOAD_SIZE = 4096 - 256;
 
     @Autowired
     private AssetFacade assetFacade;
@@ -88,11 +92,12 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
             List<AccountAssets> assetsList = result.getValue();
             Optional<AccountAssets> assetForAccount = assetsList.stream().findFirst();
             if (assetForAccount.isEmpty()) {
-                //TODO
+                bot.execute(new SendMessage(chatId, "No assets found for this account"));
                 return;
             }
 
             StringBuilder messageBuilder = new StringBuilder("Assets:");
+            int processed = 0;
             for (Asset asset : assetForAccount.get().getAssetList()) {
                 Object genericQuantity = this.assetFacade.getAssetQuantity(
                         asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
@@ -101,8 +106,14 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
                         .append(hexToAscii(asset.getAssetName()))
                         .append(" ")
                         .append(this.assetFacade.formatAssetQuantity(genericQuantity));
-            }
 
+                processed++;
+
+                if (messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
+                    messageBuilder.append("\n").append(assetForAccount.get().getAssetList().size() - processed).append(" more...");
+                    break;
+                }
+            }
 
             bot.execute(new SendMessage(chatId, messageBuilder.toString()));
         } catch (UserNotFoundException e) {
