@@ -51,7 +51,7 @@ public class AssetsDao {
         return Optional.ofNullable(assets.get(0));
     }
 
-    public void addNewAsset(String policyId, String asset_name, Integer decimals) throws MaxRegistrationsExceededException {
+    public void addNewAsset(String policyId, String asset_name, Integer decimals) {
         namedParameterJdbcTemplate.update(
                 "insert into assets (policy_id, asset_name, decimals) values (:policy_id, :asset_name, :decimals)",
                 new MapSqlParameterSource(Map.of(
