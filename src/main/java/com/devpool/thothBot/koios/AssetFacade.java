@@ -64,6 +64,10 @@ public class AssetFacade implements Runnable {
         this.usersExecutorService.shutdown();
     }
 
+    public void refreshAssetsForUserNow(String stakeAddr) {
+        this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, stakeAddr, -1, -1), this.koiosFacade));
+    }
+
     public Object getAssetQuantity(String policyId, String assetName, Long quantity) throws ApiException {
         Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(policyId, assetName);
         Object assetQuantity = quantity;
