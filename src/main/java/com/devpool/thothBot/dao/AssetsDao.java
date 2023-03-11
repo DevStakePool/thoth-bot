@@ -55,14 +55,18 @@ public class AssetsDao {
     }
 
     @Transactional(isolation = Isolation.SERIALIZABLE)
-    public void addNewAsset(String policyId, String asset_name, Integer decimals) {
-        namedParameterJdbcTemplate.update(
-                "insert into assets (policy_id, asset_name, decimals) values (:policy_id, :asset_name, :decimals)",
-                new MapSqlParameterSource(Map.of(
-                        "policy_id", policyId,
-                        "asset_name", asset_name,
-                        "decimals", decimals)));
+    public void addNewAsset(String policyId, String assetName, Integer decimals) {
 
-        LOG.debug("Inserted new asset with policy_id {}, asset_name {}, and decimals {}", policyId, asset_name, decimals);
+        // Check again for existance
+        if (getAssetInformation(policyId, assetName).isEmpty()) {
+            namedParameterJdbcTemplate.update(
+                    "insert into assets (policy_id, asset_name, decimals) values (:policy_id, :asset_name, :decimals)",
+                    new MapSqlParameterSource(Map.of(
+                            "policy_id", policyId,
+                            "asset_name", assetName,
+                            "decimals", decimals)));
+
+            LOG.debug("Inserted new asset with policy_id {}, asset_name {}, and decimals {}", policyId, assetName, decimals);
+        }
     }
 }

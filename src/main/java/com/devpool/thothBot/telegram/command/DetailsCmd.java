@@ -117,9 +117,9 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
 
             bot.execute(new SendMessage(chatId, messageBuilder.toString()));
         } catch (UserNotFoundException e) {
-            bot.execute(new SendMessage(chatId, String.format("The user with ID {} cannot be found.", userId)));
+            bot.execute(new SendMessage(chatId, String.format("The user with ID %s cannot be found.", userId)));
         } catch (Exception e) {
-            bot.execute(new SendMessage(chatId, String.format("Unknown error when getting account assets for user-id {}. {}", userId, e)));
+            bot.execute(new SendMessage(chatId, String.format("Unknown error when getting account assets for user-id %s. %s", userId, e)));
         }
     }
 }
