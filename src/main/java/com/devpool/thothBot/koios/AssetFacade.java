@@ -47,12 +47,12 @@ public class AssetFacade implements Runnable {
         this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
                 new CustomizableThreadFactory("MainAssetSyncWorker"));
 
-        this.scheduledExecutorService.scheduleWithFixedDelay(this, 5, 120, TimeUnit.SECONDS);
+        this.scheduledExecutorService.scheduleWithFixedDelay(this, 1, 30, TimeUnit.MINUTES);
 
         this.usersExecutorService = Executors.newFixedThreadPool(5,
                 new CustomizableThreadFactory("UserScanSyncWorker"));
 
-        this.assetsExecutorService = Executors.newFixedThreadPool(10,
+        this.assetsExecutorService = Executors.newFixedThreadPool(5,
                 new CustomizableThreadFactory("AssetScanSyncWorker"));
     }
 
@@ -74,16 +74,16 @@ public class AssetFacade implements Runnable {
             if (!assetInfoResult.isSuccessful()) {
                 LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
                         policyId, assetInfoResult.getResponse(), assetInfoResult.getCode());
-            }
-
-            if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
+            } else if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
                 assetQuantity = Long.valueOf(quantity) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
             }
 
-            // Cache it for the future
-            this.assetsDao.addNewAsset(policyId, assetName,
-                    assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
-                            assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+            if (assetInfoResult.isSuccessful()) {
+                // Cache it for the future
+                this.assetsDao.addNewAsset(policyId, assetName,
+                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
+                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+            }
         } else {
             // We have it cached
             if (cachedAsset.get().getDecimals() != -1)
@@ -106,8 +106,12 @@ public class AssetFacade implements Runnable {
         try {
             List<User> allUsers = this.userDao.getUsers();
 
+            int flowControl = 0;
             for (User u : allUsers) {
+                if (flowControl % 3 == 0)
+                    Thread.sleep(1000); // Avoid reaching Koios limits
                 this.usersExecutorService.submit(new UserScannerWorker(u, this.koiosFacade));
+                flowControl++;
             }
         } catch (Exception e) {
             LOG.error("Unknown exception while syncing the assets cache", e);
@@ -141,8 +145,12 @@ public class AssetFacade implements Runnable {
                     LOG.debug("The account {} has no assets to sync", this.user.getStakeAddr());
                     return;
                 }
+                int flowControl = 0;
                 for (rest.koios.client.backend.api.common.Asset asset : assetForAccount.get().getAssetList()) {
+                    if (flowControl % 3 == 0)
+                        Thread.sleep(1000); //Avoid saturating the Koios limits
                     AssetFacade.this.assetsExecutorService.submit(new AssetScannerWorker(asset));
+                    flowControl++;
                 }
             } catch (ApiException e) {
                 LOG.warn("Issue while syncing the assets for user {}, due to {}", this.user.getStakeAddr(), e.toString());
