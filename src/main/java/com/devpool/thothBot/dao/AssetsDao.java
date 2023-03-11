@@ -12,6 +12,8 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
 import java.util.Collection;
@@ -35,6 +37,7 @@ public class AssetsDao {
         LOG.info("Assets DAO initialised");
     }
 
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Optional<Asset> getAssetInformation(String policyId, String assetName) {
         List<Asset> assets = this.namedParameterJdbcTemplate.query(
                 "select policy_id, asset_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name",
@@ -51,6 +54,7 @@ public class AssetsDao {
         return Optional.ofNullable(assets.get(0));
     }
 
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public void addNewAsset(String policyId, String asset_name, Integer decimals) {
         namedParameterJdbcTemplate.update(
                 "insert into assets (policy_id, asset_name, decimals) values (:policy_id, :asset_name, :decimals)",
