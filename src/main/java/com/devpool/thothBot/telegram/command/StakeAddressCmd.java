@@ -3,6 +3,7 @@ package com.devpool.thothBot.telegram.command;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
+import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
@@ -40,6 +41,9 @@ public class StakeAddressCmd implements IBotCommand {
 
     @Autowired
     private UserDao userDao;
+
+    @Autowired
+    private AssetFacade assetFacade;
 
     @Override
     public boolean canTrigger(String message) {
@@ -140,6 +144,9 @@ public class StakeAddressCmd implements IBotCommand {
 
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Thank you %s! From now on you will receive updates every time a transaction appears or when you receive funds", name)));
+
+            // Submit the asset task to quickly cache the user assets
+            this.assetFacade.refreshAssetsForUserNow(stakeAddr);
 
         } catch (ApiException e) {
             LOG.warn("Error in command stake address: " + e);
