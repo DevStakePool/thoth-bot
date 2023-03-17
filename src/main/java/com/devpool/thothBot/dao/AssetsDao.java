@@ -13,6 +13,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
@@ -37,7 +38,6 @@ public class AssetsDao {
         LOG.info("Assets DAO initialised");
     }
 
-    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Optional<Asset> getAssetInformation(String policyId, String assetName) {
         List<Asset> assets = this.namedParameterJdbcTemplate.query(
                 "select policy_id, asset_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name",
@@ -54,7 +54,7 @@ public class AssetsDao {
         return Optional.ofNullable(assets.get(0));
     }
 
-    @Transactional(isolation = Isolation.SERIALIZABLE)
+    @Transactional(isolation = Isolation.REPEATABLE_READ)
     public void addNewAsset(String policyId, String assetName, Integer decimals) {
 
         // Check again for existance
