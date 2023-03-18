@@ -1,0 +1,21 @@
+{
+  "ok":true,
+  "result":[
+    {
+      "update_id": 560604466,
+      "callback_query": {
+        "id": 12345,
+        "message": {
+          "message_id": 224,
+          "chat": {
+            "id": -1000,
+            "first_name": "Alessio",
+            "username": "adf_username",
+            "type": "private"
+          }
+        },
+        "data": "$details"
+      }
+    }
+  ]
+}

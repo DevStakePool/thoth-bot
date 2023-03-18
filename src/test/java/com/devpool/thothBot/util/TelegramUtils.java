@@ -16,6 +16,8 @@ public class TelegramUtils {
     private static final String SUBSCRIBE_CMD_JSON = "test-data/json/subscribe-cmd.json";
     private static final String UNSUBSCRIBE_CMD_JSON = "test-data/json/unsubscribe-cmd.json";
     private static final String STAKE_CMD_JSON = "test-data/json/stake-cmd.json";
+    private static final String ASSETS_CMD_JSON = "test-data/json/assets-cmd.json";
+    private static final String DETAILS_CMD_JSON = "test-data/json/details-cmd.json";
 
     private static final Gson GSON = new Gson();
 
@@ -27,6 +29,11 @@ public class TelegramUtils {
 
     public static Update buildInfoCommandUpdate() throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(INFO_CMD_JSON, null);
+        return resp.updates().get(0);
+    }
+
+    public static Update buildAssetsCommandUpdate() throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(ASSETS_CMD_JSON, null);
         return resp.updates().get(0);
     }
 
@@ -55,6 +62,12 @@ public class TelegramUtils {
             json = jsonContentManipulator.manipulateJson(json);
         }
         return GSON.fromJson(json, GetUpdatesResponse.class);
+    }
+
+    public static Update buildDetailsCommandUpdate(String callbackCmd) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(DETAILS_CMD_JSON,
+                jsonContent -> jsonContent.replace("$details", callbackCmd));
+        return resp.updates().get(0);
     }
 
     interface JsonContentManipulator {

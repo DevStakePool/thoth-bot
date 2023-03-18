@@ -84,7 +84,7 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
             Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
                     .getAccountService().getAccountAssets(List.of(user.getStakeAddr()), null, null);
             if (!result.isSuccessful()) {
-                bot.execute(new SendMessage(chatId, String.format("Could not get account assets for staking address {}. {} ({})",
+                bot.execute(new SendMessage(chatId, String.format("Could not get account assets for staking address %s. %s (%d)",
                         user.getStakeAddr(), result.getResponse(), result.getCode())));
                 return;
             }
