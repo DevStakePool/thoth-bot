@@ -101,6 +101,9 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
             } catch (ApiException e) {
                 LOG.warn("Cannot retrieve pool information: {}", e);
             }
+
+            Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
+
             for (AccountRewards accountRewards : rewardsRes.getValue()) {
                 if (accountRewards.getRewards().isEmpty()) continue;
 
@@ -125,8 +128,15 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                     sb.append("Epoch ").append(reward.getEarnedEpoch());
                     sb.append("\n").append(translateRewardsType(reward.getType()));
                     sb.append(" ");
-                    sb.append(String.format("%,.2f", Long.valueOf(reward.getAmount()) / LOVELACE));
-                    sb.append(ADA_SYMBOL).append("\n\n");
+                    double adaValue = Long.valueOf(reward.getAmount()) / LOVELACE;
+                    sb.append(String.format("%,.2f", adaValue));
+                    sb.append(ADA_SYMBOL);
+                    if (latestCardanoPriceUsd != null) {
+                        sb.append(" (");
+                        sb.append(String.format("%,.2f $", adaValue * latestCardanoPriceUsd));
+                        sb.append(")");
+                    }
+                    sb.append("\n\n");
 
                     this.userDao.updateUserEpochNumber(accountsToProcess.get(accountRewards.getStakeAddress()).getId(), currentEpochNumber);
                     this.telegramFacade.sendMessageTo(accountsToProcess.get(accountRewards.getStakeAddress()).getChatId(), sb.toString());

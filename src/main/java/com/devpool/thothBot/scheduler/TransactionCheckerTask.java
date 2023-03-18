@@ -337,6 +337,9 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                             break;
                     }
+                    Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
+                    double usdVal = -1;
+
                     messageBuilder.append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">")
                             .append(txType.getHumanReadableText()).append(" ").append(fundsTokenText).append("</a>")
                             .append(" <i>")
@@ -346,11 +349,25 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                             .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
                             .append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL);
 
+                    // USD value fees
+                    if (latestCardanoPriceUsd != null) {
+                        messageBuilder.append(" (")
+                                .append(String.format("%,.2f $", fee * latestCardanoPriceUsd))
+                                .append(")");
+                    }
+
                     if (txType != TxType.TX_INTERNAL) {
                         messageBuilder
                                 .append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
                                 .append(txType == TxType.TX_RECEIVED ? "Input " : "Output ").append(String.format("%,.2f", receivedOrSentFunds))
                                 .append(ADA_SYMBOL);
+
+                        // USD value
+                        if (latestCardanoPriceUsd != null) {
+                            messageBuilder.append(" (")
+                                    .append(String.format("%,.2f $", receivedOrSentFunds * latestCardanoPriceUsd))
+                                    .append(")");
+                        }
                     }
 
                     // delegation?
