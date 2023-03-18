@@ -1,5 +1,6 @@
 package com.devpool.thothBot.telegram.command;
 
+import com.devpool.thothBot.oracle.CoinGeckoCardanoOracle;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
 import com.devpool.thothBot.scheduler.TransactionCheckerTask;
@@ -10,6 +11,7 @@ import com.pengrad.telegrambot.request.SendMessage;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.base.Result;
@@ -25,6 +27,9 @@ import java.util.stream.Collectors;
 public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AccountInfoCmd.class);
     public static final String CMD_PREFIX = "/info";
+
+    @Autowired
+    private CoinGeckoCardanoOracle oracle;
 
     @Override
     public boolean canTrigger(String message) {
@@ -105,11 +110,27 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                         }
                     }
 
+                    double cardanoBalance = Long.parseLong(accountInfo.getTotalBalance()) / StakingRewardsCheckerTask.LOVELACE;
+                    Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
+                    double cardanoBalanceUsd = -1;
+                    if (latestCardanoPriceUsd != null)
+                        cardanoBalanceUsd = cardanoBalance * latestCardanoPriceUsd;
+
                     messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
                             .append("Total Balance: ")
-                            .append(String.format("%,.2f", Long.parseLong(accountInfo.getTotalBalance()) / StakingRewardsCheckerTask.LOVELACE))
+                            .append(String.format("%,.2f", cardanoBalance))
                             .append(StakingRewardsCheckerTask.ADA_SYMBOL)
-                            .append("\n")
+                            .append("\n");
+
+                    // USD value
+                    if (latestCardanoPriceUsd != null) {
+                        messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
+                                .append("USD Value: ")
+                                .append(String.format("%,.2f $", cardanoBalanceUsd))
+                                .append("\n");
+                    }
+
+                    messageBuilder
                             .append(EmojiParser.parseToUnicode(":white_small_square: "))
                             .append("Rewards: ")
                             .append(String.format("%,.2f", Long.parseLong(accountInfo.getRewards()) / StakingRewardsCheckerTask.LOVELACE))
