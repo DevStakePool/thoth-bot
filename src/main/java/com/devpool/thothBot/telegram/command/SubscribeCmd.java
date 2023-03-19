@@ -13,7 +13,7 @@ public class SubscribeCmd implements IBotCommand {
     public static final String CMD_PREFIX = "/subscribe";
 
     @Autowired
-    private StakeAddressCmd stakeAddressCmd;
+    private AddressCmd addressCmd;
 
     @Override
     public boolean canTrigger(String message) {
@@ -32,13 +32,13 @@ public class SubscribeCmd implements IBotCommand {
 
     @Override
     public String getDescription() {
-        return "Subscribes to receive transaction notifications for a specific wallet";
+        return "Subscribes to receive transaction notifications for a specific account or single address";
     }
 
     @Override
     public void execute(Update update, TelegramBot bot) {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
-        this.stakeAddressCmd.getOperationsQueue().get(StakeAddressCmd.StakeOperation.SUBSCRIBE).add(update.message().chat().id());
+        this.addressCmd.getOperationsQueue().get(AddressCmd.CmdOperation.SUBSCRIBE).add(update.message().chat().id());
 
         bot.execute(new SendMessage(update.message().chat().id(), String.format("Hi %s, please send your stake address (stake1u8yxtug...)", name))
                 .replyMarkup(new ForceReply(true)));

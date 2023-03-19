@@ -54,6 +54,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     public AccountInfoCmd() {
     }
 
+    //FIXME 11 - tests missing
     @Override
     public void execute(Update update, TelegramBot bot) {
         Long chatId = update.message().chat().id();
@@ -62,7 +63,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
         try {
             List<String> stakeAddresses = this.userDao.getUsers().stream().filter(
                     u -> u.getChatId().equals(chatId)).map(
-                    u -> u.getStakeAddr()).collect(Collectors.toList());
+                    u -> u.getAddress()).collect(Collectors.toList());
 
             if (stakeAddresses.isEmpty()) {
                 bot.execute(new SendMessage(update.message().chat().id(),

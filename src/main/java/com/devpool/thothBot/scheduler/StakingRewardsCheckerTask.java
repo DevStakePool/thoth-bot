@@ -58,6 +58,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
     }
 
     private void processUserBatch(List<User> usersBatch, Integer currentEpochNumber) {
+        //FIXME 11: only stake addresses for staking rewards
         Map<String, User> accountsToProcess = new HashMap<>();
         for (User u : usersBatch) {
             if (Objects.equals(u.getLastEpochNumber(), currentEpochNumber))
@@ -67,7 +68,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                 LOG.error("User last epoch number {} greater than the current one from the Tip {}!", u.getLastEpochNumber(), currentEpochNumber);
                 continue;
             }
-            accountsToProcess.put(u.getStakeAddr(), u);
+            accountsToProcess.put(u.getAddress(), u);
         }
 
         LOG.debug("Asking staking rewards for {} accounts", accountsToProcess.size());
@@ -107,6 +108,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
             for (AccountRewards accountRewards : rewardsRes.getValue()) {
                 if (accountRewards.getRewards().isEmpty()) continue;
 
+                //FIXME 11
                 StringBuilder sb = new StringBuilder();
                 sb.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                         .append(CARDANO_SCAN_STAKE_KEY)

@@ -86,7 +86,7 @@ public class IntegrationTest {
     private UnsubscribeCmd unsubscribeCmd;
 
     @Autowired
-    private StakeAddressCmd stakeCmd;
+    private AddressCmd stakeCmd;
 
     @BeforeEach
     public void beforeEach() throws Exception {
@@ -241,7 +241,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Catalyst Voting"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("93.42"));
-                    Assertions.assertTrue(msg.contains("stake1u...yqhf9jhy")); // No handle
+                    Assertions.assertTrue(msg.contains("stake1...yqhf9jhy")); // No handle
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("Fee 0.58"));
@@ -249,7 +249,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Output -1.35"));
                     Assertions.assertTrue(msg.contains("CashewF 373.00"));
                     Assertions.assertTrue(msg.contains("Output -4,200.18"));
-                    Assertions.assertTrue(msg.contains("stake1u...yqhf9jhy")); // No handle
+                    Assertions.assertTrue(msg.contains("stake1...yqhf9jhy")); // No handle
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);

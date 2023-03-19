@@ -7,7 +7,6 @@ import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
-import com.pengrad.telegrambot.response.SendResponse;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,14 +14,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAssets;
 import rest.koios.client.backend.api.base.Result;
-import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.common.Asset;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-// TODO: make this class active and prefetching the registered wallet assets. Also refresh any obsolete stored assets (optional)
+//FIXME 11
 @Component
 public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(DetailsCmd.class);
@@ -82,10 +79,10 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
             LOG.debug("Getting assets for account {}", userId);
             user = userDao.getUser(Long.parseLong(userId));
             Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
-                    .getAccountService().getAccountAssets(List.of(user.getStakeAddr()), null, null);
+                    .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
             if (!result.isSuccessful()) {
                 bot.execute(new SendMessage(chatId, String.format("Could not get account assets for staking address %s. %s (%d)",
-                        user.getStakeAddr(), result.getResponse(), result.getCode())));
+                        user.getAddress(), result.getResponse(), result.getCode())));
                 return;
             }
 

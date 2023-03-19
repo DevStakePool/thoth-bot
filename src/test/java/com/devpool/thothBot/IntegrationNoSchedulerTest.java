@@ -10,7 +10,6 @@ import com.devpool.thothBot.telegram.command.*;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
-import com.pengrad.telegrambot.model.request.ForceReply;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -31,7 +30,6 @@ import org.springframework.test.context.ActiveProfiles;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 @SpringBootTest
 @ActiveProfiles("no-scheduler")
@@ -90,7 +88,7 @@ public class IntegrationNoSchedulerTest {
     private UnsubscribeCmd unsubscribeCmd;
 
     @Autowired
-    private StakeAddressCmd stakeCmd;
+    private AddressCmd stakeCmd;
 
     @Autowired
     private AssetsCmd assetsCmd;

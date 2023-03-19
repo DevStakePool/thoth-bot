@@ -13,7 +13,7 @@ public class UnsubscribeCmd implements IBotCommand {
     public static final String CMD_PREFIX = "/unsubscribe";
 
     @Autowired
-    private StakeAddressCmd stakeAddressCmd;
+    private AddressCmd addressCmd;
 
     @Override
     public boolean canTrigger(String message) {
@@ -25,10 +25,11 @@ public class UnsubscribeCmd implements IBotCommand {
         return CMD_PREFIX;
     }
 
+    // FIXME 11
     @Override
     public void execute(Update update, TelegramBot bot) {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
-        this.stakeAddressCmd.getOperationsQueue().get(StakeAddressCmd.StakeOperation.UNSUBSCRIBE).add(update.message().chat().id());
+        this.addressCmd.getOperationsQueue().get(AddressCmd.CmdOperation.UNSUBSCRIBE).add(update.message().chat().id());
 
         bot.execute(new SendMessage(update.message().chat().id(), String.format("Hi %s, please specify your stake address (stake1u8yxtug...)", name))
                 .replyMarkup(new ForceReply(true)));
@@ -41,6 +42,6 @@ public class UnsubscribeCmd implements IBotCommand {
 
     @Override
     public String getDescription() {
-        return "Unsubscribes to stop receiving transaction notifications for a specific wallet";
+        return "Unsubscribes to stop receiving transaction notifications for a specific account or single address";
     }
 }
