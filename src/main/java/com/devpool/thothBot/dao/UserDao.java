@@ -40,6 +40,7 @@ public class UserDao {
     }
 
     public List<User> getUsers() {
+        // FIXME 11 - eventually change the stake_addr to just addr (see issue #11)
         SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
                 "select id, chat_id, stake_addr, last_block_height, last_epoch_number from users");
         Map<Long, User> users = new HashedMap<>();
@@ -50,7 +51,7 @@ public class UserDao {
                 u = new User();
                 u.setId(userId);
                 u.setChatId(rs.getLong("chat_id"));
-                u.setStakeAddr(rs.getString("stake_addr"));
+                u.setAddress(rs.getString("stake_addr"));
                 u.setLastBlockHeight(rs.getInt("last_block_height"));
                 u.setLastEpochNumber(rs.getInt("last_epoch_number"));
                 users.put(userId, u);
@@ -80,7 +81,7 @@ public class UserDao {
                 "insert into users (chat_id, stake_addr, last_block_height, last_epoch_number) values (:chat_id, :stake_addr, :last_block_height, :last_epoch_number)",
                 new MapSqlParameterSource(Map.of(
                         "chat_id", user.getChatId(),
-                        "stake_addr", user.getStakeAddr(),
+                        "stake_addr", user.getAddress(),
                         "last_block_height", user.getLastBlockHeight(),
                         "last_epoch_number", user.getLastEpochNumber())), keyHolder, new String[]{"id"});
 
@@ -117,21 +118,22 @@ public class UserDao {
         }
     }
 
-    public boolean removeStakeAddress(Long chatId, String stakeAddr) {
+    //FIXME 11 - check this
+    public boolean removeAddress(Long chatId, String addr) {
         int removedRows = this.namedParameterJdbcTemplate.update(
                 "delete from users where chat_id = :chat_id and stake_addr = :stake_addr;",
                 Map.of("chat_id", chatId,
-                        "stake_addr", stakeAddr));
+                        "stake_addr", addr));
 
         if (removedRows > 1)
-            LOG.error("Unexpected deletion of stake address {} for chat-id {}. The expected removed rows was 1 but got {}",
-                    stakeAddr, chatId, removedRows);
+            LOG.error("Unexpected deletion of address {} for chat-id {}. The expected removed rows was 1 but got {}",
+                    addr, chatId, removedRows);
 
         if (removedRows == 0)
-            LOG.warn("Cannot remove the stake address {} with chat-id {}. Entry not found", stakeAddr, chatId);
+            LOG.warn("Cannot remove the address {} with chat-id {}. Entry not found", addr, chatId);
 
         if (removedRows == 1)
-            LOG.debug("Successfully unsubscribed the stake address {} with chat-id {}", stakeAddr, chatId);
+            LOG.debug("Successfully unsubscribed the address {} with chat-id {}", addr, chatId);
 
         return removedRows == 1;
     }
@@ -149,7 +151,7 @@ public class UserDao {
         User u = new User();
         u.setId(rs.getLong("id"));
         u.setChatId(rs.getLong("chat_id"));
-        u.setStakeAddr(rs.getString("stake_addr"));
+        u.setAddress(rs.getString("stake_addr"));
         u.setLastBlockHeight(rs.getInt("last_block_height"));
         u.setLastEpochNumber(rs.getInt("last_epoch_number"));
 

@@ -1,6 +1,5 @@
 package com.devpool.thothBot.scheduler;
 
-import com.devpool.thothBot.dao.AssetsDao;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.oracle.CoinGeckoCardanoOracle;
@@ -26,6 +25,7 @@ public abstract class AbstractCheckerTask {
     public static final double LOVELACE = 1000000.0;
     public static final String ADA_SYMBOL = " " + '\u20B3';
     public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
+    public static final String CARDANO_SCAN_ADDR_KEY = "https://cardanoscan.io/address/";//FIXME 11
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
 
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
@@ -64,8 +64,8 @@ public abstract class AbstractCheckerTask {
         return "pool1..." + poolAddress.substring(poolAddress.length() - 8);
     }
 
-    private String shortenStakeAddr(String stakeAddr) {
-        return "stake1u..." + stakeAddr.substring(stakeAddr.length() - 8);
+    private String shortenAddr(String address) {
+        return address.substring(0, 6) + "..." + address.substring(address.length() - 8);
     }
 
     /**
@@ -73,22 +73,23 @@ public abstract class AbstractCheckerTask {
      * If there's no handle the shortenStakeAddr() will be returned.
      * If there are multiple handles, the first in alphabetical order will be shown (usually the most valuable)
      *
-     * @param stakeAddrs list
+     * @param addresses list
      * @return the handle or short stake address organised by staking address
      */
-    protected Map<String, String> getAdaHandleForAccount(String... stakeAddrs) {
+    protected Map<String, String> getAdaHandleForAccount(String... addresses) {
         Map<String, String> handlesMap = new HashMap<>();
         boolean errorFound = false;
 
         try {
-            Result<List<AccountAssets>> assetsResp = this.koiosFacade.getKoiosService().getAccountService().getAccountAssets(List.of(stakeAddrs), null, null);
+            //FIXME 11
+            Result<List<AccountAssets>> assetsResp = this.koiosFacade.getKoiosService().getAccountService().getAccountAssets(List.of(addresses), null, null);
             if (assetsResp.isSuccessful()) {
                 for (AccountAssets asset : assetsResp.getValue()) {
                     String stakeAddr = asset.getStakeAddress();
                     Optional<String> bestHandle = asset.getAssetList().stream().filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID)).map(a -> hexToAscii(a.getAssetName())).sorted().findFirst();
                     if (bestHandle.isEmpty()) {
                         // Account has no handles
-                        handlesMap.put(stakeAddr, shortenStakeAddr(stakeAddr));
+                        handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
                     } else {
                         LOG.debug("Found handle {} for account {}", bestHandle.get(), stakeAddr);
                         handlesMap.put(stakeAddr, ADA_HANDLE_PREFIX + bestHandle.get());
@@ -96,18 +97,18 @@ public abstract class AbstractCheckerTask {
                 }
             } else {
                 LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the stake address shortened instead",
-                        stakeAddrs, assetsResp.getResponse(), assetsResp.getCode());
+                        addresses, assetsResp.getResponse(), assetsResp.getCode());
                 errorFound = true;
             }
         } catch (Exception e) {
             LOG.warn("Exception while getting the assets for accounts {}, due to '{}'. Returning the stake address shortened instead",
-                    stakeAddrs, e.toString());
+                    addresses, e.toString());
             errorFound = true;
         }
 
         if (errorFound) {
-            for (String stakeAddr : stakeAddrs) {
-                handlesMap.put(stakeAddr, shortenStakeAddr(stakeAddr));
+            for (String stakeAddr : addresses) {
+                handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
             }
         }
 

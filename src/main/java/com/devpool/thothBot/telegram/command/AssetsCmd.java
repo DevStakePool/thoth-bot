@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+//FIXME 11
 @Component
 public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AssetsCmd.class);
@@ -47,7 +48,7 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
         Long chatId = update.message().chat().id();
 
         Map<String, Long> stakeAddresses = this.userDao.getUsers().stream().filter(
-                u -> u.getChatId().equals(chatId)).collect(Collectors.toMap(User::getStakeAddr, User::getId));
+                u -> u.getChatId().equals(chatId)).collect(Collectors.toMap(User::getAddress, User::getId));
 
         if (stakeAddresses.isEmpty()) {
             bot.execute(new SendMessage(update.message().chat().id(),

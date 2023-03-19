@@ -1,6 +1,5 @@
 package com.devpool.thothBot.scheduler;
 
-import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.koios.AssetFacade;
@@ -12,7 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAddress;
-import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.common.TxHash;
@@ -112,8 +110,13 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
             Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
             while (batchIterator.hasNext()) {
                 List<User> usersBatch = batchIterator.next();
-                LOG.debug("Processing users batch size {}", usersBatch.size());
+                List<User> stakeUsersBatch = usersBatch.stream().filter(u -> u.isStakeAddress()).collect(Collectors.toList());
+                List<User> addrUsersBatch = usersBatch.stream().filter(u -> !u.isStakeAddress()).collect(Collectors.toList());
 
+                LOG.debug("Processing users batch size {}, stake batch {}, address batch{}",
+                        usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
+
+                // Retrieve addresses from the stake users batches
                 Result<List<AccountAddress>> accountAddrResult;
                 long offset = 0;
                 do {
@@ -124,20 +127,24 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     offset += DEFAULT_PAGINATION_SIZE;
 
                     accountAddrResult = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
-                            usersBatch.stream().map(u -> u.getStakeAddr()).collect(Collectors.toList()), options);
+                            stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()), options);
                     if (!accountAddrResult.isSuccessful()) {
                         LOG.warn("The call to get the account addresses for stake addresses {} was not successful due to {} ({})",
-                                usersBatch.stream().map(u -> u.getStakeAddr()).collect(Collectors.toList()),
+                                stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()),
                                 accountAddrResult.getResponse(), accountAddrResult.getCode());
                         continue;
                     }
 
-                    // Attach the addresses to the corresponding user(s)
+                    // Attach the addresses to the corresponding user(s) (stake addr batch)
                     for (AccountAddress accountAddress : accountAddrResult.getValue()) {
-                        usersBatch.stream().filter(u -> u.getStakeAddr().equals(accountAddress.getStakeAddress()))
+                        stakeUsersBatch.stream().filter(u -> u.getAddress().equals(accountAddress.getStakeAddress()))
                                 .collect(Collectors.toList())
                                 .forEach(u -> u.setAccountAddresses(accountAddress.getAddresses()));
                     }
+
+                    // Attach the single address
+                    addrUsersBatch.forEach(au -> au.setAccountAddresses(List.of(au.getAddress())));
+
                 } while (accountAddrResult != null && accountAddrResult.isSuccessful() && !accountAddrResult.getValue().isEmpty());
 
                 checkTransactionsForUsers(usersBatch);
@@ -151,7 +158,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
         LOG.debug("Checking transactions for batch of users {}", users.size());
 
         // Get ADA Handles
-        Map<String, String> handles = getAdaHandleForAccount(users.stream().map(User::getStakeAddr).collect(Collectors.toList()).toArray(new String[0]));
+        Map<String, String> handles = getAdaHandleForAccount(users.stream().map(User::getAddress).collect(Collectors.toList()).toArray(new String[0]));
 
         for (User u : users) {
             try {
@@ -223,9 +230,9 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 StringBuilder messageBuilder = new StringBuilder();
                 messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                         .append(CARDANO_SCAN_STAKE_KEY)
-                        .append(u.getStakeAddr())
+                        .append(u.getAddress())
                         .append("\">")
-                        .append(handles.get(u.getStakeAddr()))
+                        .append(handles.get(u.getAddress()))
                         .append("</a>\n")
                         .append(EmojiParser.parseToUnicode(":envelope: "))
                         .append(txInfoResult.getValue().size())
@@ -399,7 +406,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 // Update the user with the new block height plus 1 to avoid picking the last TX
                 this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
             } catch (Throwable t) {
-                LOG.error("Cannot process account {} due to exception {}", u.getStakeAddr(), t, t);
+                LOG.error("Cannot process account {} due to exception {}", u.getAddress(), t, t);
             }
         }
     }

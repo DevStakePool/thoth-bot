@@ -1,21 +1,19 @@
 package com.devpool.thothBot.dao.data;
 
-import rest.koios.client.backend.api.account.model.AccountAddress;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class User {
+    private static final String STAKE_ADDR_PREFIX = "stake1";
     private Long id;
     private Long chatId;
-    private String stakeAddr;
+    private String address;
     private Integer lastBlockHeight;
     private Integer lastEpochNumber;
     private List<String> accountAddresses;
 
-    public User(Long chatId, String stakeAddr, Integer blockNumber, Integer lastEpochNumber) {
+    public User(Long chatId, String address, Integer blockNumber, Integer lastEpochNumber) {
         this.chatId = chatId;
-        this.stakeAddr = stakeAddr;
+        this.address = address;
         this.lastBlockHeight = blockNumber;
         this.lastEpochNumber = lastEpochNumber;
     }
@@ -27,7 +25,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "chatId=" + chatId +
-                ", stakeAddr='" + stakeAddr + '\'' +
+                ", address='" + address + '\'' +
                 ", accountAddresses.size()=" + (accountAddresses != null ? accountAddresses.size() : "null") +
                 ", lastBlockHeight=" + lastBlockHeight +
                 ", lastEpochNumber=" + lastEpochNumber +
@@ -46,8 +44,12 @@ public class User {
         return chatId;
     }
 
-    public String getStakeAddr() {
-        return stakeAddr;
+    public String getAddress() {
+        return address;
+    }
+    
+    public boolean isStakeAddress() {
+        return this.address.startsWith(STAKE_ADDR_PREFIX);
     }
 
     public Integer getLastBlockHeight() {
@@ -62,8 +64,8 @@ public class User {
         this.chatId = chatId;
     }
 
-    public void setStakeAddr(String stakeAddr) {
-        this.stakeAddr = stakeAddr;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public List<String> getAccountAddresses() {

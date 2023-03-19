@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
@@ -64,6 +65,7 @@ public class AssetFacade implements Runnable {
         this.usersExecutorService.shutdown();
     }
 
+    //FIXME 11
     public void refreshAssetsForUserNow(String stakeAddr) {
         this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, stakeAddr, -1, -1), this.koiosFacade));
     }
@@ -135,18 +137,18 @@ public class AssetFacade implements Runnable {
         @Override
         public void run() {
             try {
-                LOG.debug("Syncing assets for account {}", this.user.getStakeAddr());
+                LOG.debug("Syncing assets for account {}", this.user.getAddress());
 
                 Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
-                        .getAccountService().getAccountAssets(List.of(user.getStakeAddr()), null, null);
+                        .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
                 if (!result.isSuccessful()) {
-                    LOG.warn("Can't sync the user {} assets, due to {}", this.user.getStakeAddr(), result.getResponse());
+                    LOG.warn("Can't sync the user {} assets, due to {}", this.user.getAddress(), result.getResponse());
                     return;
                 }
 
                 Optional<AccountAssets> assetForAccount = result.getValue().stream().findFirst();
                 if (assetForAccount.isEmpty()) {
-                    LOG.debug("The account {} has no assets to sync", this.user.getStakeAddr());
+                    LOG.debug("The account {} has no assets to sync", this.user.getAddress());
                     return;
                 }
                 int flowControl = 0;
@@ -157,9 +159,9 @@ public class AssetFacade implements Runnable {
                     flowControl++;
                 }
             } catch (ApiException e) {
-                LOG.warn("Issue while syncing the assets for user {}, due to {}", this.user.getStakeAddr(), e.toString());
+                LOG.warn("Issue while syncing the assets for user {}, due to {}", this.user.getAddress(), e.toString());
             } catch (Exception e) {
-                LOG.error("Unknown error in user worker for user {}", this.user.getStakeAddr(), e);
+                LOG.error("Unknown error in user worker for user {}", this.user.getAddress(), e);
             }
         }
     }
