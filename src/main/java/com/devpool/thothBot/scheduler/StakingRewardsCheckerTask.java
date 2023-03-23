@@ -44,7 +44,10 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
             Integer currentEpochNumber = chainTipRes.getValue().getEpochNo();
 
             LOG.info("Checking staking rewards for {} wallets", this.userDao.getUsers().size());
-            Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
+            // Filter out non-staking users
+            Iterator<List<User>> batchIterator = batches(
+                    userDao.getUsers().stream().filter(u -> u.isStakeAddress()).collect(Collectors.toList()),
+                    USERS_BATCH_SIZE).iterator();
 
             while (batchIterator.hasNext()) {
                 List<User> usersBatch = batchIterator.next();
@@ -58,7 +61,6 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
     }
 
     private void processUserBatch(List<User> usersBatch, Integer currentEpochNumber) {
-        //FIXME 11: only stake addresses for staking rewards
         Map<String, User> accountsToProcess = new HashMap<>();
         for (User u : usersBatch) {
             if (Objects.equals(u.getLastEpochNumber(), currentEpochNumber))
@@ -108,7 +110,6 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
             for (AccountRewards accountRewards : rewardsRes.getValue()) {
                 if (accountRewards.getRewards().isEmpty()) continue;
 
-                //FIXME 11
                 StringBuilder sb = new StringBuilder();
                 sb.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                         .append(CARDANO_SCAN_STAKE_KEY)

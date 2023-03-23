@@ -1,5 +1,6 @@
 package com.devpool.thothBot.telegram.command;
 
+import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.oracle.CoinGeckoCardanoOracle;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
@@ -14,9 +15,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountInfo;
+import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
+import rest.koios.client.backend.factory.options.SortType;
 
 import java.util.Arrays;
 import java.util.List;
@@ -61,64 +64,119 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
         boolean failure = false;
 
         try {
-            List<String> stakeAddresses = this.userDao.getUsers().stream().filter(
+            List<String> addresses = this.userDao.getUsers().stream().filter(
                     u -> u.getChatId().equals(chatId)).map(
                     u -> u.getAddress()).collect(Collectors.toList());
 
-            if (stakeAddresses.isEmpty()) {
+            List<String> stakingAddr = addresses.stream().filter(a -> User.isStakingAddress(a)).collect(Collectors.toList());
+            List<String> normalAddr = addresses.stream().filter(a -> !User.isStakingAddress(a)).collect(Collectors.toList());
+
+            if (addresses.isEmpty()) {
                 bot.execute(new SendMessage(update.message().chat().id(),
-                        String.format("You have not yet registered any Cardano account. Please try %s", SubscribeCmd.CMD_PREFIX)));
+                        String.format("You have not yet registered any Cardano account or address. Please try %s", SubscribeCmd.CMD_PREFIX)));
                 return;
             }
 
-            Result<List<AccountInfo>> accountInfoRes = this.koiosFacade.getKoiosService().getAccountService().getAccountInformation(
-                    stakeAddresses, null);
+            StringBuilder messageBuilder = new StringBuilder();
 
-            if (!accountInfoRes.isSuccessful()) {
-                LOG.warn("Koios call failed when retrieving the account information for chat-id {}: {}", chatId, accountInfoRes.getResponse());
-                failure = true;
-            } else {
-                // Get accounts ADA Handles
-                Map<String, String> handles = getAdaHandleForAccount(stakeAddresses.toArray(new String[0]));
+            if (!stakingAddr.isEmpty()) {
+                Result<List<AccountInfo>> accountInfoRes = this.koiosFacade.getKoiosService().getAccountService().getAccountInformation(
+                        stakingAddr, null);
+                if (!accountInfoRes.isSuccessful()) {
+                    LOG.warn("Koios call failed when retrieving the account information for chat-id {}: {}", chatId, accountInfoRes.getResponse());
+                    failure = true;
+                } else {
+                    // Get accounts ADA Handles
+                    Map<String, String> handles = getAdaHandleForAccount(stakingAddr.toArray(new String[0]));
 
-                StringBuilder messageBuilder = new StringBuilder();
-                for (AccountInfo accountInfo : accountInfoRes.getValue()) {
-                    messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
-                            .append(TransactionCheckerTask.CARDANO_SCAN_STAKE_KEY)
-                            .append(accountInfo.getStakeAddress())
-                            .append("\">")
-                            .append(handles.get(accountInfo.getStakeAddress()))
-                            .append("</a>\n");
+                    for (AccountInfo accountInfo : accountInfoRes.getValue()) {
+                        messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
+                                .append(TransactionCheckerTask.CARDANO_SCAN_STAKE_KEY)
+                                .append(accountInfo.getStakeAddress())
+                                .append("\">")
+                                .append(handles.get(accountInfo.getStakeAddress()))
+                                .append("</a>\n");
 
-                    if (accountInfo.getDelegatedPool() != null) {
-                        try {
-                            Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(
-                                    Arrays.asList(accountInfo.getDelegatedPool()), null);
-                            PoolInfo pool;
-                            if (poolInfoRes.isSuccessful()) {
-                                pool = poolInfoRes.getValue().get(0);
-                                String poolName = getPoolName(pool, accountInfo.getDelegatedPool());
-                                messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
-                                        .append("<a href=\"")
-                                        .append(CARDANO_SCAN_STAKE_POOL)
-                                        .append(accountInfo.getDelegatedPool())
-                                        .append("\">")
-                                        .append(poolName).append("</a>\n");
-                            } else
-                                LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
-                        } catch (ApiException e) {
-                            LOG.warn("Cannot retrieve pool information: {}", e);
+                        if (accountInfo.getDelegatedPool() != null) {
+                            try {
+                                Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(
+                                        Arrays.asList(accountInfo.getDelegatedPool()), null);
+                                PoolInfo pool;
+                                if (poolInfoRes.isSuccessful()) {
+                                    pool = poolInfoRes.getValue().get(0);
+                                    String poolName = getPoolName(pool, accountInfo.getDelegatedPool());
+                                    messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
+                                            .append("<a href=\"")
+                                            .append(CARDANO_SCAN_STAKE_POOL)
+                                            .append(accountInfo.getDelegatedPool())
+                                            .append("\">")
+                                            .append(poolName).append("</a>\n");
+                                } else
+                                    LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
+                            } catch (ApiException e) {
+                                LOG.warn("Cannot retrieve pool information: {}", e);
+                            }
                         }
+
+                        double cardanoBalance = Long.parseLong(accountInfo.getTotalBalance()) / StakingRewardsCheckerTask.LOVELACE;
+                        Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
+                        double cardanoBalanceUsd = -1;
+                        if (latestCardanoPriceUsd != null)
+                            cardanoBalanceUsd = cardanoBalance * latestCardanoPriceUsd;
+
+                        messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
+                                .append("Total Balance: ")
+                                .append(String.format("%,.2f", cardanoBalance))
+                                .append(StakingRewardsCheckerTask.ADA_SYMBOL)
+                                .append("\n");
+
+                        // USD value
+                        if (latestCardanoPriceUsd != null) {
+                            messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
+                                    .append("USD Value: ")
+                                    .append(String.format("%,.2f $", cardanoBalanceUsd))
+                                    .append("\n");
+                        }
+
+                        messageBuilder
+                                .append(EmojiParser.parseToUnicode(":white_small_square: "))
+                                .append("Rewards: ")
+                                .append(String.format("%,.2f", Long.parseLong(accountInfo.getRewards()) / StakingRewardsCheckerTask.LOVELACE))
+                                .append(StakingRewardsCheckerTask.ADA_SYMBOL)
+                                .append("\n")
+                                .append(EmojiParser.parseToUnicode(":white_small_square: "))
+                                .append("Status: ").append(accountInfo.getStatus())
+                                .append("\n\n");
                     }
 
-                    double cardanoBalance = Long.parseLong(accountInfo.getTotalBalance()) / StakingRewardsCheckerTask.LOVELACE;
+                }
+            }
+
+            for (String addr : normalAddr) {
+                Result<AddressInfo> addressInfoResult = this.koiosFacade.getKoiosService().getAddressService().getAddressInformation(
+                        List.of(addr), SortType.DESC, null);
+                if (!addressInfoResult.isSuccessful()) {
+                    LOG.warn("Koios call failed when retrieving the address information for chat-id {}: {}", chatId, addressInfoResult.getResponse());
+                    failure = true;
+                } else {
+                    // Get accounts ADA Handles
+                    Map<String, String> handles = getAdaHandleForAccount(stakingAddr.toArray(new String[0]));
+                    AddressInfo addrInfo = addressInfoResult.getValue();
+                    messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
+                            .append(TransactionCheckerTask.CARDANO_SCAN_ADDR_KEY)
+                            .append(addrInfo.getAddress())
+                            .append("\">")
+                            .append(handles.get(addrInfo.getAddress()))
+                            .append("</a>\n");
+
+                    double cardanoBalance = Long.parseLong(addrInfo.getBalance()) / StakingRewardsCheckerTask.LOVELACE;
                     Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
                     double cardanoBalanceUsd = -1;
                     if (latestCardanoPriceUsd != null)
                         cardanoBalanceUsd = cardanoBalance * latestCardanoPriceUsd;
 
                     messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
-                            .append("Total Balance: ")
+                            .append("Balance: ")
                             .append(String.format("%,.2f", cardanoBalance))
                             .append(StakingRewardsCheckerTask.ADA_SYMBOL)
                             .append("\n");
@@ -133,23 +191,20 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
                     messageBuilder
                             .append(EmojiParser.parseToUnicode(":white_small_square: "))
-                            .append("Rewards: ")
-                            .append(String.format("%,.2f", Long.parseLong(accountInfo.getRewards()) / StakingRewardsCheckerTask.LOVELACE))
-                            .append(StakingRewardsCheckerTask.ADA_SYMBOL)
-                            .append("\n")
-                            .append(EmojiParser.parseToUnicode(":white_small_square: "))
-                            .append("Status: ").append(accountInfo.getStatus())
+                            .append("Script Address?: ")
+                            .append(addrInfo.getScriptAddress())
                             .append("\n\n");
                 }
-
-                bot.execute(new SendMessage(update.message().chat().id(), messageBuilder.toString())
-                        .disableWebPagePreview(true)
-                        .parseMode(ParseMode.HTML));
             }
+
+            bot.execute(new SendMessage(update.message().chat().id(), messageBuilder.toString())
+                    .disableWebPagePreview(true)
+                    .parseMode(ParseMode.HTML));
         } catch (Exception e) {
             LOG.warn("Could not get the wallet information due to {}", e, e);
             failure = true;
         }
+
 
         if (failure) {
             bot.execute(new SendMessage(update.message().chat().id(),
@@ -158,7 +213,6 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     private String getPoolName(PoolInfo poolInfo, String poolAddress) {
-
         if (poolInfo != null) {
             if (poolInfo.getMetaJson() != null && poolInfo.getMetaJson().getTicker() != null) {
                 StringBuilder sb = new StringBuilder();

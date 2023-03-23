@@ -1,20 +1,20 @@
 package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.UserDao;
+import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.oracle.CoinGeckoCardanoOracle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Abstract checker task component holding generic data and utilities
@@ -25,7 +25,7 @@ public abstract class AbstractCheckerTask {
     public static final double LOVELACE = 1000000.0;
     public static final String ADA_SYMBOL = " " + '\u20B3';
     public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
-    public static final String CARDANO_SCAN_ADDR_KEY = "https://cardanoscan.io/address/";//FIXME 11
+    public static final String CARDANO_SCAN_ADDR_KEY = "https://cardanoscan.io/address/";//FIXME 11 - test this
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
 
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
@@ -80,35 +80,76 @@ public abstract class AbstractCheckerTask {
         Map<String, String> handlesMap = new HashMap<>();
         boolean errorFound = false;
 
-        try {
-            //FIXME 11
-            Result<List<AccountAssets>> assetsResp = this.koiosFacade.getKoiosService().getAccountService().getAccountAssets(List.of(addresses), null, null);
-            if (assetsResp.isSuccessful()) {
-                for (AccountAssets asset : assetsResp.getValue()) {
-                    String stakeAddr = asset.getStakeAddress();
-                    Optional<String> bestHandle = asset.getAssetList().stream().filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID)).map(a -> hexToAscii(a.getAssetName())).sorted().findFirst();
-                    if (bestHandle.isEmpty()) {
-                        // Account has no handles
-                        handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
-                    } else {
-                        LOG.debug("Found handle {} for account {}", bestHandle.get(), stakeAddr);
-                        handlesMap.put(stakeAddr, ADA_HANDLE_PREFIX + bestHandle.get());
+        List<String> stakingAddresses = Arrays.stream(addresses).filter(a -> User.isStakingAddress(a)).collect(Collectors.toList());
+        List<String> normalAddresses = Arrays.stream(addresses).filter(a -> !User.isStakingAddress(a)).collect(Collectors.toList());
+
+        try { //FIXME 11 - test this
+            // Nominal address
+            if (!normalAddresses.isEmpty()) {
+                Result<List<AddressAsset>> addrAssetsResp = this.koiosFacade.getKoiosService().getAddressService().getAddressAssets(normalAddresses, null);
+                if (addrAssetsResp.isSuccessful()) {
+                    for (AddressAsset asset : addrAssetsResp.getValue()) {
+                        String addr = asset.getAddress();
+                        Optional<String> bestHandle = asset.getAssetList().stream()
+                                .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
+                                .map(a -> hexToAscii(a.getAssetName()))
+                                .sorted().findFirst();
+                        if (bestHandle.isEmpty()) {
+                            // Account has no handles
+                            handlesMap.put(addr, shortenAddr(addr));
+                        } else {
+                            LOG.debug("Found handle {} for account {}", bestHandle.get(), addr);
+                            handlesMap.put(addr, ADA_HANDLE_PREFIX + bestHandle.get());
+                        }
                     }
+                } else {
+                    LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the address shortened instead",
+                            normalAddresses, addrAssetsResp.getResponse(), addrAssetsResp.getCode());
+                    errorFound = true;
                 }
-            } else {
-                LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the stake address shortened instead",
-                        addresses, assetsResp.getResponse(), assetsResp.getCode());
-                errorFound = true;
+            }
+
+            if (errorFound) {
+                for (String addr : normalAddresses) {
+                    handlesMap.put(addr, shortenAddr(addr));
+                }
+            }
+
+            errorFound = false;
+
+            // Staking address?
+            if (!stakingAddresses.isEmpty()) {
+                Result<List<AccountAssets>> accountAssetsResp = this.koiosFacade.getKoiosService().getAccountService().getAccountAssets(stakingAddresses, null, null);
+                if (accountAssetsResp.isSuccessful()) {
+                    for (AccountAssets asset : accountAssetsResp.getValue()) {
+                        String stakeAddr = asset.getStakeAddress();
+                        Optional<String> bestHandle = asset.getAssetList().stream()
+                                .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
+                                .map(a -> hexToAscii(a.getAssetName()))
+                                .sorted().findFirst();
+                        if (bestHandle.isEmpty()) {
+                            // Account has no handles
+                            handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
+                        } else {
+                            LOG.debug("Found handle {} for account {}", bestHandle.get(), stakeAddr);
+                            handlesMap.put(stakeAddr, ADA_HANDLE_PREFIX + bestHandle.get());
+                        }
+                    }
+                } else {
+                    LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the stake address shortened instead",
+                            stakingAddresses, accountAssetsResp.getResponse(), accountAssetsResp.getCode());
+                    errorFound = true;
+                }
             }
         } catch (Exception e) {
-            LOG.warn("Exception while getting the assets for accounts {}, due to '{}'. Returning the stake address shortened instead",
-                    addresses, e.toString());
+            LOG.warn("Exception while getting the assets for accounts {}, due to '{}'. Returning the address shortened instead",
+                    stakingAddresses, e.toString());
             errorFound = true;
         }
 
         if (errorFound) {
-            for (String stakeAddr : addresses) {
-                handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
+            for (String addr : stakingAddresses) {
+                handlesMap.put(addr, shortenAddr(addr));
             }
         }
 
@@ -116,7 +157,7 @@ public abstract class AbstractCheckerTask {
     }
 
     public static String hexToAscii(String hexStr) {
-        StringBuilder output = new StringBuilder("");
+        StringBuilder output = new StringBuilder();
 
         for (int i = 0; i < hexStr.length(); i += 2) {
             String str = hexStr.substring(i, i + 2);

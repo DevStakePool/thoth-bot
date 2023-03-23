@@ -13,13 +13,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.common.Asset;
 
 import java.util.List;
 import java.util.Optional;
 
-//FIXME 11
+//FIXME 11 - tests missing
 @Component
 public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(DetailsCmd.class);
@@ -76,26 +77,47 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
         String userId = msgParts[1];
         User user;
         try {
-            LOG.debug("Getting assets for account {}", userId);
+            LOG.debug("Getting assets for user {}", userId);
             user = userDao.getUser(Long.parseLong(userId));
-            Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
-                    .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
-            if (!result.isSuccessful()) {
-                bot.execute(new SendMessage(chatId, String.format("Could not get account assets for staking address %s. %s (%d)",
-                        user.getAddress(), result.getResponse(), result.getCode())));
-                return;
-            }
 
-            List<AccountAssets> assetsList = result.getValue();
-            Optional<AccountAssets> assetForAccount = assetsList.stream().findFirst();
-            if (assetForAccount.isEmpty()) {
-                bot.execute(new SendMessage(chatId, "No assets found for this account"));
-                return;
+            List<Asset> assets;
+            if (user.isStakeAddress()) {
+                Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
+                        .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
+                if (!result.isSuccessful()) {
+                    bot.execute(new SendMessage(chatId, String.format("Could not get account assets for staking address %s. %s (%d)",
+                            user.getAddress(), result.getResponse(), result.getCode())));
+                    return;
+                }
+
+                List<AccountAssets> assetsList = result.getValue();
+                Optional<AccountAssets> assetForAccount = assetsList.stream().findFirst();
+                if (assetForAccount.isEmpty()) {
+                    bot.execute(new SendMessage(chatId, "No assets found for this account"));
+                    return;
+                }
+                assets = assetForAccount.get().getAssetList();
+            } else {
+                Result<List<AddressAsset>> result = this.koiosFacade.getKoiosService()
+                        .getAddressService().getAddressAssets(List.of(user.getAddress()), null);
+                if (!result.isSuccessful()) {
+                    bot.execute(new SendMessage(chatId, String.format("Could not get account assets for address %s. %s (%d)",
+                            user.getAddress(), result.getResponse(), result.getCode())));
+                    return;
+                }
+
+                List<AddressAsset> assetsList = result.getValue();
+                Optional<AddressAsset> assetsForAddr = assetsList.stream().findFirst();
+                if (assetsForAddr.isEmpty()) {
+                    bot.execute(new SendMessage(chatId, "No assets found for this address"));
+                    return;
+                }
+                assets = assetsForAddr.get().getAssetList();
             }
 
             StringBuilder messageBuilder = new StringBuilder("Assets:");
             int processed = 0;
-            for (Asset asset : assetForAccount.get().getAssetList()) {
+            for (Asset asset : assets) {
                 Object genericQuantity = this.assetFacade.getAssetQuantity(
                         asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
 
@@ -107,7 +129,7 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
                 processed++;
 
                 if (messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
-                    messageBuilder.append("\n").append(assetForAccount.get().getAssetList().size() - processed).append(" more...");
+                    messageBuilder.append("\n").append(assets.size() - processed).append(" more...");
                     break;
                 }
             }

@@ -229,7 +229,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                 StringBuilder messageBuilder = new StringBuilder();
                 messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
-                        .append(CARDANO_SCAN_STAKE_KEY)
+                        .append(u.isStakeAddress() ? CARDANO_SCAN_STAKE_KEY : CARDANO_SCAN_ADDR_KEY)
                         .append(u.getAddress())
                         .append("\">")
                         .append(handles.get(u.getAddress()))
