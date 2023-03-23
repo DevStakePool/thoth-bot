@@ -49,7 +49,7 @@ public class User {
     }
     
     public boolean isStakeAddress() {
-        return this.address.startsWith(STAKE_ADDR_PREFIX);
+        return isStakingAddress(this.address);
     }
 
     public Integer getLastBlockHeight() {
@@ -82,5 +82,9 @@ public class User {
 
     public void setLastEpochNumber(Integer lastEpochNumber) {
         this.lastEpochNumber = lastEpochNumber;
+    }
+
+    public static boolean isStakingAddress(String address) {
+        return address.startsWith(STAKE_ADDR_PREFIX);
     }
 }

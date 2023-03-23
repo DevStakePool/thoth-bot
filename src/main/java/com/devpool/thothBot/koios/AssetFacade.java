@@ -65,9 +65,8 @@ public class AssetFacade implements Runnable {
         this.usersExecutorService.shutdown();
     }
 
-    //FIXME 11
-    public void refreshAssetsForUserNow(String stakeAddr) {
-        this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, stakeAddr, -1, -1), this.koiosFacade));
+    public void refreshAssetsForUserNow(String addr) {
+        this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, addr, -1, -1), this.koiosFacade));
     }
 
     public Object getAssetQuantity(String policyId, String assetName, Long quantity) throws ApiException {
@@ -138,21 +137,41 @@ public class AssetFacade implements Runnable {
         public void run() {
             try {
                 LOG.debug("Syncing assets for account {}", this.user.getAddress());
+                List<rest.koios.client.backend.api.common.Asset> assetsToProcess;
 
-                Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
-                        .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
-                if (!result.isSuccessful()) {
-                    LOG.warn("Can't sync the user {} assets, due to {}", this.user.getAddress(), result.getResponse());
-                    return;
+                if (this.user.isStakeAddress()) {
+                    Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
+                            .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
+                    if (!result.isSuccessful()) {
+                        LOG.warn("Can't sync the user {} assets, due to {}", this.user.getAddress(), result.getResponse());
+                        return;
+                    }
+
+                    Optional<AccountAssets> assetForAccount = result.getValue().stream().findFirst();
+                    if (assetForAccount.isEmpty()) {
+                        LOG.debug("The account {} has no assets to sync", this.user.getAddress());
+                        return;
+                    }
+                    assetsToProcess = assetForAccount.get().getAssetList();
+                } else {
+                    // Non-staking address
+                    Result<List<AddressAsset>> result = this.koiosFacade.getKoiosService()
+                            .getAddressService().getAddressAssets(List.of(user.getAddress()), null);
+                    if (!result.isSuccessful()) {
+                        LOG.warn("Can't sync the user {} assets, due to {}", this.user.getAddress(), result.getResponse());
+                        return;
+                    }
+
+                    Optional<AddressAsset> assetForAccount = result.getValue().stream().findFirst();
+                    if (assetForAccount.isEmpty()) {
+                        LOG.debug("The account {} has no assets to sync", this.user.getAddress());
+                        return;
+                    }
+                    assetsToProcess = assetForAccount.get().getAssetList();
                 }
 
-                Optional<AccountAssets> assetForAccount = result.getValue().stream().findFirst();
-                if (assetForAccount.isEmpty()) {
-                    LOG.debug("The account {} has no assets to sync", this.user.getAddress());
-                    return;
-                }
                 int flowControl = 0;
-                for (rest.koios.client.backend.api.common.Asset asset : assetForAccount.get().getAssetList()) {
+                for (rest.koios.client.backend.api.common.Asset asset : assetsToProcess) {
                     if (flowControl % 3 == 0)
                         Thread.sleep(1000); //Avoid saturating the Koios limits
                     AssetFacade.this.assetsExecutorService.submit(new AssetScannerWorker(asset));

@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-//FIXME 11
 @Component
 public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AssetsCmd.class);
@@ -37,7 +36,7 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
 
     @Override
     public String getDescription() {
-        return "Shows the assets of a specific Cardano account/wallet";
+        return "Shows the assets of a specific Cardano account/address";
     }
 
     public AssetsCmd() {
@@ -47,36 +46,35 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     public void execute(Update update, TelegramBot bot) {
         Long chatId = update.message().chat().id();
 
-        Map<String, Long> stakeAddresses = this.userDao.getUsers().stream().filter(
+        Map<String, Long> addresses = this.userDao.getUsers().stream().filter(
                 u -> u.getChatId().equals(chatId)).collect(Collectors.toMap(User::getAddress, User::getId));
 
-        if (stakeAddresses.isEmpty()) {
+        if (addresses.isEmpty()) {
             bot.execute(new SendMessage(update.message().chat().id(),
-                    String.format("You have not yet registered any Cardano account. Please try %s", SubscribeCmd.CMD_PREFIX)));
+                    String.format("You have not yet registered any Cardano account or address. Please try %s", SubscribeCmd.CMD_PREFIX)));
             return;
         }
 
-        InlineKeyboardMarkup inlineKeyboard = new InlineKeyboardMarkup(createInlineKeyboardButtons(stakeAddresses));
+        InlineKeyboardMarkup inlineKeyboard = new InlineKeyboardMarkup(createInlineKeyboardButtons(addresses));
         LOG.debug("Created {} inline markup rows", inlineKeyboard.inlineKeyboard().length);
         bot.execute(new SendMessage(chatId, "Please select an account").replyMarkup(inlineKeyboard));
     }
 
-    private InlineKeyboardButton[][] createInlineKeyboardButtons(Map<String, Long> stakeAddresses) {
-        Map<String, String> handles = getAdaHandleForAccount(stakeAddresses.keySet().toArray(new String[0]));
-        int inputSize = stakeAddresses.size();
+    private InlineKeyboardButton[][] createInlineKeyboardButtons(Map<String, Long> addresses) {
+        Map<String, String> handles = getAdaHandleForAccount(addresses.keySet().toArray(new String[0]));
+        int inputSize = addresses.size();
         int numArrays = (int) Math.ceil((double) inputSize / 2);
         InlineKeyboardButton[][] outputArray = new InlineKeyboardButton[numArrays][2];
 
         for (int i = 0; i < numArrays; i++) {
             int startIndex = i * 2;
             int endIndex = Math.min(startIndex + 2, inputSize);
-            List<String> sublist = stakeAddresses.keySet().stream().collect(Collectors.toList()).subList(startIndex, endIndex);
+            List<String> sublist = addresses.keySet().stream().collect(Collectors.toList()).subList(startIndex, endIndex);
             outputArray[i] = sublist.stream().map(e -> new InlineKeyboardButton(handles.get(e))
-                            .callbackData(DetailsCmd.CMD_PREFIX + " " + stakeAddresses.get(e)))
+                            .callbackData(DetailsCmd.CMD_PREFIX + " " + addresses.get(e)))
                     .collect(Collectors.toList()).toArray(new InlineKeyboardButton[0]);
         }
 
         return outputArray;
     }
-
 }

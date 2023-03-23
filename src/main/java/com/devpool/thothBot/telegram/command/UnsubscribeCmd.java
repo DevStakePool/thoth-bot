@@ -25,7 +25,7 @@ public class UnsubscribeCmd implements IBotCommand {
         return CMD_PREFIX;
     }
 
-    // FIXME 11
+    // FIXME 11 - needs testing
     @Override
     public void execute(Update update, TelegramBot bot) {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
