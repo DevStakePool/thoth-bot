@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "43617264616e69756d",
+    "asset_name_ascii": "Cardanium",
+    "fingerprint": "asset1hwfv7edc9phzzcky6e4njetktxlqsj5wjs7rfa",
+    "minting_tx_hash": "7d58e63447c692b56db0ebe9495686fce14cb4dbed4cc0a85e03eeb45f807a20",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648684800,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Cardanium": {
+            "name": "Cardanium",
+            "image": "ipfs://QmSdyw7K61L3vWbiwnYbuwxw1PQU98yzdwU5NvG8smXQdF",
+            "sha256": "acdf6eeadd64ece5f8bb7497f380ebfab31440eacf7ea684d069cba108aa7ffc",
+            "mediaType": "image/png",
+            "description": [
+              "One of the most highly prized minerals in the galaxy.",
+              "Cardanium is only found in relative proximity to",
+              "unstable interdimensional portals.",
+              "It is valued for its unparalleled beauty, rarity,",
+              "and an impossibly dense crystalline atomic structure",
+              "which makes it useful in a variety of civil,",
+              "military, and scientific applications."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

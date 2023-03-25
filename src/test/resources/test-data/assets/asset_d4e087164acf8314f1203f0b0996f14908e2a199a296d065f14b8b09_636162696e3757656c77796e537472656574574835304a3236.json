@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3757656c77796e537472656574574835304a3236",
+    "asset_name_ascii": "cabin7WelwynStreetWH50J26",
+    "fingerprint": "asset144hl3exw2c7zye87pxc8ewwn8uy9z7fs8zd370",
+    "minting_tx_hash": "8dae4b41d6946b376e4a427f5825f988bd080038ce4fa8d6554fe921e01abe73",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin7WelwynStreetWH50J26": {
+            "name": "7 Welwyn Street, WH50 J26",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Welwyn Street",
+            "District": "Whooss",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "J",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "50",
+            "Y Coordinate": "26"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654e69636f6c6173436869657361",
+    "asset_name_ascii": "adapeNicolasChiesa",
+    "fingerprint": "asset1x3mkda7e2p6uq5vzwpjczaptr83vq8fl7q2e7r",
+    "minting_tx_hash": "f0cb01abd49e02dc92e66da0d699676b827393fbb05dbb5c68a1b5d2cd12c902",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeNicolasChiesa": {
+            "Hat": "Feather Hat",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Nicolas Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmUv9s6ERB2bAMu4BcCBwfjzN9uBHLH2NQz8fkjjxwtb7h",
+                "name": "Nicolas Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUv9s6ERB2bAMu4BcCBwfjzN9uBHLH2NQz8fkjjxwtb7h",
+            "Family": "Chiesa",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Chiesa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

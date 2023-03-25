@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655061726b6572436174616c6469",
+    "asset_name_ascii": "adapeParkerCataldi",
+    "fingerprint": "asset1ygwrvzan7grpu575evg9vpqe5jszx54wzf299e",
+    "minting_tx_hash": "986b6001050755ea0eceba2b1646093e3cf697a233cc7cb0f31271369d2a2b01",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeParkerCataldi": {
+            "Hat": "Spinner Hat",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Parker Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmWJqNc2hwvofCPrzHvNkTe7XatPar8C6FEosCbeiUFUCC",
+                "name": "Parker Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWJqNc2hwvofCPrzHvNkTe7XatPar8C6FEosCbeiUFUCC",
+            "Family": "Cataldi",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3039363133",
+    "asset_name_ascii": "Ghostchain09613",
+    "fingerprint": "asset1see0r3un33qh6h795deexxq250p0acapssecxj",
+    "minting_tx_hash": "4d76d9b68958eb839043612ed61b3f4c7020ae320ca846d470d7e591c0592049",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635811200,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain04588": {
+            "dna": "10310001",
+            "body": "White Tshirt",
+            "eyes": "Wizard",
+            "name": "Ghostchain04588",
+            "files": [
+              {
+                "src": "ipfs://QmRe4sYjAtHWZuaPX5ry325VCnHNswBe3n2AkBuApmHPzn",
+                "name": "Ghostchain04588",
+                "https": "https://api.nftghostchain.com/original?mint=4588",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Moss",
+            "image": "ipfs://QmRe4sYjAtHWZuaPX5ry325VCnHNswBe3n2AkBuApmHPzn",
+            "mouth": "Cigarette",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          },
+          "Ghostchain09613": {
+            "dna": "10110300",
+            "body": "Grey Suit Hankerchief",
+            "eyes": "Monocle",
+            "head": "Green Undercut",
+            "name": "Ghostchain09613",
+            "files": [
+              {
+                "src": "ipfs://QmeQBnfR8P1NPHZ9V2XhePax7uSHswQuYJSzyK2cGA7iju",
+                "name": "Ghostchain09613",
+                "https": "https://api.nftghostchain.com/original?mint=9613",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Bluey",
+            "image": "ipfs://QmeQBnfR8P1NPHZ9V2XhePax7uSHswQuYJSzyK2cGA7iju",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

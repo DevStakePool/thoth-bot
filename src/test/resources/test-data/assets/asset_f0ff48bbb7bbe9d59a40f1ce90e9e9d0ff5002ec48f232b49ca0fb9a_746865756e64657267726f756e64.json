@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "746865756e64657267726f756e64",
+    "asset_name_ascii": "theunderground",
+    "fingerprint": "asset1jgse9ut63awvvm55hk9qhy9sxj3aght0qm4kxq",
+    "minting_tx_hash": "2709c616a0fc7f185bf1a8fe19848ee7380d23c93790eab38d9eb75d25759fac",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671321600,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "theunderground": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$theunderground",
+            "image": "ipfs://QmUKNrZ21ZuJpsfauLZEnHge22HMSb8RkyKa6bA692QY7a",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

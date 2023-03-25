@@ -40,18 +40,18 @@
     "retiring_epoch": null,
     "op_cert": "107f725597c6f5f52a4f7d7de6e46d5d94cad6c5b32929a9fed00a1ef690823c",
     "op_cert_counter": 8,
-    "active_stake": "101960949776",
-    "sigma": 4.041654740680911e-06,
+    "active_stake": "64460555221",
+    "sigma": 2.6176940106713744e-06,
     "block_count": 50,
     "live_pledge": "51366937462",
-    "live_stake": "101960949776",
-    "live_delegators": 29,
-    "live_saturation": 0.14
+    "live_stake": "61389044558",
+    "live_delegators": 28,
+    "live_saturation": 0.09
   },
   {
     "pool_id_bech32": "pool15g3cwwmd3qks03ztl5464j044jasn3dcs6zcgpxtxadfj86lvf2",
     "pool_id_hex": "a223873b6d882d07c44bfd2baac9f5acbb09c5b886858404cb375a99",
-    "active_epoch_no": 391,
+    "active_epoch_no": 399,
     "vrf_key_hash": "b3b9fbfc64ec0a1019ece4883936d67496d0f2195300e2363fd50af467bbf35f",
     "margin": 0.01,
     "fixed_cost": "340000000",
@@ -76,6 +76,13 @@
         "port": 5001
       },
       {
+        "dns": "creedbratton.workisboring.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 5004
+      },
+      {
         "dns": "dong1.cr0ss0ver.com",
         "srv": null,
         "ipv4": null,
@@ -95,13 +102,13 @@
     "retiring_epoch": null,
     "op_cert": "860e7066681d63d56df43cf3bb583a61b349eab176b8fb7c2e63523c8b2e705a",
     "op_cert_counter": 6,
-    "active_stake": "473633077211",
-    "sigma": 1.877445606439136e-05,
-    "block_count": 4,
-    "live_pledge": "15976648936",
-    "live_stake": "1106227503020",
-    "live_delegators": 40,
-    "live_saturation": 1.56
+    "active_stake": "727756213065",
+    "sigma": 2.9553625060128324e-05,
+    "block_count": 8,
+    "live_pledge": "17719068539",
+    "live_stake": "113183547447",
+    "live_delegators": 10,
+    "live_saturation": 0.16
   },
   {
     "pool_id_bech32": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt",
@@ -134,15 +141,15 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "6ec77ef95172a7636a9cadb234b8a6c87c1849518e07f672a35ac39eaa19c569",
-    "op_cert_counter": 11,
-    "active_stake": "1040449879905",
-    "sigma": 4.1242644353522405e-05,
-    "block_count": 497,
-    "live_pledge": "20086178381",
-    "live_stake": "1038373049808",
-    "live_delegators": 283,
-    "live_saturation": 1.46
+    "op_cert": "356e949d43c87159890f3ceb0b3c0b6b941fa8a842ff9f42d27998cb041b7bca",
+    "op_cert_counter": 12,
+    "active_stake": "973306277090",
+    "sigma": 3.952522598280873e-05,
+    "block_count": 500,
+    "live_pledge": "20084355136",
+    "live_stake": "972321512714",
+    "live_delegators": 278,
+    "live_saturation": 1.37
   },
   {
     "pool_id_bech32": "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
@@ -177,13 +184,13 @@
     "retiring_epoch": null,
     "op_cert": "c93e4c08513f859dc204425e4fd66e005fb26fc5f3854dc287fc06d1f3737a70",
     "op_cert_counter": 5,
-    "active_stake": "16140659028110",
-    "sigma": 0.0006398034857657849,
-    "block_count": 75,
-    "live_pledge": "80404294226",
-    "live_stake": "16200118789932",
-    "live_delegators": 33,
-    "live_saturation": 22.82
+    "active_stake": "16573563300453",
+    "sigma": 0.0006730397719711989,
+    "block_count": 157,
+    "live_pledge": "92314924819",
+    "live_stake": "16583973239735",
+    "live_delegators": 42,
+    "live_saturation": 23.29
   },
   {
     "pool_id_bech32": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct",
@@ -219,13 +226,54 @@
     "retiring_epoch": null,
     "op_cert": "f69e5afca17f867d710edd71b562020e8cb9f777cf4ecb33d685210f91e8ae91",
     "op_cert_counter": 4,
-    "active_stake": "113401581616",
-    "sigma": 4.495152712346578e-06,
+    "active_stake": "101305763844",
+    "sigma": 4.1139498465649975e-06,
     "block_count": 28,
     "live_pledge": "26023279371",
-    "live_stake": "101771234834",
-    "live_delegators": 27,
-    "live_saturation": 0.14
+    "live_stake": "95312921053",
+    "live_delegators": 26,
+    "live_saturation": 0.13
+  },
+  {
+    "pool_id_bech32": "pool1p82vmqednsalje23mpnz9u3qt9ruj79xu83mr6p8t93fw5fcu3y",
+    "pool_id_hex": "09d4cd832d9c3bf96551d86622f2205947c978a6e1e3b1e827596297",
+    "active_epoch_no": 370,
+    "vrf_key_hash": "9adb98f7f9cdc44446695e15ba426cc3b931d24c7250665bb503bd291ba7ec12",
+    "margin": 0.01,
+    "fixed_cost": "340000000",
+    "pledge": "17000000000",
+    "reward_addr": "stake1u8s68zvvqvhdgw2kfjnfsxcy0ax6xzy79s5p4c569lsxnzsptuumh",
+    "owners": [
+      "stake1u8s68zvvqvhdgw2kfjnfsxcy0ax6xzy79s5p4c569lsxnzsptuumh"
+    ],
+    "relays": [
+      {
+        "dns": "echo.stake-cardano-pool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 7004
+      }
+    ],
+    "meta_url": "https://bit.ly/35yEUof",
+    "meta_hash": "3b3f4f29a20f783ca83d6f480ba3a9d31793d5311e496f66b49689ea99efe17e",
+    "meta_json": {
+      "name": "Stake ADA Pool",
+      "ticker": "RCADA",
+      "homepage": "https://www.stakecardanopool.com",
+      "description": "80's SYNTH POOL"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "44684fc4e873157f8618c4c2520b7480b1ef58fa84d514865c8c54dcf0001cc8",
+    "op_cert_counter": 2,
+    "active_stake": "76726956090",
+    "sigma": 3.1158231995557843e-06,
+    "block_count": 3,
+    "live_pledge": "17521624628",
+    "live_stake": "697040763139",
+    "live_delegators": 50,
+    "live_saturation": 0.98
   },
   {
     "pool_id_bech32": "pool1rthy0xp2syng0cydp85wvz973szmq2ns8u5p4hdedkwlyhry27w",
@@ -267,12 +315,12 @@
     "retiring_epoch": null,
     "op_cert": "df1760c51bc03400ff6dd18dc91898143adc6c06ea87fdd77da5d7b2e5e3beab",
     "op_cert_counter": 0,
-    "active_stake": "6466628122",
-    "sigma": 2.5633223565414224e-07,
+    "active_stake": "6582927715",
+    "sigma": 2.6732767648616556e-07,
     "block_count": 2,
     "live_pledge": "3858031524",
-    "live_stake": "6464502796",
-    "live_delegators": 10,
+    "live_stake": "6382747342",
+    "live_delegators": 12,
     "live_saturation": 0.01
   }
 ]

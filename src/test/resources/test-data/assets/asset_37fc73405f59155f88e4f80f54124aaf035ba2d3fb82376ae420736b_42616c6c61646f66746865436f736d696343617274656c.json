@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "37fc73405f59155f88e4f80f54124aaf035ba2d3fb82376ae420736b",
+    "asset_name": "42616c6c61646f66746865436f736d696343617274656c",
+    "asset_name_ascii": "BalladoftheCosmicCartel",
+    "fingerprint": "asset1fw7fak0alwk5vk64q62sk7uke9p8gz6ag5wr9f",
+    "minting_tx_hash": "ea32f9dbfcec2b1d0878ab04ec48f3abb9a268c55bb7519259ca8cf3e0366c8f",
+    "total_supply": "1000",
+    "mint_cnt": 3,
+    "burn_cnt": 1,
+    "creation_time": 1666051200,
+    "minting_tx_metadata": {
+      "721": {
+        "37fc73405f59155f88e4f80f54124aaf035ba2d3fb82376ae420736b": {
+          "BalladoftheCosmicCartel": {
+            "url": "https://cardania.com/",
+            "name": "Ballad of the Cosmic Cartel",
+            "files": [
+              {
+                "src": "ipfs://QmUkm2tKAV66niizFupaaN7ZhT13TpJEykVE5wvAwadJAf",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmZjGGhZrnSV1xvxTQu91BxSrhjovxS8ZbuWPZ6x2vpBUW",
+            "decimals": 0,
+            "copyright": "Cardania Digital Assets 2022",
+            "mediaType": "image/gif",
+            "collection": "Cardania: Enter the Ultraverse 1st Edition"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

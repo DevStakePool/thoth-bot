@@ -115,7 +115,7 @@ public class KoiosDataBuilder {
         String f = classLoader.getResource(ACCOUNT_ASSETS_JSON_FILE).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
-                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         List<AccountAssets> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });

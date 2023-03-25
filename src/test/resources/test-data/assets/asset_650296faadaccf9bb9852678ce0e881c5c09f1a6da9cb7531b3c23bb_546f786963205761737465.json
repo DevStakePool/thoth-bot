@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "546f786963205761737465",
+    "asset_name_ascii": "Toxic Waste",
+    "fingerprint": "asset1qzrmmqlwx3tazrajklsfvjala3a3x9jsl5fs2p",
+    "minting_tx_hash": "2636036b4d64bcb2d4e0f2d8772c358af08f86101a5e20cda9ace8273eceafdd",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648771200,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Toxic Waste": {
+            "name": "Toxic Waste",
+            "image": "ipfs://QmQj3TphkryZrNYTVHNBEDbiuopJVgswAjoy52v25FLAgb",
+            "sha256": "63bfe00a13bba21b0fac2da82e0689b77033fa23791e827ab83d541b42355774",
+            "mediaType": "image/png",
+            "description": [
+              "A noxious chemical soup birthed from machine processes.",
+              "Useful in a variety of tradecraft",
+              "but best handled with extreme caution."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

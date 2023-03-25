@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d6531516c7a5648",
+    "asset_name_ascii": "frame1QlzVH",
+    "fingerprint": "asset16nzzjqrwfqaer7p4k7xgygfwhcr0jvsfk7qkeu",
+    "minting_tx_hash": "eb332623de79068c922e933a2c9cb993f32d59ee7057c9c8bed429a950a3824a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668643200,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame1QlzVH": {
+            "id": "WqjM8",
+            "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "name": "Ape Society Frame Level 1",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+                "name": "Ape Society Frame Level 1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "level": 1,
+            "artist": "Elmar Cox",
+            "mintedAt": 1668678197857,
+            "mintedBy": "e1f3197f7372829315cf1f964ee35653828248b0b6a4d0fe4aeb5075cf",
+            "description": "Level 1 frame",
+            "mintedStake": "stake1u8e3jlmnw2pfx9w0r7tyac6k2wpgyj9sk6jdplj2adg8tncxp4jhv"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "637265737434383638",
+    "asset_name_ascii": "crest4868",
+    "fingerprint": "asset1xgvnp9v2d748su8wtzmmdl49309wk25a4dg6qq",
+    "minting_tx_hash": "d000cda6b88fb3f0a91560f1a4dbfe5217edaf08242e34c1ba148edf7611b620",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675814400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest4868": {
+            "id": 4868,
+            "src": "ipfs://QmX7dQB4tUiD3ywg3GFT3h8G1N9Jr9nD3MmJiudsXZ2wfB",
+            "name": "Taylor Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmX7dQB4tUiD3ywg3GFT3h8G1N9Jr9nD3MmJiudsXZ2wfB",
+                "name": "Taylor Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmRH334qJFQ5UfHh41vRpTrPxPpMANxvni6N628Pd577Ey",
+                "name": "Taylor Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmNwrbjP8AvDGGxcVoRzy8ayHEsz5vwFkcmzTSfzREcFhc",
+                "name": "Taylor Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmX7dQB4tUiD3ywg3GFT3h8G1N9Jr9nD3MmJiudsXZ2wfB",
+            "description": "Celebrating the heritage of the Taylor family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

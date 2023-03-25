@@ -152,11 +152,11 @@ public class IntegrationTest {
         Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
         Assertions.assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
-        Assertions.assertTrue(params.get("text").toString().contains("[MNSTR]"));
+        Assertions.assertTrue(params.get("text").toString().contains("[RCADA]"));
         Assertions.assertTrue(params.get("text").toString().contains("Status: registered"));
-        Assertions.assertTrue(params.get("text").toString().contains("Rewards: 72.82"));
+        Assertions.assertTrue(params.get("text").toString().contains("Rewards: 77.51"));
         Assertions.assertTrue(params.get("text").toString().contains("$0x616461"));
-        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,129.51"));
+        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,018.67"));
     }
 
     @Test
@@ -259,15 +259,15 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Staking Rewards"));
                     Assertions.assertTrue(msg.contains("Epoch 341"));
                     Assertions.assertTrue(msg.contains("8.61"));
-                    Assertions.assertTrue(msg.contains("$gioconda"));
+                    Assertions.assertTrue(msg.contains("$covid19"));
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("new transaction(s)"));
-                    Assertions.assertTrue(msg.contains("Output -9,872.71"));
+                    Assertions.assertTrue(msg.contains("Output -21.42"));
                     Assertions.assertTrue(msg.contains("CULO 100,000"));
-                    Assertions.assertTrue(msg.contains("$gioconda"));
+                    Assertions.assertTrue(msg.contains("$covid19"));
                     Assertions.assertTrue(msg.contains("3980e6eda9693812ed633e4f797ceb934639c07e03d3ad90d10923e3cc0a785c")); // issue #6 test
-                    Assertions.assertTrue(msg.contains("Output -1.34"));
+                    Assertions.assertTrue(msg.contains("Output -300.18"));
                     Assertions.assertTrue(msg.contains("NTX 200"));
                     accountsTransactionsChecked++;
                 } else {
@@ -281,7 +281,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("[DYNO]"));
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("27 new transaction(s)"));
+                    Assertions.assertTrue(msg.contains("29 new transaction(s)"));
                     Assertions.assertTrue(msg.contains("hvMIN 245,820,436.00"));
                     Assertions.assertTrue(msg.contains("1612572528 1"));
 

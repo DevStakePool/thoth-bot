@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e373153756d6d6974526f616442553733463934",
+    "asset_name_ascii": "cabin71SummitRoadBU73F94",
+    "fingerprint": "asset1z6q98et7dt29zjxklsztw3uumsll4flt0k70mw",
+    "minting_tx_hash": "8021124113355f08b0fbbaacfb8df9c0b6566d2d59e29640193732f40715935c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin71SummitRoadBU73F94": {
+            "name": "71 Summit Road, BU73 F94",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+                "name": "Chateau.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbyKxhiGA2TMyJYr6wgP3sHSNavpf35mZrCya2RvgaP5P",
+                "name": "Chateau.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVLkR52JwV3YVyZr2KJtYhmpPp1vfEkdPPqzPJE1MmSjm",
+                "name": "Chateau.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+            "Street": "Summit Road",
+            "District": "Burroont",
+            "mediaType": "image/gif",
+            "Cabin Size": "Chateau",
+            "SLVD Rating": "F",
+            "description": "A Chateau in The Ape Society",
+            "X Coordinate": "73",
+            "Y Coordinate": "94"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

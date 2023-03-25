@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e325374416e6e4c616e65534e32304c3534",
+    "asset_name_ascii": "cabin2StAnnLaneSN20L54",
+    "fingerprint": "asset1dg70k46amr86ajfk3xe2cfcyr83j82fammp2v8",
+    "minting_tx_hash": "e1df48215f954dd2a7beafdc7a2b23de93547277491ae768e5479fb29c6fc805",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin2StAnnLaneSN20L54": {
+            "name": "2 St. Ann Lane, SN20 L54",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "St. Ann Lane",
+            "District": "Schuppin",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "L",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "20",
+            "Y Coordinate": "54"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552616d7365795461796c6f72",
+    "asset_name_ascii": "adapeRamseyTaylor",
+    "fingerprint": "asset1mwf0wcth50l4cftq57kj87fwy8jzhmej3sqs3d",
+    "minting_tx_hash": "ede2eb00915fd22209ae9a71c171c600aab8197645b68b4262de3ae5988d1a8a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRamseyTaylor": {
+            "Hat": "Wool Cap",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Ramsey Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmaRAGb6k9JP4c3crLFAZBUsoJkh8ya7jM4J3u7gdaQgff",
+                "name": "Ramsey Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaRAGb6k9JP4c3crLFAZBUsoJkh8ya7jM4J3u7gdaQgff",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

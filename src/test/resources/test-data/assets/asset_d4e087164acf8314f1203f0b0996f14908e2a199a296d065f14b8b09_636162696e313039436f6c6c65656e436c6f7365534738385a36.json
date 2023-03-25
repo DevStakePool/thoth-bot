@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e313039436f6c6c65656e436c6f7365534738385a36",
+    "asset_name_ascii": "cabin109ColleenCloseSG88Z6",
+    "fingerprint": "asset1w00je47cl0alnk5yg6xel7p73npdg3hw3alfu6",
+    "minting_tx_hash": "59b5baf7c30ec182e8c056669001033a022da1a82448f1ffb75cb45d28de0a99",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin109ColleenCloseSG88Z6": {
+            "name": "109 Colleen Close, SG88 Z6",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Colleen Close",
+            "District": "Scholnag",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "Z",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "88",
+            "Y Coordinate": "6"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

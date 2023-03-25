@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3032323630",
+    "asset_name_ascii": "Ghostchain02260",
+    "fingerprint": "asset1q2y6pdxhvxhl59m7mtg6ax7ecqajt9ruxslj20",
+    "minting_tx_hash": "18e4f6ec369d882129c257a566fba5f943a4054fd88a7113933ee0095887db83",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635465600,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain02260": {
+            "dna": "20103000",
+            "back": "Highschool Backpack",
+            "eyes": "Boss Shades",
+            "name": "Ghostchain02260",
+            "files": [
+              {
+                "src": "ipfs://QmRb7MKsuX14JbYpXdtpgQ6wZrbNwXpssXHVgXj3WGJpQj",
+                "name": "Ghostchain02260",
+                "https": "https://api.nftghostchain.com/original?mint=2260",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Cold",
+            "image": "ipfs://QmRb7MKsuX14JbYpXdtpgQ6wZrbNwXpssXHVgXj3WGJpQj",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "2a6c1ea5b4805b1aabae53758e9e2e6623e7332cded72fef7e1ff8bf",
+    "asset_name": "50726f786965576f6d62",
+    "asset_name_ascii": "ProxieWomb",
+    "fingerprint": "asset150v2q8x4zyne9442dd6lmuetm3q5y5rwvfy2ya",
+    "minting_tx_hash": "d573bd6af2d865dcb046dacc3c3d6a8d756bb821749b680856dcae11cb6f0abf",
+    "total_supply": "4500",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1644278400,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "2a6c1ea5b4805b1aabae53758e9e2e6623e7332cded72fef7e1ff8bf": {
+          "ProxieWomb": {
+            "name": "ProxieWomb",
+            "image": "ipfs://QmQ5gZogA48XXBJJDhHhAzrSWbrKju9vjYwkKGYXL9SsdJ",
+            "artist": "Cardano Proxies",
+            "summary": "Proxie’s catalyst & whitelist token",
+            "assetType": "FT",
+            "mediaType": "image/jpeg",
+            "publisher": [
+              "www.cardanoproxies.io",
+              "https://tokhun.io"
+            ],
+            "description": [
+              "Proxie’s catalyst & whitelist token for minting and upgrading",
+              "purposes,",
+              "\r\nInfo:\r\nwww.cardanoproxies.io\r\ntwitter.com/CardanoProxies\r\ndisc",
+              "ord.gg/theproxies"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

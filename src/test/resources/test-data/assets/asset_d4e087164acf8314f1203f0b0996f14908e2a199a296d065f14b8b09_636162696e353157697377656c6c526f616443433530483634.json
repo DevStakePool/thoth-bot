@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e353157697377656c6c526f616443433530483634",
+    "asset_name_ascii": "cabin51WiswellRoadCC50H64",
+    "fingerprint": "asset1z4rkn8spatmfpa93rq9yyqkdcey02ex2kt8hah",
+    "minting_tx_hash": "2183ae5b516fc1e47e9536a283763195008454ef643304a63a2860c361771f7f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin51WiswellRoadCC50H64": {
+            "name": "51 Wiswell Road, CC50 H64",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Wiswell Road",
+            "District": "Canmard City",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "H",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "50",
+            "Y Coordinate": "64"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

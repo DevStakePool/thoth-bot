@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "9a86b4f39a1195414647f9e1c6e2266d51365e28828e5985aac33c0c",
+    "asset_name": "4644414b65797331313439",
+    "asset_name_ascii": "FDAKeys1149",
+    "fingerprint": "asset1ghr65692akx5672v3d0yeh4adpel2lcllml2fw",
+    "minting_tx_hash": "d67918968efeb7f1b943e1ff4c5b4caa0cfdf4dfbe1dbb3e8fcb6a846a24fee8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669766400,
+    "minting_tx_metadata": {
+      "721": {
+        "9a86b4f39a1195414647f9e1c6e2266d51365e28828e5985aac33c0c": {
+          "FDAKeys1149": {
+            "name": "$FDA Key",
+            "files": [
+              {
+                "src": "ipfs://QmRfgz4JHNs9nJxvzvnfWSgdtipNkH9hQfsv6U6MvM4sF2",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmfL2cHArtZxRDG3HBo5LV8ZmLAtCa727DH56y2ocJvpNH",
+            "Website": "https://fibonacci-ada.com/",
+            "eddition": "1st",
+            "Attribute": {
+              "Key": "Gold",
+              "Issue #": "#251",
+              "Special": "None",
+              "Background": "Normal"
+            },
+            "Policy ID": "9a86b4f39a1195414647f9e1c6e2266d51365e28828e5985aac33c0c",
+            "Publisher": "FibonacciADA",
+            "Royalties": "5%",
+            "Collection Name": "$FDA Keys",
+            "Quantity Available": "Infinite"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]
