@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368506f527263",
+    "asset_name_ascii": "furnishPoRrc",
+    "fingerprint": "asset10ccz3flaqk7gpdf40tnwktatrtu8udestfnt7s",
+    "minting_tx_hash": "783cf893bbe85a198b3b416588245fa5db51dd5dce0751b9b2127c308c572648",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679356800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishPoRrc": {
+            "id": "PoRrc",
+            "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "name": "Oak Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+                "name": "Oak Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTGMqJRHL9XRpRB95eMcNDxW6U6JaDpM8gctpUF3NgYgj",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmaYDactdAgX1YY8jnBCTaKLsC3Sw2DMDzEL2WCck69T4P",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "description": "Hand-crafted by Ramsey Taylor.",
+            "furnitureId": 213
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

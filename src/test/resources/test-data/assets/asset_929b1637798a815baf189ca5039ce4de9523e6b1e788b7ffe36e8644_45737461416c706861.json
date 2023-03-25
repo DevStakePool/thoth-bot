@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644",
+    "asset_name": "45737461416c706861",
+    "asset_name_ascii": "EstaAlpha",
+    "fingerprint": "asset19dv7vf3za8795p8703uk35p7cx45sx0zy4j2ad",
+    "minting_tx_hash": "a87a241e0be1bccc120189844cf3585e5729b3b00a573b7f8a58edeb8bad756d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671494400,
+    "minting_tx_metadata": {
+      "721": {
+        "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644": {
+          "EstaAlpha": {
+            "name": "Esta Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmfCR4U3dGknX9UgPsACMFy3haYfTxvdvJfSpXpBAGPHSn",
+                "name": "Esta Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfCR4U3dGknX9UgPsACMFy3haYfTxvdvJfSpXpBAGPHSn",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Puffy Black",
+              "Hair": "Brown Hair 4",
+              "Mask": "Green Mask",
+              "Rank": "Farmer",
+              "Nation": "Alpha",
+              "Backdrop": "Red Backdrop 2",
+              "Body Color": "Green",
+              "Body Accessory": "Silver Spoon",
+              "Head Accessory": "Yellow Antlers"
+            },
+            "collection": "Pond - Theta Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

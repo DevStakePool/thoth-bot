@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552616c65696768466f7264",
+    "asset_name_ascii": "adapeRaleighFord",
+    "fingerprint": "asset1prpmnhhut6m0lx2c366k35yx636qh8xv7dsvzu",
+    "minting_tx_hash": "e445aee46cb3029aa3be57069bbaad3a86b7050ec52b8b0080d6a47ec4f1635a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRaleighFord": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Raleigh Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmXLR1QsybADfLFzjcF84cqVkBra4HCMLWTs4xosGQJo8J",
+                "name": "Raleigh Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXLR1QsybADfLFzjcF84cqVkBra4HCMLWTs4xosGQJo8J",
+            "Family": "Ford",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Ford family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

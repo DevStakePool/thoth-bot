@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "9cce4bbd9f6e06ef9d67b95ad8511532b4569d290d1575fcbac48732",
+    "asset_name": "43434431534d3031313635",
+    "asset_name_ascii": "CCD1SM01165",
+    "fingerprint": "asset1c8apgmqm92vdxukfx4lgapu7mvm2m7ylz055tw",
+    "minting_tx_hash": "9c2fae4af2ada3b042fe9443c9d13fd5e8387e9385557ad7e540c7795b08523e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1661644800,
+    "minting_tx_metadata": {
+      "721": {
+        "9cce4bbd9f6e06ef9d67b95ad8511532b4569d290d1575fcbac48732": {
+          "CCD1SM01165": {
+            "id": "01165",
+            "tag": "CCD1SM01165",
+            "name": "Small Custom Dome CM #01165",
+            "files": [
+              {
+                "src": "ipfs://QmVkrmMAoJ8T73uxcPJc6vpGY7Rgxo9i7TesYUSn47HETc",
+                "name": "Small Custom Dome CM",
+                "mediaType": "video/mp4",
+                "resolution": "web"
+              },
+              {
+                "src": "ipfs://QmeHaSPZ1MXg7nUQWNxkmKfr6AmuaT6irF7bCmGvyc7iF1",
+                "name": "Small Custom Dome CM",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              },
+              {
+                "src": "ipfs://QmXhra8MAEvf5K4sSHwnsZve2hX8H4BC5kfMYkHSwxdwZG",
+                "name": "Small Custom Dome CM",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmYBdh4aZBjNZbUyHd47bQgEHFK12mYQsDD72zG8jFbhRx",
+            "media": {
+              "Website": "https://www.cornucopias.io",
+              "Link Tree": "https://linktr.ee/CornucopiasGame"
+            },
+            "gameid": "CCD1SMCM",
+            "rarity": "Common",
+            "season": "Pre-Launch",
+            "version": "1.0",
+            "fullName": "Small Custom Dome Common #01165",
+            "mediaType": "image/jpeg",
+            "typeClass": "Custom Dome",
+            "attributes": {
+              "size": "Small",
+              "year": "2022",
+              "series": "1"
+            },
+            "description": "Cornucopias Custom Dome",
+            "projectName": "Cornucopias 'The Island' Game"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

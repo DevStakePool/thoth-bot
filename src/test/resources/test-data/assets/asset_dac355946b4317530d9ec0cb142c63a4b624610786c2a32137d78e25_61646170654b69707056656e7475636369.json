@@ -1,0 +1,71 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b69707056656e7475636369",
+    "asset_name_ascii": "adapeKippVentucci",
+    "fingerprint": "asset1mg90zz6l5m9uz6kvp37cgpw9ncm5v5ekh4c6m6",
+    "minting_tx_hash": "7b6f558e7ce6ce4b6a7ed54ede0fff5b5b6b2696824127522fc68c86e57bfb5a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeVivantBrown": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Vivant Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmbJG6xUhiF2H8jbUAod99WxESXtBXDNyj1Ar93vtR3g5b",
+                "name": "Vivant Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbJG6xUhiF2H8jbUAod99WxESXtBXDNyj1Ar93vtR3g5b",
+            "Family": "Brown",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeKippVentucci": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Kipp Ventucci",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmU5uVFusyUS1oSarfFGD9VU8qKiZbWhBYGPDMK8ALyFp5",
+                "name": "Kipp Ventucci",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmU5uVFusyUS1oSarfFGD9VU8qKiZbWhBYGPDMK8ALyFp5",
+            "Family": "Ventucci",
+            "Weapon": "Spear",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ventucci family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

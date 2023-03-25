@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6167635f666565",
+    "asset_name_ascii": "agc_fee",
+    "fingerprint": "asset1hnly28se3gnesdv05kcse6a07aqlajts06m8u2",
+    "minting_tx_hash": "53e2ac2024228e0fb1a3d1dfb778e68ea18f0c0d71c2cc943784a28d984e209a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658188800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "agc_fee": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$agc_fee",
+            "image": "ipfs://QmPh1cYx98t9dwzFqG6uMY2nn3X9FaRVpBKZ7ngkPLZATp",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

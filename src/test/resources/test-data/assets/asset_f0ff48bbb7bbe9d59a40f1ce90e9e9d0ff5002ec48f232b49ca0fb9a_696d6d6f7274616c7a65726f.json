@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "696d6d6f7274616c7a65726f",
+    "asset_name_ascii": "immortalzero",
+    "fingerprint": "asset18utl3j0mmpwnswhzlk0vk258d0rtr6mv5ndz0j",
+    "minting_tx_hash": "ee6465a67e580db1b6f813bd4adde8a82489512825faddcdd36b6560f72dd399",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669248000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "immortalzero": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$immortalzero",
+            "image": "ipfs://QmWefzQxhJETqmnsZvUShZbjQeLV8gxbfqrKNUqwrfEKbo",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "zeroimmortal": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$zeroimmortal",
+            "image": "ipfs://QmUxwZT6QXEx9iQ9NrR6KZdnXA4wXMk94yAXGmALoNxiSN",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

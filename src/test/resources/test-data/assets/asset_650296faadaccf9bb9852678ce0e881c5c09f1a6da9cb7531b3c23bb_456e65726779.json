@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "456e65726779",
+    "asset_name_ascii": "Energy",
+    "fingerprint": "asset1sym8z595dll4n36luqsmz54tgupezmuhvrural",
+    "minting_tx_hash": "6e89fbc509da3d103ceaa1ab2f569ccd8c4132dd83881fb71619c64ee6094f8c",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648684800,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Energy": {
+            "name": "Energy",
+            "image": "ipfs://QmayN4HNm7UkLx29DQjoMVhXiRJ5KQQowt3jmy6LJ1fUwR",
+            "sha256": "339d466e8249f414be219d7a7608c2dd43dd1c4b92cbd45f595b9967e23e3d63",
+            "mediaType": "image/png",
+            "description": [
+              "A standardized measure of stored energy.",
+              "Can be generated via a number of processes",
+              "and utilized in a number of applications"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

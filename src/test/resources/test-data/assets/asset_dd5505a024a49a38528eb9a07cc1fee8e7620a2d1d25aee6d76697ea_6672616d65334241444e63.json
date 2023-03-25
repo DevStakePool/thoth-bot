@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65334241444e63",
+    "asset_name_ascii": "frame3BADNc",
+    "fingerprint": "asset13czfs0wl3k559sk2vvcc4p93hfu599hn4zsjcs",
+    "minting_tx_hash": "55791557f9d277b61117fed830be753c34b9884cec37485b85148fba3498a031",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672790400,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame3BADNc": {
+            "id": "G7A9P",
+            "src": "ipfs://QmenDCdf8eKteNganDVssbvJw6ELNvtuJPKFNj4LYeoefz",
+            "name": "Ape Society Frame Level 3",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmenDCdf8eKteNganDVssbvJw6ELNvtuJPKFNj4LYeoefz",
+                "name": "Ape Society Frame Level 3",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmenDCdf8eKteNganDVssbvJw6ELNvtuJPKFNj4LYeoefz",
+            "level": 3,
+            "artist": "Rylan Cox",
+            "mintedAt": 1672798633909,
+            "mintedBy": "e1886bcf2691f49dab50c006364587293f96722a05fca494a2999a200a",
+            "description": "Level 3 frame",
+            "mintedStake": "stake1uxyxhnexj86fm26scqrrv3v89ylevu32qh72f99znxdzqzst87san"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

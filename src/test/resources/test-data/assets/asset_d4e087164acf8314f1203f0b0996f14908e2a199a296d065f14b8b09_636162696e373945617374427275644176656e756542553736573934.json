@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e373945617374427275644176656e756542553736573934",
+    "asset_name_ascii": "cabin79EastBrudAvenueBU76W94",
+    "fingerprint": "asset1l82wysshkudpc4rd2uw0qq0a5uq0s6rea6w9ve",
+    "minting_tx_hash": "69bc65e195afbb175e7a5faa80f36333a5cfabcc8acdc21326c4a39dcd9de099",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin79EastBrudAvenueBU76W94": {
+            "name": "79 East Brud Avenue, BU76 W94",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "East Brud Avenue",
+            "District": "Burroont",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "W",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "76",
+            "Y Coordinate": "94"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

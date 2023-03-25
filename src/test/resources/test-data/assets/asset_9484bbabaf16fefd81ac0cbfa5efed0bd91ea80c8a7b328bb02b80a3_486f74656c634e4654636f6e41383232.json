@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "9484bbabaf16fefd81ac0cbfa5efed0bd91ea80c8a7b328bb02b80a3",
+    "asset_name": "486f74656c634e4654636f6e41383232",
+    "asset_name_ascii": "HotelcNFTconA822",
+    "fingerprint": "asset1zwqjp7p0ckh2209tsre0akk3sqw6us4zh2tc4h",
+    "minting_tx_hash": "f7768187efeb5fe505874b4aad618271d3fca4ad721e8f38c8e734ceb0982a33",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1667865600,
+    "minting_tx_metadata": {
+      "721": {
+        "9484bbabaf16fefd81ac0cbfa5efed0bd91ea80c8a7b328bb02b80a3": {
+          "HotelcNFTconA822": {
+            "name": "Hotel cNFTcon",
+            "files": [
+              {
+                "src": [
+                  "ipfs://",
+                  "bafybeidxyylao7jex5shzjuqqfw34n2xtlt4q45uzabx754lwlteuulaaq"
+                ],
+                "mediaType": "image/png"
+              }
+            ],
+            "image": [
+              "ipfs://",
+              "bafkreibazfkpktq7f3qfhoh4jtqxootayrsmluopvp3ulxglxs3ozd7sm4"
+            ],
+            "Creator": "Beyond Rockets",
+            "Website": "https://www.beyondrockets.city/",
+            "mediaType": "image/png",
+            "description": "Thank you for joining us for cNFTcon 2022 in Las Vegas, NV!",
+            "In Partnership With": {
+              "Buffy Bot": "https://cnftcon.io"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

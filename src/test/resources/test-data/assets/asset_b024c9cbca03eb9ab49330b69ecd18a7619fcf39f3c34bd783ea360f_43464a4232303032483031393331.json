@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "b024c9cbca03eb9ab49330b69ecd18a7619fcf39f3c34bd783ea360f",
+    "asset_name": "43464a4232303032483031393331",
+    "asset_name_ascii": "CFJB2002H01931",
+    "fingerprint": "asset10f0mzqgm8hapennjyv23p9j27m9tccamedxvev",
+    "minting_tx_hash": "80e7f315fc18989835cb56eea7e04a33834a833e5b3cef973d322f7f8853d13c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1670803200,
+    "minting_tx_metadata": {
+      "721": {
+        "b024c9cbca03eb9ab49330b69ecd18a7619fcf39f3c34bd783ea360f": {
+          "CFJB2002H01931": {
+            "id": "01931",
+            "tag": "CFJB2002H01931",
+            "name": "Farmer Joe Bobblehead Holiday 2022 CM #01931",
+            "files": [
+              {
+                "src": "ipfs://QmQ3RcSdH45XPRCQgxGLXGh1VhWvjySEebELwQXbepcTa3",
+                "name": "Farmer Joe Bobblehead Holiday 2022 CM",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              },
+              {
+                "src": "ipfs://QmYVhLyZ3vdwKpuNZoPcJvbXiP5njTwLnaiiaTsuLAY1X7",
+                "name": "Farmer Joe Bobblehead Holiday 2022 CM",
+                "mediaType": "video/mp4",
+                "resolution": "web"
+              },
+              {
+                "src": "ipfs://QmdqY6p9LMbunqmJweRJi5MZqPMsz6VuHQwWE4PJZtiS8U",
+                "name": "Farmer Joe Bobblehead Holiday 2022 CM",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qmf83SEuNSzvyKhyS5JwGmYJaZNv5xAGaVocgfNQDJC3Zx",
+            "media": {
+              "Website": "https://www.cornucopias.io",
+              "Link Tree": "https://linktr.ee/CornucopiasGame"
+            },
+            "gameid": "CFJB1CM",
+            "rarity": "Common",
+            "season": "Pre-Launch",
+            "version": "1.0",
+            "fullName": "Farmer Joe Bobblehead Holiday 2022 #01931",
+            "mediaType": "image/png",
+            "typeClass": "Game Asset",
+            "attributes": {
+              "year": "2022",
+              "series": "1"
+            },
+            "description": "Bobblehead Series",
+            "projectName": "Cornucopias 'The Island' Game"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

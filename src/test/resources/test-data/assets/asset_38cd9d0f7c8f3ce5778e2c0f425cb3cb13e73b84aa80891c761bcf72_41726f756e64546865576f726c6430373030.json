@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "38cd9d0f7c8f3ce5778e2c0f425cb3cb13e73b84aa80891c761bcf72",
+    "asset_name": "41726f756e64546865576f726c6430373030",
+    "asset_name_ascii": "AroundTheWorld0700",
+    "fingerprint": "asset180y0zlhv6edknlg862zg4n4rsu6ln8r39tfzrp",
+    "minting_tx_hash": "947ac9f12ceb00e8e480cb93079e9ec717f1d9d7ceace4c51432665144d78711",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678320000,
+    "minting_tx_metadata": {
+      "721": {
+        "38cd9d0f7c8f3ce5778e2c0f425cb3cb13e73b84aa80891c761bcf72": {
+          "AroundTheWorld0700": {
+            "id": "0700",
+            "data": "ipfs://QmXGqWUNEm6GBfHmG6VXTNi2mxNeVEjpF5Qi9fMKTDaBLR",
+            "name": "Around the World in Eighty Days #0700",
+            "files": [
+              {
+                "src": "ipfs://Qmakmtihk5tMQyk8ZtLC7PovvMRx9Ln9mVeM1tWh6hqonK",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVNw2asDEQYSKhXMg1RM3Ai3fAZqz2jKm1AgSsEL2BiA3",
+            "sha256": "319609163f2a3f865d2be100534176d416c1c05333bc2d5912c1095bea64ea38",
+            "authors": [
+              "Jules Verne"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "15",
+              "Cover Theme": "The Detective"
+            },
+            "description": [
+              "The chance which now seems lost may present itself at the last m",
+              "oment."
+            ],
+            "extraAttributes": {
+              "Book Title": "Around the World in Eighty Days"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

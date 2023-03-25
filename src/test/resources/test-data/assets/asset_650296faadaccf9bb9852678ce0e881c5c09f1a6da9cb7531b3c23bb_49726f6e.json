@@ -1,0 +1,30 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "49726f6e",
+    "asset_name_ascii": "Iron",
+    "fingerprint": "asset1rgsxlp0xlmly2accwhnw73r04n0dst4rm65l9a",
+    "minting_tx_hash": "ca22bf3184c5e9eb2f7213f19451423130552e730622f01b35db2a32a7f346f3",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648684800,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Iron": {
+            "name": "Iron",
+            "image": "ipfs://QmV95owTURaGmGCsMXnwjz1nLTRTyWqkJ7Q3mo8tCq4PBv",
+            "sha256": "8d20b43565269156d46f141827d1a144eb021520ea585934c16a89d4b495952c",
+            "mediaType": "image/png",
+            "description": [
+              "A highly valued and useful metal,",
+              "prized for its durability as well as its magnetic properties."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

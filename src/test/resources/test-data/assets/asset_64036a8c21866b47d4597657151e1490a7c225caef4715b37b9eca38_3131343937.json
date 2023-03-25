@@ -1,0 +1,481 @@
+[
+  {
+    "policy_id": "64036a8c21866b47d4597657151e1490a7c225caef4715b37b9eca38",
+    "asset_name": "3131343937",
+    "asset_name_ascii": "11497",
+    "fingerprint": "asset1ar3572t0dvpkrl9xgmaztglmqdhwjkzs2t95zl",
+    "minting_tx_hash": "ecc7028048915e046b1fc159baa597e3f280e8628ee75141e8ec230a58de6d5b",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1651449600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "64036a8c21866b47d4597657151e1490a7c225caef4715b37b9eca38": {
+          "11444": {
+            "lat": "42.3636967",
+            "lng": "-71.05559041",
+            "url": "https://smart-places.io/landplots/892a30660afffff",
+            "name": "Smart Places #892a30660afffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #892a30660afffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "892a30660afffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Boston",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11463": {
+            "lat": "29.21998813",
+            "lng": "-81.00818743",
+            "url": "https://smart-places.io/landplots/8944f6c6323ffff",
+            "name": "Smart Places #8944f6c6323ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8944f6c6323ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8944f6c6323ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Daytona Beach",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11470": {
+            "lat": "29.95265355",
+            "lng": "-90.06814956",
+            "url": "https://smart-places.io/landplots/894446420a3ffff",
+            "name": "Smart Places #894446420a3ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #894446420a3ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "894446420a3ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "New Orleans",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11472": {
+            "lat": "40.71519237",
+            "lng": "-73.99933798",
+            "url": "https://smart-places.io/landplots/892a1072c23ffff",
+            "name": "Smart Places #892a1072c23ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #892a1072c23ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "892a1072c23ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "New York",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11474": {
+            "lat": "29.98855858",
+            "lng": "-95.340473",
+            "url": "https://smart-places.io/landplots/89446c204c7ffff",
+            "name": "Smart Places #89446c204c7ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #89446c204c7ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "89446c204c7ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Houston",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11476": {
+            "lat": "34.13728588",
+            "lng": "-118.1280525",
+            "url": "https://smart-places.io/landplots/8929a1c202bffff",
+            "name": "Smart Places #8929a1c202bffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8929a1c202bffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8929a1c202bffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Pasadena",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11477": {
+            "lat": "33.81370648",
+            "lng": "-117.9250442",
+            "url": "https://smart-places.io/landplots/8929a0b430fffff",
+            "name": "Smart Places #8929a0b430fffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8929a0b430fffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8929a0b430fffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Anaheim",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11480": {
+            "lat": "1.2802089",
+            "lng": "103.8510459",
+            "url": "https://smart-places.io/landplots/896520db3a7ffff",
+            "name": "Smart Places #896520db3a7ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #896520db3a7ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "896520db3a7ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Singapore",
+            "country": "Singapore",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11485": {
+            "lat": "34.13574496",
+            "lng": "-118.1245541",
+            "url": "https://smart-places.io/landplots/8929a1c2077ffff",
+            "name": "Smart Places #8929a1c2077ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8929a1c2077ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8929a1c2077ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Pasadena",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11489": {
+            "lat": "33.68857687",
+            "lng": "-117.8884942",
+            "url": "https://smart-places.io/landplots/8929a54d84fffff",
+            "name": "Smart Places #8929a54d84fffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8929a54d84fffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8929a54d84fffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Costa Mesa",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11496": {
+            "lat": "34.10017617",
+            "lng": "-118.3424665",
+            "url": "https://smart-places.io/landplots/8929a1d6b9bffff",
+            "name": "Smart Places #8929a1d6b9bffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8929a1d6b9bffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8929a1d6b9bffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Los Angeles",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11497": {
+            "lat": "-1.039752225",
+            "lng": "116.6963735",
+            "url": "https://smart-places.io/landplots/89688ad98dbffff",
+            "name": "Smart Places #89688ad98dbffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #89688ad98dbffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "89688ad98dbffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Penajam Paser Utara",
+            "country": "Indonesia",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11502": {
+            "lat": "48.8810185",
+            "lng": "2.350647874",
+            "url": "https://smart-places.io/landplots/891fb4666afffff",
+            "name": "Smart Places #891fb4666afffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #891fb4666afffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "891fb4666afffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Paris",
+            "country": "France",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11503": {
+            "lat": "37.33401683",
+            "lng": "-122.0283195",
+            "url": "https://smart-places.io/landplots/89283472a83ffff",
+            "name": "Smart Places #89283472a83ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #89283472a83ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "89283472a83ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Cupertino",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11504": {
+            "lat": "33.65872403",
+            "lng": "-84.43512472",
+            "url": "https://smart-places.io/landplots/8944c1b8b03ffff",
+            "name": "Smart Places #8944c1b8b03ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8944c1b8b03ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8944c1b8b03ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Atlanta",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11507": {
+            "lat": "44.94525194",
+            "lng": "-93.10230262",
+            "url": "https://smart-places.io/landplots/8927526ee13ffff",
+            "name": "Smart Places #8927526ee13ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8927526ee13ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8927526ee13ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Saint Paul",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11509": {
+            "lat": "40.76565599",
+            "lng": "-73.99062644",
+            "url": "https://smart-places.io/landplots/892a1072597ffff",
+            "name": "Smart Places #892a1072597ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #892a1072597ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "892a1072597ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "New York",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11510": {
+            "lat": "47.16138746",
+            "lng": "27.58253847",
+            "url": "https://smart-places.io/landplots/891e556e307ffff",
+            "name": "Smart Places #891e556e307ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #891e556e307ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "891e556e307ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Iași",
+            "country": "Romania",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11512": {
+            "lat": "34.07548709",
+            "lng": "-118.2414456",
+            "url": "https://smart-places.io/landplots/8929a1d7163ffff",
+            "name": "Smart Places #8929a1d7163ffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #8929a1d7163ffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "8929a1d7163ffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Los Angeles",
+            "country": "United States",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          },
+          "11515": {
+            "lat": "14.45860941",
+            "lng": "120.9664898",
+            "url": "https://smart-places.io/landplots/89694ec85abffff",
+            "name": "Smart Places #89694ec85abffff",
+            "files": [
+              {
+                "src": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+                "name": "Smart Places #89694ec85abffff",
+                "mediaType": "image/png"
+              }
+            ],
+            "hexId": "89694ec85abffff",
+            "image": "ipfs://QmRHfekoaQHCajxGyJkTwCdjEuKA8MtLQG5TeL3a7FysLc",
+            "place": "Bacoor",
+            "country": "Philippines",
+            "mediaType": "image/png",
+            "publisher": "smart-places.io",
+            "description": [
+              "Decentralized social ecosystem that rewards users",
+              "for connecting and interacting"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

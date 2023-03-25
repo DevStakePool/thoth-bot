@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654c6974746f6e43617374696c6c6f",
+    "asset_name_ascii": "adapeLittonCastillo",
+    "fingerprint": "asset1alqmh98k3mfj9gnmv4mwas3ag663s830helupw",
+    "minting_tx_hash": "fd14647f804e57406a4d7decadeed81ee42b2d4fbe3597e11f6267a5154b2efe",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRodneyKing": {
+            "Hat": "Pirate Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Rodney King",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmURZzojZ2ytovX5Js6LvfKM6WC6rz5rycQKRxiZaHi9fv",
+                "name": "Rodney King",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmURZzojZ2ytovX5Js6LvfKM6WC6rz5rycQKRxiZaHi9fv",
+            "Family": "King",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the King family"
+          },
+          "adapeBarclayRich": {
+            "Hat": "Gold Helmet",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "VR Headset",
+            "Head": "Ape",
+            "name": "Barclay Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmTzteiG74Rm1KGgcS9LiC6pWNuZ75hPTDe7QHQNBbHd9C",
+                "name": "Barclay Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTzteiG74Rm1KGgcS9LiC6pWNuZ75hPTDe7QHQNBbHd9C",
+            "Family": "Rich",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Rich family"
+          },
+          "adapeLittonCastillo": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Litton Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qmep269pBTWULoVASxwmQ34EmtXQQ64n6GLnfBisQLFn1y",
+                "name": "Litton Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmep269pBTWULoVASxwmQ34EmtXQQ64n6GLnfBisQLFn1y",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

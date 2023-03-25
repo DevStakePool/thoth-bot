@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "d9993b1b796f72acfe956bb6c82ea7b1f687bf5f664bee68fa19d0f5",
+    "asset_name": "4143617264616e6f4368726973746d6173536f6e67",
+    "asset_name_ascii": "ACardanoChristmasSong",
+    "fingerprint": "asset18fpjlnpvtck8pxts933mlpsl27tt9anzrlqufj",
+    "minting_tx_hash": "07facfa4f3a635979991561850054082f3067d1d63bc1d3384ceb1ce193a67f0",
+    "total_supply": "10000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1670198400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d9993b1b796f72acfe956bb6c82ea7b1f687bf5f664bee68fa19d0f5": {
+          "ACardanoChristmasSong": {
+            "name": "NIDO - A Cardano Christmas Song (Bitch please)",
+            "Genre": "Christmas Hop",
+            "files": [
+              {
+                "src": "ipfs://QmRoC5cYYUgVERoCDQdH8GCH5vBYUDHvVByXSzg9f2ghS9",
+                "name": "NIDO - A Cardano Christmas Song (Bitch please)",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXJn73fQDAPd5YqJiGdehAaesMCt69sJ6NeyTkCDbF2Zu",
+            "Artist": "NIDO",
+            "Twitter": "https://twitter.com/OfficialNID0",
+            "Website": "https://www.officialnido.com/",
+            "mediaType": "image/jpeg",
+            "description": "",
+            "Original Tweet": "https://tinyurl.com/Original-Tweet"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

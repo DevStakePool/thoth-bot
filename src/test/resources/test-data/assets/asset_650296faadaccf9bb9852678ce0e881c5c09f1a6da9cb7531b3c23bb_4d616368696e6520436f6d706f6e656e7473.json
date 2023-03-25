@@ -1,0 +1,33 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "4d616368696e6520436f6d706f6e656e7473",
+    "asset_name_ascii": "Machine Components",
+    "fingerprint": "asset18qns73mjw8m760rw9nv60uz9xumpppeygq8tan",
+    "minting_tx_hash": "6a16c85b835f2f22c58cbd30a7028a653b0b86812246049c865e68d9a54b11e0",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648684800,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Machine Components": {
+            "name": "Machine Components",
+            "image": "ipfs://QmQ6bdJngNB7Bq9p7my8uCAVUi8dCrSazGJ1VnhdZTVPvX",
+            "sha256": "b067dea016009f5f7a89b44d3b3a8f37a139faeaacb6d59c740f20b9d1c3f50d",
+            "mediaType": "image/png",
+            "description": [
+              "A mishmash of electronics, machinery, metal, and wires.",
+              "Typically harvested from the corpses of inorganic lifeforms,",
+              "or mined from millennia old piles of scrap.",
+              "A very useful resource for those who know how",
+              "to process and utilize such components."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]
