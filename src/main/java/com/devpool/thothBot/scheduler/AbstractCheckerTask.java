@@ -25,7 +25,7 @@ public abstract class AbstractCheckerTask {
     public static final double LOVELACE = 1000000.0;
     public static final String ADA_SYMBOL = " " + '\u20B3';
     public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
-    public static final String CARDANO_SCAN_ADDR_KEY = "https://cardanoscan.io/address/";//FIXME 11 - test this
+    public static final String CARDANO_SCAN_ADDR_KEY = "https://cardanoscan.io/address/";
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
 
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
@@ -83,7 +83,7 @@ public abstract class AbstractCheckerTask {
         List<String> stakingAddresses = Arrays.stream(addresses).filter(a -> User.isStakingAddress(a)).collect(Collectors.toList());
         List<String> normalAddresses = Arrays.stream(addresses).filter(a -> !User.isStakingAddress(a)).collect(Collectors.toList());
 
-        try { //FIXME 11 - test this
+        try {
             // Nominal address
             if (!normalAddresses.isEmpty()) {
                 Result<List<AddressAsset>> addrAssetsResp = this.koiosFacade.getKoiosService().getAddressService().getAddressAssets(normalAddresses, null);

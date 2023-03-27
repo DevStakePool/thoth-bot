@@ -57,7 +57,6 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     public AccountInfoCmd() {
     }
 
-    //FIXME 11 - tests missing
     @Override
     public void execute(Update update, TelegramBot bot) {
         Long chatId = update.message().chat().id();
@@ -151,7 +150,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
                 }
             }
-
+            //TODO test this
             for (String addr : normalAddr) {
                 Result<AddressInfo> addressInfoResult = this.koiosFacade.getKoiosService().getAddressService().getAddressInformation(
                         List.of(addr), SortType.DESC, null);
