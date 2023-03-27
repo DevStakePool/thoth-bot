@@ -18,6 +18,7 @@ import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxCertificate;
 import rest.koios.client.backend.api.transactions.model.TxIO;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
+import rest.koios.client.backend.api.transactions.model.TxPlutusContract;
 import rest.koios.client.backend.factory.options.*;
 
 import javax.annotation.PostConstruct;
@@ -166,7 +167,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     continue; // The previous call failed, probably due to unavailability of Koios
 
                 // Retrieve all TXs with pagination starting from the last block height
-                Result<List<TxHash>> txResult = null;
+                Result<List<TxHash>> txResult;
                 List<TxHash> allTx = new ArrayList<>();
                 long offset = 0;
                 do {
@@ -374,6 +375,18 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                             messageBuilder.append(" (")
                                     .append(String.format("%,.2f $", receivedOrSentFunds * latestCardanoPriceUsd))
                                     .append(")");
+                        }
+                    }
+
+                    // Plutus contract?
+                    if (txInfo.getPlutusContracts() != null && !txInfo.getPlutusContracts().isEmpty()) {
+                        messageBuilder.append(EmojiParser.parseToUnicode("\n:page_with_curl: Plutus Contracts:"));
+
+                        for (TxPlutusContract plutusContract : txInfo.getPlutusContracts()) {
+                            messageBuilder
+                                    .append(EmojiParser.parseToUnicode("\n\t:black_small_square:"))
+                                    .append(plutusContract.getValidContract() ? "Valid" : "Invalid")
+                                    .append(" with size ").append(plutusContract.getSize()).append(" byte(s) ");
                         }
                     }
 

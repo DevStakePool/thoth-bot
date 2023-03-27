@@ -1,6 +1,8 @@
 package com.devpool.thothBot.doubles.koios;
 
+import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import rest.koios.client.backend.api.account.model.AccountAddress;
+import rest.koios.client.backend.api.account.model.AccountAssets;
 import rest.koios.client.backend.api.address.AddressService;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
@@ -43,12 +45,17 @@ public class AddressServiceDouble implements AddressService {
         }
 
         try {
+            String addr = null;
             List<AccountAddress> accountAddresses = KoiosDataBuilder.getAccountAddressesTestData();
             Optional<AccountAddress> accountAddressMatchingInput = accountAddresses.stream().filter(aa -> aa.getAddresses().containsAll(addressList)).findFirst();
-            if (accountAddressMatchingInput.isEmpty())
-                throw new RuntimeException("Cannot find account address for the list of addresses " + addressList);
+            if (accountAddressMatchingInput.isPresent()) {
+                addr = accountAddressMatchingInput.get().getStakeAddress();
+            } else {
+                // Could be just a simple non-staking address
+                addr = addressList.stream().findFirst().get();
+            }
 
-            List<TxHash> data = KoiosDataBuilder.getAddressTransactionTestData(accountAddressMatchingInput.get().getStakeAddress());
+            List<TxHash> data = KoiosDataBuilder.getAddressTransactionTestData(addr);
             return Result.<List<TxHash>>builder().code(200).response("").successful(true).value(data).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
@@ -57,7 +64,12 @@ public class AddressServiceDouble implements AddressService {
 
     @Override
     public Result<List<AddressAsset>> getAddressAssets(List<String> addressList, Options options) throws ApiException {
-        return null;
+        try {
+            List<AddressAsset> data = KoiosDataBuilder.getAddressAssets();
+            return Result.<List<AddressAsset>>builder().code(200).response("").successful(true).value(data).build();
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override

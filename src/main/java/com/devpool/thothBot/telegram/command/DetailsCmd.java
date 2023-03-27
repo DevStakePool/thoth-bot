@@ -20,7 +20,6 @@ import rest.koios.client.backend.api.common.Asset;
 import java.util.List;
 import java.util.Optional;
 
-//FIXME 11 - tests missing
 @Component
 public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(DetailsCmd.class);
@@ -98,6 +97,7 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
                 }
                 assets = assetForAccount.get().getAssetList();
             } else {
+                //TODO test this part
                 Result<List<AddressAsset>> result = this.koiosFacade.getKoiosService()
                         .getAddressService().getAddressAssets(List.of(user.getAddress()), null);
                 if (!result.isSuccessful()) {

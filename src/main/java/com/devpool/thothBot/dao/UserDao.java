@@ -40,7 +40,7 @@ public class UserDao {
     }
 
     public List<User> getUsers() {
-        // FIXME 11 - eventually change the stake_addr to just addr (see issue #11)
+        // TODO eventually change the stake_addr to just addr (see issue #11)
         SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
                 "select id, chat_id, stake_addr, last_block_height, last_epoch_number from users");
         Map<Long, User> users = new HashedMap<>();
@@ -118,7 +118,7 @@ public class UserDao {
         }
     }
 
-    //FIXME 11 - check this
+    //TODO cover this
     public boolean removeAddress(Long chatId, String addr) {
         int removedRows = this.namedParameterJdbcTemplate.update(
                 "delete from users where chat_id = :chat_id and stake_addr = :stake_addr;",

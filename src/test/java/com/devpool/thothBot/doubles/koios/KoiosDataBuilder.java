@@ -9,13 +9,16 @@ import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.account.model.AccountAssets;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.account.model.AccountRewards;
+import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.common.TxHash;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
 public class KoiosDataBuilder {
@@ -26,6 +29,7 @@ public class KoiosDataBuilder {
     private static final String ACCOUNT_REWARDS_341_JSON_FILE = "test-data/account_rewards_341.json";
     private static final String ACCOUNT_REWARDS_369_JSON_FILE = "test-data/account_rewards_369.json";
     private static final String ACCOUNT_ASSETS_JSON_FILE = "test-data/account_assets.json";
+    private static final String ADDRESS_ASSETS_JSON_FILE = "test-data/address_assets.json";
     private static final String POOL_INFORMATION_JSON_FILE = "test-data/pool_information.json";
     private static final String ACCOUNT_INFORMATION_JSON_FILE = "test-data/account_information.json";
     private static final String ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE = "test-data/address_txs_";
@@ -97,9 +101,14 @@ public class KoiosDataBuilder {
     }
 
 
-    public static List<TxHash> getAddressTransactionTestData(String stakeAddress) throws IOException {
+    public static List<TxHash> getAddressTransactionTestData(String addr) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE + stakeAddress + ".json").getFile();
+        String fileName = ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE + addr + ".json";
+        URL res = classLoader.getResource(fileName);
+        if (res == null) {
+            throw new FileNotFoundException("File not found: " + fileName);
+        }
+        String f = res.getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
@@ -118,6 +127,19 @@ public class KoiosDataBuilder {
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         List<AccountAssets> data = mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+
+        return data;
+    }
+
+    public static List<AddressAsset> getAddressAssets() throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = classLoader.getResource(ADDRESS_ASSETS_JSON_FILE).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        List<AddressAsset> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
 
         return data;

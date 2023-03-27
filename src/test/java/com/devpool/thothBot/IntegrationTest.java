@@ -41,6 +41,7 @@ public class IntegrationTest {
         TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0));
         TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0));
         TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
+        TEST_USERS.add(new User(-4L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
     }
 
     @MockBean
@@ -205,7 +206,7 @@ public class IntegrationTest {
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
                         Mockito.timeout(60 * 1000)
-                                .times(8))
+                                .times(9))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 
         List<User> allUsers = this.userDao.getUsers();
@@ -285,6 +286,9 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("hvMIN 245,820,436.00"));
                     Assertions.assertTrue(msg.contains("1612572528 1"));
 
+                    //Plutus contracts
+                    Assertions.assertTrue(msg.contains("Valid with size 2305 byte(s)"));
+
                     // Internal TX (issue #3)
                     Assertions.assertTrue(msg.contains("3d7d75beafc89efdc06dfadd0823b357bdb0b7c4ed22cea31eb77105d7df1738"));
                     Assertions.assertTrue(msg.contains("Internal Transfer"));
@@ -298,11 +302,26 @@ public class IntegrationTest {
                 } else {
                     Assertions.fail("Unknown message " + msg);
                 }
+            } else if (msg.contains("addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m")) {
+                // No rewards for a simple address
+                Assertions.assertFalse(msg.contains("reward(s)"));
+
+                if (msg.contains("transaction(s)")) {
+                    Assertions.assertTrue(msg.contains("adapeParkerMars 1"));
+                    Assertions.assertTrue(msg.contains("Raccoon 6411 1"));
+                    Assertions.assertTrue(msg.contains("SpaceBud4288 1"));
+
+                    // Plutus contracts
+                    Assertions.assertTrue(msg.contains("Valid with size 7836 byte(s)"));
+                    accountsTransactionsChecked++;
+                } else {
+                    Assertions.fail("Unknown message " + msg);
+                }
             } else {
                 Assertions.fail("Unknown message " + msg);
             }
         }
-        Assertions.assertEquals(4, accountsTransactionsChecked);
+        Assertions.assertEquals(5, accountsTransactionsChecked);
         Assertions.assertEquals(4, accountsRewardsChecked);
     }
 }

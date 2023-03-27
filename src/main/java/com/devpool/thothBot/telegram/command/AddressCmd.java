@@ -28,7 +28,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class AddressCmd implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AddressCmd.class);
     public static final String CMD_PREFIX_STAKE = "stake1";
-    //FIXME 11 - tests missing
     public static final String CMD_PREFIX_ADDR = "addr1";
 
 
@@ -92,6 +91,7 @@ public class AddressCmd implements IBotCommand {
         }
     }
 
+    //TODO Test this part
     private void unsubscribeNewAddress(Update update, TelegramBot bot) {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
         String addr = update.message().text().trim();
