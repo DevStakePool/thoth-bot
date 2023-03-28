@@ -43,7 +43,7 @@ public class IntegrationNoSchedulerTest {
         TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0));
         TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0));
         TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
-        TEST_USERS.add(new User(-4L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
+        TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
     }
 
     @MockBean
@@ -117,13 +117,12 @@ public class IntegrationNoSchedulerTest {
         Mockito.when(this.koiosFacade.getKoiosService()).thenReturn(this.backendServiceDouble);
     }
 
-
     @Test
-    public void userCommandStakeTest() throws Exception {
-        // Testing Stake command
-        Update stakeCmdUpdate = TelegramUtils.buildStakeCommandUpdate(
+    public void userCommandAddrForSubscribeTest() throws Exception {
+        // Testing Address command
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
                 "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", -1000);
-        this.stakeCmd.execute(stakeCmdUpdate, this.telegramBotMock);
+        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(1))
@@ -148,7 +147,7 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
 
         argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        this.stakeCmd.execute(stakeCmdUpdate, this.telegramBotMock);
+        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(3))
@@ -161,10 +160,40 @@ public class IntegrationNoSchedulerTest {
                         .toString().contains("Please specify the operation first")).count());
         Assertions.assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("please send your stake address")).count());
+                        .toString().contains("please send your address")).count());
         Assertions.assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("From now on you will receive updates")).count());
+    }
+
+    @Test
+    public void userCommandAddrForUnsubscribeTest() throws Exception {
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
+                "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", -1000);
+
+        // First specify the /unsubscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update unsubscribeCommandUpdate = TelegramUtils.buildUnsubscribeCommandUpdate();
+        this.unsubscribeCmd.execute(unsubscribeCommandUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(argumentCaptor.capture());
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(argumentCaptor.capture());
+        List<SendMessage> sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(2, sendMessages.size());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("please specify your address")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("You have successfully unsubscribed the address")).count());
     }
 
     @Test

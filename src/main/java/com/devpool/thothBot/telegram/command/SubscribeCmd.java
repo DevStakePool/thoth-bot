@@ -40,7 +40,7 @@ public class SubscribeCmd implements IBotCommand {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
         this.addressCmd.getOperationsQueue().get(AddressCmd.CmdOperation.SUBSCRIBE).add(update.message().chat().id());
 
-        bot.execute(new SendMessage(update.message().chat().id(), String.format("Hi %s, please send your stake address (stake1u8yxtug...)", name))
+        bot.execute(new SendMessage(update.message().chat().id(), String.format("Hi %s, please send your address (stake1... or addr1...)", name))
                 .replyMarkup(new ForceReply(true)));
     }
 }

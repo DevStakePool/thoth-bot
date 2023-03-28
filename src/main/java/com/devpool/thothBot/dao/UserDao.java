@@ -118,7 +118,6 @@ public class UserDao {
         }
     }
 
-    //TODO cover this
     public boolean removeAddress(Long chatId, String addr) {
         int removedRows = this.namedParameterJdbcTemplate.update(
                 "delete from users where chat_id = :chat_id and stake_addr = :stake_addr;",
