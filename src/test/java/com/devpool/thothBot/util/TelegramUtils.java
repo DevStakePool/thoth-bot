@@ -47,7 +47,7 @@ public class TelegramUtils {
         return resp.updates().get(0);
     }
 
-    public static Update buildStakeCommandUpdate(String stakeAddress, int chatId) throws IOException {
+    public static Update buildAddrCommandUpdate(String stakeAddress, int chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(STAKE_CMD_JSON,
                 jsonContent -> jsonContent.replace("$stake_addr", stakeAddress).replace("-1000", Integer.toString(chatId)));
         return resp.updates().get(0);

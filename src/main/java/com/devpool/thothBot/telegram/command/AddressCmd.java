@@ -91,7 +91,6 @@ public class AddressCmd implements IBotCommand {
         }
     }
 
-    //TODO Test this part
     private void unsubscribeNewAddress(Update update, TelegramBot bot) {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
         String addr = update.message().text().trim();
@@ -113,22 +112,6 @@ public class AddressCmd implements IBotCommand {
         String addr = update.message().text().trim();
 
         try {
-            Result<List<AccountAddress>> addresses = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
-                    Arrays.asList(addr), null);
-
-            if (!addresses.isSuccessful()) {
-                LOG.warn("Unsuccessful KOIOS call during the subscribe of the address {}. {} {}",
-                        addr, addresses.getCode(), addresses.getResponse());
-
-                bot.execute(new SendMessage(update.message().chat().id(),
-                        String.format("Sorry %s! Something went wrong when collecting the information about the address %s", name, addr)));
-
-                return;
-            }
-
-            LOG.info(String.valueOf(addresses.getValue()));
-            if (addresses.getValue().isEmpty()) throw new ApiException("Cannot find address");
-
             // Get block height
             Result<Tip> tipResult = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
 
@@ -155,18 +138,15 @@ public class AddressCmd implements IBotCommand {
             LOG.warn("Error in command address: " + e);
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("The address seems to be invalid: %s", e.getMessage())));
-            return;
         } catch (MaxRegistrationsExceededException e) {
             LOG.warn("Max number of registrations exceeded for user " + update.message().chat().id() + ": " + e.getMessage());
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Max number of registrations exceeded. You can only register a maximum of %d wallets. Try to de-register some.",
                             e.getMaxRegistrationsAllowed())));
-            return;
         } catch (DuplicateKeyException e) {
             LOG.info("Duplicated key when registering a new wallet {}", e.toString());
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("It looks like the address %s has been already registered in this chat.", addr)));
-            return;
         }
     }
 

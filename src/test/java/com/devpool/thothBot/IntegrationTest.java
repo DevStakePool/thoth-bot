@@ -178,7 +178,7 @@ public class IntegrationTest {
 
         Assertions.assertEquals(-1000L, params.get("chat_id"));
         Assertions.assertEquals(ForceReply.class, params.get("reply_markup").getClass());
-        Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please send your stake address"));
+        Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please send your address"));
     }
 
     @Test
@@ -199,7 +199,7 @@ public class IntegrationTest {
 
         Assertions.assertEquals(-1000L, params.get("chat_id"));
         Assertions.assertEquals(ForceReply.class, params.get("reply_markup").getClass());
-        Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please specify your stake address"));
+        Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please specify your address"));
     }
 
     @Test
