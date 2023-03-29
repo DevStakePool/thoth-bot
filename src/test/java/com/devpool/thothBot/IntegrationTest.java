@@ -135,9 +135,9 @@ public class IntegrationTest {
     }
 
     @Test
-    public void userCommandInfoTest() throws Exception {
+    public void userCommandInfoStakeAddrTest() throws Exception {
         // Testing Help command
-        Update infoCmdUpdate = TelegramUtils.buildInfoCommandUpdate();
+        Update infoCmdUpdate = TelegramUtils.buildInfoCommandUpdate("-2");
         this.infoCmd.execute(infoCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
@@ -158,6 +158,31 @@ public class IntegrationTest {
         Assertions.assertTrue(params.get("text").toString().contains("Rewards: 77.51"));
         Assertions.assertTrue(params.get("text").toString().contains("$0x616461"));
         Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,018.67"));
+    }
+
+    @Test
+    public void userCommandInfoNormalAddrTest() throws Exception {
+        // Testing Help command
+        Update infoCmdUpdate = TelegramUtils.buildInfoCommandUpdate("-4");
+        this.infoCmd.execute(infoCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+        Assertions.assertEquals((long) -4, params.get("chat_id"));
+        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("$549"));
+        Assertions.assertTrue(params.get("text").toString().contains("Balance: 1,473.53"));
+        Assertions.assertTrue(params.get("text").toString().contains("Stake Address: NO"));
+        Assertions.assertTrue(params.get("text").toString().contains("Script Address: YES"));
+        Assertions.assertTrue(params.get("text").toString().contains("UTXOs: 856"));
     }
 
     @Test

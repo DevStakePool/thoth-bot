@@ -3,6 +3,7 @@ package com.devpool.thothBot.doubles.koios;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.address.AddressService;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
@@ -18,16 +19,24 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class AddressServiceDouble implements AddressService {
     @Override
     public Result<AddressInfo> getAddressInformation(String address) throws ApiException {
-        return null;
+        return getAddressInformation(List.of(address), SortType.DESC, null);
     }
 
     @Override
     public Result<AddressInfo> getAddressInformation(List<String> addressList, SortType utxoSortType, Options options) throws ApiException {
-        return null;
+        try {
+            List<AddressInfo> allAddrInfo = KoiosDataBuilder.getAddressInformationTestData();
+            List<AddressInfo> filteredList = allAddrInfo.stream().filter(r -> addressList.contains(r.getAddress())).collect(Collectors.toList());
+            return Result.<AddressInfo>builder().code(200).response("").successful(true).value(filteredList.get(0)).build();
+
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override
