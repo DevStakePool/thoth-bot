@@ -27,8 +27,9 @@ public class TelegramUtils {
         return resp.updates().get(0);
     }
 
-    public static Update buildInfoCommandUpdate() throws IOException {
-        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(INFO_CMD_JSON, null);
+    public static Update buildInfoCommandUpdate(String chatId) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(INFO_CMD_JSON,
+                j -> j.replace("$chat_id", chatId));
         return resp.updates().get(0);
     }
 

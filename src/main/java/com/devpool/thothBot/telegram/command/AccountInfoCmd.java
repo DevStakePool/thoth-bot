@@ -150,7 +150,8 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
                 }
             }
-            //TODO test this
+
+            Map<String, String> handlesForAddresses = getAdaHandleForAccount(normalAddr.toArray(new String[0]));
             for (String addr : normalAddr) {
                 Result<AddressInfo> addressInfoResult = this.koiosFacade.getKoiosService().getAddressService().getAddressInformation(
                         List.of(addr), SortType.DESC, null);
@@ -159,13 +160,12 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     failure = true;
                 } else {
                     // Get accounts ADA Handles
-                    Map<String, String> handles = getAdaHandleForAccount(stakingAddr.toArray(new String[0]));
                     AddressInfo addrInfo = addressInfoResult.getValue();
                     messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                             .append(TransactionCheckerTask.CARDANO_SCAN_ADDR_KEY)
                             .append(addrInfo.getAddress())
                             .append("\">")
-                            .append(handles.get(addrInfo.getAddress()))
+                            .append(handlesForAddresses.get(addrInfo.getAddress()))
                             .append("</a>\n");
 
                     double cardanoBalance = Long.parseLong(addrInfo.getBalance()) / StakingRewardsCheckerTask.LOVELACE;
@@ -190,8 +190,18 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
                     messageBuilder
                             .append(EmojiParser.parseToUnicode(":white_small_square: "))
-                            .append("Script Address?: ")
-                            .append(addrInfo.getScriptAddress())
+                            .append("Stake Address: ")
+                            .append(addrInfo.getStakeAddress() != null ? "YES" : "NO").append("\n");
+
+                    messageBuilder
+                            .append(EmojiParser.parseToUnicode(":white_small_square: "))
+                            .append("Script Address: ")
+                            .append(addrInfo.getScriptAddress() ? "YES" : "NO").append("\n");
+
+                    messageBuilder
+                            .append(EmojiParser.parseToUnicode(":white_small_square: "))
+                            .append("UTXOs: ")
+                            .append(addrInfo.getUtxoSet().size())
                             .append("\n\n");
                 }
             }
