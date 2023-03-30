@@ -33,6 +33,11 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
+    public Result<List<AccountUTxO>> getAccountUTxOs(String stakeAddress, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<AccountInfo>> getCachedAccountInformation(List<String> stakeAddresses, Options options) throws ApiException {
         return null;
     }
@@ -54,7 +59,7 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
-    public Result<List<AccountAddress>> getAccountAddresses(List<String> addressList, Options options) throws ApiException {
+    public Result<List<AccountAddress>> getAccountAddresses(List<String> addressList, boolean firstOnly, boolean empty, Options options) throws ApiException {
         if (options != null) {
             // Check the offset
             Optional<Option> optionOffset = options.getOptions().stream().filter(o -> o.getOptionType().equals(OptionType.OFFSET)).findFirst();

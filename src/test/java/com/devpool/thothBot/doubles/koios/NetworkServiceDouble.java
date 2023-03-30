@@ -4,6 +4,7 @@ import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.NetworkService;
 import rest.koios.client.backend.api.network.model.Genesis;
+import rest.koios.client.backend.api.network.model.ParamUpdateProposal;
 import rest.koios.client.backend.api.network.model.Tip;
 import rest.koios.client.backend.api.network.model.Totals;
 import rest.koios.client.backend.factory.options.Options;
@@ -31,6 +32,11 @@ public class NetworkServiceDouble implements NetworkService {
 
     @Override
     public Result<List<Totals>> getHistoricalTokenomicStats(Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<ParamUpdateProposal>> getParamUpdateProposals(Options options) throws ApiException {
         return null;
     }
 }

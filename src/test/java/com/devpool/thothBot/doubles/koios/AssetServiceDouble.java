@@ -6,6 +6,7 @@ import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.common.TxHash;
 import rest.koios.client.backend.factory.options.Options;
+import rest.koios.client.utils.Tuple;
 
 import java.io.IOException;
 import java.util.List;
@@ -18,7 +19,17 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
+    public Result<List<AssetAddress>> getAssetsAddresses(String assetPolicy, String assetName, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<AssetAddress>> getAssetsAddressList(String assetPolicy, String assetName, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<AssetAddress>> getNFTAddress(String assetPolicy, String assetName, Options options) throws ApiException {
         return null;
     }
 
@@ -28,7 +39,17 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
-    public Result<List<PolicyAsset>> getAssetPolicyInformation(String s, Options options) throws ApiException {
+    public Result<List<PolicyAssetInfo>> getPolicyAssetInformation(String assetPolicy, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<PolicyAssetInfo>> getAssetPolicyInformation(String assetPolicy, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<PolicyAsset>> getPolicyAssetList(String assetPolicy, Options options) throws ApiException {
         return null;
     }
 
@@ -40,6 +61,11 @@ public class AssetServiceDouble implements AssetService {
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }
+    }
+
+    @Override
+    public Result<AssetInformation> getAssetInformationBulk(List<Tuple<String, String>> assetList, Options options) throws ApiException {
+        return null;
     }
 
     @Override
