@@ -25,8 +25,6 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(DetailsCmd.class);
     public static final String CMD_PREFIX = "/d";
 
-    private static final int MAX_MSG_PAYLOAD_SIZE = 4096 - 256;
-
     @Autowired
     private AssetFacade assetFacade;
 

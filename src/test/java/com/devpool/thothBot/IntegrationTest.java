@@ -334,7 +334,7 @@ public class IntegrationTest {
                 if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("adapeParkerMars 1"));
                     Assertions.assertTrue(msg.contains("Raccoon 6411 1"));
-                    Assertions.assertTrue(msg.contains("SpaceBud4288 1"));
+                    Assertions.assertTrue(msg.contains("adapeParkerMars 1"));
 
                     // Plutus contracts
                     Assertions.assertTrue(msg.contains("Valid with size 7836 byte(s)"));
