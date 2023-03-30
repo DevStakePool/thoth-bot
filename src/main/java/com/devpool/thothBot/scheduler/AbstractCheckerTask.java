@@ -99,10 +99,10 @@ public abstract class AbstractCheckerTask {
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
                             handlesMap.put(addr, shortenAddr(addr));
-                            handleFound = true;
                         } else {
                             LOG.debug("Found handle {} for account {}", bestHandle.get(), addr);
                             handlesMap.put(addr, ADA_HANDLE_PREFIX + bestHandle.get());
+                            handleFound = true;
                         }
                     }
                 } else {
@@ -124,10 +124,10 @@ public abstract class AbstractCheckerTask {
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
                             handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
-                            handleFound = true;
                         } else {
                             LOG.debug("Found handle {} for account {}", bestHandle.get(), stakeAddr);
                             handlesMap.put(stakeAddr, ADA_HANDLE_PREFIX + bestHandle.get());
+                            handleFound = true;
                         }
                     }
                 } else {
