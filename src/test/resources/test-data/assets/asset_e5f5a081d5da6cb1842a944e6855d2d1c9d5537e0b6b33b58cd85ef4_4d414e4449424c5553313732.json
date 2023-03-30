@@ -1,0 +1,160 @@
+[
+  {
+    "policy_id": "e5f5a081d5da6cb1842a944e6855d2d1c9d5537e0b6b33b58cd85ef4",
+    "asset_name": "4d414e4449424c5553313732",
+    "asset_name_ascii": "MANDIBLUS172",
+    "fingerprint": "asset1mehp657pac8pjenvrck663fz4lczm6sgf7kkf5",
+    "minting_tx_hash": "37b007e25b4e5e242868eaf4fa4ac36d04503c57f62eb2161f488c362a96587e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635379200,
+    "minting_tx_metadata": {
+      "721": {
+        "201bcd6107da0f2ecd70e65b0eb042349873281c569de38178630388": {
+          "BuffyBit": {
+            "name": "Buffy Bit",
+            "image": "ipfs://QmckJocdEY19QeAHZKerHPYMcbqcTENVXnon4Jgy4xanJZ",
+            "mediaType": "image/png"
+          }
+        },
+        "e5f5a081d5da6cb1842a944e6855d2d1c9d5537e0b6b33b58cd85ef4": {
+          "MANDIBLUS172": {
+            "name": "Mandiblus 172",
+            "files": [
+              {
+                "src": "ipfs://QmPgf6z2s5vwPw1FBv1KTyMdpoHZPKAeWqBnvn71qyuze8",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmPiq6sGBcxDrbwbRqHwmQjR956B9fzKioa3End8c7DRdX",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfL28RqrT6nLYTYg7G5Ubo9DwwskXeQoHm1vJ8oAJjKjr",
+            "attacks": {
+              "first": "B",
+              "second": "C",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Scout",
+              "Stealth",
+              "Land"
+            ],
+            "character": {
+              "alias": "Mandiblus",
+              "subject": "001.009.172"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "base",
+              "speed": 6,
+              "powerup": "none",
+              "tactics": 4,
+              "strength": 3
+            },
+            "collection": "Monstrocity"
+          },
+          "MANDIBLUS351": {
+            "name": "Mandiblus 351",
+            "files": [
+              {
+                "src": "ipfs://QmPgf6z2s5vwPw1FBv1KTyMdpoHZPKAeWqBnvn71qyuze8",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmRZ7jZUdgqP4xp6ZxKHcRxovkqUrjdihddztS7DLUTgqP",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfL28RqrT6nLYTYg7G5Ubo9DwwskXeQoHm1vJ8oAJjKjr",
+            "attacks": {
+              "first": "A",
+              "second": "B",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Scout",
+              "Stealth",
+              "Land"
+            ],
+            "character": {
+              "alias": "Mandiblus",
+              "subject": "001.009.351"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "base",
+              "speed": 6,
+              "powerup": "ada",
+              "tactics": 6,
+              "strength": 2
+            },
+            "collection": "Monstrocity"
+          },
+          "MANDIBLUS498": {
+            "name": "Mandiblus 498",
+            "files": [
+              {
+                "src": "ipfs://QmRPKwxoWjWZ33iB97BcPwE9B8xQpM3KNbXaceXzEFS3GY",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmQcwfjzZqgnAAuT7WopM2N3tZpLG3S5io7LTdvH9oQpyK",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZVTCscoU2j1iJVp9PVJ5LWDkr5ECXQS6MDbsmDDd3ydF",
+            "attacks": {
+              "first": "A",
+              "second": "C",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Scout",
+              "Stealth",
+              "Land",
+              "leader"
+            ],
+            "character": {
+              "alias": "Mandiblus",
+              "subject": "001.009.498"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "leader",
+              "speed": 7,
+              "powerup": "cardano",
+              "tactics": 4,
+              "strength": 2
+            },
+            "collection": "Monstrocity"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

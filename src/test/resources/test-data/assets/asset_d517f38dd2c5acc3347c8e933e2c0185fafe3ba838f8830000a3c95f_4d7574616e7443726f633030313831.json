@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f",
+    "asset_name": "4d7574616e7443726f633030313831",
+    "asset_name_ascii": "MutantCroc00181",
+    "fingerprint": "asset12efqtdyrm7fkxlv7pzql6pzenjyxy0ywghlkg2",
+    "minting_tx_hash": "34ade7fb8148878ab8df98c9d2168f85c6ea284b2cd7a4933607a9a9b4bfd1f4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633824000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f": {
+          "MutantCroc00181": {
+            "head": "Skull",
+            "name": "MutantCroc00181",
+            "neck": "Stethoscope",
+            "skin": "Red",
+            "cloth": "Overalls",
+            "files": [
+              {
+                "src": "ipfs://QmYkiBQocULMwB1AfFQLuMcgH81diq9uC23fH86cw1fCfq",
+                "name": "MutantCroc00181",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYkiBQocULMwB1AfFQLuMcgH81diq9uC23fH86cw1fCfq",
+            "mediaType": "image/png",
+            "background": "Valley"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

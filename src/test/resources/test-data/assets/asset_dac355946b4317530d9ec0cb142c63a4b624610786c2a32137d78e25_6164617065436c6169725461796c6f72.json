@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065436c6169725461796c6f72",
+    "asset_name_ascii": "adapeClairTaylor",
+    "fingerprint": "asset19wdy0jy2tm2guppnd8st7t3xxt2shh49p949nv",
+    "minting_tx_hash": "8ac73ee088326799fa489bdce404700082ba87713f9af607bf4845010d8acf41",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeClairTaylor": {
+            "Hat": "None",
+            "Body": "Black Wool Coat",
+            "Ears": "Silver Earring",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Clair Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUKsqU9KHdqc7VGuvEc1bAGv89yd2aAGPgsii7jpT98x5",
+                "name": "Clair Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUKsqU9KHdqc7VGuvEc1bAGv89yd2aAGPgsii7jpT98x5",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          },
+          "adapeFernandoKing": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Earphones",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Fernando King",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmUPPAgPr4B1iUqzkHJHBq3tv9psn1CUBnoL7PVehz3HJf",
+                "name": "Fernando King",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUPPAgPr4B1iUqzkHJHBq3tv9psn1CUBnoL7PVehz3HJf",
+            "Family": "King",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the King family"
+          },
+          "adapeRochesterHill": {
+            "Hat": "Fruit Basket",
+            "Body": "Knight Armor",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Rochester Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmX25bmDooQm6x1MKkmMGzmFupDLxFbwH64a6yEiGb861y",
+                "name": "Rochester Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmX25bmDooQm6x1MKkmMGzmFupDLxFbwH64a6yEiGb861y",
+            "Family": "Hill",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Hill family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

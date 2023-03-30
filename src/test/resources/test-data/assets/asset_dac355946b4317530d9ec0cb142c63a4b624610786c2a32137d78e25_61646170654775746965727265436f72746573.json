@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654775746965727265436f72746573",
+    "asset_name_ascii": "adapeGutierreCortes",
+    "fingerprint": "asset1asmalx9ayvue4vrhfcx5xcn53p20etrjk895uk",
+    "minting_tx_hash": "34cf6669ed64d6c6c7094849c765b0f00aba9cd6b0eb8c8fa25e38cc35aa8b19",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeGutierreCortes": {
+            "Hat": "Hoodie",
+            "Body": "Gold Linen",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Gutierre Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmUNkaJAC258pDraXRZ5Ree8S4GaKrP1Fc7LiC1gHh29eY",
+                "name": "Gutierre Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUNkaJAC258pDraXRZ5Ree8S4GaKrP1Fc7LiC1gHh29eY",
+            "Family": "Cortes",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cortes family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

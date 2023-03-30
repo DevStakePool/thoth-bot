@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "5a7261676e697272",
+    "asset_name_ascii": "Zragnirr",
+    "fingerprint": "asset12lkzt4dhd9n7xpf2uuuth59weuj5c7lhz9sc7z",
+    "minting_tx_hash": "f1f8a9a75d98dbb42243298746369219396cd9e013cb4cc045ba06236b515cb0",
+    "total_supply": "5000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "Zragnirr": {
+            "id": 7,
+            "name": "Zragnirr",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://Qmf2gK65FgR3YfGwxqaXZrjLWfV6KnmBjKt5CrMm7TvN8U",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/6sfcs6r68jul/nvla.json",
+                  "ipfs://QmX5RBGzh4oq6vw969saS4LZhYzJzbuzyXs3xuyVXwbMEC",
+                  "sia://CABjUzbDM252KxTBPGpT8NarnRW8_2R5vy-lf_O5TKgXhw"
+                ],
+                "priority": 0,
+                "multihash": "QmX5RBGzh4oq6vw969saS4LZhYzJzbuzyXs3xuyVXwbMEC",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

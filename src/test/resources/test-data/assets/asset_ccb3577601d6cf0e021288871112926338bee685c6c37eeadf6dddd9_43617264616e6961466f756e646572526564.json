@@ -1,0 +1,37 @@
+[
+  {
+    "policy_id": "ccb3577601d6cf0e021288871112926338bee685c6c37eeadf6dddd9",
+    "asset_name": "43617264616e6961466f756e646572526564",
+    "asset_name_ascii": "CardaniaFounderRed",
+    "fingerprint": "asset1dkl5pgu43gek0rgr6add7tja0kzkgq3zywnnuk",
+    "minting_tx_hash": "3f553cd5a6fd17afd5e9bd6ea7a8d41bc160690f4031f666dfe26f4d7f2a0094",
+    "total_supply": "2500",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1622332800,
+    "minting_tx_metadata": {
+      "721": {
+        "ccb3577601d6cf0e021288871112926338bee685c6c37eeadf6dddd9": {
+          "CardaniaFounderRed": {
+            "url": "https://cardania.com/",
+            "name": "Cardania Founder's Card - Red",
+            "image": "ipfs://QmSaRMBwqd33uDuzZx4r2gGCQDwNaDEAzNtKDFHmVDd5uj",
+            "hashType": "sha256",
+            "mimeType": "image/jpeg",
+            "assetHash": "0d5421a88745e04ec7c4bc2226a6af9b64d74579e15956334c59814ee5f99af3",
+            "copyright": "Cardania, LLC © 2021",
+            "collectionName": "Cardania Founder's Cards"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": {
+      "url": "https://cardania.com/",
+      "logo": "",
+      "name": "CardaniaFounderRed",
+      "ticker": "CDFC4",
+      "decimals": 0,
+      "description": "Cardania Founder's Card - Red"
+    }
+  }
+]

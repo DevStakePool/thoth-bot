@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7237363836",
+    "asset_name_ascii": "CardanoWarrior7686",
+    "fingerprint": "asset1pqzgyrfvtx4ue4qsn8x4rv9zwj48sv4434tmfc",
+    "minting_tx_hash": "6ea2dff01c34250c953957b4a0cdcc219b057e06291a7cd8a5819aea1845b5c5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620000000,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior7686": {
+            "id": "7686",
+            "name": "Cardano Warrior #7686",
+            "type": "Dark Knight",
+            "image": "ipfs://QmZ2qp3j827z9AkgzdUwb5AbYAjaFS5hr56kb9D316p4W5",
+            "items": [
+              {
+                "name": "Gold Sword",
+                "rarity": "Common"
+              },
+              {
+                "name": "Gold Shield",
+                "rarity": "Common"
+              },
+              {
+                "name": "Red Cape",
+                "rarity": "Common"
+              },
+              {
+                "name": "Red Armor",
+                "rarity": "Common"
+              },
+              {
+                "name": "Silver Line Helmet",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Epic",
+            "traits": [
+              "Green Eyes",
+              "Grumpy",
+              "Brown Skin"
+            ],
+            "imagealpha": "ipfs://QmXRgLQHGWvi2MWyJRFgDuFcZFi3nJaETgZoTQRMGCd661"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

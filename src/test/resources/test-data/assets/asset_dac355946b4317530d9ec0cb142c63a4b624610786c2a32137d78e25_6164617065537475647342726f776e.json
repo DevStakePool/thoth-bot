@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065537475647342726f776e",
+    "asset_name_ascii": "adapeStudsBrown",
+    "fingerprint": "asset1l6kgredpujn9fth8yssl32ujsladuuqhh83n07",
+    "minting_tx_hash": "a5bd7af912eae29307b7f468bcb876946b29d49f629b6249bbb5afd9a548f7c3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeStudsBrown": {
+            "Hat": "Hoodie",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Studs Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUAtDoLhPAKW46xb2qF26gzL2MS5iBzAkhthf4nXFsW6j",
+                "name": "Studs Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUAtDoLhPAKW46xb2qF26gzL2MS5iBzAkhthf4nXFsW6j",
+            "Family": "Brown",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

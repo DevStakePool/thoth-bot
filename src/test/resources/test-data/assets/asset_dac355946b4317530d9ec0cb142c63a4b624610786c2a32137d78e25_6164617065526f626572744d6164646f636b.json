@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065526f626572744d6164646f636b",
+    "asset_name_ascii": "adapeRobertMaddock",
+    "fingerprint": "asset1znn0wke2ph69m5rav7hcz2vjkej3w8yel9q22v",
+    "minting_tx_hash": "0cbc8ad067eaa7d49031a5310b9aa2049fdbf0cb1a3315a562079d89eb32e30d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRuyCastillo": {
+            "Hat": "None",
+            "Body": "Orange",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Ruy Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qma5ntrKCPsEZERkRZvWmdKfoMqYwSamZiw2eiFDNmUi1C",
+                "name": "Ruy Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qma5ntrKCPsEZERkRZvWmdKfoMqYwSamZiw2eiFDNmUi1C",
+            "Family": "Castillo",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          },
+          "adapeThorpeThomas": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Thorpe Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmXkxUHFmdXpN78Qsk3ZTkbYZdfxbSH9WbJvDHrHkWzE1o",
+                "name": "Thorpe Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXkxUHFmdXpN78Qsk3ZTkbYZdfxbSH9WbJvDHrHkWzE1o",
+            "Family": "Thomas",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Thomas family"
+          },
+          "adapeRobertMaddock": {
+            "Hat": "Sombrero",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Robert Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmcwqiJvhrhTFCQf8qN2ebQjegG4MWPGS7tb5p4LwEedeJ",
+                "name": "Robert Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcwqiJvhrhTFCQf8qN2ebQjegG4MWPGS7tb5p4LwEedeJ",
+            "Family": "Maddock",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Long White Beard",
+            "description": "A distinguished member of the Maddock family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

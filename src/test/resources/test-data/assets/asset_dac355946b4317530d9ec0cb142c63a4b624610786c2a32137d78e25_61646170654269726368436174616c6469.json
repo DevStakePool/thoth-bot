@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654269726368436174616c6469",
+    "asset_name_ascii": "adapeBirchCataldi",
+    "fingerprint": "asset19lm99v5aqesw8ahawgfc754wynttz5cdqnt7cp",
+    "minting_tx_hash": "003a8c34182d37945239d9ff8d9f435a714c95bea53217d62be7aee01ebd00de",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBirchCataldi": {
+            "Hat": "Hoodie",
+            "Body": "Knight Armor",
+            "Ears": "Plain",
+            "Eyes": "Safety Goggles",
+            "Head": "Ape",
+            "name": "Birch Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmRHnNZRvod9uhGZyETrsREmre8BTeteQewyWAApDYS9Ge",
+                "name": "Birch Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRHnNZRvod9uhGZyETrsREmre8BTeteQewyWAApDYS9Ge",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

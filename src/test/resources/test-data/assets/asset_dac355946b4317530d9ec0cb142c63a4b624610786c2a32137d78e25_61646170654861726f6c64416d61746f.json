@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654861726f6c64416d61746f",
+    "asset_name_ascii": "adapeHaroldAmato",
+    "fingerprint": "asset1ehqttjcm2qelr0pwxuptngvev2qqtp7glh0z5l",
+    "minting_tx_hash": "5cab2a682c05cec95f353199f1fa0158eeb79509b18586724df00add198bd2cb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeHaroldAmato": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Orange",
+            "name": "Harold Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmUjBHrehfgdiecH2A8gX3qoSTcUKFdYoL8GPjD69zmoUG",
+                "name": "Harold Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUjBHrehfgdiecH2A8gX3qoSTcUKFdYoL8GPjD69zmoUG",
+            "Family": "Amato",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

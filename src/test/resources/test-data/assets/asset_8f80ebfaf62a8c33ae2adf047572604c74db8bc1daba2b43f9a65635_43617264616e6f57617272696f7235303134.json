@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7235303134",
+    "asset_name_ascii": "CardanoWarrior5014",
+    "fingerprint": "asset1xwtg5l003xztjp43jshqgqrw0mvfmv9eylru4d",
+    "minting_tx_hash": "fc16d6752457c5aa2930b79b050804950f474587e6963714d42490a0468df4c1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620000000,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior5014": {
+            "id": "5014",
+            "name": "Cardano Warrior #5014",
+            "type": "Guardian",
+            "image": "ipfs://QmTjXGQ16kPHaYX2RNxDdLVjbMBXu3Rzfq5exf9RNfmVMt",
+            "items": [
+              {
+                "name": "Gold Hammer",
+                "rarity": "Common"
+              },
+              {
+                "name": "Silver Shield",
+                "rarity": "Common"
+              },
+              {
+                "name": "Silver Helmet",
+                "rarity": "Common"
+              },
+              {
+                "name": "Silver Armor",
+                "rarity": "Common"
+              },
+              {
+                "name": "Red Shoulder Pad",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Common",
+            "traits": [
+              "Black Eyes",
+              "Astonished",
+              "White Skin"
+            ],
+            "imagealpha": "ipfs://QmUYxm5C5sSTF8gbt37je4hhykMfQPg3We4AgAVMox9DoC"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -178,7 +178,7 @@ public class IntegrationTest {
         Assertions.assertEquals((long) -4, params.get("chat_id"));
         Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
         Assertions.assertEquals("HTML", params.get("parse_mode"));
-        Assertions.assertTrue(params.get("text").toString().contains("$549"));
+        Assertions.assertTrue(params.get("text").toString().contains("addr1w...ns8feg4m"));
         Assertions.assertTrue(params.get("text").toString().contains("Balance: 1,473.53"));
         Assertions.assertTrue(params.get("text").toString().contains("Stake Address: NO"));
         Assertions.assertTrue(params.get("text").toString().contains("Script Address: YES"));

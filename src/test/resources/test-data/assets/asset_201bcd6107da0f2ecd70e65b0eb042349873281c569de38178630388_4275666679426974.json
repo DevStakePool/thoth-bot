@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "201bcd6107da0f2ecd70e65b0eb042349873281c569de38178630388",
+    "asset_name": "4275666679426974",
+    "asset_name_ascii": "BuffyBit",
+    "fingerprint": "asset14d8vj9eyay56yhtv76yc0hz4jxemuc5zc3kvqq",
+    "minting_tx_hash": "a0a900ef18285c274858ed379c6be9325d75d4e3ddfc28a97be7641df4f97a00",
+    "total_supply": "39794",
+    "mint_cnt": 3708,
+    "burn_cnt": 0,
+    "creation_time": 1629849600,
+    "minting_tx_metadata": {
+      "721": {
+        "201bcd6107da0f2ecd70e65b0eb042349873281c569de38178630388": {
+          "BuffyBit": {
+            "name": "Buffy Bit",
+            "image": "ipfs://QmckJocdEY19QeAHZKerHPYMcbqcTENVXnon4Jgy4xanJZ",
+            "redeemAt": {
+              "BuffyBitsShop": "https://shop.buffybot.io"
+            },
+            "mediaType": "image/png"
+          }
+        },
+        "d849084935bd7b51a7a6e5d494d4cc4645c83cc77ad7bac67dd13192": {
+          "NFTU0075PlutusArt074": {
+            "name": "NFT Update 0075: Plutus.Art #074",
+            "files": [
+              {
+                "src": "ipfs://QmQzVx1d2mzePFoaSxEfBMtH64vuLihhDPQW9zVAfpgipy",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qmb9VYpHnyMRiB5QzmKet4Rpdsc4tagHP9vUm34iN4aUaX",
+            "mediaType": "image/png",
+            "attributes": {
+              "video": "https://watch.nftupdate.io/?e=123",
+              "artist": [
+                "NFT Update",
+                "Plutus.Art"
+              ],
+              "border": "gold",
+              "publisher": [
+                "https://twitter.com/NFTUpdateIO",
+                "https://nftupdate.io",
+                "https://twitter.com/plutus_art",
+                "https://www.plutus.art/"
+              ],
+              "collection": "NFT Update [Season 5]"
+            }
+          },
+          "NFTU0075PlutusArt121": {
+            "name": "NFT Update 0075: Plutus.Art #121",
+            "image": "ipfs://QmNmNiWHFWVTTp4vcTpCzCYmFrYd4EB3Z3dMLFDmPLDamn",
+            "mediaType": "image/png",
+            "attributes": {
+              "video": "https://watch.nftupdate.io/?e=123",
+              "artist": [
+                "NFT Update",
+                "Plutus.Art"
+              ],
+              "border": "standard",
+              "publisher": [
+                "https://twitter.com/NFTUpdateIO",
+                "https://nftupdate.io",
+                "https://twitter.com/plutus_art",
+                "https://www.plutus.art/"
+              ],
+              "collection": "NFT Update [Season 5]"
+            }
+          },
+          "NFTU0075PlutusArt230": {
+            "name": "NFT Update 0075: Plutus.Art #230",
+            "image": "ipfs://QmNmNiWHFWVTTp4vcTpCzCYmFrYd4EB3Z3dMLFDmPLDamn",
+            "mediaType": "image/png",
+            "attributes": {
+              "video": "https://watch.nftupdate.io/?e=123",
+              "artist": [
+                "NFT Update",
+                "Plutus.Art"
+              ],
+              "border": "standard",
+              "publisher": [
+                "https://twitter.com/NFTUpdateIO",
+                "https://nftupdate.io",
+                "https://twitter.com/plutus_art",
+                "https://www.plutus.art/"
+              ],
+              "collection": "NFT Update [Season 5]"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

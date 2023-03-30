@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "d1cdc511a42cce19375adb433e44f7af755adbc79782033aa7385628",
+    "asset_name": "4d61727947616c76616e697a656430383235",
+    "asset_name_ascii": "MaryGalvanized0825",
+    "fingerprint": "asset16lw29ag3u3t38lj8qun2qywtrzrj8ejlnq2a4n",
+    "minting_tx_hash": "43a9d44aa1a39d7a285420c3edddeed0e26f4d91bbd83fb849cd1d4fe042c995",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1623110400,
+    "minting_tx_metadata": {
+      "721": {
+        "d1cdc511a42cce19375adb433e44f7af755adbc79782033aa7385628": {
+          "MaryGalvanized0825": {
+            "name": "Mary Galvanized #0825",
+            "files": [
+              {
+                "src": "ipfs://QmQFpvBer8nb5iEaKeeju1dSZz5iPHa5ewNL5yLhknNSds",
+                "name": "Mary Galvanized #0825",
+                "mediaType": "image/gif",
+                "sha256Hash": "092dcdaa3d42581917fedc267f6946fd821f336dc5b24cbd4d2b7811a369bab7"
+              }
+            ],
+            "image": "ipfs://QmUyJ8PzeqWjiWSXXkWq2tEscvWq2hAxw7YxkPZ6zXFAZ9",
+            "mediaType": "image/gif",
+            "attributes": {
+              "publisher": [
+                "https://twitter.com/TheNeverEngine",
+                "https://www.neverengine.net/"
+              ],
+              "artistName": "Never Engine",
+              "description": "Say YES to the universe - with love, Alyssa and Trevor",
+              "collectionName": "Mythos"
+            },
+            "sha256Hash": "01c25ded864e57fc093e428f0d44c93112d81e3cb5477f1e7579726900aebb7a"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

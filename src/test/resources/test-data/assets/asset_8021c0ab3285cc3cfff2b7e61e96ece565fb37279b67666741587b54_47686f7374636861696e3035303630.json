@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3035303630",
+    "asset_name_ascii": "Ghostchain05060",
+    "fingerprint": "asset12qu20rytue0ywrqfnw3khzzngkpk2846raftkl",
+    "minting_tx_hash": "9a49e7a80d0092f86ea2e0a8879744d0fdf6c7e65d790f422cc07078594ce8c7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1636416000,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain03951": {
+            "dna": "10200101",
+            "eyes": "Possessed",
+            "head": "Headband",
+            "name": "Ghostchain03951",
+            "files": [
+              {
+                "src": "ipfs://QmXa7ZAMJzsVXjkZfscwA4iCXR6or1kqRd2HENBJ7r9JqZ",
+                "name": "Ghostchain03951",
+                "https": "https://api.nftghostchain.com/original?mint=3951",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Bluey",
+            "image": "ipfs://QmXa7ZAMJzsVXjkZfscwA4iCXR6or1kqRd2HENBJ7r9JqZ",
+            "mouth": "Wooden Spoon",
+            "rarity": "Common",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          },
+          "Ghostchain05060": {
+            "dna": "00230100",
+            "body": "I'm Not Selling",
+            "eyes": "Seen a Ghost",
+            "head": "Greenhawk",
+            "name": "Ghostchain05060",
+            "files": [
+              {
+                "src": "ipfs://QmUsjYj1pqznSMmvpDLpGn7vEoCSNuUgpbAHVMhoMYFK63",
+                "name": "Ghostchain05060",
+                "https": "https://api.nftghostchain.com/original?mint=5060",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUsjYj1pqznSMmvpDLpGn7vEoCSNuUgpbAHVMhoMYFK63",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

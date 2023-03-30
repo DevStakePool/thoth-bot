@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065456e72697175654b696e67",
+    "asset_name_ascii": "adapeEnriqueKing",
+    "fingerprint": "asset14pkstv07m7nxzgpqnyr0ckvqmz9vwfhn825ajl",
+    "minting_tx_hash": "cef57ca0fd1506781f5d5daf2d88382d1ff343ecb350dfdba562230f1a48b5de",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEnriqueKing": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Enrique King",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmfTkZUZmL4CfBfHWPH23kYT3k53oi2yrWsNoXA5p7PBZ3",
+                "name": "Enrique King",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfTkZUZmL4CfBfHWPH23kYT3k53oi2yrWsNoXA5p7PBZ3",
+            "Family": "King",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the King family"
+          },
+          "adapeTranterChiesa": {
+            "Hat": "None",
+            "Body": "Knight Armor",
+            "Ears": "Earphones",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Tranter Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmYzGyF2X4p1QMcPWNsENs8XvJ3j5RbhurYfJnAqwJABmY",
+                "name": "Tranter Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYzGyF2X4p1QMcPWNsENs8XvJ3j5RbhurYfJnAqwJABmY",
+            "Family": "Chiesa",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Chiesa family"
+          },
+          "adapeRutherfordWilson": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Rutherford Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmeE67FLLSiwPoSuPdVMLGLs8Zk7dVrMKLxiprKmucKFSu",
+                "name": "Rutherford Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeE67FLLSiwPoSuPdVMLGLs8Zk7dVrMKLxiprKmucKFSu",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wilson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

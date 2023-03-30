@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "2a8af0f19ba8bfe934649a789565274b42bab9cc14ea8427c9d2e94a",
+    "asset_name": "437279707469653037373538",
+    "asset_name_ascii": "Cryptie07758",
+    "fingerprint": "asset18qp3ykhfm4qslra52dnu8ew00x37t2yvs82us8",
+    "minting_tx_hash": "7a43c9269c9c56a807ff7ddc0ed97c41773aa2febab88395e459323940a2a83c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620950400,
+    "minting_tx_metadata": {
+      "721": {
+        "policyId": "2a8af0f19ba8bfe934649a789565274b42bab9cc14ea8427c9d2e94a",
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 34594796,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "aa2b94c98bfabb083c4f443006c07931a4ba2818970b6a7f987c8307"
+            }
+          ]
+        },
+        "2a8af0f19ba8bfe934649a789565274b42bab9cc14ea8427c9d2e94a": {
+          "Cryptie07758": {
+            "src": "ipfs://QmcSiGE9Gf2iaJo1e3GawWcqeaw87RgWpKe7g1Jkfahne8",
+            "name": "Cryptie #07758",
+            "image": "ipfs://QmUvZh4sg3uNhsxYDWVPg8hDoT7XmbGnw6RnxA4HetfbUP",
+            "publisher": [
+              "https://twitter.com/CryptiesNFT",
+              "https://crypties.co"
+            ],
+            "artistName": "Bram",
+            "attributes": {
+              "name": "charles",
+              "rarity": "wtf",
+              "subset": "8bit"
+            },
+            "imgSha256Hash": "96c0055fe2c3edbacc37ef51ce7bd81b8d994fa873f1abb585d300558f4cfb36",
+            "srcSha256Hash": "e66533ea7b2e5d41c9afbc31937533220d9b9d6f81ecf29385fd1628dd8f8d87",
+            "collectionName": "Crypties"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655269676f6265727443617374696c6c6f",
+    "asset_name_ascii": "adapeRigobertCastillo",
+    "fingerprint": "asset15ju3qx4mzjmu6cpr4xu9s29q4x0kwkp2959j02",
+    "minting_tx_hash": "c9fee4c68037b25aa5e8cf735b07ee34168a21c8ebce43173102cfdc2af611e4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRigobertCastillo": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Rigobert Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmSqHUMPmscpXHtNxZpBXKg8aZtfkVc4qoNkjnbNVWNP6H",
+                "name": "Rigobert Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSqHUMPmscpXHtNxZpBXKg8aZtfkVc4qoNkjnbNVWNP6H",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

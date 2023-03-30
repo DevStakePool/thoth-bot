@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416c666f6e736f5461796c6f72",
+    "asset_name_ascii": "adapeAlfonsoTaylor",
+    "fingerprint": "asset1gwnllarj6ge4wr00s4kkql47gmdxl9nq8czd8d",
+    "minting_tx_hash": "54722ce210616a5b0b8503f66377c31de0aa595a2f716f645155630e8d69c977",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAlfonsoTaylor": {
+            "Hat": "Hoodie",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Alfonso Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmTjDXn2Ym5YQi7CycE4GLzZDs6eD49ogw2tofLYcu6cgC",
+                "name": "Alfonso Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTjDXn2Ym5YQi7CycE4GLzZDs6eD49ogw2tofLYcu6cgC",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

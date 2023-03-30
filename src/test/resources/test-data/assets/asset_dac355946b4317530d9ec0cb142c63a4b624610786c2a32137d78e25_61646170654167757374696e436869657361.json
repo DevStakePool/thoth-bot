@@ -1,0 +1,71 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654167757374696e436869657361",
+    "asset_name_ascii": "adapeAgustinChiesa",
+    "fingerprint": "asset1p5m8u6dk9g3au4k5j6zzp7efl8f7zpg6895zv4",
+    "minting_tx_hash": "cc3fceddac54386d75dd0639a3a48eb90c1896fc47c170bd45f9406155643f01",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAgustinChiesa": {
+            "Hat": "Pirate Hat",
+            "Body": "Chainmail",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Agustin Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmeDgextr9N8TN3ZYbbR4yuQqgzXj21jFi1ZUvXyGwChHS",
+                "name": "Agustin Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeDgextr9N8TN3ZYbbR4yuQqgzXj21jFi1ZUvXyGwChHS",
+            "Family": "Chiesa",
+            "Weapon": "Spear",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          },
+          "adapeTownsendBaldwin": {
+            "Hat": "None",
+            "Body": "Black Wool Coat",
+            "Ears": "Cardano Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Townsend Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmZ37S1DgqhHa3k3VMUZpKnDMZ6RkeyuPoENbtr8jiU1M3",
+                "name": "Townsend Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZ37S1DgqhHa3k3VMUZpKnDMZ6RkeyuPoENbtr8jiU1M3",
+            "Family": "Baldwin",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

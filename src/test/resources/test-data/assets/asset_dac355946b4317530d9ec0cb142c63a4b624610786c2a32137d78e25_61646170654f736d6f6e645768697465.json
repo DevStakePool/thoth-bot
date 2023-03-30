@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654f736d6f6e645768697465",
+    "asset_name_ascii": "adapeOsmondWhite",
+    "fingerprint": "asset1kvmufa9t887ct33xffc8ecuuzz6dk6jrd2mvhr",
+    "minting_tx_hash": "3f4d3f3cf049442d4d44b11df5f145ad1fdf0276e839e875846d39325b1b0194",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeOsmondWhite": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Osmond White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmfN7rWP5SmWXXghoWsjcfv8Kw49qn8QApQJPWHW2Qv8ts",
+                "name": "Osmond White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfN7rWP5SmWXXghoWsjcfv8Kw49qn8QApQJPWHW2Qv8ts",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

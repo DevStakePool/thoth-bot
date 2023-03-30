@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3032363639",
+    "asset_name_ascii": "Ghostchain02669",
+    "fingerprint": "asset1682ke6llx3gmmag0x3ejs4hxv2h6ryr9jwex30",
+    "minting_tx_hash": "9a239f9bbd3be764011cb70a574b612a2fba33c5a40574b53e282ff9f6f7cd1d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635638400,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain02119": {
+            "dna": "00204100",
+            "back": "Black Cape",
+            "eyes": "Professor",
+            "head": "Joe",
+            "name": "Ghostchain02119",
+            "files": [
+              {
+                "src": "ipfs://Qmca7aAy7eCjiYA4YpcBKNdNfWzEBh7c3tcPQ4udZ9D8oz",
+                "name": "Ghostchain02119",
+                "https": "https://api.nftghostchain.com/original?mint=2119",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmca7aAy7eCjiYA4YpcBKNdNfWzEBh7c3tcPQ4udZ9D8oz",
+            "rarity": "Rare",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          },
+          "Ghostchain02669": {
+            "dna": "20020002",
+            "body": "Smart Jacket",
+            "name": "Ghostchain02669",
+            "files": [
+              {
+                "src": "ipfs://QmNM2eFaL3ijFUWEnNp8YoRqFH8iAP9v3vfYa9JPDUTer8",
+                "name": "Ghostchain02669",
+                "https": "https://api.nftghostchain.com/original?mint=2669",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Forest",
+            "image": "ipfs://QmNM2eFaL3ijFUWEnNp8YoRqFH8iAP9v3vfYa9JPDUTer8",
+            "mouth": "Spit",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

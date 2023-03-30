@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "d7c6ce4b2806eb780b899d57e4413f040a9f99f945eab7d3bae37b77",
+    "asset_name": "444f5443",
+    "asset_name_ascii": "DOTC",
+    "fingerprint": "asset196v46ps0kws33u7ucy0c48uuxw0q4p2684k48d",
+    "minting_tx_hash": "3bc74f6fc8e2616c4aa7302174ced753c0d269442ab2cfd5d3e20aeb5541c22a",
+    "total_supply": "1200000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648771200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d7c6ce4b2806eb780b899d57e4413f040a9f99f945eab7d3bae37b77": {
+          "DOTC": {
+            "name": "Dogs Off The Chain Token",
+            "files": [
+              {
+                "src": "ipfs://QmdiU9DR5SaixQRo9UBk4snNZ5SmFCEyLWebFgq49qTuPn",
+                "name": "DOTC",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdiU9DR5SaixQRo9UBk4snNZ5SmFCEyLWebFgq49qTuPn",
+            "symbol": "DOTC",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 57288741
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Dogs Off The Chain Token on Cardano",
+            "totalSupply": 1200000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

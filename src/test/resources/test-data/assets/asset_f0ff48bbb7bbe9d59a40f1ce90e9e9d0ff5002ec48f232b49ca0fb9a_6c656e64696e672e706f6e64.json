@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6c656e64696e672e706f6e64",
+    "asset_name_ascii": "lending.pond",
+    "fingerprint": "asset1f6945lxn2znmj040sxkaanuq57xklv6uek426f",
+    "minting_tx_hash": "a5bb95d506ea313dea546f409093ba9e9aab988cc2639e7cfc9816d7f7f7c1f4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650499200,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "lending.pond": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$lending.pond",
+            "image": "ipfs://QmPVbVHf2iDKoMF7hoh1AJhNWZUJUuFA9r4J2vSTKtTXMz",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

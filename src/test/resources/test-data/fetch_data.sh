@@ -1,5 +1,22 @@
 #!/bin/bash
 
+function download_assets() {
+  for asset in `grep -A1 policy_id "$1"  | \
+    awk -vFS=":" '{print $2}' | \
+    awk -vFS="\n" -vRS="\n\n" '{gsub(" ", "", $0); gsub("\"", "", $0); gsub(",", "", $0); print "_asset_policy="$1 "&_asset_name=" $2}' \
+    | sort | uniq`; do
+      asset_policy_name=`echo -n $asset | awk '{gsub("_asset_policy=", "", $0); gsub("&_asset_name=", "_", $0); print $0}'`
+      if [ -f "assets/asset_${asset_policy_name}.json" ]
+      then
+        echo "Asset ${asset_policy_name} already existing"
+      else
+        echo "Fetching asset ${asset_policy_name}"
+        curl -s -X GET "https://api.koios.rest/api/v0/asset_info?${asset}" \
+          -H "Accept: application/json" | jq > "assets/asset_${asset_policy_name}.json"
+      fi
+  done
+}
+
 # KOIOS Calls to gather test data
 ## Account Addresses
 echo "Fetching data for account addresses"
@@ -94,20 +111,9 @@ curl -s -X POST "https://api.koios.rest/api/v0/tx_info" \
  -H "Content-Type: application/json" \
  -d "{\"_tx_hashes\":[${ALL_TX_HASHES}]}" | jq > txs_info.json
 
-#### FIXME ALL_TX_HASHES are probably too many and we don't receive all the TXs
-
 echo "Fetching all assets in all TXs"
-for asset in `grep -A1 policy_id txs_info.json  | \
-  awk -vFS=":" '{print $2}' | \
-  awk -vFS="\n" -vRS="\n\n" '{gsub(" ", "", $0); gsub("\"", "", $0); gsub(",", "", $0); print "_asset_policy="$1 "&_asset_name=" $2}' \
-  | sort | uniq`; do
-    asset_policy_name=`echo -n $asset | awk '{gsub("_asset_policy=", "", $0); gsub("&_asset_name=", "_", $0); print $0}'`
-    if [ -f "assets/asset_${asset_policy_name}.json" ]
-    then
-      echo "Asset ${asset_policy_name} already existing"
-    else
-      echo "Fetching asset ${asset_policy_name}"
-      curl -s -X GET "https://api.koios.rest/api/v0/asset_info?${asset}" \
-        -H "Accept: application/json" | jq > "assets/asset_${asset_policy_name}.json"
-    fi
-done
+download_assets "txs_info.json"
+
+echo "Fetching all assets for addresses and stake accounts"
+download_assets account_assets.json
+download_assets address_assets.json

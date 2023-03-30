@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d656e646f4c617669676e65",
+    "asset_name_ascii": "adapeMendoLavigne",
+    "fingerprint": "asset1e0sdpu94hcnxufgexl469ag6gs6d6ypwz59x2x",
+    "minting_tx_hash": "1c4879f875b8861a62f91fcaf5d75a508c17d5a1638bc77f76eb3318c89762f2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeÉlienEvans": {
+            "Hat": "Spinner Hat",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Élien Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUKoB4hHXn9gacdUTCegAE88wdviJ4qWkgqWWzhWWnfpw",
+                "name": "Élien Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUKoB4hHXn9gacdUTCegAE88wdviJ4qWkgqWWzhWWnfpw",
+            "Family": "Evans",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          },
+          "adapeMendoLavigne": {
+            "Hat": "Pirate Hat",
+            "Body": "Zombie",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Zombie",
+            "name": "Mendo Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmSLAW5KGsBSrZDM6SKb7LEDZfLNom57ffJQwt64XvRu79",
+                "name": "Mendo Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSLAW5KGsBSrZDM6SKb7LEDZfLNom57ffJQwt64XvRu79",
+            "Family": "Lavigne",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          },
+          "adapeWatsonGarcía": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Watson García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmeTbRZeygPGbGHro8WwCrZM38aBkNDjCKGVNSTRgMJwry",
+                "name": "Watson García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeTbRZeygPGbGHro8WwCrZM38aBkNDjCKGVNSTRgMJwry",
+            "Family": "García",
+            "Weapon": "Sword",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d696c6c65724d617273",
+    "asset_name_ascii": "adapeMillerMars",
+    "fingerprint": "asset1tg0v234jr80ed78jvkhjlux89mcrr0extgnunn",
+    "minting_tx_hash": "6310bf9b9c1e52ed8ee3bd327b730278512063be3973bcf2f60d332b75a8a379",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMillerMars": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Miller Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmeyjJK63No1iRFAS7eybLdBiahhLnsFN8fzhNhEK5Rcju",
+                "name": "Miller Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeyjJK63No1iRFAS7eybLdBiahhLnsFN8fzhNhEK5Rcju",
+            "Family": "Mars",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Mars family"
+          },
+          "adapeRidleyWhite": {
+            "Hat": "Top Hat",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ridley White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmacbv4L7jBEC6HJ2YYYgb1Rr4L5tytdzVVTfYFAdzUVoc",
+                "name": "Ridley White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmacbv4L7jBEC6HJ2YYYgb1Rr4L5tytdzVVTfYFAdzUVoc",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          },
+          "adapeMarceauGarcía": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Marceau García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmUCAZbsMWMeiDVcQo8UZABbV33a5ax7mGdrS4Lh8miKwi",
+                "name": "Marceau García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUCAZbsMWMeiDVcQo8UZABbV33a5ax7mGdrS4Lh8miKwi",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3131354368656c73656147726f7665534334344b35",
+    "asset_name_ascii": "cabin115ChelseaGroveSC44K5",
+    "fingerprint": "asset18l27fp3nysf3z6xx7wa2ljptcagfx5ut8nzh0t",
+    "minting_tx_hash": "4bfc1546967b26540a5833bb5a573fc8199e94d66399b38bb4a4ea3931cf7b67",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin115ChelseaGroveSC44K5": {
+            "name": "115 Chelsea Grove, SC44 K5",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Chelsea Grove",
+            "District": "South Cegelf",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "K",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "44",
+            "Y Coordinate": "5"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

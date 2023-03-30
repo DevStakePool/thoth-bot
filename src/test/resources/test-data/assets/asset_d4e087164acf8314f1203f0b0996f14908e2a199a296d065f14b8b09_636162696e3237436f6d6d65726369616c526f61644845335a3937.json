@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3237436f6d6d65726369616c526f61644845335a3937",
+    "asset_name_ascii": "cabin27CommercialRoadHE3Z97",
+    "fingerprint": "asset1rl6x3f7fvyqjsf3rq4q3z728cphm38cxvxlpjf",
+    "minting_tx_hash": "48507e28cb116c5c21f7f5038053fdb6da9b16e259fa918aab86348fa0826088",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin27CommercialRoadHE3Z97": {
+            "name": "27 Commercial Road, HE3 Z97",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Commercial Road",
+            "District": "Heolt",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "Z",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "3",
+            "Y Coordinate": "97"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

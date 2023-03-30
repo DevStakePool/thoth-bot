@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706554796e6542726f776e",
+    "asset_name_ascii": "adapeTyneBrown",
+    "fingerprint": "asset1s7myladlpcklx8kdhl55zjh30cxqvwpj6l87wd",
+    "minting_tx_hash": "058f51c480988b165b9674ed38eec2c381bfa2c10ea526005e3e2db7678bd0ec",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeTyneBrown": {
+            "Hat": "Pirate Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Tyne Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmbqT28y7D6YhV48yjZFfNMRFGcnoKf2rSozisprQ3HnkK",
+                "name": "Tyne Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbqT28y7D6YhV48yjZFfNMRFGcnoKf2rSozisprQ3HnkK",
+            "Family": "Brown",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeReadCastillo": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Read Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmXaUHNXGAga9bunp6WDpaR1FLYbw2KC8viM7fVAVB6KUf",
+                "name": "Read Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXaUHNXGAga9bunp6WDpaR1FLYbw2KC8viM7fVAVB6KUf",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          },
+          "adapeSeabertWhite": {
+            "Hat": "Top Hat",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Seabert White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSWrwisjqFKiZiqD3qCT2w3gs9XyRU8V2HVcjJ6m4xohQ",
+                "name": "Seabert White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSWrwisjqFKiZiqD3qCT2w3gs9XyRU8V2HVcjJ6m4xohQ",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

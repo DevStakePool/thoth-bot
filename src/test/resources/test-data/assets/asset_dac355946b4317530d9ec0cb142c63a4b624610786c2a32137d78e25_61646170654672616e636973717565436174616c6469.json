@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654672616e636973717565436174616c6469",
+    "asset_name_ascii": "adapeFrancisqueCataldi",
+    "fingerprint": "asset1u4yxk6fzxjg5c77549fn8rl94eecazrxgry7yy",
+    "minting_tx_hash": "ae772e21081dd1a7b9bf78b4915303e6a1dd131f31d432059459f9d5afb1ce81",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeNicolasEvans": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Nicolas Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmcYA2FXndFbmNVV1G77QMa2D1Ma5Da4XS2RGQuMmb1HAX",
+                "name": "Nicolas Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcYA2FXndFbmNVV1G77QMa2D1Ma5Da4XS2RGQuMmb1HAX",
+            "Family": "Evans",
+            "Weapon": "Sword",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          },
+          "adapeWallaceChiesa": {
+            "Hat": "Halo",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Wallace Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://Qmc2koYZ9jrfA8dPa9kXb6ASpjBGcZPg5E4NDjZ7jqNUYy",
+                "name": "Wallace Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmc2koYZ9jrfA8dPa9kXb6ASpjBGcZPg5E4NDjZ7jqNUYy",
+            "Family": "Chiesa",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Chiesa family"
+          },
+          "adapeFrancisqueCataldi": {
+            "Hat": "Hoodie",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Francisque Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmRrSXY74qcia2jRjQhUZtVDLmqUWjCnGBf7ALTGgJZm69",
+                "name": "Francisque Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRrSXY74qcia2jRjQhUZtVDLmqUWjCnGBf7ALTGgJZm69",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Long White Beard",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

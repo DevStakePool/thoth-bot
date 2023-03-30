@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e31313646726565746853747265657442553834463930",
+    "asset_name_ascii": "cabin116FreethStreetBU84F90",
+    "fingerprint": "asset1vuxu34cqan2pxkfd8h0tl27qxh95kv8gyg00wp",
+    "minting_tx_hash": "778a17c69835ed4e7dc8ffdfcc05279ae8bcf86002158917698fece48ac17eb0",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin116FreethStreetBU84F90": {
+            "name": "116 Freeth Street, BU84 F90",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+                "name": "Chateau.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbyKxhiGA2TMyJYr6wgP3sHSNavpf35mZrCya2RvgaP5P",
+                "name": "Chateau.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVLkR52JwV3YVyZr2KJtYhmpPp1vfEkdPPqzPJE1MmSjm",
+                "name": "Chateau.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+            "Street": "Freeth Street",
+            "District": "Burroont",
+            "mediaType": "image/gif",
+            "Cabin Size": "Chateau",
+            "SLVD Rating": "F",
+            "description": "A Chateau in The Ape Society",
+            "X Coordinate": "84",
+            "Y Coordinate": "90"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

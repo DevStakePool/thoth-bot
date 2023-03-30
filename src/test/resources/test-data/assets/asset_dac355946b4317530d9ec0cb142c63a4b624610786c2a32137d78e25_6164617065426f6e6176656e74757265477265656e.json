@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426f6e6176656e74757265477265656e",
+    "asset_name_ascii": "adapeBonaventureGreen",
+    "fingerprint": "asset1hqghkpfcq0s6e823cd5pq4wc7wxf2ay5kuw63x",
+    "minting_tx_hash": "269eed3fb8eb6e414ebd7dbd1b161786abda410a7a6e173c04eca01d6ce618da",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBenitoRich": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Benito Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmS5jxg2taATWyAx8ysxgc7qF1eRcQa39L3bv49q4wU1vu",
+                "name": "Benito Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmS5jxg2taATWyAx8ysxgc7qF1eRcQa39L3bv49q4wU1vu",
+            "Family": "Rich",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Rich family"
+          },
+          "adapeWyndamBrown": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Wyndam Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmWa4EBEaxAN9nCNBdYVoSe3SD8zH6TCKChakkAZxCqJAh",
+                "name": "Wyndam Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWa4EBEaxAN9nCNBdYVoSe3SD8zH6TCKChakkAZxCqJAh",
+            "Family": "Brown",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeBonaventureGreen": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bonaventure Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmWZi4bFxZUdZWit4GHXippGb4DE5ZzPG7BqKZaTByddRd",
+                "name": "Bonaventure Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWZi4bFxZUdZWit4GHXippGb4DE5ZzPG7BqKZaTByddRd",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

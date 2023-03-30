@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3637436f62757267506c616365564135423538",
+    "asset_name_ascii": "cabin67CoburgPlaceVA5B58",
+    "fingerprint": "asset1dyegsvrcaua5svc8324mexhgylugep26t5qmsn",
+    "minting_tx_hash": "4a391aad941faa893ed6468afd18c8bde6114c4cd87ee3ed44ff4e19e146f41f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin67CoburgPlaceVA5B58": {
+            "name": "67 Coburg Place, VA5 B58",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+                "name": "Chateau.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbyKxhiGA2TMyJYr6wgP3sHSNavpf35mZrCya2RvgaP5P",
+                "name": "Chateau.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVLkR52JwV3YVyZr2KJtYhmpPp1vfEkdPPqzPJE1MmSjm",
+                "name": "Chateau.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+            "Street": "Coburg Place",
+            "District": "Vaitmoot",
+            "mediaType": "image/gif",
+            "Cabin Size": "Chateau",
+            "SLVD Rating": "B",
+            "description": "A Chateau in The Ape Society",
+            "X Coordinate": "5",
+            "Y Coordinate": "58"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "47726576616e52616e676572",
+    "asset_name_ascii": "GrevanRanger",
+    "fingerprint": "asset1ssp9x4w03haxy7xk3degmtw5pxn3zdrnsr5hqm",
+    "minting_tx_hash": "9803b7b22c72d02f9649c17fc2c9806cc45880ac37f389a9c847a879d9acfe6b",
+    "total_supply": "5000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "GrevanRanger": {
+            "id": 10,
+            "name": "Grevan Ranger",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://QmdeMqXMMx1N13WtpYQhL3StN61iJPgj8koSyPmMEyWru6",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/1tv6m0ebarc5/nvla.json",
+                  "ipfs://QmVZAw4gDwUDmd7HWDEbh3qgQrPud8y3HrpRjyutLpmsYd",
+                  "sia://CAC4f90Gx7oLslgS_KzL2NNzQ1-1baHXwHplvg_VTlI0NQ"
+                ],
+                "priority": 0,
+                "multihash": "QmVZAw4gDwUDmd7HWDEbh3qgQrPud8y3HrpRjyutLpmsYd",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

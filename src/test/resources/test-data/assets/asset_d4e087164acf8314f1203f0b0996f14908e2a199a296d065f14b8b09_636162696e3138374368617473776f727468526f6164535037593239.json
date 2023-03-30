@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3138374368617473776f727468526f6164535037593239",
+    "asset_name_ascii": "cabin187ChatsworthRoadSP7Y29",
+    "fingerprint": "asset16h78tuh76ga9rq48gt9n3czvm8u4xek9gx2q0v",
+    "minting_tx_hash": "401110f13e3076ff83d8ace29b9549c3dd5f12a860c294c0676e101eabf24fe8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin187ChatsworthRoadSP7Y29": {
+            "name": "187 Chatsworth Road, SP7 Y29",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Chatsworth Road",
+            "District": "Speoppa",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "Y",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "7",
+            "Y Coordinate": "29"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

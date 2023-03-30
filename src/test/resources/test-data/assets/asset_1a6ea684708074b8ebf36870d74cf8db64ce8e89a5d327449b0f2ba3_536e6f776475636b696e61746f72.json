@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "1a6ea684708074b8ebf36870d74cf8db64ce8e89a5d327449b0f2ba3",
+    "asset_name": "536e6f776475636b696e61746f72",
+    "asset_name_ascii": "Snowduckinator",
+    "fingerprint": "asset1ws8vlqupnujhtcfuptmkyaq6m2cg47uw0f2yxv",
+    "minting_tx_hash": "1cb60cabe3ffb4405211df06582e1cbe578f2eee3f2af1f7653dc7d8346bfc8b",
+    "total_supply": "999999999999995",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1639267200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "1a6ea684708074b8ebf36870d74cf8db64ce8e89a5d327449b0f2ba3": {
+          "Snowduckinator": {
+            "name": "Snowduckinator",
+            "type": "Amazing",
+            "files": [
+              {
+                "src": "ipfs://QmaYe5LiKnaWpkmJSPSsk2U1vpFuKj8MUn9pfhEsVkpkrT",
+                "name": "IMG_7286.jpg",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaYe5LiKnaWpkmJSPSsk2U1vpFuKj8MUn9pfhEsVkpkrT",
+            "traits": [
+              "snowman",
+              "wings",
+              "lasers",
+              "duck",
+              "hat",
+              "frog",
+              "parrot"
+            ],
+            "copyright": "",
+            "mediaType": "image/jpeg",
+            "publisher": "GigaChad/Amazing artists",
+            "description": "Snow clayman and is Only for the most wonderful people."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

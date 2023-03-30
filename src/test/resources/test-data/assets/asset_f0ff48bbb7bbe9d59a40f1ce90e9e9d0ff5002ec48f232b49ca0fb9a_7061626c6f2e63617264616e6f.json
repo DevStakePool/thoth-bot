@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "7061626c6f2e63617264616e6f",
+    "asset_name_ascii": "pablo.cardano",
+    "fingerprint": "asset1uhvtpmh9lfmrcxzcyh4fea7pfpl838vapzx9vr",
+    "minting_tx_hash": "9ee569bb632378690ce25e2d618f06eaa5fbb233f65f4c83243f1907fe184def",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647993600,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "kingsong": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$kingsong",
+            "image": "ipfs://QmTeA4WvPAvr7vda1BtgmGMMkRpENtcPxLq1DsQntW5x1a",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "pablo.cardano": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$pablo.cardano",
+            "image": "ipfs://QmSZc1UHLGeefV2G7MCdhcQN5EZBpLoUUrkKPLXX4CjX5f",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

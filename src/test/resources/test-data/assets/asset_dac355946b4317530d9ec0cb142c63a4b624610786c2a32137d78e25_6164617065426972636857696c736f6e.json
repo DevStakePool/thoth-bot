@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426972636857696c736f6e",
+    "asset_name_ascii": "adapeBirchWilson",
+    "fingerprint": "asset1wd69llchelxtwm9nx5m7zg9er9y6ntw0znk9gm",
+    "minting_tx_hash": "90c7446c560bb70381aa25fd88610b8822db9d6dbcb1d631d79a0486abf0aa8e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBirchWilson": {
+            "Hat": "Fruit Basket",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Birch Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmZukK4uFmGGVLUVKAxaCWewHRqgnU8rokeHaLVhe1oizB",
+                "name": "Birch Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZukK4uFmGGVLUVKAxaCWewHRqgnU8rokeHaLVhe1oizB",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wilson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

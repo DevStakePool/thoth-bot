@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "db27347c6715573dd77c37d5580f7618777287b88d9ed922f83c93fe",
+    "asset_name": "4b727970746f6964353739",
+    "asset_name_ascii": "Kryptoid579",
+    "fingerprint": "asset1ax6kcys8uvag7d3cq5rt0dclqxrdqgaqavacuh",
+    "minting_tx_hash": "a202785890e0c954892b849e5def775b1028d0401007f30ecfe02d43628f4c95",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621987200,
+    "minting_tx_metadata": {
+      "721": {
+        "db27347c6715573dd77c37d5580f7618777287b88d9ed922f83c93fe": {
+          "Kryptoid579": {
+            "id": "579",
+            "url": "https://kryptoids.monster/",
+            "name": "Kryptoid #579",
+            "type": "image/png",
+            "image": "ipfs://QmS89fAKzSsqx3WJsX6K4Mrkgf3QFc4iycaG643SVsr1rV",
+            "project": "Kryptoids",
+            "species": "Sasquatch",
+            "hashType": "sha256",
+            "assetHash": "cc2d2ff1761656a19c19476eefee6202089c0e0a25cc055b869055debb4f581c",
+            "imageHash": "e854186f585bd955526198ced50a25a8ed5ba63c4327f9535430d75902a9e3bb",
+            "attributes": [
+              "Green",
+              "Deviant"
+            ],
+            "policyScript": {
+              "type": "all",
+              "scripts": [
+                {
+                  "type": "sig",
+                  "keyHash": "dd4ec4f83ef0a2032f6d6199c387b84a8d201ac03a5247638134fa9f"
+                },
+                {
+                  "slot": 39234821,
+                  "type": "before"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

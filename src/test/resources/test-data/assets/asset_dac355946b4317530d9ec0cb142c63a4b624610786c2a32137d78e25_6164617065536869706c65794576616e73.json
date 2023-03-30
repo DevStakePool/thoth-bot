@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065536869706c65794576616e73",
+    "asset_name_ascii": "adapeShipleyEvans",
+    "fingerprint": "asset16l8ykffhkyuadvkxenl9yyz5j6ncsldkq29lu8",
+    "minting_tx_hash": "70a1b39373ffc321fd7c925482e64020c8495799c71152968a9f426b5626e99b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeShipleyEvans": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Shipley Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmdRTJnZfBbaPCVCEKBUQfLTTHfz8SD2VmLanfLgc232ba",
+                "name": "Shipley Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdRTJnZfBbaPCVCEKBUQfLTTHfz8SD2VmLanfLgc232ba",
+            "Family": "Evans",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Evans family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

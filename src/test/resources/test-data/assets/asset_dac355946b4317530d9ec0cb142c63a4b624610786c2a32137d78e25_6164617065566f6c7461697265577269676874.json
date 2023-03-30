@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065566f6c7461697265577269676874",
+    "asset_name_ascii": "adapeVoltaireWright",
+    "fingerprint": "asset1ynhy28a6ty2f9v27rwjuqyfc05nsxerlrgcc4z",
+    "minting_tx_hash": "4e835f130587e0e79eb0c9faf3b95ae834a9e61e7caa266e11bb8ec202e5bd48",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeVoltaireWright": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Earphones",
+            "Eyes": "VR Headset",
+            "Head": "Ape",
+            "name": "Voltaire Wright",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmbTaDL2SGvpievdT3tYaa1JEYjvEK6ycoAPLB7eYVeCaJ",
+                "name": "Voltaire Wright",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbTaDL2SGvpievdT3tYaa1JEYjvEK6ycoAPLB7eYVeCaJ",
+            "Family": "Wright",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Wright family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "policy_id": "e74862a09d17a9cb03174a6bd5fa305b8684475c4c36021591c606e0",
+    "asset_name": "44503035323735",
+    "asset_name_ascii": "DP05275",
+    "fingerprint": "asset1056eaqfmmjkm4yf2rmluvxc59szuapqhtc8fn0",
+    "minting_tx_hash": "9181ac33a63986374b72c8d2ecc6314044f455570ff851afe860cb22d24b84ba",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671840000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "e74862a09d17a9cb03174a6bd5fa305b8684475c4c36021591c606e0": {
+          "DP05275": {
+            "url": "derpbirds.io",
+            "name": "Derp Bird #05275",
+            "files": [
+              {
+                "src": "ipfs://QmdQ7jqsanWgKoA2YFS1acE4avXhsgAVkEjgmMDz62Kvy7",
+                "name": "Rebirth",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmRAjhfHmvzLm4y9rAs8BMUdCyZWDgSqZCwRQ1Ukr8q3VZ",
+                "name": "OG",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmYGv59vgX5FC4wm68jujTVo8JRDimbe62KrC31DfSmn9k",
+                "name": "Head",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdQ7jqsanWgKoA2YFS1acE4avXhsgAVkEjgmMDz62Kvy7",
+            "series": 2,
+            "mediaType": "image/png",
+            "attributes": {
+              "Back": "Redneck",
+              "Beak": "Stoner",
+              "Body": "Ninja",
+              "Ears": "Stoner",
+              "Eyes": "Redneck",
+              "Head": "Redneck",
+              "Tail": "Astro",
+              "Color": "Cyan",
+              "Rarity": "Common",
+              "Background": "Violet",
+              "Power Level": "Undetermined",
+              "Perfect Specimen": "No"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

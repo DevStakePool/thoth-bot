@@ -1,0 +1,66 @@
+[
+  {
+    "policy_id": "069d8a334c672d5a482c226cc8dc3b9da0b9ac1ff600f652b5a363d5",
+    "asset_name": "4e465455303033304472756e6b656e447261676f6e303539",
+    "asset_name_ascii": "NFTU0030DrunkenDragon059",
+    "fingerprint": "asset13mz8zehnwtd0zy97k726am92qf6cfjh3k523vc",
+    "minting_tx_hash": "adb71cba74fc663e03f5d1fba52d9160080dd24ec391a770c17ba658753fd7a1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1627776000,
+    "minting_tx_metadata": {
+      "721": {
+        "069d8a334c672d5a482c226cc8dc3b9da0b9ac1ff600f652b5a363d5": {
+          "NFTU0030DrunkenDragon027": {
+            "name": "NFT Update 0030: Drunken Dragon #027",
+            "image": "ipfs://QmZgnX6cfstNqiQJR356o96U1LfE3C4d8hgNEpNf8HV1wH",
+            "mediaType": "image/png",
+            "attributes": {
+              "artist": [
+                "NFT Update",
+                "Drunken Dragon"
+              ],
+              "border": "standard",
+              "publisher": [
+                "https://twitter.com/DNDCardanoGames",
+                "https://twitter.com/NFTUpdateIO",
+                "https://promo.nftupdate.io"
+              ],
+              "collection": "NFT Update Promo Card [Season2]"
+            },
+            "sha256Hash": "0c3f18aab4ec25e4d5c986e4cf1f115cfd3d2e6eefd847f25fb2818d8896e5c2"
+          },
+          "NFTU0030DrunkenDragon059": {
+            "name": "NFT Update 0030: Drunken Dragon #059",
+            "files": [
+              {
+                "src": "ipfs://QmWKgkznoi6GENu9HKdWtrZNNMDzN4tYo4NGRdvKt1CJtg",
+                "name": "NFT Update 0030: Drunken Dragon #059",
+                "mediaType": "image/gif",
+                "sha256Hash": "1ea4969a15c8335f477c624579bef9f32961242bd7b4dc9791c9f2b92edf354f"
+              }
+            ],
+            "image": "ipfs://QmVqW6W9F8PDR8w5AFxNLQfYereUL93HivRdTU6Hdg3hg3",
+            "mediaType": "image/png",
+            "attributes": {
+              "artist": [
+                "NFT Update",
+                "Drunken Dragon"
+              ],
+              "border": "gold",
+              "publisher": [
+                "https://twitter.com/DNDCardanoGames",
+                "https://twitter.com/NFTUpdateIO",
+                "https://promo.nftupdate.io"
+              ],
+              "collection": "NFT Update Promo Card [Season2]"
+            },
+            "sha256Hash": "312ffb8153d0998cb26904970ca82984ecce1f3ab548f20d54091a3e91b38b98"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "policy_id": "6cae72f06a762760eaddaad46e8b5a8175a69a0a9e4dca53187828ba",
+    "asset_name": "416e63657273746f724567674642",
+    "asset_name_ascii": "AncerstorEggFB",
+    "fingerprint": "asset1ffy4mu5hnrqjp9fdfgsu7fvg6rjr7m5z49s0yx",
+    "minting_tx_hash": "8444ed4bac50d70fd966c75d9299cf871997e00163d9763ec960ee3b20faefe6",
+    "total_supply": "11",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648080000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "6cae72f06a762760eaddaad46e8b5a8175a69a0a9e4dca53187828ba": {
+          "AncerstorEggBF": {
+            "name": "Ancestor Egg BF",
+            "files": [
+              {
+                "src": "ipfs://QmTuwyzZbK7pGRGnpF4kWKoJKBFtD6JdqcSHvzjynxEye7",
+                "name": "Ancestor Egg BF",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTuwyzZbK7pGRGnpF4kWKoJKBFtD6JdqcSHvzjynxEye7",
+            "mediaType": "image/jpeg",
+            "description": "Ancestor Egg is redeemable for a ZiberBugs Ancestor Bug BF"
+          },
+          "AncerstorEggFA": {
+            "name": "Ancestor Egg FA",
+            "files": [
+              {
+                "src": "ipfs://QmZL6nx9BLW36nNRsU765cQHGz9DSp6Zgxgrz5NqhArKt5",
+                "name": "Ancestor Egg FA",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZL6nx9BLW36nNRsU765cQHGz9DSp6Zgxgrz5NqhArKt5",
+            "mediaType": "image/jpeg",
+            "description": "Ancestor Egg is redeemable for a ZiberBugs Ancestor Bug FA"
+          },
+          "AncerstorEggFB": {
+            "name": "Ancestor Egg FB",
+            "files": [
+              {
+                "src": "ipfs://QmPcMsviXMkywJfDDWq1i37TBvb76cicoSTQByVMf7fZ7y",
+                "name": "Ancestor Egg FB",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPcMsviXMkywJfDDWq1i37TBvb76cicoSTQByVMf7fZ7y",
+            "mediaType": "image/jpeg",
+            "description": "Ancestor Egg is redeemable for a ZiberBugs Ancestor Bug FB"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

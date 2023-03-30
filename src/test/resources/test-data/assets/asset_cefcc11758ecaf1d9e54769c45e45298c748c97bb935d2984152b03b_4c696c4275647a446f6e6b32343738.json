@@ -1,0 +1,102 @@
+[
+  {
+    "policy_id": "cefcc11758ecaf1d9e54769c45e45298c748c97bb935d2984152b03b",
+    "asset_name": "4c696c4275647a446f6e6b32343738",
+    "asset_name_ascii": "LilBudzDonk2478",
+    "fingerprint": "asset1h0ajrthneu6rfmyx8d8qt2q7t7nxv35vv9hf02",
+    "minting_tx_hash": "6308c0fb1a907c548543e088ec1f99c8fc978c7a767270e0afe9f492e89ff315",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1623974400,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "url": "https://ipfs.io/ipfs",
+          "ipfs": "QmfRwvQJNA5NdmZRTwoSyK2Hijbv8iwieY2hbDp6v7FHWi",
+          "nsfw": 1,
+          "files": [
+            {
+              "url": "https://ipfs.io/ipfs",
+              "ipfs": "bafybeicmqy5sluqn2zl57zeoz6t7zancve737ev5tczpkx2ayh635mtmve",
+              "hashType": "sha256",
+              "assetHash": "f70905b6125e14f28d247aaa6d694befc9681658de32b1f5764750cbd77ab3b4",
+              "assetMedia": "print"
+            }
+          ],
+          "artist": {
+            "url": "https://twitter.com/jon_made_this",
+            "name": "Jon_Made_This"
+          },
+          "assetType": "NFT",
+          "attributes": {
+            "leaf": {
+              "id": 11,
+              "hat": "none",
+              "pet": "none",
+              "face": 2,
+              "hair": "none",
+              "name": "Donk",
+              "color": "#40417a",
+              "display": "Donk",
+              "glasses": 16,
+              "instrument": "none"
+            },
+            "room": {
+              "rug": 5,
+              "wall": "#dfe4ea",
+              "poster": 11
+            },
+            "size": {
+              "unit": "inches",
+              "width": "10",
+              "height": "12"
+            },
+            "couch": {
+              "color": "#cd6133",
+              "highlight": "#e58e26"
+            },
+            "shelf": {
+              "item": 3
+            },
+            "table": {
+              "jar": "small",
+              "bong": 2,
+              "color": "#f0932b",
+              "scale": "none"
+            }
+          },
+          "collectionName": "Lil Budz #1"
+        },
+        "tokens": {
+          "LilBudzDonk2478": "LilBudz Donk #2478"
+        },
+        "policyId": "cefcc11758ecaf1d9e54769c45e45298c748c97bb935d2984152b03b",
+        "publisher": [
+          {
+            "url": "https://dogpatchmedia.com/",
+            "contact": "nft@dogpatchmedia.com",
+            "license": "NFT License 2.0",
+            "publisher": "Dogpatch Media",
+            "licenseURL": "https://www.nftlicense.org/"
+          }
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 32664207,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "7a5c63041850038908e67192630da4696f829d7c40de1a82e9823764"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "policy_id": "bf4e328780249bf4b450fb73064794c7891aa6ccf494b38495069582",
+    "asset_name": "526f79616c7479546f6b656e3032",
+    "asset_name_ascii": "RoyaltyToken02",
+    "fingerprint": "asset1lj768eh5aszuhhzws89lfmfsnmfkxattxc374q",
+    "minting_tx_hash": "676f649ed79dc1af49538880eab0cf219e3a9313e73fe1f05a690d6c5b27f40a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1630195200,
+    "minting_tx_metadata": {
+      "721": {
+        "bf4e328780249bf4b450fb73064794c7891aa6ccf494b38495069582": {
+          "RoyaltyToken01": {
+            "name": "The Fellowship of the Royalties #01",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken02": {
+            "name": "The Fellowship of the Royalties #02",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken03": {
+            "name": "The Fellowship of the Royalties #03",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken04": {
+            "name": "The Fellowship of the Royalties #04",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken05": {
+            "name": "The Fellowship of the Royalties #05",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken06": {
+            "name": "The Fellowship of the Royalties #06",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken07": {
+            "name": "The Fellowship of the Royalties #07",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken08": {
+            "name": "The Fellowship of the Royalties #08",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken09": {
+            "name": "The Fellowship of the Royalties #09",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          },
+          "RoyaltyToken10": {
+            "name": "The Fellowship of the Royalties #10",
+            "image": "ipfs://QmTTTTzNf2v9ob2fLEJTzAYYUwJzkU8n2oTG7mdf2M8GRn",
+            "mediaType": "image/jpeg"
+          }
+        }
+      },
+      "777": {
+        "pct": "0.0",
+        "addr": [
+          "addr1q8g3dv6ptkgsafh7k5muggrvfde2szzmc2mqkcxpxn7c63l9znc9e3xa82h",
+          "pf39scc37tcu9ggy0l89gy2f9r2lf7husfvu8wh"
+        ],
+        "description": [
+          "This sample Cardano Asset represents the community standard for",
+          "the implementation of royalties on the Cardano Blockchain. This",
+          "standard was approved at the Fellowship of the Royalty on August",
+          "28th, 2021 at 19:00 UTC. This standard has been developed with",
+          "input from Ada Miner, Artano, BuffyBot, CNFT.io, MADinArt",
+          "Digital Syndicate, NFT-Maker.io, Hydrun, Tokhun, and many more",
+          "members of the Cardano Community. The formal implementation",
+          "proposal is listed under CIP-0027. #Cardano777"
+        ]
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

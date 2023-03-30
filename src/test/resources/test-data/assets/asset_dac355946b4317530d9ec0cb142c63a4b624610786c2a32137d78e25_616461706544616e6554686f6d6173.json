@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544616e6554686f6d6173",
+    "asset_name_ascii": "adapeDaneThomas",
+    "fingerprint": "asset13cj30ac8cg6j6yfezadldfz479l6q68ccajsal",
+    "minting_tx_hash": "17f3bb769cf817a65edf05c0a6bb40a65e7b8136d8b451cd7cf415d047bbcfbf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDaneThomas": {
+            "Hat": "Wool Cap",
+            "Body": "Brown Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Dane Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPW1931RUAJS72DBiumVStuUSyiN8vQrEhgb7LkfDQEfa",
+                "name": "Dane Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPW1931RUAJS72DBiumVStuUSyiN8vQrEhgb7LkfDQEfa",
+            "Family": "Thomas",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Thomas family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

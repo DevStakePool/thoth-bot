@@ -75,7 +75,11 @@ public class AddressServiceDouble implements AddressService {
     public Result<List<AddressAsset>> getAddressAssets(List<String> addressList, Options options) throws ApiException {
         try {
             List<AddressAsset> data = KoiosDataBuilder.getAddressAssets();
-            return Result.<List<AddressAsset>>builder().code(200).response("").successful(true).value(data).build();
+
+            return Result.<List<AddressAsset>>builder().code(200).response("")
+                    .successful(true)
+                    .value(data.stream().filter(d -> addressList.contains(d.getAddress())).collect(Collectors.toList()))
+                    .build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }

@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b656e6c65795461796c6f72",
+    "asset_name_ascii": "adapeKenleyTaylor",
+    "fingerprint": "asset1eg42vfxz8qrjm8duhc2kmur08glzd3fk7ffyxe",
+    "minting_tx_hash": "fbecdd2a90a99b105a7b4d0017e465d0a8ea9d946a78145590cac4ed1e2bd97f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMateoBest": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "VR Headset",
+            "Head": "Ape",
+            "name": "Mateo Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmV5MPd8rPRCywGYTuxtVZTt5KvcsDZqV6mLQya5Kx1VQh",
+                "name": "Mateo Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmV5MPd8rPRCywGYTuxtVZTt5KvcsDZqV6mLQya5Kx1VQh",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          },
+          "adapePabloWright": {
+            "Hat": "None",
+            "Body": "Robot",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Robot",
+            "name": "Pablo Wright",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmTB1bTqrHt5msxpiT2SozQwbUYmdGx2utLK9SWM2ureBh",
+                "name": "Pablo Wright",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTB1bTqrHt5msxpiT2SozQwbUYmdGx2utLK9SWM2ureBh",
+            "Family": "Wright",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wright family"
+          },
+          "adapeKenleyTaylor": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Kenley Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmcR9pUJEcdC77FUH4n6xEa3se2Joh2bNWHft2yB8LqdHh",
+                "name": "Kenley Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcR9pUJEcdC77FUH4n6xEa3se2Joh2bNWHft2yB8LqdHh",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

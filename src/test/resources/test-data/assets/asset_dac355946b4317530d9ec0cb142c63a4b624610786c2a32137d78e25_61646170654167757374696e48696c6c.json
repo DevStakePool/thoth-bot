@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654167757374696e48696c6c",
+    "asset_name_ascii": "adapeAgustinHill",
+    "fingerprint": "asset1sxnmjqf8mas5w29nkj99lfg7er4f602hkw5dcf",
+    "minting_tx_hash": "3d909da317e222f9f5754ff9e602633b84788e74c3cfab81dcb51395a8d4f9b4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAgustinHill": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Silver Earring",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Agustin Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmVW4njv8aJMPrgPMJ6U5RMKixVbtrt9M57kWvMSdSAhXk",
+                "name": "Agustin Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVW4njv8aJMPrgPMJ6U5RMKixVbtrt9M57kWvMSdSAhXk",
+            "Family": "Hill",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Hill family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "policy_id": "cefcc11758ecaf1d9e54769c45e45298c748c97bb935d2984152b03b",
+    "asset_name": "4c696c4275647a4368756e6b446164647937383137",
+    "asset_name_ascii": "LilBudzChunkDaddy7817",
+    "fingerprint": "asset19cfcs4syfj5ansahljkddxk03yhvrk8jqh0nsa",
+    "minting_tx_hash": "ebdd29d4186bf5dbdf9f320cda579d5e9e4d10776d2f61f58160588a342a0d34",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1623369600,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "url": "https://ipfs.io/ipfs",
+          "ipfs": "QmXbYcxCCVGbDkKJEfXSekLwFxLQ9khR2Lk1jVBC1YtvaV",
+          "nsfw": 1,
+          "files": [
+            {
+              "url": "https://ipfs.io/ipfs",
+              "ipfs": "bafybeidbz2mhj3u4ygumb44ew2q4whowwu3rpzls7pnzzenu53uisswpxy",
+              "hashType": "sha256",
+              "assetHash": "c020dfd88d98b5eb27af732e1c88ab0c8b99a774de5722cfb69a22a6dbe40980",
+              "assetMedia": "print"
+            }
+          ],
+          "artist": {
+            "url": "https://twitter.com/jon_made_this",
+            "name": "Jon_Made_This"
+          },
+          "assetType": "NFT",
+          "attributes": {
+            "leaf": {
+              "id": 6,
+              "hat": 4,
+              "pet": 7,
+              "face": 8,
+              "hair": "none",
+              "name": "ChunkDaddy",
+              "color": "#dee6e9",
+              "display": "Chunk Daddy",
+              "glasses": "none",
+              "instrument": "none"
+            },
+            "room": {
+              "rug": 9,
+              "wall": "#f7d794",
+              "poster": 6
+            },
+            "size": {
+              "unit": "inches",
+              "width": "10",
+              "height": "12"
+            },
+            "couch": {
+              "color": "#fa983a",
+              "highlight": "#ffaf40"
+            },
+            "shelf": {
+              "item": 1
+            },
+            "table": {
+              "jar": "small",
+              "bong": 9,
+              "color": "#cc8e35",
+              "scale": "none"
+            }
+          },
+          "collectionName": "Lil Budz #1"
+        },
+        "tokens": {
+          "LilBudzChunkDaddy7817": "LilBudz Chunk Daddy #7817"
+        },
+        "policyId": "cefcc11758ecaf1d9e54769c45e45298c748c97bb935d2984152b03b",
+        "publisher": [
+          {
+            "url": "https://dogpatchmedia.com/",
+            "contact": "nft@dogpatchmedia.com",
+            "license": "NFT License 2.0",
+            "publisher": "Dogpatch Media",
+            "licenseURL": "https://www.nftlicense.org/"
+          }
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 32664207,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "7a5c63041850038908e67192630da4696f829d7c40de1a82e9823764"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

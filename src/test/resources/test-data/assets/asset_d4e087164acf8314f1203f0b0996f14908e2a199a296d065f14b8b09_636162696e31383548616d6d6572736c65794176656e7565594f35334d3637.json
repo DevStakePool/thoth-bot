@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e31383548616d6d6572736c65794176656e7565594f35334d3637",
+    "asset_name_ascii": "cabin185HammersleyAvenueYO53M67",
+    "fingerprint": "asset1ut9ullswp5mda5vvr74ufyvg2ktwk3kk2q8eqy",
+    "minting_tx_hash": "9c2998172801f8218c4060b4e4c68f8ceedf1db4d0146ccd078380c6e35a4b23",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin185HammersleyAvenueYO53M67": {
+            "name": "185 Hammersley Avenue, YO53 M67",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Hammersley Avenue",
+            "District": "Yocalt",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "M",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "53",
+            "Y Coordinate": "67"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

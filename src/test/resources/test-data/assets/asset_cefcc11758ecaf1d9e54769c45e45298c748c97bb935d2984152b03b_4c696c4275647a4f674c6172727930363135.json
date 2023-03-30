@@ -1,0 +1,102 @@
+[
+  {
+    "policy_id": "cefcc11758ecaf1d9e54769c45e45298c748c97bb935d2984152b03b",
+    "asset_name": "4c696c4275647a4f674c6172727930363135",
+    "asset_name_ascii": "LilBudzOgLarry0615",
+    "fingerprint": "asset1c3nczl9h6mh4rmyj3ef337w8tpmsd0af6thpqv",
+    "minting_tx_hash": "2c4259d8e8e2fe0f006c25b109a684756a55e28252cdc08c8b0a4413102b0142",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1623369600,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "url": "https://ipfs.io/ipfs",
+          "ipfs": "QmSM34U88MURgZvu1gP7rTD9uFrTWBaHtrZTTpYnrKT3Hc",
+          "nsfw": 1,
+          "files": [
+            {
+              "url": "https://ipfs.io/ipfs",
+              "ipfs": "bafybeievvq434moflpkxtk4vmy7wurftddmhb4m42tziastvfkksihoeg4",
+              "hashType": "sha256",
+              "assetHash": "83caf9057fcf4fb3ac01893bc1fc42b3b22775390200f801721825f0ec5c8a0c",
+              "assetMedia": "print"
+            }
+          ],
+          "artist": {
+            "url": "https://twitter.com/jon_made_this",
+            "name": "Jon_Made_This"
+          },
+          "assetType": "NFT",
+          "attributes": {
+            "leaf": {
+              "id": 90,
+              "hat": "none",
+              "pet": 19,
+              "face": 4,
+              "hair": 5,
+              "name": "OgLarry",
+              "color": "#2d2c54",
+              "display": "OG Larry",
+              "glasses": 7,
+              "instrument": "none"
+            },
+            "room": {
+              "rug": 13,
+              "wall": "#F8EFBA",
+              "poster": 10
+            },
+            "size": {
+              "unit": "inches",
+              "width": "10",
+              "height": "12"
+            },
+            "couch": {
+              "color": "#fa8231",
+              "highlight": "#fa8231"
+            },
+            "shelf": {
+              "item": 1
+            },
+            "table": {
+              "jar": "large",
+              "bong": 9,
+              "color": "#ffb142",
+              "scale": "none"
+            }
+          },
+          "collectionName": "Lil Budz #1"
+        },
+        "tokens": {
+          "LilBudzOgLarry0615": "LilBudz OG Larry #0615"
+        },
+        "policyId": "cefcc11758ecaf1d9e54769c45e45298c748c97bb935d2984152b03b",
+        "publisher": [
+          {
+            "url": "https://dogpatchmedia.com/",
+            "contact": "nft@dogpatchmedia.com",
+            "license": "NFT License 2.0",
+            "publisher": "Dogpatch Media",
+            "licenseURL": "https://www.nftlicense.org/"
+          }
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 32664207,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "7a5c63041850038908e67192630da4696f829d7c40de1a82e9823764"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "167248c765f731a1535d60acef2fef06cfdf6a4d085917903fc8e820",
+    "asset_name": "433420506c61796572205061737320233131",
+    "asset_name_ascii": "C4 Player Pass #11",
+    "fingerprint": "asset186r8get05prklq2tvvxj4k539gwtwah2pyjtkk",
+    "minting_tx_hash": "460be062ae27a1ad5c31f89750cdad10f7e0c0f367841137176919002d991cdf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666656000,
+    "minting_tx_metadata": {
+      "721": {
+        "167248c765f731a1535d60acef2fef06cfdf6a4d085917903fc8e820": {
+          "C4 Player Pass #11": {
+            "files": [
+              {
+                "src": "ipfs://QmZTrcRZPrAzCjTWbgZcZ4UVg2CReRKZBBPMmcuWVq4UMp",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmeQM3gRcNKXMuJogV4SGF7YTEmTrbWQhJL5V8kgDFZtJy",
+            "project": "$C4 Player Pass",
+            "description": [
+              "An exclusive collection of 750 Player Passes",
+              " for the C4Poker.io poker platform.",
+              "Each pass can be staked with any 8 Cardano Crocs Club NFTs",
+              " to receive a share of 30% of the poker platform profits.",
+              "All 3 CCC collections are eligible",
+              " to be staked with a pass."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

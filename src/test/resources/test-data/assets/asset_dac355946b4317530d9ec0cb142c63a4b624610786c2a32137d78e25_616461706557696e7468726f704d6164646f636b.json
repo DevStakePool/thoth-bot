@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706557696e7468726f704d6164646f636b",
+    "asset_name_ascii": "adapeWinthropMaddock",
+    "fingerprint": "asset12cpewtu5mfjede3cwem3h9dk3z6edldad28zn5",
+    "minting_tx_hash": "3c657e1b961da2dce09331e8c1bd5a4d4c8d2db20fcbc735426564b2885887c5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWinthropMaddock": {
+            "Hat": "Pirate Hat",
+            "Body": "Orange",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Winthrop Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmWgcVabLTeCUPY2AzU9sJmzZVEND9sWDc4uAgh41VgQxh",
+                "name": "Winthrop Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWgcVabLTeCUPY2AzU9sJmzZVEND9sWDc4uAgh41VgQxh",
+            "Family": "Maddock",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Maddock family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

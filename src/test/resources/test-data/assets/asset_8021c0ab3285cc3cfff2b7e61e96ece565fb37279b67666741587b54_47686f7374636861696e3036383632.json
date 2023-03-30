@@ -1,0 +1,64 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3036383632",
+    "asset_name_ascii": "Ghostchain06862",
+    "fingerprint": "asset1vcwh9py3wz9skd65l33rjwnuryxva6fatf4pt9",
+    "minting_tx_hash": "48face08cddb23cf6bf75da8b94c9c0afd27a7017971bdfa9f460356bc508f54",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1636416000,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain06346": {
+            "dna": "40100101",
+            "eyes": "Monocle",
+            "head": "Black Headphones",
+            "name": "Ghostchain06346",
+            "files": [
+              {
+                "src": "ipfs://QmYY4PpmNW6NYaKefD8QzhfuMwwPLPf3SBM2LJZQRMGJEA",
+                "name": "Ghostchain06346",
+                "https": "https://api.nftghostchain.com/original?mint=6346",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Multiverse",
+            "image": "ipfs://QmYY4PpmNW6NYaKefD8QzhfuMwwPLPf3SBM2LJZQRMGJEA",
+            "mouth": "Pink Popper",
+            "rarity": "Rare",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          },
+          "Ghostchain06862": {
+            "dna": "20120100",
+            "body": "Fleece",
+            "eyes": "Eye Patch",
+            "head": "Posh",
+            "name": "Ghostchain06862",
+            "files": [
+              {
+                "src": "ipfs://QmZxyaqDSePMBaPirg5yXYh6BagxsWPPCAL8KztjjXW1XN",
+                "name": "Ghostchain06862",
+                "https": "https://api.nftghostchain.com/original?mint=6862",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Forest",
+            "image": "ipfs://QmZxyaqDSePMBaPirg5yXYh6BagxsWPPCAL8KztjjXW1XN",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "policy_id": "30ed3d95db1d6bb2c12fc5228a2986eab4553f192a12a4607780e15b",
+    "asset_name": "457175696e6550696f6e656572486f7273653033373635",
+    "asset_name_ascii": "EquinePioneerHorse03765",
+    "fingerprint": "asset1tx5wldaayfklrj0eutw3cdze3g7fdqltfucm6c",
+    "minting_tx_hash": "51fcfe4b7bb387a9668bc3a0cd2d3ba0718a7e45875bbbcb5005d2840f992531",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1639785600,
+    "minting_tx_metadata": {
+      "721": {
+        "22d843e9e8b39d105c645944cc848abee2673d64e60f1f022791ec85": {
+          "EquinePioneerSkin03765": {
+            "name": "Athlete",
+            "Color": "Original",
+            "files": [
+              {
+                "src": "ipfs://QmWKXLtbgS9WHeVrGAjPJK9Ykp9proaiqofqwAKhLBZj81",
+                "name": "Athlete",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": "ipfs://QmZfTKjPTjjZgQXhrnDGfGfubteQKKVpZqCxJwtnPPsM1N",
+            "media": {
+              "discord": "https://discord.gg/equine",
+              "twitter": "https://twitter.com/EquineNFT",
+              "website": "https://equine.gg"
+            },
+            "Skin Type": "Jockey Skin",
+            "copyright": "2021 © Equine",
+            "mediaType": "image/jpg",
+            "Collection": "Equine Pioneer Skins"
+          }
+        },
+        "23a000a839f04bb71b59b4ae74bf8cf5ed21ee0be520690e665ae4b4": {
+          "EquinePioneerJockey03765": {
+            "name": "Cornelius",
+            "files": [
+              {
+                "src": "ipfs://QmQWvEMx2afdQ6a8qaEqfiSmEALwVeysMdDzxyLDysqDPL",
+                "name": "Cornelius",
+                "mediaType": "model/gltf-binary"
+              },
+              {
+                "src": "ipfs://QmXfYJ3ZwW9p3TKxehLXLzhQYq1Wa9cKWYdCdmtpJcKdJT",
+                "name": "Theme Song",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmSKADJKrFxoXXADHppF1M3C4hWhMEkA4FT1KVu5dRTgH7",
+            "discord": "https://discord.gg/equine",
+            "twitter": "https://twitter.com/EquineNFT",
+            "website": "https://equine.gg",
+            "copyright": "2021 © Equine",
+            "mediaType": "image/jpg",
+            "Collection": "Equine Jockeys",
+            "Personality": "Wise"
+          }
+        },
+        "30ed3d95db1d6bb2c12fc5228a2986eab4553f192a12a4607780e15b": {
+          "EquinePioneerHorse03765": {
+            "Age": 2,
+            "name": "Equine Pioneer Horse [03765]",
+            "~DNA": [
+              "T4khbNQ1YL2EGqjsS4thXDyVCVEgBDaaRFS0zpx4ci1jYjVzL/kRvbqXKJYTyFI2",
+              "hcTl3RuwkhtzF/j4NzcZTEE6xAcoqBOZnU5x9OJCe44B1fj7H+vSdKY5pb9WnjOi",
+              "Bt3InVQryJVLCOIaUF1CNS8fCCnz++S/G7LPxGe7O0k="
+            ],
+            "Color": "Copper Bay",
+            "files": [
+              {
+                "src": "ipfs://QmUxJQKgp7s998YndqyL3RhKi4YGuH7BfRNvjJjpLaceyL",
+                "name": "Equine Pioneer Horse [03765]",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": "ipfs://QmQib7bk9iY87nBTZiDFQruUeHeyN6f8jSZY4rP4nxubj1",
+            "speed": 24,
+            "Gender": "Filly",
+            "~Links": {
+              "Discord": "https://discord.com/invite/Equine",
+              "Twitter": "https://twitter.com/equinenft",
+              "Website": "https://equine.gg"
+            },
+            "agility": 9,
+            "stamina": 36,
+            "Markings": {
+              "Body": "Tovero 5",
+              "Head": "Blaze 3",
+              "Back Left Leg": "Stocking",
+              "Back Right Leg": "Irregular Stocking",
+              "Front Left Leg": "Heel",
+              "Front Right Leg": "Stocking"
+            },
+            "endurance": 28,
+            "mediaType": "image/jpeg",
+            "Collection": "Pioneer",
+            "acceleration": 31
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

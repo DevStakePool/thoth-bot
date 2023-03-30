@@ -1,0 +1,179 @@
+[
+  {
+    "policy_id": "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+    "asset_name": "756e7369673135323139",
+    "asset_name_ascii": "unsig15219",
+    "fingerprint": "asset1cde2earvqfu8s0jzukkk0x4c276plgp0a5jqkz",
+    "minting_tx_hash": "dd22ddc059cb5f290e156d127e08e9ff1545dee23f1043165d440102be5ff748",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1623024000,
+    "minting_tx_metadata": {
+      "721": {
+        "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04": {
+          "unsig13090": {
+            "files": [
+              {
+                "src": "ipfs://QmWZjHnZNe92FkKhbmVjHJXnBM5kNPLLzT7NLfSvcPdGTy",
+                "mediatype": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXUmZWrNLVR5p5TfE9HmoTYekq89tqqxswPWtL9sbGkoE",
+            "title": "unsig_13090",
+            "series": "unsigned_algorithms",
+            "unsigs": {
+              "index": 13090,
+              "num_props": 5,
+              "properties": {
+                "colors": [
+                  "Blue",
+                  "Green",
+                  "Green",
+                  "Red",
+                  "Red"
+                ],
+                "rotations": [
+                  "180",
+                  "90",
+                  "180",
+                  "0",
+                  "90"
+                ],
+                "multipliers": [
+                  "0.5",
+                  "1",
+                  "1",
+                  "2",
+                  "2"
+                ],
+                "distributions": [
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF"
+                ]
+              }
+            },
+            "source_key": [
+              "721",
+              "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+              "unsig00000",
+              "files",
+              "code"
+            ],
+            "source_tx_id": "e4a90da18935e73f7fd6ffaa688b35b011a1a8a710b47bdb5d7103a05afc0197"
+          },
+          "unsig15219": {
+            "files": [
+              {
+                "src": "ipfs://QmZZZwFof2tisKi67WFa3YoGAtNGqZiXGAa1Upk7r7Hcww",
+                "mediatype": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWtE3Qn1cDgQPWkocDtavwTKaEZY9VA2RAx2BAu1sUdXo",
+            "title": "unsig_15219",
+            "series": "unsigned_algorithms",
+            "unsigs": {
+              "index": 15219,
+              "num_props": 5,
+              "properties": {
+                "colors": [
+                  "Green",
+                  "Blue",
+                  "Red",
+                  "Red",
+                  "Blue"
+                ],
+                "rotations": [
+                  "90",
+                  "180",
+                  "0",
+                  "90",
+                  "90"
+                ],
+                "multipliers": [
+                  "0.5",
+                  "1",
+                  "2",
+                  "2",
+                  "4"
+                ],
+                "distributions": [
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF"
+                ]
+              }
+            },
+            "source_key": [
+              "721",
+              "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+              "unsig00000",
+              "files",
+              "code"
+            ],
+            "source_tx_id": "e4a90da18935e73f7fd6ffaa688b35b011a1a8a710b47bdb5d7103a05afc0197"
+          },
+          "unsig18949": {
+            "files": [
+              {
+                "src": "ipfs://Qmc1aiajZDqPAT6SZaF4AehRr1scSr8PZN5DhfBGwmdtaY",
+                "mediatype": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaFGpyUcAco5D31QzeVM5TcCoYbnuZUr6X7g4Y2C9vbUW",
+            "title": "unsig_18949",
+            "series": "unsigned_algorithms",
+            "unsigs": {
+              "index": 18949,
+              "num_props": 5,
+              "properties": {
+                "colors": [
+                  "Red",
+                  "Green",
+                  "Green",
+                  "Blue",
+                  "Blue"
+                ],
+                "rotations": [
+                  "90",
+                  "0",
+                  "270",
+                  "270",
+                  "0"
+                ],
+                "multipliers": [
+                  "0.5",
+                  "1",
+                  "1",
+                  "1",
+                  "4"
+                ],
+                "distributions": [
+                  "Normal",
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF"
+                ]
+              }
+            },
+            "source_key": [
+              "721",
+              "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+              "unsig00000",
+              "files",
+              "code"
+            ],
+            "source_tx_id": "e4a90da18935e73f7fd6ffaa688b35b011a1a8a710b47bdb5d7103a05afc0197"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

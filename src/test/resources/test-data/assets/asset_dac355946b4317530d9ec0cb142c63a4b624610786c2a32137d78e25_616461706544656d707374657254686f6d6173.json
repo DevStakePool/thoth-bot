@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544656d707374657254686f6d6173",
+    "asset_name_ascii": "adapeDempsterThomas",
+    "fingerprint": "asset1zfh6v90vd8rk26mjh6q6hkqf0wxh3axfms7nnv",
+    "minting_tx_hash": "827598da16bd696cff4544617c1ea18c34dd90c46eae34541d538de58e46d557",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBladeWalker": {
+            "Hat": "Pirate Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Blade Walker",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qme2RXduq5cH6KHbYajy2ofz3eVbe7bzsjtJ3ati7e9JQ7",
+                "name": "Blade Walker",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qme2RXduq5cH6KHbYajy2ofz3eVbe7bzsjtJ3ati7e9JQ7",
+            "Family": "Walker",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Walker family"
+          },
+          "adapeDempsterThomas": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Dempster Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmaDosHhE4NtmnKfjtUsCb9r3tDBxmbFdaxK7H8SZmnFU4",
+                "name": "Dempster Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaDosHhE4NtmnKfjtUsCb9r3tDBxmbFdaxK7H8SZmnFU4",
+            "Family": "Thomas",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Thomas family"
+          },
+          "adapeManleyCastillo": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Manley Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qmac5NaUYRqET3djv9w1EG2Md6ZwhXhL1aqrZEzfzJBkXw",
+                "name": "Manley Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmac5NaUYRqET3djv9w1EG2Md6ZwhXhL1aqrZEzfzJBkXw",
+            "Family": "Castillo",
+            "Weapon": "Spear",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

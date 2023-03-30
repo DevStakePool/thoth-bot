@@ -1,0 +1,75 @@
+[
+  {
+    "policy_id": "9bee44c5c494dee38622e6da0b3b312820f9f75dd6cc256c769db788",
+    "asset_name": "43727970746f4b6e69747469653030343739",
+    "asset_name_ascii": "CryptoKnittie00479",
+    "fingerprint": "asset1zd2aj3m0welds562wc47zr6ge0yznxmjcfp3cc",
+    "minting_tx_hash": "fb12efe947e46ec34fc22d073f14ba9a5e7a7237276c17812a2590cbc5d28949",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1619827200,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "url": "https://ipfs.io/ipfs",
+          "ipfs": "QmYYLyhBRpvXGC3WSgJEGGjquzcLt3hawkQmnAkDxgWtuY",
+          "gallery": [
+            {
+              "url": "https://ipfs.io/ipfs",
+              "ipfs": "QmVki3P9eY32YqiFZJuDEJN81Nb9TbswP9vcBwqbQDAnU1",
+              "hashType": "sha256",
+              "assetHash": "38099ad83d2ff4520a29114a0168718a13349b7473350e90ea120cc450287674"
+            }
+          ],
+          "hashType": "sha256",
+          "assetHash": "6c9f870db0110e85eb05556d617383c1a85316300df7f133e02663593a818c10",
+          "assetName": "CryptoKnitties #00479",
+          "assetType": "NFT",
+          "artistName": "Andrew King",
+          "attributes": {
+            "hat": "ash",
+            "body": "vontwothree",
+            "prop": "cortado teddycharles",
+            "extra": [
+              "lovelace",
+              "bandaid"
+            ],
+            "hoodie": "lava",
+            "expression": "mischief"
+          },
+          "collectionName": "CryptoKnitties",
+          "longDescription": [
+            "CryptoKnitties #00479 loves how their ash-coloured hat and",
+            "lava-coloured hoodie combo compliments their vontwothree yarn,",
+            "mischief expression and cortado teddycharles accessory! #00479",
+            "comes with lovelace and bandaid extras."
+          ]
+        },
+        "tokens": {
+          "CryptoKnittie00479": "CryptoKnitties #00479"
+        },
+        "policyId": "9bee44c5c494dee38622e6da0b3b312820f9f75dd6cc256c769db788",
+        "publisher": [
+          "https://twitter.com/CryptoKnitties",
+          "https://cryptoknitties.io"
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 28860486,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "d4b9b71fffec086c6a75893735183f28b000894f1f717293a7554a65"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

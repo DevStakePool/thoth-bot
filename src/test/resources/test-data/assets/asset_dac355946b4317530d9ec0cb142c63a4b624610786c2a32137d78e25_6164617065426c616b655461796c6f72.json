@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426c616b655461796c6f72",
+    "asset_name_ascii": "adapeBlakeTaylor",
+    "fingerprint": "asset13r50dv43wgz60sspq5mnlm3vmrf5lzfpv7yzjd",
+    "minting_tx_hash": "585682210c9349092a0ba90ecadaf8f725767fa4cd34ba3c6cf347bfcc6d1a0c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBlakeTaylor": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Blake Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmfGLRs5RDgDzhqzgXXAyWZ4ixxc8ZcEXbaUjVQopzsPBT",
+                "name": "Blake Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfGLRs5RDgDzhqzgXXAyWZ4ixxc8ZcEXbaUjVQopzsPBT",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706541636b6c6579436f78",
+    "asset_name_ascii": "adapeAckleyCox",
+    "fingerprint": "asset150j0r78u9edjqfxh3u0ze5tqgg6xqtthv748c5",
+    "minting_tx_hash": "d573b933014fd04af1839b04e887a6aaf2e9e45bcab73036d99f916ae874bece",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAckleyCox": {
+            "Hat": "Pirate Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Ackley Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmThqWeFjcgaFNUKdE6qQvTupddvbXFBrUhyWRGfy7RZTq",
+                "name": "Ackley Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmThqWeFjcgaFNUKdE6qQvTupddvbXFBrUhyWRGfy7RZTq",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

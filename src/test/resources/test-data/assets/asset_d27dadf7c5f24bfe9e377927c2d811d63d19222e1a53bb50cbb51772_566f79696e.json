@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "566f79696e",
+    "asset_name_ascii": "Voyin",
+    "fingerprint": "asset1dxrddv5y2724xhyy6cqwmw7l7tm5sq2yqyxk86",
+    "minting_tx_hash": "3cc8ae0884fcb66ea39fa5b6aa0ced122a22a76df86fa958cbd8a9e8a4fc1ac5",
+    "total_supply": "5000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "Voyin": {
+            "id": 9,
+            "name": "Voyin",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://QmbqfDZJydCxeLPtLu8TzXJvR8w2rmv7NAsS2vbX7xPPVe",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/7k9j5m44g2kf/nvla.json",
+                  "ipfs://QmQkMzitF5wpsZt5rEcCxNXiNU9Di4eFEo5YRMB1HKDLTT",
+                  "sia://CAAoj3bYfV1jxsLxRAzSHYTn1b0kEzOB0dTFTlVQI9iTTw"
+                ],
+                "priority": 0,
+                "multihash": "QmQkMzitF5wpsZt5rEcCxNXiNU9Di4eFEo5YRMB1HKDLTT",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

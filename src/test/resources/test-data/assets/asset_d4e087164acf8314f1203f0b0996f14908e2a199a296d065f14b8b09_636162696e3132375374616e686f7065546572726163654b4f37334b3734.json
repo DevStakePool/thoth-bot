@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3132375374616e686f7065546572726163654b4f37334b3734",
+    "asset_name_ascii": "cabin127StanhopeTerraceKO73K74",
+    "fingerprint": "asset1ymg5jwsl64kyadnncxzkenta0apkk6nchr0ryc",
+    "minting_tx_hash": "10184e1e8a0c0f349d68f1decfad3c2cd7ae35dd9227844e1fc787744c341c2b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin127StanhopeTerraceKO73K74": {
+            "name": "127 Stanhope Terrace, KO73 K74",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Stanhope Terrace",
+            "District": "Koatwoolf",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "K",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "73",
+            "Y Coordinate": "74"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

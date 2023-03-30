@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706553616c7661746f72436f72746573",
+    "asset_name_ascii": "adapeSalvatorCortes",
+    "fingerprint": "asset14ys9zsw3kde9w0lxryveryy3v4djzvnhv0k4f5",
+    "minting_tx_hash": "86d7fb40d2a6c8b0d9585c2eec072acdfcf715c702f472826824300e7d73b199",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeSalvatorCortes": {
+            "Hat": "Pirate Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Orange",
+            "name": "Salvator Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmNWUgXHYfEw412cZieiQBuWBoeRJF4PouqY5FJL1ua1Vm",
+                "name": "Salvator Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNWUgXHYfEw412cZieiQBuWBoeRJF4PouqY5FJL1ua1Vm",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cortes family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]
