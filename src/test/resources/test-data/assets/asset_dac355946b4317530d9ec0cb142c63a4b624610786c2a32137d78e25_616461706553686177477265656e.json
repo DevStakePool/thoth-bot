@@ -1,0 +1,71 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706553686177477265656e",
+    "asset_name_ascii": "adapeShawGreen",
+    "fingerprint": "asset10y7snzjn9u0vajzkjufhz2kmz0sw8h0dsmahag",
+    "minting_tx_hash": "bcf699f80f1090bf726853111686a18bd0744420a9c8f0b9d0628ee0aee0c256",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeShawGreen": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Shaw Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSqvYZauZPm3WjA4D1mx6bAvZbBYgHqcSCcWLzBvXMCTH",
+                "name": "Shaw Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSqvYZauZPm3WjA4D1mx6bAvZbBYgHqcSCcWLzBvXMCTH",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeRodmanDavies": {
+            "Hat": "Sombrero",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Rodman Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmc7cqJujSATkx1DNQfkiUgB6oNdD6MgpPUEL6gHkatvcv",
+                "name": "Rodman Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmc7cqJujSATkx1DNQfkiUgB6oNdD6MgpPUEL6gHkatvcv",
+            "Family": "Davies",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

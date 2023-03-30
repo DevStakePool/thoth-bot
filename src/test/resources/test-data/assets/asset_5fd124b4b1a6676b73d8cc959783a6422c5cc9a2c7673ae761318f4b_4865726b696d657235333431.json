@@ -1,0 +1,60 @@
+[
+  {
+    "policy_id": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+    "asset_name": "4865726b696d657235333431",
+    "asset_name_ascii": "Herkimer5341",
+    "fingerprint": "asset1y4uju7are6augp3htvfjnka9nxqzywdte5ve3p",
+    "minting_tx_hash": "62da0415607bff9f6c4973028235b0464f0309ee4169f53e96453ffa2113c755",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621555200,
+    "minting_tx_metadata": {
+      "721": {
+        "policyId": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 37346470,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "91b8794e4cfb470cb5e9d990534d285a5a35031086c3bf497756d139"
+            }
+          ]
+        },
+        "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b": {
+          "Herkimer5341": {
+            "src": "ipfs://QmUptwdcKC8mZgwtmA76mzhRkgrXb2ou9vCgJa9fgTWVzN",
+            "name": "Herkimer #5341",
+            "image": "ipfs://QmeHRnkLA9hQSSTpfzxmtx5atp1Pwwxu7ovWvetfDXiJJX",
+            "publisher": [
+              "https://twitter.com/HerkimerNFT",
+              "https://herkimer.io"
+            ],
+            "artistName": "Eric Roidl",
+            "attributes": {
+              "fur": "spotty grey",
+              "variant": "base",
+              "left eye": "missing",
+              "jewellery": [
+                "upper hoop",
+                "lower hoop"
+              ],
+              "right eye": "missing",
+              "background": "deeply blue",
+              "lower teeth": "missing right",
+              "upper teeth": "complete"
+            },
+            "srcSha256Hash": "1e56241d3d1a02b84d8cd904375b4dd5eaa8a326b342a00a365cb732d8c6af6d",
+            "collectionName": "Herkimer",
+            "imageSha256Hash": "e53be81cc59c979f2d76fcd63f2a84f34d0f1cac5030c5d0abc63f2879e124c8"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

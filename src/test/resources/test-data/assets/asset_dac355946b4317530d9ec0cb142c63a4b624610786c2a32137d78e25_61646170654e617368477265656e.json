@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654e617368477265656e",
+    "asset_name_ascii": "adapeNashGreen",
+    "fingerprint": "asset14umfz58sghqfw3j2c3lge9yrwf5hj65lsh7jzp",
+    "minting_tx_hash": "c66ec4daf3cdf026da12b760748b30adfa43dac3d37d2e98cfc439e221ef59dd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeNashGreen": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Nash Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSJf8gBVTZJxvQnUpX6JNtTp4yVnDDGPJnWLQeXtsZEHg",
+                "name": "Nash Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSJf8gBVTZJxvQnUpX6JNtTp4yVnDDGPJnWLQeXtsZEHg",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

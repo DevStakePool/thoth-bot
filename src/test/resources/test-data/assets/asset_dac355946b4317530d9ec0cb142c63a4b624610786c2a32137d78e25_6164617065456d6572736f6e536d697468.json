@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065456d6572736f6e536d697468",
+    "asset_name_ascii": "adapeEmersonSmith",
+    "fingerprint": "asset1pjgamek2cmujvml8c54tkwt4sykunswgjmjrg3",
+    "minting_tx_hash": "2a3f60316d74b8c32da0856aaca4285d1d6ca4f8215fe9fae811b0315eddffb1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEmersonSmith": {
+            "Hat": "Top Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Emerson Smith",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmW1uBcpHZAJ2RiLzC7uh68591UbgzYvcr5SBv5XcV6sSd",
+                "name": "Emerson Smith",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmW1uBcpHZAJ2RiLzC7uh68591UbgzYvcr5SBv5XcV6sSd",
+            "Family": "Smith",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Smith family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

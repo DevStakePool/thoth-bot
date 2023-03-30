@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "165f8fa6918cc42268e1c1a3faf42f354b79fbd0b07c2fe61d402f41",
+    "asset_name": "756e736967537061636532783131",
+    "asset_name_ascii": "unsigSpace2x11",
+    "fingerprint": "asset1tdt6vducec64rwurslwxlw6532xhdf4586ppl8",
+    "minting_tx_hash": "4873faf5f5dbbcbddbf0188035a866fc70c30090109445c3ea7d582d7b9926c6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1626134400,
+    "minting_tx_metadata": {
+      "721": {
+        "165f8fa6918cc42268e1c1a3faf42f354b79fbd0b07c2fe61d402f41": {
+          "unsigSpace2x11": {
+            "url": "https://cardanospace.com",
+            "name": "Unsigned Space 2",
+            "blend": [
+              "unsig24738",
+              "Chromic #12",
+              "unsig06217"
+            ],
+            "image": "ipfs://QmeSqtpZJVenKSnYviMbqWu93jhSBaWDMg3jBUiRbiV9rq",
+            "number": "11/16",
+            "rarity": "Uncommon",
+            "earthdrop": "1",
+            "collection": "Unsigned Spaces",
+            "description": [
+              "A remix collection of CardanoSpace art with Unsigned Algorithms.",
+              "The first ever earthdrops, in celebration of CardanoSpace v2."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

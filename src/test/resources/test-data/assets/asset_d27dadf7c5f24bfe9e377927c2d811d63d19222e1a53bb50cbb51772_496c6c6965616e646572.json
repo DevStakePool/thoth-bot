@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "496c6c6965616e646572",
+    "asset_name_ascii": "Illieander",
+    "fingerprint": "asset1synqlj7nf8v6n98sja7vfutkffe9jz4m97l07z",
+    "minting_tx_hash": "f1788bec6996b0c1c2c29d2fe9dfd99ed4bd8ac0e8429230b0426b0ecdeb9a74",
+    "total_supply": "5000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "Illieander": {
+            "id": 8,
+            "name": "Illieander",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://QmQ5q7JoWjmtfzCpBWLpN2JCZqrbzmgu8YYWWHcGp3Jbhe",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/b00e5t50blqp/nvla.json",
+                  "ipfs://QmTCcgzCP1NMrd9u7hg4AjZ7D4gujL3TUd38wjgA51c4UQ",
+                  "sia://CAA6YatrEbN8ACJIPAb-5R2H3EqUpy2YAdcPMnMHJMesMA"
+                ],
+                "priority": 0,
+                "multihash": "QmTCcgzCP1NMrd9u7hg4AjZ7D4gujL3TUd38wjgA51c4UQ",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

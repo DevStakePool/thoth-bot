@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706547726179736f6e4c617669676e65",
+    "asset_name_ascii": "adapeGraysonLavigne",
+    "fingerprint": "asset1ty7vn00pwfzy0lam3xghrtlta0frdteuz0z3h2",
+    "minting_tx_hash": "f7f102cb8108fdec9dd4dd0de26298683628929e8e8f77bd80b921f7e713a615",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeGraysonLavigne": {
+            "Hat": "Voltaire Wig",
+            "Body": "Cardano",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Grayson Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmZJgiAxeK17e2qJCJ5jRmFiSn5CthmPeaABAxnSUxMFTi",
+                "name": "Grayson Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZJgiAxeK17e2qJCJ5jRmFiSn5CthmPeaABAxnSUxMFTi",
+            "Family": "Lavigne",
+            "Weapon": "None",
+            "Accessory": "Harmonica",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

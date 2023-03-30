@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "736d6172746173736574",
+    "asset_name_ascii": "smartasset",
+    "fingerprint": "asset1yqs9uprgwjc8mvs35rv2q787uuqd9hd694qu5n",
+    "minting_tx_hash": "9c935482a4c96330a24f45c1ed597ac9bd6271afa0b0b541f087bdaee064bdb4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658275200,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "smartasset": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$smartasset",
+            "image": "ipfs://QmXWnEysEEYCcRFhCMK2cAehBvH56gbCeSEHdjicM11KQx",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

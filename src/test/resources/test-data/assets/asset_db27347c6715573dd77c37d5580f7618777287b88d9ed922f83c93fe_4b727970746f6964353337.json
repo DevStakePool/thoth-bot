@@ -1,0 +1,50 @@
+[
+  {
+    "policy_id": "db27347c6715573dd77c37d5580f7618777287b88d9ed922f83c93fe",
+    "asset_name": "4b727970746f6964353337",
+    "asset_name_ascii": "Kryptoid537",
+    "fingerprint": "asset1pjz6la48xa2ksx72vl43rgha4jysfxctn69ljv",
+    "minting_tx_hash": "689b45457c2db64c046a06292a769f41429cc86afe54574c6f072d0f3e07ff5f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621987200,
+    "minting_tx_metadata": {
+      "721": {
+        "db27347c6715573dd77c37d5580f7618777287b88d9ed922f83c93fe": {
+          "Kryptoid537": {
+            "id": "537",
+            "url": "https://kryptoids.monster/",
+            "name": "Kryptoid #537",
+            "type": "image/png",
+            "image": "ipfs://QmTXeB1dJmVjEstzjMDrD2xAgx777NNu2Ux9AWjfdANyh9",
+            "project": "Kryptoids",
+            "species": "Sasquatch",
+            "hashType": "sha256",
+            "assetHash": "3ce8e2bbb85115b735c1ad22bdaacc86dd9621002a5c6e978a3b8c1d150a6876",
+            "imageHash": "9018a70a2cc67454eff0dd029ba1fed1fb70ef08413722fe3cccc79e0595cd11",
+            "attributes": [
+              "Green",
+              "Deviant",
+              "Bloodlust"
+            ],
+            "policyScript": {
+              "type": "all",
+              "scripts": [
+                {
+                  "type": "sig",
+                  "keyHash": "dd4ec4f83ef0a2032f6d6199c387b84a8d201ac03a5247638134fa9f"
+                },
+                {
+                  "slot": 39234821,
+                  "type": "before"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

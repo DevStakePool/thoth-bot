@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654861726f6c64526f6265727473",
+    "asset_name_ascii": "adapeHaroldRoberts",
+    "fingerprint": "asset1hufx3nfphcjsgz2d8uhxghs45y9336dhwzyenp",
+    "minting_tx_hash": "00c095349044c6a2162d78a9133fa0686e98c8984139da5421132d0ad39e06cf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeHaroldRoberts": {
+            "Hat": "Fruit Basket",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Harold Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmdhn73Rcxen8Ut8mWQWae8dusZUqnaZ1auKewF7wvEkPW",
+                "name": "Harold Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmdhn73Rcxen8Ut8mWQWae8dusZUqnaZ1auKewF7wvEkPW",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

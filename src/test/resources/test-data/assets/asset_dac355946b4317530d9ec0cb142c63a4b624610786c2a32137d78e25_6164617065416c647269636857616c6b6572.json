@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416c647269636857616c6b6572",
+    "asset_name_ascii": "adapeAldrichWalker",
+    "fingerprint": "asset1h8mrsnfuscgp5rcn4amy6lvfph8jc0x35mfak6",
+    "minting_tx_hash": "e2b732532ce8140d38bb44c53999df41b7dd6f6a8309a28595d6000108410794",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAldrichWalker": {
+            "Hat": "Top Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Aldrich Walker",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmePcn3oMD9R7YDfYqMK8Aj9uCrQhjMNwb6LPPmUZSe3ax",
+                "name": "Aldrich Walker",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmePcn3oMD9R7YDfYqMK8Aj9uCrQhjMNwb6LPPmUZSe3ax",
+            "Family": "Walker",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Walker family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

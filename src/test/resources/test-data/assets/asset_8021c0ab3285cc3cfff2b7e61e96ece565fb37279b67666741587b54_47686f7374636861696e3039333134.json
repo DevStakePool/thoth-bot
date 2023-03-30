@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3039333134",
+    "asset_name_ascii": "Ghostchain09314",
+    "fingerprint": "asset1hv4phl55r93vzetwqaffu2efv06lwt0yhf8kgv",
+    "minting_tx_hash": "786362081d76429acdce8ecf6558e28760a5f6a6ed6792fa2229145c6bc422cd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635897600,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain09314": {
+            "dna": "00110301",
+            "body": "Black Tshirt",
+            "eyes": "Monobrow",
+            "head": "Megahawk",
+            "name": "Ghostchain09314",
+            "files": [
+              {
+                "src": "ipfs://QmNQFnpLYYYL8E76jx5sSQHVTCN1GSSFLwVYU5ZyyXe1Hu",
+                "name": "Ghostchain09314",
+                "https": "https://api.nftghostchain.com/original?mint=9314",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNQFnpLYYYL8E76jx5sSQHVTCN1GSSFLwVYU5ZyyXe1Hu",
+            "mouth": "Fangs",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

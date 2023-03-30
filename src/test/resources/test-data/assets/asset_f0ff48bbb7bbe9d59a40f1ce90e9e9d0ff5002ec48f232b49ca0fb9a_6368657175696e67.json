@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6368657175696e67",
+    "asset_name_ascii": "chequing",
+    "fingerprint": "asset1cwuv3evnxk5m72phvz7na6ewruhx3eudkjsfhl",
+    "minting_tx_hash": "57a0727ab45b7ef119ee4739c324ee38e09e05f54b865003445059ac082179de",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647734400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "chequing": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$chequing",
+            "image": "ipfs://QmaCD6mXUAcShB52bqSbAx2m87GuWV8gkTvuRjh7NvrtPk",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "ada.tesla": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$ada.tesla",
+            "image": "ipfs://QmdPC9w6BRVjgBesCSBKAPtreDPKs9x5Ecn71YLzRG7vbe",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

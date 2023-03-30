@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065456c646f6e4c617669676e65",
+    "asset_name_ascii": "adapeEldonLavigne",
+    "fingerprint": "asset1cwy5jypxc6yyutv876l23xlu6j3v74xesp6a7h",
+    "minting_tx_hash": "935d275265426b50fd754f12f7ff4390e58f091f5fac03a3ae09ef078a97c20b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEldonLavigne": {
+            "Hat": "King's Crown",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Feather Pen",
+            "Eyes": "Spectacles",
+            "Head": "Cardano",
+            "name": "Eldon Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmVmcvJ6UeYMCfGxZnMqjcYMk6dtNViunLLmh9FvSnhrT3",
+                "name": "Eldon Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVmcvJ6UeYMCfGxZnMqjcYMk6dtNViunLLmh9FvSnhrT3",
+            "Family": "Lavigne",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

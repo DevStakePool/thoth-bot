@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b656e656c6d4d6164646f636b",
+    "asset_name_ascii": "adapeKenelmMaddock",
+    "fingerprint": "asset1uhe6zf99q84729yfcl6ty79k9jq3r6m20rskaw",
+    "minting_tx_hash": "e229b5e871a9472f1c3655e3bd1621094c8dba0ae3c0887e66612bfc5484cee4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeKenelmMaddock": {
+            "Hat": "Sombrero",
+            "Body": "Chainmail",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Kenelm Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmcVcxZwoC1EHS9jiTXYwZimoozBDR5ASaWzyTn54vwb4P",
+                "name": "Kenelm Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcVcxZwoC1EHS9jiTXYwZimoozBDR5ASaWzyTn54vwb4P",
+            "Family": "Maddock",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Maddock family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

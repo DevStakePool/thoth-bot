@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d616e6e696e674d617273",
+    "asset_name_ascii": "adapeManningMars",
+    "fingerprint": "asset1uzw20hyc6pnd9ldzy66075x08nraw6fsy27kz5",
+    "minting_tx_hash": "f97d449319bdde529ff54569858045b33b65cee0bf41aaecfa027fff3d98dda1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeManningMars": {
+            "Hat": "Top Hat",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Manning Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmYjmG6A93cVHFQtipAPVcMhekjCLNJn7kaW6SiM9isVnY",
+                "name": "Manning Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYjmG6A93cVHFQtipAPVcMhekjCLNJn7kaW6SiM9isVnY",
+            "Family": "Mars",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Mars family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

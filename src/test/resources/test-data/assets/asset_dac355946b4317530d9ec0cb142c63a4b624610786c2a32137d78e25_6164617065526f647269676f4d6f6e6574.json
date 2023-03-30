@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065526f647269676f4d6f6e6574",
+    "asset_name_ascii": "adapeRodrigoMonet",
+    "fingerprint": "asset18vnf6madjs4a8zhkynkcjdfnsd70yhryg83ueq",
+    "minting_tx_hash": "0244fb4d49016c38dca1acf4bb3507a2f291efb5362b1207a74fc09b121c3b75",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeElmarCox": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Elmar Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmQoga6ZSpQxgMQ4bpWgiCCSWtyxLvpSu7TdkqW9vMp1MM",
+                "name": "Elmar Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQoga6ZSpQxgMQ4bpWgiCCSWtyxLvpSu7TdkqW9vMp1MM",
+            "Family": "Cox",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeLyreAmato": {
+            "Hat": "Feather Hat",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Lyre Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmNnJn3w7y4n9BCWzv8PPgMU9pXRspjgPvUWnF6sZjZVDt",
+                "name": "Lyre Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNnJn3w7y4n9BCWzv8PPgMU9pXRspjgPvUWnF6sZjZVDt",
+            "Family": "Amato",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          },
+          "adapeRodrigoMonet": {
+            "Hat": "Spinner Hat",
+            "Body": "Cardigan",
+            "Ears": "Silver Earring",
+            "Eyes": "Monocle",
+            "Head": "Ape",
+            "name": "Rodrigo Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmbzFNeDxzN2TukWEZuknpCqdZNMGqFyZ2kcFV1a27XcWS",
+                "name": "Rodrigo Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbzFNeDxzN2TukWEZuknpCqdZNMGqFyZ2kcFV1a27XcWS",
+            "Family": "Monet",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

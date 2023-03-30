@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "416c70686144726163756c69",
+    "asset_name_ascii": "AlphaDraculi",
+    "fingerprint": "asset1flqtveej3rrrc6mgf5lqn3txrx928mshl49vey",
+    "minting_tx_hash": "0d0e2f62f1c42702075908ef7fb6205e6c5fbbb1810e30d7611c52e87d92e20c",
+    "total_supply": "2500",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "AlphaDraculi": {
+            "id": 3,
+            "name": "Alpha Draculi",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://QmTUkcUb2EHSw7Ptd52zeuKwgf8G4iVMczXJdMz8XN3dzd",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/r0tngydjh7x0/nvla.json",
+                  "ipfs://QmdEN1b9xi5R44tssj5CojMBCwXYTh5P6pHKV6YcPogCXZ",
+                  "sia://AAAG1QULaSR9sguw63RnlyGGDYsygLW8rbHlG-_kcf9IYQ"
+                ],
+                "priority": 0,
+                "multihash": "QmdEN1b9xi5R44tssj5CojMBCwXYTh5P6pHKV6YcPogCXZ",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "54656e54686f7573616e6447756e73",
+    "asset_name_ascii": "TenThousandGuns",
+    "fingerprint": "asset13ask2t2zj6pvtpkfwhe7y25knsny9cwkc766js",
+    "minting_tx_hash": "5eb453002b8294558f8293eb50b98061d3da0e088ec76fcacd7e5b0934833849",
+    "total_supply": "5000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "TenThousandGuns": {
+            "id": 11,
+            "name": "Ten Thousand Guns",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://QmSeSYSRVeMMuiX3xxBNPANB9v3bMMu54MTfEFnGkFq3Ho",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/fndrm9lug64t/nvla.json",
+                  "ipfs://QmYtFnAdvidDkrfgf54QcjrfZF8EHhgmUgj1xVcenyvzE6",
+                  "sia://CAAYJHxMjnhvLSb7m-zVCG7tLkCQokPEWso5AhGwYeEkFQ"
+                ],
+                "priority": 0,
+                "multihash": "QmYtFnAdvidDkrfgf54QcjrfZF8EHhgmUgj1xVcenyvzE6",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

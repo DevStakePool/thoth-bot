@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416e746f6e64656c614372757a",
+    "asset_name_ascii": "adapeAntondelaCruz",
+    "fingerprint": "asset1894cpnc2l5zxv9ymvytyvhd0jmcvnlcst06yuc",
+    "minting_tx_hash": "04d3cc8a6b908d18202cafa9085f38eccde69479d6284a72d88f4b75200bc133",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAntondelaCruz": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Anton de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmYowBjMhmjRZyR1o3SfKu1FhgYY7naQp4THvMJsFZ8haz",
+                "name": "Anton de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYowBjMhmjRZyR1o3SfKu1FhgYY7naQp4THvMJsFZ8haz",
+            "Family": "de la Cruz",
+            "Weapon": "None",
+            "Accessory": "Harmonica",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the de la Cruz family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

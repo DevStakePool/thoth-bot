@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654761627269656c42657374",
+    "asset_name_ascii": "adapeGabrielBest",
+    "fingerprint": "asset1jk9xkd4kfakrmas4xtwp6yar53s066we58mth8",
+    "minting_tx_hash": "6e88bf06ca716fbf6afed075257d48e6771f5343e30d6a932a69b429bc48e9a1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeGabrielBest": {
+            "Hat": "Hoodie",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Gabriel Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmbhUNTUXdaxzpRRGPyk5N1Ewvmtcp8gKZYfjhMbyMrRkd",
+                "name": "Gabriel Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbhUNTUXdaxzpRRGPyk5N1Ewvmtcp8gKZYfjhMbyMrRkd",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

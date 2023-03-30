@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706543616c64657245647761726473",
+    "asset_name_ascii": "adapeCalderEdwards",
+    "fingerprint": "asset175t8898mtpmyu83hd4dmjdmydsk0jpjzs833kl",
+    "minting_tx_hash": "3e349ad0891b67113cea0cccc8e6e6e54c53c1e0134e6d4badbde00fe14c10d5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeCalderEdwards": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Calder Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qma28mo1nSBQ4G5DLpmYcmqZw11TLBjgev2tXrDmpRmZNH",
+                "name": "Calder Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qma28mo1nSBQ4G5DLpmYcmqZw11TLBjgev2tXrDmpRmZNH",
+            "Family": "Edwards",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706553747564734d6164646f636b",
+    "asset_name_ascii": "adapeStudsMaddock",
+    "fingerprint": "asset1m5482anzx2kmwchjfmyt9rhktq0kkhmll52hea",
+    "minting_tx_hash": "e93c89a7b53ca348e9039593ff2f4ab33714ed7d842d7929a9976d108dd2688f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeStudsMaddock": {
+            "Hat": "Hoodie",
+            "Body": "Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Studs Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmSueXjqciYNmRFUKo5USnUicYv4DsfWS8KDHezBz4aQWj",
+                "name": "Studs Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSueXjqciYNmRFUKo5USnUicYv4DsfWS8KDHezBz4aQWj",
+            "Family": "Maddock",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Maddock family"
+          },
+          "adapeEsmondEdwards": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Esmond Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmbxx5D1MwFBbHCnNuVVM4n9GaiaZxXeRQnWiQNZ5J5C7i",
+                "name": "Esmond Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmbxx5D1MwFBbHCnNuVVM4n9GaiaZxXeRQnWiQNZ5J5C7i",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Edwards family"
+          },
+          "adapeThorneRobinson": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Thorne Robinson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmWFDrAvohKyxFd6G8h9AYEwFhUJk4tK1vXD8cud59r62m",
+                "name": "Thorne Robinson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWFDrAvohKyxFd6G8h9AYEwFhUJk4tK1vXD8cud59r62m",
+            "Family": "Robinson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Robinson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

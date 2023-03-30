@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552616c706842616c6477696e",
+    "asset_name_ascii": "adapeRalphBaldwin",
+    "fingerprint": "asset19umayrsdrzvpgrvru5wdrwp8vspyuzku4yh3q9",
+    "minting_tx_hash": "d7dba625c1af511c5dce261ad601b169d1af564e80facfd74eea6b3c9502047e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDaltonWilson": {
+            "Hat": "Feather Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Dalton Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmTitqge2U4c736zaUgBSSKftRNwoECpsJJQDQrfVSx62N",
+                "name": "Dalton Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTitqge2U4c736zaUgBSSKftRNwoECpsJJQDQrfVSx62N",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Wilson family"
+          },
+          "adapeRalphBaldwin": {
+            "Hat": "None",
+            "Body": "Orange",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Orange",
+            "name": "Ralph Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmfPTNczy4WdG7KMqEs2RJGDENGXUQQarjFNLgkainkGNd",
+                "name": "Ralph Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfPTNczy4WdG7KMqEs2RJGDENGXUQQarjFNLgkainkGNd",
+            "Family": "Baldwin",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          },
+          "adapeLelandCastillo": {
+            "Hat": "Wool Cap",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Leland Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmXpDXUvuboyLnWdXegsVXifxqMkrswaEfFUMDACfzRM2u",
+                "name": "Leland Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXpDXUvuboyLnWdXegsVXifxqMkrswaEfFUMDACfzRM2u",
+            "Family": "Castillo",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

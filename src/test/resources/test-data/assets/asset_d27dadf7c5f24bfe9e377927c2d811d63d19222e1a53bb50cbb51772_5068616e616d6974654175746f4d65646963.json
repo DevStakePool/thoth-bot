@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "5068616e616d6974654175746f4d65646963",
+    "asset_name_ascii": "PhanamiteAutoMedic",
+    "fingerprint": "asset10vu3j94cswrdr6hf3rnh7az3v8hd3alz52xpvp",
+    "minting_tx_hash": "41bbdd0c76c3e27288b9d5cc6c16306f877f2fac4c5511c9d8621910ec9f171e",
+    "total_supply": "2500",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "PhanamiteAutoMedic": {
+            "id": 5,
+            "name": "Phanamite Auto-Medic",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://QmYkwP2f4RRUDyUVR9s8u8iiYiEsb2myNZMvNLqdY4nDHf",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/ffoxfe1dq4yu/nvla.json",
+                  "ipfs://QmbiQhxpLahoY4tg9ikaSUeeKiKgH171mnR9qAVC4QGbNS",
+                  "sia://CACIdbnq5ojUSMJ_Dfe0_e40GbYC7atw8QmFaegCZbp-mg"
+                ],
+                "priority": 0,
+                "multihash": "QmbiQhxpLahoY4tg9ikaSUeeKiKgH171mnR9qAVC4QGbNS",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

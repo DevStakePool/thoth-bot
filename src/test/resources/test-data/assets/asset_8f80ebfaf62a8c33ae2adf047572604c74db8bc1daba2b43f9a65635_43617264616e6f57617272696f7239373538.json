@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7239373538",
+    "asset_name_ascii": "CardanoWarrior9758",
+    "fingerprint": "asset12vktj8wyezulx493g8tmtek98p3h2fdfjtnc0w",
+    "minting_tx_hash": "03bdc105dd504d48324499392d51dce0bc1dc8f89f789459f291438d93e486f9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620000000,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior9758": {
+            "id": "9758",
+            "name": "Cardano Warrior #9758",
+            "type": "Cook",
+            "image": "ipfs://QmS8jRBdZkY5XL3NFESpUrQHvCjXsqoVGgcSc1caoGG4HJ",
+            "items": [
+              {
+                "name": "Blue Cross-bow",
+                "rarity": "Common"
+              },
+              {
+                "name": "Hat",
+                "rarity": "Common"
+              },
+              {
+                "name": "Red Suit",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Common",
+            "traits": [
+              "Brown Eyes",
+              "Grumpy",
+              "White Skin",
+              "Brown Hair",
+              "Dirty"
+            ],
+            "imagealpha": "ipfs://Qmb1TXkwvhufj2pkGzzpkhX3R8vRYXuGUjGK9DRcwEVmqA"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

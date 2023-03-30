@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706542726577737465725768697465",
+    "asset_name_ascii": "adapeBrewsterWhite",
+    "fingerprint": "asset14w4m4rkhqmyupt4wglhc4euknyg4h4seva2myx",
+    "minting_tx_hash": "3a735f9ad730e352d7210c4e4d5f566fb3622403a63ace9a3ea93f3bdc0d1074",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBrewsterWhite": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Brewster White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSgNuSWGE9a1egJ4eNXvwj6ZEVGeuJLFb8hvW7MUyAPJ6",
+                "name": "Brewster White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSgNuSWGE9a1egJ4eNXvwj6ZEVGeuJLFb8hvW7MUyAPJ6",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

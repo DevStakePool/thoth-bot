@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "63616e63656c77696c6c736d697468",
+    "asset_name_ascii": "cancelwillsmith",
+    "fingerprint": "asset1d0cewyd85sd20hqe2nsrngxuhcuqaplwp9gsny",
+    "minting_tx_hash": "a0f5e2dd600164ba6aae34ebeeda2fc6c049269ca115ec6e1139e6267cd33dc5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649376000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "marwan": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$marwan",
+            "image": "ipfs://Qmbkm1pcTfP2Dtd2xEV4cYq6m4Tw7H319CQuKKmJqGyjm4",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "hhsheikhmarwan": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$hhsheikhmarwan",
+            "image": "ipfs://QmfCVwz9k55v2CbqtB3NxVhsAE3ji3gFNmHoCJRSMgrHGi",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "cancelwillsmith": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$cancelwillsmith",
+            "image": "ipfs://QmcCTgYxnnHtWMBzyFK4NNrzccc1UfTKjgHcRjbTdCoQ42",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

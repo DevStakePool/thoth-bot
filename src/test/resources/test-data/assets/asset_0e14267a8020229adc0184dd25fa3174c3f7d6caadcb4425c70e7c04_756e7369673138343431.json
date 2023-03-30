@@ -1,0 +1,130 @@
+[
+  {
+    "policy_id": "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+    "asset_name": "756e7369673138343431",
+    "asset_name_ascii": "unsig18441",
+    "fingerprint": "asset1y0muadjqfcudgwpdz6m0k83fzcxx5lvn6rygqp",
+    "minting_tx_hash": "1e201916f9d44d183601c841498dfdb005a5188a9f375dec20c6a5e537a73175",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1624924800,
+    "minting_tx_metadata": {
+      "721": {
+        "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04": {
+          "unsig18441": {
+            "files": [
+              {
+                "src": "ipfs://QmZmLDYFhN5dNXeNMXUVeBsH3jbxhc1KWYfX1tCjDur9hm",
+                "mediatype": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYZfSPunanb8jfXDqYWTzvQA7nANY153R5haCUZ1SSvTT",
+            "title": "unsig_18441",
+            "series": "unsigned_algorithms",
+            "unsigs": {
+              "index": 18441,
+              "num_props": 5,
+              "properties": {
+                "colors": [
+                  "Red",
+                  "Green",
+                  "Blue",
+                  "Blue",
+                  "Green"
+                ],
+                "rotations": [
+                  "0",
+                  "90",
+                  "270",
+                  "180",
+                  "0"
+                ],
+                "multipliers": [
+                  "0.5",
+                  "1",
+                  "1",
+                  "2",
+                  "4"
+                ],
+                "distributions": [
+                  "Normal",
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF"
+                ]
+              }
+            },
+            "source_key": [
+              "721",
+              "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+              "unsig00000",
+              "files",
+              "code"
+            ],
+            "source_tx_id": "e4a90da18935e73f7fd6ffaa688b35b011a1a8a710b47bdb5d7103a05afc0197"
+          },
+          "unsig29029": {
+            "files": [
+              {
+                "src": "ipfs://QmUMrsmaM9txKJe6Fr9qNkJifhGCGzHVHJozzrQhDn8gsg",
+                "mediatype": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmd7idSouTf34f7Mvin9Rzn8QaKWfbgQRnY9aLVSGHA3zJ",
+            "title": "unsig_29029",
+            "series": "unsigned_algorithms",
+            "unsigs": {
+              "index": 29029,
+              "num_props": 6,
+              "properties": {
+                "colors": [
+                  "Red",
+                  "Red",
+                  "Green",
+                  "Green",
+                  "Blue",
+                  "Blue"
+                ],
+                "rotations": [
+                  "0",
+                  "90",
+                  "0",
+                  "270",
+                  "180",
+                  "270"
+                ],
+                "multipliers": [
+                  "1",
+                  "1",
+                  "1",
+                  "1",
+                  "2",
+                  "2"
+                ],
+                "distributions": [
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF",
+                  "CDF"
+                ]
+              }
+            },
+            "source_key": [
+              "721",
+              "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+              "unsig00000",
+              "files",
+              "code"
+            ],
+            "source_tx_id": "e4a90da18935e73f7fd6ffaa688b35b011a1a8a710b47bdb5d7103a05afc0197"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

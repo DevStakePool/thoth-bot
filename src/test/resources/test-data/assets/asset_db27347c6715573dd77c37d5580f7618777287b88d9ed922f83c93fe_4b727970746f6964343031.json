@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "db27347c6715573dd77c37d5580f7618777287b88d9ed922f83c93fe",
+    "asset_name": "4b727970746f6964343031",
+    "asset_name_ascii": "Kryptoid401",
+    "fingerprint": "asset13a4ec8jrtwtrq76r9zucza76a38u2lhmg22puz",
+    "minting_tx_hash": "1b9117a941a2775244b11a1bb911a68bcd4acb71e10925aa90dab60e18dc695d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621987200,
+    "minting_tx_metadata": {
+      "721": {
+        "db27347c6715573dd77c37d5580f7618777287b88d9ed922f83c93fe": {
+          "Kryptoid401": {
+            "id": "401",
+            "url": "https://kryptoids.monster/",
+            "name": "Kryptoid #401",
+            "type": "image/png",
+            "image": "ipfs://QmP2xxqGhTAn7B9em3zQn81i1rDmkKLpEUey1MfR7R6EPj",
+            "project": "Kryptoids",
+            "species": "Jackalope",
+            "hashType": "sha256",
+            "assetHash": "2f16cdd3b55eee7d21636d7ba29c8303191a121ad14449403aa61840c37254f3",
+            "imageHash": "3e2531141e34b8ad3dc3abe411dcae618dcc4f3c7e989f76738559a98e353f6a",
+            "attributes": [
+              "Black",
+              "Spirit"
+            ],
+            "policyScript": {
+              "type": "all",
+              "scripts": [
+                {
+                  "type": "sig",
+                  "keyHash": "dd4ec4f83ef0a2032f6d6199c387b84a8d201ac03a5247638134fa9f"
+                },
+                {
+                  "slot": 39234821,
+                  "type": "before"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426f6f6b657242657374",
+    "asset_name_ascii": "adapeBookerBest",
+    "fingerprint": "asset16l7v3f9ly4ysfh83f0ztlnf8zx40v598e7d79x",
+    "minting_tx_hash": "b3e0349eed81fd8446b43d199d3319665941358ccd837cf661060bb83b41803e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBookerBest": {
+            "Hat": "Privateer Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Safety Goggles",
+            "Head": "Ape",
+            "name": "Booker Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmYYE5CX2rY9WtbXd4v3obvfADkeweyBRzj8Ab7n2VyJjp",
+                "name": "Booker Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYYE5CX2rY9WtbXd4v3obvfADkeweyBRzj8Ab7n2VyJjp",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

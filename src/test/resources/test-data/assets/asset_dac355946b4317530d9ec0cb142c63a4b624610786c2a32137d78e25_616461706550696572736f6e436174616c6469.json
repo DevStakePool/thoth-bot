@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706550696572736f6e436174616c6469",
+    "asset_name_ascii": "adapePiersonCataldi",
+    "fingerprint": "asset1rq6uadv3um02d3drydzgqm4qqluevnputpz3m3",
+    "minting_tx_hash": "723f2e7d19d96330a434e0e14811cf807f941fae96feb4501e66a3f2539ba57c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeOswinMonet": {
+            "Hat": "Top Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Oswin Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://Qmc96TmDjx843X2eMp4zL3VMNWTbE4uN6tzjaSJT7JreT3",
+                "name": "Oswin Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmc96TmDjx843X2eMp4zL3VMNWTbE4uN6tzjaSJT7JreT3",
+            "Family": "Monet",
+            "Weapon": "Sword",
+            "Accessory": "Harmonica",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Monet family"
+          },
+          "adapeAristeCortes": {
+            "Hat": "Knight Helmet",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ariste Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qmaqi8MEK5kVcP9itehGsaEpu8KUFRd8i3Vp5UiFkVndQb",
+                "name": "Ariste Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmaqi8MEK5kVcP9itehGsaEpu8KUFRd8i3Vp5UiFkVndQb",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Cortes family"
+          },
+          "adapePiersonCataldi": {
+            "Hat": "Fruit Basket",
+            "Body": "Rainbow Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Pierson Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://Qmd1Ci9AUVyVLjYMFEpHfotd4Mz1WwttiJWTBrbsRV2tMM",
+                "name": "Pierson Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmd1Ci9AUVyVLjYMFEpHfotd4Mz1WwttiJWTBrbsRV2tMM",
+            "Family": "Cataldi",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

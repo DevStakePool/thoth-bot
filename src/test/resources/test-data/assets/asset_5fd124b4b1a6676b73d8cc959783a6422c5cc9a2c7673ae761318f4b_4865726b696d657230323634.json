@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+    "asset_name": "4865726b696d657230323634",
+    "asset_name_ascii": "Herkimer0264",
+    "fingerprint": "asset156k4khlkewf92zsxrsn27vxlflh0cdpp2306a0",
+    "minting_tx_hash": "922580813b0a5f5fc8c13555f94cfbe33b0c9e3bc40aca2998a62a099ef86d74",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621555200,
+    "minting_tx_metadata": {
+      "721": {
+        "policyId": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 37346470,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "91b8794e4cfb470cb5e9d990534d285a5a35031086c3bf497756d139"
+            }
+          ]
+        },
+        "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b": {
+          "Herkimer0264": {
+            "src": "ipfs://QmUeUo5wCNTxznRg9EcrcmBzwmqSoYrcVrhDYqQ3j5Nu6C",
+            "name": "Herkimer #0264",
+            "image": "ipfs://QmdAhrWkpEPLydmRCUEPFDS42eNVSQ6zLiGV4jHDrxT6RE",
+            "publisher": [
+              "https://twitter.com/HerkimerNFT",
+              "https://herkimer.io"
+            ],
+            "artistName": "Eric Roidl",
+            "attributes": {
+              "fur": "basic cream",
+              "wings": [
+                "purple wings",
+                "yellow skin"
+              ],
+              "variant": "base",
+              "left eye": "purple",
+              "jewellery": [
+                "none"
+              ],
+              "right eye": "pink",
+              "background": "sponge pink",
+              "lower teeth": "none",
+              "upper teeth": "none"
+            },
+            "srcSha256Hash": "9750c43a2d5204c18619784c0bb7878e6b18c24984d9cb4e0c634aa725fd4801",
+            "collectionName": "Herkimer",
+            "imageSha256Hash": "2836f968b0826bb9794383002fadf75e96dac978e64c2877bc9677e47e1d7a21"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

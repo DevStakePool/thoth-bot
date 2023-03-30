@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065566963746f72696e4d6164646f636b",
+    "asset_name_ascii": "adapeVictorinMaddock",
+    "fingerprint": "asset1kpgqfplhz0dttz4qp9ru7nf0eqpn0cdnpdf4gc",
+    "minting_tx_hash": "2e34abd9ce0e4821750fa3b2d20973283ffc98ba2289b880e24ef4de4a52693f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePrestonBest": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "VR Headset",
+            "Head": "Ape",
+            "name": "Preston Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmQfdSqH95q393TEzYWt4i9gUCHvaiTrwovQeshHE6bYiD",
+                "name": "Preston Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQfdSqH95q393TEzYWt4i9gUCHvaiTrwovQeshHE6bYiD",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          },
+          "adapeGarrickEvans": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Garrick Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmXwNBFVvFEXdzwKimKhQDm5sP2ex3uUd7GGkyPoXgq8WC",
+                "name": "Garrick Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXwNBFVvFEXdzwKimKhQDm5sP2ex3uUd7GGkyPoXgq8WC",
+            "Family": "Evans",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          },
+          "adapeVictorinMaddock": {
+            "Hat": "Top Hat",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Victorin Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmVuDz1nxRUDfdZHWJwe1vAicW6jpEFTddT5KReKUMfobx",
+                "name": "Victorin Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVuDz1nxRUDfdZHWJwe1vAicW6jpEFTddT5KReKUMfobx",
+            "Family": "Maddock",
+            "Weapon": "Spear",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Maddock family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544776967687448696c6c",
+    "asset_name_ascii": "adapeDwightHill",
+    "fingerprint": "asset1zpg73lt5uzlcg9vh8mx5j9dnh6dxlpyq88urtf",
+    "minting_tx_hash": "03acd81ab31e5d03cde18a30e22c34558757a0f07e3d91efbfde6f9e662ecfc1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDwightHill": {
+            "Hat": "None",
+            "Body": "Robot",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Dwight Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmRp7F4PyyYHG2m3bUtZxMd1HrbG1o8TicAbPygwE9v844",
+                "name": "Dwight Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRp7F4PyyYHG2m3bUtZxMd1HrbG1o8TicAbPygwE9v844",
+            "Family": "Hill",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Hill family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "c0cb38a4ec36859acde16e5b887a848170bef14ed6de073ea9474e2d",
+    "asset_name": "57495a444f4745",
+    "asset_name_ascii": "WIZDOGE",
+    "fingerprint": "asset1qrlsux6n4ey5yuvjtqmeh524cwh8mmxvs8a8an",
+    "minting_tx_hash": "e3693987fb37abc901579283b99c756d1ed9a73cdfb20366b50624e8ca9554be",
+    "total_supply": "420",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1627948800,
+    "minting_tx_metadata": {
+      "721": {
+        "c0cb38a4ec36859acde16e5b887a848170bef14ed6de073ea9474e2d": {
+          "WIZDOGE": {
+            "name": "WIZDOGE",
+            "image": "ipfs://QmVojJXq2s2nkTFNas4wLoECmcALyK1tpakhWyffmxLpJj",
+            "Supply": "420",
+            "policy": {
+              "type": "all",
+              "scripts": [
+                {
+                  "slot": 36462172,
+                  "type": "before"
+                },
+                {
+                  "type": "sig",
+                  "keyHash": "4b9a9ccdf00d7121e8ec0b97f22f46504c4ec3c7e1734787d42535b2"
+                }
+              ]
+            },
+            "Wizard Crypt": [
+              "https://WizardCrypt.com",
+              "https://twitter.com/Wizard_Crypt"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

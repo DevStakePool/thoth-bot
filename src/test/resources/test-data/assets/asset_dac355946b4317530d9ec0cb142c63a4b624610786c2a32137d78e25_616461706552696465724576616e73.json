@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552696465724576616e73",
+    "asset_name_ascii": "adapeRiderEvans",
+    "fingerprint": "asset1hrmva8ckrl8zt9ve9wk0t2l5743ptx9njn2ylm",
+    "minting_tx_hash": "2ea4a4a6e9e1c87135f33bb00abf3676c6df24559719cfb5c7148a335d401ebf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRiderEvans": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Rider Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmfEYYQxgWEJeyVdiDQf1U1Y7K9NHaPd7zkVkN7as9tc6D",
+                "name": "Rider Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfEYYQxgWEJeyVdiDQf1U1Y7K9NHaPd7zkVkN7as9tc6D",
+            "Family": "Evans",
+            "Weapon": "Spear",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

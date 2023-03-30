@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654275636b6c657942616c6477696e",
+    "asset_name_ascii": "adapeBuckleyBaldwin",
+    "fingerprint": "asset1muedwk3dwr2eddrvvvnrqsmc4vxnucgyfpcaa9",
+    "minting_tx_hash": "8002b8a42d61e37a548a5770a1336555e5534156c4433808963c24886cf0c63f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeJuanTaylor": {
+            "Hat": "Gold Helmet",
+            "Body": "Prisoner Uniform",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Juan Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmdWBJ7XNcy9iUZoZMNwrop3s3WH7r6tZDz8SWbGU3LPP7",
+                "name": "Juan Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdWBJ7XNcy9iUZoZMNwrop3s3WH7r6tZDz8SWbGU3LPP7",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          },
+          "adapeBuckleyBaldwin": {
+            "Hat": "None",
+            "Body": "Robot",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Buckley Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmWGzmcHNS3QYTEM9MKWZvsMXPTvTY4vQEvSmpTVoW2xdP",
+                "name": "Buckley Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWGzmcHNS3QYTEM9MKWZvsMXPTvTY4vQEvSmpTVoW2xdP",
+            "Family": "Baldwin",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          },
+          "adapeTrumanCastillo": {
+            "Hat": "Gold Helmet",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Truman Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmaSbMFDVNDDapxUeVBo8MuQYR9L4tSPSVWvzKvJNsDgEj",
+                "name": "Truman Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaSbMFDVNDDapxUeVBo8MuQYR9L4tSPSVWvzKvJNsDgEj",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

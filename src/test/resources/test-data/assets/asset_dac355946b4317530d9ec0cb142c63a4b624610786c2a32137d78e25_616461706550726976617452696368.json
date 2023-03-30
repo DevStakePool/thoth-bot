@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706550726976617452696368",
+    "asset_name_ascii": "adapePrivatRich",
+    "fingerprint": "asset1d87c3cxh8z8w88mhz8as2ugutgy7h533rfq4p3",
+    "minting_tx_hash": "56e467ffb23f7b09589fd67ff1057228d534fe234753ffe10c67f8b20b31c7c0",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePrivatRich": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Privat Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmZndvaa5CP2xGaejbpk94KVJzp7zbFwnoiWSs7LLerHr4",
+                "name": "Privat Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZndvaa5CP2xGaejbpk94KVJzp7zbFwnoiWSs7LLerHr4",
+            "Family": "Rich",
+            "Weapon": "Sword",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Rich family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

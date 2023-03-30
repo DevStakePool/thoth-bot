@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "10d7152c587c24d59ece1ec566d28e5647a24d32992a50c7f247c6e6",
+    "asset_name": "6b616e697665727365323436",
+    "asset_name_ascii": "kaniverse246",
+    "fingerprint": "asset1kvzw3tkg0n2xhyjkmv3esa7jp3m3rsclshla5t",
+    "minting_tx_hash": "6ab75296fbe1acd3a6c07e2759642c54bb4d8770b1799f0320fce88278f9e37b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1660262400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "10d7152c587c24d59ece1ec566d28e5647a24d32992a50c7f247c6e6": {
+          "kaniverse246": {
+            "name": "Kaniverse #00246",
+            "files": [
+              {
+                "src": "ipfs://Qmcv5gsrYpqyv4nAxzTEAfLjginQ6a9FuUJAa87KtuqD1R",
+                "name": "Hawaii Kani",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmcv5gsrYpqyv4nAxzTEAfLjginQ6a9FuUJAa87KtuqD1R",
+            "Rarity": "Rare",
+            "Traits": {
+              "Body": "Flag",
+              "Eyes": "None",
+              "Type": "Kani",
+              "Background": "US Flag"
+            },
+            "Website": "http://www.Kaniverse.org",
+            "mediaType": "image/png",
+            "Collection": "Kaniverse"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

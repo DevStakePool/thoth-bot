@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654672616e636973717565526f62696e736f6e",
+    "asset_name_ascii": "adapeFrancisqueRobinson",
+    "fingerprint": "asset1an02wla9etkyy8l4jmd24s29syu84nhpxcgglh",
+    "minting_tx_hash": "7fa0d299b77cf18ab6651654225216e8c1d0184740648ea6c1345424b425fdba",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeFrancisqueRobinson": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Francisque Robinson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPrQGDvzAfR2968gGdUmGMWMwgV6xxs6k2bawAy936m8z",
+                "name": "Francisque Robinson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPrQGDvzAfR2968gGdUmGMWMwgV6xxs6k2bawAy936m8z",
+            "Family": "Robinson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Robinson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

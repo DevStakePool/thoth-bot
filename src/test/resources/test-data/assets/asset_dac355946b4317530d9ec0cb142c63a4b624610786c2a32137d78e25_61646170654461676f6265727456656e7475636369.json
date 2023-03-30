@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654461676f6265727456656e7475636369",
+    "asset_name_ascii": "adapeDagobertVentucci",
+    "fingerprint": "asset1er7hc56t767uyzprxjy23hw2fmkas3qx5mq48q",
+    "minting_tx_hash": "9c69b8e0086d87cea3a665fae146eec9239688f457e4307b9a10370c9a08b870",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDagobertVentucci": {
+            "Hat": "Voltaire Wig",
+            "Body": "Black Wool Coat",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Dagobert Ventucci",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmSetCQ9cSzvRCkLRX2fpQQv4KG2HoKfNXzVuqcLYQFH5u",
+                "name": "Dagobert Ventucci",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSetCQ9cSzvRCkLRX2fpQQv4KG2HoKfNXzVuqcLYQFH5u",
+            "Family": "Ventucci",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ventucci family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

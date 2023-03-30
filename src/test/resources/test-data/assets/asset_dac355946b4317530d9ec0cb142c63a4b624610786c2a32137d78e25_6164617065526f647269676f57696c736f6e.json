@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065526f647269676f57696c736f6e",
+    "asset_name_ascii": "adapeRodrigoWilson",
+    "fingerprint": "asset143h9z2urqgxvvluuukw5lpl5nmvned7xrqgrxp",
+    "minting_tx_hash": "cf6bf6174c246112d65da8b38d850b9f0ec6b386a6eba2601df6a7824a0270b6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRodrigoWilson": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Rodrigo Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qme3XFQqypziwCv5ApKrNH9qNsuhW86xJ3UBjWHjKS6b56",
+                "name": "Rodrigo Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qme3XFQqypziwCv5ApKrNH9qNsuhW86xJ3UBjWHjKS6b56",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Wilson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f",
+    "asset_name": "4d7574616e7443726f633034383534",
+    "asset_name_ascii": "MutantCroc04854",
+    "fingerprint": "asset1ppp0fx0jukmdelhq5lnmdj6542rnfv5z4wh0jr",
+    "minting_tx_hash": "33187ec9b2f011045120c9b438394887047696d7bd9fbe7a752a88e3fa8d5e4a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633737600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f": {
+          "MutantCroc04854": {
+            "head": "Viking Helmet",
+            "name": "MutantCroc04854",
+            "neck": "Stethoscope",
+            "skin": "Blue",
+            "cloth": "Striped Black Shirt",
+            "files": [
+              {
+                "src": "ipfs://QmSAduXK6TFoGkfiRY14waD1fwVXgQDe5W9HPSWBA1RnGn",
+                "name": "MutantCroc04854",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSAduXK6TFoGkfiRY14waD1fwVXgQDe5W9HPSWBA1RnGn",
+            "mediaType": "image/png",
+            "background": "Yummiverse"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

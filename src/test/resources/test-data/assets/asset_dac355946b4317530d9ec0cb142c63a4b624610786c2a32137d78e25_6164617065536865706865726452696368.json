@@ -1,0 +1,71 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065536865706865726452696368",
+    "asset_name_ascii": "adapeShepherdRich",
+    "fingerprint": "asset1f7zdehc0llvhh86p0luzyxnxswq5dqyfvnkt73",
+    "minting_tx_hash": "222b9ef38e5b7df05830da3d2dfffda383b9d13c11690e952eed5ae487268bd8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRayburnFord": {
+            "Hat": "None",
+            "Body": "Orange",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Rayburn Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmbUWvrbhELyB42ugmVDjxqSpJTifX8K9x6DCa8iywj7Jz",
+                "name": "Rayburn Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbUWvrbhELyB42ugmVDjxqSpJTifX8K9x6DCa8iywj7Jz",
+            "Family": "Ford",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ford family"
+          },
+          "adapeShepherdRich": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Shepherd Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmbaHSeXHZUjgQqVSRjWBsEygZ8kG3DxfimJ5AJJCYeTJn",
+                "name": "Shepherd Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbaHSeXHZUjgQqVSRjWBsEygZ8kG3DxfimJ5AJJCYeTJn",
+            "Family": "Rich",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Rich family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

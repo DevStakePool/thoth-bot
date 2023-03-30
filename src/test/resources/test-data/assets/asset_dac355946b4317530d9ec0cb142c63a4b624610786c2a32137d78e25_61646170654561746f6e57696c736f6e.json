@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654561746f6e57696c736f6e",
+    "asset_name_ascii": "adapeEatonWilson",
+    "fingerprint": "asset1zncl0jmwkypxxa092e730dz73fagntnr6kshlj",
+    "minting_tx_hash": "ea9f1080deb2d3ed25837074090e148f55489c3fbb18da4d496e6c64b8fc69ef",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEatonWilson": {
+            "Hat": "Gold Helmet",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Eaton Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmXPGyoYTUn2kxfMMFbzx3ZbmiHNW7KJZyfaV3Fvzq54UG",
+                "name": "Eaton Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXPGyoYTUn2kxfMMFbzx3ZbmiHNW7KJZyfaV3Fvzq54UG",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wilson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

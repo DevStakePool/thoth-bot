@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d616368696e4c617669676e65",
+    "asset_name_ascii": "adapeMachinLavigne",
+    "fingerprint": "asset1ldr4juwqzywykgx26jtqjmgncymjjsuy95xctm",
+    "minting_tx_hash": "ed399f5928b9a4450e2afbcbad7524e023572d787a90ae691b2485998a9f0f41",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMachinLavigne": {
+            "Hat": "Pirate Hat",
+            "Body": "Zombie",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Zombie",
+            "name": "Machin Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmeThejeA13wYpke9p1kxUHXPCpNPLHapW8gk76bLw5MvY",
+                "name": "Machin Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeThejeA13wYpke9p1kxUHXPCpNPLHapW8gk76bLw5MvY",
+            "Family": "Lavigne",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          },
+          "adapePrivatCataldi": {
+            "Hat": "None",
+            "Body": "Knight Armor",
+            "Ears": "Cardano Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Privat Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmRwoWSQmqgMJK1gaYoxa2Pbz95XeJVFCbGrcz3E96CRGG",
+                "name": "Privat Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRwoWSQmqgMJK1gaYoxa2Pbz95XeJVFCbGrcz3E96CRGG",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cataldi family"
+          },
+          "adapeThorpeMaddock": {
+            "Hat": "Fruit Basket",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Thorpe Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmZgyvmaJDDvC2kqmM95M6i2Frve5Hz6x2GXt8RPwYWNhy",
+                "name": "Thorpe Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZgyvmaJDDvC2kqmM95M6i2Frve5Hz6x2GXt8RPwYWNhy",
+            "Family": "Maddock",
+            "Weapon": "Sword",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Maddock family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

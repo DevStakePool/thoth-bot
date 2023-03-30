@@ -1,0 +1,65 @@
+[
+  {
+    "policy_id": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+    "asset_name": "4865726b696d657231373938",
+    "asset_name_ascii": "Herkimer1798",
+    "fingerprint": "asset1h8k7ag55wlkz3t5a92myz4m0nnzf28pxmfgpml",
+    "minting_tx_hash": "da9e7afe6557f2773ac76cf24a78588043a78eebb8e7aa9a9c80fa1b46468f7d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1624665600,
+    "minting_tx_metadata": {
+      "721": {
+        "policyId": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 37346470,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "91b8794e4cfb470cb5e9d990534d285a5a35031086c3bf497756d139"
+            }
+          ]
+        },
+        "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b": {
+          "Herkimer1798": {
+            "src": "ipfs://QmbQSmnELqbyqjnNX7VdqgcJ8VWdFRvwMAjf3ieZFZr7pW",
+            "name": "Herkimer #1798",
+            "image": "ipfs://QmfDmGpBobYaD9SV2mtc9csVY5rjBeCTAA1wWokibdkDXa",
+            "publisher": [
+              "https://twitter.com/HerkimerNFT",
+              "https://herkimer.io"
+            ],
+            "artistName": "Eric Roidl",
+            "attributes": {
+              "fur": "spotty orange",
+              "wings": [
+                "green wings",
+                "yellow skin"
+              ],
+              "variant": "base",
+              "left eye": "missing",
+              "jewellery": [
+                "upper hoop",
+                "lower hoop",
+                "3 clips"
+              ],
+              "right eye": "missing",
+              "background": "waves blue",
+              "lower teeth": "missing right",
+              "upper teeth": "complete"
+            },
+            "srcSha256Hash": "981d9058ed42e3705c51f2e10e4de9ac43d7023eb1e091ade3ae7689fdc29403",
+            "collectionName": "Herkimer",
+            "imageSha256Hash": "bcae9397a0f695df7185995aff3229ea3a52b09ef2c1d533d0687f19cef954cb"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

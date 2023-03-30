@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426f6e6e6574436f78",
+    "asset_name_ascii": "adapeBonnetCox",
+    "fingerprint": "asset1vp7hr50h9jp4a9g84zslf63ndrun8cs9q6z2kz",
+    "minting_tx_hash": "091c188b1f233a9d5d2976232bd6d96943d0fc4f69e74d42fd5c9344128f60f7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBonnetCox": {
+            "Hat": "Wool Cap",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bonnet Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmRMAazjVrUL7a6iSJSFmoDYne7sC624wbMD3a1WgMqhnJ",
+                "name": "Bonnet Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRMAazjVrUL7a6iSJSFmoDYne7sC624wbMD3a1WgMqhnJ",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

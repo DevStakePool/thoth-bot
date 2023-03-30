@@ -1,0 +1,159 @@
+[
+  {
+    "policy_id": "e5f5a081d5da6cb1842a944e6855d2d1c9d5537e0b6b33b58cd85ef4",
+    "asset_name": "4d4552444f434b303739",
+    "asset_name_ascii": "MERDOCK079",
+    "fingerprint": "asset1lrw3p5ljpxv68agjs06jk3mdvz7udvhjv75flc",
+    "minting_tx_hash": "f73b83f085898e822ac3a39110006902a1d0f1af3b1ff9aa63e1858bc144f750",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1637366400,
+    "minting_tx_metadata": {
+      "721": {
+        "201bcd6107da0f2ecd70e65b0eb042349873281c569de38178630388": {
+          "BuffyBit": {
+            "name": "Buffy Bit",
+            "image": "ipfs://QmckJocdEY19QeAHZKerHPYMcbqcTENVXnon4Jgy4xanJZ",
+            "mediaType": "image/png"
+          }
+        },
+        "e5f5a081d5da6cb1842a944e6855d2d1c9d5537e0b6b33b58cd85ef4": {
+          "MERDOCK079": {
+            "name": "Merdock 079",
+            "files": [
+              {
+                "src": "ipfs://Qmcjsq6DK8ArxPSUdbG2KYwddVUh966zSaxQeX6AKkQyM7",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmPDL5gz6wW9M6HYbPWj2C1LG4KXcYZGTBfMcCh2uUs2rN",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNSWw3YT9hw3LkYAYgZMd5Hod5fJtpx8jssPqJ1gGrgYk",
+            "attacks": {
+              "first": "A",
+              "second": "C",
+              "special": 1
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Mechanic",
+              "Nice",
+              "Merman",
+              "Sea"
+            ],
+            "character": {
+              "alias": "Merdock",
+              "subject": "001.013.079"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "Large",
+              "type": "base",
+              "speed": 4,
+              "powerup": "cardano",
+              "tactics": 2,
+              "strength": 7
+            },
+            "collection": "Monstrocity"
+          },
+          "MERDOCK174": {
+            "name": "Merdock 174",
+            "files": [
+              {
+                "src": "ipfs://Qmcjsq6DK8ArxPSUdbG2KYwddVUh966zSaxQeX6AKkQyM7",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmPaHaD8ebCRuSPeXh47tZNzbkMYDuyKhJPGbDobWRDYDy",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNSWw3YT9hw3LkYAYgZMd5Hod5fJtpx8jssPqJ1gGrgYk",
+            "attacks": {
+              "first": "A",
+              "second": "B",
+              "special": 1
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Mechanic",
+              "Nice",
+              "Merman",
+              "Sea"
+            ],
+            "character": {
+              "alias": "Merdock",
+              "subject": "001.013.174"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "Large",
+              "type": "base",
+              "speed": 3,
+              "powerup": "none",
+              "tactics": 3,
+              "strength": 7
+            },
+            "collection": "Monstrocity"
+          },
+          "MERDOCK363": {
+            "name": "Merdock 363",
+            "files": [
+              {
+                "src": "ipfs://Qmcjsq6DK8ArxPSUdbG2KYwddVUh966zSaxQeX6AKkQyM7",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmcHsLMYmH2YHPpYbL3D8yTV5xfntnZFern9VgmyMy4n82",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNSWw3YT9hw3LkYAYgZMd5Hod5fJtpx8jssPqJ1gGrgYk",
+            "attacks": {
+              "first": "B",
+              "second": "C",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Mechanic",
+              "Nice",
+              "Merman",
+              "Sea"
+            ],
+            "character": {
+              "alias": "Merdock",
+              "subject": "001.013.363"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "Large",
+              "type": "base",
+              "speed": 4,
+              "powerup": "ada",
+              "tactics": 3,
+              "strength": 7
+            },
+            "collection": "Monstrocity"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

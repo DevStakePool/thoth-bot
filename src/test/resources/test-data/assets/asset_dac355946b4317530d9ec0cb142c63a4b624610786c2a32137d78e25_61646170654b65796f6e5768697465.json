@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b65796f6e5768697465",
+    "asset_name_ascii": "adapeKeyonWhite",
+    "fingerprint": "asset13m5pvyk3s9n22kferjqxpzt3dd964luuyfxqqq",
+    "minting_tx_hash": "9d452044ed3b469f0ef3e1d3fbbcb17f558c9ee81717bf2047f2ff5f9e4ab536",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeKeyonWhite": {
+            "Hat": "Gold Helmet",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Keyon White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmdnfkhXjNGhu5XabKFAkqE5GpjC47U2KvDNiJwwD8Jk9n",
+                "name": "Keyon White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdnfkhXjNGhu5XabKFAkqE5GpjC47U2KvDNiJwwD8Jk9n",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

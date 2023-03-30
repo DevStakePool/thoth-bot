@@ -1,0 +1,60 @@
+[
+  {
+    "policy_id": "b97919795280e20e60b8b3f222ba9e42f101e10d03ca4d29586f005c",
+    "asset_name": "43617264616e6f4275647a48315330353439",
+    "asset_name_ascii": "CardanoBudzH1S0549",
+    "fingerprint": "asset1x2qtqj6gkx4ktg2rmg3s4r9tkxnje359atkwx3",
+    "minting_tx_hash": "de290f67d6029035d369fb9fc28da1c79996b0f138b48e0ea4c5cb8fe116446b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1629590400,
+    "minting_tx_metadata": {
+      "721": {
+        "b97919795280e20e60b8b3f222ba9e42f101e10d03ca4d29586f005c": {
+          "CardanoBudzH1S0242": {
+            "name": "Cardano Budz H1 #0242",
+            "image": "ipfs://QmPuAGTcYWefBUTsiquvjf8jwt4BVJr8UBjWkAdAUMoJ2C",
+            "rarity": "Common",
+            "harvest": "One",
+            "website": "https://CardanoBudz.io",
+            "artistName": "Sarahi Arroyo, Eddie Diaz",
+            "attributes": {
+              "shoes": "Nike Red | Rare",
+              "strain": "Chronic | Common",
+              "background": "Red curtain | Rare",
+              "handAccessory": "Tea | Uncommon",
+              "headAccessory": "Hat | Rare",
+              "facialExpression": "Holding Laughter | Uncommon"
+            },
+            "percentTHC": 19,
+            "modifications": "none",
+            "collectionName": "Cardano Budz",
+            "originalUnmodified": "true"
+          },
+          "CardanoBudzH1S0549": {
+            "name": "Cardano Budz H1 #0549",
+            "image": "ipfs://QmdVz6WF4Z1pEcnnLAg1sFHEU2CWopaov1rEUgGyABiYSn",
+            "rarity": "Rare",
+            "harvest": "One",
+            "website": "https://CardanoBudz.io",
+            "artistName": "Sarahi Arroyo, Eddie Diaz",
+            "attributes": {
+              "shoes": "Dunks | Epic+",
+              "strain": "Grape Ape | Rare",
+              "background": "Fire | Epic+",
+              "handAccessory": "Tea | Uncommon",
+              "headAccessory": "Hat | Rare",
+              "facialExpression": "Malicious | Uncommon"
+            },
+            "percentTHC": 19,
+            "modifications": "none",
+            "collectionName": "Cardano Budz",
+            "originalUnmodified": "true"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

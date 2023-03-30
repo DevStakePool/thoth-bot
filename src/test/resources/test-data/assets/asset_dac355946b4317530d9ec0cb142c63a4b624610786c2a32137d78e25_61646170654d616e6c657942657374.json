@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d616e6c657942657374",
+    "asset_name_ascii": "adapeManleyBest",
+    "fingerprint": "asset1j69u9kjkhllzuw3ejgajadv8n8lh2g0huvr8dk",
+    "minting_tx_hash": "36a500d6338b994272b7e914a9fd09d2b83b7cca9e1daba8ee999c2cd2849f1d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeManleyBest": {
+            "Hat": "Top Hat",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Manley Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmUPicyxoqt2B8WMx9vNZApXYUKbpEMCZENTYgxLxTxsqg",
+                "name": "Manley Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUPicyxoqt2B8WMx9vNZApXYUKbpEMCZENTYgxLxTxsqg",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          },
+          "adapeTannerWilson": {
+            "Hat": "Sombrero",
+            "Body": "Knight Armor",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Tanner Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPv4iDsPzNBAPTzP5dqPnWHEVZu2QnHtfTG9iiksX3j2t",
+                "name": "Tanner Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPv4iDsPzNBAPTzP5dqPnWHEVZu2QnHtfTG9iiksX3j2t",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wilson family"
+          },
+          "adapeOchoade'Medici": {
+            "Hat": "Fruit Basket",
+            "Body": "Zombie",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Zombie",
+            "name": "Ochoa de' Medici",
+            "rate": "0.05",
+            "Class": "Nobles",
+            "files": [
+              {
+                "src": "ipfs://QmdprWXKtb5mCdTxELopBPh7X4EDWYyb1saLoZwZeweEnU",
+                "name": "Ochoa de' Medici",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdprWXKtb5mCdTxELopBPh7X4EDWYyb1saLoZwZeweEnU",
+            "Family": "de' Medici",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de' Medici family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

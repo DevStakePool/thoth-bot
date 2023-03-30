@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654477656e6e6f6e446176696573",
+    "asset_name_ascii": "adapeDwennonDavies",
+    "fingerprint": "asset1zczkuhpec3k4gska7udr8gspnkk3ajcu9ejazj",
+    "minting_tx_hash": "db77548313e7bdab001d224d96ade9d6a2ce02dba8cb5536fc94fc9e804531b5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDwennonDavies": {
+            "Hat": "None",
+            "Body": "Orange",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Dwennon Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmYbSzErEnFSxpV7VwvHk516cEZxH3qBeA4YPoCvp4oSfo",
+                "name": "Dwennon Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYbSzErEnFSxpV7VwvHk516cEZxH3qBeA4YPoCvp4oSfo",
+            "Family": "Davies",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

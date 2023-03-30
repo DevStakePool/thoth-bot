@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "626164667269656e6473",
+    "asset_name_ascii": "badfriends",
+    "fingerprint": "asset1s2v8yt2cwrdgyedxdkzlv2nlttw4p6s46rfr75",
+    "minting_tx_hash": "d8c257b6d6b2b4b3973fe37b1053ea6bced402212f086f38ff1feb7ff1b757bf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668556800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "badfriends": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$badfriends",
+            "image": "ipfs://QmXcBdjCML4CDp16Cqpz1dfvT2NPb4UZdWRqBzbZJ3bFev",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

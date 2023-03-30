@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "657069632e6661696c",
+    "asset_name_ascii": "epic.fail",
+    "fingerprint": "asset1p8sfg3wuegzlkhcyngpnnfnk0jeftwv48nsfxz",
+    "minting_tx_hash": "4c10a95d991a3b06ccca8ba6baa857d02ccc7ee285b9ae6d18baba660c038b4a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1657152000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "jobscan": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$jobscan",
+            "image": "ipfs://QmTX5tpYS1nD3GjQEqNMfjcD5yb2f9H2taba5pB7EvE5Eq",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "nagathor": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$nagathor",
+            "image": "ipfs://QmTZnjQALGA4MjQ1UDzerwACbQMK49SUyNYo59gYYcn1Y2",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "epic.fail": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$epic.fail",
+            "image": "ipfs://QmcZEvHbHJujyNxqn2eGasH9pm8vFQgbeMN5jb8mnvmbE3",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

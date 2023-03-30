@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654265616d616e43617374696c6c6f",
+    "asset_name_ascii": "adapeBeamanCastillo",
+    "fingerprint": "asset1mr8dt7380jlz76fuf5llnqaftvsa427ygn4n6l",
+    "minting_tx_hash": "e4a0719881a8c8ecd71677a1772729f59fe533e3ec38e126070ee043443dcfa8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeJanvierBrown": {
+            "Hat": "Wool Cap",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Janvier Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmcUo95z1Qc89r79MrirP4ak7iEukZfVk4qGgYeWYZLjRn",
+                "name": "Janvier Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcUo95z1Qc89r79MrirP4ak7iEukZfVk4qGgYeWYZLjRn",
+            "Family": "Brown",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeBeamanCastillo": {
+            "Hat": "Fruit Basket",
+            "Body": "Rainbow Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Beaman Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmSQisQbUEDUS8KzRA7kvEniTTyusgLk5E2K27yxHjugQR",
+                "name": "Beaman Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSQisQbUEDUS8KzRA7kvEniTTyusgLk5E2K27yxHjugQR",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Castillo family"
+          },
+          "adapeClaudiendeBalboa": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Claudien de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmQmscD1GTJMFckiuQNPa85hfHH8VDLdNn9xNXhBuBUPxk",
+                "name": "Claudien de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQmscD1GTJMFckiuQNPa85hfHH8VDLdNn9xNXhBuBUPxk",
+            "Family": "de Balboa",
+            "Weapon": "Rifle",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the de Balboa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

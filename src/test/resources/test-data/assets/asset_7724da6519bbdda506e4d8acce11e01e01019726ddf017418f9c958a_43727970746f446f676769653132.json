@@ -1,0 +1,69 @@
+[
+  {
+    "policy_id": "7724da6519bbdda506e4d8acce11e01e01019726ddf017418f9c958a",
+    "asset_name": "43727970746f446f676769653132",
+    "asset_name_ascii": "CryptoDoggie12",
+    "fingerprint": "asset1adac8knnygtmhczqaep3em25f9xddjx4kg6ahq",
+    "minting_tx_hash": "f24f9713a253a397c1493bd558985923d62c4c21934d8f98815b6e3efe274871",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620432000,
+    "minting_tx_metadata": {
+      "721": {
+        "7724da6519bbdda506e4d8acce11e01e01019726ddf017418f9c958a": {
+          "CryptoDoggie12": {
+            "id": 12,
+            "name": "Crypto Doggie #12",
+            "breed": "chihuahua",
+            "image": "ipfs://ipfs/QmXvNSijENbgwUoHM3PqWY4NpFw46ZY64BFyroN54fkQRk",
+            "composition": {
+              "body": [
+                {
+                  "mouth": "smile"
+                },
+                {
+                  "eyes": "normal"
+                },
+                {
+                  "body": "normal"
+                },
+                {
+                  "head": "normal"
+                }
+              ],
+              "breed": "chihuahua",
+              "dog_id": 12,
+              "traits": [
+                {
+                  "body": "tshirt_normal_white"
+                },
+                {
+                  "arced_hand": "sword"
+                },
+                {
+                  "glasses": "glass"
+                },
+                {
+                  "straight_hand": "pistol_normal"
+                },
+                {
+                  "feet": "sneakers_blue"
+                }
+              ],
+              "setting": [
+                {
+                  "background": "bicolor_green"
+                },
+                {
+                  "background_shadow": "shadow"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

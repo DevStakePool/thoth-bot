@@ -1,0 +1,247 @@
+[
+  {
+    "policy_id": "e5f5a081d5da6cb1842a944e6855d2d1c9d5537e0b6b33b58cd85ef4",
+    "asset_name": "4352414947303538",
+    "asset_name_ascii": "CRAIG058",
+    "fingerprint": "asset1ns6f7vwn9kjkn6ks0vru6lxjtwlatpgnuv5d3a",
+    "minting_tx_hash": "555c597a7cb4bc4b7623d68140409e4a93e5681e49a47c2b77d861f53e89fe88",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1636502400,
+    "minting_tx_metadata": {
+      "721": {
+        "201bcd6107da0f2ecd70e65b0eb042349873281c569de38178630388": {
+          "BuffyBit": {
+            "name": "Buffy Bit",
+            "image": "ipfs://QmckJocdEY19QeAHZKerHPYMcbqcTENVXnon4Jgy4xanJZ",
+            "mediaType": "image/png"
+          }
+        },
+        "e5f5a081d5da6cb1842a944e6855d2d1c9d5537e0b6b33b58cd85ef4": {
+          "CRAIG058": {
+            "name": "Craig 058",
+            "files": [
+              {
+                "src": "ipfs://QmRdXfemrHyLMzSrg3oWYYx7waVHwZBfCT7zBBLjbDcmnM",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmPYf3TKg9hjAviebEJFQt2BanETSt1CX9ChN5XipKGFXf",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVm2cpCYDw6wwtPbbogQQmZdiHaG8etuaXvP3dgRZPB5Z",
+            "attacks": {
+              "first": "B",
+              "second": "C",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Nice",
+              "Chopper",
+              "Space"
+            ],
+            "character": {
+              "alias": "Craig",
+              "subject": "001.012.058"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "base",
+              "speed": 4,
+              "powerup": "ada",
+              "tactics": 5,
+              "strength": 6
+            },
+            "collection": "Monstrocity"
+          },
+          "CRAIG098": {
+            "name": "Craig 098",
+            "files": [
+              {
+                "src": "ipfs://QmRdXfemrHyLMzSrg3oWYYx7waVHwZBfCT7zBBLjbDcmnM",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmVwdwpaM6VY4bTSqfXvTEA5hbZ96TmtLc3mT7MkxUb3AT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVm2cpCYDw6wwtPbbogQQmZdiHaG8etuaXvP3dgRZPB5Z",
+            "attacks": {
+              "first": "A",
+              "second": "B",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Nice",
+              "Chopper",
+              "Space"
+            ],
+            "character": {
+              "alias": "Craig",
+              "subject": "001.012.098"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "base",
+              "speed": 4,
+              "powerup": "ada",
+              "tactics": 4,
+              "strength": 6
+            },
+            "collection": "Monstrocity"
+          },
+          "CRAIG298": {
+            "name": "Craig 298",
+            "files": [
+              {
+                "src": "ipfs://QmRdXfemrHyLMzSrg3oWYYx7waVHwZBfCT7zBBLjbDcmnM",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZzhn9xeWaWGdvtgSeBQWFq79KReP3wpagi3v4LiTdpkC",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVm2cpCYDw6wwtPbbogQQmZdiHaG8etuaXvP3dgRZPB5Z",
+            "attacks": {
+              "first": "A",
+              "second": "B",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Nice",
+              "Chopper",
+              "Space"
+            ],
+            "character": {
+              "alias": "Craig",
+              "subject": "001.012.298"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "base",
+              "speed": 4,
+              "powerup": "ada",
+              "tactics": 5,
+              "strength": 6
+            },
+            "collection": "Monstrocity"
+          },
+          "CRAIG303": {
+            "name": "Craig 303",
+            "files": [
+              {
+                "src": "ipfs://QmRdXfemrHyLMzSrg3oWYYx7waVHwZBfCT7zBBLjbDcmnM",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://Qmaau4rYYhkETJu8FwqBs5KiPqAXWeW7PcdbNBUfLcfhDn",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVm2cpCYDw6wwtPbbogQQmZdiHaG8etuaXvP3dgRZPB5Z",
+            "attacks": {
+              "first": "B",
+              "second": "C",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Nice",
+              "Chopper",
+              "Space"
+            ],
+            "character": {
+              "alias": "Craig",
+              "subject": "001.012.303"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "base",
+              "speed": 5,
+              "powerup": "cardano",
+              "tactics": 3,
+              "strength": 5
+            },
+            "collection": "Monstrocity"
+          },
+          "CRAIG321": {
+            "name": "Craig 321",
+            "files": [
+              {
+                "src": "ipfs://QmRdXfemrHyLMzSrg3oWYYx7waVHwZBfCT7zBBLjbDcmnM",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmPFSBcHKF5Brj2PtxboDesxFVTMun3YEdX8a44PAe4XS3",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVm2cpCYDw6wwtPbbogQQmZdiHaG8etuaXvP3dgRZPB5Z",
+            "attacks": {
+              "first": "A",
+              "second": "C",
+              "special": 2
+            },
+            "creator": {
+              "artist": "Pat Bussey",
+              "website": "https://monstrocity.io",
+              "publisher": "Buffy Bot Publishing"
+            },
+            "keywords": [
+              "Alien",
+              "Nice",
+              "Chopper",
+              "Space"
+            ],
+            "character": {
+              "alias": "Craig",
+              "subject": "001.012.321"
+            },
+            "mediaType": "image/png",
+            "attributes": {
+              "size": "medium",
+              "type": "base",
+              "speed": 5,
+              "powerup": "none",
+              "tactics": 4,
+              "strength": 7
+            },
+            "collection": "Monstrocity"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

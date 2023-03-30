@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772",
+    "asset_name": "4c617572656e63655468654475656c697374",
+    "asset_name_ascii": "LaurenceTheDuelist",
+    "fingerprint": "asset1qund30zamr0ykxk98kftcffr2xflf6fa2xfhex",
+    "minting_tx_hash": "1c11981fa771236037f7f0646f3720447019ee98d7c7a5b5bcbfc0fec9be4ec5",
+    "total_supply": "5000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "copyright": "Copyright Rektangular Studios Inc.; all rights reserved",
+        "extension": [
+          "novellia_1"
+        ],
+        "publisher": [
+          "https://rektangularstudios.com"
+        ],
+        "d27dadf7c5f24bfe9e377927c2d811d63d19222e1a53bb50cbb51772": {
+          "LaurenceTheDuelist": {
+            "id": 6,
+            "name": "Laurence the Duelist",
+            "tags": [
+              "Collectible Character"
+            ],
+            "image": "ipfs://QmdHUwSSDXhGaHwY59qdGcco9JrdveiqXpwBep7S7fLgNg",
+            "resource": [
+              {
+                "url": [
+                  "https://api.rektangularstudios.com/static/gd4nvsptjpjx/nvla.json",
+                  "ipfs://Qma6jhordcEfSaMhkxpRxnzJcujzd9HTsj2jWzKdupdKBd",
+                  "sia://AACyHwWXXBphMK8QSzZHD8A1lFf6MBjeM3l24tSvOsI76w"
+                ],
+                "priority": 0,
+                "multihash": "Qma6jhordcEfSaMhkxpRxnzJcujzd9HTsj2jWzKdupdKBd",
+                "description": "Off-chain Novellia extended metadata",
+                "resource_id": "Novellia",
+                "content_type": "application/json",
+                "hash_source_type": "ipfs"
+              }
+            ],
+            "description": {
+              "long": "A character for the surreal horror multiverse Occulta Novellia",
+              "short": "Occulta Novellia Character"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426c61646545647761726473",
+    "asset_name_ascii": "adapeBladeEdwards",
+    "fingerprint": "asset12rfv6jhx4uhjuy9zr89wukuzz29zzkxsg6esu4",
+    "minting_tx_hash": "4a57d28081c2d2c371e7c4d95c1b4fbc02bdbb970e311949f99fd399585284ce",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBladeEdwards": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Blade Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmXsoVUGzqDmpD7acXcbxZXYX8TQMPWELNE5Ex84BLd9e2",
+                "name": "Blade Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXsoVUGzqDmpD7acXcbxZXYX8TQMPWELNE5Ex84BLd9e2",
+            "Family": "Edwards",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

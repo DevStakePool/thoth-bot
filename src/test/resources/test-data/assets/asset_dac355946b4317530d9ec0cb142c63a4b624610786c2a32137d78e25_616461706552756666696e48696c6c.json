@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552756666696e48696c6c",
+    "asset_name_ascii": "adapeRuffinHill",
+    "fingerprint": "asset1dypq9vch20zcd89a2rudseus7laenrlpxs2e8c",
+    "minting_tx_hash": "6cd5839f419fb278094647b05363840c734e1464afa8a5fc92dc0cee897ae3c6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRuffinHill": {
+            "Hat": "Fruit Basket",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Ruffin Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmedZ4ZbBfPdkWfqPtex64pUSpEbNSRpDa85efSm8dD5J4",
+                "name": "Ruffin Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmedZ4ZbBfPdkWfqPtex64pUSpEbNSRpDa85efSm8dD5J4",
+            "Family": "Hill",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Hill family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

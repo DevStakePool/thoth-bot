@@ -197,9 +197,9 @@ public class IntegrationNoSchedulerTest {
     }
 
     @Test
-    public void userCommandAssetsTest() throws Exception {
+    public void userCommandAssetsForStakeAddressTest() throws Exception {
         // Testing Assets command
-        Update assetsCmdUpdate = TelegramUtils.buildAssetsCommandUpdate();
+        Update assetsCmdUpdate = TelegramUtils.buildAssetsCommandUpdate("-2");
         this.assetsCmd.execute(assetsCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
@@ -246,5 +246,55 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("CULO 100,000")).count());
+    }
+
+    @Test
+    public void userCommandAssetsForNormalAddressTest() throws Exception {
+        // Testing Assets command
+        Update assetsCmdUpdate = TelegramUtils.buildAssetsCommandUpdate("-1000");
+        this.assetsCmd.execute(assetsCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sentMessages = this.sendMessageArgCaptor.getAllValues();
+        Assertions.assertEquals(1, sentMessages.size());
+        SendMessage message = sentMessages.get(0);
+
+        Map<String, Object> params = message.getParameters();
+        Assertions.assertTrue(params.containsKey("text"));
+        Assertions.assertTrue(params.containsKey("reply_markup"));
+
+        Assertions.assertEquals("Please select an account", params.get("text"));
+        InlineKeyboardMarkup markup = (InlineKeyboardMarkup) params.get("reply_markup");
+        Assertions.assertEquals(1, markup.inlineKeyboard().length);
+        InlineKeyboardButton[] firstRow = markup.inlineKeyboard()[0];
+        Assertions.assertEquals(1, firstRow.length);
+        Assertions.assertFalse(firstRow[0].callbackData().isEmpty());
+        Assertions.assertFalse(firstRow[0].text().isEmpty());
+
+        // We take the first button, so we'll get the list of assets of the account.
+        String callbackCmd = firstRow[0].callbackData();
+        LOG.info("Getting assets for account {}", callbackCmd);
+
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update detailsCmdUpdate = TelegramUtils.buildDetailsCommandUpdate(callbackCmd);
+        this.detailsCmd.execute(detailsCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptor.capture());
+        sentMessages = argumentCaptor.getAllValues();
+        Assertions.assertEquals(3, sentMessages.size());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Processing...")).count());
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Assets:")).count());
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("ClayNationPitch21050 1")).count());
     }
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7235333538",
+    "asset_name_ascii": "CardanoWarrior5358",
+    "fingerprint": "asset1ufseu337nq66xg0uustruty7l0kzy9t2xdqg3d",
+    "minting_tx_hash": "f332dc5f8efb7bb30f7dce9efd6d33d426cf3f841eb148bba56fd86cdabf982f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620000000,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior5358": {
+            "id": "5358",
+            "name": "Cardano Warrior #5358",
+            "type": "Mage",
+            "image": "ipfs://QmTNTjtK8Fxk3EKwLNNnGuRXgVG6smFDymMJWB7G3RAVpN",
+            "items": [
+              {
+                "name": "Blue Suit",
+                "rarity": "Common"
+              },
+              {
+                "name": "Blue Hat",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Epic",
+            "traits": [
+              "Black Eyes",
+              "Grumpy",
+              "White Skin",
+              "Brown Beard"
+            ],
+            "imagealpha": "ipfs://QmdxpN3A53iBG2fUiC583CzQ95Mh8d2gvkQ2QweRVQVgw8"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

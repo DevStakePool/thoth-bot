@@ -78,7 +78,7 @@ public abstract class AbstractCheckerTask {
      */
     protected Map<String, String> getAdaHandleForAccount(String... addresses) {
         Map<String, String> handlesMap = new HashMap<>();
-        boolean errorFound = false;
+        boolean handleFound = false;
 
         List<String> stakingAddresses = Arrays.stream(addresses).filter(a -> User.isStakingAddress(a)).collect(Collectors.toList());
         List<String> normalAddresses = Arrays.stream(addresses).filter(a -> !User.isStakingAddress(a)).collect(Collectors.toList());
@@ -97,6 +97,7 @@ public abstract class AbstractCheckerTask {
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
                             handlesMap.put(addr, shortenAddr(addr));
+                            handleFound = true;
                         } else {
                             LOG.debug("Found handle {} for account {}", bestHandle.get(), addr);
                             handlesMap.put(addr, ADA_HANDLE_PREFIX + bestHandle.get());
@@ -105,17 +106,8 @@ public abstract class AbstractCheckerTask {
                 } else {
                     LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the address shortened instead",
                             normalAddresses, addrAssetsResp.getResponse(), addrAssetsResp.getCode());
-                    errorFound = true;
                 }
             }
-
-            if (errorFound) {
-                for (String addr : normalAddresses) {
-                    handlesMap.put(addr, shortenAddr(addr));
-                }
-            }
-
-            errorFound = false;
 
             // Staking address?
             if (!stakingAddresses.isEmpty()) {
@@ -130,6 +122,7 @@ public abstract class AbstractCheckerTask {
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
                             handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
+                            handleFound = true;
                         } else {
                             LOG.debug("Found handle {} for account {}", bestHandle.get(), stakeAddr);
                             handlesMap.put(stakeAddr, ADA_HANDLE_PREFIX + bestHandle.get());
@@ -138,16 +131,18 @@ public abstract class AbstractCheckerTask {
                 } else {
                     LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the stake address shortened instead",
                             stakingAddresses, accountAssetsResp.getResponse(), accountAssetsResp.getCode());
-                    errorFound = true;
                 }
             }
         } catch (Exception e) {
             LOG.warn("Exception while getting the assets for accounts {}, due to '{}'. Returning the address shortened instead",
                     stakingAddresses, e.toString());
-            errorFound = true;
         }
 
-        if (errorFound) {
+        if (!handleFound) {
+            for (String addr : normalAddresses) {
+                handlesMap.put(addr, shortenAddr(addr));
+            }
+
             for (String addr : stakingAddresses) {
                 handlesMap.put(addr, shortenAddr(addr));
             }

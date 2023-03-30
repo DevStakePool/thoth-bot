@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654c656c616e645768697465",
+    "asset_name_ascii": "adapeLelandWhite",
+    "fingerprint": "asset1426zx6hk8596lkw6cymyjxwaknre2dnwyuwck0",
+    "minting_tx_hash": "7697a6aeaf805f102c5e81b8324224c486a82470f4d61dbf513550c43b784c8b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeLelandWhite": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Leland White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmdz8E8Cs6USvfDdrCfawSqKTZ6nfcGSbcrX4h1xZyNv4f",
+                "name": "Leland White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmdz8E8Cs6USvfDdrCfawSqKTZ6nfcGSbcrX4h1xZyNv4f",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          },
+          "adapeThurlowCortes": {
+            "Hat": "Top Hat",
+            "Body": "Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Thurlow Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmacVW4yp1DNYTucHHdSJRCN9bJAr5a6jdqVob6NTYmmzW",
+                "name": "Thurlow Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmacVW4yp1DNYTucHHdSJRCN9bJAr5a6jdqVob6NTYmmzW",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cortes family"
+          },
+          "adapeToussaintGarcía": {
+            "Hat": "Wool Cap",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Safety Goggles",
+            "Head": "Ape",
+            "name": "Toussaint García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmVYyb5hpRoBzuJGKshZkgo6NdkXdbaXNm6hdbKvfYMcQb",
+                "name": "Toussaint García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVYyb5hpRoBzuJGKshZkgo6NdkXdbaXNm6hdbKvfYMcQb",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the García family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

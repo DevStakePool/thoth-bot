@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654e69636f6c617345647761726473",
+    "asset_name_ascii": "adapeNicolasEdwards",
+    "fingerprint": "asset1quaghrls7nlamjts97lld5s8ehruhg9th8v2x2",
+    "minting_tx_hash": "def15bedcdd9b21f45ef78b58d41e76131317b6f5bd26a642546ff6bfb774985",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRawlinsGreen": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Rawlins Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUKMzHnm1bXuyfmBEBkfGMZuBmdc9gLosK1G7TdYhHy5T",
+                "name": "Rawlins Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUKMzHnm1bXuyfmBEBkfGMZuBmdc9gLosK1G7TdYhHy5T",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeFairfaxWilson": {
+            "Hat": "Top Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Fairfax Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmQ5Sd4fBdimxbbLrQNjeW8gJuGM9ATesvnTCopdqYYX7T",
+                "name": "Fairfax Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQ5Sd4fBdimxbbLrQNjeW8gJuGM9ATesvnTCopdqYYX7T",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wilson family"
+          },
+          "adapeNicolasEdwards": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Nicolas Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmfEKXXyMRvLUyg66PxuZVQDrUR61oj4WCYUM3nN67Yys9",
+                "name": "Nicolas Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfEKXXyMRvLUyg66PxuZVQDrUR61oj4WCYUM3nN67Yys9",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

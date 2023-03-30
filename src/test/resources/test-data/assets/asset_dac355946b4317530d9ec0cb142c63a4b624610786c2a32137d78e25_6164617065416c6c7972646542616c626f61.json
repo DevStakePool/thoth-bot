@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416c6c7972646542616c626f61",
+    "asset_name_ascii": "adapeAllyrdeBalboa",
+    "fingerprint": "asset1kqzmev8rgjm3n9nqsqnql6eq00httde8c6lux4",
+    "minting_tx_hash": "53d082511354d239c2d102bc1739346881a2929ba4b083fa5b2a502f20912856",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBobGarcía": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Bob García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qmbyj6JVfxhuNVP1TNkuf5dTPjbPeJ5QC5r47ahFxWHRin",
+                "name": "Bob García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmbyj6JVfxhuNVP1TNkuf5dTPjbPeJ5QC5r47ahFxWHRin",
+            "Family": "García",
+            "Weapon": "Sword",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeFordDavies": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ford Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPWR8HBdordQN4wpj6ceuZeq1N7pHZys4h1yp3PoThH1x",
+                "name": "Ford Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPWR8HBdordQN4wpj6ceuZeq1N7pHZys4h1yp3PoThH1x",
+            "Family": "Davies",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Davies family"
+          },
+          "adapeAllyrdeBalboa": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Monocle",
+            "Head": "Ape",
+            "name": "Allyr de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmVnwrRoU7edJhKSMpXNtkDKSA5WJiRE6iqpY48YbzbGqM",
+                "name": "Allyr de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVnwrRoU7edJhKSMpXNtkDKSA5WJiRE6iqpY48YbzbGqM",
+            "Family": "de Balboa",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de Balboa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

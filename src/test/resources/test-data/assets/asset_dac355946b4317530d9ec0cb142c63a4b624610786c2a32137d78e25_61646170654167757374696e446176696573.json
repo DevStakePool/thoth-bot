@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654167757374696e446176696573",
+    "asset_name_ascii": "adapeAgustinDavies",
+    "fingerprint": "asset1nhm4szav4nsum3clgy788r73f02zpqpqfjx9q5",
+    "minting_tx_hash": "c494c3bd18190357c3ac35aa3f74751789ee7afea4bea9ceb1d149249f99fc83",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAgustinDavies": {
+            "Hat": "Wool Cap",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Agustin Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmV7oqyBmwQbDVNsdxCWAGK5c1ZDYChXwDqgY4jFki3C85",
+                "name": "Agustin Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmV7oqyBmwQbDVNsdxCWAGK5c1ZDYChXwDqgY4jFki3C85",
+            "Family": "Davies",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

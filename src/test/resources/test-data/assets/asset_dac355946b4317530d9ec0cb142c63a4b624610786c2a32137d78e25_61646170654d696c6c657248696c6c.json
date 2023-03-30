@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d696c6c657248696c6c",
+    "asset_name_ascii": "adapeMillerHill",
+    "fingerprint": "asset1ft37pgyd2tmlacft59ncjv34u3aje80rpcs3gy",
+    "minting_tx_hash": "e9d5d06f3e78ace0227500dff9dbd88012e279bf6afd62787621f2089efc25bb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMillerHill": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Safety Goggles",
+            "Head": "Ape",
+            "name": "Miller Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmVSeBQ66SaiQBo1GZSXBhgFok5Jrsj1dwrLKgCgowpdBh",
+                "name": "Miller Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVSeBQ66SaiQBo1GZSXBhgFok5Jrsj1dwrLKgCgowpdBh",
+            "Family": "Hill",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Hill family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

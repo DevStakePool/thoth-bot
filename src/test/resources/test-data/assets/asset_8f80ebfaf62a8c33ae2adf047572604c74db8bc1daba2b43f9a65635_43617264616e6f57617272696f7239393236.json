@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7239393236",
+    "asset_name_ascii": "CardanoWarrior9926",
+    "fingerprint": "asset18x47fx3vw5gqdn6n8nzygqhjsdstvh806s6dj5",
+    "minting_tx_hash": "65d8ca97778961c8ec48dc156ea125934f0e6c521b05036b2265a6412d47152d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1619913600,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior9926": {
+            "id": "9926",
+            "name": "Cardano Warrior #9926",
+            "type": "Zombie",
+            "image": "ipfs://QmPpVCv8ZB8jAVQDH27R6jebVbzwnuS5vy98n9gsQjDuL6",
+            "items": [
+              {
+                "name": "Bronze Spear",
+                "rarity": "Common"
+              },
+              {
+                "name": "Wood Shield",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Common",
+            "traits": [
+              "Gray Skin"
+            ],
+            "imagealpha": "ipfs://QmPv9cicHkBkCf2LgCY7YcxoFHKMsF541aJcvj66448JrS"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

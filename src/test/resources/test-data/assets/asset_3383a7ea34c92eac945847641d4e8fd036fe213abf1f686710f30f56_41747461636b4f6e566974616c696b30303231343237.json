@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "3383a7ea34c92eac945847641d4e8fd036fe213abf1f686710f30f56",
+    "asset_name": "41747461636b4f6e566974616c696b30303231343237",
+    "asset_name_ascii": "AttackOnVitalik0021427",
+    "fingerprint": "asset1guuhx7f23mjw28f5w4cc7ex5thvs4svyfp50nz",
+    "minting_tx_hash": "c6335d34f3b91b3db99d7586ee384f6e51912d54dfce7a98dad74102044a2524",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633910400,
+    "minting_tx_metadata": {
+      "721": {
+        "3383a7ea34c92eac945847641d4e8fd036fe213abf1f686710f30f56": {
+          "AttackOnVitalik0021427": {
+            "name": "Attack on Vitalik 002.1427",
+            "files": [
+              {
+                "src": "ipfs://QmegMgLEcJu2WCAGomhAaSK7nEPTRWWuGHXDVy3jUbYerP",
+                "mediaType": "text/html"
+              },
+              {
+                "src": "ipfs://QmWoWeX6iaiNcSpL3yN1zN41kFb7JEvMYzJ6pnpjy5d6yn",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmVzMxXq4Yooci54nAmvGJ9EkzjRj9SWQ5fzQ9jYFxMPCa",
+            "issue": 2,
+            "rarity": 6,
+            "volume": 1,
+            "variant": "colored",
+            "mediaType": "image/jpeg",
+            "publisher": [
+              "https://bajuzki.art",
+              "https://twitter.com/bajuzki"
+            ],
+            "collection": "Attack on Vitalik: Volume 1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

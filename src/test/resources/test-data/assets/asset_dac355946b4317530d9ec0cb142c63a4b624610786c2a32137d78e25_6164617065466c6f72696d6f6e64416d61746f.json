@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065466c6f72696d6f6e64416d61746f",
+    "asset_name_ascii": "adapeFlorimondAmato",
+    "fingerprint": "asset19uvu6zammep2ex7qzpcfet0htgrpkkvne9ek9t",
+    "minting_tx_hash": "7dd6207943f55458f26e44812c49a71c1866b4e73de227fcdb4a040e255878d8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAntonCox": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Anton Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmWMUR3dyhZNT9Fu6ZcXhSMo3ZLN3z14C9gYdMS6YefKZ6",
+                "name": "Anton Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWMUR3dyhZNT9Fu6ZcXhSMo3ZLN3z14C9gYdMS6YefKZ6",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeFlorimondAmato": {
+            "Hat": "Sombrero",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Florimond Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmSE7MdyEkG9JmET18ufQf9DZAVxx53cZfaSo5yNKp1SUb",
+                "name": "Florimond Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSE7MdyEkG9JmET18ufQf9DZAVxx53cZfaSo5yNKp1SUb",
+            "Family": "Amato",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          },
+          "adapeCharlemagneLavigne": {
+            "Hat": "Top Hat",
+            "Body": "Cardano",
+            "Ears": "Plain",
+            "Eyes": "VR Headset",
+            "Head": "Cardano",
+            "name": "Charlemagne Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmPMoibL9BAgrCxFQv3UicDdaX49Up2VD3MNty3nyLsyrV",
+                "name": "Charlemagne Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPMoibL9BAgrCxFQv3UicDdaX49Up2VD3MNty3nyLsyrV",
+            "Family": "Lavigne",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]
