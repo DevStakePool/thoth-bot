@@ -73,6 +73,7 @@ public class AssetFacade implements Runnable {
         Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(policyId, assetName);
         Object assetQuantity = quantity;
         if (cachedAsset.isEmpty()) {
+            LOG.debug("Asset {}, {} not cached. Retrieving it...", policyId, assetName);
             // We need to get the decimals for the asset. Note, this will be cached
             Result<AssetInformation> assetInfoResult = this.koiosFacade.getKoiosService()
                     .getAssetService().getAssetInformation(policyId, assetName);
@@ -113,14 +114,18 @@ public class AssetFacade implements Runnable {
 
             int flowControl = 0;
             for (User u : allUsers) {
-                if (flowControl % 3 == 0)
-                    Thread.sleep(1000); // Avoid reaching Koios limits
+                if (flowControl % 4 == 0)
+                    Thread.sleep(2000); // Avoid reaching Koios limits
                 this.usersExecutorService.submit(new UserScannerWorker(u, this.koiosFacade));
                 flowControl++;
             }
         } catch (Exception e) {
             LOG.error("Unknown exception while syncing the assets cache", e);
         }
+    }
+
+    public long countTotalCachedAssets() {
+        return this.assetsDao.countAll();
     }
 
     public class UserScannerWorker implements Runnable {
@@ -172,8 +177,8 @@ public class AssetFacade implements Runnable {
 
                 int flowControl = 0;
                 for (rest.koios.client.backend.api.common.Asset asset : assetsToProcess) {
-                    if (flowControl % 3 == 0)
-                        Thread.sleep(1000); //Avoid saturating the Koios limits
+                    if (flowControl % 4 == 0)
+                        Thread.sleep(2000); //Avoid saturating the Koios limits
                     AssetFacade.this.assetsExecutorService.submit(new AssetScannerWorker(asset));
                     flowControl++;
                 }
@@ -197,7 +202,6 @@ public class AssetFacade implements Runnable {
         @Override
         public void run() {
             try {
-                LOG.trace("Syncing asset {}, {}", this.asset.getPolicyId(), this.asset.getAssetName());
                 AssetFacade.this.getAssetQuantity(
                         this.asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
             } catch (ApiException e) {

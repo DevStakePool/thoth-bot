@@ -62,7 +62,7 @@ public class CoinGeckoCardanoOracle implements ICardanoOracle, Runnable {
 
         this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
                 new CustomizableThreadFactory("CoinGeckoOracleExecutor"));
-        this.scheduledExecutorService.scheduleWithFixedDelay(this, 1, 60, TimeUnit.SECONDS);
+        this.scheduledExecutorService.scheduleWithFixedDelay(this, 1, 900, TimeUnit.SECONDS);
 
         LOG.info("CoinGecko Oracle created");
     }

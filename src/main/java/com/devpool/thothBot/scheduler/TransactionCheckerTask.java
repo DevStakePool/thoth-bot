@@ -62,6 +62,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
     private Instant lastSampleInstant;
     private long txCounter;
     private long usersCounter;
+    private long assetsCacheCounter;
 
     @Autowired
     private MetricsHelper metricsHelper;
@@ -81,6 +82,8 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
         synchronized (this.performanceSampler) {
             Instant now = Instant.now();
             this.usersCounter = this.userDao.countUsers();
+            this.assetsCacheCounter = this.assetFacade.countTotalCachedAssets();
+
             if (this.lastSampleInstant == null) {
                 this.lastSampleInstant = now;
                 this.txCounter = 0;
@@ -92,8 +95,10 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 double txPerSec = (txCounterCurr / (millis / 1000.0));
                 // Update gauge metric
                 this.metricsHelper.hitGauge("tx_per_sec", (long) txPerSec);
-                this.metricsHelper.hitGauge("total_users", usersCounter);
-                LOG.trace("Calculated new gauge sample for TX processing: {} tx/sec, {} user(s)", txPerSec, usersCounter);
+                this.metricsHelper.hitGauge("total_users", this.usersCounter);
+                this.metricsHelper.hitGauge("cached_assets", this.assetsCacheCounter);
+                LOG.trace("Calculated new gauge sample for TX processing: {} tx/sec, {} user(s), {} cached asset(s)",
+                        txPerSec, this.usersCounter, this.assetsCacheCounter);
             }
         }
     }

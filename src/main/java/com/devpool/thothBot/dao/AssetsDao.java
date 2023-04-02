@@ -69,4 +69,8 @@ public class AssetsDao {
             LOG.debug("Inserted new asset with policy_id {}, asset_name {}, and decimals {}", policyId, assetName, decimals);
         }
     }
+
+    public long countAll() {
+        return this.jdbcTemplate.queryForObject("select count(id) as assets_counter from assets", Long.class);
+    }
 }
