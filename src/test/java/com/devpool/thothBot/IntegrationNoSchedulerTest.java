@@ -7,12 +7,14 @@ import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.telegram.command.*;
+import com.devpool.thothBot.telegram.command.admin.AdminNotifyAllCmd;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.vdurmont.emoji.EmojiParser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -30,6 +32,7 @@ import org.springframework.test.context.ActiveProfiles;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @SpringBootTest
 @ActiveProfiles("no-scheduler")
@@ -96,6 +99,9 @@ public class IntegrationNoSchedulerTest {
 
     @Autowired
     private DetailsCmd detailsCmd;
+
+    @Autowired
+    private AdminNotifyAllCmd adminNotifyAllCmd;
 
     @BeforeEach
     public void beforeEach() throws Exception {
@@ -296,5 +302,76 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("ClayNationPitch21050 1")).count());
+    }
+
+    @Test
+    public void userCommandNotifyAllAsAdminErrorCaseInvalidFormatTest() throws Exception {
+        // Testing Help command
+        Update notifyAllCmdUpdate = TelegramUtils.buildNotifyAllCommandUpdate("test_admin", "");
+        this.adminNotifyAllCmd.execute(notifyAllCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+        Assertions.assertTrue(params.get("text").toString().contains("Invalid format."));
+    }
+
+    @Test
+    public void userCommandNotifyAllAsAdminErrorCaseNotAuthorizedTest() throws Exception {
+        Update notifyAllCmdUpdate = TelegramUtils.buildNotifyAllCommandUpdate("john_doe", " Hello!");
+        this.adminNotifyAllCmd.execute(notifyAllCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+        Assertions.assertTrue(params.get("text").toString().contains("NOT AUTHORIZED"));
+    }
+
+    @Test
+    public void userCommandNotifyAllAsAdminNominalCaseTest() throws Exception {
+        String msg = " Good day everyone! Long life to Cardano! " + EmojiParser.parseToUnicode(":smile:")
+                + "\nMulti line is also supported!\nAlessio " + EmojiParser.parseToUnicode(":wave:");
+
+        Update notifyAllCmdUpdate = TelegramUtils.buildNotifyAllCommandUpdate("test_admin", msg);
+        this.adminNotifyAllCmd.execute(notifyAllCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(6))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+        // 6 = 2 to the admin + 4 user accounts
+        Assertions.assertEquals(6, sendMessages.size());
+
+        for (SendMessage sendMessage : sendMessages) {
+            LOG.debug("Message to chat {}: {}", sendMessage.getParameters().get("chat_id"), sendMessage.getParameters().get("text"));
+        }
+
+        // Expected the following chat IDs:
+        //     1683539744 -> ADMIN (this call) x2 msg
+        //     -2, -1000, -1, -3
+        List<SendMessage> adminResponses = sendMessages.stream().filter(
+                sm -> (Long) sm.getParameters().get("chat_id") == 1683539744L).collect(Collectors.toList());
+        Assertions.assertEquals(2, adminResponses.size());
+        Assertions.assertEquals(1, adminResponses.stream().filter(
+                r -> r.getParameters().get("text").toString().contains("Ok, notifying all 4 user(s)")).count());
+        Assertions.assertEquals(1, adminResponses.stream().filter(
+                r -> r.getParameters().get("text").toString().contains("All Done! Broadcast message(s) 4/4")).count());
+
+        List<SendMessage> usersResponses = sendMessages.stream().filter(
+                sm -> (Long) sm.getParameters().get("chat_id") != 1683539744L).collect(Collectors.toList());
+        Assertions.assertEquals(4, usersResponses.size());
+        Assertions.assertEquals(4, usersResponses.stream().filter(
+                r -> r.getParameters().get("text").toString().startsWith("Good day everyone!")).count());
+
     }
 }

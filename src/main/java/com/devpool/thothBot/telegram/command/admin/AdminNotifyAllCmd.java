@@ -57,6 +57,14 @@ public class AdminNotifyAllCmd implements IBotCommand {
 
     @Override
     public void execute(Update update, TelegramBot bot) {
+        if (!this.adminUsername.equals(update.message().from().username())) {
+            // Not authorized!
+            LOG.warn("The user {} is trying to execute the {} command but not authorized",
+                    update.message().from().username(), CMD_PREFIX);
+            bot.execute(new SendMessage(update.message().chat().id(), "NOT AUTHORIZED"));
+            return;
+        }
+
         String msg = update.message().text();
         String args[] = msg.trim().split("\\s");
         List<String> argsAsList = new ArrayList<>(Arrays.asList(args));

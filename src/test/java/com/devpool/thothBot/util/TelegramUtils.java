@@ -18,6 +18,7 @@ public class TelegramUtils {
     private static final String STAKE_CMD_JSON = "test-data/json/stake-cmd.json";
     private static final String ASSETS_CMD_JSON = "test-data/json/assets-cmd.json";
     private static final String DETAILS_CMD_JSON = "test-data/json/details-cmd.json";
+    private static final String NOTIFY_ALL_CMD_JSON = "test-data/json/notifyall-cmd.json";
 
     private static final Gson GSON = new Gson();
 
@@ -28,6 +29,16 @@ public class TelegramUtils {
                     if (simulateStartCommand)
                         jsonContent = jsonContent.replace("/help", "/start");
 
+                    return jsonContent;
+                });
+        return resp.updates().get(0);
+    }
+
+    public static Update buildNotifyAllCommandUpdate(String username, String msg) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(NOTIFY_ALL_CMD_JSON,
+                jsonContent -> {
+                    jsonContent = jsonContent.replace("$USERNAME", username);
+                    jsonContent = jsonContent.replace("$MESSAGE", msg);
                     return jsonContent;
                 });
         return resp.updates().get(0);
