@@ -29,7 +29,7 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
     private AssetFacade assetFacade;
 
     @Override
-    public boolean canTrigger(String message) {
+    public boolean canTrigger(String username, String message) {
         return message.trim().startsWith(CMD_PREFIX);
     }
 
@@ -39,7 +39,7 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     @Override
-    public boolean showHelp() {
+    public boolean showHelp(String username) {
         return false;
     }
 

@@ -35,7 +35,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     private CoinGeckoCardanoOracle oracle;
 
     @Override
-    public boolean canTrigger(String message) {
+    public boolean canTrigger(String username, String message) {
         return message.trim().equals(CMD_PREFIX);
     }
 
@@ -45,7 +45,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     @Override
-    public boolean showHelp() {
+    public boolean showHelp(String username) {
         return true;
     }
 

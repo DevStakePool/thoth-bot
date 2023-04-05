@@ -112,8 +112,8 @@ public class IntegrationTest {
     @Test
     public void userCommandHelpTest() throws Exception {
         // Testing Help command
-        Update helpCmdUpdate = TelegramUtils.buildHelpCommandUpdate(false);
-        Update startCmdUpdate = TelegramUtils.buildHelpCommandUpdate(true);
+        Update helpCmdUpdate = TelegramUtils.buildHelpCommandUpdate(false, "ironman");
+        Update startCmdUpdate = TelegramUtils.buildHelpCommandUpdate(true, "thor");
         this.helpCmd.execute(helpCmdUpdate, this.telegramBotMock);
         this.helpCmd.execute(startCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
@@ -131,7 +131,34 @@ public class IntegrationTest {
             Assertions.assertEquals("HTML", params.get("parse_mode"));
             Assertions.assertTrue(params.get("text").toString().contains("THOTH BOT"));
             Assertions.assertTrue(params.get("text").toString().contains("/help or /start"));
+            Assertions.assertFalse(params.get("text").toString().contains("[ADMIN]"));
+            Assertions.assertFalse(params.get("text").toString().contains("/notifyall"));
         }
+    }
+
+    @Test
+    public void userCommandHelpAsAdminTest() throws Exception {
+        // Testing Help command
+        Update helpCmdUpdate = TelegramUtils.buildHelpCommandUpdate(false, "test_admin");
+        this.helpCmd.execute(helpCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+        Assertions.assertEquals(1683539744L, params.get("chat_id"));
+        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("THOTH BOT"));
+        Assertions.assertTrue(params.get("text").toString().contains("/help or /start"));
+        // We got an admin commmand
+        Assertions.assertTrue(params.get("text").toString().contains("[ADMIN]"));
+        Assertions.assertTrue(params.get("text").toString().contains("/notifyall"));
     }
 
     @Test

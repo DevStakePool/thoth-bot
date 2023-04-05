@@ -9,6 +9,7 @@ import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
@@ -35,6 +36,8 @@ import java.util.stream.Stream;
 public class TransactionCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTask.class);
     private static final String DELEGATION_CERTIFICATE = "delegation";
+    @Value("${thoth.test.allow-jumbo-message}")
+    private Boolean allowJumboMessage;
 
     public enum TxType {
         TX_RECEIVED("Received"),
@@ -421,7 +424,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     messageBuilder.append("\n\n"); // Some padding between TXs
                     processed++;
 
-                    if (messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
+                    if (!this.allowJumboMessage && messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
                         messageBuilder.append("\n").append(txInfoResult.getValue().size() - processed).append(" more...");
                         break;
                     }

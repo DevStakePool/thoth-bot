@@ -20,7 +20,7 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     public static final String CMD_PREFIX = "/assets";
 
     @Override
-    public boolean canTrigger(String message) {
+    public boolean canTrigger(String username, String message) {
         return message.trim().equals(CMD_PREFIX);
     }
 
@@ -30,7 +30,7 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     @Override
-    public boolean showHelp() {
+    public boolean showHelp(String username) {
         return true;
     }
 

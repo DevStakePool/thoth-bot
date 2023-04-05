@@ -21,9 +21,15 @@ public class TelegramUtils {
 
     private static final Gson GSON = new Gson();
 
-    public static Update buildHelpCommandUpdate(boolean simulateStartCommand) throws IOException {
+    public static Update buildHelpCommandUpdate(boolean simulateStartCommand, String username) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(HELP_CMD_JSON,
-                jsonContent -> (simulateStartCommand ? jsonContent.replace("/help", "/start") : jsonContent));
+                jsonContent -> {
+                    jsonContent = jsonContent.replace("$USERNAME", username);
+                    if (simulateStartCommand)
+                        jsonContent = jsonContent.replace("/help", "/start");
+
+                    return jsonContent;
+                });
         return resp.updates().get(0);
     }
 

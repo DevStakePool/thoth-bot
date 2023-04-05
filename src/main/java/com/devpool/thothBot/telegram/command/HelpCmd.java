@@ -42,7 +42,7 @@ public class HelpCmd implements IBotCommand {
     private List<IBotCommand> commands;
 
     @Override
-    public boolean canTrigger(String message) {
+    public boolean canTrigger(String username, String message) {
         return message.equals(CMD_PREFIX) || message.equals(CMD_PREFIX_ALIAS);
     }
 
@@ -52,7 +52,7 @@ public class HelpCmd implements IBotCommand {
     }
 
     @Override
-    public boolean showHelp() {
+    public boolean showHelp(String username) {
         return true;
     }
 
@@ -63,12 +63,12 @@ public class HelpCmd implements IBotCommand {
 
     @Override
     public void execute(Update update, TelegramBot bot) {
-        bot.execute(new SendMessage(update.message().chat().id(), getHelpText())
+        bot.execute(new SendMessage(update.message().chat().id(), getHelpText(update.message().from().username()))
                 .disableWebPagePreview(true)
                 .parseMode(ParseMode.HTML));
     }
 
-    private String getHelpText() {
+    private String getHelpText(String username) {
         StringBuilder sb = new StringBuilder();
         try {
             String helpText = new BufferedReader(new InputStreamReader(
@@ -86,7 +86,7 @@ public class HelpCmd implements IBotCommand {
                     .append(this.getDescription())
                     .append("\n");
             for (IBotCommand command : this.commands) {
-                if (!command.showHelp()) continue;
+                if (!command.showHelp(username)) continue;
 
                 commandsHelp
                         .append(EmojiParser.parseToUnicode(":white_small_square: "))

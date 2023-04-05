@@ -8,10 +8,11 @@ public interface IBotCommand {
     /**
      * Method will check if the message can trigger this command
      *
-     * @param message
+     * @param username the username of the Telegram account
+     * @param message the message sent
      * @return true if the message triggers the command, false otherwise
      */
-    boolean canTrigger(String message);
+    boolean canTrigger(String username, String message);
 
     /**
      * Get the command prefix
@@ -23,9 +24,10 @@ public interface IBotCommand {
     /**
      * If this command has to be shown in the help description
      *
+     * @param username the username of the Telegram account
      * @return true if the command is included in the help, false otherwise
      */
-    boolean showHelp();
+    boolean showHelp(String username);
 
     /**
      * The description of this command

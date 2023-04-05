@@ -48,7 +48,7 @@ public class AddressCmd implements IBotCommand {
     private AssetFacade assetFacade;
 
     @Override
-    public boolean canTrigger(String message) {
+    public boolean canTrigger(String username, String message) {
         return message.startsWith(CMD_PREFIX_STAKE) || message.startsWith(CMD_PREFIX_ADDR);
     }
 
@@ -58,7 +58,7 @@ public class AddressCmd implements IBotCommand {
     }
 
     @Override
-    public boolean showHelp() {
+    public boolean showHelp(String username) {
         return false;
     }
 

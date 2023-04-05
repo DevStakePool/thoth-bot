@@ -79,7 +79,7 @@ public class TelegramFacade {
                 payload, from, id);
 
 
-        List<IBotCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(payload)).collect(Collectors.toList());
+        List<IBotCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(update.message().from().username(), payload)).collect(Collectors.toList());
         if (matchingCommands.isEmpty()) {
             LOG.debug("Unknown command {}", payload);
             bot.execute(new SendMessage(id,
