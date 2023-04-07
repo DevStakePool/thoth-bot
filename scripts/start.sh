@@ -24,7 +24,7 @@ java -jar ${DIR}/../target/thoth-bot-${THOTH_VERSION}.jar \
       --logging.level.com.devpool=DEBUG \
       --logging.file.name="${LOGS_FOLDER}/thoth-bot.log" \
       --telegram.bot.token="${TELEGRAM_BOT_TOKEN}" \
-      --thoth.admin.username="${ADMIN_USERNAME}"
+      --thoth.admin.username="${ADMIN_USERNAME}" \
       --spring.datasource.username=${DB_USER} \
       --spring.datasource.password=${DB_PASSWORD} \
       --spring.datasource.url=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME} 2>&1
