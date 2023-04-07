@@ -37,7 +37,7 @@ public class AdminNotifyAllCmd implements IBotCommand {
 
     @Override
     public boolean canTrigger(String username, String message) {
-        return username.equals(this.adminUsername) && message.startsWith(CMD_PREFIX);
+        return this.adminUsername.equals(username) && message.startsWith(CMD_PREFIX);
     }
 
     @Override
@@ -47,7 +47,7 @@ public class AdminNotifyAllCmd implements IBotCommand {
 
     @Override
     public boolean showHelp(String username) {
-        return username.equals(this.adminUsername);
+        return this.adminUsername.equals(username);
     }
 
     @Override
