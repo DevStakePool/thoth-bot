@@ -1,5 +1,6 @@
 package com.devpool.thothBot.dao.data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
@@ -47,7 +48,7 @@ public class User {
     public String getAddress() {
         return address;
     }
-    
+
     public boolean isStakeAddress() {
         return isStakingAddress(this.address);
     }
@@ -74,6 +75,12 @@ public class User {
 
     public void setAccountAddresses(List<String> accountAddresses) {
         this.accountAddresses = accountAddresses;
+    }
+
+    public void appendAccountAddresses(List<String> accountAddresses) {
+        if (this.accountAddresses == null)
+            this.accountAddresses = new ArrayList<>();
+        this.accountAddresses.addAll(accountAddresses);
     }
 
     public Integer getLastEpochNumber() {

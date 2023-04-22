@@ -125,6 +125,9 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 LOG.debug("Processing users batch size {}, stake batch {}, address batch{}",
                         usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
 
+                // Attach the single address
+                addrUsersBatch.forEach(au -> au.setAccountAddresses(List.of(au.getAddress())));
+
                 // Retrieve addresses from the stake users batches
                 Result<List<AccountAddress>> accountAddrResult;
                 long offset = 0;
@@ -138,23 +141,25 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     accountAddrResult = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
                             stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()), false, false, options);
                     if (!accountAddrResult.isSuccessful()) {
-                        LOG.warn("The call to get the account addresses for stake addresses {} was not successful due to {} ({})",
+                        LOG.error("The call to get the account addresses for stake addresses {} was not successful due to {} ({})",
                                 stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()),
                                 accountAddrResult.getResponse(), accountAddrResult.getCode());
-                        continue;
+                        // Set the whole batch as failed
+                        stakeUsersBatch.forEach(u -> u.setAccountAddresses(null));
+                    } else {
+                        // Attach the addresses to the corresponding user(s) (stake addr batch)
+                        for (AccountAddress accountAddress : accountAddrResult.getValue()) {
+                            stakeUsersBatch.stream().filter(u -> u.getAddress().equals(accountAddress.getStakeAddress()))
+                                    .collect(Collectors.toList())
+                                    .forEach(u -> u.appendAccountAddresses(accountAddress.getAddresses()));
+                        }
                     }
-
-                    // Attach the addresses to the corresponding user(s) (stake addr batch)
-                    for (AccountAddress accountAddress : accountAddrResult.getValue()) {
-                        stakeUsersBatch.stream().filter(u -> u.getAddress().equals(accountAddress.getStakeAddress()))
-                                .collect(Collectors.toList())
-                                .forEach(u -> u.setAccountAddresses(accountAddress.getAddresses()));
-                    }
-
-                    // Attach the single address
-                    addrUsersBatch.forEach(au -> au.setAccountAddresses(List.of(au.getAddress())));
-
                 } while (accountAddrResult != null && accountAddrResult.isSuccessful() && !accountAddrResult.getValue().isEmpty());
+
+                LOG.info("Retrieved {} addresses for a batch of {} users, of which {} invalid",
+                        usersBatch.stream().mapToInt(u -> u.getAccountAddresses().size()).sum(),
+                        usersBatch.size(),
+                        usersBatch.stream().filter(u -> u.getAccountAddresses() == null).collect(Collectors.toList()).size());
 
                 checkTransactionsForUsers(usersBatch);
             }
