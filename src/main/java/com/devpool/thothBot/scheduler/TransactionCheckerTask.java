@@ -157,7 +157,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 } while (accountAddrResult != null && accountAddrResult.isSuccessful() && !accountAddrResult.getValue().isEmpty());
 
                 LOG.info("Retrieved {} addresses for a batch of {} users, of which {} invalid",
-                        usersBatch.stream().mapToInt(u -> u.getAccountAddresses().size()).sum(),
+                        usersBatch.stream().mapToInt(u -> u.getAccountAddresses() == null ? 0 : u.getAccountAddresses().size()).sum(),
                         usersBatch.size(),
                         usersBatch.stream().filter(u -> u.getAccountAddresses() == null).collect(Collectors.toList()).size());
 
