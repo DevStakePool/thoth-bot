@@ -23,6 +23,8 @@ public abstract class AbstractCheckerTask {
     private static final Logger LOG = LoggerFactory.getLogger(AbstractCheckerTask.class);
     public static final int MAX_MSG_PAYLOAD_SIZE = 4096 - 512;
 
+    public static final int MAX_BUTTON_ROWS = 100;
+
     protected static final long DEFAULT_PAGINATION_SIZE = 1000;
     public static final double LOVELACE = 1000000.0;
     public static final String ADA_SYMBOL = " " + '\u20B3';

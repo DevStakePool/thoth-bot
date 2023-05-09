@@ -40,10 +40,11 @@ public class AssetsDao {
 
     public Optional<Asset> getAssetInformation(String policyId, String assetName) {
         List<Asset> assets = this.namedParameterJdbcTemplate.query(
-                "select policy_id, asset_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name",
+                "select id, policy_id, asset_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name",
                 Map.of("policy_id", policyId,
                         "asset_name", assetName),
                 (rs, numRow) -> new Asset(
+                        rs.getLong("id"),
                         rs.getString("policy_id"),
                         rs.getString("asset_name"),
                         rs.getInt("decimals")

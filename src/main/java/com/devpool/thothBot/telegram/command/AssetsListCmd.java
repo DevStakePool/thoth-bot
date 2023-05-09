@@ -6,6 +6,8 @@ import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
+import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
+import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
@@ -21,9 +23,9 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
-public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
-    private static final Logger LOG = LoggerFactory.getLogger(DetailsCmd.class);
-    public static final String CMD_PREFIX = "/d";
+public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
+    private static final Logger LOG = LoggerFactory.getLogger(AssetsListCmd.class);
+    public static final String CMD_PREFIX = "/al";
 
     @Autowired
     private AssetFacade assetFacade;
@@ -48,7 +50,7 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
         return "";
     }
 
-    public DetailsCmd() {
+    public AssetsListCmd() {
     }
 
     @Override
@@ -112,26 +114,40 @@ public class DetailsCmd extends AbstractCheckerTask implements IBotCommand {
                 assets = assetsForAddr.get().getAssetList();
             }
 
-            StringBuilder messageBuilder = new StringBuilder("Assets:");
+            InlineKeyboardButton[][] assetsButtons = new InlineKeyboardButton[Math.min(assets.size(), MAX_BUTTON_ROWS)][1];
+
             int processed = 0;
+            StringBuilder messageBuilder = new StringBuilder("Assets")
+                    .append(" ").append("for address ").append(this.getAdaHandleForAccount(user.getAddress()).get(user.getAddress()));
+
             for (Asset asset : assets) {
                 Object genericQuantity = this.assetFacade.getAssetQuantity(
                         asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
 
-                messageBuilder.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
+                // construct the inline button
+                StringBuilder buttonText = new StringBuilder()
+                        .append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
                         .append(hexToAscii(asset.getAssetName()))
                         .append(" ")
                         .append(this.assetFacade.formatAssetQuantity(genericQuantity));
 
+                Optional<Long> assetCacheId = this.assetFacade.getCacheIdFor(asset);
+
+                assetsButtons[processed][0] = new InlineKeyboardButton(buttonText.toString())
+                        .callbackData("/d " + (assetCacheId.isEmpty() ? AssetFacade.UNKNOWN : assetCacheId.get()));
+
                 processed++;
 
-                if (messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
-                    messageBuilder.append("\n").append(assets.size() - processed).append(" more...");
+                if (processed >= MAX_BUTTON_ROWS) {
+                    messageBuilder.append(". Showing ").append(processed).append("/").append(assets.size());
                     break;
                 }
             }
 
-            bot.execute(new SendMessage(chatId, messageBuilder.toString()));
+            // Notify the user
+
+            bot.execute(new SendMessage(chatId, messageBuilder.toString())
+                    .replyMarkup(new InlineKeyboardMarkup(assetsButtons)));
         } catch (UserNotFoundException e) {
             bot.execute(new SendMessage(chatId, String.format("The user with ID %s cannot be found.", userId)));
         } catch (Exception e) {

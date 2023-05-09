@@ -1,11 +1,13 @@
 package com.devpool.thothBot.dao.data;
 
 public class Asset {
+    private Long id;
     private String policyId;
     private String assetName;
     private Integer decimals;
 
-    public Asset(String policyId, String assetName, Integer decimals) {
+    public Asset(Long id, String policyId, String assetName, Integer decimals) {
+        this.id = id;
         this.policyId = policyId;
         this.assetName = assetName;
         this.decimals = decimals;
@@ -17,10 +19,19 @@ public class Asset {
     @Override
     public String toString() {
         return "Asset{" +
-                "policyId='" + policyId + '\'' +
+                "id=" + id +
+                ", policyId='" + policyId + '\'' +
                 ", assetName='" + assetName + '\'' +
-                ", quantity=" + decimals +
+                ", decimals=" + decimals +
                 '}';
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getPolicyId() {

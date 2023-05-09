@@ -26,6 +26,7 @@ import java.util.concurrent.TimeUnit;
 
 @Component
 public class AssetFacade implements Runnable {
+    public static final String UNKNOWN = "UNKNOWN";
     private static final Logger LOG = LoggerFactory.getLogger(AssetFacade.class);
 
     @Autowired
@@ -126,6 +127,14 @@ public class AssetFacade implements Runnable {
 
     public long countTotalCachedAssets() {
         return this.assetsDao.countAll();
+    }
+
+    public Optional<Long> getCacheIdFor(rest.koios.client.backend.api.common.Asset asset) {
+        Optional<Asset> a = this.assetsDao.getAssetInformation(asset.getPolicyId(), asset.getAssetName());
+        if (a.isPresent())
+            return Optional.of(a.get().getId());
+        else
+            return Optional.empty();
     }
 
     public class UserScannerWorker implements Runnable {

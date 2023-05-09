@@ -29,9 +29,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @SpringBootTest
@@ -98,7 +96,7 @@ public class IntegrationNoSchedulerTest {
     private AssetsCmd assetsCmd;
 
     @Autowired
-    private DetailsCmd detailsCmd;
+    private AssetsListCmd assetsListCmd;
 
     @Autowired
     private AdminNotifyAllCmd adminNotifyAllCmd;
@@ -235,7 +233,7 @@ public class IntegrationNoSchedulerTest {
 
         ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
         Update detailsCmdUpdate = TelegramUtils.buildDetailsCommandUpdate(callbackCmd);
-        this.detailsCmd.execute(detailsCmdUpdate, this.telegramBotMock);
+        this.assetsListCmd.execute(detailsCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(3))
@@ -246,12 +244,21 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Processing...")).count());
+
+
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Assets:")).count());
+                        .toString().contains("Assets")).count());
+
+        // get assets as reply markup
+        Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")
+                .toString().contains("Assets")).findFirst();
+        Assertions.assertTrue(markupAssetsMsg.isPresent());
+        InlineKeyboardMarkup inlineKeyboardMarkup = (InlineKeyboardMarkup) markupAssetsMsg.get().getParameters().get("reply_markup");
+        Assertions.assertEquals(10, inlineKeyboardMarkup.inlineKeyboard().length);
+
         Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("CULO 100,000")).count());
+                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("CULO 100,000")).count());
     }
 
     @Test
@@ -285,7 +292,7 @@ public class IntegrationNoSchedulerTest {
 
         ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
         Update detailsCmdUpdate = TelegramUtils.buildDetailsCommandUpdate(callbackCmd);
-        this.detailsCmd.execute(detailsCmdUpdate, this.telegramBotMock);
+        this.assetsListCmd.execute(detailsCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(3))
@@ -298,10 +305,18 @@ public class IntegrationNoSchedulerTest {
                         .toString().contains("Processing...")).count());
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Assets:")).count());
+                        .toString().contains("Assets showing 100/856")).count());
+
+        // get assets as reply markup
+        Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")
+                .toString().contains("Assets showing 100/856")).findFirst();
+        Assertions.assertTrue(markupAssetsMsg.isPresent());
+        InlineKeyboardMarkup inlineKeyboardMarkup = (InlineKeyboardMarkup) markupAssetsMsg.get().getParameters().get("reply_markup");
+        Assertions.assertEquals(100, inlineKeyboardMarkup.inlineKeyboard().length);
+
         Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("ClayNationPitch21050 1")).count());
+                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("ClayNationPitch21050 1")).count());
+
     }
 
     @Test
