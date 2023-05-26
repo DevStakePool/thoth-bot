@@ -139,7 +139,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     offset += DEFAULT_PAGINATION_SIZE;
 
                     accountAddrResult = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(
-                            stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()), false, false, options);
+                            stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()), false, true, options);
                     if (!accountAddrResult.isSuccessful()) {
                         LOG.error("The call to get the account addresses for stake addresses {} was not successful due to {} ({})",
                                 stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()),
