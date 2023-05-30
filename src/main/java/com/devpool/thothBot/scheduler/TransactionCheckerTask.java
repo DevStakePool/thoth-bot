@@ -63,7 +63,6 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
     private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
     private Instant lastSampleInstant;
-    private long txCounter;
     private long usersCounter;
     private long assetsCacheCounter;
 
@@ -89,19 +88,14 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
             if (this.lastSampleInstant == null) {
                 this.lastSampleInstant = now;
-                this.txCounter = 0;
             } else {
-                long txCounterCurr = this.txCounter;
-                this.txCounter = 0;
                 int millis = (int) (now.toEpochMilli() - lastSampleInstant.toEpochMilli());
                 lastSampleInstant = now;
-                double txPerSec = (txCounterCurr / (millis / 1000.0));
                 // Update gauge metric
-                this.metricsHelper.hitGauge("tx_per_sec", (long) txPerSec);
                 this.metricsHelper.hitGauge("total_users", this.usersCounter);
                 this.metricsHelper.hitGauge("cached_assets", this.assetsCacheCounter);
-                LOG.trace("Calculated new gauge sample for TX processing: {} tx/sec, {} user(s), {} cached asset(s)",
-                        txPerSec, this.usersCounter, this.assetsCacheCounter);
+                LOG.trace("Calculated new gauge sample for TX processing: {} user(s), {} cached asset(s)",
+                        this.usersCounter, this.assetsCacheCounter);
             }
         }
     }
@@ -211,11 +205,6 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     if (o1.getBlockHeight() > o2.getBlockHeight()) return 1;
                     return 0;
                 });
-
-                // Update metrics about TXs
-                synchronized (this.performanceSampler) {
-                    this.txCounter += allTx.size();
-                }
 
                 // We have an empty result (no TX to process)
                 if (maxBlockHeight.isEmpty()) {
