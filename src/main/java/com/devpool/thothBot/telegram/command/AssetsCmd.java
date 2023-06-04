@@ -71,7 +71,8 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
             int endIndex = Math.min(startIndex + 2, inputSize);
             List<String> sublist = addresses.keySet().stream().collect(Collectors.toList()).subList(startIndex, endIndex);
             outputArray[i] = sublist.stream().map(e -> new InlineKeyboardButton(handles.get(e))
-                            .callbackData(AssetsListCmd.CMD_PREFIX + " " + addresses.get(e)))
+                            .callbackData(AssetsListCmd.CMD_PREFIX + AssetsListCmd.CMD_DATA_SEPARATOR + addresses.get(e)
+                            + AssetsListCmd.CMD_DATA_SEPARATOR + "0"))
                     .collect(Collectors.toList()).toArray(new InlineKeyboardButton[0]);
         }
 

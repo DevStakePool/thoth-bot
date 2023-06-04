@@ -5,10 +5,13 @@ import com.devpool.thothBot.exceptions.UserNotFoundException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
+import com.pengrad.telegrambot.request.EditMessageText;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.SendResponse;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,11 +24,16 @@ import rest.koios.client.backend.api.common.Asset;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 @Component
 public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AssetsListCmd.class);
     public static final String CMD_PREFIX = "/al";
+    public static final String CMD_DATA_SEPARATOR = ":";
+    private static final int ASSET_LIST_PAGE_SIZE = 10;
 
     @Autowired
     private AssetFacade assetFacade;
@@ -50,7 +58,10 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
         return "";
     }
 
+    private Set<Message> liveMessages;
+
     public AssetsListCmd() {
+        this.liveMessages = ConcurrentHashMap.newKeySet();
     }
 
     @Override
@@ -60,20 +71,24 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             return;
         }
 
+        Message incomingMessage = update.callbackQuery().message();
         Long chatId = update.callbackQuery().message().chat().id();
+        Integer messageId = update.callbackQuery().message().messageId();
 
         String msgText = update.callbackQuery().data().trim();
-        String[] msgParts = msgText.split(" ");
-        if (msgParts.length != 2) {
-            LOG.warn("Invalid message {}. Expected prefix + user_id", msgText);
+        LOG.debug("assets list callback data (messageId={}): {}", messageId, msgText);
+
+        String[] msgParts = msgText.split(CMD_DATA_SEPARATOR);
+        if (msgParts.length != 3) {//FIXME there will be more with pagination data
+            LOG.warn("Invalid message {}. Expected prefix + user_id + offset", msgText);
             bot.execute(new SendMessage(chatId,
                     String.format("Invalid {} command", CMD_PREFIX)));
             return;
         }
 
-        bot.execute(new SendMessage(chatId, "Processing..."));
-
         String userId = msgParts[1];
+        String offset = msgParts[2];
+        Integer offsetNumber = Integer.parseInt(offset);    //TODO validate me
         User user;
         try {
             LOG.debug("Getting assets for user {}", userId);
@@ -81,6 +96,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
 
             List<Asset> assets;
             if (user.isStakeAddress()) {
+                //FIXME eventually use the pagination feature from Koios APIs
                 Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
                         .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
                 if (!result.isSuccessful()) {
@@ -97,6 +113,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                 }
                 assets = assetForAccount.get().getAssetList();
             } else {
+                //FIXME eventually use the pagination feature from Koios APIs
                 Result<List<AddressAsset>> result = this.koiosFacade.getKoiosService()
                         .getAddressService().getAddressAssets(List.of(user.getAddress()), null);
                 if (!result.isSuccessful()) {
@@ -114,40 +131,58 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                 assets = assetsForAddr.get().getAssetList();
             }
 
-            InlineKeyboardButton[][] assetsButtons = new InlineKeyboardButton[Math.min(assets.size(), MAX_BUTTON_ROWS)][1];
 
-            int processed = 0;
-            StringBuilder messageBuilder = new StringBuilder("Assets")
-                    .append(" ").append("for address ").append(this.getAdaHandleForAccount(user.getAddress()).get(user.getAddress()));
+            // Page header data
+            StringBuilder assetsPage = new StringBuilder();
+            assetsPage.append("Assets")
+                    .append(" ")
+                    .append("for address ")
+                    .append(this.getAdaHandleForAccount(user.getAddress())
+                            .get(user.getAddress()))
+                    .append("\n\n");
 
-            for (Asset asset : assets) {
+            int endOffset = Math.min(assets.size(), offsetNumber + ASSET_LIST_PAGE_SIZE);
+            for (int i = offsetNumber; i < endOffset; i++) {
+                Asset asset = assets.get(i);
                 Object genericQuantity = this.assetFacade.getAssetQuantity(
                         asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
 
                 // construct the inline button
-                StringBuilder buttonText = new StringBuilder()
-                        .append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
-                        .append(hexToAscii(asset.getAssetName()))
+                assetsPage.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
+                        .append(hexToAscii(asset.getAssetName())) //TODO link to pool.pm
                         .append(" ")
                         .append(this.assetFacade.formatAssetQuantity(genericQuantity));
-
-                Optional<Long> assetCacheId = this.assetFacade.getCacheIdFor(asset);
-
-                assetsButtons[processed][0] = new InlineKeyboardButton(buttonText.toString())
-                        .callbackData("/d " + (assetCacheId.isEmpty() ? AssetFacade.UNKNOWN : assetCacheId.get()));
-
-                processed++;
-
-                if (processed >= MAX_BUTTON_ROWS) {
-                    messageBuilder.append(". Showing ").append(processed).append("/").append(assets.size());
-                    break;
-                }
             }
 
-            // Notify the user
+            // PREV/NEXT inline buttons
+            InlineKeyboardButton[][] navigationButtons = new InlineKeyboardButton[1][2];
 
-            bot.execute(new SendMessage(chatId, messageBuilder.toString())
-                    .replyMarkup(new InlineKeyboardMarkup(assetsButtons)));
+            // Prev
+            navigationButtons[0][0] = new InlineKeyboardButton("< PREV")
+                    .callbackData(CMD_PREFIX + CMD_DATA_SEPARATOR + userId +
+                            CMD_DATA_SEPARATOR + Math.max(0, offsetNumber - ASSET_LIST_PAGE_SIZE));
+
+            // Next
+            navigationButtons[0][1] = new InlineKeyboardButton("NEXT >")
+                    .callbackData(CMD_PREFIX + CMD_DATA_SEPARATOR + userId +
+                            CMD_DATA_SEPARATOR + Math.min(assets.size(), offsetNumber + ASSET_LIST_PAGE_SIZE));
+
+            // Notify the user
+            if (this.liveMessages.contains(incomingMessage)) {
+                // It's an edit action
+                bot.execute(new EditMessageText(chatId, incomingMessage.messageId(), assetsPage.toString())
+                        .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
+            } else {
+                // It's the first page and the message has to be created
+                SendResponse resp = bot.execute(new SendMessage(chatId, assetsPage.toString())
+                        .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
+                this.liveMessages.add(resp.message());
+            }
+            LOG.error("Current set of messages: {}. total assets {} offset-start {} offset-end {}",
+                    this.liveMessages.stream().map(m -> m.messageId()).collect(Collectors.toList()),
+                    assets.size(),
+                    offset, endOffset);
+
         } catch (UserNotFoundException e) {
             bot.execute(new SendMessage(chatId, String.format("The user with ID %s cannot be found.", userId)));
         } catch (Exception e) {
