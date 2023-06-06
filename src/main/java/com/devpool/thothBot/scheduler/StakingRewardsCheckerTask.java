@@ -146,7 +146,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                 }
             }
         } catch (ApiException e) {
-            LOG.error("Cannot process batch of {} users due to an API exception: {}", e, e);
+            LOG.error("Cannot process batch of {} users due to an API exception: {}", usersBatch.size(), e, e);
         } catch (DataAccessException e) {
             LOG.error("Caught SQL exception while processing the staking rewards: {}", e, e);
         }
