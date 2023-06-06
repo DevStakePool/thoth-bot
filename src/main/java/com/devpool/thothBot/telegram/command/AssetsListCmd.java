@@ -33,7 +33,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AssetsListCmd.class);
     public static final String CMD_PREFIX = "/al";
     public static final String CMD_DATA_SEPARATOR = ":";
-    private static final int ASSET_LIST_PAGE_SIZE = 10;
+    private static final int ASSET_LIST_PAGE_SIZE = 7;
 
     @Autowired
     private AssetFacade assetFacade;
@@ -58,7 +58,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
         return "";
     }
 
-    private Set<Message> liveMessages;
+    private Set<Integer> liveMessages;
 
     public AssetsListCmd() {
         this.liveMessages = ConcurrentHashMap.newKeySet();
@@ -165,10 +165,10 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             // Next
             navigationButtons[0][1] = new InlineKeyboardButton("NEXT >")
                     .callbackData(CMD_PREFIX + CMD_DATA_SEPARATOR + userId +
-                            CMD_DATA_SEPARATOR + Math.min(assets.size(), offsetNumber + ASSET_LIST_PAGE_SIZE));
+                            CMD_DATA_SEPARATOR + Math.min(assets.size() - ASSET_LIST_PAGE_SIZE, offsetNumber + ASSET_LIST_PAGE_SIZE));
 
             // Notify the user
-            if (this.liveMessages.contains(incomingMessage)) {
+            if (this.liveMessages.contains(incomingMessage.messageId())) {
                 // It's an edit action
                 bot.execute(new EditMessageText(chatId, incomingMessage.messageId(), assetsPage.toString())
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
@@ -176,10 +176,10 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                 // It's the first page and the message has to be created
                 SendResponse resp = bot.execute(new SendMessage(chatId, assetsPage.toString())
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
-                this.liveMessages.add(resp.message());
+                this.liveMessages.add(resp.message().messageId());
             }
             LOG.error("Current set of messages: {}. total assets {} offset-start {} offset-end {}",
-                    this.liveMessages.stream().map(m -> m.messageId()).collect(Collectors.toList()),
+                    this.liveMessages,
                     assets.size(),
                     offset, endOffset);
 
