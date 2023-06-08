@@ -114,7 +114,7 @@ public class TelegramFacade {
         String payload;
         String from;
         Long id;
-        if (update.message() != null) {
+        if (update.message() != null && update.message().text() != null) {
             payload = update.message().text().trim();
             from = update.message().from().username();
             id = update.message().chat().id();

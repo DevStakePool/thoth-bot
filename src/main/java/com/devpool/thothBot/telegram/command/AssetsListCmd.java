@@ -22,6 +22,7 @@ import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.common.Asset;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -33,7 +34,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AssetsListCmd.class);
     public static final String CMD_PREFIX = "/al";
     public static final String CMD_DATA_SEPARATOR = ":";
-    private static final int ASSET_LIST_PAGE_SIZE = 7;
+    private static final int ASSET_LIST_PAGE_SIZE = 10;
 
     @Autowired
     private AssetFacade assetFacade;
@@ -76,7 +77,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
         Integer messageId = update.callbackQuery().message().messageId();
 
         String msgText = update.callbackQuery().data().trim();
-        LOG.debug("assets list callback data (messageId={}): {}", messageId, msgText);
+        LOG.error("assets list callback data (messageId={}): {}", messageId, msgText);
 
         String[] msgParts = msgText.split(CMD_DATA_SEPARATOR);
         if (msgParts.length != 3) {//FIXME there will be more with pagination data
@@ -131,7 +132,10 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                 assets = assetsForAddr.get().getAssetList();
             }
 
+            // Sort the assets first
+            assets.sort(Comparator.comparing(Asset::getAssetName));
 
+            int endOffset = Math.min(assets.size(), offsetNumber + ASSET_LIST_PAGE_SIZE);
             // Page header data
             StringBuilder assetsPage = new StringBuilder();
             assetsPage.append("Assets")
@@ -140,32 +144,41 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                     .append(this.getAdaHandleForAccount(user.getAddress())
                             .get(user.getAddress()))
                     .append("\n\n");
+            if (offsetNumber < assets.size())
+                for (int i = offsetNumber; i < endOffset; i++) {
+                    Asset asset = assets.get(i);
+                    Object genericQuantity = this.assetFacade.getAssetQuantity(
+                            asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
 
-            int endOffset = Math.min(assets.size(), offsetNumber + ASSET_LIST_PAGE_SIZE);
-            for (int i = offsetNumber; i < endOffset; i++) {
-                Asset asset = assets.get(i);
-                Object genericQuantity = this.assetFacade.getAssetQuantity(
-                        asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
+                    // construct the inline button
+                    assetsPage.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
+                            .append(hexToAscii(asset.getAssetName())) //TODO link to pool.pm
+                            .append(" ")
+                            .append(this.assetFacade.formatAssetQuantity(genericQuantity));
+                }
 
-                // construct the inline button
-                assetsPage.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
-                        .append(hexToAscii(asset.getAssetName())) //TODO link to pool.pm
-                        .append(" ")
-                        .append(this.assetFacade.formatAssetQuantity(genericQuantity));
-            }
+            int pageNumber = (endOffset / ASSET_LIST_PAGE_SIZE) + (endOffset % ASSET_LIST_PAGE_SIZE > 0 ? 1 : 0);
+            assetsPage
+                    .append("\n\nPage ")
+                    .append(pageNumber)
+                    .append("/")
+                    .append(assets.size() / ASSET_LIST_PAGE_SIZE + (assets.size() % ASSET_LIST_PAGE_SIZE > 0 ? 1 : 0));
+            LOG.warn("startOffset={}, endOffset={}, total={}", offsetNumber, endOffset, assets.size());
 
             // PREV/NEXT inline buttons
             InlineKeyboardButton[][] navigationButtons = new InlineKeyboardButton[1][2];
 
             // Prev
-            navigationButtons[0][0] = new InlineKeyboardButton("< PREV")
+            navigationButtons[0][0] = new InlineKeyboardButton(EmojiParser.parseToUnicode(":arrow_backward: PREV"))
                     .callbackData(CMD_PREFIX + CMD_DATA_SEPARATOR + userId +
                             CMD_DATA_SEPARATOR + Math.max(0, offsetNumber - ASSET_LIST_PAGE_SIZE));
 
             // Next
-            navigationButtons[0][1] = new InlineKeyboardButton("NEXT >")
+            navigationButtons[0][1] = new InlineKeyboardButton(EmojiParser.parseToUnicode("NEXT :arrow_forward:"))
                     .callbackData(CMD_PREFIX + CMD_DATA_SEPARATOR + userId +
-                            CMD_DATA_SEPARATOR + Math.min(assets.size() - ASSET_LIST_PAGE_SIZE, offsetNumber + ASSET_LIST_PAGE_SIZE));
+                            CMD_DATA_SEPARATOR +
+                            Math.min((assets.size() - ASSET_LIST_PAGE_SIZE + 1 > 0 ? assets.size() - ASSET_LIST_PAGE_SIZE + 1 : offsetNumber),
+                                    offsetNumber + ASSET_LIST_PAGE_SIZE));
 
             // Notify the user
             if (this.liveMessages.contains(incomingMessage.messageId())) {
