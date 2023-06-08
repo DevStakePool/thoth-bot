@@ -163,7 +163,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                     .append(pageNumber)
                     .append("/")
                     .append(assets.size() / ASSET_LIST_PAGE_SIZE + (assets.size() % ASSET_LIST_PAGE_SIZE > 0 ? 1 : 0));
-            LOG.warn("startOffset={}, endOffset={}, total={}", offsetNumber, endOffset, assets.size());
+            LOG.trace("startOffset={}, endOffset={}, total={}", offsetNumber, endOffset, assets.size());
 
             // PREV/NEXT inline buttons
             InlineKeyboardButton[][] navigationButtons = new InlineKeyboardButton[1][2];
@@ -191,7 +191,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
                 this.liveMessages.add(resp.message().messageId());
             }
-            LOG.error("Current set of messages: {}. total assets {} offset-start {} offset-end {}",
+            LOG.debug("Current set of messages: {}. total assets {} offset-start {} offset-end {}",
                     this.liveMessages,
                     assets.size(),
                     offset, endOffset);
