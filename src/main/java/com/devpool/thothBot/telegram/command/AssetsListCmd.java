@@ -9,6 +9,7 @@ import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
+import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.EditMessageText;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.response.SendResponse;
@@ -97,7 +98,6 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
 
             List<Asset> assets;
             if (user.isStakeAddress()) {
-                //FIXME eventually use the pagination feature from Koios APIs
                 Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
                         .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
                 if (!result.isSuccessful()) {
@@ -114,7 +114,6 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                 }
                 assets = assetForAccount.get().getAssetList();
             } else {
-                //FIXME eventually use the pagination feature from Koios APIs
                 Result<List<AddressAsset>> result = this.koiosFacade.getKoiosService()
                         .getAddressService().getAddressAssets(List.of(user.getAddress()), null);
                 if (!result.isSuccessful()) {
@@ -144,6 +143,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                     .append(this.getAdaHandleForAccount(user.getAddress())
                             .get(user.getAddress()))
                     .append("\n\n");
+            int shown = 0;
             if (offsetNumber < assets.size())
                 for (int i = offsetNumber; i < endOffset; i++) {
                     Asset asset = assets.get(i);
@@ -152,17 +152,22 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
 
                     // construct the inline button
                     assetsPage.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
+                            .append("<a href=\"https://pool.pm/").append(asset.getFingerprint())
+                            .append("\">")
                             .append(hexToAscii(asset.getAssetName())) //TODO link to pool.pm
-                            .append(" ")
+                            .append("</a> ")
                             .append(this.assetFacade.formatAssetQuantity(genericQuantity));
+                    shown++;
                 }
 
             int pageNumber = (endOffset / ASSET_LIST_PAGE_SIZE) + (endOffset % ASSET_LIST_PAGE_SIZE > 0 ? 1 : 0);
             assetsPage
-                    .append("\n\nPage ")
+                    .append("\n\n").append("Shown ").append(shown + offsetNumber).append("/").append(assets.size())
+                    .append("\nPage ")
                     .append(pageNumber)
                     .append("/")
                     .append(assets.size() / ASSET_LIST_PAGE_SIZE + (assets.size() % ASSET_LIST_PAGE_SIZE > 0 ? 1 : 0));
+
             LOG.trace("startOffset={}, endOffset={}, total={}", offsetNumber, endOffset, assets.size());
 
             // PREV/NEXT inline buttons
@@ -183,11 +188,11 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             // Notify the user
             if (this.liveMessages.contains(incomingMessage.messageId())) {
                 // It's an edit action
-                bot.execute(new EditMessageText(chatId, incomingMessage.messageId(), assetsPage.toString())
+                bot.execute(new EditMessageText(chatId, incomingMessage.messageId(), assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
             } else {
                 // It's the first page and the message has to be created
-                SendResponse resp = bot.execute(new SendMessage(chatId, assetsPage.toString())
+                SendResponse resp = bot.execute(new SendMessage(chatId, assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
                 this.liveMessages.add(resp.message().messageId());
             }
