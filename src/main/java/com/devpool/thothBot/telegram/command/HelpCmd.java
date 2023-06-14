@@ -4,6 +4,7 @@ import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.SendResponse;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +32,7 @@ public class HelpCmd implements IBotCommand {
      * Some global constants
      */
     public static final Map<String, String> CONSTANTS = Map.of(
-            "$thoth.version", "1.3.2",
+            "$thoth.version", "1.3.3",
             "$donation.handle", "$thoth-bot",
             "$url", "https://github.com/DevStakePool/thoth-bot");
 
@@ -63,9 +64,11 @@ public class HelpCmd implements IBotCommand {
 
     @Override
     public void execute(Update update, TelegramBot bot) {
-        bot.execute(new SendMessage(update.message().chat().id(), getHelpText(update.message().from().username()))
+        SendResponse resp = bot.execute(new SendMessage(update.message().chat().id(), getHelpText(update.message().from().username()))
                 .disableWebPagePreview(true)
                 .parseMode(ParseMode.HTML));
+        if (!resp.isOk())
+            LOG.error("Error while sending the HELP text {}={}", resp.errorCode(), resp.description());
     }
 
     private String getHelpText(String username) {
@@ -99,6 +102,7 @@ public class HelpCmd implements IBotCommand {
 
             // substitute emojis
             helpText = helpText.replace("%robot", EmojiParser.parseToUnicode(":robot_face:"));
+            helpText = helpText.replace("%coffee", EmojiParser.parseToUnicode(":coffee:"));
             helpText = helpText.replace("%information_source", EmojiParser.parseToUnicode(":information_source:"));
             helpText = helpText.replace("%speech_balloon", EmojiParser.parseToUnicode(":speech_balloon:"));
             sb.append(helpText);
