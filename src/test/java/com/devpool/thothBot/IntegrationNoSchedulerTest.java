@@ -10,10 +10,12 @@ import com.devpool.thothBot.telegram.command.*;
 import com.devpool.thothBot.telegram.command.admin.AdminNotifyAllCmd;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.SendResponse;
 import com.vdurmont.emoji.EmojiParser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -204,6 +206,11 @@ public class IntegrationNoSchedulerTest {
     public void userCommandAssetsForStakeAddressTest() throws Exception {
         // Testing Assets command
         Update assetsCmdUpdate = TelegramUtils.buildAssetsCommandUpdate("-2");
+        Message messageMock = Mockito.mock(Message.class);
+        Mockito.when(messageMock.messageId()).thenReturn((int) (System.currentTimeMillis() / 1000));
+        SendResponse sendRespMock = Mockito.mock(SendResponse.class);
+        Mockito.when(sendRespMock.message()).thenReturn(messageMock);
+        Mockito.when(this.telegramBotMock.execute(Mockito.any())).thenReturn(sendRespMock);
         this.assetsCmd.execute(assetsCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
@@ -223,8 +230,8 @@ public class IntegrationNoSchedulerTest {
         InlineKeyboardButton[] firstRow = markup.inlineKeyboard()[0];
         Assertions.assertEquals(2, firstRow.length);
         Assertions.assertFalse(firstRow[0].callbackData().isEmpty());
-        Assertions.assertFalse(firstRow[1].callbackData().isEmpty());
         Assertions.assertFalse(firstRow[0].text().isEmpty());
+        Assertions.assertFalse(firstRow[1].callbackData().isEmpty());
         Assertions.assertFalse(firstRow[1].text().isEmpty());
 
         // We take the first button, so we'll get the list of assets of the account.
@@ -236,35 +243,57 @@ public class IntegrationNoSchedulerTest {
         this.assetsListCmd.execute(detailsCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
-                                .times(3))
+                                .times(2))
                 .execute(argumentCaptor.capture());
         sentMessages = argumentCaptor.getAllValues();
-        Assertions.assertEquals(3, sentMessages.size());
+        Assertions.assertEquals(2, sentMessages.size());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
+                        .equals(Boolean.valueOf(true))).count());
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Assets for address $")).count());
 
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Processing...")).count());
+                        .toString().contains("<a href=\"https://pool.pm/asset1gc08w2lamu0zvcx7rxz7l86xlpfzy00qygdt0z\">COC</a> 6,005,000,000\n")).count());
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("<a href=\"https://pool.pm/asset1zqjy7fye4s5s5j4p8j0v5zeasp33wvskx35js6\">gioconda</a> 1\n")).count());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Shown 10/10")).count());
 
 
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Assets")).count());
+                        .toString().contains("Page 1/1")).count());
 
         // get assets as reply markup
         Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")
-                .toString().contains("Assets")).findFirst();
+                .toString().contains("Assets for address")).findFirst();
         Assertions.assertTrue(markupAssetsMsg.isPresent());
         InlineKeyboardMarkup inlineKeyboardMarkup = (InlineKeyboardMarkup) markupAssetsMsg.get().getParameters().get("reply_markup");
-        Assertions.assertEquals(10, inlineKeyboardMarkup.inlineKeyboard().length);
+        Assertions.assertEquals(1, inlineKeyboardMarkup.inlineKeyboard().length);
 
         Assertions.assertEquals(1,
-                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("CULO 100,000")).count());
+                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("PREV")).count());
+        Assertions.assertEquals(1,
+                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[1].text().contains("NEXT")).count());
+
     }
 
     @Test
     public void userCommandAssetsForNormalAddressTest() throws Exception {
         // Testing Assets command
         Update assetsCmdUpdate = TelegramUtils.buildAssetsCommandUpdate("-1000");
+        Message messageMock = Mockito.mock(Message.class);
+        Mockito.when(messageMock.messageId()).thenReturn((int) (System.currentTimeMillis() / 1000));
+        SendResponse sendRespMock = Mockito.mock(SendResponse.class);
+        Mockito.when(sendRespMock.message()).thenReturn(messageMock);
+        Mockito.when(this.telegramBotMock.execute(Mockito.any())).thenReturn(sendRespMock);
         this.assetsCmd.execute(assetsCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
@@ -295,28 +324,45 @@ public class IntegrationNoSchedulerTest {
         this.assetsListCmd.execute(detailsCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
-                                .times(3))
+                                .times(2))
                 .execute(argumentCaptor.capture());
         sentMessages = argumentCaptor.getAllValues();
-        Assertions.assertEquals(3, sentMessages.size());
+        Assertions.assertEquals(2, sentMessages.size());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
+                        .equals(Boolean.valueOf(true))).count());
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Assets for address $")).count());
 
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Processing...")).count());
+                        .toString().contains("<a href=\"https://pool.pm/asset1a8d9lcarrlpjmgspyjay4pltr5e9ydkv4vs9vz\">2Bill4468</a> 1")).count());
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Assets showing 100/856")).count());
+                        .toString().contains("<a href=\"https://pool.pm/asset19v3s007ywl89vu6wlkgpztlcn3jf9c0s40empy\">927</a> 1")).count());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Shown 10/856")).count());
+
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Page 1/86")).count());
 
         // get assets as reply markup
         Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")
-                .toString().contains("Assets showing 100/856")).findFirst();
+                .toString().contains("Assets for address")).findFirst();
         Assertions.assertTrue(markupAssetsMsg.isPresent());
         InlineKeyboardMarkup inlineKeyboardMarkup = (InlineKeyboardMarkup) markupAssetsMsg.get().getParameters().get("reply_markup");
-        Assertions.assertEquals(100, inlineKeyboardMarkup.inlineKeyboard().length);
+        Assertions.assertEquals(1, inlineKeyboardMarkup.inlineKeyboard().length);
 
         Assertions.assertEquals(1,
-                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("ClayNationPitch21050 1")).count());
-
+                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("PREV")).count());
+        Assertions.assertEquals(1,
+                Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[1].text().contains("NEXT")).count());
     }
 
     @Test
