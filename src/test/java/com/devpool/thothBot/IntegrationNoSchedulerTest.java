@@ -363,6 +363,32 @@ public class IntegrationNoSchedulerTest {
                 Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("PREV")).count());
         Assertions.assertEquals(1,
                 Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[1].text().contains("NEXT")).count());
+
+        // Next page
+        Optional<InlineKeyboardButton> nextPage = Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()[0]).filter(b -> b.text().contains("NEXT")).findFirst();
+        Assertions.assertTrue(nextPage.isPresent());
+        String nextPageCallback = nextPage.get().callbackData();
+        ArgumentCaptor<SendMessage> argumentCaptorNextPage = ArgumentCaptor.forClass(SendMessage.class);
+        Update detailsCmdUpdateNextPage = TelegramUtils.buildDetailsCommandUpdate(nextPageCallback);
+        this.assetsListCmd.execute(detailsCmdUpdateNextPage, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptorNextPage.capture());
+        sentMessages = argumentCaptorNextPage.getAllValues();
+        Assertions.assertEquals(3, sentMessages.size());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Shown 20/856")).count());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Page 2/86")).count());
+
+        Assertions.assertEquals(1,
+                sentMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("<a href=\"https://pool.pm/asset1pxyva5vwaqeqwnzwyj7rttxxwlav9upgssscrd\">Berry54</a> 1")).count());
     }
 
     @Test
