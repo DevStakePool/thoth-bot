@@ -114,7 +114,6 @@ public class AddressCmd implements IBotCommand {
         try {
             // Get block height
             Result<Tip> tipResult = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
-
             if (!tipResult.isSuccessful()) {
                 LOG.warn("Unsuccessful KOIOS call during the subscribe of the address {}. {} {}",
                         addr, tipResult.getCode(), tipResult.getResponse());
@@ -124,6 +123,7 @@ public class AddressCmd implements IBotCommand {
 
                 return;
             }
+            //TODO issue #20 here. Query to see if the address/account exists
             userDao.addNewUser(
                     new User(update.message().chat().id(),
                             addr, tipResult.getValue().getBlockNo(), tipResult.getValue().getEpochNo()));

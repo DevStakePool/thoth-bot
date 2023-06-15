@@ -78,7 +78,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
         Integer messageId = update.callbackQuery().message().messageId();
 
         String msgText = update.callbackQuery().data().trim();
-        LOG.error("assets list callback data (messageId={}): {}", messageId, msgText);
+        LOG.debug("assets list callback data (messageId={}): {}", messageId, msgText);
 
         String[] msgParts = msgText.split(CMD_DATA_SEPARATOR);
         if (msgParts.length != 3) {//FIXME there will be more with pagination data
