@@ -12,7 +12,9 @@ import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ForceReply;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.SendResponse;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
@@ -107,6 +109,13 @@ public class IntegrationTest {
         }
 
         Mockito.when(this.koiosFacade.getKoiosService()).thenReturn(this.backendServiceDouble);
+    }
+
+    @BeforeEach
+    public void beforeAll() throws Exception {
+        SendResponse respMock = Mockito.mock(SendResponse.class);
+        Mockito.when(respMock.isOk()).thenReturn(true);
+        Mockito.when(this.telegramBotMock.execute(Mockito.any())).thenReturn(respMock);
     }
 
     @Test
