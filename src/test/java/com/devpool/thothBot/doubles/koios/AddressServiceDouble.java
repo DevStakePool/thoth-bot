@@ -32,6 +32,9 @@ public class AddressServiceDouble implements AddressService {
         try {
             List<AddressInfo> allAddrInfo = KoiosDataBuilder.getAddressInformationTestData();
             List<AddressInfo> filteredList = allAddrInfo.stream().filter(r -> addressList.contains(r.getAddress())).collect(Collectors.toList());
+            if (filteredList.isEmpty()) {
+                return Result.<AddressInfo>builder().code(200).response("").successful(true).value(null).build();
+            }
             return Result.<AddressInfo>builder().code(200).response("").successful(true).value(filteredList.get(0)).build();
 
         } catch (IOException e) {

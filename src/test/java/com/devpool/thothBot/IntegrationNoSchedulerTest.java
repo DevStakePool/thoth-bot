@@ -127,7 +127,7 @@ public class IntegrationNoSchedulerTest {
     public void userCommandAddrForSubscribeTest() throws Exception {
         // Testing Address command
         Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
-                "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", -1000);
+                "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", -1000);
         this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
@@ -170,6 +170,106 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("From now on you will receive updates")).count());
+    }
+
+    @Test
+    public void userCommandAddrInvalidForSubscribeTest() throws Exception {
+        // Testing Address command
+        String addr = "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv50000";
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
+                addr, -1000);
+        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
+
+        // First specify the /subscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate();
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(argumentCaptor.capture());
+
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptor.capture());
+        sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(3, sendMessages.size());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Please specify the operation first")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("please send your address")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .equals("The provided address \"" + addr + "\" does not exist on-chain or it's invalid")).count());
+    }
+
+    @Test
+    public void userCommandBaseAddrInvalidForSubscribeTest() throws Exception {
+        // Testing Address command
+        String addr = "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8f0000";
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
+                addr, -1000);
+        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
+
+        // First specify the /subscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate();
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(argumentCaptor.capture());
+
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptor.capture());
+        sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(3, sendMessages.size());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Please specify the operation first")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("please send your address")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .equals("The provided address \"" + addr + "\" does not exist on-chain or it's invalid")).count());
     }
 
     @Test

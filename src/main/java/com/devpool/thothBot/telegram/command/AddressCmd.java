@@ -13,12 +13,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Component;
-import rest.koios.client.backend.api.account.model.AccountAddress;
+import rest.koios.client.backend.api.account.model.AccountInfo;
+import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.model.Tip;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -123,7 +123,13 @@ public class AddressCmd implements IBotCommand {
 
                 return;
             }
-            //TODO issue #20 here. Query to see if the address/account exists
+            if (!isValidAddress(addr)) {
+                bot.execute(new SendMessage(update.message().chat().id(),
+                        String.format("The provided address \"%s\" does not exist on-chain or it's invalid", addr)));
+
+                return;
+            }
+
             userDao.addNewUser(
                     new User(update.message().chat().id(),
                             addr, tipResult.getValue().getBlockNo(), tipResult.getValue().getEpochNo()));
@@ -148,6 +154,32 @@ public class AddressCmd implements IBotCommand {
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("It looks like the address %s has been already registered in this chat.", addr)));
         }
+    }
+
+    /**
+     * Validates if addr (stake or base) is valid and existing one
+     *
+     * @param addr stake or base address
+     * @return true if the addr is valid, false otherwise
+     */
+    private boolean isValidAddress(String addr) {
+        try {
+            if (User.isStakingAddress(addr)) {
+                // Stake address
+                Result<List<AccountInfo>> accountInfo = this.koiosFacade.getKoiosService().getAccountService().getAccountInformation(List.of(addr), null);
+                if (!accountInfo.isSuccessful() || accountInfo.getValue().isEmpty())
+                    return false;
+            } else {
+                // Base address
+                Result<AddressInfo> addressInfo = this.koiosFacade.getKoiosService().getAddressService().getAddressInformation(addr);
+                if (!addressInfo.isSuccessful() || addressInfo.getValue() == null)
+                    return false;
+            }
+        } catch (ApiException e) {
+            LOG.warn("Invalid address {}. Error: {}", addr, e.toString());
+            return false;
+        }
+        return true;
     }
 
 
