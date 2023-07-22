@@ -5,6 +5,9 @@ import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.NullNode;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -292,7 +295,21 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                             break;
                     }
                     Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
-                    double usdVal = -1;
+
+                    // Check for any metadata worth showing
+                    String metadataMessage = null;
+                    if (txInfo.getMetadata() != null && !(txInfo.getMetadata() instanceof NullNode)) {
+                        JsonNode jsonMetadata = txInfo.getMetadata();
+                        // See if there's a "msg"
+                        JsonNode msgNode = jsonMetadata.findValue("msg");
+                        if (msgNode != null) {
+                            if (msgNode.isArray()) {
+                                ArrayNode msgArray = (ArrayNode) msgNode;
+                                if (!msgArray.isEmpty())
+                                    metadataMessage = msgArray.get(0).asText();
+                            }
+                        }
+                    }
 
                     messageBuilder.append("<a href=\"").append(CARDANO_SCAN_TX).append(txInfo.getTxHash()).append("\">").append(txType.getHumanReadableText()).append(" ").append(fundsTokenText).append("</a>").append(" <i>").append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(txInfo.getTxTimestamp(), 0, ZoneOffset.UTC))).append("</i>").append("\n").append(EmojiParser.parseToUnicode(":small_blue_diamond:")).append("Fee ").append(String.format("%,.2f", fee)).append(ADA_SYMBOL);
 
@@ -322,6 +339,11 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     // delegation?
                     if (delegateToPoolName != null && delegateToPoolId != null) {
                         messageBuilder.append(EmojiParser.parseToUnicode("\n:classical_building:")).append(" Delegated to ").append("<a href=\"").append(CARDANO_SCAN_STAKE_POOL).append(delegateToPoolId).append("\">").append(delegateToPoolName).append("</a>");
+                    }
+
+                    // Message on metadata?
+                    if (metadataMessage != null) {
+                        messageBuilder.append(EmojiParser.parseToUnicode("\n:speech_balloon:")).append(metadataMessage);
                     }
 
                     // Any assets?

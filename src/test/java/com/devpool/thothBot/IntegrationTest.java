@@ -294,6 +294,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("thoth-bot 1"));
                     Assertions.assertTrue(msg.contains("MELD 10,000.00"));
                     Assertions.assertTrue(msg.contains("$alessio.dev"));
+                    Assertions.assertTrue(msg.contains("DEV Pool patron rewards for epoch 377")); // Metadata on message - issue #23
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
