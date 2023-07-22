@@ -73,27 +73,12 @@ public class TelegramFacade {
 
     private void sampleMetrics() {
         synchronized (this.performanceSampler) {
-            Instant now = Instant.now();
-            if (this.lastSampleInstant == null) {
-                this.lastSampleInstant = now;
-                this.totalCommands = 0;
-                this.totalMessages = 0;
-            } else {
-                long totalMessagesCurr = this.totalMessages;
-                this.totalMessages = 0;
-                long totalCommandsCurr = this.totalCommands;
-                this.totalCommands = 0;
-                int millis = (int) (now.toEpochMilli() - lastSampleInstant.toEpochMilli());
-                lastSampleInstant = now;
-                double recvMessagesPerSecond = (totalMessagesCurr / (millis / 1000.0));
-                double recvCommandsPerSecond = (totalCommandsCurr / (millis / 1000.0));
 
-                // Update gauge metric
-                this.metricsHelper.hitGauge("telegram_messages_per_sec", (long) recvMessagesPerSecond);
-                this.metricsHelper.hitGauge("telegram_commands_per_sec", (long) recvCommandsPerSecond);
-                LOG.trace("Calculated new gauge sample for telegram facade {} msg/sec, {} cmd/sec",
-                        recvMessagesPerSecond, recvCommandsPerSecond);
-            }
+            // Update gauge metric
+            this.metricsHelper.hitGauge("telegram_tot_messages", this.totalMessages);
+            this.metricsHelper.hitGauge("telegram_tot_commands", this.totalCommands);
+            LOG.trace("Calculated new gauge sample for telegram facade {} msgs, {} cmds",
+                    this.totalMessages, this.totalCommands);
         }
     }
 
