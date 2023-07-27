@@ -81,7 +81,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
         LOG.debug("assets list callback data (messageId={}): {}", messageId, msgText);
 
         String[] msgParts = msgText.split(CMD_DATA_SEPARATOR);
-        if (msgParts.length != 3) {//FIXME there will be more with pagination data
+        if (msgParts.length != 3) {
             LOG.warn("Invalid message {}. Expected prefix + user_id + offset", msgText);
             bot.execute(new SendMessage(chatId,
                     String.format("Invalid {} command", CMD_PREFIX)));
@@ -154,7 +154,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                     assetsPage.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
                             .append("<a href=\"https://pool.pm/").append(asset.getFingerprint())
                             .append("\">")
-                            .append(hexToAscii(asset.getAssetName())) //TODO link to pool.pm
+                            .append(hexToAscii(asset.getAssetName()))
                             .append("</a> ")
                             .append(this.assetFacade.formatAssetQuantity(genericQuantity));
                     shown++;
@@ -182,7 +182,9 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             navigationButtons[0][1] = new InlineKeyboardButton(EmojiParser.parseToUnicode("NEXT :arrow_forward:"))
                     .callbackData(CMD_PREFIX + CMD_DATA_SEPARATOR + userId +
                             CMD_DATA_SEPARATOR +
-                            Math.min((assets.size() - ASSET_LIST_PAGE_SIZE + 1 > 0 ? assets.size() - ASSET_LIST_PAGE_SIZE + 1 : offsetNumber),
+                            Math.min((assets.size() - ASSET_LIST_PAGE_SIZE + 1 > 0 ?
+                                            (assets.size() == ASSET_LIST_PAGE_SIZE ? assets.size() - ASSET_LIST_PAGE_SIZE : assets.size() - ASSET_LIST_PAGE_SIZE + 1)
+                                            : offsetNumber),
                                     offsetNumber + ASSET_LIST_PAGE_SIZE));
 
             // Notify the user
