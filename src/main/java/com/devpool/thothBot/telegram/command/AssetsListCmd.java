@@ -12,6 +12,7 @@ import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.EditMessageText;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.BaseResponse;
 import com.pengrad.telegrambot.response.SendResponse;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
@@ -90,9 +91,11 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
 
         String userId = msgParts[1];
         String offset = msgParts[2];
-        Integer offsetNumber = Integer.parseInt(offset);    //TODO validate me
-        User user;
+
         try {
+            Integer offsetNumber = Integer.parseInt(offset);    //TODO validate me
+            User user;
+
             LOG.debug("Getting assets for user {}", userId);
             user = userDao.getUser(Long.parseLong(userId));
 
@@ -190,8 +193,9 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             // Notify the user
             if (this.liveMessages.contains(incomingMessage.messageId())) {
                 // It's an edit action
-                bot.execute(new EditMessageText(chatId, incomingMessage.messageId(), assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
+                BaseResponse editResp = bot.execute(new EditMessageText(chatId, incomingMessage.messageId(), assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
+                LOG.debug("Edit response is ok? {}, error code {}, {}", editResp.isOk(), editResp.errorCode(), editResp.description());
             } else {
                 // It's the first page and the message has to be created
                 SendResponse resp = bot.execute(new SendMessage(chatId, assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)

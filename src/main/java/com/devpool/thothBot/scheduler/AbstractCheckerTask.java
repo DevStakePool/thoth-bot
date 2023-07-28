@@ -82,18 +82,20 @@ public abstract class AbstractCheckerTask {
      */
     protected Map<String, String> getAdaHandleForAccount(String... addresses) {
         Map<String, String> handlesMap = new HashMap<>();
-        boolean handleFound = false;
 
         List<String> stakingAddresses = Arrays.stream(addresses).filter(a -> User.isStakingAddress(a)).collect(Collectors.toList());
         List<String> normalAddresses = Arrays.stream(addresses).filter(a -> !User.isStakingAddress(a)).collect(Collectors.toList());
 
+        Set<String> processedAddresses = null;
         try {
+            processedAddresses = new HashSet<>();
             // Nominal address
             if (!normalAddresses.isEmpty()) {
                 Result<List<AddressAsset>> addrAssetsResp = this.koiosFacade.getKoiosService().getAddressService().getAddressAssets(normalAddresses, null);
                 if (addrAssetsResp.isSuccessful()) {
                     for (AddressAsset asset : addrAssetsResp.getValue()) {
                         String addr = asset.getAddress();
+                        processedAddresses.add(addr);
                         Optional<String> bestHandle = asset.getAssetList().stream()
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
                                 .map(a -> hexToAscii(a.getAssetName()))
@@ -104,7 +106,6 @@ public abstract class AbstractCheckerTask {
                         } else {
                             LOG.debug("Found handle {} for account {}", bestHandle.get(), addr);
                             handlesMap.put(addr, ADA_HANDLE_PREFIX + bestHandle.get());
-                            handleFound = true;
                         }
                     }
                 } else {
@@ -119,6 +120,7 @@ public abstract class AbstractCheckerTask {
                 if (accountAssetsResp.isSuccessful()) {
                     for (AccountAssets asset : accountAssetsResp.getValue()) {
                         String stakeAddr = asset.getStakeAddress();
+                        processedAddresses.add(stakeAddr);
                         Optional<String> bestHandle = asset.getAssetList().stream()
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
                                 .map(a -> hexToAscii(a.getAssetName()))
@@ -129,7 +131,6 @@ public abstract class AbstractCheckerTask {
                         } else {
                             LOG.debug("Found handle {} for account {}", bestHandle.get(), stakeAddr);
                             handlesMap.put(stakeAddr, ADA_HANDLE_PREFIX + bestHandle.get());
-                            handleFound = true;
                         }
                     }
                 } else {
@@ -142,14 +143,16 @@ public abstract class AbstractCheckerTask {
                     stakingAddresses, e.toString());
         }
 
-        if (!handleFound) {
-            for (String addr : normalAddresses) {
-                handlesMap.put(addr, shortenAddr(addr));
-            }
+        // Handle the case of an address that has zero assets.
+        normalAddresses.removeAll(processedAddresses);
+        stakingAddresses.removeAll(processedAddresses);
 
-            for (String addr : stakingAddresses) {
-                handlesMap.put(addr, shortenAddr(addr));
-            }
+        for (String addr : normalAddresses) {
+            handlesMap.put(addr, shortenAddr(addr));
+        }
+
+        for (String addr : stakingAddresses) {
+            handlesMap.put(addr, shortenAddr(addr));
         }
 
         return handlesMap;
