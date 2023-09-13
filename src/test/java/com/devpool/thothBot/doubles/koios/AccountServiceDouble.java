@@ -62,7 +62,7 @@ public class AccountServiceDouble implements AccountService {
     public Result<List<AccountAddress>> getAccountAddresses(List<String> addressList, boolean firstOnly, boolean empty, Options options) throws ApiException {
         if (options != null) {
             // Check the offset
-            Optional<Option> optionOffset = options.getOptions().stream().filter(o -> o.getOptionType().equals(OptionType.OFFSET)).findFirst();
+            Optional<Option> optionOffset = options.getOptionList().stream().filter(o -> o.getOptionType().equals(OptionType.OFFSET)).findFirst();
         if (optionOffset.isPresent() && Integer.parseInt(optionOffset.get().getValue()) > 0)
             return Result.<List<AccountAddress>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
         }

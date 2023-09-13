@@ -19,14 +19,20 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
+    public Result<List<AssetTokenRegistry>> getAssetTokenRegistry(Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<AssetAddress>> getAssetsAddresses(String assetPolicy, String assetName, Options options) throws ApiException {
         return null;
     }
 
     @Override
-    public Result<List<AssetAddress>> getAssetsAddressList(String assetPolicy, String assetName, Options options) throws ApiException {
+    public Result<List<AssetAddress>> getAssetsAddressList(String s, String s1, Options options) throws ApiException {
         return null;
     }
+
 
     @Override
     public Result<List<AssetAddress>> getNFTAddress(String assetPolicy, String assetName, Options options) throws ApiException {
@@ -44,7 +50,7 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
-    public Result<List<PolicyAssetInfo>> getAssetPolicyInformation(String assetPolicy, Options options) throws ApiException {
+    public Result<List<PolicyAssetInfo>> getAssetPolicyInformation(String s, Options options) throws ApiException {
         return null;
     }
 

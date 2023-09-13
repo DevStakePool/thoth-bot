@@ -93,16 +93,18 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
 
             Set<String> allPoolIds = rewardsRes.getValue().stream().flatMap(ar -> ar.getRewards().stream()).map(r -> r.getPoolId()).collect(Collectors.toSet());
             allPoolIds.remove(null); // The rest API can return nulls on pool IDs
-            List<PoolInfo> poolInfoList = null;
+            List<PoolInfo> poolInfoList = Collections.emptyList();
 
-            try {
-                Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(List.copyOf(allPoolIds), options);
-                if (poolInfoRes.isSuccessful())
-                    poolInfoList = poolInfoRes.getValue();
-                else
-                    LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
-            } catch (ApiException e) {
-                LOG.warn("Cannot retrieve pool information: {}", e);
+            if (!allPoolIds.isEmpty()) {
+                try {
+                    Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(List.copyOf(allPoolIds), options);
+                    if (poolInfoRes.isSuccessful())
+                        poolInfoList = poolInfoRes.getValue();
+                    else
+                        LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
+                } catch (ApiException e) {
+                    LOG.warn("Cannot retrieve pool information: {}", e);
+                }
             }
 
             Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
