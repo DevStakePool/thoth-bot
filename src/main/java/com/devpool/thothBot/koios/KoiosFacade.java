@@ -4,10 +4,12 @@ import com.devpool.thothBot.monitoring.MetricsHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.factory.BackendFactory;
 import rest.koios.client.backend.factory.BackendService;
+import rest.koios.client.backend.factory.impl.BackendServiceImpl;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -24,12 +26,21 @@ public class KoiosFacade {
     private long apiCalls;
     private Instant lastSampleInstant;
 
+    @Value("${thoth.koios.endpoint:#{null}}")
+    private String koiosEndpoint;
+
     @Autowired
     private MetricsHelper metricsHelper;
 
     @PostConstruct
     public void post() throws ApiException {
-        this.koiosService = BackendFactory.getKoiosMainnetService();
+        if (this.koiosEndpoint == null) {
+            LOG.info("Using KOIOS Mainnet service");
+            this.koiosService = BackendFactory.getKoiosMainnetService();
+        } else {
+            LOG.info("Using KOIOS custom service endpoint {}", this.koiosEndpoint);
+            this.koiosService = new BackendServiceImpl(this.koiosEndpoint);
+        }
 
         // Create performance samples
         performanceSampler.schedule(new TimerTask() {
