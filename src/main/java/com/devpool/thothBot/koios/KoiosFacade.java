@@ -29,17 +29,23 @@ public class KoiosFacade {
     @Value("${thoth.koios.endpoint:#{null}}")
     private String koiosEndpoint;
 
+    @Value("${thoth.koios.api.token:#{null}}")
+    private String koiosApiToken;
+
     @Autowired
     private MetricsHelper metricsHelper;
 
     @PostConstruct
     public void post() throws ApiException {
+        if (this.koiosApiToken != null)
+            LOG.info("Using KOIOS API token from configuration");
+
         if (this.koiosEndpoint == null) {
             LOG.info("Using KOIOS Mainnet service");
-            this.koiosService = BackendFactory.getKoiosMainnetService();
+            this.koiosService = BackendFactory.getKoiosMainnetService(this.koiosApiToken);
         } else {
             LOG.info("Using KOIOS custom service endpoint {}", this.koiosEndpoint);
-            this.koiosService = new BackendServiceImpl(this.koiosEndpoint);
+            this.koiosService = new BackendServiceImpl(this.koiosEndpoint, this.koiosEndpoint);
         }
 
         // Create performance samples

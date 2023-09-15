@@ -115,8 +115,8 @@ public class AssetFacade implements Runnable {
 
             int flowControl = 0;
             for (User u : allUsers) {
-                if (flowControl % 4 == 0)
-                    Thread.sleep(2000); // Avoid reaching Koios limits
+                if (flowControl % 2 == 0)
+                    Thread.sleep(3000); // Avoid reaching Koios limits
                 this.usersExecutorService.submit(new UserScannerWorker(u, this.koiosFacade));
                 flowControl++;
             }
@@ -186,8 +186,8 @@ public class AssetFacade implements Runnable {
 
                 int flowControl = 0;
                 for (rest.koios.client.backend.api.common.Asset asset : assetsToProcess) {
-                    if (flowControl % 4 == 0)
-                        Thread.sleep(2000); //Avoid saturating the Koios limits
+                    if (flowControl % 2 == 0)
+                        Thread.sleep(3000); //Avoid saturating the Koios limits
                     AssetFacade.this.assetsExecutorService.submit(new AssetScannerWorker(asset));
                     flowControl++;
                 }
