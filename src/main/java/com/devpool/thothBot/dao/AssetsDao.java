@@ -39,16 +39,7 @@ public class AssetsDao {
     }
 
     public Optional<Asset> getAssetInformation(String policyId, String assetName) {
-        List<Asset> assets = this.namedParameterJdbcTemplate.query(
-                "select id, policy_id, asset_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name",
-                Map.of("policy_id", policyId,
-                        "asset_name", assetName),
-                (rs, numRow) -> new Asset(
-                        rs.getLong("id"),
-                        rs.getString("policy_id"),
-                        rs.getString("asset_name"),
-                        rs.getInt("decimals")
-                ));
+        List<Asset> assets = this.namedParameterJdbcTemplate.query("select id, policy_id, asset_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name", Map.of("policy_id", policyId, "asset_name", assetName), (rs, numRow) -> new Asset(rs.getLong("id"), rs.getString("policy_id"), rs.getString("asset_name"), rs.getInt("decimals")));
 
         if (assets.isEmpty()) return Optional.empty();
 
@@ -60,18 +51,16 @@ public class AssetsDao {
 
         // Check again for existance
         if (getAssetInformation(policyId, assetName).isEmpty()) {
-            namedParameterJdbcTemplate.update(
-                    "insert into assets (policy_id, asset_name, decimals) values (:policy_id, :asset_name, :decimals)",
-                    new MapSqlParameterSource(Map.of(
-                            "policy_id", policyId,
-                            "asset_name", assetName,
-                            "decimals", decimals)));
+            namedParameterJdbcTemplate.update("insert into assets (policy_id, asset_name, decimals) values (:policy_id, :asset_name, :decimals)", new MapSqlParameterSource(Map.of("policy_id", policyId, "asset_name", assetName, "decimals", decimals)));
 
             LOG.debug("Inserted new asset with policy_id {}, asset_name {}, and decimals {}", policyId, assetName, decimals);
         }
     }
 
     public long countAll() {
-        return this.jdbcTemplate.queryForObject("select count(id) as assets_counter from assets", Long.class);
+        Long outcome = this.jdbcTemplate.queryForObject("select count(id) as assets_counter from assets", Long.class);
+        if (outcome == null) return -1;
+
+        return outcome;
     }
 }

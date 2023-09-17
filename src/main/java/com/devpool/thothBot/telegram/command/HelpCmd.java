@@ -76,8 +76,8 @@ public class HelpCmd implements IBotCommand {
         try {
             String helpText = new BufferedReader(new InputStreamReader(
                     this.helpTextResource.getInputStream())).lines().collect(Collectors.joining("\n"));
-            for (Map.Entry<String, String> var : CONSTANTS.entrySet()) {
-                helpText = helpText.replace(var.getKey(), var.getValue());
+            for (Map.Entry<String, String> entry : CONSTANTS.entrySet()) {
+                helpText = helpText.replace(entry.getKey(), entry.getValue());
             }
 
             StringBuilder commandsHelp = new StringBuilder();

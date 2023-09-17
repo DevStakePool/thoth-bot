@@ -73,7 +73,7 @@ public class MetricsHelper {
         initMeterRegistry();
 
         List<Tag> tagsList = Arrays.asList(tags);
-        Counter cachedCounter = this.countersCache.get(tags.toString());
+        Counter cachedCounter = this.countersCache.get(Arrays.toString(tags));
         if (cachedCounter == null) {
             cachedCounter = this.meterRegistry.counter(METRICS_NAME_PREFIX + counterName, tagsList);
             this.countersCache.put(tagsList.toString(), cachedCounter);

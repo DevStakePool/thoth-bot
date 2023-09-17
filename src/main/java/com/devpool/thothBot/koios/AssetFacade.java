@@ -44,7 +44,7 @@ public class AssetFacade implements Runnable {
     private ExecutorService assetsExecutorService;
 
     @PostConstruct
-    public void post() throws Exception {
+    public void post() {
         LOG.info("Creating Asset Facade");
         this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
                 new CustomizableThreadFactory("MainAssetSyncWorker"));
@@ -122,6 +122,7 @@ public class AssetFacade implements Runnable {
             }
         } catch (Exception e) {
             LOG.error("Unknown exception while syncing the assets cache", e);
+            Thread.currentThread().interrupt();
         }
     }
 
@@ -195,6 +196,7 @@ public class AssetFacade implements Runnable {
                 LOG.warn("Issue while syncing the assets for user {}, due to {}", this.user.getAddress(), e.toString());
             } catch (Exception e) {
                 LOG.error("Unknown error in user worker for user {}", this.user.getAddress(), e);
+                Thread.currentThread().interrupt();
             }
         }
     }

@@ -55,8 +55,8 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
 
                 processUserBatch(usersBatch, currentEpochNumber);
             }
-        } catch (Throwable t) {
-            LOG.error("Caught throwable while checking wallet staking rewards", t);
+        } catch (Exception e) {
+            LOG.error("Caught throwable while checking wallet staking rewards", e);
         }
     }
 
@@ -103,7 +103,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                     else
                         LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
                 } catch (ApiException e) {
-                    LOG.warn("Cannot retrieve pool information: {}", e);
+                    LOG.warn("Cannot retrieve pool information: {}", e, e);
                 }
             }
 

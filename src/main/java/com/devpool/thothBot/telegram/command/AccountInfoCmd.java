@@ -1,7 +1,6 @@
 package com.devpool.thothBot.telegram.command;
 
 import com.devpool.thothBot.dao.data.User;
-import com.devpool.thothBot.oracle.CoinGeckoCardanoOracle;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
 import com.devpool.thothBot.scheduler.TransactionCheckerTask;
@@ -12,7 +11,6 @@ import com.pengrad.telegrambot.request.SendMessage;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.address.model.AddressInfo;
@@ -30,9 +28,6 @@ import java.util.stream.Collectors;
 public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AccountInfoCmd.class);
     public static final String CMD_PREFIX = "/info";
-
-    @Autowired
-    private CoinGeckoCardanoOracle oracle;
 
     @Override
     public boolean canTrigger(String username, String message) {
@@ -113,7 +108,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                                 } else
                                     LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
                             } catch (ApiException e) {
-                                LOG.warn("Cannot retrieve pool information: {}", e);
+                                LOG.warn("Cannot retrieve pool information: {}", e, e);
                             }
                         }
 
@@ -222,17 +217,15 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     private String getPoolName(PoolInfo poolInfo, String poolAddress) {
-        if (poolInfo != null) {
-            if (poolInfo.getMetaJson() != null && poolInfo.getMetaJson().getTicker() != null) {
-                StringBuilder sb = new StringBuilder();
-                sb.append("[");
-                sb.append(poolInfo.getMetaJson().getTicker());
-                sb.append("]");
-                if (poolInfo.getMetaJson().getName() != null)
-                    sb.append(" ").append(poolInfo.getMetaJson().getName());
+        if (poolInfo != null && poolInfo.getMetaJson() != null && poolInfo.getMetaJson().getTicker() != null) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("[");
+            sb.append(poolInfo.getMetaJson().getTicker());
+            sb.append("]");
+            if (poolInfo.getMetaJson().getName() != null)
+                sb.append(" ").append(poolInfo.getMetaJson().getName());
 
-                return sb.toString();
-            }
+            return sb.toString();
         }
 
         return "pool1..." + poolAddress.substring(poolAddress.length() - 8);

@@ -81,7 +81,7 @@ public class AdminNotifyAllCmd implements IBotCommand {
         List<Long> allUsersChatIds = userDao.getUsers().stream().map(User::getChatId).distinct().collect(Collectors.toList());
 
         bot.execute(new SendMessage(update.message().chat().id(),
-                String.format("Ok, notifying all %d user(s) with the following message:\n%s", allUsersChatIds.size(), notifyMsg)));
+                String.format("Ok, notifying all %d user(s) with the following message:%n%s", allUsersChatIds.size(), notifyMsg)));
 
         int counter = 0;
         for (Long chatId : allUsersChatIds) {
@@ -91,7 +91,8 @@ public class AdminNotifyAllCmd implements IBotCommand {
                 if (future.get())
                     counter++;
             } catch (InterruptedException | ExecutionException e) {
-                LOG.error("Unexpected error while getting the future value for chatId " + chatId + ": " + e);
+                LOG.error("Unexpected error while getting the future value for chatId {}: {}", chatId, e);
+                Thread.currentThread().interrupt();
             }
         }
 

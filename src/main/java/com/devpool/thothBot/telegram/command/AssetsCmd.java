@@ -40,6 +40,7 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     public AssetsCmd() {
+        // Empty
     }
 
     @Override

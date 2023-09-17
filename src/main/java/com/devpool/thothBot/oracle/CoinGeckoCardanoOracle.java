@@ -42,7 +42,7 @@ public class CoinGeckoCardanoOracle implements ICardanoOracle, Runnable {
     private ScheduledExecutorService scheduledExecutorService;
 
     @PostConstruct
-    public void post() throws Exception {
+    public void post() {
         this.latestCardanoPrice = new AtomicReference<>();
         this.latestCardanoPriceUpdateTimestamp = new AtomicLong(-1);
 
@@ -82,13 +82,16 @@ public class CoinGeckoCardanoOracle implements ICardanoOracle, Runnable {
                     .bodyToMono(Object.class);
             Object data = response.block();
             Map<String, Object> mapData = (Map<String, Object>) data;
+
+            if (mapData == null) return;
+
             Map<String, Object> priceMap = (Map<String, Object>) mapData.get("cardano");
             Double usdPrice = (Double) priceMap.get("usd");
             this.latestCardanoPrice.set(usdPrice);
             this.latestCardanoPriceUpdateTimestamp.set(System.currentTimeMillis());
             LOG.debug("Got new Cardano price {} USD", this.latestCardanoPrice.get());
         } catch (WebClientRequestException e) {
-            LOG.warn("CoinGecko REST call exception {}", e);
+            LOG.warn("CoinGecko REST call exception {}", e, e);
         } catch (Exception e) {
             LOG.error("Unexpected error while getting the cardano price form CoinGecko", e);
         }

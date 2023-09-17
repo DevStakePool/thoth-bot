@@ -85,7 +85,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
         if (msgParts.length != 3) {
             LOG.warn("Invalid message {}. Expected prefix + user_id + offset", msgText);
             bot.execute(new SendMessage(chatId,
-                    String.format("Invalid {} command", CMD_PREFIX)));
+                    String.format("Invalid %s command", CMD_PREFIX)));
             return;
         }
 

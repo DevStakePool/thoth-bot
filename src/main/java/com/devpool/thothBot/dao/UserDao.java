@@ -61,7 +61,9 @@ public class UserDao {
     }
 
     public long countUsers() {
-        return this.jdbcTemplate.queryForObject("select count(id) as users_counter from users", Long.class);
+        Long outcome = this.jdbcTemplate.queryForObject("select count(id) as users_counter from users", Long.class);
+        if (outcome == null) return -1;
+        return outcome;
     }
 
     public void addNewUser(User user) throws MaxRegistrationsExceededException {
@@ -96,8 +98,7 @@ public class UserDao {
                         "id", id)));
 
         if (updatedNumOfRows != 1) {
-            LOG.error("Unexpected updated number of rows for the user with id " + id +
-                    ", when updating the block height. This is a bug!");
+            LOG.error("Unexpected updated number of rows for the user with id {}, when updating the block height. This is a bug!", id);
         } else {
             LOG.debug("Updated block height to {} for user ID {}", blockHeight, id);
         }
@@ -111,8 +112,7 @@ public class UserDao {
                         "id", id)));
 
         if (updatedNumOfRows != 1) {
-            LOG.error("Unexpected updated number of rows for the user with id " + id +
-                    ", when updating the epoch number. This is a bug!");
+            LOG.error("Unexpected updated number of rows for the user with id {}, when updating the epoch number. This is a bug!", id);
         } else {
             LOG.debug("Updated user epoch number to {} for user ID {}", epochNumber, id);
         }

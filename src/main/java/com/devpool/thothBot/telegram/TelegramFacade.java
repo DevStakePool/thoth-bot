@@ -42,8 +42,6 @@ public class TelegramFacade {
 
     private final Timer performanceSampler = new Timer("Telegram Facade Sampler", true);
 
-    private Instant lastSampleInstant;
-
     private TelegramBot bot;
 
     @Value("${telegram.bot.token}")

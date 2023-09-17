@@ -141,11 +141,11 @@ public class AddressCmd implements IBotCommand {
             this.assetFacade.refreshAssetsForUserNow(addr);
 
         } catch (ApiException e) {
-            LOG.warn("Error in command address: " + e);
+            LOG.warn("Error in command address: {}", e, e);
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("The address seems to be invalid: %s", e.getMessage())));
         } catch (MaxRegistrationsExceededException e) {
-            LOG.warn("Max number of registrations exceeded for user " + update.message().chat().id() + ": " + e.getMessage());
+            LOG.warn("Max number of registrations exceeded for user {}: {}", update.message().chat().id(), e.getMessage());
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Max number of registrations exceeded. You can only register a maximum of %d wallets. Try to de-register some.",
                             e.getMaxRegistrationsAllowed())));

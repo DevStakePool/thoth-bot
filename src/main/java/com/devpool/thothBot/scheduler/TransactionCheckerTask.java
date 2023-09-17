@@ -27,7 +27,6 @@ import rest.koios.client.backend.factory.options.*;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.*;
@@ -63,8 +62,6 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
     private AssetFacade assetFacade;
 
     private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
-    private long usersCounter;
-    private long assetsCacheCounter;
 
     @Autowired
     private MetricsHelper metricsHelper;
@@ -82,13 +79,13 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
     private void sampleMetrics() {
         synchronized (this.performanceSampler) {
-            this.usersCounter = this.userDao.countUsers();
-            this.assetsCacheCounter = this.assetFacade.countTotalCachedAssets();
+            long usersCounter = this.userDao.countUsers();
+            long assetsCacheCounter = this.assetFacade.countTotalCachedAssets();
 
             // Update gauge metric
-            this.metricsHelper.hitGauge("total_users", this.usersCounter);
-            this.metricsHelper.hitGauge("cached_assets", this.assetsCacheCounter);
-            LOG.trace("Calculated new gauge sample for TX processing: {} user(s), {} cached asset(s)", this.usersCounter, this.assetsCacheCounter);
+            this.metricsHelper.hitGauge("total_users", usersCounter);
+            this.metricsHelper.hitGauge("cached_assets", assetsCacheCounter);
+            LOG.trace("Calculated new gauge sample for TX processing: {} user(s), {} cached asset(s)", usersCounter, assetsCacheCounter);
         }
     }
 
@@ -105,7 +102,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
             Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
             while (batchIterator.hasNext()) {
                 List<User> usersBatch = batchIterator.next();
-                List<User> stakeUsersBatch = usersBatch.stream().filter(u -> u.isStakeAddress()).collect(Collectors.toList());
+                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
                 List<User> addrUsersBatch = usersBatch.stream().filter(u -> !u.isStakeAddress()).collect(Collectors.toList());
 
                 LOG.debug("Processing users batch size {}, stake batch {}, address batch{}", usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
@@ -120,9 +117,10 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(offset)).build();
                     offset += DEFAULT_PAGINATION_SIZE;
 
-                    accountAddrResult = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()), false, true, options);
+                    accountAddrResult = this.koiosFacade.getKoiosService().getAccountService().getAccountAddresses(stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, true, options);
                     if (!accountAddrResult.isSuccessful()) {
-                        LOG.error("The call to get the account addresses for stake addresses {} was not successful due to {} ({})", stakeUsersBatch.stream().map(u -> u.getAddress()).collect(Collectors.toList()), accountAddrResult.getResponse(), accountAddrResult.getCode());
+                        LOG.error("The call to get the account addresses for stake addresses {} was not successful due to {} ({})",
+                                stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), accountAddrResult.getResponse(), accountAddrResult.getCode());
                         // Set the whole batch as failed
                         stakeUsersBatch.forEach(u -> u.setAccountAddresses(null));
                     } else {
@@ -137,8 +135,8 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                 checkTransactionsForUsers(usersBatch);
             }
-        } catch (Throwable t) {
-            LOG.error("Caught throwable while checking wallet transaction", t);
+        } catch (Exception e) {
+            LOG.error("Caught throwable while checking wallet transaction", e);
         }
     }
 
@@ -191,10 +189,10 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 // No need to do multi queries here unless you got 1000+ transactions since the last check
                 Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(0)).build();
 
-                Result<List<TxInfo>> txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.toList()), options);
+                Result<List<TxInfo>> txInfoResult = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(allTx.stream().map(TxHash::getTxHash).collect(Collectors.toList()), options);
 
                 if (!txInfoResult.isSuccessful()) {
-                    LOG.warn("The call to get the transaction information {} for user {} was not successful due to {} ({})", allTx.stream().map(tx -> tx.getTxHash()).collect(Collectors.joining(",")), u, txInfoResult.getResponse(), txInfoResult.getCode());
+                    LOG.warn("The call to get the transaction information {} for user {} was not successful due to {} ({})", allTx.stream().map(TxHash::getTxHash).collect(Collectors.joining(",")), u, txInfoResult.getResponse(), txInfoResult.getCode());
                     continue;
                 }
 
@@ -272,7 +270,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                                 if (poolInfoRes.isSuccessful()) poolInfoList = poolInfoRes.getValue();
                                 else LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
                             } catch (ApiException e) {
-                                LOG.warn("Cannot retrieve pool information: {}", e);
+                                LOG.warn("Cannot retrieve pool information: {}", e, e);
                             }
 
                             delegateToPoolName = getPoolName(poolInfoList, delegateToPoolId);
@@ -302,12 +300,11 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                         JsonNode jsonMetadata = txInfo.getMetadata();
                         // See if there's a "msg"
                         JsonNode msgNode = jsonMetadata.findValue("msg");
-                        if (msgNode != null) {
-                            if (msgNode.isArray()) {
-                                ArrayNode msgArray = (ArrayNode) msgNode;
-                                if (!msgArray.isEmpty())
-                                    metadataMessage = msgArray.get(0).asText();
-                            }
+                        if (msgNode != null && msgNode.isArray()) {
+                            ArrayNode msgArray = (ArrayNode) msgNode;
+                            if (!msgArray.isEmpty())
+                                metadataMessage = msgArray.get(0).asText();
+
                         }
                     }
 
@@ -368,8 +365,8 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                 // Update the user with the new block height plus 1 to avoid picking the last TX
                 this.userDao.updateUserBlockHeight(u.getId(), maxBlockHeight.get().getBlockHeight() + 1);
-            } catch (Throwable t) {
-                LOG.error("Cannot process account {} due to exception {}", u.getAddress(), t, t);
+            } catch (Exception e) {
+                LOG.error("Cannot process account {} due to exception {}", u.getAddress(), e, e);
             }
         }
     }
