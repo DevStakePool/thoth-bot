@@ -7,6 +7,7 @@ import com.devpool.thothBot.dao.data.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAssets;
@@ -43,19 +44,26 @@ public class AssetFacade implements Runnable {
     private ExecutorService usersExecutorService;
     private ExecutorService assetsExecutorService;
 
+    @Value("${thoth.asset.fetching.enabled:true}")
+    private boolean isFetchingEnabled;
+
+
     @PostConstruct
     public void post() {
         LOG.info("Creating Asset Facade");
-        this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
-                new CustomizableThreadFactory("MainAssetSyncWorker"));
+        if (this.isFetchingEnabled) {
+            LOG.info("Starting Asset Facade Fetching echanism");
+            this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
+                    new CustomizableThreadFactory("MainAssetSyncWorker"));
 
-        this.scheduledExecutorService.scheduleWithFixedDelay(this, 1, 30, TimeUnit.MINUTES);
+            this.scheduledExecutorService.scheduleWithFixedDelay(this, 1, 30, TimeUnit.MINUTES);
 
-        this.usersExecutorService = Executors.newFixedThreadPool(5,
-                new CustomizableThreadFactory("UserScanSyncWorker"));
+            this.usersExecutorService = Executors.newFixedThreadPool(5,
+                    new CustomizableThreadFactory("UserScanSyncWorker"));
 
-        this.assetsExecutorService = Executors.newFixedThreadPool(5,
-                new CustomizableThreadFactory("AssetScanSyncWorker"));
+            this.assetsExecutorService = Executors.newFixedThreadPool(5,
+                    new CustomizableThreadFactory("AssetScanSyncWorker"));
+        }
     }
 
     @PreDestroy
