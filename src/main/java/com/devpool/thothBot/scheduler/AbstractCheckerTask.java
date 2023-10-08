@@ -166,7 +166,9 @@ public abstract class AbstractCheckerTask {
             output.append((char) Integer.parseInt(str, 16));
         }
 
-        return output.toString();
-    }
+        String assetNameOg = output.toString();
 
+        // Let's remove non-printable characters
+        return assetNameOg.replaceAll("\\P{Print}", "?");
+    }
 }
