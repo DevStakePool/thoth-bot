@@ -12,6 +12,7 @@ import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
+import java.nio.charset.Charset;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -166,9 +167,10 @@ public abstract class AbstractCheckerTask {
             output.append((char) Integer.parseInt(str, 16));
         }
 
-        String assetNameOg = output.toString();
-
-        // Let's remove non-printable characters
-        return assetNameOg.replaceAll("\\P{Print}", "?");
+        if (Charset.forName("US-ASCII").newEncoder().canEncode(output.toString())) {
+            return output.toString();
+        } else {
+            return "..." + hexStr.substring(Math.abs(hexStr.length() - 10));
+        }
     }
 }
