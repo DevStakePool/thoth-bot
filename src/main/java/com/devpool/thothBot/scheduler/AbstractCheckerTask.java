@@ -13,6 +13,7 @@ import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -167,7 +168,7 @@ public abstract class AbstractCheckerTask {
             output.append((char) Integer.parseInt(str, 16));
         }
 
-        if (Charset.forName("US-ASCII").newEncoder().canEncode(output.toString())) {
+        if (StandardCharsets.US_ASCII.newEncoder().canEncode(output.toString())) {
             return output.toString();
         } else {
             return "..." + hexStr.substring(Math.abs(hexStr.length() - 10));
