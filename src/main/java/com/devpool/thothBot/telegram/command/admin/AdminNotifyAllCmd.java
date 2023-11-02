@@ -91,7 +91,7 @@ public class AdminNotifyAllCmd implements IBotCommand {
                 if (future.get())
                     counter++;
             } catch (InterruptedException | ExecutionException e) {
-                LOG.error("Unexpected error while getting the future value for chatId {}: {}", chatId, e);
+                LOG.error("Unexpected error while getting the future value for chatId {}: {}", chatId, e.toString());
                 Thread.currentThread().interrupt();
             }
         }
