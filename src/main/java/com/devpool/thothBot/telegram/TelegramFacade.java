@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -21,11 +22,16 @@ import javax.annotation.PreDestroy;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @Component
 public class TelegramFacade {
     private static final Logger LOG = LoggerFactory.getLogger(TelegramFacade.class);
+    private static final int COMMAND_MAX_THREADS = 4;
 
     @Autowired
     private UserDao userDao;
@@ -41,6 +47,8 @@ public class TelegramFacade {
 
     private final Timer performanceSampler = new Timer("Telegram Facade Sampler", true);
 
+    private final ExecutorService commandExecutor = Executors.newFixedThreadPool(COMMAND_MAX_THREADS,
+            new CustomizableThreadFactory("Telegram-Cmd-Thread"));
     private TelegramBot bot;
 
     @Value("${telegram.bot.token}")
@@ -131,7 +139,13 @@ public class TelegramFacade {
             this.totalCommands++;
         }
 
-        command.execute(update, this.bot);
+        try {
+            TelegramMessageCallable commandRunnable = new TelegramMessageCallable(command, update, this.bot);
+            Future<Boolean> commandFuture = this.commandExecutor.submit(commandRunnable);
+            Boolean outcome = commandFuture.get(20, TimeUnit.SECONDS);
+        } catch (Exception e) {
+            LOG.error("Unknown exception while processing the command {}", payload, e);
+        }
     }
 
     @PreDestroy
@@ -139,6 +153,7 @@ public class TelegramFacade {
         LOG.info("Shutting down...");
         this.bot.shutdown();
         this.performanceSampler.cancel();
+        this.commandExecutor.shutdown();
     }
 
     public void sendMessageTo(Long chatId, String message) {
