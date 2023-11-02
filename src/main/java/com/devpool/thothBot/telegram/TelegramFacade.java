@@ -2,8 +2,8 @@ package com.devpool.thothBot.telegram;
 
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.monitoring.MetricsHelper;
-import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.devpool.thothBot.telegram.command.HelpCmd;
+import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.Update;
@@ -18,7 +18,6 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.time.Instant;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;

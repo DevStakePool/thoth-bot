@@ -24,6 +24,10 @@ import java.util.stream.Collectors;
 @Repository
 public class UserDao {
     private static final Logger LOG = LoggerFactory.getLogger(UserDao.class);
+    private static final String FIELD_CHAT_ID = "chat_id";
+    private static final String FIELD_STAKE_ADDR = "stake_addr";
+    private static final String FIELD_LAST_BLOCK_HEIGHT = "last_block_height";
+    private static final String FIELD_LAST_EPOCH_NUMBER = "last_epoch_number";
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
@@ -46,18 +50,15 @@ public class UserDao {
         Map<Long, User> users = new HashedMap<>();
         while (rs.next()) {
             Long userId = rs.getLong("id");
-            User u = users.get(userId);
-            if (u == null) {
-                u = new User();
+                User u = new User();
                 u.setId(userId);
-                u.setChatId(rs.getLong("chat_id"));
-                u.setAddress(rs.getString("stake_addr"));
-                u.setLastBlockHeight(rs.getInt("last_block_height"));
-                u.setLastEpochNumber(rs.getInt("last_epoch_number"));
-                users.put(userId, u);
-            }
+                u.setChatId(rs.getLong(FIELD_CHAT_ID));
+                u.setAddress(rs.getString(FIELD_STAKE_ADDR));
+                u.setLastBlockHeight(rs.getInt(FIELD_LAST_BLOCK_HEIGHT));
+                u.setLastEpochNumber(rs.getInt(FIELD_LAST_EPOCH_NUMBER));
+        users.putIfAbsent(userId, u);
         }
-        return users.values().stream().collect(Collectors.toCollection(ArrayList::new));
+        return new ArrayList<>(users.values());
     }
 
     public long countUsers() {
@@ -69,7 +70,7 @@ public class UserDao {
     public void addNewUser(User user) throws MaxRegistrationsExceededException {
         // First, check if the user exists, and it has more than this.maxUserRegistrations address already registered
         Long counter = this.namedParameterJdbcTemplate.queryForObject("select count(u.id) as registrations from users as u where chat_id = :chat_id",
-                new MapSqlParameterSource(Map.of("chat_id", user.getChatId())), Long.class);
+                new MapSqlParameterSource(Map.of(FIELD_CHAT_ID, user.getChatId())), Long.class);
 
         if (counter >= this.maxUserRegistrations) {
             MaxRegistrationsExceededException exception = new MaxRegistrationsExceededException(
@@ -82,10 +83,10 @@ public class UserDao {
         namedParameterJdbcTemplate.update(
                 "insert into users (chat_id, stake_addr, last_block_height, last_epoch_number) values (:chat_id, :stake_addr, :last_block_height, :last_epoch_number)",
                 new MapSqlParameterSource(Map.of(
-                        "chat_id", user.getChatId(),
-                        "stake_addr", user.getAddress(),
-                        "last_block_height", user.getLastBlockHeight(),
-                        "last_epoch_number", user.getLastEpochNumber())), keyHolder, new String[]{"id"});
+                        FIELD_CHAT_ID, user.getChatId(),
+                        FIELD_STAKE_ADDR, user.getAddress(),
+                        FIELD_LAST_BLOCK_HEIGHT, user.getLastBlockHeight(),
+                        FIELD_LAST_EPOCH_NUMBER, user.getLastEpochNumber())), keyHolder, new String[]{"id"});
 
         LOG.debug("Inserted new user with key {}: {}", keyHolder.getKeyAs(Long.class), user);
     }
@@ -94,7 +95,7 @@ public class UserDao {
         int updatedNumOfRows = namedParameterJdbcTemplate.update(
                 "update users set last_block_height = :last_block_height where id = :id",
                 new MapSqlParameterSource(Map.of(
-                        "last_block_height", blockHeight,
+                        FIELD_LAST_BLOCK_HEIGHT, blockHeight,
                         "id", id)));
 
         if (updatedNumOfRows != 1) {
@@ -108,7 +109,7 @@ public class UserDao {
         int updatedNumOfRows = namedParameterJdbcTemplate.update(
                 "update users set last_epoch_number = :last_epoch_number where id = :id",
                 new MapSqlParameterSource(Map.of(
-                        "last_epoch_number", epochNumber,
+                        FIELD_LAST_EPOCH_NUMBER, epochNumber,
                         "id", id)));
 
         if (updatedNumOfRows != 1) {
@@ -121,8 +122,8 @@ public class UserDao {
     public boolean removeAddress(Long chatId, String addr) {
         int removedRows = this.namedParameterJdbcTemplate.update(
                 "delete from users where chat_id = :chat_id and stake_addr = :stake_addr;",
-                Map.of("chat_id", chatId,
-                        "stake_addr", addr));
+                Map.of(FIELD_CHAT_ID, chatId,
+                        FIELD_STAKE_ADDR, addr));
 
         if (removedRows > 1)
             LOG.error("Unexpected deletion of address {} for chat-id {}. The expected removed rows was 1 but got {}",
@@ -149,10 +150,10 @@ public class UserDao {
 
         User u = new User();
         u.setId(rs.getLong("id"));
-        u.setChatId(rs.getLong("chat_id"));
-        u.setAddress(rs.getString("stake_addr"));
-        u.setLastBlockHeight(rs.getInt("last_block_height"));
-        u.setLastEpochNumber(rs.getInt("last_epoch_number"));
+        u.setChatId(rs.getLong(FIELD_CHAT_ID));
+        u.setAddress(rs.getString(FIELD_STAKE_ADDR));
+        u.setLastBlockHeight(rs.getInt(FIELD_LAST_BLOCK_HEIGHT));
+        u.setLastEpochNumber(rs.getInt(FIELD_LAST_EPOCH_NUMBER));
 
         return u;
     }
