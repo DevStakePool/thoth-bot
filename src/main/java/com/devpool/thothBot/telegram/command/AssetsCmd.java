@@ -61,6 +61,11 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
         bot.execute(new SendMessage(chatId, "Please select an account").replyMarkup(inlineKeyboard));
     }
 
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 4;
+    }
+
     private InlineKeyboardButton[][] createInlineKeyboardButtons(Map<String, Long> addresses) {
         Map<String, String> handles = getAdaHandleForAccount(addresses.keySet().toArray(new String[0]));
         int inputSize = addresses.size();

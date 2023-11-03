@@ -47,7 +47,7 @@ public class TelegramFacade {
     private final ExecutorService commandRunnerExecutor = Executors.newFixedThreadPool(COMMAND_MAX_THREADS,
             new CustomizableThreadFactory("Telegram-Cmd-Thread"));
 
-    private final ScheduledExecutorService commandCompletionExecutor = Executors.newScheduledThreadPool(4,
+    private final ScheduledExecutorService commandCompletionExecutor = Executors.newScheduledThreadPool(COMMAND_MAX_THREADS,
             new CustomizableThreadFactory("Telegram-Cmd-Completion-Thread"));
     private TelegramBot bot;
 
@@ -145,7 +145,8 @@ public class TelegramFacade {
         TelegramMessageCallable commandCallable = new TelegramMessageCallable(id, command, update, this.bot, from, payload);
         Future<Boolean> commandFuture = this.commandRunnerExecutor.submit(commandCallable);
 
-        // check after 6 secs if the command is completed. If not, we kill it. This way we don't block other commands in the pipeline
+        // check after XYZ secs if the command is completed. If not, we kill it.
+        // This way we don't block other commands in the pipeline
         this.commandCompletionExecutor.schedule(() -> {
             try {
                 Boolean outcome = commandFuture.get(100, TimeUnit.MILLISECONDS);
@@ -165,7 +166,7 @@ public class TelegramFacade {
                 if (Thread.interrupted())
                     Thread.currentThread().interrupt();
             }
-        }, 6, TimeUnit.SECONDS);
+        }, command.getCommandExecutionTimeoutSeconds(), TimeUnit.SECONDS);
     }
 
     @PreDestroy

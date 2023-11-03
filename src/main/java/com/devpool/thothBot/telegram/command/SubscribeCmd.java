@@ -43,4 +43,9 @@ public class SubscribeCmd implements IBotCommand {
         bot.execute(new SendMessage(update.message().chat().id(), String.format("Hi %s, please send your address (stake1... or addr1...)", name))
                 .replyMarkup(new ForceReply(true)));
     }
+
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 3;
+    }
 }

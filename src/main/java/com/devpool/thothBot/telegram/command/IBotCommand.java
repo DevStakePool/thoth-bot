@@ -42,4 +42,10 @@ public interface IBotCommand {
      * @param bot    The Telegram bot
      */
     void execute(Update update, TelegramBot bot);
+
+    /**
+     * The execution timeout after which the command will be killed if not completed.
+     * @return the timeout in seconds
+     */
+    long getCommandExecutionTimeoutSeconds();
 }

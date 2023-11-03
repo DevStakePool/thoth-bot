@@ -91,6 +91,11 @@ public class AddressCmd implements IBotCommand {
         }
     }
 
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 4;
+    }
+
     private void unsubscribeNewAddress(Update update, TelegramBot bot) {
         String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
         String addr = update.message().text().trim();

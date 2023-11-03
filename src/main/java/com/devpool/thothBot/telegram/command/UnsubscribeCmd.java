@@ -35,6 +35,11 @@ public class UnsubscribeCmd implements IBotCommand {
     }
 
     @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 4;
+    }
+
+    @Override
     public boolean showHelp(String username) {
         return true;
     }

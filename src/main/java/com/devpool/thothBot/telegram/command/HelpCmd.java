@@ -71,6 +71,11 @@ public class HelpCmd implements IBotCommand {
             LOG.error("Error while sending the HELP text {}={}", resp.errorCode(), resp.description());
     }
 
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 3;
+    }
+
     private String getHelpText(String username) {
         StringBuilder sb = new StringBuilder();
         try {

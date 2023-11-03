@@ -216,6 +216,11 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
         }
     }
 
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 10L;
+    }
+
     private String getPoolName(PoolInfo poolInfo, String poolAddress) {
         if (poolInfo != null && poolInfo.getMetaJson() != null && poolInfo.getMetaJson().getTicker() != null) {
             StringBuilder sb = new StringBuilder();
