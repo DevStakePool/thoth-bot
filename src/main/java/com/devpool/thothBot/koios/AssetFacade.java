@@ -51,18 +51,19 @@ public class AssetFacade implements Runnable {
     @PostConstruct
     public void post() {
         LOG.info("Creating Asset Facade");
+        this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
+                new CustomizableThreadFactory("MainAssetSyncWorker"));
+
+        this.usersExecutorService = Executors.newFixedThreadPool(5,
+                new CustomizableThreadFactory("UserScanSyncWorker"));
+
+        this.assetsExecutorService = Executors.newFixedThreadPool(5,
+                new CustomizableThreadFactory("AssetScanSyncWorker"));
+
+
         if (this.isFetchingEnabled) {
-            LOG.info("Starting Asset Facade Fetching echanism");
-            this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
-                    new CustomizableThreadFactory("MainAssetSyncWorker"));
-
+            LOG.info("Starting Asset Facade Fetching mechanism");
             this.scheduledExecutorService.scheduleWithFixedDelay(this, 1, 30, TimeUnit.MINUTES);
-
-            this.usersExecutorService = Executors.newFixedThreadPool(5,
-                    new CustomizableThreadFactory("UserScanSyncWorker"));
-
-            this.assetsExecutorService = Executors.newFixedThreadPool(5,
-                    new CustomizableThreadFactory("AssetScanSyncWorker"));
         }
     }
 
