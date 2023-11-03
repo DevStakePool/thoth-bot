@@ -1,6 +1,5 @@
 package com.devpool.thothBot.telegram;
 
-import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.command.HelpCmd;
 import com.devpool.thothBot.telegram.command.IBotCommand;
@@ -22,19 +21,13 @@ import javax.annotation.PreDestroy;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 @Component
 public class TelegramFacade {
     private static final Logger LOG = LoggerFactory.getLogger(TelegramFacade.class);
-    private static final int COMMAND_MAX_THREADS = 4;
-
-    @Autowired
-    private UserDao userDao;
+    private static final int COMMAND_MAX_THREADS = 50;
 
     @Autowired
     private List<IBotCommand> commands;
@@ -45,10 +38,17 @@ public class TelegramFacade {
     private long totalMessages;
     private long totalCommands;
 
+    private long errorCommands;
+
+    private long timeoutedCommands;
+
     private final Timer performanceSampler = new Timer("Telegram Facade Sampler", true);
 
-    private final ExecutorService commandExecutor = Executors.newFixedThreadPool(COMMAND_MAX_THREADS,
+    private final ExecutorService commandRunnerExecutor = Executors.newFixedThreadPool(COMMAND_MAX_THREADS,
             new CustomizableThreadFactory("Telegram-Cmd-Thread"));
+
+    private final ScheduledExecutorService commandCompletionExecutor = Executors.newScheduledThreadPool(4,
+            new CustomizableThreadFactory("Telegram-Cmd-Completion-Thread"));
     private TelegramBot bot;
 
     @Value("${telegram.bot.token}")
@@ -82,8 +82,11 @@ public class TelegramFacade {
             // Update gauge metric
             this.metricsHelper.hitGauge("telegram_tot_messages", this.totalMessages);
             this.metricsHelper.hitGauge("telegram_tot_commands", this.totalCommands);
-            LOG.trace("Calculated new gauge sample for telegram facade {} msgs, {} cmds",
-                    this.totalMessages, this.totalCommands);
+            this.metricsHelper.hitGauge("telegram_error_commands", this.errorCommands);
+            this.metricsHelper.hitGauge("telegram_timeouted_commands", this.timeoutedCommands);
+
+            LOG.trace("Calculated new gauge sample for telegram facade {} msgs, {} cmds, {} errors, {} timeouted",
+                    this.totalMessages, this.totalCommands, this.errorCommands, this.timeoutedCommands);
         }
     }
 
@@ -139,13 +142,30 @@ public class TelegramFacade {
             this.totalCommands++;
         }
 
-        try {
-            TelegramMessageCallable commandRunnable = new TelegramMessageCallable(command, update, this.bot);
-            Future<Boolean> commandFuture = this.commandExecutor.submit(commandRunnable);
-            Boolean outcome = commandFuture.get(20, TimeUnit.SECONDS);
-        } catch (Exception e) {
-            LOG.error("Unknown exception while processing the command {}", payload, e);
-        }
+        TelegramMessageCallable commandCallable = new TelegramMessageCallable(id, command, update, this.bot, from, payload);
+        Future<Boolean> commandFuture = this.commandRunnerExecutor.submit(commandCallable);
+
+        // check after 6 secs if the command is completed. If not, we kill it. This way we don't block other commands in the pipeline
+        this.commandCompletionExecutor.schedule(() -> {
+            try {
+                Boolean outcome = commandFuture.get(100, TimeUnit.MILLISECONDS);
+                if (Boolean.FALSE.equals(outcome))
+                    synchronized (this.performanceSampler) {
+                        this.errorCommands++;
+                    }
+            } catch (TimeoutException e) {
+                synchronized (this.performanceSampler) {
+                    this.timeoutedCommands++;
+                }
+                LOG.warn("The command execution {}, from {}, timed out", payload, from);
+                bot.execute(new SendMessage(id,
+                        "Sorry, your command timed out. Please retry later"));
+            } catch (ExecutionException | InterruptedException e) {
+                LOG.error("Exception while waiting for command {} to complete its execution", payload, e);
+                if (Thread.interrupted())
+                    Thread.currentThread().interrupt();
+            }
+        }, 6, TimeUnit.SECONDS);
     }
 
     @PreDestroy
@@ -153,7 +173,8 @@ public class TelegramFacade {
         LOG.info("Shutting down...");
         this.bot.shutdown();
         this.performanceSampler.cancel();
-        this.commandExecutor.shutdown();
+        this.commandRunnerExecutor.shutdown();
+        this.commandCompletionExecutor.shutdown();
     }
 
     public void sendMessageTo(Long chatId, String message) {
@@ -166,5 +187,15 @@ public class TelegramFacade {
                     chatId, outcome.isOk(), outcome.errorCode(), outcome.description());
         else
             LOG.error("Can't send message due to code={} description={} message={}", outcome.errorCode(), outcome.description(), message);
+    }
+
+    // Needed for testing only
+    public void setCommands(List<IBotCommand> commands) {
+        this.commands = commands;
+    }
+
+    // Needed for testing only
+    public void setBot(TelegramBot bot) {
+        this.bot = bot;
     }
 }
