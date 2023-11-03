@@ -12,6 +12,7 @@ import java.nio.file.Files;
 public class TelegramUtils {
 
     private static final String HELP_CMD_JSON = "test-data/json/help-cmd.json";
+    private static final String ANY_CMD_JSON = "test-data/json/any-cmd.json";
     private static final String INFO_CMD_JSON = "test-data/json/info-cmd.json";
     private static final String SUBSCRIBE_CMD_JSON = "test-data/json/subscribe-cmd.json";
     private static final String UNSUBSCRIBE_CMD_JSON = "test-data/json/unsubscribe-cmd.json";
@@ -28,6 +29,17 @@ public class TelegramUtils {
                     jsonContent = jsonContent.replace("$USERNAME", username);
                     if (simulateStartCommand)
                         jsonContent = jsonContent.replace("/help", "/start");
+
+                    return jsonContent;
+                });
+        return resp.updates().get(0);
+    }
+
+    public static Update buildAnyCommandUpdate(String commandTag, String username) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(ANY_CMD_JSON,
+                jsonContent -> {
+                    jsonContent = jsonContent.replace("$USERNAME", username);
+                    jsonContent = jsonContent.replace("$COMMAND",commandTag);
 
                     return jsonContent;
                 });
