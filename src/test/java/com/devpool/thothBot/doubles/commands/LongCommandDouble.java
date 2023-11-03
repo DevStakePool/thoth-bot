@@ -37,10 +37,10 @@ public class LongCommandDouble implements IBotCommand {
     @Override
     public void execute(Update update, TelegramBot bot) {
         // Nothing to do for now
-        LOG.info("Executing long command.. it will take 40 secs to complete");
+        LOG.info("Executing long command.. it will take 10 secs to complete, but timeout is set to {} secs", getCommandExecutionTimeoutSeconds());
 
         try {
-            Thread.sleep(1000 * 40);
+            Thread.sleep(1000 * 10);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -48,5 +48,10 @@ public class LongCommandDouble implements IBotCommand {
         bot.execute(new SendMessage(update.message().chat().id(), "Hello from Long")
                 .disableWebPagePreview(true)
                 .parseMode(ParseMode.HTML));
+    }
+
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 3;
     }
 }

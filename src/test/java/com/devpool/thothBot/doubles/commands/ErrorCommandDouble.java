@@ -40,4 +40,9 @@ public class ErrorCommandDouble implements IBotCommand {
         LOG.info("Executing error command, and throwing an exception");
         throw new RuntimeException("Dummy error exception");
     }
+
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 1;
+    }
 }

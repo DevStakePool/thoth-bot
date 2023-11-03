@@ -43,4 +43,9 @@ public class DummyCommandDouble implements IBotCommand {
                 .disableWebPagePreview(true)
                 .parseMode(ParseMode.HTML));
     }
+
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 1;
+    }
 }

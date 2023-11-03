@@ -100,6 +100,11 @@ public class AdminNotifyAllCmd implements IBotCommand {
                 String.format("All Done! Broadcast message(s) %d/%d", counter, allUsersChatIds.size())));
     }
 
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 60;
+    }
+
     public class AsyncMessageSender implements Callable<Boolean> {
         private final Logger LOG = LoggerFactory.getLogger(AsyncMessageSender.class);
 

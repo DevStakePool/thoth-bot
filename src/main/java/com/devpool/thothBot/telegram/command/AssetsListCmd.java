@@ -214,4 +214,9 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             bot.execute(new SendMessage(chatId, String.format("Unknown error when getting account for user-id %s. %s", userId, e)));
         }
     }
+
+    @Override
+    public long getCommandExecutionTimeoutSeconds() {
+        return 4;
+    }
 }
