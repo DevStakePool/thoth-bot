@@ -31,7 +31,7 @@ public class UnsubscribeCmd implements IBotCommand {
         this.addressCmd.getOperationsQueue().get(AddressCmd.CmdOperation.UNSUBSCRIBE).add(update.message().chat().id());
 
         bot.execute(new SendMessage(update.message().chat().id(), String.format("Hi %s, please specify your address (stake1... or addr1...)", name))
-                .replyMarkup(new ForceReply(true)));
+                .replyMarkup(new ForceReply(false)));
     }
 
     @Override
