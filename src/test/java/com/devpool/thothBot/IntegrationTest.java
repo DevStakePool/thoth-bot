@@ -295,6 +295,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("MELD 10,000.00"));
                     Assertions.assertTrue(msg.contains("$alessio.dev"));
                     Assertions.assertTrue(msg.contains("DEV Pool patron rewards for epoch 377")); // Metadata on message - issue #23
+                    Assertions.assertTrue(msg.contains("[SundaeSwap] Valid "));
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);

@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
@@ -35,11 +36,25 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 @Component
+@ConfigurationProperties("thoth.dapps")
 public class TransactionCheckerTask extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTask.class);
     private static final String DELEGATION_CERTIFICATE = "delegation";
     @Value("${thoth.test.allow-jumbo-message}")
     private Boolean allowJumboMessage;
+
+    private Map<String, String> contracts;
+
+    @Autowired
+    private TelegramFacade telegramFacade;
+
+    @Autowired
+    private AssetFacade assetFacade;
+
+    private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
+
+    @Autowired
+    private MetricsHelper metricsHelper;
 
     public enum TxType {
         TX_RECEIVED("Received"), TX_SENT("Sent"), TX_INTERNAL("Internal");
@@ -54,17 +69,6 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
             this.humanReadableText = humanReadableText;
         }
     }
-
-    @Autowired
-    private TelegramFacade telegramFacade;
-
-    @Autowired
-    private AssetFacade assetFacade;
-
-    private final Timer performanceSampler = new Timer("Transaction Checker Sampler", true);
-
-    @Autowired
-    private MetricsHelper metricsHelper;
 
     @PostConstruct
     public void post() {
@@ -329,7 +333,15 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                         messageBuilder.append(EmojiParser.parseToUnicode("\n:page_with_curl: Plutus Contracts:"));
 
                         for (TxPlutusContract plutusContract : txInfo.getPlutusContracts()) {
-                            messageBuilder.append(EmojiParser.parseToUnicode("\n\t:black_small_square:")).append(plutusContract.getValidContract() ? "Valid" : "Invalid").append(" with size ").append(plutusContract.getSize()).append(" byte(s) ");
+                            messageBuilder.append(EmojiParser.parseToUnicode("\n\t:black_small_square:"));
+
+                            if (plutusContract.getAddress() != null && this.contracts.containsKey(plutusContract.getAddress())) {
+                                messageBuilder.append(" [").append(this.contracts.get(plutusContract.getAddress())).append("] ");
+                            }
+
+                            messageBuilder.append(Boolean.TRUE.equals(plutusContract.getValidContract()) ? "Valid" : "Invalid")
+                                    .append(" with size ").append(plutusContract.getSize()).append(" byte(s) ");
+
                         }
                     }
 
@@ -378,5 +390,13 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
         int fullChunks = (size - 1) / length;
         return IntStream.range(0, fullChunks + 1).mapToObj(n -> source.subList(n * length, n == fullChunks ? size : (n + 1) * length));
+    }
+
+    public Map<String, String> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(Map<String, String> contracts) {
+        this.contracts = contracts;
     }
 }

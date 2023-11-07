@@ -1,0 +1,51 @@
+app:
+  disable-default-exception-handling: false
+error:
+  whitelabel:
+    enabled: true
+logging:
+  file:
+    max-history: 10
+    max-size: 10MB
+    name: target/thoth-bot.log
+  level:
+    com:
+      devpool: TRACE
+    org:
+      springframework: INFO
+    root: 'INFO '
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+server:
+  error:
+    include-stacktrace: always
+spring:
+  application:
+    name: thoth-bot
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/thoth_dev
+    username: postgres
+telegram:
+  bot:
+    token: CHANGE_ME
+thoth:
+  admin:
+    username: CHANGE_ME
+  asset:
+    caching:
+      fetching: false
+  dapps:
+    contracts:
+      addr1w9qzpelu9hn45pefc0xr4ac4kdxeswq7pndul2vuj59u8tqaxdznu: SundaeSwap
+      addr1z9vgl40qezca5s8ajz6wnpuwevt98l3jqx2ce5nlu8h8nnw60wckas4haxwwclas0g39cc8cvt2r8yalrfa9e8vxx92qsss9sx: VyFinance
+      addr1zxgx3far7qygq0k6epa0zcvcvrevmn0ypsnfsue94nsn3tvpw288a4x0xf8pxgcntelxmyclq83s0ykeehchz2wtspks905plm: JpegStore
+      addr1zxn9efv2f6w82hagxqtn62ju4m293tqvw0uhmdl64ch8uw6j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq6s3z70: MinSwap
+      addr1z9qndmhduxjfqvz9rm36p8vsp9vm4l40mx6ndevngkk8srm28uczn6ce6zd5nx2dgr2sza96juq73qz4uhsdxaq74ghs3mz5fw: MuesliSwap
+  max-user-registrations: 5
+  test:
+    allow-jumbo-message: false
