@@ -79,7 +79,7 @@ public class AssetFacade implements Runnable {
         this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, addr, -1, -1), this.koiosFacade));
     }
 
-    public Object getAssetQuantity(String policyId, String assetName, Long quantity) throws ApiException {
+    public Object getAssetQuantity(String policyId, String assetName, String assetDisplayName, Long quantity) throws ApiException {
         Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(policyId, assetName);
         Object assetQuantity = quantity;
         if (cachedAsset.isEmpty()) {
@@ -92,11 +92,12 @@ public class AssetFacade implements Runnable {
                         policyId, assetInfoResult.getResponse(), assetInfoResult.getCode());
             } else if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
                 assetQuantity = Long.valueOf(quantity) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
+                assetInfoResult.getValue().getTokenRegistryMetadata().get
             }
 
             if (assetInfoResult.isSuccessful()) {
                 // Cache it for the future
-                this.assetsDao.addNewAsset(policyId, assetName,
+                this.assetsDao.addNewAsset(policyId, assetName, assetDisplayName,
                         assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
                                 assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
             }

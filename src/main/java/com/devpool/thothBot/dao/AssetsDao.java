@@ -21,6 +21,9 @@ public class AssetsDao {
     private static final Logger LOG = LoggerFactory.getLogger(AssetsDao.class);
     private static final String FIELD_POLICY_ID = "policy_id";
     private static final String FIELD_ASSET_NAME = "asset_name";
+    private static final String FIELD_DECIMALS = "decimals";
+    private static final String FIELD_ASSET_DISPLAY_NAME = "asset_display_name";
+    private static final String FIELD_ID = "id";
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
@@ -35,9 +38,10 @@ public class AssetsDao {
     }
 
     public Optional<Asset> getAssetInformation(String policyId, String assetName) {
-        List<Asset> assets = this.namedParameterJdbcTemplate.query("select id, policy_id, asset_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name",
+        List<Asset> assets = this.namedParameterJdbcTemplate.query("select id, policy_id, asset_name, asset_display_name, decimals from assets where policy_id = :policy_id and asset_name = :asset_name",
                 Map.of(FIELD_POLICY_ID, policyId, FIELD_ASSET_NAME, assetName), (rs, numRow) ->
-                        new Asset(rs.getLong("id"), rs.getString(FIELD_POLICY_ID), rs.getString(FIELD_ASSET_NAME), rs.getInt("decimals")));
+                        new Asset(rs.getLong(FIELD_ID), rs.getString(FIELD_POLICY_ID),
+                                rs.getString(FIELD_ASSET_NAME), rs.getString(FIELD_ASSET_DISPLAY_NAME), rs.getInt(FIELD_DECIMALS)));
 
         if (assets.isEmpty()) return Optional.empty();
 
@@ -45,11 +49,12 @@ public class AssetsDao {
     }
 
     @Transactional(isolation = Isolation.REPEATABLE_READ)
-    public void addNewAsset(String policyId, String assetName, Integer decimals) {
+    public void addNewAsset(String policyId, String assetName, String assetDisplayName, Integer decimals) {
 
         // Check again for existance
         if (getAssetInformation(policyId, assetName).isEmpty()) {
-            namedParameterJdbcTemplate.update("insert into assets (policy_id, asset_name, decimals) values (:policy_id, :asset_name, :decimals)", new MapSqlParameterSource(Map.of(FIELD_POLICY_ID, policyId, FIELD_ASSET_NAME, assetName, "decimals", decimals)));
+            namedParameterJdbcTemplate.update("insert into assets (policy_id, asset_name, decimals, asset_display_name) values (:policy_id, :asset_name, :decimals, :asset_display_name)",
+                    new MapSqlParameterSource(Map.of(FIELD_POLICY_ID, policyId, FIELD_ASSET_NAME, assetName, FIELD_ASSET_DISPLAY_NAME, assetDisplayName, FIELD_DECIMALS, decimals)));
 
             LOG.debug("Inserted new asset with policy_id {}, asset_name {}, and decimals {}", policyId, assetName, decimals);
         }

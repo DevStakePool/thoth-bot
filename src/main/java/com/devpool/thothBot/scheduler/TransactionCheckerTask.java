@@ -205,7 +205,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 }
 
                 int processed = 0;
-
+                // TODO split this in sub lists of max 2-4 TXs. Send multiple messages to the user to avoid overflow
                 for (TxInfo txInfo : txInfoResult.getValue()) {
                     // Understand if it's a reception or send by looking at the inputs
                     // Check if it's an internal TX where all inputs and outputs belong to the user account
@@ -355,7 +355,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                     messageBuilder.append("\n\n"); // Some padding between TXs
                     processed++;
 
-                    if (!this.allowJumboMessage && messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
+                    if (Boolean.TRUE.equals(!this.allowJumboMessage) && messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
                         messageBuilder.append("\n").append(txInfoResult.getValue().size() - processed).append(" more...");
                         break;
                     }
