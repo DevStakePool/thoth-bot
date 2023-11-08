@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "3c33d7d05f782eb99c6f6e8ad606c62d600484905d5c3c9852061040",
+    "asset_name": "574f4f4c46",
+    "asset_name_ascii": "WOOLF",
+    "fingerprint": "asset14hgqvlenhqx5ylcqrssx0v6dhs6xac9agvmm06",
+    "minting_tx_hash": "150c134495f97921f8db8e4cce1afa7fb49b120246f0dfd62c59793d69daefcf",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672790400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "3c33d7d05f782eb99c6f6e8ad606c62d600484905d5c3c9852061040": {
+          "WOOLF": {
+            "name": "Koatwoolf Cabin Club",
+            "files": [
+              {
+                "src": "ipfs://QmPxSdsUtJYkvkuxJHXe9BHnXQTypSBNqvAdosDrHBAs2Z",
+                "name": "WOOLF",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPxSdsUtJYkvkuxJHXe9BHnXQTypSBNqvAdosDrHBAs2Z",
+            "symbol": "WOOLF",
+            "Founder": "Justinien Wright",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 81301463
+            },
+            "District": "9",
+            "Landmark": "Bedford Trading Company",
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "The home of the WOOLFs of The Ape Society #koatwoolf",
+            "totalSupply": 100000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

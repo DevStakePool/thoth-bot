@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "9079f859161ba5034c649fd1688502551f956b99231af5ff9800a3db",
+    "asset_name": "43756c7470617373303430",
+    "asset_name_ascii": "Cultpass040",
+    "fingerprint": "asset12u0ku2jze7ys7pgazfwtuul2ss3rfm44990k3f",
+    "minting_tx_hash": "49b5bf752b936a9013a692ce228020544bc9b7107e9390cb93c3bf0440ebaf9e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668902400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "9079f859161ba5034c649fd1688502551f956b99231af5ff9800a3db": {
+          "Cultpass040": {
+            "name": "Cultpass#040",
+            "files": [
+              {
+                "src": "ipfs://QmbMzEYAEUNGMXfAu319jXnZ5d82t5m7mG71fzBppb3f15",
+                "name": "Cultpass#040",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmNg4wS2GWKLTYvThy1PLDH68YvzWYhHSoFnQ2a6xBKnd2",
+            "mediaType": "image/png",
+            "description": "A limited edition Cultpass, with exclusive holder benefits!"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

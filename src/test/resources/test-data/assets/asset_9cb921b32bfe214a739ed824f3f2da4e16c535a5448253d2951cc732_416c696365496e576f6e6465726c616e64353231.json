@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "9cb921b32bfe214a739ed824f3f2da4e16c535a5448253d2951cc732",
+    "asset_name": "416c696365496e576f6e6465726c616e64353231",
+    "asset_name_ascii": "AliceInWonderland521",
+    "fingerprint": "asset1c5v73xa3w5tmxchztl5940az846kclk8vm6xh4",
+    "minting_tx_hash": "169cef366cfa320c916095da76fde8d0cd498e602709c3ec1738bb0a054a475a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674691200,
+    "minting_tx_metadata": {
+      "721": {
+        "9cb921b32bfe214a739ed824f3f2da4e16c535a5448253d2951cc732": {
+          "AliceInWonderland521": {
+            "id": "521",
+            "data": "ipfs://Qmf5XqNMGQ5wQT4pvYPZmqxqG4hVMUKBvAKfN9mS7khWkH",
+            "name": "Alice's Adventures in Wonderland #521",
+            "files": [
+              {
+                "src": "ipfs://Qmc2BppVwKfHerQZsVRUEQzUy6ixFiDzArFcGXTZ2ZJX6W",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRK6zAf9ZDaaai9PikMTyWKxz8b4ahL7eScnncVPS9Dfr",
+            "sha256": "fa87b0d9c4561742087147eb200c008434aad14c2b1bfe89a2c61ccc574d3d27",
+            "authors": [
+              "Lewis Carroll"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "5",
+              "Cover Theme": "The Land of Wonder"
+            },
+            "description": [
+              "We're all mad here."
+            ],
+            "extraAttributes": {
+              "Special": "First multi-chain Decentralized Encrypted Asset (DEA)",
+              "Book Title": "Alice's Adventures in Wonderland"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

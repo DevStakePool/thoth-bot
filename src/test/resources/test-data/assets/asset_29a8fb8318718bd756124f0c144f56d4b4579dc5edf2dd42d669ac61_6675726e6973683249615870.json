@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683249615870",
+    "asset_name_ascii": "furnish2IaXp",
+    "fingerprint": "asset1qunv9uqrw03utpc3fa6z37cyse7sx0shz3cptv",
+    "minting_tx_hash": "0407136828c464bd92a4ef1204407d5cba35ddded101050b9007683a542d29ae",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674691200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish2IaXp": {
+            "id": "2IaXp",
+            "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "name": "Billiards",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+                "name": "Billiards",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmUqpVJs8J68zigVgzSLpXw4NXnqTbwQC9iG5J6KqdjQv3",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmWbYDVcSSspdXqUCWxg4wVJsjJ56ZJoDkeWL1xqvtUT92",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "description": "Hand-crafted by Alvaro Roberts.",
+            "furnitureId": 202
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

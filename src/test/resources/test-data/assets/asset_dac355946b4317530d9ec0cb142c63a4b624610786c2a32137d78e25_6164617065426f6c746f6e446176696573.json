@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426f6c746f6e446176696573",
+    "asset_name_ascii": "adapeBoltonDavies",
+    "fingerprint": "asset14te00dx5fyhekl8hwtv5p5s565cglt07gmpk3x",
+    "minting_tx_hash": "4945dd47091200bc244f7e1ff8984d85aa7d719910c6c01114cda9801818a505",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBoltonDavies": {
+            "Hat": "Voltaire Wig",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bolton Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmWGbZZXxNPUq3G3BGYnYHLKyfzTfy5drhdbQWmiGw6wui",
+                "name": "Bolton Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWGbZZXxNPUq3G3BGYnYHLKyfzTfy5drhdbQWmiGw6wui",
+            "Family": "Davies",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "policy_id": "28a9ffc30a5f4e18315fc6c5d192c349efb5b259bccb40b703999de9",
+    "asset_name": "44656570566973696f6e3035333133",
+    "asset_name_ascii": "DeepVision05313",
+    "fingerprint": "asset17g28tna6wnh5peyk2g0ft750fepxle2g0u5lnv",
+    "minting_tx_hash": "120f8ede350faabe09548f4360ae10afd6b957f1c45fb53925179d8390060501",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633046400,
+    "minting_tx_metadata": {
+      "721": {
+        "28a9ffc30a5f4e18315fc6c5d192c349efb5b259bccb40b703999de9": {
+          "DeepVision05313": {
+            "name": "Deep Vision #05313",
+            "files": [
+              {
+                "src": "ipfs://QmRuG4hv6xHDpJthfJwsCLN5c5sLgVPrG4hmpgQTMC9mFQ",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaePbkMU456E8H9gPBhhbd1BiAQS4b9wMdcphrTnBTCrB",
+            "Project": "VisionAI",
+            "Release": "DeepVision",
+            "Twitter": "https://twitter.com/gcuriom",
+            "Copyright": "All copyrights are transferred to the owner of this NFT",
+            "mediaType": "image/png",
+            "AI Technology": "VQGAN+CLIP"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

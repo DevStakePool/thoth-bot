@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683971736134",
+    "asset_name_ascii": "furnish9qsa4",
+    "fingerprint": "asset1are64vm9w6hjvu7nk2rgp7v6e4l5umc5ql9ced",
+    "minting_tx_hash": "df07ee5e3a46f42113974e39f472523df93e85490538440853e23e83c3f2eb54",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676332800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish9qsa4": {
+            "id": "9qsa4",
+            "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "name": "Tea Set",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+                "name": "Tea Set",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmNexnniSAFkn6L1KctWSK6HgKnW9oDVU1LQkHNcgxSHdt",
+                "name": "Tea Set",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmdECAUJnHgn78NSf9rzWQcu3MdFZUEYduYv9ZNcmu74r6",
+                "name": "Tea Set",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "description": "Hand-crafted by Ackley Davies.",
+            "furnitureId": 220
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

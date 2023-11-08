@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426f6e6e6574436869657361",
+    "asset_name_ascii": "adapeBonnetChiesa",
+    "fingerprint": "asset1x8wy2jh2yw3vl3fq32c3drduj3ganh9lw3hdup",
+    "minting_tx_hash": "3de3c006a60d99ef046a5e183e94dccd0d0a252b67922ee54cbd4c3de3ac47b0",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeSladeAmato": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Slade Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmYdrjMqTop5b7KtGZJkZNRLnpcaExXweC8XSmciSTCRb4",
+                "name": "Slade Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYdrjMqTop5b7KtGZJkZNRLnpcaExXweC8XSmciSTCRb4",
+            "Family": "Amato",
+            "Weapon": "Spear",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          },
+          "adapeBonnetChiesa": {
+            "Hat": "Fruit Basket",
+            "Body": "Gold Linen",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bonnet Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmNfEsCLoEyNZTrf5xFZn7Hq2tGMd6nL91y53fcanjiPof",
+                "name": "Bonnet Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNfEsCLoEyNZTrf5xFZn7Hq2tGMd6nL91y53fcanjiPof",
+            "Family": "Chiesa",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          },
+          "adapeLyredeBalboa": {
+            "Hat": "None",
+            "Body": "Gold Linen",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Lyre de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPpqMXNwDVD7EygbiNBkrR1Z2x72jvS5YHycNHRqxCfHy",
+                "name": "Lyre de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPpqMXNwDVD7EygbiNBkrR1Z2x72jvS5YHycNHRqxCfHy",
+            "Family": "de Balboa",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the de Balboa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

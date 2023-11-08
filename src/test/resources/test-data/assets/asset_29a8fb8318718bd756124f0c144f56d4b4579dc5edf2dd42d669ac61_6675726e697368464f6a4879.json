@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368464f6a4879",
+    "asset_name_ascii": "furnishFOjHy",
+    "fingerprint": "asset1ffcqmz2nq2k7r94jr0n4z2ffe00csj2ta5r2qf",
+    "minting_tx_hash": "adc67a2fe2f66908db82c77af3ce302f9e902031d05fc960f844d50f93725f32",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677628800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishFOjHy": {
+            "id": "FOjHy",
+            "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "name": "Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+                "name": "Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfEg7Mfqch3U6Fr6F7KrcCPuBGyXX443Yc7LJBw24Tcdi",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZfrn2Sbbk5AokpQKir5L7gcFu1HhVyJjqjDFmQhGycJo",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "description": "Hand-crafted by Quilicus White.",
+            "furnitureId": 206
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

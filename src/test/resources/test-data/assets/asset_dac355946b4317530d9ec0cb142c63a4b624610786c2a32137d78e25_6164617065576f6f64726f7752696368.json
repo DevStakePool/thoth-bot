@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065576f6f64726f7752696368",
+    "asset_name_ascii": "adapeWoodrowRich",
+    "fingerprint": "asset1vse7q9h476zmxsaq8rxfc6068u8j9zctg55d3u",
+    "minting_tx_hash": "55dfa5b1e8154740d7872523831476582b09ca8c262f6ea19d6a3d39b572e249",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWoodrowRich": {
+            "Hat": "None",
+            "Body": "Gold Linen",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Woodrow Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmaTqMLWKJR1tb4eSvFHoNUTLjUH86Ddw7F5WNN1LW8bXB",
+                "name": "Woodrow Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaTqMLWKJR1tb4eSvFHoNUTLjUH86Ddw7F5WNN1LW8bXB",
+            "Family": "Rich",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Long White Beard",
+            "description": "A distinguished member of the Rich family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

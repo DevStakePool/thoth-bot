@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706543617274657264656c614372757a",
+    "asset_name_ascii": "adapeCarterdelaCruz",
+    "fingerprint": "asset1l2y3ew7l2wqwyucl26pukyry6uc3vaezeu5yvg",
+    "minting_tx_hash": "852bb60b880a240b90c9437032f1a57e67b74fa1ef7458c3a2810070fc906ca4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeCarterdelaCruz": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Carter de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qmc1JYvGnUKjryPCfHvvn7tgCT2d9cMnDM8oUjC5MxAShZ",
+                "name": "Carter de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmc1JYvGnUKjryPCfHvvn7tgCT2d9cMnDM8oUjC5MxAShZ",
+            "Family": "de la Cruz",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the de la Cruz family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

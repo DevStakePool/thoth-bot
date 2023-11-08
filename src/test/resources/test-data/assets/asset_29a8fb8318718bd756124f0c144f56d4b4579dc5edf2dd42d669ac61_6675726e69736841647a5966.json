@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736841647a5966",
+    "asset_name_ascii": "furnishAdzYf",
+    "fingerprint": "asset1pgv8jjs6hcvz8750sq2gmkesjgytc362rr4cqn",
+    "minting_tx_hash": "bd42a084e892200ccc0867f7316919e5c6cb14c463703a6273fbde55a204746e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673481600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishAdzYf": {
+            "id": "AdzYf",
+            "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "name": "Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+                "name": "Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfEg7Mfqch3U6Fr6F7KrcCPuBGyXX443Yc7LJBw24Tcdi",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZfrn2Sbbk5AokpQKir5L7gcFu1HhVyJjqjDFmQhGycJo",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "description": "Hand-crafted by Osmond White.",
+            "furnitureId": 206
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

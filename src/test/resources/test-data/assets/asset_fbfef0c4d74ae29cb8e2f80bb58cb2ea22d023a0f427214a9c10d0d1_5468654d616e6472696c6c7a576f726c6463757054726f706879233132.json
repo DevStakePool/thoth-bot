@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "fbfef0c4d74ae29cb8e2f80bb58cb2ea22d023a0f427214a9c10d0d1",
+    "asset_name": "5468654d616e6472696c6c7a576f726c6463757054726f706879233132",
+    "asset_name_ascii": "TheMandrillzWorldcupTrophy#12",
+    "fingerprint": "asset12fgq4hqu2m2ez4alza8q90uawfevwsr2h6zm8x",
+    "minting_tx_hash": "baa092918e53cc3397fe7356a09063d18df26beccf29d32fd48e523cccdf70f4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669680000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "fbfef0c4d74ae29cb8e2f80bb58cb2ea22d023a0f427214a9c10d0d1": {
+          "TheMandrillzWorldcupTrophy#12": {
+            "name": "TheMandrillzWorldcup Trophy",
+            "files": [
+              {
+                "src": "ipfs://Qmco3xineEuAPWmJ6czX65eGc4ZuBZvxYwxqqxNuKTceu6",
+                "name": "Trophy.mp4",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmehoNa5DSxPttwrAXNKc1cA3HFhqy2avJCU7XMRjVLCfA",
+            "artist": "@Seppow86",
+            "twitter": "https://twitter.com/TheMandrillz",
+            "website": "https://themandrillz.io",
+            "seriesno": "12",
+            "mediaType": "image/gif",
+            "description": "TheMandrillzWorldcup Trophy"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

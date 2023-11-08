@@ -1,0 +1,66 @@
+[
+  {
+    "policy_id": "07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137",
+    "asset_name": "434c50433145503030333535",
+    "asset_name_ascii": "CLPC1EP00355",
+    "fingerprint": "asset18rgpwkrlltfhnsjhkgyrkx4aq0h7uycazw76r2",
+    "minting_tx_hash": "415bdb5dc896fda4ff0e08d6b2fe99d98ccee1800a84ef1f0e0b44c10d352102",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1654473600,
+    "minting_tx_metadata": {
+      "721": {
+        "07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137": {
+          "CLPC1EP00355": {
+            "id": "00355",
+            "tag": "CLPC1EP00355",
+            "name": "Epic Land Plot Claim RA #00355",
+            "files": [
+              {
+                "src": "ipfs://QmYQ8fT3fqUEfiCZ4BeU3MB6PrYRKMip1XSuPJqnAwX7Qu",
+                "name": "Epic Land Plot Claim RA",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              },
+              {
+                "src": "ipfs://Qmd98gScmS2Va8LES1F65ptCU8tn8rqhm5AeWYz4ZUs9yy",
+                "name": "Epic Land Plot Claim RA",
+                "mediaType": "video/mp4",
+                "resolution": "web"
+              },
+              {
+                "src": "ipfs://QmRaWJjqzkA7pUr1HbM3cFbtiEo6FVJVo1fgz6tzDiRPii",
+                "name": "Epic Land Plot Claim RA",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmX8vQ7KxQMm12uq7tQJ3n7yh9z48TBA9hByaV5eYnTAcw",
+            "media": {
+              "Website": "https://www.cornucopias.io",
+              "Link Tree": "https://linktr.ee/CornucopiasGame"
+            },
+            "gameid": "LPCEPZ12303",
+            "rarity": "Rare",
+            "season": "Pre-Launch",
+            "version": "1.0",
+            "fullName": "Epic Land Plot Claim #00355",
+            "mediaType": "image/jpeg",
+            "typeClass": "Land Claim",
+            "attributes": {
+              "size": "Epic",
+              "zoneChoices": [
+                "Solace",
+                "Esperanza",
+                "Fortune"
+              ]
+            },
+            "description": "Cornucopias Land Plot Claim",
+            "projectName": "Cornucopias 'The Island' Game"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736847334a476d",
+    "asset_name_ascii": "furnishG3JGm",
+    "fingerprint": "asset1zwl9sgnnjpfq07juhzsven6acwaugrvfp97g3l",
+    "minting_tx_hash": "b8517bc406bc34c1e20df9739f20ce7401fc5ac80c569dca46dee4b07d0146a5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1680480000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishG3JGm": {
+            "id": "G3JGm",
+            "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "name": "Low Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+                "name": "Low Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbMCCBiSX2BdfSRPBgSwNy7sBg2x441SEagBeRGHgfD6s",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmbJ36nBD63AR7CCGenMinEHe2JNdgkXkBMNZTznr4jAJH",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "description": "Hand-crafted by Anton Edwards.",
+            "furnitureId": 211
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

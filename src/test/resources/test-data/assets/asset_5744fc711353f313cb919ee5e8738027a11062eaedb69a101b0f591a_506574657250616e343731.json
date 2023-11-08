@@ -1,0 +1,76 @@
+[
+  {
+    "policy_id": "5744fc711353f313cb919ee5e8738027a11062eaedb69a101b0f591a",
+    "asset_name": "506574657250616e343731",
+    "asset_name_ascii": "PeterPan471",
+    "fingerprint": "asset1vedgfnf45gw4quljvu39tv7y5lrv4c6g464sgp",
+    "minting_tx_hash": "8108f5a0a716803dbda69c27f0ee1560aeb169237e6af31915e8ded9441d5721",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676851200,
+    "minting_tx_metadata": {
+      "721": {
+        "5744fc711353f313cb919ee5e8738027a11062eaedb69a101b0f591a": {
+          "PeterPan471": {
+            "id": "471",
+            "data": "ipfs://QmSPaXxKsiJdXz2mwTzwUgjZagGub9RfgC7b6h7YUKP9tL",
+            "name": "Peter Pan #471",
+            "files": [
+              {
+                "src": "ipfs://QmcHrDNhCMKoSfAFgaHrtMiV8s1A3H1sgoXdVRZRLATmeX",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmcw5L96AxyvYqTLG6e98o5qZDZfx7dJsmNBd7s3soPyFi",
+            "sha256": "7a24bb819d45d07a8609fee99b4e037b4c310780bbf4c1efb48ddd385b4a83a1",
+            "authors": [
+              "J.M. Barrie"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "13",
+              "Cover Theme": "The Never Never Land"
+            },
+            "description": [
+              "To die will be an awfully big adventure."
+            ],
+            "extraAttributes": {
+              "Book Title": "Peter Pan"
+            }
+          },
+          "PeterPan776": {
+            "id": "776",
+            "data": "ipfs://QmYPZUe5QJrb6SNiqWSM6EgGwdZsZWgodwYNup6EruJ92y",
+            "name": "Peter Pan #776",
+            "files": [
+              {
+                "src": "ipfs://QmNP9ZjQqkwYR77cf3uL8fYnWEum3zsh3srfd25T4RhJvw",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcGmFYDiRR2b9V2EvURuzMwsnLVc7WsM21UCKPtjCwnBt",
+            "sha256": "74e2b3255f20c4c0fe2207c8eb08fa0612d6a110b2c606f2412007bbc96dafef",
+            "authors": [
+              "J.M. Barrie"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "14",
+              "Cover Theme": "The Boy Who Can Fly"
+            },
+            "description": [
+              "To die will be an awfully big adventure."
+            ],
+            "extraAttributes": {
+              "Book Title": "Peter Pan"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

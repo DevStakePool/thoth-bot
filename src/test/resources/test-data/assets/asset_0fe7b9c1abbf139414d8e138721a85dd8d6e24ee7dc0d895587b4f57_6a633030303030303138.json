@@ -1,0 +1,241 @@
+[
+  {
+    "policy_id": "0fe7b9c1abbf139414d8e138721a85dd8d6e24ee7dc0d895587b4f57",
+    "asset_name": "6a633030303030303138",
+    "asset_name_ascii": "jc00000018",
+    "fingerprint": "asset1nkrpaaue0fpke93dzscaprqsq4tnka285nmnyv",
+    "minting_tx_hash": "7d36ea369d6206bdf45e13b9eb622f6d06d48b54ef0d6aeaff0ea0c10f24f6e2",
+    "total_supply": "1454",
+    "mint_cnt": 1454,
+    "burn_cnt": 0,
+    "creation_time": 1623715200,
+    "minting_tx_metadata": {
+      "721": {
+        "0fe7b9c1abbf139414d8e138721a85dd8d6e24ee7dc0d895587b4f57": {
+          "jc00000005": {
+            "name": "rock",
+            "image": "ipfs://Qmc3zmyvzTHWB9n7eDKzNpNjbwpJPbDy82MT9Vp5XHKTju",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "ah doink you!",
+              "effect": [
+                "target intelligence -2",
+                "target accuracy -1"
+              ],
+              "serial": "00000005",
+              "edition": "first edition"
+            }
+          },
+          "jc00000012": {
+            "name": "vacuum trap",
+            "image": "ipfs://QmdUqrj6AeFMgVcqDpBGrqA3wixnZtRXhm2xa5duBLyixU",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "ah chicken hole nooooo!",
+              "effect": [
+                "target oxygen tank -2",
+                "disable smoke bombs",
+                "prevent run away"
+              ],
+              "serial": "00000012",
+              "edition": "first edition"
+            }
+          },
+          "jc00000013": {
+            "name": "chicken shit",
+            "image": "ipfs://QmeuigUqhb2Rua2GaTQ9Vu2CkvwpP8K5hkUuy9ddA6v5rV",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "left mah chicken in the oven!",
+              "effect": [
+                "target strength -2",
+                "target deals and takes no damage or effect"
+              ],
+              "serial": "00000013",
+              "edition": "first edition"
+            }
+          },
+          "jc00000018": {
+            "name": "electric shock",
+            "image": "ipfs://QmW1GWCKA2rM5N1iRB4qktP5xfLckTFgK3R6CRNuyAqZia",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "a zap zap make a bird crap",
+              "effect": [
+                "strength +10%",
+                "5% chance to force shart"
+              ],
+              "serial": "00000018",
+              "edition": "first edition"
+            }
+          },
+          "jc00000021": {
+            "name": "chromium spacehat",
+            "image": "ipfs://QmQgc6MgZx1BppfrMQFUvtSznFidWMVves31bDYZ6J5ruN",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "always use protection!",
+              "effect": [
+                "accuracy +10%",
+                "intelligence +10%",
+                "5% chance luck +1"
+              ],
+              "serial": "00000021",
+              "edition": "first edition"
+            }
+          },
+          "jc00000024": {
+            "name": "bitcoin",
+            "image": "ipfs://QmWW4ZM9FNuSS21PBYJExiQxfTA8iU8oXG89sMuWFWNc3b",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "a beacon of hope",
+              "effect": [
+                "all jetchicken stats +7.5%"
+              ],
+              "serial": "00000024",
+              "edition": "first edition"
+            }
+          },
+          "jc00000029": {
+            "name": "pom-poms",
+            "image": "ipfs://QmUeC6mNwg5mnR7PttKPejD6TryHW4Hco7idfysU6yjxBx",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "make chicken so proud!",
+              "effect": [
+                "target strength +2",
+                "target defense +2",
+                "target accuracy +2"
+              ],
+              "serial": "00000029",
+              "edition": "first edition"
+            }
+          },
+          "jc00000042": {
+            "name": "orange space egg",
+            "image": "ipfs://QmUGcgsR68YmtvYmC7pVxVa1LvK55e9kx5S3scwVzUgTo5",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "a mystical intergalactic egg",
+              "effect": [
+                "strength +15% against blue targets",
+                "equip 3 turns to hatch sidekick"
+              ],
+              "serial": "00000042",
+              "edition": "first edition"
+            }
+          },
+          "jc00000053": {
+            "name": "chicken repair man",
+            "image": "ipfs://QmPVFKX3S9yJTASrgaLr4T6z1hvyqkNZbhr4C5BoiAyFFj",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "better late than never dude",
+              "effect": [
+                "repair all disabled weapons on team"
+              ],
+              "serial": "00000053",
+              "edition": "first edition"
+            }
+          },
+          "jc00000054": {
+            "name": "laser eyes",
+            "image": "ipfs://Qme2aPNGFxy6xhvRdrSvctL9sYTcCXPLCYfoN9eJbD8tEj",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "the beginning of the end",
+              "effect": [
+                "destroy target's shoulder gun"
+              ],
+              "serial": "00000054",
+              "edition": "first edition"
+            }
+          },
+          "jc00023417": {
+            "name": "jetchicken #00023417",
+            "image": "ipfs://QmaGHbWDJq7PCt59EP14Bs1vmWEEByjhXgFShc2Ps1sn7h",
+            "serial": "00023417",
+            "mediaType": "image/png",
+            "attributes": {
+              "feet": "green socks",
+              "chicken": "war",
+              "jetpack": "imaginary rocket",
+              "spacehat": "kyoto",
+              "weakness": "narcolepsy",
+              "homeworld": "trippyverse",
+              "strength1": "more luck",
+              "strength2": "good accuracy",
+              "wing_guns": "egg cannons",
+              "power_color": "red",
+              "necklace_type": "plain bronze",
+              "power_ratings": {
+                "luck": 6,
+                "health": 7,
+                "defense": 7,
+                "accuracy": 7,
+                "strength": 7,
+                "oxygen_tank": 6,
+                "intelligence": 3
+              },
+              "powerup_slots": 3,
+              "currency_slots": 1,
+              "necklace_symbol": "bullet",
+              "powerdown_slots": 3,
+              "shoulder_weapon": "pipe bomb"
+            }
+          },
+          "jc00023418": {
+            "name": "jetchicken #00023418",
+            "image": "ipfs://QmUWm2dRfAAh845Ce8nXrr5xKrpmY44UbHLsivT3MWSrSF",
+            "serial": "00023418",
+            "mediaType": "image/png",
+            "attributes": {
+              "feet": "tap shoes",
+              "chicken": "commandoo",
+              "jetpack": "butane torch",
+              "spacehat": "harness helmet",
+              "weakness": "chicken shit",
+              "homeworld": "uranus",
+              "strength1": "good health",
+              "strength2": "whippets hit",
+              "wing_guns": "machine guns",
+              "power_color": "red",
+              "necklace_type": "plain plastic",
+              "power_ratings": {
+                "luck": 6,
+                "health": 7,
+                "defense": 7,
+                "accuracy": 6,
+                "strength": 6,
+                "oxygen_tank": 7,
+                "intelligence": 6
+              },
+              "powerup_slots": 3,
+              "currency_slots": 2,
+              "necklace_symbol": "yin yang",
+              "powerdown_slots": 3,
+              "shoulder_weapon": "laser cannons"
+            }
+          }
+        },
+        "d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a0": {
+          "spacecoins": {
+            "name": "spacecoins",
+            "files": [
+              {
+                "src": "ipfs://QmZWaVnF5m5h9cd2KeMoqm4QAdsM5ZmEBrnfaLtckNUMGP",
+                "name": "spacecoins whitepaper",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://Qmc44D9d8oaj38TtrXKXPYyWKpyPButDQtA9pVjBtb1qYV",
+            "website": "https://spacecoins.io",
+            "description": "your did it!"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "policy_id": "59451c4d18a7992cebfee65a278cd1cdb35c4d3d2503c829466c710e",
+    "asset_name": "5468654172744f6657617230333638",
+    "asset_name_ascii": "TheArtOfWar0368",
+    "fingerprint": "asset1pmmduegs5xs0qemanhpcvsdkn0rc2q8gpyjr4e",
+    "minting_tx_hash": "15294e99900562dff1ae9dd76ff3d65ba51dc78d722bb9ab43b30bce8d75fdc5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675900800,
+    "minting_tx_metadata": {
+      "721": {
+        "59451c4d18a7992cebfee65a278cd1cdb35c4d3d2503c829466c710e": {
+          "TheArtOfWar0368": {
+            "id": "0368",
+            "data": "ipfs://QmRns32HnTJMs5ybkMLn2kZPg6Aa9ByPgK9YdNjat4gDse",
+            "name": "The Art of War #0368",
+            "files": [
+              {
+                "src": "ipfs://QmXSVAAgD2vnRdRZXfZ6eCkEYN1rioGGHnuWhsQP431R1g",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYEZcxPfvQ2JMQt9HANjuudK8dVsV4E9CLrueDLZZW3iD",
+            "sha256": "9c46ca272a42c23d31e912b765ec7a49f68a7a720973b2877b89f04824a83071",
+            "authors": [
+              "Sun Tzu"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "21",
+              "Cover Theme": "The Middle Kingdom"
+            },
+            "description": [
+              "In the midst of chaos, there is also opportunity."
+            ],
+            "extraAttributes": {
+              "Book Title": "The Art of War"
+            }
+          },
+          "TheArtOfWar0898": {
+            "id": "0898",
+            "data": "ipfs://QmUYorHwGY3SD1Z1sQYpxMgyijfiYCWkutDkiZ43iUngnR",
+            "name": "The Art of War #0898",
+            "files": [
+              {
+                "src": "ipfs://QmWv5HKzFt7wyswQD4buWuz4XzknAp1UBMyfcz2NGJMxip",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWzCgL4gXLPBvL8sdsSEzbaWZaEc1JmSzdPut21hcv62o",
+            "sha256": "e63c17a323665f964ee0a95e1ca79175421a2a52e77493bf98f0be9388bb101a",
+            "authors": [
+              "Sun Tzu"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "24",
+              "Cover Theme": "The Master"
+            },
+            "description": [
+              "In the midst of chaos, there is also opportunity."
+            ],
+            "extraAttributes": {
+              "Book Title": "The Art of War"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

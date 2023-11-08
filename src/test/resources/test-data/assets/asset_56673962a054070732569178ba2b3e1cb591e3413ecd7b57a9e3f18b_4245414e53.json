@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "56673962a054070732569178ba2b3e1cb591e3413ecd7b57a9e3f18b",
+    "asset_name": "4245414e53",
+    "asset_name_ascii": "BEANS",
+    "fingerprint": "asset1hfdjj2tzjelu8sy6wpwdz3vj4gw5d2wep69nrl",
+    "minting_tx_hash": "c0a5b1c82b83827b474a78d3f14440b9237fe1bb52940e17bc1e671c75064383",
+    "total_supply": "1000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1640908800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "56673962a054070732569178ba2b3e1cb591e3413ecd7b57a9e3f18b": {
+          "BEANS": {
+            "name": "BEANS",
+            "files": [
+              {
+                "src": "ipfs://QmRZRHxYhmuJfRCjwN6Z9L8DVdDD6Rapx5rMM7HyUjpDnT",
+                "name": "BEANS",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRZRHxYhmuJfRCjwN6Z9L8DVdDD6Rapx5rMM7HyUjpDnT",
+            "symbol": "BEANS",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 49366802
+            },
+            "LearnMore": "https://www.cardanobeans.com/",
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "",
+            "totalSupply": 1000000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

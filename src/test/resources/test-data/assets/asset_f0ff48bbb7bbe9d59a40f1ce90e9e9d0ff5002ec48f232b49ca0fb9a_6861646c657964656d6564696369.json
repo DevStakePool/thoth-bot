@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6861646c657964656d6564696369",
+    "asset_name_ascii": "hadleydemedici",
+    "fingerprint": "asset1utl7kwnfaqlsgehz69rftfzjqjn4r8m5x0hmlf",
+    "minting_tx_hash": "0eb105e75f9df3f5efd08b7441d03978383dd6332cabcf5d522bf42a6f25a43e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666310400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "hadleydemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$hadleydemedici",
+            "image": "ipfs://QmVH3H57mgVaFFKCokrE8kJadqrWuBdp4FkUn53CxSMoNJ",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "sonymasterworks": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$sonymasterworks",
+            "image": "ipfs://QmYXMmpwMgX2SKSV2Szb1MJvNkk2rws57abg3KexDL4xhD",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

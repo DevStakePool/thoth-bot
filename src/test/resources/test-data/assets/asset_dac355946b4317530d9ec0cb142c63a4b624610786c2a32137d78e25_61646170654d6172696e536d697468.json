@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d6172696e536d697468",
+    "asset_name_ascii": "adapeMarinSmith",
+    "fingerprint": "asset1k5ef5py75n2ar2d020ttrtptxjrlcmecatkhxn",
+    "minting_tx_hash": "272329439147eedc0062ca2bd02f0bf38de7a9ff419bd0245caa95cb0dafc710",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMarinSmith": {
+            "Hat": "Gold Helmet",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Marin Smith",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPN1AZej4q8dXKmfvn3koPrVSvZnq6odLos6MFXbu9Q1T",
+                "name": "Marin Smith",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPN1AZej4q8dXKmfvn3koPrVSvZnq6odLos6MFXbu9Q1T",
+            "Family": "Smith",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Smith family"
+          },
+          "adapeHaroldMonet": {
+            "Hat": "Sombrero",
+            "Body": "Orange",
+            "Ears": "Plain",
+            "Eyes": "Safety Goggles",
+            "Head": "Orange",
+            "name": "Harold Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmTubWsPLSMBLRGtCBkfqgZM3yv589BguAyBmMPLV7q3fe",
+                "name": "Harold Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTubWsPLSMBLRGtCBkfqgZM3yv589BguAyBmMPLV7q3fe",
+            "Family": "Monet",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          },
+          "adapeBaptistinChiesa": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Baptistin Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmfWJEqG4yN9GP5t4FrmFqvjGYUkic7hBa5NTq3HGYadLz",
+                "name": "Baptistin Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfWJEqG4yN9GP5t4FrmFqvjGYUkic7hBa5NTq3HGYadLz",
+            "Family": "Chiesa",
+            "Weapon": "Rifle",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

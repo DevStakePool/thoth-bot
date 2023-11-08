@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e335275655065726475654c413732413430",
+    "asset_name_ascii": "cabin3RuePerdueLA72A40",
+    "fingerprint": "asset15k4wmdfjrh3pstxpclpt4retqgjs7ah7tlaw5s",
+    "minting_tx_hash": "21bdfc636f0b15a3d40a2eee462c09ae5039d82ab67dfa3310478eba305ce8a5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin3RuePerdueLA72A40": {
+            "name": "3 Rue Perdue, LA72 A40",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+                "name": "Chateau.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbyKxhiGA2TMyJYr6wgP3sHSNavpf35mZrCya2RvgaP5P",
+                "name": "Chateau.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVLkR52JwV3YVyZr2KJtYhmpPp1vfEkdPPqzPJE1MmSjm",
+                "name": "Chateau.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+            "Street": "Rue Perdue",
+            "District": "Lanurk",
+            "mediaType": "image/gif",
+            "Cabin Size": "Chateau",
+            "SLVD Rating": "A",
+            "description": "A Chateau in The Ape Society",
+            "X Coordinate": "72",
+            "Y Coordinate": "40"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

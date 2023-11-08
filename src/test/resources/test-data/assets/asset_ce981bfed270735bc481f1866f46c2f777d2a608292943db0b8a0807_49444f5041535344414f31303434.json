@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "ce981bfed270735bc481f1866f46c2f777d2a608292943db0b8a0807",
+    "asset_name": "49444f5041535344414f31303434",
+    "asset_name_ascii": "IDOPASSDAO1044",
+    "fingerprint": "asset1hme76g4vcvqpqlzksxvfq8whahcnu0r76cq30g",
+    "minting_tx_hash": "c04eb31f500b04fa0532eed741b665d83088805075958abb44fc5a64e4346469",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1663200000,
+    "minting_tx_metadata": {
+      "721": {
+        "ce981bfed270735bc481f1866f46c2f777d2a608292943db0b8a0807": {
+          "IDOPASSDAO1044": {
+            "name": "IDO PASS DAO #1044",
+            "type": "Gen 0",
+            "image": "ipfs://QmdSoGCcFPbvmaTRMmLpqxznUWPC2tCXAc31R6Eokmq34m",
+            "rarity": "Uncommon",
+            "voting": "1x weight",
+            "faceChart": "Yes",
+            "mediaType": "image/jpeg",
+            "background": "Light Blue",
+            "membership": "Members Pass",
+            "description": [
+              "This NFT is a unique pass that grants you ",
+              "voting rights and a proportional share of IDO PASS DAO."
+            ],
+            "LP Allocation": "Guaranteed 2.5x",
+            "tentaclesLight": "Yes",
+            "IDO Tokens Airdrops": "Yes",
+            "developersSurpriseAirdrop": "No"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

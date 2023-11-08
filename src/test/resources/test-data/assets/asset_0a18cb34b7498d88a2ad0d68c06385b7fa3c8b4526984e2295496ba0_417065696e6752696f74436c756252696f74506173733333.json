@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "0a18cb34b7498d88a2ad0d68c06385b7fa3c8b4526984e2295496ba0",
+    "asset_name": "417065696e6752696f74436c756252696f74506173733333",
+    "asset_name_ascii": "ApeingRiotClubRiotPass33",
+    "fingerprint": "asset18q30lerexupq5sqfw52s4eh58km509vs9s82s0",
+    "minting_tx_hash": "5d7bafdfa23db76b995248725ef55def87390f3dc34ce3174f189584d7386664",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650240000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "0a18cb34b7498d88a2ad0d68c06385b7fa3c8b4526984e2295496ba0": {
+          "ApeingRiotClubRiotPass33": {
+            "name": "Apeing Riot Club - Riot Pass #33",
+            "files": [
+              {
+                "src": "ipfs://QmWicMhmg9EqduSewS4fCS2JFwcTXTRYoEuBv54xniVrMX",
+                "name": "riot pass",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmWA9K53HwPcthbWNJRrdSXmbGKqD1zkqSYmbm72y5MAAR",
+            "twitter": "twitter.com/ApeingRiotClub",
+            "mediaType": "image/gif",
+            "collection": "Apeing Riot Club - Riot Pass",
+            "description": [
+              "Exclusive membership pass built for Rioters,",
+              " to own the legacy of Apeing Riot Club."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

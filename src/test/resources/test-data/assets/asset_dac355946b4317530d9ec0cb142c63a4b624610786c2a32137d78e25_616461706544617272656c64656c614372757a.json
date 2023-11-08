@@ -1,0 +1,71 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544617272656c64656c614372757a",
+    "asset_name_ascii": "adapeDarreldelaCruz",
+    "fingerprint": "asset16lfrm0anerf27xy49lpng6jz0n8j478truklru",
+    "minting_tx_hash": "7908477a311ba06ee66ee82cf9277aaa1a29bb65c25de6b7c80c4a22c60167fd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeNelsonDavies": {
+            "Hat": "Top Hat",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Nelson Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmRsNVPLhG4ECSyB4RLbXehcyqDt3CWWGDuxGuVDGoHaub",
+                "name": "Nelson Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRsNVPLhG4ECSyB4RLbXehcyqDt3CWWGDuxGuVDGoHaub",
+            "Family": "Davies",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          },
+          "adapeDarreldelaCruz": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Darrel de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmecN21ECk4CQkfx9PcANwiKRqMhmBKwo9HKdr2et7a8yE",
+                "name": "Darrel de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmecN21ECk4CQkfx9PcANwiKRqMhmBKwo9HKdr2et7a8yE",
+            "Family": "de la Cruz",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the de la Cruz family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

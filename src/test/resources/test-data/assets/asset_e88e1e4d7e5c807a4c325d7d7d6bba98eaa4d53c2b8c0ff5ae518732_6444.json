@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "e88e1e4d7e5c807a4c325d7d7d6bba98eaa4d53c2b8c0ff5ae518732",
+    "asset_name": "6444",
+    "asset_name_ascii": "dD",
+    "fingerprint": "asset1hs5fy6l0uuku9djzsh69c2z5sgty6dr55r6zuz",
+    "minting_tx_hash": "51eb79b8bb5fe180fbec91070cd834b02492aaf0d750137bbf303b9c974e35ed",
+    "total_supply": "1000001000000",
+    "mint_cnt": 6,
+    "burn_cnt": 4,
+    "creation_time": 1674518400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 2,
+        "e88e1e4d7e5c807a4c325d7d7d6bba98eaa4d53c2b8c0ff5ae518732": {
+          "dD": {
+            "id": "1",
+            "name": "dollarDyne",
+            "image": "ipfs://QmZCtJwGZJUMyoT6vtju7zASTn7CwmGjhbJHD3tWUhVGai",
+            "twitter": "https://twitter.com/VriesCassandra",
+            "website": "http://dollardyne.com",
+            "youtube": "https://www.youtube.com/channel/UCrr84WAy163S9dO0ZwP1fLw",
+            "decimals": 6,
+            "facebook": "https://www.facebook.com/profile.php?id=100088883387489",
+            "telegram": "https://t.me/CassandradeVries",
+            "mediaType": "image/png",
+            "description": "dollarDyne, the official token from dataDyne.",
+            "stake pool ticker": "dtDn",
+            "stake pool website": "http://dataDyne.earth/cardano"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": {
+      "url": "https://dollardyne.com",
+      "logo": "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",
+      "name": "dollarDyne",
+      "ticker": "dD",
+      "decimals": 6,
+      "description": "dollarDyne, the official token from dataDyne."
+    }
+  }
+]

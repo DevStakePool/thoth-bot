@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "b5af194b161e7b449b54edd39c577756f668f4b905a1d8ca7afab9df",
+    "asset_name": "424343",
+    "asset_name_ascii": "BCC",
+    "fingerprint": "asset1sggp7vkpuj3sjaxdral77xaz9vd5vnqpa2ndsx",
+    "minting_tx_hash": "838d3cc14b91e64795da7ba8ffff7dface6196834f4f2ed02faba3888cf683cf",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1662595200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "b5af194b161e7b449b54edd39c577756f668f4b905a1d8ca7afab9df": {
+          "BCC": {
+            "name": "BCC",
+            "files": [
+              {
+                "src": "ipfs://QmaQJfSZMj9kXiuoNLVyrP6s1Bf1Eg3Rs841u6j1Un9sRn",
+                "name": "BCC",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaQJfSZMj9kXiuoNLVyrP6s1Bf1Eg3Rs841u6j1Un9sRn",
+            "artist": "Martin Marinov",
+            "ticker": "BCC",
+            "website": "https://www.facebook.com/groups/1172142893230568",
+            "assetType": "tokens",
+            "mediaType": "image/png",
+            "publisher": [
+              "https://www.facebook.com/BulgarianCardanoCommunity"
+            ],
+            "description": "Bulgarian Cardano Community token"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e323843617264616e6f4176656e7565515533384c3833",
+    "asset_name_ascii": "cabin28CardanoAvenueQU38L83",
+    "fingerprint": "asset1ru34ycra72yfx5v3xp2p2fg2h9jwc88qx7zzrs",
+    "minting_tx_hash": "d101e4ab044b467a5d776fe6e66c0ba3a6b0bbe0651ce615274c445276a6c2ea",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin28CardanoAvenueQU38L83": {
+            "name": "28 Cardano Avenue, QU38 L83",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Cardano Avenue",
+            "District": "Quniod",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "L",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "38",
+            "Y Coordinate": "83"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686332304344",
+    "asset_name_ascii": "furnishc20CD",
+    "fingerprint": "asset1dcq4luws39vjdrgwtvfqegtfw6ru9g707enf8y",
+    "minting_tx_hash": "27a5b97e6319769252aac63526e867c73a15345a9834edd5c5db555fec341d54",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675036800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishc20CD": {
+            "id": "c20CD",
+            "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "name": "Tea Set",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+                "name": "Tea Set",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmNexnniSAFkn6L1KctWSK6HgKnW9oDVU1LQkHNcgxSHdt",
+                "name": "Tea Set",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmdECAUJnHgn78NSf9rzWQcu3MdFZUEYduYv9ZNcmu74r6",
+                "name": "Tea Set",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "description": "Hand-crafted by Raven Edwards.",
+            "furnitureId": 220
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368366b456d7a",
+    "asset_name_ascii": "furnish6kEmz",
+    "fingerprint": "asset137erd00vdq9jz9qwntdxzcg2vjeq5ul2hxg67z",
+    "minting_tx_hash": "e698fca096264bd3e333c1546a4deaf0111cb52c2a56b83fafe63d800ad45aaa",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671926400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish6kEmz": {
+            "id": "6kEmz",
+            "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "name": "Tea Set",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+                "name": "Tea Set",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmNexnniSAFkn6L1KctWSK6HgKnW9oDVU1LQkHNcgxSHdt",
+                "name": "Tea Set",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmdECAUJnHgn78NSf9rzWQcu3MdFZUEYduYv9ZNcmu74r6",
+                "name": "Tea Set",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "description": "Hand-crafted by Townsend Green.",
+            "furnitureId": 220
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

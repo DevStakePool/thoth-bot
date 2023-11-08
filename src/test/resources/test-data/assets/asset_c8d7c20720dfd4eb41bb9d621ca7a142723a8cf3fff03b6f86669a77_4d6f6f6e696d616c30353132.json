@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "c8d7c20720dfd4eb41bb9d621ca7a142723a8cf3fff03b6f86669a77",
+    "asset_name": "4d6f6f6e696d616c30353132",
+    "asset_name_ascii": "Moonimal0512",
+    "fingerprint": "asset1z2xzktff5nc5frf5txtdwkwue4tyhhqj6k0n8m",
+    "minting_tx_hash": "0af1e4e2292d6c141933a29131b26e4fe720bd05ac496fead2eabafefdecc8f3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1645315200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "c8d7c20720dfd4eb41bb9d621ca7a142723a8cf3fff03b6f86669a77": {
+          "Moonimal0512": {
+            "name": "Moonimal #0512",
+            "files": [
+              {
+                "src": "ipfs://QmXPaWQnL1LcQqtPfQqon6QPsc73yg4vccL1Eqx25dR9rB",
+                "name": "Moonimal #0512",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXPaWQnL1LcQqtPfQqon6QPsc73yg4vccL1Eqx25dR9rB",
+            "project": "Moonimals",
+            "website": "https://moonimalsnft.com/",
+            "mediaType": "image/png",
+            "Collection": "Moonimals v2 - BigBang",
+            "attributes": {
+              "Back": "Albino Tail",
+              "Body": "Raccoon Fur",
+              "Eyes": "Smart Glasses",
+              "Face": "None",
+              "Hand": "Flame",
+              "Mouth": "Normal",
+              "Earring": "Cardano",
+              "Clothing": "U3G1 Soldier",
+              "Headwear": "Gold Halo",
+              "Companion": "Friendly Drone",
+              "Background": "Vibrant"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

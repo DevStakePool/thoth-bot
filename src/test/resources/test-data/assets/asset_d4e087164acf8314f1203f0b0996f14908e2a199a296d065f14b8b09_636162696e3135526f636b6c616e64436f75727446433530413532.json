@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3135526f636b6c616e64436f75727446433530413532",
+    "asset_name_ascii": "cabin15RocklandCourtFC50A52",
+    "fingerprint": "asset168mkn8z7y9gk3gd7yz9nk9k7y0vaz4g0692r77",
+    "minting_tx_hash": "8b5b4c43fe427b747f0f9f8a5d6168dc88374039830ccb6eba81d975b122e5e8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin15RocklandCourtFC50A52": {
+            "name": "15 Rockland Court, FC50 A52",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+                "name": "Chateau.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbyKxhiGA2TMyJYr6wgP3sHSNavpf35mZrCya2RvgaP5P",
+                "name": "Chateau.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVLkR52JwV3YVyZr2KJtYhmpPp1vfEkdPPqzPJE1MmSjm",
+                "name": "Chateau.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+            "Street": "Rockland Court",
+            "District": "Fort Craras",
+            "mediaType": "image/gif",
+            "Cabin Size": "Chateau",
+            "SLVD Rating": "A",
+            "description": "A Chateau in The Ape Society",
+            "X Coordinate": "50",
+            "Y Coordinate": "52"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

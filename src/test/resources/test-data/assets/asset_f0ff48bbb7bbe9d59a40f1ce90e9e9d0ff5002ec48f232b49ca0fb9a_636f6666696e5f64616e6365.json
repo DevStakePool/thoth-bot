@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "636f6666696e5f64616e6365",
+    "asset_name_ascii": "coffin_dance",
+    "fingerprint": "asset1jtyk7p3n4uq9u8pfht7q3zjnsgtmzy86r9wn2k",
+    "minting_tx_hash": "2e11798bf7fa6dda99f47c34dd1cc78e72c0d9113f199e631f0c01e5ebab8678",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649462400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "coffin_dance": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$coffin_dance",
+            "image": "ipfs://QmRdCzRAqSqPFvPaJdY6fvDJfA7QPysAeycP7Egsc38VCQ",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

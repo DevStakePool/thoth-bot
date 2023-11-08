@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654475646c657942616c6477696e",
+    "asset_name_ascii": "adapeDudleyBaldwin",
+    "fingerprint": "asset1yrcwnflv2v5j6ey6nd35sshhqq6xcswtjyff86",
+    "minting_tx_hash": "50ecf3d50ad71e085a729838ac9bb61e5cc0f8d3c6fdcdbf8b05773ac247cc39",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDudleyBaldwin": {
+            "Hat": "None",
+            "Body": "Orange",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Dudley Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmdQGEF3B2HWsUNpmgnyXym5TqdWGLkkz9Unj3cYk3nsXP",
+                "name": "Dudley Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdQGEF3B2HWsUNpmgnyXym5TqdWGLkkz9Unj3cYk3nsXP",
+            "Family": "Baldwin",
+            "Weapon": "Rifle",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

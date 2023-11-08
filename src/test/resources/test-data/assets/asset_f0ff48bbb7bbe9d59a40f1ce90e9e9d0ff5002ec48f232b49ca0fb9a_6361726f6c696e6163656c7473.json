@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6361726f6c696e6163656c7473",
+    "asset_name_ascii": "carolinacelts",
+    "fingerprint": "asset1nv4xswevl6qd6mw63mk0hyj3744ksmkhe4a0kk",
+    "minting_tx_hash": "5b3534d5ea64481d15812429a00583c143a10761b05a43b78449fc5cca929ef2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676073600,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "carolinacelts": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$carolinacelts",
+            "image": "ipfs://QmaY1UP38KqhbXLh6PNLPor8jdP1zgXKoy5R7ysQZRbiqf",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

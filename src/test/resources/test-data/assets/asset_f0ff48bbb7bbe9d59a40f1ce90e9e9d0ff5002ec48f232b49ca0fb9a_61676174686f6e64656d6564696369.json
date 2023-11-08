@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "61676174686f6e64656d6564696369",
+    "asset_name_ascii": "agathondemedici",
+    "fingerprint": "asset19ead5dva0n3z56fla4y44rlmygdevxfjsapdrt",
+    "minting_tx_hash": "b7d3f1832fd6453dbcac2c119fff5d2074c23a496de4ba6be29133a52c041c34",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666310400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "diegodemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$diegodemedici",
+            "image": "ipfs://QmNfNowm4R7oCcCJLWFKWwpmnaReL2DicFZoWzjC2HoaW9",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "agathondemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$agathondemedici",
+            "image": "ipfs://QmXFvuX5Fz8QvticRqpnmJ1Zk64w6TnnsfQ4LiPrhguuqn",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

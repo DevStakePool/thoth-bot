@@ -1,0 +1,36 @@
+[
+  {
+    "policy_id": "ccb2b25e5fd18224ea931a3812e5888716d9c08cd8871ff0ab3dc2fa",
+    "asset_name": "456d706f7761466f756e64696e67436f6d6d756e697479393634",
+    "asset_name_ascii": "EmpowaFoundingCommunity964",
+    "fingerprint": "asset1ymtgghxyl4v7sxcdvrhx28k9rjdq7gvhca49v7",
+    "minting_tx_hash": "e522630e2912e6068ebe6d49234e785be65595e72258bd79eebaa431bc342920",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634169600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "ccb2b25e5fd18224ea931a3812e5888716d9c08cd8871ff0ab3dc2fa": {
+          "EmpowaFoundingCommunity964": {
+            "name": "Empowa Founding Community 964",
+            "files": [
+              {
+                "src": "ipfs://QmaTuvYHTpoXCJYHpwwZu44BM5gejdfH7TARdwzKmy4C7e",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmY7CNsSVWsEwHvMCcVc88PaZK4cpzQ7gLGwY9hNzB7hGp",
+            "mediaType": "image/jpeg",
+            "seriesName": "Founding Community",
+            "description": "Exclusive Empowa privileges to our Founding Community",
+            "seriesNumber": "1",
+            "privilegeLevel": "Community"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

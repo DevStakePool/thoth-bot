@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "7967f354b44b274c7b8ebbdf432aebe7a12e8ed743238930a9a1c812",
+    "asset_name": "53485f53746172626173655f57616e64657265725f323636",
+    "asset_name_ascii": "SH_Starbase_Wanderer_266",
+    "fingerprint": "asset1yzdyul08cr6r4knuhkdr0hg26rky8qhk00ylsg",
+    "minting_tx_hash": "3f6ea08393ed1e7e55487b7b108cf55f72dd0748e535d68288e07385bbb1d32a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647129600,
+    "minting_tx_metadata": {
+      "721": {
+        "7967f354b44b274c7b8ebbdf432aebe7a12e8ed743238930a9a1c812": {
+          "SH_Starbase_Wanderer_266": {
+            "Meta": {
+              "Artwork Copyright": "ad3000"
+            },
+            "name": "Stellar Hood Starbase - Wanderer",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafybeib3vo2tnmiu66h6fqp43hopx5p3qtwyjriixw63axjuvi7whb3z",
+                  "ua"
+                ],
+                "mediaType": "text/html"
+              }
+            ],
+            "image": "ipfs://QmQ8LSELLWojVUsHeYfDHPDbNUXuyqYbbBjQEcPyPFZBgz",
+            "Website": "https://stellarhood.com",
+            "mediaType": "image/jpeg",
+            "Collection": "Stellar Hood Starbases",
+            "Manufacturer": "THJ Drive Yards",
+            "Starbase Parameters": {
+              "Class": "Wanderer",
+              "Module Slots": "6",
+              "Passenger Spaces": "3",
+              "Resource Storage Capacity": "5000"
+            },
+            "Manufacturing serial number": "266"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

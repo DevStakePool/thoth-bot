@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e34344d61696e53747265657442523930463835",
+    "asset_name_ascii": "cabin44MainStreetBR90F85",
+    "fingerprint": "asset105x49npt6uus9ptsrhfaxwg4epghlfs4yvx28k",
+    "minting_tx_hash": "82e152a5c8f9f90e9c24f4fc0548ae002700afb7b676b35ffb3975354b042459",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin44MainStreetBR90F85": {
+            "name": "44 Main Street, BR90 F85",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Main Street",
+            "District": "Brotaw",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "F",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "90",
+            "Y Coordinate": "85"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

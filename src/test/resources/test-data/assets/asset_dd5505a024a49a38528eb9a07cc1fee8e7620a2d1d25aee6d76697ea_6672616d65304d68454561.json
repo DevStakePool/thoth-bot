@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65304d68454561",
+    "asset_name_ascii": "frame0MhEEa",
+    "fingerprint": "asset12f85q8n3hjrvp762pafmfl650r0r7cmmpjjfwa",
+    "minting_tx_hash": "ab58a9bebcfc7cceeae8a420eecbe79709c834d780f90b4253377a61c899da73",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679961600,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0MhEEa": {
+            "id": "MhEEa",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Ramiro Hill",
+            "mintedAt": 1679965899242,
+            "mintedBy": "e125a6aad54a3357c2795142ab932f7d74086578d8ba61de439d1ae239",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1uyj6d2k4fge40sne29p2hye0046qsetcmzaxrhjrn5dwywgqjk0xe"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

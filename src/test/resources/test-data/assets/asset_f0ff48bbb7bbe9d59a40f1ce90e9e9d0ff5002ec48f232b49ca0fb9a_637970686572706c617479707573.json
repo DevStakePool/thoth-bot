@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "637970686572706c617479707573",
+    "asset_name_ascii": "cypherplatypus",
+    "fingerprint": "asset1vq8fpul5pmk92ma22g69vjfu8c8dy9xj3ga37r",
+    "minting_tx_hash": "75fb4427edf5b9282053ebb9f96b4af8ba9a44f9cc886294da2bd35465d8430e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673827200,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "magico": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$magico",
+            "image": "ipfs://QmaUfDKxDmTXCpah7dEjit1dNzcMKiL2Hz7dJQR8WhcR1B",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "aild.core": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$aild.core",
+            "image": "ipfs://Qmf2Z1nXsAgzmoHEmBfpvkngLCmap8tSyZ72LYyWKX37kr",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "cypherplatypus": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$cypherplatypus",
+            "image": "ipfs://QmWtzMSCkxzG29tV8j5FFHuTXtafaSjgSndhogyMPBn9tt",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

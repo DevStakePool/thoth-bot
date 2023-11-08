@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6f736d696e64656d6564696369",
+    "asset_name_ascii": "osmindemedici",
+    "fingerprint": "asset1ykm4wn390n4prszajqmpe62uft0wp65cnlm3q6",
+    "minting_tx_hash": "1b7e0a32855261a4cf7eeef270d4b85ceaa4845aee5fbdb69c045111ab73ecab",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666310400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "osmindemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$osmindemedici",
+            "image": "ipfs://QmcYsEKgZ42zSU5JMKRXZAWGsexnGrokjvQso9CXqRnz6n",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

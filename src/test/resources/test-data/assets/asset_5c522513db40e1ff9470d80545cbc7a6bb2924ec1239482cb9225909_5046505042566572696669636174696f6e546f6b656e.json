@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "5c522513db40e1ff9470d80545cbc7a6bb2924ec1239482cb9225909",
+    "asset_name": "5046505042566572696669636174696f6e546f6b656e",
+    "asset_name_ascii": "PFPPBVerificationToken",
+    "fingerprint": "asset13x2ftwg58ykjtfn57wkvpzkmmlhrrzq98mn2tz",
+    "minting_tx_hash": "0d11a2ef9a97f83551041e65e148fe02c63739f2ff3ec19873a7f1cf61781824",
+    "total_supply": "105",
+    "mint_cnt": 38,
+    "burn_cnt": 0,
+    "creation_time": 1678060800,
+    "minting_tx_metadata": {
+      "721": {
+        "5c522513db40e1ff9470d80545cbc7a6bb2924ec1239482cb9225909": {
+          "PFPPBVerificationToken": {
+            "name": "PFPPB Verification Token",
+            "files": [
+              {
+                "src": "ipfs://QmQeTtwWXp5zmLHCB7LsZAsz7orMbc79NhdapZKcwBfjPT",
+                "name": "full_size",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmX4BVW4LHSo62VQi9WX3A6tgMCxWpbvKgbh6FwZnhQeRn"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

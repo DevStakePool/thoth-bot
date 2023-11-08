@@ -1,0 +1,37 @@
+[
+  {
+    "policy_id": "641f0571d02b45b868ac1c479fc8118c5be6744ec3d2c5e13bd888b6",
+    "asset_name": "5a4f4d424945",
+    "asset_name_ascii": "ZOMBIE",
+    "fingerprint": "asset15dfzqe3mswx3xzc2d0sxfm8gznyk75r8q9plrk",
+    "minting_tx_hash": "7e859464db44e5daa3d45b18a62168831d491da58a7246b4d84a2e6921e2f07a",
+    "total_supply": "1000000000",
+    "mint_cnt": 2,
+    "burn_cnt": 0,
+    "creation_time": 1638316800,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "641f0571d02b45b868ac1c479fc8118c5be6744ec3d2c5e13bd888b6": {
+          "ZOMBIE": {
+            "name": "$ZOMBIE",
+            "image": "ipfs://QmP9yLdssqjm9xo738QiE6H5QBvUTnEt9yS27hKPriwNcy",
+            "artist": "Zombie King",
+            "summary": "The Onadracs - Zombie Coin",
+            "assetType": "FT",
+            "mediaType": "image/png",
+            "publisher": [
+              "https://theonadracs.com",
+              "https://tokhun.io"
+            ],
+            "description": [
+              "In Game Utility Token"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

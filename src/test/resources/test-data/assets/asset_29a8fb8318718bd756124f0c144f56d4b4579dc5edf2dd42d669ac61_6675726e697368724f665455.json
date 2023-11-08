@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368724f665455",
+    "asset_name_ascii": "furnishrOfTU",
+    "fingerprint": "asset1kr9wd3jtx3dr9jr2ppx0slaghzlndv8rpw7zqq",
+    "minting_tx_hash": "50fd10bc7d979b829f935e3df7c9eca4e81fa64366aee29ad06bbd3f60d9eb83",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678492800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishrOfTU": {
+            "id": "rOfTU",
+            "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "name": "Oak Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+                "name": "Oak Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTGMqJRHL9XRpRB95eMcNDxW6U6JaDpM8gctpUF3NgYgj",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmaYDactdAgX1YY8jnBCTaKLsC3Sw2DMDzEL2WCck69T4P",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "description": "Hand-crafted by Roch Green.",
+            "furnitureId": 213
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

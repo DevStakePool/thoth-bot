@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368324b383245",
+    "asset_name_ascii": "furnish2K82E",
+    "fingerprint": "asset1v0a0fju3x28g59qyrqn87fxa9xjrxjexrytsz7",
+    "minting_tx_hash": "976e8d1c42bdfc365a561a7e437d6dff6aaeba8e32a28761bc16a8d8c5e33d05",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675987200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish2K82E": {
+            "id": "2K82E",
+            "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "name": "Cushioned Armchair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+                "name": "Cushioned Armchair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQfxQsmMez3vgCjAsKVaVKnwRishsqpCtvixnyBMZbeY9",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVthsuyoH91GwKwkqFeT3kaZNedhhEn69Mq5VhF5nmCke",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "description": "Hand-crafted by Wakefield Smith.",
+            "furnitureId": 207
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

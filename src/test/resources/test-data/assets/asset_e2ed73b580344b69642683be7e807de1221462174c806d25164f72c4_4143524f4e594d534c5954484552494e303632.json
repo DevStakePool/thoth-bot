@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "e2ed73b580344b69642683be7e807de1221462174c806d25164f72c4",
+    "asset_name": "4143524f4e594d534c5954484552494e303632",
+    "asset_name_ascii": "ACRONYMSLYTHERIN062",
+    "fingerprint": "asset1uxaue94gq6ln0lay7ppy7vm9lhykw6y0rgng5h",
+    "minting_tx_hash": "5c88c1ab12714e8e80c5020180907b1142b3ca1a2e7935fe39b1dd74ad4f02ae",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1642636800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "e2ed73b580344b69642683be7e807de1221462174c806d25164f72c4": {
+          "ACRONYMSLYTHERIN062": {
+            "name": "Acronym Slytherin #062",
+            "files": [
+              {
+                "src": "ipfs://QmWuLeNyc61ugc2EjDkrWmFCc4RX7D1MdkSs1XBB6BzzrW",
+                "name": "Acronym Slytherin #062",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWuLeNyc61ugc2EjDkrWmFCc4RX7D1MdkSs1XBB6BzzrW",
+            "rarity": "1 of 160",
+            "twitter": {
+              "@acronym_os": "https://twitter.com/acronyms_os"
+            },
+            "mediaType": "image/png",
+            "publisher": "Acronym DAO",
+            "royalties": "10%",
+            "collection": "Acronym DAO",
+            "description": "Membership NFT for the Acronym DAO"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

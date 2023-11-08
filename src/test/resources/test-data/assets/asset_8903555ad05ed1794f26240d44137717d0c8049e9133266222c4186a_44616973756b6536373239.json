@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "8903555ad05ed1794f26240d44137717d0c8049e9133266222c4186a",
+    "asset_name": "44616973756b6536373239",
+    "asset_name_ascii": "Daisuke6729",
+    "fingerprint": "asset1l2kwdw4rrz0g5luf8356pkkeq8tg9gufwtfjhk",
+    "minting_tx_hash": "582db543a2dbabb09fb35e5486e72206ea334298d2e4d9f34acb0f9bfe4a0912",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1653177600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8903555ad05ed1794f26240d44137717d0c8049e9133266222c4186a": {
+          "Daisuke6729": {
+            "Body": "Almond",
+            "Hair": "Bob Cut F",
+            "name": "Daisuke #6729",
+            "Music": "S1 No Guitar No Drone",
+            "files": [
+              {
+                "src": "ipfs://QmQVBJArV9ugMumFK6oi62oBuMEjCeFNCNL2iy6AYmkMpR",
+                "name": "Daisuke #6729",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmURoHNKyXgujFe1m1Ay53r9fvfsqG2JMaa1HA4dPkg4d8",
+                "name": "Daisuke #6729",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZtzHXjEoHKExaZV1AXjLE3BMoVX9z53S32cqrLHcbY9Z",
+            "Weapon": "Tree Roots Katana",
+            "Clothing": "Tribal Dress 3",
+            "Companion": "Pineapple",
+            "mediaType": "image/gif",
+            "Background": "Magic Runes",
+            "Expression": "Sad",
+            "Hand_Mudras": "Sippin’ Tea"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

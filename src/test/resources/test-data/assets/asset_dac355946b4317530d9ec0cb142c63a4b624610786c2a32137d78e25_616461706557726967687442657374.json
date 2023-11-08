@@ -1,0 +1,71 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706557726967687442657374",
+    "asset_name_ascii": "adapeWrightBest",
+    "fingerprint": "asset1j6fzp432qy9np45g3ad6v65gnmd4ek77v552y4",
+    "minting_tx_hash": "468619dcb05805451c1b1d812c4e735fca5935bdcb77bdb5689fb1e23395c4df",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWrightBest": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Wright Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmQtYiE3ycG2FvN5qGqYcpXBh9u9ST9xfzwToVMwBRANsk",
+                "name": "Wright Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQtYiE3ycG2FvN5qGqYcpXBh9u9ST9xfzwToVMwBRANsk",
+            "Family": "Best",
+            "Weapon": "Spear",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          },
+          "adapeDenverCortes": {
+            "Hat": "Feather Hat",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Denver Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmbHXrokaJcYMeBBgqiNv8jwcJyzYuUZbofrWGZLfZZtM2",
+                "name": "Denver Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbHXrokaJcYMeBBgqiNv8jwcJyzYuUZbofrWGZLfZZtM2",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Long White Beard",
+            "description": "A distinguished member of the Cortes family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

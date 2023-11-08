@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368536367684a",
+    "asset_name_ascii": "furnishScghJ",
+    "fingerprint": "asset1x48xnputk3yhmjkhc85mvv0fp4zm3pqt8ayr3u",
+    "minting_tx_hash": "a8b2af0bb680707743f66f91872bb7e029bbd06271f9530152d8b4dafc743ace",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673222400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishScghJ": {
+            "id": "ScghJ",
+            "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "name": "Fireplace",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+                "name": "Fireplace",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZBhsPDqH8SthYH894ngh4Rf1EyGfLtbCvGaHqCWGxy2c",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmW4AVjc4bPWkziNFGiSV6Fy55XTAbKx1YJiM3rcCqaaSt",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "description": "Hand-crafted by Osmond White.",
+            "furnitureId": 209
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

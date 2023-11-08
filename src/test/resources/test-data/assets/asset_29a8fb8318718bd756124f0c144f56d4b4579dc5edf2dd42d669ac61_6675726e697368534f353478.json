@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368534f353478",
+    "asset_name_ascii": "furnishSO54x",
+    "fingerprint": "asset1ghtzk0stsu55ksewjccehpl8tthlr5p049ujw7",
+    "minting_tx_hash": "f0514e30f94a3081d7c88f4ab61472afb14143a9651e2a07c2eef569af346efa",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672963200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishSO54x": {
+            "id": "SO54x",
+            "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "name": "Chest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+                "name": "Chest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmR5vzh5LkpG2mphtY3PiH79x4bFiccw2bVPMmmLDyFtf6",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmRBbEKVNDvpSQb1VKRt1Yiu5uoWi8dzDracYH2aVmQK4N",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "description": "Hand-crafted by Ripley Evans.",
+            "furnitureId": 205
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

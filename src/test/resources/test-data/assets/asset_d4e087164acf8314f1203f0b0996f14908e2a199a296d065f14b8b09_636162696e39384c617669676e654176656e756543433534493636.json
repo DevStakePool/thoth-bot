@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e39384c617669676e654176656e756543433534493636",
+    "asset_name_ascii": "cabin98LavigneAvenueCC54I66",
+    "fingerprint": "asset14et5n2mzymyp08c34cx7jrnrkup8cuw07waqk7",
+    "minting_tx_hash": "3ba799e4c81bbed154e8ccf86c75087c4c47716ee494ff9982813a813609e7a0",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin98LavigneAvenueCC54I66": {
+            "name": "98 Lavigne Avenue, CC54 I66",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Lavigne Avenue",
+            "District": "Canmard City",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "I",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "54",
+            "Y Coordinate": "66"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

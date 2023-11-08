@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "13a8b644670a6e77690dc774dcf0b00b4e2e769533cded62a9321e64",
+    "asset_name": "43617264616e6f4170654c616e643136323933",
+    "asset_name_ascii": "CardanoApeLand16293",
+    "fingerprint": "asset1srsw8r72wwgasjzcj7tjpl2j7x4t4jxdrnt2kz",
+    "minting_tx_hash": "350eb7fdcb3e5a4b10f01c83ac646d4a4d7b366e33bf24eabfa1367dfcf02e3e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1637193600,
+    "minting_tx_metadata": {
+      "721": {
+        "creator": "Cardano Apes",
+        "version": 1,
+        "publisher": [
+          "Cardano Apes"
+        ],
+        "description": "cardanoapes.club",
+        "13a8b644670a6e77690dc774dcf0b00b4e2e769533cded62a9321e64": {
+          "CardanoApeLand16293": {
+            "id": "16293",
+            "area": "Tropcial island",
+            "name": "CardanoApeLand16293",
+            "posx": 66,
+            "posz": 75,
+            "image": "ipfs://Qmc3mBkqzdhxDejkLDmAKyFGQzfkEskWmoZgCBwsbvVJDa"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

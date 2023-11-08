@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065546f6d6b696e436869657361",
+    "asset_name_ascii": "adapeTomkinChiesa",
+    "fingerprint": "asset1zxfhspqpxpejrjvdpwr5r8dprfa8nvepaasw0d",
+    "minting_tx_hash": "06710873b57fa2912754eed557c46fcaf41b5d74ff235639fa714c2f8129edfe",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeScottCox": {
+            "Hat": "Wool Cap",
+            "Body": "Brown Suit",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Scott Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmRueGvEktdx5G6tXuzE8kZviM5RCnZsRshn8rFTggu556",
+                "name": "Scott Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRueGvEktdx5G6tXuzE8kZviM5RCnZsRshn8rFTggu556",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeTomkinChiesa": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Robot",
+            "name": "Tomkin Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmcKxzD4NnhmkpeKVr4YEXTGGrFi1skBwEv4GLGBeiN5ZA",
+                "name": "Tomkin Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcKxzD4NnhmkpeKVr4YEXTGGrFi1skBwEv4GLGBeiN5ZA",
+            "Family": "Chiesa",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          },
+          "adapeGeronimoGreen": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Geronimo Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmcsANmE79dH7iYvbsdkXV8UhspkBkrRqwNtyZVzrfvH1S",
+                "name": "Geronimo Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcsANmE79dH7iYvbsdkXV8UhspkBkrRqwNtyZVzrfvH1S",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

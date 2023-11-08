@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644",
+    "asset_name": "4c696e64656c6c44656c7461",
+    "asset_name_ascii": "LindellDelta",
+    "fingerprint": "asset1hq84c2nj4nm2dnedsacljdlzu4a39c7vaq6fsp",
+    "minting_tx_hash": "9de2e97eae8c5eb397c97116b8719b0884455c45baae1cc19c1786862cf0574a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671494400,
+    "minting_tx_metadata": {
+      "721": {
+        "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644": {
+          "LindellDelta": {
+            "name": "Lindell Delta",
+            "files": [
+              {
+                "src": "ipfs://QmbyCD68VoKtRxMLuMpJKPYD1iWmA6f2xva93fLXoLsBzr",
+                "name": "Lindell Delta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbyCD68VoKtRxMLuMpJKPYD1iWmA6f2xva93fLXoLsBzr",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Puffy Black",
+              "Hair": "Green Hair 2-3",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Delta",
+              "Backdrop": "Yellow Backdrop 3",
+              "Body Color": "Pink",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

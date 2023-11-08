@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "a79f70be853d64b6d3558229f402bcb01f1b53a1df207767e138e8aa",
+    "asset_name": "4a756c6975734d635768616c65",
+    "asset_name_ascii": "JuliusMcWhale",
+    "fingerprint": "asset1jktzs0h763fshdp3wqrq2wzsw53s7lgc6sn48v",
+    "minting_tx_hash": "6bce77d8f8afcaae0cf06c113e3ab143e2849180054a189fb2efcd59cf7b96d5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679443200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "a79f70be853d64b6d3558229f402bcb01f1b53a1df207767e138e8aa": {
+          "JuliusMcWhale": {
+            "Body": "Blue",
+            "name": "Julius McWhale",
+            "files": [
+              {
+                "src": "ipfs://QmaiVwo4oVctCs4cHNuvjqWAEaWJZBJvGEf9P2Uf6EdAmH",
+                "name": "JuliusMcWhale",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaiVwo4oVctCs4cHNuvjqWAEaWJZBJvGEf9P2Uf6EdAmH",
+            "Clothes": "Red Tailcoat",
+            "Headwear": "Top Hat",
+            "Accessory": "None",
+            "mediaType": "image/png",
+            "description": [
+              "A sophisticated, stylish and majestic whale dresse",
+              "d in elegant attire."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655175696c696375735768697465",
+    "asset_name_ascii": "adapeQuilicusWhite",
+    "fingerprint": "asset1g78zzyvzqtk6m5mdh26kfmv35nx8edl93snpr6",
+    "minting_tx_hash": "69c6a8a8eb33304cb5ef5c9d24594bb77f93b396cb66a40d4a78bb6eaed1e26a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAlcottWright": {
+            "Hat": "Pirate Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Alcott Wright",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmUDrn4bwn6fv3HL1E5GdYtFvvMQsFrbyvTmP9EYL9Rmgc",
+                "name": "Alcott Wright",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUDrn4bwn6fv3HL1E5GdYtFvvMQsFrbyvTmP9EYL9Rmgc",
+            "Family": "Wright",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Wright family"
+          },
+          "adapeTurenneMonet": {
+            "Hat": "Feather Hat",
+            "Body": "Black Wool Coat",
+            "Ears": "Earphones",
+            "Eyes": "Spectacles",
+            "Head": "Orange",
+            "name": "Turenne Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmNoevcRnjPGtbL7nLBdtngcQngzL4dSLw7KiqnifB3hcK",
+                "name": "Turenne Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNoevcRnjPGtbL7nLBdtngcQngzL4dSLw7KiqnifB3hcK",
+            "Family": "Monet",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          },
+          "adapeQuilicusWhite": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Quilicus White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmNMYPmmsFJFUt1P9Szb9AjM1pz3gNbHYYEvr7YdVibawu",
+                "name": "Quilicus White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNMYPmmsFJFUt1P9Szb9AjM1pz3gNbHYYEvr7YdVibawu",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

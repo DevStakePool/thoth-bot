@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655261796275726e57696c736f6e",
+    "asset_name_ascii": "adapeRayburnWilson",
+    "fingerprint": "asset1dkydevp0jde94wgxeyzg96qtmye58m96lymzle",
+    "minting_tx_hash": "ec86febc308784ee6ce49b4dca089292f540fbb2d75a807b72d78b1022043c07",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRayburnWilson": {
+            "Hat": "Wool Cap",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Rayburn Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmcoQHp4n3s4XvJ1YyDKPjGzQ4cdgRFJLtvCUAo5ubh1gW",
+                "name": "Rayburn Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcoQHp4n3s4XvJ1YyDKPjGzQ4cdgRFJLtvCUAo5ubh1gW",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Wilson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

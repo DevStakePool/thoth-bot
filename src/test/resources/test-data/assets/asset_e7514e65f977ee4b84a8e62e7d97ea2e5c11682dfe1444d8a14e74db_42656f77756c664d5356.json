@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "e7514e65f977ee4b84a8e62e7d97ea2e5c11682dfe1444d8a14e74db",
+    "asset_name": "42656f77756c664d5356",
+    "asset_name_ascii": "BeowulfMSV",
+    "fingerprint": "asset16c7mmepknha8fnwmjn8akfepqj8mkpss8mcxu7",
+    "minting_tx_hash": "62356c79f4b5afdc1f10a61a96ebd3ddd1d2acc8d871670a48a8fe2635a8d417",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1662508800,
+    "minting_tx_metadata": {
+      "721": {
+        "e7514e65f977ee4b84a8e62e7d97ea2e5c11682dfe1444d8a14e74db": {
+          "BeowulfMSV": {
+            "id": "819",
+            "data": "ipfs://QmUBTB4c7L74wBg8DjUYvgv5LQPXoGowmH9Zt3DXerkpYj",
+            "name": "Beowulf #819",
+            "files": [
+              {
+                "src": "ipfs://Qmaj1oLXTyRuaMeLCoJrPtc9fkNmFhwQuyGLgr9j1YvNZm",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXNr3kbup4U8T2XBa7mtsyRtpYVWjmDwEnrXykNWMbDvH",
+            "sha256": "5833053e052740e419ae704c15ef9069efbc562685ccc1d9eb39f59a85be074d",
+            "authors": [
+              "Unknown"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "Beowulf / 29",
+              "Book Title": "Beowulf",
+              "Cover Theme": "Beowulf / The Hero"
+            },
+            "description": [
+              "I shall gain me glory, or grim-death shall take me."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

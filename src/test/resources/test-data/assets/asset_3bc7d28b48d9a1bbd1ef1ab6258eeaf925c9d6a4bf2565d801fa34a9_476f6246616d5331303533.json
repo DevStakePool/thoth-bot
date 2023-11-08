@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "3bc7d28b48d9a1bbd1ef1ab6258eeaf925c9d6a4bf2565d801fa34a9",
+    "asset_name": "476f6246616d5331303533",
+    "asset_name_ascii": "GobFamS1053",
+    "fingerprint": "asset1k368awvff6ldmswgumlg8uns86ft62uwewvej4",
+    "minting_tx_hash": "77e03880aefebdf35e62c7e28997e5234b307057fff2810d5f09e5b086c305b9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1660262400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "3bc7d28b48d9a1bbd1ef1ab6258eeaf925c9d6a4bf2565d801fa34a9": {
+          "GobFamS1053": {
+            "name": "GobFamS1#053",
+            "files": [
+              {
+                "src": "ipfs://QmSVWBMzjkLCRsGn3JCmhVhn2DL9MSq1YRFCsi2biDKFL4",
+                "name": "GobFamS1#053",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSVWBMzjkLCRsGn3JCmhVhn2DL9MSq1YRFCsi2biDKFL4",
+            "GobFamS1": {
+              "Gob": "Normal Gob",
+              "Clothes": "(Common) Suspenders",
+              "Headwear": "(Rare) Adventuring Hat",
+              "Item Left": "(Common) Blue Torch",
+              "Background": "(Common) Blue",
+              "Item Right": "(Rare) Wen Moon"
+            },
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "fcbeb36247ccf66496536ee109544f3a90e4bc1e0b113ed594d452ea",
+    "asset_name": "4d454441",
+    "asset_name_ascii": "MEDA",
+    "fingerprint": "asset1umgvt7mapp8nlrrqmcyl9mwa3auyd26haw0r89",
+    "minting_tx_hash": "90baacbcece4036689d45fd75742a5d94d7d9d48e24499c5f48f4865f60eca47",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1656115200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "fcbeb36247ccf66496536ee109544f3a90e4bc1e0b113ed594d452ea": {
+          "MEDA": {
+            "name": "MEDA",
+            "files": [
+              {
+                "src": "ipfs://QmfSkddVXwSDZV4p3ZbUCRt6gXkrssk5DLePJ6DYyGRHFS",
+                "name": "MEDA",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfSkddVXwSDZV4p3ZbUCRt6gXkrssk5DLePJ6DYyGRHFS",
+            "artist": "Martin Marinov",
+            "ticker": "MEDA",
+            "website": "shorturl.at/deuKX",
+            "assetType": "tokens",
+            "mediaType": "image/png",
+            "publisher": [
+              "https://sites.google.com/view/andromedaway"
+            ],
+            "description": "Andromeda Way Loyalty Reward Program - AWLRP token"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

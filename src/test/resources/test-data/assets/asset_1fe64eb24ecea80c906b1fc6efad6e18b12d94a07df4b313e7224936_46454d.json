@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "1fe64eb24ecea80c906b1fc6efad6e18b12d94a07df4b313e7224936",
+    "asset_name": "46454d",
+    "asset_name_ascii": "FEM",
+    "fingerprint": "asset1qx0r3cvmcm4y45r8clrez5mwfuvvww7nupp44p",
+    "minting_tx_hash": "a99b25feaeee134be92b81b6032b48665ce4dde8bc2a5d8038e4b7ef1ef9ea07",
+    "total_supply": "2000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1654732800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "1fe64eb24ecea80c906b1fc6efad6e18b12d94a07df4b313e7224936": {
+          "FEM": {
+            "name": "Fitness Empire Token",
+            "files": [
+              {
+                "src": "ipfs://QmZtamnBXcxSNNefHQBULCzJu9fVrd9DiK8w4pRqd1WRhD",
+                "name": "FEM",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZtamnBXcxSNNefHQBULCzJu9fVrd9DiK8w4pRqd1WRhD",
+            "symbol": "FEM",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 63234532
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "A currency for the Fitness Empire Metaverse.",
+            "totalSupply": 2000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

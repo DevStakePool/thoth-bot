@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e31354d65646963694176656e756547433632493532",
+    "asset_name_ascii": "cabin15MediciAvenueGC62I52",
+    "fingerprint": "asset1nht9cua8y049kuzg57zsyzevhcu5rayuvxwnly",
+    "minting_tx_hash": "d0949d874a57a1b85d7a61f2940c32e4e648079d3ae7447a79c80a27e5c00998",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin15MediciAvenueGC62I52": {
+            "name": "15 Medici Avenue, GC62 I52",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Medici Avenue",
+            "District": "Gocon City",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "I",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "62",
+            "Y Coordinate": "52"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

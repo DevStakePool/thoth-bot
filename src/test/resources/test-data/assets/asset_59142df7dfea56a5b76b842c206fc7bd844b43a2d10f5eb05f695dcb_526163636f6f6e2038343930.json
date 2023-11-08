@@ -1,0 +1,67 @@
+[
+  {
+    "policy_id": "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb",
+    "asset_name": "526163636f6f6e2038343930",
+    "asset_name_ascii": "Raccoon 8490",
+    "fingerprint": "asset15tdf7dljjp0ezau0l0a8ll6ydq6v2kcxgr03rm",
+    "minting_tx_hash": "6c7cd84653e9f6b5c9cf95fd427bd456c4d2d1ee772afd2413924ad6d15406ce",
+    "total_supply": "2",
+    "mint_cnt": 3,
+    "burn_cnt": 1,
+    "creation_time": 1670025600,
+    "minting_tx_metadata": {
+      "721": {
+        "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb": {
+          "Raccoon 8490": {
+            "name": "Raccoon #8490",
+            "Index": "8490",
+            "image": "ipfs://QmYnjR3o3GewXbCFMXaQjQ2Zgz7VBJkvoRcjASWZshSFfE",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2022",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Polar Eyes",
+              "Head": "None",
+              "Ring": "None",
+              "Genus": "Polar",
+              "Nails": "Polar Nails",
+              "Wings": "None",
+              "Eyewear": "None",
+              "Wardrobe": "Brown Inverness Cape",
+              "Left Hand": "Cap Gun",
+              "Syndicate": "Aristocrat",
+              "Profession": "Soldier",
+              "Right Hand": "Bubbles",
+              "Base Point Multiplier": "1.35"
+            }
+          }
+        },
+        "7795eb9746390ea24c03c7f9898bb706dd6d3bd5cf5a7ee9ddf9707c": {
+          "RS Light Wings 362": {
+            "name": "RS Light Wings 362",
+            "files": [
+              {
+                "src": "ipfs://QmPowaAYqsPSi438xV4tHDj9CoWHrop9hEKQ4rmoKDTtkQ",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmSZBdgEASLPAKvwmWPpMRtH6JHp32nxuuAWu5HFPVpR2Y",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Wings",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "7323",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "362",
+            "BPM Boost Percentage": "50"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

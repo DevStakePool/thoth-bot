@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "5bf224b6e90d79fcc79ed6833af5e284c1c7c510eedcd902f8660619",
+    "asset_name": "525250443835383130393531",
+    "asset_name_ascii": "RRPD85810951",
+    "fingerprint": "asset1dnn3rvqsd34lv9vc4pc75nu3gck78yrg39hvsn",
+    "minting_tx_hash": "d940b3d7682f55e28f4450447256f8d2512983e9c5dc537fa954d4397a933b18",
+    "total_supply": "0",
+    "mint_cnt": 1,
+    "burn_cnt": 1,
+    "creation_time": 1677283200,
+    "minting_tx_metadata": {
+      "721": {
+        "5bf224b6e90d79fcc79ed6833af5e284c1c7c510eedcd902f8660619": {
+          "RRPD85810951": {
+            "name": "Pendant Boost",
+            "image": "ipfs://QmU5pgsn5kK9irZNMGv8h6J83obxw2xyyPN8aV5wqzmBrP",
+            "utility": "In game boost for Pendant RaggieRage Superpower",
+            "attributes": {
+              "type": "raggierage",
+              "rating": "*",
+              "expiryslot": "85810951"
+            },
+            "description": "Pendant RaggieRage boost used in RaggieRun"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

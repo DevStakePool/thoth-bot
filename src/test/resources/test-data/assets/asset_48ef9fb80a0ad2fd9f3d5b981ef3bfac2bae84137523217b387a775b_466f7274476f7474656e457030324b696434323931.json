@@ -1,0 +1,80 @@
+[
+  {
+    "policy_id": "48ef9fb80a0ad2fd9f3d5b981ef3bfac2bae84137523217b387a775b",
+    "asset_name": "466f7274476f7474656e457030324b696434323931",
+    "asset_name_ascii": "FortGottenEp02Kid4291",
+    "fingerprint": "asset1vs5eec6ftswwdu5awrce4syvapw76cnuv7k5fm",
+    "minting_tx_hash": "80cc4c5331845df4a4215a9c54b7924ffdc5c786c52816371a70295fd143e35c",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1680134400,
+    "minting_tx_metadata": {
+      "721": {
+        "33e59dcc1868d18da07fb12e47349f1f4ff3d6b931318c212eaee5c1": {
+          "ArrowheadScribbledMask0021": {
+            "Camp": "Barro",
+            "Type": "Mask",
+            "name": "Arrowhead Scribbled Mask #0021",
+            "Frame": "Wooden",
+            "files": [
+              {
+                "src": "ipfs://QmbbUdemK8vpJL9iNZXazCWTNHNim8sqxJ96f5nKaNJ3U9",
+                "name": "Arrowhead Scribbled Mask #0021",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeQEhrYYmuQF3whY1rEM7MYC35RnPVbWNPoty1cQmwwXr",
+            "Number": "0021/0028",
+            "Special": "None",
+            "mediaType": "image/jpg",
+            "Collection": "Fort Gotten - Beyond the Forest",
+            "Description": "None",
+            "Information": [
+              "This is an item equipable by Fort Gotten Kidz.",
+              "https://fort-gotten.com"
+            ]
+          }
+        },
+        "48ef9fb80a0ad2fd9f3d5b981ef3bfac2bae84137523217b387a775b": {
+          "FortGottenEp02Kid4291": {
+            "FGI": [
+              "14e6d6d5b7-302110100110"
+            ],
+            "Hat": "None",
+            "Body": "Oceans Blue",
+            "Camp": "CENTRO",
+            "Mask": "None",
+            "Role": "Forager",
+            "name": "Fort Gotten Ep02 Kid #4291",
+            "Staff": "None",
+            "files": [
+              {
+                "src": "ipfs://QmXwPi9YahfGUmLmqr1vFifKiZShfhuSQvviiaKFPEUXYz",
+                "name": "Fort Gotten Ep02 Kid #4291",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRvet3ttrne1nJUhdcoaA63xqEy4Jw9CgeEMMmsJ94NKd",
+            "Region": "Valley",
+            "Straps": "None",
+            "Episode": "Beyond The Forest",
+            "Website": "https://fort-gotten.com",
+            "Backpack": "None",
+            "Clothing": "None",
+            "Necklace": "None",
+            "Accessory": "None",
+            "mediaType": "image/png",
+            "Kid Number": "4291",
+            "Wheelchair": "None",
+            "Kidz Journal": {
+              "Achievement": "None",
+              "Customizations": 1
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

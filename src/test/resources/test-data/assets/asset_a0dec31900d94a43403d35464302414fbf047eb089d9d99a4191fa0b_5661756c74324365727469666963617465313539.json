@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "a0dec31900d94a43403d35464302414fbf047eb089d9d99a4191fa0b",
+    "asset_name": "5661756c74324365727469666963617465313539",
+    "asset_name_ascii": "Vault2Certificate159",
+    "fingerprint": "asset1c3x4ztfptzcpx2yqarqsuml7pj6n2g0rtzzqsq",
+    "minting_tx_hash": "2da3eb4905e39cf9de969e962c145b8b2e25ac9ceb7b79d473fab22a2be4526c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658534400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "a0dec31900d94a43403d35464302414fbf047eb089d9d99a4191fa0b": {
+          "Vault2Certificate159": {
+            "Name": "Vault #2 Certificate",
+            "Asset": "Vault2Certificate159",
+            "files": [
+              {
+                "src": "ipfs://QmcmxEhVoyXGsSq86grN6XgTwnN3L8MTBnGdzSf8wjm5ap",
+                "name": "Vault2Certificate159",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmcKhZ9TMBd5KmJF7mj6bhGvzFu28RgJ7hj6wazbwzFfHp",
+                "name": "Vault2Certificate159",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmbkfv4YZcRitu9RrLRCWpPkAEDCtbsXXVHcRGvivzyxxo",
+            "Series": "Vault Certificates",
+            "Website": "https://www.oldmoney.io",
+            "mediaType": "image/jpeg",
+            "Collection": "Old Money"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

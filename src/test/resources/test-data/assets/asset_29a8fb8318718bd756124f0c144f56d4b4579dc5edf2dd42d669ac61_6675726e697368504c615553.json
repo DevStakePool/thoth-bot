@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368504c615553",
+    "asset_name_ascii": "furnishPLaUS",
+    "fingerprint": "asset1lpxcdtvw5yhuxqastts6hzuktf5p2e2x4gdgp7",
+    "minting_tx_hash": "c031c16c18cef1cead276b0c410bd76cbf5579acd51cfcb47e8286ecf037a1e9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674604800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishPLaUS": {
+            "id": "PLaUS",
+            "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "name": "Rug",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+                "name": "Rug",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmU31Twc3Nvc9gchWRRVMkFPTskqiJdFWWm6zsnwMPj7TJ",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmV65MKJZaK67QLbCGziBhbmnwHsFiyDuCewp4T2DSaBCP",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "description": "Hand-crafted by Birch Wilson.",
+            "furnitureId": 218
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

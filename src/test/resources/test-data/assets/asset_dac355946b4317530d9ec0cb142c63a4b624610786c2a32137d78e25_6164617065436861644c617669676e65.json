@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065436861644c617669676e65",
+    "asset_name_ascii": "adapeChadLavigne",
+    "fingerprint": "asset1udmtettqxs7j9fzlqjyk8acjszqv78jmma56f7",
+    "minting_tx_hash": "f9ae05dacd8d5842aacfd926c76a1b4feaa5f7e530f7566339f0956d00e37cba",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeChadLavigne": {
+            "Hat": "Gold Helmet",
+            "Body": "Doublet",
+            "Ears": "Earphones",
+            "Eyes": "Sunglasses",
+            "Head": "Orange",
+            "name": "Chad Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmUXGfTSyy6BikRBcTvWLdVxYXgPS3MXeS5iXNL6u4VZQo",
+                "name": "Chad Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUXGfTSyy6BikRBcTvWLdVxYXgPS3MXeS5iXNL6u4VZQo",
+            "Family": "Lavigne",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

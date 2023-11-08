@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479333537",
+    "asset_name_ascii": "SickCity357",
+    "fingerprint": "asset1emjda2es2du0gju5ed858j6uvwfysdt8egpqns",
+    "minting_tx_hash": "ed982347edbfd7954a714c69d306ed47f341ef67b11ce2dcd130800b4140fa50",
+    "total_supply": "25055",
+    "mint_cnt": 57,
+    "burn_cnt": 1,
+    "creation_time": 1660262400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity357": {
+            "name": "SickCity357-FlatDarkEarther",
+            "files": [
+              {
+                "src": "ipfs://QmSkqWcjsCYdcepWhyxCzde336FRnUcFZv4a1CPtUQRA3b",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmTg2shYUwVrBomnvt3ikbywJWpujbcuMT2Gtb5N9cngx1",
+            "links": {
+              "twitter": "https://twitter.com/FlatDarkEarther",
+              "website": "https://flatdarkearther.com/",
+              "discord_user": "FlatDarkEarther#4292",
+              "discord_invite": "https://discord.gg/wUfD93byw8"
+            },
+            "genres": [
+              "Rap",
+              "Alternative"
+            ],
+            "artists": [
+              "FlatDarkEarther"
+            ],
+            "copyright": "FlatDarkEarther ℗ 2022 ",
+            "collection": "Fibonaccu",
+            "song_title": "Fibonaccu",
+            "album_title": "Fibonaccu",
+            "distributor": "https://sickcity.xyz",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT2M51S",
+            "music_metadata_version": "v1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,678 @@
+[
+  {
+    "policy_id": "477cec772adb1466b301fb8161f505aa66ed1ee8d69d3e7984256a43",
+    "asset_name": "477574656e62657267204269626c65202330303230",
+    "asset_name_ascii": "Gutenberg Bible #0020",
+    "fingerprint": "asset1e84vaeghr9dwd9ajvzf07zdrxen99akuaz2lzw",
+    "minting_tx_hash": "f597afb986c68e1035a765be7f86c32f647113e23fb4aea0cac1d211b2aeba51",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1657929600,
+    "minting_tx_metadata": {
+      "721": {
+        "477cec772adb1466b301fb8161f505aa66ed1ee8d69d3e7984256a43": {
+          "Gutenberg Bible #0000": {
+            "id": "0000",
+            "data": "ipfs://QmRC9zgbtRAeNPio1t6bNp6qUoXGzN47wbrypMWyLH68UQ",
+            "name": "Gutenberg Bible #0000",
+            "files": [
+              {
+                "src": "ipfs://QmfZFUsFitvW7qW4dMKLcSJ2okr6uF9fxWK7Rfp2L1gkvu",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVLSMLeJ1LsDRnGaXQoy4igs6D1Tts7tPi2scF3yEUm1V",
+            "sha256": "98236fc4a9ad48a1f1ccede2db3ab89fef2b2afb755b2d6c735ae8883f648429",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Text"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0001": {
+            "id": "0001",
+            "data": "ipfs://QmcKnDauNg8bRU2wusGZTsKbdkQTd5sYZmUCWDaebmWDhw",
+            "name": "Gutenberg Bible #0001",
+            "files": [
+              {
+                "src": "ipfs://QmeQ48wCpCFiTXgoEjWD1p7zp7UBizy1gqUWVaQdthrSNA",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWb1SFcDFBxpd3qwH218R2eAhQuYSN9TKQZfFizfnaYDQ",
+            "sha256": "86ced9e8b17ee9389879e77f7ced5ccaa733582ff5a5e9f5c54d80e8ec601f93",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Stroke": [
+                "Stroke_Inner"
+              ],
+              "Swirls": [
+                "Swirls_Middle"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0002": {
+            "id": "0002",
+            "data": "ipfs://QmZ2ZR3rHpVrbSBwtni2tPFDJCmabMHRsrntZRbh5kBwZM",
+            "name": "Gutenberg Bible #0002",
+            "files": [
+              {
+                "src": "ipfs://QmPmhBJVxUohbGik2EHvFr42JGWvEXffV4w5n1KyJtU6zy",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXRyVxWZfigZVqTzf91v1R3j1EgRxhKsvHvJijUm2hFBc",
+            "sha256": "27facc7f7d9046fd0c470317ba24a7c627d9869e690acd4955d73abc393f9003",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Inner_Crests",
+                "Gold_Small_End_Leaves"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0003": {
+            "id": "0003",
+            "data": "ipfs://QmXnhWruCUfvhGqFXPQHDW4SpcAYTPbEXX671R9hBQzTtJ",
+            "name": "Gutenberg Bible #0003",
+            "files": [
+              {
+                "src": "ipfs://QmYN2hSyxPiDSmoy3Soin1atRqNBNRa8CGNzLA6kTfLquw",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmadT4m8vGRS3ze8a9ap8apwovpDx6v8HnQ1edbWoGLtxV",
+            "sha256": "0a7e219cce267bfcb8c20193788b1fc4f9d3a532cc07a13877af9f781e1a2ca3",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_End_Dots"
+              ],
+              "Black_Knot": [
+                "Black_Knot"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0004": {
+            "id": "0004",
+            "data": "ipfs://QmcZqFRMDv4MSsfj3acZk8p1wqEV3zzMhsWfemytfXf1hw",
+            "name": "Gutenberg Bible #0004",
+            "files": [
+              {
+                "src": "ipfs://QmVzMR19pSE1y2tcsevRFkt4ktyH59MC8gPCBHXYwoyLGi",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbLcZtSY2gBGKJC51AJTsTYWU8m9fnCgGMJaJwy89oXA8",
+            "sha256": "827cbf064e23bd3ae4df843800a5f0b4a30c420bae9d4e247ffdda211e7d53c7",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Birds",
+                "Gold_Blooms"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0005": {
+            "id": "0005",
+            "data": "ipfs://QmdGxbfFFRme8ecAHZMApPpdgx3kJcuqA7TCYuqQ3hoY89",
+            "name": "Gutenberg Bible #0005",
+            "files": [
+              {
+                "src": "ipfs://QmanH86SwmDa6vcTZT4dWq9DkfpLe6RipfSYjqTEiBa1Xi",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVmuist1FiyxZ2D5iEku69gBjkGDNN8kwdzHLYqzpJdvX",
+            "sha256": "3a99856add1f49126b919203fd30d24307f62395290d2a4820e2100b1c0caa5a",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Birds"
+              ],
+              "Stroke": [
+                "Stroke_Outer"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0006": {
+            "id": "0006",
+            "data": "ipfs://QmaJFs2GwGL1JhFf99Qk3mhDoexjmnc595RouYQecFjMK1",
+            "name": "Gutenberg Bible #0006",
+            "files": [
+              {
+                "src": "ipfs://QmTzAZ8ePxMVvA33dDNzQXJQ1V7X7oLK4smuNwN6JskBMC",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZaiwDwwo8Qq5Rn6oDFp1cZ9bznuMzik1b6yWaaW9twzs",
+            "sha256": "8f03b81e809066a38353ca98eb7c33978a75a8a3ce60552fe5c0e8e388a34ca4",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Blooms"
+              ],
+              "Swirls": [
+                "Swirls_Dashes"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0007": {
+            "id": "0007",
+            "data": "ipfs://QmfHc4S9jej4gR2ZxGRTGcHieA6iB4QPVU292JdyPxpv6h",
+            "name": "Gutenberg Bible #0007",
+            "files": [
+              {
+                "src": "ipfs://QmcXizKxK2kLcvp1gurnVBFWhAJTHP14HmxZ9d8G34QUsX",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUqurLcmRcSNdJMoS64ADh4wQU5ANfce5xRb8yrMik5jk",
+            "sha256": "02cdeb17a6f204cbdaa89089988312c9e8ffb4f89d10f1ead5e428790f7fd821",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Birds"
+              ],
+              "Swirls": [
+                "Swirls_Dashes"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0008": {
+            "id": "0008",
+            "data": "ipfs://QmUDmo8Wcukg3SwSUv4xUKxXGJ2BWPwY2PcXoR1yspCvsR",
+            "name": "Gutenberg Bible #0008",
+            "files": [
+              {
+                "src": "ipfs://QmS4VqV4t85LQZ9CZqxGpSy2rqrhV4mbG7gAevjhbBTFdM",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRR2Ns1TJAhnP5AKwbhZHHohANdvvFcLUy36Wybow2Axj",
+            "sha256": "adf3f12b7ceb89f06f483333918b1a164294cacd7758dbc871a4f2f0a44a5ca0",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Middle_Leaves",
+                "Gold_Small_End_Leaves"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0009": {
+            "id": "0009",
+            "data": "ipfs://QmcvjX6W8PfJC615tzAJ8V7zsTsGNqMeqKTJt8SQWfCwTM",
+            "name": "Gutenberg Bible #0009",
+            "files": [
+              {
+                "src": "ipfs://QmRKVi3ddmJc9d8ywoiqPs5fPT5Rhxz5c4JTuS1W6NL8g5",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfS6EueA4sBbtAqpFXQ1NwZz6Tf7qnpZWAYv7rMWU56Cx",
+            "sha256": "8b76ff0d3c8432f9210dd63db375867aaf00633de3b5f7836c59b4d06b948150",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Middle_Flowers",
+                "Gold_Text"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0010": {
+            "id": "0010",
+            "data": "ipfs://QmamyUm1xrA7PAaW8L1AnhMXToggR2HCWa7hnHQQRB8bcp",
+            "name": "Gutenberg Bible #0010",
+            "files": [
+              {
+                "src": "ipfs://QmNzbzZWHYSiyfQpnBvZb2og4Q7jsW8ZdKoGmY6hFYoriA",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNMnsEaDysz2agFuEs8YVWg5qXbZKhhnWuEyDoV12LY2P",
+            "sha256": "e97d56563a48fe9d60135bfdadc4b5bb5007fc077a150aee49eefb819d1a1cb2",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_Middle"
+              ],
+              "Swirls": [
+                "Swirls_Middle"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0011": {
+            "id": "0011",
+            "data": "ipfs://QmcAskDTtWrMufhWU22T1k72V1vVn4UcZpSHtdmy9EfowN",
+            "name": "Gutenberg Bible #0011",
+            "files": [
+              {
+                "src": "ipfs://QmYoYrjj2tCDqKqALHoZzR5uaVywB1dYXhCQMy5PSSrqz7",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRctgjcxcodTEyTjTnYU4T6CEQFe3GFFYfcJ16FigT95r",
+            "sha256": "b1703ebc8c037f5754235ec86e7d7101788839aba403b50541b5fa202636eab0",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Vine_Ivy"
+              ],
+              "Swirls": [
+                "Swirls_Dashes"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0012": {
+            "id": "0012",
+            "data": "ipfs://QmXWP9tXfGUEHH1A5dNyUeCGfaZReewe8RJMCLDzM85xDn",
+            "name": "Gutenberg Bible #0012",
+            "files": [
+              {
+                "src": "ipfs://QmPk5D4aUvcbGkp7vXsVTQR2BeLL5pQLk9nupXFSJE5pTt",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfJMbNULF2sqYiFrAXbByR2seHK8fbrzyAp5JTHF9zKMT",
+            "sha256": "795ab222c70aef6ca51f3d26f229d5449e1fae0ab1eeec0a8938d0e691d99c37",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_End_Ivy_Leaves",
+                "Gold_Vine_Ivy"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0013": {
+            "id": "0013",
+            "data": "ipfs://QmbnVHRSSCXFDCTgSL6pUgeeoDr7a9CKN2oJG3wXEdveJF",
+            "name": "Gutenberg Bible #0013",
+            "files": [
+              {
+                "src": "ipfs://QmevamjJR7D2LrMGSo68mmf75wDQsthJUbV8mVJFPwTQgJ",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmU8GtLYysYg5Dxn4skbxkQ6HddLDPbCFR2BopaYjwohzZ",
+            "sha256": "cba198952795a5c538bb90ecd4f3a68b1fb23914ddd6ecb7215c97756d2cef69",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Vine_Ivy"
+              ],
+              "Stroke": [
+                "Stroke_Outer"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0014": {
+            "id": "0014",
+            "data": "ipfs://QmYkG1fKmH3bSZShhPRJVqvQnzniMuXoxudNpQ61q3TeAT",
+            "name": "Gutenberg Bible #0014",
+            "files": [
+              {
+                "src": "ipfs://QmcexopwjW1Kn2DnxrPunBYhdjjz25abJ8r1Jbm1fQLys3",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmarPSuxtHoXWGpU564etzock5Y88xNCeQiPsngFrvDShr",
+            "sha256": "5629279d61790661b396180d0740aa861770d46d9fc831c7f5adc5eef6c23c41",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_Center_Middle"
+              ],
+              "Stroke": [
+                "Stroke_Inner"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0015": {
+            "id": "0015",
+            "data": "ipfs://QmaEk3Lp5PVQL98CnLRGD6Znx1Qx4ReLePcMUBSBAEwmoB",
+            "name": "Gutenberg Bible #0015",
+            "files": [
+              {
+                "src": "ipfs://QmZC4urgtiNjH9MpTUkJbn5UMhErtCjVHnhiFf7sSY7xe8",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYjC45Qr5Nxu5Basg2ihr25sbJMDPZuY91pLaPYZJTkr1",
+            "sha256": "46fbca429d6f0c21cc868d3818f2d931aa392743384d0ed8115e5ca54542375b",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_Center_Dots"
+              ],
+              "Stroke": [
+                "Stroke_Inner"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0016": {
+            "id": "0016",
+            "data": "ipfs://QmQGPNKzugLaovhhG6nxGZBdJiQ7ki912zdhNnm3NGkv3o",
+            "name": "Gutenberg Bible #0016",
+            "files": [
+              {
+                "src": "ipfs://QmQC7jCSWAhq7C4R9kvrFSyzs4xBvbpHiCno95q49Gx3Ww",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmae2k9YXc6vAzKDSyGrvvrTcu3JW5HjnZP62eoYKQXm3y",
+            "sha256": "9fa5b334a0e0de4fa09995e96fd0de5c787b65a0b719c66cfc88c152080feff9",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Text"
+              ],
+              "Stroke": [
+                "Stroke_Double"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0017": {
+            "id": "0017",
+            "data": "ipfs://QmY47oTFDn6fde1szuagHzuRGfHsKTnH4mPp3YRYY78oMk",
+            "name": "Gutenberg Bible #0017",
+            "files": [
+              {
+                "src": "ipfs://QmfUWoEi8CUxB4haZvKWW2vEZnAKD2b4WPD75mcG7SpJu5",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbBX9UuBXzt1bUWo53xkn7imMGUUm2SLwNCwhEfoAVb6z",
+            "sha256": "7da9cbf0f42e1c36f29f910696de8b970ef03073dca135691cbdc1d939434b71",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_End_Ivy_Blooms",
+                "Gold_Shamrocks"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0018": {
+            "id": "0018",
+            "data": "ipfs://QmR1sNh9zt3e8imftpn3DkeqDPHDQdUTMrisq4SGk6KWJj",
+            "name": "Gutenberg Bible #0018",
+            "files": [
+              {
+                "src": "ipfs://QmZs2iN3DE6wXuxHJ5T5H318mVwiJWVeW4Y9KkWAwJdjfM",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXRkFSjGCnCfvQFebvtymVrNHQmBu6GAB6UxhsEZgBENX",
+            "sha256": "fecdf86f7b04ba727d6c1bdc6a6fa7edc8bc5654529851abd8cf56348321a2ef",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_Center_Middle"
+              ],
+              "Gold": [
+                "Gold_Middle_Ivy"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0019": {
+            "id": "0019",
+            "data": "ipfs://Qma3uUDQxLfLAo5YbLrn6TAzFePYFymuzjswMWq61VyPQS",
+            "name": "Gutenberg Bible #0019",
+            "files": [
+              {
+                "src": "ipfs://QmVStqSpRntCWCHubAZmeqfuTFfJkkS9BTMKa3xmxA9g2D",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPxdwhJThsj5XosCdVtNuqwCieVDBEjMJr12cfd6UAEWX",
+            "sha256": "bb05977d4b43420d0126c0aa3feb275793b0d3a38ead1c8a0239e1717a18d3ab",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_Middle"
+              ],
+              "Stroke": [
+                "Stroke_Outer"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0020": {
+            "id": "0020",
+            "data": "ipfs://QmPhgeW4KUJmit34TejFD7WEuKhRuxirWDpsVL6UVuJ9MK",
+            "name": "Gutenberg Bible #0020",
+            "files": [
+              {
+                "src": "ipfs://QmQtDN65FkH1cnuCuhepRd9WHeeXJXctqrYzjM483vQeav",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXoZnrqgy5JR6kMCyUmBjTEhaZYYnvBBwk3Ygc8WXNdy8",
+            "sha256": "6d28ccd69f7719f2d1e08c4a64ac32514430a2d04a62e5e2608061bd4eb8b310",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Gold": [
+                "Gold_Center_Large_Crests",
+                "Gold_Inner_Crests"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0021": {
+            "id": "0021",
+            "data": "ipfs://QmXRteWzkj41h3LaRZsLsky6grnJDjboWzkmu659StBiDQ",
+            "name": "Gutenberg Bible #0021",
+            "files": [
+              {
+                "src": "ipfs://QmXFDKakRx2tFsYQzfG82S2cMHNdLVL1CpitfZvjMf24YF",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdhEJPonFak9Xd6uwQogLGSXYjBnesTXs5Ytdk6NwN1BV",
+            "sha256": "0017124d385a99d73e635adfc1f8f84ad9def9417ac4cb2b2337912e0468ad1b",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Stroke": [
+                "Stroke_Outer"
+              ],
+              "Swirls": [
+                "Swirls_Crests"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0022": {
+            "id": "0022",
+            "data": "ipfs://QmWu3XX5njJhed2CwyQ7pnfZ1rbYR2iSKaB6o47wwF83vS",
+            "name": "Gutenberg Bible #0022",
+            "files": [
+              {
+                "src": "ipfs://QmUnCwYwztZ6NRydLHdMZ5YH4Km3vfmTrbyDsCpe6MfbVW",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcLCudabYL9axQsEGsj82ferZtPmsKPvbYm9eVge4axAv",
+            "sha256": "66ada2631a551fbd7185bf0c9d3de1d33b4a8d2b15aca0c6c1379e04c83f5727",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Swirls": [
+                "Swirls_Dashes"
+              ],
+              "Black_Knot": [
+                "Black_Knot_Extra_Stroke"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0023": {
+            "id": "0023",
+            "data": "ipfs://QmWKvfKdAEowvSNUN6vNjZrPbRR689P1cD92oAbMksxTMs",
+            "name": "Gutenberg Bible #0023",
+            "files": [
+              {
+                "src": "ipfs://QmNoaq3GwAgMmtgTFRxFquusKamtRrHhET7SVaXNYCFqEQ",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPYHY7HnbrPnfNCwH7ESoYzMQUZiCfuSNVUPjeWxZwbno",
+            "sha256": "67060af517b25871bec10710a0a6c95948abe9ac615aa1fc71820456bed84da6",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_Blooms"
+              ],
+              "Stroke": [
+                "Stroke_Double"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          },
+          "Gutenberg Bible #0024": {
+            "id": "0024",
+            "data": "ipfs://QmZHu9cMuJFDwbEPcbh3gQ5jC7gZ59vc1JQ8HZmcZ5pni3",
+            "name": "Gutenberg Bible #0024",
+            "files": [
+              {
+                "src": "ipfs://QmcgV5njUhWgbjta78TdLRFNyUSS9xCBRa5dpxwVTzAuua",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcEhvpoJR4n1MV8gY3Rbu481K5BPao1YnJ3oPfjdMr2m1",
+            "sha256": "0a3e48cec99f5d0cb655959d93d5d5246e12923ba5e392badeb9a17caa567d65",
+            "website": "https://www.booktoken.io",
+            "attributes": {
+              "Dots": [
+                "Dots_Middle"
+              ],
+              "Gold": [
+                "Gold_Vine_Ivy"
+              ]
+            },
+            "description": [
+              "From print to mint, Gutenberg to Cardano. History captured in on",
+              "e of the first NFT books."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

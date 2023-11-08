@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "ca3aeaa53c0b21fccf28c8c724141473d325fe9ea8d0314f7c3b4240",
+    "asset_name": "4269746c616e647330783036383530",
+    "asset_name_ascii": "Bitlands0x06850",
+    "fingerprint": "asset17m397wgk4umpjaqsvrwth4fqxnjdqkrfzh99t9",
+    "minting_tx_hash": "f968cfc9b59c9c369de99dc91a29d48f777f95f73f76cf32257215619140a62e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1631577600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "ca3aeaa53c0b21fccf28c8c724141473d325fe9ea8d0314f7c3b4240": {
+          "Bitlands0x06850": {
+            "name": "Bitlands0x06850",
+            "tier": "Common",
+            "files": [
+              {
+                "src": "ipfs://Qmad2hLynTcUGMgBsHCMrFtKbmtP6NPo8p1TAgFHukWAmb",
+                "name": "Bitlands0x06850",
+                "mediaType": "video/mp4",
+                "description": "Video"
+              },
+              {
+                "src": "ipfs://QmYfgz43nUBx6VqAHqSMfqofc8YUf3U8hVo83esBhwS7dq",
+                "name": "Bitlands0x06850",
+                "mediaType": "application/json",
+                "description": "Traits"
+              }
+            ],
+            "image": "ipfs://QmPdFT1xaMtQ5FJJcQXducHGbJKjSN4s85fpzbEKCDZRLq",
+            "stage": "Late Founders Stage",
+            "rarity": "7",
+            "twitter": "https://twitter.com/Bitlands_",
+            "website": "https://bitlands.art",
+            "copyright": "BITLANDS © 2021",
+            "mediaType": "image/png",
+            "generation": 0,
+            "max_rarity": "100",
+            "description": "06850"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

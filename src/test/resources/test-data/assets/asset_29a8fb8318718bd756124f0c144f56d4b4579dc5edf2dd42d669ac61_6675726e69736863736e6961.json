@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736863736e6961",
+    "asset_name_ascii": "furnishcsnia",
+    "fingerprint": "asset1gga5q2yp0e3t05k77ce8y4qtrrg7jv6hpdccju",
+    "minting_tx_hash": "927bb30cdf87e97e9131f1ba7c9ed7f1d5e137d1597243e85184c3d703ddd6c5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675814400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishcsnia": {
+            "id": "csnia",
+            "src": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+            "name": "Gramophone",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+                "name": "Gramophone",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfT9z8xTjCDkZR6XJqwBsWadXtZBncarwqNsgAxzoWPp6",
+                "name": "Gramophone",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmPpT6wZ2M3xsYs4LX5geV5VBM1X24j4B8K7Ppc8uZ5Epx",
+                "name": "Gramophone",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+            "description": "Hand-crafted by Lincoln Evans.",
+            "furnitureId": 210
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

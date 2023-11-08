@@ -1,0 +1,422 @@
+[
+  {
+    "policy_id": "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81",
+    "asset_name": "4d617474686577204164656d6172",
+    "asset_name_ascii": "Matthew Ademar",
+    "fingerprint": "asset1aj5k54tqukec4h8m3smygjy0je4afzc9myjnmf",
+    "minting_tx_hash": "aa90834353f8495840c6ba555e2cde0da316469dacce09b1e17eff88cbaf57e9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665878400,
+    "minting_tx_metadata": {
+      "721": {
+        "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81": {
+          "Matthew Ademar": {
+            "name": "Matthew Ademar",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAAAXVBMVEXG1rVeMVtIUmUUIDhHUWkcKUdCJEU+I0cPIEJzJ1xsfZ1R",
+              "Kk5KVW45Khy6YVb//+vCwtGWQlPStIzv2KFHO3hXKUuwMFzh4e5sg/c0P3ZL",
+              "W6t+fo/jaVb/tXD////cdmkjAAAAAWJLR0QecgogKwAAAAd0SU1FB+YKDgQ6",
+              "KLGz4/IAAAaRSURBVHja7d1ZjxNXFIVRyERCIJ1A5uH//81IqK6Ejvpwa7Bd",
+              "1dprvdltVxvv7+mKtl+9AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBO8XulW1z3730shgHACCCeAcAII",
+              "J4BwAggngFBjkK+KrxtrB5xdVwgXIYBwAggngHACCCeAcAIIJ4BQ3UCPCkAI",
+              "JxNAOAGEE0A4AYQTQDgBhBNAuFkAs8Fm6uO76wvgJAIIJ4BwAggngHACCCeA",
+              "cAIIV4eaBVAfv9UsNCE8mADCCSCcAMIJIJwAwgkgnABCzYbsAtg67Ozx3yzq",
+              "bSHcmQDCCSCcAMIJIJwAwgkgnABCjTf228XaIR9NCHcigHACCCeAcAIIJ4Bw",
+              "AggngHDdAdDZg88I4UYEEE4A4QQQTgDhBBBOAOEEEGrrAdB3RTfM2scdfX59",
+              "3Nnv54sjgHACCCeAcAIIJ4BwAggngHBb/xBkNtDR4Y/+HgdDGwkgnADCCSCc",
+              "AMIJIJwAwgkg3N4AuiFuNfze3yOAjQQQTgDhBBBOAOEEEE4A4QQQ6s1CAKEE",
+              "EE4A4QQQTgDhBBBOAOEEEOZNMd6o7xdHh5/df6vhZ/cLoCGAcAIIJ4BwAggn",
+              "gHACCCeAUGPwHxb3Gn7v4279ewRQCCCcAMIJIJwAwgkgnADCCSBUHb4GsPc/",
+              "gBz1tvixUR83u+67hQAEIAABCEAA6QQQTgDhBBBOAKG64c8O4G1jbQBdCO8K",
+              "AQhAAAIQgABSCUAAAhCAAM7eQQACuNbw7xf3DuBN46fFbPguhPH8el0BCEAA",
+              "AhCAAAQgAAEIQAACEIAAkgJYO3w9COr+MORoCOP1PBXj/jHsz8Xs/tl1BSAA",
+              "AQhAAAIQgAAEIAABCCCEAATwbAB1+F+KtSHsDaIO9mGxN4CPiy6AuOEFIAAB",
+              "CEAAAhCAAAQgAAEIQABRAewdfm8I43Fbh+8C2OpjETu8AAQgAAEIQAACEIAA",
+              "BCAAAQhAAM8EMBt+GM97PbH2gGi8rm6woz4U4/6z9xCAAAQgAAEIQAACEIAA",
+              "BCAAAQjgkcNXa4cft98XY/huiC6E7vGzA6T6gZDdBz901z97FwEIQAACEIAA",
+              "BCAAAQhAAAIQgAAeGcDaA6AukG74XxtbB5551xivZ+v79Fsx+3n3uMsRgAAE",
+              "IAABCEAAAhCAAAQgAAEIYEUAswOitcPPgrh1CPV1rR2+/mFKHfr3QgACEIAA",
+              "BCCAqxOAAAQgAAEIQAACWBPA1uFn7h1CdyBUX0c3/B+NGsa4Pd4fAQhAAAIQ",
+              "gACuTgACEIAABCAAAQjgSwGsHX7tF0YMZ4UwrvfnYtzuhh9fONEdDNUQzt5V",
+              "AAIQgAAEIAABCEAAAhCAAAQggD0BzIavAawdfmsIRwOoIcwCGGbD14MhAQhA",
+              "AAIQgABeCgEIQAACEIAABCCALx0EzYbfegC0NYC/FrcKoQZQQxjvzxh0djA0",
+              "bs8OhC4XigAEIAABCEAAAhCAAAQgAAEIQACfWRvA3uG7Ycbwfxd7AxhfHFF/",
+              "z7hudyA0hv1n0Q1fA+gOiC73H0cEIAABCEAAAhCAAAQgAAEIQABRAcxCmA1/",
+              "9ADoUQF0v6cGMIapH/g4AuiGrwEM4/4RhAAEIAABCEAAAhCAAAQgAAFchAAE",
+              "8GwA3QdF3DuAOlC9f+vg3UFQPfgZw/+7GP/e2fCzAOr9AhCAAAQgAAFchQAE",
+              "IAABCEAAAsgMoIZQvwixHgzdK4BuoO7nWwMYzxsfFLF2+PH+bD0IuvwBkAAE",
+              "IAABCEAAAhCAAAQgAAEIQADPBFBDuHcAXQi3snX4qgvhqXH54QUgAAEIQAAC",
+              "EIAABCAAAQhAAJEBrA3hUQdB3R+I7HV0+C6AeuDzYocXgAAEIAABCEAAAhCA",
+              "AAQgAAFEBtCF8N/iaADj+bMAxnCPOvjpvjiiDv808eKHF4AABCAAAQhAAAIQ",
+              "gAAEIAABRAZQQ7h3AHX4oftCyVsd/My+QLIGMHP2XgIQgAAEIAABCEAAAhCA",
+              "AAQgAAHcMoQx4NbhtwZw74Of+rxZAPEEEE4A4QQQTgDhBBBOAOEEwCc1hKMH",
+              "QuN69YCnBnGrg5/6vC68s9/nyxJAOAGEE0A4AYQTQDgBhBMAn9wrgGFtAHuH",
+              "r4M7CNpIAOEEEE4A4QQQTgDhBBBOAI/1P8xoh1dCZcfyAAAAJXRFWHRkYXRl",
+              "OmNyZWF0ZQAyMDIyLTEwLTE0VDA0OjI2OjEwKzAwOjAwTV2wfgAAACV0RVh0",
+              "ZGF0ZTptb2RpZnkAMjAyMi0xMC0xM1QyMTo0NDozMCswMDowMJPdmgoAAAAo",
+              "dEVYdGRhdGU6dGltZXN0YW1wADIwMjItMTAtMTRUMDQ6NTg6NDArMDA6MDAU",
+              "BwJJAAAAAElFTkSuQmCC"
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Warrior"
+              },
+              {
+                "name": "Back",
+                "value": "Shield"
+              },
+              {
+                "name": "Fur",
+                "value": "Midnight"
+              },
+              {
+                "name": "Clothes",
+                "value": "Blue Dungerees"
+              },
+              {
+                "name": "Mouth",
+                "value": "Bone"
+              },
+              {
+                "name": "Holding",
+                "value": "Axe"
+              },
+              {
+                "name": "Eyes",
+                "value": "RIP"
+              },
+              {
+                "name": "Name",
+                "value": "Matthew Ademar"
+              },
+              {
+                "name": "Region",
+                "value": "North Goof"
+              },
+              {
+                "name": "Town",
+                "value": "Garth"
+              },
+              {
+                "name": "Location",
+                "value": "Towers"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "52",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "1",
+                "display": "number"
+              },
+              {
+                "name": "Treasury Boost",
+                "value": "1.075",
+                "display": "multiply"
+              },
+              {
+                "name": "Mining Boost",
+                "value": "1.075",
+                "display": "multiply"
+              },
+              {
+                "name": "Rank",
+                "value": "Apprentice"
+              },
+              {
+                "name": "Ability",
+                "value": "Thief Recovery",
+                "display": "data"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          },
+          "Derrick Mayfair": {
+            "name": "Derrick Mayfair",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAAAY1BMVEXG1rVeJk3/RkHWABnS0Mo+I0fCwcDCwtH//+tDQ1BCJEVg",
+              "YHAyKUfP/3BDQ080P3ZeMVs9bnBzJ1xRKk7EJyfrVktmhP88o3D/tXDvrCik",
+              "oZb/5HjwaS+BeI5XKUuANmv////RVVkBAAAAAWJLR0Qgs2s9gAAAAAd0SU1F",
+              "B+YKDgQ5GctAsAsAAAeOSURBVHja7d3bkttUFEVR0h0IhFu4BQgB/v8voSjt",
+              "l12cOkeyHdm9xnxrt2w5WuNJZXc++0ySJEmSJEmSJEmSJEmSJEmSJEmSJEmS",
+              "JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS",
+              "JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJF3cq0lnvz/dOADC",
+              "AyA8AMIDIDwAwgMgPADC6gM/TQLihQVAeACEB0B4AIQHQHgAhAdAWH3A50H9",
+              "eaPjXk06+9+rFgDhARAeAOEBEB4A4QEQHgAhjQaZ3ehZrQC4cXSnARAeAOEB",
+              "EB4A4QEQHgDhARBaXeh+w+bowHvbCwKMKwdAeACEB0B4AIQHQHgAhAdAaH34",
+              "enw2zOqQ1z6uv18QLgyA8AAID4DwAAgPgPAACA+A0GbDrw4yG3LvcbPzjn4P",
+              "ws4ACA+A8AAID4DwAAgPgPAACK8uWF3YenzvhT8KZQRi9Xyj54OwGADhARAe",
+              "AOEBEB4A4QEQHgDhdQB7L/Slx8+Omz0+ggPAYgCEB0B4AIQHQHgAhAdAeACE",
+              "1z8QsvfCz5pBWR30KAAQJgEQHgDhARAeAOEBEB4A4QEQ2mj42QVeBbE6/F4A",
+              "s+NGvwehBUB4AIQHQHgAhAdAeACEB0Bo/QbJ0WGuHQAAAAAAAAAAAAAAAAAA",
+              "AAAAAHA7AHsHfVrsUgCrw48gj94HAAAAAAAAAKQHQHgAhAdAeACENhq+fj8b",
+              "ZLVXOxudZwarnv96q79eP8/Z1//0AAgPgPAACA+A8AAID4DwAHjQPm9dC8Cl",
+              "w/fj6vW/2NkIxgxYf50O4eGHBwAAAAAAAAAAAAAAAAAAACAKQA3+ZuvLraMQ",
+              "OoC9w/cbM19tjQZ5O+kojL3nOXtHAAAAAAAAAAAAAAAAAAAAAADYA+DrraMQ",
+              "6rgRgL3D1+OzQb6ZtAph1N7znL0nAAAAAAAAAAAAAAAAAAAAAADcEsJo+FGz",
+              "4WcAVgep938UQj9Pf70XBwEAAAAAAAAAAAAAAAAAAACAKAB7IfThZzeAVgFc",
+              "6wbQaJijAPae5+wdAQAAAAAAAAAAAAAAAAAAAADgGhDq8W+3zgLw3da9AKj3",
+              "AwAAAAAAAACPHgAAAAAAAAAAkAmgQ6gKQg3Ubwg9D9oLYRXAKoRbAejvAwAA",
+              "AAAAAABeSgAAAAAAAAAAQDaA77f64P3nEYSnQSMwIwAzCKNBVoe/9Dzvts7e",
+              "DQAAAAAAAAAAAAAAAAAAAAAAjgz/Q6sg1ED1gZFrA9gLYVQ//sfWT4P6cbPz",
+              "1H8oCQAAAAAAAACPHgAAAAAAAAAAkAVgNHzVf98HLxAzAKPBR8fNIMyqIX9u",
+              "jQD04+r5/XVftwAAAAAAAADgUQMAAAAAAAAAALIA9A9+zIYfAagvjhwd/nnS",
+              "Xgh7h+/90uoQAAAAAAAAAAAAAAAAAAAAAADgJQDoXwQZ3QB6v/Xr1tHhrw1g",
+              "Nvyb1uzxEQQAAAAAAAAAAAAAAAAAAAAAAHhkAL3RcasAZoOOjuuPXzr8tQF0",
+              "CNcefvZFFAAAAAAAAAAAAAAAAAAAAAAA+JSNIKwOvBfAKoRVAHubAbj28L+1",
+              "ft8CAAAAAAAAgLMDAAAAAAAAAACyANQAIwjV82IzAKMbQh+2VoevwUaPX9ql",
+              "EGrYPwZ93AIAAAAAAAAAAAAAAAAAAAAAgDMhzG4ErQJYhVD18z8qgNXhAQAA",
+              "AAAAAAAAAAAAAAAAAADgHroUwAzC06Q6rt7HKoBrDX8UwOiDH9XdDw8AAAAA",
+              "AAAAAAAAAAAAAABANIDqWgCqV4vNhr81gFUINeTHxe52eAAAAAAAAAAAAAAA",
+              "AAAAAACiAbwf1IeeQRkB+DBo9YMgZwN4+A9+AAAAAAAAAAAAAAAAAAAAAADA",
+              "/0BY7WlSB3MtALeuA+jD1x98rKE7gIcbHgAAAAAAAAAAAAAAAAAAAIBIAKtA",
+              "9t4wGg2/9w9EfmoAo+FHAF7s8AAAAAAAAAAAAAAAAAAAAABEAugQZn2YdK8A",
+              "Vod/8Td+AAAAAAAAAAAAAAAAAAAAAADg395tzQaeDX8UwK1g9OEf9g8/AgAA",
+              "AAAAAAAAAAAAAAAAAADAFYf/c+tWAPrPtwbQh+/FDw8AAAAAAAAAAAAAAAAA",
+              "AAAAAHcAYC+EfnwNWTd6DA8AAAAAAAAAAAAAAAAAAAAAAOcDqN5OWgVQx9cX",
+              "PXzwAwAAAAAAAAAAAAAAAAAAAAAA7hfA6IMbMwh9+A7A8JMACA+A8AAID4Dw",
+              "AAgPgPAACO9sAH3IGr7fyOkQRsP7w487AyA8AMIDIDwAwgMgPADCAyC8SwHU",
+              "848C6DeEarB+Q+dtqw9dP9frGX4xAMIDIDwAwgMgPADCAyA8AMI7G0AN1B/v",
+              "HwjpQEbD99c9+/refQCEB0B4AIQHQHgAhAdAeACEVwPuHX4GoEOYARgNe3T4",
+              "el9nX9+7D4DwAAgPgPAACA+A8AAIDwD9161uCM1uDFU1XA37V6tDGA1f5wNg",
+              "ZwCEB0B4AIQHQHgAhAdAeACEdzaAN1s1ZA3/91aH0Iev13m9BcDOAAgPgPAA",
+              "CA+A8AAID4DwAPi0/QNd+WSxXZI8vgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAy",
+              "Mi0xMC0xNFQwNDoyNjoyMSswMDowMGWlvCkAAAAldEVYdGRhdGU6bW9kaWZ5",
+              "ADIwMjItMTAtMTNUMjE6NDQ6MjkrMDA6MDDK799HAAAAKHRFWHRkYXRlOnRp",
+              "bWVzdGFtcAAyMDIyLTEwLTE0VDA0OjU3OjI1KzAwOjAwcVt/5AAAAABJRU5E",
+              "rkJggg=="
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Warrior"
+              },
+              {
+                "name": "Back",
+                "value": "Emerald Sword"
+              },
+              {
+                "name": "Fur",
+                "value": "Grey"
+              },
+              {
+                "name": "Mouth",
+                "value": "Ginger Scraggly Beard"
+              },
+              {
+                "name": "Holding",
+                "value": "Golden Sword"
+              },
+              {
+                "name": "Eyes",
+                "value": "Cute"
+              },
+              {
+                "name": "Hat",
+                "value": "Ginger Locks"
+              },
+              {
+                "name": "Name",
+                "value": "Derrick Mayfair"
+              },
+              {
+                "name": "Region",
+                "value": "North Goof"
+              },
+              {
+                "name": "Town",
+                "value": "Old Raven"
+              },
+              {
+                "name": "Location",
+                "value": "Keep"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "52",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "1",
+                "display": "number"
+              },
+              {
+                "name": "Treasury Boost",
+                "value": "1.25",
+                "display": "multiply"
+              },
+              {
+                "name": "Mining Boost",
+                "value": "1.25",
+                "display": "multiply"
+              },
+              {
+                "name": "Rank",
+                "value": "Expert"
+              },
+              {
+                "name": "Ability",
+                "value": "Thief Recovery",
+                "display": "data"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          },
+          "Ranion Sisterlug": {
+            "name": "Ranion Sisterlug",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAAAS1BMVEXKweNeJk2XOV5lLl3/3Gn/kWZeMVtCJEVzJ1yMP11RKk66",
+              "YVZmhP/CwtE+I0fh4e7//+ubeFZ+fo/ToXG7U2fUalV+N0bv2KH///+gC4Hh",
+              "AAAAAWJLR0QYm2mFHgAAAAd0SU1FB+YKDgQ7AwQUK/MAAAePSURBVHja7d3Z",
+              "bhtHFEVRW46deIiHjP//pwECFhBc6KKqmhSb0Vn7Ta3moD7rqUHab95IkiRJ",
+              "kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJ",
+              "kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJ",
+              "kiRJkiRJkqSrezvp7PenFw6A8AAID4DwAAgPgPAACA+AsOrAT5OAeGUBEB4A",
+              "4QEQHgDhARAeAOEBEFYd8F1TfVx33ttJZ/+9KgEQHgDhARAeAOEBEB4A4QEQ",
+              "UjfI7EbPagOAG0cPGgDhARAeAOEBEB4A4QEQHgChjQtdb9gcHXi3XRBg3DgA",
+              "wgMgPADCAyA8AMIDIDwAQqvDj+OzYVaHvPV59f2CcGUAhAdAeACEB0B4AIQH",
+              "QHgAhDYbfnWQ2ZC7581et/s9CJsBEB4A4QEQHgDhARAeAOEBEN64YOPCjuO7",
+              "F/4olA7E6ut1jwdhMQDCAyA8AMIDIDwAwgMgPADCqwB2L/S158/Omx3v4ACw",
+              "GADhARAeAOEBEB4A4QEQHgDh1Q+E7F74WTMoq4MeBQDCJADCAyA8AMIDIDwA",
+              "wgMgPABC64afXeBVEKvD7wKYndf9HoQSAOEBEB4A4QEQHgDhARAeAKHVGyRH",
+              "h7l1AAAAAAAAAAAAAAAAAAAAAAAAwMsB2B30abFrAawO30Hu3gcAAAAAAAAA",
+              "pAdAeACEB0B4AITWDT9+Pxtktbebda8zgzUe/9OlCqG+ztnX//QACA+A8AAI",
+              "D4DwAAgPgPAACK9e8HH86PD1vPH87zfrYMyA1eepEAxfAiA8AMIDIDwAwgMg",
+              "PADCAyC8CmB3+O7GzNHhj8JYffyHS2df94cJgPAACA+A8AAID4DwAAgPgPA6",
+              "AI82/K0DAQAAAAAAgPQACA+A8AAID4DQ6vBds+F3Afw86VYDr75OLAQAAAAA",
+              "AAAAAAAAAAAAIC0AQgHUD1LUAXcB3Gr4W0HYfR0AAAAAAAAASAkAAAAAAAAA",
+              "AAAAAAAAAAAAAAAAAICQAAAAAAAAiAMwBqo/v2vahbAKYHXAawGsngcAAAAA",
+              "AAAArz0AAAAAAAAAAACA//7cQXhq6sDMAKz2y5Xtvh4AAAAAAAAAvPYAAAAA",
+              "AAAAAAAAXgLAUQh1wI+TPjWN36/CGP+hJAAAAAAAAAC89gAAAAAAAAAAgEwA",
+              "dfgx2Dg+A9AN3p03gzCGGQPMhl8FMPpcGq/3UwkAAAAAAAAAUgIAAAAAAAAA",
+              "AAB4DsDu8O8mVQh1+FUAnxbbhQAAAAAAAAAAKQEAAAAAAAAAAFkAxhBfLl07",
+              "/C6Aa4f/tTQ7vgphFcDXprN3BQAAAAAAAAAAAAAAAAAAAACAawDMBu3Oq8ev",
+              "Hf6lAVQIs+HH838r/W9AAAAAAAAAAAAAAAAAAAAAABAFoIOwOvAugAphd/gK",
+              "YLfu+VYB1OG7OhBn7wwAAAAAAAAAAAAAAAAAAABAJoAxQHd89G6xGYDuhtBR",
+              "AB8OdhTA6vBd3y89DAQAAAAAAAAAAAAAAAAAAAAAogB0g3c3glYBrEIY1ddf",
+              "BTAGutV5HYBrh//f3BACAAAAAAAAAAAAAAAAAAAAIAJAhXAUwAzC06Rx3gxC",
+              "/UJJN/DqeR2Ao8N/axo3gh4WAgAAAAAAAAAAAAAAAAAAAACRAEa3AjB6u9jH",
+              "SS8NYHf476VueAAAAAAAAAAAAAAAAAAAAAAAeEQAX5rq0DMoHYAfl+pAsy9u",
+              "zIb97dIYZhdAHX4MNRu+u9EDAAAAAAAAAAAAAAAAAAAAAACPDKBCWO1pUgVz",
+              "FEB3fjfs7vndjaAKoRt6NvzoYYcHAAAAAAAAAAAAAAAAAAAAIBLAKpDdG0bj",
+              "D/9RqkPdG8DqPwwRPzwAAAAAAAAAAAAAAAAAAAAAkQAqhFl18ArhVgBmHwiZ",
+              "ARjHx99XAcwgxAwPAAAAAAAAAAAAAAAAAAAAQCSA7sbOar9f+qVUIawOee35",
+              "o/F3DVDj5++bvdrhAQAAAAAAAAAAAAAAAAAAAIgCcO3w4/EVQDfUSwGo53U3",
+              "fiqEGYhXOzwAAAAAAAAAAAAAAAAAAAAA0QDeXzoLQD1/9bz6vOP91A92DADd",
+              "oBXCqx8eAAAAAAAAAAAAAAAAAAAAAAAOABh1AFaHHcd3vxBy7fDd9Th7l7sF",
+              "wPPX4+xd7hYAz1+Ps3e5WwA8fz3O3uVuAfD89Th7l7sFwPPX4+xd7hYAz1+P",
+              "s3e5WwA8fz3O3uVu3RrA7IZQ9wWSj5O65/taOjp8bACEB0B4AIQHQHgAhAdA",
+              "eACEd2sA4+cZgAphF8B4339c+vNSBXH29X34AAgPgPAACA+A8AAID4DwAAjv",
+              "WgDj8R2A2u7wFUA3/F+XANgMgPAACA+A8AAID4DwAAgPgPBuBaAeH4ONL3oc",
+              "BbA7/N+XAFgMgPAACA+A8AAID4DwAAgPgPDOAlAhdK0OP84HYDMAwgMgPADC",
+              "AyA8AMIDIDwA9G9fb9Rs2N8XWx2+AwbAZgCEB0B4AIQHQHgAhAdAeACENy7Y",
+              "7AMan5sqgKOtDt8BcyPoYACEB0B4AIQHQHgAhAdAeADct38A+LSbl09Sxm4A",
+              "AAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTAtMTRUMDQ6MjY6MjErMDA6MDBl",
+              "pbwpAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEwLTEzVDIxOjQ0OjMwKzAw",
+              "OjAwk92aCgAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMi0xMC0xNFQwNDo1",
+              "OTowMyswMDowME5nfRAAAAAASUVORK5CYII="
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Miner"
+              },
+              {
+                "name": "Fur",
+                "value": "Light"
+              },
+              {
+                "name": "Clothes",
+                "value": "Plain Tunic"
+              },
+              {
+                "name": "Mouth",
+                "value": "Brown Viking Beard"
+              },
+              {
+                "name": "Holding",
+                "value": "Steel Shovel"
+              },
+              {
+                "name": "Eyes",
+                "value": "Happy"
+              },
+              {
+                "name": "Hat",
+                "value": "Brown Locks"
+              },
+              {
+                "name": "Name",
+                "value": "Ranion Sisterlug"
+              },
+              {
+                "name": "Region",
+                "value": "The Mining Region"
+              },
+              {
+                "name": "Town",
+                "value": "Purple Hallow"
+              },
+              {
+                "name": "Location",
+                "value": "Caverns"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "27",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "1",
+                "display": "number"
+              },
+              {
+                "name": "Mining Boost",
+                "value": "1.15",
+                "display": "multiply"
+              },
+              {
+                "name": "Treasury Boost",
+                "value": "1",
+                "display": "multiply"
+              },
+              {
+                "name": "Rank",
+                "value": "Apprentice"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

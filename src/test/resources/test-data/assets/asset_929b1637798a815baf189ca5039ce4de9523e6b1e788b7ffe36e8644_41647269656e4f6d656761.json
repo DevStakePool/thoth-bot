@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644",
+    "asset_name": "41647269656e4f6d656761",
+    "asset_name_ascii": "AdrienOmega",
+    "fingerprint": "asset1jndufkea3sq79ftfh4uycrydn00fh02ars0upr",
+    "minting_tx_hash": "8338bd2db4df925c2c0a3bc53472a5795a2bfda3d40a65d9ff2c063c39b0f44f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671494400,
+    "minting_tx_metadata": {
+      "721": {
+        "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644": {
+          "AdrienOmega": {
+            "name": "Adrien Omega",
+            "files": [
+              {
+                "src": "ipfs://QmeU9QCSXm8K4rPX3Uub9uhNNBeAdhPfPV4S9hGtDzFg85",
+                "name": "Adrien Omega",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeU9QCSXm8K4rPX3Uub9uhNNBeAdhPfPV4S9hGtDzFg85",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Puffy White",
+              "Hair": "None",
+              "Mask": "White Mask",
+              "Rank": "Architect",
+              "Nation": "Omega",
+              "Backdrop": "Orange Backdrop",
+              "Body Color": "Orange",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

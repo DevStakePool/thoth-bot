@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "5bf224b6e90d79fcc79ed6833af5e284c1c7c510eedcd902f8660619",
+    "asset_name": "525243423838323331333835",
+    "asset_name_ascii": "RRCB88231385",
+    "fingerprint": "asset1vpm922nxzuzvpd7cr8prx246ase7y57k42l3r4",
+    "minting_tx_hash": "d283375bca84c686cd055a2e1bc5956f0369b93c318a03c477702108508c3e65",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679702400,
+    "minting_tx_metadata": {
+      "721": {
+        "5bf224b6e90d79fcc79ed6833af5e284c1c7c510eedcd902f8660619": {
+          "RRCB88231385": {
+            "name": "Cardano Ball Boost",
+            "image": "ipfs://QmTJVUafgjDo6YyufQ8sWH7bng7mPVt9F6Ntq6aNy5YgFN",
+            "utility": "In game boost for Cardano Ball RaggieRage Superpower",
+            "attributes": {
+              "type": "raggierage",
+              "rating": "*",
+              "expiryslot": "88231385"
+            },
+            "description": "Cardano Ball RaggieRage boost used in RaggieRun"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "637265737431343238",
+    "asset_name_ascii": "crest1428",
+    "fingerprint": "asset1hjtagsljgfxhax0ypamzyxwjk4wpvsfvr2dmre",
+    "minting_tx_hash": "94769b77f9436b295bfa2ff830b5684666b4802c7e25d4fdb44d179f949ac88d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675987200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest1428": {
+            "id": 1428,
+            "src": "ipfs://QmNgxCACLBLaeKvesZaFWEw7QFNVbiYy7oSjLjaYZcmQHS",
+            "name": "Ventucci Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmNgxCACLBLaeKvesZaFWEw7QFNVbiYy7oSjLjaYZcmQHS",
+                "name": "Ventucci Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmW4f6bCLDYXBoFbLF7eSs8WkFkM1MyTE3wyMD7MShyEPW",
+                "name": "Ventucci Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmWQS8LsVyRea5diRzzNetkTrBobnzPpvRGQHFtcLTS2pT",
+                "name": "Ventucci Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmNgxCACLBLaeKvesZaFWEw7QFNVbiYy7oSjLjaYZcmQHS",
+            "description": "Celebrating the heritage of the Ventucci family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

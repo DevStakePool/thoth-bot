@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736859447a3677",
+    "asset_name_ascii": "furnishYDz6w",
+    "fingerprint": "asset1qxmf643ue78d605g7cgpe7rtxuj335mcxwnhcg",
+    "minting_tx_hash": "df37a534786f949b99dcbf30ee85978bb21e0cf72a56e2236a6c730f776ee61a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672272000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishYDz6w": {
+            "id": "YDz6w",
+            "src": "ipfs://QmcbGENiEdMcdts1WJtm44jYQb4Vd2gBhxWutig5Uwxfqg",
+            "name": "Red Armchair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmcbGENiEdMcdts1WJtm44jYQb4Vd2gBhxWutig5Uwxfqg",
+                "name": "Red Armchair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmaHL2MVUY9ctgGHAjMzDC7Nw8NBuZ78Ag41GY5bF3NSaX",
+                "name": "Red Armchair",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmePM4VpqzZwa6h5ppimSpVXsYGTsnpGKPhLBEnpXV961W",
+                "name": "Red Armchair",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmcbGENiEdMcdts1WJtm44jYQb4Vd2gBhxWutig5Uwxfqg",
+            "description": "Hand-crafted by Calhoun Taylor.",
+            "furnitureId": 214
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

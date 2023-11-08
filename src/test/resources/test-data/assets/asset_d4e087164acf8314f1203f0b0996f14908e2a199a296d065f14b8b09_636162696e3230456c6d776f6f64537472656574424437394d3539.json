@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3230456c6d776f6f64537472656574424437394d3539",
+    "asset_name_ascii": "cabin20ElmwoodStreetBD79M59",
+    "fingerprint": "asset1xeylpatld6yl30ejcwflrvyv2x5ylexfj8le9m",
+    "minting_tx_hash": "42f9d5b8f6ead09f5ef4c4d1b485ec947e32a131adbd3396d14623f09686fce1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin20ElmwoodStreetBD79M59": {
+            "name": "20 Elmwood Street, BD79 M59",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Elmwood Street",
+            "District": "Blab District",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "M",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "79",
+            "Y Coordinate": "59"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

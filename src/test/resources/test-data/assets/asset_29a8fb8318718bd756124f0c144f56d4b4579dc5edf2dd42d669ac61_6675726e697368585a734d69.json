@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368585a734d69",
+    "asset_name_ascii": "furnishXZsMi",
+    "fingerprint": "asset1nnm9kp4t39dwpz4rfz7mqmpmedkuah64ykcfa3",
+    "minting_tx_hash": "a68778df4e15b0bb8b7af3880c778a4c2aab7c402ebb66e515d4e4986d138326",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679529600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishXZsMi": {
+            "id": "XZsMi",
+            "src": "ipfs://QmeBAkXfZtA2t2o9hRbdj3mxbSfKwJYp4yR5epbmtKmvi9",
+            "name": "Round Side Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmeBAkXfZtA2t2o9hRbdj3mxbSfKwJYp4yR5epbmtKmvi9",
+                "name": "Round Side Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmPoD6iM3DoY4jXqxwY8EmMGbLr6pArX8k9683kff89g2w",
+                "name": "Round Side Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZTwUX6MMkNyTsFr8y3KGsXpLpbrktCaYUsRr6DR5rRXa",
+                "name": "Round Side Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmeBAkXfZtA2t2o9hRbdj3mxbSfKwJYp4yR5epbmtKmvi9",
+            "description": "Hand-crafted by Lincoln Evans.",
+            "furnitureId": 217
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

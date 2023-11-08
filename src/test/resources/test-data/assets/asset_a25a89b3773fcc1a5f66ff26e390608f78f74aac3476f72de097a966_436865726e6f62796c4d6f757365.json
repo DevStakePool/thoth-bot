@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "a25a89b3773fcc1a5f66ff26e390608f78f74aac3476f72de097a966",
+    "asset_name": "436865726e6f62796c4d6f757365",
+    "asset_name_ascii": "ChernobylMouse",
+    "fingerprint": "asset15ka5pjssudp6tdtegpg7kgnrcmc8uu5j4pzltv",
+    "minting_tx_hash": "b37867f5d5dc2a1362fc2dfa1a15f93f3e71dd3137a3e41b5f09c33772ed2cde",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672963200,
+    "minting_tx_metadata": {
+      "721": {
+        "a25a89b3773fcc1a5f66ff26e390608f78f74aac3476f72de097a966": {
+          "version": "1.0",
+          "ChernobylMouse": {
+            "name": "ChernobylMouse",
+            "Title": "Chernobyl Mouse",
+            "files": [
+              {
+                "src": "ipfs://QmbQW9arLgcq5u62NxPdxHuvWk2DbCy5Nsx5H4ajCLhjEs",
+                "name": "ChernobylMouse",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbQW9arLgcq5u62NxPdxHuvWk2DbCy5Nsx5H4ajCLhjEs",
+            "Artist": "Trash P",
+            "Series": "The Trash P Collection",
+            "copyright": "Trash P 2022",
+            "mediaType": "image/png",
+            "description": ""
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

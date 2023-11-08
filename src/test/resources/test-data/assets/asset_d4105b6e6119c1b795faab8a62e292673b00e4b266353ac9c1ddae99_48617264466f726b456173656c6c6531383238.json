@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "d4105b6e6119c1b795faab8a62e292673b00e4b266353ac9c1ddae99",
+    "asset_name": "48617264466f726b456173656c6c6531383238",
+    "asset_name_ascii": "HardForkEaselle1828",
+    "fingerprint": "asset1qccllr69wltwlf5jcm4w7h5x3dsxzkneucxgkz",
+    "minting_tx_hash": "92eee2cc6b219156d5a2f9f743e4f4a7750b6c0e7f2d217482c67c883a5f91a2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1657152000,
+    "minting_tx_metadata": {
+      "721": {
+        "d4105b6e6119c1b795faab8a62e292673b00e4b266353ac9c1ddae99": {
+          "HardForkEaselle1828": {
+            "name": "HardForkEaselle#1828",
+            "files": [
+              {
+                "src": "ipfs://QmRk5yNAQUKfYRktiW96DsVXY1xeZVS1XbY3jbLfdiaAFr",
+                "name": "HardForkEaselle#1828",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRk5yNAQUKfYRktiW96DsVXY1xeZVS1XbY3jbLfdiaAFr",
+            "project": "Proxies Time Capsule",
+            "twitter": "https://twitter.com/CardanoProxies",
+            "website": "https://cardanoproxies.io/",
+            "Tokenname": "HardForkEaselle#1828",
+            "mediaType": "image/png",
+            "description": [
+              "An iconic NFT from Easelle",
+              "to remember a Cardano's historic moment,",
+              "the upgrade we've been waiting for - Vasil Hard Fork"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

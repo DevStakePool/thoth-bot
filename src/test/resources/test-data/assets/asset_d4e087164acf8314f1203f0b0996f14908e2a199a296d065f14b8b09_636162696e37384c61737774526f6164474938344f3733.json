@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e37384c61737774526f6164474938344f3733",
+    "asset_name_ascii": "cabin78LaswtRoadGI84O73",
+    "fingerprint": "asset1de5kp7fdq27p8mv2s3eyqj6s4nc0d4zcrueyz9",
+    "minting_tx_hash": "e33bf413f33beb93981dcd9caa647f8f3c3a1897c6f7e537f0b0d38f5d6b8769",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin78LaswtRoadGI84O73": {
+            "name": "78 Laswt Road, GI84 O73",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Laswt Road",
+            "District": "Gictus",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "O",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "84",
+            "Y Coordinate": "73"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

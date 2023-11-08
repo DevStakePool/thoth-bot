@@ -1,0 +1,96 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706548616c746f6e64656c614372757a",
+    "asset_name_ascii": "adapeHaltondelaCruz",
+    "fingerprint": "asset1zrkrl3657xsjvylruy686el3ckgq2xn53977d6",
+    "minting_tx_hash": "5b044963d7ea909712a1897bc97f5781e9651db382ddf91be27c5b869ead8c06",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePothinMars": {
+            "Hat": "Wool Cap",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Pothin Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmWcN27nfN2tRXNSXnPEGn5Ap6yAf2YmRg9ZFyRDBzwem2",
+                "name": "Pothin Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWcN27nfN2tRXNSXnPEGn5Ap6yAf2YmRg9ZFyRDBzwem2",
+            "Family": "Mars",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Mars family"
+          },
+          "adapeHaltondelaCruz": {
+            "Hat": "Top Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Halton de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmawjJKEdAd5xTUFjgExzQwJsRX1wPGm2uj12TwK5v5NiX",
+                "name": "Halton de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmawjJKEdAd5xTUFjgExzQwJsRX1wPGm2uj12TwK5v5NiX",
+            "Family": "de la Cruz",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the de la Cruz family"
+          },
+          "adapeCharlesde'Medici": {
+            "Hat": "Fruit Basket",
+            "Body": "Alien",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Alien",
+            "name": "Charles de' Medici",
+            "rate": "0.05",
+            "Class": "Nobles",
+            "files": [
+              {
+                "src": "ipfs://QmTA3TJqqG6bqFUpQoBjeGv9mvNLwEQYqPJXzsMN7NFFsT",
+                "name": "Charles de' Medici",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTA3TJqqG6bqFUpQoBjeGv9mvNLwEQYqPJXzsMN7NFFsT",
+            "Family": "de' Medici",
+            "Weapon": "Rifle",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de' Medici family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

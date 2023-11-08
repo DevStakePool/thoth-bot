@@ -1,0 +1,37 @@
+[
+  {
+    "policy_id": "3847ca2d457de36fd9b45e7381d1720e5484c6f5fb0dd45b7692b671",
+    "asset_name": "734f75704b69746368656e5061737332",
+    "asset_name_ascii": "sOupKitchenPass2",
+    "fingerprint": "asset1ctcvd2tj8mucfde765a6ls0d28tevdx7la7jxu",
+    "minting_tx_hash": "c5ff7eafcbd0fcc762bb1d49b2b1f1370fc67603fc5c46edfdd4968ffa130987",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676073600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "3847ca2d457de36fd9b45e7381d1720e5484c6f5fb0dd45b7692b671": {
+          "sOupKitchenPass2": {
+            "Form": "Mixed media",
+            "name": "sOup Kitchen Pass #2",
+            "files": [
+              {
+                "src": "ipfs://QmQKA4oZF6hxZP4igMnCBA6M3FcgdBpLg46XTVbgkRYkqV",
+                "name": "sOupKitchenPass2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQKA4oZF6hxZP4igMnCBA6M3FcgdBpLg46XTVbgkRYkqV",
+            "Artist": "Netanel Cohen",
+            "Variant": "Beige2",
+            "mediaType": "image/png",
+            "description": "sOup Kitchen Pass"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

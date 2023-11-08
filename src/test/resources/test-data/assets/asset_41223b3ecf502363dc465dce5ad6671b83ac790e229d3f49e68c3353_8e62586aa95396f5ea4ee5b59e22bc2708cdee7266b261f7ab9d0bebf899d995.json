@@ -1,0 +1,84 @@
+[
+  {
+    "policy_id": "41223b3ecf502363dc465dce5ad6671b83ac790e229d3f49e68c3353",
+    "asset_name": "8e62586aa95396f5ea4ee5b59e22bc2708cdee7266b261f7ab9d0bebf899d995",
+    "asset_name_ascii": "\\216bXj\\251S\\226\\365\\352N\\345\\265\\236\"\\274'\b\\315\\356rf\\262a\\367\\253\\235\u000b\\353\\370\\231\\331\\225",
+    "fingerprint": "asset1zw7q6drzk7dwe5z0ttxyxh4uv8w6kfh7xw55dn",
+    "minting_tx_hash": "d68ba7482cfed2c922b0d6771b9dbf51ea292bef189c5194c71e758066a2f641",
+    "total_supply": "0",
+    "mint_cnt": 1,
+    "burn_cnt": 1,
+    "creation_time": 1677801600,
+    "minting_tx_metadata": {
+      "7": {
+        "loan": [
+          "",
+          ""
+        ],
+        "interest": [
+          "",
+          ""
+        ],
+        "loanAmnt": "500000000",
+        "borrowerTn": "8e62586aa95396f5ea4ee5b59e22bc2708cdee7266b261f7ab9d0bebf899d995",
+        "collateral": [
+          {
+            "unit": [
+              "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81",
+              "4261726420436f6e726164"
+            ],
+            "quantity": 1
+          }
+        ],
+        "interestAmnt": "50000000",
+        "loanDuration": "672",
+        "borrowerAddress": [
+          "63cb0a6935f7672a5ff4e9cd761069b3fd953274cfb433d7329c2791",
+          "d627734cb1e5608b43b42fe470bee63a66198532f8b0547626fd11e2",
+          [
+            "addr1q93ukznfxhmkw2jl7n5u6assdxelm9fjwn8mgv7hx2wz0ywkyae",
+            "5ev09vz958dp0u3ctae36vcvc2vhckp28vfhaz83q76v46h"
+          ]
+        ],
+        "requestExpiration": 1709400373000,
+        "totalInstallments": 1
+      },
+      "721": {
+        "version": 2,
+        "0x41223b3ecf502363dc465dce5ad6671b83ac790e229d3f49e68c3353": {
+          "0x8e62586aa95396f5ea4ee5b59e22bc2708cdee7266b261f7ab9d0bebf899d995": {
+            "name": "Fluid tokens bond",
+            "image": [
+              "data:image/svg+xml;base64,Cgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm",
+              "9yZy8yMDAwL3N2ZyIgdmlld0JveD0iLTMwMCAtMTAwIDcwMCAxMDAwIj4KICA8cm",
+              "VjdCB4PSItMjkwIiB5PSItOTAiIHdpZHRoPSI2OTAiIGhlaWdodD0iOTkwIiBzdH",
+              "Jva2U9ImJsdWUiIHN0cm9rZS13aWR0aD0iMnB4IiBmaWxsPSJ3aGl0ZSIvPgogID",
+              "xwYXRoIGQ9Ik0gMCAwIEMgMCAwIDAgMCAwIDAgQyAwIC01MCA1MCAtNDAgOTAgLT",
+              "QwIEMgMTIwIC00MCAxMjAgMCA5MCAwIEwgMzAgMCBDIDEwIDAgMCAwIDAgMzAiIG",
+              "ZpbGw9IiM1MGQxYjMiLz4KICA8cGF0aCBkPSJNIDIwIDEwMCBDIC0xMCAzMCAtMT",
+              "AgMCAxMDAgMTAgQyA2MCAxMCA1MCAyMCA1MCAzMCBDIDUwIDQwIDUwIDYwIDYwID",
+              "kwIEMgNzAgMTIwIDMwIDEzMCAyMCAxMDAgWiIgZmlsbD0iIzFiOWVlNiIvPgogID",
+              "x0ZXh0IHg9IjAiIHk9IjUwIiBmb250LXNpemU9IjYwIiBkeT0iMCIgZm9udC1mYW",
+              "1pbHk9IlNhbnMgU2VyaWYiIGZpbGw9IiMwMDAwMDAiPgogICAgPHRzcGFuIHg9Ij",
+              "UlIiBkeT0iMS44ZW0iIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW",
+              "5jaG9yPSJtaWRkbGUiPkZMVUlEIEJPTkQ8L3RzcGFuPgogICAgPHRzcGFuIHg9Ij",
+              "UlIiBkeT0iMS4yZW0iIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW",
+              "5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iNDgiPkJvcnJvd2VyPC90c3Bhbj4KIC",
+              "AgIDx0c3BhbiB4PSI1JSIgZHk9IjEuMmVtIiBkb21pbmFudC1iYXNlbGluZT0ibW",
+              "lkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Cb25kIGlkOjwvdHNwYW4+CiAgIC",
+              "A8dHNwYW4geD0iNSUiIGR5PSIyLjRlbSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZG",
+              "RsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIyMCI+OGU2MjU4Nm",
+              "FhOTUzOTZmNWVhNGVlNWI1OWUyMmJjMjcwOGNkZWU3MjY2YjI2MWY3YWI5ZDBiZW",
+              "JmODk5ZDk5NTwvdHNwYW4+CiAgPC90ZXh0Pgo8L3N2Zz4KCgo="
+            ],
+            "BondId": "8e62586aa95396f5ea4ee5b59e22bc2708cdee7266b261f7ab9d0bebf899d995",
+            "Policy": "41223b3ecf502363dc465dce5ad6671b83ac790e229d3f49e68c3353",
+            "twitter": "https://twitter.com/fluidtokens",
+            "mediaType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

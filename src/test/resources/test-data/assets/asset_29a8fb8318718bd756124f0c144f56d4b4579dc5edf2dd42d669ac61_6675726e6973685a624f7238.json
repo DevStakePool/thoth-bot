@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685a624f7238",
+    "asset_name_ascii": "furnishZbOr8",
+    "fingerprint": "asset13h83qadszfkdmtux4y0kkapc4v8r9legjk8mj3",
+    "minting_tx_hash": "7ac9520acf833bb97faa0a735700457a0505774fb1d0cbff8079e99bb3f514fe",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1681603200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishZbOr8": {
+            "id": "ZbOr8",
+            "src": "ipfs://QmTDcdKeTLmpH57y1p1XjWQ7ciNjBhHtkYvXDwY8MK6BxV",
+            "name": "Art Kit",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmTDcdKeTLmpH57y1p1XjWQ7ciNjBhHtkYvXDwY8MK6BxV",
+                "name": "Art Kit",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmNb1dKmQ85wsDkuSgtVi5jMsAEgjJwkwmAxiADAtCzFR8",
+                "name": "Art Kit",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmTfjAe2PaAVPGJR7FewZjArYAkBGvYKxJQCXxfMXT8SBq",
+                "name": "Art Kit",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTDcdKeTLmpH57y1p1XjWQ7ciNjBhHtkYvXDwY8MK6BxV",
+            "description": "Hand-crafted by Lincoln Evans.",
+            "furnitureId": 222
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

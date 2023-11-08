@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65333141376542",
+    "asset_name_ascii": "frame31A7eB",
+    "fingerprint": "asset1q87s92qdqvs2t07ny36yx7vnrwdpp76qnm2tyk",
+    "minting_tx_hash": "c431d80fcf54e94ca6e9e853ac0111bbdabb3cb9ba60f3f1f281afc857f7968a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674518400,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame31A7eB": {
+            "id": "vMHry",
+            "src": "ipfs://QmenDCdf8eKteNganDVssbvJw6ELNvtuJPKFNj4LYeoefz",
+            "name": "Ape Society Frame Level 3",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmenDCdf8eKteNganDVssbvJw6ELNvtuJPKFNj4LYeoefz",
+                "name": "Ape Society Frame Level 3",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmenDCdf8eKteNganDVssbvJw6ELNvtuJPKFNj4LYeoefz",
+            "level": 3,
+            "artist": "Shepherd Rich",
+            "mintedAt": 1674596892495,
+            "mintedBy": "e14da937ef8cc892a9455c13e9ae3188a3eb447d762397e59124706d02",
+            "description": "Level 3 frame",
+            "mintedStake": "stake1u9x6jdl03nyf9229tsf7nt333z37k3rawc3e0ev3y3cx6qsmzzw6r"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

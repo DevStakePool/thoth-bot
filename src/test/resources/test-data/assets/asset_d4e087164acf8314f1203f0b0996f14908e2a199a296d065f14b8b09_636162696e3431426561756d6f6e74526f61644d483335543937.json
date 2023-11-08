@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3431426561756d6f6e74526f61644d483335543937",
+    "asset_name_ascii": "cabin41BeaumontRoadMH35T97",
+    "fingerprint": "asset1um4z6cqdluhsawgs2m6rlyn9uqwxe3hkzqphnx",
+    "minting_tx_hash": "fb6795ac94f967c66d4f9cf835cdc751e82135c7d6fe2a95dc1d2916e1401ed7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin41BeaumontRoadMH35T97": {
+            "name": "41 Beaumont Road, MH35 T97",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Beaumont Road",
+            "District": "Mariana Heights",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "T",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "35",
+            "Y Coordinate": "97"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

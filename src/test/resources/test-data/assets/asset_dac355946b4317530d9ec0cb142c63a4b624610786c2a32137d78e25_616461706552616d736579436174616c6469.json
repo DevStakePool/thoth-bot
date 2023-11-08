@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552616d736579436174616c6469",
+    "asset_name_ascii": "adapeRamseyCataldi",
+    "fingerprint": "asset1g2fexqympwt58xj9vh2z58kcwh7308ff3kt0rs",
+    "minting_tx_hash": "e5bfda0ea962969950423044c2efe339d37e113d80a6931797e17efebf50840a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRamseyCataldi": {
+            "Hat": "Top Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ramsey Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmZKAiBwx13efSV7RSnBQafvaaw6bZ5i2pMm3fp6auHPgg",
+                "name": "Ramsey Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZKAiBwx13efSV7RSnBQafvaaw6bZ5i2pMm3fp6auHPgg",
+            "Family": "Cataldi",
+            "Weapon": "Arrows",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

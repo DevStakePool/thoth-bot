@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685735365746",
+    "asset_name_ascii": "furnishW56WF",
+    "fingerprint": "asset1auvaehqf3m63q6xk2fstxpgxzuuc4dzwvh6eld",
+    "minting_tx_hash": "bc2c1d220900ed0c18ea502a85df6c6c629a82a1ee32317e9f9f91a85b46e16d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1680307200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishW56WF": {
+            "id": "W56WF",
+            "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "name": "Cushioned Armchair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+                "name": "Cushioned Armchair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQfxQsmMez3vgCjAsKVaVKnwRishsqpCtvixnyBMZbeY9",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVthsuyoH91GwKwkqFeT3kaZNedhhEn69Mq5VhF5nmCke",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "description": "Hand-crafted by Lyndon Roberts.",
+            "furnitureId": 207
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

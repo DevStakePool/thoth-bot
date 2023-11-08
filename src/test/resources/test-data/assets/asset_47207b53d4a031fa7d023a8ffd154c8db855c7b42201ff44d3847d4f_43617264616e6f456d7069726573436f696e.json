@@ -1,0 +1,36 @@
+[
+  {
+    "policy_id": "47207b53d4a031fa7d023a8ffd154c8db855c7b42201ff44d3847d4f",
+    "asset_name": "43617264616e6f456d7069726573436f696e",
+    "asset_name_ascii": "CardanoEmpiresCoin",
+    "fingerprint": "asset1k2uzea7sdyl3zzp4cqqly5mfhnnh8tnp8732m5",
+    "minting_tx_hash": "1c6a347aafe6d1ab2d8654d6a57c040468cac809069cd43b20ab2a5d62606b6c",
+    "total_supply": "1500000",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1630540800,
+    "minting_tx_metadata": {
+      "721": {
+        "47207b53d4a031fa7d023a8ffd154c8db855c7b42201ff44d3847d4f": {
+          "CardanoEmpiresCoin": {
+            "url": "https://cardanoempires.app",
+            "name": "Cardano Empires Coin",
+            "type": "image/png",
+            "image": "ipfs://ipfs/QmXzVYRy9h9Y7jak5c3sbUWBnrX6ccfsKzBfFia4crMnC8",
+            "location": {
+              "ipfs": "/ipfs/QmXzVYRy9h9Y7jak5c3sbUWBnrX6ccfsKzBfFia4crMnC8"
+            },
+            "publisher": [
+              "twitter.com/FtrSaroth",
+              "twitter.com/cardanoempires"
+            ],
+            "properties": {
+              "type": "Coin"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

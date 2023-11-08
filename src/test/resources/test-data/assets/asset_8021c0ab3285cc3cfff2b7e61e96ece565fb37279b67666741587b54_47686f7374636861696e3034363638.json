@@ -1,0 +1,66 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3034363638",
+    "asset_name_ascii": "Ghostchain04668",
+    "fingerprint": "asset1ylfd5k8659ahslys2wgn4m48fxk5ltmjkx0uza",
+    "minting_tx_hash": "75699f723d76996d5e80ce345a203c1848d6fc8fdf60c7e5d90c6103864cf4f8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635638400,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain04668": {
+            "dna": "00110102",
+            "body": "Simon Cowel Shirt",
+            "eyes": "High",
+            "head": "Police",
+            "name": "Ghostchain04668",
+            "files": [
+              {
+                "src": "ipfs://QmXcymjiqscftXCAMU84LqRLuvdL8Zv4eVg74aodswoKcF",
+                "name": "Ghostchain04668",
+                "https": "https://api.nftghostchain.com/original?mint=4668",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Calm",
+            "image": "ipfs://QmXcymjiqscftXCAMU84LqRLuvdL8Zv4eVg74aodswoKcF",
+            "mouth": "Weedpipe",
+            "rarity": "Common",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          },
+          "Ghostchain05202": {
+            "dna": "24010002",
+            "body": "Black Dungarees",
+            "eyes": "Winky",
+            "name": "Ghostchain05202",
+            "files": [
+              {
+                "src": "ipfs://QmaYMLQfpHGbedAyJnVcqxxwFCzSFJh6kWXZTE615uVdwC",
+                "name": "Ghostchain05202",
+                "https": "https://api.nftghostchain.com/original?mint=5202",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Forest",
+            "image": "ipfs://QmaYMLQfpHGbedAyJnVcqxxwFCzSFJh6kWXZTE615uVdwC",
+            "mouth": "Pipe",
+            "border": "Jellyfish",
+            "rarity": "Epic",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

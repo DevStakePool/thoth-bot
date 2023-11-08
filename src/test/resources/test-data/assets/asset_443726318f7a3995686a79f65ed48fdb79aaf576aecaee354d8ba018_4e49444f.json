@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "443726318f7a3995686a79f65ed48fdb79aaf576aecaee354d8ba018",
+    "asset_name": "4e49444f",
+    "asset_name_ascii": "NIDO",
+    "fingerprint": "asset16ta3lp2yenfyct85l6wnfdek2uecle76dfj5h9",
+    "minting_tx_hash": "e7973131b81352cedb3597dcd24c272a8fd62d65118b2049c8a646aa3c0c7c25",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643846400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "443726318f7a3995686a79f65ed48fdb79aaf576aecaee354d8ba018": {
+          "NIDO": {
+            "name": "NIDO",
+            "files": [
+              {
+                "src": "ipfs://QmW8qrbGUet2RZgQHHBA4qBHKen34gvhLUCfTCfcYovWLk",
+                "name": "NIDO",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmW8qrbGUet2RZgQHHBA4qBHKen34gvhLUCfTCfcYovWLk",
+            "Ticker": "NIDO",
+            "symbol": "NIDO",
+            "Website": "www.officialnido.com",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 52317967
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "A token to empower my fans and believers",
+            "totalSupply": 10000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

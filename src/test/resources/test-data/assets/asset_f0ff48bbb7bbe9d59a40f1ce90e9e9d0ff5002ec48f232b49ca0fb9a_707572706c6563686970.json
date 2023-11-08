@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "707572706c6563686970",
+    "asset_name_ascii": "purplechip",
+    "fingerprint": "asset1su8dg0uyzd0j4d0jfwv44368qsm7hpw29df03e",
+    "minting_tx_hash": "2ff60e300e2ef5a74acaaaaea92795abe57400aba6b9eabdf6c2d2a151fd6f82",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676160000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "purplechip": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$purplechip",
+            "image": "ipfs://QmeMy1pNnVEutkdY4SpaczQBfiKbPwAirjXApXco4zDZo5",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

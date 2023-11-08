@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e33344d63737765656e65794176656e756547523233523735",
+    "asset_name_ascii": "cabin34McsweeneyAvenueGR23R75",
+    "fingerprint": "asset1h82e42xt39lwz5kh4hdf46v8qcw29hqal0gnfk",
+    "minting_tx_hash": "20e1c8dee52b5601414b677e918725e7922ea9f8b3ca5906688e4105d8e8b4e7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin34McsweeneyAvenueGR23R75": {
+            "name": "34 Mcsweeney Avenue, GR23 R75",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Mcsweeney Avenue",
+            "District": "Grolt",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "R",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "23",
+            "Y Coordinate": "75"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

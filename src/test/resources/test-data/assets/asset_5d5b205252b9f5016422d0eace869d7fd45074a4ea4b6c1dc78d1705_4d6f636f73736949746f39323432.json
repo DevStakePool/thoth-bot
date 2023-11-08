@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "5d5b205252b9f5016422d0eace869d7fd45074a4ea4b6c1dc78d1705",
+    "asset_name": "4d6f636f73736949746f39323432",
+    "asset_name_ascii": "MocossiIto9242",
+    "fingerprint": "asset1sp7ah3ka386ujavw3q8mglxq9x72g37mu73mur",
+    "minting_tx_hash": "b0238872dec3735966fe343a7937cc92b628cf027e617116c23da21cbce91b1c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1637452800,
+    "minting_tx_metadata": {
+      "721": {
+        "5d5b205252b9f5016422d0eace869d7fd45074a4ea4b6c1dc78d1705": {
+          "MocossiIto9242": {
+            "id": 9242,
+            "name": "Mocossi-Ito-9242",
+            "image": "ipfs://QmVkxiiYBuTtQ7hHSySdhtyYjviUxf7qNVU2J3xeRRS6f3",
+            "copyright": "2021 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "hogwarts scarf",
+              "Face": "wink",
+              "Species": "Ito",
+              "Headwear": "pirate hat",
+              "Background": "purple"
+            },
+            "description": "This is an NFT from project Mocossi."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

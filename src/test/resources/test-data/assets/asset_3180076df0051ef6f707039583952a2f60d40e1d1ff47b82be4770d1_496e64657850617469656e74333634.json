@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "3180076df0051ef6f707039583952a2f60d40e1d1ff47b82be4770d1",
+    "asset_name": "496e64657850617469656e74333634",
+    "asset_name_ascii": "IndexPatient364",
+    "fingerprint": "asset1andd4nlqhphcgpn3e6s7r5v9v4ev68x9h3chw8",
+    "minting_tx_hash": "d721211721240c50450df2cedaa66e764ce7c1be4e1d8a1a0ebe52ff2076ca6e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678147200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "3180076df0051ef6f707039583952a2f60d40e1d1ff47b82be4770d1": {
+          "IndexPatient364": {
+            "name": "Index Patient #364",
+            "files": [
+              {
+                "src": "ipfs://QmVEbPws6mUJ6NeSVBiyhCpy1XisRrx1cxbb9iiDP8cawc",
+                "name": "IndexPatient364",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVEbPws6mUJ6NeSVBiyhCpy1XisRrx1cxbb9iiDP8cawc",
+            "mediaType": "image/png",
+            "description": [
+              "The test result proofs that you are an \"Index Pati",
+              "ent\". The percentage of F-Virus occurrence is a mu",
+              "ltiplier for future perks."
+            ],
+            "Percentage of f-virus occurrence": "102"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

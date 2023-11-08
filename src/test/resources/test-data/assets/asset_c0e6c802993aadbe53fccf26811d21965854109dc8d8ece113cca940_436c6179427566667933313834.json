@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "c0e6c802993aadbe53fccf26811d21965854109dc8d8ece113cca940",
+    "asset_name": "436c6179427566667933313834",
+    "asset_name_ascii": "ClayBuffy3184",
+    "fingerprint": "asset1xwrpehd7t7q79e0t5g4s7gdycd3unkzfq7haxz",
+    "minting_tx_hash": "72bcfa59d974ec97547e48f675c8dc8f3d96ea27e36ff09ef6164a1aa89308e9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643932800,
+    "minting_tx_metadata": {
+      "721": {
+        "c0e6c802993aadbe53fccf26811d21965854109dc8d8ece113cca940": {
+          "ClayBuffy3184": {
+            "name": "Clay Buffy #3184",
+            "type": "Souvenir",
+            "buffy": "Spider",
+            "image": "ipfs://QmcJWtTr8VTos6jRLoM9PUV6FS3eJGnp4FnjQWJkGi4wko",
+            "mediaType": "image/jpeg",
+            "particles": [
+              "Confetti",
+              "Splatter"
+            ],
+            "publisher": {
+              "cNFTcon": "https://cnftcon.io",
+              "Clay Mates": "https://www.claynation.io/",
+              "Buffy Bot Publishing": "https://buffybot.io"
+            },
+            "background": "Red",
+            "description": [
+              "Commemorating cNFTcon 2022",
+              "October 8-9, 2022 | Las Vegas, NV",
+              "This NFT is **NOT** a ticket to the event."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

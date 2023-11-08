@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6a75616e64656d6564696369",
+    "asset_name_ascii": "juandemedici",
+    "fingerprint": "asset16jcewa7kdfnjcy8yhs5s0tqtcnjt68wsj6lhkz",
+    "minting_tx_hash": "9d1d2bfe06456c3c36a8dbea2e8226d147750d41cfe51af5be53beb25ae4b633",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666310400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "juandemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$juandemedici",
+            "image": "ipfs://QmT2rwvQNZLyUotWvVxVgfcDcnP45qEXAfDNaR6rqVT81D",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

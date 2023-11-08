@@ -1,0 +1,57 @@
+[
+  {
+    "policy_id": "75331768772e5eba2cb00454e6a3be3bbac991cd43b2dcc738f4adac",
+    "asset_name": "57696e67656457617272696f727332303339",
+    "asset_name_ascii": "WingedWarriors2039",
+    "fingerprint": "asset1g5eq4etshezzg2rrdav7pakg9kw8tvxf9fcwcn",
+    "minting_tx_hash": "951b153a7bb6a4967e5f4c94add0c4df1d06dcf8fde5729266ab7329c053ed33",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652140800,
+    "minting_tx_metadata": {
+      "721": {
+        "75331768772e5eba2cb00454e6a3be3bbac991cd43b2dcc738f4adac": {
+          "WingedWarriors2": {
+            "name": "WingedWarriors #2",
+            "files": [
+              {
+                "src": "ipfs://QmbwqSJJMjWxkd5j7oDYaJwx7PTUnn458zmntDdLc2tGK2",
+                "name": "WingedWarriors #2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbwqSJJMjWxkd5j7oDYaJwx7PTUnn458zmntDdLc2tGK2",
+            "traits": [
+              "mummy",
+              "purple-wings",
+              "sword",
+              "blue-eyes",
+              "keylock"
+            ],
+            "mediaType": "image/png"
+          },
+          "WingedWarriors2039": {
+            "name": "WingedWarriors #2039",
+            "files": [
+              {
+                "src": "ipfs://QmSZnZULaD1sGsppKYQMPcTwLbPwW69f6Vmzw5Zn93mGpX",
+                "name": "WingedWarriors #2039",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSZnZULaD1sGsppKYQMPcTwLbPwW69f6Vmzw5Zn93mGpX",
+            "traits": [
+              "pink-skin",
+              "green-wings",
+              "torch",
+              "green-eyes"
+            ],
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

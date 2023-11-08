@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e343742616c6c6f6e615765746c616e6473594f35314f3831",
+    "asset_name_ascii": "cabin47BallonaWetlandsYO51O81",
+    "fingerprint": "asset1vdlpgp2j7s6akngmvqtamu23peyhdrr4pmv6zu",
+    "minting_tx_hash": "4ba77e733ec624e5e4b1535e234a4142d5eef8da359345df39567253af337246",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin47BallonaWetlandsYO51O81": {
+            "name": "47 Ballona Wetlands, YO51 O81",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Ballona Wetlands",
+            "District": "Yocalt",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "O",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "51",
+            "Y Coordinate": "81"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

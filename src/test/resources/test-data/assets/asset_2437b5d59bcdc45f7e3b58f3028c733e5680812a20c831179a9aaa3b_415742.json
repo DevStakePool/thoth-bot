@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "2437b5d59bcdc45f7e3b58f3028c733e5680812a20c831179a9aaa3b",
+    "asset_name": "415742",
+    "asset_name_ascii": "AWB",
+    "fingerprint": "asset1s2twvqthpxttxd9x8wyrp5ceyrepv53ullfes9",
+    "minting_tx_hash": "3b77f7ffaf41d0cbff667ba716bd72426ec7e1f252abf3ad2521ea78ab6f4891",
+    "total_supply": "360",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648684800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "2437b5d59bcdc45f7e3b58f3028c733e5680812a20c831179a9aaa3b": {
+          "AWB": {
+            "name": "Art With Benefits",
+            "files": [
+              {
+                "src": "ipfs://QmYDm9qmAXsfELpetRueLw1CkCuNV9L3YHXMiP2Nv5iJ9T",
+                "name": "AWB",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYDm9qmAXsfELpetRueLw1CkCuNV9L3YHXMiP2Nv5iJ9T",
+            "symbol": "AWB",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 57183586
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "DISCLAIMER: Just Art!  Fungible Token (360 Supply)",
+            "totalSupply": 360
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

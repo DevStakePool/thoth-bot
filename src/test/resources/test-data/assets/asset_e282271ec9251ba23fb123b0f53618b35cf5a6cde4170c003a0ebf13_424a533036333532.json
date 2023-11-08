@@ -1,0 +1,68 @@
+[
+  {
+    "policy_id": "e282271ec9251ba23fb123b0f53618b35cf5a6cde4170c003a0ebf13",
+    "asset_name": "424a533036333532",
+    "asset_name_ascii": "BJS06352",
+    "fingerprint": "asset15zq2fld3alhaeh5se29z6tazfga669zz297vsm",
+    "minting_tx_hash": "b59d0aa6f9407307f59cb9169bebcc732c64bbfea8f270e2a975e63021033017",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1645833600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "e282271ec9251ba23fb123b0f53618b35cf5a6cde4170c003a0ebf13": {
+          "BJS06352": {
+            "id": "06352",
+            "name": "SPRINTER UC22 #06352",
+            "files": [
+              {
+                "src": "ipfs://QmNw1e8KJEBuVBmqNLmatbmbESsZAx3bmTNk4BpkQgSc5K",
+                "name": "SPRINTER UC22",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmekjwaGeCBwjPbJLWu96PNDHxk1E9rTx8xW8xTwcs1983",
+                "name": "SPRINTER UC22",
+                "mediaType": "video/mp4",
+                "resolution": "web"
+              },
+              {
+                "src": "ipfs://QmTSLziPLKKvKBF5sVoQF8JArSDxX2WRkDJhGavKePFHzF",
+                "name": "SPRINTER UC22",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              }
+            ],
+            "image": "ipfs://QmeDN7dapiAWdaDSUEGuEKGvF3aaw3fx2ugEgrninTeMcs",
+            "media": {
+              "Discord": "https://discord.gg/cornucopiasgame",
+              "Website": "https://www.cornucopias.io",
+              "Link Tree": "https://linktr.ee/CornucopiasGame"
+            },
+            "gameid": "FVBS02",
+            "rarity": "Uncommon",
+            "season": "Pre-Launch",
+            "version": "1.0",
+            "fullName": "Bubblejett Sprinter 2022 #06352",
+            "mediaType": "image/png",
+            "typeClass": "Flying Vehicle",
+            "attributes": {
+              "Year": "2022",
+              "Color": "Tiger Orange",
+              "Model": "Sprinter",
+              "Paint": "Flat",
+              "Seats": "2",
+              "Derivative": "RA 2022",
+              "Manufacturer": "Bubblejett"
+            },
+            "description": "Cornucopias Flying Vehicle",
+            "projectName": "Cornucopias 'The Island' Game"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "policy_id": "80c613ceadc1aa49422925bfc962b2519a6ae1bf6e2f8ec749df5ed8",
+    "asset_name": "5468654772656174476174736279393531",
+    "asset_name_ascii": "TheGreatGatsby951",
+    "fingerprint": "asset1rejlr7ns4fdwe3j5ca6n2hxp8kexu4700qa4yy",
+    "minting_tx_hash": "48d577ca513e95d406d097158fe71c0bf3914ae5c9c57e41cc929ed5e748e763",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678492800,
+    "minting_tx_metadata": {
+      "721": {
+        "80c613ceadc1aa49422925bfc962b2519a6ae1bf6e2f8ec749df5ed8": {
+          "TheGreatGatsby140": {
+            "id": "140",
+            "data": "ipfs://QmQhktquUvLWYGXXbZceFCgFLarikCXXjhekJZ3c3RDQss",
+            "name": "The Great Gatsby #140",
+            "files": [
+              {
+                "src": "ipfs://Qmaqg3pCzuNwcZS1tP55rA8QDdRhBGW482cKfDozeS3XBn",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qma64A9PVJtLWxM9yUGvLQuAypaw6aJaXHnDqo6aGckKoW",
+            "sha256": "71714486c45fa6d66e6ad532cce00d1805a281d2a2a5d654873e42ea99b711f2",
+            "authors": [
+              "F. Scott Fitzgerald"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "14",
+              "Cover Theme": "The Side Hustle"
+            },
+            "description": [
+              "I've been drunk for about a week now, and I thought it might sob",
+              "er me up to sit in a library."
+            ],
+            "extraAttributes": {
+              "Book Title": "The Great Gatsby"
+            }
+          },
+          "TheGreatGatsby951": {
+            "id": "951",
+            "data": "ipfs://QmNYLUhiMe5REVSvBkdc79jCsxfmJ6ACWarmTuEfUQZ1cC",
+            "name": "The Great Gatsby #951",
+            "files": [
+              {
+                "src": "ipfs://QmUrdCC4JYeezCkJ2qfxTeaNawMi6qLNCmRpr5nLzguvP3",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQi31msUmiEYLSnpQwpsk8cakmyPcpQDyf2GstALc9NpG",
+            "sha256": "41651b8fb58d687d1703614733fe65a86f6cab2e215dc9b1d05d4f356e363a7c",
+            "authors": [
+              "F. Scott Fitzgerald"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "27",
+              "Cover Theme": "The Beautiful Little Fool"
+            },
+            "description": [
+              "I've been drunk for about a week now, and I thought it might sob",
+              "er me up to sit in a library."
+            ],
+            "extraAttributes": {
+              "Book Title": "The Great Gatsby"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

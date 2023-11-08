@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "7370696b6564656d6564696369",
+    "asset_name_ascii": "spikedemedici",
+    "fingerprint": "asset1dj2v43yp2m0rkffa7rgngldu98mdhv60q85uq3",
+    "minting_tx_hash": "964f877cec864f82083728ce8e628eecd1b5ae62568ff030ca23e62d3a50fde3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666310400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "epic.records": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$epic.records",
+            "image": "ipfs://QmWjnACHqTT7WKd8FRcB6XpjMB5TtaXSNumgXcLZP5J2V5",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "spikedemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$spikedemedici",
+            "image": "ipfs://QmVskYvmHvsx8tJYPhVA9G3rvUYzVtSBYmVpUthUSmihRB",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "ridleydemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$ridleydemedici",
+            "image": "ipfs://QmSzXst3obhexouHNGF41Gn2Yka1x95qc9jWJRGrzF5Ptw",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

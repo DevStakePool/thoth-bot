@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6573746576616e64656d6564696369",
+    "asset_name_ascii": "estevandemedici",
+    "fingerprint": "asset19rqt2zpmnmkgkt5a8ee7xnfk5xau9443yn7l6y",
+    "minting_tx_hash": "164ec82ba64445bdcc33a5e860256a68bbddb989ab3b08fa6d4a990adf002db9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666310400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "222records": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$222records",
+            "image": "ipfs://QmezkEybcxTzzgG3dWzEkEDaHMbZzvuEzSorE1k8MpnFG9",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "arcusgallerist": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$arcusgallerist",
+            "image": "ipfs://QmaYBK3zZuzfzaKvHjTWTDvvQQfcFfLPrJ2ZamV5b8xyYX",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "estevandemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$estevandemedici",
+            "image": "ipfs://QmSyQuzn3QEPn87MRsbRjpo6PVJfxsoAadup2zL6AxqRqS",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

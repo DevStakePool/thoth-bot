@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "34dbb5f4d84d2c422a19dd31b4551094ec28851909f5e44280393b89",
+    "asset_name": "41746f6d69635465616d466c756f72696e6531",
+    "asset_name_ascii": "AtomicTeamFluorine1",
+    "fingerprint": "asset1f9cy3p808jw2dnvxh0t2lave2eg8y2zss0frj3",
+    "minting_tx_hash": "5b7d69a645af2f8b0d97da9c8bdab778f05ceba469dc155a7219fa9f27d00cd4",
+    "total_supply": "100",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1621555200,
+    "minting_tx_metadata": {
+      "721": {
+        "34dbb5f4d84d2c422a19dd31b4551094ec28851909f5e44280393b89": {
+          "AtomicTeamCarbon1": {
+            "name": "Team Carbon Token",
+            "team": "Carbon",
+            "image": "ipfs://QmVR4wit12hjMHNfGiVBoSLZoihYWK9r9gJx5ZEipUo7mR",
+            "edition": 1
+          },
+          "AtomicTeamOxygen1": {
+            "name": "Team Oxygen Token",
+            "team": "Oxygen",
+            "image": "ipfs://QmepFUnNgSF75rSkYf1XeAykxTqup8Paf6SmyfknXEfRnd",
+            "edition": 1
+          },
+          "AtomicTeamFluorine1": {
+            "name": "Team Fluorine Token",
+            "team": "Fluorine",
+            "image": "ipfs://QmUuThiyJAMjn6kR2uLM1vE7dH56bJwQyDd9r5r4U5yv6E",
+            "edition": 1
+          },
+          "AtomicTeamNitrogen1": {
+            "name": "Team Nitrogen Token",
+            "team": "Nitrogen",
+            "image": "ipfs://QmT2aDgdfj93WJLpSs1UP8ybdP4Pc3LTaunje9ziY4CSP7",
+            "edition": 1
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

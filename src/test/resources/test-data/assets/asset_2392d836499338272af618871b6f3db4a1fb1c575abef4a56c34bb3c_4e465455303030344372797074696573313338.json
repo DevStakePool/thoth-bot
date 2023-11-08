@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "2392d836499338272af618871b6f3db4a1fb1c575abef4a56c34bb3c",
+    "asset_name": "4e465455303030344372797074696573313338",
+    "asset_name_ascii": "NFTU0004Crypties138",
+    "fingerprint": "asset1f3j0qysjzeaqzqvyzspfmysxld2ya977ckl46s",
+    "minting_tx_hash": "ca8617faa94608f3e81b79595bdc458e9d60711559204982ddd36701bfb7b684",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620086400,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "ipfs": "ipfs://QmWb1FtLLEunUHqC7mFg34aguxF7u7ASe1TPLZ3VBx8qsg",
+          "assetType": "NFT",
+          "artistName": "NFT Update!",
+          "sha256Hash": "345fbf18b02168361e6f5827143a784cb9238e1a7b2ebb8ab254501597e6aea9",
+          "collectionName": "NFT Update! Promo Card #0004"
+        },
+        "tokens": {
+          "NFTU0004Crypties138": "NFT Update Promo 0004: Crypties #138"
+        },
+        "policyId": "2392d836499338272af618871b6f3db4a1fb1c575abef4a56c34bb3c",
+        "publisher": [
+          "https://twitter.com/cryptiesnft",
+          "https://twitter.com/NFTUpdateIO",
+          "https://nftupdate.io"
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 29142775,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "345064b06082995be5b91cf9b5b5ccbd9aee36a2d79a73982a1a4bb6"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

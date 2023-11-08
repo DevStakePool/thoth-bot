@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "95ca016599fa704e23d398bc936a466333f75b4912924a4e50cf691c",
+    "asset_name": "43535354",
+    "asset_name_ascii": "CSST",
+    "fingerprint": "asset17ysegp2e9lucwqeddx3ldhx6l8uk937gucgssc",
+    "minting_tx_hash": "9c5ca3fecaf2e235c5c18c026d78f58f5feb6e2a3524764b38882a662f57f48b",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1656460800,
+    "minting_tx_metadata": {
+      "721": {
+        "95ca016599fa704e23d398bc936a466333f75b4912924a4e50cf691c": {
+          "CSST": {
+            "url": "https://copperseedsafe.com/ada",
+            "name": "Copper Seed Safe Token",
+            "about": [
+              "This token unlocks special deals on copperseedsafe.com.",
+              "Connect your wallet for discounts and more."
+            ],
+            "files": [
+              {
+                "src": "ipfs://QmVzF5DSBV4VmXBs5H3GBh3MRhNTS6KghYJ5yRQ5KnxBth",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qmd56an5QbfHAn1u2k4ynSa6fYDkURSnnzQMQiRU3tpoye",
+            "value": "No monetary value. Redeemable only on our website.",
+            "twitter": "https://twitter.com/copperseedsafe",
+            "copyright": "2022 Copper Seed Safe, all rights reserved."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

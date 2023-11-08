@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "c40ca49ac9fe48b86d6fd998645b5c8ac89a4e21e2cfdb9fdca3e7ac",
+    "asset_name": "54686557697a61726454696d31383639",
+    "asset_name_ascii": "TheWizardTim1869",
+    "fingerprint": "asset1cjcr7qyd7d27javsa0rrk7n57l35q3fa4cj4vh",
+    "minting_tx_hash": "44c8a08abb90413b4f1e953ab68264094b9105730f85a1339b5118ccbcac8886",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666569600,
+    "minting_tx_metadata": {
+      "721": {
+        "c40ca49ac9fe48b86d6fd998645b5c8ac89a4e21e2cfdb9fdca3e7ac": {
+          "TheWizardTim1869": {
+            "id": "1869",
+            "data": "ipfs://QmbCuvzNnYcnytwE11V2H8C9CKkkHHT2htQybevhQSz2kv",
+            "name": "The Wizard Tim #1869",
+            "files": [
+              {
+                "src": "ipfs://QmTiESnBYyYD4Vzxosiytt6QFC3Vf9tGQvoU1Xf6tyT9dC",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRimvubd4B7D8Y3yn4gnfuuWGHgizCmVVQUFPDWnAwERn",
+            "sha256": "6a0d3f96e5f433e6c909f527d7382a6833b6fd1dd46c19f114dfec5322b29fb9",
+            "authors": [
+              "Joseph Eleam",
+              "Tim Canada"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Edition": "Bronze Letter",
+              "Edition Detail": "Necro Jane 1"
+            },
+            "description": [
+              "Come hear the tale of Wizard Tim and his unparalleled fondness f",
+              "or pastries and pie."
+            ],
+            "authorWebsite": "https://www.wizardtim.com"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

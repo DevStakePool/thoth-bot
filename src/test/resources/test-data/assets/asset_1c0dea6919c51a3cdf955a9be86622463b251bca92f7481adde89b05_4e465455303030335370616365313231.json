@@ -1,0 +1,50 @@
+[
+  {
+    "policy_id": "1c0dea6919c51a3cdf955a9be86622463b251bca92f7481adde89b05",
+    "asset_name": "4e465455303030335370616365313231",
+    "asset_name_ascii": "NFTU0003Space121",
+    "fingerprint": "asset1vqh0s4wszt32k3378z38z2etx9kp5xxrmvmwqr",
+    "minting_tx_hash": "0364889c70ee797c0a71fc20a8b9df8446c234b334093f332aa492ff154fb32a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1619913600,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "url": "https://ipfs.io/ipfs",
+          "ipfs": "QmVNjpVBBL5cyv1r3ifpLQvJPvL9LxDBx1odgUod9HGutm",
+          "hashType": "sha256",
+          "assetHash": "be6abff9cf2a9e869a66a9a71b195a3352c2623b5d9fdd7232de35286e1802b4",
+          "assetType": "NFT",
+          "artistName": "NFT Update!",
+          "collectionName": "NFT Update! Promo Card #0002"
+        },
+        "tokens": {
+          "NFTU0003Space121": "NFT Update Promo 0003: Cardano Space #121"
+        },
+        "policyId": "1c0dea6919c51a3cdf955a9be86622463b251bca92f7481adde89b05",
+        "publisher": [
+          "https://twitter.com/CardanoSpaceNFT",
+          "https://twitter.com/NFTUpdateIO",
+          "https://nftupdate.io"
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 29015289,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "2a535df674a4d5a4c9b3e0e4be9c4a9e89885a4c59c2888c555180e1"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

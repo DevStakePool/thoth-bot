@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d65736d696e42657374",
+    "asset_name_ascii": "adapeMesminBest",
+    "fingerprint": "asset1xcwf8s0jey33ez4lyw2lgh0mjhwca60vsyfm2y",
+    "minting_tx_hash": "baa5e134d1fc99d2e65bed87a7876d4c85845f422986604ec4d987b539ec3725",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMesminBest": {
+            "Hat": "Hoodie",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Mesmin Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmPooxnSM6VTP49cH6PARHSKPgRMmcFcYV14wxsw8SwrZs",
+                "name": "Mesmin Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPooxnSM6VTP49cH6PARHSKPgRMmcFcYV14wxsw8SwrZs",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

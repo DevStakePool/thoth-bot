@@ -1,0 +1,37 @@
+[
+  {
+    "policy_id": "4be7ccbaea05739b0341f7b805bb5b19b6e27d30c4115a968364afea",
+    "asset_name": "56495023323536",
+    "asset_name_ascii": "VIP#256",
+    "fingerprint": "asset1qdgdgnyxukawgs8m50pw8ncphslga2m5xgppem",
+    "minting_tx_hash": "9b8c7c2180db740e70e0b8b16393d997e55a2102870560b8e38ee4ce85d7ee0f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1653782400,
+    "minting_tx_metadata": {
+      "721": {
+        "4be7ccbaea05739b0341f7b805bb5b19b6e27d30c4115a968364afea": {
+          "VIP#256": {
+            "name": "SILVER VIP Pass #256",
+            "files": [
+              {
+                "src": "ipfs://QmZRfMxRPWknp6ow3TA5Dykvm6dnVrM58r4nCmUqMyB8Wi/SILVER.mp4",
+                "name": "SILVER VIP Pass",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              }
+            ],
+            "image": "ipfs://QmXzRbrqU1V5on3LFjaSyigv6vdjQW2qZv5qhAKEmTogQs/SILVER.png",
+            "Twitter": "https://twitter.com/swagapeclub",
+            "website": "https://swagape.club",
+            "Pass Type": "SILVER",
+            "mediaType": "image/png",
+            "description": "Swag Ape Club VIP Pass for future drops and other benefits!"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

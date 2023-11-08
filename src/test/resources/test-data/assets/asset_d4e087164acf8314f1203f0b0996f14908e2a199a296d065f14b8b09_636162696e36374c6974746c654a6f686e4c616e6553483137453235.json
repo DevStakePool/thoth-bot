@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e36374c6974746c654a6f686e4c616e6553483137453235",
+    "asset_name_ascii": "cabin67LittleJohnLaneSH17E25",
+    "fingerprint": "asset12mgcc9qg9w7yvhuwvl6jzdrpyn4422clyqt2ct",
+    "minting_tx_hash": "60a21301a24741837d938d26163d1449a885915afc3ab4aee99ed221e1a77a6c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin67LittleJohnLaneSH17E25": {
+            "name": "67 Little John Lane, SH17 E25",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Little John Lane",
+            "District": "Shiahib",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "E",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "17",
+            "Y Coordinate": "25"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

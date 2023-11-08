@@ -1,0 +1,64 @@
+[
+  {
+    "policy_id": "49640d18210d384d93dafbbf7f147eaa91d0aa7a0cc652e3913a89e4",
+    "asset_name": "7766303030336261636b776172647367656f6d65747279313732",
+    "asset_name_ascii": "wf0003backwardsgeometry172",
+    "fingerprint": "asset1549439j64u28zg76t07ngys5kc62njqmhy3t7e",
+    "minting_tx_hash": "900a56b047ebd4b119b3004340da0475e54b7be4e12c8bb6904af19c36b34429",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1622851200,
+    "minting_tx_metadata": {
+      "721": {
+        "policyId": "49640d18210d384d93dafbbf7f147eaa91d0aa7a0cc652e3913a89e4",
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 32164869,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "7a09a2a69bda02366f475142c82b859cc07e9ef02f8803bfcd61a16a"
+            }
+          ]
+        },
+        "49640d18210d384d93dafbbf7f147eaa91d0aa7a0cc652e3913a89e4": {
+          "wf0003backwardsgeometry172": {
+            "name": "w/☻ 001-0003: Backwards Geometry #172",
+            "files": [
+              {
+                "src": "ipfs://QmedA1Rwwnuzoz6g78yHHLy6gqWWtWWEizs75QFKNXt95G",
+                "name": "w/☻ 001-0003: Backwards Geometry #172",
+                "mediaType": "image/jpeg",
+                "sha256Hash": "0c885a948f46a5f325492f561fffcf3987aed2bdc15c1b498308f3d36afe8377"
+              }
+            ],
+            "image": "ipfs://QmXbefTifRDiRtLdG8hAr1eMWWFMZMMjAQ3AzAtdRjwQEX",
+            "version": "1.0",
+            "mediaType": "image/jpeg",
+            "attributes": {
+              "artist": [
+                "w/☻",
+                "Backwards Geometry"
+              ],
+              "border": "#FFFFFF",
+              "publisher": [
+                "https://twitter.com/bckwrdsgeometry",
+                "https://backwardsgeometry.com/",
+                "https://twitter.com/withfaces_show",
+                "https://twitter.com/NFTUpdateIO",
+                "https://promo.nftupdate.io/withfaces"
+              ],
+              "collection": "w/☻ Promo Card"
+            },
+            "sha256Hash": "05347da0bb5a673572adacbe2665c2e069d41701f73e644d63a454b945519397"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

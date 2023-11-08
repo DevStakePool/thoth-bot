@@ -5,7 +5,7 @@ logging:
     name: target/thoth-bot.log
   level:
     com:
-      devpool: TRACE
+      devpool: DEBUG
     org:
       springframework: INFO
     root: 'INFO '

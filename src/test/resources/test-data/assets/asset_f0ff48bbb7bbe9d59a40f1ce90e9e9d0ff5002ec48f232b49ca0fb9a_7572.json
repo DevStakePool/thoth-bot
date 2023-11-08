@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "7572",
+    "asset_name_ascii": "ur",
+    "fingerprint": "asset15dzm79tf47k606leq743aajspd8n22pa9c7hvz",
+    "minting_tx_hash": "611d8b13cdeba160393c8e031bcedde8695c0fb23a200b4427ae6eba01f5742a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647561600,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "ur": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$ur",
+            "image": "ipfs://QmZnvqNjZUPcZ94GHRz17JTAkgk8WQo7Y8XxZtwjhfgoTW",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "nancyajram": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$nancyajram",
+            "image": "ipfs://QmSr3jm8QSPCg6PnZJDBpCqZJ1YZT2mx4gwmtgKXcUNJi3",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "creditreport": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$creditreport",
+            "image": "ipfs://QmQAunzARpXXdG4hYx7aZWrjQ9ARWd9mYWHbb6iuw2AdVH",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

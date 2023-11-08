@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65304e47443849",
+    "asset_name_ascii": "frame0NGD8I",
+    "fingerprint": "asset1mk6m2ye9f8y6sz6da54qvtq4lfl6qqdm4wqkdq",
+    "minting_tx_hash": "d41f506d9c41557e8c6a9745bf976f2c24f1de78026299b5394af6ac17199cb3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678492800,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0NGD8I": {
+            "id": "NGD8I",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Antonio Best",
+            "mintedAt": 1678537238942,
+            "mintedBy": "e1a0488405b7c8ff5d68210b142c03f4c4d9be71e42fa296628cc22d69",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1uxsy3pq9kly07htgyy93gtqr7nzdn0n3ush699nz3npz66g7du44f"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

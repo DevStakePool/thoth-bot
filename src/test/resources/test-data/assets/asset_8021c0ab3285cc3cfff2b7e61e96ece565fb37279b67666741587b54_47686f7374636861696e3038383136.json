@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3038383136",
+    "asset_name_ascii": "Ghostchain08816",
+    "fingerprint": "asset1kwc787rmmnn0rfwaskt3fwrzghav2pjqjaatl5",
+    "minting_tx_hash": "9a5a82d97290224769e33e0c089a0cc9ca4c5c6a9af5df04e2a4fa40152b85e2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635724800,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain08816": {
+            "dna": "10010202",
+            "body": "White Tshirt",
+            "eyes": "Winky",
+            "head": "Russian",
+            "name": "Ghostchain08816",
+            "files": [
+              {
+                "src": "ipfs://QmTGEXUVW6aAwRQrEUXmWtKjLLtDSRS6Hg6b47CWFsM8WZ",
+                "name": "Ghostchain08816",
+                "https": "https://api.nftghostchain.com/original?mint=8816",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Moss",
+            "image": "ipfs://QmTGEXUVW6aAwRQrEUXmWtKjLLtDSRS6Hg6b47CWFsM8WZ",
+            "mouth": "Spit",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

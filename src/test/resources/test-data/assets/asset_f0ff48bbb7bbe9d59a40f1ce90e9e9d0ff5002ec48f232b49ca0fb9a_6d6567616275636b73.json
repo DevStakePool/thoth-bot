@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6d6567616275636b73",
+    "asset_name_ascii": "megabucks",
+    "fingerprint": "asset1hm57z4zta32xz4vhe7p886kat0lvyjkxda3ysv",
+    "minting_tx_hash": "cf35774ff9978f0d124ed68f4b7b920a5b83e6cf833285c09616ab8347ac98c1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647648000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "nijmegen": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$nijmegen",
+            "image": "ipfs://QmacoaiFfg5KJGfdm3v8A3yxp3fPPVi8paJgTNQ7QB83dV",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "megabucks": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$megabucks",
+            "image": "ipfs://QmQsaA9vjezuemQfuSqLPeomcoZEGEKujYJkR9juuybQXw",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "naturemade": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$naturemade",
+            "image": "ipfs://QmPozVYQwLsVSxYkMnXfrthmbkfAZCoNwEAFsBDthbWurt",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

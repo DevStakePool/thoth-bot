@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644",
+    "asset_name": "436872697374696f6e44656c7461",
+    "asset_name_ascii": "ChristionDelta",
+    "fingerprint": "asset1ffc8v8kkafr64duykpfts2ucnmv95kd7jyyg04",
+    "minting_tx_hash": "eff336552e9b299a49f532044c060fdf85e00eb054921dbcf50ed7688269968c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671494400,
+    "minting_tx_metadata": {
+      "721": {
+        "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644": {
+          "ChristionDelta": {
+            "name": "Christion Delta",
+            "files": [
+              {
+                "src": "ipfs://QmVjzCG8nTFfeG234DHXmsb2PCX5XEQU8AijuY44tVKFvJ",
+                "name": "Christion Delta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVjzCG8nTFfeG234DHXmsb2PCX5XEQU8AijuY44tVKFvJ",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Puffy Black",
+              "Hair": "None",
+              "Mask": "Yellow Mask",
+              "Rank": "Architect",
+              "Nation": "Delta",
+              "Backdrop": "Pink Backdrop 17",
+              "Body Color": "Brown",
+              "Body Accessory": "None",
+              "Head Accessory": "Green Cardano"
+            },
+            "collection": "Pond - Theta Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

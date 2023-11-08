@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655765737454686f6d6173",
+    "asset_name_ascii": "adapeWestThomas",
+    "fingerprint": "asset1pn92aexuvtzsn79g66qws33pnxt9yjyvqzd8gk",
+    "minting_tx_hash": "8d8a23265ec51eacfe0d29bfdfa4f21356006905715151aa22a268c65e262c29",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWestThomas": {
+            "Hat": "Wool Cap",
+            "Body": "Brown Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "West Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPrwA4A4q3ZrCdHcgri82mLXTMs4YKqNJ7yYBetCEZ8Ce",
+                "name": "West Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPrwA4A4q3ZrCdHcgri82mLXTMs4YKqNJ7yYBetCEZ8Ce",
+            "Family": "Thomas",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Thomas family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d6530504c625532",
+    "asset_name_ascii": "frame0PLbU2",
+    "fingerprint": "asset1lcuv7a9a59qdxcc7d025wapv2kh9xznrtdkdl7",
+    "minting_tx_hash": "46a40361385366f66fa1fba66f727a8a13e6b357b5910ed7ca8d4fa086d67e9c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665100800,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0PLbU2": {
+            "id": "PLbU2",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Booker Hill",
+            "mintedAt": 1665183293654,
+            "mintedBy": "e1f9a82b02c83f3f3fd5037747b30ea075ff2785896533f20b4cf2879c",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1u8u6s2czeqln7074qdm50vcw5p6l7fu939jn8ustfneg08q56ysst"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,521 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065563f6e616e63654d6164646f636b",
+    "asset_name_ascii": "adapeV?nanceMaddock",
+    "fingerprint": "asset1h6f2cyt2ae0c0u4j7zf4lplxumt0jvgzwfmp5s",
+    "minting_tx_hash": "b4b87fecc3efdf0a26588220887406a32c56bc7fa60fa2b9b40a7242477049d2",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeParrGarc?a": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Parr García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qmf75HVPzXnTsPinQSrAAygHxZfXJamRnMGBVsKyCw9B1e",
+                "name": "Parr García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmf75HVPzXnTsPinQSrAAygHxZfXJamRnMGBVsKyCw9B1e",
+            "Family": "García",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeV?nanceCox": {
+            "Hat": "Pirate Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Vénance Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmPkptTQQfxtSmhyhQgppzVzqARtJn5fBHbBXD1rkaeKLz",
+                "name": "Vénance Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPkptTQQfxtSmhyhQgppzVzqARtJn5fBHbBXD1rkaeKLz",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adape?lienWright": {
+            "Hat": "Gold Helmet",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Élien Wright",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmQvX4nABC9n6zuAdfJvfLgvy22pAsoXb9mRLD9KmESdeR",
+                "name": "Élien Wright",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQvX4nABC9n6zuAdfJvfLgvy22pAsoXb9mRLD9KmESdeR",
+            "Family": "Wright",
+            "Weapon": "Sword",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Wright family"
+          },
+          "adapeAd?linGreen": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Adélin Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmdeCMygoe1fkNTgsN4sP6BrywEg9KMmwafmmEbYyZFUzv",
+                "name": "Adélin Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdeCMygoe1fkNTgsN4sP6BrywEg9KMmwafmmEbYyZFUzv",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeElmarGarc?a": {
+            "Hat": "Knight Helmet",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Elmar García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmaXcQaPSMxkoM6MzUB6XrH8KE8WDRnvDoidFyDTkcSdfK",
+                "name": "Elmar García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaXcQaPSMxkoM6MzUB6XrH8KE8WDRnvDoidFyDTkcSdfK",
+            "Family": "García",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeSilv?reFord": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Silvère Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmNQf6sq8PemPfguhA19SEa3vNvR5h9vH7NJiKvem67zsg",
+                "name": "Silvère Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNQf6sq8PemPfguhA19SEa3vNvR5h9vH7NJiKvem67zsg",
+            "Family": "Ford",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Ford family"
+          },
+          "adapeTomasGarc?a": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Tomas García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPGP3i3nN62t6dYGKoDGYYfHnhzvzSGSvRXumNnKrGxed",
+                "name": "Tomas García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPGP3i3nN62t6dYGKoDGYYfHnhzvzSGSvRXumNnKrGxed",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeTrist?nHill": {
+            "Hat": "Top Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Tristán Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmXEMNcpQkicTUZ4rrdEhndNTTCsvhRzZnm6HVKTpFTDtx",
+                "name": "Tristán Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXEMNcpQkicTUZ4rrdEhndNTTCsvhRzZnm6HVKTpFTDtx",
+            "Family": "Hill",
+            "Weapon": "Spear",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Hill family"
+          },
+          "adapeD?sirMaddock": {
+            "Hat": "Voltaire Wig",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Désir Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmfJMzjZKyyH13GYGpKVuAxT2XApqDswGUPfGopCQ5JbE4",
+                "name": "Désir Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfJMzjZKyyH13GYGpKVuAxT2XApqDswGUPfGopCQ5JbE4",
+            "Family": "Maddock",
+            "Weapon": "Rifle",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Maddock family"
+          },
+          "adapeFultonGarc?a": {
+            "Hat": "Pirate Hat",
+            "Body": "Black Wool Coat",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Fulton García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmeDew9spgiKHTWx9DqpzFNgPy1DW7Lk777kqzZg2Ck5vF",
+                "name": "Fulton García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeDew9spgiKHTWx9DqpzFNgPy1DW7Lk777kqzZg2Ck5vF",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeP?pinRoberts": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Pépin Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmP5tmDYZYM1j2sziu4Mb3EuqoFyUqCTjpUa2kEqT7AEiR",
+                "name": "Pépin Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmP5tmDYZYM1j2sziu4Mb3EuqoFyUqCTjpUa2kEqT7AEiR",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          },
+          "adapeSilv?reAmato": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Orange",
+            "name": "Silvère Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmYN4QKf1paftjFTjKAhcwe1DcfAU9ya6xH4fv2KkQtdcp",
+                "name": "Silvère Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYN4QKf1paftjFTjKAhcwe1DcfAU9ya6xH4fv2KkQtdcp",
+            "Family": "Amato",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          },
+          "adapeTh?oRobinson": {
+            "Hat": "Spinner Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Théo Robinson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPcUe4inrHR56WHv8QKPYwzMdeMJ5x9prMUUH8XDuYBAH",
+                "name": "Théo Robinson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPcUe4inrHR56WHv8QKPYwzMdeMJ5x9prMUUH8XDuYBAH",
+            "Family": "Robinson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Robinson family"
+          },
+          "adapeChiltonGarc?a": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Chilton García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPVkaXzXGcxgMZsoqRnANKshmpq9G7Z72u8zSZRxz7CGa",
+                "name": "Chilton García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPVkaXzXGcxgMZsoqRnANKshmpq9G7Z72u8zSZRxz7CGa",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeBeltr?nBaldwin": {
+            "Hat": "Spinner Hat",
+            "Body": "Orange",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Beltrán Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmcwyEwSN1j3sDSRbBs72d9wZsr6bMse2LBjianwnpckif",
+                "name": "Beltrán Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcwyEwSN1j3sDSRbBs72d9wZsr6bMse2LBjianwnpckif",
+            "Family": "Baldwin",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          },
+          "adapeBeltr?nCataldi": {
+            "Hat": "Gold Helmet",
+            "Body": "Black Wool Coat",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Beltrán Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmUkHFUN7dyxzLSH3jW2Lj6ZVnb6PRgugqWrcye6guwA9A",
+                "name": "Beltrán Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUkHFUN7dyxzLSH3jW2Lj6ZVnb6PRgugqWrcye6guwA9A",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Cataldi family"
+          },
+          "adapeTimol?onWilson": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Timoléon Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmPhwKuZZo7af3NpV2ts3ywPU7mL4g7kSLAiutFdAjGdMP",
+                "name": "Timoléon Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPhwKuZZo7af3NpV2ts3ywPU7mL4g7kSLAiutFdAjGdMP",
+            "Family": "Wilson",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Wilson family"
+          },
+          "adapeTrist?nEdwards": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Tristán Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmZPAQvkn1PEJvWGQBCabnWQDUPmB63QEmhGA5A6gVDqzF",
+                "name": "Tristán Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZPAQvkn1PEJvWGQBCabnWQDUPmB63QEmhGA5A6gVDqzF",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          },
+          "adapeV?nanceMaddock": {
+            "Hat": "Wool Cap",
+            "Body": "Gold Linen",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Vénance Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmRjwr5uKM7qPVybS9H44Cn4WrBV4mMxza61rzCZ6MYUzW",
+                "name": "Vénance Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRjwr5uKM7qPVybS9H44Cn4WrBV4mMxza61rzCZ6MYUzW",
+            "Family": "Maddock",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Maddock family"
+          },
+          "adapeTimol?onRoberts": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Timoléon Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmNSvE17h7ChXo3tJRD1JGpwn6qAXBnEjsdbxquYia2U9g",
+                "name": "Timoléon Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNSvE17h7ChXo3tJRD1JGpwn6qAXBnEjsdbxquYia2U9g",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

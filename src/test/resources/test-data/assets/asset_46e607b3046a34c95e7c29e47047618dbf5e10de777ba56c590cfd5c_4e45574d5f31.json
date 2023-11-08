@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "46e607b3046a34c95e7c29e47047618dbf5e10de777ba56c590cfd5c",
+    "asset_name": "4e45574d5f31",
+    "asset_name_ascii": "NEWM_1",
+    "fingerprint": "asset1dqngvnugq799j6cxxyqkf97r4q6rz8x46nknts",
+    "minting_tx_hash": "edfdd1b04bd7bc4d7d80317c6e7a008df4562fead92a3bf452de54f0ad3be49e",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1664841600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": 1,
+        "46e607b3046a34c95e7c29e47047618dbf5e10de777ba56c590cfd5c": {
+          "NEWM_1": {
+            "isrc": "QZ-NW7-22-06878",
+            "name": "NIDO - Love In The Water",
+            "files": [
+              {
+                "src": "ar://DeVRF-RTkRRHoP4M-L9AjIu35ilzgclhLOrgQB2Px34",
+                "name": "Love In The Water",
+                "mediaType": "audio/flac"
+              },
+              {
+                "src": "ar://r90L1P6XgoovQkt_EV-Vz6iSVzJmUfLrC6CbeCyxGH8",
+                "name": "Streaming Royalty Share Agreement",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ar://f5W8RZmAQimuz_vytFY9ofIzd9QpGaDIv2UXrrahTu4",
+            "genres": [
+              "Electronic",
+              "Dance"
+            ],
+            "artists": [
+              {
+                "name": "NIDO"
+              }
+            ],
+            "explicit": "false",
+            "copyright": "℗ 2022 NIDO",
+            "lyricists": [
+              "Tyler Shamy"
+            ],
+            "mediaType": "image/webp",
+            "song_title": "Love In The Water",
+            "album_title": "Love In The Water",
+            "distributor": "https://newm.io",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT2M57S",
+            "visual_artist": "NIDO",
+            "country_of_origin": "Norway",
+            "music_metadata_version": 1
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

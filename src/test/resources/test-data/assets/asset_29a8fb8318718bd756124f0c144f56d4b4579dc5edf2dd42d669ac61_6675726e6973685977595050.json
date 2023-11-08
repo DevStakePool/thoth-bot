@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685977595050",
+    "asset_name_ascii": "furnishYwYPP",
+    "fingerprint": "asset1fy267anhsfd6tmamdmf8qmqqsal9kzn8c9pfn4",
+    "minting_tx_hash": "98df6bf453bd2ab62214381ee4e957ab1c2d8370ed07a8d71cc87edc8928169c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676073600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishYwYPP": {
+            "id": "YwYPP",
+            "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "name": "Dining Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+                "name": "Dining Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmdBvm8mASjQ3fatRmRg2HdobLMVncdKMzwSfKyEZNcQeB",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmcSaExkRrb8rH3gBP2sbWntzveeY6pVcit26j1Y2EoNu7",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "description": "Hand-crafted by Lyndon Roberts.",
+            "furnitureId": 208
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

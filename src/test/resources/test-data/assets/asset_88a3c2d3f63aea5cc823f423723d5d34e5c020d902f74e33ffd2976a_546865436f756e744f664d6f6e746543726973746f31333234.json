@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "88a3c2d3f63aea5cc823f423723d5d34e5c020d902f74e33ffd2976a",
+    "asset_name": "546865436f756e744f664d6f6e746543726973746f31333234",
+    "asset_name_ascii": "TheCountOfMonteCristo1324",
+    "fingerprint": "asset1zz33md42gjfvcyq7u7qgmsvk44dzj220u59e0s",
+    "minting_tx_hash": "a059ab236267625111fa45fcac539811e5f91319423319c73747d3bcb5ff4dcc",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671667200,
+    "minting_tx_metadata": {
+      "721": {
+        "88a3c2d3f63aea5cc823f423723d5d34e5c020d902f74e33ffd2976a": {
+          "TheCountOfMonteCristo1324": {
+            "id": "1324",
+            "data": "ipfs://QmYNhu4XUGpJW7bE4ie4ShjZJbp47126yGs4HWChWPj4x3",
+            "name": "The Count of Monte Cristo #1324",
+            "files": [
+              {
+                "src": "ipfs://QmYjX5QLgDkaVNDEu8ro7jouXEeGqkhnSmphcjfJ5M3uhp",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRgnKec4bYYv2WwBc9x69Pqb8qaGjYzUtbD6ANZjwy7mq",
+            "sha256": "2e911e983e5d35821b690fcd4a79d980b2789993f4105775b1a4c47cf2fe9017",
+            "authors": [
+              "Alexandre Dumas"
+            ],
+            "website": "https://book.io",
+            "Book Title": [
+              "The Count of Monte Cristo"
+            ],
+            "attributes": {
+              "Variation": "8",
+              "Cover Theme": "The Prison"
+            },
+            "description": [
+              "All human wisdom is summed up in these two words, - 'Wait and ho",
+              "pe.'"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

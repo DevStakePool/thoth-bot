@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "b5fb333ad44e4853484cef178f543c35564490534aafcdf919fa4687",
+    "asset_name": "36353830",
+    "asset_name_ascii": "6580",
+    "fingerprint": "asset1tunyum7a4k7xugnksuhejhdh0s8vu9z7l25gjf",
+    "minting_tx_hash": "fb76d603a2c25a672140c09636c80acaa3a3bac8b109e56eb32ad1c0f687221b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1646438400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "b5fb333ad44e4853484cef178f543c35564490534aafcdf919fa4687": {
+          "6580": {
+            "dna": "e433cd8e6ee25e25a32f84166b82aa607cf1ea42",
+            "name": "Cardolphins #6580",
+            "files": [
+              {
+                "src": "ipfs://QmSsraMTB4cTRqBX4vDAYqWihszpUuYmSyzr9m9GGD3jWD",
+                "name": "Cardolphins #6580",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSsraMTB4cTRqBX4vDAYqWihszpUuYmSyzr9m9GGD3jWD",
+            "edition": 6580,
+            "mediaType": "image/png",
+            "attributes": {
+              "Fin": "fin",
+              "Base": "skeleton",
+              "Eyes": "nothing",
+              "Head": "rhinohorns",
+              "Neck": "nothing",
+              "Color": "pearlescent",
+              "Mouth": "beard",
+              "Torso": "nothing",
+              "Debris": "nothing",
+              "Dorsal": "nothing",
+              "Bubbles": "nothing",
+              "Holding": "nothing",
+              "Overlay": "overlay",
+              "Blowhole": "thirdeye",
+              "Background": "blue",
+              "Expression": "angry"
+            },
+            "description": "8888 Cardolphin CNFT's."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

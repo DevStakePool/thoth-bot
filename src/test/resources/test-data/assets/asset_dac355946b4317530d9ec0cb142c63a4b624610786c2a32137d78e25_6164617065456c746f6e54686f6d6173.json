@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065456c746f6e54686f6d6173",
+    "asset_name_ascii": "adapeEltonThomas",
+    "fingerprint": "asset18scrl2mtfagaamlzqahcezzxs3e3zxx553hk7p",
+    "minting_tx_hash": "f46b2f6d864bf2cf5aa376381aa4a88ab6befc7e6a7f785875d33fa063615ccc",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEltonThomas": {
+            "Hat": "None",
+            "Body": "Gold Linen",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Elton Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmNWnSgS64fwKhBktwfDWrA35aduAGfraf7TTM2jiQDFpV",
+                "name": "Elton Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNWnSgS64fwKhBktwfDWrA35aduAGfraf7TTM2jiQDFpV",
+            "Family": "Thomas",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Thomas family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3030313132",
+    "asset_name_ascii": "Ghostchain00112",
+    "fingerprint": "asset1jqghg8d42rlmcrn6l89kg39xc0j422zv2s2usn",
+    "minting_tx_hash": "145daeeec3543a61e564c6234a1f0936ac6cb81e0ef4b83e39ae099d7520020a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633996800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain00112": {
+            "dna": "00420000",
+            "name": "Ghostchain00112",
+            "files": [
+              {
+                "src": "ipfs://QmWfwxcPjj4iVy7FakV8gh11RLb92exZ8UcDwSDBGMnYyL",
+                "name": "Ghostchain00112",
+                "https": "https://api.nftghostchain.com/original?mint=112",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWfwxcPjj4iVy7FakV8gh11RLb92exZ8UcDwSDBGMnYyL",
+            "rarity": "Rare",
+            "edition": "Mint 112 of 10000",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg",
+            "attributes": "Fiat,Cool Blue Shirt",
+            "description": "The Original Ghostchain Community.",
+            "collection name": "NFT Ghostchain"
+          },
+          "Ghostchain00683": {
+            "dna": "30000002",
+            "name": "Ghostchain00683",
+            "files": [
+              {
+                "src": "ipfs://QmecnHexJdsBxfaHGFibsoFkg1DXid1QRTtPA4s1KEKs1c",
+                "name": "Ghostchain00683",
+                "https": "https://api.nftghostchain.com/original?mint=683",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmecnHexJdsBxfaHGFibsoFkg1DXid1QRTtPA4s1KEKs1c",
+            "rarity": "Uncommon",
+            "edition": "Mint 683 of 10000",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg",
+            "attributes": "Darkness,Clown Nose",
+            "description": "The Original Ghostchain Community.",
+            "collection name": "NFT Ghostchain"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

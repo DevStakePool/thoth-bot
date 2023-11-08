@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "e359c0b202be9414f5f6c599b4c4c9f77507f2f9c8a870326d30624e",
+    "asset_name": "5249544f",
+    "asset_name_ascii": "RITO",
+    "fingerprint": "asset1ytg0l5te29zpmv2nw62adtnppt8cmdnerj9s0w",
+    "minting_tx_hash": "f30459fe843b761bf345682b4e263483a8461dd62e60aec7b9752c52aa2cf6a6",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672617600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "e359c0b202be9414f5f6c599b4c4c9f77507f2f9c8a870326d30624e": {
+          "RITO": {
+            "name": "Yabak Coin",
+            "files": [
+              {
+                "src": "ipfs://QmPrYh5YDHW7pGKf1gtVyC21jBgQbtuCMs3fnPLyQ3NA4L",
+                "name": "RITO",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPrYh5YDHW7pGKf1gtVyC21jBgQbtuCMs3fnPLyQ3NA4L",
+            "symbol": "RITO",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 81091412
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Utility Token used in Yabak Labs&#96; Ecosystem",
+            "totalSupply": 100000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

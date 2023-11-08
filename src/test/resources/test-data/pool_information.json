@@ -2,14 +2,13 @@
   {
     "pool_id_bech32": "pool10q33p4hx4wqum6thmglw7z5l2vaay4w6m5cdq8fnurw7vjdppcf",
     "pool_id_hex": "782310d6e6ab81cde977da3eef0a9f533bd255dadd30d01d33e0dde6",
-    "active_epoch_no": 292,
+    "active_epoch_no": 408,
     "vrf_key_hash": "688cc03b16a599d5f48cd963eef3eedb48fceecba038202f7df0a10eeeff3c76",
-    "margin": 0,
+    "margin": 0.01,
     "fixed_cost": "340000000",
-    "pledge": "50000000000",
+    "pledge": "1000000000",
     "reward_addr": "stake1u84j3fxsrjucg3vvlv2zzglym0ar4hc6su4s6rw2ralul6clp0dpq",
     "owners": [
-      "stake1ux8qkd6ltq7hj8vcuv38hn5gwj2m67999gz799a65xxda4s97sr7p",
       "stake1u84j3fxsrjucg3vvlv2zzglym0ar4hc6su4s6rw2ralul6clp0dpq"
     ],
     "relays": [
@@ -38,24 +37,24 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "107f725597c6f5f52a4f7d7de6e46d5d94cad6c5b32929a9fed00a1ef690823c",
-    "op_cert_counter": 8,
-    "active_stake": "64460555221",
-    "sigma": 2.6176940106713744e-06,
-    "block_count": 50,
-    "live_pledge": "51366937462",
-    "live_stake": "61389044558",
-    "live_delegators": 28,
-    "live_saturation": 0.09
+    "op_cert": "618870f83ced2dd8021efec51eb950b1380dacd5eaea23160e3989fa9395a0fa",
+    "op_cert_counter": 12,
+    "active_stake": "315016128564",
+    "sigma": 1.3686860956777551e-05,
+    "block_count": 69,
+    "live_pledge": "4509074197",
+    "live_stake": "315016128564",
+    "live_delegators": 27,
+    "live_saturation": 0.43
   },
   {
     "pool_id_bech32": "pool15g3cwwmd3qks03ztl5464j044jasn3dcs6zcgpxtxadfj86lvf2",
     "pool_id_hex": "a223873b6d882d07c44bfd2baac9f5acbb09c5b886858404cb375a99",
-    "active_epoch_no": 399,
+    "active_epoch_no": 427,
     "vrf_key_hash": "b3b9fbfc64ec0a1019ece4883936d67496d0f2195300e2363fd50af467bbf35f",
-    "margin": 0.01,
+    "margin": 0,
     "fixed_cost": "340000000",
-    "pledge": "15000000000",
+    "pledge": "20000000000",
     "reward_addr": "stake1u9w44vxpsuzyuylq76lnz33f4nsj9skals4z3eh2tq2cq9qhxrpzk",
     "owners": [
       "stake1u9w44vxpsuzyuylq76lnz33f4nsj9skals4z3eh2tq2cq9qhxrpzk"
@@ -83,11 +82,11 @@
         "port": 5004
       },
       {
-        "dns": "dong1.cr0ss0ver.com",
+        "dns": "pamhalpert.workisboring.com",
         "srv": null,
         "ipv4": null,
         "ipv6": null,
-        "port": 5001
+        "port": 5005
       }
     ],
     "meta_url": "https://mnstrspo.github.io/poolmeta.json",
@@ -100,20 +99,20 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "860e7066681d63d56df43cf3bb583a61b349eab176b8fb7c2e63523c8b2e705a",
-    "op_cert_counter": 6,
-    "active_stake": "727756213065",
-    "sigma": 2.9553625060128324e-05,
-    "block_count": 8,
-    "live_pledge": "17719068539",
-    "live_stake": "113183547447",
-    "live_delegators": 10,
-    "live_saturation": 0.16
+    "op_cert": "3ddef3aaaa714ef537e41d4d95e47b78bc6c3ec2630b24cbfecd85ada371dd43",
+    "op_cert_counter": 8,
+    "active_stake": "103307287227",
+    "sigma": 4.488508199701801e-06,
+    "block_count": 16,
+    "live_pledge": "21528602276",
+    "live_stake": "103780054628",
+    "live_delegators": 8,
+    "live_saturation": 0.14
   },
   {
     "pool_id_bech32": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt",
     "pool_id_hex": "f66a36de855d53b9d5110bd46640f48dbab1c848c9e2f5c36d8c12dc",
-    "active_epoch_no": 383,
+    "active_epoch_no": 431,
     "vrf_key_hash": "fe0f1606128e07d43104aeaf5a346e2eb659994d9c06f7e8ca86bd872345a470",
     "margin": 0.03,
     "fixed_cost": "340000000",
@@ -124,11 +123,18 @@
     ],
     "relays": [
       {
-        "dns": null,
+        "dns": "relay1.gaiastakepool.com",
         "srv": null,
-        "ipv4": "138.201.173.61",
+        "ipv4": null,
         "ipv6": null,
-        "port": 8049
+        "port": 6000
+      },
+      {
+        "dns": "relay2.gaiastakepool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6000
       }
     ],
     "meta_url": "https://meta.pools.pm/gaia-m1670625899.json",
@@ -141,24 +147,24 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "356e949d43c87159890f3ceb0b3c0b6b941fa8a842ff9f42d27998cb041b7bca",
-    "op_cert_counter": 12,
-    "active_stake": "973306277090",
-    "sigma": 3.952522598280873e-05,
-    "block_count": 500,
-    "live_pledge": "20084355136",
-    "live_stake": "972321512714",
-    "live_delegators": 278,
-    "live_saturation": 1.37
+    "op_cert": "9e981cc3c06cf7962cdbd139879208c41ab13f9ebb35963a7139ccb20f48f343",
+    "op_cert_counter": 14,
+    "active_stake": "985394147097",
+    "sigma": 4.281353066085624e-05,
+    "block_count": 544,
+    "live_pledge": "20103769075",
+    "live_stake": "986013906575",
+    "live_delegators": 252,
+    "live_saturation": 1.36
   },
   {
     "pool_id_bech32": "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
     "pool_id_hex": "ca97f539e6a878e7a7d87d762982a016ac6959d76719c8212a4a39e0",
-    "active_epoch_no": 393,
+    "active_epoch_no": 416,
     "vrf_key_hash": "7812dbbc40f7782c43f36fd3a571f82d75f4ab38c1c6d0cc53cf18b9faba0e42",
-    "margin": 0.0199,
+    "margin": 0,
     "fixed_cost": "340000000",
-    "pledge": "40000000000",
+    "pledge": "30000000000",
     "reward_addr": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
     "owners": [
       "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"
@@ -182,23 +188,23 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "c93e4c08513f859dc204425e4fd66e005fb26fc5f3854dc287fc06d1f3737a70",
-    "op_cert_counter": 5,
-    "active_stake": "16573563300453",
-    "sigma": 0.0006730397719711989,
-    "block_count": 157,
-    "live_pledge": "92314924819",
-    "live_stake": "16583973239735",
-    "live_delegators": 42,
-    "live_saturation": 23.29
+    "op_cert": "6f5e9ec41d00ae1dbff38913d5d00ea38742bb1272acc279f8df097c4c5036b6",
+    "op_cert_counter": 8,
+    "active_stake": "1658383609306",
+    "sigma": 7.205366270304695e-05,
+    "block_count": 348,
+    "live_pledge": "110626959467",
+    "live_stake": "1664678500566",
+    "live_delegators": 38,
+    "live_saturation": 2.29
   },
   {
     "pool_id_bech32": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct",
     "pool_id_hex": "4ebf3e184e2bf7b6c4a5998126088432369ade380fa5a08690f1b618",
-    "active_epoch_no": 396,
+    "active_epoch_no": 448,
     "vrf_key_hash": "251b8e3537b2e1a7e196609587d617d1d2f4bdee23594a178bd92abd81dfca0a",
-    "margin": 0,
-    "fixed_cost": "340000000",
+    "margin": 0.05,
+    "fixed_cost": "170000000",
     "pledge": "25000000000",
     "reward_addr": "stake1u8lvnhawftr5txfqx2ceklm0pj5080jdzx0ac9lestx4u2gy5kqxy",
     "owners": [
@@ -224,23 +230,72 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "f69e5afca17f867d710edd71b562020e8cb9f777cf4ecb33d685210f91e8ae91",
-    "op_cert_counter": 4,
-    "active_stake": "101305763844",
-    "sigma": 4.1139498465649975e-06,
-    "block_count": 28,
-    "live_pledge": "26023279371",
-    "live_stake": "95312921053",
-    "live_delegators": 26,
-    "live_saturation": 0.13
+    "op_cert": "2365245d878e84b14db1d3ce80e8e7d828d18ba2ac83a9a27f0151d832b077c4",
+    "op_cert_counter": 7,
+    "active_stake": "230234008107",
+    "sigma": 1.0003236567114047e-05,
+    "block_count": 44,
+    "live_pledge": "30745308646",
+    "live_stake": "230234008107",
+    "live_delegators": 36,
+    "live_saturation": 0.32
+  },
+  {
+    "pool_id_bech32": "pool1hvevy8qu5lwg7ul66xmzvwv8zwdgdradsg9ncvrflm7dvy407e0",
+    "pool_id_hex": "bb32c21c1ca7dc8f73fad1b6263987139a868fad820b3c3069fefcd6",
+    "active_epoch_no": 448,
+    "vrf_key_hash": "e037df83234f9a09ea89b7c3d5402bb6caf749301e7fc524aa888281f3f1bc7d",
+    "margin": 0,
+    "fixed_cost": "170000000",
+    "pledge": "42500000000",
+    "reward_addr": "stake1uxuf4spz3ycp4cfzd3wzn7vg8ana4lzax3qvu67gn25pesq3z8k6u",
+    "owners": [
+      "stake1uxwpe8y3m635rur4xu6t63a0zz5d9nxwnh6wkxsasmvz5qs5wtzcl",
+      "stake1uxuf4spz3ycp4cfzd3wzn7vg8ana4lzax3qvu67gn25pesq3z8k6u"
+    ],
+    "relays": [
+      {
+        "dns": null,
+        "srv": null,
+        "ipv4": "38.242.218.88",
+        "ipv6": null,
+        "port": 22378
+      },
+      {
+        "dns": null,
+        "srv": null,
+        "ipv4": "144.126.158.237",
+        "ipv6": null,
+        "port": 22378
+      }
+    ],
+    "meta_url": "https://hamster-stake-pool.de/hamsterpoolmeta.json",
+    "meta_hash": "9234973c2227d4d894aa3243fb68e2797bfef04cb8c9ee748750ac41128c27f1",
+    "meta_json": {
+      "name": "Hamster Stake Pool",
+      "ticker": "HAMDA",
+      "homepage": "https://hamster-stake-pool.de",
+      "description": "We hoard ADA like a hamster"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "107ba59bba939fbb3c6cc4cd47db219b28fa828a9acf26f63a2764e78eb4b707",
+    "op_cert_counter": 22,
+    "active_stake": "175546249912",
+    "sigma": 7.6271558697069366e-06,
+    "block_count": 22,
+    "live_pledge": "43210058310",
+    "live_stake": "1146948763772",
+    "live_delegators": 30,
+    "live_saturation": 1.58
   },
   {
     "pool_id_bech32": "pool1p82vmqednsalje23mpnz9u3qt9ruj79xu83mr6p8t93fw5fcu3y",
     "pool_id_hex": "09d4cd832d9c3bf96551d86622f2205947c978a6e1e3b1e827596297",
-    "active_epoch_no": 370,
+    "active_epoch_no": 448,
     "vrf_key_hash": "9adb98f7f9cdc44446695e15ba426cc3b931d24c7250665bb503bd291ba7ec12",
     "margin": 0.01,
-    "fixed_cost": "340000000",
+    "fixed_cost": "170000000",
     "pledge": "17000000000",
     "reward_addr": "stake1u8s68zvvqvhdgw2kfjnfsxcy0ax6xzy79s5p4c569lsxnzsptuumh",
     "owners": [
@@ -256,24 +311,24 @@
       }
     ],
     "meta_url": "https://bit.ly/35yEUof",
-    "meta_hash": "3b3f4f29a20f783ca83d6f480ba3a9d31793d5311e496f66b49689ea99efe17e",
+    "meta_hash": "1ae1007d42d3c0468f6c96faca54b5df9953b31383883dc4a723c83234c8bcf6",
     "meta_json": {
       "name": "Stake ADA Pool",
       "ticker": "RCADA",
       "homepage": "https://www.stakecardanopool.com",
-      "description": "80's SYNTH POOL"
+      "description": "REGENERATIVE CRUSADERS: Environment, Society & Sustainable Innovation."
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "44684fc4e873157f8618c4c2520b7480b1ef58fa84d514865c8c54dcf0001cc8",
-    "op_cert_counter": 2,
-    "active_stake": "76726956090",
-    "sigma": 3.1158231995557843e-06,
-    "block_count": 3,
-    "live_pledge": "17521624628",
-    "live_stake": "697040763139",
-    "live_delegators": 50,
-    "live_saturation": 0.98
+    "op_cert": "482a481c0694d69bca54363960709667ec3972b2095bee5734b4a6636d713450",
+    "op_cert_counter": 5,
+    "active_stake": "413556589989",
+    "sigma": 1.7968259500683113e-05,
+    "block_count": 25,
+    "live_pledge": "22555177577",
+    "live_stake": "407244656158",
+    "live_delegators": 67,
+    "live_saturation": 0.56
   },
   {
     "pool_id_bech32": "pool1rthy0xp2syng0cydp85wvz973szmq2ns8u5p4hdedkwlyhry27w",
@@ -315,12 +370,12 @@
     "retiring_epoch": null,
     "op_cert": "df1760c51bc03400ff6dd18dc91898143adc6c06ea87fdd77da5d7b2e5e3beab",
     "op_cert_counter": 0,
-    "active_stake": "6582927715",
-    "sigma": 2.6732767648616556e-07,
+    "active_stake": "5716006661",
+    "sigma": 2.4834978689425084e-07,
     "block_count": 2,
     "live_pledge": "3858031524",
-    "live_stake": "6382747342",
-    "live_delegators": 12,
+    "live_stake": "5716615849",
+    "live_delegators": 14,
     "live_saturation": 0.01
   }
 ]

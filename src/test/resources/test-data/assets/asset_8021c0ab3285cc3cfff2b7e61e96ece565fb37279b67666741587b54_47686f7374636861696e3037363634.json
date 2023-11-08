@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3037363634",
+    "asset_name_ascii": "Ghostchain07664",
+    "fingerprint": "asset192za6mqc0sj7kujuhyddtaa9syfaqqdy4j34mf",
+    "minting_tx_hash": "059883865f3a02ce8a3fe47017e75b4b1312d10ef22137557e1353b9cb704b30",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635984000,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain07664": {
+            "dna": "30300000",
+            "eyes": "Zorro",
+            "name": "Ghostchain07664",
+            "files": [
+              {
+                "src": "ipfs://QmXthFNDPMyGJ8GFYJmtT3R4Zu8qRKVs61451svWFXsKWm",
+                "name": "Ghostchain07664",
+                "https": "https://api.nftghostchain.com/original?mint=7664",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Darkness",
+            "image": "ipfs://QmXthFNDPMyGJ8GFYJmtT3R4Zu8qRKVs61451svWFXsKWm",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

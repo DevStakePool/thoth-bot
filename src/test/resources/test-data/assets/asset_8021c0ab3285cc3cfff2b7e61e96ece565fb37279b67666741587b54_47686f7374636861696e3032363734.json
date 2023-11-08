@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3032363734",
+    "asset_name_ascii": "Ghostchain02674",
+    "fingerprint": "asset1sknlfc0x7fr875yvrfamjdy3q9k9a2h667rhf0",
+    "minting_tx_hash": "cca8164ae384cfcc3699da55a89507c53ed2862cf7ff7399a1ee4e8fced3f012",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635638400,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain02674": {
+            "dna": "00310101",
+            "body": "White Tshirt",
+            "eyes": "Curious Bob",
+            "head": "Hillbilly",
+            "name": "Ghostchain02674",
+            "files": [
+              {
+                "src": "ipfs://Qmf2w5KHgNm8U6F4cGCnaMYA1TgAYjPL7U123iR1RibBuz",
+                "name": "Ghostchain02674",
+                "https": "https://api.nftghostchain.com/original?mint=2674",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Calm",
+            "image": "ipfs://Qmf2w5KHgNm8U6F4cGCnaMYA1TgAYjPL7U123iR1RibBuz",
+            "mouth": "Dribble",
+            "rarity": "Uncommon",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

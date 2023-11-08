@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "616e6369656e74647261676f6e",
+    "asset_name_ascii": "ancientdragon",
+    "fingerprint": "asset1je5r0fx8qty0ylr7y5ewjeuzw2cm4qrvr2p3qp",
+    "minting_tx_hash": "87df187d199fd29d1ec1ba108611578a062d905dc9918d798ad97095b611fe98",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1663372800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "ancientdragon": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$ancientdragon",
+            "image": "ipfs://QmdiqX6qU3aSHqeq3YVbDn73oDwNfHZoFdGc2RxQzRqW4m",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

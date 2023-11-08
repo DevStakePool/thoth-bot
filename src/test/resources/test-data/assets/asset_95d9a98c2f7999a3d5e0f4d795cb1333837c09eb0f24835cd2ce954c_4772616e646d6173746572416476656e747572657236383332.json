@@ -1,0 +1,520 @@
+[
+  {
+    "policy_id": "95d9a98c2f7999a3d5e0f4d795cb1333837c09eb0f24835cd2ce954c",
+    "asset_name": "4772616e646d6173746572416476656e747572657236383332",
+    "asset_name_ascii": "GrandmasterAdventurer6832",
+    "fingerprint": "asset1weszgla07g4t0zsx07gv2fndy3pw736cj0rrmg",
+    "minting_tx_hash": "31d282740c45fde09bfab3ae9d8716c00f52dfe6499ded3650233eeee6721c8a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1628812800,
+    "minting_tx_metadata": {
+      "721": {
+        "95d9a98c2f7999a3d5e0f4d795cb1333837c09eb0f24835cd2ce954c": {
+          "GrandmasterAdventurer6801": {
+            "name": "Grandmaster Adventurer #6801",
+            "race": "Human",
+            "armor": "2",
+            "class": "Cleric",
+            "genre": "Female",
+            "image": "ipfs://QmUyvQDd2RMBSpqXTTf8dqagAQx2JGBUm1k6VayN8e8mp9",
+            "weapon": "5",
+            "subrace": "Xilean"
+          },
+          "GrandmasterAdventurer6802": {
+            "name": "Grandmaster Adventurer #6802",
+            "race": "Orc",
+            "armor": "1",
+            "class": "Cleric",
+            "genre": "Female",
+            "image": "ipfs://QmV4BXnbQpkD6y2Ybd5nQG9LrVeysKzr92PECpehgRFTRM",
+            "weapon": "1",
+            "subrace": "Bloodfang Clan"
+          },
+          "GrandmasterAdventurer6803": {
+            "name": "Grandmaster Adventurer #6803",
+            "race": "Tiefling",
+            "armor": "1",
+            "class": "Rogue",
+            "genre": "Female",
+            "image": "ipfs://QmauAYvp4pFE4p6mQ8qHTyCns8EEMFYPjGQPVzXauywSHb",
+            "weapon": "1",
+            "subrace": "Arc'an"
+          },
+          "GrandmasterAdventurer6804": {
+            "name": "Grandmaster Adventurer #6804",
+            "race": "Elf",
+            "armor": "1",
+            "class": "Ranger",
+            "genre": "Male",
+            "image": "ipfs://QmeiB6LDnUhPhgTMQszEHHapUENHJyAaDxSohNTM4R83ZH",
+            "weapon": "2",
+            "subrace": "Elronidas"
+          },
+          "GrandmasterAdventurer6805": {
+            "name": "Grandmaster Adventurer #6805",
+            "race": "Human",
+            "armor": "1",
+            "class": "Warlock",
+            "genre": "Female",
+            "image": "ipfs://QmfQYGqs1YpG2J1Zs6FwYzT57TEHaQurjbD9MYVu8Q2eBo",
+            "weapon": "1",
+            "subrace": "Kerian"
+          },
+          "GrandmasterAdventurer6806": {
+            "name": "Grandmaster Adventurer #6806",
+            "race": "Human",
+            "armor": "4",
+            "class": "Cleric",
+            "genre": "Male",
+            "image": "ipfs://QmQvz3LYU2ywZS89qdkB9SHwi9vk9849q7juzccWnYr1ZM",
+            "weapon": "2",
+            "subrace": "Northern Clans"
+          },
+          "GrandmasterAdventurer6807": {
+            "name": "Grandmaster Adventurer #6807",
+            "race": "Worgenkin",
+            "armor": "2",
+            "class": "Bard",
+            "genre": "Male",
+            "image": "ipfs://QmVEoXUFN5vMLrNesELHzwVhupAA1eqWS6wYfXu7JAMZsh",
+            "weapon": "1",
+            "subrace": "Northern Mountains Pack"
+          },
+          "GrandmasterAdventurer6808": {
+            "name": "Grandmaster Adventurer #6808",
+            "race": "Troll",
+            "armor": "1",
+            "class": "Fighter",
+            "genre": "Male",
+            "image": "ipfs://QmcUBHA7tPMivy67iSTHnvYhqoM1SKFqzZEbke4SVeifEo",
+            "weapon": "2",
+            "subrace": "Forest Troll"
+          },
+          "GrandmasterAdventurer6809": {
+            "name": "Grandmaster Adventurer #6809",
+            "race": "Human",
+            "armor": "2",
+            "class": "Cleric",
+            "genre": "Male",
+            "image": "ipfs://QmZovgca4Hoo29qcYtgZiEAoemxBjpHPFBCGVc4DCZcFZa",
+            "weapon": "4",
+            "subrace": "Kerian"
+          },
+          "GrandmasterAdventurer6810": {
+            "name": "Grandmaster Adventurer #6810",
+            "race": "Elf",
+            "armor": "3",
+            "class": "Rogue",
+            "genre": "Male",
+            "image": "ipfs://QmasBmURVNjqdiEVU9HGoqViMXA653MBFmsvj9XyesJEve",
+            "weapon": "4",
+            "subrace": "Shadow Elf"
+          },
+          "GrandmasterAdventurer6811": {
+            "name": "Grandmaster Adventurer #6811",
+            "race": "Orc",
+            "armor": "3",
+            "class": "Knight",
+            "genre": "Male",
+            "image": "ipfs://QmVcPutzT4i9eA1PyhCtQWifhRngMxdLXhiJLEHcqnPfnT",
+            "weapon": "2",
+            "subrace": "Bloodfang Clan"
+          },
+          "GrandmasterAdventurer6812": {
+            "name": "Grandmaster Adventurer #6812",
+            "race": "Tiefling",
+            "armor": "1",
+            "class": "Mage",
+            "genre": "Female",
+            "image": "ipfs://Qmax5WX6j7Hci2fMDnUDzdUY8shju3avyLML1Wzm3uS4eW",
+            "weapon": "2",
+            "subrace": "Laigt'an"
+          },
+          "GrandmasterAdventurer6813": {
+            "name": "Grandmaster Adventurer #6813",
+            "race": "Worgenkin",
+            "armor": "1",
+            "class": "Rogue",
+            "genre": "Female",
+            "image": "ipfs://QmXNHD3jenqiKnXmpWbYgXuXibN3sY9FWcw7QivQL33NDy",
+            "weapon": "6",
+            "subrace": "Woodlands Pack"
+          },
+          "GrandmasterAdventurer6814": {
+            "name": "Grandmaster Adventurer #6814",
+            "race": "Human",
+            "armor": "1",
+            "class": "Bard",
+            "genre": "Female",
+            "image": "ipfs://QmdLRzMh9eLyoSxHk1rf15w6BSZUqRNyN9N39WpRES2dMo",
+            "weapon": "4",
+            "subrace": "Xilean"
+          },
+          "GrandmasterAdventurer6815": {
+            "name": "Grandmaster Adventurer #6815",
+            "race": "Orc",
+            "armor": "1",
+            "class": "Rogue",
+            "genre": "Female",
+            "image": "ipfs://QmV2gcHRPWTiJKdb8xJgT7exY8wt22Q9LFUvZAfrnszDeZ",
+            "weapon": "2",
+            "subrace": "Plain Walker"
+          },
+          "GrandmasterAdventurer6816": {
+            "name": "Grandmaster Adventurer #6816",
+            "race": "Human",
+            "armor": "2",
+            "class": "Rogue",
+            "genre": "Male",
+            "image": "ipfs://QmaPeXcnAKRNzDRdjg2tqdpu5QCuCpFEaHtUQjZANjJbCm",
+            "weapon": "6",
+            "subrace": "Eastern Kingdoms"
+          },
+          "GrandmasterAdventurer6817": {
+            "name": "Grandmaster Adventurer #6817",
+            "race": "Tiefling",
+            "armor": "3",
+            "class": "Mage",
+            "genre": "Female",
+            "image": "ipfs://QmdtzbSpHkeRisw1LP2DRkF8V6zrYyTxkFUHC8Ff93Vbqy",
+            "weapon": "1",
+            "subrace": "Kulthul"
+          },
+          "GrandmasterAdventurer6818": {
+            "name": "Grandmaster Adventurer #6818",
+            "race": "Human",
+            "armor": "1",
+            "class": "Druid",
+            "genre": "Male",
+            "image": "ipfs://QmUwB6iXKgirSRbCcGkyhRTESDAGTq4WNrRzYSXCp5CudZ",
+            "weapon": "6",
+            "subrace": "Dathelean"
+          },
+          "GrandmasterAdventurer6819": {
+            "name": "Grandmaster Adventurer #6819",
+            "race": "Human",
+            "armor": "3",
+            "class": "Fighter",
+            "genre": "Female",
+            "image": "ipfs://QmaEJvBiiRDUbzL1QXSwUVPiygDXFVThbb7JQxBrdbTEjD",
+            "weapon": "4",
+            "subrace": "Dathelean"
+          },
+          "GrandmasterAdventurer6820": {
+            "name": "Grandmaster Adventurer #6820",
+            "race": "Worgenkin",
+            "armor": "1",
+            "class": "Druid",
+            "genre": "Female",
+            "image": "ipfs://QmWAJJVWExA3LQrxniDuYrSMMX2j6vUC6aQgV9c64deH7Y",
+            "weapon": "1",
+            "subrace": "Woodlands Pack"
+          },
+          "GrandmasterAdventurer6821": {
+            "name": "Grandmaster Adventurer #6821",
+            "race": "Human",
+            "armor": "3",
+            "class": "Mage",
+            "genre": "Female",
+            "image": "ipfs://QmXzCzgYyJxi8U1aqWisWCyN96YFggoRE1q2bBsN6c2C6G",
+            "weapon": "6",
+            "subrace": "Xilean"
+          },
+          "GrandmasterAdventurer6822": {
+            "name": "Grandmaster Adventurer #6822",
+            "race": "Human",
+            "armor": "1",
+            "class": "Druid",
+            "genre": "Male",
+            "image": "ipfs://QmfNWr1pBs34S7gW3g5HVjncZUcnq5v9CnmS6pTryt67hU",
+            "weapon": "5",
+            "subrace": "Xilean"
+          },
+          "GrandmasterAdventurer6823": {
+            "name": "Grandmaster Adventurer #6823",
+            "race": "Troll",
+            "armor": "4",
+            "class": "Warlock",
+            "genre": "Male",
+            "image": "ipfs://QmQv3BNYPp83H7Sa1fquuZmsPHXW9ZaHaLCYxytDvzKXzE",
+            "weapon": "1",
+            "subrace": "Uztec Empire"
+          },
+          "GrandmasterAdventurer6824": {
+            "name": "Grandmaster Adventurer #6824",
+            "race": "Elf",
+            "armor": "4",
+            "class": "Cleric",
+            "genre": "Male",
+            "image": "ipfs://QmaQ74DDSXUD3roYg3rZ49MJMvu3FHHHz6ubdAhPfmDhAj",
+            "weapon": "6",
+            "subrace": "Ath'alan"
+          },
+          "GrandmasterAdventurer6825": {
+            "name": "Grandmaster Adventurer #6825",
+            "race": "Elf",
+            "armor": "2",
+            "class": "Mage",
+            "genre": "Female",
+            "image": "ipfs://QmcELjnf8uXSN1dssbpdz32F4noLBZZe4NtVSAeA2n6YUG",
+            "weapon": "2",
+            "subrace": "Shadow Elf"
+          },
+          "GrandmasterAdventurer6826": {
+            "name": "Grandmaster Adventurer #6826",
+            "race": "Human",
+            "armor": "3",
+            "class": "Druid",
+            "genre": "Female",
+            "image": "ipfs://Qmc37TvbK6Gc944n7zXP3XN422gi2h72RQHEHfvnE9QDfL",
+            "weapon": "4",
+            "subrace": "Dathelean"
+          },
+          "GrandmasterAdventurer6827": {
+            "name": "Grandmaster Adventurer #6827",
+            "race": "Human",
+            "armor": "1",
+            "class": "Druid",
+            "genre": "Female",
+            "image": "ipfs://QmVsedhJMhGcxBrpuK6NNj3rVGtYyTP4KiaB3DsPZSA1pE",
+            "weapon": "4",
+            "subrace": "Northern Clans"
+          },
+          "GrandmasterAdventurer6828": {
+            "name": "Grandmaster Adventurer #6828",
+            "race": "Elf",
+            "armor": "3",
+            "class": "Warlock",
+            "genre": "Male",
+            "image": "ipfs://QmRN6DigJ9h6RqUt98aNCJzh93UjTE1chrPqWg8Vs1uj75",
+            "weapon": "5",
+            "subrace": "Elronidas"
+          },
+          "GrandmasterAdventurer6829": {
+            "name": "Grandmaster Adventurer #6829",
+            "race": "Human",
+            "armor": "1",
+            "class": "Rogue",
+            "genre": "Female",
+            "image": "ipfs://QmPMNic6wwNrpVJZSFVnxendPadQJb1E2aByY2QPrsDx9V",
+            "weapon": "2",
+            "subrace": "Cov"
+          },
+          "GrandmasterAdventurer6830": {
+            "name": "Grandmaster Adventurer #6830",
+            "race": "Tiefling",
+            "armor": "4",
+            "class": "Warlock",
+            "genre": "Male",
+            "image": "ipfs://QmYfBrW2gLuwUqRd3SNhsUDyapyHsCsek6XQAid24WdZgF",
+            "weapon": "6",
+            "subrace": "Arc'an"
+          },
+          "GrandmasterAdventurer6831": {
+            "name": "Grandmaster Adventurer #6831",
+            "race": "Elf",
+            "armor": "2",
+            "class": "Rogue",
+            "genre": "Male",
+            "image": "ipfs://QmbQoFEVB6wWQP581kb3BCvD7nZPnXXGMBbyRtpT1UbkRG",
+            "weapon": "4",
+            "subrace": "Shadow Elf"
+          },
+          "GrandmasterAdventurer6832": {
+            "name": "Grandmaster Adventurer #6832",
+            "race": "Tiefling",
+            "armor": "2",
+            "class": "Fighter",
+            "genre": "Female",
+            "image": "ipfs://Qme4Mkqn23YyFx8dvuGqmuV8Z29Dqt2ya7ywJsTJSJTm5a",
+            "weapon": "2",
+            "subrace": "Kulthul"
+          },
+          "GrandmasterAdventurer6833": {
+            "name": "Grandmaster Adventurer #6833",
+            "race": "Tiefling",
+            "armor": "3",
+            "class": "Ranger",
+            "genre": "Female",
+            "image": "ipfs://Qmb6bhbxWKTeMayRn4owHZbftdGJqP7WsQHAHD1k2jDLj2",
+            "weapon": "3",
+            "subrace": "Laigt'an"
+          },
+          "GrandmasterAdventurer6834": {
+            "name": "Grandmaster Adventurer #6834",
+            "race": "Troll",
+            "armor": "3",
+            "class": "Mage",
+            "genre": "Female",
+            "image": "ipfs://QmWAPfXKqq4tpRFXFciT7yLPvvxttcpEkCVqbuyBgsCKV3",
+            "weapon": "6",
+            "subrace": "Maiztlanian"
+          },
+          "GrandmasterAdventurer6835": {
+            "name": "Grandmaster Adventurer #6835",
+            "race": "Troll",
+            "armor": "3",
+            "class": "Druid",
+            "genre": "Male",
+            "image": "ipfs://QmZssuCGKw5FaJNVwA4WPK4zWpKKGpnixpH8nnaFKA5bQK",
+            "weapon": "3",
+            "subrace": "Forest Troll"
+          },
+          "GrandmasterAdventurer6836": {
+            "name": "Grandmaster Adventurer #6836",
+            "race": "Elf",
+            "armor": "1",
+            "class": "Paladin",
+            "genre": "Female",
+            "image": "ipfs://QmV9AqrZofJn3j7FM4nGwsR79J1kgFmzXUsB6bjS4kbT1S",
+            "weapon": "4",
+            "subrace": "Ath'alan"
+          },
+          "GrandmasterAdventurer6837": {
+            "name": "Grandmaster Adventurer #6837",
+            "race": "Human",
+            "armor": "2",
+            "class": "Paladin",
+            "genre": "Male",
+            "image": "ipfs://QmUa1JyXF4mMaTf4W5JncBrZNCN5pzuVisLNBKhrEWAMRq",
+            "weapon": "4",
+            "subrace": "Cov"
+          },
+          "GrandmasterAdventurer6838": {
+            "name": "Grandmaster Adventurer #6838",
+            "race": "Tiefling",
+            "armor": "4",
+            "class": "Rogue",
+            "genre": "Male",
+            "image": "ipfs://QmYrirukFvktS5JWP8zvivcQzD1cwsbFyNTD5nPFgmB8uH",
+            "weapon": "1",
+            "subrace": "Arc'an"
+          },
+          "GrandmasterAdventurer6839": {
+            "name": "Grandmaster Adventurer #6839",
+            "race": "Tiefling",
+            "armor": "4",
+            "class": "Bard",
+            "genre": "Male",
+            "image": "ipfs://QmQ3SSwkyEuyZqyqe6awYCCk9EzMipXHYUa4JGHB4tqZKv",
+            "weapon": "4",
+            "subrace": "Laigt'an"
+          },
+          "GrandmasterAdventurer6840": {
+            "name": "Grandmaster Adventurer #6840",
+            "race": "Elf",
+            "armor": "2",
+            "class": "Knight",
+            "genre": "Female",
+            "image": "ipfs://QmZJAXi6k7PXvvDCg7NB3KNgdCe6LPuTRd7R4bRAPngkeh",
+            "weapon": "4",
+            "subrace": "Elenidas"
+          },
+          "GrandmasterAdventurer6841": {
+            "name": "Grandmaster Adventurer #6841",
+            "race": "Human",
+            "armor": "3",
+            "class": "Ranger",
+            "genre": "Female",
+            "image": "ipfs://QmYEnGx43GXzvK1JhsbRCBXEHLDx5Wv9gYpowUguCbwYpe",
+            "weapon": "6",
+            "subrace": "Cov"
+          },
+          "GrandmasterAdventurer6842": {
+            "name": "Grandmaster Adventurer #6842",
+            "race": "Elf",
+            "armor": "2",
+            "class": "Fighter",
+            "genre": "Female",
+            "image": "ipfs://QmaAKtnXknrBvVyCcSpyMA96trXnS8M3giTcaoZf8Q8prK",
+            "weapon": "4",
+            "subrace": "Ath'alan"
+          },
+          "GrandmasterAdventurer6843": {
+            "name": "Grandmaster Adventurer #6843",
+            "race": "Elf",
+            "armor": "4",
+            "class": "Warlock",
+            "genre": "Male",
+            "image": "ipfs://QmQyTX6uTKBQn88CTVH3gJq1ckpoAK9d8S281uaMc1zAkQ",
+            "weapon": "1",
+            "subrace": "Wood Elf"
+          },
+          "GrandmasterAdventurer6844": {
+            "name": "Grandmaster Adventurer #6844",
+            "race": "Elf",
+            "armor": "3",
+            "class": "Cleric",
+            "genre": "Female",
+            "image": "ipfs://QmXToVQoq2Xp43Vau9PHwXERVkrhTTxmsDRDGGcJ9YrntX",
+            "weapon": "1",
+            "subrace": "Shadow Elf"
+          },
+          "GrandmasterAdventurer6845": {
+            "name": "Grandmaster Adventurer #6845",
+            "race": "Human",
+            "armor": "1",
+            "class": "Mage",
+            "genre": "Male",
+            "image": "ipfs://QmbChcVa3bsPM9jJJFs9UvNGRddyYep54ZgAHbVTEuPtWe",
+            "weapon": "6",
+            "subrace": "Dathelean"
+          },
+          "GrandmasterAdventurer6846": {
+            "name": "Grandmaster Adventurer #6846",
+            "race": "Human",
+            "armor": "1",
+            "class": "Cleric",
+            "genre": "Male",
+            "image": "ipfs://QmQtSWPf4SQhtcRXG1eypVhzvFdyWyAQhSwnzU1S1HZtt3",
+            "weapon": "1",
+            "subrace": "Dathelean"
+          },
+          "GrandmasterAdventurer6847": {
+            "name": "Grandmaster Adventurer #6847",
+            "race": "Elf",
+            "armor": "1",
+            "class": "Cleric",
+            "genre": "Male",
+            "image": "ipfs://QmQRAHLzJea5vnpiD29N7FUmd8Mre4PKsWCznDbc3HF14L",
+            "weapon": "4",
+            "subrace": "Shadow Elf"
+          },
+          "GrandmasterAdventurer6848": {
+            "name": "Grandmaster Adventurer #6848",
+            "race": "Dragonkin",
+            "armor": "3",
+            "class": "Druid",
+            "genre": "Male",
+            "image": "ipfs://QmaqfAJtBSuw1mic3FYoD56TJz7UGUX74FpsHaoJLgpDBb",
+            "weapon": "3",
+            "subrace": "Firewing"
+          },
+          "GrandmasterAdventurer6849": {
+            "name": "Grandmaster Adventurer #6849",
+            "race": "Human",
+            "armor": "3",
+            "class": "Mage",
+            "genre": "Female",
+            "image": "ipfs://QmdF6CYtcb7GV8pjiLXDSGTCSWtW4kAHttDmReNJphurHS",
+            "weapon": "4",
+            "subrace": "Dathelean"
+          },
+          "GrandmasterAdventurer6850": {
+            "name": "Grandmaster Adventurer #6850",
+            "race": "Elf",
+            "armor": "3",
+            "class": "Bard",
+            "genre": "Female",
+            "image": "ipfs://QmX3zdCBDu6nhTM5jusyTjqXYy5YFRZhYFDSqwhaLWzhE8",
+            "weapon": "4",
+            "subrace": "Shadow Elf"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

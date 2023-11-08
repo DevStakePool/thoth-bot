@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3435426565664176656e7565484535503938",
+    "asset_name_ascii": "cabin45BeefAvenueHE5P98",
+    "fingerprint": "asset14mf0c9azwf0n69gzmwznr92nxnw2htzq3ee59m",
+    "minting_tx_hash": "666622711fcbdf63738eca598d513c516d07c30cd56ad3ff326d68d79d613937",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin45BeefAvenueHE5P98": {
+            "name": "45 Beef Avenue, HE5 P98",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Beef Avenue",
+            "District": "Heolt",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "P",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "5",
+            "Y Coordinate": "98"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

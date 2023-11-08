@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "7365616265727464656d6564696369",
+    "asset_name_ascii": "seabertdemedici",
+    "fingerprint": "asset1mp87rfmk89adkwuyrjfpzn2y8m0j2ht3l0fqap",
+    "minting_tx_hash": "479393c94a759fb16084b5978cd4a50f6e244edd8b340cb8eb12ea41caa73618",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666310400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "discatalyst": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$discatalyst",
+            "image": "ipfs://QmQKqKXnJhQv4CQ7b5mXzi9He4mm187FqPyDMG5TQLS5iK",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "seabertdemedici": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$seabertdemedici",
+            "image": "ipfs://QmZPjnSBKCVZRmThEPRXzZgFs3gT3sDoDnyeKjxyrmziK8",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

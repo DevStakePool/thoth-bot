@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "696d6e6f74666b696e6773656c6c",
+    "asset_name_ascii": "imnotfkingsell",
+    "fingerprint": "asset13sg9x4my53aey4e82s8nuenqq9s4kjzslwq86y",
+    "minting_tx_hash": "1398521c0cb0e0a1fc19f3b2a9ce9ce27d2606a37368e959797e7b3472cfeee9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651276800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "2612": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$2612",
+            "image": "ipfs://QmcwJM6tyhYNQ5SoynG49qdYz4BKdUVuNX3eCS2gdYak7s",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "imnotfkingsell": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$imnotfkingsell",
+            "image": "ipfs://QmWh4TWfSkpPBv2mWNBWZehU475DmYooT9NcRJ3ZprTNke",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

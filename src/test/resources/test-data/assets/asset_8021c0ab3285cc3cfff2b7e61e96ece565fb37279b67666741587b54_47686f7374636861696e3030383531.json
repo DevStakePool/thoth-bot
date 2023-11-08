@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3030383531",
+    "asset_name_ascii": "Ghostchain00851",
+    "fingerprint": "asset1n7ml7h7an9sdu60vaxqzl82q2nhyc82t2jd47c",
+    "minting_tx_hash": "ad2ce25f96342bd18163b575a20fcaaf770632a2eb324aaed765c92fec563eb4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633910400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain00851": {
+            "dna": "10100003",
+            "name": "Ghostchain00851",
+            "files": [
+              {
+                "src": "ipfs://QmUmcSBsNXTM4gkcXxQb7dTg39Ysf3qMDHoYvWfpwVcMRd",
+                "name": "Ghostchain00851",
+                "https": "https://api.nftghostchain.com/original?mint=851",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUmcSBsNXTM4gkcXxQb7dTg39Ysf3qMDHoYvWfpwVcMRd",
+            "rarity": "Uncommon",
+            "edition": "Mint 851 of 10000",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg",
+            "attributes": "Moss,Very Angry,Recorder",
+            "description": "The Original Ghostchain Community.",
+            "collection name": "NFT Ghostchain"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -209,10 +209,9 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
             failure = true;
         }
 
-
         if (failure) {
             bot.execute(new SendMessage(update.message().chat().id(),
-                    "There was an problem retrieving the account information. Please try again later"));
+                    "There was a problem retrieving the account information. Please try again later"));
         }
     }
 

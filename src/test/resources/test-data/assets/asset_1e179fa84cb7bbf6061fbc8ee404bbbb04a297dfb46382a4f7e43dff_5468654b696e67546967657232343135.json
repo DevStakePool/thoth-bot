@@ -1,0 +1,65 @@
+[
+  {
+    "policy_id": "1e179fa84cb7bbf6061fbc8ee404bbbb04a297dfb46382a4f7e43dff",
+    "asset_name": "5468654b696e67546967657232343135",
+    "asset_name_ascii": "TheKingTiger2415",
+    "fingerprint": "asset1v8q9plt3cvatnuhmzf5e6m08tqdsu8mqyquxq7",
+    "minting_tx_hash": "aed97c427cdd44a91a124a351dd6de207ce627b435ddf064735a8308916f842c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1653177600,
+    "minting_tx_metadata": {
+      "721": {
+        "1e179fa84cb7bbf6061fbc8ee404bbbb04a297dfb46382a4f7e43dff": {
+          "version": "1.0",
+          "TheKingTiger1341": {
+            "name": "The King Tiger #1341",
+            "files": [
+              {
+                "src": "ipfs://QmWCncuS1QnDYyW3Wm4H2zcV6t9jtLbScxn8Z1mnJ7S5Tz",
+                "name": "The King Tiger #1341",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWCncuS1QnDYyW3Wm4H2zcV6t9jtLbScxn8Z1mnJ7S5Tz",
+            "artist": "thillustrator",
+            "project": "The King Tigers",
+            "website": "https://thekingtigers.com/",
+            "mediaType": "image/png",
+            "attributes": {
+              "Clothing": "Villager Shirt",
+              "Headwear": "Punk Rock 2 Blue",
+              "Accessory": "Round Glasses Golden Frame",
+              "Background": "Red",
+              "Skin and Expression": "Nebulian Happy"
+            }
+          },
+          "TheKingTiger2415": {
+            "name": "The King Tiger #2415",
+            "files": [
+              {
+                "src": "ipfs://QmdzbPQnPvkR2vnPLMAnXDJfcr4ZqDu4XTtYtxbsJfhguf",
+                "name": "The King Tiger #2415",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdzbPQnPvkR2vnPLMAnXDJfcr4ZqDu4XTtYtxbsJfhguf",
+            "artist": "thillustrator",
+            "project": "The King Tigers",
+            "website": "https://thekingtigers.com/",
+            "mediaType": "image/png",
+            "attributes": {
+              "Clothing": "Cool Shirt Green",
+              "Headwear": "Chinese Wooden Hat",
+              "Accessory": "None",
+              "Background": "Blue Greenish",
+              "Skin and Expression": "Orange Wacky"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "616c6c65795f6b61747a",
+    "asset_name_ascii": "alley_katz",
+    "fingerprint": "asset16k063lwfhsda4wrh54a29a8r55l056ds8s5yq8",
+    "minting_tx_hash": "c55203da2b4d1618df7e6de265f50c2b58cd9163e2df0e8720f3b29d1a337db9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668729600,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "alley_katz": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$alley_katz",
+            "image": "ipfs://QmWPuTViJxSxXn7pbArVyCqsp4WawGt7hwRZvGYC7RKQLG",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

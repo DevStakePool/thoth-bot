@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "2a28708e7dfb2c88a165bd1569a94ca73c134f60fc3220e567757676",
+    "asset_name": "446f6e74436c69636b4d65",
+    "asset_name_ascii": "DontClickMe",
+    "fingerprint": "asset1fd383nmslp96nf794mteragtft5e5xn7qupnhv",
+    "minting_tx_hash": "ee4df035a65994de2fbad9ef6e06819c4db206762c3f6685084dc506f9bd57c3",
+    "total_supply": "100",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1622851200,
+    "minting_tx_metadata": {
+      "721": {
+        "2a28708e7dfb2c88a165bd1569a94ca73c134f60fc3220e567757676": {
+          "DontClickMe": {
+            "src": "ipfs://Qmefmkhgfy4HHukCXnGT41ee5S7QAKbr5Fwe2mhKkhFNwe",
+            "name": "Don't Click Me!",
+            "tool": "https://cardano-tools.io/",
+            "type": "text/html",
+            "image": "ipfs://QmTJHEJvEiJJuBvnLE3YY5Y4xoM8GSGw4rbxVVA6rk8ir7",
+            "policy": {
+              "type": "all",
+              "scripts": [
+                {
+                  "slot": 31434365,
+                  "type": "before"
+                },
+                {
+                  "type": "sig",
+                  "keyHash": "53542fae4e3d48c36e2cf95886b41eca5837ac5dcd4a0d532727253b"
+                }
+              ]
+            },
+            "traits": [
+              "DO NOT CLICK!",
+              "TO CLICK DO NOT!"
+            ],
+            "publisher": "https://twitter.com/deveerei"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

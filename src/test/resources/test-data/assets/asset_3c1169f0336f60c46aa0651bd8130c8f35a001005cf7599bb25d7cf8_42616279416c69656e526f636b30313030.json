@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "3c1169f0336f60c46aa0651bd8130c8f35a001005cf7599bb25d7cf8",
+    "asset_name": "42616279416c69656e526f636b30313030",
+    "asset_name_ascii": "BabyAlienRock0100",
+    "fingerprint": "asset15e029ep8nshkc8s7n5wk0yujh5dt6f0dl27hsl",
+    "minting_tx_hash": "4b5d6e2f8ea1ce1af6408cf3d0120e6e284808ad557d43b9bd786140dd0c41dd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1638576000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "3c1169f0336f60c46aa0651bd8130c8f35a001005cf7599bb25d7cf8": {
+          "BabyAlienRock0100": {
+            "hat": "Bandana 1",
+            "body": "Gray",
+            "eyes": "Makeup",
+            "name": "BabyAlienRock0100",
+            "files": [
+              {
+                "src": "ipfs://QmRvHo3NtwaZZqywBnHAVGHseifHimBVwvC2tvDBxgRMZw",
+                "name": "BabyAlienRock0100",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRvHo3NtwaZZqywBnHAVGHseifHimBVwvC2tvDBxgRMZw",
+            "mouth": "Elvis",
+            "clothes": "Checkered 2",
+            "accessory": "Skull",
+            "mediaType": "image/png",
+            "background": "Red",
+            "description": "Baby Alien Rock"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

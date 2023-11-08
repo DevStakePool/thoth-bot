@@ -1,0 +1,73 @@
+[
+  {
+    "policy_id": "86480c36b1eb55b7385682b23c1fae29efeae71465afbae47eead9e1",
+    "asset_name": "47544b495436353336",
+    "asset_name_ascii": "GTKIT6536",
+    "fingerprint": "asset1nl88apry37a5xvscqst00s9jpz5neuxkkpghfg",
+    "minting_tx_hash": "f7ead8d0b32e24820f821b2f20fadb87d803c0fa540cdce4ed2179f7c1647f14",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678147200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "86480c36b1eb55b7385682b23c1fae29efeae71465afbae47eead9e1": {
+          "GTKIT6536": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe Test Kit L1",
+            "Model": "Deluxe",
+            "files": [
+              {
+                "src": "ipfs://QmSfvHXPw44B2qXTavkVkqgoQDdvrmGE74GkimkK85K27j",
+                "name": "GOAT Tribe L1 Deluxe Test Kit",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZD3MarHJJs9FZ3uWNAY5vD6japTkBiCsNDpL1x9j16Xt",
+            "Project": "GOAT Tribe: Test Kits",
+            "copyright": [
+              "copyright 2023 GOAT Tribe c/o Scapegoat Media Ltd.",
+              "All rights reserved"
+            ],
+            "mediaType": "image/png",
+            "Kit contents": "Empty"
+          }
+        },
+        "bbb6c713c497b8a9c3390a2157bac72d730ce842b27b5672d3b3d51f": {
+          "Goatia13605": {
+            "name": "Goatia #13605",
+            "files": [
+              {
+                "src": "ipfs://QmUqB7X1EvxZCrR8VELxYo8pTGSnYpf6bXtRj8Q3j1qo9s",
+                "name": "Goatia #13605",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRuq7N9TkiLv7igfyD5abcdksKei4YBo27UBvAuuC3BHJ",
+            "copyright": [
+              "Copyright 2023 GOAT Tribe c/o Scapegoat Media Ltd.",
+              "All rights reserved"
+            ],
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "OMG, Literally",
+              "Breed": "Tortilla",
+              "Mouth": "Dynamite",
+              "Power": "Arms of Amalthea",
+              "Clothing": "Ketchup Tee",
+              "Headwear": "LFG Cap",
+              "Piercing": "Nailed",
+              "Skeleton": "Red Rocket",
+              "Body Type": "Full Bodied",
+              "Background": "#784593",
+              "Regression Potency": "Level 1"
+            },
+            "descendant": "GOAT Tribe 07053"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

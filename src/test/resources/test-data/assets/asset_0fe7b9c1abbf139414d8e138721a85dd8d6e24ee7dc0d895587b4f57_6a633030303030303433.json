@@ -1,0 +1,243 @@
+[
+  {
+    "policy_id": "0fe7b9c1abbf139414d8e138721a85dd8d6e24ee7dc0d895587b4f57",
+    "asset_name": "6a633030303030303433",
+    "asset_name_ascii": "jc00000043",
+    "fingerprint": "asset1v3gcdujsyfyleds7jfxkvwhktvqcrln0fwlvww",
+    "minting_tx_hash": "f73723fe8198074c99d06c5c1954f056f4f5432af26f2311fead8cff20231215",
+    "total_supply": "887",
+    "mint_cnt": 887,
+    "burn_cnt": 0,
+    "creation_time": 1623715200,
+    "minting_tx_metadata": {
+      "721": {
+        "0fe7b9c1abbf139414d8e138721a85dd8d6e24ee7dc0d895587b4f57": {
+          "jc00000008": {
+            "name": "stinky beans",
+            "image": "ipfs://QmSTrgccAoXMc6oxPVHzNhq7j8jkAxA1xrCvGuy2naCuf7",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "ah pay for it later!",
+              "effect": [
+                "target accuracy +2",
+                "target luck -1",
+                "+5% chance player sharts"
+              ],
+              "serial": "00000008",
+              "edition": "first edition"
+            }
+          },
+          "jc00000013": {
+            "name": "chicken shit",
+            "image": "ipfs://QmeuigUqhb2Rua2GaTQ9Vu2CkvwpP8K5hkUuy9ddA6v5rV",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "left mah chicken in the oven!",
+              "effect": [
+                "target strength -2",
+                "target deals and takes no damage or effect"
+              ],
+              "serial": "00000013",
+              "edition": "first edition"
+            }
+          },
+          "jc00000016": {
+            "name": "burn chicken coop",
+            "image": "ipfs://Qmb2NH5mnPgKKGKQML6WSsMQW1Nmxw5RVceUD8PSDisRS4",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "hehe ah burn you!",
+              "effect": [
+                "all opponents' accuracy -2"
+              ],
+              "serial": "00000016",
+              "edition": "first edition"
+            }
+          },
+          "jc00000017": {
+            "name": "four leaf clover",
+            "image": "ipfs://QmRTQVuc3aqtvBZppYUwuWtu7AcZbTiroEMY9bTzYN3NnL",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "you lucky duck!",
+              "effect": [
+                "target health +10%",
+                "target luck +2"
+              ],
+              "serial": "00000017",
+              "edition": "first edition"
+            }
+          },
+          "jc00000022": {
+            "name": "sneakers",
+            "image": "ipfs://QmaeG4tmrXy7yfg3XHPwa6n67X4W5UozHgsTNVGYm548Uw",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "chicken kicks rock!",
+              "effect": [
+                "defense +10%",
+                "accuracy +10%",
+                "5% chance defense +1"
+              ],
+              "serial": "00000022",
+              "edition": "first edition"
+            }
+          },
+          "jc00000027": {
+            "name": "chicken feed",
+            "image": "ipfs://QmWLQhai7mqzCyHsMaxT7KhMc2SXoSXHkCKiEbtg6hiVc7",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "chicken nom noms yay!",
+              "effect": [
+                "add +30% health to each player on jetchicken team"
+              ],
+              "serial": "00000027",
+              "edition": "first edition"
+            }
+          },
+          "jc00000029": {
+            "name": "pom-poms",
+            "image": "ipfs://QmUeC6mNwg5mnR7PttKPejD6TryHW4Hco7idfysU6yjxBx",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "make chicken so proud!",
+              "effect": [
+                "target strength +2",
+                "target defense +2",
+                "target accuracy +2"
+              ],
+              "serial": "00000029",
+              "edition": "first edition"
+            }
+          },
+          "jc00000039": {
+            "name": "green space egg",
+            "image": "ipfs://QmNibfQYoYTbxEfotkPLCExuhfbWkik7aHz9Bcjqq26SXL",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "a mystical intergalactic egg",
+              "effect": [
+                "strength +15% against chrome targets",
+                "equip 3 turns to hatch sidekick"
+              ],
+              "serial": "00000039",
+              "edition": "first edition"
+            }
+          },
+          "jc00000043": {
+            "name": "purple space egg",
+            "image": "ipfs://QmVtzKFhvwpHYXS9j2PExWSgqebAFm7LEEbqeYGM5ALyz8",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "a mystical intergalactic egg",
+              "effect": [
+                "strength +15% against orange targets",
+                "equip 3 turns to hatch sidekick"
+              ],
+              "serial": "00000043",
+              "edition": "first edition"
+            }
+          },
+          "jc00000058": {
+            "name": "heat seekers",
+            "image": "ipfs://QmZ3awr7ieJP6D51ocsdfQzXNghyJX1JDhLWJVFHHprZBt",
+            "mediaType": "image/png",
+            "attributes": {
+              "text": "better hold that fart!",
+              "effect": [
+                "strength +20%",
+                "defense +10%",
+                "15% chance to force shart"
+              ],
+              "serial": "00000058",
+              "edition": "first edition"
+            }
+          },
+          "jc00023442": {
+            "name": "jetchicken #00023442",
+            "image": "ipfs://QmUbimU8fvsd3uKxUvbgvpggiXo2JLDF7c1tgq7cSNCdt3",
+            "serial": "00023442",
+            "mediaType": "image/png",
+            "attributes": {
+              "feet": "green socks",
+              "chicken": "jetchicken",
+              "jetpack": "plasma rocket",
+              "spacehat": "kyoto",
+              "weakness": "drippy butt",
+              "homeworld": "andromeda",
+              "strength1": "big pecker",
+              "strength2": "good oxygen",
+              "wing_guns": "incendiary eggs",
+              "power_color": "yellow",
+              "necklace_type": "plain iron",
+              "power_ratings": {
+                "luck": 6,
+                "health": 5,
+                "defense": 7,
+                "accuracy": 7,
+                "strength": 8,
+                "oxygen_tank": 6,
+                "intelligence": 7
+              },
+              "powerup_slots": 3,
+              "currency_slots": 2,
+              "necklace_symbol": "cool emoji",
+              "powerdown_slots": 2,
+              "shoulder_weapon": "dreidel"
+            }
+          },
+          "jc00023443": {
+            "name": "jetchicken #00023443",
+            "image": "ipfs://QmUrv1aFJGVxbmyQhxM1RzNQNffTP3L6K8NfXEDgKaRL8U",
+            "serial": "00023443",
+            "mediaType": "image/png",
+            "attributes": {
+              "feet": "orange socks",
+              "chicken": "johnchick",
+              "jetpack": "big sneeze",
+              "spacehat": "kippah",
+              "weakness": "black eye",
+              "homeworld": "alien invasion",
+              "strength1": "fried palate",
+              "strength2": "good intelligence",
+              "wing_guns": "poison darts",
+              "power_color": "red",
+              "necklace_type": "ruby",
+              "power_ratings": {
+                "luck": 3,
+                "health": 6,
+                "defense": 7,
+                "accuracy": 7,
+                "strength": 7,
+                "oxygen_tank": 7,
+                "intelligence": 7
+              },
+              "powerup_slots": 3,
+              "currency_slots": 2,
+              "necklace_symbol": "derp emoji",
+              "powerdown_slots": 2,
+              "shoulder_weapon": "poison harpoon"
+            }
+          }
+        },
+        "d894897411707efa755a76deb66d26dfd50593f2e70863e1661e98a0": {
+          "spacecoins": {
+            "name": "spacecoins",
+            "files": [
+              {
+                "src": "ipfs://QmZWaVnF5m5h9cd2KeMoqm4QAdsM5ZmEBrnfaLtckNUMGP",
+                "name": "spacecoins whitepaper",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://Qmc44D9d8oaj38TtrXKXPYyWKpyPButDQtA9pVjBtb1qYV",
+            "website": "https://spacecoins.io",
+            "description": "your did it!"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

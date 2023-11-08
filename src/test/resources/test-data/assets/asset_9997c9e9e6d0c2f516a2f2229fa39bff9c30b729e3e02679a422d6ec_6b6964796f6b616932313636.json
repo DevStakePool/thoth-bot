@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "9997c9e9e6d0c2f516a2f2229fa39bff9c30b729e3e02679a422d6ec",
+    "asset_name": "6b6964796f6b616932313636",
+    "asset_name_ascii": "kidyokai2166",
+    "fingerprint": "asset1nqlepyrfm440nglhswvaqvyr7kplhduxkjfg6s",
+    "minting_tx_hash": "107b18a35f47bb9aadb05d56a816a93d4a86c356fad0b5de98546a414619abad",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1644883200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "9997c9e9e6d0c2f516a2f2229fa39bff9c30b729e3e02679a422d6ec": {
+          "kidyokai837": {
+            "back": "Amber",
+            "mask": "Daitengu",
+            "name": "KidYokai#837",
+            "skin": "White",
+            "charm": "Maneki-Neko",
+            "files": [
+              {
+                "src": "ipfs://QmSFniqctpJdzoWQu9xgCMvsnDVZ7sLafoTKYUCd8CLSi6",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSFniqctpJdzoWQu9xgCMvsnDVZ7sLafoTKYUCd8CLSi6",
+            "zodiac": "Monkey",
+            "clothes": "GreyKimono",
+            "mediaType": "image/png"
+          },
+          "kidyokai2166": {
+            "back": "Blue",
+            "mask": "SpiralTerror",
+            "name": "KidYokai#2166",
+            "skin": "Black",
+            "charm": "Owl",
+            "files": [
+              {
+                "src": "ipfs://QmZ3aLcEFNDg4QT53kgBDbMqsGxmMwD34TEMjeroRG5hz1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZ3aLcEFNDg4QT53kgBDbMqsGxmMwD34TEMjeroRG5hz1",
+            "zodiac": "Boar",
+            "clothes": "BlueKimono",
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

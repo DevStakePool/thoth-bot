@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368457163797a",
+    "asset_name_ascii": "furnishEqcyz",
+    "fingerprint": "asset1q08umy2s2g58zqjuxwaaalxrwmgswvftavcxjl",
+    "minting_tx_hash": "f14cc621e8f27d154f34ab55b896a5ed0e8e47c7d33f84b5c20034985b118253",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674259200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishEqcyz": {
+            "id": "Eqcyz",
+            "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "name": "Rug",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+                "name": "Rug",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmU31Twc3Nvc9gchWRRVMkFPTskqiJdFWWm6zsnwMPj7TJ",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmV65MKJZaK67QLbCGziBhbmnwHsFiyDuCewp4T2DSaBCP",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "description": "Hand-crafted by Eliacin Davies.",
+            "furnitureId": 218
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

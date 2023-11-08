@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "697cd745ab35d2ed95d05416686047a6b45a0541d7caa63cc73cc348",
+    "asset_name": "4561726c7942656172",
+    "asset_name_ascii": "EarlyBear",
+    "fingerprint": "asset1wx4hwjqt7husxt7ycf99yursl5p2wyhgqx0rfl",
+    "minting_tx_hash": "d549976d53f1dd0c4dbddefe4704c67fe580eea0b1f7141782a3d7112e2b9cb5",
+    "total_supply": "50",
+    "mint_cnt": 50,
+    "burn_cnt": 0,
+    "creation_time": 1632528000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "697cd745ab35d2ed95d05416686047a6b45a0541d7caa63cc73cc348": {
+          "EarlyBear": {
+            "name": "EarlyBear",
+            "files": [
+              {
+                "src": "ipfs://QmVvAzBqk9EuuoZ3NrbNTTPvTiqNdcrM8NwN6rBC934uGB",
+                "name": "EarlyBear",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVvAzBqk9EuuoZ3NrbNTTPvTiqNdcrM8NwN6rBC934uGB",
+            "mediaType": "image/png",
+            "description": "CryptoRaggies bear plush toy for early supporters"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736856634e4478",
+    "asset_name_ascii": "furnishVcNDx",
+    "fingerprint": "asset1eh67e7s8u50nj9cunqjdy4ruhdl5yp38dk46j4",
+    "minting_tx_hash": "9f9826ef2a726f999abfb447be5c5c39da8ffbce98c83a49d2e9706226bb6a52",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679961600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishVcNDx": {
+            "id": "VcNDx",
+            "src": "ipfs://QmbCAhvDfYQBMTPFy4mG5kwwWwJDDimCHqjRS23Dmmkzgb",
+            "name": "Round End Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmbCAhvDfYQBMTPFy4mG5kwwWwJDDimCHqjRS23Dmmkzgb",
+                "name": "Round End Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbypSWYZbBmYijNGKLyraFXRgjvMNyHit3EiGorEHpQWD",
+                "name": "Round End Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR1unCXjnNdkPAwob5EXMqEsg5mvPiWopdtPSYcJdeHkW",
+                "name": "Round End Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmbCAhvDfYQBMTPFy4mG5kwwWwJDDimCHqjRS23Dmmkzgb",
+            "description": "Hand-crafted by Fleury White.",
+            "furnitureId": 216
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

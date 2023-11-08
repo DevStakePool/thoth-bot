@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706553616e63686f42616c6477696e",
+    "asset_name_ascii": "adapeSanchoBaldwin",
+    "fingerprint": "asset18hxrxjwre6ftsj087h53mm6pl2cyr9sh32rfkp",
+    "minting_tx_hash": "d67461901bd68a4697597d71bf1f0dd837895c8d8fe1abaf03050273bc15a113",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeSanchoBaldwin": {
+            "Hat": "Knight Helmet",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Sancho Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmddmxFZDP5xr5BngZhyF7vqXAu4VgDjfBKPkzGDDhcAg7",
+                "name": "Sancho Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmddmxFZDP5xr5BngZhyF7vqXAu4VgDjfBKPkzGDDhcAg7",
+            "Family": "Baldwin",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

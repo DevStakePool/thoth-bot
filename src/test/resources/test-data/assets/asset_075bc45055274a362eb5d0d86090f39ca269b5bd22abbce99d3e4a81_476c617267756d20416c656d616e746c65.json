@@ -1,0 +1,278 @@
+[
+  {
+    "policy_id": "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81",
+    "asset_name": "476c617267756d20416c656d616e746c65",
+    "asset_name_ascii": "Glargum Alemantle",
+    "fingerprint": "asset1pvasac4cpm8skkc3tyzzjgs0hqz4rxpl3ctz2k",
+    "minting_tx_hash": "2e0c84f7aefe0dcd3ad6b4b319ca361809348714d560cb4742947f9a8c7d7179",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665792000,
+    "minting_tx_metadata": {
+      "721": {
+        "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81": {
+          "Laphyx Pomfrey": {
+            "name": "Laphyx Pomfrey",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAAAb1BMVEXB2eNeMVvef3jSZ2f/ocD/YqHCWIFCJEVXKUsyKUeyUHbC",
+              "wtHjaVZDQ0///+uwMFzv2KH/gmVRKk66YVY8o3Cf0lLUalW7U2d+N0Y0K1ds",
+              "g/eMP13BxfXw//8+I0fypl5Npv9m/+NLW6trMlz///9fEUl9AAAAAWJLR0Qk",
+              "tAb5mQAAAAd0SU1FB+YKDgQ6IlFmCuwAAAZNSURBVHja7d3dbtRWGIVhCmlJ",
+              "Cyk/aQkthP5w//eIFHlL5ZN2tz22x5ms5zljsJ3E6z2yJpNnzwAAAAAAAAAA",
+              "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "AOAAP8y01XWP/nkpBBBOAOEEEE4A4QQQTgDhBBCqDfK8eNExd8DRdYXwSAgg",
+              "nADCCSCcAMIJIJwAwgkgVG+gcwUghIMJIJwAwgkgnADCCSCcAMIJINwogNFg",
+              "I/X43vUFcBABhBNAOAGEE0A4AYQTQDgBhKtDjQKoxy81Ck0IZyaAcAIIJ4Bw",
+              "AggngHACCCeAUKMhewEsHXZ0/NWk/lsIOxNAOAGEE0A4AYQTQDgBhBNAqHZj",
+              "f5zMHfLchLATAYQTQDgBhBNAOAGEE0A4AYTrPQBqN/6nyVHDvxw4+v5dPAGE",
+              "E0A4AYQTQDgBhBNAOAFciOvJVtdb+gDo3CG0gX8eiAlBAAIQgAAEIICNCODC",
+              "CEAAAhCAAJ58ANcDW32dpb8I8stk7xDq8K8mMSEIQAACEIAABCAAAQhAAAIQ",
+              "gAAiAmgDv570ht8qiKUBnCuEuQ+ABCAAAQhAAAIQgAAEIAABCEAAArjEAOrw",
+              "PVsNvzaAvUNYGsDNRAACEIAABCCASyMAAQhAAAIQgAAE8F+/TmoAWw2/9IMh",
+              "2w1eGkLvvLUB3BQCEIAABCAAAVwaAQhAAAIQgAAEkBVAG/RN8XZSQ1gbwKnD",
+              "nxrC0uF7X+dmoB3Xfr6jdxWAAAQgAAEIQAACEIAABCAAAQjg/wI4Vwhr3wDS",
+              "G6jqPRB6V7zvqMe9HLjYPygpAAEIQAACEIAABCAAAQhAAAKICKAO33u92SqE",
+              "rQMYaSG865gbQFOvf1UIQAACEIAABPDYCUAAAhCAAAQggMwA5gZR/39tCHsH",
+              "cDswGr4XQju/d5wABCAAAQhAAAIQgAAEIAABXBgBCGDWgO24+sERc0NoN6j3",
+              "iyFbPxDqPfh5VYxer+f/Nvl9UoM4ek8BCEAAAhCAAAQgAAEIQAACEIAAtnSu",
+              "EJYG8X6mpQHM9WHy5EMQgAAEIAABCEAAAhCAAAQgAAFEBdALoX2wxNYhtONG",
+              "w99NPnYsHbRp598VHwaefAgCEIAABCAAAQhAAAIQgAAEIICoALYOoWf0gKgG",
+              "cOrQezl6HwEIQAACEIAABCAAAQhAAAIQgACODGHkj4EaQr3hL1Z6Mh8AeW4C",
+              "CCeAcAIIJ4BwAggngHAC4MEohNcdbeA/i0/F3DCq3htKrjoMfyIBhBNAOAGE",
+              "E0A4AYQTQDgB8GDug6E6/KeBdvznor3+/ERt+BrW0ffxYgkgnADCCSCcAMIJ",
+              "IJwAwgkgXBt4q+H3DqEGcD8ZhfBlpqP3ODsBCEAAAhCAAAQgAAEIQABpBCCA",
+              "7wLYavhRAHW4uQH0hv9rUkNow44+MLKJC0EAAhCAAAQgAAEIQAACEIAABCCA",
+              "DQPohXBfjELond8LoDf8dYcABCAAAQhAAAIQgAAEIAABhBCAAL4LYOvhbyej",
+              "AZeqbyxpASwdXgACEIAABCAAAQhAAAIQgAAEIAABrA/gtqNdvxfA35N/ilEA",
+              "veHvOgQgAAEIQAACEIAABCAAAQhAAAJIDKDZavhRADWE6t+iF0DTrlcDuBv4",
+              "OKnBCEAAAhCAAASQRgACEIAABCAAAQhgjwdAc4OoAbQHQ3Xwam4Abfje6wIQ",
+              "gAAEIAABpBGAAAQgAAEIQAAC2PONIFvrBVCHNrwABCAAAQhAAAIQgAAEIAAB",
+              "CEAA+wfQrvt5J+36vQAMLwABCEAAAhCAAAQgAAEIQAACEMD+AfSGv99Iu14b",
+              "sA069w0hhi8EEE4A4QQQTgDhBBBOAOEEEO7SAhgN/2Xg6Pv96AggnADCCSCc",
+              "AMIJIJwAwgkg3FYBjN4AMnfgdvzXYu7w7Q9Jtu/n6Pv76AkgnADCCSCcAMIJ",
+              "IJwAwgkgXLtRpw4/N4CerwNzh29fXwALCSCcAMIJIJwAwgkgnADCCYAHa0MY",
+              "BXA9cOrw7XwBrCSAcAIIJ4BwAggngHACCCeAcO2GnfrGkHb+0qHXDv9mIoCV",
+              "BBBOAOEEEE4A4QQQTgDhBHBe3wAPtSlxoDvYAQAAACV0RVh0ZGF0ZTpjcmVh",
+              "dGUAMjAyMi0xMC0xNFQwNDoyNjoyNCswMDowMDedk44AAAAldEVYdGRhdGU6",
+              "bW9kaWZ5ADIwMjItMTAtMTNUMjE6NDQ6MzArMDA6MDCT3ZoKAAAAKHRFWHRk",
+              "YXRlOnRpbWVzdGFtcAAyMDIyLTEwLTE0VDA0OjU4OjM0KzAwOjAw6o0vQwAA",
+              "AABJRU5ErkJggg=="
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Wizard"
+              },
+              {
+                "name": "Back",
+                "value": "Lute"
+              },
+              {
+                "name": "Fur",
+                "value": "Pink"
+              },
+              {
+                "name": "Clothes",
+                "value": "Brown Mystic Robes"
+              },
+              {
+                "name": "Mouth",
+                "value": "Stick"
+              },
+              {
+                "name": "Holding",
+                "value": "Wooden Spoon"
+              },
+              {
+                "name": "Eyes",
+                "value": "Scar"
+              },
+              {
+                "name": "Name",
+                "value": "Laphyx Pomfrey"
+              },
+              {
+                "name": "Region",
+                "value": "North Goof"
+              },
+              {
+                "name": "Town",
+                "value": "Emerald City"
+              },
+              {
+                "name": "Location",
+                "value": "Towers"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "23",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "1",
+                "display": "number"
+              },
+              {
+                "name": "Treasury Boost",
+                "value": "1.15",
+                "display": "multiply"
+              },
+              {
+                "name": "Mining Boost",
+                "value": "1",
+                "display": "multiply"
+              },
+              {
+                "name": "Rank",
+                "value": "Apprentice"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          },
+          "Glargum Alemantle": {
+            "name": "Glargum Alemantle",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAAAZlBMVEXKweNeJk2XOV5lLl3/kWaWQlNCJEW1d5HT09NDQ0+TTGte",
+              "MVtzJ1xRKk6MP11mhP/CwtE+I0c8o3A9bnB+OVTP/3D//+ubeFZ+fo/ToXFg",
+              "YHA0P3a7U2fUalV+N0a6YVbv2KH///+ZxxdIAAAAAWJLR0QhxGwNFgAAAAd0",
+              "SU1FB+YKDgQ6AIQGSwgAAAdoSURBVHja7d3bctxUFEVR7IR7IDEQQsL1/7+S",
+              "KkqnitqwOTrd6qjxGvPNsrrV1hpPKjv55BNJkiRJkiRJkiRJkiRJkiRJkiRJ",
+              "kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJ",
+              "kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJknR1D5PO/ny6",
+              "cQCEB0B4AIQHQHgAhAdAeACEVQd+nATEMwuA8AAID4DwAAgPgPAACA+AsOqA",
+              "L5rq67rzHiad/fOqBEB4AIQHQHgAhAdAeACEB0BI3SCzBz17GwA8OLrTAAgP",
+              "gPAACA+A8AAID4DwAAht3Oj6wObSgVdbBQHGwQEQHgDhARAeAOEBEB4A4QEQ",
+              "Wh1+HJ8Ns3fIo8+rnxeEKwMgPADCAyA8AMIDIDwAwgMgtNnweweZDbl63uy6",
+              "3fdBWAyA8AAID4DwAAgPgPAACA+A8MYNGzd2HF+98ZdC6UDsvV73ehB2BkB4",
+              "AIQHQHgAhAdAeACEB0B4FcDqjb72/Nl5s+MdHAB2BkB4AIQHQHgAhAdAeACE",
+              "B0B49RdCVm/8rBmUvYNeCgCESQCEB0B4AIQHQHgAhAdAeACE1g0/u8F7Qewd",
+              "fhXA7Lzu+yCUAAgPgPAACA+A8AAID4DwAAitPiC5dJijAwAAAAAAAAAAAAAA",
+              "AAAAAAAAAG4HYHXQx51dC2Dv8B3k7nMAAAAAAAAAQHoAhAdAeACEB0Bo3fDj",
+              "+7NB9vawWHedGazx+pdbFUK9ztn3//QACA+A8AAID4DwAAgPgPAACK/e8HH8",
+              "0uHreeP9P12sgzEDVt+nQjB8CYDwAAgPgPAACA+A8AAID4DwKoDV4bsHM90g",
+              "n026FMbqdc6+73cTAOEBEB4A4QEQHgDhARAeAOF1AD728KsQulavc/b9Pz0A",
+              "wgMgPADCAyA8AMIDIDwAQqvDd82GnwGoN/zzrS9K4/ilEK69ztl7AAAAAAAA",
+              "AAAAAAAAAAAAAADALYefPQDaC2D1AdAXk44CsHqds3cBAAAAAAAAAAAAAAAA",
+              "AAAAAIAEAF9u3QpAfX8AAAAAAAAAAAAAAAAAAAAAAEgAMAaqX79oWoWwF0D3",
+              "ixq3AlCL/YUQAAAAAAAAAAAAAAAAAAAAAAD4W7OBOwijDkA30FdNq8N315m9",
+              "/+jrrbP3AQAAAAAAAAAAAAAAAAAAAACA/xOASyHU6vmvSt801fNm1xn/oSQA",
+              "AAAAAAAAPPcAAAAAAAAAAIBMAHX4Mdg4PgPQDd6dN4Mwawz5dakDUM8br6/v",
+              "+7IEAAAAAAAAACkBAAAAAAAAAAAA/BuA1eFfTFqFsDp87dtShQAAAAAAAAAA",
+              "AAAAAAAAAAAAAAkAxhCvt64d/mgAs+HflGbHOwiXAni6sLN3BwAAAAAAAAAA",
+              "AAAAAAAAAACA/wIwG7Q7rx6/dvijAVQIq8N/d2F3AwEAAAAAAAAAAAAAAAAA",
+              "AACAKAAdhL0DrwLYC2EvgNVmAFaH/34xAAAAAAAAAAAAAAAAAACAOwmAMABj",
+              "gO746MXOZgC6B0I/bO0dfgzWHb+2DsJRwwMAAAAAAAAAAAAAAAAAAAAAwJnV",
+              "wbsHQXsB7IUwqte/NwBHDf92CwAAAAAAAAAAAAAAAAAAAAAA7qFrAcwgPE4a",
+              "543PsRfAUcNXAHuHf2qqD34AAAAAAAAAAAAAAAAAAAAAAOAeAYyOAjB62Nls",
+              "+FsDWB1+/AMUP27V178tAQAAAAAAAAAAAAAAAAAA3EkAAPBXr5vq0DMoHYB3",
+              "pXEj9v4iyK0A1OGedjaG/2lrHH/bBAAAAAAAAAAAAAAAAAAAcCcBEA6gQtjb",
+              "46QK5l3TKoBbVQd+01Qf/PzvhwcAAAAAAAAAAAAAAAAAAAAgEsBeIKsPjMYP",
+              "Xod/v3U2gKembvgPWzHDAwAAAAAAAAAAAAAAAAAAABAJoEKYVQevEO4NwM9b",
+              "HYAPpQ7Asx0eAAAAAAAAAAAAAAAAAAAAgEgAdcjV3pfO/sOQGYTxhx8zAM9+",
+              "eAAAAAAAAAAAAAAAAAAAAACiAFw7/Hj9DED9+mgAT031H4SsELqe/fAAAAAA",
+              "AAAAAAAAAAAAAAAARAN4uXU2gFUI4/w63Gg80Kn/MUQHIWZ4AAAAAAAAAAAA",
+              "AAAAAAAAAAC4AMBoFUAd+mgA3fD15+6On70LAAAAAAAAAAAAAAAAAAAAAAAA",
+              "8M/qkHX4DoC2AAgPgPAACA+A8AAID4DwAAjvaADj66MAdCDG5/5l69etp0ln",
+              "3++7C4DwAAgPgPAACA+A8AAID4DwrgUwXn8pgK4OQDf8b1vj+69KZ9/nuw2A",
+              "8AAID4DwAAgPgPAACA+A8I4CUI8fDWB1eA9+dgZAeACEB0B4AIQHQHgAhAdA",
+              "eLcCUP9ApAPQHV998FPfD4CdARAeAOEBEB4A4QEQHgDhAaC/ejqo903dg6EO",
+              "yN7h6/uPrwFYDIDwAAgPgPAACA+A8AAID4Dwxg37dtLvTdcCeLO1d/hxfn3/",
+              "P7YAWAyA8AAID4DwAAgPgPAACA+Aj9uf8T/chLVNN7gAAAAldEVYdGRhdGU6",
+              "Y3JlYXRlADIwMjItMTAtMTRUMDQ6MjY6MTUrMDA6MDAfZZ/ZAAAAJXRFWHRk",
+              "YXRlOm1vZGlmeQAyMDIyLTEwLTEzVDIxOjQ0OjI5KzAwOjAwyu/fRwAAACh0",
+              "RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMi0xMC0xNFQwNDo1ODowMCswMDowMJBN",
+              "DLMAAAAASUVORK5CYII="
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Miner"
+              },
+              {
+                "name": "Fur",
+                "value": "Dark"
+              },
+              {
+                "name": "Clothes",
+                "value": "Plain Tunic"
+              },
+              {
+                "name": "Mouth",
+                "value": "Brown Scraggly Beard"
+              },
+              {
+                "name": "Holding",
+                "value": "Emerald Shovel"
+              },
+              {
+                "name": "Eyes",
+                "value": "Cracked"
+              },
+              {
+                "name": "Hat",
+                "value": "Brown Locks"
+              },
+              {
+                "name": "Name",
+                "value": "Glargum Alemantle"
+              },
+              {
+                "name": "Region",
+                "value": "The Hilly Region"
+              },
+              {
+                "name": "Town",
+                "value": "Karribaska"
+              },
+              {
+                "name": "Location",
+                "value": "Pass"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "57",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "1",
+                "display": "number"
+              },
+              {
+                "name": "Mining Boost",
+                "value": "1.5",
+                "display": "multiply"
+              },
+              {
+                "name": "Treasury Boost",
+                "value": "1",
+                "display": "multiply"
+              },
+              {
+                "name": "Rank",
+                "value": "Expert"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

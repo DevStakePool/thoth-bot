@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "13dd6e7e3b0718eca13a77559ff09b0665acd3e9a3db121f554cb16d",
+    "asset_name": "4e465455303030394865726b696d6572303635",
+    "asset_name_ascii": "NFTU0009Herkimer065",
+    "fingerprint": "asset1r9tlf02606jx6e4ynuz5379plugxzl3dkz4ws6",
+    "minting_tx_hash": "e580dc98cd712277d9c9bfb8efce6812800bc5804306c0073a1448757460519a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620950400,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "ipfs": "ipfs://QmWJXhaWyqY6a9sLTS89c5KjJpKxc711UXiP8NvhQXpDWY",
+          "assetType": "NFT",
+          "artistName": "NFT Update!",
+          "sha256Hash": "7e200cfb5602ef6c32bd339560591c422d8d7fc661cabeb73fc0e446d3f7294c",
+          "collectionName": "NFT Update! Promo Card #0009"
+        },
+        "tokens": {
+          "NFTU0009Herkimer065": "NFT update Promo 0009: Herkimer #065"
+        },
+        "policyId": "13dd6e7e3b0718eca13a77559ff09b0665acd3e9a3db121f554cb16d",
+        "publisher": [
+          "https://twitter.com/HerkimerNFT",
+          "https://twitter.com/NFTUpdateIO",
+          "https://nftupdate.io"
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 30002579,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "b1c9e66bd3c407a00728cfce9e163f2d123409e7e58f0b642814acb1"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

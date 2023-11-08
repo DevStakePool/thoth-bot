@@ -1,0 +1,73 @@
+[
+  {
+    "policy_id": "df44bef5a988e0b135145c505d734130f545dc959e764ac14c9ce983",
+    "asset_name": "576f726c646f6643617264616e6f50617263656c303032323236",
+    "asset_name_ascii": "WorldofCardanoParcel002226",
+    "fingerprint": "asset1jvewt6r2tjrzevngcdynawvkvsuultqj574vvg",
+    "minting_tx_hash": "dd9092bbe3e5d599b45a38c5692ecccee8a7d94f85d58e66db55eb3d2e9104c2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647302400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "df44bef5a988e0b135145c505d734130f545dc959e764ac14c9ce983": {
+          "WorldofCardanoParcel000533": {
+            "1XY": "(-128;6)",
+            "2XY": "none",
+            "3XY": "none",
+            "4XY": "none",
+            "5XY": "none",
+            "6XY": "none",
+            "7XY": "none",
+            "8XY": "none",
+            "9XY": "none",
+            "City": "Ventor",
+            "Size": "1",
+            "name": "WorldofCardanoParcel#000533",
+            "files": [
+              {
+                "src": "ipfs://QmUTPXasUPe2mHG3x43x8t6FhAJKFK5fpnYKTH2rCBeB7a",
+                "name": "WorldofCardanoParcel#000533",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUTPXasUPe2mHG3x43x8t6FhAJKFK5fpnYKTH2rCBeB7a",
+            "Region": "Skykapi",
+            "Chapter": "1",
+            "mediaType": "image/png",
+            "Characteristic": "Plain"
+          },
+          "WorldofCardanoParcel002226": {
+            "1XY": "(-121;-72)",
+            "2XY": "none",
+            "3XY": "none",
+            "4XY": "none",
+            "5XY": "none",
+            "6XY": "none",
+            "7XY": "none",
+            "8XY": "none",
+            "9XY": "none",
+            "City": "Boskerta",
+            "Size": "1",
+            "name": "WorldofCardanoParcel#002226",
+            "files": [
+              {
+                "src": "ipfs://QmdFC512pcktW5g1X2c2YgMHH2NkDb5Equ6YukRLAYMrQJ",
+                "name": "WorldofCardanoParcel#002226",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdFC512pcktW5g1X2c2YgMHH2NkDb5Equ6YukRLAYMrQJ",
+            "Region": "Moonfell",
+            "Chapter": "1",
+            "mediaType": "image/png",
+            "Characteristic": "Shore"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

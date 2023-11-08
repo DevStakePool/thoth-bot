@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426c61734d6f6e6574",
+    "asset_name_ascii": "adapeBlasMonet",
+    "fingerprint": "asset165pqn95qw9tzkjuslhgdjvfzfgv9h0pqrpyum5",
+    "minting_tx_hash": "666a39343f3ef06153c7dc18e503da9408413d23fcfa502424da9e7f91ec6a96",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBlasMonet": {
+            "Hat": "Voltaire Wig",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Blas Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmZEMq2DLYHrVTGzpKgR2mEijXEngehuMHmekgFLFSA77E",
+                "name": "Blas Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZEMq2DLYHrVTGzpKgR2mEijXEngehuMHmekgFLFSA77E",
+            "Family": "Monet",
+            "Weapon": "Sword",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Monet family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

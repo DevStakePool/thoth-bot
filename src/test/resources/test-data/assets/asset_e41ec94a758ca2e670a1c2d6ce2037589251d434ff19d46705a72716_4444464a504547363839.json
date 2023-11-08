@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "e41ec94a758ca2e670a1c2d6ce2037589251d434ff19d46705a72716",
+    "asset_name": "4444464a504547363839",
+    "asset_name_ascii": "DDFJPEG689",
+    "fingerprint": "asset1h5stz0waw6efpjeadmzn9tdkjm2ptwkwcplmwv",
+    "minting_tx_hash": "25beaabb7fd02790b9088527fe199d201f92dccbde3261747362c5b330569477",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1661558400,
+    "minting_tx_metadata": {
+      "721": {
+        "e41ec94a758ca2e670a1c2d6ce2037589251d434ff19d46705a72716": {
+          "DDFJPEG689": {
+            "name": "Drunken Dragon Feat Jpeg 689",
+            "files": [
+              {
+                "src": "ipfs://QmYJz5GGE9NjJgrivQWg4mhzr6fy1a1XKWmzWsw4uDHLSJ",
+                "name": "In-game Miniature Front",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmTFxksvLNjY95wX2dHMZN4RJ5so3p7CXMcmk8tTik2UEA",
+                "name": "In-game Miniature Back",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZPG5uYdct1RcBGyjcoMHid98oKpQTXwPdW3Ca6WyFGkb",
+            "website": "http://drunkendragon.games/",
+            "publisher": "https://jpg.store/",
+            "description": "A Drunken Dragon redeemable Pet. Testminted through jpg.store."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

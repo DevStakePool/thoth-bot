@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "7461736d61726b6574",
+    "asset_name_ascii": "tasmarket",
+    "fingerprint": "asset1c538l7wps62k65fq33yft9cgu93c3t22wxtm0c",
+    "minting_tx_hash": "86cd5d4f83850cc659b8d30a4fa7b9b8743cc41f761e5de11e63e4e2710713ac",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668124800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "tasmarket": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$tasmarket",
+            "image": "ipfs://QmVxkSxNKP8P8XBcw6dayRD5zRzxAMEvxTeCvf8QmiKFkn",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

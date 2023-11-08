@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "213d86f3c3b14e55e6dff6e50760621a37a59eacf3680e3e88fd322d",
+    "asset_name": "4b52494c4c",
+    "asset_name_ascii": "KRILL",
+    "fingerprint": "asset19laukwyzmdm7k77jna04lyu6prmnruuz7ct680",
+    "minting_tx_hash": "6c664556d9a8df2c8be1490805c3b7a107d8db21a114b1ec08c6c9dca81a098d",
+    "total_supply": "69042000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679443200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "213d86f3c3b14e55e6dff6e50760621a37a59eacf3680e3e88fd322d": {
+          "KRILL": {
+            "name": "KRILL",
+            "files": [
+              {
+                "src": "ipfs://QmXYr8s7B6qyswDDVFBYGaeDFiJs4ban9tU6eHjXSr6JgW",
+                "name": "KRILL",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXYr8s7B6qyswDDVFBYGaeDFiJs4ban9tU6eHjXSr6JgW",
+            "Ticker": "KRILL",
+            "mediaType": "image/png",
+            "description": "$KRILL is a hundredth part of a $WHALE"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

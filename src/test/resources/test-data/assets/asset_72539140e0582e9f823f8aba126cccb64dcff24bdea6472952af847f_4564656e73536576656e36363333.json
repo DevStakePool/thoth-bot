@@ -1,0 +1,590 @@
+[
+  {
+    "policy_id": "72539140e0582e9f823f8aba126cccb64dcff24bdea6472952af847f",
+    "asset_name": "4564656e73536576656e36363333",
+    "asset_name_ascii": "EdensSeven6633",
+    "fingerprint": "asset1qce9dxwh72cc9kqlzw3rykg4pjgdqplmtktrs8",
+    "minting_tx_hash": "712634e304c2a670b6591c434fa48eb91ba1ee2ac35e68f7503f8f71a08f0d38",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651190400,
+    "minting_tx_metadata": {
+      "721": {
+        "72539140e0582e9f823f8aba126cccb64dcff24bdea6472952af847f": {
+          "EdensSeven6603": {
+            "name": "EdensSeven6603",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmSupVzumfR2uNw8qTaMAfbnK7mRDkPCWANWXxvZVNvAYo",
+                "name": "EdensSeven6603",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSupVzumfR2uNw8qTaMAfbnK7mRDkPCWANWXxvZVNvAYo",
+            "weapon": "Imperial Spike",
+            "clothing": "Pirate",
+            "headwear": "Assassin Mask",
+            "accessory": "Mir's Degraded Book",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Bubblegum (Alien)"
+          },
+          "EdensSeven6604": {
+            "name": "EdensSeven6604",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmRtDYUkFZi8JRZYRcX3PkobghEn85yKNUPXL6kj5mv7oU",
+                "name": "EdensSeven6604",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRtDYUkFZi8JRZYRcX3PkobghEn85yKNUPXL6kj5mv7oU",
+            "weapon": "Desert Scimitars",
+            "clothing": "Wall Street Suit",
+            "headwear": "Dog Ears",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Herbert (Alien)"
+          },
+          "EdensSeven6605": {
+            "name": "EdensSeven6605",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://Qmb2ikqMhLVx3cKwjHMTZiWecNpH62Mq3Mj4976R3Yydsg",
+                "name": "EdensSeven6605",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmb2ikqMhLVx3cKwjHMTZiWecNpH62Mq3Mj4976R3Yydsg",
+            "weapon": "Flaming Marshmellow",
+            "clothing": "Monster Tamer",
+            "headwear": "Goggles",
+            "accessory": "Interstellar",
+            "mediaType": "image/png",
+            "background": "Blue",
+            "expression": "Evil (Alien)"
+          },
+          "EdensSeven6606": {
+            "name": "EdensSeven6606",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://Qmags1UaMdv3nocG9UHxRed9N6RPrgtojmdhc4vm2Mnv5z",
+                "name": "EdensSeven6606",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmags1UaMdv3nocG9UHxRed9N6RPrgtojmdhc4vm2Mnv5z",
+            "weapon": "Magic Staff",
+            "clothing": "EBA Uniform",
+            "headwear": "Cloudfox Mask",
+            "accessory": "Mir's Degraded Book",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Hippie (Alien)"
+          },
+          "EdensSeven6609": {
+            "name": "EdensSeven6609",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmcVW3e6QEvoHzscRMMTTRkqVSstSczGXLAEyL9Jd9eZmY",
+                "name": "EdensSeven6609",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcVW3e6QEvoHzscRMMTTRkqVSstSczGXLAEyL9Jd9eZmY",
+            "weapon": "Big Bang Glove",
+            "clothing": "Fur Coat",
+            "headwear": "Goggles",
+            "accessory": "Interstellar",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Winston (Alien)"
+          },
+          "EdensSeven6611": {
+            "name": "EdensSeven6611",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmZYiLBLcf4tpxaKDK7Po7nBjCLdfXXtGk12pCD2gjuKTp",
+                "name": "EdensSeven6611",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZYiLBLcf4tpxaKDK7Po7nBjCLdfXXtGk12pCD2gjuKTp",
+            "weapon": "Terror Axe",
+            "clothing": "Biker Jacket",
+            "headwear": "Beanie",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Hungry (Alien)"
+          },
+          "EdensSeven6612": {
+            "name": "EdensSeven6612",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmejUC33TmNbET2tkLGadUws5hDJu7qnoQa4ihVXeV4VPh",
+                "name": "EdensSeven6612",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmejUC33TmNbET2tkLGadUws5hDJu7qnoQa4ihVXeV4VPh",
+            "weapon": "Aluminium Bat",
+            "clothing": "Magician",
+            "headwear": "Sushi Warrior",
+            "accessory": "Shadow Servant",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Evil (Alien)"
+          },
+          "EdensSeven6613": {
+            "name": "EdensSeven6613",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmPVpwE4tn1vWik8yPytBMeCub3M7AECojF1EQLWVqhNNp",
+                "name": "EdensSeven6613",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPVpwE4tn1vWik8yPytBMeCub3M7AECojF1EQLWVqhNNp",
+            "weapon": "Magic Staff",
+            "clothing": "Admiral's Suit",
+            "headwear": "Astro Helm",
+            "accessory": "Sunny Day",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Hippie (Alien)"
+          },
+          "EdensSeven6614": {
+            "name": "EdensSeven6614",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmQWEPyYk2cVPqwBnYAwJ93gsv636zBFhih96vMP4Mh8vE",
+                "name": "EdensSeven6614",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQWEPyYk2cVPqwBnYAwJ93gsv636zBFhih96vMP4Mh8vE",
+            "weapon": "Lantern Polearm",
+            "clothing": "Butler's Attire",
+            "headwear": "Puffpuff Hat",
+            "accessory": "Aether Wings",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Hungry (Alien)"
+          },
+          "EdensSeven6615": {
+            "name": "EdensSeven6615",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmWomX5gYheQTPpD2cgmC2yCyh2rAmmhPxPdS1LKAqSE34",
+                "name": "EdensSeven6615",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWomX5gYheQTPpD2cgmC2yCyh2rAmmhPxPdS1LKAqSE34",
+            "weapon": "Beam Saber",
+            "clothing": "Assassin",
+            "headwear": "Goggles",
+            "accessory": "Aura of Lust",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Hippie (Alien)"
+          },
+          "EdensSeven6616": {
+            "name": "EdensSeven6616",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmRxgRhuaQPuyA6qe3foUQQF82GdwWWirL2fNzEL9CgnMv",
+                "name": "EdensSeven6616",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRxgRhuaQPuyA6qe3foUQQF82GdwWWirL2fNzEL9CgnMv",
+            "weapon": "Kendo Stick",
+            "clothing": "Yellow Raincoat",
+            "headwear": "Face Tattoo",
+            "accessory": "Shadow Servant",
+            "mediaType": "image/png",
+            "background": "Blue",
+            "expression": "Bubblegum (Alien)"
+          },
+          "EdensSeven6617": {
+            "name": "EdensSeven6617",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmbjQz67aCgJbsKVrehSKB8YKHnzXsmUYgVZ58dfBLUHQ1",
+                "name": "EdensSeven6617",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbjQz67aCgJbsKVrehSKB8YKHnzXsmUYgVZ58dfBLUHQ1",
+            "weapon": "Ultima axe",
+            "clothing": "Admiral's Suit",
+            "headwear": "Dragon Slayer",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Evil (Alien)"
+          },
+          "EdensSeven6619": {
+            "name": "EdensSeven6619",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmeikDMBDcYwcRBLPYjyh53Hkpy9P2wyf4eCLGuRwsYhP5",
+                "name": "EdensSeven6619",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeikDMBDcYwcRBLPYjyh53Hkpy9P2wyf4eCLGuRwsYhP5",
+            "weapon": "Toy Sword",
+            "clothing": "Angel Outfit",
+            "headwear": "Nobody Mask",
+            "accessory": "Puppet Master",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Bubblegum (Alien)"
+          },
+          "EdensSeven6620": {
+            "name": "EdensSeven6620",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmUgC6zNGQP24oWrsc7EuCaXjedf3gou8en8CMMUnipQfQ",
+                "name": "EdensSeven6620",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUgC6zNGQP24oWrsc7EuCaXjedf3gou8en8CMMUnipQfQ",
+            "weapon": "Desert Scimitars",
+            "clothing": "School Uniform",
+            "headwear": "Goggles",
+            "accessory": "Aura of Gluttony",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Hungry (Alien)"
+          },
+          "EdensSeven6621": {
+            "name": "EdensSeven6621",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://Qmcdk4r789YtS5P5iy5ox5ni9Tp8jJ19UFqi7CAdMt6vuZ",
+                "name": "EdensSeven6621",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmcdk4r789YtS5P5iy5ox5ni9Tp8jJ19UFqi7CAdMt6vuZ",
+            "weapon": "Lantern Polearm",
+            "clothing": "Martial Artist",
+            "headwear": "Puffpuff Hat",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Hippie (Alien)"
+          },
+          "EdensSeven6623": {
+            "name": "EdensSeven6623",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmaN2gNe78WchrX24uxVwaPhyYbQqLzNs6mcjamxJKics1",
+                "name": "EdensSeven6623",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaN2gNe78WchrX24uxVwaPhyYbQqLzNs6mcjamxJKics1",
+            "weapon": "Kendo Stick",
+            "clothing": "Pirate",
+            "headwear": "Soldier Helmet",
+            "accessory": "Mir's Degraded Book",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Winston (Alien)"
+          },
+          "EdensSeven6625": {
+            "name": "EdensSeven6625",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmRwm1Pt4Gf6tZDiT3f8XLsRVafhctb2XGC5eH75m7j8M2",
+                "name": "EdensSeven6625",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRwm1Pt4Gf6tZDiT3f8XLsRVafhctb2XGC5eH75m7j8M2",
+            "weapon": "Terror Axe",
+            "clothing": "Wandering Swordsman",
+            "headwear": "Goggles",
+            "accessory": "Lightning God",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Winston (Alien)"
+          },
+          "EdensSeven6626": {
+            "name": "EdensSeven6626",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmaPARuQaftxqX5P7mXjcW77dJSmzfQUQg6WiLekhDPj7S",
+                "name": "EdensSeven6626",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaPARuQaftxqX5P7mXjcW77dJSmzfQUQg6WiLekhDPj7S",
+            "weapon": "Popsicle",
+            "clothing": "Plumber Overalls",
+            "headwear": "Astro Helm",
+            "accessory": "Aether Wings",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Winston (Alien)"
+          },
+          "EdensSeven6627": {
+            "name": "EdensSeven6627",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmNw8B1r6yZu6P2V5qNUWGvSGuTZjfSVkgVzCuweqK1S3z",
+                "name": "EdensSeven6627",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNw8B1r6yZu6P2V5qNUWGvSGuTZjfSVkgVzCuweqK1S3z",
+            "weapon": "Spirit Staff",
+            "clothing": "Angel Outfit",
+            "headwear": "Cardano Cap",
+            "accessory": "Sunny Day",
+            "mediaType": "image/png",
+            "background": "Blue",
+            "expression": "Evil (Alien)"
+          },
+          "EdensSeven6628": {
+            "name": "EdensSeven6628",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://Qmbui38upJzsUSiVGSSonaYPeVL2gLQRL6vDDaZdyAMwSz",
+                "name": "EdensSeven6628",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmbui38upJzsUSiVGSSonaYPeVL2gLQRL6vDDaZdyAMwSz",
+            "weapon": "Chicken Leg",
+            "clothing": "Futuristic Kimono",
+            "headwear": "Fedora",
+            "accessory": "Sunny Day",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Herbert (Alien)"
+          },
+          "EdensSeven6629": {
+            "name": "EdensSeven6629",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://Qmcb9EG2CJbS9fBi5MTSYh7ytv8GVQ8NJBAdTP7ZomGynZ",
+                "name": "EdensSeven6629",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmcb9EG2CJbS9fBi5MTSYh7ytv8GVQ8NJBAdTP7ZomGynZ",
+            "weapon": "Spirit Staff",
+            "clothing": "Biker Jacket",
+            "headwear": "Cardano Cap",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Evil (Alien)"
+          },
+          "EdensSeven6630": {
+            "name": "EdensSeven6630",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmQvwnszhsXJQP9J8B7EVpQgvwYyFe3EjJtUw8KynCCKGf",
+                "name": "EdensSeven6630",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQvwnszhsXJQP9J8B7EVpQgvwYyFe3EjJtUw8KynCCKGf",
+            "weapon": "Magic Staff",
+            "clothing": "Oversized Sweatshirt",
+            "headwear": "None",
+            "accessory": "Sunny Day",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Hungry (Alien)"
+          },
+          "EdensSeven6632": {
+            "name": "EdensSeven6632",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmaA8CrmUcZFRfAAmRZzczsWWnZykaGkMdMFjihfyDnkwB",
+                "name": "EdensSeven6632",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaA8CrmUcZFRfAAmRZzczsWWnZykaGkMdMFjihfyDnkwB",
+            "weapon": "Spirit Staff",
+            "clothing": "Neko Outfit",
+            "headwear": "Blindfold of Truth",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Hungry (Alien)"
+          },
+          "EdensSeven6633": {
+            "name": "EdensSeven6633",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmVhzoKFqTSYsaJtiHHLnwckiNzKh8c8qAGQZyBrgHntD5",
+                "name": "EdensSeven6633",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVhzoKFqTSYsaJtiHHLnwckiNzKh8c8qAGQZyBrgHntD5",
+            "weapon": "Rainbow Sword",
+            "clothing": "Eden Ranger",
+            "headwear": "Cardano Cap",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Bubblegum (Alien)"
+          },
+          "EdensSeven6634": {
+            "name": "EdensSeven6634",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://Qmcai7EfRtPGST7FM9keR2KLydSJiNPW4VBy4eBnxkWx7X",
+                "name": "EdensSeven6634",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmcai7EfRtPGST7FM9keR2KLydSJiNPW4VBy4eBnxkWx7X",
+            "weapon": "Spirit Staff",
+            "clothing": "Magic Knight",
+            "headwear": "None",
+            "accessory": "Interstellar",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Bubblegum (Alien)"
+          },
+          "EdensSeven6635": {
+            "name": "EdensSeven6635",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmXiezUuecr6EZ6AsBMNexKp2iWBkUDLX6kNPYStzLSfUa",
+                "name": "EdensSeven6635",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXiezUuecr6EZ6AsBMNexKp2iWBkUDLX6kNPYStzLSfUa",
+            "weapon": "Chicken Leg",
+            "clothing": "Snow Rebel",
+            "headwear": "Face Tattoo",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Evil (Alien)"
+          },
+          "EdensSeven6638": {
+            "name": "EdensSeven6638",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmY32GESunJ9szEE7cMu1r8fNeSrKhp5hjjkQGbqzd3kSw",
+                "name": "EdensSeven6638",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmY32GESunJ9szEE7cMu1r8fNeSrKhp5hjjkQGbqzd3kSw",
+            "weapon": "Desert Scimitars",
+            "clothing": "Butler's Attire",
+            "headwear": "Goggles",
+            "accessory": "Aura of Lust",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Evil (Alien)"
+          },
+          "EdensSeven6639": {
+            "name": "EdensSeven6639",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmbNbSP8PmVvwWbtaKJPay82AFHAEDJ4XSKgSvX8DA5ofc",
+                "name": "EdensSeven6639",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbNbSP8PmVvwWbtaKJPay82AFHAEDJ4XSKgSvX8DA5ofc",
+            "weapon": "Lantern Polearm",
+            "clothing": "Plumber Overalls",
+            "headwear": "Fedora",
+            "accessory": "Rainbow Wings",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Bubblegum (Alien)"
+          },
+          "EdensSeven6640": {
+            "name": "EdensSeven6640",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmRM8Dkg51iRsTw8Q1HsME8JfiPmWfkQdhq43d88vm5Lmn",
+                "name": "EdensSeven6640",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRM8Dkg51iRsTw8Q1HsME8JfiPmWfkQdhq43d88vm5Lmn",
+            "weapon": "Flaming Marshmellow",
+            "clothing": "Death God",
+            "headwear": "Cardano Jaws",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Hungry (Alien)"
+          },
+          "EdensSeven6641": {
+            "name": "EdensSeven6641",
+            "race": "Alien",
+            "files": [
+              {
+                "src": "ipfs://QmSc2heRZdUbMRG49XRqzj122gewm7t9BePWympKrWTm8m",
+                "name": "EdensSeven6641",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSc2heRZdUbMRG49XRqzj122gewm7t9BePWympKrWTm8m",
+            "weapon": "Flag Pole",
+            "clothing": "Eastern Robes",
+            "headwear": "Beanie",
+            "accessory": "Interstellar",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Evil (Alien)"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

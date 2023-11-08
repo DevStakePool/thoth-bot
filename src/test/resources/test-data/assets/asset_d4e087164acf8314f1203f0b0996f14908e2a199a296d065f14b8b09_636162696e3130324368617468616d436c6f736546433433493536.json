@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3130324368617468616d436c6f736546433433493536",
+    "asset_name_ascii": "cabin102ChathamCloseFC43I56",
+    "fingerprint": "asset1f2argmvv4ehttx03gpeeemnatmka22aywq5704",
+    "minting_tx_hash": "b3d51e443c2710011289b935fe6f7e25f5f3cefa529ba63e2464e51479339bd3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651190400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin102ChathamCloseFC43I56": {
+            "name": "102 Chatham Close, FC43 I56",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Chatham Close",
+            "District": "Fort Craras",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "I",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "43",
+            "Y Coordinate": "56"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "00a931fbe491058b6a8c5770f686d53066fe2e8aa6a7624c5a2cae17",
+    "asset_name": "444556",
+    "asset_name_ascii": "DEV",
+    "fingerprint": "asset158qkhau6qg080h28t4zsrwgn0n0nmsjyf9rzrj",
+    "minting_tx_hash": "be0c5e09ef8804f565e3c7400853f1dad4fe0a0869e4f465a3680f9483811004",
+    "total_supply": "9999",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1685404800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "00a931fbe491058b6a8c5770f686d53066fe2e8aa6a7624c5a2cae17": {
+          "DEV": {
+            "name": "Patron Program Supporter",
+            "files": [
+              {
+                "src": "ipfs://QmczXfxAfNMNzhcLKcAoTCBSFpZkbKTGR85RjZJF62Zsig",
+                "name": "DEV",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmczXfxAfNMNzhcLKcAoTCBSFpZkbKTGR85RjZJF62Zsig",
+            "symbol": "DEV",
+            "Website": "https://devstakepool.github.io/",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 93874448
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "DEV Pool Patron Program Supporter Token",
+            "totalSupply": 9999
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

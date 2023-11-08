@@ -355,21 +355,17 @@ public class IntegrationNoSchedulerTest {
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Assets for address $")).count());
 
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("<a href=\"https://pool.pm/asset1gc08w2lamu0zvcx7rxz7l86xlpfzy00qygdt0z\">COC</a> 6,005,000,000\n")).count());
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("<a href=\"https://pool.pm/asset1zqjy7fye4s5s5j4p8j0v5zeasp33wvskx35js6\">gioconda</a> 1\n")).count());
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1gc08w2lamu0zvcx7rxz7l86xlpfzy00qygdt0z\">COC</a> 26,845,000,000")));
 
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Shown 10/10")).count());
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1zqjy7fye4s5s5j4p8j0v5zeasp33wvskx35js6\">gioconda</a> 1")));
 
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("Shown 5/5")));
 
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Page 1/1")).count());
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("Page 1/1")));
 
         // get assets as reply markup
         Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")
@@ -431,26 +427,22 @@ public class IntegrationNoSchedulerTest {
 
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
-                        .equals(Boolean.valueOf(true))).count());
+                        .equals(Boolean.TRUE)).count());
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Assets for address $")).count());
 
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("<a href=\"https://pool.pm/asset1a8d9lcarrlpjmgspyjay4pltr5e9ydkv4vs9vz\">2Bill4468</a> 1")).count());
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("<a href=\"https://pool.pm/asset19v3s007ywl89vu6wlkgpztlcn3jf9c0s40empy\">927</a> 1")).count());
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1l5rt8a4jylqzk0scds7cen8k9lnhvsp8yzss3j\">CaseyBlackRed0465</a> 1")));
 
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Shown 10/856")).count());
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1sdzme5cnwgqk6u94k0fnlymenvnvfv3jm78dcz\">CLAY</a> 47,500.00")));
 
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("Shown 10/111")));
 
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Page 1/86")).count());
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("Page 1/12")));
 
         // get assets as reply markup
         Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")
@@ -478,17 +470,15 @@ public class IntegrationNoSchedulerTest {
         sentMessages = argumentCaptorNextPage.getAllValues();
         Assertions.assertEquals(3, sentMessages.size());
 
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Shown 20/856")).count());
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("Shown 20/111")));
+
+        Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
+                .anyMatch(t -> t.contains("Page 2/12")));
 
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("Page 2/86")).count());
-
-        Assertions.assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("<a href=\"https://pool.pm/asset1pxyva5vwaqeqwnzwyj7rttxxwlav9upgssscrd\">Berry54</a> 1")).count());
+                        .toString().contains("<a href=\"https://pool.pm/asset1vl0h0ew4rn9szfedn8d750w4tl46ynjzyja5ra\">CaseyPurple0362</a> 1")).count());
     }
 
     @Test

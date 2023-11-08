@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e313336417065466f726365426f756c657661726454433535483337",
+    "asset_name_ascii": "cabin136ApeForceBoulevardTC55H37",
+    "fingerprint": "asset15stgmssez80hcf486dsk65vft5j0e3elh0f8p5",
+    "minting_tx_hash": "35dd686bdaf1527e9cadec54ca07e566d0c720764b720652ad8fbaa4955521f5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin136ApeForceBoulevardTC55H37": {
+            "name": "136 Ape Force Boulevard, TC55 H37",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Ape Force Boulevard",
+            "District": "Tasama City",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "H",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "55",
+            "Y Coordinate": "37"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

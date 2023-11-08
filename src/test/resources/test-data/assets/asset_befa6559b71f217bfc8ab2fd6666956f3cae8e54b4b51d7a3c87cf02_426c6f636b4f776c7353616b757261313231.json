@@ -1,0 +1,53 @@
+[
+  {
+    "policy_id": "befa6559b71f217bfc8ab2fd6666956f3cae8e54b4b51d7a3c87cf02",
+    "asset_name": "426c6f636b4f776c7353616b757261313231",
+    "asset_name_ascii": "BlockOwlsSakura121",
+    "fingerprint": "asset1gm3trrn4hdr7478ahm6ha0h3098lzc9gg4wcp2",
+    "minting_tx_hash": "355c3eea8dc9c8c1043f005e462a138a2bb609a6bdb69186f4ef305865fc7468",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1656720000,
+    "minting_tx_metadata": {
+      "721": {
+        "befa6559b71f217bfc8ab2fd6666956f3cae8e54b4b51d7a3c87cf02": {
+          "BlockOwlsSakura121": {
+            "name": "BlockOwls Sakura",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafybeia",
+                  "ro42wj6zq5lduycow5f6our7tnbguofwipjskcsrxvx4jw6fksa"
+                ],
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": [
+              "ipfs://bafybeic",
+              "oqb7ubo5oagadhun5s3vg4dghsyqw7s3voxigcnycomc5kavioe"
+            ],
+            "number": "121",
+            "rarity": "Common",
+            "Chapter": "Chapter 1. GBOiC Part 3 C#1",
+            "Project": "BlockOwls",
+            "Website": "https://blockowls.io",
+            "Software": "AI+PS+C4D+RS+AE",
+            "Minted by": "https://tygar-pool.com",
+            "attributes": {
+              "State": "Whirled",
+              "Gender": "Female",
+              "Body Shape": "Block",
+              "Main Material": "Porcelain+Rubber",
+              "Display Box Base": "TexturedCardboard+Rubber",
+              "Display Box Glass": "PlainPlexi"
+            },
+            "Block Owls ID": "#102",
+            "Author/Designer": "Ctoy"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

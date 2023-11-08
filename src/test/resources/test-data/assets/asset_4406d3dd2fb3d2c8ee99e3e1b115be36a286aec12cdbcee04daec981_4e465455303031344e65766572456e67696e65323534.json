@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "4406d3dd2fb3d2c8ee99e3e1b115be36a286aec12cdbcee04daec981",
+    "asset_name": "4e465455303031344e65766572456e67696e65323534",
+    "asset_name_ascii": "NFTU0014NeverEngine254",
+    "fingerprint": "asset1tstk9tl50hddsuz5zt4rgh7nzflf235kwlkync",
+    "minting_tx_hash": "cc9204db3612952d1561a47e88c53840e2c9c3aaf34d9a86515ca6597924f927",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1621987200,
+    "minting_tx_metadata": {
+      "721": {
+        "asset": {
+          "ipfs": "ipfs://QmNhe3BCTQjfwgGk5YZ7mjHEj7q7UPs7MgqyT4RYCbCrcQ",
+          "mimeType": "image/gif",
+          "assetType": "NFT",
+          "artistName": "NFT Update!",
+          "attributes": {
+            "image": "ipfs://QmNhe3BCTQjfwgGk5YZ7mjHEj7q7UPs7MgqyT4RYCbCrcQ"
+          },
+          "sha256Hash": "4d2a43f152143ecf30676b81badf0ce48c749d67cf512f9dc4f1e4e7aa3dc022",
+          "collectionName": "NFT Update! Promo Card #0014"
+        },
+        "tokens": {
+          "NFTU0014NeverEngine254": "NFT Update Promo 0014: Never Engine #254"
+        },
+        "policyId": "4406d3dd2fb3d2c8ee99e3e1b115be36a286aec12cdbcee04daec981",
+        "publisher": [
+          "https://twitter.com/TheNeverEngine",
+          "https://twitter.com/NFTUpdateIO",
+          "https://nftupdate.io"
+        ],
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 31033694,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "2a2535697a165be0d781cd51a7c8bdf78900c9e13eeb596ed92c9598"
+            }
+          ]
+        },
+        "cnftFormatVersion": "0.01"
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

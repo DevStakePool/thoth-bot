@@ -1,0 +1,87 @@
+[
+  {
+    "policy_id": "4db36a48c088879b67612abea7236a2476d38d04d51e29df240eb007",
+    "asset_name": "416c69656e32303534",
+    "asset_name_ascii": "Alien2054",
+    "fingerprint": "asset1w2yz6v7g3ply4tfha0n6zkgz40mdzqtpe9npyy",
+    "minting_tx_hash": "d9682803324c9c7c52c6c46679ae1b1ab0840a244ab87948d0d5d3b7ec035849",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673222400,
+    "minting_tx_metadata": {
+      "721": {
+        "3270d31cb0803a014924e186d1f0b672ccff0ecb9f6d4b4e2709b301": {
+          "Fight2054": {
+            "name": "Fight #2054",
+            "type": "image/png",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafkreie2xua33mypg2ht53dgyrnmnecthrlmglbrf4xvtriynlpye4o",
+                  "c34"
+                ],
+                "name": "Fight",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": [
+              "ipfs://bafkreie2xua33mypg2ht53dgyrnmnecthrlmglbrf4xvtriynlpye4o",
+              "c34"
+            ],
+            "traits": {
+              "Hunter": "ZombieHunter05772",
+              "Zombie": "ZombieChains01701",
+              "Hunter KO": "false",
+              "Zombie KO": "false",
+              "Background": "Wormhole",
+              "Fight Winner": "Hunter",
+              "Hunter Record": "001-000",
+              "Zombie Record": "000-001",
+              "Hunter Life Bar": "60",
+              "Zombie Life Bar": "30"
+            },
+            "Project": "Zombie Fight Club",
+            "twitter": "https://twitter.com/ZombieChains",
+            "website": "https://zombiechains.io/",
+            "copyright": "2022 Zombie Chains"
+          }
+        },
+        "4db36a48c088879b67612abea7236a2476d38d04d51e29df240eb007": {
+          "Alien2054": {
+            "name": "Alien #2054",
+            "type": "image/png",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafkreihwuuf2d7tq5y2egho5wkzfs6uabzwcgfjxqjx2bievloy2khh",
+                  "ncq"
+                ],
+                "name": "Alien",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": [
+              "ipfs://bafkreihwuuf2d7tq5y2egho5wkzfs6uabzwcgfjxqjx2bievloy2khh",
+              "ncq"
+            ],
+            "traits": {
+              "Hat": "PsychicHelmet",
+              "Eyes": "Afraid",
+              "Hand": "Backhand",
+              "Skin": "Legions",
+              "Mouth": "Drooling",
+              "Clothing": "OpenYourMind",
+              "Background": "Ice"
+            },
+            "Project": "Zombie Fight Club Aliens",
+            "twitter": "https://twitter.com/ZombieChains",
+            "website": "https://zombiechains.io/",
+            "copyright": "2022 Zombie Chains"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

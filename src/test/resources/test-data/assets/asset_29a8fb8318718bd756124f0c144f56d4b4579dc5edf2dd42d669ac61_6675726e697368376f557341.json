@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368376f557341",
+    "asset_name_ascii": "furnish7oUsA",
+    "fingerprint": "asset140r2d4rxlu73yl9q6svnfnwdksw7xax2gs4v9q",
+    "minting_tx_hash": "1b0d680b422138d9e92c6e16176db7ff8024296604d73b0286752ae8c66a78ac",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672099200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish7oUsA": {
+            "id": "7oUsA",
+            "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "name": "Rug",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+                "name": "Rug",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmU31Twc3Nvc9gchWRRVMkFPTskqiJdFWWm6zsnwMPj7TJ",
+                "name": "Rug",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmV65MKJZaK67QLbCGziBhbmnwHsFiyDuCewp4T2DSaBCP",
+                "name": "Rug",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "description": "Hand-crafted by Simon Wilson.",
+            "furnitureId": 218
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

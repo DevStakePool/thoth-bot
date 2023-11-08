@@ -1,0 +1,76 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "63727970746f636f77626f7973",
+    "asset_name_ascii": "cryptocowboys",
+    "fingerprint": "asset1laecap2qm26vfxvhdwh2ns800h92n0w7992c00",
+    "minting_tx_hash": "3a322bc6b804596637c58b25d8ffbd6bf7c8b0c2a5341d2f42faf4d8dacf3bb9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668384000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "metadigit": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$metadigit",
+            "image": "ipfs://QmSLPV39TgZLMhj2Nt74AvfQUJknxYLWsStj51QWukkFEr",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "metatowns": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$metatowns",
+            "image": "ipfs://QmbWsVDyPiAHJgMF8KYc8UeenFdnKRtWaDD87naN8aa1QX",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "cryptocowboys": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$cryptocowboys",
+            "image": "ipfs://QmajaYGZgybLPWpQDgXDbPV5mcQFQTusMCHdYVkZyEkciD",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "xuantianshangdi": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$xuantianshangdi",
+            "image": "ipfs://QmY6QcwCJK1jiDHXgHGpDPYWtdTJ5VuX3gUVsd6jtYbSaA",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

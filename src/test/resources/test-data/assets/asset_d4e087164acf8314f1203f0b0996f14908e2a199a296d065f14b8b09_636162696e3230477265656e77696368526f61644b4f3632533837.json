@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3230477265656e77696368526f61644b4f3632533837",
+    "asset_name_ascii": "cabin20GreenwichRoadKO62S87",
+    "fingerprint": "asset1p6fyda5eqfr9fh8r49v4wjaqjay9wp7ka9n6n4",
+    "minting_tx_hash": "4486bc2f9ccfd61b627265156ee4e6c2d151c300d424d6f4404adbce506aaf2d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin20GreenwichRoadKO62S87": {
+            "name": "20 Greenwich Road, KO62 S87",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Greenwich Road",
+            "District": "Koatwoolf",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "S",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "62",
+            "Y Coordinate": "87"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654c696e636f6c6e4576616e73",
+    "asset_name_ascii": "adapeLincolnEvans",
+    "fingerprint": "asset1srfdkr3r9vfhyfk28mdat9hw3nzu8tynaapq9h",
+    "minting_tx_hash": "be7cf09bf4557a7658d2430a18e921c5b272c3840fcc444bc1951edee6aa7642",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeLincolnEvans": {
+            "Hat": "Pirate Hat",
+            "Body": "Cardigan",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Lincoln Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmV8MK8M45RMTmS4m1qfKS6FNTayVfi8UuyjdPQvLdHNBs",
+                "name": "Lincoln Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmV8MK8M45RMTmS4m1qfKS6FNTayVfi8UuyjdPQvLdHNBs",
+            "Family": "Evans",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

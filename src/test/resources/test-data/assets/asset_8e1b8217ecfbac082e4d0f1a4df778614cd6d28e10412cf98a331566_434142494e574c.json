@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "8e1b8217ecfbac082e4d0f1a4df778614cd6d28e10412cf98a331566",
+    "asset_name": "434142494e574c",
+    "asset_name_ascii": "CABINWL",
+    "fingerprint": "asset1c8jnaagk92tkz95lfpw53yyh04t30zwv7n2wl8",
+    "minting_tx_hash": "269b8e9e29532173a7ee7d7562f72ca86f22de25e6a4309a43587d7b7973c426",
+    "total_supply": "15000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650844800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8e1b8217ecfbac082e4d0f1a4df778614cd6d28e10412cf98a331566": {
+          "CABINWL": {
+            "name": "CABINWL",
+            "files": [
+              {
+                "src": "ipfs://QmYBxciv8TAchXqTzAzpcZKCiTn692ZHtgEiFVVwZde7wt",
+                "name": "CABINWL",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYBxciv8TAchXqTzAzpcZKCiTn692ZHtgEiFVVwZde7wt",
+            "symbol": "CABINWL",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 59290212
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Cabin WL for The Ape Society",
+            "totalSupply": 15000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

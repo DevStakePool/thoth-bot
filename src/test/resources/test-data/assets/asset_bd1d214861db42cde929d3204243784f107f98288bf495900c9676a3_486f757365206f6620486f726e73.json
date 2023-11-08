@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "bd1d214861db42cde929d3204243784f107f98288bf495900c9676a3",
+    "asset_name": "486f757365206f6620486f726e73",
+    "asset_name_ascii": "House of Horns",
+    "fingerprint": "asset16km4w2zcsatz2h4uyavk4hu3zc20mf6mdkp6xx",
+    "minting_tx_hash": "6ff4ecce79d3d73bdf39367051ed29435eccdb0d1d43ae66a0a3f2e382285e0a",
+    "total_supply": "4999",
+    "mint_cnt": 4,
+    "burn_cnt": 3,
+    "creation_time": 1664150400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "bd1d214861db42cde929d3204243784f107f98288bf495900c9676a3": {
+          "House of Horns": {
+            "name": "House of Horns",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafybeicyl5ozp5n62mkcvv7mddcweiqgm5cuaz5xtqpxre2kvnsuwvtm",
+                  "2m"
+                ],
+                "name": "House of Horns",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "bafybeifpp2noreoqjwdjjf2w4l5bghuncvbedmdouhfx52x7fydrq3cyga",
+            "Credits": "Smithy_3D",
+            "Twitter": "twitter.com/HouseofHornsNFT",
+            "Description": "Token for minting House of Horns Genesis Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

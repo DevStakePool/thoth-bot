@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3536426561756d6f6e74526f61644d483335433936",
+    "asset_name_ascii": "cabin56BeaumontRoadMH35C96",
+    "fingerprint": "asset1ffc9n5kq3synvjmcwc4u6t77tetqf3u8q5mw99",
+    "minting_tx_hash": "75b21904f10c72c7cd4a3e8df9b362e6a6d22fd7d6ac32a70d3ecf0ba572e0a4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin56BeaumontRoadMH35C96": {
+            "name": "56 Beaumont Road, MH35 C96",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+                "name": "Chateau.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbyKxhiGA2TMyJYr6wgP3sHSNavpf35mZrCya2RvgaP5P",
+                "name": "Chateau.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVLkR52JwV3YVyZr2KJtYhmpPp1vfEkdPPqzPJE1MmSjm",
+                "name": "Chateau.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+            "Street": "Beaumont Road",
+            "District": "Mariana Heights",
+            "mediaType": "image/gif",
+            "Cabin Size": "Chateau",
+            "SLVD Rating": "C",
+            "description": "A Chateau in The Ape Society",
+            "X Coordinate": "35",
+            "Y Coordinate": "96"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

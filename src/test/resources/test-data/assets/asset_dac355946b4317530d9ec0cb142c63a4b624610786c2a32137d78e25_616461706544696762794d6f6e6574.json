@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544696762794d6f6e6574",
+    "asset_name_ascii": "adapeDigbyMonet",
+    "fingerprint": "asset1ep3r4rcva6jh6gk85nycwnrceuu8faqrlzlwxz",
+    "minting_tx_hash": "43aa599a611604e5cb3e5ae0f356975315f3b95e80ae19b82eab8031bd40b48e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDigbyMonet": {
+            "Hat": "Top Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Cardano",
+            "name": "Digby Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmcRK8HuNiHgfTWv235EBsBkZtEJtfYnQD1NNtKyz2MhDC",
+                "name": "Digby Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcRK8HuNiHgfTWv235EBsBkZtEJtfYnQD1NNtKyz2MhDC",
+            "Family": "Monet",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

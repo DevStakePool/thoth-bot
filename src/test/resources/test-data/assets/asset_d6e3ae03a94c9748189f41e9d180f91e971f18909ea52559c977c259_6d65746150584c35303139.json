@@ -1,0 +1,101 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c35303139",
+    "asset_name_ascii": "metaPXL5019",
+    "fingerprint": "asset1ash772fzxuk90tekkgav8u8gus9ed3cels8v79",
+    "minting_tx_hash": "cdc053a1a646cec9ed0a8cc8b652f7bc0baec3addd00ad5825e26c03d551b5b9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650844800,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL3510": {
+            "name": "metaPXL#3510",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmawpKznKHykNep2ZFxNkyEGwDe32NDtf1KTyqCNuA8AFc",
+                "name": "metaPXL#3510",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRKJ7sfWFs3k36spPBTvuDAVLwG4k282mhmXFqQkwhsYt",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "beard",
+              "sherlock hat"
+            ],
+            "description": "The official 3D collectible version of PXL#3510"
+          },
+          "metaPXL5019": {
+            "name": "metaPXL#5019",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmXt2jT7k59jCve2fqwHzD8aH6o1UrRsUuv4NZofyWPBjW",
+                "name": "metaPXL#5019",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcoLofVVAGkGcVoKtaPtQtq9KKQ4ofkjk2jYMZPLSDS9p",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "aviators",
+              "sherlock hat"
+            ],
+            "description": "The official 3D collectible version of PXL#5019"
+          },
+          "metaPXL7086": {
+            "name": "metaPXL#7086",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmcNdx9SGwg3H2qVFn5RMY6fQz3WJdyb1BAZTqGhNF3v3X",
+                "name": "metaPXL#7086",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWipFL2J6fEb218LsbtV3dRAKVxr6bvLVCHvSGyymLsQu",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "aviators",
+              "chain",
+              "diamond earrings",
+              "face bandana",
+              "top knot",
+              "turtleneck"
+            ],
+            "description": "The official 3D collectible version of PXL#7086"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

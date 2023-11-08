@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706542726f64657269636b4d6f6e6574",
+    "asset_name_ascii": "adapeBroderickMonet",
+    "fingerprint": "asset1wl9grz69sj07rqlg7fx0q0xcdsa2mr64p6zhen",
+    "minting_tx_hash": "9d521ec55d2f8774b245536e9b22b7728ac0115199060d80767cc104b9a1aacd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBroderickMonet": {
+            "Hat": "Hoodie",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Orange",
+            "name": "Broderick Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmNeNLPoyGMfdVHpTgAtE9mHoySFbCxeeq9fA7dK1yLjck",
+                "name": "Broderick Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNeNLPoyGMfdVHpTgAtE9mHoySFbCxeeq9fA7dK1yLjck",
+            "Family": "Monet",
+            "Weapon": "Sword",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]

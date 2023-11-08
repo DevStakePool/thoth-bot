@@ -1,0 +1,103 @@
+[
+  {
+    "policy_id": "48ef9fb80a0ad2fd9f3d5b981ef3bfac2bae84137523217b387a775b",
+    "asset_name": "466f7274476f7474656e457030324b696433383035",
+    "asset_name_ascii": "FortGottenEp02Kid3805",
+    "fingerprint": "asset1d3luk59et0rhq8celm26hw46cwshmmr6h3njsg",
+    "minting_tx_hash": "469cde5522451f2d87f8c68a1ae898bfd5892653673e08c09afe174c2acf8a2e",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1680134400,
+    "minting_tx_metadata": {
+      "721": {
+        "33e59dcc1868d18da07fb12e47349f1f4ff3d6b931318c212eaee5c1": {
+          "OrangePeelShirt0004": {
+            "Camp": "Buruka",
+            "Type": "Clothing",
+            "name": "Orange Peel Shirt #0004",
+            "Frame": "Wooden",
+            "files": [
+              {
+                "src": "ipfs://QmcTDgCv4bwiXLAhkRfGknicBaP1VSGd9xEoDY4oowDNyU",
+                "name": "Orange Peel Shirt #0004",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPKzUTmzetms1vN7c7arqgXsSdbKhxtsCtyu9p43RkT9E",
+            "Number": "0004/0041",
+            "Special": "None",
+            "mediaType": "image/jpg",
+            "Collection": "Fort Gotten - Beyond the Forest",
+            "Description": "None",
+            "Information": [
+              "This is an item equipable by Fort Gotten Kidz.",
+              "https://fort-gotten.com"
+            ]
+          },
+          "FactoryExplorerHat0001": {
+            "Camp": "Buruka",
+            "Type": "Hat",
+            "name": "Factory Explorer Hat #0001",
+            "Frame": "Wooden",
+            "files": [
+              {
+                "src": "ipfs://QmTKQ2uuzB9vwDBV7Y29GxKThuBXLfdm2NCixZuGDZpn31",
+                "name": "Factory Explorer Hat #0001",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXswaQJJxY99R1pL57cbzoYfCT1WttPC4wvgYU8C57jB7",
+            "Number": "0001/0047",
+            "Special": "None",
+            "mediaType": "image/jpg",
+            "Collection": "Fort Gotten - Beyond the Forest",
+            "Description": "None",
+            "Information": [
+              "This is an item equipable by Fort Gotten Kidz.",
+              "https://fort-gotten.com"
+            ]
+          }
+        },
+        "48ef9fb80a0ad2fd9f3d5b981ef3bfac2bae84137523217b387a775b": {
+          "FortGottenEp02Kid3805": {
+            "FGI": [
+              "43d213129294a-102120122110"
+            ],
+            "Hat": "None",
+            "Body": "Berry Blue",
+            "Camp": "BURUKA",
+            "Mask": "None",
+            "Role": "Scout",
+            "name": "Fort Gotten Ep02 Kid #3805",
+            "Staff": "None",
+            "files": [
+              {
+                "src": "ipfs://QmZEKTwE54FHr9sC3fC77aX4MfM3Tg3hkLGvob4mru55n8",
+                "name": "Fort Gotten Ep02 Kid #3805",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUx2CrFMCZat21i9KtgxnBzJTTsMnXmwLXjF8yAGyPaWG",
+            "Region": "Mountains",
+            "Straps": "None",
+            "Episode": "Beyond The Forest",
+            "Website": "https://fort-gotten.com",
+            "Backpack": "None",
+            "Clothing": "None",
+            "Necklace": "None",
+            "Accessory": "None",
+            "mediaType": "image/png",
+            "Kid Number": "3805",
+            "Wheelchair": "None",
+            "Kidz Journal": {
+              "Achievement": "None",
+              "Customizations": 1
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null
+  }
+]
