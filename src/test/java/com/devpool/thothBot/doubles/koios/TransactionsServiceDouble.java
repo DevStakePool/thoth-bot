@@ -1,9 +1,13 @@
 package com.devpool.thothBot.doubles.koios;
 
 import rest.koios.client.backend.api.base.Result;
+import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.transactions.TransactionsService;
-import rest.koios.client.backend.api.transactions.model.*;
+import rest.koios.client.backend.api.transactions.model.TxInfo;
+import rest.koios.client.backend.api.transactions.model.TxMetadata;
+import rest.koios.client.backend.api.transactions.model.TxMetadataLabels;
+import rest.koios.client.backend.api.transactions.model.TxStatus;
 import rest.koios.client.backend.factory.options.Options;
 
 import java.io.IOException;
@@ -11,6 +15,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TransactionsServiceDouble implements TransactionsService {
+    @Override
+    public Result<List<UTxO>> getUTxOInfo(List<String> list, boolean b) throws ApiException {
+        return null;
+    }
+
     @Override
     public Result<TxInfo> getTransactionInformation(String txHash) throws ApiException {
         return null;
@@ -25,11 +34,6 @@ public class TransactionsServiceDouble implements TransactionsService {
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }
-    }
-
-    @Override
-    public Result<List<TxUtxo>> getTransactionUTxOs(List<String> txHashes, Options options) throws ApiException {
-        return null;
     }
 
     @Override

@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
-import rest.koios.client.backend.api.common.TxHash;
+import rest.koios.client.backend.api.base.common.TxHash;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxCertificate;
 import rest.koios.client.backend.api.transactions.model.TxIO;
@@ -242,7 +242,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                         }
                     }
 
-                    List<rest.koios.client.backend.api.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
+                    List<rest.koios.client.backend.api.base.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
 
                     LOG.debug("All assets:\n{}", allAssets);
                     Double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
@@ -357,7 +357,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                     // Any assets?
                     if (!allAssets.isEmpty()) {
-                        for (rest.koios.client.backend.api.common.Asset asset : allAssets) {
+                        for (rest.koios.client.backend.api.base.common.Asset asset : allAssets) {
                             Object assetQuantity = this.assetFacade.getAssetQuantity(asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
 
                             messageBuilder.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:")).append(hexToAscii(asset.getAssetName())).append(" ").append(this.assetFacade.formatAssetQuantity(assetQuantity));

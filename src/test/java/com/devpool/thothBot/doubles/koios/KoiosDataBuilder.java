@@ -6,13 +6,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import rest.koios.client.backend.api.account.model.AccountAddress;
-import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.account.model.AccountRewards;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
-import rest.koios.client.backend.api.common.TxHash;
+import rest.koios.client.backend.api.base.common.TxHash;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
@@ -133,14 +133,14 @@ public class KoiosDataBuilder {
         return data;
     }
 
-    public static List<AccountAssets> getAccountAssets() throws IOException {
+    public static List<AccountAsset> getAccountAssets() throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
         String f = classLoader.getResource(ACCOUNT_ASSETS_JSON_FILE).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-        List<AccountAssets> data = mapper.readValue(jsonFile, new TypeReference<>() {
+        List<AccountAsset> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
 
         return data;
