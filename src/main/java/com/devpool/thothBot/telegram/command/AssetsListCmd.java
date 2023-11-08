@@ -19,14 +19,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
-import rest.koios.client.backend.api.common.Asset;
+import rest.koios.client.backend.api.base.common.Asset;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
@@ -101,7 +100,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
 
             List<Asset> assets;
             if (user.isStakeAddress()) {
-                Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
+                Result<List<AccountAsset>> result = this.koiosFacade.getKoiosService()
                         .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
                 if (!result.isSuccessful()) {
                     bot.execute(new SendMessage(chatId, String.format("Could not get account assets for staking address %s. %s (%d)",
@@ -109,13 +108,12 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                     return;
                 }
 
-                List<AccountAssets> assetsList = result.getValue();
-                Optional<AccountAssets> assetForAccount = assetsList.stream().findFirst();
-                if (assetForAccount.isEmpty()) {
+                List<AccountAsset> assetsList = result.getValue();
+                if (assetsList.isEmpty()) {
                     bot.execute(new SendMessage(chatId, "No assets found for this account"));
                     return;
                 }
-                assets = assetForAccount.get().getAssetList();
+                assets = assetsList.stream().map(Asset.class::cast).collect(Collectors.toList());
             } else {
                 Result<List<AddressAsset>> result = this.koiosFacade.getKoiosService()
                         .getAddressService().getAddressAssets(List.of(user.getAddress()), null);
@@ -126,12 +124,11 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                 }
 
                 List<AddressAsset> assetsList = result.getValue();
-                Optional<AddressAsset> assetsForAddr = assetsList.stream().findFirst();
-                if (assetsForAddr.isEmpty()) {
+                if (assetsList.isEmpty()) {
                     bot.execute(new SendMessage(chatId, "No assets found for this address"));
                     return;
                 }
-                assets = assetsForAddr.get().getAssetList();
+                assets = assetsList.stream().map(Asset.class::cast).collect(Collectors.toList());
             }
 
             // Sort the assets first

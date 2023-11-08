@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 import org.springframework.stereotype.Component;
-import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.Result;
@@ -24,6 +24,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 @Component
 public class AssetFacade implements Runnable {
@@ -139,14 +140,6 @@ public class AssetFacade implements Runnable {
         return this.assetsDao.countAll();
     }
 
-    public Optional<Long> getCacheIdFor(rest.koios.client.backend.api.common.Asset asset) {
-        Optional<Asset> a = this.assetsDao.getAssetInformation(asset.getPolicyId(), asset.getAssetName());
-        if (a.isPresent())
-            return Optional.of(a.get().getId());
-        else
-            return Optional.empty();
-    }
-
     public class UserScannerWorker implements Runnable {
         private final Logger LOG = LoggerFactory.getLogger(UserScannerWorker.class);
         private final User user;
@@ -161,22 +154,21 @@ public class AssetFacade implements Runnable {
         public void run() {
             try {
                 LOG.debug("Syncing assets for account {}", this.user.getAddress());
-                List<rest.koios.client.backend.api.common.Asset> assetsToProcess;
+                List<rest.koios.client.backend.api.base.common.Asset> assetsToProcess;
 
                 if (this.user.isStakeAddress()) {
-                    Result<List<AccountAssets>> result = this.koiosFacade.getKoiosService()
+                    Result<List<AccountAsset>> result = this.koiosFacade.getKoiosService()
                             .getAccountService().getAccountAssets(List.of(user.getAddress()), null, null);
                     if (!result.isSuccessful()) {
                         LOG.warn("Can't sync the user {} assets, due to {}", this.user.getAddress(), result.getResponse());
                         return;
                     }
 
-                    Optional<AccountAssets> assetForAccount = result.getValue().stream().findFirst();
-                    if (assetForAccount.isEmpty()) {
+                    if (result.getValue().isEmpty()) {
                         LOG.debug("The account {} has no assets to sync", this.user.getAddress());
                         return;
                     }
-                    assetsToProcess = assetForAccount.get().getAssetList();
+                    assetsToProcess = result.getValue().stream().map(rest.koios.client.backend.api.base.common.Asset.class::cast).collect(Collectors.toList());
                 } else {
                     // Non-staking address
                     Result<List<AddressAsset>> result = this.koiosFacade.getKoiosService()
@@ -186,16 +178,15 @@ public class AssetFacade implements Runnable {
                         return;
                     }
 
-                    Optional<AddressAsset> assetForAccount = result.getValue().stream().findFirst();
-                    if (assetForAccount.isEmpty()) {
+                    if (result.getValue().isEmpty()) {
                         LOG.debug("The account {} has no assets to sync", this.user.getAddress());
                         return;
                     }
-                    assetsToProcess = assetForAccount.get().getAssetList();
+                    assetsToProcess = result.getValue().stream().map(rest.koios.client.backend.api.base.common.Asset.class::cast).collect(Collectors.toList());
                 }
 
                 int flowControl = 0;
-                for (rest.koios.client.backend.api.common.Asset asset : assetsToProcess) {
+                for (rest.koios.client.backend.api.base.common.Asset asset : assetsToProcess) {
                     if (flowControl % 2 == 0)
                         Thread.sleep(3000); //Avoid saturating the Koios limits
                     AssetFacade.this.assetsExecutorService.submit(new AssetScannerWorker(asset));
@@ -213,9 +204,9 @@ public class AssetFacade implements Runnable {
     public class AssetScannerWorker implements Runnable {
         private final Logger LOG = LoggerFactory.getLogger(AssetScannerWorker.class);
 
-        private final rest.koios.client.backend.api.common.Asset asset;
+        private final rest.koios.client.backend.api.base.common.Asset asset;
 
-        public AssetScannerWorker(rest.koios.client.backend.api.common.Asset asset) {
+        public AssetScannerWorker(rest.koios.client.backend.api.base.common.Asset asset) {
             this.asset = asset;
         }
 

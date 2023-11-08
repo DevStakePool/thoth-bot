@@ -7,12 +7,11 @@ import com.devpool.thothBot.oracle.CoinGeckoCardanoOracle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import rest.koios.client.backend.api.account.model.AccountAssets;
+import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -85,20 +84,20 @@ public abstract class AbstractCheckerTask {
     protected Map<String, String> getAdaHandleForAccount(String... addresses) {
         Map<String, String> handlesMap = new HashMap<>();
 
-        List<String> stakingAddresses = Arrays.stream(addresses).filter(a -> User.isStakingAddress(a)).collect(Collectors.toList());
+        List<String> stakingAddresses = Arrays.stream(addresses).filter(User::isStakingAddress).collect(Collectors.toList());
         List<String> normalAddresses = Arrays.stream(addresses).filter(a -> !User.isStakingAddress(a)).collect(Collectors.toList());
 
-        Set<String> processedAddresses = null;
+        Set<String> processedAddresses = new HashSet<>();
         try {
-            processedAddresses = new HashSet<>();
             // Nominal address
             if (!normalAddresses.isEmpty()) {
                 Result<List<AddressAsset>> addrAssetsResp = this.koiosFacade.getKoiosService().getAddressService().getAddressAssets(normalAddresses, null);
                 if (addrAssetsResp.isSuccessful()) {
-                    for (AddressAsset asset : addrAssetsResp.getValue()) {
-                        String addr = asset.getAddress();
+                    Set<String> allAddresses = addrAssetsResp.getValue().stream().map(AddressAsset::getAddress).collect(Collectors.toSet());
+                    for (String addr : allAddresses) {
                         processedAddresses.add(addr);
-                        Optional<String> bestHandle = asset.getAssetList().stream()
+                        Optional<String> bestHandle = addrAssetsResp.getValue().stream()
+                                .filter(a -> a.getAddress().equals(addr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
                                 .map(a -> hexToAscii(a.getAssetName()))
                                 .sorted().findFirst();
@@ -118,12 +117,13 @@ public abstract class AbstractCheckerTask {
 
             // Staking address?
             if (!stakingAddresses.isEmpty()) {
-                Result<List<AccountAssets>> accountAssetsResp = this.koiosFacade.getKoiosService().getAccountService().getAccountAssets(stakingAddresses, null, null);
+                Result<List<AccountAsset>> accountAssetsResp = this.koiosFacade.getKoiosService().getAccountService().getAccountAssets(stakingAddresses, null, null);
                 if (accountAssetsResp.isSuccessful()) {
-                    for (AccountAssets asset : accountAssetsResp.getValue()) {
-                        String stakeAddr = asset.getStakeAddress();
+                    Set<String> allStakeAddresses = accountAssetsResp.getValue().stream().map(AccountAsset::getStakeAddress).collect(Collectors.toSet());
+                    for (String stakeAddr : allStakeAddresses) {
                         processedAddresses.add(stakeAddr);
-                        Optional<String> bestHandle = asset.getAssetList().stream()
+                        Optional<String> bestHandle = accountAssetsResp.getValue().stream()
+                                .filter(a -> a.getStakeAddress().equals(stakeAddr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
                                 .map(a -> hexToAscii(a.getAssetName()))
                                 .sorted().findFirst();

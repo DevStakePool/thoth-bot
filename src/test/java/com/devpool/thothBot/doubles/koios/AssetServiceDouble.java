@@ -3,8 +3,9 @@ package com.devpool.thothBot.doubles.koios;
 import rest.koios.client.backend.api.asset.AssetService;
 import rest.koios.client.backend.api.asset.model.*;
 import rest.koios.client.backend.api.base.Result;
+import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
-import rest.koios.client.backend.api.common.TxHash;
+import rest.koios.client.backend.api.base.common.TxHash;
 import rest.koios.client.backend.factory.options.Options;
 import rest.koios.client.utils.Tuple;
 
@@ -29,13 +30,7 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
-    public Result<List<AssetAddress>> getAssetsAddressList(String s, String s1, Options options) throws ApiException {
-        return null;
-    }
-
-
-    @Override
-    public Result<List<AssetAddress>> getNFTAddress(String assetPolicy, String assetName, Options options) throws ApiException {
+    public Result<List<PaymentAddress>> getNFTAddress(String s, String s1, Options options) throws ApiException {
         return null;
     }
 
@@ -46,11 +41,6 @@ public class AssetServiceDouble implements AssetService {
 
     @Override
     public Result<List<PolicyAssetInfo>> getPolicyAssetInformation(String assetPolicy, Options options) throws ApiException {
-        return null;
-    }
-
-    @Override
-    public Result<List<PolicyAssetInfo>> getAssetPolicyInformation(String s, Options options) throws ApiException {
         return null;
     }
 
@@ -71,6 +61,11 @@ public class AssetServiceDouble implements AssetService {
 
     @Override
     public Result<AssetInformation> getAssetInformationBulk(List<Tuple<String, String>> assetList, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<UTxO>> getAssetUTxOs(List<Tuple<String, String>> list, Boolean aBoolean, Options options) throws ApiException {
         return null;
     }
 

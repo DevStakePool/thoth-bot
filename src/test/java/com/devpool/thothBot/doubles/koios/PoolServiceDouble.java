@@ -74,6 +74,16 @@ public class PoolServiceDouble implements PoolService {
     }
 
     @Override
+    public Result<List<PoolStatus>> getPoolRegistrations(Integer integer, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<PoolStatus>> getPoolRetirements(Integer integer, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<PoolRelay>> getPoolRelays(Options options) throws ApiException {
         return null;
     }

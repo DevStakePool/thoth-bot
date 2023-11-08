@@ -4,6 +4,7 @@ import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import rest.koios.client.backend.api.account.AccountService;
 import rest.koios.client.backend.api.account.model.*;
 import rest.koios.client.backend.api.base.Result;
+import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.factory.options.Option;
 import rest.koios.client.backend.factory.options.OptionType;
@@ -33,12 +34,17 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
-    public Result<List<AccountUTxO>> getAccountUTxOs(String stakeAddress, Options options) throws ApiException {
+    public Result<List<AccountInfo>> getCachedAccountInformation(List<String> stakeAddresses, Options options) throws ApiException {
         return null;
     }
 
     @Override
-    public Result<List<AccountInfo>> getCachedAccountInformation(List<String> stakeAddresses, Options options) throws ApiException {
+    public Result<List<UTxO>> getAccountUTxOs(List<String> list, boolean b, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<AccountTx>> getAccountTxs(String s, Integer integer, Options options) throws ApiException {
         return null;
     }
 
@@ -77,16 +83,13 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
-    public Result<List<AccountAssets>> getAccountAssets(List<String> addressList, Integer epochNo, Options options) throws ApiException {
+    public Result<List<AccountAsset>> getAccountAssets(List<String> addressList, Integer epochNo, Options options) throws ApiException {
         try {
-            List<AccountAssets> data = KoiosDataBuilder.getAccountAssets();
+            List<AccountAsset> data = KoiosDataBuilder.getAccountAssets();
             // For testing purposes, we make sure the account "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy" does not have any handle
-            for (AccountAssets aa : data) {
-                if (aa.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy")) {
-                    aa.getAssetList().removeIf(a -> a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
-                }
-            }
-            return Result.<List<AccountAssets>>builder().code(200).response("").successful(true).value(data).build();
+            data.stream().filter(a -> a.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"))
+                    .collect(Collectors.toList()).removeIf(a -> a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
+            return Result.<List<AccountAsset>>builder().code(200).response("").successful(true).value(data).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }

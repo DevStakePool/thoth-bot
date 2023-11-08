@@ -1,15 +1,13 @@
 package com.devpool.thothBot.doubles.koios;
 
-import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import rest.koios.client.backend.api.account.model.AccountAddress;
-import rest.koios.client.backend.api.account.model.AccountAssets;
-import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.address.AddressService;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.base.Result;
+import rest.koios.client.backend.api.base.common.TxHash;
+import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
-import rest.koios.client.backend.api.common.TxHash;
 import rest.koios.client.backend.factory.options.Option;
 import rest.koios.client.backend.factory.options.OptionType;
 import rest.koios.client.backend.factory.options.Options;
@@ -40,6 +38,16 @@ public class AddressServiceDouble implements AddressService {
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }
+    }
+
+    @Override
+    public Result<List<UTxO>> getAddressUTxOs(List<String> list, boolean b, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<UTxO>> getUTxOsFromPaymentCredentials(List<String> list, boolean b, Options options) throws ApiException {
+        return null;
     }
 
     @Override
