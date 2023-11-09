@@ -40,7 +40,10 @@ public class TelegramFacade {
 
     private long errorCommands;
 
-    private long timeoutedCommands;
+    private long timeoutCommands;
+
+    private long totalNotificationsSentSuccessful;
+    private long totalNotificationsSentFailed;
 
     private final Timer performanceSampler = new Timer("Telegram Facade Sampler", true);
 
@@ -83,10 +86,13 @@ public class TelegramFacade {
             this.metricsHelper.hitGauge("telegram_tot_messages", this.totalMessages);
             this.metricsHelper.hitGauge("telegram_tot_commands", this.totalCommands);
             this.metricsHelper.hitGauge("telegram_error_commands", this.errorCommands);
-            this.metricsHelper.hitGauge("telegram_timeouted_commands", this.timeoutedCommands);
+            this.metricsHelper.hitGauge("telegram_timeout_commands", this.timeoutCommands);
+            this.metricsHelper.hitGauge("telegram_tot_notifications_success", this.totalNotificationsSentSuccessful);
+            this.metricsHelper.hitGauge("telegram_tot_notifications_failed", this.totalNotificationsSentFailed);
 
-            LOG.trace("Calculated new gauge sample for telegram facade {} msgs, {} cmds, {} errors, {} timeouted",
-                    this.totalMessages, this.totalCommands, this.errorCommands, this.timeoutedCommands);
+            LOG.trace("Calculated new gauge sample for telegram facade {} msgs, {} cmds, {} errors, {} timeout, {} notifications successful, {} notifications failed",
+                    this.totalMessages, this.totalCommands, this.errorCommands, this.timeoutCommands,
+                    this.totalNotificationsSentSuccessful, this.totalNotificationsSentFailed);
         }
     }
 
@@ -156,7 +162,7 @@ public class TelegramFacade {
                     }
             } catch (TimeoutException e) {
                 synchronized (this.performanceSampler) {
-                    this.timeoutedCommands++;
+                    this.timeoutCommands++;
                 }
                 LOG.warn("The command execution {}, from {}, timed out", payload, from);
                 bot.execute(new SendMessage(id,
@@ -183,11 +189,18 @@ public class TelegramFacade {
                 .parseMode(ParseMode.HTML)
                 .disableWebPagePreview(true);
         SendResponse outcome = bot.execute(sm);
-        if (outcome.isOk())
+        if (outcome.isOk()) {
             LOG.debug("Sent message to {} with result isOk={} errorCode={} description={} ",
                     chatId, outcome.isOk(), outcome.errorCode(), outcome.description());
-        else
+            synchronized (this.performanceSampler) {
+                this.totalNotificationsSentSuccessful++;
+            }
+        } else {
             LOG.error("Can't send message due to code={} description={} message={}", outcome.errorCode(), outcome.description(), message);
+            synchronized (this.performanceSampler) {
+                this.totalNotificationsSentFailed++;
+            }
+        }
     }
 
     // Needed for testing only

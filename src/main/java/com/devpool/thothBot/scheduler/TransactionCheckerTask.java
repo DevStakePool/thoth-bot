@@ -83,13 +83,16 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
     private void sampleMetrics() {
         synchronized (this.performanceSampler) {
-            long usersCounter = this.userDao.countUsers();
+            long subscriptionsCounter = this.userDao.countSubscriptions();
+            long uniqueUsersCounter = this.userDao.countUniqueUsers();
             long assetsCacheCounter = this.assetFacade.countTotalCachedAssets();
 
             // Update gauge metric
-            this.metricsHelper.hitGauge("total_users", usersCounter);
+            this.metricsHelper.hitGauge("total_subscriptions", subscriptionsCounter);
             this.metricsHelper.hitGauge("cached_assets", assetsCacheCounter);
-            LOG.trace("Calculated new gauge sample for TX processing: {} user(s), {} cached asset(s)", usersCounter, assetsCacheCounter);
+            this.metricsHelper.hitGauge("unique_users", uniqueUsersCounter);
+            LOG.trace("Calculated new gauge sample for TX processing: {} subscription(s), {} cached asset(s), {} user(s)",
+                    subscriptionsCounter, assetsCacheCounter, uniqueUsersCounter);
         }
     }
 

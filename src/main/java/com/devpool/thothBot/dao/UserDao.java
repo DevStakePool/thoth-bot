@@ -19,7 +19,6 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 @Repository
 public class UserDao {
@@ -50,21 +49,27 @@ public class UserDao {
         Map<Long, User> users = new HashedMap<>();
         while (rs.next()) {
             Long userId = rs.getLong("id");
-                User u = new User();
-                u.setId(userId);
-                u.setChatId(rs.getLong(FIELD_CHAT_ID));
-                u.setAddress(rs.getString(FIELD_STAKE_ADDR));
-                u.setLastBlockHeight(rs.getInt(FIELD_LAST_BLOCK_HEIGHT));
-                u.setLastEpochNumber(rs.getInt(FIELD_LAST_EPOCH_NUMBER));
-        users.putIfAbsent(userId, u);
+            User u = new User();
+            u.setId(userId);
+            u.setChatId(rs.getLong(FIELD_CHAT_ID));
+            u.setAddress(rs.getString(FIELD_STAKE_ADDR));
+            u.setLastBlockHeight(rs.getInt(FIELD_LAST_BLOCK_HEIGHT));
+            u.setLastEpochNumber(rs.getInt(FIELD_LAST_EPOCH_NUMBER));
+            users.putIfAbsent(userId, u);
         }
         return new ArrayList<>(users.values());
     }
 
-    public long countUsers() {
+    public long countSubscriptions() {
         Long outcome = this.jdbcTemplate.queryForObject("select count(id) as users_counter from users", Long.class);
         if (outcome == null) return -1;
         return outcome;
+    }
+
+    public long countUniqueUsers() {
+        Long outcome = this.jdbcTemplate.queryForObject("select count (distinct chat_id) as tot_users from users", Long.class);
+        if (outcome == null) return -1;
+        else return outcome;
     }
 
     public void addNewUser(User user) throws MaxRegistrationsExceededException {
