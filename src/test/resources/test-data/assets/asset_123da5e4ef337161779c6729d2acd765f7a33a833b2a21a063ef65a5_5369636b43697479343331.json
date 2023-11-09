@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343331",
+    "asset_name_ascii": "SickCity431",
+    "fingerprint": "asset1stv2ujcp552xnfnjejt2vfvsfm2tlg7p557vmg",
+    "minting_tx_hash": "68e5c719e779f412a7390bb7546fcd04a86406d382792f3e9fb2973464c447ea",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity431": {
+            "name": "SickCity431 - Reese Goodheart",
+            "files": [
+              {
+                "src": "ipfs://QmeegN58rVdeMMZw3H98enWJsF62GMBt5TrAkZgAMsoDJ4",
+                "name": "Reese Goodheart - Letting My Hair Down",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmcF3h9q4fcozK7bkyy7aF1rXn4UgRb1RsuXiKSwqpnkvU",
+            "release": {
+              "links": {
+                "tiktok": "https://www.tiktok.com/@reesegoodheart",
+                "youtube": "https://www.youtube.com/@ReeseGoodheart",
+                "facebook": "https://www.facebook.com/reesegoodheart",
+                "instagram": "https://www.instagram.com/reesegoodheart"
+              },
+              "genres": [
+                "country",
+                "southern rock"
+              ],
+              "artists": [
+                "Reese Goodheart"
+              ],
+              "copyright": "Reese Goodheart ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "Letting My Hair Down",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "Letting My Hair Down",
+              "song_duration": "PT3M27S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

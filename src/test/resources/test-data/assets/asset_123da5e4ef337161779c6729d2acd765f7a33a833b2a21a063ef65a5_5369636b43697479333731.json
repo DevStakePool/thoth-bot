@@ -1,0 +1,53 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479333731",
+    "asset_name_ascii": "SickCity371",
+    "fingerprint": "asset10kggrrx96hz4jt5x0e5mxgvkwqkfcyq9qnh4dm",
+    "minting_tx_hash": "749f0f9ecf1e2998e5c197ad48f203b95aa8797d300e57fd7dccc26a4d8a2660",
+    "total_supply": "25024",
+    "mint_cnt": 26,
+    "burn_cnt": 0,
+    "creation_time": 1664668800,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity371": {
+            "name": "SickCity371-Andrew Donovan",
+            "files": [
+              {
+                "src": "ipfs://QmYnkcX9LhNcTX5usdmA6zAs8gT8a4v2KN5X9TJkRBGnZK",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmYbVpDhYSKoskxvGd2D2WjbJEFqSbmJ7TkxF6AzQcC3av",
+            "links": {
+              "twitter": [
+                "https://twitter.com/rc_1137",
+                "https://twitter.com/TheListenRoom"
+              ],
+              "website": "https://thelr.io/",
+              "discord_invite": "https://discord.gg/ruenexDAUP"
+            },
+            "genres": [
+              "hip hop",
+              "trap"
+            ],
+            "artists": "Andrew Donovan",
+            "copyright": "Andrew Donovan ℗ 2022",
+            "collection": "Epoch Genesis v2",
+            "song_title": "G00SEBUMPZ",
+            "album_title": "G00SEBUMPZ",
+            "distributor": "https://sickcity.xyz",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT3M",
+            "music_metadata_version": "v1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654a6172766973436869657361",
+    "asset_name_ascii": "adapeJarvisChiesa",
+    "fingerprint": "asset1tfxe6yaf9saakeganz9emhzte02d3fd0x060yt",
+    "minting_tx_hash": "c871d595f39f9cc59fe7e991614498973e4e40e8aae6bd20370887d89d44c37a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeJarvisChiesa": {
+            "Hat": "Top Hat",
+            "Body": "Suit",
+            "Ears": "Feather Pen",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Jarvis Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmbrVZhHq6epti281EKho3bESEPzfsCg7dHHfFsVquBqL5",
+                "name": "Jarvis Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbrVZhHq6epti281EKho3bESEPzfsCg7dHHfFsVquBqL5",
+            "Family": "Chiesa",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

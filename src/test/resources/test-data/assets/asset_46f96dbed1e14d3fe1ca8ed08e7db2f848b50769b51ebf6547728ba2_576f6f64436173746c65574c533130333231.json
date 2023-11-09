@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "46f96dbed1e14d3fe1ca8ed08e7db2f848b50769b51ebf6547728ba2",
+    "asset_name": "576f6f64436173746c65574c533130333231",
+    "asset_name_ascii": "WoodCastleWLS10321",
+    "fingerprint": "asset1p6qxws7swcmqfqqfvz0fy97c0wu807f39jm6yt",
+    "minting_tx_hash": "6c9cae92b43d97afa5891f3aec24166d018dbba5248be45e72bb3815875f756d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1641686400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "46f96dbed1e14d3fe1ca8ed08e7db2f848b50769b51ebf6547728ba2": {
+          "WoodCastleWLS10321": {
+            "Lord": {
+              "Name": "Alfred",
+              "Castle": "Mentmore",
+              "Region": "Wasteland"
+            },
+            "name": "Wood Castle: Wood Lords S1 #0321",
+            "files": [
+              {
+                "src": "ipfs://QmVpDdPE5sDX4UXTj8u6dALaku42yC5M9RTxqndb6JheZQ",
+                "name": "Wood Castle: Wood Lords S1 #0321",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVpDdPE5sDX4UXTj8u6dALaku42yC5M9RTxqndb6JheZQ",
+            "Features": {
+              "Base": "Rainbow",
+              "Eyes": "Cardano",
+              "Head": "OldWood",
+              "Wood": "Walnut",
+              "Mouth": "Red",
+              "Add-Ons": "CryptoRockets,Wings",
+              "Background": "Signature,Leather",
+              "Background_color": "LightOrange"
+            },
+            "mediaType": "image/jpeg",
+            "Art Description": "Wood Caslte Presents Wood Lords: Season One",
+            "Wood Castle Studio Links": {
+              "Twitter": "https://twitter.com/wood_lords",
+              "Website": "https://woodcastle.io"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

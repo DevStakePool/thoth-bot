@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343336",
+    "asset_name_ascii": "SickCity436",
+    "fingerprint": "asset1rqyms8cx9j7kja70c8jkmahk8uhaq8f6sdleyv",
+    "minting_tx_hash": "2baf42457f1b49e36b20a695129ecf2eed65c2c67bd9be69693c4c6befd780e1",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity436": {
+            "name": "SickCity436 - Sway-Z",
+            "files": [
+              {
+                "src": "ipfs://QmRyGLcRbH2FiyQpwKsRRdEc32rTuUy9wVrcDjmD5Uqwi9",
+                "name": "Sway-Z - Scheming",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmcmN3evDiDBtULJNCaGMJCNuhxU23ffRnnmG184qSeuL5",
+            "release": {
+              "links": {
+                "twitter": "https://twitter.com/Swayze2151",
+                "website": "https://swayz215.xyz"
+              },
+              "genres": [
+                "hip hop",
+                "funk",
+                "big beat"
+              ],
+              "artists": [
+                "Sway-Z"
+              ],
+              "copyright": "Sway-Z ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "Scheming",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "Scheming",
+              "song_duration": "PT3M8S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

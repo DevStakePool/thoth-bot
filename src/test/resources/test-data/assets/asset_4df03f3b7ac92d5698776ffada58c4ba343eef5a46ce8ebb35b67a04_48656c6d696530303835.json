@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "4df03f3b7ac92d5698776ffada58c4ba343eef5a46ce8ebb35b67a04",
+    "asset_name": "48656c6d696530303835",
+    "asset_name_ascii": "Helmie0085",
+    "fingerprint": "asset1y77r2sq52dvl0vgf6yghl73z8x9kkrevvy5mwz",
+    "minting_tx_hash": "d1f2681a50ced833a1deaf3a748ef72f1d7cac04608326b8c24ead68944dc1a0",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676851200,
+    "minting_tx_metadata": {
+      "721": {
+        "4df03f3b7ac92d5698776ffada58c4ba343eef5a46ce8ebb35b67a04": {
+          "Helmie0085": {
+            "name": "Helmie #0085",
+            "files": [
+              {
+                "src": "ipfs://QmcGZA4kX7iRbmSsk5YmoAN4vPUCBSdPxk7Yw6pmnyHyQ4",
+                "name": "Helmie #0085",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcGZA4kX7iRbmSsk5YmoAN4vPUCBSdPxk7Yw6pmnyHyQ4",
+            "mediaType": "image/png",
+            "Attributes": {
+              "Head": "Kavia",
+              "Helmie": "Storm",
+              "Background": "Pink"
+            },
+            "Collection": "Helmies"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

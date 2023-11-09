@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "219820e6cb04316f41a337fea356480f412e7acc147d28f175f21b5e",
+    "asset_name": "636f6f6c63617473736f6369657479323437",
+    "asset_name_ascii": "coolcatssociety247",
+    "fingerprint": "asset1ylv4saxhp233z9jw7jfzcagffw8n59w9rn979t",
+    "minting_tx_hash": "1d60cc6b3c498f55ec36d17a5d9ebdb3a68c985c1d8fa043a8ebade81bdb51fa",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1654560000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "219820e6cb04316f41a337fea356480f412e7acc147d28f175f21b5e": {
+          "coolcatssociety247": {
+            "Fur": "Robot",
+            "Hat": "None",
+            "Aura": "None",
+            "Eyes": "Cyborg Glasses",
+            "Head": "None",
+            "name": "Cool Cats Society #247",
+            "Mouth": "Mouse",
+            "files": [
+              {
+                "src": "ipfs://QmVMJKBspGic8hVFh3LitNtW2RHSH4J1SKETwgNkZTHwTT",
+                "name": "247",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVMJKBspGic8hVFh3LitNtW2RHSH4J1SKETwgNkZTHwTT",
+            "Tattoo": "None",
+            "website": "https://coolcatssociety.com/",
+            "Clothing": "Red Tracksuit",
+            "mediaType": "image/png",
+            "Background": "Light Blue",
+            "description": "CCS is the COOLEST NFT project on Cardano."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

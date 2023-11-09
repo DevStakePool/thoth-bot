@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654163746f6e446176696573",
+    "asset_name_ascii": "adapeActonDavies",
+    "fingerprint": "asset1lh983dj5jpk63tft4t7d5mrvy3vpuq9438l5e0",
+    "minting_tx_hash": "1f466116e77c1619c45e046329caa4e35263068e6b62626d2e0d2a77ccb3b76b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeActonDavies": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Acton Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmaLLMeZtiTUMrBRJMB6UUxvBrMVxQ3ezypJUbvVoCm22G",
+                "name": "Acton Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaLLMeZtiTUMrBRJMB6UUxvBrMVxQ3ezypJUbvVoCm22G",
+            "Family": "Davies",
+            "Weapon": "Rifle",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "47656d73",
+    "asset_name_ascii": "Gems",
+    "fingerprint": "asset1f447z08j96hx6m268v92u9xglcaxaqc857thsc",
+    "minting_tx_hash": "580aabec7c5768e6758b266930122a3ee41d8c7e46ce642257de5fa69f679298",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648684800,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Gems": {
+            "name": "Gems",
+            "image": "ipfs://QmWtETARcJb7Xeek4Jfca2fhyhsZCr5ZkLti7XB9iiGCYn",
+            "sha256": "61b6ec0f6d1a914d1481452b01d4a76eb229ac16a929815c5bfb9a4e74e7a087",
+            "mediaType": "image/png",
+            "description": [
+              "A variety of rare and beautiful gemstones.",
+              "Commonly traded amongst organisms which utilize",
+              "them for their aesthetic, industrial, and even spiritual value."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426f6e64526f62696e736f6e",
+    "asset_name_ascii": "adapeBondRobinson",
+    "fingerprint": "asset1snx0fwc55fja7jltws0hcp054jsvmj3wkjzgrs",
+    "minting_tx_hash": "7e68668efb98cd4ab4254965eabecaa90171b2e9f4c5886dada5e83242ca3702",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBondRobinson": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bond Robinson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmbMji4P276AwVYSzYzoNHmZWRUuR9ZNmrhWpy7AhshBKT",
+                "name": "Bond Robinson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbMji4P276AwVYSzYzoNHmZWRUuR9ZNmrhWpy7AhshBKT",
+            "Family": "Robinson",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Robinson family"
+          },
+          "adapeBernardinoCox": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Silver Earring",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Bernardino Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmYnLDgxj4AJMNZhqsvJDwJ4ESBejurt6JTBunaGVn3fJR",
+                "name": "Bernardino Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYnLDgxj4AJMNZhqsvJDwJ4ESBejurt6JTBunaGVn3fJR",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeSabastianEdwards": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Sabastian Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmTFidxQPqmzGa8nmXKLGFyAfJ72mWWGsqT4kANEsYuL2T",
+                "name": "Sabastian Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTFidxQPqmzGa8nmXKLGFyAfJ72mWWGsqT4kANEsYuL2T",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Edwards family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

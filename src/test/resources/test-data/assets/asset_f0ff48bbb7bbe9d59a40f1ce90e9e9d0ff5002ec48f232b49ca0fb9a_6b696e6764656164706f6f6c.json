@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6b696e6764656164706f6f6c",
+    "asset_name_ascii": "kingdeadpool",
+    "fingerprint": "asset13t6mek0g7gy4nngwx503shl277yezfv5x4y4yu",
+    "minting_tx_hash": "60592d5329d4c51735fed2f4d945dce40ef6262e190aa2fcdd624a463aeaef5d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665100800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "kingdeadpool": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$kingdeadpool",
+            "image": "ipfs://QmVSZ2skgCj9PiqeAfThgcrQmFcf8JYCQdadRtFe8vVTLk",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

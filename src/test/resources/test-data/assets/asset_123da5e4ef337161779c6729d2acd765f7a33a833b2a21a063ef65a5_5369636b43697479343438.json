@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343438",
+    "asset_name_ascii": "SickCity448",
+    "fingerprint": "asset139ca0dv92l8vdp9clqrtrn7t2f60xp6tlxwh2w",
+    "minting_tx_hash": "dabaf7cce7022613822dfbf2db02de34cc354096e45e93104179058aa95bac96",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity448": {
+            "name": "SickCity448 - Pastor JT Maberry",
+            "files": [
+              {
+                "src": "ipfs://QmTyLMHJcPMQ3cx3gsRkW1SrW6zWGjk46W2WNtRJGNNof2",
+                "name": "Pastor JT Maberry - Burning Bridge",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://Qmc7sd59QXB7NoywHgSus3ewREr4mMyoB6xexK5sqT6kcm",
+            "release": {
+              "links": {
+                "twitter": "https://twitter.com/pastor_jtm"
+              },
+              "genres": [
+                "gospel hip-hop",
+                "hip hop"
+              ],
+              "artists": [
+                "Pastor JT Maberry"
+              ],
+              "copyright": "In House Productions/Banks Brand Music Unlimited ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "Burning Bridge",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "Burning Bridge",
+              "song_duration": "PT1M57S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

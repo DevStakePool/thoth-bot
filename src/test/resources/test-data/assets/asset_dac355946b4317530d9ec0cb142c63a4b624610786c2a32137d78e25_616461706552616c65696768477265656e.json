@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552616c65696768477265656e",
+    "asset_name_ascii": "adapeRaleighGreen",
+    "fingerprint": "asset17n5xu4he9rpymed40dqtw8s4rs24sw7996pr0v",
+    "minting_tx_hash": "dd9b6b3c6e63b5f49228099d254dd39897407459701e5835d6daab30a614cd0c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeCalhounWhite": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Calhoun White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmTuGBGmcymmykzsKxNZvTzvYA7qoHDhihCfthLC2Tka2k",
+                "name": "Calhoun White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTuGBGmcymmykzsKxNZvTzvYA7qoHDhihCfthLC2Tka2k",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          },
+          "adapeRaleighGreen": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Raleigh Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmV8XRko1CNqHWomt49wwdqak71VtZ8VChAHgYTFentmmo",
+                "name": "Raleigh Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmV8XRko1CNqHWomt49wwdqak71VtZ8VChAHgYTFentmmo",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeAmsdenGarcía": {
+            "Hat": "None",
+            "Body": "Cardano",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Amsden García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmdYbkQJpo4Zcc4A9u4fDBYHKyE1QKneT8CQH8aaaZxikV",
+                "name": "Amsden García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdYbkQJpo4Zcc4A9u4fDBYHKyE1QKneT8CQH8aaaZxikV",
+            "Family": "García",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "1ad4f068a49bbf0d4f05335cadeca0519cef34cc1b2bc35b2e5739ae",
+    "asset_name": "434f434b",
+    "asset_name_ascii": "COCK",
+    "fingerprint": "asset1g4kfrgdz65mf2vt0x8svrw08jwtznrgv9uwdyx",
+    "minting_tx_hash": "1dc40e3e7aeb3be9b6335108ffb91262cacb69db7a00c15221662c191d7c0832",
+    "total_supply": "33000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1685664000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "1ad4f068a49bbf0d4f05335cadeca0519cef34cc1b2bc35b2e5739ae": {
+          "COCK": {
+            "name": "Cock",
+            "files": [
+              {
+                "src": "ipfs://QmTBoqVbwXCoVfysTvAV4JGeNA2ppAKTKHi47csFuGXzQM",
+                "name": "COCK",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTBoqVbwXCoVfysTvAV4JGeNA2ppAKTKHi47csFuGXzQM",
+            "symbol": "COCK",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 94185132
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "More Cock",
+            "totalSupply": 33000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

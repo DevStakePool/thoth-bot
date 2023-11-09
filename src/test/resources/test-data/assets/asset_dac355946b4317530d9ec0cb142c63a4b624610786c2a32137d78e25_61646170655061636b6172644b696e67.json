@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655061636b6172644b696e67",
+    "asset_name_ascii": "adapePackardKing",
+    "fingerprint": "asset1cjh3xvax5shkjunpv0qp4vazn92y23syhqakmu",
+    "minting_tx_hash": "6fc6263535791735fd887a16ee5ffd8c657b97c3689a108b07643ecc7ffb42bd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePackardKing": {
+            "Hat": "Privateer Hat",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Packard King",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmVzieBqunDMAnh5rNdQkmY7wSLXbKRDwC39sgpSDKCuC7",
+                "name": "Packard King",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVzieBqunDMAnh5rNdQkmY7wSLXbKRDwC39sgpSDKCuC7",
+            "Family": "King",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the King family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

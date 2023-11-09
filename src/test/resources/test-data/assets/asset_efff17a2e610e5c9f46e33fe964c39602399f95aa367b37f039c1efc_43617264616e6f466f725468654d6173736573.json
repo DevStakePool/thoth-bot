@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "efff17a2e610e5c9f46e33fe964c39602399f95aa367b37f039c1efc",
+    "asset_name": "43617264616e6f466f725468654d6173736573",
+    "asset_name_ascii": "CardanoForTheMasses",
+    "fingerprint": "asset1pqcm943ryukmamr3kuje2x32ladxjp7l9eqtck",
+    "minting_tx_hash": "7d2d97408284ab812475667536b040a11d6c54bd7daa915831994c1a3a528c17",
+    "total_supply": "2893",
+    "mint_cnt": 2893,
+    "burn_cnt": 0,
+    "creation_time": 1659312000,
+    "minting_tx_metadata": {
+      "721": {
+        "efff17a2e610e5c9f46e33fe964c39602399f95aa367b37f039c1efc": {
+          "CardanoForTheMasses": {
+            "data": "ipfs://QmX25P3QKJsM2D2QAGHxeN8KJS1PRAmzMRPc2Sq3HMEcz6",
+            "name": "Cardano for the Masses",
+            "files": [
+              {
+                "src": "ipfs://QmNWj1cMsdcdiM7oFmXW3tZwQ8vb6wtiiyifkXY7LeuZ9G",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmP36daSZeWDT2wEiAmhRqigFDY5hNqxMZ5avN94b5zEnS",
+            "sha256": "76794ea263ed5ae1f269823edcf50ef1e882d924a3dc65420b8394b36d06a973",
+            "authors": [
+              "John Greene"
+            ],
+            "website": "https://www.booktoken.io",
+            "description": [
+              "This book is mainly for Cardano newcomers. It does not go deep",
+              " into the weeds of the technical research papers, or explore",
+              " concepts in great detail. The goal is to give a broad overview",
+              " of Cardano."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

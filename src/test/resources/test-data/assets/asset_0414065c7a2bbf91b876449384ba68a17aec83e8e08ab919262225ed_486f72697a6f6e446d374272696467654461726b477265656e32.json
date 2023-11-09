@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed",
+    "asset_name": "486f72697a6f6e446d374272696467654461726b477265656e32",
+    "asset_name_ascii": "HorizonDm7BridgeDarkGreen2",
+    "fingerprint": "asset185yeqzlmgksc2v4auu685wdtvjgaw3et8cznph",
+    "minting_tx_hash": "6c72b250f5cc5d920897b812477f8a172f79a248601aad10b65c0554ac2ed7af",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658620800,
+    "minting_tx_metadata": {
+      "721": {
+        "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed": {
+          "HorizonDm7BridgeDarkGreen2": {
+            "name": "Horizon DM7",
+            "Color": "Dark Green",
+            "Model": "Horizon DM7",
+            "Speed": "6.2",
+            "files": [
+              {
+                "src": "ipfs://QmcfBJbzTKq7uYjkvBGrTiGQesRASxLzJDUWADmq2FF1Yt",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmbzvUd6kBZQQQtH6bSKwxkCKWaNPP7t2gLcMk6zqSVUFU",
+            "Braking": "3.6",
+            "Handling": "5.6",
+            "Background": "Bridge",
+            "Acceleration": "4.9"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

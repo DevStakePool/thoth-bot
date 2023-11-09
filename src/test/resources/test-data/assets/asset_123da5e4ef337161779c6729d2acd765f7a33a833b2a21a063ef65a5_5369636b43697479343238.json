@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343238",
+    "asset_name_ascii": "SickCity428",
+    "fingerprint": "asset13hheh3qgt2z3f0cnql2uaqatgnzhfp6sqwsvfj",
+    "minting_tx_hash": "414ed7a8f6c8e899ac1addc524bd89cb9970d1abf352c5df19d280d9b5d4fa1a",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity428": {
+            "name": "SickCity428 - KDB",
+            "files": [
+              {
+                "src": "ipfs://QmcDWyG3AV6XVnibmH6nsLmLiiWpfSYmhg9XvuEkpt5LUi",
+                "name": "KDB - I'm Down Here",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmQWNS8oJ5otvi946Lr24oeDL3ufdsjr347sKmmYY7irNf",
+            "release": {
+              "links": {
+                "twitter": "https://twitter.com/kdbtoronto",
+                "bandcamp": "https://t.co/AZsilEpS3j",
+                "instagram": "https://www.instagram.com/towercity_records/"
+              },
+              "genres": [
+                "rap",
+                "hip hop"
+              ],
+              "artists": [
+                "KDB"
+              ],
+              "copyright": "KDB ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "I'm Down Here",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "I'm Down Here",
+              "song_duration": "PT3M41S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

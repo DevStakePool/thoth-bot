@@ -1,0 +1,85 @@
+[
+  {
+    "policy_id": "96e685b288a144008e77bd84ac3867eb67f2468ae473c3c6a31aec47",
+    "asset_name": "546865496e766f6b657231353535",
+    "asset_name_ascii": "TheInvoker1555",
+    "fingerprint": "asset18wxwgwp3ndwgpafjlcgrgyc4nz2nndsun6nvns",
+    "minting_tx_hash": "6d3073e9788914f4878f803dbb2757a6a6b2fbbe2942b22aa7ada2b76c275c49",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1670803200,
+    "minting_tx_metadata": {
+      "721": {
+        "96e685b288a144008e77bd84ac3867eb67f2468ae473c3c6a31aec47": {
+          "TheInvoker0020": {
+            "id": "0020",
+            "data": "ipfs://QmSiTBoX4gSQCy41VM7sig2PCif4pn1tQ9DGdfqJy7T7z5",
+            "name": "The Invoker #0020",
+            "files": [
+              {
+                "src": "ipfs://QmQDmpvK5Ymq9jJChFURPLGvU5GKPdW5t4UQkB5LQ7EziA",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYsBbWpNnPYf6m9hkepYN2aEF9PBgwBj73BAAxZtqnXmQ",
+            "sha256": "0e6ed6cd3a5bf8220371e432076aac9c6c81a4822c36b328027c4b1ece4a9e63",
+            "authors": [
+              "Jon F. Merz"
+            ],
+            "website": "https://book.io",
+            "Book Title": [
+              "The Invoker"
+            ],
+            "attributes": {
+              "Variation": "9",
+              "Cover Theme": "The Meeting"
+            },
+            "Book Series": [
+              "Lawson Vampire"
+            ],
+            "description": [
+              "Lawson is back: vampire by birth, Fixer by trade."
+            ],
+            "Volume Number": 2
+          },
+          "TheInvoker1555": {
+            "id": "1555",
+            "data": "ipfs://QmQGDz1bjqnjaESTT41X283z1eoyw1vy4bnQguKkkuXUMk",
+            "name": "The Invoker #1555",
+            "files": [
+              {
+                "src": "ipfs://QmafyYozPJYVd1aK5zUzbC5gStMgeMcaWPvPHUkPceA6TE",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVCfRkCBxgfmsjgpDta5sCPr59Fo3XjLWREZp92BrRjzn",
+            "sha256": "619042d2d31858253a61cfd8bdd6ec3a6e298e5c70544920efedebe2674720b4",
+            "authors": [
+              "Jon F. Merz"
+            ],
+            "website": "https://book.io",
+            "Book Title": [
+              "The Invoker"
+            ],
+            "attributes": {
+              "Variation": "15",
+              "Cover Theme": "The Meal"
+            },
+            "Book Series": [
+              "Lawson Vampire"
+            ],
+            "description": [
+              "Lawson is back: vampire by birth, Fixer by trade."
+            ],
+            "Volume Number": 2
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

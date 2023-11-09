@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6172726973706972617465",
+    "asset_name_ascii": "arrispirate",
+    "fingerprint": "asset1gjv638gn32f62lpxtcdzn9ssffdf2j7wmfgtx8",
+    "minting_tx_hash": "7e8b51f7430b6be64975dbc41df72e242fee7c2c385794219f71843cd79eef16",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668643200,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "filomena": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$filomena",
+            "image": "ipfs://QmQiqyQETAdWuVG2tzsPes8RD7Qg5kPUBU63qFctsbxKZg",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "arrispirate": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$arrispirate",
+            "image": "ipfs://QmYKzSxTHJjGWfG4WAZuZtT2RLPXRwKUm17tjzsgN9S3S9",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

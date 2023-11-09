@@ -1,0 +1,688 @@
+[
+  {
+    "policy_id": "df432ac2d6c36c1cf3991bf5587aa9232aa66d80b7142aa9f75c6e01",
+    "asset_name": "4d696c6f3630",
+    "asset_name_ascii": "Milo60",
+    "fingerprint": "asset17wpf30tuvce67q5t58553ztwgrqmd38sp0wmvt",
+    "minting_tx_hash": "e8234a1ee6c7d897dd3c7f679f0d981da13bbb8539c63bec3d88c43f219b12f4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652659200,
+    "minting_tx_metadata": {
+      "721": {
+        "df432ac2d6c36c1cf3991bf5587aa9232aa66d80b7142aa9f75c6e01": {
+          "Milo55": {
+            "name": "Milo #55",
+            "image": "ipfs/bafybeibhnqyptoqqxtkuumard5aexcrm7twjuagwwgbsxo5nbl4hbjvifu",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Desert",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo56": {
+            "name": "Milo #56",
+            "image": "ipfs/bafybeifcu6s3cybvgkw7il2tsidmdtbfncoyssp3mmqzi3mi76ts6b7hme",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Crown",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "BaseMouth": "tongue",
+              "Background": "Jungle"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo57": {
+            "name": "Milo #57",
+            "image": "ipfs/bafybeibiw3vuvbimnuxmpawbtui54khik2tz6u7kykpyseowha64fp7anm",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Cowboy",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo58": {
+            "name": "Milo #58",
+            "image": "ipfs/bafybeicudhpbsnazj2rejxxxpxhhjeotuebxme6iy3bdnqxeg73hp5il6m",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Bandana",
+              "Eyes": "Eyepatch",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "Wink",
+              "Background": "Jungle"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo59": {
+            "name": "Milo #59",
+            "image": "ipfs/bafybeic5bjxy57up5gvr4qdd4ar7r2ohtqb6xtprmgo3vfl46cqkvidjke",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "City"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo60": {
+            "name": "Milo #60",
+            "image": "ipfs/bafybeidoiqxfeq63yvwtvwhogbtuqs7u6y6eiy3ntq27yzwmptwtgjwviq",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Eyepatch",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Mountains",
+              "Accessories": "Teeths"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo61": {
+            "name": "Milo #61",
+            "image": "ipfs/bafybeibmlou3momyxevsrgmobifsxml3ig4yrf4fun7jvpbe4htlk7bdmu",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "City",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo62": {
+            "name": "Milo #62",
+            "image": "ipfs/bafybeigc633qd3fh5c6gnnjjsrpkohaejg4a6rd7lmcn3jaucaosmfjexy",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Cowboy",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "City"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo63": {
+            "name": "Milo #63",
+            "image": "ipfs/bafybeigqwpjobuo6mhf7fj5rhihgolvnkwpmzrlcibb3dmqmogydizi2bm",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Redcap",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "BaseMouth": "tongue",
+              "Background": "Mountains"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo64": {
+            "name": "Milo #64",
+            "image": "ipfs/bafybeieblwcycxinuykrnzciivesamathmtlb7cao2dz5kufqnoiynsqeu",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "LaserEyes",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Jungle",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo65": {
+            "name": "Milo #65",
+            "image": "ipfs/bafybeiazkfinuo5nfizqxmnniufarqsczdhw42rrbtw366ldxhvc6sfizi",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Crown",
+              "Eyes": "LaserEyes",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Desert"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo66": {
+            "name": "Milo #66",
+            "image": "ipfs/bafybeieuvorzgqvv4pkjlthkvefkamlpasfb2gvdbxhcnpjr6bbgdlah7q",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Jungle"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo67": {
+            "name": "Milo #67",
+            "image": "ipfs/bafybeibeoqo6372q7uu2c666uebr5355naahvy3i3ouqnzbkgiwqpe4m5m",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Cowboy",
+              "Eyes": "LaserEyes",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo68": {
+            "name": "Milo #68",
+            "image": "ipfs/bafybeig6mxagsdejnwqyv4jwlxz3lhpm7l7baayy4q3dn2argbklnysyju",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Eyepatch",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "City",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo69": {
+            "name": "Milo #69",
+            "image": "ipfs/bafybeigdgbtiexyzz5isssldb5qttj7jg2k576uln6k4cb5gpzhligbcde",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Redcap",
+              "Eyes": "Mask",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo70": {
+            "name": "Milo #70",
+            "image": "ipfs/bafybeier243f5qrxqfz2wwyqdkv4u2ir2nhibzzgq2htxayngw6qrfzmca",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Beanie",
+              "Eyes": "LaserEyes",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Jungle"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo71": {
+            "name": "Milo #71",
+            "image": "ipfs/bafybeid2kxzcvqaohqwnpvi6hzxz2fnshrwg5rd4weenqzhgns6gy5gzoq",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Cowboy",
+              "Eyes": "LaserEyes",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Desert",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo72": {
+            "name": "Milo #72",
+            "image": "ipfs/bafybeifmvgz6hg2gcitswjheh5fgdv3ad5ziw3zh7pqveo6tmnh6wq2dz4",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Mask",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo73": {
+            "name": "Milo #73",
+            "image": "ipfs/bafybeihpacu4p5ypetu7xejpnmhq3doerswrtpm647yhaw7xw5wau3ooy4",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Cowboy",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Mountains"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo74": {
+            "name": "Milo #74",
+            "image": "ipfs/bafybeih6e4xl4eby7yighgx56pecbhhicdojdqn5wc4mzvm7efpx5iqmhe",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Crown",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "Wink",
+              "Background": "Beach"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo75": {
+            "name": "Milo #75",
+            "image": "ipfs/bafybeihueqe4oyjtdz6u263vxujwv7cn2xihe6pkhnrf3bvizq2z6x2454",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Beanie",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "Wink",
+              "Background": "Beach"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo76": {
+            "name": "Milo #76",
+            "image": "ipfs/bafybeif5hxcjfvm3iz3iczhavgjdpetzug2ffyonx6w3cr6sieuoy5rkni",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "Wink",
+              "Background": "Jungle"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo77": {
+            "name": "Milo #77",
+            "image": "ipfs/bafybeihh3apskbsfogingrz6ntpl5txqgz534cq75obtkqw5atdskv4pbm",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Jungle",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo78": {
+            "name": "Milo #78",
+            "image": "ipfs/bafybeih2jtxsnwk2kwrvi6gwidcinwa2n2u4gt5mgipdum7owpgqrt7tdu",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Crown",
+              "Eyes": "Glasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "City",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo79": {
+            "name": "Milo #79",
+            "image": "ipfs/bafybeicwtow3dc22tbgtkjrvayu4qvovyzc3cbvadiqgq3rwo3iho4wjh4",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Cowboy",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "City",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo80": {
+            "name": "Milo #80",
+            "image": "ipfs/bafybeigyunyuhxrqbxoqtqv2parzqh4whcb7k7qfaacz66u7g4rmn4gkfa",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Mask",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "City",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo81": {
+            "name": "Milo #81",
+            "image": "ipfs/bafybeidzpfjc7i3fz3ppulbprliae2hfsz5onurp76akol4ha3piftr7zq",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Beanie",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Desert"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo82": {
+            "name": "Milo #82",
+            "image": "ipfs/bafybeih6u4rp3i3yvkikmzsme2xu5eqol7mpp6jxuya23w5m3vpygubnjy",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Beanie",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "BaseMouth": "tongue",
+              "Background": "Mountains"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo83": {
+            "name": "Milo #83",
+            "image": "ipfs/bafybeiasrwl3xb3vytm6j6ocvej7wei4hbedaxkmadx7wpzzp7mczcllwe",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Beanie",
+              "Eyes": "Eyepatch",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Mountains"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo84": {
+            "name": "Milo #84",
+            "image": "ipfs/bafybeib4rux5jqmhnf3t75evr6pyilr4whr6sxsuixcbma32dnqd2vnzdm",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Mountains",
+              "Accessories": "Teeths"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo85": {
+            "name": "Milo #85",
+            "image": "ipfs/bafybeia4agukbmdydbvlbtwaurw4csaos4zwxsctsfgf7fx2vyldf7du4q",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Crown",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo86": {
+            "name": "Milo #86",
+            "image": "ipfs/bafybeib7lxih3w322mtjcfkgxkfjkegn34xydyzq5sdjp4h3hwrprom6ny",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Bandana",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "Wink",
+              "BaseMouth": "tongue",
+              "Background": "Beach"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo87": {
+            "name": "Milo #87",
+            "image": "ipfs/bafybeicr7fsfl5xud376743rlsl7hel445wgv2nqag67gnpobw47owiboy",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Crown",
+              "Eyes": "Eyepatch",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "Wink",
+              "Background": "Beach"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo88": {
+            "name": "Milo #88",
+            "image": "ipfs/bafybeigpszzsya2es7s2nmevmimjz3hbotawvaakcjirhc3haqpm2dvcxi",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Sunglasses",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo89": {
+            "name": "Milo #89",
+            "image": "ipfs/bafybeifmuoxv3tny2okhz47zg7yx5adtxtuclsmaxzqtbc7orqgwqd3agq",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Eyes": "Mask",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo90": {
+            "name": "Milo #90",
+            "image": "ipfs/bafybeiagnnj3o63dxsd52jtyrqcounrl6x5yjyr4rhisal67ikbwfrkipa",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Beach",
+              "Accessories": "Necklace"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo91": {
+            "name": "Milo #91",
+            "image": "ipfs/bafybeid3z7wt5rc2ux5dv36ntgiq2lwwte7qmlnuyu6puld3ewgkebpup4",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Crown",
+              "Eyes": "Eyepatch",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "Background": "Jungle"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo92": {
+            "name": "Milo #92",
+            "image": "ipfs/bafybeihqp6tspyc4lghj2zbwpr5fdgz3eeef5ckmes2n5kvoo3cqb44yoq",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Redcap",
+              "Eyes": "Eyepatch",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "Wink",
+              "Background": "City"
+            },
+            "description": "Flac Finance Mascot"
+          },
+          "Milo93": {
+            "name": "Milo #93",
+            "image": "ipfs/bafybeibazzpauphh32arqk7r4x3ivc4t2nqribgme3pzos63n3wsczoyxu",
+            "edition": "CARDANO FAM",
+            "project": "Flac Finance",
+            "twitter": "https://twitter.com/FlacFinance",
+            "website": "https://flac.finance",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Buckethat",
+              "Outfit": "CardanoTshirt",
+              "BaseEye": "BaseEyes",
+              "BaseMouth": "tongue",
+              "Background": "Desert"
+            },
+            "description": "Flac Finance Mascot"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

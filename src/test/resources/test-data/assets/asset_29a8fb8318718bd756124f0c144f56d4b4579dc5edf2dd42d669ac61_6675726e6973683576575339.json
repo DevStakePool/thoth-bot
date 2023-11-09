@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683576575339",
+    "asset_name_ascii": "furnish5vWS9",
+    "fingerprint": "asset1enazylra6z6xq5tvrg6rglmmarura725yayjpe",
+    "minting_tx_hash": "11e8eddce652794b2c0640f5769998a0b60db847cf3f82bba28e0b1e65c5f766",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674604800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish5vWS9": {
+            "id": "5vWS9",
+            "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "name": "Oak Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+                "name": "Oak Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTGMqJRHL9XRpRB95eMcNDxW6U6JaDpM8gctpUF3NgYgj",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmaYDactdAgX1YY8jnBCTaKLsC3Sw2DMDzEL2WCck69T4P",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "description": "Hand-crafted by Hamilton Robinson.",
+            "furnitureId": 213
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "4cb6e57bde7dfcc1459f03023e6db85338a79e80b2ecc107bfa181bb",
+    "asset_name": "4144414d494e544d656d626572735061737330333033",
+    "asset_name_ascii": "ADAMINTMembersPass0303",
+    "fingerprint": "asset1clwqt6gfa3k8kpe4gnfr0cvm4esfdfu79wae3w",
+    "minting_tx_hash": "088acf496311f14c7085f3d8e8b43163b7bc3c345aeda1352a098ced55e9d9a3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676937600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "4cb6e57bde7dfcc1459f03023e6db85338a79e80b2ecc107bfa181bb": {
+          "ADAMINTMembersPass0303": {
+            "Type": "Members Pass",
+            "name": "ADAMINT - Members Pass #0303",
+            "files": [
+              {
+                "src": "ipfs://QmeW96aVeGf5QpMzWBR8gF3S3nRYgVK4PJPPV3FgdizjLt",
+                "name": "ADAMINT - Members Pass #0303",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeW96aVeGf5QpMzWBR8gF3S3nRYgVK4PJPPV3FgdizjLt",
+            "rarity": "Silver",
+            "twitter": "https://twitter.com/adamintnet",
+            "website": "https://adamint.net/",
+            "mediaType": "image/png",
+            "multiplier": "2",
+            "description": "ADAMINT Access NFT"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

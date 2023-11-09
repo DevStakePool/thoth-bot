@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "15509d4cb60f066ca4c7e982d764d6ceb4324cb33776d1711da1beee",
+    "asset_name": "42616279416c69656e3030303039",
+    "asset_name_ascii": "BabyAlien00009",
+    "fingerprint": "asset17utjmaxt0alsrg658ngx3d4pjkc0sk7j23zek3",
+    "minting_tx_hash": "c14730f27231013c23018904abbd0f73e270122b9ced6c07c391beffd58eb8c4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1632528000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "15509d4cb60f066ca4c7e982d764d6ceb4324cb33776d1711da1beee": {
+          "BabyAlien00009": {
+            "hat": "Party Hat",
+            "body": "Gray",
+            "eyes": "Yellow Cat",
+            "face": "Bandaid",
+            "name": "BabyAlien00009",
+            "files": [
+              {
+                "src": "ipfs://QmdrJ3ZXPSPtdPsXy89V9mEfktP3UVYgMR6Czh6oywo9r4",
+                "name": "BabyAlien00009",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdrJ3ZXPSPtdPsXy89V9mEfktP3UVYgMR6Czh6oywo9r4",
+            "mouth": "Baby Pacifier",
+            "clothes": "Purple Shirt",
+            "project": "BabyAlienClub",
+            "accessory": "Soccer Ball",
+            "mediaType": "image/png",
+            "background": "Blue"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

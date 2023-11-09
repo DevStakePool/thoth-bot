@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687733433070",
+    "asset_name_ascii": "furnishw3C0p",
+    "fingerprint": "asset1l9z25jg9f3hwmprueg2an54crh5lt0vtj454d0",
+    "minting_tx_hash": "460bbd55338fa9b29d41424e648dc7f2e42d472998d25e58b9e451063c3fc0bf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675555200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishw3C0p": {
+            "id": "w3C0p",
+            "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "name": "Bar",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+                "name": "Bar",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTkJhRAH1PRXu8UbE3qzCUfrzo5oP9gPxKpNdTuyApSxK",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZq5rpUnDxXyP3uZvqGgm6rEmWxdh4Lioqc2MrGtgqvQA",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "description": "Hand-crafted by Newman Robinson.",
+            "furnitureId": 201
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

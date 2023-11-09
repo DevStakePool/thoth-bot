@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d616e6e696e67416d61746f",
+    "asset_name_ascii": "adapeManningAmato",
+    "fingerprint": "asset1wtmkw2l6nv7jm4j3my36amhe5rz9f6r5k6w4sp",
+    "minting_tx_hash": "b1d5a6fc8fe8faf9b4c5da063dbf0b62ef43e3baf0c788de75c4fb129ec234b4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDaneBest": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Dane Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmWQsGeDzheitvbfzmonmKnbNcvGpD33wo89LMpXNwqSg5",
+                "name": "Dane Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWQsGeDzheitvbfzmonmKnbNcvGpD33wo89LMpXNwqSg5",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Best family"
+          },
+          "adapeManningAmato": {
+            "Hat": "Wool Cap",
+            "Body": "Knight Armor",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Manning Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmcyQFGxZwoWGpjJALLWVgpu4uHJRmSrZMQTEZfg5uAwaB",
+                "name": "Manning Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcyQFGxZwoWGpjJALLWVgpu4uHJRmSrZMQTEZfg5uAwaB",
+            "Family": "Amato",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          },
+          "adapeAngelinCastillo": {
+            "Hat": "Fruit Basket",
+            "Body": "Prisoner Uniform",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Angelin Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmVrKE6Y7A6rYZk953beiRs8BTdtCgcYwmUEgm9p4ofyEh",
+                "name": "Angelin Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVrKE6Y7A6rYZk953beiRs8BTdtCgcYwmUEgm9p4ofyEh",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736836716c6b32",
+    "asset_name_ascii": "furnish6qlk2",
+    "fingerprint": "asset1d6m3nhe5cw0vgfan7sa9lwjp7fhfxcqmxqgxdl",
+    "minting_tx_hash": "70314e8c310aa17de8cb1c45c8b8f1e6fff76c5cba29452a8d4ee87ff1d69900",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674950400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish6qlk2": {
+            "id": "6qlk2",
+            "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "name": "Billiards",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+                "name": "Billiards",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmUqpVJs8J68zigVgzSLpXw4NXnqTbwQC9iG5J6KqdjQv3",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmWbYDVcSSspdXqUCWxg4wVJsjJ56ZJoDkeWL1xqvtUT92",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "description": "Hand-crafted by Carlyle Evans.",
+            "furnitureId": 202
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

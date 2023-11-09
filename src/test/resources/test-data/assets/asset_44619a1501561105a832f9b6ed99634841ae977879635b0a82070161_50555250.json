@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "44619a1501561105a832f9b6ed99634841ae977879635b0a82070161",
+    "asset_name": "50555250",
+    "asset_name_ascii": "PURP",
+    "fingerprint": "asset13ka788qadgvhmms94z75hcsu2tpt2s5av796hy",
+    "minting_tx_hash": "997a0b2bcc303c46f9130e90192f63261e6f6642ba6609835376018bb594623d",
+    "total_supply": "420000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1655337600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "44619a1501561105a832f9b6ed99634841ae977879635b0a82070161": {
+          "PURP": {
+            "name": "Double Cup Token",
+            "files": [
+              {
+                "src": "ipfs://QmYnEuWR6T7zEQ3esXNw2mMAHMdCcydsMZPYVwxQb4Ydx2",
+                "name": "PURP",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYnEuWR6T7zEQ3esXNw2mMAHMdCcydsMZPYVwxQb4Ydx2",
+            "symbol": "PURP",
+            "Twitter": "https://twitter.com/DoubleCupToken",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 63776743
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Double Cup Token is a Meme Coin on Cardano. Grippin n Sippin",
+            "totalSupply": 420000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

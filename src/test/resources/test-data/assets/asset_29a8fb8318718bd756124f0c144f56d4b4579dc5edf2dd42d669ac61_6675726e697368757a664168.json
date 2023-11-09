@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368757a664168",
+    "asset_name_ascii": "furnishuzfAh",
+    "fingerprint": "asset1x62l8nm3j986psep4yj9rrtdktyzurykz37e74",
+    "minting_tx_hash": "447981b65c241037de6a7c9cf700512d30e416f4677defc588aebd846c16877e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676073600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishuzfAh": {
+            "id": "uzfAh",
+            "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "name": "Chest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+                "name": "Chest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmR5vzh5LkpG2mphtY3PiH79x4bFiccw2bVPMmmLDyFtf6",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmRBbEKVNDvpSQb1VKRt1Yiu5uoWi8dzDracYH2aVmQK4N",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "description": "Hand-crafted by Harden Brown.",
+            "furnitureId": 205
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

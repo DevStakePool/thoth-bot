@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655772696768745461796c6f72",
+    "asset_name_ascii": "adapeWrightTaylor",
+    "fingerprint": "asset1ry5uxdtalwzt7m2859r29j3ge478sy04l9qrqy",
+    "minting_tx_hash": "8d21f371869355cd23dd8c55fb6b955afca726310190e778aed9d589420ed64e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWrightTaylor": {
+            "Hat": "Wool Cap",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Wright Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qma6tTVdpXVeHywxmijyNye3WPMuhhHqGbTrSGdosFZRZE",
+                "name": "Wright Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qma6tTVdpXVeHywxmijyNye3WPMuhhHqGbTrSGdosFZRZE",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

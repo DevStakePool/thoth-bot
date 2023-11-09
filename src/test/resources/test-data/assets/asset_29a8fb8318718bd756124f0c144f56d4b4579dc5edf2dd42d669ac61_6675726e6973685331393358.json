@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685331393358",
+    "asset_name_ascii": "furnishS193X",
+    "fingerprint": "asset1j0838h64znlgpaa39e809fg3y5e5wwnm72l9m5",
+    "minting_tx_hash": "b9d8236596c18f1be8b065d67edd567f0551eb8a9c1369207bb46c0ab6a635ae",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672704000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishS193X": {
+            "id": "S193X",
+            "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "name": "Cushioned Armchair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+                "name": "Cushioned Armchair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQfxQsmMez3vgCjAsKVaVKnwRishsqpCtvixnyBMZbeY9",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVthsuyoH91GwKwkqFeT3kaZNedhhEn69Mq5VhF5nmCke",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "description": "Hand-crafted by Toussaint Smith.",
+            "furnitureId": 207
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

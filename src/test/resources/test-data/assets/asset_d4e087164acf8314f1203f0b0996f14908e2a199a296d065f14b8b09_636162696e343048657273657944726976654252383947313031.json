@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e343048657273657944726976654252383947313031",
+    "asset_name_ascii": "cabin40HerseyDriveBR89G101",
+    "fingerprint": "asset1glx0kg5f7gmfjy99xf5dluv9l5mls0h63cryjy",
+    "minting_tx_hash": "a1418864f1c32a6966570b71506f6ece99455d4e9e2c909e4951eadc71830fe1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin40HerseyDriveBR89G101": {
+            "name": "40 Hersey Drive, BR89 G101",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Hersey Drive",
+            "District": "Brotaw",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "G",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "89",
+            "Y Coordinate": "101"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

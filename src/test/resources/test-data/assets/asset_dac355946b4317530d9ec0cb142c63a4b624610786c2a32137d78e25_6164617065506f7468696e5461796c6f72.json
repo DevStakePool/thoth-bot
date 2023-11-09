@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065506f7468696e5461796c6f72",
+    "asset_name_ascii": "adapePothinTaylor",
+    "fingerprint": "asset13pjwh6ezqnjyr8m3gvwda4vycqq52kcs34qszu",
+    "minting_tx_hash": "47c5f39bb3350caac6221b8673084b572e30727bbff144b090f551d43ae3d7fe",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePothinTaylor": {
+            "Hat": "Fruit Basket",
+            "Body": "Gold Linen",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Pothin Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qma4meJLhxCSjERfZs6FfvnSUcwDDzTBVAd9NtKiw1pmro",
+                "name": "Pothin Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qma4meJLhxCSjERfZs6FfvnSUcwDDzTBVAd9NtKiw1pmro",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

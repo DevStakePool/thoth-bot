@@ -1,0 +1,50 @@
+[
+  {
+    "policy_id": "ceb5dedd6cda3f0b4a98919b5d3827e15e324771642b57e0e6aabd57",
+    "asset_name": "53696c766572486f736b696e736f6e303637",
+    "asset_name_ascii": "SilverHoskinson067",
+    "fingerprint": "asset1pntngjvf0fzuy5w8ngqz98sqywpw90uq7ze0mq",
+    "minting_tx_hash": "ee0a9da5bd9efc8e5b62495ef92d8c943caf87ffe1d4540817d6349295b0338b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1630886400,
+    "minting_tx_metadata": {
+      "721": {
+        "ceb5dedd6cda3f0b4a98919b5d3827e15e324771642b57e0e6aabd57": {
+          "SilverHoskinson067": {
+            "name": "SilverHoskinson067",
+            "files": [
+              {
+                "src": "ipfs://QmWTPB3hivXfqkteQJ37vc4Du7N9BFmMor3JLhtCCBGc26",
+                "name": "SilverHoskinson067",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXaudw7Km95MWfrBjjwqBNw31hpkmCERVjGDdEGipNNK1",
+            "burned": [
+              "SilverLovelace228",
+              "SilverShelley031",
+              "SilverVoltaire256",
+              "SilverCardano067",
+              "SilverByron345",
+              "SilverBasho298",
+              "SilverGoguen256"
+            ],
+            "attributes": {
+              "Type": "Art",
+              "Piece": "Hoskinson",
+              "Artist": "Projekt",
+              "Rarity": "Silver",
+              "Series": "Pioneers",
+              "Creator": "Mycelial Gallery"
+            },
+            "description": "Charles Hoskinson, minted by Mycelial Gallery."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368584d6f5634",
+    "asset_name_ascii": "furnishXMoV4",
+    "fingerprint": "asset1lsjzyyppuu2ktp54c428cchdxpjsxxspxyr97l",
+    "minting_tx_hash": "8f15ab510d6fdc69fa8a75e370d913c3f47c1c8a704a44db9e6399a5ca37f400",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672358400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishXMoV4": {
+            "id": "XMoV4",
+            "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "name": "Oak Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+                "name": "Oak Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTGMqJRHL9XRpRB95eMcNDxW6U6JaDpM8gctpUF3NgYgj",
+                "name": "Oak Chair",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmaYDactdAgX1YY8jnBCTaKLsC3Sw2DMDzEL2WCck69T4P",
+                "name": "Oak Chair",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "description": "Hand-crafted by Toussaint Smith.",
+            "furnitureId": 213
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

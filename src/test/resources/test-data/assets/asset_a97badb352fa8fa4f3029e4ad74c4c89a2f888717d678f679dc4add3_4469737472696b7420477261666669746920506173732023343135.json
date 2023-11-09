@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "a97badb352fa8fa4f3029e4ad74c4c89a2f888717d678f679dc4add3",
+    "asset_name": "4469737472696b7420477261666669746920506173732023343135",
+    "asset_name_ascii": "Distrikt Graffiti Pass #415",
+    "fingerprint": "asset1g8ksurrzj3mj79neh03930kw7d0gymmkl4390v",
+    "minting_tx_hash": "4d512cd1d9c836de86705fc0acc9503a9d2f19a79776e2b6ebe80b995cf127db",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671580800,
+    "minting_tx_metadata": {
+      "721": {
+        "a97badb352fa8fa4f3029e4ad74c4c89a2f888717d678f679dc4add3": {
+          "Distrikt Graffiti Pass #415": {
+            "name": "Distrikt Graffiti Pass #415",
+            "files": [
+              {
+                "src": "ipfs://Qmf1YEQgg9XHtUcyitAHSeFkFQW5FBAN6ciqS95SWdhK7C",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmdYgAZMAWypN5qhUVNvwEiP69TUXEoTtxAZRXCjaXpmNc",
+                "mediaType": "audio/mpeg"
+              }
+            ],
+            "image": "ipfs://Qma1W2oGbrdNmy6RPHiWrAj7WyERHGxNUM6TFJPjwBBbD2",
+            "rarity": "Special",
+            "element": "Graffiti",
+            "twitter": "https://twitter.com/distriktcnft",
+            "website": "https://distrikt.art/",
+            "mediaType": "image/gif",
+            "publisher": "Sobrado",
+            "description": [
+              "The Distrikt Pass is our genesis NFT that grants holders access",
+              "to Distrikt kitchen, exclusive airdrops, WL and more."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343239",
+    "asset_name_ascii": "SickCity429",
+    "fingerprint": "asset1tmypssu0mmzem9v7tquw7ndt8332vmlp02hl8m",
+    "minting_tx_hash": "6901336d3f2cd474d13e1e93eea4e89a1407ebd00fbcac0def93b8f1325035b4",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity429": {
+            "name": "SickCity429 - F.I.R.E.",
+            "files": [
+              {
+                "src": "ipfs://QmTm3AJz5dFXfCL6GT9uEvFuJyfcsCA6bBnRhXeGLPKLcZ",
+                "name": "F.I.R.E. - God Talks",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmQxjYD3GVziXbLono69RoqiPmmoQ58KTWLr5mWTRPNho2",
+            "release": {
+              "links": {
+                "twitter": "https://twitter.com/SnekShrimp69"
+              },
+              "genres": [
+                "r&b",
+                "hip hop"
+              ],
+              "artists": [
+                "F.I.R.E."
+              ],
+              "copyright": "F.I.R.E. ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "God Talks",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "God Talks",
+              "song_duration": "PT4M26S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

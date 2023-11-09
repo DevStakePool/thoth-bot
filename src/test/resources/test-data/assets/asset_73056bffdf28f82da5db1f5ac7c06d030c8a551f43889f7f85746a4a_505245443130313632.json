@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a",
+    "asset_name": "505245443130313632",
+    "asset_name_ascii": "PRED10162",
+    "fingerprint": "asset1nte7sc7n8g4s2df8m9275hzju3eretldkluunp",
+    "minting_tx_hash": "373a86feed8a0d1ee8e64297901b027355eae75584e28453c79c0f5b69c56770",
+    "total_supply": "1",
+    "mint_cnt": 3,
+    "burn_cnt": 2,
+    "creation_time": 1658880000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a": {
+          "PRED10162": {
+            "url": "https://derpbirds.io",
+            "name": "Pred #10162",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmUMaH5MdNSCUR1nL8RRvnWFRsk5XQxtexRXhNJ4VucSsM",
+                "name": "Pred #10162",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmaVijZvzZTTipwzfHyKx5mPGeGfjjGY8hRKQWLSCE4BnN",
+                "name": "v1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUMaH5MdNSCUR1nL8RRvnWFRsk5XQxtexRXhNJ4VucSsM",
+            "swaps": [
+              "DP00005",
+              "DE14122"
+            ],
+            "series": 2,
+            "attributes": {
+              "Body": "Imposter's Body",
+              "Face": "Trooper's Face",
+              "Head": "Trooper's Braids",
+              "Rank": 4,
+              "Back Gear": "Scout's Personal Portal",
+              "Head Gear": "Commander's Beret",
+              "Background": "Gooey Borealis",
+              "Front Gear": "Engineer's Crystalline Shield",
+              "Skin Color": "Cyan"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

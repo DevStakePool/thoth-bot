@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b656e656c6d4c617669676e65",
+    "asset_name_ascii": "adapeKenelmLavigne",
+    "fingerprint": "asset13nck7q83sqtuuz6nlpa4ncp0uph9pehryp0s2l",
+    "minting_tx_hash": "15db9be1e17f986330eca30a1851f369002e2c13c9804eddb2d9c7385e3eb80e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeKenelmLavigne": {
+            "Hat": "Hoodie",
+            "Body": "Cardano",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Kenelm Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmUYwMgBw69KSsecrU6kUH6iZTx3u5P5YfeuPebTi3LGys",
+                "name": "Kenelm Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUYwMgBw69KSsecrU6kUH6iZTx3u5P5YfeuPebTi3LGys",
+            "Family": "Lavigne",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "b000df2bcd82d550e3eca1181e1c45e96125055d42a57670dc495d79",
+    "asset_name": "4245414e",
+    "asset_name_ascii": "BEAN",
+    "fingerprint": "asset14pyh3ht586mm4w0fdzw340ksr6pgzue2vufrng",
+    "minting_tx_hash": "c013ef10e03195bb57f70ac08650f485c8fb8b98e32a981f8be99b5382a8acbd",
+    "total_supply": "69000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1682121600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "b000df2bcd82d550e3eca1181e1c45e96125055d42a57670dc495d79": {
+          "BEAN": {
+            "name": "BEANZ",
+            "files": [
+              {
+                "src": "ipfs://QmcvEBXNisJX4dsMPG2xsVyz7DjjjSYmzP6NrbuKU62gJC",
+                "name": "BEAN",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcvEBXNisJX4dsMPG2xsVyz7DjjjSYmzP6NrbuKU62gJC",
+            "symbol": "BEAN",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 90614127
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Lugoz Beanz. A Baldo product.",
+            "totalSupply": 69000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

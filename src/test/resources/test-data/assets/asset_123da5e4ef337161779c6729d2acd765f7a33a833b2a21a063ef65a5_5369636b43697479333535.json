@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479333535",
+    "asset_name_ascii": "SickCity355",
+    "fingerprint": "asset127wwtnwzq09cc06hvy8qujdgh3gnfmrghmzr5t",
+    "minting_tx_hash": "96286b7dc07a72619ce5c04944a32cccd4402e65af9e7c1f2ff1f2c062a5188e",
+    "total_supply": "25014",
+    "mint_cnt": 16,
+    "burn_cnt": 1,
+    "creation_time": 1655424000,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity355": {
+            "mood": "",
+            "name": "SickCity355-KJPeace",
+            "files": [
+              {
+                "src": "ipfs://QmQwYvxDkbn51p5tQgyPS4upCjYHFeoPvrQfydt7rcS6ZE",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmY2E8EisBTsVBTbtt4FvRyQNL8dBKW7r9jjfqu6nwXuN6",
+            "links": {
+              "twitter": "@KJPeaceBOI",
+              "website": "https://solo.to/kjpeace",
+              "discord_user": "KJPeace#1095",
+              "discord_invite": "https://discord.gg/CnVPRfZ3XF"
+            },
+            "genres": [
+              "Hip Hop",
+              "Alternative Hip Hop"
+            ],
+            "artists": [
+              "KJPeace"
+            ],
+            "copyright": "© 2022 KJPeace",
+            "collection": "Hiatus",
+            "song_title": "Hiatus",
+            "album_title": "Hiatus",
+            "distributor": "https://sickcity.xyz",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT3M26S",
+            "music_metadata_version": "v1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

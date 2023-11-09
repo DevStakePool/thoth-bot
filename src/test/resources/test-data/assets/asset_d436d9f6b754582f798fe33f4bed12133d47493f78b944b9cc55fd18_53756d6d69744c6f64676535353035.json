@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "d436d9f6b754582f798fe33f4bed12133d47493f78b944b9cc55fd18",
+    "asset_name": "53756d6d69744c6f64676535353035",
+    "asset_name_ascii": "SummitLodge5505",
+    "fingerprint": "asset1secehfljrh3xs5wsn9r2achl2d8ytka94282hg",
+    "minting_tx_hash": "cbe700e44826853064547878afb36abb6b5e854e895ed42e51c8e258bfe721f3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668902400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d436d9f6b754582f798fe33f4bed12133d47493f78b944b9cc55fd18": {
+          "SummitLodge5505": {
+            "city": "Summit Lodge",
+            "date": "November 19-21, 2022",
+            "name": "Cardano Summit 2022 | Summit Lodge",
+            "files": [
+              {
+                "src": "ipfs://QmU1BETyTqbvQQThwGiWTENWxbsuzNgiJYnwe9xJxbGahD",
+                "name": "Cardano Summit 2022 | Summit Lodge",
+                "mediaType": "text/html"
+              },
+              {
+                "src": "ipfs://QmetCTi9y1Yr85rrR5fdHxaMmZ5zQZznzZqtge9H1a6HRm",
+                "name": "Cardano Summit 2022 | Summit Lodge",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVGuPgXg2qXfv4YUdw5Y4QyK8eJhQzGVenV9p8feraqMH",
+            "author": "TURF",
+            "country": "Cardano",
+            "variety": "Common",
+            "website": "https://www.turfnft.com",
+            "mediaType": "image/gif",
+            "event type": "Virtual",
+            "location code": "00000000+00",
+            "cardano summit 2022 organizer": "Cardano Foundation"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

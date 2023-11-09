@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "5fa72fbeecbe80a3e15de1cacab54ba5e310e2c36ae85351132ed4ad",
+    "asset_name": "4c65676163795061737331303837",
+    "asset_name_ascii": "LegacyPass1087",
+    "fingerprint": "asset1hggw63sllx0zk3n88jgujhv7jm5avdqeuz0wl9",
+    "minting_tx_hash": "ee972f01e00d401044587dcead704c6ba7fb2d0fd2f514eed150dd8540bab994",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634515200,
+    "minting_tx_metadata": {
+      "721": {
+        "5fa72fbeecbe80a3e15de1cacab54ba5e310e2c36ae85351132ed4ad": {
+          "LegacyPass1087": {
+            "name": "cNFTcon Legacy Pass  #1087",
+            "files": [
+              {
+                "src": "ipfs://QmdL5w2zeZxoSbzfG33iLxo4x3217JD3Do2vzxhVcbGqcD",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRVK3aXW8ijWAsGNXUmr1yiULVb8UzpMCZJyHyuan8ajt",
+            "artist": "Aeoniumsky & Patrick Bussey (cNFTcon Logo)",
+            "Website": {
+              "cNFTcon": "https://cnftcon.io"
+            },
+            "mediaType": "image/gif",
+            "publisher": {
+              "Buffy Bot Publishing": "https://buffybot.io"
+            },
+            "Max Supply": "2500"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

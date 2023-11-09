@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "2478fa653c947e9f62b64642bdc4693030c6a822762a05bfeea08e28",
+    "asset_name": "474338373539",
+    "asset_name_ascii": "GC8759",
+    "fingerprint": "asset12txq8f3pxt35za3llrunwq2eqvsh4l3rjjwf8y",
+    "minting_tx_hash": "095c787201984863554e7659486dbadecd5707c9e5d0baf1f72ed34eacb15d32",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669939200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "2478fa653c947e9f62b64642bdc4693030c6a822762a05bfeea08e28": {
+          "GC8759": {
+            "name": "Abstract Clay GC #8759",
+            "files": [
+              {
+                "src": "ipfs://QmNhctwDaAV82pidFUeYLWRGXDpwjsETStEpPi4Az7rxDt",
+                "name": "GC8759",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNhctwDaAV82pidFUeYLWRGXDpwjsETStEpPi4Az7rxDt",
+            "Mission": "Cover the Clayverse with abstract art",
+            "Twitter": "@nf_trinity",
+            "mediaType": "image/png",
+            "description": [
+              "Clay Nation inspired neo-expressionist abstract art"
+            ],
+            "Support the project by sending donations to": "$abstract.clay"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

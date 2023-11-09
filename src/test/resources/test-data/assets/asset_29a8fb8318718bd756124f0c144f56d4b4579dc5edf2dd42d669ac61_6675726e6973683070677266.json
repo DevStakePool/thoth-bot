@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683070677266",
+    "asset_name_ascii": "furnish0pgrf",
+    "fingerprint": "asset17qg74ag3kynk9kr20y87dh6ustkqkmme2mjtuz",
+    "minting_tx_hash": "76e93b6c682fbab32b670b3d4b4315d954360cca638c5220964676dc47f1664c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675468800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish0pgrf": {
+            "id": "0pgrf",
+            "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "name": "Fireplace",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+                "name": "Fireplace",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZBhsPDqH8SthYH894ngh4Rf1EyGfLtbCvGaHqCWGxy2c",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmW4AVjc4bPWkziNFGiSV6Fy55XTAbKx1YJiM3rcCqaaSt",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "description": "Hand-crafted by Donald Davies.",
+            "furnitureId": 209
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

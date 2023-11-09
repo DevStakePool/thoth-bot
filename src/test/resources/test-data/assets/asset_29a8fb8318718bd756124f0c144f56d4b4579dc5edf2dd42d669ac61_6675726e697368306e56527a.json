@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368306e56527a",
+    "asset_name_ascii": "furnish0nVRz",
+    "fingerprint": "asset128549l85lusx6adllpmajyq2vmj47prcvf9gr0",
+    "minting_tx_hash": "283b08943fe14c0ccd478c4ab2a4fa61dcea4e3700ea1a713951f7ba5a49f292",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679184000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish0nVRz": {
+            "id": "0nVRz",
+            "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "name": "Standing Globe",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+                "name": "Standing Globe",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmV3BSnFf1Xy9bWVp8i5XgZvsr7u16LRAnAgD4gePWMbCN",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR6r3Bfbkzbn2ocMekLsaebgcELNvcVvLR4vL2iRmfjxC",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "description": "Hand-crafted by Bolton Wilson.",
+            "furnitureId": 219
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

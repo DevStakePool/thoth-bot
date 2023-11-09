@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368795a525931",
+    "asset_name_ascii": "furnishyZRY1",
+    "fingerprint": "asset1g3h5qqcucd5urcxaqq9z9qzrz6cg8p2secaqhs",
+    "minting_tx_hash": "d16e5696fa0330b9b51b29d9fd487d9d02d249ecae4297bf09dc0b5c8a1f5293",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672358400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishyZRY1": {
+            "id": "yZRY1",
+            "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "name": "Chest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+                "name": "Chest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmR5vzh5LkpG2mphtY3PiH79x4bFiccw2bVPMmmLDyFtf6",
+                "name": "Chest",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmRBbEKVNDvpSQb1VKRt1Yiu5uoWi8dzDracYH2aVmQK4N",
+                "name": "Chest",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "description": "Hand-crafted by Bradford Edwards.",
+            "furnitureId": 205
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

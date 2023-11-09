@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655468616e65416d61746f",
+    "asset_name_ascii": "adapeThaneAmato",
+    "fingerprint": "asset1zn36r4xadp7zdnpsmerms37t8vgunp6tlsm6v7",
+    "minting_tx_hash": "cc21a5358c877ea4570e00d6fd0103db1b56c6566aae6453bf1726bab515fc38",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeThaneAmato": {
+            "Hat": "None",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Cardano",
+            "name": "Thane Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmeZYjVSu9oNrJrGnaWBLHsp5MDX1rBLQUd5r7hVxknCeM",
+                "name": "Thane Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeZYjVSu9oNrJrGnaWBLHsp5MDX1rBLQUd5r7hVxknCeM",
+            "Family": "Amato",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

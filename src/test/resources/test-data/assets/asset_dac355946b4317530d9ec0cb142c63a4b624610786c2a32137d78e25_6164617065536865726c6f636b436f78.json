@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065536865726c6f636b436f78",
+    "asset_name_ascii": "adapeSherlockCox",
+    "fingerprint": "asset1nk24metd9f6aj2ymtsw0zqphxzy78t7t7sn5vw",
+    "minting_tx_hash": "2e6081a532affd7080f748a84bcbeba5455a2e527ff8f5d6e8f6a509130ea0cf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeSherlockCox": {
+            "Hat": "None",
+            "Body": "Knight Armor",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Sherlock Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmXDVrCeVp4YY2BaanSh6dtAqBDdPx6kmhzBDeMqm3PFMq",
+                "name": "Sherlock Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXDVrCeVp4YY2BaanSh6dtAqBDdPx6kmhzBDeMqm3PFMq",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Cox family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

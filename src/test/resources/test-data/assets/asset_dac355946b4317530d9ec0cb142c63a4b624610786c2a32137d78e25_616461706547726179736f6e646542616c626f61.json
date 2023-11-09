@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706547726179736f6e646542616c626f61",
+    "asset_name_ascii": "adapeGraysondeBalboa",
+    "fingerprint": "asset1pdylg76u99ma2yeped47h644gnwyxvg6np3c5x",
+    "minting_tx_hash": "0b25e5a27b871761addd7e4adaa42afc6cc4951df9e2f7533fe5dfbb77659295",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeGraysondeBalboa": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Grayson de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmRTDKDCJGfeGABPG3GRgJ3CbJWNVzRVE92DG2cZum8nJS",
+                "name": "Grayson de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRTDKDCJGfeGABPG3GRgJ3CbJWNVzRVE92DG2cZum8nJS",
+            "Family": "de Balboa",
+            "Weapon": "None",
+            "Accessory": "Diamond Grill",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de Balboa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

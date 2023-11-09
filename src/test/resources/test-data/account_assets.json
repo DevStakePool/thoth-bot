@@ -1,582 +1,642 @@
 [
   {
     "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
-    "asset_list": [
-      {
-        "decimals": 0,
-        "quantity": "200000",
-        "policy_id": "7ff73b0876c5506416ae1c04984ccf58cdb2a5d89542866e523b0b32",
-        "asset_name": "43554c4f",
-        "fingerprint": "asset1hl5fn7zfjuj8vjftjdwzuk2gkk204u29vzr4sn"
-      },
-      {
-        "decimals": 0,
-        "quantity": "11000000",
-        "policy_id": "a0028f350aaabe0545fdcb56b039bfb08e4bb4d8c4d7c3c7d481c235",
-        "asset_name": "484f534b59",
-        "fingerprint": "asset17q7r59zlc3dgw0venc80pdv566q6yguw03f0d9"
-      },
-      {
-        "decimals": 0,
-        "quantity": "26845000000",
-        "policy_id": "eec5d59c40cefe2e23a568e70328f3667c23fa2c586b98db7c9f4122",
-        "asset_name": "434f43",
-        "fingerprint": "asset1gc08w2lamu0zvcx7rxz7l86xlpfzy00qygdt0z"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "67696f636f6e6461",
-        "fingerprint": "asset1zqjy7fye4s5s5j4p8j0v5zeasp33wvskx35js6"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f7afff6fa2e18125fbb42dec3514eb946776ee54b0e5143201384e36",
-        "asset_name": "5343414d497473415363616d",
-        "fingerprint": "asset1re94hhkjxnzs35men7gf50mtmmnjmw4sm8wjv0"
-      }
-    ]
+    "policy_id": "7ff73b0876c5506416ae1c04984ccf58cdb2a5d89542866e523b0b32",
+    "asset_name": "43554c4f",
+    "fingerprint": "asset1hl5fn7zfjuj8vjftjdwzuk2gkk204u29vzr4sn",
+    "decimals": 0,
+    "quantity": "200000"
+  },
+  {
+    "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
+    "policy_id": "a0028f350aaabe0545fdcb56b039bfb08e4bb4d8c4d7c3c7d481c235",
+    "asset_name": "484f534b59",
+    "fingerprint": "asset17q7r59zlc3dgw0venc80pdv566q6yguw03f0d9",
+    "decimals": 0,
+    "quantity": "11000000"
+  },
+  {
+    "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
+    "policy_id": "eec5d59c40cefe2e23a568e70328f3667c23fa2c586b98db7c9f4122",
+    "asset_name": "434f43",
+    "fingerprint": "asset1gc08w2lamu0zvcx7rxz7l86xlpfzy00qygdt0z",
+    "decimals": 0,
+    "quantity": "26845000000"
+  },
+  {
+    "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "67696f636f6e6461",
+    "fingerprint": "asset1zqjy7fye4s5s5j4p8j0v5zeasp33wvskx35js6",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
+    "policy_id": "f7afff6fa2e18125fbb42dec3514eb946776ee54b0e5143201384e36",
+    "asset_name": "5343414d497473415363616d",
+    "fingerprint": "asset1re94hhkjxnzs35men7gf50mtmmnjmw4sm8wjv0",
+    "decimals": 0,
+    "quantity": "1"
   },
   {
     "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
-    "asset_list": [
-      {
-        "decimals": 0,
-        "quantity": "9980",
-        "policy_id": "00a931fbe491058b6a8c5770f686d53066fe2e8aa6a7624c5a2cae17",
-        "asset_name": "444556",
-        "fingerprint": "asset158qkhau6qg080h28t4zsrwgn0n0nmsjyf9rzrj"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "16f858641ee16029a216f5a4f5dc6271631c6338bcd746b2a9ab7de6",
-        "asset_name": "4e754e657453504f444556",
-        "fingerprint": "asset1qche9k3jfejfc3dyle6jk9pag0gl0j73pk4x55"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031333534",
-        "fingerprint": "asset13qpje5qqyy7epd8hh3sqhsxfutyvxlqmr3aj84"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031353031",
-        "fingerprint": "asset1ffwuxpp6d4h4tt52zt28e6xsty32gft5txrcuf"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031353731",
-        "fingerprint": "asset1sqgf4u09yskj8t3tngwzpkl9g276gl8t38lrcv"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031393934",
-        "fingerprint": "asset1u83pjhaanmy63hmhvqcl9we3dmj98zgewuyj8v"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032303636",
-        "fingerprint": "asset1y5ek5facnmt2h5wa8n9wrl7qxu49fv8rmz8yte"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032323738",
-        "fingerprint": "asset18uep5lx03tjjmu4qhc5kh75p99hd862h659f7x"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032363033",
-        "fingerprint": "asset1jqc6demjd5v8e5msmmk052u5gratkg3200layq"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032393030",
-        "fingerprint": "asset1yvm7t2396tmpq40vr7czx78yf28sm4thu9t4ht"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032393436",
-        "fingerprint": "asset1s6k5ugxc3gfx0vvhgvy2kj6n93h9apa4lp4yvm"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542033313536",
-        "fingerprint": "asset1c0lktz7sh4pjxyghqrke6pg29uuw8afg7wwq93"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542033313932",
-        "fingerprint": "asset104d9adkmg4ce89r9shkuny06wgsanc8yvmjecn"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542033323238",
-        "fingerprint": "asset1zx00fufr6euqdwfgzam5ca8fa4yg9hae6c2nqe"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e465420343130",
-        "fingerprint": "asset1t66vyvv6vm357vg5sd3pw58tlzdsp9t8ys079m"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e465420343739",
-        "fingerprint": "asset1jxkwp6e5nawh00dsy4q4xms0allx0t5gjx8p4x"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035303334",
-        "fingerprint": "asset1zwj7tsuvrc85kljrazwpten75juyx82dzwjmze"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035323936",
-        "fingerprint": "asset1nxv9unnrvqafapm28plmkzdvxk9qnd8excrv94"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e465420353330",
-        "fingerprint": "asset1fj6zjysxh20pk3j4lh5c2s4dn85dz5xz8ylrz4"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035333039",
-        "fingerprint": "asset1x37v8jlylkq7dtp209sc35q49mlztjn6gqwwaj"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035343535",
-        "fingerprint": "asset1375vls4vdmmsvdmhx75gk0g0vldxcxezm8es52"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035393930",
-        "fingerprint": "asset1kf0sx92d6sr96jxxmv5s2hkwtaa0yt5r09jyp6"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036303332",
-        "fingerprint": "asset19f5d3zhs0ctpxmzv85m0a2svypk5xs45zdyz3p"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036323233",
-        "fingerprint": "asset1vpwuuc623dux43gjurs7rhw46vf8r0rjacxkxr"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036343937",
-        "fingerprint": "asset1mw7ed2dkeqzwt96yr0yerqa3lhjf4vmysx7gh9"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036353939",
-        "fingerprint": "asset1wn7cghlkm5grajyzav8a7sa9pt5a4nhvjm9zye"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036373136",
-        "fingerprint": "asset1aev2jn6ry4xef6c9t9z20kv3laxm6wm00kcgzd"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036393832",
-        "fingerprint": "asset1v48wt7ke36eydt5c3pa2r58smqhgsn6dxpysu8"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e465420383337",
-        "fingerprint": "asset17lgzhu63tn5zacu9f3740ult0th44cs2lk385f"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
-        "asset_name": "43617264616e6f2053756d6d69742032303233204e465420393337",
-        "fingerprint": "asset18r3ttrp3dtr2j3msk7659fpqksgplxn759r677"
-      },
-      {
-        "decimals": 0,
-        "quantity": "4000210346",
-        "policy_id": "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e",
-        "asset_name": "776f726c646d6f62696c65746f6b656e",
-        "fingerprint": "asset1h7jsujzt4s8pup6nrzthr9nhajl0gmwhlzcqw7"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "49cbdf8d557e857f82f9b5f47f858004dd1fb6161f699b88d6c24364",
-        "asset_name": "7873706f313537",
-        "fingerprint": "asset1nffz3p2vrnk4dlaf4a820mcugdqjakl5dlwfdl"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "4edfe4388937e200bf13ba02aafebedaebfa4e920b8d765ff8d857cb",
-        "asset_name": "50726f7061676174696f6e50696f6e6565727344756261693237",
-        "fingerprint": "asset1z524v4k8323klhaw5t35h7xqwghvspky3c8f5v"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "6666666f2a796df09b5e3f16aff0112ed7caa5a4bbf6596fa414dc5c",
-        "asset_name": "4d616c5468655472616465723132343136",
-        "fingerprint": "asset1ee4le9z8eznagetr36c4mt9w5wd3rye4hyyym0"
-      },
-      {
-        "decimals": 0,
-        "quantity": "10587089644",
-        "policy_id": "6b28f47c3d1f7d693d1bb05510458f0dfe4b019727cdc901e242f7a0",
-        "asset_name": "5a6962657242756773",
-        "fingerprint": "asset1wms7kumn8pwuf5ntjjl3s7vff7n43ds82hhz9y"
-      },
-      {
-        "decimals": 0,
-        "quantity": "3025279531",
-        "policy_id": "6c8642400e8437f737eb86df0fc8a8437c760f48592b1ba8f5767e81",
-        "asset_name": "456d706f7761",
-        "fingerprint": "asset1u898rd424aqyuc4g6vdkhxh5hu86zcv2jc60ju"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "6cae72f06a762760eaddaad46e8b5a8175a69a0a9e4dca53187828ba",
-        "asset_name": "416e63657273746f724567674642",
-        "fingerprint": "asset1ffy4mu5hnrqjp9fdfgsu7fvg6rjr7m5z49s0yx"
-      },
-      {
-        "decimals": 0,
-        "quantity": "73673",
-        "policy_id": "6d620b3adb0ae33508d500b3c0c24c0434448ba4d9e7450eb0bfae58",
-        "asset_name": "54484d",
-        "fingerprint": "asset1zlpplhvhj8s9dl6agk3jh9s2dfzn5pesc438fy"
-      },
-      {
-        "decimals": 0,
-        "quantity": "2137375377",
-        "policy_id": "9a9693a9a37912a5097918f97918d15240c92ab729a0b7c4aa144d77",
-        "asset_name": "53554e444145",
-        "fingerprint": "asset1m4u92ke6820pkk07m8qmmguye02ewr8g6tezr0"
-      },
-      {
-        "decimals": 6,
-        "quantity": "540000000",
-        "policy_id": "b6a7467ea1deb012808ef4e87b5ff371e85f7142d7b356a40d9b42a0",
-        "asset_name": "436f726e75636f70696173205b76696120436861696e506f72742e696f5d",
-        "fingerprint": "asset1c6uau7pufsxhnm7eg0eerhu4snwfd9sn7kvvvz"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "d423ef07a257a2fd2b4a0940893b6ae794ce73af24e9265784728500",
-        "asset_name": "43415244414e4f20504554532d30303236",
-        "fingerprint": "asset1k7zrz7eq5sujaex6rhhrwfser0zr9fve38vtkg"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "da3562fad43b7759f679970fb4e0ec07ab5bebe5c703043acda07a3c",
-        "asset_name": "54656464794265617273436c756238303034",
-        "fingerprint": "asset1rczef4e5htskegmklr0ytp6c7e08sumxrj3f0r"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "da3562fad43b7759f679970fb4e0ec07ab5bebe5c703043acda07a3c",
-        "asset_name": "54656464794265617273436c756238343537",
-        "fingerprint": "asset16mc4t70s5qxgw9x4640kshnuy5kdsxdusauxtt"
-      },
-      {
-        "decimals": 0,
-        "quantity": "205561907",
-        "policy_id": "dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb",
-        "asset_name": "0014df1047454e53",
-        "fingerprint": "asset1266q2ewhgul7jh3xqpvjzqarrepfjuler20akr"
-      },
-      {
-        "decimals": 6,
-        "quantity": "1000000000",
-        "policy_id": "edfd7a1d77bcb8b884c474bdc92a16002d1fb720e454fa6e99344479",
-        "asset_name": "4e5458",
-        "fingerprint": "asset19yuner2nz27pq9pjdta50xwfyd0d2nry2l6lvu"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "616c657373696f2e646576",
-        "fingerprint": "asset10w9e8qq2w9x34j6n88ar5f064wdxefw97hn6g6"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "636f7669643139",
-        "fingerprint": "asset1pqkq64y6qg7rrea592tphhan30uqx5md7fqx7d"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "786e2d2d6465762d7567313362",
-        "fingerprint": "asset105p903qdc875xf2kwg0mwftmhkcqklr683k8tc"
-      },
-      {
-        "decimals": 8,
-        "quantity": "27783909025",
-        "policy_id": "f43a62fdc3965df486de8a0d32fe800963589c41b38946602a0dc535",
-        "asset_name": "41474958",
-        "fingerprint": "asset1wwyy88f8u937hz7kunlkss7gu446p6ed5gdfp6"
-      },
-      {
-        "decimals": 0,
-        "quantity": "15",
-        "policy_id": "f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add",
-        "asset_name": "5665726974726565546f6b656e",
-        "fingerprint": "asset1a7e0a783gxaz6dsrcjv6tfam2mnra5m250dlew"
-      }
-    ]
+    "policy_id": "00a931fbe491058b6a8c5770f686d53066fe2e8aa6a7624c5a2cae17",
+    "asset_name": "444556",
+    "fingerprint": "asset158qkhau6qg080h28t4zsrwgn0n0nmsjyf9rzrj",
+    "decimals": 0,
+    "quantity": "9980"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "16f858641ee16029a216f5a4f5dc6271631c6338bcd746b2a9ab7de6",
+    "asset_name": "4e754e657453504f444556",
+    "fingerprint": "asset1qche9k3jfejfc3dyle6jk9pag0gl0j73pk4x55",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031333534",
+    "fingerprint": "asset13qpje5qqyy7epd8hh3sqhsxfutyvxlqmr3aj84",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031353031",
+    "fingerprint": "asset1ffwuxpp6d4h4tt52zt28e6xsty32gft5txrcuf",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031353731",
+    "fingerprint": "asset1sqgf4u09yskj8t3tngwzpkl9g276gl8t38lrcv",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542031393934",
+    "fingerprint": "asset1u83pjhaanmy63hmhvqcl9we3dmj98zgewuyj8v",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032303636",
+    "fingerprint": "asset1y5ek5facnmt2h5wa8n9wrl7qxu49fv8rmz8yte",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032323738",
+    "fingerprint": "asset18uep5lx03tjjmu4qhc5kh75p99hd862h659f7x",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032363033",
+    "fingerprint": "asset1jqc6demjd5v8e5msmmk052u5gratkg3200layq",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032393030",
+    "fingerprint": "asset1yvm7t2396tmpq40vr7czx78yf28sm4thu9t4ht",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542032393436",
+    "fingerprint": "asset1s6k5ugxc3gfx0vvhgvy2kj6n93h9apa4lp4yvm",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542033313536",
+    "fingerprint": "asset1c0lktz7sh4pjxyghqrke6pg29uuw8afg7wwq93",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542033313932",
+    "fingerprint": "asset104d9adkmg4ce89r9shkuny06wgsanc8yvmjecn",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542033323238",
+    "fingerprint": "asset1zx00fufr6euqdwfgzam5ca8fa4yg9hae6c2nqe",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e465420343130",
+    "fingerprint": "asset1t66vyvv6vm357vg5sd3pw58tlzdsp9t8ys079m",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e465420343739",
+    "fingerprint": "asset1jxkwp6e5nawh00dsy4q4xms0allx0t5gjx8p4x",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035303334",
+    "fingerprint": "asset1zwj7tsuvrc85kljrazwpten75juyx82dzwjmze",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035323936",
+    "fingerprint": "asset1nxv9unnrvqafapm28plmkzdvxk9qnd8excrv94",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e465420353330",
+    "fingerprint": "asset1fj6zjysxh20pk3j4lh5c2s4dn85dz5xz8ylrz4",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035333039",
+    "fingerprint": "asset1x37v8jlylkq7dtp209sc35q49mlztjn6gqwwaj",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035343535",
+    "fingerprint": "asset1375vls4vdmmsvdmhx75gk0g0vldxcxezm8es52",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542035393930",
+    "fingerprint": "asset1kf0sx92d6sr96jxxmv5s2hkwtaa0yt5r09jyp6",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036303332",
+    "fingerprint": "asset19f5d3zhs0ctpxmzv85m0a2svypk5xs45zdyz3p",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036323233",
+    "fingerprint": "asset1vpwuuc623dux43gjurs7rhw46vf8r0rjacxkxr",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036343937",
+    "fingerprint": "asset1mw7ed2dkeqzwt96yr0yerqa3lhjf4vmysx7gh9",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036353939",
+    "fingerprint": "asset1wn7cghlkm5grajyzav8a7sa9pt5a4nhvjm9zye",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036373136",
+    "fingerprint": "asset1aev2jn6ry4xef6c9t9z20kv3laxm6wm00kcgzd",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e46542036393832",
+    "fingerprint": "asset1v48wt7ke36eydt5c3pa2r58smqhgsn6dxpysu8",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e465420383337",
+    "fingerprint": "asset17lgzhu63tn5zacu9f3740ult0th44cs2lk385f",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1a8e0471d05d42366aa7d5f1bc866c860ad2c4408f2a28c7d72b02da",
+    "asset_name": "43617264616e6f2053756d6d69742032303233204e465420393337",
+    "fingerprint": "asset18r3ttrp3dtr2j3msk7659fpqksgplxn759r677",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e",
+    "asset_name": "776f726c646d6f62696c65746f6b656e",
+    "fingerprint": "asset1h7jsujzt4s8pup6nrzthr9nhajl0gmwhlzcqw7",
+    "decimals": 6,
+    "quantity": "4000210346"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "49cbdf8d557e857f82f9b5f47f858004dd1fb6161f699b88d6c24364",
+    "asset_name": "7873706f313537",
+    "fingerprint": "asset1nffz3p2vrnk4dlaf4a820mcugdqjakl5dlwfdl",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "4edfe4388937e200bf13ba02aafebedaebfa4e920b8d765ff8d857cb",
+    "asset_name": "50726f7061676174696f6e50696f6e6565727344756261693237",
+    "fingerprint": "asset1z524v4k8323klhaw5t35h7xqwghvspky3c8f5v",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "6666666f2a796df09b5e3f16aff0112ed7caa5a4bbf6596fa414dc5c",
+    "asset_name": "4d616c5468655472616465723132343136",
+    "fingerprint": "asset1ee4le9z8eznagetr36c4mt9w5wd3rye4hyyym0",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "6b28f47c3d1f7d693d1bb05510458f0dfe4b019727cdc901e242f7a0",
+    "asset_name": "5a6962657242756773",
+    "fingerprint": "asset1wms7kumn8pwuf5ntjjl3s7vff7n43ds82hhz9y",
+    "decimals": 6,
+    "quantity": "10587089644"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "6c8642400e8437f737eb86df0fc8a8437c760f48592b1ba8f5767e81",
+    "asset_name": "456d706f7761",
+    "fingerprint": "asset1u898rd424aqyuc4g6vdkhxh5hu86zcv2jc60ju",
+    "decimals": 6,
+    "quantity": "3025279531"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "6cae72f06a762760eaddaad46e8b5a8175a69a0a9e4dca53187828ba",
+    "asset_name": "416e63657273746f724567674642",
+    "fingerprint": "asset1ffy4mu5hnrqjp9fdfgsu7fvg6rjr7m5z49s0yx",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "6d620b3adb0ae33508d500b3c0c24c0434448ba4d9e7450eb0bfae58",
+    "asset_name": "54484d",
+    "fingerprint": "asset1zlpplhvhj8s9dl6agk3jh9s2dfzn5pesc438fy",
+    "decimals": 2,
+    "quantity": "73673"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "9a9693a9a37912a5097918f97918d15240c92ab729a0b7c4aa144d77",
+    "asset_name": "53554e444145",
+    "fingerprint": "asset1m4u92ke6820pkk07m8qmmguye02ewr8g6tezr0",
+    "decimals": 6,
+    "quantity": "2137375377"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "b6a7467ea1deb012808ef4e87b5ff371e85f7142d7b356a40d9b42a0",
+    "asset_name": "436f726e75636f70696173205b76696120436861696e506f72742e696f5d",
+    "fingerprint": "asset1c6uau7pufsxhnm7eg0eerhu4snwfd9sn7kvvvz",
+    "decimals": 6,
+    "quantity": "540000000"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "d423ef07a257a2fd2b4a0940893b6ae794ce73af24e9265784728500",
+    "asset_name": "43415244414e4f20504554532d30303236",
+    "fingerprint": "asset1k7zrz7eq5sujaex6rhhrwfser0zr9fve38vtkg",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "da3562fad43b7759f679970fb4e0ec07ab5bebe5c703043acda07a3c",
+    "asset_name": "54656464794265617273436c756238303034",
+    "fingerprint": "asset1rczef4e5htskegmklr0ytp6c7e08sumxrj3f0r",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "da3562fad43b7759f679970fb4e0ec07ab5bebe5c703043acda07a3c",
+    "asset_name": "54656464794265617273436c756238343537",
+    "fingerprint": "asset16mc4t70s5qxgw9x4640kshnuy5kdsxdusauxtt",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "dda5fdb1002f7389b33e036b6afee82a8189becb6cba852e8b79b4fb",
+    "asset_name": "0014df1047454e53",
+    "fingerprint": "asset1266q2ewhgul7jh3xqpvjzqarrepfjuler20akr",
+    "decimals": 6,
+    "quantity": "205561907"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "edfd7a1d77bcb8b884c474bdc92a16002d1fb720e454fa6e99344479",
+    "asset_name": "4e5458",
+    "fingerprint": "asset19yuner2nz27pq9pjdta50xwfyd0d2nry2l6lvu",
+    "decimals": 6,
+    "quantity": "1000000000"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "616c657373696f2e646576",
+    "fingerprint": "asset10w9e8qq2w9x34j6n88ar5f064wdxefw97hn6g6",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "636f7669643139",
+    "fingerprint": "asset1pqkq64y6qg7rrea592tphhan30uqx5md7fqx7d",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "786e2d2d6465762d7567313362",
+    "fingerprint": "asset105p903qdc875xf2kwg0mwftmhkcqklr683k8tc",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "f43a62fdc3965df486de8a0d32fe800963589c41b38946602a0dc535",
+    "asset_name": "41474958",
+    "fingerprint": "asset1wwyy88f8u937hz7kunlkss7gu446p6ed5gdfp6",
+    "decimals": 8,
+    "quantity": "27783909025"
+  },
+  {
+    "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "policy_id": "f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add",
+    "asset_name": "5665726974726565546f6b656e",
+    "fingerprint": "asset1a7e0a783gxaz6dsrcjv6tfam2mnra5m250dlew",
+    "decimals": 0,
+    "quantity": "15"
   },
   {
     "stake_address": "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
-    "asset_list": [
-      {
-        "decimals": 0,
-        "quantity": "1046254",
-        "policy_id": "8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd61",
-        "asset_name": "446a65644d6963726f555344",
-        "fingerprint": "asset15f3ymkjafxxeunv5gtdl54g5qs8ty9k84tq94x"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "3078363136343631",
-        "fingerprint": "asset18dhkz9yshg4sf45k7c9vcqvxxrpmuch3zhkvqm"
-      }
-    ]
+    "policy_id": "8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd61",
+    "asset_name": "446a65644d6963726f555344",
+    "fingerprint": "asset15f3ymkjafxxeunv5gtdl54g5qs8ty9k84tq94x",
+    "decimals": 6,
+    "quantity": "1046254"
+  },
+  {
+    "stake_address": "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "3078363136343631",
+    "fingerprint": "asset18dhkz9yshg4sf45k7c9vcqvxxrpmuch3zhkvqm",
+    "decimals": 0,
+    "quantity": "1"
   },
   {
     "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
-    "asset_list": [
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "042afe60735e5915bf2d846314b0cf2072b880d6d4db947524173692",
-        "asset_name": "45706f636873456e64333130",
-        "fingerprint": "asset1475ch00tkupev6d3fr3q5a5zwgyk09f85ma6y5"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "0761ba8d3fff1d9b1b111c9364078ba97a32723d2a77898d206596cc",
-        "asset_name": "46697265776f726b436174",
-        "fingerprint": "asset1r8ce5afqemswp77t536jukwst4n3ztnqw32nh6"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "0761ba8d3fff1d9b1b111c9364078ba97a32723d2a77898d206596cc",
-        "asset_name": "4d69646e6967687420537061726b6c6520586d61732057616c6b",
-        "fingerprint": "asset1wpdxgp206j9jynrntaguuvjnyunp6eym64qkug"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
-        "asset_name": "756e7369673135323139",
-        "fingerprint": "asset1cde2earvqfu8s0jzukkk0x4c276plgp0a5jqkz"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
-        "asset_name": "756e7369673138343431",
-        "fingerprint": "asset1y0muadjqfcudgwpdz6m0k83fzcxx5lvn6rygqp"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "0fe7b9c1abbf139414d8e138721a85dd8d6e24ee7dc0d895587b4f57",
-        "asset_name": "6a633030303131363830",
-        "fingerprint": "asset1tcnmdm36k0jkq6hma8543074yhy7g53kvn0qdp"
-      },
-      {
-        "decimals": 0,
-        "quantity": "12633462611",
-        "policy_id": "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e",
-        "asset_name": "776f726c646d6f62696c65746f6b656e",
-        "fingerprint": "asset1h7jsujzt4s8pup6nrzthr9nhajl0gmwhlzcqw7"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "2654f990d88fa7ca4268ebcd745188cec37202aa74d0dc10c7f81a14",
-        "asset_name": "7873706f3037",
-        "fingerprint": "asset1tv6v9vq0y9thpyyjf8gzkl4u2ulc70gsfs9d4m"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "3ad46fc788e0ee79d00cea846dc6ef98d23df12f3a970690c299cce8",
-        "asset_name": "41436e66744973466f726576657230303630",
-        "fingerprint": "asset1v7zkuhs2890c68ehrv47mxx4yuwszk2a6gx9ny"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "5a5e5dc40ac4bd5aea7c110517cf3b5bb9cef95a56e6385ba3f59dc9",
-        "asset_name": "4d7574616e744d6178436f6e6365707444657369676e5633",
-        "fingerprint": "asset1py0ylnlurs3l4c20xvdrlmp8vrycwdscsdlc7a"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "64fbfd3dff606ab050ce91c4449f6ad7a5400232c283c20b1911c52a",
-        "asset_name": "5348414d524f434b477265656e35",
-        "fingerprint": "asset14s75cs5tk6ldsulmet59ym5cw3snrprjhygnfq"
-      },
-      {
-        "decimals": 0,
-        "quantity": "17385788",
-        "policy_id": "6b28f47c3d1f7d693d1bb05510458f0dfe4b019727cdc901e242f7a0",
-        "asset_name": "5a6962657242756773",
-        "fingerprint": "asset1wms7kumn8pwuf5ntjjl3s7vff7n43ds82hhz9y"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "8728079879ce4304fd305b12878e0fcea3b8a3a5435a21b5dec35a11",
-        "asset_name": "45706f6368436c6f636b5830313636",
-        "fingerprint": "asset1xe6sa3wfakvrvmw5uqw7xxymvzx6zckzmpajz0"
-      },
-      {
-        "decimals": 0,
-        "quantity": "995042000",
-        "policy_id": "8cf66d8c74af3aa53ba498b0d3f18a21f7ed3d12128850bb2b61146d",
-        "asset_name": "61706578636f696e",
-        "fingerprint": "asset1u525m73flqg0lnlry536pumjtutfrw38qfa7d7"
-      },
-      {
-        "decimals": 0,
-        "quantity": "243168747",
-        "policy_id": "9a9693a9a37912a5097918f97918d15240c92ab729a0b7c4aa144d77",
-        "asset_name": "53554e444145",
-        "fingerprint": "asset1m4u92ke6820pkk07m8qmmguye02ewr8g6tezr0"
-      },
-      {
-        "decimals": 0,
-        "quantity": "3947",
-        "policy_id": "b9939a9b1a3b21098114cf8c0d21d1f5db7313f59592e78d1d4ccdc3",
-        "asset_name": "4d414348",
-        "fingerprint": "asset1hg554vu7we5a3lx6tl8tvayjtp3msfy5e74s0r"
-      },
-      {
-        "decimals": 0,
-        "quantity": "10",
-        "policy_id": "d0af056c509b6b1133cd83a750b7245e561169281fde3df1cb6e2d96",
-        "asset_name": "506f6f6c5065656b436f696e",
-        "fingerprint": "asset10yxzta63za0hewml7dx7ue750rknm4vqde2ury"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "d0b7e2d4a7562061fb5edd3c0aebea14a38b3cb50ba3adbeb37a8119",
-        "asset_name": "3130307468426c6f636b41504558",
-        "fingerprint": "asset1uy00ja7a82wm24gjwws99tg896s9et2z8znrqn"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "d1453d95a258a5306b15e456a6e18a29f47e18151857bd0f83fda6fa",
-        "asset_name": "5061746866696e646572",
-        "fingerprint": "asset160p2c8fzkjmr74lcjx8c39nfgcdwqgqra0q509"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "61706578",
-        "fingerprint": "asset12urnt7fr82xtndhqr08qdm0nt8ddnkrqz4xazv"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "61706578706f6f6c",
-        "fingerprint": "asset1wlmjc0flpa3hrax2fsmu4lw2y2cnw44y7khz7v"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "63617264616e6f61706578706f6f6c",
-        "fingerprint": "asset1dag22hh8fufalzj3w0usptzk2lztwm7me27dsy"
-      },
-      {
-        "decimals": 0,
-        "quantity": "1",
-        "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
-        "asset_name": "67656f7267652e61706578",
-        "fingerprint": "asset18gfpnl8mujx8s2ccz5sulg38kg4dcm3tgx495v"
-      }
-    ]
+    "policy_id": "042afe60735e5915bf2d846314b0cf2072b880d6d4db947524173692",
+    "asset_name": "45706f636873456e64333130",
+    "fingerprint": "asset1475ch00tkupev6d3fr3q5a5zwgyk09f85ma6y5",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "0761ba8d3fff1d9b1b111c9364078ba97a32723d2a77898d206596cc",
+    "asset_name": "46697265776f726b436174",
+    "fingerprint": "asset1r8ce5afqemswp77t536jukwst4n3ztnqw32nh6",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "0761ba8d3fff1d9b1b111c9364078ba97a32723d2a77898d206596cc",
+    "asset_name": "4d69646e6967687420537061726b6c6520586d61732057616c6b",
+    "fingerprint": "asset1wpdxgp206j9jynrntaguuvjnyunp6eym64qkug",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+    "asset_name": "756e7369673135323139",
+    "fingerprint": "asset1cde2earvqfu8s0jzukkk0x4c276plgp0a5jqkz",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+    "asset_name": "756e7369673138343431",
+    "fingerprint": "asset1y0muadjqfcudgwpdz6m0k83fzcxx5lvn6rygqp",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "0fe7b9c1abbf139414d8e138721a85dd8d6e24ee7dc0d895587b4f57",
+    "asset_name": "6a633030303131363830",
+    "fingerprint": "asset1tcnmdm36k0jkq6hma8543074yhy7g53kvn0qdp",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "1d7f33bd23d85e1a25d87d86fac4f199c3197a2f7afeb662a0f34e1e",
+    "asset_name": "776f726c646d6f62696c65746f6b656e",
+    "fingerprint": "asset1h7jsujzt4s8pup6nrzthr9nhajl0gmwhlzcqw7",
+    "decimals": 6,
+    "quantity": "12633462611"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "2654f990d88fa7ca4268ebcd745188cec37202aa74d0dc10c7f81a14",
+    "asset_name": "7873706f3037",
+    "fingerprint": "asset1tv6v9vq0y9thpyyjf8gzkl4u2ulc70gsfs9d4m",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "3ad46fc788e0ee79d00cea846dc6ef98d23df12f3a970690c299cce8",
+    "asset_name": "41436e66744973466f726576657230303630",
+    "fingerprint": "asset1v7zkuhs2890c68ehrv47mxx4yuwszk2a6gx9ny",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "5a5e5dc40ac4bd5aea7c110517cf3b5bb9cef95a56e6385ba3f59dc9",
+    "asset_name": "4d7574616e744d6178436f6e6365707444657369676e5633",
+    "fingerprint": "asset1py0ylnlurs3l4c20xvdrlmp8vrycwdscsdlc7a",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "64fbfd3dff606ab050ce91c4449f6ad7a5400232c283c20b1911c52a",
+    "asset_name": "5348414d524f434b477265656e35",
+    "fingerprint": "asset14s75cs5tk6ldsulmet59ym5cw3snrprjhygnfq",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "6b28f47c3d1f7d693d1bb05510458f0dfe4b019727cdc901e242f7a0",
+    "asset_name": "5a6962657242756773",
+    "fingerprint": "asset1wms7kumn8pwuf5ntjjl3s7vff7n43ds82hhz9y",
+    "decimals": 6,
+    "quantity": "17385788"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "8728079879ce4304fd305b12878e0fcea3b8a3a5435a21b5dec35a11",
+    "asset_name": "45706f6368436c6f636b5830313636",
+    "fingerprint": "asset1xe6sa3wfakvrvmw5uqw7xxymvzx6zckzmpajz0",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "8cf66d8c74af3aa53ba498b0d3f18a21f7ed3d12128850bb2b61146d",
+    "asset_name": "61706578636f696e",
+    "fingerprint": "asset1u525m73flqg0lnlry536pumjtutfrw38qfa7d7",
+    "decimals": 0,
+    "quantity": "995042000"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "9a9693a9a37912a5097918f97918d15240c92ab729a0b7c4aa144d77",
+    "asset_name": "53554e444145",
+    "fingerprint": "asset1m4u92ke6820pkk07m8qmmguye02ewr8g6tezr0",
+    "decimals": 6,
+    "quantity": "243168747"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "b9939a9b1a3b21098114cf8c0d21d1f5db7313f59592e78d1d4ccdc3",
+    "asset_name": "4d414348",
+    "fingerprint": "asset1hg554vu7we5a3lx6tl8tvayjtp3msfy5e74s0r",
+    "decimals": 0,
+    "quantity": "3947"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "d0af056c509b6b1133cd83a750b7245e561169281fde3df1cb6e2d96",
+    "asset_name": "506f6f6c5065656b436f696e",
+    "fingerprint": "asset10yxzta63za0hewml7dx7ue750rknm4vqde2ury",
+    "decimals": 0,
+    "quantity": "10"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "d0b7e2d4a7562061fb5edd3c0aebea14a38b3cb50ba3adbeb37a8119",
+    "asset_name": "3130307468426c6f636b41504558",
+    "fingerprint": "asset1uy00ja7a82wm24gjwws99tg896s9et2z8znrqn",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "d1453d95a258a5306b15e456a6e18a29f47e18151857bd0f83fda6fa",
+    "asset_name": "5061746866696e646572",
+    "fingerprint": "asset160p2c8fzkjmr74lcjx8c39nfgcdwqgqra0q509",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "61706578",
+    "fingerprint": "asset12urnt7fr82xtndhqr08qdm0nt8ddnkrqz4xazv",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "61706578706f6f6c",
+    "fingerprint": "asset1wlmjc0flpa3hrax2fsmu4lw2y2cnw44y7khz7v",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "63617264616e6f61706578706f6f6c",
+    "fingerprint": "asset1dag22hh8fufalzj3w0usptzk2lztwm7me27dsy",
+    "decimals": 0,
+    "quantity": "1"
+  },
+  {
+    "stake_address": "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "67656f7267652e61706578",
+    "fingerprint": "asset18gfpnl8mujx8s2ccz5sulg38kg4dcm3tgx495v",
+    "decimals": 0,
+    "quantity": "1"
   }
 ]

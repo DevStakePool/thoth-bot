@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368796d787377",
+    "asset_name_ascii": "furnishymxsw",
+    "fingerprint": "asset1mgersuah6hf77zre7us2wvdgnmpm3mhnp8yu4r",
+    "minting_tx_hash": "4f689ae4e43c8ce73a9386e2ab7d0f224bed098ff67920f4793888885d3d685e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674864000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishymxsw": {
+            "id": "ymxsw",
+            "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "name": "Bar",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+                "name": "Bar",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTkJhRAH1PRXu8UbE3qzCUfrzo5oP9gPxKpNdTuyApSxK",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZq5rpUnDxXyP3uZvqGgm6rEmWxdh4Lioqc2MrGtgqvQA",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "description": "Hand-crafted by Leland White.",
+            "furnitureId": 201
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

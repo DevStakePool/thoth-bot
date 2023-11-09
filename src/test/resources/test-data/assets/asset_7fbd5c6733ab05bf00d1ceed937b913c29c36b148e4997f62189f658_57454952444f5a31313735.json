@@ -1,0 +1,74 @@
+[
+  {
+    "policy_id": "7fbd5c6733ab05bf00d1ceed937b913c29c36b148e4997f62189f658",
+    "asset_name": "57454952444f5a31313735",
+    "asset_name_ascii": "WEIRDOZ1175",
+    "fingerprint": "asset1ghrk0ddjua05kt89quvhjdlamnmlcl5u3upefz",
+    "minting_tx_hash": "eaac0391aa1094f5b6c01adbc73c0ba36bc9388d8f4b71536bb4654f9f467f74",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672358400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "7fbd5c6733ab05bf00d1ceed937b913c29c36b148e4997f62189f658": {
+          "WEIRDOZ1175": {
+            "name": "WeirdOZ #1175",
+            "files": [
+              {
+                "src": "ipfs://QmWYsfeWPPLyCi5qnch3ktUJG5eLn23nnCac3E3vuuFK7U",
+                "name": "profile",
+                "mediaType": "image/jpg"
+              },
+              {
+                "src": "ipfs://QmNwcLqHNcEf2uko65JHRqWsRdRwewc4b5DC3pYbAzo5uB",
+                "name": "banner",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmWYsfeWPPLyCi5qnch3ktUJG5eLn23nnCac3E3vuuFK7U",
+            "mediaType": "image/jpg",
+            "attributes": {
+              "Color": "Quadling",
+              "Object": "Empty Rifle",
+              "Outfit": "Hell Kimono",
+              "Old One": "Cthulhu",
+              "Creature": "Sand Dweller",
+              "Character": "Tik Tok",
+              "Companion": "Aries Toto"
+            }
+          },
+          "WEIRDOZ2704": {
+            "name": "WeirdOZ #2704",
+            "files": [
+              {
+                "src": "ipfs://QmVixFvheVdjzX4Gh6GwtS9rBqVGyhta4Wu3BDswGtCssT",
+                "name": "profile",
+                "mediaType": "image/jpg"
+              },
+              {
+                "src": "ipfs://QmeDuTSXzbUDriBtxZPwFfqscDkeYDWmQpFMAxPQBHX3Fg",
+                "name": "banner",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmVixFvheVdjzX4Gh6GwtS9rBqVGyhta4Wu3BDswGtCssT",
+            "mediaType": "image/jpg",
+            "attributes": {
+              "Color": "Sky",
+              "Object": "None",
+              "Outfit": "Space Ape Mutation Suit",
+              "Old One": "Aunt Em",
+              "Creature": "Tcho Tcho Lama",
+              "Character": "King Kuranes",
+              "Companion": "Cancer Toto"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

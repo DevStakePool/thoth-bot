@@ -1,0 +1,58 @@
+[
+  {
+    "policy_id": "571e017f4bc8178c929ab97c4892b71f2ead02e38fc1cf48b58ff93f",
+    "asset_name": "426c7565426f7831333330",
+    "asset_name_ascii": "BlueBox1330",
+    "fingerprint": "asset17eu0ruu3m9ehu8k7lf6rm5wu9flf8shr9r4cpl",
+    "minting_tx_hash": "90e5f5e44e2a14d584e3d977a21353115f8f7a8afa1cd90d4188a97f81d9d137",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634256000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "571e017f4bc8178c929ab97c4892b71f2ead02e38fc1cf48b58ff93f": {
+          "BlueBox1330": {
+            "name": "BlueBox1330",
+            "note": "He's got the whole world in his hands.",
+            "files": [
+              {
+                "src": "ipfs://QmSFpuWtT57HC9muuRNquzd7FwQbRFnyJzpGxiM9oPpswp",
+                "name": "BlueBox1330",
+                "mediaType": "image/png"
+              },
+              {
+                "code": {
+                  "src": [
+                    "var ctx = new (window.AudioContext ||",
+                    "                window.webkitAudioContext)();",
+                    "ctx.sampleRate = 8000;",
+                    "var osc = ctx.createOscillator();",
+                    "osc.type = 'sine';",
+                    "osc.frequency.value = 2600;",
+                    "osc.connect(ctx.destination);",
+                    "osc.start();",
+                    "osc.stop(ctx.currentTime + 5);"
+                  ],
+                  "file": "hack.js",
+                  "mediatype": "text/javascript"
+                }
+              }
+            ],
+            "image": "ipfs://Qmd4dxhkcBDrwUjCM6v7zTSErxzQD4J8wJNTRv6v67qjNv",
+            "Rarity": "Normal",
+            "Series": "The 2600 NFT Project Blue Box",
+            "Twitter": "https://twitter.com/@2600_nft",
+            "Website": "https://2600.quest/",
+            "mediaType": "image/png",
+            "description": "Blue Box functional art piece by 2600 NFT Project.",
+            "activation_code": "212+183"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

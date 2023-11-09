@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684877677544",
+    "asset_name_ascii": "furnishHwguD",
+    "fingerprint": "asset14d2nhfzsadrk6qap5593jy4ek49z5dvsf246vy",
+    "minting_tx_hash": "cc817f0101a59d677e5a3856e6d7d006beaafe6b25f3d68afe36e2840e2b6f0f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674604800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishHwguD": {
+            "id": "HwguD",
+            "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "name": "Fireplace",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+                "name": "Fireplace",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZBhsPDqH8SthYH894ngh4Rf1EyGfLtbCvGaHqCWGxy2c",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmW4AVjc4bPWkziNFGiSV6Fy55XTAbKx1YJiM3rcCqaaSt",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "description": "Hand-crafted by Eaton Wilson.",
+            "furnitureId": 209
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "policy_id": "78789544382a809a4aa9a4db7097db100665ddd67e2129fae807fec5",
+    "asset_name": "5363756c70743132303232",
+    "asset_name_ascii": "Sculpt12022",
+    "fingerprint": "asset1hltwz7tqkczgjts8en6srv8g783hezzxm7z46n",
+    "minting_tx_hash": "d57d8eefd3ae68fc55bb5434da30dc3c282f4c3cde223defcb43388be4d389cf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643760000,
+    "minting_tx_metadata": {
+      "721": {
+        "78789544382a809a4aa9a4db7097db100665ddd67e2129fae807fec5": {
+          "Sculpt12022": {
+            "name": "Sculpt 1-2022",
+            "nsfw": "False",
+            "files": [
+              {
+                "src": "ipfs://QmVzYKW7st7XxopddJdLqbZo8XMGMLCRv8kvfpHGnJLEWY",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": "ipfs://QmeNAhTrtJ36RWUvL1h4WaPVECy3fCotK6GEBu3rZ53qqy",
+            "artist": "Frederico Martins",
+            "collection": "Fantasy portrait sculpts made in 2022"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

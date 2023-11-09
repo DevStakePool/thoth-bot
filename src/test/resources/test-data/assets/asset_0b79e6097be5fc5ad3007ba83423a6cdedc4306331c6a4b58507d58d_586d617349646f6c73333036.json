@@ -1,0 +1,58 @@
+[
+  {
+    "policy_id": "0b79e6097be5fc5ad3007ba83423a6cdedc4306331c6a4b58507d58d",
+    "asset_name": "586d617349646f6c73333036",
+    "asset_name_ascii": "XmasIdols306",
+    "fingerprint": "asset17lxge7hanqnxse74jzh47z2m7lwdtggfjjpv69",
+    "minting_tx_hash": "459f9ad5e647cc28afb566e86cc93f82e5eee2b5d84071f125cde441c1db05ac",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671148800,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "df27d19b9404fd38",
+        "0b79e6097be5fc5ad3007ba83423a6cdedc4306331c6a4b58507d58d": {
+          "XmasIdols306": {
+            "name": "Xmas Idols #306",
+            "files": [
+              {
+                "src": "ipfs://Qmc6JeoEP7dWgsf1BiUj5qMLHnQAjroNpFAX87wCWkbLS5",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRELGgXPnPTTgQkCiiz7bfQbb54DWvHCrrDPqVSPCjJpn",
+            "attributes": {
+              "Back": "Christmas Wreath",
+              "Face": "Red Candy Cane Shades",
+              "Head": "Horns",
+              "Outfit": "Santa Green Suit",
+              "Character": "Bapho",
+              "Background": "Snowflake Blue"
+            }
+          },
+          "XmasIdols510": {
+            "name": "Xmas Idols #510",
+            "files": [
+              {
+                "src": "ipfs://QmcS6tK7qnWitdtxf5Z5rbnxv5kFKfRXqasqQaECjnoTL9",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRzKw9soFK9wZ5CCqxyJ1DSsBqaMMCd3WQf9dfGWZdBpL",
+            "attributes": {
+              "Back": "Red Snow Shovel",
+              "Face": "Red Candy Cane Shades",
+              "Head": "Santa Hat",
+              "Outfit": "Flannel Hoodie",
+              "Character": "Ignis",
+              "Background": "Snowflake Clouds"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

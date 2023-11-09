@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684f66376b43",
+    "asset_name_ascii": "furnishOf7kC",
+    "fingerprint": "asset1nhgpw6z05kvcvwszxlzc3llqqw66cvjgf3ye5a",
+    "minting_tx_hash": "dcb80fb3ed54c66e9d211f43e33b7d9b286bd2e5ce995a1f99e1f1631c7803ae",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675987200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishOf7kC": {
+            "id": "Of7kC",
+            "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "name": "Bust",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+                "name": "Bust",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmavwRdpfu8TcBWK4fHWEe4DTRbCB9vfYjfrnwuXYCgyaL",
+                "name": "Bust",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZBJbGopnxaupp1JWu8kTPJYznfBFs8oRq6LXoMA2sfEq",
+                "name": "Bust",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "description": "Hand-crafted by Edward Walker.",
+            "furnitureId": 204
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

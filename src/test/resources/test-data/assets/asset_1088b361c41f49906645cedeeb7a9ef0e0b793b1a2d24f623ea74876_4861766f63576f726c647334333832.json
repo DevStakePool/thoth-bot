@@ -1,0 +1,75 @@
+[
+  {
+    "policy_id": "1088b361c41f49906645cedeeb7a9ef0e0b793b1a2d24f623ea74876",
+    "asset_name": "4861766f63576f726c647334333832",
+    "asset_name_ascii": "HavocWorlds4382",
+    "fingerprint": "asset1d40kleq6ztxg44h73tk0kp9064glrau7yy4jxl",
+    "minting_tx_hash": "de33498a3b2e9a49a65bcbc80372a9e58ddca89981f78146e9f693a669b92ef8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650067200,
+    "minting_tx_metadata": {
+      "721": {
+        "1088b361c41f49906645cedeeb7a9ef0e0b793b1a2d24f623ea74876": {
+          "HavocWorlds4382": {
+            "name": "Havoc Worlds #4382",
+            "files": [
+              {
+                "src": "ipfs://QmZNHjgENm6yAssACwvBv2HUUEdE77YNprVXgwHUAYBtEA/4382.png",
+                "name": "Havoc Worlds #4382 (on IPFS)",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ar://zrXzljlPLZ53vUCRzelYPNCZQgVh5ImItgE2d951y2M",
+                "name": "Havoc Worlds #4382 (on Arweave)",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZNHjgENm6yAssACwvBv2HUUEdE77YNprVXgwHUAYBtEA/4382.png",
+            "publisher": [
+              "https://havocworlds.io",
+              "https://havocworlds.com",
+              "https://twitter.com/havocworlds"
+            ],
+            "properties": [
+              {
+                "Background": "Tech Orange"
+              },
+              {
+                "Human Weapon": "Claymore Blue"
+              },
+              {
+                "Male Base": "Male 3"
+              },
+              {
+                "Male Marking": "Brushed Blue"
+              },
+              {
+                "Male Face": "Angry"
+              },
+              {
+                "Male Clothes": "Advance Jacket Green"
+              },
+              {
+                "Male Hair": "Wavy Blonde"
+              },
+              {
+                "Human Head Item": "Tech Face Mask White"
+              },
+              {
+                "Human Piercing": "Double Hoops"
+              },
+              {
+                "Human Bonus Item": "None"
+              }
+            ],
+            "description": "The Seekers will look for you"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

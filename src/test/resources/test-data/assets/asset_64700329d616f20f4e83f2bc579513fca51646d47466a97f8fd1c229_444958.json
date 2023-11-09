@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "64700329d616f20f4e83f2bc579513fca51646d47466a97f8fd1c229",
+    "asset_name": "444958",
+    "asset_name_ascii": "DIX",
+    "fingerprint": "asset1rmv94t9nfdxvytxw58y5faxcpxjpfy90ljtqpk",
+    "minting_tx_hash": "84e5fe771348a0507a685a9a61adc98192b4497e147279a4ee3364bcb1dddc12",
+    "total_supply": "33000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1632182400,
+    "minting_tx_metadata": {
+      "721": {
+        "64700329d616f20f4e83f2bc579513fca51646d47466a97f8fd1c229": {
+          "DIX": {
+            "url": "https://twitter.com/PlaymateSociety",
+            "name": "DIX Token",
+            "type": "Community Currency",
+            "files": [
+              {
+                "src": "ipfs://QmSjADfNt2HogEN5dh4nyh7BNtbWB8rUDb6qps9gKKdfRi",
+                "name": "DIX.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSjADfNt2HogEN5dh4nyh7BNtbWB8rUDb6qps9gKKdfRi",
+            "artist": "Playmate Society",
+            "policy": {
+              "type": "all",
+              "scripts": [
+                {
+                  "slot": 40989898,
+                  "type": "before"
+                },
+                {
+                  "type": "sig",
+                  "keyHash": "a23a74ce6883e641ac08722f1a33f09fa3ce4e26e4d710247911995f"
+                }
+              ]
+            },
+            "traits": [
+              "Rarity: 33.000.000"
+            ],
+            "homepage": "www.playmatesociety.com",
+            "copyright": "by Playmate Society",
+            "publisher": "Playmate Society"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

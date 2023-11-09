@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "8613da0890b73dd90bad7cad6ca672c52f0fba1b96ed52fb6eaccdd0",
+    "asset_name": "4861707061707573",
+    "asset_name_ascii": "Happapus",
+    "fingerprint": "asset16drya5ar2xsu5s53t5eaqrelde2fauwfm6lfr0",
+    "minting_tx_hash": "5525edc0388d6d7bbe76ad7da558030003bbe48556debef1756ad7c7abe48597",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634428800,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "8613da0890b73dd90bad7cad6ca672c52f0fba1b96ed52fb6eaccdd0": {
+          "Happapus": {
+            "name": "Happapus",
+            "files": {
+              "src": "ipfs://QmP7fu8PyyWtRi1ShX7r54MzRHwjdds8MiPeEwRuqwprrV",
+              "mediaType": "image/jpeg"
+            },
+            "image": "ipfs://QmP7fu8PyyWtRi1ShX7r54MzRHwjdds8MiPeEwRuqwprrV",
+            "artist": "chiarascuro",
+            "summary": "digital art with text",
+            "assetType": "NFT",
+            "mediaType": "image/jpeg",
+            "publisher": [
+              "https://chiarascuro.studio",
+              "https://tokhun.io"
+            ],
+            "collection": "Two-Tone",
+            "description": [
+              "Malik @happapus color requests: ffc107 + 000000"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

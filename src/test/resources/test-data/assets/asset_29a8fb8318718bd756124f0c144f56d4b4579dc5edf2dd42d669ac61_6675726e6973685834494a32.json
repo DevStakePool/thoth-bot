@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685834494a32",
+    "asset_name_ascii": "furnishX4IJ2",
+    "fingerprint": "asset127urtgh9dkfu96pfujgmexd27n6scs2rtewj0p",
+    "minting_tx_hash": "215d2f40782e5eec699d9f3dc1e088687708fbdce9c1ae47f93625407d96291d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674864000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishX4IJ2": {
+            "id": "X4IJ2",
+            "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "name": "Dining Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+                "name": "Dining Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmdBvm8mASjQ3fatRmRg2HdobLMVncdKMzwSfKyEZNcQeB",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmcSaExkRrb8rH3gBP2sbWntzveeY6pVcit26j1Y2EoNu7",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "description": "Hand-crafted by Toussaint Smith.",
+            "furnitureId": 208
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

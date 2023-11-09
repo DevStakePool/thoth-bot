@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6a6f73636869616461",
+    "asset_name_ascii": "joschiada",
+    "fingerprint": "asset1pd9vl649vmv6ftspvpucrnhfkqrly9t0urgjsa",
+    "minting_tx_hash": "27522ba9e80ad95a80de59daae220cabbccac8df1c8b543011b0b79c57074e49",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668643200,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "edmundas": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$edmundas",
+            "image": "ipfs://QmYX4KHyebR5LxH9rArqjYaYhUzVkRkvnHyfGyC5covWBn",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "joschiada": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$joschiada",
+            "image": "ipfs://QmTy6PEngmePxeksEp5wYEw83mx5Nmx5xtRCkMeyfATRRY",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "tokyoroyale": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$tokyoroyale",
+            "image": "ipfs://QmdiTzDankcGu5uaVAHhqt4tjZaHGjKxGrKQztwfhaem66",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

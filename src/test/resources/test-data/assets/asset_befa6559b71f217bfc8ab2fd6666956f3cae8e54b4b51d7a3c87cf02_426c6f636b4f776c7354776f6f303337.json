@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "befa6559b71f217bfc8ab2fd6666956f3cae8e54b4b51d7a3c87cf02",
+    "asset_name": "426c6f636b4f776c7354776f6f303337",
+    "asset_name_ascii": "BlockOwlsTwoo037",
+    "fingerprint": "asset1eeh86u94muzl26yjqyqsk8xw4v7n6s7hkyer9v",
+    "minting_tx_hash": "54048e2ca3063d88701a345b36ecdd15aa7128480270f956eac29fc5b3846d31",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1656374400,
+    "minting_tx_metadata": {
+      "721": {
+        "befa6559b71f217bfc8ab2fd6666956f3cae8e54b4b51d7a3c87cf02": {
+          "BlockOwlsTwoo037": {
+            "name": "BlockOwls Two.o",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafybeib",
+                  "7e4qfwt3mkngurnkoloq4k73tdixkt2k6bgkolu763ylvlohh2q"
+                ],
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": [
+              "ipfs://bafybeib",
+              "hx5rwr7uykdqsu5n4tjz3nvnxcuckrmsul2aucpwjsvzlksi2ii"
+            ],
+            "number": "37",
+            "rarity": "Rare",
+            "Chapter": "Chapter 1. GBOiC Part 3 C#1",
+            "Project": "BlockOwls",
+            "Website": "https://blockowls.io",
+            "Software": "AI+PS+C4D+RS+AE",
+            "Minted by": "https://tygar-pool.com",
+            "attributes": {
+              "State": "Crunched",
+              "Gender": "Female",
+              "Body Shape": "ModifiedBlock",
+              "Main Material": "Metal",
+              "Display Box Base": "TexturedMetal",
+              "Display Box Glass": "PlainPlexi"
+            },
+            "Block Owls ID": "#108",
+            "Author/Designer": "Ctoy"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65314334735256",
+    "asset_name_ascii": "frame1C4sRV",
+    "fingerprint": "asset12aa042ttrz9upk5ukhxqkx3zw5pck2fmsmxxz7",
+    "minting_tx_hash": "7611c514da9f98853c658455ae89755b8cb5d7fbcfeb694fbb1a25d39fa36d79",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675814400,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame1C4sRV": {
+            "id": "WceOI",
+            "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "name": "Ape Society Frame Level 1",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+                "name": "Ape Society Frame Level 1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "level": 1,
+            "artist": "Halsey Hill",
+            "mintedAt": 1675859929571,
+            "mintedBy": "e1b2c48ceb1e6ff3c6ebd0c38083fbe21a9e5483ef7155d74365ce690f",
+            "description": "Level 1 frame",
+            "mintedStake": "stake1uxevfr8trehl83ht6rpcpqlmugdfu4yraac4t46rvh8xjrcv0nnh4"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

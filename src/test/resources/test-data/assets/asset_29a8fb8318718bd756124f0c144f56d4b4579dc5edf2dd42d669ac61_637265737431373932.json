@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "637265737431373932",
+    "asset_name_ascii": "crest1792",
+    "fingerprint": "asset1nth9nslmc0jagv94xsneg8cpvz7k0l0ywvkjrr",
+    "minting_tx_hash": "76f0c18d5f83914879b37159793440006d111977b725a048958146f131274727",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675814400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest1792": {
+            "id": 1792,
+            "src": "ipfs://QmdmT1zeNAdy3EqVBhwdZd4sM22mwSy254TLp2GX2R6FA9",
+            "name": "Amato Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmdmT1zeNAdy3EqVBhwdZd4sM22mwSy254TLp2GX2R6FA9",
+                "name": "Amato Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmPRy1oxPKAHZfh7Myd1JddjMqf5Bp77u9uhqjqMu9iDNQ",
+                "name": "Amato Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmY1YWfeatM2MQ2vVDD3DdxYMudNzRFd6mJzd2AacFpZ3J",
+                "name": "Amato Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmdmT1zeNAdy3EqVBhwdZd4sM22mwSy254TLp2GX2R6FA9",
+            "description": "Celebrating the heritage of the Amato family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

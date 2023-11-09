@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368706e4a4244",
+    "asset_name_ascii": "furnishpnJBD",
+    "fingerprint": "asset1l4rk7t0446xecgyz5lusnndxpvca59tawhak3z",
+    "minting_tx_hash": "d9c66bda2f623dfddf09f4dfdcad079d66571d7e1d6cfffecab75f46f2a91f1c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675209600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishpnJBD": {
+            "id": "pnJBD",
+            "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "name": "Billiards",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+                "name": "Billiards",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmUqpVJs8J68zigVgzSLpXw4NXnqTbwQC9iG5J6KqdjQv3",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmWbYDVcSSspdXqUCWxg4wVJsjJ56ZJoDkeWL1xqvtUT92",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "description": "Hand-crafted by Pothin Taylor.",
+            "furnitureId": 202
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

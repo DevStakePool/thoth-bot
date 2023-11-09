@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686a6774546a",
+    "asset_name_ascii": "furnishjgtTj",
+    "fingerprint": "asset1l68kzq8n7s40tq3355d7fcygzp53z0wzhxn09g",
+    "minting_tx_hash": "fb74103a870a8736217e33081cc7be0e35fa166006b1096df8d271e1e5c5eba3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672617600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishjgtTj": {
+            "id": "jgtTj",
+            "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "name": "Bust",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+                "name": "Bust",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmavwRdpfu8TcBWK4fHWEe4DTRbCB9vfYjfrnwuXYCgyaL",
+                "name": "Bust",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmZBJbGopnxaupp1JWu8kTPJYznfBFs8oRq6LXoMA2sfEq",
+                "name": "Bust",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "description": "Hand-crafted by Brayden Roberts.",
+            "furnitureId": 204
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

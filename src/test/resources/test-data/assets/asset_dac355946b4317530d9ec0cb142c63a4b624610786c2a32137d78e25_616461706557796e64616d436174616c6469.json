@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706557796e64616d436174616c6469",
+    "asset_name_ascii": "adapeWyndamCataldi",
+    "fingerprint": "asset1u52y8ajyz3v63yqu8czj3kwcc4p3q7y2pl6ld9",
+    "minting_tx_hash": "f1495e95983aadaecafece6a470510c4db8e07aace20153252145c6a536dea29",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWyndamCataldi": {
+            "Hat": "Top Hat",
+            "Body": "Rainbow Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Aviators",
+            "Head": "Orange",
+            "name": "Wyndam Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmRKjc7qK9FKzfzr1cutnqJavK9fJUEQMAPu95aZbE18aP",
+                "name": "Wyndam Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRKjc7qK9FKzfzr1cutnqJavK9fJUEQMAPu95aZbE18aP",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "bff82d31352d9bdfdb49e243ab74af715488631f330b2cf064178f90",
+    "asset_name": "426c6f636b4f776c73506f6e6b303238",
+    "asset_name_ascii": "BlockOwlsPonk028",
+    "fingerprint": "asset1emlx4heddg4uqtdpaa9h569m03pkdya02p528g",
+    "minting_tx_hash": "784d2ffa27f0ad77e338f137911d0ada4cec816695a2b82dc0e0db1ddaa48551",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1638316800,
+    "minting_tx_metadata": {
+      "721": {
+        "bff82d31352d9bdfdb49e243ab74af715488631f330b2cf064178f90": {
+          "BlockOwlsPonk028": {
+            "name": "BlockOwls Pønk",
+            "files": [
+              {
+                "src": "ipfs://QmPKwEUGS4htKbwkwLzpj5y75SFYA7XEsSA9qNSJgVro2s",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXemhyTjhHgJfMTg38wx67mBiEL9SxtixbmQQvB94HjQg",
+            "number": 28,
+            "rarity": "Rare",
+            "Chapter": "Chapter 1. GBOiC Part 1 Hydra",
+            "Project": "BlockOwls",
+            "Website": "https://blockowls.io",
+            "Software": "AI+PS+C4D+RS+AE",
+            "Minted by": "https://tygar-pool.com",
+            "attributes": [
+              "State: Confused",
+              "Body Shape: Block",
+              "Main Material: Leather",
+              "Display Box Base: BlackCardboard+Styrofoam",
+              "Display Box Glass: PlainPlexi",
+              "Gender: Male"
+            ],
+            "Block Owls ID": "#003",
+            "SoundDesigner": "Sander",
+            "Author/Designer": "Ctoy"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

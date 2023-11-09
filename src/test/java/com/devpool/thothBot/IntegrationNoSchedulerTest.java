@@ -359,13 +359,13 @@ public class IntegrationNoSchedulerTest {
                 .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1gc08w2lamu0zvcx7rxz7l86xlpfzy00qygdt0z\">COC</a> 26,845,000,000")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1zqjy7fye4s5s5j4p8j0v5zeasp33wvskx35js6\">gioconda</a> 1")));
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset18dhkz9yshg4sf45k7c9vcqvxxrpmuch3zhkvqm\">0x616461</a> 1")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Shown 5/5")));
+                .anyMatch(t -> t.contains("Shown 10/76")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Page 1/1")));
+                .anyMatch(t -> t.contains("Page 1/8")));
 
         // get assets as reply markup
         Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")

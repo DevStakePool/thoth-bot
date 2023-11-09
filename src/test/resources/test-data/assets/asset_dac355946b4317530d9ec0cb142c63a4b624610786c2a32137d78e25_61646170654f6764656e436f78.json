@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654f6764656e436f78",
+    "asset_name_ascii": "adapeOgdenCox",
+    "fingerprint": "asset1crth7c0gcxwp8s49cm2twu5xwcmdsl25gu65q4",
+    "minting_tx_hash": "66d87732c77a964e148e4721871c9fb527346831a144c9c03a1fc23813de2d05",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeOgdenCox": {
+            "Hat": "Gold Helmet",
+            "Body": "Chainmail",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ogden Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmZJZdwpUb2YnBsY9x8uW4ML3Bipxa3T9RLhHn26zWx2jJ",
+                "name": "Ogden Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZJZdwpUb2YnBsY9x8uW4ML3Bipxa3T9RLhHn26zWx2jJ",
+            "Family": "Cox",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

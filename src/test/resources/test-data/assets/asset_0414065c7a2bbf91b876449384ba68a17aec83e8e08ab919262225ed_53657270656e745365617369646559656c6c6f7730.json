@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed",
+    "asset_name": "53657270656e745365617369646559656c6c6f7730",
+    "asset_name_ascii": "SerpentSeasideYellow0",
+    "fingerprint": "asset1xrgtg6fgkq5fjp3qgy7vspllchahc3vf7zn8sf",
+    "minting_tx_hash": "2cf57437f8f17012164f24f7d346362da1863361571bcdbd3333787f4ca4dee8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658534400,
+    "minting_tx_metadata": {
+      "721": {
+        "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed": {
+          "SerpentSeasideYellow0": {
+            "name": "Serpent",
+            "Color": "Yellow",
+            "Model": "Serpent",
+            "Speed": "5.9",
+            "files": [
+              {
+                "src": "ipfs://QmVy1mYsPQzVSXnENLMKpR5KDxUmEvAF171ZgPf46bSBJP",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmVX9MwDbV5tmeKKm9aTeqr9FhjPbkutZsdjYrpeTa7yrC",
+            "Braking": "3.2",
+            "Handling": "4.1",
+            "Background": "Seaside",
+            "Acceleration": "4.5"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]
