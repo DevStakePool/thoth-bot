@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "6743d6f5214fa9d60bff21c68ec9107a70767893496ede1308367013",
+    "asset_name": "73746f6e6573",
+    "asset_name_ascii": "stones",
+    "fingerprint": "asset1wn6x429tr3hlv67swyyl2wfyyf3sy7q99u4gan",
+    "minting_tx_hash": "d6080bc19022d8fefa18b727bc2f7dfa98cca2e2bf42dca3bd7885b50a621070",
+    "total_supply": "45934",
+    "mint_cnt": 1112,
+    "burn_cnt": 0,
+    "creation_time": 1662163200,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "2a7ad5f7b0f93eca",
+        "6743d6f5214fa9d60bff21c68ec9107a70767893496ede1308367013": {
+          "shell": {
+            "name": "$SHELLS",
+            "files": [
+              {
+                "src": "ipfs://QmTNA4ABLFLPkPx5DvpZqqhfzSL5u5M7cQA9hJBaU3HGEq",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQpLRAQzZ1cPG6oCzK1d6CGGVMJEd3oJGGxjk3bDBNn8o",
+            "ticker": "$SHELLS",
+            "website": "https://spaceottersociety.io/",
+            "decimals": 0,
+            "fungible": "true",
+            "description": "Official utility token for Space Otter Society."
+          },
+          "stones": {
+            "name": "$GALAXYSTONES",
+            "files": [
+              {
+                "src": "ipfs://Qma5j7ChwHgJJiU3nt4EauNXXg977Bu8Q1tknyZChRPsiZ",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmW1ePoDF7HyybiWzH9Cj287jyLWXVNLSxuTkLHvSjzwvp",
+            "ticker": "$GALAXYSTONES",
+            "website": "https://spaceottersociety.io/",
+            "decimals": 0,
+            "fungible": "true"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

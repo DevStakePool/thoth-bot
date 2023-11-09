@@ -1,0 +1,82 @@
+[
+  {
+    "policy_id": "b00041d7dc086d33e0f7777c4fccaf3ef06720543d4ff4e750d8f123",
+    "asset_name": "436c756d73792056616c6c6579204c616e6420506c6f74202335393035",
+    "asset_name_ascii": "Clumsy Valley Land Plot #5905",
+    "fingerprint": "asset160rec3up5pzt04g4mwczdqwqpda2cfyqm60lks",
+    "minting_tx_hash": "afbd8d84124081ee05b724332a79b56947be0465bf8d189ba7cceee6a8fd747e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1664323200,
+    "minting_tx_metadata": {
+      "721": {
+        "b00041d7dc086d33e0f7777c4fccaf3ef06720543d4ff4e750d8f123": {
+          "Clumsy Valley Land Plot #3024": {
+            "id": "3024",
+            "rank": "723",
+            "biome": "dunes",
+            "camel": "1",
+            "grass": "3",
+            "image": [
+              "bafybeif37umi6d5ww3vhski26wcnjkvg7esm5gxsnmzatfo56mklklrtme/",
+              "final/",
+              "ClumsyValleyLandPlot3024_ipfs.svg"
+            ],
+            "items": "7",
+            "rocks": "2",
+            "barrel": "1",
+            "project": "Clumsy Valley",
+            "special": "no",
+            "terrain": "sand4",
+            "mediaType": "image/svg+xml",
+            "moon_staff": "1",
+            "side_terrain": "cavern/bones"
+          },
+          "Clumsy Valley Land Plot #5905": {
+            "id": "5905",
+            "lumi": "1",
+            "rank": "4399",
+            "twig": "1",
+            "biome": "tundra",
+            "grass": "2",
+            "image": [
+              "bafybeif37umi6d5ww3vhski26wcnjkvg7esm5gxsnmzatfo56mklklrtme/",
+              "final/",
+              "ClumsyValleyLandPlot5905_ipfs.svg"
+            ],
+            "items": "7",
+            "clouds": "1",
+            "project": "Clumsy Valley",
+            "special": "no",
+            "terrain": "snow1",
+            "mediaType": "image/svg+xml",
+            "snow_pile": "2",
+            "side_terrain": "ice2"
+          },
+          "Clumsy Valley Land Plot #9918": {
+            "id": "9918",
+            "rank": "1951",
+            "biome": "alien",
+            "image": [
+              "bafybeif37umi6d5ww3vhski26wcnjkvg7esm5gxsnmzatfo56mklklrtme/",
+              "final/",
+              "ClumsyValleyLandPlot9918_ipfs.svg"
+            ],
+            "items": "11",
+            "rocks": "8",
+            "flower": "3",
+            "project": "Clumsy Valley",
+            "special": "no",
+            "terrain": "space4",
+            "tentacle": "2",
+            "mediaType": "image/svg+xml",
+            "side_terrain": "alien3"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

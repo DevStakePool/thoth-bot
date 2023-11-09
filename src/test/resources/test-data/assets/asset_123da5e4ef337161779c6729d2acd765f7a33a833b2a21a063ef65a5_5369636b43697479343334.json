@@ -1,0 +1,60 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343334",
+    "asset_name_ascii": "SickCity434",
+    "fingerprint": "asset103p70wgpt6u38mej3ezk4p4qnecgk4fsgzs8n3",
+    "minting_tx_hash": "68d2977f1a4928c6971213b7c8a53168a63857deb8de7f0972d20cded0c15c60",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity434": {
+            "name": "SickCity434 - Very00",
+            "files": [
+              {
+                "src": "ipfs://QmUEX6dxuMQXnPjJFVvNqgWEtYWd3445BNfHPTru9k3gyJ",
+                "name": "Very00 - Sometimes",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmWzkkLNKQriJNNi3DLK77eymnAXs7EMngZ9eZ3JJXrEjk",
+            "release": {
+              "links": {
+                "spotify": [
+                  "https://open.spotify.com/artist/35ekWBptCShJRbm",
+                  "7HbbUeY?si=TpbP7QVoSdi3UtKENIl3xQ"
+                ],
+                "twitter": "https://x.com/veryoo_",
+                "youtube": "https://youtube.com/@MPDPublishing",
+                "facebook": "https://www.facebook.com/profile.php?id=100077446331584",
+                "instagram": "https://www.instagram.com/veryoo_",
+                "apple_music": "https://music.apple.com/us/artist/veryoo/1586746416"
+              },
+              "genres": [
+                "hip hop",
+                "rap"
+              ],
+              "artists": [
+                "Very00"
+              ],
+              "copyright": "Very00 ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "Sometimes",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "Sometimes",
+              "song_duration": "PT3M32S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

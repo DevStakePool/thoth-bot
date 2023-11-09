@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687a67513774",
+    "asset_name_ascii": "furnishzgQ7t",
+    "fingerprint": "asset1kj8gcg9dkyl6rk4yfzpu76nuyxhdt5sp63nzxu",
+    "minting_tx_hash": "5e216322f505ca7a92e559a364bcf4d5f880da30c511d545b0589d9aa01d1054",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672272000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishzgQ7t": {
+            "id": "zgQ7t",
+            "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "name": "Cushioned Armchair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+                "name": "Cushioned Armchair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQfxQsmMez3vgCjAsKVaVKnwRishsqpCtvixnyBMZbeY9",
+                "name": "Cushioned Armchair",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmVthsuyoH91GwKwkqFeT3kaZNedhhEn69Mq5VhF5nmCke",
+                "name": "Cushioned Armchair",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "description": "Hand-crafted by Bolton Evans.",
+            "furnitureId": 207
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

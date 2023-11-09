@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3339556e696f6e506c616365574835334c3137",
+    "asset_name_ascii": "cabin39UnionPlaceWH53L17",
+    "fingerprint": "asset1dh6w6x7g9x6u52yvq8r8cfhzpa6qua4rce0xkr",
+    "minting_tx_hash": "765a8b31745a7e203a05e274be8b3fe77af6e0dcda9cfe44b65f91ebb911166b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin39UnionPlaceWH53L17": {
+            "name": "39 Union Place, WH53 L17",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Union Place",
+            "District": "Whooss",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "L",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "53",
+            "Y Coordinate": "17"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

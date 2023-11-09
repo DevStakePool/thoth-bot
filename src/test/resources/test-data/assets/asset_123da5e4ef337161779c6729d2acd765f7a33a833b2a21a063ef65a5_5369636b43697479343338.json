@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343338",
+    "asset_name_ascii": "SickCity438",
+    "fingerprint": "asset1gcx4llle07xewn6d9zratf79jf6xan4dfc7clx",
+    "minting_tx_hash": "a1424b41bb910c964c31d68d342b5d8ac8ffea957439668be520978d670ef996",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity438": {
+            "name": "SickCity438 - DØZA",
+            "files": [
+              {
+                "src": "ipfs://QmbhQtDbWYViguKRGyozLCvmkkhMrNHGmwtTcqKgfRUfnZ",
+                "name": "DØZA - Dania Pier",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmQcK9jp13iQbj3dk6WKMibX3WbBUx7S5LKs4cHNJjLb6X",
+            "release": {
+              "links": {
+                "twitter": "https://twitter.com/jimcardoza",
+                "youtube": "https://www.youtube.com/channel/UC-VkZ2NP6s-bvT9YIszWi6A",
+                "instagram": "https://www.instagram.com/jimmy__rigs/"
+              },
+              "genres": [
+                "instrumental",
+                "ambient",
+                "cinematic"
+              ],
+              "artists": [
+                "DØZA"
+              ],
+              "copyright": "DØZA ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "Dania Pier",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "Dania Pier: Demos and other Miscellaneous Thoughts",
+              "song_duration": "PT2M56S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

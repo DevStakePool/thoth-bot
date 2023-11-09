@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "63efb704b7396890e4d9539d030c0e667739043add65c00f96c586c0",
+    "asset_name": "56616c6f72756d",
+    "asset_name_ascii": "Valorum",
+    "fingerprint": "asset1ggnw0tvsr307z08tm9cvlxy3c64alum960qnyh",
+    "minting_tx_hash": "e546966ea0d415e096d9bb61deccd7f77b32ffc281ab5b9ced7c49e5f01c833d",
+    "total_supply": "2000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1687910400,
+    "minting_tx_metadata": {
+      "721": {
+        "63efb704b7396890e4d9539d030c0e667739043add65c00f96c586c0": {
+          "Valorum": {
+            "URL": "L4VA.com/Relics",
+            "Name": "Valorum",
+            "image": "ipfs://QmdYu513Bu7nfKV5LKP6cmpZ8HHXifQLH6FTTzv3VbbqwP",
+            "Ticker": "VLRM",
+            "Description": "The governance and utility token of the Relics of Magma."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": {
+      "url": "https://www.L4VA.com/Relics",
+      "logo": "",
+      "name": "Valorum",
+      "ticker": "VLRM",
+      "decimals": 4,
+      "description": "The governance and utility token of the Relics of Magma."
+    },
+    "cip68_metadata": null
+  }
+]

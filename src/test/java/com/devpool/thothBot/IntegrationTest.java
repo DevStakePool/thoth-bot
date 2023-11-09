@@ -294,7 +294,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("thoth-bot 1"));
                     Assertions.assertTrue(msg.contains("MELD 10,000.00"));
                     Assertions.assertTrue(msg.contains("$alessio.dev"));
-                    Assertions.assertTrue(msg.contains("DEV Pool patron rewards for epoch 377")); // Metadata on message - issue #23
+                    Assertions.assertTrue(msg.contains("DEV patron rewards for epoch 433")); // Metadata on message - issue #23
                     Assertions.assertTrue(msg.contains("[SundaeSwap] Valid "));
                     accountsTransactionsChecked++;
                 } else {
@@ -327,12 +327,12 @@ public class IntegrationTest {
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
                     Assertions.assertTrue(msg.contains("new transaction(s)"));
-                    Assertions.assertTrue(msg.contains("Output -21.42"));
+                    Assertions.assertTrue(msg.contains("Output -94.82"));
                     Assertions.assertTrue(msg.contains("CULO 100,000"));
                     Assertions.assertTrue(msg.contains("$gioconda"));
                     Assertions.assertTrue(msg.contains("3980e6eda9693812ed633e4f797ceb934639c07e03d3ad90d10923e3cc0a785c")); // issue #6 test
-                    Assertions.assertTrue(msg.contains("Output -5.00"));
-                    Assertions.assertTrue(msg.contains("NTX 200.00"));
+                    Assertions.assertTrue(msg.contains("Input 5.00"));
+                    Assertions.assertTrue(msg.contains("Empowa 2,025.28"));
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);
@@ -345,7 +345,7 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("[DYNO]"));
                     accountsRewardsChecked++;
                 } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("30 new transaction(s)"));
+                    Assertions.assertTrue(msg.contains("86 new transaction(s)"));
                     Assertions.assertTrue(msg.contains("hvMIN 245,820,436.00"));
                     Assertions.assertTrue(msg.contains("1612572528 1"));
 
@@ -359,9 +359,9 @@ public class IntegrationTest {
                     Assertions.assertTrue(msg.contains("Fee 0.18"));
 
                     // Internal TX with delegation (issue #5)
-                    Assertions.assertTrue(msg.contains("75f166b393900406dd1ecb28713c9b1e1f0a0a1b1efcbb85914fbc023278e35a"));
+                    Assertions.assertTrue(msg.contains("eb9670bad51b19aea9e89fe4e1f66ee33dd5dea7e0386d888fbdd45c175effb1"));
                     Assertions.assertTrue(msg.contains("Delegated to"));
-                    Assertions.assertTrue(msg.contains("pool1...kqq6yjvr"));
+                    Assertions.assertTrue(msg.contains("pool1...px57z7fk"));
                     accountsTransactionsChecked++;
                 } else {
                     Assertions.fail("Unknown message " + msg);

@@ -1,0 +1,83 @@
+[
+  {
+    "policy_id": "24a32f531db96d0b2daf673d31e6203c94eebdc83781d7f9d5dc6ae5",
+    "asset_name": "69626d",
+    "asset_name_ascii": "ibm",
+    "fingerprint": "asset17v42r78q2xes8eepe5ly3z5f6zlc9ec80r5yd2",
+    "minting_tx_hash": "a3e67d4bd88fe516095c7a4548c9a6bcf42649ec111cb686cfbf07e75b950141",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1661817600,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "f9e231e6e7ec3394",
+        "24a32f531db96d0b2daf673d31e6203c94eebdc83781d7f9d5dc6ae5": {
+          "ibm": {
+            "name": "ibm",
+            "image": "ipfs://QmcgH7X1itVy3H1AWmKd15wGZgRzaepWyabyQDW11EWt7V",
+            "discord": "https://discord.gg/VvawrtgwWp",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "variant": 3,
+            "website": "https://pixl.page",
+            "designBy": "JAR Heads",
+            "pixlLink": "https://pixl.page/ibm",
+            "mintWindow": 1,
+            "description": [
+              "pixl.links are your personal URLs on https://pixl.page",
+              "Connect them with any of your pixl.pages and showcase your NFTs!"
+            ],
+            "artistTwitter": "https://twitter.com/JARStudioNFT"
+          },
+          "neo": {
+            "name": "neo",
+            "image": "ipfs://QmXATxRskL9rbwmQ5PRqz8eDQtcozragiaMWyWXibMs5hY",
+            "discord": "https://discord.gg/VvawrtgwWp",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "variant": 7,
+            "website": "https://pixl.page",
+            "designBy": "False Idols",
+            "pixlLink": "https://pixl.page/neo",
+            "mintWindow": 1,
+            "description": [
+              "pixl.links are your personal URLs on https://pixl.page",
+              "Connect them with any of your pixl.pages and showcase your NFTs!"
+            ],
+            "artistTwitter": "https://twitter.com/FalseIdolsNFT"
+          }
+        },
+        "38f25e7bfba4b4c65de7b55d68475dcc6f02a376ec53c796ab5723b8": {
+          "PixlGenesis01484": {
+            "name": "pixl.page - Curator #01484",
+            "tier": "Genesis",
+            "color": "Opal",
+            "files": [
+              {
+                "src": "ipfs://QmRYBDXdykJrBYhBD1pPDt36PRqsTNCKhmL1Gv3RY8RuBS",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmX862v53voV2csNtXeJPY6aG6m64NTwF7sVbG3utYzges",
+            "rarity": "Epic",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "website": "https://pixl.page/",
+            "designBy": "BlockOwls | Ctoy",
+            "profile1": "claimed",
+            "profile2": "claimed",
+            "mediaType": "image/gif",
+            "mintWindow": 2,
+            "description": [
+              "The pixl.page Curator NFT gives free access ",
+              "to the premium features of pixl.page"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

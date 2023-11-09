@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687a75387659",
+    "asset_name_ascii": "furnishzu8vY",
+    "fingerprint": "asset189f3z4jgunslthnqmy2g962zuhqjgqkh2g4ckc",
+    "minting_tx_hash": "614e950c8b47f07b6b1c8508d981c34cab44d3de3cae742f6dda143f5330e647",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674604800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishzu8vY": {
+            "id": "zu8vY",
+            "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "name": "Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+                "name": "Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfEg7Mfqch3U6Fr6F7KrcCPuBGyXX443Yc7LJBw24Tcdi",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZfrn2Sbbk5AokpQKir5L7gcFu1HhVyJjqjDFmQhGycJo",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "description": "Hand-crafted by Ewing Smith.",
+            "furnitureId": 206
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "policy_id": "4523c5e21d409b81c95b45b0aea275b8ea1406e6cafea5583b9f8a5f",
+    "asset_name": "000de14042756437343230",
+    "asset_name_ascii": "\\000\r\\341@Bud7420",
+    "fingerprint": "asset1s6yuhltmufg9narslxdxxrrvlnxa70rd4ffgh9",
+    "minting_tx_hash": "4e86c2f83d407251494f9ed18428671d0ce29495961041b8685dd009177148c8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679443200,
+    "minting_tx_metadata": null,
+    "token_registry_metadata": null,
+    "cip68_metadata": {
+      "222": {
+        "fields": [
+          {
+            "map": [
+              {
+                "k": {
+                  "bytes": "6e616d65"
+                },
+                "v": {
+                  "bytes": "5370616365427564202337343230"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "747261697473"
+                },
+                "v": {
+                  "list": [
+                    {
+                      "bytes": "42656c74"
+                    },
+                    {
+                      "bytes": "436f76657265642048656c6d6574"
+                    },
+                    {
+                      "bytes": "582d526179"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": {
+                  "bytes": "74797065"
+                },
+                "v": {
+                  "bytes": "526f626f74"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "696d616765"
+                },
+                "v": {
+                  "bytes": "697066733a2f2f6261666b72656968723273337a70786a74707a71726675716867707233326735633779766e6271657570327a64676d77616762356f616f65646c65"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "736861323536"
+                },
+                "v": {
+                  "bytes": "f1d4b797dd337e6112d20733e3bd1ba2fe2ad0c0947eb23332c0307ae0388359"
+                }
+              }
+            ]
+          },
+          {
+            "int": 1
+          },
+          {
+            "fields": [],
+            "constructor": 0
+          }
+        ],
+        "constructor": 0
+      }
+    }
+  }
+]

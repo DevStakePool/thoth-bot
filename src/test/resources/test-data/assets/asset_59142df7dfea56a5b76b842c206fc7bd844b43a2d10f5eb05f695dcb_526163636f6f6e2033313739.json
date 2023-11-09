@@ -1,0 +1,90 @@
+[
+  {
+    "policy_id": "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb",
+    "asset_name": "526163636f6f6e2033313739",
+    "asset_name_ascii": "Raccoon 3179",
+    "fingerprint": "asset1hvfq00sa5r4hmfjm4c9gjq2fypp26f5m8s3cjk",
+    "minting_tx_hash": "ecf37085a6671b087d40d186c08d2cf3543b8fd56e9443daa21c5e2e583d23a2",
+    "total_supply": "1",
+    "mint_cnt": 4,
+    "burn_cnt": 3,
+    "creation_time": 1660953600,
+    "minting_tx_metadata": {
+      "721": {
+        "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb": {
+          "Raccoon 3179": {
+            "name": "Raccoon #3179",
+            "Index": "3179",
+            "image": "ipfs://QmQCuWfvu4DoHBnx6772snUKk6Hqm3AmMri2o3hByCcFFw",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2022",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Brown Eyes",
+              "Head": "Red Head Scarf",
+              "Ring": "None",
+              "Genus": "Normal",
+              "Mouth": "Toothpick",
+              "Nails": "Black Nails",
+              "Wings": "None",
+              "Eyewear": "Eyelashes",
+              "Wardrobe": "Farmer Cream Dress",
+              "Left Hand": "Beetroot",
+              "Syndicate": "Farmer",
+              "Profession": "Soldier",
+              "Right Hand": "Nunchucks",
+              "Base Point Multiplier": "1.00"
+            }
+          }
+        },
+        "7795eb9746390ea24c03c7f9898bb706dd6d3bd5cf5a7ee9ddf9707c": {
+          "RS Ruby Ring 273": {
+            "name": "RS Ruby Ring 273",
+            "files": [
+              {
+                "src": "ipfs://QmdFU4h1osV4Abhn4sZWZvTm9c5pFemApEnv9eKGZtywjR",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTzo6d45rwEBJ8S5UPaGMQ7VeQSvsT4VLyu89W27jrpwg",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Ring",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "5512",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "273",
+            "BPM Boost Percentage": "30"
+          },
+          "RS Dark Wings 159": {
+            "name": "RS Dark Wings 159",
+            "files": [
+              {
+                "src": "ipfs://QmWk6EGNATF1Gu4tPHXFNw2buDauYEecv2UXt7bPeFHjzm",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTqQgNj1u3xJAgK8UQbKJSyvMxwri4NC6NLv1eaPd64pj",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Wings",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "5511",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "159",
+            "BPM Boost Percentage": "55"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

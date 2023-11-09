@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d656e646f48696c6c",
+    "asset_name_ascii": "adapeMendoHill",
+    "fingerprint": "asset12eknshq52dcje9hypnuuzcppxzelwf9amdu96s",
+    "minting_tx_hash": "6a15a690c328f54edbe2c33c3aba338eeaa5a66797038b49af1ca99b32269670",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMendoHill": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Mendo Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmQmtkX9i3bPKSjgum8S7Zs5tdXzkQdaFgp97KAvxFBEZL",
+                "name": "Mendo Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQmtkX9i3bPKSjgum8S7Zs5tdXzkQdaFgp97KAvxFBEZL",
+            "Family": "Hill",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Hill family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

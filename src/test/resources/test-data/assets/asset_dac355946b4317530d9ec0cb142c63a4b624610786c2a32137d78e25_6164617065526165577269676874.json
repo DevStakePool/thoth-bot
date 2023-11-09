@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065526165577269676874",
+    "asset_name_ascii": "adapeRaeWright",
+    "fingerprint": "asset1jrhn0w8cahegcd68uqznqgwnp3hcspaeu9g8cw",
+    "minting_tx_hash": "2e23c37cdb3b6abf600a701e88164db0a01b06037195df0d0375fa1987d82dd1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRaeWright": {
+            "Hat": "None",
+            "Body": "Robot",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Rae Wright",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmTfk7pDG23T8ngMgwkVLasBFoWqWi4sPfgsTSYtJ8bdgx",
+                "name": "Rae Wright",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTfk7pDG23T8ngMgwkVLasBFoWqWi4sPfgsTSYtJ8bdgx",
+            "Family": "Wright",
+            "Weapon": "None",
+            "Accessory": "Pipe",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wright family"
+          },
+          "adapeRigbyChiesa": {
+            "Hat": "None",
+            "Body": "Rainbow Suit",
+            "Ears": "Earphones",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Rigby Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmSxkkmo5ugBYVjKvPLdHmBNRhMArMzSpZS6r31t8AEW4c",
+                "name": "Rigby Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSxkkmo5ugBYVjKvPLdHmBNRhMArMzSpZS6r31t8AEW4c",
+            "Family": "Chiesa",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          },
+          "adapeDomingoEvans": {
+            "Hat": "Top Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Domingo Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUSW5fbQpDNyAUq4eY4u8JKW8xS8pmxdUSqv83na5KkJs",
+                "name": "Domingo Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUSW5fbQpDNyAUq4eY4u8JKW8xS8pmxdUSqv83na5KkJs",
+            "Family": "Evans",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

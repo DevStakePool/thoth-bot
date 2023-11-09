@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343235",
+    "asset_name_ascii": "SickCity425",
+    "fingerprint": "asset10x26hx6fk8kkeatvu9gd0d77d0jpesne7nymf8",
+    "minting_tx_hash": "63f6957366145f537a07862c1ec8c3107dfc7e52bd3a026fd8d15dd64010a060",
+    "total_supply": "21203",
+    "mint_cnt": 5,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity425": {
+            "name": "SickCity425- Jayy Gawd",
+            "files": [
+              {
+                "src": "ipfs://QmZcTXx4dJXfFNcTuHGmvrxUSDBJyS4aXVb4NodXgv1oTT",
+                "name": "Jayy Gawd - California Throwback",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmaPW9RknVe5zK56xnN8VeU1hubuzQPiv39Sv9mSjNNWmd",
+            "release": {
+              "links": {
+                "linktree": "https://linktr.ee/jayygawd"
+              },
+              "genres": [
+                "hip hop",
+                "rap"
+              ],
+              "artists": [
+                "Jayy Gawd"
+              ],
+              "copyright": "Jermil Banks ℗ 2023",
+              "publisher": "Banks Brand Music Unlimited",
+              "collection": "Epoch Genesis v2",
+              "song_title": "California Throwback",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "California Throwback",
+              "song_duration": "PT3M11S",
+              "featured_artist": "Jxly"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

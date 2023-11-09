@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "55daa23e0e243bb4dda613c9d06a78da955f26160b13320999f912e2",
+    "asset_name": "4164615265616c6d4c617a7949736c616e6437313734",
+    "asset_name_ascii": "AdaRealmLazyIsland7174",
+    "fingerprint": "asset1llxa04l2tzd2ywf3j65any5g0as4ps3atlgfmu",
+    "minting_tx_hash": "7d1657abf21fcc9eac5a0563cf8522b37ccef82416d537a2cd653d0d00c8a7bc",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1644537600,
+    "minting_tx_metadata": {
+      "721": {
+        "55daa23e0e243bb4dda613c9d06a78da955f26160b13320999f912e2": {
+          "AdaRealmLazyIsland7174": {
+            "id": 7174,
+            "name": "Lazy Island Plot x:30 y:-43",
+            "files": [
+              {
+                "src": "ipfs://QmZBdeyR11SumwcYPCk7s5uZQX1EgANp3jAdT3yJGoKKP7",
+                "name": "Lazy Island Plot x:30 y:-43",
+                "mediaType": "video/webm"
+              }
+            ],
+            "image": "ipfs://QmR9NSsNwB3noAwMx4iRJfvf2ZHsgmkEk8dNsNn6Ex5QTf",
+            "Website": [
+              "https://www.lazyllamas.io/",
+              "https://adarealm.io"
+            ],
+            "Attributes": [
+              "Home Land"
+            ],
+            "Coordinates": {
+              "x": 30,
+              "y": -43
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

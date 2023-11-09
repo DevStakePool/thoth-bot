@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "1e69a5746b20787ccfee9beb72beb142aad84f200c8c4313f9ce6601",
+    "asset_name": "5a657070656c696e4d6f6f6e4c616e64506c6f7432373530",
+    "asset_name_ascii": "ZeppelinMoonLandPlot2750",
+    "fingerprint": "asset14kpa287ft5c88musy4a5zentef3ge7queusgp6",
+    "minting_tx_hash": "e61c7c40d0d152c238ebe884fe620334147b7e15835263c5a2f5d535c22b9967",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1657584000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "1e69a5746b20787ccfee9beb72beb142aad84f200c8c4313f9ce6601": {
+          "ZeppelinMoonLandPlot1683": {
+            "name": "Zeppelin Moon Land Plot #1683",
+            "size": "Small",
+            "type": "Residential",
+            "files": [
+              {
+                "src": "ipfs://QmeZus2kfSKeM4LZNHX7NSRHydo6n62TPR84r37Mmgo6kY",
+                "name": "Zeppelin Moon Land Plot #1683",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeZus2kfSKeM4LZNHX7NSRHydo6n62TPR84r37Mmgo6kY",
+            "district": "7",
+            "mediaType": "image/png"
+          },
+          "ZeppelinMoonLandPlot2750": {
+            "name": "Zeppelin Moon Land Plot #2750",
+            "size": "Medium",
+            "type": "Residential",
+            "files": [
+              {
+                "src": "ipfs://QmXH7GgxZEKczEDYzX584VAE7kGUVEzj6hWgYFDEgHbTvT",
+                "name": "Zeppelin Moon Land Plot #2750",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXH7GgxZEKczEDYzX584VAE7kGUVEzj6hWgYFDEgHbTvT",
+            "district": "6",
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e",
+    "asset_name": "476c6173736573476f67676c65734361725061696e744379616e",
+    "asset_name_ascii": "GlassesGogglesCarPaintCyan",
+    "fingerprint": "asset10wc73mff0gjw7dzvqltv9a9lc0mhhwd42ndj5y",
+    "minting_tx_hash": "ddfbcb6a0e4624c9e2dedca4d4f11273b4871f410ac6d0be21bf46c6b6dcbb19",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1674086400,
+    "minting_tx_metadata": {
+      "721": {
+        "406cd2082f4ca575fdec9995202821ea101f3b9be03c19829b1cace3": {
+          "SplitWorld4911": {
+            "name": "Split World #4911",
+            "files": [
+              {
+                "src": "ipfs://QmY9sTfTkCAmaseCa94jdfSgNHh3bMBoezrGnbJajuHu4M",
+                "name": "Split World #4911",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmY9sTfTkCAmaseCa94jdfSgNHh3bMBoezrGnbJajuHu4M",
+            "Backdrop": "Black",
+            "Gun Type": "Gatler",
+            "Mask Type": "Bane",
+            "Skin Tone": "Dark",
+            "mediaType": "image/png",
+            "Armor Type": "Meka",
+            "Droid Type": "Battle Bot",
+            "Gun Texture": "Chrome Orange",
+            "Glasses Type": "Goggles",
+            "Mask Texture": "Car Paint Black",
+            "Armor Texture": "Cloudy Blue",
+            "Droid Texture": "Brushed Green",
+            "Headgear Type": "D.i.h",
+            "Glasses Texture": "Car Paint Cyan",
+            "Headgear Texture": "Cloudy Green"
+          }
+        },
+        "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e": {
+          "GlassesSpiderCarPaintBlack": {
+            "Type": "Spider",
+            "name": "Glasses Spider Car Paint Black",
+            "files": [
+              {
+                "src": "ipfs://QmYDamixRUQ7Cq7zZk8GyaqKCaCXZmHwU5zu8567iaLALs",
+                "name": "Glasses Spider Car Paint Black",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYDamixRUQ7Cq7zZk8GyaqKCaCXZmHwU5zu8567iaLALs",
+            "Texture": "Car Paint Black",
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

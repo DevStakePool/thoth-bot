@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654577696e67536d697468",
+    "asset_name_ascii": "adapeEwingSmith",
+    "fingerprint": "asset15nxy7fqlpd8x2wxejkfmeu7xszqn3sk5x5734n",
+    "minting_tx_hash": "383938f6a53da8d9d31da73e084d8583bf41b793516021250f34d2e41bd40c22",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEwingSmith": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ewing Smith",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmQUuLrw4MDcs8T1tekRidYoMGui19UEt8LimEPecEb1y3",
+                "name": "Ewing Smith",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQUuLrw4MDcs8T1tekRidYoMGui19UEt8LimEPecEb1y3",
+            "Family": "Smith",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Smith family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

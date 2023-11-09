@@ -1,0 +1,37 @@
+[
+  {
+    "policy_id": "54ab8553fb965b2a17af1e97c8209df1ac74fca9b217b258a2466dfe",
+    "asset_name": "4f6c6976657273476f6c643436",
+    "asset_name_ascii": "OliversGold46",
+    "fingerprint": "asset1y9fxn22lnlx4t0fh7f4p9fagdy8yftrc5gusap",
+    "minting_tx_hash": "d1093b0574d17cfa6f7b579068f00d871459d23fc0193410e99aedbfd3c7047f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668816000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "54ab8553fb965b2a17af1e97c8209df1ac74fca9b217b258a2466dfe": {
+          "OliversGold46": {
+            "name": "Olivers-Gold #46",
+            "files": [
+              {
+                "src": "ipfs://Qma4iVFTm6PQT3esT64P8QJYB2fx29Vq3wJ5p4rEr1ow4i",
+                "name": "OliversGold46",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qma4iVFTm6PQT3esT64P8QJYB2fx29Vq3wJ5p4rEr1ow4i",
+            "mediaType": "image/gif",
+            "description": [
+              "You are Oliver!"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

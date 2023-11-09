@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706548617264656e42726f776e",
+    "asset_name_ascii": "adapeHardenBrown",
+    "fingerprint": "asset1sfca9xez5fdtl7sfpzr279u53mg62kfzddfyvv",
+    "minting_tx_hash": "2a9932dbd9e523aed59afd727f53025c574d9e2a6a0d84cd814634942bc8cfcd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeHardenBrown": {
+            "Hat": "Gold Helmet",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Harden Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmU64Heia5nTuzHaWPt9L9MPjemUSbL7QrfbDebUt2SvBh",
+                "name": "Harden Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmU64Heia5nTuzHaWPt9L9MPjemUSbL7QrfbDebUt2SvBh",
+            "Family": "Brown",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeBuckleyEdwards": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Buckley Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmNhaDBfPbZhVWpEjnLrdfDiBK46DwXzeenypLk3VgRNhB",
+                "name": "Buckley Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNhaDBfPbZhVWpEjnLrdfDiBK46DwXzeenypLk3VgRNhB",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          },
+          "adapeCarlyleRoberts": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Carlyle Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmVdxD5uwrYgjGKeTDdVFzM9Gb17ftWQifv1XZvLXSA25z",
+                "name": "Carlyle Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVdxD5uwrYgjGKeTDdVFzM9Gb17ftWQifv1XZvLXSA25z",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

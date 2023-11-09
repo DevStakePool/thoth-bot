@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687672573167",
+    "asset_name_ascii": "furnishvrW1g",
+    "fingerprint": "asset1npwtdfmrsd849a7lk2n724s4et7ewv94q2lhmc",
+    "minting_tx_hash": "e3c35c56537645e331b4f9d39e73cf6bea77c0e4913f1a9503f3633f5639fe31",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678060800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishvrW1g": {
+            "id": "vrW1g",
+            "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "name": "Dining Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+                "name": "Dining Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmdBvm8mASjQ3fatRmRg2HdobLMVncdKMzwSfKyEZNcQeB",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmcSaExkRrb8rH3gBP2sbWntzveeY6pVcit26j1Y2EoNu7",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "description": "Hand-crafted by Newman Robinson.",
+            "furnitureId": 208
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

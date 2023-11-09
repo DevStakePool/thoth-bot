@@ -1,0 +1,77 @@
+[
+  {
+    "policy_id": "1f362a4df39f451401e44fee30f27eb39712d66aae375f539be94ed6",
+    "asset_name": "546865496c69616430373536",
+    "asset_name_ascii": "TheIliad0756",
+    "fingerprint": "asset1rg3p0xsyg3wq0lr9jru2p0nyj8dd4pnyf70jr3",
+    "minting_tx_hash": "d43b9846ffb2094e2385acba8a680a9b58eecae2a572e5d94b0bffb80460dc47",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1668643200,
+    "minting_tx_metadata": {
+      "721": {
+        "1f362a4df39f451401e44fee30f27eb39712d66aae375f539be94ed6": {
+          "TheIliad0756": {
+            "id": "0756",
+            "data": "ipfs://QmVPj23K1ErkngCURTj8aHgwcwiVYkHsAskvq3sdYvE1GX",
+            "name": "The Iliad #0756",
+            "files": [
+              {
+                "src": "ipfs://QmfBMn5wgeBJN1ZN2E1mS4Sjk5dEU62AtPDoCrEFQxgTKG",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmS4GfWqFQrL9DqnFsCHS9e6HDBW6p5zQGnTsucM7TbpM8",
+            "sha256": "f01b70388e06276fe7bf9ffc8dbd0ea128da52b33f7f3aeb42798d025e420bb0",
+            "authors": [
+              "Homer"
+            ],
+            "website": "https://book.io",
+            "Book Title": [
+              "The Iliad"
+            ],
+            "attributes": {
+              "Variation": "10",
+              "Cover Theme": "The War"
+            },
+            "description": [
+              "She moves a goddess, and she looks a queen!"
+            ]
+          },
+          "TheIliad4400": {
+            "id": "4400",
+            "data": "ipfs://QmUBWgPD9WnJG2us8qbH3VsQXf2935ACXTCowZ4ps5gVSe",
+            "name": "The Iliad #4400",
+            "files": [
+              {
+                "src": "ipfs://QmfCX64TXDhsPbiBkdbXwG1n5JoizB8CTdi69eT6NbQDDd",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmY2yq2tSEaLRDN3DRYscnraf9J8ovp8XAUywf1YozmSJC",
+            "sha256": "0691d680209a206df613195375fb4a9ca6e79d230dca056867b6429e9416fb2e",
+            "authors": [
+              "Homer"
+            ],
+            "website": "https://book.io",
+            "Book Title": [
+              "The Iliad"
+            ],
+            "attributes": {
+              "Variation": "12",
+              "Cover Theme": "The City"
+            },
+            "description": [
+              "She moves a goddess, and she looks a queen!"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -87,8 +87,8 @@ public class AccountServiceDouble implements AccountService {
         try {
             List<AccountAsset> data = KoiosDataBuilder.getAccountAssets();
             // For testing purposes, we make sure the account "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy" does not have any handle
-            data.stream().filter(a -> a.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"))
-                    .collect(Collectors.toList()).removeIf(a -> a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
+            data.removeIf(a -> a.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy") &&
+                    a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
             return Result.<List<AccountAsset>>builder().code(200).response("").successful(true).value(data).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);

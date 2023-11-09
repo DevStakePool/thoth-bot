@@ -1,0 +1,60 @@
+[
+  {
+    "policy_id": "b0df0ee7dbb96b18b682a1091514f250eb0ec1122e6c4bf3b4d45123",
+    "asset_name": "436f6e7669637430313034",
+    "asset_name_ascii": "Convict0104",
+    "fingerprint": "asset1s4mlzda3fh758rctkxd50m0vt05ga08nv38arw",
+    "minting_tx_hash": "aba65bd4452443ded75a21e41057ebdfb5c5ebc945bec5bf318f5acc448195f6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643155200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "b0df0ee7dbb96b18b682a1091514f250eb0ec1122e6c4bf3b4d45123": {
+          "Convict0104": {
+            "Body": "Captain",
+            "Face": "Calm",
+            "Hair": "TheCharmer",
+            "name": "Convict0104",
+            "AddOn": "BlueBalloon",
+            "files": [
+              {
+                "src": "ipfs://QmXEsNw7eQHm1h8oDi1pPQChxgutXE4gJ8Lf88YBZmkkwZ",
+                "name": "Convict0104",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXEsNw7eQHm1h8oDi1pPQChxgutXE4gJ8Lf88YBZmkkwZ",
+            "Clothes": "WhiteRestraints",
+            "Accessory": "None",
+            "mediaType": "image/png",
+            "Background": "Purple"
+          },
+          "Convict0359": {
+            "Body": "Enforcer",
+            "Face": "BackOff",
+            "Hair": "BraidedBeard",
+            "name": "Convict0359",
+            "AddOn": "Spider",
+            "files": [
+              {
+                "src": "ipfs://QmXLLN6vAFr5QFzeCr26TE9cnFS2JMAg7o4finejQoBgh1",
+                "name": "Convict0359",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXLLN6vAFr5QFzeCr26TE9cnFS2JMAg7o4finejQoBgh1",
+            "Clothes": "PrisonOrange",
+            "Accessory": "PrisonCap",
+            "mediaType": "image/png",
+            "Background": "Red"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

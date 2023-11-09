@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed",
+    "asset_name": "566f6c75637269734d6436303048616e6765724461726b426c756531",
+    "asset_name_ascii": "VolucrisMd600HangerDarkBlue1",
+    "fingerprint": "asset1w98es8pglhdg3lp4ptx04qlvpld2kmltkz9kw6",
+    "minting_tx_hash": "319fca61494c5a50233ec0200d1be1e7fb52ba4aba726a26ca1857709271fd57",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1658534400,
+    "minting_tx_metadata": {
+      "721": {
+        "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed": {
+          "VolucrisMd600HangerDarkBlue1": {
+            "name": "Volucris MD 600",
+            "Color": "Dark Blue",
+            "Model": "Volucris MD 600",
+            "Speed": "5.4",
+            "files": [
+              {
+                "src": "ipfs://Qma9ovYxYdnX9RNM2V19Nz8pU2wjkCEWRCg7FfXqAyWCSq",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmdAnVSEURQhELmWtESLK5tdKQrLBCYzjipMPiAUck98bJ",
+            "Braking": "2.8",
+            "Handling": "3.9",
+            "Background": "Hanger",
+            "Acceleration": "3.5"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

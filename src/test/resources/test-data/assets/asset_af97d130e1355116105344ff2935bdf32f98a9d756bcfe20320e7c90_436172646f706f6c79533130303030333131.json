@@ -1,0 +1,36 @@
+[
+  {
+    "policy_id": "af97d130e1355116105344ff2935bdf32f98a9d756bcfe20320e7c90",
+    "asset_name": "436172646f706f6c79533130303030333131",
+    "asset_name_ascii": "CardopolyS10000311",
+    "fingerprint": "asset19kcqudpf0w283znqcg7wmu6992qjww9n75xdjt",
+    "minting_tx_hash": "95c0f7a1567bbe1b48bae2c15b8a083613516f80e72a84ed2aed562045c555ca",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1645574400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "af97d130e1355116105344ff2935bdf32f98a9d756bcfe20320e7c90": {
+          "CardopolyS10000311": {
+            "name": "Cardopoly S1 #311",
+            "type": "image/png",
+            "image": "ipfs://QmbE2Xrt7E1EDaqWk87ty2TjqXBC2wx6Q7qn63r6GHmRPb",
+            "artist": "Leon Art Group and Cardopoly",
+            "Project": "Cardopoly",
+            "discord": "https://discord.gg/cardopoly",
+            "twitter": "https://twitter.com/cardopoly",
+            "website": "https://cardopoly.io/",
+            "attributes": {
+              "Color": "Purple",
+              "Gamepiece": "Knight"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

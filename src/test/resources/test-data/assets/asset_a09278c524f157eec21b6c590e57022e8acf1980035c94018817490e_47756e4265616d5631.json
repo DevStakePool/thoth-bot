@@ -1,0 +1,119 @@
+[
+  {
+    "policy_id": "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e",
+    "asset_name": "47756e4265616d5631",
+    "asset_name_ascii": "GunBeamV1",
+    "fingerprint": "asset1yk606c6mqt0wqp2hrnm5aug0qywrhpjr292nlg",
+    "minting_tx_hash": "95b50a228dd7af9f134e05dea3117d1996ffe07f0941b222f402cae1fcbc0bb7",
+    "total_supply": "60",
+    "mint_cnt": 5,
+    "burn_cnt": 3,
+    "creation_time": 1672876800,
+    "minting_tx_metadata": {
+      "721": {
+        "406cd2082f4ca575fdec9995202821ea101f3b9be03c19829b1cace3": {
+          "SplitWorld2881": {
+            "name": "Split World #2881",
+            "files": [
+              {
+                "src": "ipfs://QmT99bQ3Mk5KgaLq58s8ZD2PWdRo1JfFwiYFE23g6DZWrk",
+                "name": "Split World #2881",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmT99bQ3Mk5KgaLq58s8ZD2PWdRo1JfFwiYFE23g6DZWrk",
+            "Backdrop": "Red",
+            "Gun Type": "Gatler",
+            "Mask Type": "Speed",
+            "Skin Tone": "Light",
+            "mediaType": "image/png",
+            "Armor Type": "Power",
+            "Droid Type": "Sentinel",
+            "Gun Texture": "Chrome Green",
+            "Glasses Type": "Hud",
+            "Mask Texture": "Obsidian Bronze",
+            "Armor Texture": "Car Paint Red",
+            "Droid Texture": "Brushed Black",
+            "Headgear Type": "Unicorn",
+            "Glasses Texture": "Variation 2",
+            "Headgear Texture": "Holographic"
+          }
+        },
+        "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e": {
+          "GunBeamV1": {
+            "Type": "Beam",
+            "name": "Gun Beam V1",
+            "files": [
+              {
+                "src": "ipfs://QmWzLj8ih4VGHh59V7tt6roDqxH75LDn8bTsXj77SDufVz",
+                "name": "Gun Beam V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWzLj8ih4VGHh59V7tt6roDqxH75LDn8bTsXj77SDufVz",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "ArmorGlitchV1": {
+            "Type": "Glitch",
+            "name": "Armor Glitch V1",
+            "files": [
+              {
+                "src": "ipfs://QmVJFTYp6njKfFLxEhYHrYz6rYU9PTm3jPEsUHqjYU48Vo",
+                "name": "Armor Glitch V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVJFTYp6njKfFLxEhYHrYz6rYU9PTm3jPEsUHqjYU48Vo",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "MaskMaxillaV2": {
+            "Type": "Maxilla",
+            "name": "Mask Maxilla V2",
+            "files": [
+              {
+                "src": "ipfs://QmUfzSUw7hJZGX59iwm92osFTQBsSL1UdpCAZjSdkhAqW6",
+                "name": "Mask Maxilla V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUfzSUw7hJZGX59iwm92osFTQBsSL1UdpCAZjSdkhAqW6",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "DroidOminousV1": {
+            "Type": "Ominous",
+            "name": "Droid Ominous V1",
+            "files": [
+              {
+                "src": "ipfs://QmfC8GLZ1uMAUwdvNPi9PwQ5Ufg9cAVb76XX3ewp4FWF2a",
+                "name": "Droid Ominous V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfC8GLZ1uMAUwdvNPi9PwQ5Ufg9cAVb76XX3ewp4FWF2a",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearTrilogyV1": {
+            "Type": "Trilogy",
+            "name": "Headgear Trilogy V1",
+            "files": [
+              {
+                "src": "ipfs://QmTGxVgknDyTuqXxBeQS9KPnEm21RN6RuzqsKHsdShN6MU",
+                "name": "Headgear Trilogy V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTGxVgknDyTuqXxBeQS9KPnEm21RN6RuzqsKHsdShN6MU",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

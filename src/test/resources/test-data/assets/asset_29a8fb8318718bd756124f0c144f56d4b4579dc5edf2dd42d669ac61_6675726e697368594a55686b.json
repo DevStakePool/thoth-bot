@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368594a55686b",
+    "asset_name_ascii": "furnishYJUhk",
+    "fingerprint": "asset1cxwj50373s0glegpgd29sdzvu2y3ugx3xlssfx",
+    "minting_tx_hash": "b06ef5cdcec05792c7f52b8e9ee72ca971989c6bd077e21cbfce91ee93d3a942",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673395200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishYJUhk": {
+            "id": "YJUhk",
+            "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "name": "Bar",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+                "name": "Bar",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTkJhRAH1PRXu8UbE3qzCUfrzo5oP9gPxKpNdTuyApSxK",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZq5rpUnDxXyP3uZvqGgm6rEmWxdh4Lioqc2MrGtgqvQA",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "description": "Hand-crafted by Fadrique Evans.",
+            "furnitureId": 201
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

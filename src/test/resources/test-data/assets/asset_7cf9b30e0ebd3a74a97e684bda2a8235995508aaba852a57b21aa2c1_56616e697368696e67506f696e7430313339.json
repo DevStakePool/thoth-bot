@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "7cf9b30e0ebd3a74a97e684bda2a8235995508aaba852a57b21aa2c1",
+    "asset_name": "56616e697368696e67506f696e7430313339",
+    "asset_name_ascii": "VanishingPoint0139",
+    "fingerprint": "asset1srtz4cjxf0rxuzr9g0mf25wkgz7fkgfrxwr6nl",
+    "minting_tx_hash": "ac59b77e445d8ffce0961882943ef9cab410872b518f68dc98e8f1f6533c3d8d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671408000,
+    "minting_tx_metadata": {
+      "721": {
+        "7cf9b30e0ebd3a74a97e684bda2a8235995508aaba852a57b21aa2c1": {
+          "VanishingPoint0139": {
+            "id": "0139",
+            "data": "ipfs://QmS1Do4kmdpgAus1VmGTaLMJ6HJgtdW3duTKWRkUd5R88h",
+            "name": "To The Vanishing Point #0139",
+            "Genre": [
+              "Fiction",
+              "Science Fiction",
+              "Alien Contact",
+              "Action & Adventure",
+              "Apocalyptic & Post-Apocalyptic"
+            ],
+            "files": [
+              {
+                "src": "ipfs://QmNvTaEDkmmdFV1mifz517dYiRD3KUEDG61UR1yRZKziSL",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbA4y5PWB8uHdWN3mhXrg1XwkEHjKeRFmdqdzQsntVmS2",
+            "sha256": "808b1c3fd7516ca7cdc51e7afb762612e3edd8722e054e80167bfa16e8898778",
+            "Special": [
+              "First publisher book"
+            ],
+            "authors": [
+              "Alan Dean Foster"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "7",
+              "Cover Theme": "The Hitchhiker"
+            },
+            "description": [
+              "Aliens in the mirror are closer than they appear."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

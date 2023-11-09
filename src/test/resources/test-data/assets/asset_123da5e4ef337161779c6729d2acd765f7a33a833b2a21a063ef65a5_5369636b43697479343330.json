@@ -1,0 +1,66 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343330",
+    "asset_name_ascii": "SickCity430",
+    "fingerprint": "asset12ynx4n8vdf0shxxxwa96sx43dzlqryz0gd5cyn",
+    "minting_tx_hash": "c4f94bbfd7671892dbbc1a7ca80573df8d9313a3721c05acb09b93ae96add7cc",
+    "total_supply": "21204",
+    "mint_cnt": 6,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity430": {
+            "name": "SickCity430 - OddShapeShadow",
+            "files": [
+              {
+                "src": "ipfs://QmXc266DYYsbmWpnLBdjZV2e6q1RTMXXyENxDoKTVoso5m",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://Qmd9F7VuTjf2PENDPHfzMtBjdQkXeAx3feKdYS6khFwsvc",
+                "name": "OddShapeShadow - Dancing Raving",
+                "mediaType": "audio/mp3"
+              },
+              {
+                "src": "ipfs://QmeDdPXt6hHQkPUWvruEF5gGVCqUDLCf8kbc6s3T85qBvx",
+                "name": "OddShapeShadow - Dancing Raving",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXc266DYYsbmWpnLBdjZV2e6q1RTMXXyENxDoKTVoso5m",
+            "release": {
+              "links": {
+                "linktree": "https://linktr.ee/mgbedford"
+              },
+              "genres": [
+                "dance",
+                "electronic"
+              ],
+              "artists": [
+                "OddShapeShadow"
+              ],
+              "copyright": "OddShapeShadow  ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "Dancing Raving",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "Dancing Raving",
+              "song_duration": "PT2M22S"
+            },
+            "special_thanks": [
+              "Thank you all so much for your support, this is Sick City's",
+              "100th consecutive Epoch drop! Here's to 100 more bringing",
+              "new music for you to discover every Epoch! -Jimmy <3"
+            ],
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

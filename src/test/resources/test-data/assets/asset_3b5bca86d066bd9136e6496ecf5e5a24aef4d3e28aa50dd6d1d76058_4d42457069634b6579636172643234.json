@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "3b5bca86d066bd9136e6496ecf5e5a24aef4d3e28aa50dd6d1d76058",
+    "asset_name": "4d42457069634b6579636172643234",
+    "asset_name_ascii": "MBEpicKeycard24",
+    "fingerprint": "asset1rlt8m4a8ttukyysp3wc77a8ajdahr3zc0su27r",
+    "minting_tx_hash": "4adf56cea6b84c8df9f2ab8d8f9276d8b2c3956ca117c91a27f9b1b82ab6e620",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671148800,
+    "minting_tx_metadata": {
+      "721": {
+        "3b5bca86d066bd9136e6496ecf5e5a24aef4d3e28aa50dd6d1d76058": {
+          "MBEpicKeycard24": {
+            "web": "www.marsbirds.art",
+            "name": "MBEpicKeycard24",
+            "type": "Epic",
+            "files": [
+              {
+                "src": "ipfs://QmVZh8uKX3V7ep2AJJZ6Nw7Ypr5GYDqACNrTvgiEkGAab2",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTLq4Vx3gwCKmKiNnHXjUvPWVocVG5w6a19Jejx5RmDkJ",
+            "mediaType": "image/jpg",
+            "attributes": {
+              "isTradeable": "true",
+              "mintPerEpoch": "27",
+              "discountPercentage": "25"
+            },
+            "description": [
+              "A rare and unique Keycard rewarded to the wisest of owls unlocki",
+              "ng the full potential of your MarsBirds | Discounts and wl spot ",
+              "benefits | Welcome to a New Era of Gaming on Cardano | Our futur",
+              "e starts here"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

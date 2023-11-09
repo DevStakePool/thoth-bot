@@ -1,0 +1,58 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343332",
+    "asset_name_ascii": "SickCity432",
+    "fingerprint": "asset1pcqwe8l5g9edqlv7rmjrmqfx8w2ypxsshly6j9",
+    "minting_tx_hash": "eb6713582701fc7e7233eb1a8c04446d2f3c7ffe19020f45322b020502dcd57d",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity432": {
+            "name": "SickCity432 - Richy Lifty",
+            "files": [
+              {
+                "src": "ipfs://QmZ5byw9CW2ChPWeoq6czT7SRxygj1a4RC1MMyTzsR1UUv",
+                "name": "Richy Lifty - What's In Yo Wallet?",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmPEYCRebuK5tojA4YbXAv9ZkapakJL4YxZybTNceQ8Ymj",
+            "release": {
+              "links": {
+                "spotify": [
+                  "https://open.spotify.com/artist/34I1tvl7IuBdsp",
+                  "xRFeYGFF?si=9XC_xTtGSEqlu8TZUedhXg"
+                ],
+                "twitter": "https://twitter.com/Smazackie",
+                "instagram": "https://www.instagram.com/richylifty",
+                "soundcloud": "https://soundcloud.com/richylifty"
+              },
+              "genres": [
+                "hip hop",
+                "rap"
+              ],
+              "artists": [
+                "Richy Lifty"
+              ],
+              "copyright": "Richy Lifty ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "What's In Yo Wallet?",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "What's In Yo Wallet?",
+              "song_duration": "PT2M12S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

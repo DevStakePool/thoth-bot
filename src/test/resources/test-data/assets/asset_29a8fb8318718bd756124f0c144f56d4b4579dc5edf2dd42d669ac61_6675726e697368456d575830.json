@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368456d575830",
+    "asset_name_ascii": "furnishEmWX0",
+    "fingerprint": "asset1aszfv6amxnh9uy0h5af3uh9euv2lh9z6dj49ex",
+    "minting_tx_hash": "48c09adee528a88296c9bb3d78e49591256dffa4a13fa4dbf923d73ef6d87052",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675728000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishEmWX0": {
+            "id": "EmWX0",
+            "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "name": "Bar",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+                "name": "Bar",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTkJhRAH1PRXu8UbE3qzCUfrzo5oP9gPxKpNdTuyApSxK",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZq5rpUnDxXyP3uZvqGgm6rEmWxdh4Lioqc2MrGtgqvQA",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "description": "Hand-crafted by Bartolome Thomas.",
+            "furnitureId": 201
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

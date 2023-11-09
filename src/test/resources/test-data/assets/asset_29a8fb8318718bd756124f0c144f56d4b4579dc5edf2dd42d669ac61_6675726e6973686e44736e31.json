@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686e44736e31",
+    "asset_name_ascii": "furnishnDsn1",
+    "fingerprint": "asset18mgz74aqtq5th83885tyle7umqmqc8j5nrx949",
+    "minting_tx_hash": "c4655637f381887d17b8e8610877166e45a00c460a0ad6e580072325de4d9bd3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675209600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishnDsn1": {
+            "id": "nDsn1",
+            "src": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+            "name": "Gramophone",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+                "name": "Gramophone",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfT9z8xTjCDkZR6XJqwBsWadXtZBncarwqNsgAxzoWPp6",
+                "name": "Gramophone",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmPpT6wZ2M3xsYs4LX5geV5VBM1X24j4B8K7Ppc8uZ5Epx",
+                "name": "Gramophone",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+            "description": "Hand-crafted by Edward Walker.",
+            "furnitureId": 210
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

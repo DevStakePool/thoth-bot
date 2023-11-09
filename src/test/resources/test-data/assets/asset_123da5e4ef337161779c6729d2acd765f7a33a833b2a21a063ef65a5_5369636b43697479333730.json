@@ -1,0 +1,50 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479333730",
+    "asset_name_ascii": "SickCity370",
+    "fingerprint": "asset1lyas983z4trdgr063wu6tjkjclpkpdll6kcy5w",
+    "minting_tx_hash": "3b069fc2b5ce8af0506316971d330872150fbfe9fb8aa73d444da639a3eb1784",
+    "total_supply": "25018",
+    "mint_cnt": 20,
+    "burn_cnt": 0,
+    "creation_time": 1664668800,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity370": {
+            "name": "SickCity370-SchhhArt",
+            "files": [
+              {
+                "src": "ipfs://QmVt2bvSTF9oE4RWN3NfKWyiNAhZjAmfoHkp27uEupfvgv",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmawATha6jEhjbEYkt7FDHgJMj22Fyk6Go1JaAWiUQGdGR",
+            "links": {
+              "twitter": "https://twitter.com/SchhhArt",
+              "linktree": "https://linktr.ee/SchhhArt"
+            },
+            "genres": [
+              "rock",
+              "political rock"
+            ],
+            "artists": "SchhhArt",
+            "copyright": "SchhhArt ℗ 2022",
+            "collection": "Epoch Genesis v2",
+            "song_title": "What If?!",
+            "album_title": "What If?!",
+            "distributor": "https://sickcity.xyz",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT4M57S",
+            "mastering_engineer": "DSQISE",
+            "music_metadata_version": "v1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3231325669614769756c69614c41313031443433",
+    "asset_name_ascii": "cabin212ViaGiuliaLA101D43",
+    "fingerprint": "asset1x3kftfw4ghwwc77xh3kfztfckjxdjn9za7q5we",
+    "minting_tx_hash": "540580838908a0c27ba38ca83370643cca0b6f5a7b370f8236d277459b8d10f1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin212ViaGiuliaLA101D43": {
+            "name": "212 Via Giulia, LA101 D43",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Via Giulia",
+            "District": "Lanurk",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "D",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "101",
+            "Y Coordinate": "43"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

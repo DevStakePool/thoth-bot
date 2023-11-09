@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252",
+    "asset_name": "4d6f636f73736949746f323139373930",
+    "asset_name_ascii": "MocossiIto219790",
+    "fingerprint": "asset10wyr2krjlad8eeqyh0mgjap0ldcj6rvwnd2as3",
+    "minting_tx_hash": "c4c7651474f5800233a06b3be742a31326f6bfe12df200b4a1e0a0750c01425e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652400000,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto219790": {
+            "id": 19790,
+            "name": "Mocossi-Ito-2-19790",
+            "image": "ipfs://QmVr8miHfewoy3SvQLznLnBKvEypEqd5dLQwzQnmHozUau",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "spartan",
+              "Face": "inuyashi",
+              "Parents": [
+                9871,
+                3165
+              ],
+              "Species": "Ito",
+              "Headwear": "feather hat",
+              "Background": "pink"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

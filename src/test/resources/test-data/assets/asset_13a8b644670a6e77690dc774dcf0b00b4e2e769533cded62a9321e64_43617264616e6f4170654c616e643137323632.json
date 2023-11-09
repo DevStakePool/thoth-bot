@@ -1,0 +1,36 @@
+[
+  {
+    "policy_id": "13a8b644670a6e77690dc774dcf0b00b4e2e769533cded62a9321e64",
+    "asset_name": "43617264616e6f4170654c616e643137323632",
+    "asset_name_ascii": "CardanoApeLand17262",
+    "fingerprint": "asset1j8x6hzwuhe52ztwakuvxq2tx45kl3evnw8xjyj",
+    "minting_tx_hash": "c79b19c9ece89a0f308c3b82e46a8cbc9ace4295b3f0c8aba39a549c9758428d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1639958400,
+    "minting_tx_metadata": {
+      "721": {
+        "creator": "Cardano Apes",
+        "version": 1,
+        "publisher": [
+          "Cardano Apes"
+        ],
+        "description": "cardanoapes.club",
+        "13a8b644670a6e77690dc774dcf0b00b4e2e769533cded62a9321e64": {
+          "CardanoApeLand17262": {
+            "id": "17262",
+            "area": "Volcano",
+            "name": "CardanoApeLand17262",
+            "posx": 116,
+            "posz": 2,
+            "size": "S",
+            "image": "ipfs://QmSYzF47YNPDS3hBzDiRMV34hTGPtDBAf8mzfBDrFvjKsR"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

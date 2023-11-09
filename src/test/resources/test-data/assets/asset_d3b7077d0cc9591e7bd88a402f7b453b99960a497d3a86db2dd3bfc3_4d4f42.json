@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "d3b7077d0cc9591e7bd88a402f7b453b99960a497d3a86db2dd3bfc3",
+    "asset_name": "4d4f42",
+    "asset_name_ascii": "MOB",
+    "fingerprint": "asset1wkqt8rqmyzdjgu3rtqfsm59pevdlphcy4h7s0e",
+    "minting_tx_hash": "c7e28978ba126d9b5b6af26ae15e78cdc77b32ef732298d97c102bcfec1b209f",
+    "total_supply": "280000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1655942400,
+    "minting_tx_metadata": {
+      "721": {
+        "d3b7077d0cc9591e7bd88a402f7b453b99960a497d3a86db2dd3bfc3": {
+          "MOB": {
+            "URL": "https://www.lordsofmobtown.com/",
+            "name": "Lords of Mob Town",
+            "files": [
+              {
+                "src": "ipfs://Qmd3AzXsCMkoYDsfGjEDZ12paqixGsLSwx94LZHQTYLyCx",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmd3AzXsCMkoYDsfGjEDZ12paqixGsLSwx94LZHQTYLyCx",
+            "Discord": "https://discord.io/LordsofMobTown",
+            "Twitter": "https://twitter.com/LOMTNFT",
+            "Description": [
+              "The native currency for Lords of Mob Town.",
+              "The project for the real OG’s."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

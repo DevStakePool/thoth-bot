@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a",
+    "asset_name": "505245443034383136",
+    "asset_name_ascii": "PRED04816",
+    "fingerprint": "asset1wuc3sx4vdmpmnf0d0z3dll7s33rwt4g03mqh4d",
+    "minting_tx_hash": "2fd313dce36c337b8affaac8afc697b57d67e00ceb5a3d1d2eb2d7c36922cf68",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1660003200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a": {
+          "PRED04816": {
+            "url": "https://derpbirds.io",
+            "name": "Pred #04816",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmXf1qVNNTVAQb6ABJpTqVPm1srBiMaaekTRgaRErBK8vW",
+                "name": "Pred #04816",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmfS4RZtN1Trqy6BL1RTeJcN2rDeMpHWN9mb7Y5SKTPKGT",
+                "name": "v1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXf1qVNNTVAQb6ABJpTqVPm1srBiMaaekTRgaRErBK8vW",
+            "swaps": [
+              "DP05149",
+              "DE07210",
+              "DE06035"
+            ],
+            "series": 2,
+            "attributes": {
+              "Body": "Commander's Body",
+              "Face": "Trooper's Face",
+              "Head": "Trooper's Braids",
+              "Rank": 2,
+              "Head Gear": "Guard's Power Scanner",
+              "Background": "Rising Conflict",
+              "Skin Color": "Gray"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

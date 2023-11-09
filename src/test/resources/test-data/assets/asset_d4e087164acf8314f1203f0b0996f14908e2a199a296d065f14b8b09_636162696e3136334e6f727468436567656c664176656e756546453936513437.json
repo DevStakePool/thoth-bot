@@ -1,0 +1,82 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3136334e6f727468436567656c664176656e756546453936513437",
+    "asset_name_ascii": "cabin163NorthCegelfAvenueFE96Q47",
+    "fingerprint": "asset1gnu8qc8ff7uymwxhe6ca6ufchwcq7r2ehkhpt7",
+    "minting_tx_hash": "f829b03805e68d67f8e11e5dc12f1feecf53ac60ca37ce2a336ad550617878c4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin114PierceRoadNC52W97": {
+            "name": "114 Pierce Road, NC52 W97",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Pierce Road",
+            "District": "North Cegelf",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "W",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "52",
+            "Y Coordinate": "97"
+          },
+          "cabin163NorthCegelfAvenueFE96Q47": {
+            "name": "163 North Cegelf Avenue, FE96 Q47",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "North Cegelf Avenue",
+            "District": "Fraggod East",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "Q",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "96",
+            "Y Coordinate": "47"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654f7362657274646542616c626f61",
+    "asset_name_ascii": "adapeOsbertdeBalboa",
+    "fingerprint": "asset178r4zlafcf8lp3t5pce3t7ufjsmg0u6g5l54lc",
+    "minting_tx_hash": "947db48ff7b2823edb77a870ee4cb1c8e815c713fc7d8b49bd4baa90cb718736",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeOsbertdeBalboa": {
+            "Hat": "Fruit Basket",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Osbert de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmWMfLdVM777FFYN4atz3JS9JHVgBcJtiup7GMp6H3dkye",
+                "name": "Osbert de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWMfLdVM777FFYN4atz3JS9JHVgBcJtiup7GMp6H3dkye",
+            "Family": "de Balboa",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the de Balboa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

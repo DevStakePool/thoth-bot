@@ -1,0 +1,83 @@
+[
+  {
+    "policy_id": "38f25e7bfba4b4c65de7b55d68475dcc6f02a376ec53c796ab5723b8",
+    "asset_name": "5069786c47656e657369733030393432",
+    "asset_name_ascii": "PixlGenesis00942",
+    "fingerprint": "asset1vrj6dmvc5rnqc9xaz20970lytkg0qc5vy8kdeu",
+    "minting_tx_hash": "95aaa4a2f8246ede104a2174dea1a798c83eec21e2c2752cc1c1a72b4927ebe2",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1658880000,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "8219ee0e5b49892d",
+        "24a32f531db96d0b2daf673d31e6203c94eebdc83781d7f9d5dc6ae5": {
+          "hulk": {
+            "name": "hulk",
+            "image": "ipfs://QmR9Ti3BFED2uuigQwRdYudVp9iL9bQy45GELahteeQNqh",
+            "discord": "https://discord.gg/VvawrtgwWp",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "variant": 6,
+            "website": "https://pixl.page",
+            "designBy": "El Matador",
+            "pixlLink": "https://pixl.page/hulk",
+            "mintWindow": 1,
+            "description": [
+              "pixl.links are your personal URLs on https://pixl.page",
+              "Connect them with any of your pixl.pages and showcase your NFTs!"
+            ],
+            "artistTwitter": "https://twitter.com/EL_MatadorNFT"
+          },
+          "vibe": {
+            "name": "vibe",
+            "image": "ipfs://QmcxDueEpNWixHSx2SQMzHJ4i93QcbCJKvqNTkW5DwTmzh",
+            "discord": "https://discord.gg/VvawrtgwWp",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "variant": 10,
+            "website": "https://pixl.page",
+            "designBy": "Goat Tribe",
+            "pixlLink": "https://pixl.page/vibe",
+            "mintWindow": 1,
+            "description": [
+              "pixl.links are your personal URLs on https://pixl.page",
+              "Connect them with any of your pixl.pages and showcase your NFTs!"
+            ],
+            "artistTwitter": "https://twitter.com/adaGOATS"
+          }
+        },
+        "38f25e7bfba4b4c65de7b55d68475dcc6f02a376ec53c796ab5723b8": {
+          "PixlGenesis00942": {
+            "name": "pixl.page - Curator #00942",
+            "tier": "Genesis",
+            "color": "Emerald",
+            "files": [
+              {
+                "src": "ipfs://Qmb92mLXUBuKMmQHGuSsVeEfybmZiqVLPvKF9PujPcRco6",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYt2KRjj9RuEXHNDKgSkQq9zBTbLKNwfsJgthYERrjTco",
+            "rarity": "Uncommon",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "website": "https://pixl.page/",
+            "designBy": "BlockOwls | Ctoy",
+            "profile1": "claimed",
+            "profile2": "claimed",
+            "mediaType": "image/gif",
+            "mintWindow": 1,
+            "description": [
+              "The pixl.page Curator NFT gives free access ",
+              "to the premium features of pixl.page"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

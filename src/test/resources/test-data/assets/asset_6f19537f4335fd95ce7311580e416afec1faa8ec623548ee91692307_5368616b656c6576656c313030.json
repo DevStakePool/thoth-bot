@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "6f19537f4335fd95ce7311580e416afec1faa8ec623548ee91692307",
+    "asset_name": "5368616b656c6576656c313030",
+    "asset_name_ascii": "Shakelevel100",
+    "fingerprint": "asset1pltmngyqt322f3zajeh5k380u80mwch4svc7ug",
+    "minting_tx_hash": "f58b2acc329afd25e2c899ca3ef5a932962f78cfdb25d0b2bc7b7b0eb5151f8e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677542400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "6f19537f4335fd95ce7311580e416afec1faa8ec623548ee91692307": {
+          "Shakelevel100": {
+            "name": "Shake level 100",
+            "files": [
+              {
+                "src": "ipfs://Qmb3rJAEsYZWovb1P1pEJPZnSQn9WRRJB9MZr5NE1wHqnf",
+                "name": "Shakelevel100",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmb3rJAEsYZWovb1P1pEJPZnSQn9WRRJB9MZr5NE1wHqnf",
+            "mediaType": "image/png",
+            "description": "Congratulations!!!"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

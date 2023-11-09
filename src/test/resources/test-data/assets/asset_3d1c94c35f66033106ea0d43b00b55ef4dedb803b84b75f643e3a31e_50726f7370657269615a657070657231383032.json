@@ -1,0 +1,83 @@
+[
+  {
+    "policy_id": "3d1c94c35f66033106ea0d43b00b55ef4dedb803b84b75f643e3a31e",
+    "asset_name": "50726f7370657269615a657070657231383032",
+    "asset_name_ascii": "ProsperiaZepper1802",
+    "fingerprint": "asset13kg7f509pgq6u5gsp5dzepz9zar8vythc3883u",
+    "minting_tx_hash": "d053e4a323964a15e74cc7004a104973a2ca4c076b06b7f3eab4390c56989f09",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651363200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "website": "https://prosperia.space",
+        "3d1c94c35f66033106ea0d43b00b55ef4dedb803b84b75f643e3a31e": {
+          "ProsperiaZepper0296": {
+            "name": "Prosperia Zepper #0296",
+            "Class": "M1",
+            "Decal": "CARDANO",
+            "files": [
+              {
+                "src": "ipfs://QmUKfXVVV5iw3sn2DcrS3TtTZzU27fL2SZXGgyAzgLwd5T",
+                "name": "Prosperia Zepper #0296",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUKfXVVV5iw3sn2DcrS3TtTZzU27fL2SZXGgyAzgLwd5T",
+            "Engine": "BOOSTED",
+            "Builder": "EPOCH CUSTOMS",
+            "Faction": "REBELLION",
+            "project": "Prosperia Zepper",
+            "copyright": "2022 Prosperia",
+            "mediaType": "image/png",
+            "description": "The Prosperian Zepper is a low gravity racing vehicle."
+          },
+          "ProsperiaZepper1302": {
+            "name": "Prosperia Zepper #1302",
+            "Class": "M1",
+            "Decal": "NONE",
+            "files": [
+              {
+                "src": "ipfs://QmbxV5jNE1JH1H5muNWdqnqXZakysgKPh9Z18Q1pSxqBTe",
+                "name": "Prosperia Zepper #1302",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbxV5jNE1JH1H5muNWdqnqXZakysgKPh9Z18Q1pSxqBTe",
+            "Engine": "BOOSTED",
+            "Builder": "EPOCH CUSTOMS",
+            "Faction": "WAR HAMMER",
+            "project": "Prosperia Zepper",
+            "copyright": "2022 Prosperia",
+            "mediaType": "image/png",
+            "description": "The Prosperian Zepper is a low gravity racing vehicle."
+          },
+          "ProsperiaZepper1802": {
+            "name": "Prosperia Zepper #1802",
+            "Class": "M2",
+            "Decal": "NONE",
+            "files": [
+              {
+                "src": "ipfs://QmXtDCDJEy7jkjo9DVEnQQ1CjaNkZ99yqSue7awpNsYhQh",
+                "name": "Prosperia Zepper #1802",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXtDCDJEy7jkjo9DVEnQQ1CjaNkZ99yqSue7awpNsYhQh",
+            "Engine": "STANDARD",
+            "Builder": "EPOCH CUSTOMS",
+            "Faction": "REBELLION",
+            "project": "Prosperia Zepper",
+            "copyright": "2022 Prosperia",
+            "mediaType": "image/png",
+            "description": "The Prosperian Zepper is a low gravity racing vehicle."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

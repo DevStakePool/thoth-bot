@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683159507542",
+    "asset_name_ascii": "furnish1YPuB",
+    "fingerprint": "asset1qr7krywalaw8x74g3x5r5mgc8ed3p7ax2mv9ud",
+    "minting_tx_hash": "ad6a04720609836e9f519196c6dfa6ff59176d0a6eb6a668be30d20e95bff730",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671926400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish1YPuB": {
+            "id": "1YPuB",
+            "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "name": "Tea Set",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+                "name": "Tea Set",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmNexnniSAFkn6L1KctWSK6HgKnW9oDVU1LQkHNcgxSHdt",
+                "name": "Tea Set",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmdECAUJnHgn78NSf9rzWQcu3MdFZUEYduYv9ZNcmu74r6",
+                "name": "Tea Set",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "description": "Hand-crafted by Bolton Evans.",
+            "furnitureId": 220
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

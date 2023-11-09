@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812",
+    "asset_name": "4d6f636f7373694c616e643036313534",
+    "asset_name_ascii": "MocossiLand06154",
+    "fingerprint": "asset1vexm2ae8r2dakcwmgt04h7lvg3aeeufclmeu6v",
+    "minting_tx_hash": "3b7ee8db0037092eeaeb3c16028cb4fcb0b1706eabe3ef93746fd144da2b32fb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652227200,
+    "minting_tx_metadata": {
+      "721": {
+        "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812": {
+          "MocossiLand06154": {
+            "id": 6154,
+            "name": "Moquarium #06154",
+            "image": "ipfs://QmSqDozd3QKQidKwCqUetKcXRXy79d6FTq1HjmApcYysET",
+            "website": "https://mocossi.com",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Theme": "Water",
+              "Coordinate": [
+                [
+                  203,
+                  98
+                ]
+              ],
+              "Distance-to-World-Center": 41,
+              "Distance-to-Legendary-Plot": 12
+            },
+            "description": "Mocossi NFT for Land Plots"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

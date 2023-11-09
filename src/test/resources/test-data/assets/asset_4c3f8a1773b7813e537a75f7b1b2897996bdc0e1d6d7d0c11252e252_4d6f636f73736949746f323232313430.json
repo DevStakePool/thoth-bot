@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252",
+    "asset_name": "4d6f636f73736949746f323232313430",
+    "asset_name_ascii": "MocossiIto222140",
+    "fingerprint": "asset1wm87dnkmwee68g4ft5k0vgdlq3l2egjtd6vzgz",
+    "minting_tx_hash": "7544e09a60ea7c826a6560f3af7cc0333b13472e1efd605a0f3fe1b68dece303",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1655164800,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto222140": {
+            "id": 22140,
+            "name": "Mocossi-Ito-2-22140",
+            "image": "ipfs://QmNmV2H5cxAJ5pfVvvEdAdYS7v2MVEXUkf5KSJjj44AeD5",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "admirals coat",
+              "Face": "captain pipe",
+              "Parents": [
+                6729,
+                8769
+              ],
+              "Species": "Ito",
+              "Headwear": "head scarf",
+              "Background": "red"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

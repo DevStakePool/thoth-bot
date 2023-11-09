@@ -1,0 +1,57 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343132",
+    "asset_name_ascii": "SickCity412",
+    "fingerprint": "asset1nx3kkjx6vz7yf958yyl9hw05h53xauy057vety",
+    "minting_tx_hash": "a131cf20b261665f5cb551d694335bcda9522aa1cd200b69a76517ebb0b9330b",
+    "total_supply": "21202",
+    "mint_cnt": 4,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity412": {
+            "name": "SickCity412- Joey Cough",
+            "files": [
+              {
+                "src": "ipfs://QmeQ9GZ4JYFW4WCLZRrwnT3hxTmyQPn6XoEtZjnLF7NYG1",
+                "name": "Joey Cough - Electric",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmSrQypkLUTK3dbqQwSZPVfTp2i2ngf3ciyJCxUqKWp2Gd",
+            "release": {
+              "links": {
+                "tiktok": "https://www.tiktok.com/@joeycough",
+                "twitter": "https://twitter.com/joeycough",
+                "youtube": "https://youtube.com/joeycough",
+                "facebook": "https://facebook.com/joeycough",
+                "instagram": "https://instagram.com/joeycough"
+              },
+              "genres": [
+                "rap",
+                "hip hop"
+              ],
+              "artists": [
+                "Joey Cough"
+              ],
+              "copyright": "Joey Cough ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "Electric",
+              "distributor": "https://sickcity.xyz",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "Electric",
+              "song_duration": "PT2M55S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

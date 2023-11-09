@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "ccc9e128a464d567278643b3addaed26d417d5c6b4313d292e05a1d7",
+    "asset_name": "414b414e454163636573734361726430303136",
+    "asset_name_ascii": "AKANEAccessCard0016",
+    "fingerprint": "asset1p8fzxapxnz3dxxk6h8qd2mdrjqrxqmumaf9a55",
+    "minting_tx_hash": "e7b2e72fe50aae603284e3868f82ea6014f7a878d8997bbf8574fc353ffe36be",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674777600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "ccc9e128a464d567278643b3addaed26d417d5c6b4313d292e05a1d7": {
+          "AKANEAccessCard0016": {
+            "name": "AKANE Access Card #0016",
+            "files": [
+              {
+                "src": "ipfs://QmXqnYqcJR7orw3Mqhoxpo3LK3SNHuEzC4Z5QzT8sfyweX",
+                "name": "AKANE Access Card #0016",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmaAb5eFCVrbe4yXZqLQ7nhe6KFuBfVgKRHUNecEEFrY6x",
+            "Project": "AKANE",
+            "Twitter": "https://twitter.com/AkaneCNFT",
+            "Website": "https://akanenft.art/",
+            "mediaType": "image/png",
+            "Collection": "AKANE Access Card"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

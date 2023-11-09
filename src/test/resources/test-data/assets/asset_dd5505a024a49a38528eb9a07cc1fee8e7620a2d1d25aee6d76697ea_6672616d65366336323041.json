@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65366336323041",
+    "asset_name_ascii": "frame6c620A",
+    "fingerprint": "asset1x5gmd6qyhvchxl88lzg0hsnawdms89x6e8yq42",
+    "minting_tx_hash": "6ab2ac4fd8aa94aba5ec9b991908ad2f8739e28c995012badabafede82e8dfe5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678406400,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame6c620A": {
+            "id": "wQbLx",
+            "src": "ipfs://QmRXXSpJkomFWtBfR3EaJPUD7hgmaZNVkssanTJanRig18",
+            "name": "Ape Society Frame Level 6",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmRXXSpJkomFWtBfR3EaJPUD7hgmaZNVkssanTJanRig18",
+                "name": "Ape Society Frame Level 6",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRXXSpJkomFWtBfR3EaJPUD7hgmaZNVkssanTJanRig18",
+            "level": 6,
+            "artist": "Jayme Rich",
+            "mintedAt": 1678415122515,
+            "mintedBy": "e1eb3b71bd4ac2af9296592c8734c450484bc376e70e691e4bad7bd8c9",
+            "description": "Level 6 frame",
+            "mintedStake": "stake1u84nkudaftp2ly5ktykgwdxy2pyyhsmkuu8xj8jt44aa3jgxxgczp"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

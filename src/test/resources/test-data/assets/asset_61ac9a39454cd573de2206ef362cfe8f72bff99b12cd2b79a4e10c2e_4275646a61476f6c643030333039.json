@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "61ac9a39454cd573de2206ef362cfe8f72bff99b12cd2b79a4e10c2e",
+    "asset_name": "4275646a61476f6c643030333039",
+    "asset_name_ascii": "BudjaGold00309",
+    "fingerprint": "asset1xzmlgrlrwascw065067mgye4654u0rjn2ahq6e",
+    "minting_tx_hash": "e8a40d5c318f5471a38d72130bea79640211593c5785981b3c8896e47789dc6f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1638403200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "61ac9a39454cd573de2206ef362cfe8f72bff99b12cd2b79a4e10c2e": {
+          "BudjaGold00309": {
+            "name": "Budja Gold Membership Card - 00309",
+            "files": [
+              {
+                "src": "ipfs://QmWamxz5ZbQSicRh37YNUfXYWg2zs2zQWxYg4bLmx9MaGU",
+                "name": "Budja Gold Membership Card - 00309",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmfRJyUBu9y7wHWjqy8PigYFRkjX8rPb3QvcN2tkESXCqR",
+            "budja.io": {
+              "web": "budja.io",
+              "twitter": "@budjaio",
+              "instagram": "@budjaio"
+            },
+            "mediaType": "image/gif",
+            "description": "This membership card grants you exclusive access to Budja.io"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

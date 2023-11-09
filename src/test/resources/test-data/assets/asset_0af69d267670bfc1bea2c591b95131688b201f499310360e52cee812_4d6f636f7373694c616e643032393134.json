@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812",
+    "asset_name": "4d6f636f7373694c616e643032393134",
+    "asset_name_ascii": "MocossiLand02914",
+    "fingerprint": "asset1fqe3p9ugyh0lke6z2g9xjj43trx7p5g6lmaj3l",
+    "minting_tx_hash": "de2f149bb267eb9274acc68ec54b88366f1cb110e9b4a1f3064e589cc7e51310",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652227200,
+    "minting_tx_metadata": {
+      "721": {
+        "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812": {
+          "MocossiLand02914": {
+            "id": 2914,
+            "name": "Enchanto #02914",
+            "image": "ipfs://QmU3CSXe44ZcF2UBpTsbmF9KTi6UuZtiRs577Aqd8Duis4",
+            "website": "https://mocossi.com",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Theme": "Magic",
+              "Coordinate": [
+                [
+                  144,
+                  36
+                ]
+              ],
+              "Distance-to-World-Center": 29,
+              "Distance-to-Legendary-Plot": 21
+            },
+            "description": "Mocossi NFT for Land Plots"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

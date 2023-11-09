@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "53616c747761746572",
+    "asset_name_ascii": "Saltwater",
+    "fingerprint": "asset1dvxreluja5mryassn5x9lx4j5ws4gdmehu6mku",
+    "minting_tx_hash": "720dabce94830eb33fd6914cc1fce4c298b65adeba07aa035e0ff37b3d120f7d",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648771200,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Saltwater": {
+            "name": "Saltwater",
+            "image": "ipfs://QmUygAG6yJMTZEmfDPa9ZMdjuLQUEPFV4VKyH7jih13pph",
+            "sha256": "10309568079c0b83a810b24dc4786f8a2b6020f45e4693ff2f38cf58b64d8104",
+            "mediaType": "image/png",
+            "description": [
+              "Saltwater serves as the basis for much organic life.",
+              "Useful and valuable for a variety of tradecraft. So salty."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

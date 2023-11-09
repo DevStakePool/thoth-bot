@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "742b004c42b6dd7f7935c85f5d3884037778c8d80a0f9724d3b57049",
+    "asset_name": "4343523230323243433034333930",
+    "asset_name_ascii": "CCR2022CC04390",
+    "fingerprint": "asset1fzxt80xltpen3m5vuj4l6s84f8xwxak8lr0mxh",
+    "minting_tx_hash": "8576399e480143a25d6922ec1468dc47ed13f2bf9717d5cc4b1fc0b2e39422f9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671494400,
+    "minting_tx_metadata": {
+      "721": {
+        "742b004c42b6dd7f7935c85f5d3884037778c8d80a0f9724d3b57049": {
+          "CCR2022CC04390": {
+            "id": "04390",
+            "tag": "CCR2022CC04390",
+            "name": "Cheeky Racer CM #04390",
+            "files": [
+              {
+                "src": "ipfs://QmRSmC1gUbzWM7a3QDdsitzAyqhB3io86CL2Zxh9DjxvCk",
+                "name": "Cheeky Racer CM",
+                "mediaType": "video/mp4",
+                "resolution": "web"
+              },
+              {
+                "src": "ipfs://QmU2ytWfAcCqPH91vzshamN2tFFVJbh6bSkGXmyDtEQMKv",
+                "name": "Cheeky Racer CM",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmYeUxme1wiwSzrH12sBjn4efj9JZpeE567E3nZzeixA19",
+                "name": "Cheeky Racer CM",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              }
+            ],
+            "image": "ipfs://QmQsVcbxWdV5S6bCHmGxe2yoXAUb8y65rg5XKZ5VcU4PdR",
+            "media": {
+              "Website": "https://www.cornucopias.io",
+              "Link Tree": "https://linktr.ee/CornucopiasGame"
+            },
+            "gameid": "CCRCM",
+            "rarity": "Common",
+            "season": "Pre-Launch",
+            "version": "1.0",
+            "fullName": "Cheeky Racer Common #04390",
+            "mediaType": "image/png",
+            "typeClass": "Game Asset",
+            "attributes": {
+              "year": "2022"
+            },
+            "description": "Cheeky Crypto Racer Suit",
+            "projectName": "Cornucopias Game"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

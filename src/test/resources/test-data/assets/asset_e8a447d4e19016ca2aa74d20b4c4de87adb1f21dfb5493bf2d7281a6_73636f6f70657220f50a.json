@@ -1,0 +1,28 @@
+[
+  {
+    "policy_id": "e8a447d4e19016ca2aa74d20b4c4de87adb1f21dfb5493bf2d7281a6",
+    "asset_name": "73636f6f70657220f50a",
+    "asset_name_ascii": "scooper \\365\n",
+    "fingerprint": "asset10az8wlgj3255yvpm6vd9xqahdkf9fhxpr9ft2e",
+    "minting_tx_hash": "3d835d34aba4bdb34a98fac5b273a7df18cc1c5a828275597957f908f2614f0b",
+    "total_supply": "359",
+    "mint_cnt": 38,
+    "burn_cnt": 0,
+    "creation_time": 1696291200,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "SSP: Issue Scooper License"
+        ]
+      },
+      "1998": {
+        "*": {
+          "uri": "https://sundaeswap.finance/software-license.txt",
+          "sha256": "ac2581285993a0256857617e53fdcd9d5e69b9bd09d279e56fb6a1cc53511edc"
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343134",
+    "asset_name_ascii": "SickCity414",
+    "fingerprint": "asset1dhs3xa0a7fp7qsftkfeyvt4j6r2d8j2ymyml9j",
+    "minting_tx_hash": "6c10138aa05621fb9af4b06347d436e70456268a98f0f0839200bc69d8ef2a83",
+    "total_supply": "21205",
+    "mint_cnt": 7,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity414": {
+            "name": "SickCity414- Corey Drumz",
+            "files": [
+              {
+                "src": "ipfs://QmbSWTasCeJDJRTmMH7W3hHbcAYMstzSsFXc3UVxypRWeH",
+                "name": "Corey Drumz - First Blood Part II ft. Skip Martin",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmWrh9Yrf88fgVbQNcVYRc43EPbhRjeayAAbNouAVxun5h",
+            "release": {
+              "links": {
+                "twitter": "https://twitter.com/coreydrumz963",
+                "website": "https://linktr.ee/coreydrumz4real"
+              },
+              "genres": [
+                "rap",
+                "hip hop"
+              ],
+              "artists": [
+                "Corey Drumz",
+                "Skip Martin"
+              ],
+              "copyright": "Corey Drumz ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "First Blood Part II",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "First Blood Part II",
+              "song_duration": "PT3M12S",
+              "featured_artist": "Skip Martin"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

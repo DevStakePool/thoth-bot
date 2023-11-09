@@ -1,0 +1,50 @@
+[
+  {
+    "policy_id": "3e013d5dc3b24aa003b456c3cca79b90a6fef055a02862226950bd2a",
+    "asset_name": "4a756e697368696e313034",
+    "asset_name_ascii": "Junishin104",
+    "fingerprint": "asset1ffzvs4sxp4m6txpuq7c487254vcuysteda9ac2",
+    "minting_tx_hash": "dd5da62a832970b334630a521bcf03140c087976e6daf2ac63ceabf2de50b5eb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673913600,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "efef55ffc7a64cfb",
+        "3e013d5dc3b24aa003b456c3cca79b90a6fef055a02862226950bd2a": {
+          "Junishin104": {
+            "name": "Buta #104",
+            "files": [
+              {
+                "src": "ipfs://QmcbNAxjtw6Xdei6w52mDG4Es4EdBVbD2moSxop9wXaWC5",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmNM83XniChACMHV8jt9BuiVUvNYu2AdmNRSfLkAh9Uh5B",
+            "description": [
+              "900 Junishin have gone missing, find all the missing Junishin.",
+              "Find all 12 before you enter Anima."
+            ]
+          },
+          "Junishin665": {
+            "name": "Usagi #665",
+            "files": [
+              {
+                "src": "ipfs://QmdsW8mdk1QeLmRrgWsoyXzhvCLMAeppDscPshgwsQWdXZ",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmadnAcUL4Xbg5iew9fcJ5SjpzMwH3pzdzPxuQht7xxR6u",
+            "description": [
+              "900 Junishin have gone missing, find all the missing Junishin.",
+              "Find all 12 before you enter Anima."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

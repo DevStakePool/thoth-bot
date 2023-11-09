@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683455385959",
+    "asset_name_ascii": "furnish4U8YY",
+    "fingerprint": "asset1yxhepm8futjxw43vqcau0kczzgtcqq4vgu36zm",
+    "minting_tx_hash": "923b8b3ddcba01789b7f57bf2176b8341196e2c65c45728ae17ec224240d7cd7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672444800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish4U8YY": {
+            "id": "4U8YY",
+            "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "name": "Round Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+                "name": "Round Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQT2Bor5fRsrDd6KEhfaxyk232booDfkJzMYLMyZu1G5X",
+                "name": "Round Coffee Table",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmevbqntFscFS4KuCgnYsYyZi8qE6AWugLEAjKZwMYEwiy",
+                "name": "Round Coffee Table",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "description": "Hand-crafted by Clair Green.",
+            "furnitureId": 215
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

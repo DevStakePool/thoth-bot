@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343131",
+    "asset_name_ascii": "SickCity411",
+    "fingerprint": "asset1evf40gfpvyxm0s5tp5u2erfrehcchsjckqjmtt",
+    "minting_tx_hash": "7e49e34eacf3f67a2644ba8f041580ec9fe3da40c2fccf13528d0281d97595b8",
+    "total_supply": "21208",
+    "mint_cnt": 10,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity411": {
+            "name": "SickCity411- Butta Raspy",
+            "files": [
+              {
+                "src": "ipfs://QmbjLxsEcGRd46Q5dj4piTTVB6u2YB5XfUKR4C7HaSun2L",
+                "name": "Butta Raspy - You Already",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmVaWyxAVduf7Wq1Wf7iWmaiPDbomWEnqPJ8D1bPQnPytT",
+            "release": {
+              "links": {
+                "linktree": "https://linktr.ee/ButtaRaspy"
+              },
+              "genres": [
+                "rap",
+                "hip hop"
+              ],
+              "artists": [
+                "Butta Raspy"
+              ],
+              "copyright": "Butta Raspy ℗ 2023",
+              "publisher": "Banks Brand Music Unlimited",
+              "collection": "Epoch Genesis v2",
+              "song_title": "You Already",
+              "distributor": "https://sickcity.xyz",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "You Already",
+              "song_duration": "PT2M28S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

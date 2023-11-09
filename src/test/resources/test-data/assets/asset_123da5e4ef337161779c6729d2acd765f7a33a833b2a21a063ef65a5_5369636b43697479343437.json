@@ -1,0 +1,61 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479343437",
+    "asset_name_ascii": "SickCity447",
+    "fingerprint": "asset1ad4e68aqc06z6lszcygk8wpq4t3xl9ykls6ktq",
+    "minting_tx_hash": "e2f45929d16e96e1e27584aa4b990ed242cbfd2ec5dab95545540a1f6bf3cea3",
+    "total_supply": "21201",
+    "mint_cnt": 3,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity447": {
+            "name": "SickCity447 - IzzyHuman",
+            "files": [
+              {
+                "src": "ipfs://QmX2mG659TvcbGUXdhJSw9pGsQtyQ2icRjWu3YAj5evMYU",
+                "name": "IzzyHuman - The Other Way",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmQ587XhN3qZ1iV9gmbWWKCQGRHBXPF2y8m1QAFraWnZwy",
+            "release": {
+              "links": {
+                "spotify": [
+                  "https://open.spotify.com/artist/3JiA7FFys1JDIgvcbLL1Tr?",
+                  "si=jA5yGm26S26nrgkwP_KDog"
+                ],
+                "twitter": "https://twitter.com/BeanAffiliated",
+                "facebook": "https://www.facebook.com/izzyhuman27",
+                "instagram": "https://www.instagram.com/izzyhuman3/",
+                "soundcloud": "https://on.soundcloud.com/DBFqR",
+                "discord_user": "IzzyHuman419"
+              },
+              "genres": [
+                "rap",
+                "hip hop",
+                "alternative"
+              ],
+              "artists": [
+                "IzzyHuman"
+              ],
+              "copyright": "IzzyHuman ℗ 2023",
+              "collection": "Epoch Genesis v2",
+              "song_title": "The Other Way",
+              "release_type": "Single",
+              "track_number": 1,
+              "release_title": "The Other Way",
+              "song_duration": "PT3M4S"
+            },
+            "music_metadata_version": "v2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

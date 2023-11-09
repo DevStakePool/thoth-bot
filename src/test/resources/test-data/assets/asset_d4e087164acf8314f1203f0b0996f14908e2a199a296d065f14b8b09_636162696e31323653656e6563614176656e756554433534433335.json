@@ -1,0 +1,82 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e31323653656e6563614176656e756554433534433335",
+    "asset_name_ascii": "cabin126SenecaAvenueTC54C35",
+    "fingerprint": "asset1c5yhmjzertzy3gmy4r9atas7v9q80en9qf65wz",
+    "minting_tx_hash": "7e72c7e377eb6526bfe5b4324e8515e3f2b1c389d9e103290a94e815ab44819c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin57ArtistStreetBU74W96": {
+            "name": "57 Artist Street, BU74 W96",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+                "name": "Cottage.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmVzycxHz5ZHLaw2BdQUydMKpeXvKVoRN1sV2UvTp8SmCi",
+                "name": "Cottage.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmUYBVbZb8psC5SVGp7gkXCkVkmYzWp1KVdRrbkJhx3htd",
+                "name": "Cottage.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf5phJASknAMAkLFy85Po4QkiGifEm7YJrFzViuTM6rma",
+            "Street": "Artist Street",
+            "District": "Burroont",
+            "mediaType": "image/gif",
+            "Cabin Size": "Cottage",
+            "SLVD Rating": "W",
+            "description": "A Cottage in The Ape Society",
+            "X Coordinate": "74",
+            "Y Coordinate": "96"
+          },
+          "cabin126SenecaAvenueTC54C35": {
+            "name": "126 Seneca Avenue, TC54 C35",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Seneca Avenue",
+            "District": "Tasama City",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "C",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "54",
+            "Y Coordinate": "35"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

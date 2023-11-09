@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e35374461766965734176656e75654b4f36364b3830",
+    "asset_name_ascii": "cabin57DaviesAvenueKO66K80",
+    "fingerprint": "asset1rjmy4n8rpa44amlue5rv02dp70e4nuh8gjmvlk",
+    "minting_tx_hash": "295cd9d7a8e2b3d6b493230ce867355f6db889d6d0ee49c4f6c71ec8b1c9e2d7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin57DaviesAvenueKO66K80": {
+            "name": "57 Davies Avenue, KO66 K80",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+                "name": "Estate.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZ9t4wRVmHzPozETW6tR4WKpU3TgL3NUHmi2QayyuJZXN",
+                "name": "Estate.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVWdAwwZyHGtQcpmb5RzqjbxmPSRPTo4GoDtvBBKZNiXf",
+                "name": "Estate.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXg6aXLGrr5d8dUQtbMstZoZJTTV1t2cUBw4Y8HSDjrZj",
+            "Street": "Davies Avenue",
+            "District": "Koatwoolf",
+            "mediaType": "image/gif",
+            "Cabin Size": "Estate",
+            "SLVD Rating": "K",
+            "description": "A Estate in The Ape Society",
+            "X Coordinate": "66",
+            "Y Coordinate": "80"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

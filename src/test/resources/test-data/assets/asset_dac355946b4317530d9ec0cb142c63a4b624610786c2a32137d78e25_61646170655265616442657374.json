@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655265616442657374",
+    "asset_name_ascii": "adapeReadBest",
+    "fingerprint": "asset1ztl2050696gz7gwkvk6shz636803qvksc6nyxz",
+    "minting_tx_hash": "732ccf0f5c735cf6e7252e391b9872e647f066cb971906103883a1cdfb763f81",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeReadBest": {
+            "Hat": "Hoodie",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Read Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmVZR2Hb6XWJixbJEQeahcsQhWKW8fEZ3EaHVvdRfBR9ya",
+                "name": "Read Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVZR2Hb6XWJixbJEQeahcsQhWKW8fEZ3EaHVvdRfBR9ya",
+            "Family": "Best",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          },
+          "adapeNelloWalker": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Nello Walker",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmdyM1PXmjZ6NgTnRtDJzwKimJJTzKQZwvb47KjrAbHTWq",
+                "name": "Nello Walker",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdyM1PXmjZ6NgTnRtDJzwKimJJTzKQZwvb47KjrAbHTWq",
+            "Family": "Walker",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Walker family"
+          },
+          "adapeGutierreCastillo": {
+            "Hat": "Top Hat",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Gutierre Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmSVRketszY1TuxEChkD6TdXBwa4fs5pbyxf33Jqen9oyR",
+                "name": "Gutierre Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSVRketszY1TuxEChkD6TdXBwa4fs5pbyxf33Jqen9oyR",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

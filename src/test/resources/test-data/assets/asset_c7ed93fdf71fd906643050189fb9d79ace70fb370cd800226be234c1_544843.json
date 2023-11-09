@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "c7ed93fdf71fd906643050189fb9d79ace70fb370cd800226be234c1",
+    "asset_name": "544843",
+    "asset_name_ascii": "THC",
+    "fingerprint": "asset182938ekyzqt3zq6pkxcvd0qs2ksnq32mp7e6uy",
+    "minting_tx_hash": "86bef3862bb44682708841243f2934e552e31ca2ded2f6744e462e7a28aab370",
+    "total_supply": "420000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1683504000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "c7ed93fdf71fd906643050189fb9d79ace70fb370cd800226be234c1": {
+          "THC": {
+            "name": "THC",
+            "files": [
+              {
+                "src": "ipfs://QmQqZ8tp7oAAkpyxJxKXNPFQJAQpFtBgC3r3BH9cSEfgQC",
+                "name": "THC",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQqZ8tp7oAAkpyxJxKXNPFQJAQpFtBgC3r3BH9cSEfgQC",
+            "symbol": "THC",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 91964481
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "THC",
+            "totalSupply": 420000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e",
+    "asset_name": "4865616467656172436f6e73747275634361725061696e7447726565",
+    "asset_name_ascii": "HeadgearConstrucCarPaintGree",
+    "fingerprint": "asset1whc6t3qkfsedejp8u69kqctk0vpr83ty54dq0t",
+    "minting_tx_hash": "dd39e6ca875065289e62850d47c63ab9191f267b0abd07b42509a109c91b848b",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1673827200,
+    "minting_tx_metadata": {
+      "721": {
+        "406cd2082f4ca575fdec9995202821ea101f3b9be03c19829b1cace3": {
+          "SplitWorld3283": {
+            "name": "Split World #3283",
+            "files": [
+              {
+                "src": "ipfs://QmckL8cewz3zwXHh2hNwnwd9kzc6ZMMjaRDoCp2ybHnvXh",
+                "name": "Split World #3283",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmckL8cewz3zwXHh2hNwnwd9kzc6ZMMjaRDoCp2ybHnvXh",
+            "Backdrop": "Yellow",
+            "Gun Type": "Storm Bringer",
+            "Mask Type": "Noxious",
+            "Skin Tone": "Medium",
+            "mediaType": "image/png",
+            "Armor Type": "Bodyguard",
+            "Droid Type": "Sea Nettle",
+            "Gun Texture": "Chrome Orange",
+            "Glasses Type": "Speed Racer",
+            "Mask Texture": "Variation 1",
+            "Armor Texture": "Variation 1",
+            "Droid Texture": "Variation 1",
+            "Headgear Type": "Cranium",
+            "Glasses Texture": "Chrome Lime Green",
+            "Headgear Texture": "Cloudy Blue"
+          }
+        },
+        "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e": {
+          "HeadgearConstrucCarPaintGree": {
+            "Type": "Construction",
+            "name": "Headgear Construction Car Paint Green",
+            "files": [
+              {
+                "src": "ipfs://QmPWK5kGDjToAX4J11x1FEC4KgcgzbZYJz5Zrg7xzBm3qY",
+                "name": "Headgear Construction Car Paint Green",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPWK5kGDjToAX4J11x1FEC4KgcgzbZYJz5Zrg7xzBm3qY",
+            "Texture": "Car Paint Green",
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

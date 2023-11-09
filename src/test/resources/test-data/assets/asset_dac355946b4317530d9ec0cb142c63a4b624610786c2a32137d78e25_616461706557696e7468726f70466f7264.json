@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706557696e7468726f70466f7264",
+    "asset_name_ascii": "adapeWinthropFord",
+    "fingerprint": "asset1e6s27tqhep5478l3na3jdn7yk43vrr8xvackpq",
+    "minting_tx_hash": "30a7a054ff375bce49eccd37335beb7b5cef21dcf6475b956b51842d8b959356",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeParrFord": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Parr Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmPh7sF6CjoMFJ16zzUh4fud15SBx2yQ6dRQrSxhyBWeeA",
+                "name": "Parr Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPh7sF6CjoMFJ16zzUh4fud15SBx2yQ6dRQrSxhyBWeeA",
+            "Family": "Ford",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Ford family"
+          },
+          "adapeWinthropFord": {
+            "Hat": "Pirate Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "VR Headset",
+            "Head": "Ape",
+            "name": "Winthrop Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmWqedDgKrENmpJ8pVcmXafbKSMkLe7FtyyWcpHNTnZA47",
+                "name": "Winthrop Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWqedDgKrENmpJ8pVcmXafbKSMkLe7FtyyWcpHNTnZA47",
+            "Family": "Ford",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ford family"
+          },
+          "adapePothinLavigne": {
+            "Hat": "Gold Helmet",
+            "Body": "Knight Armor",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Pothin Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmPuqfgbwHo4wTLRMu81WYBmq7rDej8LQeqFnQ1cf3vfzJ",
+                "name": "Pothin Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPuqfgbwHo4wTLRMu81WYBmq7rDej8LQeqFnQ1cf3vfzJ",
+            "Family": "Lavigne",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Long White Beard",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]
