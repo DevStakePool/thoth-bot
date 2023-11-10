@@ -140,19 +140,20 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                 LOG.info("Retrieved {} addresses for a batch of {} users, of which {} invalid", usersBatch.stream().mapToInt(u -> u.getAccountAddresses() == null ? 0 : u.getAccountAddresses().size()).sum(), usersBatch.size(), usersBatch.stream().filter(u -> u.getAccountAddresses() == null).collect(Collectors.toList()).size());
 
-                checkTransactionsForUsers(usersBatch);
+                int totalTxs = checkTransactionsForUsers(usersBatch);
+                LOG.info("Users batch of size {} has been processed, with a total of {} TX(s)", usersBatch.size(), totalTxs);
             }
         } catch (Exception e) {
             LOG.error("Caught throwable while checking wallet transaction", e);
         }
     }
 
-    private void checkTransactionsForUsers(List<User> users) throws ApiException, MaxRegistrationsExceededException {
+    private int checkTransactionsForUsers(List<User> users) throws ApiException {
         LOG.debug("Checking transactions for batch of users {}", users.size());
 
         // Get ADA Handles
         Map<String, String> handles = getAdaHandleForAccount(users.stream().map(User::getAddress).collect(Collectors.toList()).toArray(new String[0]));
-
+        int totalProcessedTx = 0;
         for (User u : users) {
             try {
                 if (u.getAccountAddresses() == null)
@@ -369,6 +370,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
 
                     messageBuilder.append("\n\n"); // Some padding between TXs
                     processed++;
+                    totalProcessedTx++;
 
                     if (!this.allowJumboMessage && messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
                         messageBuilder.append("\n").append(txInfoResult.getValue().size() - processed).append(" more...");
@@ -384,6 +386,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 LOG.error("Cannot process account {} due to exception {}", u.getAddress(), e, e);
             }
         }
+        return totalProcessedTx;
     }
 
     public <T> Stream<List<T>> batches(List<T> source, int length) {

@@ -34,7 +34,7 @@ public abstract class AbstractCheckerTask {
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
 
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
-    protected static final int USERS_BATCH_SIZE = 50;
+    protected static final int USERS_BATCH_SIZE = 10;
 
     public static final String ADA_HANDLE_POLICY_ID = "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a";
     private static final String ADA_HANDLE_PREFIX = "$";
