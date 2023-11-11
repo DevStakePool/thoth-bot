@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655472756d616e48696c6c",
+    "asset_name_ascii": "adapeTrumanHill",
+    "fingerprint": "asset17a2fkjdr6v4vxnd2ze9327nrtmfhl8wgx9d02s",
+    "minting_tx_hash": "2e4e95fa2b8dc63c0bb223c493d0ec6b8adec0505b0a9e05a5d7c5266cc8124d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeTrumanHill": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Truman Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmewGZu1LFvnfs8eh18CpEjTS3jv13pu2EBKFGiyFW6U9v",
+                "name": "Truman Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmewGZu1LFvnfs8eh18CpEjTS3jv13pu2EBKFGiyFW6U9v",
+            "Family": "Hill",
+            "Weapon": "None",
+            "Accessory": "Pipe",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Hill family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

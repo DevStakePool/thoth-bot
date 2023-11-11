@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654761726669656c644c617669676e65",
+    "asset_name_ascii": "adapeGarfieldLavigne",
+    "fingerprint": "asset1kgqcs7n98wulfngfatpjmf4rfnac5pshgrajr0",
+    "minting_tx_hash": "89d310586b3ba7a6ee306c6efd8eb3ee9f5c10264b0450dc6e7524e62dc310e4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMardenMars": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Marden Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmRHzGqn6n1GYhX6zrfhAHujT9LNN3jcjea6WHyoDZDZLZ",
+                "name": "Marden Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRHzGqn6n1GYhX6zrfhAHujT9LNN3jcjea6WHyoDZDZLZ",
+            "Family": "Mars",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Mars family"
+          },
+          "adapePrivatRoberts": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Privat Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmS6tJhwtk4ULAUtYzhJgyH1Z6EE1iQ8EaeFFWmtqDGv5Y",
+                "name": "Privat Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmS6tJhwtk4ULAUtYzhJgyH1Z6EE1iQ8EaeFFWmtqDGv5Y",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          },
+          "adapeGarfieldLavigne": {
+            "Hat": "Sombrero",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Garfield Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmdStRMzMsLwDbFJ263nFYvjf1kpDxJZAaBr7RHLMiy3cX",
+                "name": "Garfield Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdStRMzMsLwDbFJ263nFYvjf1kpDxJZAaBr7RHLMiy3cX",
+            "Family": "Lavigne",
+            "Weapon": "Arrows",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

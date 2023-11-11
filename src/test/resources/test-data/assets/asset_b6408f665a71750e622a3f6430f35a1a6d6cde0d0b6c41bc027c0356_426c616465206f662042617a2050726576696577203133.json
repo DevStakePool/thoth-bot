@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "b6408f665a71750e622a3f6430f35a1a6d6cde0d0b6c41bc027c0356",
+    "asset_name": "426c616465206f662042617a2050726576696577203133",
+    "asset_name_ascii": "Blade of Baz Preview 13",
+    "fingerprint": "asset1k80asvkuxwj8wmtgpuem9njqgup3tauzeuzz80",
+    "minting_tx_hash": "5dd859af71f85d5a3905c448afa580558915dfc83f45875aa7feaa2bd98e9af1",
+    "total_supply": "14970",
+    "mint_cnt": 3,
+    "burn_cnt": 2,
+    "creation_time": 1652918400,
+    "minting_tx_metadata": {
+      "721": {
+        "f6eb64a32451ccd1c5d8da31362fec78d4c266e10485273f46d96369": {
+          "Blade of Baz Token 2": {
+            ".": "Token grants access to Kindle and Audiobook versions on Discord.",
+            "book": "Blade of Baz",
+            "name": "Blade of Baz Token 2",
+            "files": [
+              {
+                "src": "ipfs://Qmedwvn7QFUyWfQzThy5nPocmweLDYrdFP7tucaRQni6xU",
+                "name": "Token 2 - Chapters 3 and 4",
+                "mediaType": "application/pdf"
+              },
+              {
+                "src": "ipfs://Qmf4xhynmjMJHJvhvTJgJ8xFY8EvWDNNVubx7VW6RFZARQ",
+                "name": "Audiobook - Chapter 3",
+                "mediaType": "audio/mp3"
+              },
+              {
+                "src": "ipfs://QmURqkiPknB6wyTH4cfBdDGPEAUMBpGRMPWeKt3nhujLdr",
+                "name": "Audiobook - Chapter 4",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmUJW61og7DrdbKGZGPTFQYRLomha5HCNqWgTsQnjDfQ8h",
+            "author": "Jillian Plomin",
+            "Discord": "https://discord.gg/9PAsupR8Emr",
+            "publisher": "Project Bookworm",
+            "book series": "Legends of Gaeltach",
+            "book section": "Token 2 - Chapters 3 and 4"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

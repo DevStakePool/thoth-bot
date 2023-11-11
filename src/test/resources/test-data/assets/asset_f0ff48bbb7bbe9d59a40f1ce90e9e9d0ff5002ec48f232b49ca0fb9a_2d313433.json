@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "2d313433",
+    "asset_name_ascii": "-143",
+    "fingerprint": "asset1uzzfp3c5pyczuj0jpp80pxsngdlvw5zgxacv5e",
+    "minting_tx_hash": "6406268fe291f9fe91a63982a5865abbe62cdf940d725c1216a613dfcb9a78ea",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1662854400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "-143": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$-143",
+            "image": "ipfs://QmVobQ7Efzczhac6T4B5aJd9Nr7orVTCbhBxxHfHfznKzZ",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "-781": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$-781",
+            "image": "ipfs://QmNru3VmNFWUMpkH3Xdsu46U3qcxaS5R4iXkojpLcG1kMh",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

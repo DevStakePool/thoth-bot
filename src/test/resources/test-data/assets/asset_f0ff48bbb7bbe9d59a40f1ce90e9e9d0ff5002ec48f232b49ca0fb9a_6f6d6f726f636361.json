@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6f6d6f726f636361",
+    "asset_name_ascii": "omorocca",
+    "fingerprint": "asset1evp793hck9rswed7ytqpqzw0mxdkjxsyz3hspf",
+    "minting_tx_hash": "3093e0ad8e55f71f203e9479cc193b698b885e0c95833d0925e9d5b641723144",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658534400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "omorocca": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$omorocca",
+            "image": "ipfs://QmcdR3KqzW6N8bcCjiTzbADJfDVPrDLWjW66u9UCGZboVT",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

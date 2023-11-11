@@ -6,9 +6,11 @@ import rest.koios.client.backend.api.account.model.*;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
+import rest.koios.client.backend.factory.options.Offset;
 import rest.koios.client.backend.factory.options.Option;
 import rest.koios.client.backend.factory.options.OptionType;
 import rest.koios.client.backend.factory.options.Options;
+import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -39,8 +41,23 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
-    public Result<List<UTxO>> getAccountUTxOs(List<String> list, boolean b, Options options) throws ApiException {
-        return null;
+    public Result<List<UTxO>> getAccountUTxOs(List<String> addresses, boolean extended, Options options) throws ApiException {
+        Integer offset = Integer.parseInt(options.toMap().getOrDefault(OptionType.OFFSET.name().toLowerCase(), "0"));
+        if (offset > 0) {
+            return Result.<List<UTxO>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
+        }
+
+        try {
+            List<UTxO> utxos = KoiosDataBuilder.getUTxOsForAccount();
+            List<UTxO> filtered = utxos.stream().filter(u -> addresses.contains(u.getStakeAddress())).collect(Collectors.toList());
+            if (filtered.isEmpty()) {
+                return Result.<List<UTxO>>builder().code(200).response("").successful(true).value(null).build();
+            }
+            return Result.<List<UTxO>>builder().code(200).response("").successful(true).value(filtered).build();
+
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override
@@ -69,8 +86,8 @@ public class AccountServiceDouble implements AccountService {
         if (options != null) {
             // Check the offset
             Optional<Option> optionOffset = options.getOptionList().stream().filter(o -> o.getOptionType().equals(OptionType.OFFSET)).findFirst();
-        if (optionOffset.isPresent() && Integer.parseInt(optionOffset.get().getValue()) > 0)
-            return Result.<List<AccountAddress>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
+            if (optionOffset.isPresent() && Integer.parseInt(optionOffset.get().getValue()) > 0)
+                return Result.<List<AccountAddress>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
         }
 
         try {

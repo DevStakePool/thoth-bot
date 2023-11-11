@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252",
+    "asset_name": "4d6f636f73736949746f323139333438",
+    "asset_name_ascii": "MocossiIto219348",
+    "fingerprint": "asset1dtnamlsxwc0hh86xj4qfn3kdkklqd7l7qrhd5e",
+    "minting_tx_hash": "f6504824564b88dde9698f1b7ba887fbe7e096d9a60e12d4c7d97070cfe0bf7c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652140800,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto219348": {
+            "id": 19348,
+            "name": "Mocossi-Ito-2-19348",
+            "image": "ipfs://QmRhmkwpTGE8Ad1xZ9vbXqoCdota92Aug657se6GqTSwoX",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "spartan",
+              "Face": "stunned",
+              "Parents": [
+                1316,
+                3306
+              ],
+              "Species": "Ito",
+              "Headwear": "knight golden hat",
+              "Background": "orange"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        },
+        "d4473a78ae992ed6d95299e7177b45c8053d5db5495467a29ff0c780": {
+          "MocossiMagicPill09716": {
+            "id": 9716,
+            "name": "Mocossi-Magic-Pill-09716",
+            "image": "ipfs://QmZERutW3SFnDuYjJ8UpHsZsbHW6oauKs5148NbeN1ABCa",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Pill": "Flashito",
+              "Feature": "Reduce 1 day cool-down time",
+              "Applied-to": "Breeding"
+            },
+            "description": "Mocossi NFT for Magic Pills"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

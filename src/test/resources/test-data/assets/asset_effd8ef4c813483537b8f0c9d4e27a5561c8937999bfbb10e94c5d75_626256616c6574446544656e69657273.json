@@ -1,0 +1,61 @@
+[
+  {
+    "policy_id": "effd8ef4c813483537b8f0c9d4e27a5561c8937999bfbb10e94c5d75",
+    "asset_name": "626256616c6574446544656e69657273",
+    "asset_name_ascii": "bbValetDeDeniers",
+    "fingerprint": "asset19eyf2s5c4t7th4s0ux5qudryn4tteefp4gkcu6",
+    "minting_tx_hash": "50d3b870a0b015dee445be3bb9b3357fde5c68930e31011a0f72b7a497883cc3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652918400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "effd8ef4c813483537b8f0c9d4e27a5561c8937999bfbb10e94c5d75": {
+          "eeRoiDeCoupe": {
+            "name": "eeRoi De Coupe",
+            "files": [
+              {
+                "src": "ipfs://QmaTiRRoJYUyytVgPtGd7B2SFkCq37M1yxdJWb64bZTTgi",
+                "name": "eeRoi De Coupe",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaTiRRoJYUyytVgPtGd7B2SFkCq37M1yxdJWb64bZTTgi",
+            "mediaType": "image/png",
+            "description": "eeRoi De Coupe"
+          },
+          "iiRoiDeCoupe": {
+            "name": "iiRoi De Coupe",
+            "files": [
+              {
+                "src": "ipfs://QmesqxCHWAxbqBPduzVFgo1igjKHxy3vD81Uk2tAKGKAZF",
+                "name": "iiRoi De Coupe",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmesqxCHWAxbqBPduzVFgo1igjKHxy3vD81Uk2tAKGKAZF",
+            "mediaType": "image/png",
+            "description": "iiRoi De Coupe"
+          },
+          "bbValetDeDeniers": {
+            "name": "bbValet De Deniers",
+            "files": [
+              {
+                "src": "ipfs://QmdGvNdHzLXrjCkXaAZSxQoCR3PbkV2QDk3gzrmqf2BgpN",
+                "name": "bbValet De Deniers",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdGvNdHzLXrjCkXaAZSxQoCR3PbkV2QDk3gzrmqf2BgpN",
+            "mediaType": "image/jpeg",
+            "description": "bbValet De Deniers"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

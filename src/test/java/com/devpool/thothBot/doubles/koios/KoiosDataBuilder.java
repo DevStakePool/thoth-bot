@@ -12,14 +12,12 @@ import rest.koios.client.backend.api.account.model.AccountRewards;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
-import rest.koios.client.backend.api.base.common.TxHash;
+import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.URL;
 import java.util.List;
 
 public class KoiosDataBuilder {
@@ -34,7 +32,8 @@ public class KoiosDataBuilder {
     private static final String POOL_INFORMATION_JSON_FILE = "test-data/pool_information.json";
     private static final String ACCOUNT_INFORMATION_JSON_FILE = "test-data/account_information.json";
     private static final String ADDRESS_INFORMATION_JSON_FILE = "test-data/address_information.json";
-    private static final String ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE = "test-data/address_txs_";
+    private static final String ACCOUNT_UTXOS_JSON_FILE = "test-data/accounts_utxos.json";
+    private static final String ADDRESSES_UTXOS_JSON_FILE = "test-data/addresses_utxos.json";
     private static final String ASSET_INFORMATION_PREFIX_JSON_FILE = "test-data/assets/asset_";
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
@@ -114,25 +113,6 @@ public class KoiosDataBuilder {
         return data;
     }
 
-
-    public static List<TxHash> getAddressTransactionTestData(String addr) throws IOException {
-        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String fileName = ADDRESS_TRANSACTIONS_PREFIX_JSON_FILE + addr + ".json";
-        URL res = classLoader.getResource(fileName);
-        if (res == null) {
-            throw new FileNotFoundException("File not found: " + fileName);
-        }
-        String f = res.getFile();
-        File jsonFile = new File(f);
-        ObjectMapper mapper = new ObjectMapper()
-                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
-
-        List<TxHash> data = mapper.readValue(jsonFile, new TypeReference<>() {
-        });
-
-        return data;
-    }
-
     public static List<AccountAsset> getAccountAssets() throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
         String f = classLoader.getResource(ACCOUNT_ASSETS_JSON_FILE).getFile();
@@ -183,5 +163,25 @@ public class KoiosDataBuilder {
             throw new RuntimeException("Asset " + policyId + "/" + policyName + " returned an empty list");
 
         return data.get(0);
+    }
+
+    private static List<UTxO> getUTxOsFromFile(String file) throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        LOG.info("Reading asset file {}", file);
+        String f = classLoader.getResource(file).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        return mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+    }
+
+    public static List<UTxO> getUTxOsForAccount() throws IOException {
+        return getUTxOsFromFile(ACCOUNT_UTXOS_JSON_FILE);
+    }
+
+    public static List<UTxO> getUTxOsForAddress() throws IOException {
+        return getUTxOsFromFile(ADDRESSES_UTXOS_JSON_FILE);
     }
 }

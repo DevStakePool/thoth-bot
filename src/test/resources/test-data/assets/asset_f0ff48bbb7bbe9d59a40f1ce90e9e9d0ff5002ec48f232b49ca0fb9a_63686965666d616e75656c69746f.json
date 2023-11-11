@@ -1,0 +1,77 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "63686965666d616e75656c69746f",
+    "asset_name_ascii": "chiefmanuelito",
+    "fingerprint": "asset1thlm742rgtjklhupzuv5yjzdu703jxly68hj4s",
+    "minting_tx_hash": "d6a32c18371f4ed4ac62bd46ac4b9c3089170299497794fd4d7a7dbc8c56ff23",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665014400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          ".113": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$.113",
+            "image": "ipfs://QmVx6HFoBTrLsS34RSw8xfXXMLSgpSgVkVjoPGj4g6EbJU",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          ".125": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$.125",
+            "image": "ipfs://QmVaGwrPD57wVYL32Jj6X2iFeKA8ESW2AeRSRqxiQwhtGd",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "captchanft": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$captchanft",
+            "image": "ipfs://QmSXHvpaGpayCsG1YbhUkiy9evfkJHEoFqZWHdZVjPpiN2",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "chiefmanuelito": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$chiefmanuelito",
+            "image": "ipfs://QmXX37p7W6T6pestCsGGKwPYmaww7gFkiCfbUMA5jYvFcU",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

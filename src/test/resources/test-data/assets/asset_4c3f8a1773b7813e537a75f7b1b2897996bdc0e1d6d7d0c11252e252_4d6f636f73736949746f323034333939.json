@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252",
+    "asset_name": "4d6f636f73736949746f323034333939",
+    "asset_name_ascii": "MocossiIto204399",
+    "fingerprint": "asset1rafm36zkq7vpf7zvx6yva52kf0spuhl5d5gn66",
+    "minting_tx_hash": "d548031b3da50b392916eb1049ef73c40f79fa3e3d91d12b39ee475edc0e145d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648339200,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto204399": {
+            "id": 4399,
+            "name": "Mocossi-Ito-2-04399",
+            "image": "ipfs://QmTeknhezoFcaPGNhvhDFeJczPVj9dhCy8sitTVdqVqwPx",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "hiphop necklace",
+              "Face": "cute evil",
+              "Parents": [
+                1326,
+                6398
+              ],
+              "Species": "Ito",
+              "Headwear": "cowboy",
+              "Background": "red"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

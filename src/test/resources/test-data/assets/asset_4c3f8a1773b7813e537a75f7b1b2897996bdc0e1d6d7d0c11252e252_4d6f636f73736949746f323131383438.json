@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252",
+    "asset_name": "4d6f636f73736949746f323131383438",
+    "asset_name_ascii": "MocossiIto211848",
+    "fingerprint": "asset1t9tscs8tt8vlzu2l20erkalercaykfrvdgcy9y",
+    "minting_tx_hash": "6f9dc70bde8dcd61c19ba845df9cf073493964369b2c66df69255268d445f172",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650240000,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto211848": {
+            "id": 11848,
+            "name": "Mocossi-Ito-2-11848",
+            "image": "ipfs://QmeTa8dfPeDY5kWdstv9qeH2GiQaPRw2wpqHUJCNaAKcXG",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "astro suit",
+              "Face": "excited",
+              "Parents": [
+                9487,
+                2209
+              ],
+              "Species": "Ito",
+              "Headwear": "antiers",
+              "Background": "red"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

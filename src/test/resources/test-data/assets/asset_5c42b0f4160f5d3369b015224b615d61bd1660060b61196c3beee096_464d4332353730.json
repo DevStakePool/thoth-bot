@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "5c42b0f4160f5d3369b015224b615d61bd1660060b61196c3beee096",
+    "asset_name": "464d4332353730",
+    "asset_name_ascii": "FMC2570",
+    "fingerprint": "asset1uke9yf0jtk55vtqm95sccmutvns7zwwxjcddlj",
+    "minting_tx_hash": "d5485aa29fd66cafbc3250ef90f16f201854aeb6388a47d7fdfbcca2b11ab81a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648252800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "5c42b0f4160f5d3369b015224b615d61bd1660060b61196c3beee096": {
+          "FMC2570": {
+            "Body": "Cream",
+            "Eyes": "Custom 3D Glasses",
+            "Head": "Captains Hat",
+            "name": "FMC #2570",
+            "Mouth": "Whistle",
+            "files": [
+              {
+                "src": "ipfs://QmSyQ8WqEDbDyvJHKxJJWR7KZFbtTGgZQdLnQC6sYeUAsg",
+                "name": "FMC #2570",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSyQ8WqEDbDyvJHKxJJWR7KZFbtTGgZQdLnQC6sYeUAsg",
+            "Clothing": "Robe + Silver Cuban",
+            "mediaType": "image/png",
+            "Background": "Green Faded",
+            "Face Plate": "Metal"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

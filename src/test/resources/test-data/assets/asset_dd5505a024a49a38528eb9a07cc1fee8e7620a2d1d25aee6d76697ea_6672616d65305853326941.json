@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65305853326941",
+    "asset_name_ascii": "frame0XS2iA",
+    "fingerprint": "asset1varp5hfhcj0mkeg0rc77n5u55zud4x6tv2r8rp",
+    "minting_tx_hash": "2420c2ea775030de6b2b5d9f8a06f1948bf3f24c556b3d292c45dad7b5dcd671",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1664496000,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0XS2iA": {
+            "id": "XS2iA",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Durand King",
+            "mintedAt": 1664577471729,
+            "mintedBy": "e1c62a6768c1cf834c63ab27e4a2c9d9b31f9423ffaf7940f5bd72be03",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1u8rz5emgc88cxnrr4vn7fgkfmxe3l9prl7hhjs84h4etuqcpk5y30"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

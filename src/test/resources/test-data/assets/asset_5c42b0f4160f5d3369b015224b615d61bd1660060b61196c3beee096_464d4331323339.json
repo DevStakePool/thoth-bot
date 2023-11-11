@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "5c42b0f4160f5d3369b015224b615d61bd1660060b61196c3beee096",
+    "asset_name": "464d4331323339",
+    "asset_name_ascii": "FMC1239",
+    "fingerprint": "asset19znr5ln7hd0tkkmgdyuwme497ncf4z7pfqe06v",
+    "minting_tx_hash": "eb33d8858a5b2c0fb96997b35fb333d05d795423078601200cc27774de2b891c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648252800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "5c42b0f4160f5d3369b015224b615d61bd1660060b61196c3beee096": {
+          "FMC1239": {
+            "Body": "Tanned",
+            "Eyes": "Closed Eye",
+            "Head": "Red Hair",
+            "name": "FMC #1239",
+            "Mouth": "Tight Lipped",
+            "files": [
+              {
+                "src": "ipfs://QmZhSdqw6ptJLNEQo9MW3wspEDWbs1c3MQzNH3XvjAf8Xx",
+                "name": "FMC #1239",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZhSdqw6ptJLNEQo9MW3wspEDWbs1c3MQzNH3XvjAf8Xx",
+            "Clothing": "Furr Coat",
+            "mediaType": "image/png",
+            "Background": "Blue",
+            "Face Plate": "Blue"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

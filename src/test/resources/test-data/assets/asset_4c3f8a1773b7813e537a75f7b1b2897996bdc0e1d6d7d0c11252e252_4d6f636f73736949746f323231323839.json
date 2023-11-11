@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252",
+    "asset_name": "4d6f636f73736949746f323231323839",
+    "asset_name_ascii": "MocossiIto221289",
+    "fingerprint": "asset1zxxzgmj6w45vckkvt4z8rsxma5jw4l5gsfesg6",
+    "minting_tx_hash": "a324705455031ab1bffd5b666f43445947f509fbf1f06e63be49a82e62434adf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1653782400,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto221289": {
+            "id": 21289,
+            "name": "Mocossi-Ito-2-21289",
+            "image": "ipfs://QmUg1cM8dEhWubaskBCjiegqT1K6aPnfKzdBxsipjm2kNk",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "hiphop necklace",
+              "Face": "glossy",
+              "Parents": [
+                6543,
+                9625
+              ],
+              "Species": "Ito",
+              "Headwear": "medusa",
+              "Background": "pink"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        },
+        "d4473a78ae992ed6d95299e7177b45c8053d5db5495467a29ff0c780": {
+          "MocossiMagicPill10660": {
+            "id": 10660,
+            "name": "Mocossi-Magic-Pill-10660",
+            "image": "ipfs://QmZERutW3SFnDuYjJ8UpHsZsbHW6oauKs5148NbeN1ABCa",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Pill": "Flashito",
+              "Feature": "Reduce 1 day cool-down time",
+              "Applied-to": "Breeding"
+            },
+            "description": "Mocossi NFT for Magic Pills"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]
