@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "a8b5c736b89e22d48b4b4da1424cca187947c257b0abc8096c39a5d8",
+    "asset_name": "4d6164646f636b4d69676874313935",
+    "asset_name_ascii": "MaddockMight195",
+    "fingerprint": "asset1ghwdclhu9urd53kme5awztdt8ty9vcjyn2jrw0",
+    "minting_tx_hash": "e03085b9c104517d8f5d4a094fe88fcdda2b3b02824893bd5ce36929ab62dead",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671580800,
+    "minting_tx_metadata": {
+      "721": {
+        "a8b5c736b89e22d48b4b4da1424cca187947c257b0abc8096c39a5d8": {
+          "MaddockMight195": {
+            "name": "Maddock Might #195",
+            "files": [
+              {
+                "src": "ipfs://Qmc9EVCe9mfi5sLGHsBbCHHfd6F89HkdHy5n2APZ1dqfFe",
+                "Type": "Cannon",
+                "name": "Maddock Might #195",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": "ipfs://QmYH5eNuq9rs6xSybbspUgkfV4xRghdYGrbznZh7WaB6pz",
+            "project": "Maddock Might"
+          },
+          "MaddockMight197": {
+            "name": "Maddock Might #197",
+            "files": [
+              {
+                "src": "ipfs://Qmc9EVCe9mfi5sLGHsBbCHHfd6F89HkdHy5n2APZ1dqfFe",
+                "Type": "Cannon",
+                "name": "Maddock Might #197",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": "ipfs://QmYH5eNuq9rs6xSybbspUgkfV4xRghdYGrbznZh7WaB6pz",
+            "project": "Maddock Might"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

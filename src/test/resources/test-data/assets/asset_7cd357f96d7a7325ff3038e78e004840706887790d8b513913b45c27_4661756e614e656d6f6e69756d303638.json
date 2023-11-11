@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "7cd357f96d7a7325ff3038e78e004840706887790d8b513913b45c27",
+    "asset_name": "4661756e614e656d6f6e69756d303638",
+    "asset_name_ascii": "FaunaNemonium068",
+    "fingerprint": "asset1xkgkcj07q9fu6mwf45u68dqf6cz98t4cgrm7s2",
+    "minting_tx_hash": "4b14f45131bda12799e4a861c76690839113efd3cdb2e9d332e160959682c5b6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650499200,
+    "minting_tx_metadata": {
+      "721": {
+        "7cd357f96d7a7325ff3038e78e004840706887790d8b513913b45c27": {
+          "FaunaNemonium068": {
+            "name": "Skull #068",
+            "files": [
+              {
+                "src": "ipfs://Qmb8qT5C2uM6U85AXPu2chXXPbUP6mzmPohscawKc8BNtQ",
+                "name": "Skull #068",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYscuUe1tzzinwzAkPCxXtgvb1UqQQX6Bo8Kts1WMy536",
+            "artist": "https://twitter.com/fauna9608",
+            "website": "https://nemo.global/",
+            "description": "Fauna x Nemonium"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706542726179436f72746573",
+    "asset_name_ascii": "adapeBrayCortes",
+    "fingerprint": "asset1dfmxcdskkzzut89hupqprvm8zvnkpsezan0c0q",
+    "minting_tx_hash": "ebb8773631b8fbd1f3a82eed0be19ec190f8fa0d44610c1cf1ddcd43a8edd1a5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBrayCortes": {
+            "Hat": "Knight Helmet",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bray Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://Qmbyrq3TgtoBYJRkRkLA4uH2fmzdYZtgYkhsS3FWL9h3w5",
+                "name": "Bray Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmbyrq3TgtoBYJRkRkLA4uH2fmzdYZtgYkhsS3FWL9h3w5",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Cortes family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

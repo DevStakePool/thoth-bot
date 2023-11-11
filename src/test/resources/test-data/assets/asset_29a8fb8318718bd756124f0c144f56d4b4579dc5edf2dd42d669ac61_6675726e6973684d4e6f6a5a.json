@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684d4e6f6a5a",
+    "asset_name_ascii": "furnishMNojZ",
+    "fingerprint": "asset1x9kdgukvtxj8l2wj26q3ktfkte9uzsa4asqvg5",
+    "minting_tx_hash": "9fc63cd9d53f5e792504ba61bf6408d493695f97af197ee218248eda44f1b983",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672358400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishMNojZ": {
+            "id": "MNojZ",
+            "src": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+            "name": "Unbalanced Sofa",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+                "name": "Unbalanced Sofa",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQKLd4LFRRHg43DA52u7Jnv2n1tDRgPkqKFoULq79AngY",
+                "name": "Unbalanced Sofa",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmR9uThAVz3EreGSFK495ofXXdJf3SQuhqdAb6QoD5XTwt",
+                "name": "Unbalanced Sofa",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+            "description": "Hand-crafted by Terrel White.",
+            "furnitureId": 221
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

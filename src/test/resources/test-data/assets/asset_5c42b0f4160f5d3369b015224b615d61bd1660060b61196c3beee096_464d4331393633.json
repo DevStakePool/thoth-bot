@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "5c42b0f4160f5d3369b015224b615d61bd1660060b61196c3beee096",
+    "asset_name": "464d4331393633",
+    "asset_name_ascii": "FMC1963",
+    "fingerprint": "asset1d0c0wteqz09g8l5zarqdqsres3498zkmn343q8",
+    "minting_tx_hash": "5baa30689fe6ff1ef1a9c6d20a893476841c18f3fdc1f62e6adc47598c96089f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648252800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "5c42b0f4160f5d3369b015224b615d61bd1660060b61196c3beee096": {
+          "FMC1963": {
+            "Body": "Light",
+            "Eyes": "Gold Eyes",
+            "Head": "Black Bandana",
+            "name": "FMC #1963",
+            "Mouth": "Blowing Bubble",
+            "files": [
+              {
+                "src": "ipfs://QmXjWLFPBN1R8hKg5Ge6TWBa2gvq9tdcx5heJ6PaBaUaWT",
+                "name": "FMC #1963",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXjWLFPBN1R8hKg5Ge6TWBa2gvq9tdcx5heJ6PaBaUaWT",
+            "Clothing": "Furr Coat",
+            "mediaType": "image/png",
+            "Background": "Blue Faded",
+            "Face Plate": "Gold"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

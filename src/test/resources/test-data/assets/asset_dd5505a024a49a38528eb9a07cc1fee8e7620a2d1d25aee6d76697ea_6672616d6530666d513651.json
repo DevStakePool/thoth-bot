@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d6530666d513651",
+    "asset_name_ascii": "frame0fmQ6Q",
+    "fingerprint": "asset1dgpe75tfqlwaaa7yq4fwpl6d9mlz0xvz2dl733",
+    "minting_tx_hash": "9280cf3c5aef0cbe8385e07a488abb2a07e3780a607de65f6d3b4918c38e98f3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1664496000,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0fmQ6Q": {
+            "id": "fmQ6Q",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Truman Hill",
+            "mintedAt": 1664578518933,
+            "mintedBy": "e1c62a6768c1cf834c63ab27e4a2c9d9b31f9423ffaf7940f5bd72be03",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1u8rz5emgc88cxnrr4vn7fgkfmxe3l9prl7hhjs84h4etuqcpk5y30"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "7b623f6f9865c9d93df08702b28e224e350bfef307dacbbe32a7aa1c",
+    "asset_name": "4d656d656e746f4d6f726930363139",
+    "asset_name_ascii": "MementoMori0619",
+    "fingerprint": "asset1e42lsdy5trnjfaas9huqyxuqxmvm9eswmvtgj0",
+    "minting_tx_hash": "53618210a6e6a56857d333b9d788a4ff13368bb8bf278702c3569def96aa9dfa",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651536000,
+    "minting_tx_metadata": {
+      "721": {
+        "7b623f6f9865c9d93df08702b28e224e350bfef307dacbbe32a7aa1c": {
+          "MementoMori0619": {
+            "name": "Memento Mori #0619",
+            "files": [
+              {
+                "src": "ipfs://QmQ2fPtaVEFjAfcdex4xB8qKfC6GSmtns45LrbfQ8TRgrY",
+                "name": "Memento Mori #0619",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWXABjWhKmRDNbmoxEtEjMG7agfykoTvdCUmVsLVVf3q8",
+            "artist": "https://twitter.com/NatalieShau",
+            "website": "https://nemo.global/",
+            "description": "Natalie Shau x Nemonium"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

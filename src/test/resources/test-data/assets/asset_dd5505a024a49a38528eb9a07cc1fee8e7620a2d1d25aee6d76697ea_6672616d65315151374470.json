@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65315151374470",
+    "asset_name_ascii": "frame1QQ7Dp",
+    "fingerprint": "asset1fs59xwnzlust02ez3pt9vyhn7p8pksg4fzn4lr",
+    "minting_tx_hash": "2972d4bea6922efed8a06c5153f89a45f0e141b7e4b28111baa10b67fe8ac7cb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665446400,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame1QQ7Dp": {
+            "id": "orZQj",
+            "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "name": "Ape Society Frame Level 1",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+                "name": "Ape Society Frame Level 1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "level": 1,
+            "artist": "Tranter Hill",
+            "mintedAt": 1665477312649,
+            "mintedBy": "e143f8633f23346d34fae86df8528ac69e5091e0e0d978875fda3b261b",
+            "description": "Level 1 frame",
+            "mintedStake": "stake1u9plscelyv6x6d86apkls552c609py0qurvh3p6lmgajvxcn0jt4z"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

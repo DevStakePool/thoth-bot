@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65306a626c3543",
+    "asset_name_ascii": "frame0jbl5C",
+    "fingerprint": "asset1cs85jctwujl9vg9euh9t376tjuxe939c49na8g",
+    "minting_tx_hash": "08c4fac098efdc71f1f7596905bb5698d35a08e04d23610d07839d77dd71c2bc",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675900800,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0jbl5C": {
+            "id": "jbl5C",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Kenton Best",
+            "mintedAt": 1675903359026,
+            "mintedBy": "e143f8633f23346d34fae86df8528ac69e5091e0e0d978875fda3b261b",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1u9plscelyv6x6d86apkls552c609py0qurvh3p6lmgajvxcn0jt4z"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

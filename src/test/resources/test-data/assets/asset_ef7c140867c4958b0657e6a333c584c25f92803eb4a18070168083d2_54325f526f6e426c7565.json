@@ -1,0 +1,727 @@
+[
+  {
+    "policy_id": "ef7c140867c4958b0657e6a333c584c25f92803eb4a18070168083d2",
+    "asset_name": "54325f526f6e426c7565",
+    "asset_name_ascii": "T2_RonBlue",
+    "fingerprint": "asset1n95j4n6emh9n3p065fdspvkyl5ma0r4dpwuckv",
+    "minting_tx_hash": "abec44e1a3f173ac9301eaf4da59b6c6b0be506ece6f047d227192e6ba85eba9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "ef7c140867c4958b0657e6a333c584c25f92803eb4a18070168083d2": {
+          "T1_Ray": {
+            "name": "TheCaptRay - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmZBAqRyW1sbqST2FmsbW8xh1bQQ5v8kkC23cDdo2vfesH",
+                "name": "captray.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmZBAqRyW1sbqST2FmsbW8xh1bQQ5v8kkC23cDdo2vfesH",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Halo": {
+            "name": "Halo - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmTL1mdecJ4in8ybpYLPHBFzWH83XzRnRAmJPy9avsb3SE",
+                "name": "16.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmTL1mdecJ4in8ybpYLPHBFzWH83XzRnRAmJPy9avsb3SE",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Chief": {
+            "name": "Chief Ray - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmeGEwXh6xWDt3ERmr6cEVyxWmM61RAGSR3q8cC6ndwp91",
+                "name": "chief.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmeGEwXh6xWDt3ERmr6cEVyxWmM61RAGSR3q8cC6ndwp91",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Nunchi": {
+            "name": "Nunchi - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmNnbaBrHBV8vnQA6Fmh5ohQXiyrwQGW4L2U7NUsaoTHef",
+                "name": "nunchi.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmNnbaBrHBV8vnQA6Fmh5ohQXiyrwQGW4L2U7NUsaoTHef",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Banana": {
+            "name": "Banana - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmQBdquXGnXP2rGuGpvC82FsrmbNqa6mtSnGjLLgaEY8Se",
+                "name": "20.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmQBdquXGnXP2rGuGpvC82FsrmbNqa6mtSnGjLLgaEY8Se",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Bronze": {
+            "name": "Bronze - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmWAEL7mVtq51mGkLb3bGHuM9Wpq4ARWPdisoeGVKqtjfU",
+                "name": "3.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmWAEL7mVtq51mGkLb3bGHuM9Wpq4ARWPdisoeGVKqtjfU",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Cowboy": {
+            "name": "Cowboy - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmRhZE26BSW8T2tKPpfkLZGBCiTtcMWqxvA59C5WUrhQ5x",
+                "name": "6.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmRhZE26BSW8T2tKPpfkLZGBCiTtcMWqxvA59C5WUrhQ5x",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Firozi": {
+            "name": "Firozi - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmRt665pmCLGBwPzGmFU2sUeT8qhF236RsKN4BfNVxK4d7",
+                "name": "5.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmRt665pmCLGBwPzGmFU2sUeT8qhF236RsKN4BfNVxK4d7",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Hazard": {
+            "name": "Hazard - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmRMkbb5ZEKucmfUq2nejTjBNqiEwoM42n79VBCDRGXaEQ",
+                "name": "25.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmRMkbb5ZEKucmfUq2nejTjBNqiEwoM42n79VBCDRGXaEQ",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif",
+            "description": ""
+          },
+          "T2_Orange": {
+            "name": "Orange - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmbMtZv9Rr68xRCppWJhmcVsd7hPzP7LDed3cBnw7cou14",
+                "name": "12.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmbMtZv9Rr68xRCppWJhmcVsd7hPzP7LDed3cBnw7cou14",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Pirate": {
+            "name": "Pirate - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmXh72eC8wMzqpc7J7VxEVfuBaFEhGFu6Emmqyw5t8EkzS",
+                "name": "22.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmXh72eC8wMzqpc7J7VxEVfuBaFEhGFu6Emmqyw5t8EkzS",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Silver": {
+            "name": "Silver - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmSvFKr9ef4XoMhAdevABzSWRMHANVJYg4C6H1k8Cya4Hk",
+                "name": "26booked.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmSvFKr9ef4XoMhAdevABzSWRMHANVJYg4C6H1k8Cya4Hk",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Captain": {
+            "name": "Captain - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmdDM9BpqvR4VjeydATzy7FUa98DvLcx1DPJo3kXFq6F8s",
+                "name": "captain.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmdDM9BpqvR4VjeydATzy7FUa98DvLcx1DPJo3kXFq6F8s",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Samurai": {
+            "name": "Samurai - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmbaqTb5Wo3HuyqWgUV9aapH38qSrgX9GsKr2mFJmReWhP",
+                "name": "samurai.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmbaqTb5Wo3HuyqWgUV9aapH38qSrgX9GsKr2mFJmReWhP",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Sithron": {
+            "name": "Sithron - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmeP1xW1CKUKzhaYPHHn8Xb9A9QMiC8QKgKJ7iKCHVkHy1",
+                "name": "sithron.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmeP1xW1CKUKzhaYPHHn8Xb9A9QMiC8QKgKJ7iKCHVkHy1",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Stellar": {
+            "name": "Stellar - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmSYkDmhXJKrLWkey6KsZ1rHyreCD6KSUYgNo61GERNrro",
+                "name": "stellar.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmSYkDmhXJKrLWkey6KsZ1rHyreCD6KSUYgNo61GERNrro",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Leopard": {
+            "name": "Leopard - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmcRQScUhj9fYWpw42g3JZXRg7NJ6FPzXaopKM7V1yBKaV",
+                "name": "24.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmcRQScUhj9fYWpw42g3JZXRg7NJ6FPzXaopKM7V1yBKaV",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_RonBlue": {
+            "name": "Ron Blue - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmNtAENGgF59UzkCSzxF6VuVoJDTWKBuGyo522v76bZ3JG",
+                "name": "15.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmNtAENGgF59UzkCSzxF6VuVoJDTWKBuGyo522v76bZ3JG",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Unicorn": {
+            "name": "Unicorn - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmY4BbhhAt14CL1ZS6gvrZ4GM9EAhfwuMQquuyoYLA2PJW",
+                "name": "2.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmY4BbhhAt14CL1ZS6gvrZ4GM9EAhfwuMQquuyoYLA2PJW",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_CyberRay": {
+            "name": "Cyber RayMan - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmbGpkZNKXe92vSkettdGiptCeAW7jEhW6GSP1DAEPUHzz",
+                "name": "cyberman.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmbGpkZNKXe92vSkettdGiptCeAW7jEhW6GSP1DAEPUHzz",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_IronMark": {
+            "name": "Iron Mark - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmR6a2XXAB9ah9y1PdHaYDfq8x3tJ1QjaaeVmaR731od56",
+                "name": "ironmark.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmR6a2XXAB9ah9y1PdHaYDfq8x3tJ1QjaaeVmaR731od56",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Pikapool": {
+            "name": "Pikapool - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://Qmae7iMYc358CnLNsqRcffA89qW6tRnmmajeW7URqJxraJ",
+                "name": "pikapool.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qmae7iMYc358CnLNsqRcffA89qW6tRnmmajeW7URqJxraJ",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_RedGlory": {
+            "name": "Red Glory - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmbwKSuhcXAF7ighvrnVRYFcXthr1CbFa6Z1nV6qrXYtoY",
+                "name": "redglory.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmbwKSuhcXAF7ighvrnVRYFcXthr1CbFa6Z1nV6qrXYtoY",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_RoninRay": {
+            "name": "Ronin Ray - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://Qmadw2wrm9rQsJkkCMHwLBaHsxdJ2Stk4j4cV46vYgdjEa",
+                "name": "ronin.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qmadw2wrm9rQsJkkCMHwLBaHsxdJ2Stk4j4cV46vYgdjEa",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_Titanium": {
+            "name": "Titanium - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmdabrS679nARRizWyU6DPqFf37jmEPZRyQLaotYKDqRPn",
+                "name": "titanium.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmdabrS679nARRizWyU6DPqFf37jmEPZRyQLaotYKDqRPn",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_WinduRay": {
+            "name": "WinduRay - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmVSGk6jze6ofLTvQgC9AcqX1KBwqTPqCDur7xm5cKTiEh",
+                "name": "windu.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmVSGk6jze6ofLTvQgC9AcqX1KBwqTPqCDur7xm5cKTiEh",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Anderson": {
+            "name": "Mister Anderson - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmR9znqD6NPPRSJNwbkPxaKDmKqNUzc1T7CEmsKwEFvxQ2",
+                "name": "21.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmR9znqD6NPPRSJNwbkPxaKDmKqNUzc1T7CEmsKwEFvxQ2",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_ExtraRed": {
+            "name": "Extra Red - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmTvqYYy1MiCfbKGVMDvHqzKuE3HzehbA7jth8iGqJ5AXx",
+                "name": "8.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmTvqYYy1MiCfbKGVMDvHqzKuE3HzehbA7jth8iGqJ5AXx",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_Flamingo": {
+            "name": "Flamingo - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmSuxWa6v5C6bBwqyXmqhwQHi4WtUFuH7q7h7S793Zytii",
+                "name": "7.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmSuxWa6v5C6bBwqyXmqhwQHi4WtUFuH7q7h7S793Zytii",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_LightRed": {
+            "name": "Light Red - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmbLKByZYfWFkKRuGMZqNNHbbiSLQ773djRKf7cmMPqS3w",
+                "name": "18.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmbLKByZYfWFkKRuGMZqNNHbbiSLQ773djRKf7cmMPqS3w",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_RedWhite": {
+            "name": "Red White - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmWGQPNGGeMAT6nkxHRuuxgLcXfQsJAcYK5bdjaF3wFKtL",
+                "name": "4.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmWGQPNGGeMAT6nkxHRuuxgLcXfQsJAcYK5bdjaF3wFKtL",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_RonGreen": {
+            "name": "Ron Green - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmTEUrKaodVPUBNY3ZxWcg3FKioso38cPBXPNXc8LvAbyN",
+                "name": "14.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmTEUrKaodVPUBNY3ZxWcg3FKioso38cPBXPNXc8LvAbyN",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_RonWhite": {
+            "name": "Ron White - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://Qma1HdCj6CZuNzJfka1iLRQheo2BGFv7KLmS5LYHchPSai",
+                "name": "27booked.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qma1HdCj6CZuNzJfka1iLRQheo2BGFv7KLmS5LYHchPSai",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_BumbleBee": {
+            "name": "BumbleBee - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmdF5jPVQhDsaTpB7SQLw6yirD6cR3T6fhW86CNSaLhpyo",
+                "name": "bumblebee.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmdF5jPVQhDsaTpB7SQLw6yirD6cR3T6fhW86CNSaLhpyo",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_MagicWand": {
+            "name": "Magic Wand - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmWAG9AB7h5PuB5EBc5FqQ9Vy5K7qtXqBeZRwwmV4qQH58",
+                "name": "magic.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmWAG9AB7h5PuB5EBc5FqQ9Vy5K7qtXqBeZRwwmV4qQH58",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_BubbleGum": {
+            "name": "Bubble Gum - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmfM4UY56H7DCB2vbwbd4vrxahFDNjsPCzBo7dgSbY8zCp",
+                "name": "23.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmfM4UY56H7DCB2vbwbd4vrxahFDNjsPCzBo7dgSbY8zCp",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_RonYellow": {
+            "name": "Ron Yellow - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmRhtnkuuZXVQCfzKw53aF3bjaapsLHrB5XZpFimCGtN8h",
+                "name": "17.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmRhtnkuuZXVQCfzKw53aF3bjaapsLHrB5XZpFimCGtN8h",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_WhiteBlue": {
+            "name": "White Blue - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmWLrQ2exVRdvXVnnVzhi4ivGsGuCy3x2Zx4gGnDX1unbc",
+                "name": "10.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmWLrQ2exVRdvXVnnVzhi4ivGsGuCy3x2Zx4gGnDX1unbc",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_WhitePink": {
+            "name": "White Pink - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://Qma67VXw6R77FGGnpBFjagyMrTkWynKxsNKvKrF2SEJX5n",
+                "name": "13.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://Qma67VXw6R77FGGnpBFjagyMrTkWynKxsNKvKrF2SEJX5n",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_WhiteAngel": {
+            "name": "White Angel - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmRXFb9FBiRHHRbC8GVzzzzSpN7nm6uhuvMqSbaeHQ1y6K",
+                "name": "whiteangel.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmRXFb9FBiRHHRbC8GVzzzzSpN7nm6uhuvMqSbaeHQ1y6K",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_GoldSilver": {
+            "name": "Golden Silver - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmYfprEQVde1HCVPbA8Gy3o2ovuiZexm6cCDT7c2yy4MZM",
+                "name": "1booked.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmYfprEQVde1HCVPbA8Gy3o2ovuiZexm6cCDT7c2yy4MZM",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_GreenBlack": {
+            "name": "Green Black - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmQmrdWvQzcATX4z88Rd49dQaWwbtFhk3mjmF2n35cJTjH",
+                "name": "9.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmQmrdWvQzcATX4z88Rd49dQaWwbtFhk3mjmF2n35cJTjH",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_LightGreen": {
+            "name": "Light Green - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmS3KYnmx4zCnSjsg14s77c4XeS1F28KF628t7RZQx1MZb",
+                "name": "19.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmS3KYnmx4zCnSjsg14s77c4XeS1F28KF628t7RZQx1MZb",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_GoldenAngel": {
+            "name": "Golden Angel - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmQEFbQ61CZcPNguxTChFdQvCiFFekEzL9WD8UdiwCytE8",
+                "name": "goldangel.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmQEFbQ61CZcPNguxTChFdQvCiFFekEzL9WD8UdiwCytE8",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T2_WhiteOrange": {
+            "name": "White Orange - Tier II - Ray Suit",
+            "type": "Tier II",
+            "files": [
+              {
+                "src": "ipfs://QmXhP2GJ51KSjP5AvoxesbwYWzPfPs2y547GsqaCyPEM7L",
+                "name": "11.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmXhP2GJ51KSjP5AvoxesbwYWzPfPs2y547GsqaCyPEM7L",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_PittsPenguin": {
+            "name": "Pitts Penguin - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmNMucm5QbUVH7PDqdn3DEzp3KEtf5tqFrZXJpMqZdFXJK",
+                "name": "penguins.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmNMucm5QbUVH7PDqdn3DEzp3KEtf5tqFrZXJpMqZdFXJK",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          },
+          "T1_MoonRayKnight": {
+            "name": "Moon RayKnight - Tier I - Ray Suit",
+            "type": "Tier I",
+            "files": [
+              {
+                "src": "ipfs://QmQWhU1F7Tj7GW9CRt1C3ccxc8vSXathXBkLekKgcpjQ52",
+                "name": "knight.gif",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmQWhU1F7Tj7GW9CRt1C3ccxc8vSXathXBkLekKgcpjQ52",
+            "artist": "TheCaptRay",
+            "homepage": "https://twitter.com/TheCaptRay",
+            "mediaType": "image/gif"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

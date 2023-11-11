@@ -1,0 +1,693 @@
+[
+  {
+    "policy_id": "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e",
+    "asset_name": "476c6173736573537065637461636c65735631",
+    "asset_name_ascii": "GlassesSpectaclesV1",
+    "fingerprint": "asset1gm080gcrxxsj20u3qr6x3grp5hwexx5gqy06xz",
+    "minting_tx_hash": "ad521162d321ba7bf5ca50fc43dd79be2c4b26da6578eaef0aac9d6aa3a337c9",
+    "total_supply": "53",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672876800,
+    "minting_tx_metadata": {
+      "721": {
+        "a09278c524f157eec21b6c590e57022e8acf1980035c94018817490e": {
+          "GunBeamV1": {
+            "Type": "Beam",
+            "name": "Gun Beam V1",
+            "files": [
+              {
+                "src": "ipfs://QmWzLj8ih4VGHh59V7tt6roDqxH75LDn8bTsXj77SDufVz",
+                "name": "Gun Beam V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWzLj8ih4VGHh59V7tt6roDqxH75LDn8bTsXj77SDufVz",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunBeamV2": {
+            "Type": "Beam",
+            "name": "Gun Beam V2",
+            "files": [
+              {
+                "src": "ipfs://QmeM67U2n4tjvu3gEKmNsuc46UUonGka1Z6jXc2iRF1nVP",
+                "name": "Gun Beam V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeM67U2n4tjvu3gEKmNsuc46UUonGka1Z6jXc2iRF1nVP",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunSW47V1": {
+            "Type": "SW47",
+            "name": "Gun SW47 V1",
+            "files": [
+              {
+                "src": "ipfs://QmUpDtdsskzRsKvbybRAXT2iX71NoVmU7cgQkUNfh74PMB",
+                "name": "Gun SW47 V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUpDtdsskzRsKvbybRAXT2iX71NoVmU7cgQkUNfh74PMB",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunSW47V2": {
+            "Type": "SW47",
+            "name": "Gun SW47 V2",
+            "files": [
+              {
+                "src": "ipfs://QmPmmCTyvkPGe3aHdznmeorXdj9v6uqwo21i1LCoEqo4N1",
+                "name": "Gun SW47 V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPmmCTyvkPGe3aHdznmeorXdj9v6uqwo21i1LCoEqo4N1",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunBurnerV1": {
+            "Type": "Burner",
+            "name": "Gun Burner V1",
+            "files": [
+              {
+                "src": "ipfs://QmbtNpoj7gnf3aUv5FZ3VgAafbXtfFdZXnwiubQK8M3nPP",
+                "name": "Gun Burner V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbtNpoj7gnf3aUv5FZ3VgAafbXtfFdZXnwiubQK8M3nPP",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunBurnerV2": {
+            "Type": "Burner",
+            "name": "Gun Burner V2",
+            "files": [
+              {
+                "src": "ipfs://QmTWb1d3CnQPDs46RAnJMeiyCLs3edbAhvkqrFt3ymhqfA",
+                "name": "Gun Burner V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTWb1d3CnQPDs46RAnJMeiyCLs3edbAhvkqrFt3ymhqfA",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunBlasterV1": {
+            "Type": "Blaster",
+            "name": "Gun Blaster V1",
+            "files": [
+              {
+                "src": "ipfs://QmVtUhgraf5mSh45tUtVsGNCPMj4dGwwCEP9zSzHH9frsH",
+                "name": "Gun Blaster V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVtUhgraf5mSh45tUtVsGNCPMj4dGwwCEP9zSzHH9frsH",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunBlasterV2": {
+            "Type": "Blaster",
+            "name": "Gun Blaster V2",
+            "files": [
+              {
+                "src": "ipfs://QmTY7wrGHKntjMUhXkpD3uhsKCeHYZYzU5EHTHVA18A1SH",
+                "name": "Gun Blaster V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTY7wrGHKntjMUhXkpD3uhsKCeHYZYzU5EHTHVA18A1SH",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunIgniterV1": {
+            "Type": "Igniter",
+            "name": "Gun Igniter V1",
+            "files": [
+              {
+                "src": "ipfs://QmbseVKtjVFpCEj39cNz7uboNY9JxtLNFXDUwW5PgEUJyb",
+                "name": "Gun Igniter V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbseVKtjVFpCEj39cNz7uboNY9JxtLNFXDUwW5PgEUJyb",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunIgniterV2": {
+            "Type": "Igniter",
+            "name": "Gun Igniter V2",
+            "files": [
+              {
+                "src": "ipfs://QmVkW3BxhacFkPGvF2Po5WsJR3D7o7AS3zSP5nLC1Teewi",
+                "name": "Gun Igniter V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVkW3BxhacFkPGvF2Po5WsJR3D7o7AS3zSP5nLC1Teewi",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunMartianV1": {
+            "Type": "Martian",
+            "name": "Gun Martian V1",
+            "files": [
+              {
+                "src": "ipfs://QmdjuAwBcHV71WX9vxoQ4vdbR4V2HRkMfAzMrPgRSq3TfC",
+                "name": "Gun Martian V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdjuAwBcHV71WX9vxoQ4vdbR4V2HRkMfAzMrPgRSq3TfC",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunMartianV2": {
+            "Type": "Martian",
+            "name": "Gun Martian V2",
+            "files": [
+              {
+                "src": "ipfs://QmUncRAGwJqswEgWeYPwQJCVjQst1XxFqv9AtvcMUdwqP5",
+                "name": "Gun Martian V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUncRAGwJqswEgWeYPwQJCVjQst1XxFqv9AtvcMUdwqP5",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunVoltageV1": {
+            "Type": "Voltage",
+            "name": "Gun Voltage V1",
+            "files": [
+              {
+                "src": "ipfs://QmXKnqgUp8LvndDxw929huspuWh572jZ88pu7LPWFZUr42",
+                "name": "Gun Voltage V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXKnqgUp8LvndDxw929huspuWh572jZ88pu7LPWFZUr42",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunVoltageV2": {
+            "Type": "Voltage",
+            "name": "Gun Voltage V2",
+            "files": [
+              {
+                "src": "ipfs://QmQMi1ja6K31iykEeY9wHw81Sg6EgPRpgyZ76V23hKdsqC",
+                "name": "Gun Voltage V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQMi1ja6K31iykEeY9wHw81Sg6EgPRpgyZ76V23hKdsqC",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunSunburstV1": {
+            "Type": "Sunburst",
+            "name": "Gun Sunburst V1",
+            "files": [
+              {
+                "src": "ipfs://QmNV7JpfebGHbkuLN38VMK2EJ5yBvC7n39Uo7wGgniE6zA",
+                "name": "Gun Sunburst V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNV7JpfebGHbkuLN38VMK2EJ5yBvC7n39Uo7wGgniE6zA",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunSunburstV2": {
+            "Type": "Sunburst",
+            "name": "Gun Sunburst V2",
+            "files": [
+              {
+                "src": "ipfs://QmR9XwesSLe8coZhb8PyTsFCCis3nM1SQMmz5sQUnR8LBU",
+                "name": "Gun Sunburst V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmR9XwesSLe8coZhb8PyTsFCCis3nM1SQMmz5sQUnR8LBU",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearUNHV1": {
+            "Type": "U_N_H",
+            "name": "Headgear UNH V1",
+            "files": [
+              {
+                "src": "ipfs://QmPuafgoLop65pnnNUTXZ9KYZizt4KTUqoUx7E1DhbqU2D",
+                "name": "Headgear UNH V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPuafgoLop65pnnNUTXZ9KYZizt4KTUqoUx7E1DhbqU2D",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearUNHV2": {
+            "Type": "U_N_H",
+            "name": "Headgear UNH V2",
+            "files": [
+              {
+                "src": "ipfs://QmdEj9Ta98jDaJ43LxqXKeqDLrvVh5LtLLKonzt2MrbLa2",
+                "name": "Headgear UNH V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdEj9Ta98jDaJ43LxqXKeqDLrvVh5LtLLKonzt2MrbLa2",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunShockwaveV1": {
+            "Type": "Shockwave",
+            "name": "Gun Shockwave V1",
+            "files": [
+              {
+                "src": "ipfs://QmP3dnonXH6AK5yDMRtwPgtWjGrPrYt2vkGqM4rgAyW2Nw",
+                "name": "Gun Shockwave V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmP3dnonXH6AK5yDMRtwPgtWjGrPrYt2vkGqM4rgAyW2Nw",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunShockwaveV2": {
+            "Type": "Shockwave",
+            "name": "Gun Shockwave V2",
+            "files": [
+              {
+                "src": "ipfs://QmTGS1JjgizUhfuqu46pwEnkCwJfe5JWyiw56bnaLrDyRi",
+                "name": "Gun Shockwave V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTGS1JjgizUhfuqu46pwEnkCwJfe5JWyiw56bnaLrDyRi",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GlassesMimicsV1": {
+            "Type": "Mimics",
+            "name": "Glasses Mimics V1",
+            "files": [
+              {
+                "src": "ipfs://QmS92rgjkSqPvCom3ouXg3dGwwnKyYfXtYZHkq78chc2Sb",
+                "name": "Glasses Mimics V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmS92rgjkSqPvCom3ouXg3dGwwnKyYfXtYZHkq78chc2Sb",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GlassesMimicsV2": {
+            "Type": "Mimics",
+            "name": "Glasses Mimics V2",
+            "files": [
+              {
+                "src": "ipfs://QmTPVnwPreRbEY54K56NzFJxAD8b4VepaSHX6Wa7ZbR5NR",
+                "name": "Glasses Mimics V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTPVnwPreRbEY54K56NzFJxAD8b4VepaSHX6Wa7ZbR5NR",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearAngelV1": {
+            "Type": "Angel",
+            "name": "Headgear Angel V1",
+            "files": [
+              {
+                "src": "ipfs://QmeXCYgaMF2tuejjZCsq8DDvK8YygZAcJtwaGkSughEHii",
+                "name": "Headgear Angel V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeXCYgaMF2tuejjZCsq8DDvK8YygZAcJtwaGkSughEHii",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearAngelV2": {
+            "Type": "Angel",
+            "name": "Headgear Angel V2",
+            "files": [
+              {
+                "src": "ipfs://Qmdw4gtFBfb2LC1fnwoLpgpewdJC9CDUurgqXi16C7mTCP",
+                "name": "Headgear Angel V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmdw4gtFBfb2LC1fnwoLpgpewdJC9CDUurgqXi16C7mTCP",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GlassesSeekersV1": {
+            "Type": "Seekers",
+            "name": "Glasses Seekers V1",
+            "files": [
+              {
+                "src": "ipfs://QmXp4dbDyXwXCmiwVpEEdERD9xwy5LL67rrLNkdPUYY1nJ",
+                "name": "Glasses Seekers V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXp4dbDyXwXCmiwVpEEdERD9xwy5LL67rrLNkdPUYY1nJ",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GlassesSeekersV2": {
+            "Type": "Seekers",
+            "name": "Glasses Seekers V2",
+            "files": [
+              {
+                "src": "ipfs://QmRUyTJQBwhcoGizeNJCb8poBo2DrBXx9fhFXJk2eKYcv6",
+                "name": "Glasses Seekers V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRUyTJQBwhcoGizeNJCb8poBo2DrBXx9fhFXJk2eKYcv6",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GlassesSummitsV1": {
+            "Type": "Summits",
+            "name": "Glasses Summits V1",
+            "files": [
+              {
+                "src": "ipfs://QmQ2SptTcseHwTVFt55L16ZBFw78wsYoaspGMNbT7gG74F",
+                "name": "Glasses Summits V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQ2SptTcseHwTVFt55L16ZBFw78wsYoaspGMNbT7gG74F",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GlassesSummitsV2": {
+            "Type": "Summits",
+            "name": "Glasses Summits V2",
+            "files": [
+              {
+                "src": "ipfs://QmPDJ8zsQDCLYzpVNSsrAjeurRhE7c1N29kDKn5v4vmRSS",
+                "name": "Glasses Summits V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPDJ8zsQDCLYzpVNSsrAjeurRhE7c1N29kDKn5v4vmRSS",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GunContrivanceV1": {
+            "Type": "Contrivance",
+            "name": "Gun Contrivance V1",
+            "files": [
+              {
+                "src": "ipfs://QmaAzZ1pyt3ozhqPMgrMoMB4ev4NWpq1p4WtaT7BwMSRgt",
+                "name": "Gun Contrivance V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaAzZ1pyt3ozhqPMgrMoMB4ev4NWpq1p4WtaT7BwMSRgt",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GunContrivanceV2": {
+            "Type": "Contrivance",
+            "name": "Gun Contrivance V2",
+            "files": [
+              {
+                "src": "ipfs://QmcfpHfUpMceK1TGbokcmwneuvYYi84SeuntTZhk72e3Dz",
+                "name": "Gun Contrivance V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcfpHfUpMceK1TGbokcmwneuvYYi84SeuntTZhk72e3Dz",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GlassesSpectresV1": {
+            "Type": "Spectres",
+            "name": "Glasses Spectres V1",
+            "files": [
+              {
+                "src": "ipfs://QmdEi4rVKGfiXmDPj1FwXk3psHCEYYrimhqkadbdGGneJD",
+                "name": "Glasses Spectres V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdEi4rVKGfiXmDPj1FwXk3psHCEYYrimhqkadbdGGneJD",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GlassesSpectresV2": {
+            "Type": "Spectres",
+            "name": "Glasses Spectres V2",
+            "files": [
+              {
+                "src": "ipfs://QmXkqqMYK9wgXe518tAY9oA5YNVFi8v5b5uQaFxsxm2cC6",
+                "name": "Glasses Spectres V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXkqqMYK9wgXe518tAY9oA5YNVFi8v5b5uQaFxsxm2cC6",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GlassesVirtualsV1": {
+            "Type": "Virtuals",
+            "name": "Glasses Virtuals V1",
+            "files": [
+              {
+                "src": "ipfs://QmTsMwEFhEMSmuLipAuCzxjZ7ojfwcDeSC2c6ZXUsYJ5vq",
+                "name": "Glasses Virtuals V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTsMwEFhEMSmuLipAuCzxjZ7ojfwcDeSC2c6ZXUsYJ5vq",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GlassesVirtualsV2": {
+            "Type": "Virtuals",
+            "name": "Glasses Virtuals V2",
+            "files": [
+              {
+                "src": "ipfs://QmRwEuKudME6M2soHHsWqA85YqbEVZs4sWEyH4C4HwPD9a",
+                "name": "Glasses Virtuals V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRwEuKudME6M2soHHsWqA85YqbEVZs4sWEyH4C4HwPD9a",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearBulwarkV1": {
+            "Type": "Bulwark",
+            "name": "Headgear Bulwark V1",
+            "files": [
+              {
+                "src": "ipfs://QmTnavBAiXkBXFZsqQCHLui5nvhDNHzam2opCCfZ64aN7F",
+                "name": "Headgear Bulwark V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTnavBAiXkBXFZsqQCHLui5nvhDNHzam2opCCfZ64aN7F",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearBulwarkV2": {
+            "Type": "Bulwark",
+            "name": "Headgear Bulwark V2",
+            "files": [
+              {
+                "src": "ipfs://QmNSTYgiSChUF9Ms5n2i4pySZeYQJ6Jw7a4kaQ3bXB6NTC",
+                "name": "Headgear Bulwark V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNSTYgiSChUF9Ms5n2i4pySZeYQJ6Jw7a4kaQ3bXB6NTC",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearTrilogyV1": {
+            "Type": "Trilogy",
+            "name": "Headgear Trilogy V1",
+            "files": [
+              {
+                "src": "ipfs://QmTGxVgknDyTuqXxBeQS9KPnEm21RN6RuzqsKHsdShN6MU",
+                "name": "Headgear Trilogy V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTGxVgknDyTuqXxBeQS9KPnEm21RN6RuzqsKHsdShN6MU",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearTrilogyV2": {
+            "Type": "Trilogy",
+            "name": "Headgear Trilogy V2",
+            "files": [
+              {
+                "src": "ipfs://QmTG4uuDDUo3nS4Kh64JJHdwf36JiJvkzYnfKo4doTWyQM",
+                "name": "Headgear Trilogy V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTG4uuDDUo3nS4Kh64JJHdwf36JiJvkzYnfKo4doTWyQM",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearMaverickV1": {
+            "Type": "Maverick",
+            "name": "Headgear Maverick V1",
+            "files": [
+              {
+                "src": "ipfs://QmWq89piovrEsdU6AN2xUwaUHQfSjyJKe6pcmqBosvHECd",
+                "name": "Headgear Maverick V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWq89piovrEsdU6AN2xUwaUHQfSjyJKe6pcmqBosvHECd",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearMaverickV2": {
+            "Type": "Maverick",
+            "name": "Headgear Maverick V2",
+            "files": [
+              {
+                "src": "ipfs://QmUNVEBM3CD6fbKMUhX7DEN4MqNeSWDKZkPXFQgLx4Hbw7",
+                "name": "Headgear Maverick V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUNVEBM3CD6fbKMUhX7DEN4MqNeSWDKZkPXFQgLx4Hbw7",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "GlassesSpectaclesV1": {
+            "Type": "Spectacles",
+            "name": "Glasses Spectacles V1",
+            "files": [
+              {
+                "src": "ipfs://QmQRN6HkoRtULHqRFBQHJg2wQvLAAULUTTxr1sEbypWaTE",
+                "name": "Glasses Spectacles V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQRN6HkoRtULHqRFBQHJg2wQvLAAULUTTxr1sEbypWaTE",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "GlassesSpectaclesV2": {
+            "Type": "Spectacles",
+            "name": "Glasses Spectacles V2",
+            "files": [
+              {
+                "src": "ipfs://QmWzSYUyHWpTtSTassSsgJm5JsnFYsqVQMpsnH9s6Qi3yL",
+                "name": "Glasses Spectacles V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWzSYUyHWpTtSTassSsgJm5JsnFYsqVQMpsnH9s6Qi3yL",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearAnalysistV1": {
+            "Type": "Analysist",
+            "name": "Headgear Analysist V1",
+            "files": [
+              {
+                "src": "ipfs://QmQKE97ia7Qoobibs2ujGDFqesfWm1nwj5KgwyyqpJX7o7",
+                "name": "Headgear Analysist V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQKE97ia7Qoobibs2ujGDFqesfWm1nwj5KgwyyqpJX7o7",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearAnalysistV2": {
+            "Type": "Analysist",
+            "name": "Headgear Analysist V2",
+            "files": [
+              {
+                "src": "ipfs://QmVS1ak41XEPjnwa5WGabAACVpfCEmjMTpPoyd8wpuNACD",
+                "name": "Headgear Analysist V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVS1ak41XEPjnwa5WGabAACVpfCEmjMTpPoyd8wpuNACD",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearSkirmisherV1": {
+            "Type": "Skirmisher",
+            "name": "Headgear Skirmisher V1",
+            "files": [
+              {
+                "src": "ipfs://QmY22gjx4hsxzSSdn13kEn4tLeSDca89iKZ3C1nJJwgSro",
+                "name": "Headgear Skirmisher V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmY22gjx4hsxzSSdn13kEn4tLeSDca89iKZ3C1nJJwgSro",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearSkirmisherV2": {
+            "Type": "Skirmisher",
+            "name": "Headgear Skirmisher V2",
+            "files": [
+              {
+                "src": "ipfs://QmU7SaoyvowoZnZtTHMtkfVDnmViq3Lrd4cGNNQVWSc2pE",
+                "name": "Headgear Skirmisher V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmU7SaoyvowoZnZtTHMtkfVDnmViq3Lrd4cGNNQVWSc2pE",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          },
+          "HeadgearSpecialistV1": {
+            "Type": "Specialist",
+            "name": "Headgear Specialist V1",
+            "files": [
+              {
+                "src": "ipfs://QmNVYR81WkiKWgFDwzGpBoD5TBrgMAQHp9wkZN3chUje7S",
+                "name": "Headgear Specialist V1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNVYR81WkiKWgFDwzGpBoD5TBrgMAQHp9wkZN3chUje7S",
+            "Texture": "Variation 1",
+            "mediaType": "image/png"
+          },
+          "HeadgearSpecialistV2": {
+            "Type": "Specialist",
+            "name": "Headgear Specialist V2",
+            "files": [
+              {
+                "src": "ipfs://QmSrnVmukpoo8CakiiXmChYBHend8HZMvrLwWDa79ixBDz",
+                "name": "Headgear Specialist V2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSrnVmukpoo8CakiiXmChYBHend8HZMvrLwWDa79ixBDz",
+            "Texture": "Variation 2",
+            "mediaType": "image/png"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6472756e6b756e636c65",
+    "asset_name_ascii": "drunkuncle",
+    "fingerprint": "asset1e4pv59m6k55zm06gzknum2exyga9npjl6eyhcx",
+    "minting_tx_hash": "c42668b01962b7290a35bf24ae293702f47820311eef5dc0c08f5251532b889d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1667606400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "hnnhonpo": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$hnnhonpo",
+            "image": "ipfs://QmdhyyQ1nQdu6u7AMwMBPiJ4DnnNJkoKQEHgtqsk3zpwFx",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "drunkuncle": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$drunkuncle",
+            "image": "ipfs://QmeVG5tCmDTn5zPxsXo8Z8c4oe7NQntoBjDQWKgsasyirq",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

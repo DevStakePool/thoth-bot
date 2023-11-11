@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "36303339",
+    "asset_name_ascii": "6039",
+    "fingerprint": "asset14p409r5majqhs0s69l2sls80zqjg4yh3kdzhlq",
+    "minting_tx_hash": "d3f6bd03ab3ce6294c5abc32a53f95971c8858a1d869e933f8fb97ef92325373",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1662595200,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "6039": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$6039",
+            "image": "ipfs://QmZhuomLbURHqtorH7ActSnkTz6BSWxG2oxhjGCYnQkx6Y",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "8307": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$8307",
+            "image": "ipfs://QmPooRJ5B29HbeczW3SBGya7QBdZNqP8dxypnT15zy39k2",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "9846": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$9846",
+            "image": "ipfs://QmUGPSwgQH1nKWaaMDWhSSiDUa12vxX4UYzxXvWRnbPg73",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

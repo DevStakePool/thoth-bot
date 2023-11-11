@@ -1,0 +1,62 @@
+[
+  {
+    "policy_id": "e2ed73b580344b69642683be7e807de1221462174c806d25164f72c4",
+    "asset_name": "4143524f4e594d4c4c414d41303930",
+    "asset_name_ascii": "ACRONYMLLAMA090",
+    "fingerprint": "asset1qu4r9783y7x78q2yncr9fnac0m76yzgkllly0q",
+    "minting_tx_hash": "a6ae1463d9fe5432b6fb8ace6a921a6e77994314a14188ce57b1fc15d6f49560",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1642723200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "e2ed73b580344b69642683be7e807de1221462174c806d25164f72c4": {
+          "ACRONYMFROG041": {
+            "name": "Acronym Frog #041",
+            "files": [
+              {
+                "src": "ipfs://QmX8UABRRjTduzNQcEhnuHGRhAr7hQ5Hmi12j5ZyuNs8cx",
+                "name": "Acronym Frog #041",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmX8UABRRjTduzNQcEhnuHGRhAr7hQ5Hmi12j5ZyuNs8cx",
+            "rarity": "1 of 160",
+            "twitter": {
+              "@acronym_os": "https://twitter.com/acronyms_os"
+            },
+            "mediaType": "image/png",
+            "publisher": "Acronym DAO",
+            "royalties": "10%",
+            "collection": "Acronym DAO",
+            "description": "Membership NFT for the Acronym DAO"
+          },
+          "ACRONYMLLAMA090": {
+            "name": "Acronym Llama #090",
+            "files": [
+              {
+                "src": "ipfs://QmSZ5YnDr2RBxAb81RgvSjDQdJAzLE6JGFREqTh6BRXSxT",
+                "name": "Acronym Llama #090",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSZ5YnDr2RBxAb81RgvSjDQdJAzLE6JGFREqTh6BRXSxT",
+            "rarity": "1 of 160",
+            "twitter": {
+              "@acronym_os": "https://twitter.com/acronyms_os"
+            },
+            "mediaType": "image/png",
+            "publisher": "Acronym DAO",
+            "royalties": "10%",
+            "collection": "Acronym DAO",
+            "description": "Membership NFT for the Acronym DAO"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

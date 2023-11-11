@@ -1,0 +1,91 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "61776765",
+    "asset_name_ascii": "awge",
+    "fingerprint": "asset17mgt4rhxgrdzz5rltrkfdqgpr4a49f0l9cl8ml",
+    "minting_tx_hash": "00a86bae3106144a20530074685b6cd675fa3e54e53ac0ba736ff7801f963bc6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647734400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "awge": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$awge",
+            "image": "ipfs://QmbaG1zWP3sdxFbQKC23XYSCox9ZJfydRYvroaVHH7QShm",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "comoros": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$comoros",
+            "image": "ipfs://QmacY4KW7ta4SXvz6gq9k9Eb9jspfgaGSV9iMjVcKCvznV",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "spacexdoge": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$spacexdoge",
+            "image": "ipfs://QmZydWSY3EWKEh17bW9xzisQ2Aj6oLYWvziJnKkJuDemAf",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "mvmarketing": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$mvmarketing",
+            "image": "ipfs://QmSwwdWDwyaVZwYHGMMU8uqv6Bo8FZQQ5Yrc9LB3ebWLr2",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "bank-of-china": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$bank-of-china",
+            "image": "ipfs://QmdnRvsULAZXXYi4Ms2jT3XHSXyR7v7rXMbd7hzp69p96W",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

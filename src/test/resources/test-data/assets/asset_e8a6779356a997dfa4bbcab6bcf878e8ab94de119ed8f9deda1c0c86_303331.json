@@ -1,0 +1,50 @@
+[
+  {
+    "policy_id": "e8a6779356a997dfa4bbcab6bcf878e8ab94de119ed8f9deda1c0c86",
+    "asset_name": "303331",
+    "asset_name_ascii": "031",
+    "fingerprint": "asset1p82kts3pd6jtwqzy5xte33gtec8mtfwlrvnh59",
+    "minting_tx_hash": "ade66792098dc9bb1a08485dd9f9a3a1b9e5acb4f8093c1cd9f5d793b1878b58",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1640908800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "e8a6779356a997dfa4bbcab6bcf878e8ab94de119ed8f9deda1c0c86": {
+          "026": {
+            "name": "Diamond Hands #26",
+            "files": [
+              {
+                "src": "ipfs://QmRG82xeKzDUFZfP8onNLAhdT3VDkDFVk7ycCCfeEa5zUh",
+                "name": "Diamond Hands #26",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRG82xeKzDUFZfP8onNLAhdT3VDkDFVk7ycCCfeEa5zUh",
+            "mediaType": "image/png",
+            "background": "Darker Red",
+            "description": ""
+          },
+          "031": {
+            "name": "Diamond Hands #31",
+            "files": [
+              {
+                "src": "ipfs://QmdUwgcaKDLjKRALvcwKKynng319jxT2PFFTnbVgEmvQbr",
+                "name": "Diamond Hands #31",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdUwgcaKDLjKRALvcwKKynng319jxT2PFFTnbVgEmvQbr",
+            "mediaType": "image/png",
+            "background": "Green Gradient (Rare)",
+            "description": ""
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

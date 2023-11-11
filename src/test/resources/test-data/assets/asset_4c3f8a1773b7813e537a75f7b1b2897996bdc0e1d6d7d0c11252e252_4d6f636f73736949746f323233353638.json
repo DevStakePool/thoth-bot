@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252",
+    "asset_name": "4d6f636f73736949746f323233353638",
+    "asset_name_ascii": "MocossiIto223568",
+    "fingerprint": "asset17z4l3wvdshh7jmq5f9gxndw85r5289k05ae4k8",
+    "minting_tx_hash": "22b8896b66b1ca275f113c3bc09061c808e4a0f186de0c0a2e2af1147a064ff2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1660867200,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto223568": {
+            "id": 23568,
+            "name": "Mocossi-Ito-2-23568",
+            "image": "ipfs://QmW6P8Hao3CoJEwGVD89V7WFkj7iPQ1VyrWLnGcF16gqX4",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "astro suit",
+              "Face": "cute",
+              "Parents": [
+                8199,
+                9515
+              ],
+              "Species": "Ito",
+              "Headwear": "army hat",
+              "Background": "pink"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

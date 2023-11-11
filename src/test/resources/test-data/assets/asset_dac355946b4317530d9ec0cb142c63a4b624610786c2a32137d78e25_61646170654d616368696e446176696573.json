@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d616368696e446176696573",
+    "asset_name_ascii": "adapeMachinDavies",
+    "fingerprint": "asset15nsl4jyy424n753s37uh9v4dja8s3jtyx4vwxs",
+    "minting_tx_hash": "bb7eee804908ede6b966733b8c9214b922fdc080b74a1ccad21231fe12ab0a49",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMachinDavies": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Machin Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmdVW9G1uvzeWVrzzwHKBe5VtGXaEmZYcv17YwwPXECDMo",
+                "name": "Machin Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdVW9G1uvzeWVrzzwHKBe5VtGXaEmZYcv17YwwPXECDMo",
+            "Family": "Davies",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

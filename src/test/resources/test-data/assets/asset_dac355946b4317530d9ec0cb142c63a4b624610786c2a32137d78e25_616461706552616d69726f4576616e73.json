@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552616d69726f4576616e73",
+    "asset_name_ascii": "adapeRamiroEvans",
+    "fingerprint": "asset1hrtzrr9nt634a5yzzyt79m5wmhgmezwr8q69lv",
+    "minting_tx_hash": "1d21cee64ab6b2540d76490a9f2730b144b499deea8130a7c71a8afe9ae207bd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRamiroEvans": {
+            "Hat": "Hoodie",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Ramiro Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUfMPjiRDhcr7uSEKw8JRAWqRANDJDomH6xTFe5Ks6RbG",
+                "name": "Ramiro Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUfMPjiRDhcr7uSEKw8JRAWqRANDJDomH6xTFe5Ks6RbG",
+            "Family": "Evans",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

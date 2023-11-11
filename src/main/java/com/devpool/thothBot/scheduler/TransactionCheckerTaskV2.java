@@ -96,20 +96,23 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
     @Override
     public void run() {
-        LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
-        Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
+        try {
+            LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
+            Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
 
-        while (batchIterator.hasNext()) {
-            List<User> usersBatch = batchIterator.next();
-            List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
-            List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
+            while (batchIterator.hasNext()) {
+                List<User> usersBatch = batchIterator.next();
+                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
+                List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
 
-            LOG.debug("Processing users batch size {}, stake batch {}, address batch{}", usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
+                LOG.debug("Processing users batch size {}, stake batch {}, address batch{}", usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
 
-            processUsersBatch(stakeUsersBatch, addrUsersBatch);
+                processUsersBatch(stakeUsersBatch, addrUsersBatch);
 
+            }
+        } catch (Exception e) {
+            LOG.error("Unknown error while processing transactions", e);
         }
-
     }
 
     private void processUsersBatch(List<User> stakeUsersBatch, List<User> addrUsersBatch) {
@@ -256,6 +259,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         LOG.debug("User {} TX {} is of type {}",
                 user.getAddress(), txInfo.getTxHash(), txType);
 
+        // List of assets received if it's a TX_RECEIVED + ASSET_RECEIVED txInfo.getAssetsMinted()
+        // txInfo.getMetadata() // a way to get the asset without making another KOIOS call
 
     }
 

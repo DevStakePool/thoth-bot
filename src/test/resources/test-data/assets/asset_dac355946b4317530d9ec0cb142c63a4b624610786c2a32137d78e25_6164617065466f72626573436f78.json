@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065466f72626573436f78",
+    "asset_name_ascii": "adapeForbesCox",
+    "fingerprint": "asset1lkdnhwjlek8unvk5w8dhm3sna6cs4le9dpjh7j",
+    "minting_tx_hash": "0f50fc8fef3f5e623445442e5016ab27551d2700bbd325a593f9c18e15d90f25",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeForbesCox": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Forbes Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmQ6zKf3nDm1P89scctftF2MrwhahvcQggTs48QC1ZKi5r",
+                "name": "Forbes Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQ6zKf3nDm1P89scctftF2MrwhahvcQggTs48QC1ZKi5r",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeDurandKing": {
+            "Hat": "Top Hat",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Durand King",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmaoMSNu3asn9HTrUhyDA6ZvuANcD1UhfuWUu6PGzpfU5o",
+                "name": "Durand King",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaoMSNu3asn9HTrUhyDA6ZvuANcD1UhfuWUu6PGzpfU5o",
+            "Family": "King",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the King family"
+          },
+          "adapeScottVentucci": {
+            "Hat": "Privateer Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Scott Ventucci",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmRmsrEwe7c9TUQBdBS9jMjV5V3XTpUj1JNeTxLrqNMqZj",
+                "name": "Scott Ventucci",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRmsrEwe7c9TUQBdBS9jMjV5V3XTpUj1JNeTxLrqNMqZj",
+            "Family": "Ventucci",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Ventucci family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

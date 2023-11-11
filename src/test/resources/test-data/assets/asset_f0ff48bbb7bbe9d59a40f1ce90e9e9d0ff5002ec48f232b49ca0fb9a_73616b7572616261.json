@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "73616b7572616261",
+    "asset_name_ascii": "sakuraba",
+    "fingerprint": "asset196p0zy0ucrt2aweh4lzl66u2zhjqyt3z4w5qqy",
+    "minting_tx_hash": "4a5d3878dae46056ff485453ccf3fc6f2b473445908477bbc3ab7eb13265de1a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666224000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "sakuraba": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$sakuraba",
+            "image": "ipfs://QmSBZsF9T1bhp2XBb5PVTw67HJkbg6ab4rLA4ehvLuyX1d",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

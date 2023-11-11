@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "726f6e6461726f75736579",
+    "asset_name_ascii": "rondarousey",
+    "fingerprint": "asset1gpzm7c2705zw23cknjn6a94axlhh7wegstg56u",
+    "minting_tx_hash": "b84b1ee30821d02e2f88262c1a43de88aac089a3035db02b72e11d7a568f803e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666224000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "rondarousey": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$rondarousey",
+            "image": "ipfs://QmY458yyLPehx4SPPLv6hvECiJEUwFMtjbUCKzr95A3gnp",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

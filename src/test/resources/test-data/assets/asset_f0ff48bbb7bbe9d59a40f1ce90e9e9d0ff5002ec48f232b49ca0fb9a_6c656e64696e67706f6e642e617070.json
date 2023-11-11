@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6c656e64696e67706f6e642e617070",
+    "asset_name_ascii": "lendingpond.app",
+    "fingerprint": "asset17equpszeuv0symum33zmcxfhsunu4d7rv0240a",
+    "minting_tx_hash": "57d55f9268dea93d179c612de23fb1cfb8b6ce44aeee02973bb75a45c39e901f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650672000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "buy.coin": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$buy.coin",
+            "image": "ipfs://QmYUzYWPzvu8jgLqH4ANJfb6wVzi4oukPfYzFi3qvqFSbf",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "lendingpond.app": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$lendingpond.app",
+            "image": "ipfs://QmSU2xFTfXEUeLYJn4FnquSSb9QYuuqCioxDpXCW41Rjmu",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

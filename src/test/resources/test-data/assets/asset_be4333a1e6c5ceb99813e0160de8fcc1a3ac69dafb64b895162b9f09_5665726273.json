@@ -1,0 +1,65 @@
+[
+  {
+    "policy_id": "be4333a1e6c5ceb99813e0160de8fcc1a3ac69dafb64b895162b9f09",
+    "asset_name": "5665726273",
+    "asset_name_ascii": "Verbs",
+    "fingerprint": "asset14x83au7thy73dkyww4chr3s7aq7yxu4xv2e26m",
+    "minting_tx_hash": "445c5ab7138090554abac340de6aadab6dc5a7ee36cf24706ddff611c33831f9",
+    "total_supply": "5000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1640304000,
+    "minting_tx_metadata": {
+      "721": {
+        "be4333a1e6c5ceb99813e0160de8fcc1a3ac69dafb64b895162b9f09": {
+          "Verbs": {
+            "name": "VERBS",
+            "type": "Doodle",
+            "files": [
+              {
+                "src": "ipfs://QmR3rKvzF2GTe1gPmnYZNYKgnUpJDQRiTw1FuM3ByKrfuU",
+                "name": "Screen Shot 2021-12-23 at 5.55.45 PM.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmR3rKvzF2GTe1gPmnYZNYKgnUpJDQRiTw1FuM3ByKrfuU",
+            "artist": "Acronym OS",
+            "mediaType": "image/png",
+            "publisher": "Acronym OS",
+            "description": "Used to pay for goods and services"
+          },
+          "Acronym Mint": {
+            "name": "Acronym minter",
+            "files": [
+              {
+                "src": "ipfs://QmeeKTJMM6qv3w2UQvQj8gnnRM9TeEdRixPs9TUMmUfpsJ",
+                "name": "Screen Shot 2021-12-23 at 5.35.24 PM.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeeKTJMM6qv3w2UQvQj8gnnRM9TeEdRixPs9TUMmUfpsJ",
+            "artist": "Acronym OS",
+            "mediaType": "image/png",
+            "description": "reserve/public minter"
+          },
+          "Acronym Vip Mint": {
+            "name": "Acronym VIP minter",
+            "files": [
+              {
+                "src": "ipfs://QmRXtCtjuGDmi9wE8c9tPvWbngf9EN9D3hQ6Gq162nfXPT",
+                "name": "Screen Shot 2021-12-23 at 5.35.38 PM.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRXtCtjuGDmi9wE8c9tPvWbngf9EN9D3hQ6Gq162nfXPT",
+            "artist": "Acronym OS",
+            "mediaType": "image/png",
+            "description": "VIP minter for the highballers"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

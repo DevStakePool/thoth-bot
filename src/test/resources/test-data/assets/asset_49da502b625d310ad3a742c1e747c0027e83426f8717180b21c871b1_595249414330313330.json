@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "49da502b625d310ad3a742c1e747c0027e83426f8717180b21c871b1",
+    "asset_name": "595249414330313330",
+    "asset_name_ascii": "YRIAC0130",
+    "fingerprint": "asset1l7srp9msx32v3cd4gukwjkc9td20zgxwkrjlkg",
+    "minting_tx_hash": "f69b2beea1ec14cdf4fdc0556e7f980324806966e81d95a75870a4d2787f795a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665619200,
+    "minting_tx_metadata": {
+      "721": {
+        "49da502b625d310ad3a742c1e747c0027e83426f8717180b21c871b1": {
+          "YRIAC0130": {
+            "id": "0130",
+            "data": "ipfs://Qmdr2fgSKA7E5cRREzmAgYNDvu6LkAygd2s1aJfqZJ9Lyc",
+            "name": "Your Reality #0130",
+            "files": [
+              {
+                "src": "ipfs://QmXuuyN7KFMeqkV1vQ87iPPML9H9bx8hcoF7ZkMtAap5Cw",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmV2DwyVXi5dmghsJ24kPp4XgNnUktNPjS5LNJidZrAM4c",
+            "sha256": "0b22d3f7be133df52089d9fa9a92cc5f8dd1524ab3bd827336670141169d2c25",
+            "authors": [
+              "Thorpe Brown"
+            ],
+            "website": "https://carlosvelasco.info",
+            "attributes": {
+              "Eyes": "Red",
+              "Background": "Colorful"
+            },
+            "description": [
+              "Your constructed reality is work in progress. Do not look away. ",
+              "It is your life."
+            ]
+          },
+          "YRIAC1570": {
+            "id": "1570",
+            "data": "ipfs://QmeBtjhYttkGNU6eFai2fSm5Uu3Y7KcmgXznEMLJwvbsJX",
+            "name": "Your Reality #1570",
+            "files": [
+              {
+                "src": "ipfs://Qme8iafgwFGNbXsEccWtVFV3teCuZr71C2fyWoRDTnQXzY",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcCReLEimFcJwfZUZTPVAGzkdnczSB41tVrsBj75jvNxs",
+            "sha256": "976ec274220047bf5397ad2e37d9b8155eb43e391c7616a49ecbf5c3db93d312",
+            "authors": [
+              "Thorpe Brown"
+            ],
+            "website": "https://carlosvelasco.info",
+            "attributes": {
+              "Background": "Clean"
+            },
+            "description": [
+              "Your constructed reality is work in progress. Do not look away. ",
+              "It is your life."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

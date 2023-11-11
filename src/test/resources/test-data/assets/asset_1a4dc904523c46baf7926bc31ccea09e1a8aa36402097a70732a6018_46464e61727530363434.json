@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "1a4dc904523c46baf7926bc31ccea09e1a8aa36402097a70732a6018",
+    "asset_name": "46464e61727530363434",
+    "asset_name_ascii": "FFNaru0644",
+    "fingerprint": "asset1802mpjev8wgv6tanq5z35hxdxhksqz5tfujkk3",
+    "minting_tx_hash": "cffc5b09b6df8f9b9eb329812c382ab23ea99c562185cab71a68e5d5a01c790e",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1664323200,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "9274000c399aec28",
+        "1a4dc904523c46baf7926bc31ccea09e1a8aa36402097a70732a6018": {
+          "FFNaru0644": {
+            "name": "Shiny Chonky Naru #0644",
+            "files": [
+              {
+                "src": "ipfs://QmZtFBWfzP6HZRen3MfmvAsmvzJ8Z6QQ4vpdFtjAvhuzpK",
+                "name": "Shiny Chonky Naru #0644",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmeANaRtiKvWF1Y6hH31CgLh9F26pMJ6zmV6epqcRfUDc5",
+            "website": "https://www.futurefest.io/",
+            "copyright": "Future Fest, Inc. © 2022",
+            "mediaType": "image/gif",
+            "royalties": "5%",
+            "attributes": {
+              "Pet": "Naru Chonky Shiny"
+            },
+            "collection": "Future Fest x Yummi Universe - Naru Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

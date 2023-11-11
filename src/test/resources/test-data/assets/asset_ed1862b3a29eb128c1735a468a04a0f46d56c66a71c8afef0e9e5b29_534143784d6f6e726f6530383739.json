@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "ed1862b3a29eb128c1735a468a04a0f46d56c66a71c8afef0e9e5b29",
+    "asset_name": "534143784d6f6e726f6530383739",
+    "asset_name_ascii": "SACxMonroe0879",
+    "fingerprint": "asset1frv5d6hwg09rwjr5r53wqqe279c94p589mg3ax",
+    "minting_tx_hash": "1b04b40dae6f1905acaed4544387fb0a19739e8c6a020a0c58cf580d6ef54934",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643760000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "ed1862b3a29eb128c1735a468a04a0f46d56c66a71c8afef0e9e5b29": {
+          "SACxMonroe0879": {
+            "name": "SAC x Monroe #0879",
+            "files": [
+              {
+                "src": "ipfs://QmS9B9aDgqnTA19vy6Q6HTQe9t3Pr2dJFuwhjWdAC1DNe2",
+                "name": "SACxMonroe #0879",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmS9B9aDgqnTA19vy6Q6HTQe9t3Pr2dJFuwhjWdAC1DNe2",
+            "title": "The Devilish SACfather",
+            "traits": {
+              "Rarity": "Uncommon Ape"
+            },
+            "mediaType": "image/png",
+            "description": "A collab between Space Ape Club and MONROE",
+            "monroe twitter": "https://twitter.com/monroe_nfts",
+            "space ape club twitter": "https://twitter.com/SpaceApeClub"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]
