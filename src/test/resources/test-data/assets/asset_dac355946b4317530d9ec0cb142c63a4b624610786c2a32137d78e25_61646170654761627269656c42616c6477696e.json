@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654761627269656c42616c6477696e",
+    "asset_name_ascii": "adapeGabrielBaldwin",
+    "fingerprint": "asset1wxylu4c77tg2hctm4t6p2u97qn7cveynnf35wm",
+    "minting_tx_hash": "ade08a8ef36d1cc55ea13a1fb87e1c0b5565122810e077ffbea4863cecaa569a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeGabrielBaldwin": {
+            "Hat": "Sombrero",
+            "Body": "Brown Suit",
+            "Ears": "Earphones",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Gabriel Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmcH7cKz7QYjwUCie36ds1S5F8tRaFFw2nVzQdzhTvhZPw",
+                "name": "Gabriel Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcH7cKz7QYjwUCie36ds1S5F8tRaFFw2nVzQdzhTvhZPw",
+            "Family": "Baldwin",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

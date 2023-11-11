@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "033241876e71fdc3a675a30df6dba2a89ed6e081a593ec1ef8e7a329",
+    "asset_name": "527567436f696e333333",
+    "asset_name_ascii": "RugCoin333",
+    "fingerprint": "asset157rfvrr7eyh9p6ylgar7mp5wyjgrr2zglfsluv",
+    "minting_tx_hash": "a6cb83621259ce2b9d9324bbf0e905f7774b100eece179ede4659a099fbbc10f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1662076800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "033241876e71fdc3a675a30df6dba2a89ed6e081a593ec1ef8e7a329": {
+          "RugCoin333": {
+            "Note": "definitely trade this for an animal pfp if you can",
+            "name": "RugCoin 333",
+            "files": [
+              {
+                "src": "ipfs://QmcWYC7eaBAcbbWEdEznv2SGAsAmQn7fPvyUvEuV61PK4J",
+                "name": "RugCoin 333",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "",
+                "name": "RugCoin 333",
+                "mediaType": ""
+              },
+              {
+                "src": "ipfs://QmScwczjGte6CZyt32Ce71uaALfy2iCBRNuyU3iUEwWDKE",
+                "name": "RugCoin 333",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmeyWmV1Fmdo4TWJ3cHQRE4UEe3E3sB5uKUazGUKAYtFkW",
+            "mediaType": "image/png",
+            "PDF Variant": "BillsOrigin",
+            "Coin Effects": "No FX",
+            "Coin Variant": "Coin V6",
+            "Texture Grid": "Grid 1",
+            "Texture Text": "Text 12",
+            "Texture Paper": "Paper 4",
+            "Texture Doodle": "purrrrfect",
+            "Coin Background": "paper coins",
+            "Texture Contour": "contour 3",
+            "Texture Variant": "036",
+            "reason for existence": "Lardazenas wanted a CBDC"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

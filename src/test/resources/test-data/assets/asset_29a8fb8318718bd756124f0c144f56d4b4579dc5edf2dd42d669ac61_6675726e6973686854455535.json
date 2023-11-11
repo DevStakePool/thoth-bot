@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686854455535",
+    "asset_name_ascii": "furnishhTEU5",
+    "fingerprint": "asset1tr3hrx2ytvzmshkhgpzhsa3t0hqv4q495x6fcg",
+    "minting_tx_hash": "aa2256992845c414bd9b271a70c78f6749fd0cff1483ee327eafa2e2a383b341",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishhTEU5": {
+            "id": "hTEU5",
+            "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "name": "Dining Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+                "name": "Dining Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmdBvm8mASjQ3fatRmRg2HdobLMVncdKMzwSfKyEZNcQeB",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmcSaExkRrb8rH3gBP2sbWntzveeY6pVcit26j1Y2EoNu7",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "description": "Hand-crafted by Bond Brown.",
+            "furnitureId": 208
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

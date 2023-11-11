@@ -4,108 +4,46 @@
     "asset_name": "426c616465206f662042617a20507265766965772033",
     "asset_name_ascii": "Blade of Baz Preview 3",
     "fingerprint": "asset1ae58zgnwz7h0j0khemszsgafh5924mk72j5svz",
-    "minting_tx_hash": "e9cf676f27a154e50461e29c65efa5ffe19b90b3e0c78fafbdb43c36c7e89fc8",
-    "total_supply": "15000",
+    "minting_tx_hash": "45db1265dab26684688dee3dc57ecd8a2b4bf357c9ec816b90c776b29cade2db",
+    "total_supply": "14970",
     "mint_cnt": 2,
-    "burn_cnt": 1,
-    "creation_time": 1646605970,
+    "burn_cnt": 2,
+    "creation_time": 1646524800,
     "minting_tx_metadata": {
       "721": {
-        "b6408f665a71750e622a3f6430f35a1a6d6cde0d0b6c41bc027c0356": {
-          "Blade of Baz Preview 3": {
-            ".": [
-              "Blade of Baz is the first book from Project Bookworm.",
-              ".",
-              "This token gives you a preview of the story,",
-              "and limited access to the Project Bookworm Discord.",
-              ".",
-              "Project Bookworm is releasing one section per epoch from",
-              "Blade of Baz, by Jillian Plomin.",
-              ".",
-              "Full Access Tokens include downloadable",
-              "Audiobook and Kindle on Discord.",
-              ".",
-              "Collect all Full Access tokens to receive a signed special",
-              "edition hard copy when the book is printed.",
-              ".",
-              "Part 1 Full Access token minting address:",
-              ".",
-              "addr1v8tmvhpfcp88ry9knjfznwepmz0wxcqsa3ckwttujeeam5cjqmt9f",
-              ".",
-              "Part 2 Full Access token minting address:",
-              ".",
-              "addr1vyld5zask9tqq0jn0elfqduglnflzg4a3zwk2wrn2j4mrsshnprcn",
-              ".",
-              "Part 3 Full Access token minting address:",
-              ".",
-              "addr1v8m5t9pysfxklputar6nenlkk6vx4arr2a7fnn9xv00cwqgtz8chz",
-              ".",
-              "To get Full Access tokens, send 3 ADA per token to ",
-              "the minting addresses.",
-              "(You will receive 1.5 ADA back with the full chapter tokens.)",
-              "."
-            ],
+        "f6eb64a32451ccd1c5d8da31362fec78d4c266e10485273f46d96369": {
+          "Blade of Baz Token 3": {
+            ".": "Token grants access to Kindle and Audiobook versions on Discord.",
             "book": "Blade of Baz",
-            "name": "Blade of Baz",
+            "name": "Blade of Baz Token 3",
             "files": [
               {
-                "src": "ipfs://QmeTzxEiY5gDnC9cgp24tq6z2XqoJhdiQnhXs9BWK2RJd2",
-                "name": "Section 3 Preview",
-                "mediaType": "image/png"
+                "src": "ipfs://Qmb884SLRsoLqiF915Yv633twvHqk92iPyHUYNhxpRbC3Y",
+                "name": "Token 3 - Chapters 5 and 6",
+                "mediaType": "application/pdf"
+              },
+              {
+                "src": "ipfs://QmaL9hBeFNyYXM79cC6D9L9fXjfDgnSA1m7BeDYFTBSYKS",
+                "name": "Audiobook - Chapter 5",
+                "mediaType": "audio/mp3"
+              },
+              {
+                "src": "ipfs://QmXcigduS1Jkq7gUvhBZtevAW4yvy2xs1sbro6pVGHzaXy",
+                "name": "Audiobook - Chapter 6",
+                "mediaType": "audio/mp3"
               }
             ],
-            "image": "ipfs://QmUBnzcaZ9jWZ11tG4zmTFcQtpZyubdym9r998uqXSQn1X",
+            "image": "ipfs://QmNdK32LTKoapDYB6JNQaf59uGT9d8CpdSwNmQZykMY8mg",
             "author": "Jillian Plomin",
-            "Discord": "https://discord.gg/SNbWkbWARr",
-            "synposis": [
-              "Ryan and Erica are typical high school students—or so they ",
-              "think. They have hobbies and homework and friends, and are ",
-              "generally normal siblings. But one October evening, they ",
-              "find a curious object that rips them from their cozy suburban",
-              "home into a world of rebels, royals, legends, and swords. The ",
-              "pair now have to find their way back from the strange land of ",
-              "Aulmagne, but in doing so they ignite chaos and rebellion in",
-              "the Aulmagnian people, upsetting the tyrannical rule of ",
-              "Chancellor Ulrich. Will Ryan and Erica ever make it home, ",
-              "or are they trapped in this world forever?"
-            ],
-            "publisher": "https://www.ProjectBookworm.io",
+            "Discord": "https://discord.gg/9PAsupR8Em",
+            "publisher": "Project Bookworm",
             "book series": "Legends of Gaeltach",
-            "book section": "Preview 2",
-            "section 3 preview": [
-              "Cosima smoothed the creamy pomade along her hairline, taming",
-              "the last few flyaways in her tightly woven braid. There, she",
-              "thought to herself, not a hair out of place. She paused to ",
-              "appraise her reflection in the floor length mirror in front ",
-              "of her. She pulled the hem of her uniform jacket taut, ",
-              "banishing even the slightest hint of a wrinkle, and smoothed",
-              "her hands down her front and sides for good measure. Finally,",
-              "she gave her reflection a self-satisfied nod, turned on her ",
-              "heel, and briskly walked to the door, grabbing her satchel ",
-              "from the side table without breaking stride.",
-              ".",
-              "The General’s private offices were on the opposite side of ",
-              "the fortress, and her meticulous grooming had cost her more ",
-              "time than she had budgeted. Cosima quickened her pace, ",
-              "slowing only a fraction of a second to return the salutes of",
-              "her subordinates, all of whom halted mid-march to offer them,",
-              "resuming their work only once she had passed completely. She",
-              "paused outside the main door to the General’s private offices",
-              "to take a deep breath. His impudent secretary can not think ",
-              "she had rushed.",
-              ".",
-              "She rapped on the door. \"Come in, Ambassador,\" the ",
-              "secretary’s voice rang out."
-            ],
-            "chapter minting process": [
-              "To get the rest of Chapter 2, send 3 ADA to the minting address.",
-              "(You will receive 1.5 ADA back with the full chapter token.)",
-              "."
-            ]
+            "book section": "Token 3 - Chapters 5 and 6"
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

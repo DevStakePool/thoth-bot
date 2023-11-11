@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706557726967687442616c6477696e",
+    "asset_name_ascii": "adapeWrightBaldwin",
+    "fingerprint": "asset1v4lcpnaxnut9se77z936gejhqa5gk2d35fx3q5",
+    "minting_tx_hash": "37c5f3d8a2c7ed4a48a1ac7ba5f63c4a7b0e13f61fed8f2377859cf6316bf9a5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePabloCox": {
+            "Hat": "Privateer Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Pablo Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmS6F1W9L9xGVsoa8YnA8z6VmcDaxHp8aTgcLpVUkgEgB4",
+                "name": "Pablo Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmS6F1W9L9xGVsoa8YnA8z6VmcDaxHp8aTgcLpVUkgEgB4",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeDwightCortes": {
+            "Hat": "Top Hat",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Dwight Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmUouBXxdQsfSeKWQmSpHDfNgzM71cKjYwao1w4M1CykrP",
+                "name": "Dwight Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUouBXxdQsfSeKWQmSpHDfNgzM71cKjYwao1w4M1CykrP",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cortes family"
+          },
+          "adapeWrightBaldwin": {
+            "Hat": "Top Hat",
+            "Body": "Alien",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Alien",
+            "name": "Wright Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmPSGCdwbo7scTiJSh6SR6furT7gM8dx2W17iZeKviCUiQ",
+                "name": "Wright Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPSGCdwbo7scTiJSh6SR6furT7gM8dx2W17iZeKviCUiQ",
+            "Family": "Baldwin",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "4fa409c6edbe8425d2f1cf1278ea7ccd15770ea9a79c8809c2ef3c63",
+    "asset_name": "4d756c74695061737330333336",
+    "asset_name_ascii": "MultiPass0336",
+    "fingerprint": "asset1lrq3qtcw0vkc4ars50clzq33msjg06skknss6q",
+    "minting_tx_hash": "b7525dce6d4aa09003f506eb6f62bb26d9e799d786f5b9c6c81092b2a178b5b3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648252800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "website": "https://www.prosperspective.com/",
+        "4fa409c6edbe8425d2f1cf1278ea7ccd15770ea9a79c8809c2ef3c63": {
+          "MultiPass0336": {
+            "name": "0336",
+            "files": [
+              {
+                "src": "ipfs://QmPkW9phfdi6XdhGGSAzGoDupF1qkm3usWmd9ZLcrmutdj",
+                "name": "0336",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPkW9phfdi6XdhGGSAzGoDupF1qkm3usWmd9ZLcrmutdj",
+            "status": "Standard",
+            "project": "ProsperiaMultiPass",
+            "copyright": "2022 Prosperia",
+            "mediaType": "image/png",
+            "description": "Prosperia - Multipass Standard"
+          },
+          "MultiPass0518": {
+            "name": "0518",
+            "files": [
+              {
+                "src": "ipfs://QmPkW9phfdi6XdhGGSAzGoDupF1qkm3usWmd9ZLcrmutdj",
+                "name": "0518",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPkW9phfdi6XdhGGSAzGoDupF1qkm3usWmd9ZLcrmutdj",
+            "status": "Standard",
+            "project": "ProsperiaMultiPass",
+            "copyright": "2022 Prosperia",
+            "mediaType": "image/png",
+            "description": "Prosperia - Multipass Standard"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544656d707374657256656e7475636369",
+    "asset_name_ascii": "adapeDempsterVentucci",
+    "fingerprint": "asset1737rz3n5phkyuuwwsmmrn9zz3x2eq2sc6tgryx",
+    "minting_tx_hash": "a624d940d5c7aa7e3c9812e7d2f1d040642be00b889b370eeb0280f97dcd1b3b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeOsbertGarcía": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Osbert García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPkgNERwufkWtJQAnrx4hhfppi54ixdL1QRfr5GayrV7K",
+                "name": "Osbert García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPkgNERwufkWtJQAnrx4hhfppi54ixdL1QRfr5GayrV7K",
+            "Family": "García",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeTownsendWhite": {
+            "Hat": "None",
+            "Body": "Rainbow Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Townsend White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmemxyLGFde9sCT79dCJy6Hx3amQeCh4gveaRko2Ng4pUJ",
+                "name": "Townsend White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmemxyLGFde9sCT79dCJy6Hx3amQeCh4gveaRko2Ng4pUJ",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          },
+          "adapeDempsterVentucci": {
+            "Hat": "King's Crown",
+            "Body": "Doublet",
+            "Ears": "Feather Pen",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Dempster Ventucci",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmXQkRePWHREwYSBADovib4358BRwnvBT95EejUaztYmaL",
+                "name": "Dempster Ventucci",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXQkRePWHREwYSBADovib4358BRwnvBT95EejUaztYmaL",
+            "Family": "Ventucci",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ventucci family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

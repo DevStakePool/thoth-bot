@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654a756c69616e5461796c6f72",
+    "asset_name_ascii": "adapeJulianTaylor",
+    "fingerprint": "asset1tm4gax2sp8nanxwrqmu778sg0fk3j862pgup7k",
+    "minting_tx_hash": "ed05b9b20532bd2f0b4d6ef5ad14d217a4341ec5ff2d82b84060b07e8de6723c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeJulianTaylor": {
+            "Hat": "Wool Cap",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Julian Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmeW3EXWvKbhUR8NeYGVcMzypiLzhe6VaYmQrfECjx4npj",
+                "name": "Julian Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeW3EXWvKbhUR8NeYGVcMzypiLzhe6VaYmQrfECjx4npj",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

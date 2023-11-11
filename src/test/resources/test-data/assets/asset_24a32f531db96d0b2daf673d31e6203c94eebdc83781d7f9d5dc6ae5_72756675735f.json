@@ -1,0 +1,83 @@
+[
+  {
+    "policy_id": "24a32f531db96d0b2daf673d31e6203c94eebdc83781d7f9d5dc6ae5",
+    "asset_name": "72756675735f",
+    "asset_name_ascii": "rufus_",
+    "fingerprint": "asset168cvjj07dycddq5xudg992qkyd9yvfskdcccsv",
+    "minting_tx_hash": "2b50f286fbd11d08ad7cc0f825cf41e32ae05a7dd30a313ed901665cc1144457",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1660867200,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "98980717c5d25b1c",
+        "24a32f531db96d0b2daf673d31e6203c94eebdc83781d7f9d5dc6ae5": {
+          "rufus": {
+            "name": "rufus",
+            "image": "ipfs://QmRYtwV5vtU9Pr9DoU5dyc6h8HE3SNYLTuNKD4Crfd5XmB",
+            "discord": "https://discord.gg/VvawrtgwWp",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "variant": 9,
+            "website": "https://pixl.page",
+            "designBy": "Autrecoeur",
+            "pixlLink": "https://pixl.page/rufus",
+            "mintWindow": 1,
+            "description": [
+              "pixl.links are your personal URLs on https://pixl.page",
+              "Connect them with any of your pixl.pages and showcase your NFTs!"
+            ],
+            "artistTwitter": "https://twitter.com/autrecoeur"
+          },
+          "rufus_": {
+            "name": "rufus_",
+            "image": "ipfs://QmU8WRyD9eymdctrkqcLrEs9bEeUkrgnGQFPLFDejxnPaE",
+            "discord": "https://discord.gg/VvawrtgwWp",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "variant": 1,
+            "website": "https://pixl.page",
+            "designBy": "Blockowls | Ctoy",
+            "pixlLink": "https://pixl.page/rufus_",
+            "mintWindow": 1,
+            "description": [
+              "pixl.links are your personal URLs on https://pixl.page",
+              "Connect them with any of your pixl.pages and showcase your NFTs!"
+            ],
+            "artistTwitter": "https://twitter.com/BlockOwls"
+          }
+        },
+        "38f25e7bfba4b4c65de7b55d68475dcc6f02a376ec53c796ab5723b8": {
+          "PixlGenesis00781": {
+            "name": "pixl.page - Curator #00781",
+            "tier": "Genesis",
+            "color": "Emerald",
+            "files": [
+              {
+                "src": "ipfs://Qmb92mLXUBuKMmQHGuSsVeEfybmZiqVLPvKF9PujPcRco6",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYt2KRjj9RuEXHNDKgSkQq9zBTbLKNwfsJgthYERrjTco",
+            "rarity": "Uncommon",
+            "project": "pixl.page - Your NFT profile page",
+            "twitter": "https://twitter.com/pixl_page",
+            "website": "https://pixl.page/",
+            "designBy": "BlockOwls | Ctoy",
+            "profile1": "claimed",
+            "profile2": "claimed",
+            "mediaType": "image/gif",
+            "mintWindow": 1,
+            "description": [
+              "The pixl.page Curator NFT gives free access ",
+              "to the premium features of pixl.page"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

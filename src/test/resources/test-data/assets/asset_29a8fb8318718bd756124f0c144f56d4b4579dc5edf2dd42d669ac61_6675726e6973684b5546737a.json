@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684b5546737a",
+    "asset_name_ascii": "furnishKUFsz",
+    "fingerprint": "asset1n0l97whdmcerccgpcsa8lzgmrqmyllwglx68aj",
+    "minting_tx_hash": "53183453f9e18ad3cf147043a4fd26a992e419f92b4ac48623206e1cca95e268",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677283200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishKUFsz": {
+            "id": "KUFsz",
+            "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "name": "Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+                "name": "Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfEg7Mfqch3U6Fr6F7KrcCPuBGyXX443Yc7LJBw24Tcdi",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZfrn2Sbbk5AokpQKir5L7gcFu1HhVyJjqjDFmQhGycJo",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "description": "Hand-crafted by Amans Roberts.",
+            "furnitureId": 206
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

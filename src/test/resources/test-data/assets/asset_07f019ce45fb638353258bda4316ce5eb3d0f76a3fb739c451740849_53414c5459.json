@@ -4,20 +4,125 @@
     "asset_name": "53414c5459",
     "asset_name_ascii": "SALTY",
     "fingerprint": "asset12sfwgsyvfrx88dp84u5f7kgrd7t9wrzthxqkt7",
-    "minting_tx_hash": "dd7f90db922e270a7c9591568b0b20e7185c86427d24c39a53098340da21615b",
-    "total_supply": "746856777000000",
+    "minting_tx_hash": "7d9649a60e039083dad66b8809b3f20445a1b23a1c7fa29de95ec8f86c5a6604",
+    "total_supply": "746070777000000",
     "mint_cnt": 47,
-    "burn_cnt": 1402,
+    "burn_cnt": 1419,
     "creation_time": 1655337600,
     "minting_tx_metadata": {
-      "20": {
-        "07f019ce45fb638353258bda4316ce5eb3d0f76a3fb739c451740849": {
-          "53414c5459": {
-            "url": "https://www.saltyseagulls.io",
-            "desc": "Governance and utility token in the Salty Seagulls Society",
-            "icon": "ipfs://QmV5wdrHDc6u2NHuuydZjVd9YHQVnC6GzJSXKh5PwhJRvP",
-            "ticker": "SALTY",
-            "decimals": 6
+      "721": {
+        "5329a9b87459e1df8e86ce56bae4b3770862c0969011e6faf474b65f": {
+          "BredGull486": {
+            "Hat": "Bun",
+            "Beak": "Lipstick Red",
+            "Bred": "Yes",
+            "Eyes": "Eye Lashes Happy",
+            "Role": "Merchant",
+            "name": "Merchant Mary Jane Mavericks",
+            "Level": "4",
+            "Shirt": "Air Force General",
+            "image": [
+              "ipfs://bafkreibjzl56ulmbxmwzlanzcu4tpzynueqckfr5uhjmeb4p7ckzykv3",
+              "p4"
+            ],
+            "Gender": "Female",
+            "Tattoo": "None",
+            "Glasses": "Morpheus",
+            "Parents": "Captain Shark Mavericks Mated Pair",
+            "phoenix": "Yes",
+            "Earrings": "None",
+            "Feathers": "Plucked",
+            "Homeland": "California",
+            "Background": "Aquamarine",
+            "Generation": "2",
+            "Mated Pair": "No"
+          },
+          "MatedPair65": {
+            "egg": "Level 3",
+            "name": "Captain Shark Mavericks Mated Pair",
+            "dowry": "No",
+            "files": [
+              {
+                "src": [
+                  "ipfs://bafybeifjm6tccljokxlkbyz24uq2dhz7igtlzl5lrip5xwzqud2fncoh",
+                  "oq"
+                ],
+                "name": "Captain Shark Mavericks Mated Pair",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmUi2oSUCxEiXThBw7K2c5FyyzRFgpWS2owq3EQ7u4u95a",
+                "name": "Captain Nicander Mavericks",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmSyhKKH4BVshAMWtWfmmHDn2jQuzy8uFaocojxJF1ajXH",
+                "name": "Merchant Afroditi Mavericks",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": [
+              "ipfs://bafybeifjm6tccljokxlkbyz24uq2dhz7igtlzl5lrip5xwzqud2fncoh",
+              "oq"
+            ],
+            "phoenix": "Yes",
+            "primary": {
+              "Hat": "Karate Headband",
+              "Beak": "Black",
+              "Eyes": "Sleepy",
+              "Name": "Captain Nicander Mavericks",
+              "Role": "Captain",
+              "Level": "5",
+              "Shirt": "Air Force General",
+              "Gender": "Male",
+              "Tattoo": "None",
+              "Glasses": "None",
+              "Earrings": "Pearl",
+              "Feathers": "Zebra",
+              "Homeland": "California",
+              "Background": "Aquamarine"
+            },
+            "Children": "1",
+            "mediaType": "image/png",
+            "secondary": {
+              "Hat": "Bun",
+              "Beak": "Lipstick Red",
+              "Eyes": "Eye Lashes Happy",
+              "Name": "Merchant Afroditi Mavericks",
+              "Role": "Merchant",
+              "Level": "4",
+              "Shirt": "Tie Dye Shirt",
+              "Gender": "Female",
+              "Tattoo": "None",
+              "Glasses": "Heart Glasses",
+              "Earrings": "None",
+              "Feathers": "Cheetah",
+              "Homeland": "California",
+              "Background": "Aquamarine"
+            },
+            "Mated Pair": "Yes",
+            "background": "Lighthouse"
+          }
+        },
+        "6f2b8c46d1af6508a88ef0cdb9bf7ec77719124c6c7717c218dbd357": {
+          "PhoenixGull3019": {
+            "Bred": "Yes",
+            "name": "Phoenix Gull",
+            "Salty": "We rose from the ashes stronger than ever...",
+            "files": [
+              {
+                "src": "ipfs://QmccJNtVsGZoGHmdUbfugtC14cQtCuWZCqq2WHUVYURmqp",
+                "name": "Phoenix Gull",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmccJNtVsGZoGHmdUbfugtC14cQtCuWZCqq2WHUVYURmqp",
+            "Society": "#Gullish",
+            "Twitter": "https://twitter.com/GullsCNFT",
+            "Gull Fam": "Thank you!",
+            "Seagulls": "#LFGULL",
+            "Mint Date": "5/28/2022 to 5/29/2022",
+            "mediaType": "image/png"
           }
         }
       }
@@ -29,6 +134,7 @@
       "ticker": "SALTY",
       "decimals": 6,
       "description": "The $SALTY token is the core utility token of the Salty Seagulls Society. It provides for governance and additional utility as the project grows."
-    }
+    },
+    "cip68_metadata": null
   }
 ]

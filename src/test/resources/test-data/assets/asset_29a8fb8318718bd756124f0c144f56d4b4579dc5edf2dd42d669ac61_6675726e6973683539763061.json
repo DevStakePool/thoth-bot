@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683539763061",
+    "asset_name_ascii": "furnish59v0a",
+    "fingerprint": "asset1nmwmu9xpr09vacd3ft3wf2z6eljfk4jt70drt0",
+    "minting_tx_hash": "1e2bfe13847f942b379a388e02e8f4f1ace63f6e1eed89380b78edf1ff18c8d5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673222400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish59v0a": {
+            "id": "59v0a",
+            "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "name": "Low Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+                "name": "Low Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbMCCBiSX2BdfSRPBgSwNy7sBg2x441SEagBeRGHgfD6s",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmbJ36nBD63AR7CCGenMinEHe2JNdgkXkBMNZTznr4jAJH",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "description": "Hand-crafted by Olin White.",
+            "furnitureId": 211
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3039333132",
+    "asset_name_ascii": "Ghostchain09312",
+    "fingerprint": "asset1jnyewlzmk59muuw4q9uf6d8cnnpx8c4zld5d0n",
+    "minting_tx_hash": "5ca87234573ef905344c3d9a73c11ffacc06ab896c662cebd9fefb5d145d62e6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635724800,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain09312": {
+            "dna": "10200002",
+            "eyes": "Tortoiseshell Glasses",
+            "name": "Ghostchain09312",
+            "files": [
+              {
+                "src": "ipfs://QmT1tx6TkDNxhkf67kosCF2TPDrSHLsNyfWNSgyH99j6tJ",
+                "name": "Ghostchain09312",
+                "https": "https://api.nftghostchain.com/original?mint=9312",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Pinky",
+            "image": "ipfs://QmT1tx6TkDNxhkf67kosCF2TPDrSHLsNyfWNSgyH99j6tJ",
+            "mouth": "Weedpipe",
+            "rarity": "Common",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683049794878",
+    "asset_name_ascii": "furnish0IyHx",
+    "fingerprint": "asset17htmuaaaszd7cg4ur84v8q4k09qe2w8skq76g8",
+    "minting_tx_hash": "861ff4218166827489ef3a3607fd44b74bfde622700f80dac882092074a46f1d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674604800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish0IyHx": {
+            "id": "0IyHx",
+            "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "name": "Dining Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+                "name": "Dining Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmdBvm8mASjQ3fatRmRg2HdobLMVncdKMzwSfKyEZNcQeB",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmcSaExkRrb8rH3gBP2sbWntzveeY6pVcit26j1Y2EoNu7",
+                "name": "Dining Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUtbo7izTZvGSPrkyJYizvWtCJXbgBXMutVSnjEJQQfw1",
+            "description": "Hand-crafted by Alexandre Brown.",
+            "furnitureId": 208
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

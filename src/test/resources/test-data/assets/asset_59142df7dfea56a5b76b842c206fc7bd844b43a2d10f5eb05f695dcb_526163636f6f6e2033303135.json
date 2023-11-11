@@ -5,9 +5,9 @@
     "asset_name_ascii": "Raccoon 3015",
     "fingerprint": "asset17eg2r74mex8ky9z4m4z26j3l5k2dauucve9ma0",
     "minting_tx_hash": "757f9d06651cc0a04e4ddf98af75b0c0332f7c8dfecb619a9b30f629cdb18ef6",
-    "total_supply": "2",
+    "total_supply": "1",
     "mint_cnt": 2,
-    "burn_cnt": 0,
+    "burn_cnt": 1,
     "creation_time": 1660348800,
     "minting_tx_metadata": {
       "721": {
@@ -135,6 +135,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

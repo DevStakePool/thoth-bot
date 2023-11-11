@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b656e746f6e4d6f6e6574",
+    "asset_name_ascii": "adapeKentonMonet",
+    "fingerprint": "asset1r62z3kuwynpn2g3d3lx8f5uugwpqelh9a26qwv",
+    "minting_tx_hash": "0922d4463b8a84f7b6b3e64c705f49f2ac243f5190ca1bb32cfdc63787316ba5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeHalseyMonet": {
+            "Hat": "Gold Helmet",
+            "Body": "Doublet",
+            "Ears": "Earphones",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Halsey Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmNzLgJGS2cwMrqtvbubnMfo9PyXyZf8k7DGkdtMSnmCgJ",
+                "name": "Halsey Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNzLgJGS2cwMrqtvbubnMfo9PyXyZf8k7DGkdtMSnmCgJ",
+            "Family": "Monet",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          },
+          "adapeKentonMonet": {
+            "Hat": "Wool Cap",
+            "Body": "Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Kenton Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmVb7Zx2Cg6HYujW9DbqMUag5K3VUeg8YNfaKZz9hpGQWM",
+                "name": "Kenton Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVb7Zx2Cg6HYujW9DbqMUag5K3VUeg8YNfaKZz9hpGQWM",
+            "Family": "Monet",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Monet family"
+          },
+          "adapeMillardWhite": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Millard White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmcbXWvyWKDQ6PFvnqtM9WvAYip68Es1qYuzDbj7zQ4QDC",
+                "name": "Millard White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcbXWvyWKDQ6PFvnqtM9WvAYip68Es1qYuzDbj7zQ4QDC",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

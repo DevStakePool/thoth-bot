@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "626f6e642e62726f776e",
+    "asset_name_ascii": "bond.brown",
+    "fingerprint": "asset1zqvymd86glqjp7t43asxnglhdm66s7kt34hf69",
+    "minting_tx_hash": "806655234dacd766f30dcd861a063d9c75e4740aea461a5881cf349d457fc80f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675209600,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "bond.brown": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$bond.brown",
+            "image": "ipfs://QmYnXWtw1hcN56NitATZj2CkFg3xQaLpk5ZcvGprFrG3Vd",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

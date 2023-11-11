@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065446f6e616c64577269676874",
+    "asset_name_ascii": "adapeDonaldWright",
+    "fingerprint": "asset1cs4esnjwkj0urn4l5menzzgzy3azfzh64ugj7z",
+    "minting_tx_hash": "3513d928ad535eace24e60effe248961bc963c3ad7ac82422fc90fe1d0880507",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDonaldWright": {
+            "Hat": "None",
+            "Body": "Orange",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Orange",
+            "name": "Donald Wright",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmT3uzsBQq185g4J6cVE8itDjdSdteZriX5eQsQ43LP42r",
+                "name": "Donald Wright",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmT3uzsBQq185g4J6cVE8itDjdSdteZriX5eQsQ43LP42r",
+            "Family": "Wright",
+            "Weapon": "Spear",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wright family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

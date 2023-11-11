@@ -1,0 +1,741 @@
+[
+  {
+    "policy_id": "158fd94afa7ee07055ccdee0ba68637fe0e700d0e58e8d12eca5be46",
+    "asset_name": "476f6f6d626c6533323530",
+    "asset_name_ascii": "Goomble3250",
+    "fingerprint": "asset18lxf5w73xcp5zumdu8wlqrhaeavsx60jglgef4",
+    "minting_tx_hash": "435e405dbaaee4457f621c8552e73aee61441df9f1496fee9962cc7fb60d7707",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1677542400,
+    "minting_tx_metadata": {
+      "721": {
+        "158fd94afa7ee07055ccdee0ba68637fe0e700d0e58e8d12eca5be46": {
+          "Goomble3232": {
+            "name": "Goomble #3232",
+            "image": "ipfs://QmQ3WE8YGHHKER75KX5dGTJLcMj6g2QuYiLKJKTRUW33nb",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Iroh",
+              "mouth": "Iroh",
+              "flavor": "Caramel",
+              "clothes": "None",
+              "headwear": "Chef Hat",
+              "left hand": "None",
+              "background": "Banana",
+              "right hand": "Spork"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3233": {
+            "name": "Goomble #3233",
+            "image": "ipfs://QmcKP1cM7F5M3VS8jsnsX7pxTRCgspx5sUBVz29jnvhikZ",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Triangles",
+              "mouth": "Fangs",
+              "flavor": "Blueberry",
+              "clothes": "None",
+              "headwear": "Blue Powdered Sugar",
+              "left hand": "Ninja Stars",
+              "background": "Crystal Canyon",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3234": {
+            "name": "Goomble #3234",
+            "image": "ipfs://QmY9LjrFno2LkAbqLUM2QEnA3g4JoNHBqnXuwaeUwLtpjg",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Triclops",
+              "mouth": "Cookie Straw",
+              "flavor": "Caramel",
+              "clothes": "None",
+              "headwear": "Candy Ninja Headband",
+              "left hand": "None",
+              "background": "Cherry",
+              "right hand": "Boba"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3235": {
+            "name": "Goomble #3235",
+            "image": "ipfs://QmdzSZA8oSLpsRg7NjznJjxGGkwywtRSuDL32D9PMenSEq",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Shocked",
+              "mouth": "Hollow",
+              "flavor": "Blueberry",
+              "clothes": "None",
+              "headwear": "Antena",
+              "left hand": "Mochi Bomb",
+              "background": "Cherry",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3236": {
+            "name": "Goomble #3236",
+            "image": "ipfs://QmSNvFGWqctEwgChmLvGaNMAXHtaNriCsgC19p6oEHW7D8",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Cheerful",
+              "mouth": "Drooling",
+              "flavor": "Orange Drizzle",
+              "clothes": "Hawaiian Shirt",
+              "headwear": "None",
+              "left hand": "Axe",
+              "background": "Cherry",
+              "right hand": "Red Potion"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3237": {
+            "name": "Goomble #3237",
+            "image": "ipfs://Qmf4t7D1roY9WHrT57Yezpv2ZL52DnR1WS3nS8wYyvZ642",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Annoyed",
+              "mouth": "Fearful",
+              "flavor": "Bubblegum",
+              "clothes": "None",
+              "headwear": "Sprinkles",
+              "left hand": "None",
+              "background": "Ube",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3238": {
+            "name": "Goomble #3238",
+            "image": "ipfs://QmYJrgwhjALvxCzLnosoWmtXDFaJ6Tf6d4NsJL5YDi5Y7q",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Angel Wings",
+              "body": "Round",
+              "eyes": "Mezmorized",
+              "mouth": "None",
+              "flavor": "Soda",
+              "clothes": "Fur Onesie",
+              "headwear": "None",
+              "left hand": "Rock Candy Club",
+              "background": "Bubblegum",
+              "right hand": "Sword"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3239": {
+            "name": "Goomble #3239",
+            "image": "ipfs://QmdFepVEYqRnPzhNEejDQZ9AmmD2FPPhWeL43Pk4283F59",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Evil Wings",
+              "body": "Round",
+              "eyes": "Angry",
+              "mouth": "Happy",
+              "flavor": "Jawbreaker",
+              "clothes": "None",
+              "headwear": "Astronaut Helmet",
+              "left hand": "None",
+              "background": "Banana",
+              "right hand": "Boba"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3240": {
+            "name": "Goomble #3240",
+            "image": "ipfs://QmZBmCpYrJhQpZCw2Nc2QJqgN8EtSagJQjp1UGWmwT3YKF",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Struggling",
+              "mouth": "Fangs",
+              "flavor": "Snow Globe",
+              "clothes": "None",
+              "headwear": "Backwards Cap",
+              "left hand": "Wrench",
+              "background": "King Cane's Castle",
+              "right hand": "Boba"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3241": {
+            "name": "Goomble #3241",
+            "image": "ipfs://QmTvSddAqQM2f2kWhGWHHYHiGRGHXd6kekg8bn7GGf7dbT",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "SOUR Strips",
+              "body": "Round",
+              "eyes": "Struggling",
+              "mouth": "Mustache",
+              "flavor": "Bubblegum",
+              "clothes": "Hawaiian Shirt",
+              "headwear": "None",
+              "left hand": "None",
+              "background": "Magic Sugar Forest",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3242": {
+            "name": "Goomble #3242",
+            "image": "ipfs://QmSWi8QLztGfjT4j3oF39QZaJaBB6msENdWsNB3hcpiDeP",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Happy",
+              "mouth": "Fangs",
+              "flavor": "Caramel",
+              "clothes": "None",
+              "headwear": "Chef Hat",
+              "left hand": "None",
+              "background": "Matcha",
+              "right hand": "Scepter"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3243": {
+            "name": "Goomble #3243",
+            "image": "ipfs://QmTrXk5RVYhydiUXqkuaVk1pjhtw8ouPuvxxNQMMeb1fW6",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Sleepy",
+              "mouth": "Neutral",
+              "flavor": "Cherry",
+              "clothes": "Hawaiian Shirt",
+              "headwear": "None",
+              "left hand": "Rocket Ship Toy",
+              "background": "Caramel",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3244": {
+            "name": "Goomble #3244",
+            "image": "ipfs://QmNoGRuL7pVhT2FvfYowiBV8cDYwnmGHYtsGMXaF5fBonE",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Angel Wings",
+              "body": "Round",
+              "eyes": "Swirly KO",
+              "mouth": "Mustache",
+              "flavor": "Powdered Sugar",
+              "clothes": "None",
+              "headwear": "Toy Chain",
+              "left hand": "None",
+              "background": "Bubblegum",
+              "right hand": "Rock Candy Club"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3245": {
+            "name": "Goomble #3245",
+            "image": "ipfs://QmNQiwUqEbWjPPTBJF2e6zh8F6M87pNrtLaEWQyPzxzc8s",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Swirly KO",
+              "mouth": "Angry",
+              "flavor": "Red Licorice",
+              "clothes": "Biker",
+              "headwear": "Toy Chain",
+              "left hand": "Scepter",
+              "background": "Cherry",
+              "right hand": "Rocket Ship Toy"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3246": {
+            "name": "Goomble #3246",
+            "image": "ipfs://QmWHvgQJBqVpvDJ5hAdAtKQCBDCUnXR3PbLhMPfk67RBLm",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Droopy",
+              "mouth": "Curly",
+              "flavor": "Bubblegum",
+              "clothes": "None",
+              "headwear": "Cupid Arrow",
+              "left hand": "None",
+              "background": "Crystal Canyon",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3247": {
+            "name": "Goomble #3247",
+            "image": "ipfs://QmYaAe1Fryc7EPQE6fYpKgsJB3g8ZVYZGdYvYmmVjHCEwx",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Winged",
+              "mouth": "Blocky",
+              "flavor": "Banana",
+              "clothes": "None",
+              "headwear": "Sweetband",
+              "left hand": "Elder Charm",
+              "background": "Cherry",
+              "right hand": "Riot Shield"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3248": {
+            "name": "Goomble #3248",
+            "image": "ipfs://QmYo6oxbqxDzua61H22nqPkkmHarAvQirMrNbWGgZ5fJve",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Happy",
+              "mouth": "Bucktooth",
+              "flavor": "Powdered Sugar",
+              "clothes": "Princess Dress",
+              "headwear": "Toy Chain",
+              "left hand": "None",
+              "background": "Banana",
+              "right hand": "Boba"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3249": {
+            "name": "Goomble #3249",
+            "image": "ipfs://QmTdykSJPfJsg67cr3TePbF3ABn8fPvDCsBgzfSfFNGrfX",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Pleading",
+              "mouth": "Drooling",
+              "flavor": "Golden",
+              "clothes": "None",
+              "headwear": "Spinning Hat",
+              "left hand": "None",
+              "background": "Bubblegum",
+              "right hand": "Mochi Bomb"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3250": {
+            "name": "Goomble #3250",
+            "image": "ipfs://QmQdfutGEWRLgBP9paZVtGsJKftgiLboJwGduVZ5mQgYd9",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Peppermint",
+              "mouth": "Mustache",
+              "flavor": "Matcha Drizzle",
+              "clothes": "None",
+              "headwear": "Whip Cream",
+              "left hand": "Wrench",
+              "background": "Caramel",
+              "right hand": "Boba"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3251": {
+            "name": "Goomble #3251",
+            "image": "ipfs://Qme71HQ5D7zQphsXdHuP46KrmwuuYfCUWqE9jem8XUkEEs",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Evil Wings",
+              "body": "Tall",
+              "eyes": "Block Brows",
+              "mouth": "Streamer",
+              "flavor": "Ube",
+              "clothes": "None",
+              "headwear": "Birthday Candles",
+              "left hand": "Popsicle Spear",
+              "background": "Banana",
+              "right hand": "Dango Spear"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3252": {
+            "name": "Goomble #3252",
+            "image": "ipfs://QmQVsWsAiL3q7eBNvVYeDY92j74NgFfjhEPNj8FS4Nv62S",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Soda Pipes",
+              "body": "Round",
+              "eyes": "Shocked",
+              "mouth": "UwU",
+              "flavor": "Bubblegum",
+              "clothes": "Biker",
+              "headwear": "Flan",
+              "left hand": "Sword",
+              "background": "Matcha",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3253": {
+            "name": "Goomble #3253",
+            "image": "ipfs://QmTmAsSZ4f4gSu8rfnYnqSdxBWYQoLQoUj4vuFa1GNX8rQ",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Happy",
+              "mouth": "Full",
+              "flavor": "Orange Drizzle",
+              "clothes": "Pumpkin Onesie",
+              "headwear": "None",
+              "left hand": "Sword",
+              "background": "Kespin Cone",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3254": {
+            "name": "Goomble #3254",
+            "image": "ipfs://QmdkPqG3NE1VsN5GHG9eP57XHQHReXm13YrXoz9e3idgBY",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Sharp",
+              "mouth": "Streamer",
+              "flavor": "Blueberry",
+              "clothes": "None",
+              "headwear": "Whip Cream",
+              "left hand": "Candy Cane Staff",
+              "background": "King Cane's Castle",
+              "right hand": "Riot Shield"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3255": {
+            "name": "Goomble #3255",
+            "image": "ipfs://QmQLE8xFx4rq3d4Lbj4uAxv3dtp6j4HSKGSgTcqcD3LhmY",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Sharp",
+              "mouth": "Biker Stache",
+              "flavor": "Caramel",
+              "clothes": "None",
+              "headwear": "Fish Tank",
+              "left hand": "Popsicle Spear",
+              "background": "Kespin Cone",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3256": {
+            "name": "Goomble #3256",
+            "image": "ipfs://QmRJuoeAMZvCkhwEKjEv1ZvQYv6NQE8FHpG2kEUKGCwd5d",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Old Man",
+              "mouth": "Blocky",
+              "flavor": "Caramel",
+              "clothes": "None",
+              "headwear": "Candy Crown",
+              "left hand": "Candy Cane Staff",
+              "background": "Bubblegum",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3257": {
+            "name": "Goomble #3257",
+            "image": "ipfs://QmWGDergcZh5WHg5E4nNpHV6wTSbStqtLm1xgbQiRdAys3",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Crying",
+              "mouth": "UwU",
+              "flavor": "Cherry",
+              "clothes": "Golf Polo",
+              "headwear": "Golf Visor",
+              "left hand": "Wrench",
+              "background": "Bubblegum",
+              "right hand": "Wrench"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3258": {
+            "name": "Goomble #3258",
+            "image": "ipfs://QmT2FGFgiUasSGDYenVaM4eMH8Rrs2AgJNkbzej6AzETX7",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Angel Wings",
+              "body": "Round",
+              "eyes": "Cheerful",
+              "mouth": "Cookie Straw",
+              "flavor": "Black Licorice",
+              "clothes": "Astronaut Suit",
+              "headwear": "None",
+              "left hand": "Lollipop Staff",
+              "background": "Banana",
+              "right hand": "Boba"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3259": {
+            "name": "Goomble #3259",
+            "image": "ipfs://QmcSRU8DN5uv3AY7EkYDQW3a24BVMfD2UCgBA2Bs3CA9wV",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Triclops",
+              "mouth": "Grumpy",
+              "flavor": "Banana",
+              "clothes": "None",
+              "headwear": "Mushroom",
+              "left hand": "None",
+              "background": "Matcha",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3260": {
+            "name": "Goomble #3260",
+            "image": "ipfs://QmaJu9Vzg291n2mH4Ck97opMGLwkRNQAz2zFXjx2DruwZu",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Unibrow",
+              "mouth": "Sharp Edges",
+              "flavor": "Ube",
+              "clothes": "None",
+              "headwear": "Candy Crown",
+              "left hand": "Popsicle Spear",
+              "background": "Blueberry",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3261": {
+            "name": "Goomble #3261",
+            "image": "ipfs://QmcbiTLh3RxDqttmEZx8C4zFbt5wXP8Nx6gewX379f84fD",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Heart Eyes",
+              "mouth": "Blocky",
+              "flavor": "Banana",
+              "clothes": "None",
+              "headwear": "Sweetband",
+              "left hand": "Candy Cane Staff",
+              "background": "Caramel",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3262": {
+            "name": "Goomble #3262",
+            "image": "ipfs://QmTmKjjrVy7FY21oMMqWtu5P4JA9n9m3npaEbcRCgs3oTz",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Soda Pipes",
+              "body": "Tall",
+              "eyes": "Squiggly",
+              "mouth": "Blocky",
+              "flavor": "Caramel",
+              "clothes": "None",
+              "headwear": "Farmer Hat",
+              "left hand": "None",
+              "background": "Bubblegum",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3263": {
+            "name": "Goomble #3263",
+            "image": "ipfs://QmRBSfqSSPmYFno1w7ufuCtEnrcHkMkEQpmfQ1qZn4euQE",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Struggling",
+              "mouth": "Kissy",
+              "flavor": "Red Licorice",
+              "clothes": "Fur Onesie",
+              "headwear": "None",
+              "left hand": "Lollipop Staff",
+              "background": "Caramel",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3264": {
+            "name": "Goomble #3264",
+            "image": "ipfs://Qmby7mm4mxHHAToWNSb1dzxhWARfmY6NHxL7Z7yjJirLNT",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "UwU",
+              "mouth": "Drooling",
+              "flavor": "Black Licorice",
+              "clothes": "None",
+              "headwear": "Whip Cream",
+              "left hand": "Rock Candy Club",
+              "background": "Cherry",
+              "right hand": "Sword"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3265": {
+            "name": "Goomble #3265",
+            "image": "ipfs://Qmc1oEiAj8P8hLQMyxPTwkTBKuhXCgwcPTpWg6QSfuaBVS",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Squiggly",
+              "mouth": "Biker Stache",
+              "flavor": "Golden",
+              "clothes": "None",
+              "headwear": "Cupid Arrow",
+              "left hand": "None",
+              "background": "Matcha",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3266": {
+            "name": "Goomble #3266",
+            "image": "ipfs://QmUFfQN4vSq9aSiVzXrg68h7FqXburVy9CRjBi6jG3evLB",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "Angry",
+              "mouth": "Fu Manchu",
+              "flavor": "Blueberry",
+              "clothes": "None",
+              "headwear": "Candy Ninja Headband",
+              "left hand": "None",
+              "background": "Cherry",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3267": {
+            "name": "Goomble #3267",
+            "image": "ipfs://QmU9csopfJFCfHdRtMtTiAuStXFmngjkkFTTNRecJHPY52",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Struggling",
+              "mouth": "Grumpy",
+              "flavor": "Caramel",
+              "clothes": "Suit",
+              "headwear": "Chef Hat",
+              "left hand": "Axe",
+              "background": "Matcha",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3268": {
+            "name": "Goomble #3268",
+            "image": "ipfs://QmRGc23TJgDQqy91s8wqpXeD4gqyPUnB6WKTbe4ZBNuL2C",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Struggling",
+              "mouth": "Fangs",
+              "flavor": "Jawbreaker",
+              "clothes": "None",
+              "headwear": "Magic Crystals",
+              "left hand": "None",
+              "background": "Banana",
+              "right hand": "Boba"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3269": {
+            "name": "Goomble #3269",
+            "image": "ipfs://QmZnpAroexq38XkNJ7zaQ5GBmcErYfhcyB2hK1AtVEudQu",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "Angel Wings",
+              "body": "Round",
+              "eyes": "Pleading",
+              "mouth": "Troll",
+              "flavor": "Jawbreaker",
+              "clothes": "Princess Dress",
+              "headwear": "Farmer Hat",
+              "left hand": "None",
+              "background": "Ube",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3270": {
+            "name": "Goomble #3270",
+            "image": "ipfs://QmcbJ6FWiWb3BY2MbEzasBtyBToF6DnuzcmxRuLAvqVBWE",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Tall",
+              "eyes": "None",
+              "mouth": "Gas Mask",
+              "flavor": "Black Licorice",
+              "clothes": "None",
+              "headwear": "Sweetband",
+              "left hand": "Popsicle Spear",
+              "background": "Blueberry",
+              "right hand": "Popsicle Spear"
+            },
+            "collection": "Goombles"
+          },
+          "Goomble3271": {
+            "name": "Goomble #3271",
+            "image": "ipfs://QmdEWtye8w8PcPPZj9ZQyVQF87W5uYg56dG65hJh2WzzrG",
+            "website": "https://www.goombles.io",
+            "attributes": {
+              "back": "None",
+              "body": "Round",
+              "eyes": "Eyelashes",
+              "mouth": "Fearful",
+              "flavor": "Caramel",
+              "clothes": "Knight Armor",
+              "headwear": "Candy Ninja Headband",
+              "left hand": "Sword",
+              "background": "Blueberry",
+              "right hand": "None"
+            },
+            "collection": "Goombles"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

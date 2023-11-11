@@ -5,9 +5,9 @@
     "asset_name_ascii": "Raccoon 8212",
     "fingerprint": "asset174j78h43reca8png89qtchmnzp7jccc239j4d0",
     "minting_tx_hash": "6dd574c086fac3b05b3f217f1d02298d959119d0d6ade784fc1d886e20e960e2",
-    "total_supply": "2",
+    "total_supply": "1",
     "mint_cnt": 5,
-    "burn_cnt": 3,
+    "burn_cnt": 4,
     "creation_time": 1670025600,
     "minting_tx_metadata": {
       "721": {
@@ -88,6 +88,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

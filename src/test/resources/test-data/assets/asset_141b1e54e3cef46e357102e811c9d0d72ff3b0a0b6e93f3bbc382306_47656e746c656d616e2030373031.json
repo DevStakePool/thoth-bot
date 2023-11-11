@@ -1,0 +1,611 @@
+[
+  {
+    "policy_id": "141b1e54e3cef46e357102e811c9d0d72ff3b0a0b6e93f3bbc382306",
+    "asset_name": "47656e746c656d616e2030373031",
+    "asset_name_ascii": "Gentleman 0701",
+    "fingerprint": "asset1stgfy2etkzuelq289yw2lcjpx4ydpw5ulzr460",
+    "minting_tx_hash": "6bcd07184204fa4f4ff64d38dd951079cc5213ee1f5d892e93ca1f10140d8064",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1657411200,
+    "minting_tx_metadata": {
+      "721": {
+        "141b1e54e3cef46e357102e811c9d0d72ff3b0a0b6e93f3bbc382306": {
+          "Gentleman 0610": {
+            "Head": "AfricanGreenEyes",
+            "Item": "BeigeJacket",
+            "name": "Gentleman 0610",
+            "Beard": "Anchor",
+            "Shirt": "StripesWhite",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/610.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "Gold",
+            "Glasses": "Black",
+            "Smoking": "BronzePipe",
+            "Accessory": "TieKaki",
+            "Hats_Hair": "TopHatGreen",
+            "mediaType": "image/png",
+            "Background": "Orange"
+          },
+          "Gentleman 0659": {
+            "Head": "PaleGoldEyes",
+            "Item": "WoodenStick",
+            "name": "Gentleman 0659",
+            "Beard": "BigMoustache",
+            "Shirt": "GreenPattern",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/659.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "TwoBlackHigh",
+            "Glasses": "Gold3D",
+            "Smoking": "WoodPipe",
+            "Texture": "ArtDecoGold",
+            "Accessory": "TieBordeaux",
+            "Hats_Hair": "BigTopHatBlue",
+            "mediaType": "image/png",
+            "Background": "BlueGrey"
+          },
+          "Gentleman 0701": {
+            "Head": "BlackPurpleEyes",
+            "name": "Gentleman 0701",
+            "Beard": "Anchor",
+            "Shirt": "GreenPattern",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/701.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Smoking": "BronzePipe",
+            "Texture": "ArtDecoGold",
+            "Hats_Hair": "Green",
+            "Waistcoat": "Bordeaux",
+            "mediaType": "image/png",
+            "Background": "BlueGrey"
+          },
+          "Gentleman 0915": {
+            "Head": "Sunny",
+            "Item": "BlackJacket",
+            "name": "Gentleman 0915",
+            "Beard": "ThickMoustacheAnchor",
+            "Shirt": "Black",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/915.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Smoking": "Dandelion",
+            "Accessory": "TiePurple",
+            "Hats_Hair": "TopHatBlack",
+            "mediaType": "image/png",
+            "Background": "GrungeYellow"
+          },
+          "Gentleman 1407": {
+            "Head": "BlackPurpleEyes",
+            "name": "Gentleman 1407",
+            "Beard": "Porn",
+            "Shirt": "White",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/1407.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "TwoGoldHigh",
+            "Glasses": "RetroWhite",
+            "Texture": "ArtDecoGold",
+            "Accessory": "StripeTieYellow",
+            "Hats_Hair": "TopHatGreen",
+            "Waistcoat": "LightGrey",
+            "mediaType": "image/png",
+            "Background": "PastelOrange"
+          },
+          "Gentleman 1487": {
+            "Head": "AfricanPurpleEyes",
+            "Item": "PurpleJacketNapkin",
+            "name": "Gentleman 1487",
+            "Beard": "Porn",
+            "Shirt": "Blue",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/1487.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Investor",
+            "Smoking": "Cigarette",
+            "Texture": "RedBrickWall",
+            "Accessory": "AdaChain",
+            "Hats_Hair": "ShortAfro",
+            "mediaType": "image/png",
+            "Background": "Kaki"
+          },
+          "Gentleman 1588": {
+            "Head": "AfricanPurpleEyes",
+            "name": "Gentleman 1588",
+            "Beard": "RedVerdi",
+            "Shirt": "Orange",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/1588.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Glasses": "Black",
+            "Smoking": "Cigar",
+            "Texture": "GreyBrickWall",
+            "Accessory": "TieBlackDots",
+            "Hats_Hair": "BigTopHatBlack",
+            "Skinpaint": "Stripe",
+            "Waistcoat": "Bordeaux",
+            "mediaType": "image/png",
+            "Background": "Magenta"
+          },
+          "Gentleman 2486": {
+            "Head": "Pale",
+            "name": "Gentleman 2486",
+            "Beard": "BigOrange",
+            "Shirt": "GreenPattern",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/2486.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Investor",
+            "Earring": "BlackDiamond",
+            "Glasses": "Gold",
+            "Smoking": "BronzePipe",
+            "Accessory": "TieBlue",
+            "Hats_Hair": "FeltRed",
+            "Skinpaint": "DoubleStripe",
+            "Waistcoat": "Black",
+            "mediaType": "image/png",
+            "Background": "Brown"
+          },
+          "Gentleman 2874": {
+            "Head": "PaleGreenEyes",
+            "name": "Gentleman 2874",
+            "Beard": "Small",
+            "Shirt": "Kaki",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/2874.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Smoking": "DuctTape",
+            "Texture": "RedBrickWall",
+            "Accessory": "TieBlueDots",
+            "Hats_Hair": "Green",
+            "Waistcoat": "LightGrey",
+            "mediaType": "image/png",
+            "Background": "Orange"
+          },
+          "Gentleman 3631": {
+            "Head": "PaleBrownEyes",
+            "Item": "KakiJacket",
+            "name": "Gentleman 3631",
+            "Shirt": "CheckeredOrange",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/3631.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Investor",
+            "Earring": "GreenDiamond",
+            "Smoking": "Cigar",
+            "Texture": "ArtDecoArrow",
+            "Hats_Hair": "StrawRose",
+            "Waistcoat": "Yellow",
+            "mediaType": "image/png",
+            "Background": "Kaki"
+          },
+          "Gentleman 3695": {
+            "Head": "Sunny",
+            "Item": "ClosedBordeauxUmbrella",
+            "name": "Gentleman 3695",
+            "Beard": "ThickMoustacheAnchor",
+            "Shirt": "CheckeredKaki",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/3695.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "High Roller",
+            "Glasses": "Hipster",
+            "Smoking": "BlackPipe",
+            "Texture": "Dollars",
+            "Accessory": "TieYellowDots",
+            "Hats_Hair": "ShortBlond",
+            "mediaType": "image/png",
+            "Background": "DarkGrey"
+          },
+          "Gentleman 3989": {
+            "Head": "Sunny",
+            "name": "Gentleman 3989",
+            "Beard": "BigLargeMoustache",
+            "Shirt": "Blue",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/3989.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "Black",
+            "Glasses": "GoldSun",
+            "Smoking": "DuctTape",
+            "Texture": "TuffedWallGreen",
+            "Accessory": "StripeTieGrey",
+            "Hats_Hair": "BowlBlack",
+            "mediaType": "image/png",
+            "Background": "RoyalGreen"
+          },
+          "Gentleman 4112": {
+            "Head": "Black",
+            "name": "Gentleman 4112",
+            "Shirt": "StripesBordeaux",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/4112.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Millionaire",
+            "Earring": "BlackDiamond",
+            "Smoking": "BronzePipe",
+            "Texture": "ArtDecoArrow",
+            "Accessory": "StripeTieBlue",
+            "Hats_Hair": "TopHatRed",
+            "Waistcoat": "Black",
+            "mediaType": "image/png",
+            "Background": "DarkGrey"
+          },
+          "Gentleman 4656": {
+            "Head": "PaleRedEyes",
+            "name": "Gentleman 4656",
+            "Beard": "BigBlack",
+            "Shirt": "StripesPurple",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/4656.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Glasses": "Black",
+            "Smoking": "Cigar",
+            "Accessory": "GoldChain",
+            "Attribute": "BlackWings",
+            "Hats_Hair": "Grey",
+            "mediaType": "image/png",
+            "Background": "DarkGrey"
+          },
+          "Gentleman 4809": {
+            "Head": "African",
+            "Item": "OneHand",
+            "name": "Gentleman 4809",
+            "Beard": "Zappa",
+            "Shirt": "Woman",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/4809.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "AdaRed",
+            "Glasses": "Black",
+            "Smoking": "BlackPipe",
+            "Texture": "ArtDecoArrow",
+            "Accessory": "TieBlack",
+            "Hats_Hair": "BigTopHatRed",
+            "Waistcoat": "Beige",
+            "mediaType": "image/png",
+            "Background": "BlueGrey"
+          },
+          "Gentleman 4988": {
+            "Head": "PaleBlueEyes",
+            "name": "Gentleman 4988",
+            "Beard": "ThickMoustacheGoatee",
+            "Shirt": "StripesGreen",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/4988.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "Black",
+            "Glasses": "GoldSun",
+            "Accessory": "TieKaki",
+            "Hats_Hair": "BigTopHatRed",
+            "mediaType": "image/png",
+            "Background": "YellowBeige"
+          },
+          "Gentleman 5029": {
+            "Head": "AfricanBrownEyes",
+            "name": "Gentleman 5029",
+            "Beard": "RedVerdi",
+            "Shirt": "Woman",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/5029.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "BlackDiamond",
+            "Glasses": "RetroWhite",
+            "Smoking": "BronzePipe",
+            "Accessory": "TieBlue",
+            "Hats_Hair": "FeltBrown",
+            "mediaType": "image/png",
+            "Background": "WhiteGrunge"
+          },
+          "Gentleman 5081": {
+            "Head": "AfricanBrownEyes",
+            "name": "Gentleman 5081",
+            "Beard": "AnchorWhiskers",
+            "Shirt": "StripesBlue",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/5081.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Glasses": "BlackSun",
+            "Smoking": "Wheat",
+            "Texture": "GreyBrickWall",
+            "Accessory": "StripeTieGrey",
+            "Hats_Hair": "FeltGreen",
+            "Waistcoat": "Black",
+            "mediaType": "image/png",
+            "Background": "WhiteGrunge"
+          },
+          "Gentleman 5142": {
+            "Head": "Dirty",
+            "Item": "NavyBlueCoat",
+            "name": "Gentleman 5142",
+            "Beard": "Moustache",
+            "Shirt": "StripesRed",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/5142.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Glasses": "RetroBlack",
+            "Smoking": "BlackPipe",
+            "Texture": "ArtDecoCircle",
+            "Hats_Hair": "BigTopHatGreen",
+            "mediaType": "image/png",
+            "Background": "Purple"
+          },
+          "Gentleman 5163": {
+            "Head": "AfricanPurpleEyes",
+            "name": "Gentleman 5163",
+            "Beard": "AnchorWhiskers",
+            "Shirt": "StripesBlue",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/5163.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "AdaGold",
+            "Glasses": "Black",
+            "Smoking": "BlackPipe",
+            "Texture": "GreyBrickWall",
+            "Accessory": "TiePurple",
+            "Hats_Hair": "FeltRed",
+            "Waistcoat": "Black",
+            "mediaType": "image/png",
+            "Background": "RoyalGreen"
+          },
+          "Gentleman 5406": {
+            "Head": "African",
+            "Item": "ClosedPurpleUmbrella",
+            "name": "Gentleman 5406",
+            "Beard": "AnchorWhiskers",
+            "Shirt": "StripesRed",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/5406.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "High Roller",
+            "Glasses": "RetroBlack",
+            "Smoking": "CigaretteEar",
+            "Texture": "RedBrickWall",
+            "Hats_Hair": "BigTopHatBlack",
+            "mediaType": "image/png",
+            "Background": "WhiteGrunge"
+          },
+          "Gentleman 5440": {
+            "Head": "PaleGreenEyes",
+            "name": "Gentleman 5440",
+            "Shirt": "StripesRed",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/5440.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "TwoBlackHigh",
+            "Glasses": "RetroWhite",
+            "Smoking": "BlackPipe",
+            "Accessory": "StripeTieBlue",
+            "Hats_Hair": "FeltBlue",
+            "Waistcoat": "Black",
+            "mediaType": "image/png",
+            "Background": "BrownGrey"
+          },
+          "Gentleman 5502": {
+            "Head": "SunnyBrownEyes",
+            "name": "Gentleman 5502",
+            "Beard": "Moustache",
+            "Shirt": "StripesBlack",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/5502.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Millionaire",
+            "Glasses": "Future",
+            "Smoking": "Cigar",
+            "Texture": "ArtDecoGold",
+            "Accessory": "TieGreenDots",
+            "Hats_Hair": "FeltBlack",
+            "mediaType": "image/png",
+            "Background": "PastelOrange"
+          },
+          "Gentleman 6079": {
+            "Head": "SunnyRedEyes",
+            "name": "Gentleman 6079",
+            "Beard": "BigLargeMoustache",
+            "Shirt": "Woman",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/6079.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "AdaGold",
+            "Smoking": "BlackPipe",
+            "Texture": "GreyBrickWall",
+            "Accessory": "StripeTiePurple",
+            "Hats_Hair": "ShortBlond",
+            "Waistcoat": "Beige",
+            "mediaType": "image/png",
+            "Background": "DarkGrey"
+          },
+          "Gentleman 6207": {
+            "Head": "SunnyPurpleEyes",
+            "Item": "PinkJacket",
+            "name": "Gentleman 6207",
+            "Beard": "OrangeFade",
+            "Shirt": "Yellow",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/6207.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Millionaire",
+            "Glasses": "Gold3D",
+            "Smoking": "Cigarette",
+            "Accessory": "TieBlackDots",
+            "Hats_Hair": "BigTopHatBrown",
+            "Skinpaint": "DoubleStripe",
+            "Waistcoat": "Black",
+            "mediaType": "image/png",
+            "Background": "WhiteGrunge"
+          },
+          "Gentleman 6333": {
+            "Head": "BlackBrownEyes",
+            "Item": "GreenCoat",
+            "name": "Gentleman 6333",
+            "Shirt": "Yellow",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/6333.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "High Roller",
+            "Glasses": "BlueLaser",
+            "Smoking": "BronzePipe",
+            "Texture": "ArtDecoGold",
+            "Accessory": "TieBlack",
+            "Hats_Hair": "BigTopHatRed",
+            "Waistcoat": "Blue",
+            "mediaType": "image/png",
+            "Background": "Orange"
+          },
+          "Gentleman 6560": {
+            "Head": "SunnyBlueEyes",
+            "name": "Gentleman 6560",
+            "Beard": "Small",
+            "Shirt": "CheckeredBrown",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/6560.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "AdaBlue",
+            "Glasses": "Hipster",
+            "Texture": "ArtDecoCircle",
+            "Accessory": "TieBordeaux",
+            "Hats_Hair": "ShortBlack",
+            "Waistcoat": "Black",
+            "mediaType": "image/png",
+            "Background": "PastelOrange"
+          },
+          "Gentleman 7048": {
+            "Head": "AfricanBrownEyes",
+            "Item": "BlueUmbrella",
+            "name": "Gentleman 7048",
+            "Beard": "Chinstrap",
+            "Shirt": "StripesBlack",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/7048.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Millionaire",
+            "Earring": "AdaBlue",
+            "Glasses": "RetroBlack",
+            "Smoking": "BlackPipe",
+            "Texture": "ArtDecoCircle",
+            "Accessory": "TieGrey",
+            "Hats_Hair": "BigTopHatGreen",
+            "mediaType": "image/png",
+            "Background": "Ocher"
+          },
+          "Gentleman 7253": {
+            "Head": "Sunny",
+            "name": "Gentleman 7253",
+            "Beard": "BigMoustache",
+            "Shirt": "StripesWhite",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/7253.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "TripleBlack",
+            "Glasses": "RetroBlack",
+            "Hats_Hair": "FeltGreen",
+            "Waistcoat": "Pink",
+            "mediaType": "image/png",
+            "Background": "PastelOrange"
+          },
+          "Gentleman 7372": {
+            "Head": "Pale",
+            "Item": "GreenCoat",
+            "name": "Gentleman 7372",
+            "Beard": "OrangeFade",
+            "Shirt": "StripesRed",
+            "image": [
+              "ipfs://bafybeicknfoxwdsomuo65zlx75xe557ddcfqv5xn2sw5xpuiq6dritct",
+              "vu/7372.png"
+            ],
+            "Canvas": "BlackWood",
+            "Wealth": "Entrepeneur",
+            "Earring": "Ada",
+            "Smoking": "BronzePipe",
+            "Accessory": "TieGrey",
+            "Hats_Hair": "TopHatGreen",
+            "Waistcoat": "Purple",
+            "mediaType": "image/png",
+            "Background": "WhiteGrunge"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

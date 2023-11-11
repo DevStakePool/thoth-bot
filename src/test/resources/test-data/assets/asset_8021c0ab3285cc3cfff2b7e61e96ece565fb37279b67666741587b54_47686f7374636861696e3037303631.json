@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3037303631",
+    "asset_name_ascii": "Ghostchain07061",
+    "fingerprint": "asset1kd0evaqsfzu76puyexmjf2wk6p55xwvulk082c",
+    "minting_tx_hash": "39cc6c7835c8476067685693a912d1953edef3af920c08bdb9d85163b4b0e736",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635724800,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain07061": {
+            "dna": "10210003",
+            "body": "University Gown",
+            "eyes": "Domino Mask",
+            "name": "Ghostchain07061",
+            "files": [
+              {
+                "src": "ipfs://QmY6LgpzyLTNWQ6wpkpH2vtyypHchbCbDhJCLFwSkCSzUA",
+                "name": "Ghostchain07061",
+                "https": "https://api.nftghostchain.com/original?mint=7061",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Bluey",
+            "image": "ipfs://QmY6LgpzyLTNWQ6wpkpH2vtyypHchbCbDhJCLFwSkCSzUA",
+            "mouth": "Rick Dribble",
+            "rarity": "Rare",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

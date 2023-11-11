@@ -10,6 +10,74 @@
     "burn_cnt": 0,
     "creation_time": 1679443200,
     "minting_tx_metadata": null,
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": {
+      "222": {
+        "fields": [
+          {
+            "map": [
+              {
+                "k": {
+                  "bytes": "6e616d65"
+                },
+                "v": {
+                  "bytes": "5370616365427564202333363136"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "747261697473"
+                },
+                "v": {
+                  "list": [
+                    {
+                      "bytes": "4368657374706c617465"
+                    },
+                    {
+                      "bytes": "42656c74"
+                    },
+                    {
+                      "bytes": "5761746368"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": {
+                  "bytes": "74797065"
+                },
+                "v": {
+                  "bytes": "4c696f6e"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "696d616765"
+                },
+                "v": {
+                  "bytes": "697066733a2f2f6261666b726569666c377476707673376b6234696c7861363570633666793275787863336f656d71676537757776616d6e366f7761706766673279"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "736861323536"
+                },
+                "v": {
+                  "bytes": "abfceafacbea0f10bb83dd78bc5c6a97b8b6e2320627e96a818df3ac0798a6d6"
+                }
+              }
+            ]
+          },
+          {
+            "int": 1
+          },
+          {
+            "fields": [],
+            "constructor": 0
+          }
+        ],
+        "constructor": 0
+      }
+    }
   }
 ]

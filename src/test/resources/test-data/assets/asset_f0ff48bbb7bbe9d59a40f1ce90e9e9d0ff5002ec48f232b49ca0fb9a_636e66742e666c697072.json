@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "636e66742e666c697072",
+    "asset_name_ascii": "cnft.flipr",
+    "fingerprint": "asset1qpn6xfgheufytfp53synskp3twxnmqjcqer6ex",
+    "minting_tx_hash": "ef3d837ca308ea5ea646cba087948b1c789a82b82badca7ce5e21c0bd3d3bd4a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673568000,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "cnft.flipr": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$cnft.flipr",
+            "image": "ipfs://QmSFp3WpWCLoJwSYFbMiuHSR7EX2MYvQ997fGDsPtZtyhw",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "cnft.wallet5": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$cnft.wallet5",
+            "image": "ipfs://QmZjHY6eK95t3Zd2XsjxCTe4FemndMwdaJE1MWuMTRhsRp",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

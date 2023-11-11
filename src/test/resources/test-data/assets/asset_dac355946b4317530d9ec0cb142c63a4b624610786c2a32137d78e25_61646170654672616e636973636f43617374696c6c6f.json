@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654672616e636973636f43617374696c6c6f",
+    "asset_name_ascii": "adapeFranciscoCastillo",
+    "fingerprint": "asset1azn9d26wj3zedxu6wec8j6neusncs323pmeejk",
+    "minting_tx_hash": "be633f93f8909535d60342efc2f062194d47cd89cd856a22934418bb7b68756c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeFranciscoCastillo": {
+            "Hat": "Wool Cap",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Francisco Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmV91o1aXgE3QLRxtjbowBCfoddf7LjpmafeZNMP6cvRrc",
+                "name": "Francisco Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmV91o1aXgE3QLRxtjbowBCfoddf7LjpmafeZNMP6cvRrc",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

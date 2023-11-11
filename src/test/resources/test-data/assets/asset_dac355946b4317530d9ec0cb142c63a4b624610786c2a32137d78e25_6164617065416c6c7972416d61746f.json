@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416c6c7972416d61746f",
+    "asset_name_ascii": "adapeAllyrAmato",
+    "fingerprint": "asset1w4qzujq6287x5kj2rpttgqmanhsupv6ky2sx4q",
+    "minting_tx_hash": "a8a192e03cc61bb4bd63a1dedee2a6963bb564eaf22e030799dee6a50a18e1e7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBurtWhite": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Burt White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmXZeoiDWwksGijDDF2imuv89nE721VsoXx1iCCKsKRhnD",
+                "name": "Burt White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXZeoiDWwksGijDDF2imuv89nE721VsoXx1iCCKsKRhnD",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the White family"
+          },
+          "adapeAllyrAmato": {
+            "Hat": "Voltaire Wig",
+            "Body": "Chainmail",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Allyr Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmYV2EDx3Tnr84m7nweSGYtN1imbb1qAHJCX4V8fJHPVo7",
+                "name": "Allyr Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYV2EDx3Tnr84m7nweSGYtN1imbb1qAHJCX4V8fJHPVo7",
+            "Family": "Amato",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Amato family"
+          },
+          "adapeSnowdenKing": {
+            "Hat": "Spinner Hat",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Snowden King",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmV76WyMb42w7dfjNuWKgoa2LmhFknXkPJe1APHmvee7SB",
+                "name": "Snowden King",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmV76WyMb42w7dfjNuWKgoa2LmhFknXkPJe1APHmvee7SB",
+            "Family": "King",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the King family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

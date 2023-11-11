@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736863664e7333",
+    "asset_name_ascii": "furnishcfNs3",
+    "fingerprint": "asset1vnmf74eg9m8twy82m8txkxu9w59hlpfyzrz44j",
+    "minting_tx_hash": "6d5e5888623a5049b598e3caa6458752e845a1f20348cc08a975b51f36aa1e5c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672704000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishcfNs3": {
+            "id": "cfNs3",
+            "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "name": "Cushioned Armchair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+                "name": "Cushioned Armchair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQfxQsmMez3vgCjAsKVaVKnwRishsqpCtvixnyBMZbeY9",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVthsuyoH91GwKwkqFeT3kaZNedhhEn69Mq5VhF5nmCke",
+                "name": "Cushioned Armchair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWVyGb7ojHTCwBXfyYo5vyQskzKDuay8Sp9qRhuViCmzm",
+            "description": "Hand-crafted by Burgess Edwards.",
+            "furnitureId": 207
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

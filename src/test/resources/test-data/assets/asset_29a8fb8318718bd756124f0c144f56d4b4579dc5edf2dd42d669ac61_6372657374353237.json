@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6372657374353237",
+    "asset_name_ascii": "crest527",
+    "fingerprint": "asset1hkmyw645taqgmrpfwm3l0fu586ln7skp8gyqa2",
+    "minting_tx_hash": "d287af606ad069155a05e1740dcdf185841a3dd44f1eaa843312226bc8a2c583",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677542400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest527": {
+            "id": 527,
+            "src": "ipfs://QmQ7BjNW4Db88q7ut8jzDJgnV1F2nvFMc5qqbdwBT6uiwx",
+            "name": "Wright Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmQ7BjNW4Db88q7ut8jzDJgnV1F2nvFMc5qqbdwBT6uiwx",
+                "name": "Wright Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbqhpFvbf6EY1NTrtXTzjjE1gXoF6m68BE6ih1c1Narqj",
+                "name": "Wright Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://Qmbmd7paGZuSiQ8kmRktKJCvjZYnge9dvxWg8HHv34xof3",
+                "name": "Wright Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQ7BjNW4Db88q7ut8jzDJgnV1F2nvFMc5qqbdwBT6uiwx",
+            "description": "Celebrating the heritage of the Wright family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

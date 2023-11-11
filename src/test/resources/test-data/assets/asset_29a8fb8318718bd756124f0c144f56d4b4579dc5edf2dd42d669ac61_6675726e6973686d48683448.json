@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686d48683448",
+    "asset_name_ascii": "furnishmHh4H",
+    "fingerprint": "asset1n0n9emkrq70qp65sk0p3k23h6ctja9x5edzt0m",
+    "minting_tx_hash": "b1ac402f3ced3b4a7a31cfc4d2aa45dd32eda65c55f202d52ff4afebe39fa763",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677715200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishmHh4H": {
+            "id": "mHh4H",
+            "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "name": "Tea Set",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+                "name": "Tea Set",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmNexnniSAFkn6L1KctWSK6HgKnW9oDVU1LQkHNcgxSHdt",
+                "name": "Tea Set",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmdECAUJnHgn78NSf9rzWQcu3MdFZUEYduYv9ZNcmu74r6",
+                "name": "Tea Set",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYM314fVkBuZFB5GzEu4w1Lz66V6F1rdVrESDnJYtkwzS",
+            "description": "Hand-crafted by Ford Walker.",
+            "furnitureId": 220
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

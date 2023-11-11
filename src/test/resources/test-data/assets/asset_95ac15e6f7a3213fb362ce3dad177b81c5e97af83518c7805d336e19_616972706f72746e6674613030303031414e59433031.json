@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "95ac15e6f7a3213fb362ce3dad177b81c5e97af83518c7805d336e19",
+    "asset_name": "616972706f72746e6674613030303031414e59433031",
+    "asset_name_ascii": "airportnfta00001ANYC01",
+    "fingerprint": "asset1hz77phelk7eeryv8verwqaka7hh70unvp889tn",
+    "minting_tx_hash": "0b4a1ba34a6880e217181252a1d92198a88150995ed910db775294abeacf407f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 2,
+    "creation_time": 1636588800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "95ac15e6f7a3213fb362ce3dad177b81c5e97af83518c7805d336e19": {
+          "airportnfta00001ANYC01": {
+            "IATA": "JFK",
+            "city": "New York",
+            "name": "00001-A-NYC-01",
+            "files": [
+              {
+                "src": "ipfs://QmTXCB5RB6cDmgqqAtUcsYmehzEE4GMHqMge6abjq8MwYP",
+                "name": "00001-A-NYC-01",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTXCB5RB6cDmgqqAtUcsYmehzEE4GMHqMge6abjq8MwYP",
+            "style": "airport tag",
+            "author": "@airportnft",
+            "country": "United States",
+            "website": "https://airportnft.io/",
+            "continent": "North America",
+            "copyright": "Copyright AirportNFT 2021; all rights reserved.",
+            "mediaType": "image/jpeg",
+            "description": "A collection of airport tag NFT’s from around the world",
+            "airport name": "JOHN F. KENNEDY INTERNATIONAL AIRPORT"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

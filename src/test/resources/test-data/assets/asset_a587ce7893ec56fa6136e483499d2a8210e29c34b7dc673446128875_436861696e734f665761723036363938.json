@@ -1,0 +1,711 @@
+[
+  {
+    "policy_id": "a587ce7893ec56fa6136e483499d2a8210e29c34b7dc673446128875",
+    "asset_name": "436861696e734f665761723036363938",
+    "asset_name_ascii": "ChainsOfWar06698",
+    "fingerprint": "asset1us5agk56q5e4nxv6m9pgrghv0jn7e66af4km00",
+    "minting_tx_hash": "f5069ae4ca306ba9ee85955914a4ac8fdad19d97883fb4449c021c93b8601260",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651190400,
+    "minting_tx_metadata": {
+      "721": {
+        "a587ce7893ec56fa6136e483499d2a8210e29c34b7dc673446128875": {
+          "ChainsOfWar00301": {
+            "name": "Guriel the Paradin of Calatria",
+            "Stats": {
+              "Faith": "28",
+              "Speed": "32",
+              "Stamina": "29",
+              "Strength": "13"
+            },
+            "image": "ipfs://QmYwDpsfJpNVngdpuEod1ayzBqpV98tY9FGnxtZoZZfYCt",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Sovereign Mentalist",
+              "Eyes": "Yellow",
+              "Glow": "None",
+              "Hair": "Lime Mohican",
+              "Chest": "Golden Calatrian Armor Paradin Scarf",
+              "Class": "Cleric",
+              "Origin": "Calatria",
+              "Species": "Elvae",
+              "Weapons": "None",
+              "Trinkets": "Obsidian Oxygen Mask",
+              "Background": "Evergreen"
+            }
+          },
+          "ChainsOfWar00448": {
+            "name": "Faladrum the Paradin of Calatria",
+            "Stats": {
+              "Faith": "38",
+              "Speed": "25",
+              "Stamina": "22",
+              "Strength": "22"
+            },
+            "image": "ipfs://QmXvgM2ic1M2CWX8xvSJLKBmfFK8kzomBrHSrwrnRf1dJc",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Swift Explorer",
+              "Eyes": "Sapphire",
+              "Glow": "Spirit",
+              "Hair": "Lime Shaved Side",
+              "Chest": "Nightfall Guard Paradin Scarf",
+              "Class": "Cleric",
+              "Origin": "Calatria",
+              "Species": "Elvae",
+              "Weapons": "Dual Solarflame",
+              "Trinkets": "None",
+              "Background": "Plasma"
+            }
+          },
+          "ChainsOfWar00831": {
+            "name": "Cadria the Elvaedri of Calatria",
+            "Stats": {
+              "Faith": "10",
+              "Speed": "28",
+              "Stamina": "26",
+              "Strength": "29"
+            },
+            "image": "ipfs://QmdwQejSCapMvsWxoXrxcvkhSybvanfwK6es41G1jqVdq2",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Determined Raindancer",
+              "Eyes": "Vertical Pupils Yellow",
+              "Glow": "None",
+              "Hair": "Starlight Longhair",
+              "Chest": "Hydra's Armor White Palishar",
+              "Class": "Warrior",
+              "Origin": "Calatria",
+              "Species": "Elvae",
+              "Weapons": "Splinter",
+              "Trinkets": "None",
+              "Background": "Evergreen"
+            }
+          },
+          "ChainsOfWar00893": {
+            "name": "Loghobrae the Elderling of Yubin",
+            "Stats": {
+              "Faith": "30",
+              "Speed": "26",
+              "Stamina": "14",
+              "Strength": "14"
+            },
+            "image": "ipfs://QmWBvScx9vnTMMAewSCVAEu3SnMrkmoCyPzyc9zDiss8UB",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Sovereign Decipherer",
+              "Eyes": "Emerald",
+              "Glow": "None",
+              "Hair": "Ocean Mohican",
+              "Chest": "Nightfall Guard Paradin Scarf",
+              "Class": "Spellcaster",
+              "Origin": "Yubin",
+              "Species": "Elvae",
+              "Weapons": "None",
+              "Trinkets": "Golden Oxygen Mask",
+              "Background": "Crystal"
+            }
+          },
+          "ChainsOfWar01382": {
+            "name": "Paridhis the Paradin of Yubin",
+            "Stats": {
+              "Faith": "28",
+              "Speed": "28",
+              "Stamina": "32",
+              "Strength": "23"
+            },
+            "image": "ipfs://QmRchy3WPc28gUZTmTRGiEaqsJdDv4FNq7U2B1URtBEjLf",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Piercing Decipherer",
+              "Eyes": "Sapphire",
+              "Glow": "None",
+              "Hair": "Sky Shaved Side Biospectacle",
+              "Chest": "Elvaedra's Armor",
+              "Class": "Cleric",
+              "Origin": "Yubin",
+              "Species": "Elvae",
+              "Weapons": "Splinter",
+              "Trinkets": "Cherry Blossom",
+              "Background": "Aurora"
+            }
+          },
+          "ChainsOfWar01636": {
+            "name": "Hamindra the Paradin of Yubin",
+            "Stats": {
+              "Faith": "28",
+              "Speed": "28",
+              "Stamina": "19",
+              "Strength": "16"
+            },
+            "image": "ipfs://QmPJK7TK2dKiXZ9aFZCWzgVYSt66HcrCDhJRMzCK2mYfhi",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Enlightened Oracle",
+              "Eyes": "Fury",
+              "Glow": "None",
+              "Hair": "Elvae Wedge",
+              "Chest": "Silaris Pauldrons",
+              "Class": "Cleric",
+              "Origin": "Yubin",
+              "Species": "Elvae",
+              "Weapons": "None",
+              "Trinkets": "Guardian's Mask",
+              "Background": "Magenta"
+            }
+          },
+          "ChainsOfWar01643": {
+            "name": "Milaver the Paradin of Yubin",
+            "Stats": {
+              "Faith": "30",
+              "Speed": "39",
+              "Stamina": "23",
+              "Strength": "12"
+            },
+            "image": "ipfs://QmV1M2jUjjMA79oTMbD9rdCKgiejS1hzcN23B1MXP84aXb",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Plantologist",
+              "Eyes": "Sapphire",
+              "Glow": "None",
+              "Hair": "Red Wedge",
+              "Chest": "Pineguard Armor",
+              "Class": "Cleric",
+              "Origin": "Yubin",
+              "Species": "Elvae",
+              "Weapons": "Dual Zaloris",
+              "Trinkets": "Dark Mask",
+              "Background": "Crystal"
+            }
+          },
+          "ChainsOfWar01924": {
+            "name": "Jumiron the Botanist of Calatria",
+            "Stats": {
+              "Faith": "12",
+              "Speed": "20",
+              "Stamina": "25",
+              "Strength": "31"
+            },
+            "image": "ipfs://QmSobxWqFTVF6FhWvHpU98co7M9sZwWh6tBE9QYAvndBss",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Stealthy Raider",
+              "Eyes": "Neon",
+              "Glow": "None",
+              "Hair": "Sandy Mohican",
+              "Chest": "Complete Taranian Outfit",
+              "Class": "Craftsman",
+              "Origin": "Calatria",
+              "Species": "Elvae",
+              "Weapons": "Dual Solarflame",
+              "Trinkets": "Crimson Miramask",
+              "Background": "Crystal"
+            }
+          },
+          "ChainsOfWar02050": {
+            "name": "Zalaris the Botanist of Calatria",
+            "Stats": {
+              "Faith": "10",
+              "Speed": "15",
+              "Stamina": "36",
+              "Strength": "38"
+            },
+            "image": "ipfs://QmT2wnGhTEUqDNL8QbXyge88mH37FspmzFeuCRHdLktozf",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Tenacious Cultivator",
+              "Eyes": "Yellow",
+              "Glow": "Spectre",
+              "Hair": "Sandy Mohican",
+              "Chest": "Silver Calatrian Armor",
+              "Class": "Craftsman",
+              "Origin": "Calatria",
+              "Species": "Elvae",
+              "Weapons": "Blade of Artialis",
+              "Trinkets": "None",
+              "Background": "Haze"
+            }
+          },
+          "ChainsOfWar02312": {
+            "name": "Gari the Marauder of Clay",
+            "Stats": {
+              "Faith": "10",
+              "Speed": "23",
+              "Stamina": "28",
+              "Strength": "26"
+            },
+            "image": "ipfs://QmbSzjhmKQyCfNLCKTo3cyxyCwCJBGS7LsSPFE36vnyFtu",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Blind Fighter",
+              "Eyes": "Sapphire",
+              "Glow": "None",
+              "Head": "Auburn Mohawk Funky Bandana",
+              "Beard": "None",
+              "Chest": "Leather Spaulders",
+              "Class": "Warrior",
+              "Teeth": "Large Fangs",
+              "Origin": "Urthnak",
+              "Species": "Urthnaki",
+              "Weapons": "Battle Stick",
+              "Trinkets": "Golar's Necklace Bone Ring",
+              "Background": "Aurora"
+            }
+          },
+          "ChainsOfWar02457": {
+            "name": "Arri the Stormbringer of Salt",
+            "Stats": {
+              "Faith": "23",
+              "Speed": "27",
+              "Stamina": "32",
+              "Strength": "31"
+            },
+            "image": "ipfs://QmawedSDsT568p9BCsSjnDpHTmYvtuiTDzeWStsQ3yVy6Q",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Raging Warlord",
+              "Eyes": "Ruby",
+              "Glow": "Toxic",
+              "Head": "Horns of Gold",
+              "Beard": "None",
+              "Chest": "Orphan's Rage",
+              "Class": "Warrior",
+              "Teeth": "Grinded Fangs",
+              "Origin": "Daradîn",
+              "Species": "Urthnaki",
+              "Weapons": "Shadowblade Silvershield",
+              "Trinkets": "Urthnaki Amulet",
+              "Background": "Cyclone"
+            }
+          },
+          "ChainsOfWar03104": {
+            "name": "Berta the Marauder of Clay",
+            "Stats": {
+              "Faith": "20",
+              "Speed": "22",
+              "Stamina": "28",
+              "Strength": "27"
+            },
+            "image": "ipfs://Qmdd5R1xAb3ZUPTUFuHqsTt5Q8VU4nKrTcjLz2auhES1F4",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Dashing Virtuoso",
+              "Eyes": "Sapphire",
+              "Glow": "None",
+              "Head": "Purple Hairdo",
+              "Beard": "None",
+              "Chest": "Bloody Clay Spauders",
+              "Class": "Warrior",
+              "Teeth": "Large Fangs",
+              "Origin": "Urthnak",
+              "Species": "Urthnaki",
+              "Weapons": "Battle Stick",
+              "Trinkets": "Golar's Necklace Nose Ring",
+              "Background": "Cyclone"
+            }
+          },
+          "ChainsOfWar03348": {
+            "name": "Rara the Hordesman of Salt",
+            "Stats": {
+              "Faith": "10",
+              "Speed": "20",
+              "Stamina": "27",
+              "Strength": "33"
+            },
+            "image": "ipfs://QmUs4TYhET4tXM9rqLsZnGVUjqjUBgPnV761w7Xj1Y7fWb",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Tainted Panzer",
+              "Eyes": "Hazel",
+              "Glow": "None",
+              "Head": "Soulshard White Mohawk",
+              "Beard": "Full Black",
+              "Chest": "Golden Chestplate",
+              "Class": "Warrior",
+              "Teeth": "Golden Fangs",
+              "Origin": "Daradîn",
+              "Species": "Urthnaki",
+              "Weapons": "Karikai",
+              "Trinkets": "Golden Dawn, Urthnaki Silver Earring",
+              "Background": "Abyss"
+            }
+          },
+          "ChainsOfWar04767": {
+            "name": "Craski the Hordesman of Clay",
+            "Stats": {
+              "Faith": "10",
+              "Speed": "20",
+              "Stamina": "38",
+              "Strength": "35"
+            },
+            "image": "ipfs://QmXuvSNGdgLzYHDrSWQQTvFwAax4jtoZhCrdzfiBgUp78b",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Roaring Punisher",
+              "Eyes": "Emerald",
+              "Glow": "None",
+              "Head": "Golden Helmet",
+              "Beard": "Full Light",
+              "Chest": "Titanium Spaulders",
+              "Class": "Warrior",
+              "Teeth": "Grinded Right Fang",
+              "Origin": "Urthnak",
+              "Species": "Urthnaki",
+              "Weapons": "None",
+              "Trinkets": "None",
+              "Background": "Haze"
+            }
+          },
+          "ChainsOfWar05054": {
+            "name": "Hoik the Hordesman of Clay",
+            "Stats": {
+              "Faith": "10",
+              "Speed": "22",
+              "Stamina": "31",
+              "Strength": "31"
+            },
+            "image": "ipfs://QmRUWWvG4D5t86LYMw2NvXe5vLvVYWKKig6iBQ3Lnavato",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Fearless Charger",
+              "Eyes": "Hazel",
+              "Glow": "None",
+              "Head": "None",
+              "Beard": "Light",
+              "Chest": "Golar's Spaulders",
+              "Class": "Warrior",
+              "Teeth": "Grinded Left Fang",
+              "Origin": "Urthnak",
+              "Species": "Urthnaki",
+              "Weapons": "Dual Molghir Dagger",
+              "Trinkets": "Karakian Chain, Silver Urthnaki Lipring",
+              "Background": "Cyclone"
+            }
+          },
+          "ChainsOfWar05815": {
+            "name": "Mizha the Hadakian Spectre of Hotis",
+            "Stats": {
+              "Faith": "18",
+              "Speed": "30",
+              "Stamina": "25",
+              "Strength": "20"
+            },
+            "image": "ipfs://Qmbb1arjzJPY6b8XXJFPcVVT3mPENeHMj6nekYRLQu9rFE",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Marodin Suit-Armor",
+              "Face": "Tirrosian Sensomask",
+              "Glow": "None",
+              "Head": "None",
+              "Chest": "None",
+              "Class": "Ranger",
+              "Origin": "Hotis",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "None",
+              "Background": "Crystal"
+            }
+          },
+          "ChainsOfWar06106": {
+            "name": "Losima the Talarim of Hotis",
+            "Stats": {
+              "Faith": "14",
+              "Speed": "20",
+              "Stamina": "38",
+              "Strength": "35"
+            },
+            "image": "ipfs://QmVwqruakCEwKMufd8iTiEb2zrwooHcH957hYjdKLaonwp",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Miritha Suit-Armor",
+              "Face": "Hadakian Face VII",
+              "Glow": "None",
+              "Head": "Blood Moon Circlet",
+              "Chest": "None",
+              "Class": "Craftsman",
+              "Origin": "Hotis",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "None",
+              "Background": "Crystal"
+            }
+          },
+          "ChainsOfWar06436": {
+            "name": "Komiyah the Deepminer of Hotis",
+            "Stats": {
+              "Faith": "11",
+              "Speed": "17",
+              "Stamina": "20",
+              "Strength": "22"
+            },
+            "image": "ipfs://QmcS6CPEe3H5qMP1EKhedM4mmdH1rHQsWS1Rhjdnr2nq3m",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Fury of Fualim",
+              "Face": "Mystic Visor",
+              "Glow": "None",
+              "Head": "Golden Circlet",
+              "Chest": "Complete Tirrosian Glass Spaulders",
+              "Class": "Harvester",
+              "Origin": "Hotis",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "None",
+              "Background": "Omega"
+            }
+          },
+          "ChainsOfWar06555": {
+            "name": "Juriyam the Deepminer of Hotis",
+            "Stats": {
+              "Faith": "12",
+              "Speed": "19",
+              "Stamina": "39",
+              "Strength": "23"
+            },
+            "image": "ipfs://QmTocSWpXaRRxnj4VY3b1t4FLTvpPoooyryeW7gSFMmwJ4",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Hadakian Shellsuit",
+              "Face": "Silver Hadakian Visor",
+              "Glow": "None",
+              "Head": "None",
+              "Chest": "None",
+              "Class": "Harvester",
+              "Origin": "Hotis",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "None",
+              "Background": "Cyclone"
+            }
+          },
+          "ChainsOfWar06698": {
+            "name": "Jomeria the Hadakian Spectre of Hotis",
+            "Stats": {
+              "Faith": "21",
+              "Speed": "31",
+              "Stamina": "28",
+              "Strength": "25"
+            },
+            "image": "ipfs://Qmeb8s2uZxrNiaC5f5bzpntMge9MTavWX19pLCLQJsDwK8",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Hotisian Shellsuit",
+              "Face": "Silicon Cover",
+              "Glow": "None",
+              "Head": "None",
+              "Chest": "None",
+              "Class": "Ranger",
+              "Origin": "Hotis",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "None",
+              "Background": "Magenta"
+            }
+          },
+          "ChainsOfWar07399": {
+            "name": "Inalia the Protector of Atronis",
+            "Stats": {
+              "Faith": "32",
+              "Speed": "33",
+              "Stamina": "33",
+              "Strength": "30"
+            },
+            "image": "ipfs://QmcqjH6m37KsFnhP2CtogzGeQXbGAzuSCbsx9VQ1PMbzCX",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Supreme Proprietrix",
+              "Eyes": "Hazel",
+              "Glow": "None",
+              "Hair": "Aubergine Karen Curly",
+              "Chest": "Arachne Pauldrons Duxa Chain",
+              "Class": "Ranger",
+              "Origin": "Atronis",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "Dark Mask",
+              "Background": "Plasma"
+            }
+          },
+          "ChainsOfWar07583": {
+            "name": "Trania the Sentinel of Corintes",
+            "Stats": {
+              "Faith": "20",
+              "Speed": "33",
+              "Stamina": "37",
+              "Strength": "31"
+            },
+            "image": "ipfs://QmZEaFYwszyXyPx4Kdo5GUxSVWXSXE5KWzapXLH7xpTY27",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Gracious Galorette",
+              "Eyes": "Hazel",
+              "Glow": "Enigma",
+              "Hair": "Aubergine Buzz",
+              "Chest": "Azure Atronian Bodysuit",
+              "Class": "Ranger",
+              "Origin": "Corintes",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "Hotisian Nosering Piercings",
+              "Background": "Terra"
+            }
+          },
+          "ChainsOfWar08527": {
+            "name": "Morelei the Imperial Councillor of Valis",
+            "Stats": {
+              "Faith": "26",
+              "Speed": "28",
+              "Stamina": "24",
+              "Strength": "19"
+            },
+            "image": "ipfs://QmUWFMURUuA1pAzNBHPqB8Nf4cyJEjvjqJLsK7aFh7L6e1",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Supreme Illusionista",
+              "Eyes": "Sapphire",
+              "Glow": "None",
+              "Hair": "Candy Karen Curly",
+              "Chest": "Arachne Pauldrons Duxa Chain",
+              "Class": "Cleric",
+              "Origin": "Valis",
+              "Species": "Human",
+              "Weapons": "Silent Rave Gun",
+              "Trinkets": "None",
+              "Background": "Plasma"
+            }
+          },
+          "ChainsOfWar09596": {
+            "name": "Baris the Sentinel of Atronis",
+            "Stats": {
+              "Faith": "29",
+              "Speed": "34",
+              "Stamina": "26",
+              "Strength": "23"
+            },
+            "image": "ipfs://QmUz8sxTWHrrcMZAp6ekFKLHR7KZ2ndzdoWokYYqmYzsXA",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Unyielding Protector",
+              "Eyes": "Hazel",
+              "Glow": "None",
+              "Head": "Funky Duxa Coupe",
+              "Beard": "Van Dyke",
+              "Chest": "Blood-Spattered Silver Chestplate",
+              "Class": "Ranger",
+              "Origin": "Atronis",
+              "Species": "Human",
+              "Weapons": "None",
+              "Trinkets": "Crimson Oxygen Mask",
+              "Background": "Omega"
+            }
+          },
+          "ChainsOfWar09788": {
+            "name": "Woren the Magistratus of Atronis",
+            "Stats": {
+              "Faith": "34",
+              "Speed": "30",
+              "Stamina": "12",
+              "Strength": "13"
+            },
+            "image": "ipfs://QmaEvgS4B9Hp2b24y1psvqDgffpYs7Szzb5HtL7f38SPtU",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Male",
+              "Body": "Brawny Protector",
+              "Eyes": "Emerald",
+              "Glow": "Sparkle",
+              "Head": "Blonde Buzz",
+              "Beard": "Silver Goatee",
+              "Chest": "Calinthian Battleplate",
+              "Class": "Spellcaster",
+              "Origin": "Atronis",
+              "Species": "Human",
+              "Weapons": "Dual Bloody Silver Axe",
+              "Trinkets": "Amber Miramask",
+              "Background": "Gravity"
+            }
+          },
+          "ChainsOfWar09913": {
+            "name": "Shaia the Mekanic of Atronis",
+            "Stats": {
+              "Faith": "10",
+              "Speed": "17",
+              "Stamina": "27",
+              "Strength": "22"
+            },
+            "image": "ipfs://QmNp3q4KY3CTvg9EyePc1eFyL88ZCdSrg5qfHMuE341LTQ",
+            "Twitter": "https://twitter.com/ChainsofWarNFT",
+            "Website": "https://chainsofwar.io/",
+            "Attributes": {
+              "Sex": "Female",
+              "Body": "Hardened Combatress",
+              "Eyes": "Hazel",
+              "Glow": "Waterfall",
+              "Hair": "Blonde Wave",
+              "Chest": "Atronian Bodysuit",
+              "Class": "Craftsman",
+              "Origin": "Atronis",
+              "Species": "Human",
+              "Weapons": "Lightbeamer",
+              "Trinkets": "None",
+              "Background": "Plasma"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -4,23 +4,32 @@
     "asset_name": "6d61676e6574726f6e",
     "asset_name_ascii": "magnetron",
     "fingerprint": "asset100r6h6lsm25t6xqn3p07v0qcntxhhf9hqq9m2f",
-    "minting_tx_hash": "b7ab9d6c2be50611a8d6d1559bd44259a6c85355171d9ae6e33f6b78255d46cf",
+    "minting_tx_hash": "1c3d62e84d6dde8b32135b83c114552c761c71c719d890f15b963a42786250b1",
     "total_supply": "1000000000",
     "mint_cnt": 3,
     "burn_cnt": 2,
-    "creation_time": 1643723739,
+    "creation_time": 1643673600,
     "minting_tx_metadata": {
       "721": {
+        "version": "1.0",
         "abf8d19125e1f694842ae360692fa79cd9e6a6f8361d6ec4dc2c65e4": {
-          "MGTRN": {
+          "magnetron": {
             "name": "Magnetron",
-            "image": "ipfs://QmPCwWCArrU7ThTADUwcqZmEwG2ckAZq7hWgfGEya4am8L",
-            "mediaType": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmPCwWCArrU7ThTADUwcqZmEwG2ckAZq7hWgfGEya4am8L",
+                "name": "Magnetron",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmNsWbGPwaTzM1VRX3CAt36Yy2PLsVdfbPqL96nrh6d4HG",
+            "mediaType": "image/png",
             "description": "magnetron diode vacuum tube"
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

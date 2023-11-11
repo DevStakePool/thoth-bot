@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "27eee19588c997ca54d3137f64afe55a18dfcf9062fa83a724bf2357",
+    "asset_name": "5052455353555245",
+    "asset_name_ascii": "PRESSURE",
+    "fingerprint": "asset1trh23xpc5ee0wut4a40vskc0xqeqht6304gqar",
+    "minting_tx_hash": "881e6965eb71d88bd73f5e4d1c0e90ada6a59c1168d88a102601241ed3f8bce2",
+    "total_supply": "406",
+    "mint_cnt": 2266,
+    "burn_cnt": 1646,
+    "creation_time": 1665532800,
+    "minting_tx_metadata": {
+      "721": {
+        "27eee19588c997ca54d3137f64afe55a18dfcf9062fa83a724bf2357": {
+          "PRESSURE": {
+            "name": "Pressure",
+            "files": [
+              {
+                "src": "ipfs://QmXj5Qh4f2iggcYhU3zxS6zcBjgHBaikTNpiFj23kRGm2W",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXj5Qh4f2iggcYhU3zxS6zcBjgHBaikTNpiFj23kRGm2W",
+            "ticker": "PRESSURE",
+            "website": "https://cardanolands.com/",
+            "attributes": {
+              "recipe": [
+                "EARTH",
+                "EARTH",
+                "EARTH",
+                "EARTH"
+              ],
+              "inventor": "stake1u975vvaxys24xtxfrvw6nln9m0ta6qmw4h2znrztky8k6zcv9ww2d"
+            },
+            "description": "Craftable Element of CardanoLands Universe"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+    "asset_name": "636162696e3131344564697468526f6164535031314f3336",
+    "asset_name_ascii": "cabin114EdithRoadSP11O36",
+    "fingerprint": "asset1kzl3sv0sqheeek64v4l68jmqe8vmz2uu2mjraq",
+    "minting_tx_hash": "4c75c37b2cde516cbc5d403c149b029c23a24b110fd94bdb2f68e0737003c74e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09": {
+          "cabin114EdithRoadSP11O36": {
+            "name": "114 Edith Road, SP11 O36",
+            "rate": "0.07",
+            "files": [
+              {
+                "src": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+                "name": "Chateau.gif",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbyKxhiGA2TMyJYr6wgP3sHSNavpf35mZrCya2RvgaP5P",
+                "name": "Chateau.mp4",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmVLkR52JwV3YVyZr2KJtYhmpPp1vfEkdPPqzPJE1MmSjm",
+                "name": "Chateau.png",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSgQ3Fu7ZNEqFsEu3HfEvh65gnuYTBM5UtYcARRuSpnHE",
+            "Street": "Edith Road",
+            "District": "Speoppa",
+            "mediaType": "image/gif",
+            "Cabin Size": "Chateau",
+            "SLVD Rating": "O",
+            "description": "A Chateau in The Ape Society",
+            "X Coordinate": "11",
+            "Y Coordinate": "36"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

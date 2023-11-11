@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065456c696163696e436174616c6469",
+    "asset_name_ascii": "adapeEliacinCataldi",
+    "fingerprint": "asset14dw767ks30xzjtn8xxjf49hxghw7pxczf6wk98",
+    "minting_tx_hash": "b5d07b0c61a2813a3f905ea0443018eb8c3e77941846a0493abc1c2e36219219",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEliacinCataldi": {
+            "Hat": "Spinner Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Eliacin Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmR28QypeoUnrF7icg28aPiwby2Z7kpcscRn5omhyfVUB5",
+                "name": "Eliacin Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmR28QypeoUnrF7icg28aPiwby2Z7kpcscRn5omhyfVUB5",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

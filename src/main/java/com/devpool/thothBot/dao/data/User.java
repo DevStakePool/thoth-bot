@@ -53,6 +53,10 @@ public class User {
         return isStakingAddress(this.address);
     }
 
+    public boolean isNormalAddress() {
+        return !isStakeAddress();
+    }
+
     public Integer getLastBlockHeight() {
         return this.lastBlockHeight;
     }

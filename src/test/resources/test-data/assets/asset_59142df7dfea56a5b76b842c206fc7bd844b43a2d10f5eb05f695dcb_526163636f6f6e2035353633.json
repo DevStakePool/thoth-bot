@@ -5,9 +5,9 @@
     "asset_name_ascii": "Raccoon 5563",
     "fingerprint": "asset1wq4tyw239tytvjhgpqv662apel0grxc63dhc05",
     "minting_tx_hash": "d7db981e53d146bfa1893512513f4c57eb0ab804c98796819cfd1864224034ea",
-    "total_supply": "2",
+    "total_supply": "1",
     "mint_cnt": 2,
-    "burn_cnt": 0,
+    "burn_cnt": 1,
     "creation_time": 1664582400,
     "minting_tx_metadata": {
       "721": {
@@ -63,6 +63,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

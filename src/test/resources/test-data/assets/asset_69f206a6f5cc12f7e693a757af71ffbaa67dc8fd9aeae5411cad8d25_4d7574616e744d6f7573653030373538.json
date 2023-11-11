@@ -1,0 +1,82 @@
+[
+  {
+    "policy_id": "69f206a6f5cc12f7e693a757af71ffbaa67dc8fd9aeae5411cad8d25",
+    "asset_name": "4d7574616e744d6f7573653030373538",
+    "asset_name_ascii": "MutantMouse00758",
+    "fingerprint": "asset1q9n5pf2gq0p5rtv7a3tkr963vj74d40zhfu9u2",
+    "minting_tx_hash": "199f40a7543db1dad8e9d1befa87dbfaa878d4c22cc03c40d3c9b3ea8a7b09a1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652486400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "69f206a6f5cc12f7e693a757af71ffbaa67dc8fd9aeae5411cad8d25": {
+          "MutantMouse00495": {
+            "name": "MutantMouse00495",
+            "files": [
+              {
+                "src": "ipfs://QmcVVNPp5vVHZaSrfJZbibz49CJQ6J3Fq75PxBU5qaLUwM",
+                "name": "MutantMouse00495",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcVVNPp5vVHZaSrfJZbibz49CJQ6J3Fq75PxBU5qaLUwM",
+            "mediaType": "image/png",
+            "attributes": {
+              "arm": "Dark",
+              "head": "Fievel Hat",
+              "skin": "Beige",
+              "cloth": "Apprentice",
+              "weapon": "Wooden Spoon",
+              "background": "Blue"
+            }
+          },
+          "MutantMouse00758": {
+            "name": "MutantMouse00758",
+            "files": [
+              {
+                "src": "ipfs://Qmcm1xTi62sDvWEgZGF65udrqKoifkqSDMjqBjLwy4HZkL",
+                "name": "MutantMouse00758",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmcm1xTi62sDvWEgZGF65udrqKoifkqSDMjqBjLwy4HZkL",
+            "mediaType": "image/png",
+            "attributes": {
+              "arm": "Green Rings",
+              "head": "Chillin",
+              "skin": "Red",
+              "cloth": "Scientist",
+              "weapon": "Razor Blade",
+              "background": "Aqua"
+            }
+          },
+          "MutantMouse00817": {
+            "name": "MutantMouse00817",
+            "files": [
+              {
+                "src": "ipfs://QmWNrgfL8RQEACvtFErceQfUnqSZBfLmtiLfBwa1JtkN3v",
+                "name": "MutantMouse00817",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWNrgfL8RQEACvtFErceQfUnqSZBfLmtiLfBwa1JtkN3v",
+            "mediaType": "image/png",
+            "attributes": {
+              "arm": "Mummy",
+              "head": "Fievel Hat",
+              "skin": "Light Purple",
+              "cloth": "$MUTANT",
+              "weapon": "Balloon",
+              "background": "Purple"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687130446d69",
+    "asset_name_ascii": "furnishq0Dmi",
+    "fingerprint": "asset1hxrwat0l29qxkq5utelycut9gxvnzlm0cuc9gd",
+    "minting_tx_hash": "92d7156f666c0ab413c8ce6143149182c6833c9580c90e22d147e58ce978e9c4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675555200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishq0Dmi": {
+            "id": "q0Dmi",
+            "src": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+            "name": "Unbalanced Sofa",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+                "name": "Unbalanced Sofa",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQKLd4LFRRHg43DA52u7Jnv2n1tDRgPkqKFoULq79AngY",
+                "name": "Unbalanced Sofa",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR9uThAVz3EreGSFK495ofXXdJf3SQuhqdAb6QoD5XTwt",
+                "name": "Unbalanced Sofa",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+            "description": "Hand-crafted by Hamilton Walker.",
+            "furnitureId": 221
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

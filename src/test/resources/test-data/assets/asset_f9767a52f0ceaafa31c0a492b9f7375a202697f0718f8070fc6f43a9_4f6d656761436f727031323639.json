@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "f9767a52f0ceaafa31c0a492b9f7375a202697f0718f8070fc6f43a9",
+    "asset_name": "4f6d656761436f727031323639",
+    "asset_name_ascii": "OmegaCorp1269",
+    "fingerprint": "asset1lrn7d9u2r03egelcl50y7qfz8hd0p806k7y3yc",
+    "minting_tx_hash": "3895ea1542a2ce6595b1505b2eb889129cd804bd501cc981d4c1c1546bcac6c6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651363200,
+    "minting_tx_metadata": {
+      "721": {
+        "f9767a52f0ceaafa31c0a492b9f7375a202697f0718f8070fc6f43a9": {
+          "OmegaCorp195": {
+            "Body": "Orange Puffer Jacket",
+            "Head": "Yellow Military Helmet",
+            "name": "Omega Corp #0195",
+            "files": [
+              {
+                "src": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/195.png",
+                "name": "Omega Corp #0195",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/195.png",
+            "Weapon": "Assault Rifle",
+            "Special": "None",
+            "mediaType": "image/png",
+            "Background": "Tactical Blue"
+          },
+          "OmegaCorp1269": {
+            "Body": "Blue Military Jacket",
+            "Head": "Yellow Wasp Helmet",
+            "name": "Omega Corp #1269",
+            "files": [
+              {
+                "src": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/1269.png",
+                "name": "Omega Corp #1269",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/1269.png",
+            "Weapon": "Shockwave Staff",
+            "Special": "Sparks",
+            "mediaType": "image/png",
+            "Background": "Tactical Blue"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

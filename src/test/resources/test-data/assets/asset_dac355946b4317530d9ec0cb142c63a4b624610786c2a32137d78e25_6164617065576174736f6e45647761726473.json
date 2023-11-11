@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065576174736f6e45647761726473",
+    "asset_name_ascii": "adapeWatsonEdwards",
+    "fingerprint": "asset16dkyz3jh5r27045laapuem0t9es0qff9q9ym7q",
+    "minting_tx_hash": "28a8ebaf8bfa3e9190a53738d380df63acbc6ad14af0b3920b27c17a8cff4791",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWatsonEdwards": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Watson Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmYU1g5d4osU1zTjb8BUKM6y9aGDnxf3pBuP1DXVZ3YSDg",
+                "name": "Watson Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYU1g5d4osU1zTjb8BUKM6y9aGDnxf3pBuP1DXVZ3YSDg",
+            "Family": "Edwards",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

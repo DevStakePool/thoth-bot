@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368703932454d",
+    "asset_name_ascii": "furnishp92EM",
+    "fingerprint": "asset135uvsn8kpa8xswzhumtp9ne8rklzcn3xk0p80v",
+    "minting_tx_hash": "1ae88271f03e070e5de622e12b894eeba3e6fb4dad5d574a2b26e6f96a64f058",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673740800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishp92EM": {
+            "id": "p92EM",
+            "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "name": "Low Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+                "name": "Low Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbMCCBiSX2BdfSRPBgSwNy7sBg2x441SEagBeRGHgfD6s",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmbJ36nBD63AR7CCGenMinEHe2JNdgkXkBMNZTznr4jAJH",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "description": "Hand-crafted by Dallin Green.",
+            "furnitureId": 211
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

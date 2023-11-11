@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "3f943ea81ff99b5564925d948b316bde11a1bb567e76e4b6dd3fea7e",
+    "asset_name": "5453686972745465616c36353732",
+    "asset_name_ascii": "TShirtTeal6572",
+    "fingerprint": "asset1qn9hrvrhcx4v6eamrvrpqa7fe5men35lfgptp0",
+    "minting_tx_hash": "e385d788bbdfdb21662bbdf3ee059490a8045bb035093292f82eb350cb245574",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1661472000,
+    "minting_tx_metadata": {
+      "721": {
+        "3f943ea81ff99b5564925d948b316bde11a1bb567e76e4b6dd3fea7e": {
+          "TShirtTeal6572": {
+            "name": "T-Shirt Teal #6572",
+            "files": [
+              {
+                "src": "ipfs://QmPktGykjzDCn8dCMKkMnykV3htn1ErdJ8UT8LUEJuqpgP",
+                "name": "T-Shirt Teal",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPktGykjzDCn8dCMKkMnykV3htn1ErdJ8UT8LUEJuqpgP",
+            "model": "Teal OG T-Shirt",
+            "colour": "Teal",
+            "project": "ReadyPlayerMe",
+            "mediaType": "image/jpeg",
+            "description": "Pavia.io RPM Avatar Merch",
+            "sub project": "Pavia Explorers",
+            "clothing type": "OG T-Shirt"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

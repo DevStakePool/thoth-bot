@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "033241876e71fdc3a675a30df6dba2a89ed6e081a593ec1ef8e7a329",
+    "asset_name": "527567436f696e323632",
+    "asset_name_ascii": "RugCoin262",
+    "fingerprint": "asset1cj564z4mpjp2nck508pav53zspev38r2z07h5h",
+    "minting_tx_hash": "498acc7388b73ea32b6b6d496c0e42cebe7ed07bf9ad1d7f9aa06f4f4915e158",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1662076800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "033241876e71fdc3a675a30df6dba2a89ed6e081a593ec1ef8e7a329": {
+          "RugCoin262": {
+            "Note": "no you can't have your money back",
+            "name": "RugCoin 262",
+            "files": [
+              {
+                "src": "ipfs://QmV8PWJ6F16qius8j7UDLt9PCLWLLj1vFL1LJXfPBz9rRa",
+                "name": "RugCoin 262",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "",
+                "name": "RugCoin 262",
+                "mediaType": ""
+              },
+              {
+                "src": "ipfs://QmbcvGedboQzcrSpN3PLRqqM8enGqewab26eh9zTVstSvz",
+                "name": "RugCoin 262",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmVJiPRLctGiF3e7mzoz59vNMs9hupFex64UNraHo1xMNK",
+            "mediaType": "image/png",
+            "PDF Variant": "CoffeeOrigin",
+            "Coin Effects": "No FX",
+            "Coin Variant": "Coin V3",
+            "Texture Grid": "Grid 3",
+            "Texture Text": "Text 6",
+            "Texture Paper": "0.1 Bills",
+            "Texture Doodle": "wen tic tac camel toe?",
+            "Coin Background": "paper 5",
+            "Texture Contour": "contour 4",
+            "Texture Variant": "083",
+            "reason for existence": "Because your name was once, also, white"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368713141524e",
+    "asset_name_ascii": "furnishq1ARN",
+    "fingerprint": "asset18r8r77ldvj6j7ffpfhmg8twyrel4xf86p3ln5d",
+    "minting_tx_hash": "bdc7b58d1c16205a883dd6d1224c6c8f4cc04d4b31fe650b67b1051a8fa71441",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677456000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishq1ARN": {
+            "id": "q1ARN",
+            "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "name": "Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+                "name": "Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfEg7Mfqch3U6Fr6F7KrcCPuBGyXX443Yc7LJBw24Tcdi",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZfrn2Sbbk5AokpQKir5L7gcFu1HhVyJjqjDFmQhGycJo",
+                "name": "Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXcXM9gKN36Za3U5CEiPxKakK6QCmESYWcC5GtUSSNsXq",
+            "description": "Hand-crafted by Ford Walker.",
+            "furnitureId": 206
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

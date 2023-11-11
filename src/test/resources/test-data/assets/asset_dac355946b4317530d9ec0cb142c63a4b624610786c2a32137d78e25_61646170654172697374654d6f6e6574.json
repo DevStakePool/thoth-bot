@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654172697374654d6f6e6574",
+    "asset_name_ascii": "adapeAristeMonet",
+    "fingerprint": "asset16m0agnn6s3nuf9gmjvyxjgnkqjxnr2pcprktg4",
+    "minting_tx_hash": "f3a0f74dd269ff4afffe7626c4adef2a161faf939f570f9dbafe3b7d025579b9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAristeMonet": {
+            "Hat": "Fruit Basket",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Ariste Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmXF9gcrD7VCnri1NDCQDnmSNVGB9uEn6GH8cV9ZXRPQfm",
+                "name": "Ariste Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXF9gcrD7VCnri1NDCQDnmSNVGB9uEn6GH8cV9ZXRPQfm",
+            "Family": "Monet",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Monet family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

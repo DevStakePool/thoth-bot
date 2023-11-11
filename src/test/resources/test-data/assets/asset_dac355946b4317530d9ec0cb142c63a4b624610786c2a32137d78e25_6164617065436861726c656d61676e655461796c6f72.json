@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065436861726c656d61676e655461796c6f72",
+    "asset_name_ascii": "adapeCharlemagneTaylor",
+    "fingerprint": "asset1a4whdu3l5z4ugzwrmpl3stt6d96myk28vxj5gz",
+    "minting_tx_hash": "7e6ec92d3b5759cce3dbd39b265e8887d0ede92588acfb1f0578e7e18bbe6ee8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeCharlemagneTaylor": {
+            "Hat": "Privateer Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Charlemagne Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSPTTpXHi1PNzYpBbF9TuofiRihrXuSCt1cz7sK6z1X8K",
+                "name": "Charlemagne Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSPTTpXHi1PNzYpBbF9TuofiRihrXuSCt1cz7sK6z1X8K",
+            "Family": "Taylor",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687065436961",
+    "asset_name_ascii": "furnishpeCia",
+    "fingerprint": "asset1jtcqrq5lndvl3evekzx87nh7p7xz0wugykl6xt",
+    "minting_tx_hash": "ec40b4353613484c1c6a4f64fc0bc1316279112ac835b039796376e103a55ea2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674172800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishpeCia": {
+            "id": "peCia",
+            "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "name": "Billiards",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+                "name": "Billiards",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmUqpVJs8J68zigVgzSLpXw4NXnqTbwQC9iG5J6KqdjQv3",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmWbYDVcSSspdXqUCWxg4wVJsjJ56ZJoDkeWL1xqvtUT92",
+                "name": "Billiards",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmetamBzNttDdyPDb1MTuZLvocz96b28u97di4VKHaei6z",
+            "description": "Hand-crafted by Hugh White.",
+            "furnitureId": 202
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

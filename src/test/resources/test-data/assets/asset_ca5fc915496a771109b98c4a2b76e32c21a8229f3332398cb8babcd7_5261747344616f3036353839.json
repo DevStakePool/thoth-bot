@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "ca5fc915496a771109b98c4a2b76e32c21a8229f3332398cb8babcd7",
+    "asset_name": "5261747344616f3036353839",
+    "asset_name_ascii": "RatsDao06589",
+    "fingerprint": "asset1fhpxjszvlxs936uaqcl50yv9wyf7m0u38emc0e",
+    "minting_tx_hash": "ceeeca519175e9014131a50ef00276cb51c738280623145b841bdcccd690e87b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643760000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "ca5fc915496a771109b98c4a2b76e32c21a8229f3332398cb8babcd7": {
+          "RatsDao06589": {
+            "name": "Rats Dao #06589",
+            "files": [
+              {
+                "src": "ipfs://QmcTCDtS6UJrGvRLxRy54qdPjz4G6ZFrBt212d2Dhwrq5N",
+                "name": "Rats Dao #06589",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcTCDtS6UJrGvRLxRy54qdPjz4G6ZFrBt212d2Dhwrq5N",
+            "token": "Governance",
+            "twitter": "@RatsDao",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Eye patch",
+              "Head": "Pirate",
+              "Skin": "Pink",
+              "Type": "Pirate",
+              "Tattoo": "None",
+              "Clothes": "Pirate outfit",
+              "Background": "Blue"
+            },
+            "description": [
+              "This NFT grants access to Rats DAO community and voting rights ",
+              "over the DAO´s assets."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

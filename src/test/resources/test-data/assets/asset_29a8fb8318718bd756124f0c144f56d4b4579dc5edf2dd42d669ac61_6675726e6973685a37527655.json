@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685a37527655",
+    "asset_name_ascii": "furnishZ7RvU",
+    "fingerprint": "asset14nptaugdau45vkyqupey7ql9qnnzan8azew68r",
+    "minting_tx_hash": "d7b03dc40c118583ce21e201f8683410ec4ae80ba49206f3684678c2416696bd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678924800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishZ7RvU": {
+            "id": "Z7RvU",
+            "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "name": "Standing Globe",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+                "name": "Standing Globe",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmV3BSnFf1Xy9bWVp8i5XgZvsr7u16LRAnAgD4gePWMbCN",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR6r3Bfbkzbn2ocMekLsaebgcELNvcVvLR4vL2iRmfjxC",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "description": "Hand-crafted by Ansley Taylor.",
+            "furnitureId": 219
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

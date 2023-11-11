@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d653448306f5a59",
+    "asset_name_ascii": "frame4H0oZY",
+    "fingerprint": "asset1x93cy6srzxdy44y5cyyg80frfdpnz2u2svt4lm",
+    "minting_tx_hash": "cb969256c087264b8d4a36fb67e654e4d52c8466f928163b469270a937cdb4df",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672099200,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame4H0oZY": {
+            "id": "YIXtf",
+            "src": "ipfs://Qmdh1h5AKshaUg7KSvWafbPNXVEQtNeKwGFrCyLMu7mDDw",
+            "name": "Ape Society Frame Level 4",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://Qmdh1h5AKshaUg7KSvWafbPNXVEQtNeKwGFrCyLMu7mDDw",
+                "name": "Ape Society Frame Level 4",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmdh1h5AKshaUg7KSvWafbPNXVEQtNeKwGFrCyLMu7mDDw",
+            "level": 4,
+            "artist": "Kipp King",
+            "mintedAt": 1672154762276,
+            "mintedBy": "e1c9dfa15ca5255311cafd66f5ecde6fb36f5fe13b95c6f71a1575e102",
+            "description": "Level 4 frame",
+            "mintedStake": "stake1u8yalg2u55j4xyw2l4n0tmx7d7ek7hlp8w2udac6z467zqsxlyyew"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

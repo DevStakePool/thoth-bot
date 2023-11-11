@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686752765662",
+    "asset_name_ascii": "furnishgRvVb",
+    "fingerprint": "asset1dnrpzum9led6rqx4n7u40yhq2pr3gfpjll39jk",
+    "minting_tx_hash": "75ab30ea1bcab3f325dea1b916321c1201a8c22ad2a0192826532509232c6449",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674345600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishgRvVb": {
+            "id": "gRvVb",
+            "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "name": "Round Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+                "name": "Round Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQT2Bor5fRsrDd6KEhfaxyk232booDfkJzMYLMyZu1G5X",
+                "name": "Round Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmevbqntFscFS4KuCgnYsYyZi8qE6AWugLEAjKZwMYEwiy",
+                "name": "Round Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "description": "Hand-crafted by Chapman Edwards.",
+            "furnitureId": 215
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "15509d4cb60f066ca4c7e982d764d6ceb4324cb33776d1711da1beee",
+    "asset_name": "42616279416c69656e3034373833",
+    "asset_name_ascii": "BabyAlien04783",
+    "fingerprint": "asset1eq33pmc049qv0thkvlqd0ypywsgz49lfe6llc7",
+    "minting_tx_hash": "1e107e23a68a0e9432c071b8f1c4e0f1b133fa1fbd8c3fa03c1be7e340bccde1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1632528000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "15509d4cb60f066ca4c7e982d764d6ceb4324cb33776d1711da1beee": {
+          "BabyAlien04783": {
+            "hat": "A51 Hat",
+            "body": "Gray",
+            "eyes": "Black",
+            "face": "Bandaid",
+            "name": "BabyAlien04783",
+            "files": [
+              {
+                "src": "ipfs://QmZgrq1qTJUn8UyuQH1TcrxKRT3ZfmXRt7oSpeQGnJf4Y8",
+                "name": "BabyAlien04783",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZgrq1qTJUn8UyuQH1TcrxKRT3ZfmXRt7oSpeQGnJf4Y8",
+            "mouth": "Playful Tongue",
+            "clothes": "Yellow Hoodie",
+            "project": "BabyAlienClub",
+            "accessory": "Guitar",
+            "mediaType": "image/png",
+            "background": "Green"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

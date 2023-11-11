@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3036363438",
+    "asset_name_ascii": "Ghostchain06648",
+    "fingerprint": "asset17xkcrar9p7xwak9qh5mehl2u4jehvma9dgqfpy",
+    "minting_tx_hash": "bd7b7263414a5d68abf1b1fa5d3940c4a1fa394f4824c069f6f49faac6ce3137",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1636329600,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain06648": {
+            "dna": "20210000",
+            "body": "Black Suit",
+            "eyes": "Cute",
+            "name": "Ghostchain06648",
+            "files": [
+              {
+                "src": "ipfs://QmejSENUjapQ5o66kn4DA9U8x9LW6W84z28PNiRk7KNCB2",
+                "name": "Ghostchain06648",
+                "https": "https://api.nftghostchain.com/original?mint=6648",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Cold",
+            "image": "ipfs://QmejSENUjapQ5o66kn4DA9U8x9LW6W84z28PNiRk7KNCB2",
+            "rarity": "Common",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

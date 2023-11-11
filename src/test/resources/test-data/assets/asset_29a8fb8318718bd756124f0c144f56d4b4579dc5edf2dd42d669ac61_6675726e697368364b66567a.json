@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368364b66567a",
+    "asset_name_ascii": "furnish6KfVz",
+    "fingerprint": "asset1dcvf4gugf6de6mwj8j3ka2kf0lvxc5m2wachyj",
+    "minting_tx_hash": "306dffbbcc7dda2fbf3d4224966808c1e70c80474e70ec49b273ea8bba4c58fa",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676505600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish6KfVz": {
+            "id": "6KfVz",
+            "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "name": "Low Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+                "name": "Low Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbMCCBiSX2BdfSRPBgSwNy7sBg2x441SEagBeRGHgfD6s",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmbJ36nBD63AR7CCGenMinEHe2JNdgkXkBMNZTznr4jAJH",
+                "name": "Low Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWkXsUPtQHfUfrhwjtjtKHMQyrTaokpHxjFu6CT3Rmp8n",
+            "description": "Hand-crafted by Wyndam White.",
+            "furnitureId": 211
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

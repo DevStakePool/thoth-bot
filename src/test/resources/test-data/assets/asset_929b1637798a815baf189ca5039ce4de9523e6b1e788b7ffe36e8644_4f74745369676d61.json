@@ -1,0 +1,621 @@
+[
+  {
+    "policy_id": "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644",
+    "asset_name": "4f74745369676d61",
+    "asset_name_ascii": "OttSigma",
+    "fingerprint": "asset15ndvu3e78zh4r6sc8qm95f5uhh9gaayvpwun0d",
+    "minting_tx_hash": "6472be8abbeadd1c2986f4576c1cc1dc596a373dbcf6b5581da2ee048eab2f8a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671580800,
+    "minting_tx_metadata": {
+      "721": {
+        "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644": {
+          "LeoBeta": {
+            "name": "Leo Beta",
+            "files": [
+              {
+                "src": "ipfs://QmUfX2X7YzLBhVebStEXcvyiLPdgDYoF3dQFTpxCwdMdrk",
+                "name": "Leo Beta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUfX2X7YzLBhVebStEXcvyiLPdgDYoF3dQFTpxCwdMdrk",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Cloak Black",
+              "Hair": "Orange Hair 2",
+              "Mask": "Orange Mask",
+              "Rank": "Farmer",
+              "Nation": "Beta",
+              "Backdrop": "White Backdrop 9",
+              "Body Color": "Pale",
+              "Body Accessory": "None",
+              "Head Accessory": "Green Antlers"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "OttSigma": {
+            "name": "Ott Sigma",
+            "files": [
+              {
+                "src": "ipfs://QmRgVyrn8gdED8DVWJyTKBSEQ4q4gt5J3PQwMTTzkM5sGw",
+                "name": "Ott Sigma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRgVyrn8gdED8DVWJyTKBSEQ4q4gt5J3PQwMTTzkM5sGw",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Frog Onesie Green",
+              "Hair": "Black Hair 1",
+              "Mask": "White Mask",
+              "Rank": "Architect",
+              "Nation": "Sigma",
+              "Backdrop": "Green Backdrop 17",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "ArleyBeta": {
+            "name": "Arley Beta",
+            "files": [
+              {
+                "src": "ipfs://QmTB8w9hj8BHLhotja4qTkRk1ZqwkgR5w4yifZ29aC49cy",
+                "name": "Arley Beta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTB8w9hj8BHLhotja4qTkRk1ZqwkgR5w4yifZ29aC49cy",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Ice Bod",
+              "Hair": "Black Hair 3",
+              "Mask": "Pink Mask",
+              "Rank": "Knight",
+              "Nation": "Beta",
+              "Backdrop": "White Backdrop 16",
+              "Body Color": "Purple",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "DinoDelta": {
+            "name": "Dino Delta",
+            "files": [
+              {
+                "src": "ipfs://QmZ2wc5FkHMQ1NVUHGMhB2vp2rDGeDbbJvDBC6Zju1uYPm",
+                "name": "Dino Delta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZ2wc5FkHMQ1NVUHGMhB2vp2rDGeDbbJvDBC6Zju1uYPm",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Yellow 2",
+              "Hair": "Orange Hair 5",
+              "Mask": "Immortal Mask",
+              "Rank": "Farmer",
+              "Nation": "Delta",
+              "Backdrop": "White Backdrop 3",
+              "Body Color": "Brown",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "NelsSigma": {
+            "name": "Nels Sigma",
+            "files": [
+              {
+                "src": "ipfs://QmRwYnaGxFprUEvNNfp2FBc9sfQjrTerDGivszcK1XUVfA",
+                "name": "Nels Sigma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRwYnaGxFprUEvNNfp2FBc9sfQjrTerDGivszcK1XUVfA",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Puffy Green",
+              "Hair": "Yellow Hair 5",
+              "Mask": "Black Mask 2",
+              "Rank": "Farmer",
+              "Nation": "Sigma",
+              "Backdrop": "Green Backdrop 3",
+              "Body Color": "Purple",
+              "Body Accessory": "Gold Sword",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "AlmerAlpha": {
+            "name": "Almer Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmR89UjS8eBf3opDEZPrP9iZzQQYBMGg3orQa2e1psQbmA",
+                "name": "Almer Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmR89UjS8eBf3opDEZPrP9iZzQQYBMGg3orQa2e1psQbmA",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Office Shirt Orange",
+              "Hair": "Green Hair 2-5",
+              "Mask": "White Mask",
+              "Rank": "Architect",
+              "Nation": "Alpha",
+              "Backdrop": "Yellow Backdrop 15",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "BurkeDelta": {
+            "name": "Burke Delta",
+            "files": [
+              {
+                "src": "ipfs://Qmc5aj35nPwKmfyQbb9g29LdgmnM8pgr6fRf1Sm16EBkXc",
+                "name": "Burke Delta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmc5aj35nPwKmfyQbb9g29LdgmnM8pgr6fRf1Sm16EBkXc",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Office Shirt Green",
+              "Hair": "White Hair 5",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Delta",
+              "Backdrop": "White Backdrop 11",
+              "Body Color": "Green",
+              "Body Accessory": "Green Sword",
+              "Head Accessory": "Dizzy 3"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "BurnsAlpha": {
+            "name": "Burns Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmRAMNNXjjkQtTYZqTaM3ygNYknHXLsWCFNAFzuqzVP2to",
+                "name": "Burns Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRAMNNXjjkQtTYZqTaM3ygNYknHXLsWCFNAFzuqzVP2to",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Cape Orange",
+              "Hair": "Brown Hair 2",
+              "Mask": "Yellow Mask",
+              "Rank": "Farmer",
+              "Nation": "Alpha",
+              "Backdrop": "Yellow Backdrop 15",
+              "Body Color": "Pink",
+              "Body Accessory": "Green Shield",
+              "Head Accessory": "Dizzy 5"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "ChaddDelta": {
+            "name": "Chadd Delta",
+            "files": [
+              {
+                "src": "ipfs://QmT9j1ARgWqaZBJCSbNwVG7BZykcaPURc4XM4AxiS4KdnG",
+                "name": "Chadd Delta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmT9j1ARgWqaZBJCSbNwVG7BZykcaPURc4XM4AxiS4KdnG",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Techsuit Black 3",
+              "Hair": "White Hair 3",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Delta",
+              "Backdrop": "Green Backdrop",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "CodeySigma": {
+            "name": "Codey Sigma",
+            "files": [
+              {
+                "src": "ipfs://QmQax1GsLFg6UuLUhFb6fJfhYZgsyJz8ShC9pKa1BK6E7H",
+                "name": "Codey Sigma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQax1GsLFg6UuLUhFb6fJfhYZgsyJz8ShC9pKa1BK6E7H",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Yellow 2",
+              "Hair": "Green Hair 2-5",
+              "Mask": "Pink Mask",
+              "Rank": "Farmer",
+              "Nation": "Sigma",
+              "Backdrop": "Red Backdrop 9",
+              "Body Color": "Pink",
+              "Body Accessory": "None",
+              "Head Accessory": "Green Antlers"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "DalvinBeta": {
+            "name": "Dalvin Beta",
+            "files": [
+              {
+                "src": "ipfs://QmcV4ztoQDJLW4CjUmEWxQNRKkZthtfR5mHqh2vRi3maaa",
+                "name": "Dalvin Beta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcV4ztoQDJLW4CjUmEWxQNRKkZthtfR5mHqh2vRi3maaa",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Puffy Green",
+              "Hair": "Green Hair 5",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Beta",
+              "Backdrop": "Orange Backdrop 15",
+              "Body Color": "Brown",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "LannySigma": {
+            "name": "Lanny Sigma",
+            "files": [
+              {
+                "src": "ipfs://QmfQEAry2WrQRLXwbFvt28GTHrz1PjpkTvjAU3gzPx6jhz",
+                "name": "Lanny Sigma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfQEAry2WrQRLXwbFvt28GTHrz1PjpkTvjAU3gzPx6jhz",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Yellow 3",
+              "Hair": "Purple Hair 1",
+              "Mask": "Pink Mask",
+              "Rank": "Architect",
+              "Nation": "Sigma",
+              "Backdrop": "Orange Backdrop",
+              "Body Color": "Tan",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "MilanDelta": {
+            "name": "Milan Delta",
+            "files": [
+              {
+                "src": "ipfs://QmfGD6drfYkFyTq3BRJYMAp5G1MP5Xjb7LXcFPXPYEMTHH",
+                "name": "Milan Delta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfGD6drfYkFyTq3BRJYMAp5G1MP5Xjb7LXcFPXPYEMTHH",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Office Shirt Pink",
+              "Hair": "Yellow Hair 5",
+              "Mask": "Yellow Mask",
+              "Rank": "Knight",
+              "Nation": "Delta",
+              "Backdrop": "Purple Backdrop 2",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "Blue Cardano"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "AlmondAlpha": {
+            "name": "Almond Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmWjtSagUM38iyrYwUahEfeD4BmqH5zoXfsgZ6mAkiLrvE",
+                "name": "Almond Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWjtSagUM38iyrYwUahEfeD4BmqH5zoXfsgZ6mAkiLrvE",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Cape Orange",
+              "Hair": "Peach Hair 2",
+              "Mask": "White Mask",
+              "Rank": "Architect",
+              "Nation": "Alpha",
+              "Backdrop": "Blue Backdrop 8",
+              "Body Color": "Tan",
+              "Body Accessory": "None",
+              "Head Accessory": "Dizzy"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "GurneyAlpha": {
+            "name": "Gurney Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmT1F7u2rbAro1z2LLmzX69UoycZoBwkkyVwEKnWeHMgmC",
+                "name": "Gurney Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmT1F7u2rbAro1z2LLmzX69UoycZoBwkkyVwEKnWeHMgmC",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Green 4",
+              "Hair": "Green Hair 5",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Alpha",
+              "Backdrop": "Orange Backdrop",
+              "Body Color": "Brown",
+              "Body Accessory": "Green Shield",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "TaylerAlpha": {
+            "name": "Tayler Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmZF29RNwBbZvtGZVMGQvCqQS4pTZMQ5BaDsoCvH9QsDtB",
+                "name": "Tayler Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZF29RNwBbZvtGZVMGQvCqQS4pTZMQ5BaDsoCvH9QsDtB",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Nipples Black",
+              "Hair": "None",
+              "Mask": "White Mask",
+              "Rank": "Architect",
+              "Nation": "Alpha",
+              "Backdrop": "Green Backdrop 4",
+              "Body Color": "Metal",
+              "Body Accessory": "None",
+              "Head Accessory": "Yellow Antlers"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "ChanceyAlpha": {
+            "name": "Chancey Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmRmzW1NMxENoeJEPP3zjtMVtSSwwMccY47kfsb4uACkF4",
+                "name": "Chancey Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRmzW1NMxENoeJEPP3zjtMVtSSwwMccY47kfsb4uACkF4",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Nipples Black",
+              "Hair": "Peach Hair 2",
+              "Mask": "White Mask 2",
+              "Rank": "Architect",
+              "Nation": "Alpha",
+              "Backdrop": "Purple Backdrop 15",
+              "Body Color": "Brown",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "LashawnOmega": {
+            "name": "Lashawn Omega",
+            "files": [
+              {
+                "src": "ipfs://QmXx1jcC8dEV4L7ZctRjbLxKMh1y2RxLRZLr4C365LwsQT",
+                "name": "Lashawn Omega",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXx1jcC8dEV4L7ZctRjbLxKMh1y2RxLRZLr4C365LwsQT",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Cloak Purple",
+              "Hair": "White Hair 2",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Omega",
+              "Backdrop": "Purple Backdrop",
+              "Body Color": "Green",
+              "Body Accessory": "Green Sword",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "MilfordGamma": {
+            "name": "Milford Gamma",
+            "files": [
+              {
+                "src": "ipfs://QmVzDUYafiqH1a5uZPymniJShH5cQJPK93iQaz9uHt4vvT",
+                "name": "Milford Gamma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVzDUYafiqH1a5uZPymniJShH5cQJPK93iQaz9uHt4vvT",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Green 5",
+              "Hair": "Brown Hair 3",
+              "Mask": "White Mask",
+              "Rank": "Architect",
+              "Nation": "Gamma",
+              "Backdrop": "Green Backdrop",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "QuintenOmega": {
+            "name": "Quinten Omega",
+            "files": [
+              {
+                "src": "ipfs://QmVzc8o66nkJKUZ3UgBXd9h4oyuLdci4jnWUpoDELwXWeK",
+                "name": "Quinten Omega",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVzc8o66nkJKUZ3UgBXd9h4oyuLdci4jnWUpoDELwXWeK",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "T shirt Yellow",
+              "Hair": "Brown Hair 4",
+              "Mask": "White Mask",
+              "Rank": "Architect",
+              "Nation": "Omega",
+              "Backdrop": "Black Backdrop 4",
+              "Body Color": "Pink",
+              "Body Accessory": "None",
+              "Head Accessory": "Brown Antlers"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "RashaanGamma": {
+            "name": "Rashaan Gamma",
+            "files": [
+              {
+                "src": "ipfs://QmP4wLLZPwTXoYY5TKycH1gbF6gCpTjbBaLMb3PfLVV4qh",
+                "name": "Rashaan Gamma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmP4wLLZPwTXoYY5TKycH1gbF6gCpTjbBaLMb3PfLVV4qh",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Green 4",
+              "Hair": "Green Hair 5",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Gamma",
+              "Backdrop": "Pink Backdrop",
+              "Body Color": "Purple",
+              "Body Accessory": "White Sword",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "RaymondOmega": {
+            "name": "Raymond Omega",
+            "files": [
+              {
+                "src": "ipfs://QmQACktwQ49MAzjzPmd5559GCtRNY5Q3M86Ecdj9V7XfKZ",
+                "name": "Raymond Omega",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQACktwQ49MAzjzPmd5559GCtRNY5Q3M86Ecdj9V7XfKZ",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Black 2",
+              "Hair": "Green Hair 5",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Omega",
+              "Backdrop": "Orange Backdrop",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "GiovannySigma": {
+            "name": "Giovanny Sigma",
+            "files": [
+              {
+                "src": "ipfs://QmXMCrdjVLxMqs9EBnToK3ykdTiUobbnDYWAp7LdDJPPfY",
+                "name": "Giovanny Sigma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXMCrdjVLxMqs9EBnToK3ykdTiUobbnDYWAp7LdDJPPfY",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Yellow",
+              "Hair": "White Hair 3",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Sigma",
+              "Backdrop": "White Backdrop 7",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "WilfredoAlpha": {
+            "name": "Wilfredo Alpha",
+            "files": [
+              {
+                "src": "ipfs://QmQq4F5XMXaiqAJ3uJmqz6MTXLUNZvkXP2tD9Zn7dLUtZh",
+                "name": "Wilfredo Alpha",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQq4F5XMXaiqAJ3uJmqz6MTXLUNZvkXP2tD9Zn7dLUtZh",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Puffy White",
+              "Hair": "Yellow Hair 4",
+              "Mask": "Yellow Mask",
+              "Rank": "Architect",
+              "Nation": "Alpha",
+              "Backdrop": "White Backdrop",
+              "Body Color": "Green 2",
+              "Body Accessory": "White Sword",
+              "Head Accessory": "None"
+            },
+            "collection": "Pond - Theta Collection"
+          },
+          "SalvatoreDelta": {
+            "name": "Salvatore Delta",
+            "files": [
+              {
+                "src": "ipfs://QmeGvreLV2ysmhBZb1YVNJC7vVS7N9sQ4td23VgBS7BZjZ",
+                "name": "Salvatore Delta",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeGvreLV2ysmhBZb1YVNJC7vVS7N9sQ4td23VgBS7BZjZ",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Supersuit Green 2",
+              "Hair": "Yellow Hair 3",
+              "Mask": "Black Mask",
+              "Rank": "Architect",
+              "Nation": "Delta",
+              "Backdrop": "Green Backdrop 15",
+              "Body Color": "Green",
+              "Body Accessory": "None",
+              "Head Accessory": "Dizzy 4"
+            },
+            "collection": "Pond - Theta Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

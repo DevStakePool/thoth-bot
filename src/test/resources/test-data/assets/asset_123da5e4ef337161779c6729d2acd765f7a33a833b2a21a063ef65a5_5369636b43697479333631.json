@@ -1,0 +1,61 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479333631",
+    "asset_name_ascii": "SickCity361",
+    "fingerprint": "asset1llazsff7076gvj24dcqflapkhx52nzkpsykpf6",
+    "minting_tx_hash": "4d4d05bb5936e2623bb98cfbcef924f8f741a020db98a32eb8c5fa151becbb3e",
+    "total_supply": "25013",
+    "mint_cnt": 14,
+    "burn_cnt": 0,
+    "creation_time": 1660348800,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity361": {
+            "name": "SickCity361-Westbound",
+            "files": [
+              {
+                "src": "ipfs://QmZVDxMFwEpyj8qAhKmgmpUGEEud3G1Ty5SojTo4ThaPQz",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://Qma4G5M5rbMzUi7DGJXEbYHpEyxkCcWK12ZCTvmqj6Bhyx",
+            "links": {
+              "twitter": [
+                "https://twitter.com/MoodswingzMuzik",
+                "https://twitter.com/Abyssbeats",
+                "https://twitter.com/mikeymothemc",
+                "https://twitter.com/dapdaniel"
+              ],
+              "website": "https://moodswingzmuzik.com"
+            },
+            "genres": [
+              "Hip Hop",
+              "Rap"
+            ],
+            "artists": [
+              "Westbound"
+            ],
+            "copyright": "Westbound ℗ 2022",
+            "collection": "U A GOD",
+            "song_title": "U A GOD",
+            "album_title": "U A GOD",
+            "distributor": "https://sickcity.xyz",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT4M35S",
+            "contributing_artists": [
+              "Abyss",
+              "Mikey Mo the MC",
+              "Dap Daniel"
+            ],
+            "music_metadata_version": "v1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

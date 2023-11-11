@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416d7364656e416d61746f",
+    "asset_name_ascii": "adapeAmsdenAmato",
+    "fingerprint": "asset138q5fw44av5raslsve450gc4z9vfsay6v27qsa",
+    "minting_tx_hash": "cedea96b9b854db13bfe14dea1a130050d7866bcfcd7e4ba4efed10ef961b4b9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDixieBest": {
+            "Hat": "None",
+            "Body": "Rainbow Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Dixie Best",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmPP5RTGrWmdUsNGCyZb9bEgm58cFVC8kiHCALZV65Fvdz",
+                "name": "Dixie Best",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPP5RTGrWmdUsNGCyZb9bEgm58cFVC8kiHCALZV65Fvdz",
+            "Family": "Best",
+            "Weapon": "Rifle",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Best family"
+          },
+          "adapeHardenFord": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Harden Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmcrVtzHBFLJisqvLkcSJ1uZ6u1M9Kn3fmUm9USEzA57GS",
+                "name": "Harden Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcrVtzHBFLJisqvLkcSJ1uZ6u1M9Kn3fmUm9USEzA57GS",
+            "Family": "Ford",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ford family"
+          },
+          "adapeAmsdenAmato": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Amsden Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmTqV4oPsL4Xq2xEg76XnB8pHTmUvr9YNWmwoEuqdiNZr7",
+                "name": "Amsden Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTqV4oPsL4Xq2xEg76XnB8pHTmUvr9YNWmwoEuqdiNZr7",
+            "Family": "Amato",
+            "Weapon": "Arrows",
+            "Accessory": "Harmonica",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

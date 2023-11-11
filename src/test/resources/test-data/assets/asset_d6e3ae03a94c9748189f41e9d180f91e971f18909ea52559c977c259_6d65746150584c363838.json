@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c363838",
+    "asset_name_ascii": "metaPXL688",
+    "fingerprint": "asset1afmmzhr2763spewh4mr99f9h6enm470nu3lcfw",
+    "minting_tx_hash": "df88ccfaf6e2b27ef73ddd21fc15e4c9600ac2fa0625a33fc272d94ad5919307",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647043200,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL688": {
+            "name": "metaPXL#688",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmYCbfiiWSPrDjeaHji6hH7dYQ74Zg69Mnj9mm5TiqXpXU",
+                "name": "metaPXL#688",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmb9rYNcRCKbM9mNEGtTRGDkLbrC8WNbUVDrRfX8KDzXWv",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "aviators",
+              "handlebars",
+              "firestarter hair",
+              "headphones"
+            ],
+            "description": "The official 3D collectible version of PXL#688"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

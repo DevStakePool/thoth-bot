@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687230315352",
+    "asset_name_ascii": "furnishr01SR",
+    "fingerprint": "asset14cx9yy93e5lwhft5elcdhx5y9dn709pnrsqll0",
+    "minting_tx_hash": "ab70a7c0a695d85dbb498eb6d8058e0c8e788f0d99d69be4d616af31f5d811c8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677888000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishr01SR": {
+            "id": "r01SR",
+            "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "name": "Round Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+                "name": "Round Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQT2Bor5fRsrDd6KEhfaxyk232booDfkJzMYLMyZu1G5X",
+                "name": "Round Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmevbqntFscFS4KuCgnYsYyZi8qE6AWugLEAjKZwMYEwiy",
+                "name": "Round Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "description": "Hand-crafted by Sherlock Edwards.",
+            "furnitureId": 215
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "74428b1442547159a05c9bb3d7ff77ea6a6b0f55fddc8ec56cb6ca80",
+    "asset_name": "526f6775655072696d61746531333735",
+    "asset_name_ascii": "RoguePrimate1375",
+    "fingerprint": "asset1red9sfjltk6g7agrt7stm2xggnvrg538hfhzpr",
+    "minting_tx_hash": "9bd88ec1cce38344edb701d1159865eb3201b6c2e01b73fb622a67227dc5fc0c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1646352000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "74428b1442547159a05c9bb3d7ff77ea6a6b0f55fddc8ec56cb6ca80": {
+          "RoguePrimate1375": {
+            "Body": "None",
+            "Eyes": "None",
+            "Head": "None",
+            "Skin": "Black",
+            "name": "Rogue Primates Society #1375",
+            "Mouth": "None",
+            "files": [
+              {
+                "src": "ipfs://QmerpHQosTEpQoFfNL5duAPiLk9xQFSePhDVkgkMW1FQEa/1375.png",
+                "name": "Rogue Primates Society #1375",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmerpHQosTEpQoFfNL5duAPiLk9xQFSePhDVkgkMW1FQEa/1375.png",
+            "Warpaint": "None",
+            "mediaType": "image/png",
+            "Background": "Green",
+            "description": "4000 Primates roaming the Cardanoverse"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

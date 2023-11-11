@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065536577617264526f6265727473",
+    "asset_name_ascii": "adapeSewardRoberts",
+    "fingerprint": "asset1v2jg4y8zawpnyvz3fp4zr6g2zlh7asd0sdje4v",
+    "minting_tx_hash": "e8601a569d418fcf029f86f30bb9629f1f8dbbc635540f2563b87f726b7cd55a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDwennonMars": {
+            "Hat": "Top Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Dwennon Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmXGzQeqE4HBWwxi4K48Kt4QX8gfxnjvmM6CQDQnw6JYuL",
+                "name": "Dwennon Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXGzQeqE4HBWwxi4K48Kt4QX8gfxnjvmM6CQDQnw6JYuL",
+            "Family": "Mars",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Mars family"
+          },
+          "adapeSewardRoberts": {
+            "Hat": "Fruit Basket",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Seward Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmewfPXs6bG4Qs2FRcmfPcvL1NY3uGe2Mjm2B8oieJvk5a",
+                "name": "Seward Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmewfPXs6bG4Qs2FRcmfPcvL1NY3uGe2Mjm2B8oieJvk5a",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          },
+          "adapeFairfaxdeBalboa": {
+            "Hat": "Hoodie",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Fairfax de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmbzbJsTs3zAEkupDXUF825hGhiu1KkpxLktg2yYULPSg5",
+                "name": "Fairfax de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbzbJsTs3zAEkupDXUF825hGhiu1KkpxLktg2yYULPSg5",
+            "Family": "de Balboa",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the de Balboa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

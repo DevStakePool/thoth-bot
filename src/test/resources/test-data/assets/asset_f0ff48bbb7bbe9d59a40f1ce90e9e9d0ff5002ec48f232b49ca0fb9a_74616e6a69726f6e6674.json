@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "74616e6a69726f6e6674",
+    "asset_name_ascii": "tanjironft",
+    "fingerprint": "asset1jcgltnz7wa8a0cw6vt24al46rjca58j68prup9",
+    "minting_tx_hash": "75b40f0be078c82a5bdbe0e521ceeefcc8d3b5d44af533179df7ec81d68ebc5f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665878400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "tanjironft": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$tanjironft",
+            "image": "ipfs://QmVi3vxNBfg6aXJqJbQn4jJFodTwHZcziZ3FbezsnvsiQz",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

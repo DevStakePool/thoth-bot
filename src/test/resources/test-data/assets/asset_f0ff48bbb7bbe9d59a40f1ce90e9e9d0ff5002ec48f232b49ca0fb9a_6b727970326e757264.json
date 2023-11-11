@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6b727970326e757264",
+    "asset_name_ascii": "kryp2nurd",
+    "fingerprint": "asset1dg0h8wwg2u6h6pnp9elhwe98vw5zgl6kechknn",
+    "minting_tx_hash": "b1920f211a57c7e5883e3a70170d87ec71cedbdd818f71c373a4478e172cac93",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1662854400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "kryp2nurd": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$kryp2nurd",
+            "image": "ipfs://QmNnS8KEdT6ct9DWHxNKyQZi9EgxCBT3ZtG7mUcfcHmncD",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "cliffjumper": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$cliffjumper",
+            "image": "ipfs://QmWgjZZvr9sBGhbBFh9d2VDzDwzkM39bpkJL5bWnzttA6L",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

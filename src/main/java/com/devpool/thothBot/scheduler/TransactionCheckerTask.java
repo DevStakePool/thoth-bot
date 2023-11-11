@@ -25,6 +25,8 @@ import rest.koios.client.backend.api.transactions.model.TxIO;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 import rest.koios.client.backend.api.transactions.model.TxPlutusContract;
 import rest.koios.client.backend.factory.options.*;
+import rest.koios.client.backend.factory.options.filters.Filter;
+import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -164,7 +166,10 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 List<TxHash> allTx = new ArrayList<>();
                 long offset = 0;
                 do {
-                    Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(offset)).option(Order.by("block_height", SortType.DESC)).build();
+                    Options options = Options.builder()
+                            .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                            .option(Offset.of(offset)).option(Filter.of("block_height", FilterType.GTE, "33333"))
+                            .option(Order.by("block_height", SortType.DESC)).build();
                     offset += DEFAULT_PAGINATION_SIZE;
 
                     txResult = this.koiosFacade.getKoiosService().getAddressService().getAddressTransactions(u.getAccountAddresses(), u.getLastBlockHeight(), options);
@@ -180,11 +185,7 @@ public class TransactionCheckerTask extends AbstractCheckerTask implements Runna
                 } while (txResult != null && txResult.isSuccessful() && !txResult.getValue().isEmpty());
 
                 // update the highest block for the user
-                Optional<TxHash> maxBlockHeight = allTx.stream().max((o1, o2) -> {
-                    if (o1.getBlockHeight() < o2.getBlockHeight()) return -1;
-                    if (o1.getBlockHeight() > o2.getBlockHeight()) return 1;
-                    return 0;
-                });
+                Optional<TxHash> maxBlockHeight = allTx.stream().max(Comparator.comparing(TxHash::getBlockHeight));
 
                 // We have an empty result (no TX to process)
                 if (maxBlockHeight.isEmpty()) {

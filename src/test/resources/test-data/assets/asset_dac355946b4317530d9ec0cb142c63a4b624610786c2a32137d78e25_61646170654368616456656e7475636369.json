@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654368616456656e7475636369",
+    "asset_name_ascii": "adapeChadVentucci",
+    "fingerprint": "asset13exymya6n4ksztxm037cjw0qd88d2y8tnq5r0s",
+    "minting_tx_hash": "28910895cf3189d2b2974ad9a0df0b747717661182421ae5fae98b89bd0ea9f3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeChadVentucci": {
+            "Hat": "Top Hat",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Chad Ventucci",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmdNDgigsQT5srnqcrc1qG2i79oVEb8XfmUYonCJZQcNK5",
+                "name": "Chad Ventucci",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdNDgigsQT5srnqcrc1qG2i79oVEb8XfmUYonCJZQcNK5",
+            "Family": "Ventucci",
+            "Weapon": "Spear",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Ventucci family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

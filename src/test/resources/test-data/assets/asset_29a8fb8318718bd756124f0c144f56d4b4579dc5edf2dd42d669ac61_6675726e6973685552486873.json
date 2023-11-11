@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685552486873",
+    "asset_name_ascii": "furnishURHhs",
+    "fingerprint": "asset1mpxp5nsp2uk6dle9xa96y753pycfn36g6scgxu",
+    "minting_tx_hash": "d9045793761ab2c8984fb216b23cd1b169e69f75c3dd77ffdf9649b9e138f8bf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672617600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishURHhs": {
+            "id": "URHhs",
+            "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "name": "Bust",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+                "name": "Bust",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmavwRdpfu8TcBWK4fHWEe4DTRbCB9vfYjfrnwuXYCgyaL",
+                "name": "Bust",
+                "mediaType": "image/mp4"
+              },
+              {
+                "src": "ipfs://QmZBJbGopnxaupp1JWu8kTPJYznfBFs8oRq6LXoMA2sfEq",
+                "name": "Bust",
+                "mediaType": "image/mp4"
+              }
+            ],
+            "image": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "description": "Hand-crafted by Crépin Edwards.",
+            "furnitureId": 204
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

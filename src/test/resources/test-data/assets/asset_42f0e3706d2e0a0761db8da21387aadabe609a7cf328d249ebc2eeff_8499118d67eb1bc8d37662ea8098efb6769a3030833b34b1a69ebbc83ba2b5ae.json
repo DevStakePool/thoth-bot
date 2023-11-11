@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "42f0e3706d2e0a0761db8da21387aadabe609a7cf328d249ebc2eeff",
+    "asset_name": "8499118d67eb1bc8d37662ea8098efb6769a3030833b34b1a69ebbc83ba2b5ae",
+    "asset_name_ascii": "\\204\\231\u0011\\215g\\353\u001b\\310\\323vb\\352\\200\\230\\357\\266v\\23200\\203;4\\261\\246\\236\\273\\310;\\242\\265\\256",
+    "fingerprint": "asset1ca308dw9ec8x3wupczwq3wwy5akp4myth906kp",
+    "minting_tx_hash": "24bd39efdafe7069464000739c4c463d0851ce0164e4384f746a1bc80849869f",
+    "total_supply": "0",
+    "mint_cnt": 1,
+    "burn_cnt": 1,
+    "creation_time": 1678665600,
+    "minting_tx_metadata": {
+      "19": "aada_9_node_v01",
+      "20": "0.1.1.0",
+      "721": {
+        "version": 2,
+        "42f0e3706d2e0a0761db8da21387aadabe609a7cf328d249ebc2eeff": {
+          "0x8499118d67eb1bc8d37662ea8098efb6769a3030833b34b1a69ebbc83ba2b5ae": {
+            "name": "Lender NFT-Bond",
+            "type": "NFT-Bond",
+            "image": "ipfs://QmRyUhYhzWJaEPpSS2vViHqsGB4aAfuSo2LoAdiL76VXCc",
+            "provider": "Aada Finance",
+            "description": "Represents a right to claim loan + interest or collateral"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

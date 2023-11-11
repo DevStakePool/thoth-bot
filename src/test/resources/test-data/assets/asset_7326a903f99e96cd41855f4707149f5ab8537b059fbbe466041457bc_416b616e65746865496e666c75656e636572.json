@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "7326a903f99e96cd41855f4707149f5ab8537b059fbbe466041457bc",
+    "asset_name": "416b616e65746865496e666c75656e636572",
+    "asset_name_ascii": "AkanetheInfluencer",
+    "fingerprint": "asset16pamsy44sl244ptzjn6ac89u865nxywuvlpqsr",
+    "minting_tx_hash": "29d1d511be2c3c9177cf6e8ad1bf2d0f48c83859bb75308333cb5e77253dd59b",
+    "total_supply": "15",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634947200,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "7326a903f99e96cd41855f4707149f5ab8537b059fbbe466041457bc": {
+          "AkanetheInfluencer": {
+            "name": "Akane the Influencer",
+            "files": {
+              "src": "ipfs://QmR6AGMBao3czukqFT3gTGdrVRDtVjodpkDmbttQUDNYcm",
+              "mediaType": "image/gif"
+            },
+            "image": "ipfs://QmR6AGMBao3czukqFT3gTGdrVRDtVjodpkDmbttQUDNYcm",
+            "artist": "Keiko Nakamura",
+            "assetType": "FT",
+            "mediaType": "image/gif",
+            "publisher": [
+              "https://www.instagram.com/keiko_ancient_art/",
+              "https://tokhun.io"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

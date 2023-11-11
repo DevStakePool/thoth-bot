@@ -1,0 +1,58 @@
+[
+  {
+    "policy_id": "ca5408b255aa0c0ded99c5a8d598c1db89e67677e119adfe446bf074",
+    "asset_name": "3139353037",
+    "asset_name_ascii": "19507",
+    "fingerprint": "asset1cfelarvg5k2jvknzhe8gq92eryxkqfp8j3fza2",
+    "minting_tx_hash": "46bf5fc42b69512f1954ed2a1343f07c6b1d0e6c5ccd692553cab5950ccbe440",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658275200,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "e52483b60a65cbe1",
+        "5204dddfa644faf333efa77d97e4119a9eb6196404b89a411dd84288": {
+          "2776": {
+            "id": 2776,
+            "name": "Pluto Fortune - Cardano Livery",
+            "image": "ipfs://QmTm1rDxoCgTPYy8LG4JEBdBoHHYjWYdxa1UTGtTi6KCg8",
+            "attributes": {
+              "IP": "NitroLeague",
+              "Set": "Beta Class",
+              "Asset": "3D",
+              "Brand": "Nitro League",
+              "Rarity": "Uncommon",
+              "Series": "Series 07",
+              "Edition": "Cardano Edition",
+              "Category": "Models"
+            },
+            "description": "An Uncommon track car that defies physics on twist & turns."
+          }
+        },
+        "ca5408b255aa0c0ded99c5a8d598c1db89e67677e119adfe446bf074": {
+          "19507": {
+            "id": 19507,
+            "name": "Cardano vFlect - Uncommon",
+            "image": "ipfs://QmVeWTmdEbktp3LbbBavRypYAa5QCV4Ugq6QbX3JuoXbLJ",
+            "attributes": {
+              "IP": "Virtua",
+              "Set": "Cardano",
+              "Type": "Influencer",
+              "Asset": "3D Animated",
+              "Brand": "vFlect",
+              "Rarity": "Uncommon",
+              "Series": "God of Coins",
+              "Edition": "2nd Gen Avatars",
+              "Category": "Models",
+              "Variation": "Purple"
+            },
+            "description": "Congratulations on winning this special edition Cardano vFlect!"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684b74374842",
+    "asset_name_ascii": "furnishKt7HB",
+    "fingerprint": "asset1hdu2hz264z50v84em83538nu2m7hf86pec4paf",
+    "minting_tx_hash": "f5945dd746b25d2d76d055cc40821ce1d37493526db55a007f813b547bb35289",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675814400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishKt7HB": {
+            "id": "Kt7HB",
+            "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "name": "Rug",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+                "name": "Rug",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmU31Twc3Nvc9gchWRRVMkFPTskqiJdFWWm6zsnwMPj7TJ",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmV65MKJZaK67QLbCGziBhbmnwHsFiyDuCewp4T2DSaBCP",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "description": "Hand-crafted by Victorin Edwards.",
+            "furnitureId": 218
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

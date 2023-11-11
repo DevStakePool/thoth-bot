@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "8096b2f303824c9240a613d6ab428966d889ec04a6b1a026b692f343",
+    "asset_name": "4265656c7a65627562",
+    "asset_name_ascii": "Beelzebub",
+    "fingerprint": "asset1x9hgymxkfx48qetcfkmd6fgplxchhud8wvqscx",
+    "minting_tx_hash": "c27d64b2f831fcc17e3e3539d147dad1d827e1abba308c30a21fb82af68a7fbf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1667174400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8096b2f303824c9240a613d6ab428966d889ec04a6b1a026b692f343": {
+          "Beelzebub": {
+            "name": "Beelzebub",
+            "files": [
+              {
+                "src": "ipfs://Qmf4NE47NDu5YMCt3uTYkEWisVt1v7NRgya9x7WNaqzNU4",
+                "name": "Beelzebub",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf4NE47NDu5YMCt3uTYkEWisVt1v7NRgya9x7WNaqzNU4",
+            "Beelzebub": "1",
+            "mediaType": "image/png",
+            "description": [
+              "The Commanding General of Lucifers army."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

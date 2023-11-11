@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "f9767a52f0ceaafa31c0a492b9f7375a202697f0718f8070fc6f43a9",
+    "asset_name": "4f6d656761436f727031383930",
+    "asset_name_ascii": "OmegaCorp1890",
+    "fingerprint": "asset17hpynzwm7vqqyuhj6wn4am7knldy7kas7slcmz",
+    "minting_tx_hash": "9e11aa8426adfe0c2bb21c51a93a34a00e1b437256d2ecf9bd421d92fdcbd9e3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651363200,
+    "minting_tx_metadata": {
+      "721": {
+        "f9767a52f0ceaafa31c0a492b9f7375a202697f0718f8070fc6f43a9": {
+          "OmegaCorp1890": {
+            "Body": "Android Work Vest",
+            "Head": "Green Military Helmet",
+            "name": "Omega Corp #1890",
+            "files": [
+              {
+                "src": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/1890.png",
+                "name": "Omega Corp #1890",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/1890.png",
+            "Weapon": "None",
+            "Special": "Omega",
+            "mediaType": "image/png",
+            "Background": "Wireframe Purple"
+          },
+          "OmegaCorp2271": {
+            "Body": "Yellow Mecha Armor",
+            "Head": "Gold Cyclop Helmet",
+            "name": "Omega Corp #2271",
+            "files": [
+              {
+                "src": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/2271.png",
+                "name": "Omega Corp #2271",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/2271.png",
+            "Weapon": "Shotgun",
+            "Special": "None",
+            "mediaType": "image/png",
+            "Background": "Tactical White"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

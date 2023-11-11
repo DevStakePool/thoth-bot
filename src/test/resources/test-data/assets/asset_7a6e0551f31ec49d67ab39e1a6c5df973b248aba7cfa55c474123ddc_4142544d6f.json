@@ -1,0 +1,37 @@
+[
+  {
+    "policy_id": "7a6e0551f31ec49d67ab39e1a6c5df973b248aba7cfa55c474123ddc",
+    "asset_name": "4142544d6f",
+    "asset_name_ascii": "ABTMo",
+    "fingerprint": "asset1nf84dzxphqasvxqeeqy2sqexrp8njc686xq24f",
+    "minting_tx_hash": "587c29ce92486f9fb09efc415cc503b703c2730756d94a4a5505e35742ce59ca",
+    "total_supply": "15",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1625184000,
+    "minting_tx_metadata": {
+      "721": {
+        "7a6e0551f31ec49d67ab39e1a6c5df973b248aba7cfa55c474123ddc": {
+          "ABTMo": {
+            "id": "1",
+            "name": "Army Boy Template ",
+            "nsfw": "False",
+            "files": [
+              {
+                "src": "ipfs://QmbyZ1ZUe6HCg6hn61Ws3JVaeHctLmkae5KhMYfCQkBPU3",
+                "name": "Army Boy Template",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmX9fsTyCQjRNesGybWmJgVsRcw8RovmG9HZV6hBufGwMN",
+            "Version": "1",
+            "copyright": "Mosie-Mark @2021",
+            "collection": "Templates"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

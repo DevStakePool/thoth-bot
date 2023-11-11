@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368747967556f",
+    "asset_name_ascii": "furnishtygUo",
+    "fingerprint": "asset1gudww0f4ungwhdxpt54jx9n0mxpzmyahx0sfst",
+    "minting_tx_hash": "883eb3ef0bb5a2a1ace256cb6a81b49bf5357f2621dbeeeb13ecb0d86e6f3af7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676764800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishtygUo": {
+            "id": "tygUo",
+            "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "name": "Fireplace",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+                "name": "Fireplace",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZBhsPDqH8SthYH894ngh4Rf1EyGfLtbCvGaHqCWGxy2c",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmW4AVjc4bPWkziNFGiSV6Fy55XTAbKx1YJiM3rcCqaaSt",
+                "name": "Fireplace",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmZU7Q5dkbhWVU5a7hHiAxs4Fekuyetigp5VzxLNx75mum",
+            "description": "Hand-crafted by Pablo Robinson.",
+            "furnitureId": 209
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

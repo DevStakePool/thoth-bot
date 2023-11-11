@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "736f63696574792e7061796d656e74",
+    "asset_name_ascii": "society.payment",
+    "fingerprint": "asset1u06hrs0ezxfnet5w2rk8k2324zj6xm0atjkwzq",
+    "minting_tx_hash": "65653c024d3074992a6724892cf3f42e02963ba6af5e554f83614d1fcbe4a3b8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647734400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "tritonstone": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$tritonstone",
+            "image": "ipfs://QmPuKaJkqANCvKKvLnMZj2Em2F9WAFwFZCWCsS87ZoZosD",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "metacognitivo": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$metacognitivo",
+            "image": "ipfs://Qmd5VFJTkpZ4eEGZc2VoxYMrSukBqHCd2xSWrZXrtX4AVz",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "society.payment": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$society.payment",
+            "image": "ipfs://Qmf3odKB14DYj3gogHeMcAcZpjUA6kj2WMDaeQXAi2vEfu",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

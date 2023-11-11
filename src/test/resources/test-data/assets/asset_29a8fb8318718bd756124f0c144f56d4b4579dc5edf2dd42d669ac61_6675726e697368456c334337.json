@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368456c334337",
+    "asset_name_ascii": "furnishEl3C7",
+    "fingerprint": "asset17lcqc2prw2rwtv5j7s22e96fvmry3xn7k2fpln",
+    "minting_tx_hash": "73733e268e5913807e1947f6792f86f28be93431854874e3410dd8f043ac2a03",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672704000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishEl3C7": {
+            "id": "El3C7",
+            "src": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+            "name": "Gramophone",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+                "name": "Gramophone",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmfT9z8xTjCDkZR6XJqwBsWadXtZBncarwqNsgAxzoWPp6",
+                "name": "Gramophone",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmPpT6wZ2M3xsYs4LX5geV5VBM1X24j4B8K7Ppc8uZ5Epx",
+                "name": "Gramophone",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmVWu3bASfMHcmURP8N7h67LDuao8SJpn94YYYCx6hz8Tn",
+            "description": "Hand-crafted by Hamilton Walker.",
+            "furnitureId": 210
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

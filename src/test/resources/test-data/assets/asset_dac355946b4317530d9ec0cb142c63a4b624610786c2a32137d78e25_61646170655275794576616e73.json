@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655275794576616e73",
+    "asset_name_ascii": "adapeRuyEvans",
+    "fingerprint": "asset1adpk63gnuez4phdpckeetswxtxyqs7akr29dt5",
+    "minting_tx_hash": "b415c7464f1ccd5e8e2ad87c033f7f71cbe119a2a6e95c1dc0aaeba4caece894",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRuyEvans": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Ruy Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmRUAcpfetznwyJWtgEHvrdCWMyBA18uHR4JtgmS7RqyM7",
+                "name": "Ruy Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRUAcpfetznwyJWtgEHvrdCWMyBA18uHR4JtgmS7RqyM7",
+            "Family": "Evans",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

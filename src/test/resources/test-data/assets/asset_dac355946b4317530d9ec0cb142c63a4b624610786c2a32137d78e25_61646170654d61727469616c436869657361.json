@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d61727469616c436869657361",
+    "asset_name_ascii": "adapeMartialChiesa",
+    "fingerprint": "asset178d3894cnxxkw3hkww0zvlqcn69eevt7qq54c0",
+    "minting_tx_hash": "6e13fbe24e47e8593155d0a22ea6997e952e2d7a82bef22fada0e7ba971af52a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMartialChiesa": {
+            "Hat": "Hoodie",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Martial Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmcNrQbe241kUXTaGe6vsnmQr2pyqpAMYabSosMPH5buiY",
+                "name": "Martial Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcNrQbe241kUXTaGe6vsnmQr2pyqpAMYabSosMPH5buiY",
+            "Family": "Chiesa",
+            "Weapon": "Arrows",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

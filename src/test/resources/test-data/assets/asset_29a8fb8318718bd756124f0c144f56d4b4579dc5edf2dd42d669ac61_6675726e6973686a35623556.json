@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686a35623556",
+    "asset_name_ascii": "furnishj5b5V",
+    "fingerprint": "asset1hlkn3aeszxujj980eenuvt49cq2lajlasygm4w",
+    "minting_tx_hash": "b2a8b65cd5ae6dccd827b9f3c7fc2afcb13b60aa5878dbd35fe5b022258b9ad8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676246400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishj5b5V": {
+            "id": "j5b5V",
+            "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "name": "Bar",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+                "name": "Bar",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTkJhRAH1PRXu8UbE3qzCUfrzo5oP9gPxKpNdTuyApSxK",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZq5rpUnDxXyP3uZvqGgm6rEmWxdh4Lioqc2MrGtgqvQA",
+                "name": "Bar",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQ5oxV1FXWvUHHviByJdZzqerrzgkPURjKASPyGPPLiHS",
+            "description": "Hand-crafted by Amans Smith.",
+            "furnitureId": 201
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

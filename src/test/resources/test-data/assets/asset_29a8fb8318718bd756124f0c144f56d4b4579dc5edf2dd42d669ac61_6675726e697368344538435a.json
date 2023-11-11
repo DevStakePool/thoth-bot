@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368344538435a",
+    "asset_name_ascii": "furnish4E8CZ",
+    "fingerprint": "asset19udeljlsq8e6c9dsjqzg55aydy4d5734ymnm6p",
+    "minting_tx_hash": "e022adfc7aac0ac25ad5a35a2bd1375834c6c0776c3182820fe5a850f505db64",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675382400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish4E8CZ": {
+            "id": "4E8CZ",
+            "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "name": "Oak Chair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+                "name": "Oak Chair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTGMqJRHL9XRpRB95eMcNDxW6U6JaDpM8gctpUF3NgYgj",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmaYDactdAgX1YY8jnBCTaKLsC3Sw2DMDzEL2WCck69T4P",
+                "name": "Oak Chair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmbzMhMLvSQKoYDWuq4eFifv9wxwBdt5MtjHLXQiYg9uhN",
+            "description": "Hand-crafted by Sherlock Edwards.",
+            "furnitureId": 213
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

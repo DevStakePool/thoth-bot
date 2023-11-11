@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416e67656c696e42616c6477696e",
+    "asset_name_ascii": "adapeAngelinBaldwin",
+    "fingerprint": "asset15nr5wc5aeph42rmhf5e9xle5t8qazq2vzjtjt9",
+    "minting_tx_hash": "b05fe01d51b9bff063744a3ec5551044b7c0347168b325fe72eefb045a7fdba5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAngelinBaldwin": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Cardano",
+            "name": "Angelin Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmaqUAxa9aPjvjWjA13n6gyXEUQ6LW3ZNCF555etHLeKiS",
+                "name": "Angelin Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaqUAxa9aPjvjWjA13n6gyXEUQ6LW3ZNCF555etHLeKiS",
+            "Family": "Baldwin",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655061727279416d61746f",
+    "asset_name_ascii": "adapeParryAmato",
+    "fingerprint": "asset1jhh2v94h7zzrxstphqqh990q620ssskng7zxuu",
+    "minting_tx_hash": "0f33e19c5b42278489a02f1b0b72c646616f0f1abcdd913ab55a41809e2f9261",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeFiacreCox": {
+            "Hat": "Fruit Basket",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Fiacre Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmZC9AS8suNaMWYWH5DmW7FCMYPsV8sjVSYwxwLk8TtQit",
+                "name": "Fiacre Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZC9AS8suNaMWYWH5DmW7FCMYPsV8sjVSYwxwLk8TtQit",
+            "Family": "Cox",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeParryAmato": {
+            "Hat": "Gold Helmet",
+            "Body": "Cardano",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Parry Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmSEfFsm1K18dtLHc66wq8JmpzeatAfzM1RHMRYRn2EMhh",
+                "name": "Parry Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSEfFsm1K18dtLHc66wq8JmpzeatAfzM1RHMRYRn2EMhh",
+            "Family": "Amato",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Amato family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

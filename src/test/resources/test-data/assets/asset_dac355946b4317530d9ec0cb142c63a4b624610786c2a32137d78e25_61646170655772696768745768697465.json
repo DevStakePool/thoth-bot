@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655772696768745768697465",
+    "asset_name_ascii": "adapeWrightWhite",
+    "fingerprint": "asset1vd9ca6gpkg9nmrppla7tl2ea6nv6thmpxzxl5j",
+    "minting_tx_hash": "b52eb6445c3febd37b87d0b44b0d92df94fcbc40079e1b1d3e06cb229ffa2026",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeWrightWhite": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Wright White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmYFGNBD8XVmxWNHnPkEn5Hzq6ZzB5nFsEFYZQabKv7hGj",
+                "name": "Wright White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYFGNBD8XVmxWNHnPkEn5Hzq6ZzB5nFsEFYZQabKv7hGj",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

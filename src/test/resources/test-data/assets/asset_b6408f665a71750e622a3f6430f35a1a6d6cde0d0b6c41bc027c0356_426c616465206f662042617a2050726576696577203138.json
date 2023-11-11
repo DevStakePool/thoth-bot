@@ -4,11 +4,11 @@
     "asset_name": "426c616465206f662042617a2050726576696577203138",
     "asset_name_ascii": "Blade of Baz Preview 18",
     "fingerprint": "asset1f9wnq4flpm3vn9qd03njf9rhlmj0v8mga30r82",
-    "minting_tx_hash": "dca8596d23ae6b1db46e4e966dce6a7ac34fe2194f6b8ad8c064e2aa32976ecc",
+    "minting_tx_hash": "b980572c13ce6f483b575a07136969825541735d62121e99978c8bf91423b7f7",
     "total_supply": "15000",
     "mint_cnt": 3,
     "burn_cnt": 2,
-    "creation_time": 1662934446,
+    "creation_time": 1662854400,
     "minting_tx_metadata": {
       "721": {
         "b6408f665a71750e622a3f6430f35a1a6d6cde0d0b6c41bc027c0356": {
@@ -146,7 +146,7 @@
             "Book series": "Legends of Gaeltach",
             "Book section": "Preview - DripDropz Version"
           },
-          "Blade of Baz Preview 17": {
+          "Blade of Baz Preview 18": {
             ".": [
               "Blade of Baz is the first book from Project Bookworm.",
               ".",
@@ -294,6 +294,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

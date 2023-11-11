@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "786e2d2d3235302d756331616262",
+    "asset_name_ascii": "xn--250-uc1abb",
+    "fingerprint": "asset1gl47zcrldjpxr7gh7d3skyd9pt7gfhnna0gfl0",
+    "minting_tx_hash": "b1c230c90331eef33c58c557cfb22c45d3efb28944290cba33030732586919ea",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677542400,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "xn--w5h": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$xn--w5h",
+            "image": "ipfs://QmRo8659HM3tN8HePvahwEtz8q2qr7mFUYyMWMdawzeX9v",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "xn--0-ykub": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$xn--0-ykub",
+            "image": "ipfs://QmQhnYjFZ1qeeC4Hdz1yFZoW6ZW5n8qNnTAdySTWRtZ5tw",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "xn--250-uc1abb": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$xn--250-uc1abb",
+            "image": "ipfs://QmQCc74wiPMWJo3aXaMYL9YzLHBQU1zgKAw8nxL4snb6Tq",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

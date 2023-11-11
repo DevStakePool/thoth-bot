@@ -19,7 +19,7 @@ public class SchedulerController {
     private ScheduledExecutorService executorService;
 
     @Autowired
-    private TransactionCheckerTask transactionCheckerTask;
+    private TransactionCheckerTaskV2 transactionCheckerTask;
 
     @Autowired
     private StakingRewardsCheckerTask stakingRewardsCheckerTask;

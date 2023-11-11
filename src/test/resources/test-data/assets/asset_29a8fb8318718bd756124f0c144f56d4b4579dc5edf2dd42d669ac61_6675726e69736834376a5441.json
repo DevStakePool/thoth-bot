@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736834376a5441",
+    "asset_name_ascii": "furnish47jTA",
+    "fingerprint": "asset18e75msdljdpqp9h2z8r2y7puskqsp7pky6vdda",
+    "minting_tx_hash": "a1e2c46873f0cd506b4f5a2a3b3061d83b0ca43300838d89594462f2f04bc7c5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677110400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish47jTA": {
+            "id": "47jTA",
+            "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "name": "Chest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+                "name": "Chest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmR5vzh5LkpG2mphtY3PiH79x4bFiccw2bVPMmmLDyFtf6",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmRBbEKVNDvpSQb1VKRt1Yiu5uoWi8dzDracYH2aVmQK4N",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "description": "Hand-crafted by Creighton White.",
+            "furnitureId": 205
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

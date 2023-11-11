@@ -4,31 +4,30 @@
     "asset_name": "626c61636b736869736869",
     "asset_name_ascii": "blackshishi",
     "fingerprint": "asset1tjjdj4xzp6pqj3xyfces83yjd2rck2l0n6xz27",
-    "minting_tx_hash": "de55a342f816ca14d209faf670f163f8f07be9c59eb972509aefd55bc31766de",
-    "total_supply": "1",
+    "minting_tx_hash": "3e068838ca10e58fdfc60f1eb32fe1d7b5e664857768ecc3255cf5aad5330b93",
+    "total_supply": "0",
     "mint_cnt": 1,
-    "burn_cnt": 0,
+    "burn_cnt": 1,
     "creation_time": 1649721600,
     "minting_tx_metadata": {
       "721": {
         "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
-          "blackshishi": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
+          "000de140626c61636b736869736869": {
+            "og": 0,
             "name": "$blackshishi",
-            "image": "ipfs://Qmas47iZAt5ZZWn84CRdBdEfTPrv7k46snQBM4Aorz9Lbh",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
+            "image": "ipfs://zb2rhfwFkknhesSV86YYRN3YL4ToFVbgH9VLcwwmjZopvnjfA",
+            "length": 11,
+            "rarity": "basic",
+            "version": 1,
+            "mediaType": "image/jpeg",
+            "og_number": 0,
+            "characters": "letters",
+            "numeric_modifiers": ""
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

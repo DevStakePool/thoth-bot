@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736855686d4d30",
+    "asset_name_ascii": "furnishUhmM0",
+    "fingerprint": "asset18z3rct9fm3ly2xkl9mh5t8krt0sl6pdnuzfz4e",
+    "minting_tx_hash": "d6e01af243fe31a32b6b642f59cf7e4d44da2228a388b783a61db26a396d6b68",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675468800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishUhmM0": {
+            "id": "UhmM0",
+            "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "name": "Bust",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+                "name": "Bust",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmavwRdpfu8TcBWK4fHWEe4DTRbCB9vfYjfrnwuXYCgyaL",
+                "name": "Bust",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZBJbGopnxaupp1JWu8kTPJYznfBFs8oRq6LXoMA2sfEq",
+                "name": "Bust",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "description": "Hand-crafted by Victorin Edwards.",
+            "furnitureId": 204
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,423 @@
+[
+  {
+    "policy_id": "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81",
+    "asset_name": "4f73626572742048616464656e",
+    "asset_name_ascii": "Osbert Hadden",
+    "fingerprint": "asset146fdzvpvytvh5ms4v8nyj8sjfg79n6wev9t5hl",
+    "minting_tx_hash": "4bf3b8f680eecb33800712ac3085eca138b4e4ad85c59bf83385ab23ca0b055e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1665878400,
+    "minting_tx_metadata": {
+      "721": {
+        "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81": {
+          "Callisto": {
+            "name": "Callisto",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAABDlBMVEXjwdlaJl7//+v/qrb9scH9r7f/apj+bppeMVv+9fj/+Pj/",
+              "rbn2vcD9sbj/rbX/q77/qbv6bZj3bZW/SIL/qrv9bJL9bJT9bJb9rrn/rbe2",
+              "UnH/rrnIRXj3dJnIQnj6caK7SHb/aZz8bJi/Snr/qb7/qr3AR4L6bp3ERoJ6",
+              "N2f3bJf/cp69SISBN2nBS4O/SIB/N2u9SYK9SIaBNmt5O2f8apftbpS/SIR/",
+              "OGmvRXbBSYGDNmmDNmvEVqa6UYmlOnHef3jSZ2f/ocD/YqFCJEVXKUvCwtHj",
+              "aVadnamwMFzv2KH/gmVRKk4+I0c5KhxzJ1wtLS1AQEC6YVZ+fo82NjZcXFx+",
+              "N0a7U2fUalX///+d+MPRAAAAAWJLR0RZmrL0GAAAAAd0SU1FB+YKDgQ5ELKc",
+              "CK8AAAnHSURBVHja7d1nkxxXGYZhazEgchA555xNTiYJG7BsBBj4/78ESnXe",
+              "KuotHU737Oz07j7X/W1menu0/VyfumZWL7wgSZIkSZIkSZIkSZIkSZIkSZJ0",
+              "R3pwYkf/u3WmAAgPgPAACA+A8AAID4DwAAirD3k1esvoqjV7Hog7GgDhARAe",
+              "AOEBEB4A4QEQHgCh9cFXA+89DohbHgDhARAeAOEBEB4A4QEQHgBhzW74XHfo",
+              "6sXWDMTR1yE2AMIDIDwAwgMgPADCAyA8AEKbDV5DbR34raN6/LZRH/ztrXq9",
+              "Hj8cHX1dYgIgPADCAyA8AMIDIDwAwgMgtBr+HaN3jmqQd41quHeP3jPqw753",
+              "1AftdTgdghtCFwqA8AAID4DwAAgPgPAACA+A0OoC1wV/36gGf//oxUl9sOoD",
+              "o3r8wdGjUT3/qFVwQLhQAIQHQHgAhAdAeACEB0B4AIRXF7Yu+IdG/YZNH6w/",
+              "/vDoI6N6/qOjAlXnq9c/Nvr4qJ+/jgfghgIgPADCAyA8AMIDIDwAwgMgvA5g",
+              "1idGq+NqwBr0k6NPjer1DqsP/unRZ0YA3FAAhAdAeACEB0B4AIQHQHgAhDcD",
+              "8NnR50Z9uOrzoy+Mvjj60ujLo6+MZgD6eb86+toIgBsKgPAACA+A8AAID4Dw",
+              "AAgPgPA6gK9PmgGYVcfX8N8YPWrV8d8c1fP1hyUNf8MBEB4A4QEQHgDhARAe",
+              "AOEBEF5d4Br6W5O+PZoN+J3Rd0crGKvqeABuOADCAyA8AMIDIDwAwgMgPAD0",
+              "rLrQ32t9f/SD0UujH45mQ/9o1J//8age/2RUf0jiQevo6xITAOEBEB4A4QEQ",
+              "HgDhARAeAOHVBf/pqIYuCHWDpm70FIyfjer4GvbnoxmQer+HraOvQ2wAhAdA",
+              "eACEB0B4AIQHQHgA6FkPJhWA+mDIL0Yvteq4B4uO/j01CYDwAAgPgPAACA+A",
+              "8AAIDwA9txrul6P6ww9146i+QFLH/Wpk8HsSAOEBEB4A4QEQHgDhARAeAHpW",
+              "v6Hz61EfGoR7GgDhARAeAOEBEB4A4QEQHgB6Vv9CxwzAyyMA7lkAhAdAeACE",
+              "B0B4AIQHQHgA6Ln14QEIC4DwAAgPgPAACA+A8AAID4Dw3AAKD4DwAAgPgPAA",
+              "CA+A8AAID4DQDB8eAOEBEB4A4QEQHgDhARAeAOEBEB4A4QEQHgDhARAeAOEB",
+              "EB4A96yHG+s/t4Kw9Tw6OADCAyA8AMIDIDwAwgMgPABCq0F+0/rtpDq+D98B",
+              "rM4Lwi0JgPAACA+A8AAID4DwAAgPgNBmA50KYHYDaHVeEA4KgPAACA+A8AAI",
+              "D4DwAAgPgPBWAFaDrerHz84PwEEBEB4A4QEQHgDhARAeAOEBEF4fagWgH7+3",
+              "FTQQLhwA4QEQHgDhARAeAOEBEB4Aoa2GnAHYO+zq+N+N+mMQbjgAwgMgPADC",
+              "AyA8AMIDIDwAQqsL+/vR1iEvHQg3FADhARAeAOEBEB4A4QEQHgDhzW4ArQb5",
+              "w6JzDb96n6Ov350PgPAACA+A8AAID4DwAAgPgDvS49G5znfqDaC68H9cdF0I",
+              "e9/n6H1uPAAAAAAAAAA4UwDcsQAAAAAAALj3AB4vOtf77P0iyNZBrkanQujv",
+              "08937yEAAAAAAAAAAAAAAAAAAAAAEAGgBn5lNBv+XCBuCsBsmFMB7H2fo3cE",
+              "AAAAAAAAAAAAAAAAAAAAAIA9w8861/DXBfDq6LYAqH8PAAAAAAAAANy1AAAA",
+              "AAAAAAAAAP63+iBEB3Cu4U/9QsirraMA9H8HAAAAAAAAANy1AAAAAAAAAACA",
+              "LAA16J9afx51CNcFcOrwWyHMBtl63uu+T/1+R+8KAAAAAAAAAAAAAAAAAAAA",
+              "AAD/D8ClIOz9AMjWgWb14//Sem1SP271Pqf+h5JPNgYAAAAAAAAAAAAAAAAA",
+              "AAAAAOccfvZ8dS4Ir2/sjdZeGLPh+3lnAPpx9fP9vDV8Hbd10Gr2QZOr1tkh",
+              "AAAAAAAAAAAAAAAAAAAAABAFYCuI/vp1IdTAf209bdUFrQuyFcLfWvV8P99r",
+              "G6vfr36+n78Pf7WzDmHr8QAAAAAAAAAAAAAAAAAAAAAAcA4AW4+rf9BeCDMA",
+              "HUIfrA9R51mBmA3fb7ysnu/vXzeATh1+NiwAAAAAAAAAAAAAAAAAAAAAAFwC",
+              "wKlgbgrCDEAfooPoMC4N4O+Lnmxs9nv34wAAAAAAAAAAAAAAAAAAAAAA4EgI",
+              "9YclLgWhD1M3kuq8MwB76++zdfg+2NXGZhD6eQ6HAAAAAAAAAAAAAAAAAAAA",
+              "AEAUgHNDmIF4Y2czACtIq7YCmA24tw5oBuLo/QEAAAAAAAAAAAAAAAAAAADI",
+              "ArAXwqoO4OnOOqgO4dTh6/wzAH2o1XD1c1shdMgAAAAAAAAAcFsCAAAAAAAA",
+              "AAAyAWyF8MqkfiPoH629APrjvRDq+P7+q6G3AlhBWH3A5OidAQAAAAAAAAAA",
+              "AAAAAAAAAABgD4R6fTX8CkB/vQPobf1gyez9Z4OvQMwArADNOnpfAAAAAAAA",
+              "AAAAAAAAAAAAAAB4HoDrDj8DMHv99UWz89TrW+HNhpnduJndcFpBunPDAwAA",
+              "AAAAAAAAAAAAAAAAAADAfzt1+L3Nht4KZDV8Hdd/3w5gBmEGoj/fIRy9JwAA",
+              "AAAAAAAAAAAAAAAAAAAA3EYAWyFsPf7N1l4AWyHMXj96RwAAAAAAAAAAAAAA",
+              "AAAAAAAAOAXApYbfOmw/bgZlBaCGqt93BmEFYHZj6OgdAQAAAAAAAAAAAAAA",
+              "AAAAAADgNgPoA65uCHUQWwH04f856hA6iCc7O3pHAAAAAAAAAAAAAAAAAAAA",
+              "AADY06VvAK2G3tubk2qgGv5fo3rcB5xB6F8AuTc3ggAAAAAAAAAAAAAAAAAA",
+              "AAAA4IIfBLkpCH34f4+etGbXYwZh68/fuQAAAAAAAAAAAAAAAAAAAAAA4BYM",
+              "34+f/XwfZjb81uvxZNHRewEAAAAAAAAAAAAAAAAAAAAAwH0CMBt+Nkj/4kcf",
+              "vn6/o6/zrQ2A8AAID4DwAAgPgPAACA+A8M4FoA92LiAdQP+iR6+O638w4ujr",
+              "fGsDIDwAwgMgPADCAyA8AMIDILytAGY3burnrwtgdUOo3wDqEPoNIAA2BkB4",
+              "AIQHQHgAhAdAeACEB0B4KwBPF10XQD/fk0mPW/X8bHgANgZAeACEB0B4AIQH",
+              "QHgAhAdAeFtvBM0GO/eNoNngdeNn9h8/AnBiAIQHQHgAhAdAeACEB0B4AOhZ",
+              "eyH04c4FoQ/aP/hRz8/edwb06Ot76wMgPADCAyA8AMIDIDwAwgMgvFMBVKcC",
+              "qOP7DaAavkNYAXAj6MQACA+A8AAID4DwAAgPgPAAuGz/ASUS4niCGMTXAAAA",
+              "JXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTEwLTE0VDA0OjI2OjE0KzAwOjAwuRKU",
+              "bQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0xMC0xM1QyMTo0NDoyOSswMDow",
+              "MMrv30cAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjItMTAtMTRUMDQ6NTc6",
+              "MTYrMDA6MDDOPGKaAAAAAElFTkSuQmCC"
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Oracle"
+              },
+              {
+                "name": "Back",
+                "value": "Lute"
+              },
+              {
+                "name": "Fur",
+                "value": "Pink"
+              },
+              {
+                "name": "Clothes",
+                "value": "Dark Robe"
+              },
+              {
+                "name": "Mouth",
+                "value": "White Patchy Beard"
+              },
+              {
+                "name": "Holding",
+                "value": "Undead Staff"
+              },
+              {
+                "name": "Eyes",
+                "value": "White"
+              },
+              {
+                "name": "Hat",
+                "value": "Brain"
+              },
+              {
+                "name": "Name",
+                "value": "Callisto"
+              },
+              {
+                "name": "Region",
+                "value": "North Goof"
+              },
+              {
+                "name": "Town",
+                "value": "Emerald City"
+              },
+              {
+                "name": "Location",
+                "value": "Lower Quarter"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "90",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "1",
+                "display": "number"
+              },
+              {
+                "name": "Ability",
+                "value": "Foresight",
+                "display": "data"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          },
+          "Osbert Hadden": {
+            "name": "Osbert Hadden",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAAATlBMVEXG1rVXKUvCwtH//+v/bkpeMVsyPk9CJEXLY1F+fo//Fz7/",
+              "gkVRKk7/gRm6YVZgYHA+I0fjaVb5bkrPW3JaJl5zJ1yWQlPvrCj/tXD////4",
+              "URpqAAAAAWJLR0QZ7G61iAAAAAd0SU1FB+YKDgQ6Nzy77gcAAAeoSURBVHja",
+              "7d3RchtFEIbROAFsMCZxgJj3f1KqUpoLutLMzO7Iq1Wf786WtHL2P1dTcvzh",
+              "gyRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJ",
+              "kiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJ",
+              "kiRJkiRJkiRJkiRJWt7Dzo7++bUzAIoHQPEAKB4AxQOgeAAUD4BixQE/Jn0a",
+              "DISTBUDxACgeAMUDoHgAFA+A4gFw0noHMbOPf5ws+7lAeKcAKB4AxQOgeAAU",
+              "D4DiAVA8AIqXDdcbNHt89KCnByICGO3o+3m6ACgeAMUDoHgAFA+A4gFQPACK",
+              "lt3AbJDY1uFHQYw+3n6eCObo+3vzAVA8AIoHQPEAKB4AxQOgeAAUrd2g0SF6",
+              "7X393uuDMBkAxQOgeAAUD4DiAVA8AIoHQNF6w28dctXwo+/fgwBAEgDFA6B4",
+              "ABQPgOIBUDwAigdA0eIHPVYNtnXgVSB63wcAAAAAAACA6gFQPACKB0DxACja",
+              "3uFHB9g61Nb3ya7T/t3xeWUhAAAAAAAAAAAAAAAAAADVAgCA/wCIN2r18Nnr",
+              "tl5nFlz7OkJolYMAAAAAAAAAAAAAAAAAAAAAAAD/A6A3wOygs2D2QgAAAAAA",
+              "AAAAAAAAAAAAAAAAgMoAehC2Ahh9/SyEVaAAAAAAAAAAAAAAAAAAAAAAAACA",
+              "7QBmYeyFlF1vFEB8ftnhAQAAAAAAAAAAAAAAAICqAQDA93qDzN7YWQhbQYyC",
+              "jN8vPzwAAAAAAABH3//DA6B4ABQPgOIBoO/thdAb6mFRq6579P2+uQAoHgDF",
+              "A6B4ABQPgOIBUDwA9L3sRs8Wb/hPG+v9PLPX//nS0ff5ZgOgeAAUD4DiAVA8",
+              "AIoHQPEAOGm/XNp7ndEbHsue9xjKhuk9L3vf0ddnzzt6t2UBAAAAAAAAwM4A",
+              "OGkAAAAAAACUA9CGbx/M2Aqh3dDeBzza854uRQDxFy96A40ON9rs+5z+YAgA",
+              "AAAAAAAAAAAAAAAAAACAEgDa0PHGz0Joz4sA4pA9ANnwvYFWDb/1fQAAAAAA",
+              "AADgbAEAAAAAAAAAADUB7IWQHSA9hDIQANxIAAAAAAAAAAAAAAAAAAAAAJQC",
+              "MAuh9Wsoe14E8dulWQDZEKshzL4PAAAAAAAAAJw9AAAAAAAAAACgJoAMQhz0",
+              "U1J8vH3dblAcPgKYHX7r8/a+Pj4PAAAAAAAAAO4lAAAAAAAAAACgJoAIoRUP",
+              "fiKQ7HXtBj0lzQ4123Po96T4vN51Xy4BAAAAAAAAwL0FAAAAAAAAAADUBtAO",
+              "drLh2/cjhNZRAJ6TRgFkEF5CAAAAAAAAAHBvAQAAAAAAAAAAtQDE4T+GsoOh",
+              "DMK1AfzRqTd8BiG7HgAAAAAAAAAAAAAAAAAAAAAA3AOANlwbOgKIw7fv9yC0",
+              "G5T9YsjqA6Hs4CdC7n0/XuclCQAAAAAAAADOHgAAAAAAAAAAUBNABiEe7MTH",
+              "V0PYCyIe3GwFUOYACAAAAAAAAAAAAAAAAAAAAIDSAPZC+HxpL4T2vK0QZj8I",
+              "EssOgK49/ONkAAAAAAAAAAAAAAAAAAAAAACwEkCsByWD0L6OELJWHRA9byz7",
+              "ua52wwOA7GCt3V8AAAAAAAAAAAAAAAAAAAAAADiyHoRYBNVu8Jekpyt3ax/4",
+              "iBDifQUAAAAAAACAWwmAtQEAAAAAAADAWQC02rDxB88gxOFfk7aC+Jr0knT0",
+              "8K028J+X2n1s/3EHAAAAAAAAANxaAKwJAAAAAAAAAM4GoNWDMDr8KISvG8sA",
+              "tOvHQbKuNXx8HwAAAAAAAAAAAAAAAAAAgBsNgOIAMgi9D37E4vB7B+8ByAb+",
+              "K/R3aBRG7/px+N7rj94XAAAAAAAAAAAAAAAAAAAAAAB+VBt+9A9GtCKIVcO3",
+              "siHiwD0A35Li9ePjcfj29dF7AQAAAAAAAAAAAAAAAAAAAADACgCjw8euNfzo",
+              "wKMAsteNDn+6Ax4AAAAAAAAAAAAAAAAAAAAAAPjB8LMHQEcBeJwsDpvB6A0f",
+              "D46O3g0AAAAAAAAAAAAAAAAAAAAAAPYAuJXhMwitCOHt0j+X2gdT2r8vvu5b",
+              "Um94AAAAAAAAAAAAAAAAAACAOwmAogBu9QBoFESE0ANgeAAAAAAAAAAAAAAA",
+              "AAAAAAAAOA+A50s9CA3A3uH9QggAAAAAAAAAAAAAAAAAAAAAAIwD+DLYLID2",
+              "uvgHJNofvlx18BMhtO4GAgAAAAAAAAAAAAAAAAAAAAAALADQBnpLGoUxW4Sw",
+              "d3gAAAAAAAAAAAAAAAAAAAAAAABgHYC3ncXh43ANwujwo48DAAAAAAAAwNkD",
+              "AAAAAAAAAAAA2AKgvf6og6DRD35ECL1hs+ve3YEQAAAAAAAAAAAAAAAAAAAA",
+              "AAC8I4DXS6sPgLKDn/hBkd6Q8foAAAAAAAAAAAAAAAAAAAAAAHAPAGaHHwWQ",
+              "DXytA6DRD37E/0giuz8AAAAAAAAAAAAAAAAAAAAAAHBPACKEvQdCcajXUHx8",
+              "9cFPLD4vDteDAAAAAAAAAAAAAAAAAAAAAAAAAIwD2Dr4tYePA2cQMgB3MzwA",
+              "AAAAAAAAAAAAAAAAAAAA7wHgXyL6bEQMMMoUAAAAJXRFWHRkYXRlOmNyZWF0",
+              "ZQAyMDIyLTEwLTE0VDA0OjI2OjA5KzAwOjAwFG/1MwAAACV0RVh0ZGF0ZTpt",
+              "b2RpZnkAMjAyMi0xMC0xM1QyMTo0NDozMCswMDowMJPdmgoAAAAodEVYdGRh",
+              "dGU6dGltZXN0YW1wADIwMjItMTAtMTRUMDQ6NTg6NTUrMDA6MDCKlS1wAAAA",
+              "AElFTkSuQmCC"
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Warrior"
+              },
+              {
+                "name": "Back",
+                "value": "Steel Sword"
+              },
+              {
+                "name": "Fur",
+                "value": "Autumn"
+              },
+              {
+                "name": "Clothes",
+                "value": "Yellow Ripped Dungerees"
+              },
+              {
+                "name": "Mouth",
+                "value": "Cute"
+              },
+              {
+                "name": "Holding",
+                "value": "Crossbow"
+              },
+              {
+                "name": "Eyes",
+                "value": "RIP"
+              },
+              {
+                "name": "Hat",
+                "value": "White Curly"
+              },
+              {
+                "name": "Name",
+                "value": "Osbert Hadden"
+              },
+              {
+                "name": "Region",
+                "value": "North Goof"
+              },
+              {
+                "name": "Town",
+                "value": "Gophoria"
+              },
+              {
+                "name": "Location",
+                "value": "Lower Quarter"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "27",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "1",
+                "display": "number"
+              },
+              {
+                "name": "Treasury Boost",
+                "value": "1.075",
+                "display": "multiply"
+              },
+              {
+                "name": "Mining Boost",
+                "value": "1.075",
+                "display": "multiply"
+              },
+              {
+                "name": "Rank",
+                "value": "Apprentice"
+              },
+              {
+                "name": "Ability",
+                "value": "Thief Recovery",
+                "display": "data"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          },
+          "Ryan the Nihilist": {
+            "name": "Ryan the Nihilist",
+            "image": [
+              "data:image/png;base64,",
+              "iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAABGdBTUEAALGP",
+              "C/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Cc",
+              "ulE8AAAAV1BMVEXExMRXKUvEJyfrVktLW6teMVtPTbhnZcpCJEW+Nf/Pa/+s",
+              "AP//Znp+OVSWQlO6YVZRKk5zJ1yhICDCwtH/kWY+I0fP/3A8o3D/sGY9bnBg",
+              "YHB+fo////+L25kuAAAAAWJLR0QcnARBBwAAAAd0SU1FB+YKDgQ7DeOsBvQA",
+              "AAcFSURBVHja7d3ZcttGFEVRD1GcyY4d2xn//z9TpUI/+FZuukFQBFlnrTeJ",
+              "JEj32U8oyXr1CgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4utcHnf35OUgA4QQQ",
+              "TgDhBBBOAOEEEE4AYeqAbxpvFwnhwQggnADCCSCcAMIJIJwAwgngQc1uxOx9",
+              "/M1O3ecSwo0IIJwAwgkgnADCCSCcAMIJIFw33GzQ7vHVGz2zIGoAq84+z4cj",
+              "gHACCCeAcAIIJ4BwAggngFDdAXaDVJcOvxrE6uPj89Rgzj7fuyeAcAIIJ4Bw",
+              "AggngHACCCeAUOOAVoeYOfr6o9cXwk4CCCeAcAIIJ4BwAggngHACCDUb/tIh",
+              "rzX86vvPQhBAQwDhBBBOAOEEEE4A4QQQTgCh6g96XGuwSwe+VhCz7wtAAAIQ",
+              "gAAEkE4A4QQQTgDhBBDq6PCrA1w61KXv011n/Lvr82JDEIAABCAAAQhAAAIQ",
+              "gAAEkEYAAvgmgHpQ1x6+e92l19kb3Pi6hjDEhSAAAQhAAAIQgAAEIAABCEAA",
+              "AhDA/wQwG2DvoHuDORqCAAQgAAEIQAACEIAABCAAAQhAAMkBzEK4NIDV1+8N",
+              "4VpBCUAAAhCAAAQgAAEIQAACEIAABCCAywPYG8bRkLrrrQZQnx87vAAEIAAB",
+              "CEAAAhCAAAQggFQCEMCz7zarw80Odm8IlwaxGmT9fvzwAhCAAAQggLPP/3QC",
+              "CCeAcAIIJ4AQTxNHQ5gN9fpKrnXds/cQgAAEIAABCEAAAhCAAAQgAAEI4BYB",
+              "fN94t+kOeq964ON9fph4V8w+z3i8vm72PuM8zt5FAAIQgAAEIAABCEAAAhCA",
+              "AAQggFuE0AWxeuBV97w6/I+NnzazEKpu+HG97v1iQxCAAAQgAAEIQAACEIAA",
+              "BCAAAUQF0AUxDnT2AyH14GsA9RcvZsPvDaGzOrwQBCAAAQhAAAIQgAAEIAAB",
+              "CEAAyQEMNYChDtwFUJ+/egNoNszeAC59HwEIQAACEIAAUglAAAIQgADO3kEA",
+              "AriPEGZBdDeQugB+3txLAOPzCEAAAhCAAAQgAAEIQAACEEA4AYQaBzAOtP6i",
+              "yPDL5v1mbwCrIdQAniZWA6ifQwACEIAABCAAAQhAAAIQgABCCSA0gG74YTxe",
+              "h68B1BtE9TpdCN0gdfgPEzWE1feJHV4AAhCAAAQgAAEIQAACEEAqAQjgPwer",
+              "AbxvzAbpQujU4X8tPjbG4zWEzlNx9g4CEIAABCAAAQhAAAIQgAAEIAAB3GL4",
+              "2Q2g1QA+FTWEvcag9bpdAPV5s+vX55+9hwAEIAABCEAAAhCAAAQgAAEIQAC3",
+              "CKAbvj5vNYDfNjWETr3R013v46LxByvG6+v1x/fr887eQwACEIAABCAAAQhA",
+              "AAIQgAAEIIBbBlCHr8/rfjFkqIONPzCxGsJs+M/F7Pt14C8bAQhAAAIQgAAE",
+              "IAABCEAAAhCAAJID6Ibvnt+F0AVQD3oWxEsHED98HVQAoQQgAAEIQABn73Aa",
+              "AQhAAAIQwNk7PJyjIdQBVgPYa3Yj6OxzfFgCCCeAcAIIJ4BwAggngHAC4NnT",
+              "xKedugBqSNXbiXG91RteLBJAOAGEE0A4AYQTQDgBhBMA3xgHPPsFklU1hFkA",
+              "9evx+rPPJYYAwgkgnADCCSCcAMIJIJwAQl17+L0h1AAMf2MCCCeAcAIIJ4Bw",
+              "AggngHACCDWGv9bQHyZWf7DED37ciADCCSCcAMIJIJwAwgkgnABCXevGz2zw",
+              "VV8aQnghAggngHACCCeAcAIIJ4BwAgh1b8ML4cYEEE4A4QQQTgDhBBBOAOEE",
+              "EO7oD4C81PCzELoAvhZnn+/dE0A4AYQTQDgBhBNAOAGEE0Coe78BNAughjAG",
+              "/30jgAkBhBNAOAGEE0A4AYQTQDgBhHuUG0CzEMbQf2wEsEgA4QQQTgDhBBBO",
+              "AOEEEE4AoR7lBtCfmy6AOvxfGwFMCCCcAMIJIJwAwgkgnADCCSDcowTQhWD4",
+              "gwQQTgDhBBBOAOEEEE4A4QQQ7lED6IYXwE4CCCeAcAIIJ4BwAggngHACCPdo",
+              "AXTDf94YficBhBNAOAGEE0A4AYQTQDgBhHuUAMag9YZPHV4AOwkgnADCCSCc",
+              "AMIJIJwAwgkg3NEAxuvPGr77DyHH5zr7fO+eAMIJIJwAwgkgnADCCSCcAMI9",
+              "SgBDHX4Yj9c/IHn2+d49AYQTQDgBhBNAOAGEE0A4AYQbB7V3+JcK4Gvj7834",
+              "uhteADsJIJwAwgkgnADCCSCcAMIJgGdn3xAaQ44bPd3wVXc9AewkgHACCCeA",
+              "cAIIJ4BwAggngHBnBVCH/2fTDd9dx42ggwQQTgDhBBBOAOEEEE4A4QRwW/8C",
+              "q+VhJjnG5aQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTAtMTRUMDQ6MjY6",
+              "MTYrMDA6MDAujYVEAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEwLTEzVDIx",
+              "OjQ0OjMxKzAwOjAwNaqRvgAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMi0x",
+              "MC0xNFQwNDo1OToxMyswMDowMILNfY4AAAAASUVORK5CYII="
+            ],
+            "traits": [
+              {
+                "name": "Profession",
+                "value": "Thief"
+              },
+              {
+                "name": "Fur",
+                "value": "Dark"
+              },
+              {
+                "name": "Mouth",
+                "value": "Ginger Patchy Beard"
+              },
+              {
+                "name": "Holding",
+                "value": "Emerald Dagger"
+              },
+              {
+                "name": "Eyes",
+                "value": "Gopherite Mask"
+              },
+              {
+                "name": "Hat",
+                "value": "Ginger Curly"
+              },
+              {
+                "name": "Name",
+                "value": "Ryan the Nihilist"
+              },
+              {
+                "name": "Region",
+                "value": "East Goof"
+              },
+              {
+                "name": "Town",
+                "value": "Oakvale"
+              },
+              {
+                "name": "Location",
+                "value": "Outpost"
+              },
+              {
+                "name": "Kingdom Score",
+                "value": "5",
+                "display": "range"
+              },
+              {
+                "name": "Votes",
+                "value": "0",
+                "display": "number"
+              },
+              {
+                "name": "Theft Chance",
+                "value": "12.5%",
+                "display": "data"
+              }
+            ],
+            "twitter": "@ggmc_nft",
+            "website": "https://www.ggmc.io",
+            "mediaType": "image/png",
+            "collection": "Goofy Gophers Mining Club"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

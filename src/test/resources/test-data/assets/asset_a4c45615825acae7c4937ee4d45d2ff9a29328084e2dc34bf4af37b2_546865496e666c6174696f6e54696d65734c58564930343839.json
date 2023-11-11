@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2",
+    "asset_name": "546865496e666c6174696f6e54696d65734c58564930343839",
+    "asset_name_ascii": "TheInflationTimesLXVI0489",
+    "fingerprint": "asset1r3p0xlz6ulcza9khf2gfkn0aahc6ckklx5eruz",
+    "minting_tx_hash": "f0861003ffde43a58cbd9ed54ca6167a68da7b4b4ef6a1e8b1bc7afe50b07069",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647302400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2": {
+          "TheInflationTimesLXVI0489": {
+            "Name": "The Inflation Times, Volume LXVI",
+            "Asset": "TheInflationTimesLXVI0489",
+            "files": [
+              {
+                "src": "ipfs://Qmb2hdozMMEt4J32GKg5ygQu2F1rfQQSxT2kXX55mzhvyd",
+                "name": "TheInflationTimesLXVI0489",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmb2hdozMMEt4J32GKg5ygQu2F1rfQQSxT2kXX55mzhvyd",
+            "Number": "489 of 1000",
+            "Series": "The Inflation Times",
+            "Volume": "LXVI",
+            "Headline": "Trix Leading!",
+            "mediaType": "image/jpeg",
+            "Collection": "Old Money"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

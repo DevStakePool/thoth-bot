@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544656d7073746572536d697468",
+    "asset_name_ascii": "adapeDempsterSmith",
+    "fingerprint": "asset1k82r9u0zaacm3pll23c4m02c89ha90jgkfm4l3",
+    "minting_tx_hash": "fbc44f6444fe299610be1bc5829c6785bf4faabc2a8a4deafa4368b8232bdf53",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDempsterSmith": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Dempster Smith",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmb4iFNzVef2HDRsdEdtw8W4AwLXqKosKF7rkuV5ftAdCp",
+                "name": "Dempster Smith",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmb4iFNzVef2HDRsdEdtw8W4AwLXqKosKF7rkuV5ftAdCp",
+            "Family": "Smith",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Smith family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685148775330",
+    "asset_name_ascii": "furnishQHwS0",
+    "fingerprint": "asset1py623k6gl8vt2gphc0dqtafd45ryxt3lt53502",
+    "minting_tx_hash": "9f10bf0e59861370fe3ceb4341e129dd5deba199413b1e519ca97e3fb6f82baf",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675641600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishQHwS0": {
+            "id": "QHwS0",
+            "src": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+            "name": "Nesting Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+                "name": "Nesting Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQ4fKoQh5fcBfWawbfmEkUyPLTRzpdNn3fpN8xABLC2LA",
+                "name": "Nesting Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmeEVHurdw4dezEc7Y2CiqyaVmrnQ6werseKjLckpyX6r1",
+                "name": "Nesting Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+            "description": "Hand-crafted by North Green.",
+            "furnitureId": 212
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

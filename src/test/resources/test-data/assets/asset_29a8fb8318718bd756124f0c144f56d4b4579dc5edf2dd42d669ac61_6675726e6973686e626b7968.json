@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686e626b7968",
+    "asset_name_ascii": "furnishnbkyh",
+    "fingerprint": "asset19ct0yns9jadvy3hrk00qsae7fdv2r267kgyp9m",
+    "minting_tx_hash": "4b83c8c70b6b36fa100fc09baf1d56ed133326e54aed6553ced3a3acd65e61e8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677024000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishnbkyh": {
+            "id": "nbkyh",
+            "src": "ipfs://QmbCAhvDfYQBMTPFy4mG5kwwWwJDDimCHqjRS23Dmmkzgb",
+            "name": "Round End Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmbCAhvDfYQBMTPFy4mG5kwwWwJDDimCHqjRS23Dmmkzgb",
+                "name": "Round End Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmbypSWYZbBmYijNGKLyraFXRgjvMNyHit3EiGorEHpQWD",
+                "name": "Round End Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR1unCXjnNdkPAwob5EXMqEsg5mvPiWopdtPSYcJdeHkW",
+                "name": "Round End Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmbCAhvDfYQBMTPFy4mG5kwwWwJDDimCHqjRS23Dmmkzgb",
+            "description": "Hand-crafted by Edward Roberts.",
+            "furnitureId": 216
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

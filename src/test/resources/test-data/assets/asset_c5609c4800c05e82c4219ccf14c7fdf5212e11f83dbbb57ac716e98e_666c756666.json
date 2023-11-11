@@ -4,19 +4,14 @@
     "asset_name": "666c756666",
     "asset_name_ascii": "fluff",
     "fingerprint": "asset12utgfgazkpcmgeruegpzj0jj2zm0d44qy2yjdq",
-    "minting_tx_hash": "ac7af7b0ba3feab7a6d2a111362b4b4f206383d15720e189f0a5a700032d647c",
-    "total_supply": "29992178",
-    "mint_cnt": 3447,
+    "minting_tx_hash": "5a4153c178381e0a68ded8ca0406ba37866700c802304bb3710f4b74f2daa5dd",
+    "total_supply": "29994141",
+    "mint_cnt": 3449,
     "burn_cnt": 0,
     "creation_time": 1657584000,
     "minting_tx_metadata": {
-      "674": {
-        "msg": [
-          "Staking Contract",
-          "Assets locked until Wed, 06 Dec 2023 14:11:48 GMT."
-        ]
-      },
       "721": {
+        "nonce": "be4263bf17f2b01b",
         "c5609c4800c05e82c4219ccf14c7fdf5212e11f83dbbb57ac716e98e": {
           "fluff": {
             "name": "$fluff",
@@ -24,6 +19,7 @@
             "ticker": "$fluff",
             "website": "https://tednation.com/",
             "decimals": 0,
+            "fungible": "true",
             "description": "The official Ted Nation currency"
           }
         }

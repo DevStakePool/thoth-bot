@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973686c4a6d644c",
+    "asset_name_ascii": "furnishlJmdL",
+    "fingerprint": "asset1j5l0k6tgp3u93vspxktgtl7vnuquf36g8jz652",
+    "minting_tx_hash": "12bb8483c0042e91f06fef9b5228dd679b38a40165be9d88a8756f2898aa2fe0",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678406400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishlJmdL": {
+            "id": "lJmdL",
+            "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "name": "Bust",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+                "name": "Bust",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmavwRdpfu8TcBWK4fHWEe4DTRbCB9vfYjfrnwuXYCgyaL",
+                "name": "Bust",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZBJbGopnxaupp1JWu8kTPJYznfBFs8oRq6LXoMA2sfEq",
+                "name": "Bust",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUTa6sWfoPuv35roseEFrSyxbKD5J3uvHBbACF4TFeUPK",
+            "description": "Hand-crafted by Creighton White.",
+            "furnitureId": 204
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706544756e7374616e477265656e",
+    "asset_name_ascii": "adapeDunstanGreen",
+    "fingerprint": "asset1cfghmyhd8n3sh8cvc6czqd2hepqeqvruugramz",
+    "minting_tx_hash": "eae59dbb993cbe7d7a0079305018868715790eb4ce14d83c9f554093f676edb6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDunstanGreen": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Dunstan Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmWNFri1nTtThsWHrjYYogGY276sSaAqrj9f6vHaM62fCi",
+                "name": "Dunstan Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWNFri1nTtThsWHrjYYogGY276sSaAqrj9f6vHaM62fCi",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapePackardTaylor": {
+            "Hat": "King's Crown",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Packard Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSWb5XT9s6XsoU36EF4qBjoDpvcGmrHCZChbmsFJnoNSS",
+                "name": "Packard Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSWb5XT9s6XsoU36EF4qBjoDpvcGmrHCZChbmsFJnoNSS",
+            "Family": "Taylor",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          },
+          "adapePenleyVentucci": {
+            "Hat": "Hoodie",
+            "Body": "Suit",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Penley Ventucci",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmeEki3VbXTgb2tzEsbd52M2vHaoMjmhteT54JtXbn4ibR",
+                "name": "Penley Ventucci",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmeEki3VbXTgb2tzEsbd52M2vHaoMjmhteT54JtXbn4ibR",
+            "Family": "Ventucci",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ventucci family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

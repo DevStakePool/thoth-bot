@@ -1,0 +1,88 @@
+[
+  {
+    "policy_id": "b5fb333ad44e4853484cef178f543c35564490534aafcdf919fa4687",
+    "asset_name": "36343330",
+    "asset_name_ascii": "6430",
+    "fingerprint": "asset1vj7u36e2r3k43knzg7rgcp5rkwyuj73hjrzqcr",
+    "minting_tx_hash": "0a1ca2e999b44d87f7dfff67001a3a6cb78233dd7e3cddc2e6c9301da5d96299",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647129600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "b5fb333ad44e4853484cef178f543c35564490534aafcdf919fa4687": {
+          "3786": {
+            "dna": "119791f5153932385d734f2ad0ac2424476e84c2",
+            "name": "Cardolphins #3786",
+            "files": [
+              {
+                "src": "ipfs://QmPif8gmoNqWU99VK5bL1gVwFH9VpPkL5F3FLukkPs9Xz7",
+                "name": "Cardolphins #3786",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPif8gmoNqWU99VK5bL1gVwFH9VpPkL5F3FLukkPs9Xz7",
+            "edition": 3786,
+            "mediaType": "image/png",
+            "attributes": {
+              "Fin": "fin",
+              "Base": "normal",
+              "Eyes": "nothing",
+              "Head": "nothing",
+              "Neck": "nothing",
+              "Color": "greencamo",
+              "Mouth": "nothing",
+              "Torso": "beartrap",
+              "Debris": "nothing",
+              "Dorsal": "normal",
+              "Bubbles": "nothing",
+              "Holding": "nothing",
+              "Overlay": "overlay",
+              "Blowhole": "balloons",
+              "Background": "blue",
+              "Expression": "happy"
+            },
+            "description": "8888 Cardolphin CNFT's."
+          },
+          "6430": {
+            "dna": "6a9ff7e598e505efac875da9edf009428556e418",
+            "name": "Cardolphins #6430",
+            "files": [
+              {
+                "src": "ipfs://QmSjJCdAVx3m5btJErPBAQmp41YRCXQVe5wuMjNrKZxPuA",
+                "name": "Cardolphins #6430",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSjJCdAVx3m5btJErPBAQmp41YRCXQVe5wuMjNrKZxPuA",
+            "edition": 6430,
+            "mediaType": "image/png",
+            "attributes": {
+              "Fin": "bentfin",
+              "Base": "normal",
+              "Eyes": "red",
+              "Head": "crown",
+              "Neck": "nothing",
+              "Color": "black",
+              "Mouth": "nothing",
+              "Torso": "net",
+              "Debris": "skull",
+              "Dorsal": "normal",
+              "Bubbles": "skull",
+              "Holding": "chinese",
+              "Overlay": "overlay",
+              "Blowhole": "flowers",
+              "Background": "blue",
+              "Expression": "yelling"
+            },
+            "description": "8888 Cardolphin CNFT's."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

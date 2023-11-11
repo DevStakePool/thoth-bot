@@ -8,7 +8,7 @@
     "total_supply": "1",
     "mint_cnt": 1,
     "burn_cnt": 0,
-    "creation_time": 1666124751,
+    "creation_time": 1666051200,
     "minting_tx_metadata": {
       "721": {
         "aaa5563016f18fb19567e4431c1d5b15096ca382f0e6bd9012f1d450": {
@@ -399,6 +399,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

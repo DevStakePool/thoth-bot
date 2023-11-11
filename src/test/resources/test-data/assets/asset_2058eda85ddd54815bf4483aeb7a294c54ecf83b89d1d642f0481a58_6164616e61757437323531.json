@@ -1,0 +1,872 @@
+[
+  {
+    "policy_id": "2058eda85ddd54815bf4483aeb7a294c54ecf83b89d1d642f0481a58",
+    "asset_name": "6164616e61757437323531",
+    "asset_name_ascii": "adanaut7251",
+    "fingerprint": "asset1whpgw7ttwq4gp3eapvwtvesq5kkv5pysr0ew8l",
+    "minting_tx_hash": "8556d99188f981ba87c1b8456f586cf20821cf7cbf16a1d4a6d07b63fc4be1c5",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1652486400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "2058eda85ddd54815bf4483aeb7a294c54ecf83b89d1d642f0481a58": {
+          "adanaut57": {
+            "name": "Adanaut #57",
+            "image": "ipfs://QmYpz8FpqCnQrM5xRNu7bEPYLkn9N2Gka28Jk5N7d4NuJD",
+            "traits": {
+              "Eyes": "Squint",
+              "Tail": "None",
+              "Mouth": "Contempt",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Black Puffy Jacket",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Teal"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut294": {
+            "name": "Adanaut #294",
+            "image": "ipfs://QmcnpXQ1yuPqkN2bPzwyGVDUTDcv6VWiggX7hyru7rfpeV",
+            "traits": {
+              "Eyes": "Blue",
+              "Tail": "None",
+              "Mouth": "Monroe",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Woven Sweater",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Violet"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut549": {
+            "name": "Adanaut #549",
+            "image": "ipfs://QmakjvszYvZkUMiTACyKWSZMK9SnPcgyedCKbiKr4Nj5Bb",
+            "traits": {
+              "Eyes": "Laser",
+              "Tail": "None",
+              "Mouth": "Cig",
+              "Title": "Military",
+              "Wings": "None",
+              "Outfit": "Army Camo",
+              "Character": "Doctor Mantis",
+              "Above Head": "None",
+              "Background": "Green"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut1089": {
+            "name": "Adanaut #1089",
+            "image": "ipfs://QmdbUe7HeFve9mox7yEov8PMXJhBmMamRV9t7hw5BL2biL",
+            "traits": {
+              "Eyes": "Alien",
+              "Tail": "None",
+              "Mouth": "Contempt",
+              "Title": "History",
+              "Wings": "None",
+              "Outfit": "Caveman",
+              "Character": "Alvin",
+              "Above Head": "None",
+              "Background": "Teal"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut1547": {
+            "name": "Adanaut #1547",
+            "image": "ipfs://QmSxGPJje9Qg79NjBF1q7myj7TYjuEw11GiXhpc6iCCyeG",
+            "traits": {
+              "Eyes": "Angry",
+              "Tail": "None",
+              "Mouth": "Ice Cream",
+              "Title": "Military",
+              "Wings": "None",
+              "Outfit": "Marine",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Brown"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut1693": {
+            "name": "Adanaut #1693",
+            "image": "ipfs://QmdT5Suu8GKqEyoqURPQ2iQEyRkXwD7BxkwbNX58vtM2sr",
+            "traits": {
+              "Eyes": "Red",
+              "Tail": "None",
+              "Mouth": "Money",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Baseball",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Grey"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut1891": {
+            "name": "Adanaut #1891",
+            "image": "ipfs://QmStRBT2oowup26s3KMhh4YPZbm2PmYUXWDEFfEmMftTjH",
+            "traits": {
+              "Eyes": "Puppy",
+              "Tail": "None",
+              "Mouth": "Rainbow Teeth",
+              "Title": "History",
+              "Wings": "None",
+              "Outfit": "Caveman",
+              "Character": "Igor",
+              "Above Head": "None",
+              "Background": "Purple"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut1952": {
+            "name": "Adanaut #1952",
+            "image": "ipfs://QmZSnPq1oWTDXS3wSVeTccggdPyizKNwXvW5rX7aHu8g7X",
+            "traits": {
+              "Eyes": "Green",
+              "Tail": "None",
+              "Mouth": "Ice Cream",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "None",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Grey"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut1998": {
+            "name": "Adanaut #1998",
+            "image": "ipfs://QmUbgWrrr9KqgedvTsfj2eR3ig3GaCHNa2HZrwyaCFG9jQ",
+            "traits": {
+              "Eyes": "Stare",
+              "Tail": "None",
+              "Mouth": "Laugh",
+              "Title": "Military",
+              "Wings": "None",
+              "Outfit": "Marine",
+              "Character": "Adam",
+              "Above Head": "None",
+              "Background": "Purple"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut2080": {
+            "name": "Adanaut #2080",
+            "image": "ipfs://QmSYSSk7DaNQPN54xHKH9XZGjf1tHFiCgrD9vRppctJw9Y",
+            "traits": {
+              "Eyes": "Light Blue",
+              "Tail": "None",
+              "Mouth": "Gold Teeth",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Football",
+              "Character": "Zeek",
+              "Above Head": "None",
+              "Background": "Violet"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut2554": {
+            "name": "Adanaut #2554",
+            "image": "ipfs://QmNmAx7c4dfvCGfEMkyr4Qv86va12gPJHGHR7gqDvYLJug",
+            "traits": {
+              "Eyes": "Squint",
+              "Tail": "None",
+              "Mouth": "Mustache",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Referee",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Mustard"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut2952": {
+            "name": "Adanaut #2952",
+            "image": "ipfs://QmXMXBYzSLG3TnisTRkL7KSH6hTPyxPKJqCCZt9ej6giW1",
+            "traits": {
+              "Eyes": "Green",
+              "Tail": "None",
+              "Mouth": "Buck Teeth",
+              "Title": "Alien",
+              "Wings": "None",
+              "Outfit": "Royal Guard",
+              "Character": "Zeek",
+              "Above Head": "None",
+              "Background": "Red"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut2957": {
+            "name": "Adanaut #2957",
+            "image": "ipfs://QmYrqjgyqJHWxUcqppUSoWLq9SzQvJ5cKtQgEpc2T3WqWk",
+            "traits": {
+              "Eyes": "Heterochromia",
+              "Tail": "None",
+              "Mouth": "Gold Teeth",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Prisonnier",
+              "Character": "Zeek",
+              "Above Head": "None",
+              "Background": "Magenta"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut3151": {
+            "name": "Adanaut #3151",
+            "image": "ipfs://QmPE5EXHLa15ErhFwxvnSMXM1JahY23Ek6Q7Pqnueuxr1c",
+            "traits": {
+              "Eyes": "Light Blue",
+              "Tail": "None",
+              "Mouth": "Tongue Out",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Pickle Tank",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Green"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut3192": {
+            "name": "Adanaut #3192",
+            "image": "ipfs://QmXyrEKGu8MJVEapZkJb4TCtsQPfudo2dyc43zY7yCGNcW",
+            "traits": {
+              "Eyes": "Octopus",
+              "Tail": "None",
+              "Mouth": "Smile",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Jean Jacket",
+              "Character": "Adam",
+              "Above Head": "None",
+              "Background": "Teal"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut3219": {
+            "name": "Adanaut #3219",
+            "image": "ipfs://QmYB5NewFSvWnqU4MER42iHE3kQs2j9E3vvzAqU7RitREr",
+            "traits": {
+              "Eyes": "Green Cat",
+              "Tail": "None",
+              "Mouth": "Gold Tooth",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "None",
+              "Character": "Igor",
+              "Above Head": "Sword",
+              "Background": "Blue"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut3336": {
+            "name": "Adanaut #3336",
+            "image": "ipfs://QmamP9CAWc7e1WZmE8jG28nnu9aVZhovkL7tp5v4DQLd5u",
+            "traits": {
+              "Eyes": "Yellow Cat",
+              "Tail": "None",
+              "Mouth": "Laugh",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Football",
+              "Character": "Alvin",
+              "Above Head": "None",
+              "Background": "Mustard"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut3370": {
+            "name": "Adanaut #3370",
+            "image": "ipfs://QmUqCJdagb7F9xM95SsyR6XWbsXcHAmPC9aXKZjSrZv5qR",
+            "traits": {
+              "Eyes": "Normal",
+              "Tail": "None",
+              "Mouth": "Smile",
+              "Title": "Hands On",
+              "Wings": "None",
+              "Outfit": "Teacher",
+              "Character": "Adam",
+              "Above Head": "None",
+              "Background": "Green"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut3884": {
+            "name": "Adanaut #3884",
+            "image": "ipfs://QmNsJW6CyyYayCNTW38PXuGjQiMeSQN7tB4gG1kRdLpGXf",
+            "traits": {
+              "Eyes": "Bug",
+              "Tail": "None",
+              "Mouth": "Tongue Out",
+              "Title": "Alien",
+              "Wings": "None",
+              "Outfit": "Commander",
+              "Character": "Lexa",
+              "Above Head": "Halo",
+              "Background": "Rust"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut3943": {
+            "name": "Adanaut #3943",
+            "image": "ipfs://QmY8vqt7kVUugctzLBQGos5rjLMJ3BGWbnZLsLHwncc9c3",
+            "traits": {
+              "Eyes": "Puppy",
+              "Tail": "None",
+              "Mouth": "Snarl",
+              "Title": "Explorer",
+              "Wings": "None",
+              "Outfit": "Astronaut",
+              "Character": "Igor",
+              "Above Head": "None",
+              "Background": "Red"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4063": {
+            "name": "Adanaut #4063",
+            "image": "ipfs://QmXr1SMDiCYDQWq3BPAkUhnUctUhATtWjKKVTbTGcGZrub",
+            "traits": {
+              "Eyes": "Bug",
+              "Tail": "None",
+              "Mouth": "Nana Boo Boo",
+              "Title": "History",
+              "Wings": "None",
+              "Outfit": "Pirate",
+              "Character": "Doctor Mantis",
+              "Above Head": "None",
+              "Background": "Blue"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4231": {
+            "name": "Adanaut #4231",
+            "image": "ipfs://QmRXL6dZKp8bhqwHL55MACseNFLuEo9KkudBZxZg5EbeMx",
+            "traits": {
+              "Eyes": "Bloodshot",
+              "Tail": "None",
+              "Mouth": "Yell",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "None",
+              "Character": "Zeek",
+              "Above Head": "Lightbulb",
+              "Background": "Teal"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4329": {
+            "name": "Adanaut #4329",
+            "image": "ipfs://QmZznKftkwEse3tvaSZmUpZeJNuYW1Y62zFNiNsjiMSS9f",
+            "traits": {
+              "Eyes": "Black Eye",
+              "Tail": "None",
+              "Mouth": "Drool",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Basketball",
+              "Character": "Igor",
+              "Above Head": "None",
+              "Background": "Rust"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4484": {
+            "name": "Adanaut #4484",
+            "image": "ipfs://QmWM2K9spvQmSuXpqdT8jtg3174EFjg2p3wu2b6EnoLsi2",
+            "traits": {
+              "Eyes": "Yellow Cat",
+              "Tail": "None",
+              "Mouth": "Ice Cream",
+              "Title": "Explorer",
+              "Wings": "None",
+              "Outfit": "Orange Jumpsuit",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Blue"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4587": {
+            "name": "Adanaut #4587",
+            "image": "ipfs://QmRzhHB9snBAemC9bg9fia5obwJU2W3KLrGVw277objpar",
+            "traits": {
+              "Eyes": "Red",
+              "Tail": "None",
+              "Mouth": "Rainbow",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "None",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Grey"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4613": {
+            "name": "Adanaut #4613",
+            "image": "ipfs://QmbgYYJD1U9M1DdACEaBpYpT76DZNZsdW6KauQJ4vTwEB6",
+            "traits": {
+              "Eyes": "Angry",
+              "Tail": "None",
+              "Mouth": "Monroe",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Baseball",
+              "Character": "Adam",
+              "Above Head": "None",
+              "Background": "Green"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4834": {
+            "name": "Adanaut #4834",
+            "image": "ipfs://QmYSPasNyUn5tAp3mQBJuFYgt2N5mL6nUdaFVRhcpBCjX3",
+            "traits": {
+              "Eyes": "Angry",
+              "Tail": "None",
+              "Mouth": "Pearly Whites",
+              "Title": "Military",
+              "Wings": "Lobster",
+              "Outfit": "Sailor",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Teal"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut4922": {
+            "name": "Adanaut #4922",
+            "image": "ipfs://QmdDJ1er4L5EZoh8b8dL6yMzgFDkdEaknd6ajfTsbViztQ",
+            "traits": {
+              "Eyes": "Squint",
+              "Tail": "None",
+              "Mouth": "Pearly Whites",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Rainbow Puffy Jacket",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Purple"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut5562": {
+            "name": "Adanaut #5562",
+            "image": "ipfs://QmcZApVDat55jNLQJCi4bUMvCpj6VvD423avTu5fmEjSEM",
+            "traits": {
+              "Eyes": "Crying",
+              "Tail": "None",
+              "Mouth": "Shock",
+              "Title": "Social Services",
+              "Wings": "None",
+              "Outfit": "S.W.A.T",
+              "Character": "Adam",
+              "Above Head": "None",
+              "Background": "Violet"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut5598": {
+            "name": "Adanaut #5598",
+            "image": "ipfs://QmZR3w3j5hhdT1pgy1RfGCWCFJt2gsKMJDjEaE4A9kCSd5",
+            "traits": {
+              "Eyes": "Angry",
+              "Tail": "None",
+              "Mouth": "Contempt",
+              "Title": "Social Services",
+              "Wings": "None",
+              "Outfit": "Nurse",
+              "Character": "Alvin",
+              "Above Head": "None",
+              "Background": "Purple"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut5766": {
+            "name": "Adanaut #5766",
+            "image": "ipfs://QmPtgGCUFm9jTmvCmWkPP2hRqGBkBZNMrZi45Uy9WSjicG",
+            "traits": {
+              "Eyes": "Wispy",
+              "Tail": "None",
+              "Mouth": "Nana Boo Boo",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Black Jacket",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Violet"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut5878": {
+            "name": "Adanaut #5878",
+            "image": "ipfs://Qmevum5XjxWyQ7Xz5gRss7CeqDfxURxujh9oGP9pGob9MA",
+            "traits": {
+              "Eyes": "Crying",
+              "Tail": "None",
+              "Mouth": "Nana Boo Boo",
+              "Title": "Hands On",
+              "Wings": "None",
+              "Outfit": "Cowboy",
+              "Character": "Zeek",
+              "Above Head": "None",
+              "Background": "Violet"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut5881": {
+            "name": "Adanaut #5881",
+            "image": "ipfs://QmSsBUipJZFus8vTYKGh4tnLxeGLH6d7SALAKYszwMbTUH",
+            "traits": {
+              "Eyes": "Trippy",
+              "Tail": "None",
+              "Mouth": "Bubble Gum",
+              "Title": "Hands On",
+              "Wings": "None",
+              "Outfit": "Painter",
+              "Character": "Igor",
+              "Above Head": "None",
+              "Background": "Mustard"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut5959": {
+            "name": "Adanaut #5959",
+            "image": "ipfs://QmcjiGiNfvhuNWHdh3UUvSDtoenkugHt4UW82nWLMbqP4y",
+            "traits": {
+              "Eyes": "Bloodshot",
+              "Tail": "None",
+              "Mouth": "Bubble Gum",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Woven Sweater",
+              "Character": "Zeek",
+              "Above Head": "None",
+              "Background": "Purple"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6028": {
+            "name": "Adanaut #6028",
+            "image": "ipfs://QmXzG9TLiUymopbhUcXCe1iKuFNa1SS6qzsHFSfWnwi5w9",
+            "traits": {
+              "Eyes": "Red",
+              "Tail": "None",
+              "Mouth": "Buck Teeth",
+              "Title": "History",
+              "Wings": "None",
+              "Outfit": "Caveman",
+              "Character": "Chester",
+              "Above Head": "Sword",
+              "Background": "Violet"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6146": {
+            "name": "Adanaut #6146",
+            "image": "ipfs://QmVXPaDdqgF1VzBrBvk8wVZhAoGNuSvaPCRXnm7S48PVtJ",
+            "traits": {
+              "Eyes": "Stare",
+              "Tail": "None",
+              "Mouth": "Chronic",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Pickle Tank",
+              "Character": "Lexa",
+              "Above Head": "Sword",
+              "Background": "Red"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6225": {
+            "name": "Adanaut #6225",
+            "image": "ipfs://QmZVYC2xMYMdzsqQzx4iewCpuzBCzjHJqMmpwac9KC3eYZ",
+            "traits": {
+              "Eyes": "Normal",
+              "Tail": "None",
+              "Mouth": "Respirator",
+              "Title": "Military",
+              "Wings": "None",
+              "Outfit": "Airman",
+              "Character": "Alvin",
+              "Above Head": "Sword",
+              "Background": "Purple"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6372": {
+            "name": "Adanaut #6372",
+            "image": "ipfs://QmTCqMpJn4C8oRb295LYCtddFrHCjFti2B3zQYzG7JbK7T",
+            "traits": {
+              "Eyes": "Bug",
+              "Tail": "None",
+              "Mouth": "Chronic",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Hockey",
+              "Character": "Igor",
+              "Above Head": "None",
+              "Background": "Brown"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6397": {
+            "name": "Adanaut #6397",
+            "image": "ipfs://QmevWV8e7dT3eszWL4bHp3TGMxdKbasNAhE1fzFVjiBjj5",
+            "traits": {
+              "Eyes": "Angry",
+              "Tail": "None",
+              "Mouth": "Pearly Whites",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "None",
+              "Character": "Doctor Mantis",
+              "Above Head": "None",
+              "Background": "Mustard"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6451": {
+            "name": "Adanaut #6451",
+            "image": "ipfs://QmcXdi9pZbbnvmMsExVNNvY7NvcFRKqBjxNGxA8fLijApv",
+            "traits": {
+              "Eyes": "Light Blue",
+              "Tail": "None",
+              "Mouth": "Split Tongue",
+              "Title": "History",
+              "Wings": "None",
+              "Outfit": "Greek Tunic",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Brown"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6507": {
+            "name": "Adanaut #6507",
+            "image": "ipfs://QmdGivr4upxS6yTRrRxWmuLX6TvX6sK7dz8JKG9YtjZgRJ",
+            "traits": {
+              "Eyes": "Brown",
+              "Tail": "None",
+              "Mouth": "Gold Tooth",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Football",
+              "Character": "Alvin",
+              "Above Head": "None",
+              "Background": "Green"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6786": {
+            "name": "Adanaut #6786",
+            "image": "ipfs://QmWA43tV9kDsujwc5pYtD7Nz2v1FZD89aF2YFHzt1Y7WV2",
+            "traits": {
+              "Eyes": "Crying",
+              "Tail": "None",
+              "Mouth": "Yell",
+              "Title": "Social Services",
+              "Wings": "None",
+              "Outfit": "Police",
+              "Character": "Doctor Mantis",
+              "Above Head": "None",
+              "Background": "Mustard"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut6955": {
+            "name": "Adanaut #6955",
+            "image": "ipfs://QmbUAiP15jDkAfLZ8w4QnypmHaDNYHAEZHjhjC43MBtDQg",
+            "traits": {
+              "Eyes": "Bloodshot",
+              "Tail": "None",
+              "Mouth": "Rainbow Teeth",
+              "Title": "Hands On",
+              "Wings": "None",
+              "Outfit": "Carpenter",
+              "Character": "Alvin",
+              "Above Head": "None",
+              "Background": "Violet"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut7065": {
+            "name": "Adanaut #7065",
+            "image": "ipfs://Qmar6dZJzMAJvMSL6BZbWaeb9i7PREM6SHKbgwPrzfGmaV",
+            "traits": {
+              "Eyes": "Stare",
+              "Tail": "None",
+              "Mouth": "Ice Cream",
+              "Title": "Fame and Fortune",
+              "Wings": "None",
+              "Outfit": "Prince",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Grey"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut7251": {
+            "name": "Adanaut #7251",
+            "image": "ipfs://QmRLjHqumHfmt3tEkNJZpDLFeVifYzjWg4jfbu5tnxp8p2",
+            "traits": {
+              "Eyes": "Allergies",
+              "Tail": "None",
+              "Mouth": "Contempt",
+              "Title": "Athletics",
+              "Wings": "None",
+              "Outfit": "Baseball",
+              "Character": "Lexa",
+              "Above Head": "None",
+              "Background": "Brown"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut7294": {
+            "name": "Adanaut #7294",
+            "image": "ipfs://QmVwZxBBhnVU2VBDMzE3Z3WVuHiM3GX49MGfskWQfhTLjj",
+            "traits": {
+              "Eyes": "Crying",
+              "Tail": "None",
+              "Mouth": "Gold Tooth",
+              "Title": "History",
+              "Wings": "None",
+              "Outfit": "Greek Tunic",
+              "Character": "Doctor Mantis",
+              "Above Head": "Halo",
+              "Background": "Green"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut7462": {
+            "name": "Adanaut #7462",
+            "image": "ipfs://QmbyKCdR7cF2oDnE65fhaVSwgF9y5hWoMCWNBQt2KCPcvU",
+            "traits": {
+              "Eyes": "Bug",
+              "Tail": "None",
+              "Mouth": "Chronic",
+              "Title": "Explorer",
+              "Wings": "None",
+              "Outfit": "Gold Diver",
+              "Character": "Igor",
+              "Above Head": "Lightbulb",
+              "Background": "Green"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut7589": {
+            "name": "Adanaut #7589",
+            "image": "ipfs://QmNhNafADdEXj6bWHH5Swvi6DuDbohnQyQ15QsCq4Jw2wA",
+            "traits": {
+              "Eyes": "Heterochromia",
+              "Tail": "None",
+              "Mouth": "Smile",
+              "Title": "History",
+              "Wings": "None",
+              "Outfit": "Greek Tunic",
+              "Character": "Chester",
+              "Above Head": "None",
+              "Background": "Mustard"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut7649": {
+            "name": "Adanaut #7649",
+            "image": "ipfs://QmchBDAHtTaoDoEoDjdA9Hsp7PNstxmah9DCxq5RsQuRka",
+            "traits": {
+              "Eyes": "Red",
+              "Tail": "None",
+              "Mouth": "Laugh",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "Black Jacket",
+              "Character": "Alvin",
+              "Above Head": "None",
+              "Background": "Mustard"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          },
+          "adanaut7753": {
+            "name": "Adanaut #7753",
+            "image": "ipfs://QmZjTGAuyPxmyaRFkhPQqG2D7xB7uhaJfg8RHxd7BsEzmq",
+            "traits": {
+              "Eyes": "Red",
+              "Tail": "None",
+              "Mouth": "Drool",
+              "Title": "Civilian",
+              "Wings": "None",
+              "Outfit": "None",
+              "Character": "Zeek",
+              "Above Head": "None",
+              "Background": "Rust"
+            },
+            "Project": "Adanauts",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

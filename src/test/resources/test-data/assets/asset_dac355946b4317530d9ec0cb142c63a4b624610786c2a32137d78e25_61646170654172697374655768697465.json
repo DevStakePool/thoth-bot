@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654172697374655768697465",
+    "asset_name_ascii": "adapeAristeWhite",
+    "fingerprint": "asset1cladtckxnqlamzwu6g65gy6lxd6vn5wcmyldwy",
+    "minting_tx_hash": "771f6021fd8b82cdd2119f896b706ccf230e35c93ad88c810fa45f496f9f2ee8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAristeWhite": {
+            "Hat": "None",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ariste White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmRayW8i37whoAHyjX2UmFY2qwKxL6PPH9ndFTKqZfzKSQ",
+                "name": "Ariste White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRayW8i37whoAHyjX2UmFY2qwKxL6PPH9ndFTKqZfzKSQ",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the White family"
+          },
+          "adapeEmersonGreen": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Emerson Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmcfksb3j8jrFDZGugwdh6pmFQveRm7CdJwuVeDcYXGWJD",
+                "name": "Emerson Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmcfksb3j8jrFDZGugwdh6pmFQveRm7CdJwuVeDcYXGWJD",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeCourtlandMaddock": {
+            "Hat": "None",
+            "Body": "Knight Armor",
+            "Ears": "Earphones",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Courtland Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmPK4JStx6RLwJ1sBTLDwshSnLbrfzqqeA27DYAvapJEXA",
+                "name": "Courtland Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPK4JStx6RLwJ1sBTLDwshSnLbrfzqqeA27DYAvapJEXA",
+            "Family": "Maddock",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Maddock family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

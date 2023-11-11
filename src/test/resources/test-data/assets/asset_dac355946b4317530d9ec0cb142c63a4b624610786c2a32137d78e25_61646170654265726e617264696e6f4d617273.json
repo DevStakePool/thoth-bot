@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654265726e617264696e6f4d617273",
+    "asset_name_ascii": "adapeBernardinoMars",
+    "fingerprint": "asset1gu4we39djhpfcvncskw7gashqp8frhp6k4dhuy",
+    "minting_tx_hash": "d8bbc0acc6d8d670860525ddb05f3454172879129b08e011be1c66ecddd973b7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBernardinoMars": {
+            "Hat": "Fruit Basket",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Bernardino Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmewwG67V5qPqWgQjMazsiAGCYs1qywj9RFQsn6pRdxF3e",
+                "name": "Bernardino Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmewwG67V5qPqWgQjMazsiAGCYs1qywj9RFQsn6pRdxF3e",
+            "Family": "Mars",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Mars family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

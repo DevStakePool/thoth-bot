@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "6c9d1bc9a4238a183525d03dab6e9a8c4bd7fe2ebadb9fc1787ec369",
+    "asset_name": "416972706f72744e465430303030324159595a3031",
+    "asset_name_ascii": "AirportNFT00002AYYZ01",
+    "fingerprint": "asset15g4aw6kqv9t34x5mmrdyzy9rtvlv64q9sajc38",
+    "minting_tx_hash": "c9ca6cfb0b70606349b5753aa6e5a6c6578d9ed5864966e26043dc567f8ded51",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1639958400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "6c9d1bc9a4238a183525d03dab6e9a8c4bd7fe2ebadb9fc1787ec369": {
+          "AirportNFT00002AYYZ01": {
+            "IATA": "YYZ",
+            "city": "Toronto",
+            "name": "AirportNFT YYZ 01",
+            "files": [
+              {
+                "src": "ipfs://QmbFunyQhMn7h7a5xAw3wvDEe78263iVLACqC9GaoVy83G",
+                "name": "AirportNFT YYZ 01",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbFunyQhMn7h7a5xAw3wvDEe78263iVLACqC9GaoVy83G",
+            "style": "airport tag",
+            "airport": "Toronto Pearson International Airport",
+            "country": "Canada",
+            "creator": "@airportnft",
+            "website": "https://airportnft.io/",
+            "continent": "North America",
+            "copyright": "Copyright AirportNFT 2021; all rights reserved.",
+            "mediaType": "image/jpeg",
+            "description": "Collection of airport tag NFT’s from around the world."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

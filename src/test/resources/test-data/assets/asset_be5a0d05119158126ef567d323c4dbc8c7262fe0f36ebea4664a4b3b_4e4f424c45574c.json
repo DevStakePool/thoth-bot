@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "be5a0d05119158126ef567d323c4dbc8c7262fe0f36ebea4664a4b3b",
+    "asset_name": "4e4f424c45574c",
+    "asset_name_ascii": "NOBLEWL",
+    "fingerprint": "asset1lsgs68hhx23fnczdw7vpwqy2sfs2z2fx7w46l3",
+    "minting_tx_hash": "d4568ee66828091399252b90ffe37286a517ed1ef5baaf5d152a1c63b44765d8",
+    "total_supply": "400",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650758400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "be5a0d05119158126ef567d323c4dbc8c7262fe0f36ebea4664a4b3b": {
+          "NOBLEWL": {
+            "name": "NOBLEWL",
+            "files": [
+              {
+                "src": "ipfs://QmSMaPjY9SGD7X3D12aTXGs5kF2rwNx8gtokQdAyRKEge1",
+                "name": "NOBLEWL",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSMaPjY9SGD7X3D12aTXGs5kF2rwNx8gtokQdAyRKEge1",
+            "symbol": "NOBLEWL",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 59271814
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Chateau WL for Nobles of The Ape Society",
+            "totalSupply": 400
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

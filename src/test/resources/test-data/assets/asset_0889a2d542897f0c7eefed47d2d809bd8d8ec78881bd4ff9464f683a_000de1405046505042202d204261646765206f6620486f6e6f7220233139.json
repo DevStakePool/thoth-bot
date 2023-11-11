@@ -1,0 +1,144 @@
+[
+  {
+    "policy_id": "0889a2d542897f0c7eefed47d2d809bd8d8ec78881bd4ff9464f683a",
+    "asset_name": "000de1405046505042202d204261646765206f6620486f6e6f7220233139",
+    "asset_name_ascii": "\\000\r\\341@PFPPB - Badge of Honor #19",
+    "fingerprint": "asset18j35c4wh5mmjwzhq0ejl8zdn6dg8gsuyp0vq3k",
+    "minting_tx_hash": "86ef18acf20a8a508fd3e2ed38cd0645f7f33b84e924ef9bb37665e1cd1628a6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677801600,
+    "minting_tx_metadata": null,
+    "token_registry_metadata": null,
+    "cip68_metadata": {
+      "222": {
+        "fields": [
+          {
+            "map": [
+              {
+                "k": {
+                  "bytes": "6e616d65"
+                },
+                "v": {
+                  "bytes": "4261646765206f6620486f6e6f7220233139"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "4c6576656c"
+                },
+                "v": {
+                  "bytes": "32"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "66696c6573"
+                },
+                "v": {
+                  "list": [
+                    {
+                      "map": [
+                        {
+                          "k": {
+                            "bytes": "737263"
+                          },
+                          "v": {
+                            "bytes": "697066733a2f2f516d6171364c4878386a326472776d4a783434597966653866634e73636e6775666f6e756d543753514665354656"
+                          }
+                        },
+                        {
+                          "k": {
+                            "bytes": "6e616d65"
+                          },
+                          "v": {
+                            "bytes": "4261646765206f6620486f6e6f7220233139"
+                          }
+                        },
+                        {
+                          "k": {
+                            "bytes": "6d6564696154797065"
+                          },
+                          "v": {
+                            "bytes": "696d6167652f706e67"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": {
+                  "bytes": "696d616765"
+                },
+                "v": {
+                  "bytes": "697066733a2f2f516d6171364c4878386a326472776d4a783434597966653866634e73636e6775666f6e756d543753514665354656"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "537461747573"
+                },
+                "v": {
+                  "bytes": "536b69726d6973686572"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "2468616e646c65"
+                },
+                "v": {
+                  "bytes": ""
+                }
+              },
+              {
+                "k": {
+                  "bytes": "6d6564696154797065"
+                },
+                "v": {
+                  "bytes": "696d6167652f706e67"
+                }
+              }
+            ]
+          },
+          {
+            "int": 1
+          },
+          {
+            "fields": [
+              {
+                "int": 1
+              },
+              {
+                "list": [
+                  {
+                    "bytes": "794a8d9aa26e10b700ee802a07b2cbedd2798d4c73fdbe806a2d8170"
+                  }
+                ]
+              },
+              {
+                "fields": [],
+                "constructor": 1
+              },
+              {
+                "bytes": "0889a2d542897f0c7eefed47d2d809bd8d8ec78881bd4ff9464f683a"
+              },
+              {
+                "fields": [],
+                "constructor": 1
+              },
+              {
+                "fields": [],
+                "constructor": 1
+              }
+            ],
+            "constructor": 0
+          }
+        ],
+        "constructor": 0
+      }
+    }
+  }
+]

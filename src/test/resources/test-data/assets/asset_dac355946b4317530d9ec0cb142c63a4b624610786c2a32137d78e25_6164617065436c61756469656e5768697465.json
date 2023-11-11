@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065436c61756469656e5768697465",
+    "asset_name_ascii": "adapeClaudienWhite",
+    "fingerprint": "asset19p96zfdr2ugly8sn67y43pdpjt00eg077hqp0x",
+    "minting_tx_hash": "e7ce7b7150b475d739ed17f1dd8cc6abdadfe26ab04260fbf30c33aa673c2407",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeSiddelSmith": {
+            "Hat": "Top Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Siddel Smith",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSR2ji2oaud5wvZPnN3zxp4ZWX4GyXRWtKcAL284CYanm",
+                "name": "Siddel Smith",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSR2ji2oaud5wvZPnN3zxp4ZWX4GyXRWtKcAL284CYanm",
+            "Family": "Smith",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Smith family"
+          },
+          "adapeClaudienWhite": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Claudien White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmfQ8uudnc2PphmRQjNHzMH3jdqy5kp4NGzemsF7ZP34cZ",
+                "name": "Claudien White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfQ8uudnc2PphmRQjNHzMH3jdqy5kp4NGzemsF7ZP34cZ",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

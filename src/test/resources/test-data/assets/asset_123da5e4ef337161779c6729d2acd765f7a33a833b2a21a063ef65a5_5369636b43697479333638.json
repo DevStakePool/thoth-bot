@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479333638",
+    "asset_name_ascii": "SickCity368",
+    "fingerprint": "asset1s4uy5ta43f7pfapffelar8g2dph9fc4qgpc6gq",
+    "minting_tx_hash": "83a7617f8f65a8100265fbd1c7d54b7d61b68b9f1ff97e48f01ceee36399678d",
+    "total_supply": "25039",
+    "mint_cnt": 42,
+    "burn_cnt": 1,
+    "creation_time": 1664668800,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity368": {
+            "name": "SickCity368-StripperCoin Official-Rina",
+            "files": [
+              {
+                "src": "ipfs://QmZ3gKJumBVzGJ9NdCn11zdpXPjvFgGxtEcxdjCiUQHzuW",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmXKQM83SmeAs9b5rENijKfmZ4jde86jZy7jzY5DS4YtB8",
+            "links": {
+              "twitter": [
+                "https://twitter.com/RinaNFT",
+                "https://twitter.com/StripperCoin"
+              ],
+              "website": [
+                "https://StripperCoin.io/music",
+                "https://linktr.ee/Rina_NFT"
+              ],
+              "discord_invite": "http://discord.gg/3B8ygHQ5hH"
+            },
+            "genres": "pop",
+            "artists": "Rina",
+            "producer": "Sinato",
+            "copyright": "StripperCoin ℗ 2022",
+            "collection": "Epoch Genesis v2",
+            "song_title": "Lonely Nights",
+            "album_title": "Lonely Nights",
+            "distributor": "https://sickcity.xyz",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT2M19S",
+            "music_metadata_version": "v1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

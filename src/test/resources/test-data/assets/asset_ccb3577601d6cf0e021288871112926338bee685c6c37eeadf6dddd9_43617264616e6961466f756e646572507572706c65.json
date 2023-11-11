@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "ccb3577601d6cf0e021288871112926338bee685c6c37eeadf6dddd9",
+    "asset_name": "43617264616e6961466f756e646572507572706c65",
+    "asset_name_ascii": "CardaniaFounderPurple",
+    "fingerprint": "asset146z3daket9why2s7q59xsfy68hzzk77l8ajpcu",
+    "minting_tx_hash": "6070c38c68228b1f8ed1ab11767500f5f4a1b6ba615cf688d6254608852757c2",
+    "total_supply": "1000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1622332800,
+    "minting_tx_metadata": {
+      "721": {
+        "ccb3577601d6cf0e021288871112926338bee685c6c37eeadf6dddd9": {
+          "CardaniaFounderPurple": {
+            "url": "https://cardania.com/",
+            "name": "Cardania Founder's Card - Purple",
+            "image": "ipfs://Qme8b7LDNv7DdqnN1bMcRWHUFGyf4naRDTnTkzs6rTVaBG",
+            "hashType": "sha256",
+            "mimeType": "image/jpeg",
+            "assetHash": "88b405688c01ae9715b7cde66956439a1f41ce2d3d1f77660627da72146f8afa",
+            "copyright": "Cardania, LLC © 2021",
+            "collectionName": "Cardania Founder's Cards"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": {
+      "url": "https://cardania.com/",
+      "logo": "",
+      "name": "CardaniaFounderPurple",
+      "ticker": "",
+      "decimals": 0,
+      "description": "Cardania Founder's Card - Purple"
+    },
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973683173416655",
+    "asset_name_ascii": "furnish1sAfU",
+    "fingerprint": "asset1lsh6cal9cyaj2dgrdxj0a0mk3y23qyqnjl9yrj",
+    "minting_tx_hash": "6583ec62602855adcc28b5f705bd0fe29e8c09387ccce196ad98e7939302ce3a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678838400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish1sAfU": {
+            "id": "1sAfU",
+            "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "name": "Chest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+                "name": "Chest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmR5vzh5LkpG2mphtY3PiH79x4bFiccw2bVPMmmLDyFtf6",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmRBbEKVNDvpSQb1VKRt1Yiu5uoWi8dzDracYH2aVmQK4N",
+                "name": "Chest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://Qma9VBPzygwyJXfvVojer31biwcoxYTckRyhLtPs7nCSzp",
+            "description": "Hand-crafted by Ramiro Walker.",
+            "furnitureId": 205
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3036383338",
+    "asset_name_ascii": "Ghostchain06838",
+    "fingerprint": "asset1frmd6g5f0shcaka0fgr86aud649j2s8d32cj2z",
+    "minting_tx_hash": "87ca2a10124089dc5e8570eb82fe70c5f20acdf5da714eccaf0268c42514297b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635897600,
+    "minting_tx_metadata": {
+      "721": {
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain06838": {
+            "dna": "20010002",
+            "body": "Black Tshirt",
+            "name": "Ghostchain06838",
+            "files": [
+              {
+                "src": "ipfs://QmVJjJx3zJvtBGXW9SDRBuN3kxSKzFp9nksrNdUt4xBWW1",
+                "name": "Ghostchain06838",
+                "https": "https://api.nftghostchain.com/original?mint=6838",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Cold",
+            "image": "ipfs://QmVJjJx3zJvtBGXW9SDRBuN3kxSKzFp9nksrNdUt4xBWW1",
+            "mouth": "Rainbow Gummy Worm",
+            "rarity": "Common",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          },
+          "Ghostchain07916": {
+            "dna": "20010101",
+            "body": "Winter Coat",
+            "eyes": "Tired",
+            "head": "Police",
+            "name": "Ghostchain07916",
+            "files": [
+              {
+                "src": "ipfs://QmarJdqthxs7QTd7P1rARZ2cDXygCv1fTjGGvW9MQw6riE",
+                "name": "Ghostchain07916",
+                "https": "https://api.nftghostchain.com/original?mint=7916",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "ghost": "Rosy",
+            "image": "ipfs://QmarJdqthxs7QTd7P1rARZ2cDXygCv1fTjGGvW9MQw6riE",
+            "mouth": "Lipstick",
+            "rarity": "Common",
+            "project": "NFT Ghostchain",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

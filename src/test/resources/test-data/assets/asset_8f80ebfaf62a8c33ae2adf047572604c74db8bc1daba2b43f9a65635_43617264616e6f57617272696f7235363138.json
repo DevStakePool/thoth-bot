@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7235363138",
+    "asset_name_ascii": "CardanoWarrior5618",
+    "fingerprint": "asset17wt9kqlt9dcyyal2hc02dvyl94x83wmpe8c9xc",
+    "minting_tx_hash": "42e02ddf0cf9a3b0574fa30956efc7256f623a5bbe10745a6bf85af8eb151c54",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620000000,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior5618": {
+            "id": "5618",
+            "name": "Cardano Warrior #5618",
+            "type": "Cleric",
+            "image": "ipfs://QmYr63mcproqckjJKrraHp38g8o82JX5GGcmHDGPPwD97v",
+            "items": [
+              {
+                "name": "Bronze Dagger",
+                "rarity": "Common"
+              },
+              {
+                "name": "Bronze Shield",
+                "rarity": "Common"
+              },
+              {
+                "name": "Yellow Cape",
+                "rarity": "Common"
+              },
+              {
+                "name": "Red Hat",
+                "rarity": "Common"
+              },
+              {
+                "name": "Green Suit",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Uncommon",
+            "traits": [
+              "Blue Eyes",
+              "Brown Skin",
+              "Astonished"
+            ],
+            "imagealpha": "ipfs://QmUh9ySPBMXXgk6u64qt22v7FJUHEqSqvi9FGp6KtAxSRp"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

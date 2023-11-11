@@ -4,33 +4,33 @@
     "asset_name": "46495245",
     "asset_name_ascii": "FIRE",
     "fingerprint": "asset1j4aehuszvls6q27pxrt37ga508v86g3r6mwk9h",
-    "minting_tx_hash": "dbfee7a4e726894a885e55d2376867e32bd3317c30c4826a5a47631b305a5091",
-    "total_supply": "11150",
-    "mint_cnt": 3734,
-    "burn_cnt": 22676,
+    "minting_tx_hash": "1dbce9f609d5aaceefe9ca492f58b4714ca04ade9b609c26a826c43767df1dbf",
+    "total_supply": "11517",
+    "mint_cnt": 3738,
+    "burn_cnt": 22689,
     "creation_time": 1653523200,
     "minting_tx_metadata": {
       "721": {
         "27eee19588c997ca54d3137f64afe55a18dfcf9062fa83a724bf2357": {
-          "DRYNESS": {
-            "name": "Dryness",
+          "ENERGY": {
+            "name": "Energy",
             "files": [
               {
-                "src": "ipfs://QmUw1jfq9w4rPU2DkCjKjV7PVaCTsfGr4HuuYovxUMkV8Q",
+                "src": "ipfs://QmWfrfN2yRo5N65tSgXufWS93Ze8yB2GdLdh1uF9hyRZyS",
                 "mediaType": "image/png"
               }
             ],
-            "image": "ipfs://QmUw1jfq9w4rPU2DkCjKjV7PVaCTsfGr4HuuYovxUMkV8Q",
-            "ticker": "DRYNESS",
+            "image": "ipfs://QmWfrfN2yRo5N65tSgXufWS93Ze8yB2GdLdh1uF9hyRZyS",
+            "ticker": "ENERGY",
             "website": "https://cardanolands.com/",
             "attributes": {
               "recipe": [
-                "EARTH",
                 "FIRE",
-                "EARTH",
+                "FIRE",
+                "FIRE",
                 "FIRE"
               ],
-              "inventor": "stake1uyqszvt8ck9fhem3z63cj5zdhdqznwhkns5dx75c3cp0zgs084u8j"
+              "inventor": "stake1u95lhgwz8f0p5shlpgzmudyrzcxxr4l2dknstl7wk43hnxq0nkv4z"
             },
             "description": "Craftable Element of CardanoLands Universe"
           }

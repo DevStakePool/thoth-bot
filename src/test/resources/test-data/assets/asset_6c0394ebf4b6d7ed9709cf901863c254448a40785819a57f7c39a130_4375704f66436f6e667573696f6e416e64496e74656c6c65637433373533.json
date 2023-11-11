@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "6c0394ebf4b6d7ed9709cf901863c254448a40785819a57f7c39a130",
+    "asset_name": "4375704f66436f6e667573696f6e416e64496e74656c6c65637433373533",
+    "asset_name_ascii": "CupOfConfusionAndIntellect3753",
+    "fingerprint": "asset1fgg6pwd50f6azkxvhg87f9emm3hm00n50lyx0s",
+    "minting_tx_hash": "ef37f309fbb56423faab5601fa739593241c2e3ede04edb5454163edf51b5c43",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1670976000,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "3302d3222090ff38",
+        "6c0394ebf4b6d7ed9709cf901863c254448a40785819a57f7c39a130": {
+          "CupOfConfusionAndIntellect3753": {
+            "name": "Cup of Confusion and Intellect #3753",
+            "Relic": "Cup of Confusion and Intellect",
+            "files": [
+              {
+                "src": "ipfs://Qmbq3hdpTugUidCAqiE8SJxoP21mX3p2VMthGH4PnNqjMV",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmeZSqrRkgHZi8VKdB6cnfR6BZAq2G4rYj8GAGCUo5itPA",
+            "Website": "https://mallardorder.io",
+            "description": [
+              "One sip from the cup will bring the user untold knowledge and ",
+              "the ability to understand the great mysteries of the world's ",
+              "past, present, and future... if they are worthy."
+            ],
+            "Collection Name": "The Mallard Order - Relics"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

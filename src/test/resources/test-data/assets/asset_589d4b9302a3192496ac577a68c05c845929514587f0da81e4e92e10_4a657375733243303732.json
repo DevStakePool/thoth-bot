@@ -1,0 +1,522 @@
+[
+  {
+    "policy_id": "589d4b9302a3192496ac577a68c05c845929514587f0da81e4e92e10",
+    "asset_name": "4a657375733243303732",
+    "asset_name_ascii": "Jesus2C072",
+    "fingerprint": "asset1v6x0pnlpd2yyuwttv0yp8f9dlwzrczs2wt0leh",
+    "minting_tx_hash": "7cfea15cf690490cb5c78728462cab32b8ea8435b731b7fa717711665716d1db",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1661126400,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "87e8a7cb2f9ad6fa",
+        "589d4b9302a3192496ac577a68c05c845929514587f0da81e4e92e10": {
+          "BrobotC003": {
+            "name": "Brobot C003",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmP2D55U5TVhwNtumGsRrQT5WUSCXZJDMrpRdhKXrCs1t7",
+                "name": "Brobot C003",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmTjXuZeTRUAC5N7r6tDpAAjEfsJKQj1vCtKRSZAqNAhFq",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Four",
+            "season": "Season One",
+            "special": "None",
+            "character": "Brobot",
+            "homeworld": "Earth",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Swords",
+            "description": "Brobot C003",
+            "astrological symbol": "Virgo",
+            "enlightenment meter": "Medium Tamas"
+          },
+          "BrobotC022": {
+            "name": "Brobot C022",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmP2D55U5TVhwNtumGsRrQT5WUSCXZJDMrpRdhKXrCs1t7",
+                "name": "Brobot C022",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmcnBarSacw57oLWTdnPdBgadoJoUyitLjs3g96DhxkKDd",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Four",
+            "season": "Season One",
+            "special": "None",
+            "character": "Brobot",
+            "homeworld": "Earth",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Swords",
+            "description": "Brobot C022",
+            "astrological symbol": "Virgo",
+            "enlightenment meter": "Medium Tamas"
+          },
+          "Jesus2C007": {
+            "name": "Jesus 2 C007",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmRHvvKRLZapmavYXRH7nRfaWf43PKmVGjiehhGrzVm4bX",
+                "name": "Jesus 2 C007",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmXPrzEP1YMVVD7K5TNgASWauTuQvU2c8v9hz5Er8KnjDY",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Two",
+            "season": "Season One",
+            "special": "None",
+            "character": "Jesus 2",
+            "homeworld": "Jesus' House",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Coins, Wands",
+            "description": "Jesus 2 C007",
+            "astrological symbol": "Capricorn",
+            "enlightenment meter": "High Sattva"
+          },
+          "Jesus2C069": {
+            "name": "Jesus 2 C069",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmRHvvKRLZapmavYXRH7nRfaWf43PKmVGjiehhGrzVm4bX",
+                "name": "Jesus 2 C069",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmZnEyKK4zvoZ6m3zRi8L38enRPpejjHcEd7pYkqtJXkRe",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Two",
+            "season": "Season One",
+            "special": "None",
+            "character": "Jesus 2",
+            "homeworld": "Jesus' House",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Coins, Wands",
+            "description": "Jesus 2 C069",
+            "astrological symbol": "Capricorn",
+            "enlightenment meter": "High Sattva"
+          },
+          "Jesus2C072": {
+            "name": "Jesus 2 C072",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmRHvvKRLZapmavYXRH7nRfaWf43PKmVGjiehhGrzVm4bX",
+                "name": "Jesus 2 C072",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://Qmbgo2sbbwLVEDdhQZqycsGgvWUZABuVqXjAbXud82XY9V",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Two",
+            "season": "Season One",
+            "special": "None",
+            "character": "Jesus 2",
+            "homeworld": "Jesus' House",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Coins, Wands",
+            "description": "Jesus 2 C072",
+            "astrological symbol": "Capricorn",
+            "enlightenment meter": "High Sattva"
+          },
+          "NomadsC037": {
+            "name": "Nomads C037",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmZ9waWNQuUA1h1bre9PxVSaWPr2HeuVvMqwW3SXXELd4h",
+                "name": "Nomads C037",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmUpRtP494AhPPHGfeprK2q6faMTZC9FvcDpv1AkDUL8kn",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Six",
+            "season": "Season One",
+            "special": "None",
+            "character": "Nomads",
+            "homeworld": "Space Junk",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Cups",
+            "description": "Nomads C037",
+            "astrological symbol": "Sagittarius",
+            "enlightenment meter": "Low Sattva"
+          },
+          "ColonistsC082": {
+            "name": "Colonists C082",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmUHwBBkbfJgPm8msN4xfzHEXazB7A78kYqfenebyqZ5W1",
+                "name": "Colonists C082",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmWKBUZbu5fE6dyoLRU9LbxPQ9VCexFVW3wom1ZZc6m8RM",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Six",
+            "season": "Season One",
+            "special": "None",
+            "character": "Colonists",
+            "homeworld": "Europa",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Wands",
+            "description": "Colonists C082",
+            "astrological symbol": "Sagittarius",
+            "enlightenment meter": "Low Rajas"
+          },
+          "SimulordsC020": {
+            "name": "Simulords C020",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmcRCYvbzaX1QWgPwrsHE9yByhoYA1nSTVqPm9n9BufnRP",
+                "name": "Simulords C020",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmVuN2jgZ7Dr52QBuM1VGNiHHDW76V8PL374mBHZrzFPaf",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Six",
+            "season": "Season One",
+            "special": "None",
+            "character": "Simulords",
+            "homeworld": "Simuverse",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Wands",
+            "description": "Simulords C020",
+            "astrological symbol": "Pisces",
+            "enlightenment meter": "Low Rajas"
+          },
+          "SimulordsC090": {
+            "name": "Simulords C090",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmcRCYvbzaX1QWgPwrsHE9yByhoYA1nSTVqPm9n9BufnRP",
+                "name": "Simulords C090",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://Qmc3px3hpj34Bgvn8ajXKjfyu5nYVvDXPHTVjUtisZEu75",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Six",
+            "season": "Season One",
+            "special": "None",
+            "character": "Simulords",
+            "homeworld": "Simuverse",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Wands",
+            "description": "Simulords C090",
+            "astrological symbol": "Pisces",
+            "enlightenment meter": "Low Rajas"
+          },
+          "FridayCommon80": {
+            "name": "Friday C080",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmXEF36CZNwe9Z3qRrN99kagzjmhbyJowH7gTfuTBT7qdc",
+                "name": "Friday C080",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmNhnhmpymhvvSERFqiPj3Wh1mCw1L7NW448yDRxFShZqu",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Three",
+            "season": "Season One",
+            "special": "None",
+            "character": "Friday",
+            "homeworld": "Missing",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Cups",
+            "description": "Friday C080",
+            "astrological symbol": "Sagittarius",
+            "enlightenment meter": "Medium Rajas"
+          },
+          "GloriousBlueC093": {
+            "name": "Glorious Blue C093",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmcieQ7kT9f3PEnegTX3vLH74DAQqfZJmsvGjbrqZ3ASFj",
+                "name": "Glorious Blue C093",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmTc5qQupFPPumar5hFbH3dub9ZPxkNNrhi41WCDv73y6M",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Five",
+            "season": "Season One",
+            "special": "None",
+            "character": "Glorious Blue",
+            "homeworld": "Prime Planet",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Coins",
+            "description": "Glorious Blue C093",
+            "astrological symbol": "Virgo",
+            "enlightenment meter": "Low Rajas"
+          },
+          "GynaBonespurC046": {
+            "name": "Gyna Bonespur C046",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmezV7GbWXrWpKrdWT9C8YzzHVCZ793GXNtpNYZH4k27HY",
+                "name": "Gyna Bonespur C046",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmVpMkQRSo9xMqZnUpe5aDEcdZqMADnZSaLG1dbJ2SEqip",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Five",
+            "season": "Season One",
+            "special": "None",
+            "character": "Gyna Bonespur",
+            "homeworld": "Prime Planet",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Swords",
+            "description": "Gyna Bonespur C046",
+            "astrological symbol": "Virgo",
+            "enlightenment meter": "High Tamas"
+          },
+          "GynaBonespurC061": {
+            "name": "Gyna Bonespur C061",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmezV7GbWXrWpKrdWT9C8YzzHVCZ793GXNtpNYZH4k27HY",
+                "name": "Gyna Bonespur C061",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmZBFDe7X6YgWeUHmyNbwgy5KzwY94QiXst8Yvqxwwi9GV",
+            "phase": "One",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Five",
+            "season": "Season One",
+            "special": "None",
+            "character": "Gyna Bonespur",
+            "homeworld": "Prime Planet",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Swords",
+            "description": "Gyna Bonespur C061",
+            "astrological symbol": "Virgo",
+            "enlightenment meter": "High Tamas"
+          },
+          "SpaceFleetCommon80": {
+            "name": "Space Fleet C080",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmZcR6bff6TWQEcRJ4ogdshzFckMzZUtiYDniAUw5iu7HL",
+                "name": "Space Fleet C080",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmdotBEcABWqX2fkxb31SudVeknZMe6b93cBVioQYfM2UZ",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Six",
+            "season": "Season One",
+            "special": "None",
+            "character": "Space Fleet",
+            "homeworld": "Space Fleet Ship",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Coins",
+            "description": "Space Fleet C080",
+            "astrological symbol": "Taurus",
+            "enlightenment meter": "Medium Tamas"
+          },
+          "TheManagerCommon57": {
+            "name": "The Manager C057",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmYgTH2DuX8roqCxSnhEYgFgyf5torTjRvhyQHW8RoUqWq",
+                "name": "The Manager C057",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmQQBu7Z3mijo5eDN3WwsKWxHc4izKtgAx9co9fY84ppH8",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Five",
+            "season": "Season One",
+            "special": "None",
+            "character": "The Manager",
+            "homeworld": "Earth",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Coins",
+            "description": "The Manager C057",
+            "astrological symbol": "Virgo",
+            "enlightenment meter": "High Rajas"
+          },
+          "TheManagerCommon106": {
+            "name": "The Manager C106",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmYgTH2DuX8roqCxSnhEYgFgyf5torTjRvhyQHW8RoUqWq",
+                "name": "The Manager C106",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmbgbiW5Vov1pi5PmYcBkhPL79EGcUUGyBHKcVNUNhbGNB",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Five",
+            "season": "Season One",
+            "special": "None",
+            "character": "The Manager",
+            "homeworld": "Earth",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Coins",
+            "description": "The Manager C106",
+            "astrological symbol": "Virgo",
+            "enlightenment meter": "High Rajas"
+          },
+          "MrMrsSmuggleCommon67": {
+            "name": "Mr & Mrs Smuggle C067",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmYheFpFv2ZEprHFJAU9Fm5zx6BFD2JkeRQ3dgNNTs2Fj3",
+                "name": "Mr & Mrs Smuggle C067",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmPzonf4GWkQa3eJDSjdwKoi4Q2HKjQpTyseAG8iS2NVhn",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Four",
+            "season": "Season One",
+            "special": "None",
+            "character": "Mr & Mrs Smuggle",
+            "homeworld": "Gran Madre",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Swords, Cups",
+            "description": "Mr & Mrs Smuggle C067",
+            "astrological symbol": "Cancer / Gemini",
+            "enlightenment meter": "Low Sattva"
+          },
+          "MrMrsSmuggleCommon68": {
+            "name": "Mr & Mrs Smuggle C068",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmYheFpFv2ZEprHFJAU9Fm5zx6BFD2JkeRQ3dgNNTs2Fj3",
+                "name": "Mr & Mrs Smuggle C068",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmSq4de9NruL5JEruxkVSfqZQ8Mtm6PMhZiQvJisKpuSws",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Four",
+            "season": "Season One",
+            "special": "None",
+            "character": "Mr & Mrs Smuggle",
+            "homeworld": "Gran Madre",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Swords, Cups",
+            "description": "Mr & Mrs Smuggle C068",
+            "astrological symbol": "Cancer / Gemini",
+            "enlightenment meter": "Low Sattva"
+          },
+          "AiRobotNationCommon28": {
+            "name": "AI Robot Nation C028",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmZVc8vm7FCbGHd9MBwZMWPZdrHK3BC3mnYi6DSLMLAmQa",
+                "name": "AI Robot Nation C028",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmP8YA32nfUBTH2JghLAETSFtqL6jsBxhNaiat9x88uiE9",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Six",
+            "season": "Season One",
+            "special": "None",
+            "character": "AI Robot Nation",
+            "homeworld": "Mega Grid",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Cups",
+            "description": "AI Robot Nation C028",
+            "astrological symbol": "Capricorn",
+            "enlightenment meter": "Low Sattva"
+          },
+          "PillarsOfGeburahCommon92": {
+            "name": "Pillars of Geburah C092",
+            "type": "Clean",
+            "files": [
+              {
+                "src": "ipfs://QmWqJyFD4mwBsSCrDoCcYG3U5gky6h8YDKC35KAkWt1r9k",
+                "name": "Pillars of Geburah C092",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmNjKnBY64sfE4yqX2KfMSvYUCm9WerjnKMExnU2ZBEFba",
+            "phase": "Two",
+            "artist": "Jesse Moynihan",
+            "rarity": "Tier Six",
+            "season": "Season One",
+            "special": "None",
+            "character": "Pillars of Geburah",
+            "homeworld": "Geburah Island",
+            "mediaType": "image/png",
+            "collection": "Jesus 2",
+            "tarot suit": "Swords",
+            "description": "Pillars of Geburah C092",
+            "astrological symbol": "Libra",
+            "enlightenment meter": "High Rajas"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

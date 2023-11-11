@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "aa21582ec1ce92f2c21ac61c8b5bbcdaadad0efa59aca5d64fba22ab",
+    "asset_name": "446f6e517569786f746531343338",
+    "asset_name_ascii": "DonQuixote1438",
+    "fingerprint": "asset19kc8jmtq485wmxac76mdewu6469gpd7wk75m6a",
+    "minting_tx_hash": "1048aa5f44b3362a63b827e5c570101cd6872e09923c16fbe85f8c83d7273bcb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669852800,
+    "minting_tx_metadata": {
+      "721": {
+        "aa21582ec1ce92f2c21ac61c8b5bbcdaadad0efa59aca5d64fba22ab": {
+          "DonQuixote1438": {
+            "id": "1438",
+            "data": "ipfs://QmTS68vVkm7ugo2zUzohVPGqxPh6zcKdmYvf3KdQKw5hry",
+            "name": "Don Quixote #1438",
+            "files": [
+              {
+                "src": "ipfs://QmVfxmgT8BQYxNQr7YL4NQaMAS1oChG1PqCJEz3oziT215",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWvyWjz998ib58h3dKV7oVHsyGsphv68XkEw9bYwLx2g3",
+            "sha256": "c6e96eab1560f9fe683975c60710e42b9b439870f3a28bac8f43f281c3c1a3da",
+            "authors": [
+              "Miguel de Cervantes"
+            ],
+            "website": "https://book.io",
+            "Book Title": [
+              "Don Quixote"
+            ],
+            "attributes": {
+              "Variation": "2",
+              "Cover Theme": "The Companions"
+            },
+            "description": [
+              "Take my advice and live many years; for the foolishest thing a m",
+              "an can do in this life is to let himself die without rhyme or re",
+              "ason, without anybody killing him, or any hands but melancholy's",
+              " making an end of him."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

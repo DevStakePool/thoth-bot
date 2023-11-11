@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654a6f73657068696e477265656e",
+    "asset_name_ascii": "adapeJosephinGreen",
+    "fingerprint": "asset18ktd5hjkzy47ucaex79mt6wj3l9nprjl6p2vpl",
+    "minting_tx_hash": "aec6b184c26c5cd2ccf0c3b8a303857f7ba5bfaab505dd80bc674dd704a61482",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeJosephinGreen": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Josephin Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmQ2ZtNmGyEtZzaWkMFyCGUVKi612wXCGbcKx52NAUaUut",
+                "name": "Josephin Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQ2ZtNmGyEtZzaWkMFyCGUVKi612wXCGbcKx52NAUaUut",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

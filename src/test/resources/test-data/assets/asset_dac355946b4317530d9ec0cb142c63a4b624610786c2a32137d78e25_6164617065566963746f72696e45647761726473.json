@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065566963746f72696e45647761726473",
+    "asset_name_ascii": "adapeVictorinEdwards",
+    "fingerprint": "asset19zsd9wxrgh3nv65a4t8t57e7p9ukzmrjqqm8ma",
+    "minting_tx_hash": "239404878410ed92ed7ba26cfff685b9d39a23bad78f5dd4cfd305431cf86ade",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeFleuryMars": {
+            "Hat": "Top Hat",
+            "Body": "Chainmail",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Fleury Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmWZVJop4S3cocxNudDfp7pa5AQA2mn944iWDxnPdXfpMz",
+                "name": "Fleury Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWZVJop4S3cocxNudDfp7pa5AQA2mn944iWDxnPdXfpMz",
+            "Family": "Mars",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Mars family"
+          },
+          "adapeOxfordRich": {
+            "Hat": "Fruit Basket",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Oxford Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://Qmcm2vio9FDo2pfj6raxUnFf9UwFZ1NJ5gXt1Tr2dYMADS",
+                "name": "Oxford Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmcm2vio9FDo2pfj6raxUnFf9UwFZ1NJ5gXt1Tr2dYMADS",
+            "Family": "Rich",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Rich family"
+          },
+          "adapeVictorinEdwards": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Victorin Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmadbvJyhuQfJ6Qt92nf2FUKXnZvNYmgn7FFaVrvL1tPzG",
+                "name": "Victorin Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmadbvJyhuQfJ6Qt92nf2FUKXnZvNYmgn7FFaVrvL1tPzG",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

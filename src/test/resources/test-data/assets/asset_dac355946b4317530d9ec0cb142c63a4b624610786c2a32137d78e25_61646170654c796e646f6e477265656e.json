@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654c796e646f6e477265656e",
+    "asset_name_ascii": "adapeLyndonGreen",
+    "fingerprint": "asset1pm4e46cg6u38hgk3lp5egdcjsr5csjeg0j7snm",
+    "minting_tx_hash": "96448868445e23c59822297e7961f965f9d50ec5ac30e51c4a2378cb793cedff",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeLyndonGreen": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Lyndon Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmVAnKa5uSs1aqzuAkRyq6C68RH26N7fds7yG6zuZXLLbj",
+                "name": "Lyndon Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVAnKa5uSs1aqzuAkRyq6C68RH26N7fds7yG6zuZXLLbj",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

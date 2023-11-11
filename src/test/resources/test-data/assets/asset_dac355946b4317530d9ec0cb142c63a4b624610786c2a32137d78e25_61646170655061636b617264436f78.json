@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655061636b617264436f78",
+    "asset_name_ascii": "adapePackardCox",
+    "fingerprint": "asset1rxs8lhc5y5kd4apgax0v6g8dzhpws2llh7yugx",
+    "minting_tx_hash": "1107bf5f5b7f8601ab0c0063d1d21a26c7005e37184ad67f45a99b7bd4c8eb46",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePackardCox": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Packard Cox",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://Qmb8wp5LhpM1P33GGexZiQu1DK6wfthohpNS1pfgrjT8dj",
+                "name": "Packard Cox",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmb8wp5LhpM1P33GGexZiQu1DK6wfthohpNS1pfgrjT8dj",
+            "Family": "Cox",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cox family"
+          },
+          "adapeLinwoodVentucci": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Linwood Ventucci",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmUWEqt4YF8Vt5UGYzBsJitZk5GwqEL6kpxbP4UZEpZb3o",
+                "name": "Linwood Ventucci",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUWEqt4YF8Vt5UGYzBsJitZk5GwqEL6kpxbP4UZEpZb3o",
+            "Family": "Ventucci",
+            "Weapon": "Rifle",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Long White Beard",
+            "description": "A distinguished member of the Ventucci family"
+          },
+          "adapeSabastiandelaCruz": {
+            "Hat": "Top Hat",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Sabastian de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmWJuvVMFmsyuMSau6F338oKdtXxVBFT5m5d7LSKPiX5Xp",
+                "name": "Sabastian de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWJuvVMFmsyuMSau6F338oKdtXxVBFT5m5d7LSKPiX5Xp",
+            "Family": "de la Cruz",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de la Cruz family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

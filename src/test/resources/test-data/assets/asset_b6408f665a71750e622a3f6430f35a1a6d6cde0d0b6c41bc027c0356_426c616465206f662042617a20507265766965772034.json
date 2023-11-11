@@ -4,11 +4,11 @@
     "asset_name": "426c616465206f662042617a20507265766965772034",
     "asset_name_ascii": "Blade of Baz Preview 4",
     "fingerprint": "asset1a5gvgc0vsuazxryg2k42n8fcyvlxpkzswmup4j",
-    "minting_tx_hash": "f167e5778f3b494ee71e89588dcb7c74fbd61d5732408e4447140e9b0521d5fc",
+    "minting_tx_hash": "fe17c6079120b4bfe07b0c6556e865ca3224af61dd8bc0f6a290e6a93d53e270",
     "total_supply": "15000",
     "mint_cnt": 2,
     "burn_cnt": 1,
-    "creation_time": 1647036465,
+    "creation_time": 1646956800,
     "minting_tx_metadata": {
       "721": {
         "b6408f665a71750e622a3f6430f35a1a6d6cde0d0b6c41bc027c0356": {
@@ -124,6 +124,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

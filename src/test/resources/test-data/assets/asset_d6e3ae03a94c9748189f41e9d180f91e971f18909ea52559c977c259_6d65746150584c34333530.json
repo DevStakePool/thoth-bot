@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c34333530",
+    "asset_name_ascii": "metaPXL4350",
+    "fingerprint": "asset1jwdv9y8zj6pafva5f63smt8cvppem2yrp5fnhj",
+    "minting_tx_hash": "8e87397ae3a3b0ee9e44027387450268bb57cbeb6f3175035d45d7ece9d7c5f5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649635200,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL4350": {
+            "name": "metaPXL#4350",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmTUvcvCExDFBhofUUuThTPLmidhMQ7hxvGhBth3tnbiuF",
+                "name": "metaPXL#4350",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNkRk2N5NZVVvvjYFfDW3abdYt8JJ8XzT2Msw2fnPgc66",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "cowboy hat",
+              "goat",
+              "handlebars",
+              "golden earrings"
+            ],
+            "description": "The official 3D collectible version of PXL#4350"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

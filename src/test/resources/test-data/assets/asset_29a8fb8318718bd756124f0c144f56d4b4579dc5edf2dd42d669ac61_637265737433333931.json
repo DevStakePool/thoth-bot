@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "637265737433333931",
+    "asset_name_ascii": "crest3391",
+    "fingerprint": "asset1jl93vrjaj0ynrmqjrn5wgsmkwjk8qeml4prrev",
+    "minting_tx_hash": "c72e6932f8e9e3d5756078703be65c8055e17dccc147cf86106436124fa5a450",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675900800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest3391": {
+            "id": 3391,
+            "src": "ipfs://QmVx1hAYYBz6t6pAMJNSEeKnEPL3FMhfay8oHYEdFfJRfb",
+            "name": "Best Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmVx1hAYYBz6t6pAMJNSEeKnEPL3FMhfay8oHYEdFfJRfb",
+                "name": "Best Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmPWjGtsQn1XCEAzDpxnaBh52e2Mu3Q7XkmK5bUjX7a2of",
+                "name": "Best Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmSQedVG7op3vMf6MgTXQ6p5HBwMCgvGkzbv7ub2YkWrGi",
+                "name": "Best Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmVx1hAYYBz6t6pAMJNSEeKnEPL3FMhfay8oHYEdFfJRfb",
+            "description": "Celebrating the heritage of the Best family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

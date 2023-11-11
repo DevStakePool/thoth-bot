@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "63726573743838",
+    "asset_name_ascii": "crest88",
+    "fingerprint": "asset1523u4jz5ye98d9rld7y44njhy0wm7hd63k7wgh",
+    "minting_tx_hash": "9ec9013272fef9b9fa230dffc0469a9e6569fcc99cae418bb1bb3eee0fa6d1b4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675900800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest88": {
+            "id": 88,
+            "src": "ipfs://QmWAGoarbC7EUqEnMAz8hNm4eNqzWBsZ5bPqVqZrtXERQG",
+            "name": "Lavigne Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmWAGoarbC7EUqEnMAz8hNm4eNqzWBsZ5bPqVqZrtXERQG",
+                "name": "Lavigne Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmXHG8WKDfnwRraq6c2rkwtzcu7g2FYnMHhwydNhN75sCj",
+                "name": "Lavigne Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmNPKBy2HwauWmQQwJvHaWuvVDpwLmMJJDZs519sPu9ZvN",
+                "name": "Lavigne Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWAGoarbC7EUqEnMAz8hNm4eNqzWBsZ5bPqVqZrtXERQG",
+            "description": "Celebrating the heritage of the Lavigne family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

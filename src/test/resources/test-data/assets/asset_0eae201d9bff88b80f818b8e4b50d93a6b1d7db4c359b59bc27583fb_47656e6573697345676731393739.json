@@ -1,0 +1,79 @@
+[
+  {
+    "policy_id": "0eae201d9bff88b80f818b8e4b50d93a6b1d7db4c359b59bc27583fb",
+    "asset_name": "47656e6573697345676731393739",
+    "asset_name_ascii": "GenesisEgg1979",
+    "fingerprint": "asset1kvtayvydh3kmefmwm2r3cskye062xgn49uzn9s",
+    "minting_tx_hash": "7756f534a4baf1acdaf7af9c4529aa07c057f5ae1c55d2d84701a78088b81f34",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669248000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "0eae201d9bff88b80f818b8e4b50d93a6b1d7db4c359b59bc27583fb": {
+          "GenesisEgg0481": {
+            "name": "Genesis Egg 0481",
+            "files": [
+              {
+                "src": "ipfs://QmXVCvxH2sUXmr5XxLpwRGBE4PmtC5Tu28p5iCtjmMPjhz",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXVCvxH2sUXmr5XxLpwRGBE4PmtC5Tu28p5iCtjmMPjhz",
+            "Discord": "https://discord.gg/automatica",
+            "Twitter": "https://twitter.com/AutomaticaNFT",
+            "mediaType": "image/png",
+            "Attributes": [
+              {
+                "Type": "Leopard"
+              }
+            ],
+            "Description": "Part Of Automatica's Genesis Egg Mint."
+          },
+          "GenesisEgg1201": {
+            "name": "Genesis Egg 1201",
+            "files": [
+              {
+                "src": "ipfs://QmSfm9ZGzb6GciZEvGZZUndSqKeqq6oL65DHLg2mibhTQb",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSfm9ZGzb6GciZEvGZZUndSqKeqq6oL65DHLg2mibhTQb",
+            "Discord": "https://discord.gg/automatica",
+            "Twitter": "https://twitter.com/AutomaticaNFT",
+            "mediaType": "image/png",
+            "Attributes": [
+              {
+                "Type": "Fox"
+              }
+            ],
+            "Description": "Part Of Automatica's Genesis Egg Mint."
+          },
+          "GenesisEgg1979": {
+            "name": "Genesis Egg 1979",
+            "files": [
+              {
+                "src": "ipfs://QmYshG9cTPseeeM8PKnYXnLeJ4AhkU8oFhAJtfRMuY6DGV",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYshG9cTPseeeM8PKnYXnLeJ4AhkU8oFhAJtfRMuY6DGV",
+            "Discord": "https://discord.gg/automatica",
+            "Twitter": "https://twitter.com/AutomaticaNFT",
+            "mediaType": "image/png",
+            "Attributes": [
+              {
+                "Type": "Lizard"
+              }
+            ],
+            "Description": "Part Of Automatica's Genesis Egg Mint."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

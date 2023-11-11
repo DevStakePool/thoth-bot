@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "6b696e6776656e6775636369",
+    "asset_name_ascii": "kingvengucci",
+    "fingerprint": "asset17g7su7mp39lg9dymxnlyycq7xawmmwxnf8vxvv",
+    "minting_tx_hash": "7f2a311c30d2f3271992bf8c9c69cfa5104ddca1651ff8f1ca05207f19009fe1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1650412800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "kingvengucci": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$kingvengucci",
+            "image": "ipfs://QmeMLhsrdoUN5bvW4ST34Cgfv3axDc1FuVTcg9FJG4PhUU",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

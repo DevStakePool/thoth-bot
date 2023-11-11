@@ -4,10 +4,10 @@
     "asset_name": "69425443",
     "asset_name_ascii": "iBTC",
     "fingerprint": "asset1kfw6plmuzggq7uv90hhvky5p6xycax3l4mru58",
-    "minting_tx_hash": "fd949fee76b68450c2edb8fa79a24c8b09a2327503be45e7a2d180deca4f872f",
-    "total_supply": "142186125",
-    "mint_cnt": 7123,
-    "burn_cnt": 3960,
+    "minting_tx_hash": "8b43263182bc9ff43e28e005e39eb4cae876752a6226dd163ad7ee52ae1b51f0",
+    "total_supply": "143154479",
+    "mint_cnt": 7174,
+    "burn_cnt": 3985,
     "creation_time": 1668988800,
     "minting_tx_metadata": null,
     "token_registry_metadata": {
@@ -17,6 +17,7 @@
       "ticker": "iBTC",
       "decimals": 6,
       "description": "Cardano native token that tracks the price of BTC powered by Indigo synthetics"
-    }
+    },
+    "cip68_metadata": null
   }
 ]

@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65306d5a794a53",
+    "asset_name_ascii": "frame0mZyJS",
+    "fingerprint": "asset145azfhj3je3ulj5cq3vz53f6wvl5q6axn4qsux",
+    "minting_tx_hash": "7d9b606bb3cdea97908b1253423842b2d3bbba0b0dac07dfacf33ed24f3996fc",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677196800,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0mZyJS": {
+            "id": "mZyJS",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Garfield Rich",
+            "mintedAt": 1677271601493,
+            "mintedBy": "e11278ccd1abe77bcd61b7e6dfea2eb71c61fb3e568546ae8228cc148b",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1uyf83nx340nhhntpklndl63wkuwxr7e726z5dt5z9rxpfzc28ha26"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "policy_id": "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812",
+    "asset_name": "4d6f636f7373694c616e643039363631",
+    "asset_name_ascii": "MocossiLand09661",
+    "fingerprint": "asset1kr84v3ez0vkq9wcsgsn5slep8g7jyerzpjtjl2",
+    "minting_tx_hash": "e5140b8167d75b3764f94a7ad8e10c7057558338fb1db52894f406078f466f9d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652227200,
+    "minting_tx_metadata": {
+      "721": {
+        "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812": {
+          "MocossiLand01582": {
+            "id": 1582,
+            "name": "Shockcity #01582",
+            "image": "ipfs://QmQqStaB49bDB6DCe3Nz5HNK13oXBdN1iH17cSP9k168mL",
+            "website": "https://mocossi.com",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Theme": "Thunder",
+              "Coordinate": [
+                [
+                  89,
+                  10
+                ]
+              ],
+              "Distance-to-World-Center": 93,
+              "Distance-to-Legendary-Plot": 48
+            },
+            "description": "Mocossi NFT for Land Plots"
+          },
+          "MocossiLand01959": {
+            "id": 1959,
+            "name": "Shockcity #01959",
+            "image": "ipfs://QmQqStaB49bDB6DCe3Nz5HNK13oXBdN1iH17cSP9k168mL",
+            "website": "https://mocossi.com",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Theme": "Thunder",
+              "Coordinate": [
+                [
+                  127,
+                  56
+                ]
+              ],
+              "Distance-to-World-Center": 12,
+              "Distance-to-Legendary-Plot": 32
+            },
+            "description": "Mocossi NFT for Land Plots"
+          },
+          "MocossiLand09661": {
+            "id": 9661,
+            "name": "The Scorch #09661",
+            "image": "ipfs://QmXkNsKmujKfnbADJEQnjB1i7cFRXn5DwwX2y7m67gtJUx",
+            "website": "https://mocossi.com",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Theme": "Fire",
+              "Coordinate": [
+                [
+                  72,
+                  99
+                ]
+              ],
+              "Distance-to-World-Center": 47,
+              "Distance-to-Legendary-Plot": 13
+            },
+            "description": "Mocossi NFT for Land Plots"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

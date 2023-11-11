@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065446f6e616c64466f7264",
+    "asset_name_ascii": "adapeDonaldFord",
+    "fingerprint": "asset1efgvl22s86mle6rf7qcltgwzla0k7nm6rzfj2d",
+    "minting_tx_hash": "aef97ef715f7ea9560608c2b3404c7f8ebf83cbbf37d3d7ef5ddd1f7415d9e17",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDonaldFord": {
+            "Hat": "Hoodie",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Donald Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmXoMkCxmzYJz5G9vL5X6Aut2LUaey56uFMcoerFxAMSv8",
+                "name": "Donald Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXoMkCxmzYJz5G9vL5X6Aut2LUaey56uFMcoerFxAMSv8",
+            "Family": "Ford",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ford family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

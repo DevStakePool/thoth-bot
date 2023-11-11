@@ -1,0 +1,55 @@
+[
+  {
+    "policy_id": "f9767a52f0ceaafa31c0a492b9f7375a202697f0718f8070fc6f43a9",
+    "asset_name": "4f6d656761436f727031323732",
+    "asset_name_ascii": "OmegaCorp1272",
+    "fingerprint": "asset1lzpuc3du5c69a5cah2f0vv73s9d6uq77ryekpa",
+    "minting_tx_hash": "464d4fd744577399ee1170d0bffc3aa4e2fd0d7eca203956dd07fa74e481fc8f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651363200,
+    "minting_tx_metadata": {
+      "721": {
+        "f9767a52f0ceaafa31c0a492b9f7375a202697f0718f8070fc6f43a9": {
+          "OmegaCorp1272": {
+            "Body": "Blue Work Jacket",
+            "Head": "Blue Cat Helmet",
+            "name": "Omega Corp #1272",
+            "files": [
+              {
+                "src": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/1272.png",
+                "name": "Omega Corp #1272",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/1272.png",
+            "Weapon": "None",
+            "Special": "None",
+            "mediaType": "image/png",
+            "Background": "Wireframe Pink"
+          },
+          "OmegaCorp3247": {
+            "Body": "Blue Work Jacket",
+            "Head": "Blue Devil Mask",
+            "name": "Omega Corp #3247",
+            "files": [
+              {
+                "src": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/3247.png",
+                "name": "Omega Corp #3247",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWvJGpK9B2gAEHPNuAynGdJnK15SEbwcLchHeqevv8QNU/3247.png",
+            "Weapon": "None",
+            "Special": "None",
+            "mediaType": "image/png",
+            "Background": "Wireframe Yellow"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

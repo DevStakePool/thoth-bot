@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "b771be5a82843c7f50de45b6cb0860bc3ee1fc1646d1382571020505",
+    "asset_name": "6d6f6f6e",
+    "asset_name_ascii": "moon",
+    "fingerprint": "asset16rlzdg92gmsg8jqem0p980a9xy7u5dnkj59smx",
+    "minting_tx_hash": "a1eac3b50c882b89e3feaa047ec00ec48ac00609dd36c77f9cc0362536bb89ef",
+    "total_supply": "1221222196",
+    "mint_cnt": 2119,
+    "burn_cnt": 6,
+    "creation_time": 1665187200,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "Staking Contract",
+          "Assets locked until Thu, 12 Oct 2023 05:53:46 GMT."
+        ]
+      },
+      "721": {
+        "b771be5a82843c7f50de45b6cb0860bc3ee1fc1646d1382571020505": {
+          "moon": {
+            "url": "https://www.meltingmoonboy.io/",
+            "name": "Moon Tokens",
+            "files": [
+              {
+                "src": "ipfs://QmbmqZ5L3r282tZewrDYTzhY3f3ckUrh4SMMLY8LEtAhuv",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmdEJsEhXT1YJXYWKwPfgVXfcv49FRwrvgqMxzHiAMmfVf",
+            "ticker": "$MOON",
+            "description": "Utility tokens for the Melting Moonboy NFT Project"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

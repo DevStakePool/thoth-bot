@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "bb78d3b6638537d6df7ae43791ead3d50e75fdae82131eff2b7ae994",
+    "asset_name": "556e626f756e64656445617274684d696e757339506c75733734",
+    "asset_name_ascii": "UnboundedEarthMinus9Plus74",
+    "fingerprint": "asset1rmgt4psu4fqqye8r7q09an0l45ck5tjwk36lud",
+    "minting_tx_hash": "d61fc37e4a2da08f84281a40aa00a7a5f6eacd03f26f3c038c20660a32ec54e8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643241600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "bb78d3b6638537d6df7ae43791ead3d50e75fdae82131eff2b7ae994": {
+          "UnboundedEarthMinus9Plus74": {
+            "name": "Unbounded.Earth -9 74",
+            "files": [
+              {
+                "src": "ipfs://QmeALqi55t1dYzyEABANNE9HEGMSAezvmUZZjABh7UQjmz",
+                "name": "Unbounded.Earth -9 74",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeALqi55t1dYzyEABANNE9HEGMSAezvmUZZjABh7UQjmz",
+            "---X---": "-9",
+            "---Y---": "74",
+            "mediaType": "image/png",
+            "---INFO---": [
+              "This NFT is a land parcel in the Unbounded Earth",
+              "metaverse on the Cardano blockchain"
+            ],
+            "---LINK---": "https://unbounded.earth",
+            "---TYPE---": "Land",
+            "---SEASON---": "Spring"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

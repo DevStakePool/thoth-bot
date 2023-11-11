@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65314652465546",
+    "asset_name_ascii": "frame1FRFUF",
+    "fingerprint": "asset1ekeevaasmfsag0mwsapgqgsrlyfs0w7r6unks4",
+    "minting_tx_hash": "9adcc46d013333bc480e58a670d6c039f21472ccd3e4f720ea8e0fdcb753403a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1664496000,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame1FRFUF": {
+            "id": "63FMS",
+            "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "name": "Ape Society Frame Level 1",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+                "name": "Ape Society Frame Level 1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "level": 1,
+            "artist": "Dwennon Best",
+            "mintedAt": 1664569817894,
+            "mintedBy": "e1734741a909315786ec6c9f5756a13ced77d0b96cd414c8712de609ce",
+            "description": "Level 1 frame",
+            "mintedStake": "stake1u9e5wsdfpyc40phvdj04w44p8nkh059edn2pfjr39hnqnns02ef5u"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "62726f6b656e2e6672616d65",
+    "asset_name_ascii": "broken.frame",
+    "fingerprint": "asset1gwe3fpl3gx2msmfcqlpgq5lsmwv5gaaj06nlzv",
+    "minting_tx_hash": "aa6fa4f71aa9b266b88d62f1443297a5213ccffa5af5fb117b6ea5dd49030e0a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1670371200,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "broken.frame": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$broken.frame",
+            "image": "ipfs://QmVazFVoAuQMwWahQjHX6PieJwiDnNgm27nM5bLjvsUDhA",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

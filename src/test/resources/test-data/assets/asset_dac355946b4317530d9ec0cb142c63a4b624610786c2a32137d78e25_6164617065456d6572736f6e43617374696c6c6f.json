@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065456d6572736f6e43617374696c6c6f",
+    "asset_name_ascii": "adapeEmersonCastillo",
+    "fingerprint": "asset1q5tdj8dn24jlur99gewt5vamvzcuzqerxtsuuj",
+    "minting_tx_hash": "553641e5debd926dce7cde5d236c84fe69408e4f2a7f520816b62b303c80cf0b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEmersonCastillo": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Feather Pen",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Emerson Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmdAt7NcTtaw6awgruKV8v3UZE1YJuMVG5sHNuwBQBefPS",
+                "name": "Emerson Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdAt7NcTtaw6awgruKV8v3UZE1YJuMVG5sHNuwBQBefPS",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

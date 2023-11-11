@@ -1,0 +1,69 @@
+[
+  {
+    "policy_id": "a4badea66770768b02ff7b9674d445f13016ce901804f45844e00ebd",
+    "asset_name": "424a534f47433030353539",
+    "asset_name_ascii": "BJSOGC00559",
+    "fingerprint": "asset1hgwl6qyns3h78lejcrfmn96zskjsk82434079h",
+    "minting_tx_hash": "828160ca288bffa78a71576f0d11195585ee22559a89f083dd0affda3d297ba5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649635200,
+    "minting_tx_metadata": {
+      "721": {
+        "a4badea66770768b02ff7b9674d445f13016ce901804f45844e00ebd": {
+          "BJSOGC00559": {
+            "id": "00559",
+            "tag": "BJSOGC00559",
+            "name": "SPRINTER OG CUSTOM LE22 #00559",
+            "files": [
+              {
+                "src": "ipfs://QmbLiGXw6Gf9dnPEymZE6417gU4NWU8coy6SCM1q96MExD",
+                "name": "SPRINTER OG CUSTOM LE22",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              },
+              {
+                "src": "ipfs://QmbXyCz6z2XgoMpuqdHz54xu7w9yhL1wPZKc4zx3FUzRog",
+                "name": "SPRINTER OG CUSTOM LE22",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmU3pWSURxBKrAseJpQXgLtioiV94RcesBXhpS4ef5GGEj",
+                "name": "SPRINTER OG CUSTOM LE22",
+                "mediaType": "video/mp4",
+                "resolution": "web"
+              }
+            ],
+            "image": "ipfs://QmSdRtanf4B7wpd4sPv8NyoMFpNqHbSc1LMaCEGUepbM5q",
+            "media": {
+              "Discord": "https://discord.gg/cornucopiasgame",
+              "Website": "https://www.cornucopias.io",
+              "Link Tree": "https://linktr.ee/CornucopiasGame"
+            },
+            "gameid": "FVBJSOGC04",
+            "rarity": "Legendary",
+            "season": "Pre-Launch",
+            "version": "1.0",
+            "fullName": "Bubblejett Sprinter OG Custom 2022 #00559",
+            "mediaType": "image/png",
+            "typeClass": "Flying Vehicle",
+            "attributes": {
+              "Year": "2022",
+              "Color": "Clean White",
+              "Model": "Sprinter OG Custom",
+              "Paint": "Flat",
+              "Seats": "2",
+              "Derivative": "LE 2022",
+              "Manufacturer": "Bubblejett"
+            },
+            "description": "Cornucopias Flying Vehicle",
+            "projectName": "Cornucopias 'The Island' Game"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

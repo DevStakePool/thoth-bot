@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7231383339",
+    "asset_name_ascii": "CardanoWarrior1839",
+    "fingerprint": "asset1zdwgpd7lw33jdlf4mhttadkwfa4nf6etazec67",
+    "minting_tx_hash": "909b4ccafce5276afce6da84b6053aee4147f644cadafd8d77f61b60519afdd4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1619913600,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior1839": {
+            "id": "1839",
+            "name": "Cardano Warrior #1839",
+            "type": "Barbarian",
+            "image": "ipfs://QmewoE23QEx2WENN92i8AYWREwmYxiVdrBVLJBojqMXHex",
+            "items": [
+              {
+                "name": "Silver Spear",
+                "rarity": "Common"
+              },
+              {
+                "name": "Gold Shield",
+                "rarity": "Common"
+              },
+              {
+                "name": "Brown Cape",
+                "rarity": "Common"
+              },
+              {
+                "name": "Leather armor",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Uncommon",
+            "traits": [
+              "Green Eyes",
+              "Angry",
+              "White Skin"
+            ],
+            "imagealpha": "ipfs://QmXrMkMth1tEK8A131SLrccu7BVPYxeborBPqCxbTDXkru"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

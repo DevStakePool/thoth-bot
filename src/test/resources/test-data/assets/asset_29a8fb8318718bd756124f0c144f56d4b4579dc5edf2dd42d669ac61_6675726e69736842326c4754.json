@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736842326c4754",
+    "asset_name_ascii": "furnishB2lGT",
+    "fingerprint": "asset1q6u0valj4pkahzv0urypqtyv0jfczjlxg5frrf",
+    "minting_tx_hash": "2af222f79c004738cec25a75ce00b8652769511e2ca07ac95ab3c8fc43ebcce7",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674777600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishB2lGT": {
+            "id": "B2lGT",
+            "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "name": "Rug",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+                "name": "Rug",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmU31Twc3Nvc9gchWRRVMkFPTskqiJdFWWm6zsnwMPj7TJ",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmV65MKJZaK67QLbCGziBhbmnwHsFiyDuCewp4T2DSaBCP",
+                "name": "Rug",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTWzH2EZVBk3Bs5RNY7z6AUMmWkkgCuwq9ypdvMcwP2cW",
+            "description": "Hand-crafted by Lievin Robinson.",
+            "furnitureId": 218
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706550616c6d65724d6f6e6574",
+    "asset_name_ascii": "adapePalmerMonet",
+    "fingerprint": "asset1mhhvat53tgl0c9rftdruy9jyfrj4hgv2fv6xhr",
+    "minting_tx_hash": "76e6ab9fc1a6610db6cf91129f23fe590c6f763b210f4a9cd1780706bce30825",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapePalmerMonet": {
+            "Hat": "Feather Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Feather Pen",
+            "Eyes": "Spectacles",
+            "Head": "Orange",
+            "name": "Palmer Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmcGFVWMaCS7ywb77GGCozA8LvoDV35t2w2QSYtJyEVfBN",
+                "name": "Palmer Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmcGFVWMaCS7ywb77GGCozA8LvoDV35t2w2QSYtJyEVfBN",
+            "Family": "Monet",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

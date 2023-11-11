@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973685039764f78",
+    "asset_name_ascii": "furnishP9vOx",
+    "fingerprint": "asset1m5t9gdelctky5tatrex4dugr52nt49wg59rn6f",
+    "minting_tx_hash": "a40dc03d7f32194f7624e23d8a0d8a5463320e27042bbc093d9c0dc97d486346",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673568000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishP9vOx": {
+            "id": "P9vOx",
+            "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "name": "Round Coffee Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+                "name": "Round Coffee Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQT2Bor5fRsrDd6KEhfaxyk232booDfkJzMYLMyZu1G5X",
+                "name": "Round Coffee Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmevbqntFscFS4KuCgnYsYyZi8qE6AWugLEAjKZwMYEwiy",
+                "name": "Round Coffee Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYxwrTEn55APMUinPQmT1WEQg7LPcYHYxTGGS678pKtWb",
+            "description": "Hand-crafted by Hamilton Edwards.",
+            "furnitureId": 215
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

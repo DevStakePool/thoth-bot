@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644",
+    "asset_name": "4f6764656e47616d6d61",
+    "asset_name_ascii": "OgdenGamma",
+    "fingerprint": "asset1jmjynmgwlavlmnrk5lnj48lq2ryf7nf38wss0f",
+    "minting_tx_hash": "53d08730af0c573dc0734e9ce403b1dcf8858fae1f896fcdbef679cbd21d90e6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671494400,
+    "minting_tx_metadata": {
+      "721": {
+        "929b1637798a815baf189ca5039ce4de9523e6b1e788b7ffe36e8644": {
+          "OgdenGamma": {
+            "name": "Ogden Gamma",
+            "files": [
+              {
+                "src": "ipfs://QmSYreoz5UWXB86rmR96N8jC1Y99goe7CaWX7emJWsZUnj",
+                "name": "Ogden Gamma",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSYreoz5UWXB86rmR96N8jC1Y99goe7CaWX7emJWsZUnj",
+            "mediaType": "image/png",
+            "attributes": {
+              "Body": "Office Shirt Purple",
+              "Hair": "Black Hair 4",
+              "Mask": "White Mask",
+              "Rank": "Farmer",
+              "Nation": "Gamma",
+              "Backdrop": "Red Backdrop 9",
+              "Body Color": "Purple",
+              "Body Accessory": "None",
+              "Head Accessory": "Pink Cardano"
+            },
+            "collection": "Pond - Theta Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

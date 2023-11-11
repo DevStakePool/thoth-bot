@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b65796f6e436f72746573",
+    "asset_name_ascii": "adapeKeyonCortes",
+    "fingerprint": "asset1l8u2ylcp3jxheey4xnfhqmpxmvgjpnmccgpuj8",
+    "minting_tx_hash": "a2e949a85b7174d07915b4c5b239fb4c74c8b41502c1e6035b6e92c13a0f32ca",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeKeyonCortes": {
+            "Hat": "Spinner Hat",
+            "Body": "Brown Suit",
+            "Ears": "Cardano Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Keyon Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmQ7DVssH4eUStLZbV4fg3GxyBr4dM8vxY7RruNYKPVxvj",
+                "name": "Keyon Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQ7DVssH4eUStLZbV4fg3GxyBr4dM8vxY7RruNYKPVxvj",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cortes family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]
