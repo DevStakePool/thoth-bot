@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065426172746f6c6f6d6542726f776e",
+    "asset_name_ascii": "adapeBartolomeBrown",
+    "fingerprint": "asset1qsclh7hsv0dp2uerrrj6jh0kpsdeat73eazent",
+    "minting_tx_hash": "d6a6e7a2c9cefa76a485773b0151bbc1cb1ae9151ab4a415498f3cd0c9b81f04",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBartolomeBrown": {
+            "Hat": "Feather Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bartolome Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmTMk5sNZMsPZmKrkRb1RPrnbqaxNhhatoREFkLnxAXcck",
+                "name": "Bartolome Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTMk5sNZMsPZmKrkRb1RPrnbqaxNhhatoREFkLnxAXcck",
+            "Family": "Brown",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

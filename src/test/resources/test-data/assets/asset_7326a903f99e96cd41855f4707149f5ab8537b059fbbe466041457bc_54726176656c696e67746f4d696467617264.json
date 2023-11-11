@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "7326a903f99e96cd41855f4707149f5ab8537b059fbbe466041457bc",
+    "asset_name": "54726176656c696e67746f4d696467617264",
+    "asset_name_ascii": "TravelingtoMidgard",
+    "fingerprint": "asset1t6zdjuqwgrm5kq9kh5eh8g8m626umt5ek8tjwe",
+    "minting_tx_hash": "71c810588e5193d43a6744c0304a890edc33798bf5236e716fef64c92b6edb0b",
+    "total_supply": "20",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635033600,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "7326a903f99e96cd41855f4707149f5ab8537b059fbbe466041457bc": {
+          "TravelingtoMidgard": {
+            "name": "Traveling to Midgard",
+            "files": {
+              "src": "ipfs://QmeEpxmYbmuEj3qoXSGhniwtk3wJgauaserYYRu22z3pAf",
+              "mediaType": "image/gif"
+            },
+            "image": "ipfs://QmeEpxmYbmuEj3qoXSGhniwtk3wJgauaserYYRu22z3pAf",
+            "artist": "Keiko Nakamura",
+            "assetType": "FT",
+            "mediaType": "image/gif",
+            "publisher": [
+              "https://www.instagram.com/keiko_ancient_art/",
+              "https://tokhun.io"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

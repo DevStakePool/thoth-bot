@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "637265737433363832",
+    "asset_name_ascii": "crest3682",
+    "fingerprint": "asset1zah44n8eal7k4c2lvrkz8xjgdxsu7pa0fpl007",
+    "minting_tx_hash": "1b05ada41020ebc545578ca86c0153167ac157e0a4d5c448789a325ab20eaf4e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675814400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest3682": {
+            "id": 3682,
+            "src": "ipfs://QmQbqtwz7dR2zp4tnKuPH66bqcdgmkr7eLKza2ajNVevMr",
+            "name": "Rich Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmQbqtwz7dR2zp4tnKuPH66bqcdgmkr7eLKza2ajNVevMr",
+                "name": "Rich Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmTuFjvP9jjp3UWBiBPnKdAvzkt7mXMzKPkwHMBh6keoDr",
+                "name": "Rich Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmRnBtsU6k3gQe7sxrdApgD1J2ZAJbxHSXn6xrmnUW2FqZ",
+                "name": "Rich Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQbqtwz7dR2zp4tnKuPH66bqcdgmkr7eLKza2ajNVevMr",
+            "description": "Celebrating the heritage of the Rich family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

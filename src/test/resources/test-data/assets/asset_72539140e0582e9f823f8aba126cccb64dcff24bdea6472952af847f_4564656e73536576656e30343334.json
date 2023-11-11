@@ -1,0 +1,591 @@
+[
+  {
+    "policy_id": "72539140e0582e9f823f8aba126cccb64dcff24bdea6472952af847f",
+    "asset_name": "4564656e73536576656e30343334",
+    "asset_name_ascii": "EdensSeven0434",
+    "fingerprint": "asset1fgrj8vzcuxx45frjy4gvqtnvktrwshfz9q9wrn",
+    "minting_tx_hash": "b3a0b1939b3d5a06def083feea1d65faefa93806bef35c713563c1aa7e3dce4c",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651104000,
+    "minting_tx_metadata": {
+      "721": {
+        "72539140e0582e9f823f8aba126cccb64dcff24bdea6472952af847f": {
+          "EdensSeven0404": {
+            "name": "EdensSeven0404",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmT1gbcud5gzZpkAaNTAX3tWLUzBVfUUZHLrnmUDZGhjJG",
+                "name": "EdensSeven0404",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmT1gbcud5gzZpkAaNTAX3tWLUzBVfUUZHLrnmUDZGhjJG",
+            "weapon": "Ravager's Greatsword",
+            "clothing": "Snow Rebel",
+            "headwear": "Nobody Mask",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Playful"
+          },
+          "EdensSeven0406": {
+            "name": "EdensSeven0406",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmP1SkHWCib3oFAWZT89J2eV35DSmRg73G4M3xwFYdMF56",
+                "name": "EdensSeven0406",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmP1SkHWCib3oFAWZT89J2eV35DSmRg73G4M3xwFYdMF56",
+            "weapon": "Toy Mallet",
+            "clothing": "Wandering Swordsman",
+            "headwear": "Cardano Cap",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Blue",
+            "expression": "Hero"
+          },
+          "EdensSeven0407": {
+            "name": "EdensSeven0407",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmYsNhJXftbxcySPnjSBdeA1iw8kXYsEUUx73hB99KvQNj",
+                "name": "EdensSeven0407",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYsNhJXftbxcySPnjSBdeA1iw8kXYsEUUx73hB99KvQNj",
+            "weapon": "Flag Pole",
+            "clothing": "Biker Jacket",
+            "headwear": "Pirate Hat",
+            "accessory": "Aether Wings",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Professor"
+          },
+          "EdensSeven0409": {
+            "name": "EdensSeven0409",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmaFqQGQ28i67zavjavk4ELFqt4LUZn6wmbXUWuo64BtTg",
+                "name": "EdensSeven0409",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaFqQGQ28i67zavjavk4ELFqt4LUZn6wmbXUWuo64BtTg",
+            "weapon": "Flaming Marshmellow",
+            "clothing": "Eastern Robes",
+            "headwear": "Tengu Half Mask",
+            "accessory": "Aura of Greed",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Wise"
+          },
+          "EdensSeven0410": {
+            "name": "EdensSeven0410",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmYqPeTkLU8QhvKxDtKug6z6kYUq2jmfkkZbp28NRsy4wi",
+                "name": "EdensSeven0410",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYqPeTkLU8QhvKxDtKug6z6kYUq2jmfkkZbp28NRsy4wi",
+            "weapon": "Terror Axe",
+            "clothing": "Magician",
+            "headwear": "Fedora",
+            "accessory": "Sunny Day",
+            "mediaType": "image/png",
+            "background": "Blue",
+            "expression": "Playful"
+          },
+          "EdensSeven0411": {
+            "name": "EdensSeven0411",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmR8SmNBpmM82TVrNXzx1JkWgmeuDjBpb45JPvZKAVCkzX",
+                "name": "EdensSeven0411",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmR8SmNBpmM82TVrNXzx1JkWgmeuDjBpb45JPvZKAVCkzX",
+            "weapon": "Popsicle",
+            "clothing": "Cardano Clothes",
+            "headwear": "None",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Annoyed"
+          },
+          "EdensSeven0412": {
+            "name": "EdensSeven0412",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmW76zsKrMDPwU5W3GEwyrXSg2ueLhFuhuHQAMxEYGvRQ9",
+                "name": "EdensSeven0412",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmW76zsKrMDPwU5W3GEwyrXSg2ueLhFuhuHQAMxEYGvRQ9",
+            "weapon": "Sweet Treat",
+            "clothing": "Death God",
+            "headwear": "Animal Skull",
+            "accessory": "Aura of Wrath",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Spooked"
+          },
+          "EdensSeven0413": {
+            "name": "EdensSeven0413",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://Qmd9dTAmfLZ5JJ5zPHKNtkVrsupBGcFqnJ2UPr1efBbkxP",
+                "name": "EdensSeven0413",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmd9dTAmfLZ5JJ5zPHKNtkVrsupBGcFqnJ2UPr1efBbkxP",
+            "weapon": "Popsicle",
+            "clothing": "Magical Costume",
+            "headwear": "Soldier Helmet",
+            "accessory": "Interstellar",
+            "mediaType": "image/png",
+            "background": "Blue",
+            "expression": "Bubblegum"
+          },
+          "EdensSeven0414": {
+            "name": "EdensSeven0414",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmaNXWz4hnFf2478ZYf7huvGKdYucLByatEdFuwCekQxGa",
+                "name": "EdensSeven0414",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaNXWz4hnFf2478ZYf7huvGKdYucLByatEdFuwCekQxGa",
+            "weapon": "Solfire's Justice (DLC)",
+            "clothing": "Death God",
+            "headwear": "Froggy Hat",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Normal"
+          },
+          "EdensSeven0415": {
+            "name": "EdensSeven0415",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmRm7zkamEPCwiJy2Wt2NuNVfSHvS6KJqy6FxFWSATVBMt",
+                "name": "EdensSeven0415",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRm7zkamEPCwiJy2Wt2NuNVfSHvS6KJqy6FxFWSATVBMt",
+            "weapon": "Desert Scimitars",
+            "clothing": "Shaman Robe",
+            "headwear": "Beanie",
+            "accessory": "Mir's Degraded Book",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "K.O"
+          },
+          "EdensSeven0416": {
+            "name": "EdensSeven0416",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmYymgSgARdnpihxbBDd5bvQ8hjCjgJDWtyzmSb7D8vo6Y",
+                "name": "EdensSeven0416",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYymgSgARdnpihxbBDd5bvQ8hjCjgJDWtyzmSb7D8vo6Y",
+            "weapon": "Big Bang Glove",
+            "clothing": "Shaman Robe",
+            "headwear": "Animal Skull",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Lazy"
+          },
+          "EdensSeven0417": {
+            "name": "EdensSeven0417",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmSD9XHCV6RAasxfSXyE3VzW9YhLUoMD2id6LwC8ot3L8f",
+                "name": "EdensSeven0417",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSD9XHCV6RAasxfSXyE3VzW9YhLUoMD2id6LwC8ot3L8f",
+            "weapon": "Lantern Polearm",
+            "clothing": "Yellow Raincoat",
+            "headwear": "Animal Skull",
+            "accessory": "Aether Wings",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Normal"
+          },
+          "EdensSeven0419": {
+            "name": "EdensSeven0419",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmRWMHro425vbXkvYQBu3t1XPjTLa5k2XjgM7S46QvyU28",
+                "name": "EdensSeven0419",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRWMHro425vbXkvYQBu3t1XPjTLa5k2XjgM7S46QvyU28",
+            "weapon": "Rainbow Sword",
+            "clothing": "Butler's Attire",
+            "headwear": "Magical Tiara",
+            "accessory": "Rainbow Wings",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Pandemic"
+          },
+          "EdensSeven0420": {
+            "name": "EdensSeven0420",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmPYYT4uQKvN2JYbCh4u3WmHi8T6vMUu7wuMF8UUKMSWPj",
+                "name": "EdensSeven0420",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPYYT4uQKvN2JYbCh4u3WmHi8T6vMUu7wuMF8UUKMSWPj",
+            "weapon": "Flaming Marshmellow",
+            "clothing": "Death God",
+            "headwear": "Bunny Ears",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Normal"
+          },
+          "EdensSeven0421": {
+            "name": "EdensSeven0421",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmdfZCpd4i8d13VskYw2USnNrnSqMqn1bN1qvpK95PxJpY",
+                "name": "EdensSeven0421",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdfZCpd4i8d13VskYw2USnNrnSqMqn1bN1qvpK95PxJpY",
+            "weapon": "Popsicle",
+            "clothing": "Pirate",
+            "headwear": "Blindfold of Truth",
+            "accessory": "Mir's Degraded Book",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Satisfied"
+          },
+          "EdensSeven0423": {
+            "name": "EdensSeven0423",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmPAogsB8GwWgNU4z6Zx9EAbrLNjSsV6qMYzihLd4d53nx",
+                "name": "EdensSeven0423",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPAogsB8GwWgNU4z6Zx9EAbrLNjSsV6qMYzihLd4d53nx",
+            "weapon": "Toy Mallet",
+            "clothing": "Yellow Raincoat",
+            "headwear": "Hero Helm",
+            "accessory": "Flame Monarch",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Wise"
+          },
+          "EdensSeven0425": {
+            "name": "EdensSeven0425",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmSRF69e3JKxhbEHcBAuN6ZNVJAeRie4YgQPacHtfWKsci",
+                "name": "EdensSeven0425",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSRF69e3JKxhbEHcBAuN6ZNVJAeRie4YgQPacHtfWKsci",
+            "weapon": "Hex Blades",
+            "clothing": "Astro Suit",
+            "headwear": "Blindfold of Truth",
+            "accessory": "Gelatin Wings",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Two Toned"
+          },
+          "EdensSeven0426": {
+            "name": "EdensSeven0426",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmdKyMaLdx32tysEa2XfiS2ndNwq5PkUGuDF25CcJRRvV3",
+                "name": "EdensSeven0426",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdKyMaLdx32tysEa2XfiS2ndNwq5PkUGuDF25CcJRRvV3",
+            "weapon": "Chicken Leg",
+            "clothing": "Professional",
+            "headwear": "Cardano Cap",
+            "accessory": "Interstellar",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Ticked Off"
+          },
+          "EdensSeven0427": {
+            "name": "EdensSeven0427",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmV5k8TuNW3eRpuCkphd2tGkba1Yxmcen4kgvGLuPGbxN5",
+                "name": "EdensSeven0427",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmV5k8TuNW3eRpuCkphd2tGkba1Yxmcen4kgvGLuPGbxN5",
+            "weapon": "Hex Blades",
+            "clothing": "Oversized Sweatshirt",
+            "headwear": "Veins",
+            "accessory": "Lightning God",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Cardano"
+          },
+          "EdensSeven0431": {
+            "name": "EdensSeven0431",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmSno44rmkQvt12MJ4DvWPskFkuhp6kf21BnY9W9MBSWdg",
+                "name": "EdensSeven0431",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSno44rmkQvt12MJ4DvWPskFkuhp6kf21BnY9W9MBSWdg",
+            "weapon": "Magic Staff",
+            "clothing": "Professional",
+            "headwear": "Puffpuff Hat",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Stunned"
+          },
+          "EdensSeven0432": {
+            "name": "EdensSeven0432",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmZ5p3Jsk7o93cBX1YPS1u4UprKZSpNXLNvZk7c3pKrvvp",
+                "name": "EdensSeven0432",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZ5p3Jsk7o93cBX1YPS1u4UprKZSpNXLNvZk7c3pKrvvp",
+            "weapon": "Hex Blades",
+            "clothing": "Shaman Robe",
+            "headwear": "Hero Helm",
+            "accessory": "Sand Emperor",
+            "mediaType": "image/png",
+            "background": "Blue",
+            "expression": "Ticked Off"
+          },
+          "EdensSeven0433": {
+            "name": "EdensSeven0433",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmPeR975dg7RHjSH1BroJdWj2SSoVyjrpd7RJTgtXu8pCc",
+                "name": "EdensSeven0433",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPeR975dg7RHjSH1BroJdWj2SSoVyjrpd7RJTgtXu8pCc",
+            "weapon": "Desert Scimitars",
+            "clothing": "Eden Ranger",
+            "headwear": "Puffpuff Hat",
+            "accessory": "Puppet Master",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Normal"
+          },
+          "EdensSeven0434": {
+            "name": "EdensSeven0434",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmSHgTDGSbXDwDXRNf1dqJ6L1RLFpN9FtzvSTHAtjd7Zby",
+                "name": "EdensSeven0434",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSHgTDGSbXDwDXRNf1dqJ6L1RLFpN9FtzvSTHAtjd7Zby",
+            "weapon": "Crystal Scepter",
+            "clothing": "Fur Coat",
+            "headwear": "Beanie",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "The Guy"
+          },
+          "EdensSeven0435": {
+            "name": "EdensSeven0435",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmcgLdohowWC2LZtPxrtdpucwhu9HaSD9ZiDwG7r2AEyAY",
+                "name": "EdensSeven0435",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcgLdohowWC2LZtPxrtdpucwhu9HaSD9ZiDwG7r2AEyAY",
+            "weapon": "Galaxy Staff",
+            "clothing": "Wandering Swordsman",
+            "headwear": "None",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Bandage"
+          },
+          "EdensSeven0438": {
+            "name": "EdensSeven0438",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmTFfU9qfNAgc4WcGmFxFkyWTQWPWZvJe3TM4x1ztYdRCH",
+                "name": "EdensSeven0438",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTFfU9qfNAgc4WcGmFxFkyWTQWPWZvJe3TM4x1ztYdRCH",
+            "weapon": "Hell's Maw",
+            "clothing": "Fur Coat",
+            "headwear": "Bunny Ears",
+            "accessory": "Shadow Servant",
+            "mediaType": "image/png",
+            "background": "Purple",
+            "expression": "Frosty"
+          },
+          "EdensSeven0439": {
+            "name": "EdensSeven0439",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmcD6h7eS1dtQRxUB1aiq9YNV9FjxUvTMLG36SYmv2cU1u",
+                "name": "EdensSeven0439",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcD6h7eS1dtQRxUB1aiq9YNV9FjxUvTMLG36SYmv2cU1u",
+            "weapon": "Umbrella",
+            "clothing": "Fur Coat",
+            "headwear": "Tengu Half Mask",
+            "accessory": "Gelatin Wings",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Two Toned"
+          },
+          "EdensSeven0440": {
+            "name": "EdensSeven0440",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmRr1jFzujeBU64uwZbDfVczrPQ1mKzx8qioo9H7XQKShY",
+                "name": "EdensSeven0440",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRr1jFzujeBU64uwZbDfVczrPQ1mKzx8qioo9H7XQKShY",
+            "weapon": "Lantern Polearm",
+            "clothing": "Dragon Knight",
+            "headwear": "Dog Ears",
+            "accessory": "Phoenix",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Old Timer"
+          },
+          "EdensSeven0441": {
+            "name": "EdensSeven0441",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://Qme8HjJZfLnPSjMhSKfbpjHwXa2KfJ5WadpdDWEDvFToXQ",
+                "name": "EdensSeven0441",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qme8HjJZfLnPSjMhSKfbpjHwXa2KfJ5WadpdDWEDvFToXQ",
+            "weapon": "Umbrella",
+            "clothing": "Yellow Raincoat",
+            "headwear": "Beanie",
+            "accessory": "None",
+            "mediaType": "image/png",
+            "background": "Green",
+            "expression": "Normal"
+          },
+          "EdensSeven0442": {
+            "name": "EdensSeven0442",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmbpwUJEcUe4CFTTfew9DwYZTxmCLzkzvufnUbKYjvWkTH",
+                "name": "EdensSeven0442",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbpwUJEcUe4CFTTfew9DwYZTxmCLzkzvufnUbKYjvWkTH",
+            "weapon": "Flag Pole",
+            "clothing": "Magical Costume",
+            "headwear": "Pirate Hat",
+            "accessory": "Mir's Degraded Book",
+            "mediaType": "image/png",
+            "background": "Yellow",
+            "expression": "Crying"
+          },
+          "EdensSeven0443": {
+            "name": "EdensSeven0443",
+            "race": "Human",
+            "files": [
+              {
+                "src": "ipfs://QmfLVFrT1XjxwcmHyvQWmBUrfqreRMTsVhodtGfQyRwzJp",
+                "name": "EdensSeven0443",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfLVFrT1XjxwcmHyvQWmBUrfqreRMTsVhodtGfQyRwzJp",
+            "weapon": "Flashfrost Blade",
+            "clothing": "Magic Knight",
+            "headwear": "Tengu Half Mask",
+            "accessory": "Aether Wings",
+            "mediaType": "image/png",
+            "background": "Red",
+            "expression": "Playful"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

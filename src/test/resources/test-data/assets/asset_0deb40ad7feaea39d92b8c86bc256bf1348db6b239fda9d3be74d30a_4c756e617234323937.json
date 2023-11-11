@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "0deb40ad7feaea39d92b8c86bc256bf1348db6b239fda9d3be74d30a",
+    "asset_name": "4c756e617234323937",
+    "asset_name_ascii": "Lunar4297",
+    "fingerprint": "asset16qe8jnyqncdd2rqf9ztn6lrp5ap0sacpca8rqj",
+    "minting_tx_hash": "41e77ec5cced69d09894180bc8fe358c3e285f5e5aa4f0eae3738d7fdbeca564",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634256000,
+    "minting_tx_metadata": {
+      "721": {
+        "0deb40ad7feaea39d92b8c86bc256bf1348db6b239fda9d3be74d30a": {
+          "Lunar0518": {
+            "name": "Lunar #0518",
+            "image": "ipfs://QmUk3DerutDANjc9WvSdMNrRkNpN8SMKXLCGN1CG2JFThK",
+            "traits": {
+              "Face": "Happy",
+              "Suit": "Tangzhuang (Red)",
+              "Lunar": "Goat (Beige)",
+              "Bracelet": "No Bracelet",
+              "Accessory": "Bazooka",
+              "Hand Item": "Red Rose",
+              "Background": "Forest"
+            },
+            "edition": 518
+          },
+          "Lunar4297": {
+            "name": "Lunar #4297",
+            "image": "ipfs://QmbcUpAEmSPjAGawZJXHVqNPaPnnfBZziAkWrPCiktzjVi",
+            "traits": {
+              "Face": "Sad",
+              "Suit": "Tangzhuang (Red)",
+              "Lunar": "Rooster (Brown)",
+              "Bracelet": "No Bracelet",
+              "Accessory": "Black Cape",
+              "Hand Item": "Orange",
+              "Background": "Forest"
+            },
+            "edition": 4297
+          },
+          "Lunar6358": {
+            "name": "Lunar #6358",
+            "image": "ipfs://QmZxAJLE2s3H7FcSZ4JSMnHJX4atvYpWSs3DUoqsYEoaRp",
+            "traits": {
+              "Face": "Crying",
+              "Suit": "Naked (Burgundy)",
+              "Lunar": "Goat (Grey)",
+              "Bracelet": "No Bracelet",
+              "Accessory": "No Accessory",
+              "Hand Item": "Red Rose",
+              "Background": "Sand"
+            },
+            "edition": 6358
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

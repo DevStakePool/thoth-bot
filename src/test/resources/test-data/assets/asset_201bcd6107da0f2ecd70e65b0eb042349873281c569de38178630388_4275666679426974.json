@@ -4,9 +4,9 @@
     "asset_name": "4275666679426974",
     "asset_name_ascii": "BuffyBit",
     "fingerprint": "asset14d8vj9eyay56yhtv76yc0hz4jxemuc5zc3kvqq",
-    "minting_tx_hash": "a0a900ef18285c274858ed379c6be9325d75d4e3ddfc28a97be7641df4f97a00",
-    "total_supply": "39794",
-    "mint_cnt": 3708,
+    "minting_tx_hash": "d6d570d220800fbe534059ee39985b76c8624f4318c3a02b8def6ffeab3a0664",
+    "total_supply": "39868",
+    "mint_cnt": 3754,
     "burn_cnt": 0,
     "creation_time": 1629849600,
     "minting_tx_metadata": {
@@ -22,68 +22,21 @@
           }
         },
         "d849084935bd7b51a7a6e5d494d4cc4645c83cc77ad7bac67dd13192": {
-          "NFTU0075PlutusArt074": {
-            "name": "NFT Update 0075: Plutus.Art #074",
-            "files": [
-              {
-                "src": "ipfs://QmQzVx1d2mzePFoaSxEfBMtH64vuLihhDPQW9zVAfpgipy",
-                "mediaType": "image/gif"
-              }
-            ],
-            "image": "ipfs://Qmb9VYpHnyMRiB5QzmKet4Rpdsc4tagHP9vUm34iN4aUaX",
+          "NFTU0079AdaInmates221": {
+            "name": "NFT Update 0079: ADA Inmates #221",
+            "image": "ipfs://QmSEdTZk48RTqSK3bo6rwsfA1Gg1PKMDuTjrw6tmdVL7vB",
             "mediaType": "image/png",
             "attributes": {
-              "video": "https://watch.nftupdate.io/?e=123",
+              "video": "https://watch.nftupdate.io/?e=127",
               "artist": [
                 "NFT Update",
-                "Plutus.Art"
-              ],
-              "border": "gold",
-              "publisher": [
-                "https://twitter.com/NFTUpdateIO",
-                "https://nftupdate.io",
-                "https://twitter.com/plutus_art",
-                "https://www.plutus.art/"
-              ],
-              "collection": "NFT Update [Season 5]"
-            }
-          },
-          "NFTU0075PlutusArt121": {
-            "name": "NFT Update 0075: Plutus.Art #121",
-            "image": "ipfs://QmNmNiWHFWVTTp4vcTpCzCYmFrYd4EB3Z3dMLFDmPLDamn",
-            "mediaType": "image/png",
-            "attributes": {
-              "video": "https://watch.nftupdate.io/?e=123",
-              "artist": [
-                "NFT Update",
-                "Plutus.Art"
+                "ADA Inmates"
               ],
               "border": "standard",
               "publisher": [
                 "https://twitter.com/NFTUpdateIO",
                 "https://nftupdate.io",
-                "https://twitter.com/plutus_art",
-                "https://www.plutus.art/"
-              ],
-              "collection": "NFT Update [Season 5]"
-            }
-          },
-          "NFTU0075PlutusArt230": {
-            "name": "NFT Update 0075: Plutus.Art #230",
-            "image": "ipfs://QmNmNiWHFWVTTp4vcTpCzCYmFrYd4EB3Z3dMLFDmPLDamn",
-            "mediaType": "image/png",
-            "attributes": {
-              "video": "https://watch.nftupdate.io/?e=123",
-              "artist": [
-                "NFT Update",
-                "Plutus.Art"
-              ],
-              "border": "standard",
-              "publisher": [
-                "https://twitter.com/NFTUpdateIO",
-                "https://nftupdate.io",
-                "https://twitter.com/plutus_art",
-                "https://www.plutus.art/"
+                "https://twitter.com/adainmates"
               ],
               "collection": "NFT Update [Season 5]"
             }
@@ -91,6 +44,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

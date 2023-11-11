@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "27021c5ca34369cd6e71a1a6eb252c693f9c66f391439f2594273c6d",
+    "asset_name": "5a48442d30353238372d3035343938",
+    "asset_name_ascii": "ZHD-05287-05498",
+    "fingerprint": "asset1d2mwlvr2dteahsy677f42mqlngrvfr4s2nzsfp",
+    "minting_tx_hash": "4a989dcb8146be59f4ff8d20e375a35539ab80affcb426f62cb56bb1022a5bf9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1644883200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "27021c5ca34369cd6e71a1a6eb252c693f9c66f391439f2594273c6d": {
+          "ZHD-05287-05498": {
+            "use": "Inherits/Follows ZombieChains Terms of Use",
+            "name": "ZHD-05287-05498",
+            "files": [
+              {
+                "src": "ipfs://Qmb96FXBpiLZVhktLir1VXZixqce33MPeSMi4Adm7zKgru",
+                "name": "Banner",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmb96FXBpiLZVhktLir1VXZixqce33MPeSMi4Adm7zKgru",
+            "mediaType": "image/png",
+            "attributes": {
+              "ZombieHunter1": "ZombieHunter05287",
+              "ZombieHunter2": "ZombieHunter05498"
+            },
+            "description": "ZombieHunterDerivative #05287 + #05498"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

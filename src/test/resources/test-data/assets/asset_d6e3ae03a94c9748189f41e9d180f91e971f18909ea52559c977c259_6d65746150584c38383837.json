@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c38383837",
+    "asset_name_ascii": "metaPXL8887",
+    "fingerprint": "asset1xewln8sdp0kvj993kqqt60zwava4vaf5e6aarv",
+    "minting_tx_hash": "91d7f267b3fc3bf42ca227f6244b5321f14ee71de115939c14d23f21acdd9562",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647302400,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL8887": {
+            "name": "metaPXL#8887",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmY4qqsL7awmiPABHgyBvyRMCwkXhxvd28iqLHo9HWaFKv",
+                "name": "metaPXL#8887",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRuHjqDUQk19VRNgeGWNKASRXQUd7UMtHR1KwftXFeSKM",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "mohawk",
+              "mantle",
+              "venice mask"
+            ],
+            "description": "The official 3D collectible version of PXL#8887"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

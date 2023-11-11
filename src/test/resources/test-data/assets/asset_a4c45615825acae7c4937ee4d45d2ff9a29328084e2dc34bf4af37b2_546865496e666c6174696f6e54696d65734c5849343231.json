@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2",
+    "asset_name": "546865496e666c6174696f6e54696d65734c5849343231",
+    "asset_name_ascii": "TheInflationTimesLXI421",
+    "fingerprint": "asset1mmcfdvaa7s3r4wvqt3342dz8cgygr5u26fmnx0",
+    "minting_tx_hash": "b2047327cb52f4c02dadc3925db78412d0102a668f8fbd2ba15178a998341c9f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1635724800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2": {
+          "TheInflationTimesLXI421": {
+            "Name": "The Inflation Times, Volume LXI",
+            "Asset": "TheInflationTimesLXI421",
+            "files": [
+              {
+                "src": "ipfs://Qmcrb2Heo6sC5eLTc4gycWPwArjMXbv22ZURiQrGRezG83",
+                "name": "TheInflationTimesLXI421",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmcrb2Heo6sC5eLTc4gycWPwArjMXbv22ZURiQrGRezG83",
+            "Number": "421 of 700",
+            "Series": "The Inflation Times",
+            "Volume": "LXI",
+            "Headline": "Hoodro to Announce Fuckery",
+            "mediaType": "image/jpeg",
+            "Collection": "Old Money"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736857576e3931",
+    "asset_name_ascii": "furnishWWn91",
+    "fingerprint": "asset1ljllsys622u69jshmhan9qslk8lahqv2xs9tgw",
+    "minting_tx_hash": "adda017edb5f042c8e7fb76a86d22f1d4fc4e496e8c7f7cd4c7872d16f7c9cb2",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678924800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishWWn91": {
+            "id": "WWn91",
+            "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "name": "Standing Globe",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+                "name": "Standing Globe",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmV3BSnFf1Xy9bWVp8i5XgZvsr7u16LRAnAgD4gePWMbCN",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR6r3Bfbkzbn2ocMekLsaebgcELNvcVvLR4vL2iRmfjxC",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "description": "Hand-crafted by Bradley Walker.",
+            "furnitureId": 219
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

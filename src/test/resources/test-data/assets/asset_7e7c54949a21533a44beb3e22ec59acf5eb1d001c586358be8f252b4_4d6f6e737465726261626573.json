@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "7e7c54949a21533a44beb3e22ec59acf5eb1d001c586358be8f252b4",
+    "asset_name": "4d6f6e737465726261626573",
+    "asset_name_ascii": "Monsterbabes",
+    "fingerprint": "asset16v66gglm52a6j7nqgefcqhje7jcxn77ujh4a4v",
+    "minting_tx_hash": "2f44a156066ad84c4b0d5cfdcf3176dab9cda2c3b640d709ab1da0398bd2f27b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634256000,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "7e7c54949a21533a44beb3e22ec59acf5eb1d001c586358be8f252b4": {
+          "Monsterbabes": {
+            "name": "Monster babes",
+            "files": {
+              "src": "ipfs://Qmf9Dp9U8V8MPKcWW3S3LWijY6TB4LPdaBh3VUhXWTiQ7w",
+              "mediaType": "image/jpeg"
+            },
+            "image": "ipfs://Qmf9Dp9U8V8MPKcWW3S3LWijY6TB4LPdaBh3VUhXWTiQ7w",
+            "artist": "Jean Pierre Jeffery",
+            "summary": "Enjoy your monster babe nft",
+            "assetType": "NFT",
+            "mediaType": "image/jpeg",
+            "publisher": [
+              "https://tokhun.io"
+            ],
+            "attributes": {
+              "": "Monster babes #37"
+            },
+            "collection": "Monster babes"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

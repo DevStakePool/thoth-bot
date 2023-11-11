@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "7326a903f99e96cd41855f4707149f5ab8537b059fbbe466041457bc",
+    "asset_name": "46756a696e6f4b6f6b6b616b75",
+    "asset_name_ascii": "FujinoKokkaku",
+    "fingerprint": "asset14ltl75rn22ly2wv2ctxnvyadgcuyykjwgc9vwt",
+    "minting_tx_hash": "ddbff6b6244d578f0f9553e770edef36e100e38261efb1527583835c9ff0af6b",
+    "total_supply": "20",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634947200,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "7326a903f99e96cd41855f4707149f5ab8537b059fbbe466041457bc": {
+          "FujinoKokkaku": {
+            "name": "Fuji no Kokkaku",
+            "files": {
+              "src": "ipfs://QmWi1CTiuiGpMa3vVfQWqMuU18sW5cuJVxjiuWNxNziy5M",
+              "mediaType": "image/gif"
+            },
+            "image": "ipfs://QmWi1CTiuiGpMa3vVfQWqMuU18sW5cuJVxjiuWNxNziy5M",
+            "artist": "Keiko Nakamura",
+            "summary": "A giant skeleton has awakened",
+            "assetType": "FT",
+            "mediaType": "image/gif",
+            "publisher": [
+              "https://www.instagram.com/keiko_ancient_art/",
+              "https://tokhun.io"
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

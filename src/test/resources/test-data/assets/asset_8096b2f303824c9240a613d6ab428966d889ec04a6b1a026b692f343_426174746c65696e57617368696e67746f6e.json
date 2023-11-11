@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "8096b2f303824c9240a613d6ab428966d889ec04a6b1a026b692f343",
+    "asset_name": "426174746c65696e57617368696e67746f6e",
+    "asset_name_ascii": "BattleinWashington",
+    "fingerprint": "asset1g8h95wfm7pud6ycalg8qxfnsh6psf7wqtmvasz",
+    "minting_tx_hash": "5731362518c9e6c7a638e9f817f851ad30a7f51cbde7df0f97ad9a0a44ad636b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1667088000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8096b2f303824c9240a613d6ab428966d889ec04a6b1a026b692f343": {
+          "BattleinWashington": {
+            "name": "Battle in Washington",
+            "Angel": "1",
+            "Demon": "1",
+            "files": [
+              {
+                "src": "ipfs://QmXXHgPYEyLD98q95hJMFsTP88ePQMusWYrkBR5ijGPYef",
+                "name": "BattleinWashington",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXXHgPYEyLD98q95hJMFsTP88ePQMusWYrkBR5ijGPYef",
+            "mediaType": "image/png",
+            "description": [
+              "An angel soldier battles the demon Ahriman and his 4 torture",
+              "d souls"
+            ],
+            "Tortured souls": "4"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

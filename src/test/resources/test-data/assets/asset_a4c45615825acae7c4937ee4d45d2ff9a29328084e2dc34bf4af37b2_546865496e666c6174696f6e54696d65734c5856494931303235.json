@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2",
+    "asset_name": "546865496e666c6174696f6e54696d65734c5856494931303235",
+    "asset_name_ascii": "TheInflationTimesLXVII1025",
+    "fingerprint": "asset1a9afnd5azh5f3gmpysl68pndmn549g9zkdssl0",
+    "minting_tx_hash": "15053409b6e3daf5c1c7c612445d675eb4f467d64b544518315fe65b515868b3",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1653609600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2": {
+          "TheInflationTimesLXVII1025": {
+            "Name": "The Inflation Times, Volume LXVII",
+            "Asset": "TheInflationTimesLXVII1025",
+            "files": [
+              {
+                "src": "ipfs://QmNVqnv1gox7WCNVqrUDSEhuNh4dUbrDk8hq8oXheaSzRt",
+                "name": "TheInflationTimesLXVII1025",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNVqnv1gox7WCNVqrUDSEhuNh4dUbrDk8hq8oXheaSzRt",
+            "Number": "1025 of 1400",
+            "Series": "The Inflation Times",
+            "Volume": "LXVII",
+            "Headline": "Fuckery In The Air!",
+            "Variation": "Hoodro",
+            "mediaType": "image/jpeg",
+            "Collection": "Old Money"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

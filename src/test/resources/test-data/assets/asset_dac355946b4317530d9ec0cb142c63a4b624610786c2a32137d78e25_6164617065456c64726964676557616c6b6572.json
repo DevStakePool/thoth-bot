@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065456c64726964676557616c6b6572",
+    "asset_name_ascii": "adapeEldridgeWalker",
+    "fingerprint": "asset1g76038pz9ugh8u3etcamdm4jav9gqf9dck9dlj",
+    "minting_tx_hash": "3fc10075da9874bbefbe2a278e4fcd705ee185eb2109eb7ba8ecd1d69687775d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMiguelWright": {
+            "Hat": "Feather Hat",
+            "Body": "Gold Linen",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Miguel Wright",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmdtG6CZnuAXDK3PPaVvY3J5xbDUM2pCXgEcQkprLdQ1wH",
+                "name": "Miguel Wright",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdtG6CZnuAXDK3PPaVvY3J5xbDUM2pCXgEcQkprLdQ1wH",
+            "Family": "Wright",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Wright family"
+          },
+          "adapeEldridgeWalker": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Eldridge Walker",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmNaCWf3BstzKQ8D9PFyFgKAeuqjC7Qky99W3JbXHCtYZG",
+                "name": "Eldridge Walker",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNaCWf3BstzKQ8D9PFyFgKAeuqjC7Qky99W3JbXHCtYZG",
+            "Family": "Walker",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Walker family"
+          },
+          "adapePantaléonWalker": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Pantaléon Walker",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmd6gLXR7yVhEsCLKnFXLtbyvAykgahq1BDLx6epK8A3mg",
+                "name": "Pantaléon Walker",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmd6gLXR7yVhEsCLKnFXLtbyvAykgahq1BDLx6epK8A3mg",
+            "Family": "Walker",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Walker family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

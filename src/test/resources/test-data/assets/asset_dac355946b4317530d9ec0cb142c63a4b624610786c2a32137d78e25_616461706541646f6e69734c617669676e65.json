@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706541646f6e69734c617669676e65",
+    "asset_name_ascii": "adapeAdonisLavigne",
+    "fingerprint": "asset1a54nf4mlrltfkmgwrvqua57xcdry48kw8mua45",
+    "minting_tx_hash": "0611695786f3e5f8bd8ef23325067b997f213180f5d49b5fb48b146bb92fd24a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAdonisLavigne": {
+            "Hat": "Top Hat",
+            "Body": "Rainbow Suit",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Adonis Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmbC6UGoGYNKZELtsmwtX97XRPcXPLHaJ9qbhmfsJq1Xup",
+                "name": "Adonis Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmbC6UGoGYNKZELtsmwtX97XRPcXPLHaJ9qbhmfsJq1Xup",
+            "Family": "Lavigne",
+            "Weapon": "Sword",
+            "Accessory": "Pipe",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -4,7 +4,7 @@
     "asset_name": "092c1329d68d448f037e5b71d5be313c0d35c80173f44c85c3f72f72199bbede",
     "asset_name_ascii": "\t,\u0013)\\326\\215D\\217\u0003~[q\\325\\2761<\r5\\310\u0001s\\364L\\205\\303\\367/r\u0019\\233\\276\\336",
     "fingerprint": "asset1jjfqnxmyg5ju8px9adq7uvfc85krd2vpn493lv",
-    "minting_tx_hash": "2e65b3f1073049e71b3d7d9f4704d1fb6655d8d8b67f718bc57f52c6be54cc03",
+    "minting_tx_hash": "10ce47f0964cbab5b3aaf3765d4c9a23b14747f88b9753a358a5fd30a0ecf1d4",
     "total_supply": "0",
     "mint_cnt": 1,
     "burn_cnt": 1,
@@ -20,7 +20,7 @@
           ""
         ],
         "loanAmnt": "1000000000",
-        "borrowerTn": "092c1329d68d448f037e5b71d5be313c0d35c80173f44c85c3f72f72199bbede",
+        "borrowerTn": "0449251b7b189db7329fd67f5ae06a2c7ae81690a0bd22aeac73bd2d83e58a13",
         "collateral": [
           {
             "unit": [
@@ -31,7 +31,7 @@
           }
         ],
         "interestAmnt": "10000000",
-        "loanDuration": "480",
+        "loanDuration": "360",
         "borrowerAddress": [
           "0cfda4be6b573c8d2e811b0ad3a637b851e1a4502148adb4acd23a6b",
           "4f0ba8ceff38db0640e8456bf8bdc2a404c28bec5a92a2b467c0073e",
@@ -40,13 +40,13 @@
             "valecmvryp6z9d0utms4yqnpghmz6j23tge7qqulqkhj7jn"
           ]
         ],
-        "requestExpiration": 1711726107000,
+        "requestExpiration": 1711923224000,
         "totalInstallments": 1
       },
       "721": {
         "version": 2,
         "0x41223b3ecf502363dc465dce5ad6671b83ac790e229d3f49e68c3353": {
-          "0x092c1329d68d448f037e5b71d5be313c0d35c80173f44c85c3f72f72199bbede": {
+          "0x0449251b7b189db7329fd67f5ae06a2c7ae81690a0bd22aeac73bd2d83e58a13": {
             "name": "Fluid tokens bond",
             "image": [
               "data:image/svg+xml;base64,CiAgICA8c3ZnIHhtbG5zPSJodHRwOi8vd3d3Ln",
@@ -68,11 +68,11 @@
               "R5PSIxLjJlbSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3",
               "I9Im1pZGRsZSI+Qm9uZCBpZDo8L3RzcGFuPgogICAgICAgIDx0c3BhbiB4PSI1JS",
               "IgZHk9IjIuNGVtIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2",
-              "hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIwIj4wOTJjMTMyOWQ2OGQ0NDhmMDM3ZT",
-              "ViNzFkNWJlMzEzYzBkMzVjODAxNzNmNDRjODVjM2Y3MmY3MjE5OWJiZWRlPC90c3",
+              "hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIwIj4wNDQ5MjUxYjdiMTg5ZGI3MzI5Zm",
+              "Q2N2Y1YWUwNmEyYzdhZTgxNjkwYTBiZDIyYWVhYzczYmQyZDgzZTU4YTEzPC90c3",
               "Bhbj4KICAgICAgPC90ZXh0PgogICAgPC9zdmc+CiAgICA="
             ],
-            "BondId": "092c1329d68d448f037e5b71d5be313c0d35c80173f44c85c3f72f72199bbede",
+            "BondId": "0449251b7b189db7329fd67f5ae06a2c7ae81690a0bd22aeac73bd2d83e58a13",
             "Policy": "41223b3ecf502363dc465dce5ad6671b83ac790e229d3f49e68c3353",
             "twitter": "https://twitter.com/fluidtokens",
             "mediaType": "image/svg+xml"
@@ -80,6 +80,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

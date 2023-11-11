@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416c76696e5768697465",
+    "asset_name_ascii": "adapeAlvinWhite",
+    "fingerprint": "asset149ekc930dkdp66tz9xa9r5f384795s2ay073td",
+    "minting_tx_hash": "890d6119e5a29d06bd0c0dbcc2bb8ba291062e68ba40180c3ba3ad24561f79c8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAlvinWhite": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Alvin White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSU31bsTAKa5EtdFBn2Xi4BBqvvHt4p9fErmJPya5PGg8",
+                "name": "Alvin White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSU31bsTAKa5EtdFBn2Xi4BBqvvHt4p9fErmJPya5PGg8",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the White family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

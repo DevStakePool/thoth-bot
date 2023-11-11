@@ -1,0 +1,59 @@
+[
+  {
+    "policy_id": "887e4d7b2e7d574484f8c780abef1599ce0bad1c751fb14ccdf9d410",
+    "asset_name": "44696e6f536176696f723034363733",
+    "asset_name_ascii": "DinoSavior04673",
+    "fingerprint": "asset10cl0uhtwdvau2w530pfg4j3qr42k8y5rpn7c6a",
+    "minting_tx_hash": "fd11604c289fb4bac1f67da1582afd3cb09810900524a31a96c521195e298f8b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1637884800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "copyright": "Copyright www.cryptodino.io 2021; all rights reserved",
+        "publisher": "https://www.cryptodino.io/",
+        "887e4d7b2e7d574484f8c780abef1599ce0bad1c751fb14ccdf9d410": {
+          "DinoSavior04673": {
+            "mint": "4673",
+            "name": "DinoSavior #04673",
+            "files": [
+              {
+                "src": "ipfs://ipfs/QmRuisq2q2TEFC6GKobdrq8B1V2Lv53XavueX5HJGFAMtx",
+                "name": "DinoSavior #04673",
+                "mediaType": "image/png",
+                "srcSha256Hash": "623b2387e6a0f4df39e07014afedad3d8f5033f93112bcbdb516a27c9eda365e"
+              }
+            ],
+            "image": "ipfs://ipfs/QmbdYhVKPWUwbcodTYo3jeXupzt7mdGWq7Sgf35vJVPJsr",
+            "mediaType": "image/png",
+            "attributes": {
+              "eyes": "regular",
+              "type": "Kraken",
+              "patron": "Diplodocus",
+              "headTop": "antennae",
+              "armsExtra": "arms shell",
+              "backExtra": "blank",
+              "bodyColor": "pink",
+              "bodyExtra": "dark suit",
+              "background": "glowing yellow",
+              "chestExtra": "blank",
+              "headBottom": "triangle chin",
+              "headMiddle": "small ears",
+              "waistExtra": "blank",
+              "leftHandProp": "flashlight",
+              "typeHeritage": "regular",
+              "forearmsExtra": "forearms shell",
+              "rightHandProp": "potion"
+            },
+            "sha256Hash": "9a963f42bcb460190fea0bdc1692b5ae616ff1dd2684af17531da6d1f9076c6c",
+            "collectionName": "DinoSavior"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

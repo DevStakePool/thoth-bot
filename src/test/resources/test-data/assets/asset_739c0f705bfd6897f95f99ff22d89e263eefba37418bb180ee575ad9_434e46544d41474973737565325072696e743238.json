@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "739c0f705bfd6897f95f99ff22d89e263eefba37418bb180ee575ad9",
+    "asset_name": "434e46544d41474973737565325072696e743238",
+    "asset_name_ascii": "CNFTMAGIssue2Print28",
+    "fingerprint": "asset1awyenyetpzwjvle5r0wg6m0rtj0mm4w4c8nadc",
+    "minting_tx_hash": "925913788e71adb2a246db64edd469c9fc0dc5070dee5f32c3f00480635633b5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1638835200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "739c0f705bfd6897f95f99ff22d89e263eefba37418bb180ee575ad9": {
+          "CNFTMAGIssue2Print28": {
+            "name": "CNFT MAG Issue 2 #28",
+            "files": [
+              {
+                "src": "ipfs://Qmc8bmdShQshwXRa71qXFg49oH12AkKofWpPYXrjQjY5xo",
+                "name": "CNFT MAG Issue 2 #28",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmc8bmdShQshwXRa71qXFg49oH12AkKofWpPYXrjQjY5xo",
+            "mintage": "50",
+            "website": "https://cnft.social/cnftmag",
+            "signedBy": "Moonbeamr, AF (DEADPXLZ), YDESH, $HOSKY",
+            "mediaType": "image/jpeg",
+            "description": "Signed First Edition Cover"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

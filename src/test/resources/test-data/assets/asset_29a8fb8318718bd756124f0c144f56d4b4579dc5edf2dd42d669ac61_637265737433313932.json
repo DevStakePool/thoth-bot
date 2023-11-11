@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "637265737433313932",
+    "asset_name_ascii": "crest3192",
+    "fingerprint": "asset1lm2sjh5cl6jnv7jxndv9xh64huszsu4qf59z26",
+    "minting_tx_hash": "24ff3a4f9e01e715843dfb1c48d7ea174f3713cce90000955a5b843d3066cc70",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675814400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "crest3192": {
+            "id": 3192,
+            "src": "ipfs://QmUn7Y3cqm1DesmVhyZKesAAnqrEHXgVJwGMFYPYLZZ3t2",
+            "name": "Cox Family Crest",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmUn7Y3cqm1DesmVhyZKesAAnqrEHXgVJwGMFYPYLZZ3t2",
+                "name": "Cox Family Crest",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmZdW2t1ij4ddeL57rvRBFjWywdxXfWCoaMnBrfsTaU6Vj",
+                "name": "Cox Family Crest",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmaU9qXWqLUdJV8GvVP8P6tG147ekBuFpzQsA59yZKZkFL",
+                "name": "Cox Family Crest",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmUn7Y3cqm1DesmVhyZKesAAnqrEHXgVJwGMFYPYLZZ3t2",
+            "description": "Celebrating the heritage of the Cox family."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

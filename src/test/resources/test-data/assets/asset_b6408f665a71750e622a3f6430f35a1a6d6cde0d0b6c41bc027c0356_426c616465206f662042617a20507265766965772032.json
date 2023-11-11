@@ -4,35 +4,46 @@
     "asset_name": "426c616465206f662042617a20507265766965772032",
     "asset_name_ascii": "Blade of Baz Preview 2",
     "fingerprint": "asset103dp7qtwpmnd4f9akyw62758egay2z05uhy4ju",
-    "minting_tx_hash": "3d7a432053e8a435fea7f0956352f14ac981ea504b5b9f61318d79abcc5ceec9",
-    "total_supply": "15004",
+    "minting_tx_hash": "5dd859af71f85d5a3905c448afa580558915dfc83f45875aa7feaa2bd98e9af1",
+    "total_supply": "14971",
     "mint_cnt": 5,
-    "burn_cnt": 0,
-    "creation_time": 1646162088,
+    "burn_cnt": 1,
+    "creation_time": 1646092800,
     "minting_tx_metadata": {
       "721": {
         "f6eb64a32451ccd1c5d8da31362fec78d4c266e10485273f46d96369": {
           "Blade of Baz Token 2": {
-            ".": "This token grants access to exclusive Discord channels.",
+            ".": "Token grants access to Kindle and Audiobook versions on Discord.",
             "book": "Blade of Baz",
             "name": "Blade of Baz Token 2",
             "files": [
               {
-                "src": "ipfs://",
-                "name": "Token 2",
+                "src": "ipfs://Qmedwvn7QFUyWfQzThy5nPocmweLDYrdFP7tucaRQni6xU",
+                "name": "Token 2 - Chapters 3 and 4",
                 "mediaType": "application/pdf"
+              },
+              {
+                "src": "ipfs://Qmf4xhynmjMJHJvhvTJgJ8xFY8EvWDNNVubx7VW6RFZARQ",
+                "name": "Audiobook - Chapter 3",
+                "mediaType": "audio/mp3"
+              },
+              {
+                "src": "ipfs://QmURqkiPknB6wyTH4cfBdDGPEAUMBpGRMPWeKt3nhujLdr",
+                "name": "Audiobook - Chapter 4",
+                "mediaType": "audio/mp3"
               }
             ],
-            "image": "ipfs://QmZKjsPxQHdhTn99HFd4tt693KikE9t62xiQimhLXzm3Mu",
+            "image": "ipfs://QmUJW61og7DrdbKGZGPTFQYRLomha5HCNqWgTsQnjDfQ8h",
             "author": "Jillian Plomin",
-            "Discord": "https://discord.gg/SNbWkbWARr",
+            "Discord": "https://discord.gg/9PAsupR8Emr",
             "publisher": "Project Bookworm",
             "book series": "Legends of Gaeltach",
-            "book section": "Token 2"
+            "book section": "Token 2 - Chapters 3 and 4"
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

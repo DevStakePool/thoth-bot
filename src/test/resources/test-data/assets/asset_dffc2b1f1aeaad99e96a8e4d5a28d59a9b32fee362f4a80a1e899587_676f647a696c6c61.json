@@ -4,11 +4,11 @@
     "asset_name": "676f647a696c6c61",
     "asset_name_ascii": "godzilla",
     "fingerprint": "asset1vewy56c9qav8w2dzm6zdh3xm5ps7rcndzartq4",
-    "minting_tx_hash": "8ce4fa55ccff985b33da1965d41763e1a5cc320223297f71cfd5ade9a12ede1c",
+    "minting_tx_hash": "1ae7f745eebbf931b54a7b6f41a84a8f9285a53915bea8f3505925e7fde0db05",
     "total_supply": "10000",
     "mint_cnt": 2,
     "burn_cnt": 1,
-    "creation_time": 1643736390,
+    "creation_time": 1643673600,
     "minting_tx_metadata": {
       "721": {
         "version": "1.0",
@@ -18,7 +18,7 @@
             "files": [
               {
                 "src": "ipfs://QmbBZWeKi4oxUbmRPWu46626MG8uqAV9mEmhs25Cp8yVoE",
-                "name": "Magnetron",
+                "name": "Godzilla",
                 "mediaType": "audio/mp3"
               }
             ],
@@ -29,6 +29,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

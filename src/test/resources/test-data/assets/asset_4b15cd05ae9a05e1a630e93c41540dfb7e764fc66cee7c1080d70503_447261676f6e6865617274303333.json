@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "4b15cd05ae9a05e1a630e93c41540dfb7e764fc66cee7c1080d70503",
+    "asset_name": "447261676f6e6865617274303333",
+    "asset_name_ascii": "Dragonheart033",
+    "fingerprint": "asset1r2ssl2uqqy2f3ycvkku5se3fvepa2l8m9hq3cj",
+    "minting_tx_hash": "6efe728d6b9d1a414a886febd6e905435ff141340e8470c1e791af92f603b266",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674172800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "4b15cd05ae9a05e1a630e93c41540dfb7e764fc66cee7c1080d70503": {
+          "Dragonheart033": {
+            "name": "Dragonheart #033",
+            "files": [
+              {
+                "src": "ipfs://QmYt9NP63zDQSUsaGyxncZtkKTBhvtWKXDPxm3Ur7VsWjV",
+                "name": "Dragonheart033",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYt9NP63zDQSUsaGyxncZtkKTBhvtWKXDPxm3Ur7VsWjV",
+            "mediaType": "image/png",
+            "description": [
+              "Forged with the heart of a dragon, it's rumored to",
+              " give enormous benefits to the beholder."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

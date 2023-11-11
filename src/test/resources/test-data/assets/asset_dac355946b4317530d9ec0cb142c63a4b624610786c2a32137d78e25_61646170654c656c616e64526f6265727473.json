@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654c656c616e64526f6265727473",
+    "asset_name_ascii": "adapeLelandRoberts",
+    "fingerprint": "asset1gl2cpw6ga209mxnxp54tgrrkd7wffh7gcht684",
+    "minting_tx_hash": "301768e9fdd7247e1304d5324100fa18d86a0128ebb901c4b3fa7a1132f14c79",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDagobertHill": {
+            "Hat": "None",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Dagobert Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmQQdYMh72MqpFVqBaHf9pgCp9DbuMn34ugTBv4ocdyapJ",
+                "name": "Dagobert Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQQdYMh72MqpFVqBaHf9pgCp9DbuMn34ugTBv4ocdyapJ",
+            "Family": "Hill",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Hill family"
+          },
+          "adapeLelandRoberts": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Leland Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmaiTyJ1P56w5Vt6WvMUemqpbPRkGoGUJfpjJx8WJR7o29",
+                "name": "Leland Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaiTyJ1P56w5Vt6WvMUemqpbPRkGoGUJfpjJx8WJR7o29",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          },
+          "adapeRedfordBaldwin": {
+            "Hat": "Top Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Feather Pen",
+            "Eyes": "Monocle",
+            "Head": "Ape",
+            "name": "Redford Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmVBCsKfrTY8LNHSPzA8oMT2tX8F6LXXJHHADjiLXXorzn",
+                "name": "Redford Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVBCsKfrTY8LNHSPzA8oMT2tX8F6LXXJHHADjiLXXorzn",
+            "Family": "Baldwin",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

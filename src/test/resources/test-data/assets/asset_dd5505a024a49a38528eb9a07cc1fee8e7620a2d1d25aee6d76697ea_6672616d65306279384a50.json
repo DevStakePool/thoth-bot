@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65306279384a50",
+    "asset_name_ascii": "frame0by8JP",
+    "fingerprint": "asset14lxmzvdfuc88dnylveyaepy856yhca2yd98yce",
+    "minting_tx_hash": "66dbd84b98c9f59622d9e38672b66f830497df894590f9c51a42523ec0387484",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1666828800,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame0by8JP": {
+            "id": "by8JP",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "Gabriel Cox",
+            "mintedAt": 1666860545845,
+            "mintedBy": "e19a3074ea8043ff5ac493165f71f678e20ca59ed8af81589446eceff9",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1uxdrqa82sppl7kkyjvt97u0k0r3qefv7mzhczky5gmkwl7gqsgxad"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

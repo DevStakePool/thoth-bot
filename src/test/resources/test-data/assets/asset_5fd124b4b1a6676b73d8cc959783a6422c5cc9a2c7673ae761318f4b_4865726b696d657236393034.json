@@ -1,0 +1,63 @@
+[
+  {
+    "policy_id": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+    "asset_name": "4865726b696d657236393034",
+    "asset_name_ascii": "Herkimer6904",
+    "fingerprint": "asset1ctratlqhftdz7k35k8ups8hpfhdl2ykya2g0s5",
+    "minting_tx_hash": "512da037865dd1f0a5b5d1938826d9e5b5662e93ced58704c4d0b13c86aff9e9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1622246400,
+    "minting_tx_metadata": {
+      "721": {
+        "policyId": "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b",
+        "policyScript": {
+          "type": "all",
+          "scripts": [
+            {
+              "slot": 37346470,
+              "type": "before"
+            },
+            {
+              "type": "sig",
+              "keyHash": "91b8794e4cfb470cb5e9d990534d285a5a35031086c3bf497756d139"
+            }
+          ]
+        },
+        "5fd124b4b1a6676b73d8cc959783a6422c5cc9a2c7673ae761318f4b": {
+          "Herkimer6904": {
+            "src": "ipfs://Qmex8vEyufCkTqUsFpgwPnYFZuPRS7BVd87KRA36or7kod",
+            "name": "Herkimer #6904",
+            "image": "ipfs://QmNZuPfQRZt7w3fkUm9TPnjKxdNZr2cKWgTe4kaqRvSjMP",
+            "publisher": [
+              "https://twitter.com/HerkimerNFT",
+              "https://herkimer.io"
+            ],
+            "artistName": "Eric Roidl",
+            "attributes": {
+              "fur": "basic black",
+              "variant": "base",
+              "left eye": "missing",
+              "jewellery": [
+                "upper hoop",
+                "lower hoop",
+                "3 clips",
+                "2 studs"
+              ],
+              "right eye": "missing",
+              "background": "sandstone",
+              "lower teeth": "complete",
+              "upper teeth": "missing right"
+            },
+            "srcSha256Hash": "640e047bab37d399c8aa3ddd50247f197aea8abd8950e020ab5ebdc0c5e3ea06",
+            "collectionName": "Herkimer",
+            "imageSha256Hash": "a20e3c86a858ccf762adf96064fbb901610ab1a0770d7c186b9ffbcb2dc1850d"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d656e646f42616c6477696e",
+    "asset_name_ascii": "adapeMendoBaldwin",
+    "fingerprint": "asset13sa845t4wwk2w6cxxv3j6fsge5nmx07wqzjfys",
+    "minting_tx_hash": "72721267ac25dfca74f8e9c78af7078ff193e529b3210766d4ff13de040425e6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAvitGreen": {
+            "Hat": "None",
+            "Body": "Black Wool Coat",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Avit Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmRk73KzGgyNTn1xUPtGToRLLc61mbUkXxFH7FqXTzx4rj",
+                "name": "Avit Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRk73KzGgyNTn1xUPtGToRLLc61mbUkXxFH7FqXTzx4rj",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeMendoBaldwin": {
+            "Hat": "Spinner Hat",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Mendo Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://Qmao6i2grALPVM3RLFejreGGvyqRm8JTTeg9TcfUhmRRq3",
+                "name": "Mendo Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmao6i2grALPVM3RLFejreGGvyqRm8JTTeg9TcfUhmRRq3",
+            "Family": "Baldwin",
+            "Weapon": "Sword",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          },
+          "adapeFadriquedelaCruz": {
+            "Hat": "Wool Cap",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Fadrique de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmRQtjxVqWD9wiYi17YrE3ti4m2NmLJRGMVTXfNvrrTRuH",
+                "name": "Fadrique de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRQtjxVqWD9wiYi17YrE3ti4m2NmLJRGMVTXfNvrrTRuH",
+            "Family": "de la Cruz",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the de la Cruz family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

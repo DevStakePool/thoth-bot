@@ -1,0 +1,65 @@
+[
+  {
+    "policy_id": "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44",
+    "asset_name": "5243434368657373506965636531323039",
+    "asset_name_ascii": "RCCChessPiece1209",
+    "fingerprint": "asset13uanxqc4psjxgx58uazyh6wvxd3hh5gvzvktnv",
+    "minting_tx_hash": "8d585e5295f7e3ff053ab80e2d848cccc1bd5d1fbce7ad6240bb7b5469cf39dd",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674864000,
+    "minting_tx_metadata": {
+      "721": {
+        "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44": {
+          "RCCChessPiece1209": {
+            "Head": "Human",
+            "name": "Royal Chess Club - Chess Piece #1209",
+            "Style": "6/8",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Wood-P-Makruk (93).jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Makruk",
+            "Genesis": "12/12",
+            "Material": "Wood",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "National",
+            "Chess Piece": "Pawn",
+            "Description": "Esteemed Pawn of Makruk family",
+            "Encase Color": "Amber"
+          },
+          "RCCChessPiece2465": {
+            "Head": "Human",
+            "name": "Royal Chess Club - Chess Piece #2465",
+            "Style": "1/2",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Stone-Bishop-Makruk (1).jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Makruk",
+            "Genesis": "1/4",
+            "Material": "Marmoreal",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "National",
+            "Chess Piece": "Bishop",
+            "Description": "Esteemed Bishop of Makruk family",
+            "Encase Color": "Amber"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

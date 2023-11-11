@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684677325254",
+    "asset_name_ascii": "furnishFw2RT",
+    "fingerprint": "asset1l3u765m4kglx2jlqemqru48a939uajxnrqkpxn",
+    "minting_tx_hash": "02bd29b43f25bc5906104898897c9e13e5e7ab3075cae605c6e6b7cfba209bfe",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672876800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishFw2RT": {
+            "id": "Fw2RT",
+            "src": "ipfs://QmeBAkXfZtA2t2o9hRbdj3mxbSfKwJYp4yR5epbmtKmvi9",
+            "name": "Round Side Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmeBAkXfZtA2t2o9hRbdj3mxbSfKwJYp4yR5epbmtKmvi9",
+                "name": "Round Side Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmPoD6iM3DoY4jXqxwY8EmMGbLr6pArX8k9683kff89g2w",
+                "name": "Round Side Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmZTwUX6MMkNyTsFr8y3KGsXpLpbrktCaYUsRr6DR5rRXa",
+                "name": "Round Side Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmeBAkXfZtA2t2o9hRbdj3mxbSfKwJYp4yR5epbmtKmvi9",
+            "description": "Hand-crafted by Reginald Roberts.",
+            "furnitureId": 217
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

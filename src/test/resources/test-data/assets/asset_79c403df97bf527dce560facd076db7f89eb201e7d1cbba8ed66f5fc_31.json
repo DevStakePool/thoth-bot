@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "79c403df97bf527dce560facd076db7f89eb201e7d1cbba8ed66f5fc",
+    "asset_name": "31",
+    "asset_name_ascii": "1",
+    "fingerprint": "asset13sqapeuey70yv3w0hxgg3qvp5ysf6clpckfn52",
+    "minting_tx_hash": "8cee129feda63f9644dfd0eb4cf26db83e5140039d6b185375117ed723885349",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1653350400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "79c403df97bf527dce560facd076db7f89eb201e7d1cbba8ed66f5fc": {
+          "1": {
+            "Name": "The Inflation Times, Volume LXIV",
+            "Asset": "1",
+            "files": [
+              {
+                "src": "ipfs://QmSCAxGkN8RJhiv4MxanpYkCKc253j5aUdMaQ86bmKNULV",
+                "name": "1",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSCAxGkN8RJhiv4MxanpYkCKc253j5aUdMaQ86bmKNULV",
+            "Number": "1 of 700",
+            "Series": "The Inflation Times",
+            "Volume": "LXIV",
+            "Headline": "Hoodro Hacks LXIII Drop",
+            "mediaType": "image/jpeg",
+            "Collection": "Old Money",
+            "Development": "true"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

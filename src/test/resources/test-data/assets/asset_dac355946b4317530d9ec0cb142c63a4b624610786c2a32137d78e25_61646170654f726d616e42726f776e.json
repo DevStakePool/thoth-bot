@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654f726d616e42726f776e",
+    "asset_name_ascii": "adapeOrmanBrown",
+    "fingerprint": "asset1w3nf2wr95ztmyx70xcpv25qvjypdp9uvn38mx8",
+    "minting_tx_hash": "0760b83ed5bd0e35fefd77b5e353855309ae0b5e087776fa11a3484fc1b5c76a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeOrmanBrown": {
+            "Hat": "Gold Helmet",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Orman Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmZ2x7r8GENUb7Ga5kwnCnXVnb7YYvzVqgUamY8o8GLyfU",
+                "name": "Orman Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZ2x7r8GENUb7Ga5kwnCnXVnb7YYvzVqgUamY8o8GLyfU",
+            "Family": "Brown",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeWyliedelaCruz": {
+            "Hat": "Hoodie",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Wylie de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmNss3dJJnyUUVyZGCdtaeqAXV75ePteg6583VMM6GZR5t",
+                "name": "Wylie de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNss3dJJnyUUVyZGCdtaeqAXV75ePteg6583VMM6GZR5t",
+            "Family": "de la Cruz",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de la Cruz family"
+          },
+          "adapeRavingerWilson": {
+            "Hat": "Top Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ravinger Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmYsfdKoo1gErAYvFLK5YmbWVsxgC8Pd6tHPZZtVfdkSUP",
+                "name": "Ravinger Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYsfdKoo1gErAYvFLK5YmbWVsxgC8Pd6tHPZZtVfdkSUP",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Wilson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

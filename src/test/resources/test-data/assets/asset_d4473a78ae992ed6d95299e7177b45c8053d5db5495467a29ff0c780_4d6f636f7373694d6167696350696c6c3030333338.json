@@ -1,0 +1,56 @@
+[
+  {
+    "policy_id": "d4473a78ae992ed6d95299e7177b45c8053d5db5495467a29ff0c780",
+    "asset_name": "4d6f636f7373694d6167696350696c6c3030333338",
+    "asset_name_ascii": "MocossiMagicPill00338",
+    "fingerprint": "asset1gwth6j5567a6vrr0uklarle5yj6kke9j6t0vjp",
+    "minting_tx_hash": "5b65d750c6e393138f73a7a9f6e407fb9930e2feb0c566482655fa47163588db",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647388800,
+    "minting_tx_metadata": {
+      "721": {
+        "4c3f8a1773b7813e537a75f7b1b2897996bdc0e1d6d7d0c11252e252": {
+          "MocossiIto200678": {
+            "id": 678,
+            "name": "Mocossi-Ito-2-00678",
+            "image": "ipfs://QmRZWy4Ngn5ERVXPvtd7eXhFsfmcLrGt4qvpS649WSsZXH",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Gen": 2,
+              "Body": "viking",
+              "Face": "sick",
+              "Parents": [
+                7085,
+                6079
+              ],
+              "Species": "Ito",
+              "Headwear": "hawaii hat",
+              "Background": "green"
+            },
+            "description": "This is an NFT from Mocossi project."
+          }
+        },
+        "d4473a78ae992ed6d95299e7177b45c8053d5db5495467a29ff0c780": {
+          "MocossiMagicPill00338": {
+            "id": 338,
+            "name": "Mocossi-Magic-Pill-00338",
+            "image": "ipfs://QmZERutW3SFnDuYjJ8UpHsZsbHW6oauKs5148NbeN1ABCa",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Pill": "Flashito",
+              "Feature": "Reduce 1 day cool-down time",
+              "Applied-to": "Breeding"
+            },
+            "description": "Mocossi NFT for Magic Pills"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

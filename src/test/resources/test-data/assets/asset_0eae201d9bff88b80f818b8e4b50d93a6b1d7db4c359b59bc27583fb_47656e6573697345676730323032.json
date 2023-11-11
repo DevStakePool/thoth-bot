@@ -1,0 +1,60 @@
+[
+  {
+    "policy_id": "0eae201d9bff88b80f818b8e4b50d93a6b1d7db4c359b59bc27583fb",
+    "asset_name": "47656e6573697345676730323032",
+    "asset_name_ascii": "GenesisEgg0202",
+    "fingerprint": "asset1xs7qjzvmj8wkmulhvudade7dgke33ev64lrmym",
+    "minting_tx_hash": "f88cbf3bebcf81bfab1b58076737c7d51c5f7f25a8240373cd503db63771a182",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669334400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "0eae201d9bff88b80f818b8e4b50d93a6b1d7db4c359b59bc27583fb": {
+          "GenesisEgg0202": {
+            "name": "Genesis Egg 0202",
+            "files": [
+              {
+                "src": "ipfs://QmZXJ2eA7Ngf6uPZuuVw3dZoBq9B9T53wavUKYUfgwyDtf",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZXJ2eA7Ngf6uPZuuVw3dZoBq9B9T53wavUKYUfgwyDtf",
+            "Discord": "https://discord.gg/automatica",
+            "Twitter": "https://twitter.com/AutomaticaNFT",
+            "mediaType": "image/png",
+            "Attributes": [
+              {
+                "Type": "Shark"
+              }
+            ],
+            "Description": "Part Of Automatica's Genesis Egg Mint."
+          },
+          "GenesisEgg1518": {
+            "name": "Genesis Egg 1518",
+            "files": [
+              {
+                "src": "ipfs://QmQWPnRbYsZNWYAypS47FjwPZm1ZxifdJy6RJg2rHLWoD1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQWPnRbYsZNWYAypS47FjwPZm1ZxifdJy6RJg2rHLWoD1",
+            "Discord": "https://discord.gg/automatica",
+            "Twitter": "https://twitter.com/AutomaticaNFT",
+            "mediaType": "image/png",
+            "Attributes": [
+              {
+                "Type": "Robot"
+              }
+            ],
+            "Description": "Part Of Automatica's Genesis Egg Mint."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

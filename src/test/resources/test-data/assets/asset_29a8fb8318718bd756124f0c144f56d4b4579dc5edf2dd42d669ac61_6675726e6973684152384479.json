@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684152384479",
+    "asset_name_ascii": "furnishAR8Dy",
+    "fingerprint": "asset1yahqljc6ps52q7nygq2v6r2cm2gg0swlutue5v",
+    "minting_tx_hash": "6e1fe1a65252a515c6f31c3ce62091c419fac0e40c91f0b370aa40e26d3d2b16",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679011200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishAR8Dy": {
+            "id": "AR8Dy",
+            "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "name": "Standing Globe",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+                "name": "Standing Globe",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmV3BSnFf1Xy9bWVp8i5XgZvsr7u16LRAnAgD4gePWMbCN",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR6r3Bfbkzbn2ocMekLsaebgcELNvcVvLR4vL2iRmfjxC",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "description": "Hand-crafted by Spike Roberts.",
+            "furnitureId": 219
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

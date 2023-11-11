@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654d61727364656e466f7264",
+    "asset_name_ascii": "adapeMarsdenFord",
+    "fingerprint": "asset13flelu5mchf24ntgwngcrfs8fh53f8deakqs2e",
+    "minting_tx_hash": "c6e49edc6c2d99b9ff226b081ef746a7da6cd21d49232dd01425d36901d14d66",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeMarsdenFord": {
+            "Hat": "Pirate Hat",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Marsden Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmSkLMeoQbqWFUYwbJ6kTtAXcVgPxsp84K2hU3g598tigu",
+                "name": "Marsden Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSkLMeoQbqWFUYwbJ6kTtAXcVgPxsp84K2hU3g598tigu",
+            "Family": "Ford",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Ford family"
+          },
+          "adapeDantonCataldi": {
+            "Hat": "Top Hat",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Danton Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmTpV6Fr7CJbUo9N2x7wyZ2YN23Yu38CncgXYWcSWG7dE8",
+                "name": "Danton Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTpV6Fr7CJbUo9N2x7wyZ2YN23Yu38CncgXYWcSWG7dE8",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Cataldi family"
+          },
+          "adapeWatsonCataldi": {
+            "Hat": "Privateer Hat",
+            "Body": "Ape",
+            "Ears": "Earphones",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Watson Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://Qmaps4qgLtw21J4Fg2gXUom2jNBUSULcrPWWru6JN4sUkX",
+                "name": "Watson Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmaps4qgLtw21J4Fg2gXUom2jNBUSULcrPWWru6JN4sUkX",
+            "Family": "Cataldi",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Cataldi family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

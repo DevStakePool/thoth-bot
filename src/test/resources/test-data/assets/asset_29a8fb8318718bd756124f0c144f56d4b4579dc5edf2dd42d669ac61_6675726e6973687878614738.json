@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687878614738",
+    "asset_name_ascii": "furnishxxaG8",
+    "fingerprint": "asset1h46jxav7gsxrflaxm5w85zf775h7qdfcxmkdn3",
+    "minting_tx_hash": "60e5524485d37c69d246aa668a4a011cd5677c7f23f0e51af4e086a0746f6a0a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1676160000,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishxxaG8": {
+            "id": "xxaG8",
+            "src": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+            "name": "Nesting Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+                "name": "Nesting Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQ4fKoQh5fcBfWawbfmEkUyPLTRzpdNn3fpN8xABLC2LA",
+                "name": "Nesting Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmeEVHurdw4dezEc7Y2CiqyaVmrnQ6werseKjLckpyX6r1",
+                "name": "Nesting Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+            "description": "Hand-crafted by Roch Davies.",
+            "furnitureId": 212
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

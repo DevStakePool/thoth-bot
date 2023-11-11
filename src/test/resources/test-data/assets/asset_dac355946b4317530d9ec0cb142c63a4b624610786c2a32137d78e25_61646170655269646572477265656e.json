@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170655269646572477265656e",
+    "asset_name_ascii": "adapeRiderGreen",
+    "fingerprint": "asset1cz5e75lkw06n598swwpedd39gclxslp3g63kw3",
+    "minting_tx_hash": "9ac69cc14620f8573ceb4ad85146535756bd066b4c0459e8c05ca04088275a10",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRiderGreen": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Rider Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmb66R4y5xysvNTtBSHbeTjFa5fZH9Ads9kepPmceaMGzC",
+                "name": "Rider Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmb66R4y5xysvNTtBSHbeTjFa5fZH9Ads9kepPmceaMGzC",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeDwennonThomas": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Dwennon Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmYGMvp4CrqDygKUc6WJi9mhB295tTCZweBu73b4JrvKkg",
+                "name": "Dwennon Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYGMvp4CrqDygKUc6WJi9mhB295tTCZweBu73b4JrvKkg",
+            "Family": "Thomas",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Thomas family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

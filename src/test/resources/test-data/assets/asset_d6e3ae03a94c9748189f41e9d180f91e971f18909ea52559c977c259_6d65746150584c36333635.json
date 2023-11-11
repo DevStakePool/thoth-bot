@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c36333635",
+    "asset_name_ascii": "metaPXL6365",
+    "fingerprint": "asset1ey83att2zrc2m3ptemqs0lwn43vqdpl0vq7hzp",
+    "minting_tx_hash": "7a0e91b88dd391186eb4f227d81f8db298367985f5ac1489f07a35095b930381",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649808000,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL6365": {
+            "name": "metaPXL#6365",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmbBhBDgUBZrQK8H6REGQvU9AzApaoXGzBjX2fZRycXn88",
+                "name": "metaPXL#6365",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmV533iVVPz15hQVWc5BfEfYLkHpUGvXAmC83c6ZFExuV4",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "clubmasters",
+              "handlebars",
+              "soul patch",
+              "golden earrings"
+            ],
+            "description": "The official 3D collectible version of PXL#6365"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

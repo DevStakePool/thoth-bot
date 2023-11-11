@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684767724145",
+    "asset_name_ascii": "furnishGgrAE",
+    "fingerprint": "asset1469lc8mw5res2n7p5xjrt6hykcc8u9sy6rkca3",
+    "minting_tx_hash": "82468d465543194c3292c7fdb6c30c24ff0ff9606334067cf2e728aa053c7f32",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674345600,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishGgrAE": {
+            "id": "GgrAE",
+            "src": "ipfs://QmcbGENiEdMcdts1WJtm44jYQb4Vd2gBhxWutig5Uwxfqg",
+            "name": "Red Armchair",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmcbGENiEdMcdts1WJtm44jYQb4Vd2gBhxWutig5Uwxfqg",
+                "name": "Red Armchair",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmaHL2MVUY9ctgGHAjMzDC7Nw8NBuZ78Ag41GY5bF3NSaX",
+                "name": "Red Armchair",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmePM4VpqzZwa6h5ppimSpVXsYGTsnpGKPhLBEnpXV961W",
+                "name": "Red Armchair",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmcbGENiEdMcdts1WJtm44jYQb4Vd2gBhxWutig5Uwxfqg",
+            "description": "Hand-crafted by Dallin Green.",
+            "furnitureId": 214
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

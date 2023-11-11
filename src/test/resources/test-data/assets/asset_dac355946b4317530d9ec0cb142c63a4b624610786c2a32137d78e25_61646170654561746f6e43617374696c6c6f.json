@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654561746f6e43617374696c6c6f",
+    "asset_name_ascii": "adapeEatonCastillo",
+    "fingerprint": "asset17usxuck4mjcutm58rtg0xdjhgwhxasde6axqf0",
+    "minting_tx_hash": "b43d6e5658e18ffaa118dee0ad2fcc30c98d3574805f2c56d0f0e30feb6a10ac",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeEatonCastillo": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Eaton Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmWzQvTg4iTquX7JbgsVh9Wh3cibariNS1F4zrtt4f5udR",
+                "name": "Eaton Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWzQvTg4iTquX7JbgsVh9Wh3cibariNS1F4zrtt4f5udR",
+            "Family": "Castillo",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

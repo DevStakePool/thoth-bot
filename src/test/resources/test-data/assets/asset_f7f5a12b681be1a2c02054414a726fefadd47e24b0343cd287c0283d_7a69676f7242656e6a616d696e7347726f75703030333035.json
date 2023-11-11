@@ -1,0 +1,658 @@
+[
+  {
+    "policy_id": "f7f5a12b681be1a2c02054414a726fefadd47e24b0343cd287c0283d",
+    "asset_name": "7a69676f7242656e6a616d696e7347726f75703030333035",
+    "asset_name_ascii": "zigorBenjaminsGroup00305",
+    "fingerprint": "asset10tgavystf4wjzyfkwmy04w4yv2y7cvz5xxu5kj",
+    "minting_tx_hash": "a70639c03f2ff794b72db03f3e884966f6ce9b53041997626d42dd597e2c3fc1",
+    "total_supply": "1",
+    "mint_cnt": 3,
+    "burn_cnt": 2,
+    "creation_time": 1642550400,
+    "minting_tx_metadata": {
+      "721": {
+        "f7f5a12b681be1a2c02054414a726fefadd47e24b0343cd287c0283d": {
+          "zigorBenjaminsGroup00297": {
+            "Id": "297 of 10000",
+            "name": "Leposa",
+            "files": [
+              {
+                "src": "ipfs://QmatTnv9PXF6KCjf2ZGa79JTzJuwLNFEsj1zaB8CisNQKJ",
+                "name": "Leposa",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmatTnv9PXF6KCjf2ZGa79JTzJuwLNFEsj1zaB8CisNQKJ",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Elf",
+              "Faces": "Cara Tentaculos",
+              "Horns": "Little Rock Star Headband",
+              "Items": "None",
+              "Scene": "Piedras",
+              "Tails": "Caniche",
+              "On Top": "Police",
+              "Material": "Jungle",
+              "Medallion": "Triangulo",
+              "Name-Size": "6",
+              "Body Color": "B",
+              "Ears Color": "A",
+              "Used Slots": "6",
+              "Faces Color": "C",
+              "Horns Color": "B",
+              "Scene Color": "Cold Winter",
+              "Tails Color": "B",
+              "On Top Color": "A",
+              "Medallion Color": "C"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup00305": {
+            "Id": "305 of 10000",
+            "name": "Kitoa",
+            "files": [
+              {
+                "src": "ipfs://QmcfT2GcGaYrDNYxFB7mWTjMdDtCXHUkaBCk7AzrQYPZik",
+                "name": "Kitoa",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmcfT2GcGaYrDNYxFB7mWTjMdDtCXHUkaBCk7AzrQYPZik",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Flame Ears",
+              "Faces": "Nop",
+              "Horns": "Mefistofeles Horns",
+              "Items": "None",
+              "Scene": "Cesped",
+              "Tails": "Caniche",
+              "On Top": "Gorro Charro",
+              "Material": "Coral",
+              "Medallion": "Cuadrado",
+              "Name-Size": "5",
+              "Body Color": "B",
+              "Ears Color": "N/A",
+              "Used Slots": "6",
+              "Faces Color": "A",
+              "Horns Color": "C",
+              "Scene Color": "Cold Winter",
+              "Tails Color": "B",
+              "On Top Color": "B",
+              "Medallion Color": "A"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup00610": {
+            "Id": "610 of 10000",
+            "name": "Nireu",
+            "files": [
+              {
+                "src": "ipfs://QmRGa5dRGKMzgmnPNz8mesX6tjUynooiySSYaVUR794b4J",
+                "name": "Nireu",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmRGa5dRGKMzgmnPNz8mesX6tjUynooiySSYaVUR794b4J",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "None",
+              "Faces": "OMG A Sketch",
+              "Horns": "None",
+              "Items": "None",
+              "Scene": "Cesped",
+              "Tails": "Triple Zorro",
+              "On Top": "Brush",
+              "Material": "Coral",
+              "Medallion": "Cuadrado",
+              "Name-Size": "5",
+              "Body Color": "A",
+              "Ears Color": "N/A",
+              "Used Slots": "4",
+              "Faces Color": "N/A",
+              "Horns Color": "N/A",
+              "Scene Color": "Red Spring",
+              "Tails Color": "A",
+              "On Top Color": "C",
+              "Medallion Color": "A"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup01450": {
+            "Id": "1450 of 10000",
+            "name": "Dapamy",
+            "files": [
+              {
+                "src": "ipfs://QmSCfRSdmFYVciC6PSPVsJ2nM48eqoZkwiJugDkPngKwa9",
+                "name": "Dapamy",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmSCfRSdmFYVciC6PSPVsJ2nM48eqoZkwiJugDkPngKwa9",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "None",
+              "Faces": "Croco",
+              "Horns": "Bat Headband",
+              "Items": "None",
+              "Scene": "Plantibolas",
+              "Tails": "Escorpion",
+              "On Top": "Helicopter",
+              "Material": "Jungle",
+              "Medallion": "Corazon",
+              "Name-Size": "6",
+              "Body Color": "B",
+              "Ears Color": "N/A",
+              "Used Slots": "5",
+              "Faces Color": "B",
+              "Horns Color": "A",
+              "Scene Color": "Red Spring",
+              "Tails Color": "C",
+              "On Top Color": "A",
+              "Medallion Color": "C"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup04110": {
+            "Id": "4110 of 10000",
+            "name": "Naleso",
+            "files": [
+              {
+                "src": "ipfs://QmTiXEZwmjVFB9rRQXCCAqjWHEdZKf5ewx1PgRKhcmCaN6",
+                "name": "Naleso",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmTiXEZwmjVFB9rRQXCCAqjWHEdZKf5ewx1PgRKhcmCaN6",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Branch Hatch",
+              "Faces": "Love",
+              "Horns": "None",
+              "Items": "None",
+              "Scene": "Plantibolas",
+              "Tails": "Perro",
+              "On Top": "Helicopter",
+              "Material": "WinterSky",
+              "Medallion": "Corazon",
+              "Name-Size": "6",
+              "Body Color": "B",
+              "Ears Color": "A",
+              "Used Slots": "5",
+              "Faces Color": "B",
+              "Horns Color": "N/A",
+              "Scene Color": "Sunrise",
+              "Tails Color": "C",
+              "On Top Color": "C",
+              "Medallion Color": "B"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup04205": {
+            "Id": "4205 of 10000",
+            "name": "Anmyis",
+            "files": [
+              {
+                "src": "ipfs://QmbVFBkhAgDzQcMFdJpHZ1xneNCXutYRmf7UsyUoYEnjDk",
+                "name": "Anmyis",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmbVFBkhAgDzQcMFdJpHZ1xneNCXutYRmf7UsyUoYEnjDk",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "None",
+              "Faces": "Shy Sticker",
+              "Horns": "Rainbow Headband",
+              "Items": "None",
+              "Scene": "Cesped",
+              "Tails": "Rata",
+              "On Top": "Brush",
+              "Material": "Jungle",
+              "Medallion": "Corazon",
+              "Name-Size": "6",
+              "Body Color": "A",
+              "Ears Color": "N/A",
+              "Used Slots": "5",
+              "Faces Color": "N/A",
+              "Horns Color": "C",
+              "Scene Color": "Dark moon",
+              "Tails Color": "B",
+              "On Top Color": "C",
+              "Medallion Color": "A"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup04354": {
+            "Id": "4354 of 10000",
+            "name": "Uahus",
+            "files": [
+              {
+                "src": "ipfs://QmSgxcxvyYC6x9xAQpgrh61bfX2pTknf7vpTQNmqi6oM2S",
+                "name": "Uahus",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmSgxcxvyYC6x9xAQpgrh61bfX2pTknf7vpTQNmqi6oM2S",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Mr. Moustache",
+              "Faces": "Ojos luz Cara Huevos",
+              "Horns": "Transformer Antenna",
+              "Items": "None",
+              "Scene": "Piedras",
+              "Tails": "Flufli",
+              "On Top": "Baby Shark",
+              "Material": "Coral",
+              "Medallion": "Cuadrado",
+              "Name-Size": "5",
+              "Body Color": "A",
+              "Ears Color": "A",
+              "Used Slots": "6",
+              "Faces Color": "B",
+              "Horns Color": "C",
+              "Scene Color": "Ocaso",
+              "Tails Color": "A",
+              "On Top Color": "A",
+              "Medallion Color": "A"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup04737": {
+            "Id": "4737 of 10000",
+            "name": "Gulorpe",
+            "files": [
+              {
+                "src": "ipfs://QmfMrJfxdNGrQ41sESMqQP5pr5MbM16VwzymmrH8MRvo59",
+                "name": "Gulorpe",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmfMrJfxdNGrQ41sESMqQP5pr5MbM16VwzymmrH8MRvo59",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Branch Hatch",
+              "Faces": "OMG A Sketch",
+              "Horns": "V Headband",
+              "Items": "None",
+              "Scene": "Plantibolas",
+              "Tails": "Diablo",
+              "On Top": "Metamorphic Stones",
+              "Material": "WinterSky",
+              "Medallion": "Triangulo",
+              "Name-Size": "7",
+              "Body Color": "B",
+              "Ears Color": "B",
+              "Used Slots": "6",
+              "Faces Color": "N/A",
+              "Horns Color": "A",
+              "Scene Color": "Cold Winter",
+              "Tails Color": "B",
+              "On Top Color": "B",
+              "Medallion Color": "B"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup06164": {
+            "Id": "6164 of 10000",
+            "name": "Gamais",
+            "files": [
+              {
+                "src": "ipfs://QmNUptTqiw8P48HMSAmoVpSSnsfWUnp2cAjgoWK1NiLUNG",
+                "name": "Gamais",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmNUptTqiw8P48HMSAmoVpSSnsfWUnp2cAjgoWK1NiLUNG",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Care Bear",
+              "Faces": "Elegant Screen",
+              "Horns": "Pajita Horns",
+              "Items": "None",
+              "Scene": "Plantibolas",
+              "Tails": "Perro",
+              "On Top": "Gorro Trap",
+              "Material": "WinterSky",
+              "Medallion": "Cuadrado",
+              "Name-Size": "6",
+              "Body Color": "C",
+              "Ears Color": "C",
+              "Used Slots": "6",
+              "Faces Color": "N/A",
+              "Horns Color": "A",
+              "Scene Color": "Cold Winter",
+              "Tails Color": "A",
+              "On Top Color": "C",
+              "Medallion Color": "A"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup06502": {
+            "Id": "6502 of 10000",
+            "name": "Juwine",
+            "files": [
+              {
+                "src": "ipfs://QmRDuhkf7FiMDbHLieDZo6mAze7czTW4sPDSpL9tEDz1r3",
+                "name": "Juwine",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmRDuhkf7FiMDbHLieDZo6mAze7czTW4sPDSpL9tEDz1r3",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Bat",
+              "Faces": "Tentaculos Multiojo",
+              "Horns": "Mefistofeles Horns",
+              "Items": "None",
+              "Scene": "Piedras",
+              "Tails": "Diablo",
+              "On Top": "Sombrero Non La",
+              "Material": "BubbleGum",
+              "Medallion": "Corazon",
+              "Name-Size": "6",
+              "Body Color": "A",
+              "Ears Color": "A",
+              "Used Slots": "6",
+              "Faces Color": "C",
+              "Horns Color": "A",
+              "Scene Color": "Cold Winter",
+              "Tails Color": "C",
+              "On Top Color": "A",
+              "Medallion Color": "A"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup07825": {
+            "Id": "7825 of 10000",
+            "name": "Jetima",
+            "files": [
+              {
+                "src": "ipfs://QmWhomenbaM5kLzBjWbadDDqDyvDg6fwv731z5NhAyarZM",
+                "name": "Jetima",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmWhomenbaM5kLzBjWbadDDqDyvDg6fwv731z5NhAyarZM",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "The Cavemans",
+              "Faces": "Bot",
+              "Horns": "Tree Antlers",
+              "Items": "None",
+              "Scene": "Plantibolas",
+              "Tails": "Plumas",
+              "On Top": "Sombrero Copa",
+              "Material": "WinterSky",
+              "Medallion": "Cuadrado",
+              "Name-Size": "6",
+              "Body Color": "B",
+              "Ears Color": "B",
+              "Used Slots": "6",
+              "Faces Color": "B",
+              "Horns Color": "B",
+              "Scene Color": "Dark moon",
+              "Tails Color": "C",
+              "On Top Color": "B",
+              "Medallion Color": "B"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup08336": {
+            "Id": "8336 of 10000",
+            "name": "Poquero",
+            "files": [
+              {
+                "src": "ipfs://QmcRjZ56CC8qp5NUgjoAH956qxq2gExvKT5kDgp7tHK2ZB",
+                "name": "Poquero",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmcRjZ56CC8qp5NUgjoAH956qxq2gExvKT5kDgp7tHK2ZB",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Donkey Monkey",
+              "Faces": "Croco",
+              "Horns": "Bat Headband",
+              "Items": "None",
+              "Scene": "Cesped",
+              "Tails": "Plumas",
+              "On Top": "Baby Shark",
+              "Material": "Coral",
+              "Medallion": "Triangulo",
+              "Name-Size": "7",
+              "Body Color": "C",
+              "Ears Color": "C",
+              "Used Slots": "6",
+              "Faces Color": "B",
+              "Horns Color": "A",
+              "Scene Color": "Ocaso",
+              "Tails Color": "C",
+              "On Top Color": "C",
+              "Medallion Color": "B"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          },
+          "zigorBenjaminsGroup08961": {
+            "Id": "8961 of 10000",
+            "name": "Uawut",
+            "files": [
+              {
+                "src": "ipfs://QmZ5PCVqHELN18xVm5Wsmad63yrgEVqMbzSGwUwqjZyHpC",
+                "name": "Uawut",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmZeWT5FYsaV7vY13idqaDLE2wmnvVJLk1Jkfm8djoGbkt",
+                "name": "Instructions",
+                "mediaType": "image/jpg"
+              }
+            ],
+            "image": "ipfs://QmZ5PCVqHELN18xVm5Wsmad63yrgEVqMbzSGwUwqjZyHpC",
+            "Artist": "zigor",
+            "Rarity": "Eggcellent",
+            "twitter": "https://twitter.com/BenjaminsGroup",
+            "mediaType": "image/png",
+            "royalties": "12%",
+            "attributes": {
+              "Ears": "Branch Hatch",
+              "Faces": "WTF Sticker",
+              "Horns": "Tree Antlers",
+              "Items": "None",
+              "Scene": "Cesped",
+              "Tails": "Caniche",
+              "On Top": "Sombrero Bombin",
+              "Material": "WinterSky",
+              "Medallion": "Cuadrado",
+              "Name-Size": "5",
+              "Body Color": "B",
+              "Ears Color": "A",
+              "Used Slots": "6",
+              "Faces Color": "N/A",
+              "Horns Color": "A",
+              "Scene Color": "Dark moon",
+              "Tails Color": "C",
+              "On Top Color": "A",
+              "Medallion Color": "A"
+            },
+            "description": [
+              "Funplastic is the generative collection of 10k exclusive",
+              "figurines created by Zigor for Benjamin Group. Half of the",
+              "artist's royalties go towards cleaning plastics from the ocean."
+            ],
+            "Artist Website": "https://lynkfire.com/zigor"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

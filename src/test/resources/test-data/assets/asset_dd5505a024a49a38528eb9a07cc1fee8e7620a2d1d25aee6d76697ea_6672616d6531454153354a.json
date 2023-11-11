@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d6531454153354a",
+    "asset_name_ascii": "frame1EAS5J",
+    "fingerprint": "asset14lkjqm7ndm4gcdq9kcxezvmpdtxpdjv7u006yr",
+    "minting_tx_hash": "49928d6021d963e2f7e06d5c6fd1c11b64476fc992bcd8af0220eae11ba6b597",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1664496000,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame1EAS5J": {
+            "id": "5x64Y",
+            "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "name": "Ape Society Frame Level 1",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+                "name": "Ape Society Frame Level 1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "level": 1,
+            "artist": "Atherol Cox",
+            "mintedAt": 1664570210888,
+            "mintedBy": "e1e0a2f2d00952667929ee3f8bad360b24e378973b67dc928a6d309f29",
+            "description": "Level 1 frame",
+            "mintedStake": "stake1u8s29uksp9fxv7ffaclchtfkpvjwx7yh8dnaey52d5cf72gdw36a9"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

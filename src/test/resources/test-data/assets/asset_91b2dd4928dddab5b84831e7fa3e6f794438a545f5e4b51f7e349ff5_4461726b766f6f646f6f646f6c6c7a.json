@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "91b2dd4928dddab5b84831e7fa3e6f794438a545f5e4b51f7e349ff5",
+    "asset_name": "4461726b766f6f646f6f646f6c6c7a",
+    "asset_name_ascii": "Darkvoodoodollz",
+    "fingerprint": "asset12uxyk6waxvkwyat7y92vv4lzlyaja2emyw5r7e",
+    "minting_tx_hash": "39dd62104bc69ff2380295d1f7a2f4dba721970f2ad37959315bff7c47b15fd4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1634256000,
+    "minting_tx_metadata": {
+      "721": {
+        "schema": "CIP-25",
+        "version": "1.0",
+        "91b2dd4928dddab5b84831e7fa3e6f794438a545f5e4b51f7e349ff5": {
+          "Darkvoodoodollz": {
+            "name": "Dark voodoo dollz",
+            "files": {
+              "src": "ipfs://QmNYcNjgmQbyYhnHQvhmdgS15Z8PbruUejrgVG1wDMSAbi",
+              "mediaType": "image/jpeg"
+            },
+            "image": "ipfs://QmNYcNjgmQbyYhnHQvhmdgS15Z8PbruUejrgVG1wDMSAbi",
+            "artist": "Jean Pierre Jeffery",
+            "summary": "Enjoy your voodoo dollz nft",
+            "assetType": "NFT",
+            "mediaType": "image/jpeg",
+            "publisher": [
+              "https://tokhun.io"
+            ],
+            "attributes": {
+              "": "Dark voodoo dollz #3"
+            },
+            "collection": "Dark voodoo dollz"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c39373736",
+    "asset_name_ascii": "metaPXL9776",
+    "fingerprint": "asset1hh5mfdfwduydgqqk692lp7cfpgye94kskh4exq",
+    "minting_tx_hash": "bcb0936f8b1653d6d10155cc04b51b3819a7606f5a85926ce774b0f2a8cdaf7e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649635200,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL9776": {
+            "name": "metaPXL#9776",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmVAyJqoZrD7pq73absjFFGANA45a934JurBdPTq1NrqkT",
+                "name": "metaPXL#9776",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmU1rZdaYzufzMwcvua667sgQMze2YFtNQXQEeME1XAFLN",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "eye patch",
+              "top knot",
+              "mantle"
+            ],
+            "description": "The official 3D collectible version of PXL#9776"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

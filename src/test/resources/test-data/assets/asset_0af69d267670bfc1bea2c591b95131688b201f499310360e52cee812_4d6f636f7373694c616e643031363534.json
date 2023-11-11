@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812",
+    "asset_name": "4d6f636f7373694c616e643031363534",
+    "asset_name_ascii": "MocossiLand01654",
+    "fingerprint": "asset1snw44l02f2twle8fddu6mplym78mr3hra9a2cz",
+    "minting_tx_hash": "2b71f94db67f54da6639874948e6fc1f7f5a9b5b4b0dd7dcff7e3bf545b5dc97",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652227200,
+    "minting_tx_metadata": {
+      "721": {
+        "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812": {
+          "MocossiLand01654": {
+            "id": 1654,
+            "name": "Shockcity #01654",
+            "image": "ipfs://QmQqStaB49bDB6DCe3Nz5HNK13oXBdN1iH17cSP9k168mL",
+            "website": "https://mocossi.com",
+            "copyright": "2022 Mocossi",
+            "mediaType": "image/png",
+            "attributes": {
+              "Theme": "Thunder",
+              "Coordinate": [
+                [
+                  110,
+                  51
+                ]
+              ],
+              "Distance-to-World-Center": 31,
+              "Distance-to-Legendary-Plot": 10
+            },
+            "description": "Mocossi NFT for Land Plots"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

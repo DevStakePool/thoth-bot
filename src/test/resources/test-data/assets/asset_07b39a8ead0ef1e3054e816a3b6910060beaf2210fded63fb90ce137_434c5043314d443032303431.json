@@ -1,0 +1,66 @@
+[
+  {
+    "policy_id": "07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137",
+    "asset_name": "434c5043314d443032303431",
+    "asset_name_ascii": "CLPC1MD02041",
+    "fingerprint": "asset1z9c89actszhhpzewegmnrv6ygvs02z6ezwz6l9",
+    "minting_tx_hash": "bc378d4fe1356e4570dd1c941a4370bd8ade129c557f5c09dc880ec819b326e4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1654300800,
+    "minting_tx_metadata": {
+      "721": {
+        "07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137": {
+          "CLPC1MD02041": {
+            "id": "02041",
+            "tag": "CLPC1MD02041",
+            "name": "Medium Land Plot Claim CM #02041",
+            "files": [
+              {
+                "src": "ipfs://QmSmLFgwXrNkk72RGn8q3ZXCUtcVX32BYdyykfPCbKRgGG",
+                "name": "Medium Land Plot Claim CM",
+                "mediaType": "video/mp4",
+                "resolution": "4k"
+              },
+              {
+                "src": "ipfs://QmUbpbGB3PzA7UR9nctLuGrKP4oSYT3bAdaEZ3ZJ16Mby7",
+                "name": "Medium Land Plot Claim CM",
+                "mediaType": "video/mp4",
+                "resolution": "web"
+              },
+              {
+                "src": "ipfs://QmdAAGPHXvJ1k9JdSaDY3vAbiUkWaVSq7o82gdGkJt74HN",
+                "name": "Medium Land Plot Claim CM",
+                "mediaType": "image/gif"
+              }
+            ],
+            "image": "ipfs://QmejeENgyzV25CjkFrDXhGp7iUC1GzPYWiZk7ypRxQzHBx",
+            "media": {
+              "Website": "https://www.cornucopias.io",
+              "Link Tree": "https://linktr.ee/CornucopiasGame"
+            },
+            "gameid": "LPCMDZ12301",
+            "rarity": "Common",
+            "season": "Pre-Launch",
+            "version": "1.0",
+            "fullName": "Medium Land Plot Claim #02041",
+            "mediaType": "image/jpeg",
+            "typeClass": "Land Claim",
+            "attributes": {
+              "zoneChoices": [
+                "Solace",
+                "Esperanza",
+                "Fortune"
+              ]
+            },
+            "description": "Cornucopias Land Plot Claim",
+            "projectName": "Cornucopias 'The Island' Game"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

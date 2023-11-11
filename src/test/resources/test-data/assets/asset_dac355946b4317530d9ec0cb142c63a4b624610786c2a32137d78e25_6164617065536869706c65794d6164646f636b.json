@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065536869706c65794d6164646f636b",
+    "asset_name_ascii": "adapeShipleyMaddock",
+    "fingerprint": "asset1h34ddfwr8v8s7mtxs70pycaq5zz7usj8s28c2c",
+    "minting_tx_hash": "c4ef8609e942354589c9fc2d2e521a5d0814057e40a9652c05f0b27586f9b4b9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeShipleyMaddock": {
+            "Hat": "Sombrero",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Shipley Maddock",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmPXctx84m1ZMsgJAsnZvAaCXzkUcEpV2C9LoksKhEMi7u",
+                "name": "Shipley Maddock",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPXctx84m1ZMsgJAsnZvAaCXzkUcEpV2C9LoksKhEMi7u",
+            "Family": "Maddock",
+            "Weapon": "None",
+            "Accessory": "Dagger",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Maddock family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

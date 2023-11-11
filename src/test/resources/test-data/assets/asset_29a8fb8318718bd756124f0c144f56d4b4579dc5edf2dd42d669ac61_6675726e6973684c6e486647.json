@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973684c6e486647",
+    "asset_name_ascii": "furnishLnHfG",
+    "fingerprint": "asset15mjuue3594fwurvecat77zce8s2v9vngdysupr",
+    "minting_tx_hash": "193bab8471053a0c03c82cd14fa43a36642031ff0594bc317e0c4735cc3c891a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1679011200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishLnHfG": {
+            "id": "LnHfG",
+            "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "name": "Standing Globe",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+                "name": "Standing Globe",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmV3BSnFf1Xy9bWVp8i5XgZvsr7u16LRAnAgD4gePWMbCN",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR6r3Bfbkzbn2ocMekLsaebgcELNvcVvLR4vL2iRmfjxC",
+                "name": "Standing Globe",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmexT9gV6oQueCPamEwgqQLq8py2dfKoLxqM56y1rTMHQ2",
+            "description": "Hand-crafted by Damas Evans.",
+            "furnitureId": 219
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

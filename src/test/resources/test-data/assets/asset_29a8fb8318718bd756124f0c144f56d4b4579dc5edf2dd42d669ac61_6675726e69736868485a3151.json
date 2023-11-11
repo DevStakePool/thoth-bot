@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e69736868485a3151",
+    "asset_name_ascii": "furnishhHZ1Q",
+    "fingerprint": "asset1sx65tqykr8we5j2n8t0cfzz5tjzghu9srv5gen",
+    "minting_tx_hash": "4e31cc2eb0d265d3c5115a39e49dfc82cb3b74c7a83ef46dd89b7fc671a136bb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677628800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishhHZ1Q": {
+            "id": "hHZ1Q",
+            "src": "ipfs://QmdM2XXVnoYZoKzBv9pFpJeanFdmDxHLBDFn5S7rKqUs4x",
+            "name": "Brass Glass Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmdM2XXVnoYZoKzBv9pFpJeanFdmDxHLBDFn5S7rKqUs4x",
+                "name": "Brass Glass Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://Qmek56uCPoB4ykqXiRJzwZQx6pre3Mtf5t89estVBrM8SV",
+                "name": "Brass Glass Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmRGWWnwshzfVnXArynTMA9Vf3pohB8aeeWSCAwe8ZDHbj",
+                "name": "Brass Glass Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmdM2XXVnoYZoKzBv9pFpJeanFdmDxHLBDFn5S7rKqUs4x",
+            "description": "Hand-crafted by Creighton White.",
+            "furnitureId": 203
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

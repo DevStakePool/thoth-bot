@@ -8,7 +8,7 @@
     "total_supply": "30000000000000",
     "mint_cnt": 1,
     "burn_cnt": 0,
-    "creation_time": 1643876973,
+    "creation_time": 1643846400,
     "minting_tx_metadata": {
       "721": {
         "version": "1.0",
@@ -22,6 +22,14 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": {
+      "url": "",
+      "logo": "",
+      "name": "clams",
+      "ticker": "CLAMS",
+      "decimals": 0,
+      "description": "Clam machine go shloop"
+    },
+    "cip68_metadata": null
   }
 ]

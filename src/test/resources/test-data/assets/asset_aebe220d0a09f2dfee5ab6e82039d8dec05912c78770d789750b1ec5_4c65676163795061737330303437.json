@@ -1,0 +1,35 @@
+[
+  {
+    "policy_id": "aebe220d0a09f2dfee5ab6e82039d8dec05912c78770d789750b1ec5",
+    "asset_name": "4c65676163795061737330303437",
+    "asset_name_ascii": "LegacyPass0047",
+    "fingerprint": "asset1uarcmnealhmjwv35gpv00lxg7xlddehk0qc60k",
+    "minting_tx_hash": "6050228efe86574220dac8e64944f4b5ae854cf672c1080874edecec7d2f7ac0",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675987200,
+    "minting_tx_metadata": {
+      "721": {
+        "nonce": "6a14463fcb482890",
+        "aebe220d0a09f2dfee5ab6e82039d8dec05912c78770d789750b1ec5": {
+          "LegacyPass0047": {
+            "name": "LegacyPass #0047",
+            "files": [
+              {
+                "src": "ipfs://QmYqmMc4XXKk9r3dWj3oB5TjqL1kZwXczEfcDHAoG4wofU",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXxvXQY3kCcY5UKEwzTpZoWcwsNUKc7n2dyDjQVVpAaUt",
+            "Project": "Raison D'etre",
+            "mediaType": "image/gif",
+            "Description": "Legacy Pass for Raison D'etre Legacy Collection"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

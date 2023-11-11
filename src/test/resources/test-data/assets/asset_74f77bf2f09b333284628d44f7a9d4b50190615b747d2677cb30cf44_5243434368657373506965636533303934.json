@@ -1,0 +1,65 @@
+[
+  {
+    "policy_id": "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44",
+    "asset_name": "5243434368657373506965636533303934",
+    "asset_name_ascii": "RCCChessPiece3094",
+    "fingerprint": "asset1dza2qthylnhjxqmfqfn9v48gvjqm82vxlg6an2",
+    "minting_tx_hash": "d014427b1ad3b1f7c9faebf93aed2f64edf3a4126effff460d29ac274cf7afe1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674950400,
+    "minting_tx_metadata": {
+      "721": {
+        "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44": {
+          "RCCChessPiece3094": {
+            "Head": "Alien",
+            "name": "Royal Chess Club - Chess Piece #3094",
+            "Style": "3/8",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Silver-Pawn-Zatrikion21.jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Zatrikion",
+            "Genesis": "5/8",
+            "Material": "Metallic",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "Master",
+            "Chess Piece": "Pawn",
+            "Description": "Esteemed Pawn of Zatrikion family",
+            "Encase Color": "Brown"
+          },
+          "RCCChessPiece3749": {
+            "Head": "Human",
+            "name": "Royal Chess Club - Chess Piece #3749",
+            "Style": "1/1",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Silver-King-Chaturanga (1).jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Chaturanga",
+            "Genesis": "1/2",
+            "Material": "Metallic",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "Grandmaster",
+            "Chess Piece": "King",
+            "Description": "Esteemed King of Chaturanga family",
+            "Encase Color": "Red"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

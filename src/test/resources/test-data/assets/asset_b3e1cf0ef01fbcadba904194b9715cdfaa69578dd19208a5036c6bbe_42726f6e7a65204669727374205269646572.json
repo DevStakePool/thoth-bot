@@ -1,0 +1,54 @@
+[
+  {
+    "policy_id": "b3e1cf0ef01fbcadba904194b9715cdfaa69578dd19208a5036c6bbe",
+    "asset_name": "42726f6e7a65204669727374205269646572",
+    "asset_name_ascii": "Bronze First Rider",
+    "fingerprint": "asset15hzl5wqd7l4s58zxr0s57484gvxk76capq7hcz",
+    "minting_tx_hash": "9bc599464803fc8f5c40c64d1fae844e64d59e7b5b0073dcdf76d16c3f66b374",
+    "total_supply": "1744",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1651190400,
+    "minting_tx_metadata": {
+      "721": {
+        "b3e1cf0ef01fbcadba904194b9715cdfaa69578dd19208a5036c6bbe": {
+          "Gold First Rider": {
+            "src": "ipfs://QmTan4jb8T7z2PHge4J917WE1MYvGWu7sa5Py6Qk32Dwwc",
+            "name": "Gold First Rider",
+            "type": "image/png",
+            "image": "ipfs://QmTan4jb8T7z2PHge4J917WE1MYvGWu7sa5Py6Qk32Dwwc",
+            "authors": [
+              "WingRiders"
+            ],
+            "quantity": 107,
+            "description": "Gold Badge of Honor WingRiders"
+          },
+          "Bronze First Rider": {
+            "src": "ipfs://QmW1RhZKzDmofhu19VsBNG2RB87rephkn7nN1gLMBTDTY6",
+            "name": "Bronze First Rider",
+            "type": "image/png",
+            "image": "ipfs://QmW1RhZKzDmofhu19VsBNG2RB87rephkn7nN1gLMBTDTY6",
+            "authors": [
+              "WingRiders"
+            ],
+            "quantity": 1744,
+            "description": "Bronze Badge of Honor WingRiders"
+          },
+          "Silver First Rider": {
+            "src": "ipfs://QmPeytoR2a1BQykbcWCcGC5R4ktJ7QGkpkvgDJffrEJFjW",
+            "name": "Silver First Rider",
+            "type": "image/png",
+            "image": "ipfs://QmPeytoR2a1BQykbcWCcGC5R4ktJ7QGkpkvgDJffrEJFjW",
+            "authors": [
+              "WingRiders"
+            ],
+            "quantity": 112,
+            "description": "Silver Badge of Honor WingRiders"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "policy_id": "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44",
+    "asset_name": "5243434368657373506965636531313834",
+    "asset_name_ascii": "RCCChessPiece1184",
+    "fingerprint": "asset1w0ku9g6jyl52xsftpkpp84kjnzcyk803svd583",
+    "minting_tx_hash": "74cdde1f74523cd45a58893f4a0979fe84d4a303551fdc28a9af8d167dc6f129",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674864000,
+    "minting_tx_metadata": {
+      "721": {
+        "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44": {
+          "RCCChessPiece1184": {
+            "Head": "Human",
+            "name": "Royal Chess Club - Chess Piece #1184",
+            "Style": "5/8",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Wood-P-Makruk (70).jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Makruk",
+            "Genesis": "3/12",
+            "Material": "Wood",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "National",
+            "Chess Piece": "Pawn",
+            "Description": "Esteemed Pawn of Makruk family",
+            "Encase Color": "Amber"
+          },
+          "RCCChessPiece1941": {
+            "Head": "Chimera",
+            "name": "Royal Chess Club - Chess Piece #1941",
+            "Style": "8/12",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Stone-Pawn-Zatrikion--- (60).jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Zatrikion",
+            "Genesis": "6/8",
+            "Material": "Marmoreal",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "Master",
+            "Chess Piece": "Pawn",
+            "Description": "Esteemed Pawn of Zatrikion family",
+            "Encase Color": "Brown"
+          },
+          "RCCChessPiece2907": {
+            "Head": "None",
+            "name": "Royal Chess Club - Chess Piece #2907",
+            "Style": "2/2",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Stone-Rook-Chaturanga7.jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Chaturanga",
+            "Genesis": "3/4",
+            "Material": "Marmoreal",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "Grandmaster",
+            "Chess Piece": "Rook",
+            "Description": "Esteemed Rook of Chaturanga family",
+            "Encase Color": "Red"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

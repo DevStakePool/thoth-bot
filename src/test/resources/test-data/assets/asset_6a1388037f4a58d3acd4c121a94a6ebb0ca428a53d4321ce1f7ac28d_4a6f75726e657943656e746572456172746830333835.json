@@ -1,0 +1,81 @@
+[
+  {
+    "policy_id": "6a1388037f4a58d3acd4c121a94a6ebb0ca428a53d4321ce1f7ac28d",
+    "asset_name": "4a6f75726e657943656e746572456172746830333835",
+    "asset_name_ascii": "JourneyCenterEarth0385",
+    "fingerprint": "asset18krau6gd6hvtr0fdzv8r8yj65097cjs49twqau",
+    "minting_tx_hash": "f1b7c5ca5fc9d5cb3ef4ff30cbb82d7c016ed8db1b69521bbf1364e565e56f7f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677456000,
+    "minting_tx_metadata": {
+      "721": {
+        "6a1388037f4a58d3acd4c121a94a6ebb0ca428a53d4321ce1f7ac28d": {
+          "JourneyCenterEarth0000": {
+            "id": "0000",
+            "data": "ipfs://QmWFXj8Md4JymUciifY3xiG1gQXF3JdXqy2ZMRwpMy8mKT",
+            "name": "Journey to the Center of the Earth #0000",
+            "files": [
+              {
+                "src": "ipfs://QmUPeUxyfLdGZTH4neKjZF8U2ZL4xHhk4T8SG56FB5xKjb",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmStJp6nWPCWnv4nrekWbs3Lva3KoYro3kbgARsTLCiwtj",
+            "sha256": "d10fe11f7fec576f35db5ac8be0efb6c452bffa8a613cca42639a5c1d111590f",
+            "authors": [
+              "Jules Verne"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "1",
+              "Cover Theme": "The Extinct"
+            },
+            "description": [
+              "Our principle is, that books, instead of growing mouldy behind a",
+              "n iron grating, should be worn out under the eyes of many reader",
+              "s."
+            ],
+            "extraAttributes": {
+              "Book Title": "Journey to the Center of the Earth"
+            }
+          },
+          "JourneyCenterEarth0385": {
+            "id": "0385",
+            "data": "ipfs://QmV4F1hXAaEUHtcdhFWUBaLsKxE5BWRvBjShpjJ4cGoT5J",
+            "name": "Journey to the Center of the Earth #0385",
+            "files": [
+              {
+                "src": "ipfs://QmZuDGL2vxzoUizwm5DpBj4f6P62QPiAkVhsvNiFPWyWDj",
+                "name": "High-Res Cover Image",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaXKfW2UF6JAUWaMYfhkwko93pFQAcfhMzNkHgcGyWZpa",
+            "sha256": "a4d15fa17d05f6821aaf91e9db765f549b8fa5bad77b13398dbe26ea7b6bbdbb",
+            "authors": [
+              "Jules Verne"
+            ],
+            "website": "https://book.io",
+            "attributes": {
+              "Variation": "9",
+              "Cover Theme": "The Guide"
+            },
+            "description": [
+              "Our principle is, that books, instead of growing mouldy behind a",
+              "n iron grating, should be worn out under the eyes of many reader",
+              "s."
+            ],
+            "extraAttributes": {
+              "Book Title": "Journey to the Center of the Earth"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

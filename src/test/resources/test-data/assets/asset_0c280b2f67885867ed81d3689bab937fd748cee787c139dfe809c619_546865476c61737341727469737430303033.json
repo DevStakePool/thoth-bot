@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "0c280b2f67885867ed81d3689bab937fd748cee787c139dfe809c619",
+    "asset_name": "546865476c61737341727469737430303033",
+    "asset_name_ascii": "TheGlassArtist0003",
+    "fingerprint": "asset16vpv9rqzw3qf54ja62ukw0j7t0tchnz3l6dnq8",
+    "minting_tx_hash": "b38ba5297da577497a4720f2c421f0f5f3fc931e0f3bbda884757261ce1ee52d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1673395200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "0c280b2f67885867ed81d3689bab937fd748cee787c139dfe809c619": {
+          "TheGlassArtist0003": {
+            "name": "The Glass Artist #0003",
+            "files": [
+              {
+                "src": "ipfs://QmXxPqjR8hnaRu6MWWNxvVdE8m9wxzfWouvDSLYHroRLA3",
+                "name": "TheGlassArtist0003",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYNeN65gjpCY8AaeVrQMdqSZDw1pEHPPLpYeRjaBvFTbC",
+            "NFT Name": "Sir Algerone Ravenswood",
+            "mediaType": "image/png",
+            "description": [
+              "A stunning way to visualize your NFTs using photor",
+              "ealistic rendering of glass items. Get yours now!"
+            ],
+            "NFT Collection": "The Gentlemen's Club"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

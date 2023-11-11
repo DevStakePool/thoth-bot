@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368304f677665",
+    "asset_name_ascii": "furnish0Ogve",
+    "fingerprint": "asset1h6urxu9p3zwvq03gleknwfqnrsvqe35x53pv4x",
+    "minting_tx_hash": "0b5f8e3b08b0edb1a6a705060565144c54c35b2bd13524c970f25ec6823ad46e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1677196800,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnish0Ogve": {
+            "id": "0Ogve",
+            "src": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+            "name": "Unbalanced Sofa",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+                "name": "Unbalanced Sofa",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQKLd4LFRRHg43DA52u7Jnv2n1tDRgPkqKFoULq79AngY",
+                "name": "Unbalanced Sofa",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmR9uThAVz3EreGSFK495ofXXdJf3SQuhqdAb6QoD5XTwt",
+                "name": "Unbalanced Sofa",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://Qme78i9bJYUX98M3kyBDr6J3toXjmjz8m6mYUiJQ9tASTv",
+            "description": "Hand-crafted by Rodney Walker.",
+            "furnitureId": 221
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

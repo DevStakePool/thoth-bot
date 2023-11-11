@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065447769676874526f62696e736f6e",
+    "asset_name_ascii": "adapeDwightRobinson",
+    "fingerprint": "asset1dcde0598ppeh5776ftr4qcqxrlwd0tujrnfjux",
+    "minting_tx_hash": "13946f0c6211b01d3a432f87d01e7c8312312331f209f7489574a39d5a1a5320",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeGarrickSmith": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Safety Goggles",
+            "Head": "Ape",
+            "name": "Garrick Smith",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmVhrv5KcKgiWyFrnLnoqJw1HVqB7r6TrTBJkYWo5SP2DU",
+                "name": "Garrick Smith",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVhrv5KcKgiWyFrnLnoqJw1HVqB7r6TrTBJkYWo5SP2DU",
+            "Family": "Smith",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Smith family"
+          },
+          "adapeCarlosCataldi": {
+            "Hat": "Voltaire Wig",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Carlos Cataldi",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmVwff2FnVePTSWyQ8ZCkEDG54kKXweLpWiXuWnyuLUHQA",
+                "name": "Carlos Cataldi",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVwff2FnVePTSWyQ8ZCkEDG54kKXweLpWiXuWnyuLUHQA",
+            "Family": "Cataldi",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Cataldi family"
+          },
+          "adapeDwightRobinson": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Dwight Robinson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmaopxSHBbWpybd5fPRUYxZuPJYtxWTXxsvjyB79qEoJXY",
+                "name": "Dwight Robinson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaopxSHBbWpybd5fPRUYxZuPJYtxWTXxsvjyB79qEoJXY",
+            "Family": "Robinson",
+            "Weapon": "None",
+            "Accessory": "Bubblegum",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Robinson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

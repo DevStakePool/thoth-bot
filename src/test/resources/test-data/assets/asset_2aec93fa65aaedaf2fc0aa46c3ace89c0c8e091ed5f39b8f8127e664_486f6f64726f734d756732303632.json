@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "2aec93fa65aaedaf2fc0aa46c3ace89c0c8e091ed5f39b8f8127e664",
+    "asset_name": "486f6f64726f734d756732303632",
+    "asset_name_ascii": "HoodrosMug2062",
+    "fingerprint": "asset1kn7yjctj685lcpa6da2hxx3hrf26y726xt3t8m",
+    "minting_tx_hash": "a64f0f286e6f8bc9b43700b26a0a06d2b8abf3537be734ec9c20e34a5c9d83ff",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1637193600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "2aec93fa65aaedaf2fc0aa46c3ace89c0c8e091ed5f39b8f8127e664": {
+          "HoodrosMug2062": {
+            "Name": "Hoodro's Campaign Mug",
+            "Asset": "HoodrosMug2062",
+            "files": [
+              {
+                "src": "ipfs://QmSFqR1fMJCEbq3dmbQYQ5G9EnCPqqTAWtcT511YeY62Xf",
+                "name": "HoodrosMug2062",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmQyodYcdNf6yUYdk2nVh7XxAovukujYVxcMkEkgJmLCjP",
+            "Number": "2062",
+            "Series": "Campaign Materials",
+            "mediaType": "image/gif",
+            "Collection": "Old Money"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -4,199 +4,30 @@
     "asset_name": "7369676d616d656e74616c697479",
     "asset_name_ascii": "sigmamentality",
     "fingerprint": "asset1y9jsvayv797ghzw7hvael3ed9ft7arl4l2ahp3",
-    "minting_tx_hash": "d160a8951d7475a18fc7e685d88a24ed3891bd1cd474ee093de2f99a64ca22a8",
-    "total_supply": "1",
+    "minting_tx_hash": "d34a68dac44e75ae2631306f9c07d672c5928df46c852c6caa14929a1ea9cc3d",
+    "total_supply": "0",
     "mint_cnt": 1,
-    "burn_cnt": 0,
+    "burn_cnt": 1,
     "creation_time": 1647302400,
     "minting_tx_metadata": {
       "721": {
         "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
-          "elmer": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$elmer",
-            "image": "ipfs://QmRzuinA426XL6Uhsavo8sKqagRa8fMARhsJgG2qpaXVNw",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "plotkin": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$plotkin",
-            "image": "ipfs://QmNqKJf2YpKGKdbMJaqbYqW6aQefnb5hiYib3oJ7MGnvNf",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "veganaf": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$veganaf",
-            "image": "ipfs://QmX2r9LS3hh7v7kJCTrdZLoeW6fyMkHwXdwQ2o8Nvepem7",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "redhorse": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$redhorse",
-            "image": "ipfs://QmQLUaYtPLZRrWN91z7TU8jujL2G2kSfKjURH6dzNfmPMS",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "chiba.inu": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$chiba.inu",
-            "image": "ipfs://QmNqtBpx3toYYTB2LnujVRvSC4mxDivkSgiBouohB6ps3k",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "kingadape": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$kingadape",
-            "image": "ipfs://QmZQqkec5QaTJWz1EZeqstwXowBnFq99BbJDmu4kwchk8h",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "metmuseum": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$metmuseum",
-            "image": "ipfs://QmWVJEoYKzW2ZKnYZ8Gpe31tj2ySRaAyZuhoqNM1xvmYmx",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "paychrisg": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$paychrisg",
-            "image": "ipfs://QmejP2F1AnPmb5ChD2yB8UoSNpG4JP26uNEeYbWSJewXPL",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "youtubetv": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$youtubetv",
-            "image": "ipfs://QmdXzNCTMTRPdDTEpQMCsDuqG3r1zLceF24xwbJXBubWxH",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "hoskymania": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$hoskymania",
-            "image": "ipfs://QmciPYNGPD7eYvPWkJCBsjG4ApWs8XqK6xXzZnCeHuknyF",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "fritzthecat": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$fritzthecat",
-            "image": "ipfs://QmXXvg7METdioHrFyX3HvhnWC8qFjQUmRLYk1geh9yXxSQ",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "defimortgage": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
-            "name": "$defimortgage",
-            "image": "ipfs://QmWLmMwhiggWULvmSRUC7E7KJGDYLpmdKSnSJ1oM6hzuC5",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
-          },
-          "sigmamentality": {
-            "core": {
-              "og": 0,
-              "prefix": "$",
-              "version": 0,
-              "termsofuse": "https://adahandle.com/tou",
-              "handleEncoding": "utf-8"
-            },
+          "000de1407369676d616d656e74616c697479": {
+            "og": 0,
             "name": "$sigmamentality",
-            "image": "ipfs://QmVuZiwQQtYZ7GMCz7dBXFDNwza3kdcuEcUr5z8qa4b7gp",
-            "website": "https://adahandle.com",
-            "description": "The Handle Standard",
-            "augmentations": []
+            "image": "ipfs://zb2rhkDNccdPS72cAnXhqqMNdwZwxTSYrZpKEwvNqpRkfdZk4",
+            "length": 14,
+            "rarity": "basic",
+            "version": 1,
+            "mediaType": "image/jpeg",
+            "og_number": 0,
+            "characters": "letters",
+            "numeric_modifiers": ""
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

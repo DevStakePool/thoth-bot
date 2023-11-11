@@ -1,0 +1,76 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c36333330",
+    "asset_name_ascii": "metaPXL6330",
+    "fingerprint": "asset1w2wfaezk5r803dt334edx0sqe0qljpdcznajrq",
+    "minting_tx_hash": "4dd198a18de5666724a0560d502c0bffd2c48876e26b482c5f091229ec9b3558",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1647043200,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL3380": {
+            "name": "metaPXL#3380",
+            "type": "reptilian",
+            "files": [
+              {
+                "src": "ipfs://QmddzGfM5Q8pgu1kjkot5QveXdEyqhTMUUFYLYwPyWg2uD",
+                "name": "metaPXL#3380",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfJcNyrHP2TNFtyBBv6gvN2TrVuiYHwi67YgP2Wvbf4gz",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "goatee",
+              "side swept hair"
+            ],
+            "description": "The official 3D collectible version of PXL#3380"
+          },
+          "metaPXL6330": {
+            "name": "metaPXL#6330",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmePg35X4TMPDishLJzbJwTbiY4yqvPq9cUB9eyiPGM1Yc",
+                "name": "metaPXL#6330",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmV3oCegPmCNnNjfhC1UwCqvkzHJNzJqCsFxy2ngSDNTEz",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "aviators",
+              "chain",
+              "face bandana",
+              "crown"
+            ],
+            "description": "The official 3D collectible version of PXL#6330"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

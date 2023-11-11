@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706542726f636b54686f6d6173",
+    "asset_name_ascii": "adapeBrockThomas",
+    "fingerprint": "asset1dwmasyuzmd8f59x5hy52ex989j6nyhh4gfcq8j",
+    "minting_tx_hash": "840ec49ff90ceb402936719833e0ef5eee93db727f3b3de548ceecab9e6609c8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBrockThomas": {
+            "Hat": "Top Hat",
+            "Body": "Cardigan",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Brock Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmNqDYdfqnKwfHd41CHVQ3jsYqLc1doxicLDs7dwhAh56X",
+                "name": "Brock Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNqDYdfqnKwfHd41CHVQ3jsYqLc1doxicLDs7dwhAh56X",
+            "Family": "Thomas",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Thomas family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

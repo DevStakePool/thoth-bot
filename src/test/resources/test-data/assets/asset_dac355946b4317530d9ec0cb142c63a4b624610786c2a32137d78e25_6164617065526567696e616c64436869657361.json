@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065526567696e616c64436869657361",
+    "asset_name_ascii": "adapeReginaldChiesa",
+    "fingerprint": "asset134n3hdmfsx5xmw8rfxs4ne53jw2trkapqcs0xy",
+    "minting_tx_hash": "3b102cab9ea1d1ee8cbc5fc5d1c74552be74046c5d4783b4325d7704706e39ed",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643587200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeReginaldChiesa": {
+            "Hat": "Privateer Hat",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Reginald Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmU4Hif3DhKtQUBePBpsih8mvCdQfaY6iSa6xgWaNJq7bu",
+                "name": "Reginald Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmU4Hif3DhKtQUBePBpsih8mvCdQfaY6iSa6xgWaNJq7bu",
+            "Family": "Chiesa",
+            "Weapon": "Sword",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Chiesa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

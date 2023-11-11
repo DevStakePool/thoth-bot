@@ -1,0 +1,65 @@
+[
+  {
+    "policy_id": "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44",
+    "asset_name": "5243434368657373506965636531303939",
+    "asset_name_ascii": "RCCChessPiece1099",
+    "fingerprint": "asset1qg5gm97jgmktfrjfzfgp822jyh4hk3g6ugdnv6",
+    "minting_tx_hash": "506ff2625fc2f82efcd8e6c75d87b9ea59eb1ed913f8c350bf09d3d76e5668ca",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674864000,
+    "minting_tx_metadata": {
+      "721": {
+        "74f77bf2f09b333284628d44f7a9d4b50190615b747d2677cb30cf44": {
+          "RCCChessPiece1099": {
+            "Head": "Horse",
+            "name": "Royal Chess Club - Chess Piece #1099",
+            "Style": "1/3",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Wood-Knight-Makruk- (12).jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Makruk",
+            "Genesis": "7/8",
+            "Material": "Wood",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "National",
+            "Chess Piece": "Knight",
+            "Description": "Esteemed Knight of Makruk family",
+            "Encase Color": "Amber"
+          },
+          "RCCChessPiece3996": {
+            "Head": "None",
+            "name": "Royal Chess Club - Chess Piece #3996",
+            "Style": "2/2",
+            "image": [
+              "ipfs://bafybeiafsk5apajohqrwxkegbjchopxfsti2s4wixw",
+              "j6rw7np53tqiitee/Gold-Rook-xadrez13.jpg"
+            ],
+            "links": {
+              "discord": "https://discord.gg/x5QXN8x6KA",
+              "twitter": "https://twitter.com/Royal_ChessClub",
+              "website": "https://royalchessclub.io/"
+            },
+            "Family": "Xadrez",
+            "Genesis": "1/4",
+            "Material": "Gold",
+            "collection": "Royal Chess Club - Chess Pieces",
+            "Chess Class": "Master",
+            "Chess Piece": "Rook",
+            "Description": "Esteemed Rook of Xadrez family",
+            "Encase Color": "Orange"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

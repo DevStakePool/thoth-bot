@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2",
+    "asset_name": "546865496e666c6174696f6e54696d65734c585631303238",
+    "asset_name_ascii": "TheInflationTimesLXV1028",
+    "fingerprint": "asset1xq2ckagz6ngw88tgays0asaukfe2n5uwejmxjp",
+    "minting_tx_hash": "88dc963f018b0012e76dd1e2b2ec576023481ec0fdb9d6cd4e6ec33af6a0c8aa",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1642982400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "a4c45615825acae7c4937ee4d45d2ff9a29328084e2dc34bf4af37b2": {
+          "TheInflationTimesLXV1028": {
+            "Name": "The Inflation Times, Volume LXV",
+            "Asset": "TheInflationTimesLXV1028",
+            "files": [
+              {
+                "src": "ipfs://QmZs31KBx6RJBL17hvNk9sLT416KifvRPKi2o6o1X4Eioz",
+                "name": "TheInflationTimesLXV1028",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZs31KBx6RJBL17hvNk9sLT416KifvRPKi2o6o1X4Eioz",
+            "Number": "1028 of 1400",
+            "Series": "The Inflation Times",
+            "Volume": "LXV",
+            "Headline": "Trix Up To No Good",
+            "mediaType": "image/jpeg",
+            "Collection": "Old Money"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

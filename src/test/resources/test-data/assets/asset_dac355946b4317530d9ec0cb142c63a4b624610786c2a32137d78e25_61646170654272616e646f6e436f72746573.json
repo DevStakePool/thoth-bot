@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654272616e646f6e436f72746573",
+    "asset_name_ascii": "adapeBrandonCortes",
+    "fingerprint": "asset14v307ercz7p76upey0wu5fh4qv0rtuydduvvhk",
+    "minting_tx_hash": "a7324462db1758392e6dc57a27de116b76ea21a1e314f10ca44b571abf9d6cec",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBrandonCortes": {
+            "Hat": "Fruit Basket",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Silver Earring",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Brandon Cortes",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmdxBKRaN9FsnaBDnPMNZNDBNTU8fuF8NXLvPeLk4B8u6T",
+                "name": "Brandon Cortes",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdxBKRaN9FsnaBDnPMNZNDBNTU8fuF8NXLvPeLk4B8u6T",
+            "Family": "Cortes",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Cortes family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

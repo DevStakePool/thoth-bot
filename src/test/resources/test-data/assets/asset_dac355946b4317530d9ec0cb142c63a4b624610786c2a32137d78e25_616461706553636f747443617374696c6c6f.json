@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706553636f747443617374696c6c6f",
+    "asset_name_ascii": "adapeScottCastillo",
+    "fingerprint": "asset1r9v9av0pqryv9ul7mzudfr3a2e50q9y6wp768z",
+    "minting_tx_hash": "f8d11e163dcd6773d0238106e758a9eac389e447cd531f0ff4d8fab8efcd722f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeScottCastillo": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Feather Pen",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Scott Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmdQV2gKUZ3nkfkSc9RjAGN9UixsEMHwMzahWm1vkMRCaU",
+                "name": "Scott Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmdQV2gKUZ3nkfkSc9RjAGN9UixsEMHwMzahWm1vkMRCaU",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

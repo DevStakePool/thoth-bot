@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b6e6f7854686f6d6173",
+    "asset_name_ascii": "adapeKnoxThomas",
+    "fingerprint": "asset1dxr88tcg3cq6q7f0twmx9w5wd4gf84a5v3c3j8",
+    "minting_tx_hash": "00b8f703b03d03b6d3775f782f30cb9c79624a8e95c8b2b62134b3730cb589f8",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeKnoxThomas": {
+            "Hat": "Top Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Knox Thomas",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSn51hP41byTTnJSZ2vqvK74fGmLUYAsMWgzQtUWfgNtG",
+                "name": "Knox Thomas",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSn51hP41byTTnJSZ2vqvK74fGmLUYAsMWgzQtUWfgNtG",
+            "Family": "Thomas",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Thomas family"
+          },
+          "adapeTrippGreen": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Tripp Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmP1HneJkdk8gdTEENskT5pQbQmrRAkJt4jGJRtM1vZstk",
+                "name": "Tripp Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmP1HneJkdk8gdTEENskT5pQbQmrRAkJt4jGJRtM1vZstk",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          },
+          "adapeFadriqueWalker": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Fadrique Walker",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmZbzvwu2PXAFR5XztBsR98HJiVBXNXSVmGsysi5gNKXuS",
+                "name": "Fadrique Walker",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZbzvwu2PXAFR5XztBsR98HJiVBXNXSVmGsysi5gNKXuS",
+            "Family": "Walker",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Walker family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552616d69726f57616c6b6572",
+    "asset_name_ascii": "adapeRamiroWalker",
+    "fingerprint": "asset1x2u053dyc4yz7fys27qawx2spj5taewcam5c0z",
+    "minting_tx_hash": "bbbc037eada3f25e321f8b0c075d47e3d26feb4597a8602f1fc2c12982e7761d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRamiroWalker": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Ramiro Walker",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmNzpRCLqB5w3yRJjFJrFdDRj6xuhBRo5eEDe2DTWBtR5s",
+                "name": "Ramiro Walker",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNzpRCLqB5w3yRJjFJrFdDRj6xuhBRo5eEDe2DTWBtR5s",
+            "Family": "Walker",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Walker family"
+          },
+          "adapeBarnettWilson": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Barnett Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmVFX1NxEsHyMwV3hADVJ5aw2BuJRGUmWoKtHfqF63rYg2",
+                "name": "Barnett Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVFX1NxEsHyMwV3hADVJ5aw2BuJRGUmWoKtHfqF63rYg2",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wilson family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

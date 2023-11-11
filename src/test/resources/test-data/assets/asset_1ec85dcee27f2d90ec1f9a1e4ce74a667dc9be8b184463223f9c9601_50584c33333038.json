@@ -1,0 +1,917 @@
+[
+  {
+    "policy_id": "1ec85dcee27f2d90ec1f9a1e4ce74a667dc9be8b184463223f9c9601",
+    "asset_name": "50584c33333038",
+    "asset_name_ascii": "PXL3308",
+    "fingerprint": "asset1k0vn0gxyaea3cwszhn62p85twug3cd3flsjfry",
+    "minting_tx_hash": "f26e079165c90805712908bc9d3526349e396af55f234fcbf4abd0e6208333a9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620259200,
+    "minting_tx_metadata": {
+      "721": {
+        "creator": "AF@pxlz.org",
+        "description": "The first interactable NFT collectibles on Cardano.",
+        "1ec85dcee27f2d90ec1f9a1e4ce74a667dc9be8b184463223f9c9601": {
+          "PXL3301": {
+            "src": "ipfs://ipfs/QmeXNSfNYEJEBCJ19NK6wG7cEgm6TCPCQQn3b4EDJ7NzVm",
+            "name": "PXL#3301",
+            "tags": [
+              "black eye",
+              "golden earrings",
+              "middle part hair",
+              "turtleneck"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmTibmt9QtUGaw4F3Vj2Z7yJuGcP2ktW8yFrqQG6EtcVyh",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3302": {
+            "src": "ipfs://ipfs/QmR36fhfAj7NvTDGkpDy6BghCZkqjW9VMHNyrDExt6rPXG",
+            "name": "PXL#3302",
+            "tags": [
+              "chain",
+              "clubmasters",
+              "headphones"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmQAKArW1n9XUKy7d8Cb9AaSjbBgBgi9CwzkrJWp577f9M",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3303": {
+            "src": "ipfs://ipfs/Qmbj4WHVPu1ZHGJjG1nwYZYC9dR3YxGTtEbVX79RxX3Kod",
+            "name": "PXL#3303",
+            "tags": [
+              "aviators",
+              "old man beard",
+              "crown",
+              "tongue out"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmT4mEnpT3vi8TKW3pcRKytBB7xBtRvftphEbvidn4rg4U",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3304": {
+            "src": "ipfs://ipfs/QmQcPNjAbr3sLwMDEwqm42tWugJ9N3sj4HvJa6exJRaZhh",
+            "name": "PXL#3304",
+            "tags": [
+              "cigarette",
+              "golden earrings",
+              "sailor beanie",
+              "visor"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmPKJUCcSzCevByX2VBB8Cs9n4E7N5G1t1jJaUu9vc4afU",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3305": {
+            "src": "ipfs://ipfs/QmXR3NFTBdGzAvyX22cYK8WQkDVhAax46bU1FjvW41wUho",
+            "name": "PXL#3305",
+            "tags": [
+              "chain",
+              "cowboy hat",
+              "eye patch",
+              "headphones",
+              "pipe"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmPAtrYk8rsZoNGBTFAD5mPqSnTLU6SQvEPbYuEeyFmzib",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3306": {
+            "src": "ipfs://ipfs/QmTjz4ySUXuuDbqxFKfubfVvpBZUhFywxKwHoQwuFKhw1y",
+            "name": "PXL#3306",
+            "tags": [
+              "cigarette",
+              "grillz",
+              "halo",
+              "monocle"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmQFqwhPgY4B5fxZr3HGLGxnJhChwQSe46iohBvzdQpjDp",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3307": {
+            "src": "ipfs://ipfs/QmP3RZuhB4QXMH6s9CFPovyxkXWkVhk8oafoEq4wgzAkpD",
+            "name": "PXL#3307",
+            "tags": [
+              "goat",
+              "band-aid"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmUBw5yV3pLLh7hLY88wXsEiHpgoUTMghRvVsM8XWyuGzg",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3308": {
+            "src": "ipfs://ipfs/QmPRDgqRKRt8PAEbatEgYrQFWTKNuZUBchryxwMYnxmJkL",
+            "name": "PXL#3308",
+            "tags": [
+              "in love",
+              "face mask",
+              "pxl cap",
+              "turtleneck"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmSxzyRFKE1xVYpPqqQU17AQVcu6s6MJ1ZGqNUz9P9txVZ",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3309": {
+            "src": "ipfs://ipfs/QmT42tQZz5X3RBxqvdSGKQaTaCamsmJufh2KUHejrtvsxs",
+            "name": "PXL#3309",
+            "tags": [
+              "monocle",
+              "sailor beanie"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmSrpiZevX6HEUvfzoENBoV1gu6o2j99cYFjZbpTSxTcxJ",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3310": {
+            "src": "ipfs://ipfs/QmdcdMQhMc2hpjbt9AaDtqKqR7hB3uDU6jU9nobk14gZ6k",
+            "name": "PXL#3310",
+            "tags": [
+              "goatee",
+              "golden earrings",
+              "mohawk",
+              "slim bandana"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmXxbVZqV5HPbzPGzBaWSL2Bz4rodigfazChnMPzuSFbaz",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3311": {
+            "src": "ipfs://ipfs/QmWrc7hJSnXFYXJaazuMBBMbA5hPPfF48J5ECEpWCust4w",
+            "name": "PXL#3311",
+            "tags": [
+              "chain",
+              "cowboy hat",
+              "golden earrings",
+              "grillz",
+              "turtleneck",
+              "wayfarers"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmZWvAokeiwvvNdMkEvPR7gkXtXDGvadtxiitY2X7NoUFv",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3312": {
+            "src": "ipfs://ipfs/QmUTdSskgG7oPczktgXYyzhF3dcSRs4Zrir3jMWcdUqqRx",
+            "name": "PXL#3312",
+            "tags": [
+              "cigarette",
+              "clubmasters"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmUQPmv8PVKUyVQ2wNTd9Fw87pEV92zHoULGYiNipWjCya",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3313": {
+            "src": "ipfs://ipfs/QmV9MWdURArxHo1Q64WSysKmbqihZheTd631KMN1AJAtv2",
+            "name": "PXL#3313",
+            "tags": [
+              "chain",
+              "gladiator helmet",
+              "grillz",
+              "halo"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmUagg1pDYfLgpCsDpkaJfZmQdefDVdzFkDxYKvXdJoqEg",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3314": {
+            "src": "ipfs://ipfs/QmRtdpL44Vy3RaLgopTkUznpJpEDyy84QN7xfAijBzJXov",
+            "name": "PXL#3314",
+            "tags": [
+              "chain",
+              "drooling",
+              "glasses",
+              "napoleon hat",
+              "turtleneck"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/Qma2r1L29Zjraj8MtdbwKQUzy6W55PFqEcKgLBgHA8pMhW",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3315": {
+            "src": "ipfs://ipfs/QmXnUr2Shr2MhvQwSnXcCpXcmZJiXwFtdB8vFqXPWoZcxh",
+            "name": "PXL#3315",
+            "tags": [
+              "bloody",
+              "chain",
+              "heisenberg hat"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmdDbGEx6PVgPaSFZZqWiycmZHUjayYGQBNSfFHyayxXQJ",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3316": {
+            "src": "ipfs://ipfs/QmYpayowPGNFGziSeQJXVEsvj8BcEH6D93weh73po9fR3L",
+            "name": "PXL#3316",
+            "tags": [
+              "mohawk",
+              "band-aid",
+              "turtleneck",
+              "visor"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmSGvmxfbZGDgC1P57AtPWAPCdBDpQE7uQF1XoYUdZVFaT",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3317": {
+            "src": "ipfs://ipfs/QmQ8hCdzXqosQuM1SPqRiXWj7FNZrzoNZVBcWvJn1Md9Mq",
+            "name": "PXL#3317",
+            "tags": [
+              "bloody",
+              "cowboy hat",
+              "handlebars",
+              "in love"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmZ6FfpzBRvz9qNMZotBKeZ4sdaxqMRikoWS5Fk31zP3Nu",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3318": {
+            "src": "ipfs://ipfs/QmWRzikUCTZJkh24HtDCzbfECrsDv7kRcwMp88QN1Rasvd",
+            "name": "PXL#3318",
+            "tags": [
+              "chain",
+              "golden earrings",
+              "sailor beanie",
+              "wayfarers"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmfMFXRHut4994oDKc8KhtwD2JvKRbBiZD31VHfHGy72jX",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3319": {
+            "src": "ipfs://ipfs/QmVAjMwx1pqhuKzX4dRRtURGS5kRPvhrgvRgdVVBtoH8Kq",
+            "name": "PXL#3319",
+            "tags": [
+              "glasses",
+              "gladiator helmet",
+              "grillz",
+              "mantle"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/Qmcb9usWiVFa8TAvpXATbTYUbCmzbLGxAjpWBAEH6uSDQX",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3320": {
+            "src": "ipfs://ipfs/QmawcLjPsZvFksGaHtKTzeFzvZH7JzPGoYzgUHVx5gyAKw",
+            "name": "PXL#3320",
+            "tags": [
+              "top knot",
+              "in love",
+              "mantle",
+              "tongue out"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmZqCCUkk2mJkN3U76TMd9uT7JkCzDRdWHmp5NQ13v7Uzc",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3321": {
+            "src": "ipfs://ipfs/QmTkUgxZPySVW8M9tsvSvXc3o4yUuPQKAL2rUdQCNS9FuN",
+            "name": "PXL#3321",
+            "tags": [
+              "face bandana",
+              "side swept hair",
+              "headphones"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmU9qPjbi1x2s51MRLCi9pPht1wCTsfws4njMYfuRAaKDd",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3322": {
+            "src": "ipfs://ipfs/QmbQpEUqXnmT3sALqXmnAWFuLD7wTkucwFrfzSvFm8QphP",
+            "name": "PXL#3322",
+            "tags": [
+              "clubmasters",
+              "twin buns",
+              "tongue out"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmXzVuYG3NZbyjS56YYF7bfjxLcSourZfeB3Q3W54EoFDh",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3323": {
+            "src": "ipfs://ipfs/QmX1twzdKbiSsNcYWSdHMoBs4eVwqmccN2Wfv31h3PvUoP",
+            "name": "PXL#3323",
+            "tags": [
+              "bloody",
+              "chain",
+              "laid back hair",
+              "turtleneck",
+              "wayfarers"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmexDuNXmVrUDPigVvJUHKQ17KZUWYkT5yniK9aoJuBH6z",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3324": {
+            "src": "ipfs://ipfs/QmPxCGnjgPEVKwoU7TTRLZJgQ9r9gcRcBVJVmKzkq5psGa",
+            "name": "PXL#3324",
+            "tags": [
+              "chain",
+              "goggles",
+              "golden earrings",
+              "buzz cut",
+              "horns",
+              "turtleneck"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmUxkgx91Wf5iumkUZVK9VUotk5yfNyxjmVqRSBvme8hJk",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3325": {
+            "src": "ipfs://ipfs/QmSyF1GTRNQ8xJMU9GGvyhTv8xHPpCuXv8reR8SEq3HJDu",
+            "name": "PXL#3325",
+            "tags": [
+              "chain",
+              "drooling",
+              "goggles",
+              "gladiator helmet",
+              "halo"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/Qmcq2bNnEKyUPwMUy63QVWVRxNFZwJYa9xmDvwe6Gb9yqa",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3326": {
+            "src": "ipfs://ipfs/QmVuDdB5UtoRRdgrMF3gcWtKwz9rawSTjeoe4MvkzkK6V4",
+            "name": "PXL#3326",
+            "tags": [
+              "chain",
+              "cigarette",
+              "goatee",
+              "golden earrings",
+              "in love",
+              "pxl cap"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmaeC3PaLvGrTvnPdeMA2ckStc6dyd79dPWt7yZuzM2csC",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3327": {
+            "src": "ipfs://ipfs/QmcLA2o2Haqe7Fg6KcSkK5Yo4cfY9Ay6xUWWKys8a2wGhG",
+            "name": "PXL#3327",
+            "tags": [
+              "eye patch",
+              "long straight hair",
+              "horns",
+              "tiara"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmYBuB818ab9V7VmRz3DVxPH3pQjBgCYgEiiTufKkxkFUd",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3328": {
+            "src": "ipfs://ipfs/QmT3X57yRpHHZUr2s6Ee5tKdjtNjVrT1MBDU9fxEJEPH7M",
+            "name": "PXL#3328",
+            "tags": [
+              "blue beanie",
+              "chain",
+              "face bandana",
+              "in love",
+              "turtleneck"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmNxHmb6q8pSGABScxbRGQAS9VngicCcRqyg6Ew8unVhj8",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3329": {
+            "src": "ipfs://ipfs/Qmbsh4hvjMu4rbersGpM1X4avSnPUjeRV5se1gTpuKh7Fk",
+            "name": "PXL#3329",
+            "tags": [
+              "clubmasters",
+              "handlebars",
+              "golden earrings",
+              "horns",
+              "mantle"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmREswwiJhp2GWdRgySEeeWDgTZNCfNmmhvmSny1xiU6gP",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3330": {
+            "src": "ipfs://ipfs/Qmefb7L45qQEMVW36CUbWKeh4yhg7G2ZmxAAQL2UJVpqJM",
+            "name": "PXL#3330",
+            "tags": [
+              "chain",
+              "glasses",
+              "turtleneck",
+              "wizard hat"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmZ9veWBLMR8ayVxnrSRUDRS55L5sxFmSST5umVitpMhzk",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3331": {
+            "src": "ipfs://ipfs/QmZDtsbatZyotuRMVJSUUfJkh2YZpk3kY22Ge81kLzRQfC",
+            "name": "PXL#3331",
+            "tags": [
+              "goatee",
+              "sideburns",
+              "horns",
+              "tongue out"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/Qmb9GR2VbgwKjN2fn2gKXbsNGUK5V8SdQoiY6crAyR1pGM",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3332": {
+            "src": "ipfs://ipfs/QmSXYJGSda2wKb42Vwj7GK7ieXV3D3LgbqEC6sVzMZWAro",
+            "name": "PXL#3332",
+            "tags": [
+              "face bandana",
+              "visor"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmWPiWk7NfWZVRUNfLkfrzRnBs9AmGzx71Jaou3Z8cxmky",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3333": {
+            "src": "ipfs://ipfs/Qmdoqhf68uavjmcmRNT55wUkUkJW7kQyd3HVRFnp27qp4Q",
+            "name": "PXL#3333",
+            "tags": [
+              "burglar mask",
+              "goat"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmPEg3Ew16AZj6JqPr7qXgQtMPPngJha9DRb5Nvig4s2w8",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3334": {
+            "src": "ipfs://ipfs/QmQN9HjUmhb6L11EFH7E4Wn1QVxoMi3wUFJXipPM24W6Q5",
+            "name": "PXL#3334",
+            "tags": [
+              "chain",
+              "clubmasters",
+              "cowboy hat",
+              "golden earrings"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmRENyCmR8tWzSFgBsuuii1HMuA2pPW44pPhE9ZFGfE1eh",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3335": {
+            "src": "ipfs://ipfs/QmeDsWeKAypi7CGTrDDSbAtNLuwGpBwiHcAR26twGLRi2a",
+            "name": "PXL#3335",
+            "tags": [
+              "soul patch",
+              "buzz cut",
+              "headphones",
+              "monocle"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmQuGgGudLoHqWHrCgABFTMD7xdf9B7YWp6BgSFWrLdZU4",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3336": {
+            "src": "ipfs://ipfs/QmW8njvjPFTFg38fScmzhYeha2mtPQkVpWPKavwQHPumRJ",
+            "name": "PXL#3336",
+            "tags": [
+              "golden earrings",
+              "granny bun",
+              "pipe",
+              "turtleneck"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmXdEE8e55aRpbSync3gjtxpqaL5Fu3DAUnH4KatTYZgsQ",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3337": {
+            "src": "ipfs://ipfs/QmYPxLsgHeRAW9X5ZaKX49AJgjCM5n7KNMsz2AZwm9Kyjb",
+            "name": "PXL#3337",
+            "tags": [
+              "chain",
+              "goatee",
+              "gladiator helmet",
+              "tongue out"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmVwXZNP4WNS2Bxht3N2z4Q4Ds9WBRwJWBqYNxBS7q224u",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3338": {
+            "src": "ipfs://ipfs/QmdshMVtrjK9Pkq9ohWbx16efVg1mcMYt7M7K9EdkKvedK",
+            "name": "PXL#3338",
+            "tags": [
+              "choker",
+              "cigarette",
+              "diamond earrings",
+              "napoleon hat",
+              "wayfarers"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmXSpMif5ri9sAs3N5E5zpvc4nTZHLx9f8vZvpicpySqwj",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3339": {
+            "src": "ipfs://ipfs/QmWouHNBJmG2sWJgbroJbN1sis94GqV8ziFXARcEPjZPGV",
+            "name": "PXL#3339",
+            "tags": [
+              "chain",
+              "mantle",
+              "tiara"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmTopWdZgNrnJbXM2mXtTYgKcFbEo1Bw9FvewE425D7WDe",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3340": {
+            "src": "ipfs://ipfs/QmTy8GRpoCmnFsLvkE1ipj1VuhNRhjr3nTVubBYurPPRmf",
+            "name": "PXL#3340",
+            "tags": [
+              "face bandana",
+              "headphones",
+              "slim bandana"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmeAy9vkZETyZ4cubgrNR6tJ4jGFVjuScBSZGTTmBuRSgV",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3341": {
+            "src": "ipfs://ipfs/QmSdexArp2XJFfsKsjS17ogzL2sJqPX1yv3pzMKV8coyMx",
+            "name": "PXL#3341",
+            "tags": [
+              "black eye",
+              "sideburns",
+              "horns",
+              "pipe"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmWFmHjp1h7w1wKbAozHACW7jGk8wWmynXKAbGnUMt61xs",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3342": {
+            "src": "ipfs://ipfs/QmZnPNPrhTsKp4BTCBZf93po5qu1QFQtWyhbEADEi5Ev5d",
+            "name": "PXL#3342",
+            "tags": [
+              "chain",
+              "cigarette",
+              "grillz",
+              "halo",
+              "monocle"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmeFXiDVkjto9FZY7cQKv1eQTYNSRwYkqo6EEskuEzVJpY",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3343": {
+            "src": "ipfs://ipfs/QmNzAEwkwhid9dAWJVnct4Ks4kypMYBcWEs2nzUDfG4Zqq",
+            "name": "PXL#3343",
+            "tags": [
+              "cigarette",
+              "handlebars",
+              "golden earrings",
+              "long straight hair",
+              "turtleneck",
+              "visor"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmbSxx66oE5KtHaqCHtXi3MBbMPKpa26XgwKnqYkGEwEYx",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3344": {
+            "src": "ipfs://ipfs/QmRPDx5LdSBHgz4hFjMc2PtSyWoA71AaYEGmB1JXMZcwyq",
+            "name": "PXL#3344",
+            "tags": [
+              "headphones",
+              "band-aid"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmdzEmfLxJU3tfwKotbQ785TDUNMqUcbsLJKuKFPojMmnQ",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3345": {
+            "src": "ipfs://ipfs/QmWFHkBZ9mfRLCQLHMJzvPNmZ5dbAnzRHg2FaeqN9RnxMe",
+            "name": "PXL#3345",
+            "tags": [
+              "bow",
+              "cigarette",
+              "golden earrings",
+              "long straight hair"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmSB82hv8qzQajV7YroTvUMFPpXk7brQJXbcDtN7SAfbei",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3346": {
+            "src": "ipfs://ipfs/QmaVpTbhQTy3Wt2YMtMaGsuRonk3KZ2SRhSyqKjw7Xikse",
+            "name": "PXL#3346",
+            "tags": [
+              "black eye",
+              "band-aid",
+              "pipe"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmcMMLZyNjsEmEoz9UpUhFnq9iKwpNyRdGyne9GGR7wMAS",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3347": {
+            "src": "ipfs://ipfs/QmSDDHvgrvJaZvJLUizEu4j4G7st9gqGCoQ7EHccR5Dvk6",
+            "name": "PXL#3347",
+            "tags": [
+              "blue beanie",
+              "old man beard",
+              "tongue out",
+              "turtleneck"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmcPvgucRd6DMDuhEmN4jz8XxQwEx6h1HGJkTQViH5kUzm",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3348": {
+            "src": "ipfs://ipfs/QmSQTBmP1fkNXVUguuTE5er7n7CMwwk5guKdE9dg4YsEDE",
+            "name": "PXL#3348",
+            "tags": [
+              "golden earrings",
+              "heisenberg hat"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmXGBp7YNYgiZTb2yjH2yXW3HRz6ddDcv7s5y1VydR8NEZ",
+            "properties": [
+              {
+                "key": "type",
+                "value": "wolf"
+              }
+            ]
+          },
+          "PXL3349": {
+            "src": "ipfs://ipfs/QmZQYjWNeuxzydqPWti8zTU2NFmLd5UnuM2qpAmDMub3d2",
+            "name": "PXL#3349",
+            "tags": [
+              "burglar mask",
+              "mantle"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmcktiCXfkRfUeviVXmRfq7UyqVtNgNVhtjCmKFpHN6wEv",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          },
+          "PXL3350": {
+            "src": "ipfs://ipfs/QmVnFLUcNT33rBpi8s1HjGQm9bJ8MjbtqfGGkKKWhJCapL",
+            "name": "PXL#3350",
+            "tags": [
+              "aviators",
+              "cigarette",
+              "goatee",
+              "golden earrings",
+              "crazy hair"
+            ],
+            "type": "text/html",
+            "image": "ipfs://ipfs/QmXyZdFaMRgzmSbi8dWPoBkvZLFrKEYmYF5pDEuguiSCWp",
+            "properties": [
+              {
+                "key": "type",
+                "value": "dead"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

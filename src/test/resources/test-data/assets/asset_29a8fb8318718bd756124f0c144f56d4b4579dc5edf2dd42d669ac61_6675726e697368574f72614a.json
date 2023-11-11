@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e697368574f72614a",
+    "asset_name_ascii": "furnishWOraJ",
+    "fingerprint": "asset1mjs0d95xx48r7cn0zvvff3epjvnjz9acq7vjn7",
+    "minting_tx_hash": "352f03203fc66b11e7c5326cda9221d4f77947df51d019680e469772d8024f77",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1674691200,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishWOraJ": {
+            "id": "WOraJ",
+            "src": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+            "name": "Nesting Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+                "name": "Nesting Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://QmQ4fKoQh5fcBfWawbfmEkUyPLTRzpdNn3fpN8xABLC2LA",
+                "name": "Nesting Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmeEVHurdw4dezEc7Y2CiqyaVmrnQ6werseKjLckpyX6r1",
+                "name": "Nesting Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmYBXWYT6Twv3Tyx9VewFkgjZwjFtL1zfBzRJTs6pfeDX6",
+            "description": "Hand-crafted by Walton Davies.",
+            "furnitureId": 212
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

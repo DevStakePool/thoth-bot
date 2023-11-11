@@ -5,9 +5,9 @@
     "asset_name_ascii": "CaseyBlackRed0531",
     "fingerprint": "asset1uz8zhjl5g6gyangksl0yy2h2ywpj0nmpypm98d",
     "minting_tx_hash": "c556a7157ac4277e86a32f32d0c7d32222fa4e255da29f47d089605a08cccf14",
-    "total_supply": "1",
+    "total_supply": "0",
     "mint_cnt": 1,
-    "burn_cnt": 0,
+    "burn_cnt": 1,
     "creation_time": 1678665600,
     "minting_tx_metadata": {
       "721": {
@@ -233,6 +233,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

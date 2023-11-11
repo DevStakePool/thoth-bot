@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7231363733",
+    "asset_name_ascii": "CardanoWarrior1673",
+    "fingerprint": "asset1gsgugmre7efmalcvj9z0vhx8w5dmv6fcngwpuf",
+    "minting_tx_hash": "246413fb328ad92c1c4296f1a56fac91625a48e61f277f27e949ea2d47b9c3d1",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620000000,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior1673": {
+            "id": "1673",
+            "name": "Cardano Warrior #1673",
+            "type": "Dwarf",
+            "image": "ipfs://QmRTP5GGZbu6ZdqKHtdJCPthmXpQvEjWx2ckRHRk7YB3Ed",
+            "items": [
+              {
+                "name": "Red Cape",
+                "rarity": "Common"
+              },
+              {
+                "name": "Silver Helmet",
+                "rarity": "Common"
+              },
+              {
+                "name": "Silver Armor",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Uncommon",
+            "traits": [
+              "White Skin",
+              "Green Eyes",
+              "Angry",
+              "Brown Beard"
+            ],
+            "imagealpha": "ipfs://QmdUHS7LZjnUdZQcv9PE14GPvhFQ4hDg1EzsZTYwsFS7jQ"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

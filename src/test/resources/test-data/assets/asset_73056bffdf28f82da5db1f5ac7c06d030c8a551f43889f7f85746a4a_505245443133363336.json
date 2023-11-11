@@ -1,0 +1,53 @@
+[
+  {
+    "policy_id": "73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a",
+    "asset_name": "505245443133363336",
+    "asset_name_ascii": "PRED13636",
+    "fingerprint": "asset1vg6xhxv9zhnwfeaptku0gcwa9hjq24erdwdqwv",
+    "minting_tx_hash": "1b08b0afe04b5a911549fed1c159c436d01867493d3202c330b8df642f18a073",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1651017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a": {
+          "PRED13636": {
+            "url": "https://derpbirds.io",
+            "name": "Pred #13636",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmdgofoL1uZLXywNdFHqkLMqem9K2aBYn37TGXN25VMSEq",
+                "name": "Pred #13636",
+                "mediaType": "image/png"
+              },
+              {
+                "src": "ipfs://QmVbz2XoJodpzVBVbGzeyDBNHx42ZrJe17RCkf6FitXjUS",
+                "name": "v1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdgofoL1uZLXywNdFHqkLMqem9K2aBYn37TGXN25VMSEq",
+            "swaps": [
+              "DR02513",
+              "DE14246"
+            ],
+            "series": 2,
+            "attributes": {
+              "Body": "Farmer's Body",
+              "Face": "Pred's Face",
+              "Head": "Trooper's Braids",
+              "Rank": 1,
+              "Background": "Pred’s Wrath",
+              "Skin Color": "Pink"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "6847e197dd8afd20d71044f5d211c7836f6e1c3c5dad6d989382ee05",
+    "asset_name": "31323138",
+    "asset_name_ascii": "1218",
+    "fingerprint": "asset140z5x32985wrpr4fhxqhsck3spgyqnv586kwlt",
+    "minting_tx_hash": "f9fc944030ed05274f3c9060f15e852e12e6b4ebaf1ded3423954052900f7cfc",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1656115200,
+    "minting_tx_metadata": {
+      "721": {
+        "6847e197dd8afd20d71044f5d211c7836f6e1c3c5dad6d989382ee05": {
+          "1218": {
+            "name": "Mobster #1218",
+            "files": [
+              {
+                "src": "ipfs://QmQrtSCyjKcbLsan52W98DqUYKc7Z7Sx65zi3JwpHQSdYe",
+                "name": "1218",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQrtSCyjKcbLsan52W98DqUYKc7Z7Sx65zi3JwpHQSdYe",
+            "twitter": "https://twitter.com/WiseGuys2X22",
+            "homepage": "https://wise-guys.io",
+            "assetType": "NFT",
+            "mediaType": "image/png",
+            "attributes": {
+              "Hat": "Red Fedora",
+              "Body": "Default",
+              "Hair": "None",
+              "Mouth": "None",
+              "Shirt": "Thug",
+              "Extras": "None",
+              "Family": "Ricci",
+              "Glasses": "None",
+              "Background": "Cyan",
+              "Facial hair": "None",
+              "Coats and jackets": "None"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

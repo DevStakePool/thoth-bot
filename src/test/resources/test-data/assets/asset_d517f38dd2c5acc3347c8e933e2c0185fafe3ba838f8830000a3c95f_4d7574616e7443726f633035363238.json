@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f",
+    "asset_name": "4d7574616e7443726f633035363238",
+    "asset_name_ascii": "MutantCroc05628",
+    "fingerprint": "asset1fq3rvfeezdu4e9698msk9dv32qeqj0kxw08s0f",
+    "minting_tx_hash": "1ce14fd0604b2a0a14305bd7baa08c190c7c0a956d410d785e07c79b639426ae",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633737600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f": {
+          "MutantCroc05628": {
+            "head": "Flamingo",
+            "name": "MutantCroc05628",
+            "neck": "None",
+            "skin": "Blue",
+            "cloth": "Red Hoodie",
+            "files": [
+              {
+                "src": "ipfs://QmVH6PAtrkyw7Gr9NY4wPg7uQ8Lzu133ULpeKGPFVvbRjS",
+                "name": "MutantCroc05628",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVH6PAtrkyw7Gr9NY4wPg7uQ8Lzu133ULpeKGPFVvbRjS",
+            "mediaType": "image/png",
+            "background": "Sea"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

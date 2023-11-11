@@ -1,0 +1,60 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7231313633",
+    "asset_name_ascii": "CardanoWarrior1163",
+    "fingerprint": "asset1tc9uly0kv3m2g9v3dya26arvrlktqr5y5wrdk7",
+    "minting_tx_hash": "ade5d864c4b777981dc8d9403912181b72e05ff36d2b86e2d0db117718b704fb",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1619913600,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior1163": {
+            "id": "1163",
+            "name": "Cardano Warrior #1163",
+            "type": "Guardian",
+            "image": "ipfs://QmXLwcw2Y71FSE1kRhSSuKXRS8PepqujQKfq2VpYvbtEij",
+            "items": [
+              {
+                "name": "Bronze Hammer",
+                "rarity": "Common"
+              },
+              {
+                "name": "Gold Full Helmet",
+                "rarity": "Common"
+              },
+              {
+                "name": "Gold Armor",
+                "rarity": "Common"
+              },
+              {
+                "name": "Gold Shoulder Pad",
+                "rarity": "Common"
+              },
+              {
+                "name": "Red Plume",
+                "rarity": "Common"
+              },
+              {
+                "name": "Red Cape",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Common",
+            "traits": [
+              "Green Eyes",
+              "Brown Skin",
+              "Serious"
+            ],
+            "imagealpha": "ipfs://QmNY4czQhPbnqn83uu3R5SuKWGRRqHeXBboQuFkQMEs5wv"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

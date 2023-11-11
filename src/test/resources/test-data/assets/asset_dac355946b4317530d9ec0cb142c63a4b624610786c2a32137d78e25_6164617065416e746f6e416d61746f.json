@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065416e746f6e416d61746f",
+    "asset_name_ascii": "adapeAntonAmato",
+    "fingerprint": "asset1a9dsrz2h638593rlrq5ykw99509jn3v3qk7pal",
+    "minting_tx_hash": "818e9992cd09750db9ff2abc7ff7af02a742042eba4a8e8d5cbd7e240dcb112b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAntonAmato": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Safety Goggles",
+            "Head": "Ape",
+            "name": "Anton Amato",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://Qmd3sANG3o3Y8BQAjES7qRoNg4WnqfzYZ74SzewKsLDp1o",
+                "name": "Anton Amato",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmd3sANG3o3Y8BQAjES7qRoNg4WnqfzYZ74SzewKsLDp1o",
+            "Family": "Amato",
+            "Weapon": "None",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Amato family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

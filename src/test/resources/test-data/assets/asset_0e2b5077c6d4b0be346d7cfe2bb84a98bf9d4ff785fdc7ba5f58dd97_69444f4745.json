@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "0e2b5077c6d4b0be346d7cfe2bb84a98bf9d4ff785fdc7ba5f58dd97",
+    "asset_name": "69444f4745",
+    "asset_name_ascii": "iDOGE",
+    "fingerprint": "asset1yq7fe57v43dyy8pxakhe5c0k9jvsdzr0qttu8l",
+    "minting_tx_hash": "2007e10c04b09ddce2783e221b674bdad72058afac1e323b4a197367449eb6e3",
+    "total_supply": "132670764300",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1672012800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "0e2b5077c6d4b0be346d7cfe2bb84a98bf9d4ff785fdc7ba5f58dd97": {
+          "iDOGE": {
+            "name": "iDogecoin",
+            "files": [
+              {
+                "src": "ipfs://QmcviYzvoNBrejRL2mQAmc5J5vUpJ2m9rv7n24W9PgjCU6",
+                "name": "iDOGE",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcviYzvoNBrejRL2mQAmc5J5vUpJ2m9rv7n24W9PgjCU6",
+            "symbol": "iDOGE",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 80507517
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "iDogecoin cardano base blockchaine",
+            "totalSupply": 132670764300
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

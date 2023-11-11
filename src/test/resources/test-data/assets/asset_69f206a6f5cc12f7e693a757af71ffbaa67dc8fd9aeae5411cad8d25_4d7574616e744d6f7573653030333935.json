@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "69f206a6f5cc12f7e693a757af71ffbaa67dc8fd9aeae5411cad8d25",
+    "asset_name": "4d7574616e744d6f7573653030333935",
+    "asset_name_ascii": "MutantMouse00395",
+    "fingerprint": "asset1jfmd4dnp9q43x86xc5tmrm6wfjw3gfv0987hf2",
+    "minting_tx_hash": "c139f46e43081580e69af14e3378c3fd87811a5cac4fd3d6285f5c2bbd2783a6",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1652486400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "69f206a6f5cc12f7e693a757af71ffbaa67dc8fd9aeae5411cad8d25": {
+          "MutantMouse00395": {
+            "name": "MutantMouse00395",
+            "files": [
+              {
+                "src": "ipfs://QmcFBTwv7utYDYpEAZc8az9mYPirgg9BHQ8TbAtRg2J9TL",
+                "name": "MutantMouse00395",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcFBTwv7utYDYpEAZc8az9mYPirgg9BHQ8TbAtRg2J9TL",
+            "mediaType": "image/png",
+            "attributes": {
+              "arm": "Green Rings",
+              "head": "Mutant Helmet",
+              "skin": "Ethereal",
+              "cloth": "Council",
+              "weapon": "Rake",
+              "background": "Blue"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

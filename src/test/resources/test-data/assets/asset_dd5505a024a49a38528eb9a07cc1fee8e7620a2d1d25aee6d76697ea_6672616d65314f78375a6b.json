@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d65314f78375a6b",
+    "asset_name_ascii": "frame1Ox7Zk",
+    "fingerprint": "asset189l9frcy6nhzh96rgzaxgcqd4xqjprvjk22el3",
+    "minting_tx_hash": "67e395a7ff7c6bdc0ca637705f8eb9f5399dfda4dc7f1e44d454fd419e591576",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675728000,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame1Ox7Zk": {
+            "id": "bFoW1",
+            "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "name": "Ape Society Frame Level 1",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+                "name": "Ape Society Frame Level 1",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbRmz8mNZAsFJ56WE1S5dRVqAH8cpXwkwxmddY8Yy5MBW",
+            "level": 1,
+            "artist": "Knox Rich",
+            "mintedAt": 1675809360117,
+            "mintedBy": "e19a3074ea8043ff5ac493165f71f678e20ca59ed8af81589446eceff9",
+            "description": "Level 1 frame",
+            "mintedStake": "stake1uxdrqa82sppl7kkyjvt97u0k0r3qefv7mzhczky5gmkwl7gqsgxad"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "0eae201d9bff88b80f818b8e4b50d93a6b1d7db4c359b59bc27583fb",
+    "asset_name": "47656e6573697345676731383935",
+    "asset_name_ascii": "GenesisEgg1895",
+    "fingerprint": "asset1fucktextxa3ruuwdy2acn8mrwd6pwxecvuj6qa",
+    "minting_tx_hash": "a6572bca279e3ce6ce80fee4954d0476fb8c6fd08bfd5fc9a94d01b0afe6e062",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669334400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "0eae201d9bff88b80f818b8e4b50d93a6b1d7db4c359b59bc27583fb": {
+          "GenesisEgg1895": {
+            "name": "Genesis Egg 1895",
+            "files": [
+              {
+                "src": "ipfs://Qma6sQqmBBDZhMqVv3ozfcaEHNNLJAE8Qy6NiZpGwoWQyT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qma6sQqmBBDZhMqVv3ozfcaEHNNLJAE8Qy6NiZpGwoWQyT",
+            "Discord": "https://discord.gg/automatica",
+            "Twitter": "https://twitter.com/AutomaticaNFT",
+            "mediaType": "image/png",
+            "Attributes": [
+              {
+                "Type": "Deer"
+              }
+            ],
+            "Description": "Part Of Automatica's Genesis Egg Mint."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

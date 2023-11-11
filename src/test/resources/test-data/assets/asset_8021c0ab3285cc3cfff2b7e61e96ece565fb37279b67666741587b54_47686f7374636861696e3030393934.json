@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+    "asset_name": "47686f7374636861696e3030393934",
+    "asset_name_ascii": "Ghostchain00994",
+    "fingerprint": "asset1gwcua2ge8ctv2ntgwcgtj5pe52w3nc9s83lypg",
+    "minting_tx_hash": "a7dfdf87c9a9a64e69c6635300340af37d0f64e4d43f3862310fc993dc045129",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1633737600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54": {
+          "Ghostchain00994": {
+            "dna": "13002200",
+            "name": "Ghostchain00994",
+            "files": [
+              {
+                "src": "ipfs://QmS7iAYeae6bpTqpcZJHK5DrzUybEQXWTFcSJKpeHQ1ANR",
+                "name": "Ghostchain00994",
+                "https": "https://api.nftghostchain.com/original?mint=994",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmS7iAYeae6bpTqpcZJHK5DrzUybEQXWTFcSJKpeHQ1ANR",
+            "rarity": "Legendary",
+            "edition": "Mint 994 of 10000",
+            "twitter": "twitter.com/nftghostchain",
+            "website": "nftghostchain.com",
+            "mediaType": "image/jpeg",
+            "attributes": "Jonny Boobo Ghost",
+            "description": "The Original Ghostchain Community.",
+            "collection name": "NFT Ghostchain"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

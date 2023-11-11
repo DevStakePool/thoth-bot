@@ -5,9 +5,9 @@
     "asset_name_ascii": "Raccoon 677",
     "fingerprint": "asset13cphx8p5ex3cr2j4k24e06qlwv9nnc544d4k2f",
     "minting_tx_hash": "897ad6faffd22b4e2ae0e722821256c4612d17a877de3de3401cfb4d82d2c7b2",
-    "total_supply": "2",
+    "total_supply": "1",
     "mint_cnt": 2,
-    "burn_cnt": 0,
+    "burn_cnt": 1,
     "creation_time": 1660435200,
     "minting_tx_metadata": {
       "721": {
@@ -40,6 +40,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

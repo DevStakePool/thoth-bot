@@ -5,9 +5,9 @@
     "asset_name_ascii": "RUNE",
     "fingerprint": "asset1e4xl0netuuuq2vjh4paevekvgnntc3ynyg8w9s",
     "minting_tx_hash": "f219f02598f10f889146fa794b11fbd8e97f9971dd0be9dd46c4acdfb1b9f58d",
-    "total_supply": "53940761",
+    "total_supply": "51405856",
     "mint_cnt": 1,
-    "burn_cnt": 1,
+    "burn_cnt": 2,
     "creation_time": 1663977600,
     "minting_tx_metadata": {
       "721": {
@@ -39,6 +39,7 @@
       "ticker": "RUNE",
       "decimals": 0,
       "description": "$RUNE is the utility token for The Mallard Orders ecosystem."
-    }
+    },
+    "cip68_metadata": null
   }
 ]

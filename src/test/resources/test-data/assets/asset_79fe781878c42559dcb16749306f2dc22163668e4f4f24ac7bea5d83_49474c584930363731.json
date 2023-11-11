@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "79fe781878c42559dcb16749306f2dc22163668e4f4f24ac7bea5d83",
+    "asset_name": "49474c584930363731",
+    "asset_name_ascii": "IGLXI0671",
+    "fingerprint": "asset1kawtr0n6dzjnyt7udk6u6z4qftvkk39ut7mxts",
+    "minting_tx_hash": "41c2c176933598701396602e847257b0e5553e912e54b48305a706dd39d05562",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1669420800,
+    "minting_tx_metadata": {
+      "721": {
+        "79fe781878c42559dcb16749306f2dc22163668e4f4f24ac7bea5d83": {
+          "IGLXI0671": {
+            "name": "Irrational Geographic, Issue LXI #671",
+            "asset": "IrrationalGeographicLXI0671",
+            "cover": "Black",
+            "files": [
+              {
+                "src": "ipfs://QmeFKVudFgp6PjQ91DZrXkppzHVVZFfZ5qDUjGm37PJmjS",
+                "mediaType": "image/jpeg"
+              },
+              {
+                "src": "ipfs://QmctNEHW7hdyLj2WXrysgUHqCXKrZQpwSSzUZJJDYhamA3",
+                "name": "Meth Quality Magazine",
+                "mediaType": "application/pdf"
+              }
+            ],
+            "image": "ipfs://QmeFKVudFgp6PjQ91DZrXkppzHVVZFfZ5qDUjGm37PJmjS",
+            "issue": "LXI",
+            "number": "671 of 1000",
+            "mediaType": "image/jpeg",
+            "collection": "Irrational Geographic",
+            "derivative of": {
+              "Old Money": "https://oldmoney.io"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

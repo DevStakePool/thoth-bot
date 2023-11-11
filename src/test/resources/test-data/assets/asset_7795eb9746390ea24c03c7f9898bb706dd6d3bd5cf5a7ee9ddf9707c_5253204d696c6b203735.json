@@ -1,0 +1,42 @@
+[
+  {
+    "policy_id": "7795eb9746390ea24c03c7f9898bb706dd6d3bd5cf5a7ee9ddf9707c",
+    "asset_name": "5253204d696c6b203735",
+    "asset_name_ascii": "RS Milk 75",
+    "fingerprint": "asset1uxq2vjedsprd2gln73rj6nslghsxcnr0q84lz4",
+    "minting_tx_hash": "ed8d3f152966c6f57e94c5ed251c1832ea1690239cd089c78044162730b27869",
+    "total_supply": "0",
+    "mint_cnt": 2,
+    "burn_cnt": 2,
+    "creation_time": 1675036800,
+    "minting_tx_metadata": {
+      "721": {
+        "7795eb9746390ea24c03c7f9898bb706dd6d3bd5cf5a7ee9ddf9707c": {
+          "RS Milk 75": {
+            "name": "RS Milk 75",
+            "files": [
+              {
+                "src": "ipfs://QmRH8YETFFwAz48Lbf7J686pHFoo3GMeKDQ1yeP3Xp9rmA",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmSefcty2fghzrkQzDh3m4piY8tHzk1qFuqYz7z86kvf6J",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Milk",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "3277",
+            "Upgrade Category": "Consumable",
+            "BPM Boost Duration": "2 Epochs",
+            "Upgrade Type Index": "75",
+            "BPM Boost Percentage": "30"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -5,9 +5,9 @@
     "asset_name_ascii": "ProjectBookworm",
     "fingerprint": "asset1nwgeupqwfcvd8m2h2mjst6pp8gcvws3utyvdgj",
     "minting_tx_hash": "9f2b73c0cdfc856a1f01187052ae7f3fd547f7be58a93ae3362c2d6e99a32b9a",
-    "total_supply": "149995",
+    "total_supply": "149993",
     "mint_cnt": 26,
-    "burn_cnt": 17,
+    "burn_cnt": 18,
     "creation_time": 1646352000,
     "minting_tx_metadata": {
       "721": {
@@ -346,6 +346,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

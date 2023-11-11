@@ -1,0 +1,41 @@
+[
+  {
+    "policy_id": "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea",
+    "asset_name": "6672616d6530316b4c4977",
+    "asset_name_ascii": "frame01kLIw",
+    "fingerprint": "asset15caaa0pdjutt2z6nyagg3kg6tun3assg5r7xzs",
+    "minting_tx_hash": "177a644b8f78a82772d553af63401be4e9a3d77ed4cf64a63290a56f0d251b41",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1670025600,
+    "minting_tx_metadata": {
+      "721": {
+        "dd5505a024a49a38528eb9a07cc1fee8e7620a2d1d25aee6d76697ea": {
+          "frame01kLIw": {
+            "id": "TqCtJDK",
+            "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "name": "Ape Society Frame Level 0",
+            "type": "image/png",
+            "files": [
+              {
+                "src": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+                "name": "Ape Society Frame Level 0",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQzxVE6Uv2TJboeqSG571HrNBX4WTQoxC4vhZN639JasJ",
+            "level": 0,
+            "artist": "",
+            "mintedAt": 1670099186236,
+            "mintedBy": "e11e99c14b325d7b63c8fc34722848392d770faaf7215ceac5b1fd5cdd",
+            "description": "Level 0 frame",
+            "mintedStake": "stake1uy0fns2txfwhkc7gls68y2zg8ykhwra27us4e6k9k874ehgtwwer2"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

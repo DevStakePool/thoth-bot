@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706543796e72696345647761726473",
+    "asset_name_ascii": "adapeCynricEdwards",
+    "fingerprint": "asset1lljevcwl7txrec0f9aan45tam9slnm2t0meufw",
+    "minting_tx_hash": "757656364640cc38ea280e56dce98ed8620ff99db864b540b5d34689d732780a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeCharlesSmith": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Shutter Shades",
+            "Head": "Ape",
+            "name": "Charles Smith",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://Qmei7hBvvxtkzvJrENu8Pd6HeuGWGkdyPjtHKuYd5oM5DT",
+                "name": "Charles Smith",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmei7hBvvxtkzvJrENu8Pd6HeuGWGkdyPjtHKuYd5oM5DT",
+            "Family": "Smith",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Smith family"
+          },
+          "adapeCynricEdwards": {
+            "Hat": "Top Hat",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Cynric Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSkRzJu7WSQjSYQdnnDeLt4mtZ235B5XmzAZ8cMk5dfm8",
+                "name": "Cynric Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSkRzJu7WSQjSYQdnnDeLt4mtZ235B5XmzAZ8cMk5dfm8",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          },
+          "adapeSulpiceRoberts": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Sulpice Roberts",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmRJd7qk1zRBiY5AgMwBccZNdvy6bLMNE4GWoqGXGBTUUy",
+                "name": "Sulpice Roberts",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRJd7qk1zRBiY5AgMwBccZNdvy6bLMNE4GWoqGXGBTUUy",
+            "Family": "Roberts",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Roberts family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

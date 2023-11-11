@@ -1,0 +1,57 @@
+[
+  {
+    "policy_id": "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+    "asset_name": "43617264616e6f57617272696f7235333430",
+    "asset_name_ascii": "CardanoWarrior5340",
+    "fingerprint": "asset1mjs424aaat8rmh4n3m43tltg0f3yypj224kh0g",
+    "minting_tx_hash": "ef59cdd95b1a122967625fe94acba6cabf4ed672f4e585726b9f4cd1a63c6564",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1620000000,
+    "minting_tx_metadata": {
+      "721": {
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635": {
+          "CardanoWarrior5340": {
+            "id": "5340",
+            "name": "Cardano Warrior #5340",
+            "type": "Knight",
+            "image": "ipfs://QmbtzGZFwW1Gyn71PWrmxnvKatTYKoM7RJPhjE864w2n6X",
+            "items": [
+              {
+                "name": "Gold Sword",
+                "rarity": "Common"
+              },
+              {
+                "name": "Gold Skull Shield",
+                "rarity": "Rare"
+              },
+              {
+                "name": "Red Shoulder Pad",
+                "rarity": "Common"
+              },
+              {
+                "name": "Silver Armor",
+                "rarity": "Common"
+              },
+              {
+                "name": "Blue Cape",
+                "rarity": "Common"
+              }
+            ],
+            "rarity": "Common",
+            "traits": [
+              "Green Eyes",
+              "Brown Skin",
+              "Blonde Hair",
+              "Astonished"
+            ],
+            "imagealpha": "ipfs://QmfGGTB1Zi9MoFer9eqeozRGC58Mi9FtKgNKG4fMZZoM7Z"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

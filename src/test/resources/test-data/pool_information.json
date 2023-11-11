@@ -146,9 +146,9 @@
     "op_cert_counter": 14,
     "active_stake": "985394147097",
     "sigma": 4.281353066085624e-05,
-    "block_count": 544,
+    "block_count": 545,
     "live_pledge": "20103769075",
-    "live_stake": "971702097507",
+    "live_stake": "972129293998",
     "live_delegators": 251,
     "live_saturation": 1.34
   },
@@ -187,9 +187,9 @@
     "op_cert_counter": 8,
     "active_stake": "1658383609306",
     "sigma": 7.205366270304695e-05,
-    "block_count": 348,
-    "live_pledge": "110729259467",
-    "live_stake": "1664773645235",
+    "block_count": 349,
+    "live_pledge": "110724071589",
+    "live_stake": "1661312241449",
     "live_delegators": 38,
     "live_saturation": 2.29
   },
@@ -231,9 +231,9 @@
     "sigma": 1.0003236567114047e-05,
     "block_count": 44,
     "live_pledge": "30745308646",
-    "live_stake": "230234008107",
-    "live_delegators": 36,
-    "live_saturation": 0.32
+    "live_stake": "225589237281",
+    "live_delegators": 35,
+    "live_saturation": 0.31
   },
   {
     "pool_id_bech32": "pool1hvevy8qu5lwg7ul66xmzvwv8zwdgdradsg9ncvrflm7dvy407e0",
@@ -280,9 +280,9 @@
     "sigma": 7.6271558697069366e-06,
     "block_count": 22,
     "live_pledge": "43210058310",
-    "live_stake": "1170147422238",
-    "live_delegators": 34,
-    "live_saturation": 1.61
+    "live_stake": "1671326460735",
+    "live_delegators": 41,
+    "live_saturation": 2.3
   },
   {
     "pool_id_bech32": "pool1p82vmqednsalje23mpnz9u3qt9ruj79xu83mr6p8t93fw5fcu3y",
@@ -307,17 +307,22 @@
     ],
     "meta_url": "https://bit.ly/35yEUof",
     "meta_hash": "1ae1007d42d3c0468f6c96faca54b5df9953b31383883dc4a723c83234c8bcf6",
-    "meta_json": null,
+    "meta_json": {
+      "name": "Stake ADA Pool",
+      "ticker": "RCADA",
+      "homepage": "https://www.stakecardanopool.com",
+      "description": "REGENERATIVE CRUSADERS: Environment, Society & Sustainable Innovation."
+    },
     "pool_status": "registered",
     "retiring_epoch": null,
     "op_cert": "482a481c0694d69bca54363960709667ec3972b2095bee5734b4a6636d713450",
     "op_cert_counter": 5,
     "active_stake": "413556589989",
     "sigma": 1.7968259500683113e-05,
-    "block_count": 25,
+    "block_count": 26,
     "live_pledge": "22555177577",
-    "live_stake": "407246656158",
-    "live_delegators": 67,
+    "live_stake": "405848893204",
+    "live_delegators": 69,
     "live_saturation": 0.56
   },
   {

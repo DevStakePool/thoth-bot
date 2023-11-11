@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c36343535",
+    "asset_name_ascii": "metaPXL6455",
+    "fingerprint": "asset19xa2l49pm32aaq7x87wlhy0rl068235xzwxza8",
+    "minting_tx_hash": "645a17f4ead3fe931513b060f82201cffa4020d265ff7cb23018d88cbc73dd54",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649376000,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL6455": {
+            "name": "metaPXL#6455",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmccybWHo3P4rhWRRJhtTuTT3ikh4FWVCGZ73LSmpXB5pw",
+                "name": "metaPXL#6455",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXkLQCkFupEGkf9HAUYMdheMvzJvbhe5RFayqQGaR1s7t",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "glasses",
+              "napoleon hat",
+              "pipe",
+              "turtleneck"
+            ],
+            "description": "The official 3D collectible version of PXL#6455"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654b656e656c6d466f7264",
+    "asset_name_ascii": "adapeKenelmFord",
+    "fingerprint": "asset1dz9p9h9wl5ak6gsdwq3hxmrqmcvkdqs2wavsfk",
+    "minting_tx_hash": "0f23caf362f670e989aef981bfbc12a263f80afaea5f039bfdc46cf66add3e8b",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeKenelmFord": {
+            "Hat": "Top Hat",
+            "Body": "Doublet",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Kenelm Ford",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmNbB7UUSdiabuW2so1f5bbjN5jnXqZwZfqNYmrbaLjw2F",
+                "name": "Kenelm Ford",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNbB7UUSdiabuW2so1f5bbjN5jnXqZwZfqNYmrbaLjw2F",
+            "Family": "Ford",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Ford family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

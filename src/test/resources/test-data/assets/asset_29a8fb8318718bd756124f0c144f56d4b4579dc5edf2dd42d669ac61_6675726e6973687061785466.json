@@ -1,0 +1,48 @@
+[
+  {
+    "policy_id": "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61",
+    "asset_name": "6675726e6973687061785466",
+    "asset_name_ascii": "furnishpaxTf",
+    "fingerprint": "asset1duggsawgp60a7z30rnfg58nsxyaj72832qy7nv",
+    "minting_tx_hash": "5eb8c30b42c86f58c832e03cf430989c830ecef8e04c0a267f89e0c826832946",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1678406400,
+    "minting_tx_metadata": {
+      "721": {
+        "29a8fb8318718bd756124f0c144f56d4b4579dc5edf2dd42d669ac61": {
+          "furnishpaxTf": {
+            "id": "paxTf",
+            "src": "ipfs://QmdM2XXVnoYZoKzBv9pFpJeanFdmDxHLBDFn5S7rKqUs4x",
+            "name": "Brass Glass Table",
+            "rate": "0.98",
+            "type": "image/gif",
+            "files": [
+              {
+                "src": "ipfs://QmdM2XXVnoYZoKzBv9pFpJeanFdmDxHLBDFn5S7rKqUs4x",
+                "name": "Brass Glass Table",
+                "mediaType": "image/gif"
+              },
+              {
+                "src": "ipfs://Qmek56uCPoB4ykqXiRJzwZQx6pre3Mtf5t89estVBrM8SV",
+                "name": "Brass Glass Table",
+                "mediaType": "video/mp4"
+              },
+              {
+                "src": "ipfs://QmRGWWnwshzfVnXArynTMA9Vf3pohB8aeeWSCAwe8ZDHbj",
+                "name": "Brass Glass Table",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmdM2XXVnoYZoKzBv9pFpJeanFdmDxHLBDFn5S7rKqUs4x",
+            "description": "Hand-crafted by Lievin Robinson.",
+            "furnitureId": 203
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

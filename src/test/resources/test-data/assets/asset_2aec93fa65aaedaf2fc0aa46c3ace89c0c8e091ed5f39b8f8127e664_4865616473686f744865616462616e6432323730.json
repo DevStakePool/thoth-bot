@@ -1,0 +1,39 @@
+[
+  {
+    "policy_id": "2aec93fa65aaedaf2fc0aa46c3ace89c0c8e091ed5f39b8f8127e664",
+    "asset_name": "4865616473686f744865616462616e6432323730",
+    "asset_name_ascii": "HeadshotHeadband2270",
+    "fingerprint": "asset1juggpdj6sgmmgrlhegypsxlz5yre2u637rjq63",
+    "minting_tx_hash": "8eee9385087ebd86e5b2f97f408c46398f1d8676a1c2035f1d0a04cc4b7e1d5f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648512000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "2aec93fa65aaedaf2fc0aa46c3ace89c0c8e091ed5f39b8f8127e664": {
+          "HeadshotHeadband2270": {
+            "Name": "Headshot Headband",
+            "Asset": "HeadshotHeadband2270",
+            "files": [
+              {
+                "src": "ipfs://QmPHPK3HYWauoxWd3X87YLsvWK2yN6KQd1yALoRLB1P3As",
+                "name": "HeadshotHeadband2270",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmWRihsbZmTrhFsstz1JiPgeUZppH85oeBnDuFZ9uQDXCW",
+            "Number": "2270",
+            "Series": "Campaign Materials",
+            "Variation": "RICHARD",
+            "mediaType": "image/gif",
+            "Collection": "Old Money"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

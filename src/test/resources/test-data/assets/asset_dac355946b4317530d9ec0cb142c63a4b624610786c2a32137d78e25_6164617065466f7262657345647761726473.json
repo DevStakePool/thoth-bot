@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065466f7262657345647761726473",
+    "asset_name_ascii": "adapeForbesEdwards",
+    "fingerprint": "asset1xtnf3ca6ft37la4e2tmzs30sx235y2aasql99p",
+    "minting_tx_hash": "5853d61c84a5a3e24dab856bc849ea5b805e02b567aa113ebf76ae6346f0c388",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeDarwinEvans": {
+            "Hat": "None",
+            "Body": "Rainbow Suit",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Ape",
+            "name": "Darwin Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUwxrnsgjxxxXhm52joM7hQgFfxa2V9WJtice856hj9Mk",
+                "name": "Darwin Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUwxrnsgjxxxXhm52joM7hQgFfxa2V9WJtice856hj9Mk",
+            "Family": "Evans",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          },
+          "adapeEgertonWhite": {
+            "Hat": "None",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Egerton White",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmUjPuNujdtguWFpYLBEAgXzQQGbaNrxc866uo4REwaCwX",
+                "name": "Egerton White",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUjPuNujdtguWFpYLBEAgXzQQGbaNrxc866uo4REwaCwX",
+            "Family": "White",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the White family"
+          },
+          "adapeForbesEdwards": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Forbes Edwards",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmVPycsxZDoFsztqKNABj3vhYM1YhUUCpgiBNdXTDEXFzy",
+                "name": "Forbes Edwards",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVPycsxZDoFsztqKNABj3vhYM1YhUUCpgiBNdXTDEXFzy",
+            "Family": "Edwards",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Edwards family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

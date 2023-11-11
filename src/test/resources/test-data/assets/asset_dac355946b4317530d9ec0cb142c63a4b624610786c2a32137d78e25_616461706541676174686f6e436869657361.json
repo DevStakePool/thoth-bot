@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706541676174686f6e436869657361",
+    "asset_name_ascii": "adapeAgathonChiesa",
+    "fingerprint": "asset1qzppjktwjgwgm5wdm558vhwdpyzy89dakjh6yh",
+    "minting_tx_hash": "58ae365f18f5cf7081a6519a7c1e019ea1004ecbce1e4350b03fde6cefe0a97e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeFlemingRich": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Fleming Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmQX6T9FrqP5nENvSFzX4He9hdUwSGs6zaWNDBUpyGUKwv",
+                "name": "Fleming Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQX6T9FrqP5nENvSFzX4He9hdUwSGs6zaWNDBUpyGUKwv",
+            "Family": "Rich",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Rich family"
+          },
+          "adapeAgathonChiesa": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Earphones",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Agathon Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmRGmoCQRJPeWc1VVmGmuJ47gJfLbVcrZjD12sJTRtM77j",
+                "name": "Agathon Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRGmoCQRJPeWc1VVmGmuJ47gJfLbVcrZjD12sJTRtM77j",
+            "Family": "Chiesa",
+            "Weapon": "None",
+            "Accessory": "Gold Teeth",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

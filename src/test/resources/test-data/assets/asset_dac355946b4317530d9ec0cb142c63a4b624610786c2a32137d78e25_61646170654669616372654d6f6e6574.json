@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654669616372654d6f6e6574",
+    "asset_name_ascii": "adapeFiacreMonet",
+    "fingerprint": "asset1ueruf0tn9vvsqsvpfmansppp26yxvr7ahnuazt",
+    "minting_tx_hash": "7a6b89f42e8f29fe973f4706ddcd94a64ccb291f671edff47a5c8a5b1cfe9e4d",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeFiacreMonet": {
+            "Hat": "None",
+            "Body": "Cardano",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Cardano",
+            "name": "Fiacre Monet",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmR2ySFVmp8vxsakmhze5RWpya8NPVQuBmxdHr1EXm4Rkb",
+                "name": "Fiacre Monet",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmR2ySFVmp8vxsakmhze5RWpya8NPVQuBmxdHr1EXm4Rkb",
+            "Family": "Monet",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Monet family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "policy_id": "22d843e9e8b39d105c645944cc848abee2673d64e60f1f022791ec85",
+    "asset_name": "457175696e6550696f6e656572536b696e3036373637",
+    "asset_name_ascii": "EquinePioneerSkin06767",
+    "fingerprint": "asset1x8zf3dhqxh8q34trjxy7k5h9r4ayversz6h9we",
+    "minting_tx_hash": "cdb5c3fa2967990c87cb6a0f864b2096bf4b614db55ac24c3bdd27ff658d0377",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1639785600,
+    "minting_tx_metadata": {
+      "721": {
+        "22d843e9e8b39d105c645944cc848abee2673d64e60f1f022791ec85": {
+          "EquinePioneerSkin06767": {
+            "name": "Arabian Horse",
+            "Color": "Dunskin",
+            "files": [
+              {
+                "src": "ipfs://QmVahLqVVoDnyEUxJczw8xEyrZmySGiC41nQqYCfxisFkW",
+                "name": "Arabian Horse",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": "ipfs://QmQoaQaiYkv2eTuyEKfb8n8SsghhCBPcbAU5Uit8Jg3xgB",
+            "media": {
+              "discord": "https://discord.gg/equine",
+              "twitter": "https://twitter.com/EquineNFT",
+              "website": "https://equine.gg"
+            },
+            "Skin Type": "Horse Skin",
+            "copyright": "2021 © Equine",
+            "mediaType": "image/jpg",
+            "Collection": "Equine Pioneer Skins"
+          }
+        },
+        "23a000a839f04bb71b59b4ae74bf8cf5ed21ee0be520690e665ae4b4": {
+          "EquinePioneerJockey06767": {
+            "name": "Anara",
+            "files": [
+              {
+                "src": "ipfs://QmPVZAJv63rUThVxaWrRsvCcnjCUVrNJDAWtDF13jCFxYn",
+                "name": "Anara",
+                "mediaType": "model/gltf-binary"
+              },
+              {
+                "src": "ipfs://QmePpwPX2Bvksf4AE1XRX5pXiY3sinekjT5FQzqn88J2La",
+                "name": "Theme Song",
+                "mediaType": "audio/mp3"
+              }
+            ],
+            "image": "ipfs://QmR9iy91Kbbw8fNe1dnV8LsoSGh2QQFjRqt1kmwuNFf2gZ",
+            "discord": "https://discord.gg/equine",
+            "twitter": "https://twitter.com/EquineNFT",
+            "website": "https://equine.gg",
+            "copyright": "2021 © Equine",
+            "mediaType": "image/jpg",
+            "Collection": "Equine Jockeys",
+            "Personality": "Brave"
+          }
+        },
+        "30ed3d95db1d6bb2c12fc5228a2986eab4553f192a12a4607780e15b": {
+          "EquinePioneerHorse06767": {
+            "Age": 2,
+            "name": "Equine Pioneer Horse [06767]",
+            "~DNA": [
+              "yGDApHUMJebZBHPORk3K9yHcbdRwyl35rlXgdC9YuDsgf0TF6PHdH6FXITLlk+ZA",
+              "dS9lGRG2O2DcYm9/2QzO5upm/GNFVTVKiAr97WNYSmXSbWVWKEtA9q0uGV+Hg7H6",
+              "Wtkkx3SyvUWMKbQBNKYqhkCPbYoNDeKsUb/MLOao9p8="
+            ],
+            "Color": "Flaxen Chestnut",
+            "files": [
+              {
+                "src": "ipfs://QmZdGPB1XyuC7e5CW8NsSjy1rGMLKvUVVZNZfMBAe3rWzc",
+                "name": "Equine Pioneer Horse [06767]",
+                "mediaType": "model/gltf-binary"
+              }
+            ],
+            "image": "ipfs://QmadqkdzkxDkW5kczc7njbRHrPhGExqBax772tBp4ytJuR",
+            "speed": 33,
+            "Gender": "Colt",
+            "~Links": {
+              "Discord": "https://discord.com/invite/Equine",
+              "Twitter": "https://twitter.com/equinenft",
+              "Website": "https://equine.gg"
+            },
+            "agility": 23,
+            "stamina": 35,
+            "Markings": {
+              "Body": "Tovero 5",
+              "Head": "Stripe 3",
+              "Back Left Leg": "Sock",
+              "Back Right Leg": "Irregular Stocking",
+              "Front Left Leg": "Half Stocking",
+              "Front Right Leg": "Pastern"
+            },
+            "endurance": 24,
+            "mediaType": "image/jpeg",
+            "Collection": "Pioneer",
+            "acceleration": 30
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

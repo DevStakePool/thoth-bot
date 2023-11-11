@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706553657761726464656c614372757a",
+    "asset_name_ascii": "adapeSewarddelaCruz",
+    "fingerprint": "asset1p5l0qlufctvhusad20uz0f7ya2qey8hdkv068f",
+    "minting_tx_hash": "a33d91f5fe59d9f060bfce19023ab3a4bce2b2745b062fc173726a7a6c5d335f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeSewarddelaCruz": {
+            "Hat": "Privateer Hat",
+            "Body": "Chainmail",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Seward de la Cruz",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmVJdEneK5EBDCiSFVNZdhkZGA45d6yGXiijArayzksNwK",
+                "name": "Seward de la Cruz",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmVJdEneK5EBDCiSFVNZdhkZGA45d6yGXiijArayzksNwK",
+            "Family": "de la Cruz",
+            "Weapon": "None",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de la Cruz family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

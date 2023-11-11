@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706542726f6d6c6579446176696573",
+    "asset_name_ascii": "adapeBromleyDavies",
+    "fingerprint": "asset14kfjsk2lwc6r577e0wag2tgcn5298zc5rzh9e6",
+    "minting_tx_hash": "c2cdc10ece6c5b4b1e543d0b55ef6e5f2b68a2185adaa68ce17536e0f4052e69",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeBromleyDavies": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Bromley Davies",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmZwaCx7WL3Zv8rCxy8XrEdqCs3SYNg9X8nw1zGJvVnxtn",
+                "name": "Bromley Davies",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZwaCx7WL3Zv8rCxy8XrEdqCs3SYNg9X8nw1zGJvVnxtn",
+            "Family": "Davies",
+            "Weapon": "Arrows",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Davies family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

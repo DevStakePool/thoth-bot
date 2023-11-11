@@ -1,0 +1,49 @@
+[
+  {
+    "policy_id": "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+    "asset_name": "636e6674736869727473",
+    "asset_name_ascii": "cnftshirts",
+    "fingerprint": "asset125effcm46h76frv00n0x4mdm0uvv4ct5l2vwrx",
+    "minting_tx_hash": "1b19ba29d3efbcf32864d95097ec0d79443e63d122bb52b5778ac9cbaf5d5a49",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1671148800,
+    "minting_tx_metadata": {
+      "721": {
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a": {
+          "cnftshirts": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$cnftshirts",
+            "image": "ipfs://QmWQ3ZroiNdo62QHSncbvjrRecNnCcJohnCy7fUmdgYtDc",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          },
+          "onlinetrade": {
+            "core": {
+              "og": 0,
+              "prefix": "$",
+              "version": 0,
+              "termsofuse": "https://adahandle.com/tou",
+              "handleEncoding": "utf-8"
+            },
+            "name": "$onlinetrade",
+            "image": "ipfs://QmWpWs7MPSK865auLUkNbnYRnbWggcBCeqkdUMxsUgR1yf",
+            "website": "https://adahandle.com",
+            "description": "The Handle Standard",
+            "augmentations": []
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

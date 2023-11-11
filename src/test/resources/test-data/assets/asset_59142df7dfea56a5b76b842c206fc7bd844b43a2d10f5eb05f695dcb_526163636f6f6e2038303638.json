@@ -4,41 +4,42 @@
     "asset_name": "526163636f6f6e2038303638",
     "asset_name_ascii": "Raccoon 8068",
     "fingerprint": "asset1z4yg8327n6dwq5ne9tnlschapglnd2929lpsyg",
-    "minting_tx_hash": "dcbd16302fc4a88965d4a8fee188c44fa8751d5bece6d96ea4a49850c5f31037",
+    "minting_tx_hash": "39603f603c713d93c924ef009e5246c2c0c5866857c64da2cd9aafe858084d7a",
     "total_supply": "1",
-    "mint_cnt": 1,
-    "burn_cnt": 0,
+    "mint_cnt": 3,
+    "burn_cnt": 2,
     "creation_time": 1670025600,
     "minting_tx_metadata": {
       "721": {
         "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb": {
-          "Raccoon 8052": {
-            "name": "Raccoon #8052",
-            "Index": "8052",
-            "image": "ipfs://QmTZ7STBrbSLF46uwhkSYot51vLwKhSLfz73un1zgRsX8i",
+          "Raccoon 779": {
+            "name": "Raccoon #779",
+            "Index": "779",
+            "image": "ipfs://QmcidpbonAjpH1pT6egtvEiFMwMTRhDdUEVY4Kb7Ho9pFw",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
             "copyright": "Raccoon Syndicate 2022",
             "mediaType": "image/png",
             "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Red Santa Hat",
-              "Genus": "Compound X",
-              "Mouth": "Santa Beard",
+              "Eyes": "Spiral Eyes",
+              "Head": "None",
+              "Ring": "None",
+              "Genus": "Steel",
               "Nails": "Black Nails",
-              "Eyewear": "Neon Glasses",
-              "Wardrobe": "Red Santa Suit",
-              "Left Hand": "Armillary Sphere",
-              "Syndicate": "Aristocrat",
-              "Profession": "Staff",
-              "Right Hand": "Money Bag Silver",
-              "Base Point Multiplier": "1.35"
+              "Wings": "None",
+              "Eyewear": "Eye Patch",
+              "Wardrobe": "Hunter Military Uniform",
+              "Left Hand": "Boomerang",
+              "Syndicate": "Hunter",
+              "Profession": "Captain",
+              "Right Hand": "None",
+              "Base Point Multiplier": "1.25"
             }
           },
-          "Raccoon 8068": {
-            "name": "Raccoon #8068",
-            "Index": "8068",
-            "image": "ipfs://QmWEUsMTRd49SzJzJAyUSXphefYqC6dNSrdNfasEYX424f",
+          "Raccoon 3628": {
+            "name": "Raccoon #3628",
+            "Index": "3628",
+            "image": "ipfs://QmYXZEgCuVMQ8fGfzyPGmfzupk7AunK1PBeX8AMyHbdCCX",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
             "copyright": "Raccoon Syndicate 2022",
@@ -46,9 +47,34 @@
             "attributes": {
               "Eyes": "Brown Eyes",
               "Head": "None",
-              "Genus": "Diamond",
-              "Mouth": "None",
+              "Ring": "None",
+              "Genus": "Copper",
               "Nails": "Black Nails",
+              "Wings": "None",
+              "Eyewear": "None",
+              "Wardrobe": "Vest with Red Bow Tie",
+              "Left Hand": "Pickaxe",
+              "Syndicate": "Hunter",
+              "Profession": "Captain",
+              "Right Hand": "None",
+              "Base Point Multiplier": "1.20"
+            }
+          },
+          "Raccoon 8068": {
+            "name": "Raccoon #8068",
+            "Index": "8068",
+            "image": "ipfs://QmdmE85qiTrpWJ4oSLkUybtbPBhKiAQzsnhMSuKft59UzM",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2022",
+            "mediaType": "image/png",
+            "attributes": {
+              "Eyes": "Brown Eyes",
+              "Head": "None",
+              "Ring": "None",
+              "Genus": "Diamond",
+              "Nails": "Black Nails",
+              "Wings": "None",
               "Eyewear": "Purple Sleep Mask",
               "Wardrobe": "Procyon Lotor Pyjamas",
               "Left Hand": "Armillary Sphere",
@@ -58,33 +84,10 @@
               "Base Point Multiplier": "1.35"
             }
           },
-          "Raccoon 8116": {
-            "name": "Raccoon #8116",
-            "Index": "8116",
-            "image": "ipfs://QmSFK3JezpQK8C71bA6kcDGAvK8G39D4QcsNhJUDdQp8QF",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Red Santa Hat",
-              "Genus": "Compound X",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Red Santa Suit",
-              "Left Hand": "Staff",
-              "Syndicate": "Aristocrat",
-              "Profession": "Soldier",
-              "Right Hand": "Bath Bomb",
-              "Base Point Multiplier": "1.35"
-            }
-          },
-          "Raccoon 8476": {
-            "name": "Raccoon #8476",
-            "Index": "8476",
-            "image": "ipfs://QmUte2fiNuurNm2HroBQvaDAw8XfXkg9C2YwK9ecWbkbcN",
+          "Raccoon 8147": {
+            "name": "Raccoon #8147",
+            "Index": "8147",
+            "image": "ipfs://QmXdi93viG39UzDkSFuuyU72QXF759eC7W3HS68VqSe7mF",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
             "copyright": "Raccoon Syndicate 2022",
@@ -92,297 +95,154 @@
             "attributes": {
               "Eyes": "Brown Eyes",
               "Head": "None",
-              "Genus": "Wood",
-              "Mouth": "None",
+              "Ring": "None",
+              "Genus": "Diamond",
               "Nails": "Black Nails",
+              "Wings": "None",
               "Eyewear": "None",
-              "Wardrobe": "Gold Suit with Black Tie",
-              "Left Hand": "Cap Gun",
-              "Syndicate": "Aristocrat",
-              "Profession": "Soldier",
-              "Right Hand": "Teacup",
-              "Base Point Multiplier": "1.2"
-            }
-          },
-          "Raccoon 8508": {
-            "name": "Raccoon #8508",
-            "Index": "8508",
-            "image": "ipfs://Qmbg7AeVGv45WmM4ueJNpPEUv8zGaTXNT3pb5rFTWT9Z3S",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Prison Hat",
-              "Genus": "Wood",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Gold Prison Uniform",
-              "Left Hand": "Magnifying Glass",
-              "Syndicate": "Procyon Lotor",
-              "Profession": "Staff",
-              "Right Hand": "Apple",
-              "Base Point Multiplier": "1.2"
-            }
-          },
-          "Raccoon 8656": {
-            "name": "Raccoon #8656",
-            "Index": "8656",
-            "image": "ipfs://QmSkaJVdyyfXSaF3cGeG8RkQM4LUeA8DZ2xLsnRuyWztjz",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "None",
-              "Genus": "Normal",
-              "Mouth": "Rum Cork",
-              "Nails": "Black Nails",
-              "Eyewear": "Yellow Lennon Glassses",
-              "Wardrobe": "Red Jumper",
+              "Wardrobe": "Green Bathrobe",
               "Left Hand": "Staff",
               "Syndicate": "Procyon Lotor",
               "Profession": "Soldier",
-              "Right Hand": "Cupcake",
-              "Base Point Multiplier": "1.1"
-            }
-          },
-          "Raccoon 8697": {
-            "name": "Raccoon #8697",
-            "Index": "8697",
-            "image": "ipfs://QmcFsvLXP2cAdbcn3AQAFWJQemrLQoVLEFw4VEWFELtHmH",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "None",
-              "Genus": "Nature",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Gold Aristocrat Jacket",
-              "Left Hand": "Armillary Sphere",
-              "Syndicate": "Aristocrat",
-              "Profession": "Staff",
-              "Right Hand": "Money Bag Green",
-              "Base Point Multiplier": "1.15"
-            }
-          },
-          "Raccoon 8868": {
-            "name": "Raccoon #8868",
-            "Index": "8868",
-            "image": "ipfs://QmNmur9dYrG6Rq4Vfk3b3pNqBho4g7TND436kq36QS4y4Y",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "None",
-              "Genus": "Compound X",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Brown Inverness Cape",
-              "Left Hand": "Telephone",
-              "Syndicate": "Aristocrat",
-              "Profession": "Soldier",
-              "Right Hand": "Bubbles",
+              "Right Hand": "Coins",
               "Base Point Multiplier": "1.35"
             }
           },
-          "Raccoon 8893": {
-            "name": "Raccoon #8893",
-            "Index": "8893",
-            "image": "ipfs://QmZKD2H4f2G5zSr2rqSLFte9RtqpDzg88tMeBsTWmFhYk9",
+          "Raccoon 8245": {
+            "name": "Raccoon #8245",
+            "Index": "8245",
+            "image": "ipfs://QmVuResy6hj1hULaaTG3PdpvC5Vj1Ch4w58azi43TuvKfW",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
             "copyright": "Raccoon Syndicate 2022",
             "mediaType": "image/png",
             "attributes": {
-              "Eyes": "Brown Eyes",
+              "Eyes": "Rainbow Eyes",
               "Head": "None",
-              "Genus": "Ruby",
-              "Mouth": "None",
+              "Ring": "None",
+              "Genus": "Diamond",
               "Nails": "Black Nails",
-              "Eyewear": "Eyelashes",
-              "Wardrobe": "Aristocrat Green Dress",
-              "Left Hand": "Staff",
-              "Syndicate": "Aristocrat",
-              "Profession": "Soldier",
-              "Right Hand": "Bath Bomb",
-              "Base Point Multiplier": "1.3"
-            }
-          },
-          "Raccoon 9039": {
-            "name": "Raccoon #9039",
-            "Index": "9039",
-            "image": "ipfs://QmXE9jXP3Br1PokKk6KCqvp9PEywvLQyQiT77GVoczn7EP",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Large Bonnet",
-              "Genus": "Compound X",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "Eyelashes",
-              "Wardrobe": "Maid Robes",
-              "Left Hand": "Decanter",
-              "Syndicate": "Procyon Lotor",
-              "Profession": "Staff",
-              "Right Hand": "Money Bag Silver",
-              "Base Point Multiplier": "1.35"
-            }
-          },
-          "Raccoon 9184": {
-            "name": "Raccoon #9184",
-            "Index": "9184",
-            "image": "ipfs://QmYYzAaPSQ37Gn4dVxRQoAUsDcmmQjVKx4Y9VTxtxzsytp",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Bloodshot Eyes",
-              "Head": "None",
-              "Genus": "Steel",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "Yellow Lennon Glassses",
-              "Wardrobe": "Procyon Lotor Military Uniform",
-              "Left Hand": "Cap Gun",
-              "Syndicate": "Procyon Lotor",
-              "Profession": "General",
-              "Right Hand": "Red Magic Energy",
-              "Base Point Multiplier": "1.45"
-            }
-          },
-          "Raccoon 9224": {
-            "name": "Raccoon #9224",
-            "Index": "9224",
-            "image": "ipfs://QmVECZo7rtt3cHdw6HTFvM41V2zc342ytVRRwtXTcduPAT",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "None",
-              "Genus": "Normal",
-              "Mouth": "Silver Braces",
-              "Nails": "Black Nails",
+              "Wings": "None",
               "Eyewear": "None",
-              "Wardrobe": "Brown Inverness Cape",
-              "Left Hand": "Martini",
-              "Syndicate": "Aristocrat",
-              "Profession": "Staff",
-              "Right Hand": "Money Bag Green",
-              "Base Point Multiplier": "1.1"
-            }
-          },
-          "Raccoon 9225": {
-            "name": "Raccoon #9225",
-            "Index": "9225",
-            "image": "ipfs://QmSFrHu4kaavuh3oUWbHn75GdNoKzXHMCAZ3apfEcfM8FB",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Revenant Eyes",
-              "Head": "None",
-              "Genus": "Revenant",
-              "Mouth": "None",
-              "Nails": "Revenant Nails",
-              "Eyewear": "Purple Lennon Glassses",
-              "Wardrobe": "Aristocrat Military Uniform",
-              "Left Hand": "Magnifying Glass",
+              "Wardrobe": "Red Bathrobe",
+              "Left Hand": "Teapot",
               "Syndicate": "Aristocrat",
               "Profession": "Captain",
               "Right Hand": "None",
-              "Base Point Multiplier": "1.4"
+              "Base Point Multiplier": "1.50"
             }
-          },
-          "Raccoon 9320": {
-            "name": "Raccoon #9320",
-            "Index": "9320",
-            "image": "ipfs://QmSkHETA3EoSjyqdd4ZiN45PguvYj4VwsqcVfPVnteP4jP",
+          }
+        },
+        "7795eb9746390ea24c03c7f9898bb706dd6d3bd5cf5a7ee9ddf9707c": {
+          "RS Dark Wings 130": {
+            "name": "RS Dark Wings 130",
+            "files": [
+              {
+                "src": "ipfs://QmWk6EGNATF1Gu4tPHXFNw2buDauYEecv2UXt7bPeFHjzm",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTqQgNj1u3xJAgK8UQbKJSyvMxwri4NC6NLv1eaPd64pj",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Polar Eyes",
-              "Head": "None",
-              "Genus": "Polar",
-              "Mouth": "None",
-              "Nails": "Polar Nails",
-              "Eyewear": "Purple Sleep Mask",
-              "Wardrobe": "Procyon Lotor Pyjamas",
-              "Left Hand": "Magnifying Glass",
-              "Syndicate": "Procyon Lotor",
-              "Profession": "Staff",
-              "Right Hand": "Cupcake",
-              "Base Point Multiplier": "1.35"
-            }
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Wings",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "5062",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "130",
+            "BPM Boost Percentage": "55"
           },
-          "Raccoon 9426": {
-            "name": "Raccoon #9426",
-            "Index": "9426",
-            "image": "ipfs://QmPeFMk3YMktR8skb7yfo8j7821vAqnZ9pepF3QjSQWn7g",
+          "RS Dark Wings 131": {
+            "name": "RS Dark Wings 131",
+            "files": [
+              {
+                "src": "ipfs://QmWk6EGNATF1Gu4tPHXFNw2buDauYEecv2UXt7bPeFHjzm",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmTqQgNj1u3xJAgK8UQbKJSyvMxwri4NC6NLv1eaPd64pj",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Prison Hat",
-              "Genus": "Steel",
-              "Mouth": "Moustache",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Gold Prison Uniform",
-              "Left Hand": "Martini",
-              "Syndicate": "Procyon Lotor",
-              "Profession": "Staff",
-              "Right Hand": "Money Bag Green",
-              "Base Point Multiplier": "1.2"
-            }
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Wings",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "5063",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "131",
+            "BPM Boost Percentage": "55"
           },
-          "Raccoon 9678": {
-            "name": "Raccoon #9678",
-            "Index": "9678",
-            "image": "ipfs://QmUxMzGQJNJ5359vAjkCr6CfHEo7YrfUBMT7R35Sb76Hra",
+          "RS Diamond Ring 189": {
+            "name": "RS Diamond Ring 189",
+            "files": [
+              {
+                "src": "ipfs://Qmbc7xkEf7QEQkHcueZhysdKwhCYzi38umMY3B7R4TF319",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmZhjaCoFXK5hYpFPgaYbtDysir792UD1tQxYTetgX6a4G",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "None",
-              "Genus": "Normal",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Gold Aristocrat Jacket",
-              "Left Hand": "Bow",
-              "Syndicate": "Aristocrat",
-              "Profession": "Soldier",
-              "Right Hand": "Cupcake",
-              "Base Point Multiplier": "1.1"
-            }
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Ring",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "5061",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "189",
+            "BPM Boost Percentage": "35"
+          },
+          "RS Psychedelic Wings 70": {
+            "name": "RS Psychedelic Wings 70",
+            "files": [
+              {
+                "src": "ipfs://QmcLkbn898FyMEgxxWsBwxGzjsHM1onYgK64Wi3vxthsEN",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXPQfd6MiFRsqtUZkbWThgsRgBNrZhixxtXUitxTanPMM",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Wings",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "5059",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "70",
+            "BPM Boost Percentage": "65"
+          },
+          "RS Psychedelic Wings 71": {
+            "name": "RS Psychedelic Wings 71",
+            "files": [
+              {
+                "src": "ipfs://QmcLkbn898FyMEgxxWsBwxGzjsHM1onYgK64Wi3vxthsEN",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmXPQfd6MiFRsqtUZkbWThgsRgBNrZhixxtXUitxTanPMM",
+            "Twitter": "@RaccoonSyndicat",
+            "Website": "https://raccoonsyndicate.com/",
+            "copyright": "Raccoon Syndicate 2023",
+            "mediaType": "image/gif",
+            "Upgrade Type": "Wings",
+            "Collection Name": "Raccoon Syndicate Upgrades",
+            "Collection Index": "5060",
+            "Upgrade Category": "Attachable",
+            "BPM Boost Duration": "Permanent",
+            "Upgrade Type Index": "71",
+            "BPM Boost Percentage": "65"
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

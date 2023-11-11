@@ -1,0 +1,38 @@
+[
+  {
+    "policy_id": "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed",
+    "asset_name": "566f6c75637269734d643630304272696467654c69676874477265656e30",
+    "asset_name_ascii": "VolucrisMd600BridgeLightGreen0",
+    "fingerprint": "asset10yu63zqn63ax9yktfeqn0pz6z3dqpvctzpjmkf",
+    "minting_tx_hash": "b52792108370706c22866f54d2668698d62ab92ea523bff48ab1e440f6899f9a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1658793600,
+    "minting_tx_metadata": {
+      "721": {
+        "0414065c7a2bbf91b876449384ba68a17aec83e8e08ab919262225ed": {
+          "VolucrisMd600BridgeLightGreen0": {
+            "name": "Volucris MD 600",
+            "Color": "Light Green",
+            "Model": "Volucris MD 600",
+            "Speed": "5.4",
+            "files": [
+              {
+                "src": "ipfs://QmdraEsvmVsMDrK7bo75ShqLXnbeWZBg2GKnxUTHwqJHin",
+                "mediaType": "video/mp4"
+              }
+            ],
+            "image": "ipfs://QmPYSm1jLhwXcnc9cTqx2UX19Xx97P1QeGiEiNFg7aKpL6",
+            "Braking": "2.8",
+            "Handling": "3.9",
+            "Background": "Bridge",
+            "Acceleration": "3.5"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

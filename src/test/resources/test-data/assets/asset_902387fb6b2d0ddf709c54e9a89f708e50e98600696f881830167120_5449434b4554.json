@@ -8,7 +8,7 @@
     "total_supply": "21000000000",
     "mint_cnt": 1,
     "burn_cnt": 0,
-    "creation_time": 1660060682,
+    "creation_time": 1660003200,
     "minting_tx_metadata": {
       "721": {
         "version": "1.0",
@@ -38,6 +38,14 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": {
+      "url": "https://rafflesocial.com/",
+      "logo": "",
+      "name": "TICKET",
+      "ticker": "TICKET",
+      "decimals": 0,
+      "description": "TICKET by rafflesocial.com"
+    },
+    "cip68_metadata": null
   }
 ]

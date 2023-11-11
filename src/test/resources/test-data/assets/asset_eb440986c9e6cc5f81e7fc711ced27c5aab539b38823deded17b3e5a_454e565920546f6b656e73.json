@@ -4,23 +4,28 @@
     "asset_name": "454e565920546f6b656e73",
     "asset_name_ascii": "ENVY Tokens",
     "fingerprint": "asset1pt49hjcd8v9n0qptkk7mcnjatut7k4w9j7z2cf",
-    "minting_tx_hash": "3c8cad35c6f55a420ee3f0d6b2231ac95f1172670099a6eaa5d3903dd7134631",
+    "minting_tx_hash": "c11cea89b011ba68114eccc334d07356664d9fa34eedf082c947dbc377992e42",
     "total_supply": "20000000",
     "mint_cnt": 2,
     "burn_cnt": 0,
-    "creation_time": 1642147764,
+    "creation_time": 1642118400,
     "minting_tx_metadata": {
       "721": {
         "eb440986c9e6cc5f81e7fc711ced27c5aab539b38823deded17b3e5a": {
           "ENVY Tokens": {
             "name": "ENVY Tokens",
             "image": "ipfs://QmQgtAyH8zwctM5cY1kc88nUG6B4JK7WCxMiUF7muXSAwa",
+            "Discord": "https://discord.gg/fmgyTFdp93",
+            "Twitter": "https://twitter.com/EnvyStakePool",
+            "Website": "https://www.envystakepool.com",
             "mediaType": "png",
-            "description": "ENVY Stake Pool Token"
+            "description": "ENVY Stake Pool Token",
+            "Telegram Group": "https://t.me/envystakepoolgroup"
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

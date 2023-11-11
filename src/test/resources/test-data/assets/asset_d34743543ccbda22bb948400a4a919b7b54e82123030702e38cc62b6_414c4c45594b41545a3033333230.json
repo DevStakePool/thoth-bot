@@ -1,0 +1,502 @@
+[
+  {
+    "policy_id": "d34743543ccbda22bb948400a4a919b7b54e82123030702e38cc62b6",
+    "asset_name": "414c4c45594b41545a3033333230",
+    "asset_name_ascii": "ALLEYKATZ03320",
+    "fingerprint": "asset1g9lfa3hc93w5sxdt74zhs77kgkl8kypp453nkj",
+    "minting_tx_hash": "c1d492bb21201f22800ea599683ad8cb4d43132a6136c228c100c167d54949ef",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1675209600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d34743543ccbda22bb948400a4a919b7b54e82123030702e38cc62b6": {
+          "ALLEYKATZ00795": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #00795",
+            "files": [
+              {
+                "src": "ipfs://QmPYba5MyeqB8z4u5wAvPt1bpRvszCULFTs4SQjpjS1GSL",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPYba5MyeqB8z4u5wAvPt1bpRvszCULFTs4SQjpjS1GSL",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Red",
+              "Eyes": "GreenKatEyes",
+              "Mouth": "Fish",
+              "Clothes": "BlackPufferVest",
+              "Eyewear": "Hologram",
+              "Earrings": "None",
+              "Headwear": "UpsideDownLa",
+              "Background": "PurpleHaze"
+            }
+          },
+          "ALLEYKATZ01225": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #01225",
+            "files": [
+              {
+                "src": "ipfs://QmakiqLbuABWfLQm1sD1GoNf4Mr3JrgRhUzio9hgWnW8U5",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmakiqLbuABWfLQm1sD1GoNf4Mr3JrgRhUzio9hgWnW8U5",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Fluorescent",
+              "Eyes": "GreenAlien",
+              "Mouth": "Kat",
+              "Clothes": "BlueVarsity",
+              "Eyewear": "None",
+              "Earrings": "None",
+              "Headwear": "Goggles",
+              "Background": "Photoshoot"
+            }
+          },
+          "ALLEYKATZ01762": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #01762",
+            "files": [
+              {
+                "src": "ipfs://QmZUSqrTW55whCRBfvDCaRP61iSKUP6thLtnMpnCCgq5kV",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZUSqrTW55whCRBfvDCaRP61iSKUP6thLtnMpnCCgq5kV",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Matrix",
+              "Eyes": "Tranquil",
+              "Mouth": "Underbite",
+              "Clothes": "BlueVarsity",
+              "Eyewear": "None",
+              "Earrings": "None",
+              "Headwear": "BlueBeanie",
+              "Background": "PurpleHaze"
+            }
+          },
+          "ALLEYKATZ03205": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #03205",
+            "files": [
+              {
+                "src": "ipfs://QmYEVUWF1bCJendQQoTnihi5cp2E2utj6tDk7BZsKfUGaD",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYEVUWF1bCJendQQoTnihi5cp2E2utj6tDk7BZsKfUGaD",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Rainbow",
+              "Eyes": "Tribal",
+              "Mouth": "Kat",
+              "Clothes": "KatKing",
+              "Eyewear": "None",
+              "Earrings": "None",
+              "Headwear": "Goggles",
+              "Background": "PurpleHaze"
+            }
+          },
+          "ALLEYKATZ03320": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #03320",
+            "files": [
+              {
+                "src": "ipfs://QmUntcK7T1LpQJYV9Xgiv5zXeCKwFHXSHyuCYBvRj5cGdg",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUntcK7T1LpQJYV9Xgiv5zXeCKwFHXSHyuCYBvRj5cGdg",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Fluorescent",
+              "Eyes": "Feral",
+              "Mouth": "Meowjuana",
+              "Clothes": "BoxLogoTee",
+              "Eyewear": "Slime",
+              "Earrings": "None",
+              "Headwear": "Genius",
+              "Background": "PurpleHaze"
+            }
+          },
+          "ALLEYKATZ03965": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #03965",
+            "files": [
+              {
+                "src": "ipfs://QmdHvPtrREz3e6sDNdom5fkY4EQ4hBns7DCXRwVZnmiMKT",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdHvPtrREz3e6sDNdom5fkY4EQ4hBns7DCXRwVZnmiMKT",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "DarkBrown",
+              "Eyes": "OrangeKatEyes",
+              "Mouth": "Pipe",
+              "Clothes": "None",
+              "Eyewear": "LeatherEyePatch",
+              "Earrings": "DiamondSquare",
+              "Headwear": "KatzKap",
+              "Background": "BabyBlue"
+            }
+          },
+          "ALLEYKATZ04057": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #04057",
+            "files": [
+              {
+                "src": "ipfs://QmXzFaJNGshmSUDpsH8GGkECqSPYy3BWFfwq8Piyc4F598",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXzFaJNGshmSUDpsH8GGkECqSPYy3BWFfwq8Piyc4F598",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Red",
+              "Eyes": "BlueUnfazed",
+              "Mouth": "Fish",
+              "Clothes": "BulletproofVest",
+              "Eyewear": "OrangeSunglasses",
+              "Earrings": "DiamondSquare",
+              "Headwear": "KatzKap",
+              "Background": "Turquoise"
+            }
+          },
+          "ALLEYKATZ04153": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #04153",
+            "files": [
+              {
+                "src": "ipfs://Qmf8XZ95T5P6GSEvbNLWeZRsexDk7b6D8WociZ8VG7rK5Q",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmf8XZ95T5P6GSEvbNLWeZRsexDk7b6D8WociZ8VG7rK5Q",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Leopard",
+              "Eyes": "Alien",
+              "Mouth": "BubbleGum",
+              "Clothes": "Fresh",
+              "Eyewear": "OrangeSunglasses",
+              "Earrings": "None",
+              "Headwear": "BlueLa",
+              "Background": "Burnt"
+            }
+          },
+          "ALLEYKATZ04213": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #04213",
+            "files": [
+              {
+                "src": "ipfs://QmNsLh3bbscTY5TSGx8ipbSQPXMVsbiy6hTJySKzHniaaG",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNsLh3bbscTY5TSGx8ipbSQPXMVsbiy6hTJySKzHniaaG",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Tan",
+              "Eyes": "Tranquil",
+              "Mouth": "VendettaMustache",
+              "Clothes": "9ineLives",
+              "Eyewear": "Aviators",
+              "Earrings": "None",
+              "Headwear": "DineNDash",
+              "Background": "BabyBlue"
+            }
+          },
+          "ALLEYKATZ05206": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #05206",
+            "files": [
+              {
+                "src": "ipfs://QmVYqQfmsVQeR9SQTc1BEmK5RYLdYzsnWDRmHD4Zwcg9uh",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVYqQfmsVQeR9SQTc1BEmK5RYLdYzsnWDRmHD4Zwcg9uh",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Gray",
+              "Eyes": "Smug",
+              "Mouth": "StitchedMouth",
+              "Clothes": "RedPaddedJacket",
+              "Eyewear": "PunkGoggles",
+              "Earrings": "None",
+              "Headwear": "Merch",
+              "Background": "PinkRose"
+            }
+          },
+          "ALLEYKATZ05778": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #05778",
+            "files": [
+              {
+                "src": "ipfs://Qmc8oHubKWvjjujx93gnrp5vCJhR3CCqE6xAnFLPdu9TFZ",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmc8oHubKWvjjujx93gnrp5vCJhR3CCqE6xAnFLPdu9TFZ",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "SnowLeopard",
+              "Eyes": "Weed",
+              "Mouth": "Mustache",
+              "Clothes": "BikerJacket",
+              "Eyewear": "HeartShaped",
+              "Earrings": "None",
+              "Headwear": "Sails",
+              "Background": "BabyBlue"
+            }
+          },
+          "ALLEYKATZ05851": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #05851",
+            "files": [
+              {
+                "src": "ipfs://QmQKfFFZntHytP3TN6JcMVDXEqQKhhVLTLShob11A3x5HR",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQKfFFZntHytP3TN6JcMVDXEqQKhhVLTLShob11A3x5HR",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Brown",
+              "Eyes": "Scratched",
+              "Mouth": "Sad",
+              "Clothes": "DapperSuit",
+              "Eyewear": "AKvision",
+              "Earrings": "None",
+              "Headwear": "Halo",
+              "Background": "PurpleHaze"
+            }
+          },
+          "ALLEYKATZ05932": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #05932",
+            "files": [
+              {
+                "src": "ipfs://QmYrNPkDRc1mkcuE4ReNimrvCAg6AMJboNJMaBeEdjVbeV",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYrNPkDRc1mkcuE4ReNimrvCAg6AMJboNJMaBeEdjVbeV",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Tiger",
+              "Eyes": "GrayEyes",
+              "Mouth": "Mustache",
+              "Clothes": "LeatherJacket",
+              "Eyewear": "None",
+              "Earrings": "None",
+              "Headwear": "BagMan",
+              "Background": "Burnt"
+            }
+          },
+          "ALLEYKATZ06309": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #06309",
+            "files": [
+              {
+                "src": "ipfs://QmY4B5CFfAxugvVKVcGF2XNsNq8cdBnzep4fU85imgZsJk",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmY4B5CFfAxugvVKVcGF2XNsNq8cdBnzep4fU85imgZsJk",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Gray",
+              "Eyes": "Joy",
+              "Mouth": "StitchedMouth",
+              "Clothes": "LBCrewneck",
+              "Eyewear": "None",
+              "Earrings": "None",
+              "Headwear": "PurpleProSkater",
+              "Background": "PurpleHaze"
+            }
+          },
+          "ALLEYKATZ07022": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #07022",
+            "files": [
+              {
+                "src": "ipfs://QmWyPz16tFmC1wFm7BqbatE6oEoN94aEV7jUPkU9G1pvMv",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWyPz16tFmC1wFm7BqbatE6oEoN94aEV7jUPkU9G1pvMv",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "MidnightGreen",
+              "Eyes": "Bloodshot",
+              "Mouth": "TrippyGremlin",
+              "Clothes": "WhiteFudFighter",
+              "Eyewear": "Blindfold",
+              "Earrings": "None",
+              "Headwear": "Conductor",
+              "Background": "Photoshoot"
+            }
+          },
+          "ALLEYKATZ07456": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #07456",
+            "files": [
+              {
+                "src": "ipfs://QmQmhLqfWRBeYJHZxH8hjn5iLb9PLr3PKD51ZtrhEJehXF",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQmhLqfWRBeYJHZxH8hjn5iLb9PLr3PKD51ZtrhEJehXF",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "White",
+              "Eyes": "BlueUnfazed",
+              "Mouth": "Sad",
+              "Clothes": "CountyJail",
+              "Eyewear": "KittyScouter",
+              "Earrings": "None",
+              "Headwear": "Genius",
+              "Background": "Golden"
+            }
+          },
+          "ALLEYKATZ07883": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #07883",
+            "files": [
+              {
+                "src": "ipfs://QmRnAL28DxrCwGRfBZ588FU3JGE8xj9RwRCKr37WvHhRHN",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmRnAL28DxrCwGRfBZ588FU3JGE8xj9RwRCKr37WvHhRHN",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Leopard",
+              "Eyes": "Tribal",
+              "Mouth": "Gremlin",
+              "Clothes": "BasketballJersey",
+              "Eyewear": "None",
+              "Earrings": "None",
+              "Headwear": "UpsideDownLa",
+              "Background": "BabyBlue"
+            }
+          },
+          "ALLEYKATZ08503": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #08503",
+            "files": [
+              {
+                "src": "ipfs://QmYhX2a2vteby8yRdQcA1ajRk16ZkaWQqND7SMyqE2DrMY",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYhX2a2vteby8yRdQcA1ajRk16ZkaWQqND7SMyqE2DrMY",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "DarkBrown",
+              "Eyes": "BlueUnfazed",
+              "Mouth": "TongueOut",
+              "Clothes": "BlueFlame",
+              "Eyewear": "JazzyShades",
+              "Earrings": "None",
+              "Headwear": "Afro",
+              "Background": "Turquoise"
+            }
+          },
+          "ALLEYKATZ08799": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #08799",
+            "files": [
+              {
+                "src": "ipfs://QmTZWDVLe2JvguXTZJ9XLN8AUs9QZt4PCBdW5sN6UajWne",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTZWDVLe2JvguXTZJ9XLN8AUs9QZt4PCBdW5sN6UajWne",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "MidnightGreen",
+              "Eyes": "Tranquil",
+              "Mouth": "Kat",
+              "Clothes": "DineNDashShirt",
+              "Eyewear": "None",
+              "Earrings": "None",
+              "Headwear": "JointTheDestruction",
+              "Background": "Photoshoot"
+            }
+          },
+          "ALLEYKATZ09996": {
+            "url": "alleykatz.xyz",
+            "name": "Alley Katz #09996",
+            "files": [
+              {
+                "src": "ipfs://QmV8EE8sRQ39v5imUnACYSfFXUPHw5aimesY7wxePMqwmz",
+                "name": "pfp",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmV8EE8sRQ39v5imUnACYSfFXUPHw5aimesY7wxePMqwmz",
+            "hashtag": "#JoinTheDestruction",
+            "mediaType": "image/png",
+            "attributes": {
+              "Fur": "Leopard",
+              "Eyes": "Stitched",
+              "Mouth": "Lollipop",
+              "Clothes": "AcidWash",
+              "Eyewear": "Blindfold",
+              "Earrings": "None",
+              "Headwear": "DreadHead",
+              "Background": "Turquoise"
+            }
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

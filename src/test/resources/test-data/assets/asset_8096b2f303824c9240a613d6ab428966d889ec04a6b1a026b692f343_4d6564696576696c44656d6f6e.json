@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "8096b2f303824c9240a613d6ab428966d889ec04a6b1a026b692f343",
+    "asset_name": "4d6564696576696c44656d6f6e",
+    "asset_name_ascii": "MedievilDemon",
+    "fingerprint": "asset1entz7u6tn5ftq470s98r9hty4ldd5zf323qe7x",
+    "minting_tx_hash": "943abab87308e2d26de95dd60c8d56a5b71b9d0af892ef2a669c80e0a55f160e",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1667088000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8096b2f303824c9240a613d6ab428966d889ec04a6b1a026b692f343": {
+          "MedievilDemon": {
+            "name": "Medieval Demon ",
+            "files": [
+              {
+                "src": "ipfs://QmNZcS3nKsXpCDXF4jwbiSU9TRCDh5XenTYzDv25tyexi9",
+                "name": "MedievilDemon",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNZcS3nKsXpCDXF4jwbiSU9TRCDh5XenTYzDv25tyexi9",
+            "mediaType": "image/png",
+            "description": [
+              "Medieval Demon with unattended baby"
+            ],
+            "Medieval Demon": "1",
+            "Unattended child": "1",
+            "Castle Background": "1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

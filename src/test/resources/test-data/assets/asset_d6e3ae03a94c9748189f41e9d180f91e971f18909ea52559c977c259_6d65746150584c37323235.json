@@ -1,0 +1,53 @@
+[
+  {
+    "policy_id": "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259",
+    "asset_name": "6d65746150584c37323235",
+    "asset_name_ascii": "metaPXL7225",
+    "fingerprint": "asset13ghgnk846ennea2xndmnygeyp6qx6h5pqvv23z",
+    "minting_tx_hash": "5a62ca2c96f29e1d59a5999f34747058f4f45e684d0118be41c705b4820cc586",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1649376000,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "metaPXLZ: Mint"
+        ]
+      },
+      "721": {
+        "d6e3ae03a94c9748189f41e9d180f91e971f18909ea52559c977c259": {
+          "metaPXL7225": {
+            "name": "metaPXL#7225",
+            "type": "dead",
+            "files": [
+              {
+                "src": "ipfs://QmbHjFUnv4dSg6JCwz2idbPfuA6K2rV24JB5mUHpTrpvM8",
+                "name": "metaPXL#7225",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPjQDs8MrmSueCyqYVzxMoVTN29X8hjUa1LZSrozMpcfx",
+            "website": "https://pxlz.org/",
+            "creators": [
+              "af@pxlz.org",
+              "@Fauna9608"
+            ],
+            "copyright": "DEADPXLZ",
+            "mediaType": "image/png",
+            "attributes": [
+              "chain",
+              "cigarette",
+              "goatee",
+              "long straight hair",
+              "monocle"
+            ],
+            "description": "The official 3D collectible version of PXL#7225"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

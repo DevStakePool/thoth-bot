@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706552756666696e436869657361",
+    "asset_name_ascii": "adapeRuffinChiesa",
+    "fingerprint": "asset180wrzx5guvhu63qhtyy5ckeqcfexdt4axeun4u",
+    "minting_tx_hash": "ec4cf01da285ec2a19db8fe81a6bbe33fea36828362a5ed76eb7c1c054689e4a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeRuffinChiesa": {
+            "Hat": "Feather Hat",
+            "Body": "Orange",
+            "Ears": "Plain",
+            "Eyes": "Spectacles",
+            "Head": "Orange",
+            "name": "Ruffin Chiesa",
+            "rate": "0.05",
+            "Class": "Merchants",
+            "files": [
+              {
+                "src": "ipfs://QmSDRJ5EfrzqtUQx9ns4VfzBbw55mtM6jiuo4KbqEecwMH",
+                "name": "Ruffin Chiesa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSDRJ5EfrzqtUQx9ns4VfzBbw55mtM6jiuo4KbqEecwMH",
+            "Family": "Chiesa",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Chiesa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

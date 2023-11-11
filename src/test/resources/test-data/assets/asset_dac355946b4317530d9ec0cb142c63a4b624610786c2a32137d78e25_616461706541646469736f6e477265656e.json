@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706541646469736f6e477265656e",
+    "asset_name_ascii": "adapeAddisonGreen",
+    "fingerprint": "asset1plwmsdnx2au3vkrfznmf7welftq47jmeh3k8rd",
+    "minting_tx_hash": "d9ebe66a979bcb8124b1850fc6e2ec24bbd3f60993be96893b6268279e38528f",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAddisonGreen": {
+            "Hat": "Gold Helmet",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Addison Green",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmTkwHJDG6FzDFGPNgh8wYBQwVQF5Pv6kyDRmaBdhgUi94",
+                "name": "Addison Green",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmTkwHJDG6FzDFGPNgh8wYBQwVQF5Pv6kyDRmaBdhgUi94",
+            "Family": "Green",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Green family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "61646170654669656c64696e674c617669676e65",
+    "asset_name_ascii": "adapeFieldingLavigne",
+    "fingerprint": "asset1u065p6zkpg3whexaj9ncu9qnaenxhv4g5j83cj",
+    "minting_tx_hash": "3018190a6322b876345a92cc1ed45866ee2cbe9515745eb62554bb54ea81cd84",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeFieldingLavigne": {
+            "Hat": "Privateer Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Fielding Lavigne",
+            "rate": "0.05",
+            "Class": "Royal Advisors",
+            "files": [
+              {
+                "src": "ipfs://QmRajZAVV7rRksfmqR2YPtfd5DVfbg3snvNnYhe3z69bob",
+                "name": "Fielding Lavigne",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRajZAVV7rRksfmqR2YPtfd5DVfbg3snvNnYhe3z69bob",
+            "Family": "Lavigne",
+            "Weapon": "Sword",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Lavigne family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

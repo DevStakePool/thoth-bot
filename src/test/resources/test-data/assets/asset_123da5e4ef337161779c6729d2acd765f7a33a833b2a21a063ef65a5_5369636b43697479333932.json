@@ -1,0 +1,51 @@
+[
+  {
+    "policy_id": "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5",
+    "asset_name": "5369636b43697479333932",
+    "asset_name_ascii": "SickCity392",
+    "fingerprint": "asset18tkga0emtuwj26xqcwkae2ecce0df5zdrmqcxt",
+    "minting_tx_hash": "8700d4d6f3f85849a0385d9dc5a45b57f241d68e3d3733b3624161e3244675ef",
+    "total_supply": "10010",
+    "mint_cnt": 11,
+    "burn_cnt": 0,
+    "creation_time": 1670716800,
+    "minting_tx_metadata": {
+      "721": {
+        "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5": {
+          "SickCity392": {
+            "name": "SickCity392-Airworthy",
+            "files": [
+              {
+                "src": "ipfs://QmeKGxTTrnmxcDLk3Ek1x6bF6YRXYoEUc5orTJvEdvY3b4",
+                "mediaType": "audio/wav"
+              }
+            ],
+            "image": "ipfs://QmTs83t4EQP8LkoFz1QiwFvwNgEqmpYPoe6Taj5jyCatdt",
+            "links": {
+              "twitter": "https://twitter.com/UkiyoeWarriors",
+              "facebook": "https://facebook.com/airworthy_official",
+              "instagram": "https://instagram.com/airworthy"
+            },
+            "genres": [
+              "hip hop",
+              "indie hiphop",
+              "underground hiphop"
+            ],
+            "artists": "Airworthy",
+            "copyright": "Airworthy ℗ 2023",
+            "collection": "Epoch Genesis v2",
+            "song_title": "7 Signs",
+            "album_title": "7 Signs",
+            "distributor": "https://sickcity.xyz",
+            "release_type": "Single",
+            "track_number": 1,
+            "song_duration": "PT3M24S",
+            "music_metadata_version": "v1"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

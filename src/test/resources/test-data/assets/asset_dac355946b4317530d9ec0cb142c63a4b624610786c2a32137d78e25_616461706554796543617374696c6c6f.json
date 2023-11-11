@@ -1,0 +1,97 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706554796543617374696c6c6f",
+    "asset_name_ascii": "adapeTyeCastillo",
+    "fingerprint": "asset1emqa4gwkljhl9244r3uqwne2x7gs80dh6txcqt",
+    "minting_tx_hash": "02404c7537ce3dcb1cb8dd8f2c7cd5bf82bea21922a138b24e801faedc4fd590",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643414400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeCyrBrown": {
+            "Hat": "Pirate Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Cyr Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmaBTGJeQBdYiUqyFYUWtC5vvX1CP5MZVKrKyhRXLiSmSF",
+                "name": "Cyr Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaBTGJeQBdYiUqyFYUWtC5vvX1CP5MZVKrKyhRXLiSmSF",
+            "Family": "Brown",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Goatee",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeTyeCastillo": {
+            "Hat": "None",
+            "Body": "Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Tye Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmRKWNAstxVZTwfq21hMrTHqSo192ZY6rRYjR5nVhR3hiG",
+                "name": "Tye Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRKWNAstxVZTwfq21hMrTHqSo192ZY6rRYjR5nVhR3hiG",
+            "Family": "Castillo",
+            "Weapon": "Sword",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          },
+          "adapeLelanddeBalboa": {
+            "Hat": "Hoodie",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Zombie",
+            "name": "Leland de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmSFFSZ6My8WgEeTmgjr9aqDxEcH5RnNBNqnS3juCBypCt",
+                "name": "Leland de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSFFSZ6My8WgEeTmgjr9aqDxEcH5RnNBNqnS3juCBypCt",
+            "Family": "de Balboa",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de Balboa family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

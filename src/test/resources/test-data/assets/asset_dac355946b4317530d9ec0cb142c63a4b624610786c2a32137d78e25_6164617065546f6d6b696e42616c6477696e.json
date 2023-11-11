@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065546f6d6b696e42616c6477696e",
+    "asset_name_ascii": "adapeTomkinBaldwin",
+    "fingerprint": "asset1hsh3nqh5pd0mpvzu6hu6e7crlz63vepk9vlspt",
+    "minting_tx_hash": "f146481bc33203173244666dbb6700babcb6d460a120a9063d02aa82ea1bd2d5",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeOakleyBrown": {
+            "Hat": "Feather Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Oakley Brown",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmYQpjfw5Niw9VczdmFhypj2c58TAw6TiwZpAvH8hnFMmX",
+                "name": "Oakley Brown",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYQpjfw5Niw9VczdmFhypj2c58TAw6TiwZpAvH8hnFMmX",
+            "Family": "Brown",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Brown family"
+          },
+          "adapeTomkinBaldwin": {
+            "Hat": "Top Hat",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Safety Goggles",
+            "Head": "Ape",
+            "name": "Tomkin Baldwin",
+            "rate": "0.05",
+            "Class": "Military Officers",
+            "files": [
+              {
+                "src": "ipfs://QmZmy4BWLNTFs9aHGjuFh8o1DHb5NonLLf2pXPsntEa8H4",
+                "name": "Tomkin Baldwin",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZmy4BWLNTFs9aHGjuFh8o1DHb5NonLLf2pXPsntEa8H4",
+            "Family": "Baldwin",
+            "Weapon": "Sword",
+            "Accessory": "Paint Brush",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Baldwin family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

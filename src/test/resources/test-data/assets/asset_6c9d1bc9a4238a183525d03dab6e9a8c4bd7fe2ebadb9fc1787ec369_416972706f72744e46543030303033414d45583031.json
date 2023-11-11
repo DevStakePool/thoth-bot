@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "6c9d1bc9a4238a183525d03dab6e9a8c4bd7fe2ebadb9fc1787ec369",
+    "asset_name": "416972706f72744e46543030303033414d45583031",
+    "asset_name_ascii": "AirportNFT00003AMEX01",
+    "fingerprint": "asset1vz8nth04kqn2kt8s4adsuy26lta0vzy89sjjse",
+    "minting_tx_hash": "c7107b03281d0724c6823f518ece5c6da89d889b35e39b7eb301010da16eca3a",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1639958400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "6c9d1bc9a4238a183525d03dab6e9a8c4bd7fe2ebadb9fc1787ec369": {
+          "AirportNFT00003AMEX01": {
+            "IATA": "MEX",
+            "city": "Mexico City",
+            "name": "AirportNFT MEX 01",
+            "files": [
+              {
+                "src": "ipfs://QmaEFTx839fgBYmBFSidvS3nwtLpeYxqKLiRwo77G4o2xi",
+                "name": "AirportNFT MEX 01",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaEFTx839fgBYmBFSidvS3nwtLpeYxqKLiRwo77G4o2xi",
+            "style": "airport tag",
+            "airport": "Mexico City International Airport",
+            "country": "Mexico",
+            "creator": "@airportnft",
+            "website": "https://airportnft.io/",
+            "continent": "North America",
+            "copyright": "Copyright AirportNFT 2021; all rights reserved.",
+            "mediaType": "image/jpeg",
+            "description": "Collection of airport tag NFT’s from around the world."
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

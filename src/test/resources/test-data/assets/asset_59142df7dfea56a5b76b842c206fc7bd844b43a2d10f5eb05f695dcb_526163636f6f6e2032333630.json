@@ -4,87 +4,18 @@
     "asset_name": "526163636f6f6e2032333630",
     "asset_name_ascii": "Raccoon 2360",
     "fingerprint": "asset1j7n440290reazexuyv65603nsp7msqxc399jcg",
-    "minting_tx_hash": "c14e03962e91f232b1c6937f41fdd49927e81c643e807bc258f835a6572c41af",
+    "minting_tx_hash": "495053e394e7ca979ba8c946fa6d3ffa181115798163b00ce7a53da417146d01",
     "total_supply": "1",
-    "mint_cnt": 1,
-    "burn_cnt": 0,
+    "mint_cnt": 2,
+    "burn_cnt": 1,
     "creation_time": 1660435200,
     "minting_tx_metadata": {
       "721": {
         "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb": {
-          "Raccoon 310": {
-            "name": "Raccoon #310",
-            "Index": "310",
-            "image": "ipfs://QmVtDJneREaFaihx9nYgcVDV8zP5h4UxarBnpzNJVbzbhG",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Possessed Eyes",
-              "Head": "Prison Hat",
-              "Genus": "Normal",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Prison Uniform",
-              "Left Hand": "War Horn",
-              "Syndicate": "Farmer",
-              "Profession": "Soldier",
-              "Right Hand": "Pumpkin",
-              "Base Point Multiplier": "1"
-            }
-          },
-          "Raccoon 1359": {
-            "name": "Raccoon #1359",
-            "Index": "1359",
-            "image": "ipfs://QmZcAMa6tXS7BGVWTQqcectx2jspYvg3KWCEK7Mm3zcFcd",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Cap",
-              "Genus": "Normal",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Blue Short Sleeve Shirt with Tie",
-              "Left Hand": "Rolling Pin",
-              "Syndicate": "Farmer",
-              "Profession": "Staff",
-              "Right Hand": "Bloody Heshian Money Bag",
-              "Base Point Multiplier": "1"
-            }
-          },
-          "Raccoon 1777": {
-            "name": "Raccoon #1777",
-            "Index": "1777",
-            "image": "ipfs://QmTARkE1Wt8abBjoLMkwU1ZrhkferQVrUEccrHpLrzBc3R",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Chef Hat",
-              "Genus": "Magma",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "Eye Patch",
-              "Wardrobe": "Farmer Brown Vest",
-              "Left Hand": "Beetroot",
-              "Syndicate": "Farmer",
-              "Profession": "General",
-              "Right Hand": "None",
-              "Base Point Multiplier": "1.35"
-            }
-          },
           "Raccoon 2360": {
             "name": "Raccoon #2360",
             "Index": "2360",
-            "image": "ipfs://QmauTe6DNbHnopRsJEzWHmXKk5CBPw7Y2qaa8tC1fxGuKp",
+            "image": "ipfs://QmQcLTFTEuPreCPoU6dvST5GynBDY2pqFBSC4pnTCaVCV1",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
             "copyright": "Raccoon Syndicate 2022",
@@ -92,6 +23,7 @@
             "attributes": {
               "Eyes": "Spiral Eyes",
               "Head": "None",
+              "Ring": "Emerald Ring",
               "Genus": "Nature",
               "Mouth": "None",
               "Nails": "Black Nails",
@@ -101,36 +33,13 @@
               "Syndicate": "Farmer",
               "Profession": "Captain",
               "Right Hand": "None",
-              "Base Point Multiplier": "1.2"
+              "Base Point Multiplier": "1.50"
             }
           },
-          "Raccoon 2993": {
-            "name": "Raccoon #2993",
-            "Index": "2993",
-            "image": "ipfs://QmQXgeuersUJBP9hBxMUDkg8diUSW7Th9RLzeCuMjuiCyV",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "Bandit Mask",
-              "Genus": "Wood",
-              "Mouth": "None",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Vest with Cream Shirt and Tie",
-              "Left Hand": "Straight Razor",
-              "Syndicate": "Hunter",
-              "Profession": "Soldier",
-              "Right Hand": "Pumpkin",
-              "Base Point Multiplier": "1.1"
-            }
-          },
-          "Raccoon 3600": {
-            "name": "Raccoon #3600",
-            "Index": "3600",
-            "image": "ipfs://QmRWWLjnmzewjz2uNCHignFUAYHafXMTJwuAMQja9tu9m4",
+          "Raccoon 8762": {
+            "name": "Raccoon #8762",
+            "Index": "8762",
+            "image": "ipfs://QmVqeG57T2mHbc2FeVRS3khGoDJrJzhyj2Ysi41otpqiUD",
             "Twitter": "@RaccoonSyndicat",
             "Website": "https://raccoonsyndicate.com/",
             "copyright": "Raccoon Syndicate 2022",
@@ -138,44 +47,23 @@
             "attributes": {
               "Eyes": "Bloodshot Eyes",
               "Head": "None",
-              "Genus": "Gold",
-              "Mouth": "Wheat Sideways",
+              "Ring": "Emerald Ring",
+              "Genus": "Diamond",
+              "Mouth": "None",
               "Nails": "Black Nails",
               "Eyewear": "None",
-              "Wardrobe": "Raccoon Syndicate T-Shirt",
-              "Left Hand": "Bottle of Juice",
-              "Syndicate": "Hunter",
+              "Wardrobe": "Green Cloak",
+              "Left Hand": "Sword",
+              "Syndicate": "Procyon Lotor",
               "Profession": "Soldier",
-              "Right Hand": "Nunchucks",
-              "Base Point Multiplier": "1.15"
-            }
-          },
-          "Raccoon 4401": {
-            "name": "Raccoon #4401",
-            "Index": "4401",
-            "image": "ipfs://QmRVJuUrzXYypco7E7vPp74etrkSkab1PSftmLjdkNMSGR",
-            "Twitter": "@RaccoonSyndicat",
-            "Website": "https://raccoonsyndicate.com/",
-            "copyright": "Raccoon Syndicate 2022",
-            "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Brown Eyes",
-              "Head": "None",
-              "Genus": "Normal",
-              "Mouth": "Frog Legs",
-              "Nails": "Black Nails",
-              "Eyewear": "None",
-              "Wardrobe": "Vest with Navy Shirt and Bow Tie",
-              "Left Hand": "Wheat Upright",
-              "Syndicate": "Farmer",
-              "Profession": "Staff",
-              "Right Hand": "Old Books",
-              "Base Point Multiplier": "1"
+              "Right Hand": "Money Bag Silver",
+              "Base Point Multiplier": "1.69"
             }
           }
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]

@@ -1,0 +1,522 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "616461706554683f6f646542616c626f61",
+    "asset_name_ascii": "adapeTh?odeBalboa",
+    "fingerprint": "asset1c8meyc7ff03cw4hf67pf3h0xjj07mvcgnn94te",
+    "minting_tx_hash": "bb0d05fb2f1ae1c4d3ab603bd22d27585f72af8232eb07a7a36be10b60c26ec9",
+    "total_supply": "1",
+    "mint_cnt": 2,
+    "burn_cnt": 1,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeAd?linHill": {
+            "Hat": "Pirate Hat",
+            "Body": "Black Wool Coat",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Adélin Hill",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://Qmai7nNKt335aR7doE5zzQE4GGwE3Y8md5gPXDc2uY3iPn",
+                "name": "Adélin Hill",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://Qmai7nNKt335aR7doE5zzQE4GGwE3Y8md5gPXDc2uY3iPn",
+            "Family": "Hill",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the Hill family"
+          },
+          "adapeAd?linMars": {
+            "Hat": "Knight Helmet",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Adélin Mars",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmXtSWVF9vHPQGLJHYhFe9ZBG2W5TLSfZHbqU2oA3CTw8G",
+                "name": "Adélin Mars",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXtSWVF9vHPQGLJHYhFe9ZBG2W5TLSfZHbqU2oA3CTw8G",
+            "Family": "Mars",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Mars family"
+          },
+          "adapeAd?linRich": {
+            "Hat": "Sombrero",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Adélin Rich",
+            "rate": "0.05",
+            "Class": "Artists",
+            "files": [
+              {
+                "src": "ipfs://QmfXgrtrUPRejDsxXzkvSQyRJ3EDde6ZQXf6Cv4fx1hQZZ",
+                "name": "Adélin Rich",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmfXgrtrUPRejDsxXzkvSQyRJ3EDde6ZQXf6Cv4fx1hQZZ",
+            "Family": "Rich",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the Rich family"
+          },
+          "adapeD?sirEvans": {
+            "Hat": "King's Crown",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Désir Evans",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmSUXiXny1KwRLfpiJy9ihhaPCZpKxEV4Asqh9NHBnQzhJ",
+                "name": "Désir Evans",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSUXiXny1KwRLfpiJy9ihhaPCZpKxEV4Asqh9NHBnQzhJ",
+            "Family": "Evans",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Evans family"
+          },
+          "adapeTh?oWilson": {
+            "Hat": "Fruit Basket",
+            "Body": "Ape",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Théo Wilson",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmR2MB2N8ZmmW3juww9U7qMW3xz9MFFPRFUCjAytDKh3D5",
+                "name": "Théo Wilson",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmR2MB2N8ZmmW3juww9U7qMW3xz9MFFPRFUCjAytDKh3D5",
+            "Family": "Wilson",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Wilson family"
+          },
+          "adapeBrockGarc?a": {
+            "Hat": "None",
+            "Body": "Doublet",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Brock García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPRPF4NQkpj3VbFCC1fisAYqbDUAds3UY1mmwbKEfEco5",
+                "name": "Brock García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPRPF4NQkpj3VbFCC1fisAYqbDUAds3UY1mmwbKEfEco5",
+            "Family": "García",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeCr?pinTaylor": {
+            "Hat": "None",
+            "Body": "Chainmail",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Crépin Taylor",
+            "rate": "0.05",
+            "Class": "Craftsmen",
+            "files": [
+              {
+                "src": "ipfs://QmRYJ1ivTKJf4dEY2cXPqPzNUjoFHCBN3tgmN2dVYDG8sV",
+                "name": "Crépin Taylor",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmRYJ1ivTKJf4dEY2cXPqPzNUjoFHCBN3tgmN2dVYDG8sV",
+            "Family": "Taylor",
+            "Weapon": "Sword",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Taylor family"
+          },
+          "adapeDonaldGarc?a": {
+            "Hat": "Knight Helmet",
+            "Body": "Prisoner Uniform",
+            "Ears": "Plain",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Donald García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPxnf2U5kwo1ATj1u1ECoRh73hxiFCZhHb1vguJG8eAd1",
+                "name": "Donald García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPxnf2U5kwo1ATj1u1ECoRh73hxiFCZhHb1vguJG8eAd1",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Neutral",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeHardenGarc?a": {
+            "Hat": "Pirate Hat",
+            "Body": "Knight Armor",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Harden García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmYYu5U3JtLa8pNmqecHVyNcn2riKkSmK1ZkdLnWFV8V7i",
+                "name": "Harden García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmYYu5U3JtLa8pNmqecHVyNcn2riKkSmK1ZkdLnWFV8V7i",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Green",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeLievinGarc?a": {
+            "Hat": "Knight Helmet",
+            "Body": "Ape",
+            "Ears": "Plain",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Lievin García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmWUbJApwh2CwNvc9z2C8XUDeGXH1hChtdokjjVB4omerB",
+                "name": "Lievin García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmWUbJApwh2CwNvc9z2C8XUDeGXH1hChtdokjjVB4omerB",
+            "Family": "García",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Warm",
+            "Facial Hair": "Big Beard",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeSalvatGarc?a": {
+            "Hat": "Top Hat",
+            "Body": "Lumberjack Shirt",
+            "Ears": "Plain",
+            "Eyes": "Wraparound Glasses",
+            "Head": "Ape",
+            "name": "Salvat García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmNaaz8CwYYEFZuLA9jhinpXZ4RqshEVWoG4rBo9QYUpZy",
+                "name": "Salvat García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmNaaz8CwYYEFZuLA9jhinpXZ4RqshEVWoG4rBo9QYUpZy",
+            "Family": "García",
+            "Weapon": "Spear",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeTh?odeBalboa": {
+            "Hat": "None",
+            "Body": "Brown Suit",
+            "Ears": "Feather Pen",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Théo de Balboa",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmSdfEGWx1nKAsmjQRmSiQMjBTMMa3FHXjrJaggtftZfzm",
+                "name": "Théo de Balboa",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSdfEGWx1nKAsmjQRmSiQMjBTMMa3FHXjrJaggtftZfzm",
+            "Family": "de Balboa",
+            "Weapon": "Arrows",
+            "Accessory": "Wheat",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de Balboa family"
+          },
+          "adapeAgathonGarc?a": {
+            "Hat": "Top Hat",
+            "Body": "Brown Suit",
+            "Ears": "Plain",
+            "Eyes": "Monocle",
+            "Head": "Ape",
+            "name": "Agathon García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPAkEnAuX6NuJ4za7kbEWdzvtZVE2pygnomZEUNeEPgTj",
+                "name": "Agathon García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPAkEnAuX6NuJ4za7kbEWdzvtZVE2pygnomZEUNeEPgTj",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Mustache",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeMarsdenGarc?a": {
+            "Hat": "Fruit Basket",
+            "Body": "Suit",
+            "Ears": "Earphones",
+            "Eyes": "Normal",
+            "Head": "Orange",
+            "name": "Marsden García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmXt9iSh7f2Jnv8Bf55VH5udbwuDhRK2zdN1VUojsKQxp3",
+                "name": "Marsden García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXt9iSh7f2Jnv8Bf55VH5udbwuDhRK2zdN1VUojsKQxp3",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeP?pindeMedici": {
+            "Hat": "Voltaire Wig",
+            "Body": "Knight Armor",
+            "Ears": "Earphones",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Pépin de' Medici",
+            "rate": "0.05",
+            "Class": "Nobles",
+            "files": [
+              {
+                "src": "ipfs://QmQXKhhfcWY91Mr9pqcKZtgdGhGwQRb6dtcpddNKMELpwm",
+                "name": "Pépin de' Medici",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmQXKhhfcWY91Mr9pqcKZtgdGhGwQRb6dtcpddNKMELpwm",
+            "Family": "de' Medici",
+            "Weapon": "None",
+            "Accessory": "Pipe",
+            "mediaType": "image/jpeg",
+            "Background": "Oker",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the de' Medici family"
+          },
+          "adapeThurlowGarc?a": {
+            "Hat": "Top Hat",
+            "Body": "Prisoner Uniform",
+            "Ears": "Silver Earring",
+            "Eyes": "Sunglasses",
+            "Head": "Ape",
+            "name": "Thurlow García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmUAsEUvyB3wFnwBNBVh3mQok4h7TwZSGcgYX15jwCA1xD",
+                "name": "Thurlow García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmUAsEUvyB3wFnwBNBVh3mQok4h7TwZSGcgYX15jwCA1xD",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeVicenteGarc?a": {
+            "Hat": "None",
+            "Body": "Ape",
+            "Ears": "Silver Earring",
+            "Eyes": "VR Headset",
+            "Head": "Ape",
+            "name": "Vicente García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmZvp8h2aLsrhn3kX2aNWDYjLPsqsYqKvWTy4te74QKmPQ",
+                "name": "Vicente García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmZvp8h2aLsrhn3kX2aNWDYjLPsqsYqKvWTy4te74QKmPQ",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Long White Beard",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeBeardsleyGarc?a": {
+            "Hat": "None",
+            "Body": "Robot",
+            "Ears": "Earphones",
+            "Eyes": "Normal",
+            "Head": "Robot",
+            "name": "Beardsley García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmSUy1SKc1nrCBJZhRb34MMkYjmFGzk8mvTMa8tTTyhTPx",
+                "name": "Beardsley García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmSUy1SKc1nrCBJZhRb34MMkYjmFGzk8mvTMa8tTTyhTPx",
+            "Family": "García",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Aqua",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          },
+          "adapeBeltr?nCastillo": {
+            "Hat": "Privateer Hat",
+            "Body": "Cardigan",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Cardano",
+            "name": "Beltrán Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmPxvrB2BGmqqAyCQjDdoN5KpfoLWW6jZEkqq1uwPdVxeY",
+                "name": "Beltrán Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmPxvrB2BGmqqAyCQjDdoN5KpfoLWW6jZEkqq1uwPdVxeY",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Cold",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          },
+          "adapeCharlemagneGarc?a": {
+            "Hat": "None",
+            "Body": "Cardigan",
+            "Ears": "Feather Pen",
+            "Eyes": "Aviators",
+            "Head": "Ape",
+            "name": "Charlemagne García",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmXZqo8nk6RUgrupJuPTonrz5sfxk4nBJC7kGWt4i8Cxme",
+                "name": "Charlemagne García",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmXZqo8nk6RUgrupJuPTonrz5sfxk4nBJC7kGWt4i8Cxme",
+            "Family": "García",
+            "Weapon": "Rifle",
+            "Accessory": "None",
+            "mediaType": "image/jpeg",
+            "Background": "Red",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the García family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

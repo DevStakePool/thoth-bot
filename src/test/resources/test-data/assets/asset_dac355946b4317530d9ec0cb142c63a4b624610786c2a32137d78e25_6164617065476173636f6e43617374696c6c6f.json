@@ -1,0 +1,47 @@
+[
+  {
+    "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+    "asset_name": "6164617065476173636f6e43617374696c6c6f",
+    "asset_name_ascii": "adapeGasconCastillo",
+    "fingerprint": "asset1660nhxaelqd6ye4ns5g3wgp2dlckfvw4kra58k",
+    "minting_tx_hash": "3aa3332320ead875b1ddf15b46662dab4310802892583119a7fb7f4896c51e04",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1643500800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25": {
+          "adapeGasconCastillo": {
+            "Hat": "Hoodie",
+            "Body": "Rainbow Suit",
+            "Ears": "Silver Earring",
+            "Eyes": "Normal",
+            "Head": "Ape",
+            "name": "Gascon Castillo",
+            "rate": "0.05",
+            "Class": "Explorers",
+            "files": [
+              {
+                "src": "ipfs://QmaUNrnANmUfTcPbQNxqLrfVMYEQYueH6uNJiSENtuBb5B",
+                "name": "Gascon Castillo",
+                "mediaType": "image/jpeg"
+              }
+            ],
+            "image": "ipfs://QmaUNrnANmUfTcPbQNxqLrfVMYEQYueH6uNJiSENtuBb5B",
+            "Family": "Castillo",
+            "Weapon": "None",
+            "Accessory": "Cigar",
+            "mediaType": "image/jpeg",
+            "Background": "Blue",
+            "Facial Hair": "Normal",
+            "description": "A distinguished member of the Castillo family"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -5,9 +5,9 @@
     "asset_name_ascii": "Raccoon 1872",
     "fingerprint": "asset179p6lexr7znwn0sg3s67dczl48y2fvrvtfxjmd",
     "minting_tx_hash": "a7bf9c3121dc1f5ee7fba582633c4b7933a69463719d3ac85afa222a37327400",
-    "total_supply": "2",
+    "total_supply": "1",
     "mint_cnt": 2,
-    "burn_cnt": 0,
+    "burn_cnt": 1,
     "creation_time": 1660521600,
     "minting_tx_metadata": {
       "721": {
@@ -39,6 +39,7 @@
         }
       }
     },
-    "token_registry_metadata": null
+    "token_registry_metadata": null,
+    "cip68_metadata": null
   }
 ]
