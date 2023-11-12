@@ -4,6 +4,10 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.NullNode;
+import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,17 +15,24 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.base.Result;
+import rest.koios.client.backend.api.base.common.Asset;
+import rest.koios.client.backend.api.base.common.TxHash;
 import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.model.Tip;
+import rest.koios.client.backend.api.pool.model.PoolInfo;
+import rest.koios.client.backend.api.transactions.model.TxCertificate;
 import rest.koios.client.backend.api.transactions.model.TxIO;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
+import rest.koios.client.backend.api.transactions.model.TxPlutusContract;
 import rest.koios.client.backend.factory.options.*;
 import rest.koios.client.backend.factory.options.filters.Filter;
 import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -33,6 +44,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTaskV2.class);
     private static final String DELEGATION_CERTIFICATE = "delegation";
     private static final String BLOCK_HEIGHT_FIELD = "block_height";
+    private static final int MAX_TX_IN_TELEGRAM_NOTIFICATION = 3;
     @Value("${thoth.test.allow-jumbo-message}")
     private Boolean allowJumboMessage;
 
@@ -102,8 +114,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             while (batchIterator.hasNext()) {
                 List<User> usersBatch = batchIterator.next();
-                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
                 List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
+                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
 
                 LOG.debug("Processing users batch size {}, stake batch {}, address batch{}", usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
 
@@ -192,16 +204,21 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 }
             } while (resp.isSuccessful() && !resp.getValue().isEmpty());
 
+            // Get ADA Handles
+            List<String> userAddresses = stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList());
+            userAddresses.addAll(addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()));
+            Map<String, String> handles = getAdaHandleForAccount(userAddresses.toArray(new String[0]));
+
             // Eventually it can be parallelized
             for (User u : stakeUsersBatch) {
                 if (addressesUtxOs.containsKey(u.getAddress())) {
-                    processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo());
+                    processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
                 }
             }
 
             for (User u : addrUsersBatch) {
                 if (addressesUtxOs.containsKey(u.getAddress())) {
-                    processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo());
+                    processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
                 }
             }
         } catch (ApiException e) {
@@ -209,19 +226,19 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
     }
 
-    private void processUserTxs(User user, List<UTxO> uTxOS, Integer blockNo) throws ApiException {
+    private void processUserTxs(User user, List<UTxO> uTxOS, Integer blockNo, Map<String, String> handles) throws ApiException {
         // Cleanup any eventual old TX. This is due to the fact that we collected TXs from other users too, in the same Koios call
         uTxOS.removeIf(utxo -> utxo.getBlockHeight() <= user.getLastBlockHeight());
 
         if (uTxOS.isEmpty()) {
-            LOG.debug("No new TX found for user {} with block height {}. Updating the user with the last tip {}",
-                    user.getAddress(), user.getLastBlockHeight(), blockNo);
+            LOG.debug("No new TX found for user {} with last block height {}. Updating the user {} with the last block height from the tip {}",
+                    user.getAddress(), user.getLastBlockHeight(), user.getId(), blockNo);
             this.userDao.updateUserBlockHeight(user.getId(), blockNo);
             return;
         }
 
         // Get all UTxOs TX hashes
-        List<String> allTxHashes = uTxOS.stream().map(UTxO::getTxHash).collect(Collectors.toList());
+        List<String> allTxHashes = uTxOS.stream().map(UTxO::getTxHash).distinct().collect(Collectors.toList());
         LOG.debug("Getting TX information for {} TX(s), for a the user with address {}",
                 allTxHashes.size(), user.getAddress());
         if (LOG.isTraceEnabled())
@@ -238,16 +255,42 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         LOG.debug("Got all TXs {} for the user {}",
                 txInfoResp.getValue().size(), user.getAddress());
 
-        for (TxInfo txInfo : txInfoResp.getValue()) {
-            processTxForUser(txInfo, user);
+        try {
+            List<StringBuilder> txBuilders = new ArrayList<>();
+            for (TxInfo txInfo : txInfoResp.getValue()) {
+                StringBuilder sb = processTxForUser(txInfo, user, handles);
+                txBuilders.add(sb);
+            }
+
+            if (!txInfoResp.getValue().isEmpty()) {
+                // update the highest block for the user
+                Optional<TxInfo> maxBlockHeight = txInfoResp.getValue().stream().max(Comparator.comparing(TxInfo::getBlockHeight));
+
+                if (maxBlockHeight.isPresent()) {
+                    // Update the user with the new block height plus 1 to avoid picking the last TX
+                    this.userDao.updateUserBlockHeight(user.getId(), maxBlockHeight.get().getBlockHeight() + 1);
+                    LOG.debug("Updated last block height to {} for user {}",
+                            maxBlockHeight.get().getBlockHeight() + 1, user.getId());
+                } else {
+                    LOG.error("Can't find max block height among {} TX(s) for user {}",
+                            txInfoResp.getValue().size(), user.getId());
+                }
+            }
+
+            // compose telegram messages and send them for the user
+            notifyTelegramUser(txBuilders, user, handles);
+        } catch (Exception e) {
+            LOG.error("Exception while processing {} TX(s) for the user {}",
+                    txInfoResp.getValue().size(), user, e);
         }
     }
 
-    private void processTxForUser(TxInfo txInfo, User user) {
+    private StringBuilder processTxForUser(TxInfo txInfo, User user, Map<String, String> handles) {
         // check input and output of the TX to determine the nature of the TX itself
         Set<String> allInputAddresses = txInfo.getInputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
         Set<String> allOutputAddresses = txInfo.getOutputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
-        TxType txType = null;
+
+        TxType txType;
         if (allInputAddresses.size() == 1 && allOutputAddresses.size() == 1 &&
                 allInputAddresses.contains(user.getAddress()) && allOutputAddresses.contains(user.getAddress()))
             txType = TxType.TX_INTERNAL;
@@ -259,10 +302,257 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         LOG.debug("User {} TX {} is of type {}",
                 user.getAddress(), txInfo.getTxHash(), txType);
 
-        // List of assets received if it's a TX_RECEIVED + ASSET_RECEIVED txInfo.getAssetsMinted()
+        Double fee = Long.valueOf(txInfo.getFee()) / LOVELACE;
+
+        // We check the inputs and outputs
+        List<TxIO> accountOutputs = Collections.emptyList();
+        List<TxIO> accountInputs = txInfo.getInputs().stream()
+                .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                .collect(Collectors.toList());
+
+        switch (txType) {
+            case TX_INTERNAL: {
+                accountInputs = Collections.emptyList();
+                break;
+            }
+            case TX_RECEIVED: {
+                accountOutputs = txInfo.getOutputs().stream()
+                        .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                        .collect(Collectors.toList());
+                break;
+            }
+            case TX_SENT: {
+                accountOutputs = txInfo.getOutputs().stream()
+                        .filter(tx -> !user.getAddress().equals(tx.getStakeAddr()) && !user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                        .collect(Collectors.toList());
+                break;
+            }
+        }
+
+        List<rest.koios.client.backend.api.base.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
+
+        LOG.debug("All assets:\n{}", allAssets);
+        double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.parseLong(tx.getValue())).sum() / LOVELACE;
+
+        // If it's a SENT funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
+        if (txType == TxType.TX_SENT && !accountInputs.isEmpty()) {
+            List<TxIO> txOutputsBelongingToTheUser = txInfo.getOutputs().stream()
+                    .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                    .collect(Collectors.toList());
+
+            Double inputFunds = accountInputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
+            Double outputFunds = txOutputsBelongingToTheUser.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
+            receivedOrSentFunds = inputFunds - outputFunds;
+        }
+        if (txType == TxType.TX_SENT) receivedOrSentFunds *= -1.0d;
+
+        // Check for certificates in case it's a delegation TX
+        String delegateToPoolName = null;
+        String delegateToPoolId = null;
+        if (txType == TxType.TX_INTERNAL && txInfo.getCertificates() != null && !txInfo.getCertificates().isEmpty()) {
+            LOG.debug("The TX {} has {} certificates", txInfo.getTxHash(), txInfo.getCertificates().size());
+            Optional<TxCertificate> delegationCertOpt = txInfo.getCertificates().stream().filter(c -> c.getType().equals(DELEGATION_CERTIFICATE)).findFirst();
+            if (delegationCertOpt.isEmpty())
+                LOG.debug("None of the TX {} certificates are of type {}", txInfo.getTxHash(), DELEGATION_CERTIFICATE);
+            else {
+                Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(0)).build();
+                delegateToPoolId = delegationCertOpt.get().getInfo().getPoolIdBech32();
+                LOG.debug("New delegation for TX {} on pool-id {}", txInfo.getTxHash(), delegateToPoolId);
+                List<PoolInfo> poolInfoList = null;
+
+                try {
+                    Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(Arrays.asList(delegateToPoolId), options);
+                    if (poolInfoRes.isSuccessful()) poolInfoList = poolInfoRes.getValue();
+                    else LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
+                } catch (ApiException e) {
+                    LOG.warn("Cannot retrieve pool information: {}", e, e);
+                }
+
+                delegateToPoolName = getPoolName(poolInfoList, delegateToPoolId);
+            }
+        }
+
+        LOG.debug("fee={} ADA, {}={} ADA", fee, txType, receivedOrSentFunds);
+        String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
+        Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
+
+        // Check for any metadata worth showing
+        String metadataMessage = null;
+        if (txInfo.getMetadata() != null && !(txInfo.getMetadata() instanceof NullNode)) {
+            JsonNode jsonMetadata = txInfo.getMetadata();
+            // See if there's a "msg"
+            JsonNode msgNode = jsonMetadata.findValue("msg");
+            if (msgNode != null && msgNode.isArray()) {
+                ArrayNode msgArray = (ArrayNode) msgNode;
+                if (!msgArray.isEmpty())
+                    metadataMessage = msgArray.get(0).asText();
+
+            }
+        }
+
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("TX {} Amount {} Fees {} USD Price {} Pool Delegation {} ({}) Message {} Assets {}",
+                    txInfo.getTxHash(), receivedOrSentFunds, fee, latestCardanoPriceUsd, delegateToPoolName, delegateToPoolId,
+                    metadataMessage, allAssets.stream().map(Asset::getFingerprint).collect(Collectors.joining("\n")));
+        }
+
+        StringBuilder sb = new StringBuilder();
+        renderSingleTransactionMessage(sb, txInfo, allAssets, txType, latestCardanoPriceUsd, fee,
+                receivedOrSentFunds, delegateToPoolName, delegateToPoolId, metadataMessage);
+        return sb;
+        //TODO List of assets received if it's a TX_RECEIVED + ASSET_RECEIVED txInfo.getAssetsMinted()
         // txInfo.getMetadata() // a way to get the asset without making another KOIOS call
 
     }
+
+    private void notifyTelegramUser(List<StringBuilder> txBuilders, User user, Map<String, String> handles) {
+        Iterator<List<StringBuilder>> batches = batches(txBuilders, MAX_TX_IN_TELEGRAM_NOTIFICATION).iterator();
+
+        while (batches.hasNext()) {
+            List<StringBuilder> batch = batches.next();
+            StringBuilder messageBuilder = renderTransactionMessageHeader(user, handles, batch.size());
+            batch.forEach(b -> messageBuilder.append(b.toString()));
+
+            if (LOG.isTraceEnabled()) {
+                LOG.trace("Telegram message for chat-id {}: {}", user.getChatId(), messageBuilder);
+            }
+
+            // Notify the user
+            this.telegramFacade.sendMessageTo(user.getChatId(), messageBuilder.toString());
+
+        }
+    }
+
+    private StringBuilder renderTransactionMessageHeader(User u, Map<String, String> handles, int noTxs) {
+        // Message header
+        StringBuilder messageBuilder = new StringBuilder();
+        messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
+                .append(u.isStakeAddress() ? CARDANO_SCAN_STAKE_KEY : CARDANO_SCAN_ADDR_KEY)
+                .append(u.getAddress()).append("\">")
+                .append(handles.get(u.getAddress()))
+                .append("</a>\n")
+                .append(EmojiParser.parseToUnicode(":envelope: "))
+                .append(noTxs)
+                .append(" new transaction(s)\n\n");
+
+        return messageBuilder;
+    }
+
+    private StringBuilder renderSingleTransactionMessage(StringBuilder messageBuilder, TxInfo txInfo,
+                                                         List<rest.koios.client.backend.api.base.common.Asset> allAssets, TxType txType,
+                                                         Double latestCardanoPriceUsd, Double fee, double receivedOrSentFunds,
+                                                         String delegateToPoolName, String delegateToPoolId, String metadataMessage) {
+        String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
+        switch (txType) {
+            case TX_RECEIVED:
+                messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_down: "));
+                break;
+            case TX_SENT:
+                messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_up: "));
+                break;
+            case TX_INTERNAL:
+                messageBuilder.append(EmojiParser.parseToUnicode(":repeat: "));
+                fundsTokenText = String.format("Transfer %s", allAssets.isEmpty() ? "" : "and Tokens");
+                break;
+        }
+
+        // TX header
+        messageBuilder.append("<a href=\"")
+                .append(CARDANO_SCAN_TX)
+                .append(txInfo.getTxHash()).append("\">")
+                .append(txType.getHumanReadableText())
+                .append(" ")
+                .append(fundsTokenText)
+                .append("</a>")
+                .append(" <i>")
+                .append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(txInfo.getTxTimestamp(), 0, ZoneOffset.UTC)))
+                .append("</i>")
+                .append("\n")
+                .append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
+                .append("Fee ")
+                .append(String.format("%,.2f", fee))
+                .append(ADA_SYMBOL);
+
+        // USD value fees
+        if (latestCardanoPriceUsd != null) {
+            messageBuilder.append(" (").append(String.format("%,.2f $", fee * latestCardanoPriceUsd)).append(")");
+        }
+
+        // Received/Sent funds
+        if (txType != TxType.TX_INTERNAL) {
+            messageBuilder.append(EmojiParser.parseToUnicode("\n:small_blue_diamond:"))
+                    .append(txType == TxType.TX_RECEIVED ? "Received " : "Sent ")
+                    .append(String.format("%,.2f", receivedOrSentFunds)).append(ADA_SYMBOL);
+
+            // USD value if any
+            if (latestCardanoPriceUsd != null) {
+                messageBuilder
+                        .append(" (")
+                        .append(String.format("%,.2f $", receivedOrSentFunds * latestCardanoPriceUsd))
+                        .append(")");
+            }
+        }
+
+        // Plutus contract?
+        if (txInfo.getPlutusContracts() != null && !txInfo.getPlutusContracts().isEmpty()) {
+            messageBuilder.append(EmojiParser.parseToUnicode("\n:page_with_curl: Plutus Contracts:"));
+
+            for (TxPlutusContract plutusContract : txInfo.getPlutusContracts()) {
+                messageBuilder.append(EmojiParser.parseToUnicode("\n\t:black_small_square:"));
+
+                if (plutusContract.getAddress() != null && this.contracts.containsKey(plutusContract.getAddress())) {
+                    messageBuilder.append(" [").append(this.contracts.get(plutusContract.getAddress())).append("] ");
+                }
+
+                messageBuilder.append(Boolean.TRUE.equals(plutusContract.getValidContract()) ? "Valid" : "Invalid")
+                        .append(" with size ").append(plutusContract.getSize()).append(" byte(s) ");
+
+            }
+        }
+
+        // delegation?
+        if (delegateToPoolName != null && delegateToPoolId != null) {
+            messageBuilder
+                    .append(EmojiParser.parseToUnicode("\n:classical_building:"))
+                    .append(" Delegated to ")
+                    .append("<a href=\"")
+                    .append(CARDANO_SCAN_STAKE_POOL)
+                    .append(delegateToPoolId)
+                    .append("\">")
+                    .append(delegateToPoolName)
+                    .append("</a>");
+        }
+
+        // Message on metadata?
+        if (metadataMessage != null) {
+            messageBuilder
+                    .append(EmojiParser.parseToUnicode("\n:speech_balloon:"))
+                    .append(metadataMessage);
+        }
+
+        // Any assets?
+        if (!allAssets.isEmpty()) {
+            for (rest.koios.client.backend.api.base.common.Asset asset : allAssets) {
+                Object assetQuantity = null;
+                try {
+                    assetQuantity = this.assetFacade.getAssetQuantity(asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
+                } catch (ApiException e) {
+                    LOG.warn("Could not get the asset quantity for asset {}/{}: {}",
+                            asset.getPolicyId(), asset.getAssetName(), e.toString());
+                }
+
+                messageBuilder
+                        .append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
+                        .append(hexToAscii(asset.getAssetName())).append(" ")
+                        .append(this.assetFacade.formatAssetQuantity(assetQuantity));
+            }
+        }
+
+        messageBuilder.append("\n\n"); // Some padding between TXs
+
+        return messageBuilder;
+    }
+
 
     public <T> Stream<List<T>> batches(List<T> source, int length) {
         if (length <= 0) throw new IllegalArgumentException("length cannot be negative, length=" + length);

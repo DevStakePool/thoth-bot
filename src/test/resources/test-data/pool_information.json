@@ -43,8 +43,8 @@
     "sigma": 1.3686860956777551e-05,
     "block_count": 69,
     "live_pledge": "4509074197",
-    "live_stake": "315016128564",
-    "live_delegators": 27,
+    "live_stake": "314912824280",
+    "live_delegators": 26,
     "live_saturation": 0.43
   },
   {
@@ -148,7 +148,7 @@
     "sigma": 4.281353066085624e-05,
     "block_count": 546,
     "live_pledge": "20103769075",
-    "live_stake": "972129293998",
+    "live_stake": "972128115781",
     "live_delegators": 251,
     "live_saturation": 1.34
   },
@@ -307,7 +307,12 @@
     ],
     "meta_url": "https://bit.ly/35yEUof",
     "meta_hash": "1ae1007d42d3c0468f6c96faca54b5df9953b31383883dc4a723c83234c8bcf6",
-    "meta_json": null,
+    "meta_json": {
+      "name": "Stake ADA Pool",
+      "ticker": "RCADA",
+      "homepage": "https://www.stakecardanopool.com",
+      "description": "REGENERATIVE CRUSADERS: Environment, Society & Sustainable Innovation."
+    },
     "pool_status": "registered",
     "retiring_epoch": null,
     "op_cert": "482a481c0694d69bca54363960709667ec3972b2095bee5734b4a6636d713450",

@@ -266,7 +266,7 @@ public class IntegrationTest {
     @Test
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
-                        Mockito.timeout(60 * 1000)
+                        Mockito.timeout(60000 * 1000)
                                 .times(9))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 

@@ -85,7 +85,7 @@ public abstract class AbstractCheckerTask {
         Map<String, String> handlesMap = new HashMap<>();
 
         List<String> stakingAddresses = Arrays.stream(addresses).filter(User::isStakingAddress).collect(Collectors.toList());
-        List<String> normalAddresses = Arrays.stream(addresses).filter(a -> !User.isStakingAddress(a)).collect(Collectors.toList());
+        List<String> normalAddresses = Arrays.stream(addresses).filter(User::isNormalAddress).collect(Collectors.toList());
 
         Set<String> processedAddresses = new HashSet<>();
         try {
