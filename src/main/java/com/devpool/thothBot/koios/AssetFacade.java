@@ -111,6 +111,8 @@ public class AssetFacade implements Runnable {
     }
 
     public String formatAssetQuantity(Object assetQuantity) {
+        if (assetQuantity == null) return "?";
+
         return assetQuantity instanceof Double ?
                 String.format("%,.2f", assetQuantity) :
                 String.format("%,d", assetQuantity);

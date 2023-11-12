@@ -10,6 +10,7 @@ public class User {
     private String address;
     private Integer lastBlockHeight;
     private Integer lastEpochNumber;
+    @Deprecated
     private List<String> accountAddresses;
 
     public User(Long chatId, String address, Integer blockNumber, Integer lastEpochNumber) {
@@ -54,7 +55,7 @@ public class User {
     }
 
     public boolean isNormalAddress() {
-        return !isStakeAddress();
+        return isNormalAddress(this.address);
     }
 
     public Integer getLastBlockHeight() {
@@ -73,14 +74,17 @@ public class User {
         this.address = address;
     }
 
+    @Deprecated
     public List<String> getAccountAddresses() {
         return accountAddresses;
     }
 
+    @Deprecated
     public void setAccountAddresses(List<String> accountAddresses) {
         this.accountAddresses = accountAddresses;
     }
 
+    @Deprecated
     public void appendAccountAddresses(List<String> accountAddresses) {
         if (this.accountAddresses == null)
             this.accountAddresses = new ArrayList<>();
@@ -97,5 +101,9 @@ public class User {
 
     public static boolean isStakingAddress(String address) {
         return address.startsWith(STAKE_ADDR_PREFIX);
+    }
+
+    public static boolean isNormalAddress(String address) {
+        return !isStakingAddress(address);
     }
 }

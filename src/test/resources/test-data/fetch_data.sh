@@ -93,6 +93,7 @@ curl -s -X POST "https://api.koios.rest/api/v1/pool_info" \
 # Fetching data for TX info
 echo "Fetching data for transactions info"
 ALL_TX_HASHES=$(for i in `ls *utxos.json`; do cat $i | jq -r '"\""+.[].tx_hash + "\","'; done)
+ALL_TX_HASHES=$(echo -n ${ALL_TX_HASHES} | awk -vRS=',' '{print $0}' | sort | uniq | awk '{printf $0","}')
 ALL_TX_HASHES=$(echo ${ALL_TX_HASHES} | sed 's/.$//')
 curl -s -X POST "https://api.koios.rest/api/v1/tx_info" \
  -H "Accept: application/json" \
