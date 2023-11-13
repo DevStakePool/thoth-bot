@@ -1,6 +1,7 @@
 package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.exceptions.KoiosResponseException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
@@ -16,7 +17,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.common.Asset;
-import rest.koios.client.backend.api.base.common.TxHash;
 import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.model.Tip;
@@ -34,6 +34,7 @@ import javax.annotation.PreDestroy;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.*;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -108,154 +109,151 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
     @Override
     public void run() {
-        try {
-            LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
-            Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
+        LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
+        Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
 
-            while (batchIterator.hasNext()) {
-                List<User> usersBatch = batchIterator.next();
-                List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
-                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
+        while (batchIterator.hasNext()) {
+            List<User> usersBatch = batchIterator.next();
+            List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
+            List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
 
-                LOG.debug("Processing users batch size {}, stake batch {}, address batch{}", usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
-
+            LOG.debug("Processing users batch size {}, stake batch {}, address batch{}",
+                    usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
+            try {
                 processUsersBatch(stakeUsersBatch, addrUsersBatch);
-
+            } catch (Exception e) {
+                LOG.error("Error while processing user batch", e);
             }
-        } catch (Exception e) {
-            LOG.error("Unknown error while processing transactions", e);
         }
     }
 
-    private void processUsersBatch(List<User> stakeUsersBatch, List<User> addrUsersBatch) {
-        try {
-            // get the network last tip
-            Result<Tip> chainTipResp = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
-            if (!chainTipResp.isSuccessful()) {
-                LOG.error("Could not get the chain tip for the processing of the batch user. Code {}, Response {}",
-                        chainTipResp.getCode(), chainTipResp.getResponse());
-                return;
+    private void processUsersBatch(List<User> stakeUsersBatch, List<User> addrUsersBatch) throws KoiosResponseException, ApiException {
+        // get the network last tip
+        Result<Tip> chainTipResp = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
+        if (!chainTipResp.isSuccessful()) {
+            LOG.error("Could not get the chain tip for the processing of the batch user. Code {}, Response {}",
+                    chainTipResp.getCode(), chainTipResp.getResponse());
+            return;
+        }
+
+        // Among this batch of users, get the smallest block height. Old TXs will be filtered via software later to avoid
+        // duplication of notifications
+        Optional<User> lowestBlockHeightForStake = stakeUsersBatch.stream().min(Comparator.comparing(User::getLastBlockHeight));
+        Optional<User> lowestBlockHeightForAddr = addrUsersBatch.stream().min(Comparator.comparing(User::getLastBlockHeight));
+
+        // address -> list of UTxOS
+        Map<String, List<UTxO>> addressesUtxOs = new HashMap<>();
+
+        Result<List<UTxO>> resp;
+        long offset = 0;
+        // First staking addresses
+        do {
+            int blockHeight = 0;
+            if (lowestBlockHeightForStake.isPresent())
+                blockHeight = lowestBlockHeightForStake.get().getLastBlockHeight();
+
+            Options options = Options.builder()
+                    .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                    .option(Offset.of(offset)).
+                    option(Filter.of(BLOCK_HEIGHT_FIELD, FilterType.GT, Integer.toString(blockHeight)))
+                    .option(Order.by(BLOCK_HEIGHT_FIELD, SortType.DESC)).build();
+            offset += DEFAULT_PAGINATION_SIZE;
+
+            // Retrieve all UTXOs
+            resp = this.koiosFacade.getKoiosService().getAccountService().getAccountUTxOs(
+                    stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
+
+            if (!resp.isSuccessful()) {
+                LOG.warn("Failed to retrieve staking address UTXOs. Code {}, Response {}",
+                        resp.getCode(), resp.getResponse());
+                throw new KoiosResponseException(String.format("Failed to retrieve staking address UTXOs. Code %d, Response %s",
+                        resp.getCode(), resp.getResponse()));
             }
 
-            // Among this batch of users, get the smallest block height. Old TXs will be filtered via software later to avoid
-            // duplication of notifications
-            Optional<User> lowestBlockHeightForStake = stakeUsersBatch.stream().min(Comparator.comparing(User::getLastBlockHeight));
-            Optional<User> lowestBlockHeightForAddr = addrUsersBatch.stream().min(Comparator.comparing(User::getLastBlockHeight));
+            for (UTxO uTxO : resp.getValue()) {
+                addressesUtxOs.computeIfAbsent(uTxO.getStakeAddress(), u -> new ArrayList<>()).add(uTxO);
+            }
+        } while (resp.isSuccessful() && !resp.getValue().isEmpty());
 
-            // address -> list of UTxOS
-            Map<String, List<UTxO>> addressesUtxOs = new HashMap<>();
+        // Same for the normal address
+        offset = 0;
+        do {
+            int blockHeight = 0;
+            if (lowestBlockHeightForAddr.isPresent())
+                blockHeight = lowestBlockHeightForAddr.get().getLastBlockHeight();
 
-            Result<List<UTxO>> resp;
-            long offset = 0;
-            // First staking addresses
-            do {
-                int blockHeight = 0;
-                if (lowestBlockHeightForStake.isPresent())
-                    blockHeight = lowestBlockHeightForStake.get().getLastBlockHeight();
+            Options options = Options.builder()
+                    .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                    .option(Offset.of(offset))
+                    .option(Filter.of(BLOCK_HEIGHT_FIELD, FilterType.GT, Integer.toString(blockHeight)))
+                    .option(Order.by(BLOCK_HEIGHT_FIELD, SortType.DESC)).build();
+            offset += DEFAULT_PAGINATION_SIZE;
 
-                Options options = Options.builder()
-                        .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                        .option(Offset.of(offset)).
-                        option(Filter.of(BLOCK_HEIGHT_FIELD, FilterType.GT, Integer.toString(blockHeight)))
-                        .option(Order.by(BLOCK_HEIGHT_FIELD, SortType.DESC)).build();
-                offset += DEFAULT_PAGINATION_SIZE;
+            // Retrieve all UTXOs
+            resp = this.koiosFacade.getKoiosService().getAddressService().getAddressUTxOs(
+                    addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
 
-                // Retrieve all UTXOs
-                resp = this.koiosFacade.getKoiosService().getAccountService().getAccountUTxOs(
-                        stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
-
-                if (!resp.isSuccessful()) {
-                    LOG.warn("Failed to retrieve staking address UTXOs. Code {}, Response {}",
-                            resp.getCode(), resp.getResponse());
-                    // FIXME throw exception here
-                }
-
-                for (UTxO uTxO : resp.getValue()) {
-                    addressesUtxOs.computeIfAbsent(uTxO.getStakeAddress(), u -> new ArrayList<>()).add(uTxO);
-                }
-            } while (resp.isSuccessful() && !resp.getValue().isEmpty());
-
-            // Same for the normal address
-            offset = 0;
-            do {
-                int blockHeight = 0;
-                if (lowestBlockHeightForAddr.isPresent())
-                    blockHeight = lowestBlockHeightForAddr.get().getLastBlockHeight();
-
-                Options options = Options.builder()
-                        .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                        .option(Offset.of(offset))
-                        .option(Filter.of(BLOCK_HEIGHT_FIELD, FilterType.GT, Integer.toString(blockHeight)))
-                        .option(Order.by(BLOCK_HEIGHT_FIELD, SortType.DESC)).build();
-                offset += DEFAULT_PAGINATION_SIZE;
-
-                // Retrieve all UTXOs
-                resp = this.koiosFacade.getKoiosService().getAddressService().getAddressUTxOs(
-                        addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
-
-                if (!resp.isSuccessful()) {
-                    LOG.warn("Failed to retrieve normal address UTXOs. Code {}, Response {}",
-                            resp.getCode(), resp.getResponse());
-                    // FIXME throw exception here
-                }
-
-                for (UTxO uTxO : resp.getValue()) {
-                    addressesUtxOs.computeIfAbsent(uTxO.getAddress(), u -> new ArrayList<>()).add(uTxO);
-                }
-            } while (resp.isSuccessful() && !resp.getValue().isEmpty());
-
-            // Get ADA Handles
-            List<String> userAddresses = stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList());
-            userAddresses.addAll(addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()));
-            Map<String, String> handles = getAdaHandleForAccount(userAddresses.toArray(new String[0]));
-
-            // Eventually it can be parallelized
-            for (User u : stakeUsersBatch) {
-                if (addressesUtxOs.containsKey(u.getAddress())) {
-                    processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
-                }
+            if (!resp.isSuccessful()) {
+                LOG.warn("Failed to retrieve normal address UTXOs. Code {}, Response {}",
+                        resp.getCode(), resp.getResponse());
+                throw new KoiosResponseException(String.format("Failed to retrieve normal address UTXOs. Code %d, Response %s",
+                        resp.getCode(), resp.getResponse()));
             }
 
-            for (User u : addrUsersBatch) {
-                if (addressesUtxOs.containsKey(u.getAddress())) {
-                    processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
-                }
+            for (UTxO uTxO : resp.getValue()) {
+                addressesUtxOs.computeIfAbsent(uTxO.getAddress(), u -> new ArrayList<>()).add(uTxO);
             }
-        } catch (ApiException e) {
-            //TODO
+        } while (resp.isSuccessful() && !resp.getValue().isEmpty());
+
+        // Get ADA Handles
+        List<String> userAddresses = stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList());
+        userAddresses.addAll(addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()));
+        Map<String, String> handles = getAdaHandleForAccount(userAddresses.toArray(new String[0]));
+
+        // Eventually it can be parallelized
+        for (User u : stakeUsersBatch) {
+            if (addressesUtxOs.containsKey(u.getAddress())) {
+                processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
+            }
+        }
+
+        for (User u : addrUsersBatch) {
+            if (addressesUtxOs.containsKey(u.getAddress())) {
+                processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
+            }
         }
     }
 
     private void processUserTxs(User user, List<UTxO> uTxOS, Integer blockNo, Map<String, String> handles) throws ApiException {
-        // Cleanup any eventual old TX. This is due to the fact that we collected TXs from other users too, in the same Koios call
-        uTxOS.removeIf(utxo -> utxo.getBlockHeight() <= user.getLastBlockHeight());
-
-        if (uTxOS.isEmpty()) {
-            LOG.debug("No new TX found for user {} with last block height {}. Updating the user {} with the last block height from the tip {}",
-                    user.getAddress(), user.getLastBlockHeight(), user.getId(), blockNo);
-            this.userDao.updateUserBlockHeight(user.getId(), blockNo);
-            return;
-        }
-
-        // Get all UTxOs TX hashes
-        List<String> allTxHashes = uTxOS.stream().map(UTxO::getTxHash).distinct().collect(Collectors.toList());
-        LOG.debug("Getting TX information for {} TX(s), for a the user with address {}",
-                allTxHashes.size(), user.getAddress());
-        if (LOG.isTraceEnabled())
-            LOG.trace("Getting TX information for the following TXs {}", allTxHashes);
-        // No need to do multi queries here unless you got 1000+ transactions since the last check
-        Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(0)).build();
-        Result<List<TxInfo>> txInfoResp = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(allTxHashes, options);
-
-        if (!txInfoResp.isSuccessful()) {
-            LOG.error("Cannot get the TXs information (total of {} UTXOs) for the user {} using block height {}",
-                    uTxOS.size(), user.getAddress(), blockNo);
-            return;
-        }
-        LOG.debug("Got all TXs {} for the user {}",
-                txInfoResp.getValue().size(), user.getAddress());
-
         try {
+            // Cleanup any eventual old TX. This is due to the fact that we collected TXs from other users too, in the same Koios call
+            uTxOS.removeIf(utxo -> utxo.getBlockHeight() <= user.getLastBlockHeight());
+
+            if (uTxOS.isEmpty()) {
+                LOG.debug("No new TX found for user {} with last block height {}. Updating the user {} with the last block height from the tip {}",
+                        user.getAddress(), user.getLastBlockHeight(), user.getId(), blockNo);
+                this.userDao.updateUserBlockHeight(user.getId(), blockNo);
+                return;
+            }
+
+            // Get all UTxOs TX hashes
+            List<String> allTxHashes = uTxOS.stream().map(UTxO::getTxHash).distinct().collect(Collectors.toList());
+            LOG.debug("Getting TX information for {} TX(s), for a the user with address {}",
+                    allTxHashes.size(), user.getAddress());
+            if (LOG.isTraceEnabled())
+                LOG.trace("Getting TX information for the following TXs {}", allTxHashes);
+            // No need to do multi queries here unless you got 1000+ transactions since the last check
+            Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(0)).build();
+            Result<List<TxInfo>> txInfoResp = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(allTxHashes, options);
+
+            if (!txInfoResp.isSuccessful()) {
+                LOG.error("Cannot get the TXs information (total of {} UTXOs) for the user {} using block height {}",
+                        uTxOS.size(), user.getAddress(), blockNo);
+                return;
+            }
+            LOG.debug("Got all TXs {} for the user {}",
+                    txInfoResp.getValue().size(), user.getAddress());
+
             List<StringBuilder> txBuilders = new ArrayList<>();
             for (TxInfo txInfo : txInfoResp.getValue()) {
                 StringBuilder sb = processTxForUser(txInfo, user, handles);
@@ -281,7 +279,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             notifyTelegramUser(txBuilders, user, handles);
         } catch (Exception e) {
             LOG.error("Exception while processing {} TX(s) for the user {}",
-                    txInfoResp.getValue().size(), user, e);
+                    uTxOS.size(), user, e);
         }
     }
 
@@ -342,8 +340,9 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             Double inputFunds = accountInputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
             Double outputFunds = txOutputsBelongingToTheUser.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-            receivedOrSentFunds = inputFunds - outputFunds;
+            receivedOrSentFunds = inputFunds - outputFunds - fee;
         }
+
         if (txType == TxType.TX_SENT) receivedOrSentFunds *= -1.0d;
 
         // Check for certificates in case it's a delegation TX
@@ -411,7 +410,13 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         while (batches.hasNext()) {
             List<StringBuilder> batch = batches.next();
             StringBuilder messageBuilder = renderTransactionMessageHeader(user, handles, batch.size());
-            batch.forEach(b -> messageBuilder.append(b.toString()));
+            for (StringBuilder m : batch) {
+                if (messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
+                    messageBuilder.append("\nmore...");
+                    break;
+                }
+                messageBuilder.append(m.toString());
+            }
 
             if (LOG.isTraceEnabled()) {
                 LOG.trace("Telegram message for chat-id {}: {}", user.getChatId(), messageBuilder);
@@ -419,7 +424,6 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             // Notify the user
             this.telegramFacade.sendMessageTo(user.getChatId(), messageBuilder.toString());
-
         }
     }
 
