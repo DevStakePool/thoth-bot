@@ -46,7 +46,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
             LOG.info("Checking staking rewards for {} wallets", this.userDao.getUsers().size());
             // Filter out non-staking users
             Iterator<List<User>> batchIterator = batches(
-                    userDao.getUsers().stream().filter(u -> u.isStakeAddress()).collect(Collectors.toList()),
+                    userDao.getUsers().stream().filter(User::isStakeAddress).collect(Collectors.toList()),
                     USERS_BATCH_SIZE).iterator();
 
             while (batchIterator.hasNext()) {
@@ -67,7 +67,8 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                 continue;
 
             if (u.getLastEpochNumber() > currentEpochNumber) {
-                LOG.error("User last epoch number {} greater than the current one from the Tip {}!", u.getLastEpochNumber(), currentEpochNumber);
+                LOG.error("User last epoch number {} greater than the current one from the Tip {}!",
+                        u.getLastEpochNumber(), currentEpochNumber);
                 continue;
             }
             accountsToProcess.put(u.getAddress(), u);
@@ -84,14 +85,17 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
             Result<List<AccountRewards>> rewardsRes = this.koiosFacade.getKoiosService().getAccountService().getAccountRewards(
                     List.copyOf(accountsToProcess.keySet()), currentEpochNumber - 2, options);
             if (!rewardsRes.isSuccessful()) {
-                LOG.warn("Cannot get the rewards for accounts. Response={}", rewardsRes.getResponse());
+                LOG.warn("Cannot get the rewards for accounts. Code={}, Response={}",
+                        rewardsRes.getCode(), rewardsRes.getResponse());
                 return;
             }
 
             // Get ADA Handles
             Map<String, String> handles = getAdaHandleForAccount(accountsToProcess.keySet().toArray(new String[0]));
 
-            Set<String> allPoolIds = rewardsRes.getValue().stream().flatMap(ar -> ar.getRewards().stream()).map(r -> r.getPoolId()).collect(Collectors.toSet());
+            Set<String> allPoolIds = rewardsRes.getValue().stream()
+                    .flatMap(ar -> ar.getRewards().stream()).map(AccountReward::getPoolId)
+                    .collect(Collectors.toSet());
             allPoolIds.remove(null); // The rest API can return nulls on pool IDs
             List<PoolInfo> poolInfoList = Collections.emptyList();
 
@@ -133,7 +137,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                     sb.append("Epoch ").append(reward.getEarnedEpoch());
                     sb.append("\n").append(translateRewardsType(reward.getType()));
                     sb.append(" ");
-                    double adaValue = Long.valueOf(reward.getAmount()) / LOVELACE;
+                    double adaValue = Long.parseLong(reward.getAmount()) / LOVELACE;
                     sb.append(String.format("%,.2f", adaValue));
                     sb.append(ADA_SYMBOL);
                     if (latestCardanoPriceUsd != null) {
@@ -145,6 +149,9 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
 
                     this.userDao.updateUserEpochNumber(accountsToProcess.get(accountRewards.getStakeAddress()).getId(), currentEpochNumber);
                     this.telegramFacade.sendMessageTo(accountsToProcess.get(accountRewards.getStakeAddress()).getChatId(), sb.toString());
+                    if (LOG.isTraceEnabled()) {
+                        LOG.trace("Sending telegram message for staking rewards: {}", sb);
+                    }
                 }
             }
         } catch (ApiException e) {
