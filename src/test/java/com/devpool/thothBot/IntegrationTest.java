@@ -2,6 +2,7 @@ package com.devpool.thothBot;
 
 import com.devpool.thothBot.dao.AssetsDao;
 import com.devpool.thothBot.dao.UserDao;
+import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
@@ -192,7 +193,7 @@ public class IntegrationTest {
         Assertions.assertTrue(params.get("text").toString().contains("Status: registered"));
         Assertions.assertTrue(params.get("text").toString().contains("Rewards: 29,581.45"));
         Assertions.assertTrue(params.get("text").toString().contains("$0x616461"));
-        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,003.50"));
+        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,002.33"));
     }
 
     @Test
@@ -347,18 +348,27 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 2884 1"));
         Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 5802 1"));
 
-        /*
-        Missing tests:
+        // TX sent funds, jpeg store contract
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "e9f577499a692fc07491cd7de013ea2c3b3a37b3df616aeb39f807ed5ced8d24");
+        Assertions.assertTrue(message.contains("Fee 0.46"));
+        Assertions.assertTrue(message.contains("Sent -13.61"));
+        Assertions.assertTrue(message.contains("JpegStore"));
 
-e9f577499a692fc07491cd7de013ea2c3b3a37b3df616aeb39f807ed5ced8d24 1 contract Jpeg Store
+        // TX received funds, jpeg store multiple (2) contracts
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "b6170c1c89f91bb5f76c0810889ea110f34b63e7fde25b37abe269256ac2f45a");
+        Assertions.assertTrue(message.contains("Fee 1.11"));
+        Assertions.assertTrue(message.contains("Received 18.00"));
+        message = message.substring(message.indexOf("b6170c1c89f91bb5f76c0810889ea110f34b63e7fde25b37abe269256ac2f45a"));
+        Assertions.assertEquals(2, message.split("JpegStore").length - 1);
 
-b6170c1c89f91bb5f76c0810889ea110f34b63e7fde25b37abe269256ac2f45a multi contract jpeg store
+        // TX with ada handle
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "a6abf48aad975fac80416ce79f9a7969fe05e13a37eb8be1e917d5d84d6044");
+        Assertions.assertTrue(message.contains("$alessio.dev"));
 
-check ada handle $gioconda and $alessio.dev
-
-69c2f2f96305b5d1eb46eb5180f9dfb0409c54919d2463ae61becf34570e504a sent funds and tokens (with LP hash)
-         */
-
+        // TX sent funds and tokens (with token hash)
+        message = retrieveMessageByString(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", "69c2f2f96305b5d1eb46eb5180f9dfb0409c54919d2463ae61becf34570e504a");
+        Assertions.assertTrue(message.contains("...9d660cf6a2 498,221,110"));
+        Assertions.assertTrue(message.contains("hvADA 2,528,098"));
     }
 
     private String retrieveMessageByString(List<String> messages, String filter1, String filter2) {
