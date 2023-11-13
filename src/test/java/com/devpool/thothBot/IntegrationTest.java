@@ -14,7 +14,6 @@ import com.pengrad.telegrambot.model.request.ForceReply;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.response.SendResponse;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
@@ -26,10 +25,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.util.Assert;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @SpringBootTest
@@ -44,6 +42,7 @@ public class IntegrationTest {
         TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0));
         TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
         TEST_USERS.add(new User(-4L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
+        TEST_USERS.add(new User(-5L, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv", 0, 0));
     }
 
     @MockBean
@@ -266,126 +265,121 @@ public class IntegrationTest {
     @Test
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
-                        Mockito.timeout(60000 * 1000)
-                                .times(9))
+                        Mockito.timeout(60 * 1000)
+                                .times(78))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 
         List<User> allUsers = this.userDao.getUsers();
-        List<Long> allChatIds = allUsers.stream().map(u -> u.getChatId()).sorted().collect(Collectors.toList());
+        List<Long> allChatIds = allUsers.stream().map(User::getChatId).sorted().collect(Collectors.toList());
         LOG.info("UserChatIDs={}", allChatIds);
         LOG.info("ChatIDs={}", this.chatIdArgCaptor.getAllValues().stream().sorted().collect(Collectors.toList()));
 
-        int accountsTransactionsChecked = 0;
-        int accountsRewardsChecked = 0;
-        for (String msg : this.messageArgCaptor.getAllValues()) {
-            LOG.debug("Message\n{}", msg);
-            Assertions.assertFalse(msg.contains("null"));
-            if (msg.contains("stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")) {
-                if (msg.contains("reward(s)")) {
-                    Assertions.assertTrue(msg.contains("Catalyst Voting"));
-                    Assertions.assertTrue(msg.contains("Epoch 341"));
-                    Assertions.assertTrue(msg.contains("146.34"));
-                    Assertions.assertTrue(msg.contains("$alessio.dev"));
-                    accountsRewardsChecked++;
-                } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("Fee 0.17"));
-                    Assertions.assertTrue(msg.contains("Input 1,221.32"));
-                    Assertions.assertTrue(msg.contains("MIN 245.82"));
-                    Assertions.assertTrue(msg.contains("thoth-bot 1"));
-                    Assertions.assertTrue(msg.contains("MELD 10,000.00"));
-                    Assertions.assertTrue(msg.contains("$alessio.dev"));
-                    Assertions.assertTrue(msg.contains("DEV patron rewards for epoch 433")); // Metadata on message - issue #23
-                    Assertions.assertTrue(msg.contains("[SundaeSwap] Valid "));
-                    accountsTransactionsChecked++;
-                } else {
-                    Assertions.fail("Unknown message " + msg);
-                }
-            } else if (msg.contains("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy")) {
-                if (msg.contains("reward(s)")) {
-                    Assertions.assertTrue(msg.contains("Catalyst Voting"));
-                    Assertions.assertTrue(msg.contains("Epoch 341"));
-                    Assertions.assertTrue(msg.contains("93.42"));
-                    Assertions.assertTrue(msg.contains("stake1...yqhf9jhy")); // No handle
-                    accountsRewardsChecked++;
-                } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("Fee 0.58"));
-                    Assertions.assertTrue(msg.contains("Input 1.38"));
-                    Assertions.assertTrue(msg.contains("Output -1.35"));
-                    Assertions.assertTrue(msg.contains("CashewF 373.00"));
-                    Assertions.assertTrue(msg.contains("Output -4,200.18"));
-                    Assertions.assertTrue(msg.contains("stake1...yqhf9jhy")); // No handle
-                    accountsTransactionsChecked++;
-                } else {
-                    Assertions.fail("Unknown message " + msg);
-                }
-            } else if (msg.contains("stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr")) {
-                if (msg.contains("reward(s)")) {
-                    Assertions.assertTrue(msg.contains("Staking Rewards"));
-                    Assertions.assertTrue(msg.contains("Epoch 341"));
-                    Assertions.assertTrue(msg.contains("8.61"));
-                    Assertions.assertTrue(msg.contains("$gioconda"));
-                    accountsRewardsChecked++;
-                } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("new transaction(s)"));
-                    Assertions.assertTrue(msg.contains("Output -94.82"));
-                    Assertions.assertTrue(msg.contains("CULO 100,000"));
-                    Assertions.assertTrue(msg.contains("$gioconda"));
-                    Assertions.assertTrue(msg.contains("3980e6eda9693812ed633e4f797ceb934639c07e03d3ad90d10923e3cc0a785c")); // issue #6 test
-                    Assertions.assertTrue(msg.contains("Input 5.00"));
-                    Assertions.assertTrue(msg.contains("Empowa 2,025.28"));
-                    accountsTransactionsChecked++;
-                } else {
-                    Assertions.fail("Unknown message " + msg);
-                }
-            } else if (msg.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
-                if (msg.contains("reward(s)")) {
-                    Assertions.assertTrue(msg.contains("Staking Rewards"));
-                    Assertions.assertTrue(msg.contains("Epoch 341"));
-                    Assertions.assertTrue(msg.contains("1.18"));
-                    Assertions.assertTrue(msg.contains("[DYNO]"));
-                    accountsRewardsChecked++;
-                } else if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("86 new transaction(s)"));
-                    Assertions.assertTrue(msg.contains("hvMIN 245,820,436.00"));
-                    Assertions.assertTrue(msg.contains("1612572528 1"));
+        // Check if we got all the expected TXs
+        // This is calculated using the script calculate_expected_telegram_messages.sh
+        //Expected messages regarding staking rewards: 4
+        //Expected transactions for account stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr: 8
+        //Expected transactions for account stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32: 86
+        //Expected transactions for account stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz: 41
+        //Expected transactions for account stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy: 16
+        //Expected transactions for addresses addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv: 5
+        //Expected transactions for addresses addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m: 58
+        //Total expected transactions for accounts+addresses 214
 
-                    //Plutus contracts
-                    Assertions.assertTrue(msg.contains("Valid with size 2305 byte(s)"));
-                    Assertions.assertTrue(msg.contains("[JpegStore] Valid with size 2561 byte(s)"));
+        List<String> allMessages = messageArgCaptor.getAllValues();
 
-                    // Internal TX (issue #3)
-                    Assertions.assertTrue(msg.contains("3d7d75beafc89efdc06dfadd0823b357bdb0b7c4ed22cea31eb77105d7df1738"));
-                    Assertions.assertTrue(msg.contains("Internal Transfer"));
-                    Assertions.assertTrue(msg.contains("Fee 0.18"));
+        Assertions.assertEquals(8, countTxForAddress(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr"));
+        Assertions.assertEquals(86, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
+        Assertions.assertEquals(41, countTxForAddress(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz"));
+        Assertions.assertEquals(16, countTxForAddress(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"));
+        Assertions.assertEquals(5, countTxForAddress(allMessages, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv"));
+        Assertions.assertEquals(58, countTxForAddress(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m"));
 
-                    // Internal TX with delegation (issue #5)
-                    Assertions.assertTrue(msg.contains("eb9670bad51b19aea9e89fe4e1f66ee33dd5dea7e0386d888fbdd45c175effb1"));
-                    Assertions.assertTrue(msg.contains("Delegated to"));
-                    Assertions.assertTrue(msg.contains("pool1...px57z7fk"));
-                    accountsTransactionsChecked++;
-                } else {
-                    Assertions.fail("Unknown message " + msg);
-                }
-            } else if (msg.contains("addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m")) {
-                // No rewards for a simple address
-                Assertions.assertFalse(msg.contains("reward(s)"));
+        // TX internal, empty
+        String message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "3af819e5583709c9e7b5b84614c60015b9bf10deb2b20756118cba707e531e53");
+        Assertions.assertTrue(message.contains("Fee 0.18"));
 
-                if (msg.contains("transaction(s)")) {
-                    Assertions.assertTrue(msg.contains("adapeParkerMars 1"));
-                    Assertions.assertTrue(msg.contains("Raccoon 6411 1"));
-                    Assertions.assertTrue(msg.contains("adapeParkerMars 1"));
+        // TX internal, pool delegation
+        message = retrieveMessageByString(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
+                "3f31f56afbfa4c4bdd7c33d1f1d4ae0cedece2fa2bfb2934b914ea5e0dfb0142");
+        Assertions.assertTrue(message.contains("[DEV]"));
 
-                    // Plutus contracts
-                    Assertions.assertTrue(msg.contains("Valid with size 7836 byte(s)"));
-                    accountsTransactionsChecked++;
-                } else {
-                    Assertions.fail("Unknown message " + msg);
-                }
-            } else {
-                Assertions.fail("Unknown message " + msg);
-            }
-        }
-        Assertions.assertEquals(5, accountsTransactionsChecked);
-        Assertions.assertEquals(4, accountsRewardsChecked);
+        // TX sent funds, with message
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "773b01dfcd7a0398a8576129410084c8797906b913bdf6437289daebb672f085");
+        Assertions.assertTrue(message.contains("Fee 0.20"));
+        Assertions.assertTrue(message.contains("DEV Pool patron rewards for epoch 377"));
+        Assertions.assertTrue(message.contains("Sent -55.00"));
+
+        // TX catalyst old method
+        message = retrieveMessageByString(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", "Catalyst");
+        Assertions.assertTrue(message.contains("Catalyst Voting 93.42"));
+        Assertions.assertTrue(message.contains("Epoch 341"));
+
+        // TX catalyst new airdrop method
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "19c57aec14b9cefd4b1025c09c64bf857a4d2e3c0ee184d62b2eca8dfceb929b");
+        Assertions.assertTrue(message.contains("59.54"));
+        Assertions.assertTrue(message.contains("Fund10 Voter rewards"));
+
+        // TX received funds, 1 token
+        message = retrieveMessageByString(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", "9f8067d6565c5e189551b9ca820ff27ec87dc955420ab9d8a6ce4107d5d27743");
+        Assertions.assertTrue(message.contains("wide open 1"));
+        Assertions.assertTrue(message.contains("Received 1.04"));
+
+        // TX received funds, with message
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "773b01dfcd7a0398a8576129410084c8797906b913bdf6437289daebb672f085");
+        Assertions.assertTrue(message.contains("DEV Pool patron rewards for epoch 377"));
+        Assertions.assertTrue(message.contains("Sent -55.00"));
+        Assertions.assertTrue(message.contains("Fee 0.20"));
+
+        // TX sent funds, sent 1 asset
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "2148c8689b89825055e863142ad502e17969c4543cbc6b532bd78bc2b7c2c250");
+        Assertions.assertTrue(message.contains("Fee 0.26"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 4326"));
+        Assertions.assertTrue(message.contains("Sent -1.39"));
+
+        // TX sent funds, sent many assets
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "3e2e4a2b7d78bc5994773805f1376d790c8169b63297d50ef4842e22aafb1f29");
+        Assertions.assertTrue(message.contains("Fee 0.39"));
+        Assertions.assertTrue(message.contains("Sent -5.57"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 1939 1"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 3022 1"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 2884 1"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 5802 1"));
+
+        /*
+        Missing tests:
+
+e9f577499a692fc07491cd7de013ea2c3b3a37b3df616aeb39f807ed5ced8d24 1 contract Jpeg Store
+
+b6170c1c89f91bb5f76c0810889ea110f34b63e7fde25b37abe269256ac2f45a multi contract jpeg store
+
+check ada handle $gioconda and $alessio.dev
+
+69c2f2f96305b5d1eb46eb5180f9dfb0409c54919d2463ae61becf34570e504a sent funds and tokens (with LP hash)
+         */
+
+    }
+
+    private String retrieveMessageByString(List<String> messages, String filter1, String filter2) {
+        Objects.requireNonNull(messages);
+        Objects.requireNonNull(filter1);
+        List<String> matching;
+        if (filter2 == null)
+            matching = messages.stream().filter(m -> m.contains(filter1)).collect(Collectors.toList());
+        else
+            matching = messages.stream().filter(m -> m.contains(filter1) && m.contains(filter2)).collect(Collectors.toList());
+
+        Assertions.assertEquals(1, matching.size(),
+                String.format("Expected only 1 match, using filter1=%s and filter2=%s, but got %d", filter1, filter2, matching.size()));
+
+        return matching.get(0);
+    }
+
+    private int countTxForAddress(List<String> messages, String address) {
+        List<String> messagesForAccount = messages.stream()
+                .filter(m -> m.contains(address)).collect(Collectors.toList());
+
+        return messagesForAccount.stream().mapToInt(m -> m.split("Fee").length - 1).sum();
     }
 }
