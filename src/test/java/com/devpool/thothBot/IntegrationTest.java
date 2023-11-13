@@ -294,7 +294,7 @@ public class IntegrationTest {
         Assertions.assertEquals(16, countTxForAddress(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"));
         Assertions.assertEquals(5, countTxForAddress(allMessages, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv"));
         Assertions.assertEquals(58, countTxForAddress(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m"));
-
+        Assertions.assertEquals(4, allMessages.stream().filter(m -> m.contains("reward(s)")).count());
         // TX internal, empty
         String message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
                 "3af819e5583709c9e7b5b84614c60015b9bf10deb2b20756118cba707e531e53");
@@ -311,11 +311,6 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Fee 0.20"));
         Assertions.assertTrue(message.contains("DEV Pool patron rewards for epoch 377"));
         Assertions.assertTrue(message.contains("Sent -55.00"));
-
-        // TX catalyst old method
-        message = retrieveMessageByString(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", "Catalyst");
-        Assertions.assertTrue(message.contains("Catalyst Voting 93.42"));
-        Assertions.assertTrue(message.contains("Epoch 341"));
 
         // TX catalyst new airdrop method
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "19c57aec14b9cefd4b1025c09c64bf857a4d2e3c0ee184d62b2eca8dfceb929b");
@@ -369,6 +364,20 @@ public class IntegrationTest {
         message = retrieveMessageByString(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", "69c2f2f96305b5d1eb46eb5180f9dfb0409c54919d2463ae61becf34570e504a");
         Assertions.assertTrue(message.contains("...9d660cf6a2 498,221,110"));
         Assertions.assertTrue(message.contains("hvADA 2,528,098"));
+
+        // Pool operator rewards
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv");
+        Assertions.assertTrue(message.contains("[DEV]"));
+        Assertions.assertTrue(message.contains("Epoch 369"));
+        Assertions.assertTrue(message.contains("Pool Operator Rewards 371.18"));
+
+        // Staking rewards
+        message = retrieveMessageByString(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+                "pool19v4jgpxxl72eaq8pefctatvts3gkhtyzd8nwvzskkm3mkdv2tpy");
+        Assertions.assertTrue(message.contains("pool1...mkdv2tpy"));
+        Assertions.assertTrue(message.contains("Epoch 369"));
+        Assertions.assertTrue(message.contains("Staking Rewards 0.73"));
     }
 
     private String retrieveMessageByString(List<String> messages, String filter1, String filter2) {
