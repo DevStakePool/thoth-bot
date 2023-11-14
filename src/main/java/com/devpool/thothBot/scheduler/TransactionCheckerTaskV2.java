@@ -31,10 +31,10 @@ import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import java.security.AllPermission;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.*;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -256,7 +256,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             List<StringBuilder> txBuilders = new ArrayList<>();
             for (TxInfo txInfo : txInfoResp.getValue()) {
-                StringBuilder sb = processTxForUser(txInfo, user, handles);
+                StringBuilder sb = processTxForUser(txInfo, user);
                 txBuilders.add(sb);
             }
 
@@ -283,7 +283,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
     }
 
-    private StringBuilder processTxForUser(TxInfo txInfo, User user, Map<String, String> handles) {
+    private StringBuilder processTxForUser(TxInfo txInfo, User user) {
         // check input and output of the TX to determine the nature of the TX itself
         Set<String> allInputAddresses = txInfo.getInputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
         Set<String> allOutputAddresses = txInfo.getOutputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
@@ -327,9 +327,21 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             }
         }
 
-        List<rest.koios.client.backend.api.base.common.Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
+        // We need to check if there are new assets that we received, even if it's a "sent" TX
+        // We make a diff between all input and output assets that belong to this account. The new ones are the received new assets
+        Set<Asset> inputAssets = txInfo.getInputs().stream()
+                .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                .flatMap(io -> io.getAssetList().stream()).collect(Collectors.toSet());
+        Set<Asset> outputAssets = txInfo.getOutputs().stream()
+                .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                .flatMap(io -> io.getAssetList().stream()).collect(Collectors.toSet());
 
-        LOG.debug("All assets:\n{}", allAssets);
+        outputAssets.removeIf(a -> inputAssets.stream().map(Asset::getFingerprint).anyMatch(x -> x.equals(a.getFingerprint())));
+
+        List<Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
+
+        LOG.debug("All assets:\n{}\noutput assets:\n{}", allAssets, outputAssets);
+
         double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.parseLong(tx.getValue())).sum() / LOVELACE;
 
         // If it's a SENT funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
@@ -372,7 +384,6 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
 
         LOG.debug("fee={} ADA, {}={} ADA", fee, txType, receivedOrSentFunds);
-        String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
         Double latestCardanoPriceUsd = this.oracle.getPriceUsd();
 
         // Check for any metadata worth showing
@@ -396,12 +407,9 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
 
         StringBuilder sb = new StringBuilder();
-        renderSingleTransactionMessage(sb, txInfo, allAssets, txType, latestCardanoPriceUsd, fee,
+        renderSingleTransactionMessage(sb, txInfo, allAssets, outputAssets, txType, latestCardanoPriceUsd, fee,
                 receivedOrSentFunds, delegateToPoolName, delegateToPoolId, metadataMessage);
         return sb;
-        //TODO List of assets received if it's a TX_RECEIVED + ASSET_RECEIVED txInfo.getAssetsMinted()
-        // txInfo.getMetadata() // a way to get the asset without making another KOIOS call
-
     }
 
     private void notifyTelegramUser(List<StringBuilder> txBuilders, User user, Map<String, String> handles) {
@@ -443,10 +451,13 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     }
 
     private StringBuilder renderSingleTransactionMessage(StringBuilder messageBuilder, TxInfo txInfo,
-                                                         List<rest.koios.client.backend.api.base.common.Asset> allAssets, TxType txType,
+                                                         List<Asset> allAssets, Set<Asset> outputAssets, TxType txType,
                                                          Double latestCardanoPriceUsd, Double fee, double receivedOrSentFunds,
                                                          String delegateToPoolName, String delegateToPoolId, String metadataMessage) {
         String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
+        if (!outputAssets.isEmpty())
+            fundsTokenText = "Funds and Received Tokens";
+
         switch (txType) {
             case TX_RECEIVED:
                 messageBuilder.append(EmojiParser.parseToUnicode(":arrow_heading_down: "));
@@ -535,8 +546,11 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
 
         // Any assets?
-        if (!allAssets.isEmpty()) {
-            for (rest.koios.client.backend.api.base.common.Asset asset : allAssets) {
+        allAssets.addAll(outputAssets);
+        Collection<Asset> uniqueAssets = allAssets.stream().collect(Collectors.toMap(Asset::getFingerprint, a -> a, (a, b) -> a)).values();
+
+        if (!uniqueAssets.isEmpty()) {
+            for (Asset asset : uniqueAssets) {
                 Object assetQuantity = null;
                 try {
                     assetQuantity = this.assetFacade.getAssetQuantity(asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
