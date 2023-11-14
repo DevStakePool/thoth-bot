@@ -10,8 +10,6 @@ public class User {
     private String address;
     private Integer lastBlockHeight;
     private Integer lastEpochNumber;
-    @Deprecated
-    private List<String> accountAddresses;
 
     public User(Long chatId, String address, Integer blockNumber, Integer lastEpochNumber) {
         this.chatId = chatId;
@@ -28,7 +26,6 @@ public class User {
         return "User{" +
                 "chatId=" + chatId +
                 ", address='" + address + '\'' +
-                ", accountAddresses.size()=" + (accountAddresses != null ? accountAddresses.size() : "null") +
                 ", lastBlockHeight=" + lastBlockHeight +
                 ", lastEpochNumber=" + lastEpochNumber +
                 '}';
@@ -72,23 +69,6 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    @Deprecated
-    public List<String> getAccountAddresses() {
-        return accountAddresses;
-    }
-
-    @Deprecated
-    public void setAccountAddresses(List<String> accountAddresses) {
-        this.accountAddresses = accountAddresses;
-    }
-
-    @Deprecated
-    public void appendAccountAddresses(List<String> accountAddresses) {
-        if (this.accountAddresses == null)
-            this.accountAddresses = new ArrayList<>();
-        this.accountAddresses.addAll(accountAddresses);
     }
 
     public Integer getLastEpochNumber() {

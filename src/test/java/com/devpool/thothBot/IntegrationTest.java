@@ -378,6 +378,37 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("pool1...mkdv2tpy"));
         Assertions.assertTrue(message.contains("Epoch 369"));
         Assertions.assertTrue(message.contains("Staking Rewards 0.73"));
+
+        // TX sent funds, received tokens
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "e9b067658de4e5b08d07dcffd9c063c08167cc03d88525b260a3942ff63a0b26");
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 7469 1"));
+        Assertions.assertTrue(message.contains("-96.61"));
+        Assertions.assertTrue(message.contains("Sent Funds and Received Tokens"));
+        Assertions.assertTrue(message.contains("[JpegStore]"));
+
+        // TX received funds, received tokens
+        message = retrieveMessageByString(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+                "083e302d0c5d11c07fa642c18df8fa290632c24157c676a754a5a763605ebe26");
+        Assertions.assertTrue(message.contains("MACH 3,947.00"));
+        Assertions.assertTrue(message.contains("1.73"));
+        Assertions.assertTrue(message.contains("Received Funds and Received Tokens"));
+        Assertions.assertFalse(message.contains("[JpegStore]"));
+        Assertions.assertEquals(2, message.split("MACH").length);
+    /*
+    2023-11-14 16:02:30.986 TRACE 564779 --- [yCheckerThread1] c.d.t.s.TransactionCheckerTaskV2         : Telegram message for chat-id -3: 🔑 <a href="https://cardanoscan.io/stakekey/stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy">stake1...yqhf9jhy</a>
+✉ 3 new transaction(s)
+
+⤴ <a href="https://cardanoscan.io/transaction/1c24ad6f41726f82ed20d4fcfb078c38b5a238e8e817e3c8cd65c7a9e844601f">Sent Funds </a> <i>27.04.2023, 11:01 AM</i>
+🔹Fee 0.17 ₳ (0.06 $)
+🔹Sent -2.20 ₳ (-0.82 $)
+
+⤵ <a href="https://cardanoscan.io/transaction/083e302d0c5d11c07fa642c18df8fa290632c24157c676a754a5a763605ebe26">Received Funds and Received Tokens</a> <i>27.04.2023, 11:03 AM</i>
+🔹Fee 0.33 ₳ (0.12 $)
+🔹Received 1.73 ₳ (0.64 $)
+🔸MACH 3,947.00
+🔸MACH 3,947.00
+     */
     }
 
     private String retrieveMessageByString(List<String> messages, String filter1, String filter2) {

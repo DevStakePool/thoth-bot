@@ -3,7 +3,7 @@ package com.devpool.thothBot.telegram.command;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
-import com.devpool.thothBot.scheduler.TransactionCheckerTask;
+import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
@@ -85,7 +85,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
                     for (AccountInfo accountInfo : accountInfoRes.getValue()) {
                         messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
-                                .append(TransactionCheckerTask.CARDANO_SCAN_STAKE_KEY)
+                                .append(TransactionCheckerTaskV2.CARDANO_SCAN_STAKE_KEY)
                                 .append(accountInfo.getStakeAddress())
                                 .append("\">")
                                 .append(handles.get(accountInfo.getStakeAddress()))
@@ -157,7 +157,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     // Get accounts ADA Handles
                     AddressInfo addrInfo = addressInfoResult.getValue();
                     messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
-                            .append(TransactionCheckerTask.CARDANO_SCAN_ADDR_KEY)
+                            .append(TransactionCheckerTaskV2.CARDANO_SCAN_ADDR_KEY)
                             .append(addrInfo.getAddress())
                             .append("\">")
                             .append(handlesForAddresses.get(addrInfo.getAddress()))

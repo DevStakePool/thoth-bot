@@ -39,7 +39,7 @@ public class SchedulerController {
         this.executorService = Executors.newScheduledThreadPool(4,
                 new CustomizableThreadFactory("WalletActivityCheckerThread"));
 
-        this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 2 * 60, TimeUnit.SECONDS);
+        this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 1 * 60, TimeUnit.SECONDS);
         this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 10 * 60, TimeUnit.SECONDS);
     }
 
