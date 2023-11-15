@@ -46,6 +46,6 @@ public class SubscribeCmd implements IBotCommand {
 
     @Override
     public long getCommandExecutionTimeoutSeconds() {
-        return 3;
+        return 5;
     }
 }
