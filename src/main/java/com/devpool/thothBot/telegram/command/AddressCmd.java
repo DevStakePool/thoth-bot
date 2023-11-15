@@ -93,7 +93,7 @@ public class AddressCmd implements IBotCommand {
 
     @Override
     public long getCommandExecutionTimeoutSeconds() {
-        return 4;
+        return 6;
     }
 
     private void unsubscribeNewAddress(Update update, TelegramBot bot) {

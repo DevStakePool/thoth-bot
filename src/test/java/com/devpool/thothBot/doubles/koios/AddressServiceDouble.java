@@ -19,18 +19,20 @@ import java.util.stream.Collectors;
 public class AddressServiceDouble implements AddressService {
     @Override
     public Result<AddressInfo> getAddressInformation(String address) throws ApiException {
-        return getAddressInformation(List.of(address), SortType.DESC, null);
+        Result<List<AddressInfo>> result = getAddressInformation(List.of(address), SortType.DESC, null);
+        if (result.getValue().isEmpty())
+            return Result.<AddressInfo>builder().code(200).response("").successful(true).value(null).build();
+        else
+            return Result.<AddressInfo>builder().code(200).response("").successful(true).value(result.getValue().get(0)).build();
+
     }
 
     @Override
-    public Result<AddressInfo> getAddressInformation(List<String> addressList, SortType utxoSortType, Options options) throws ApiException {
+    public Result<List<AddressInfo>> getAddressInformation(List<String> addressList, SortType utxoSortType, Options options) throws ApiException {
         try {
             List<AddressInfo> allAddrInfo = KoiosDataBuilder.getAddressInformationTestData();
             List<AddressInfo> filteredList = allAddrInfo.stream().filter(r -> addressList.contains(r.getAddress())).collect(Collectors.toList());
-            if (filteredList.isEmpty()) {
-                return Result.<AddressInfo>builder().code(200).response("").successful(true).value(null).build();
-            }
-            return Result.<AddressInfo>builder().code(200).response("").successful(true).value(filteredList.get(0)).build();
+            return Result.<List<AddressInfo>>builder().code(200).response("").successful(true).value(filteredList).build();
 
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
