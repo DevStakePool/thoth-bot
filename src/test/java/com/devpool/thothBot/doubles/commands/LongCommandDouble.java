@@ -11,8 +11,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class LongCommandDouble implements IBotCommand {
-    public static final String CMD_PREFIX = "/long";
     private static final Logger LOG = LoggerFactory.getLogger(LongCommandDouble.class);
+
+    public static final String CMD_PREFIX = "/long";
 
     @Override
     public boolean canTrigger(String username, String message) {
@@ -41,13 +42,15 @@ public class LongCommandDouble implements IBotCommand {
 
         try {
             Thread.sleep(1000 * 10);
+            bot.execute(new SendMessage(update.message().chat().id(), "Hello from Long")
+                    .disableWebPagePreview(true)
+                    .parseMode(ParseMode.HTML));
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            LOG.error(CMD_PREFIX + " command got interrupted: " + e);
+            if (Thread.interrupted()) {
+                Thread.currentThread().interrupt();
+            }
         }
-
-        bot.execute(new SendMessage(update.message().chat().id(), "Hello from Long")
-                .disableWebPagePreview(true)
-                .parseMode(ParseMode.HTML));
     }
 
     @Override

@@ -164,6 +164,7 @@ public class TelegramFacade {
                 synchronized (this.performanceSampler) {
                     this.timeoutCommands++;
                 }
+                commandFuture.cancel(true); // Interrupt the command thread
                 LOG.warn("The command execution {}, from {}, timed out", payload, from);
                 bot.execute(new SendMessage(id,
                         "Sorry, your command timed out. Please retry later"));

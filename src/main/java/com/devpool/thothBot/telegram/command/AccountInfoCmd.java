@@ -96,7 +96,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
             // Retrieval pool names
             List<String> allStakePools = accountInfoList.stream().map(AccountInfo::getDelegatedPool)
-                    .filter(p -> p != null).collect(Collectors.toList());
+                    .filter(Objects::nonNull).collect(Collectors.toList());
 
             Map<String, String> poolNames = new HashMap<>();
             allStakePools.forEach(p -> poolNames.put(p, extractPoolName(null, p))); // Let's first get defaults
@@ -121,16 +121,14 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     .disableWebPagePreview(true)
                     .parseMode(ParseMode.HTML));
 
-        } catch (Exception e) {
-            LOG.warn("Could not get the wallet/address information due to {}", e, e);
+        } catch (InterruptedException e) {
             if (Thread.interrupted())
                 Thread.currentThread().interrupt();
-            failure = true;
-        }
-
-        if (failure) {
+        } catch (Exception e) {
+            LOG.warn("Could not get the wallet/address information due to {}", e, e);
             bot.execute(new SendMessage(update.message().chat().id(),
                     "There was a problem retrieving the requested information. Please try again later"));
+
         }
     }
 
@@ -237,7 +235,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
     @Override
     public long getCommandExecutionTimeoutSeconds() {
-        return 10L;
+        return 12L;
     }
 
     private String extractPoolName(PoolInfo poolInfo, String poolAddress) {

@@ -33,8 +33,8 @@ public class TelegramMessageCallable implements Callable<Boolean> {
         try {
             this.command.execute(this.update, this.bot);
         } catch (Exception e) {
-            LOG.error("Error while processing the command {}, with payload {}, from user {}: {}",
-                    this.command.getClass().getName(), this.payload, this.from, e, e);
+            LOG.error("Error while processing the command {}, with payload {}, from user {}",
+                    this.command.getClass().getSimpleName(), this.payload, this.from, e);
             if (Thread.interrupted())
                 Thread.currentThread().interrupt();
             bot.execute(new SendMessage(id,
