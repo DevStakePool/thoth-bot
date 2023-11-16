@@ -3,7 +3,7 @@ package com.devpool.thothBot.scheduler;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.KoiosFacade;
-import com.devpool.thothBot.oracle.CoinGeckoCardanoOracle;
+import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +47,7 @@ public abstract class AbstractCheckerTask {
     @Autowired
     protected KoiosFacade koiosFacade;
     @Autowired
-    protected CoinGeckoCardanoOracle oracle;
+    protected CoinPaprikaOracle oracle;
 
     protected String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
         if (poolAddress == null) return null;

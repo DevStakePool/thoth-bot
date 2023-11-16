@@ -18,31 +18,33 @@ import reactor.netty.http.client.HttpClient;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.time.Duration;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
 
 /**
- * Oracle implementation based on CoinGecko.
- * See <a href="https://www.coingecko.com/en/api/documentation">API Documentation</a>
+ * Oracle implementation based on CoinPaprika.
+ * See <a href="https://api.coinpaprika.com/">API Documentation</a>
  */
 @Component
-@Deprecated(since = "1.4.2", forRemoval = true)
-public class CoinGeckoCardanoOracle implements ICardanoOracle, Runnable {
-    private static final Logger LOG = LoggerFactory.getLogger(CoinGeckoCardanoOracle.class);
-    private static final String CARDANO_PRICE_DOLLAR_ENDPOINT = "https://api.coingecko.com/api/v3/simple/price?ids=cardano&vs_currencies=usd&precision=4";
+public class CoinPaprikaOracle implements ICardanoOracle, Runnable {
+    private static final Logger LOG = LoggerFactory.getLogger(CoinPaprikaOracle.class);
+    private static final String CARDANO_PRICE_DOLLAR_ENDPOINT = "https://api.coinpaprika.com/v1/coins/ada-cardano/markets?quotes=USD";
     private static final Long CARDANO_PRICE_MAX_AGE = 3600000L; // 1h
 
+    private static final List<String> SELECTED_EXCHANGES_IDS = List.of("coinbase", "kraken", "binance-us", "okx", "bibox", "coinex");
+    private static final List<String> SELECTED_PAIRS = List.of("ADA/USD", "ADA/USDT", "ADA/USDC");
     private WebClient webClient;
     private AtomicReference<Double> latestCardanoPrice;
     private AtomicLong latestCardanoPriceUpdateTimestamp;
 
     private ScheduledExecutorService scheduledExecutorService;
 
-    //@PostConstruct disabled for now due to easy IP banning
+    @PostConstruct
     public void post() {
         this.latestCardanoPrice = new AtomicReference<>();
         this.latestCardanoPriceUpdateTimestamp = new AtomicLong(-1);
@@ -62,10 +64,10 @@ public class CoinGeckoCardanoOracle implements ICardanoOracle, Runnable {
 
 
         this.scheduledExecutorService = Executors.newScheduledThreadPool(1,
-                new CustomizableThreadFactory("CoinGeckoOracleExecutor"));
+                new CustomizableThreadFactory("CoinPaprikaThread"));
         this.scheduledExecutorService.scheduleWithFixedDelay(this, 1, 900, TimeUnit.SECONDS);
 
-        LOG.info("CoinGecko Oracle created");
+        LOG.info("CoinPaprika Oracle created");
     }
 
     @PreDestroy
@@ -82,19 +84,45 @@ public class CoinGeckoCardanoOracle implements ICardanoOracle, Runnable {
                     .retrieve()
                     .bodyToMono(Object.class);
             Object data = response.block();
-            Map<String, Object> mapData = (Map<String, Object>) data;
+            List<Map<String, Object>> listData = (List<Map<String, Object>>) data;
 
-            if (mapData == null) return;
+            if (listData == null) return;
 
-            Map<String, Object> priceMap = (Map<String, Object>) mapData.get("cardano");
-            Double usdPrice = (Double) priceMap.get("usd");
-            this.latestCardanoPrice.set(usdPrice);
+            List<Map<String, Object>> selectedExchanges = listData.stream()
+                    .filter(q -> SELECTED_EXCHANGES_IDS.contains(q.get("exchange_id")) && SELECTED_PAIRS.contains(q.get("pair")))
+                    .collect(Collectors.toList());
+
+            double avgPrice = 0.0;
+            int found = 0;
+            for (Map<String, Object> selectedExchange : selectedExchanges) {
+                Map<String, Object> quotes = (Map<String, Object>) selectedExchange.get("quotes");
+                if (quotes == null)
+                    continue;
+                Map<String, Double> priceQuotes = (Map<String, Double>) quotes.get("USD");
+                if (priceQuotes == null)
+                    continue;
+                if (priceQuotes.containsKey("price")) {
+                    avgPrice += priceQuotes.get("price");
+                    found++;
+                }
+            }
+
+            if (found > 0) {
+                avgPrice = avgPrice / found;
+                LOG.debug("Computing ADA price using {} quotes from {} exchanges. Price {}",
+                        found, selectedExchanges.size(), avgPrice);
+            } else {
+                LOG.warn("Could not find any ADA/USD* price from the data retrieved");
+                return;
+            }
+
+            this.latestCardanoPrice.set(avgPrice);
             this.latestCardanoPriceUpdateTimestamp.set(System.currentTimeMillis());
             LOG.debug("Got new Cardano price {} USD", this.latestCardanoPrice.get());
         } catch (WebClientRequestException e) {
-            LOG.warn("CoinGecko REST call exception {}", e, e);
+            LOG.warn("CoinPaprika REST call exception {}", e, e);
         } catch (Exception e) {
-            LOG.error("Unexpected error while getting the cardano price form CoinGecko", e);
+            LOG.error("Unexpected error while getting the cardano price form CoinPaprika", e);
         }
     }
 
