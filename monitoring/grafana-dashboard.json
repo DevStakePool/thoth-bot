@@ -231,6 +231,92 @@
           "color": {
             "mode": "thresholds"
           },
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": "N/A"
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "#EAB839",
+                "value": 0.5
+              },
+              {
+                "color": "red",
+                "value": 0.57
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 9,
+        "y": 1
+      },
+      "id": 157,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "1wqDDs4Vk"
+          },
+          "editorMode": "code",
+          "expr": "thoth_koios_api_total_hits_total / process_uptime_seconds ",
+          "format": "time_series",
+          "intervalFactor": 2,
+          "legendFormat": "",
+          "metric": "",
+          "range": true,
+          "refId": "A",
+          "step": 14400
+        }
+      ],
+      "title": "Uptime Koios calls/sec",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "1wqDDs4Vk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -250,8 +336,8 @@
       },
       "gridPos": {
         "h": 3,
-        "w": 5,
-        "x": 9,
+        "w": 3,
+        "x": 12,
         "y": 1
       },
       "id": 149,
@@ -337,8 +423,8 @@
       },
       "gridPos": {
         "h": 5,
-        "w": 5,
-        "x": 14,
+        "w": 4,
+        "x": 15,
         "y": 1
       },
       "id": 145,
@@ -595,7 +681,7 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 5,
+        "w": 6,
         "x": 9,
         "y": 4
       },
@@ -823,7 +909,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{__name__=\"thoth_telegram_timeouted_commands\", application=\"thoth-bot\", instance=\"127.0.0.1:8080\", job=\"thoth\"}"
+              "options": "{__name__=\"thoth_telegram_timeout_commands\", application=\"thoth-bot\", instance=\"127.0.0.1:8080\", job=\"thoth\"}"
             },
             "properties": [
               {
@@ -895,7 +981,7 @@
             "uid": "1wqDDs4Vk"
           },
           "editorMode": "builder",
-          "expr": "thoth_telegram_timeouted_commands",
+          "expr": "thoth_telegram_timeout_commands",
           "hide": false,
           "legendFormat": "__auto",
           "range": true,
@@ -3794,7 +3880,7 @@
     ]
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {
@@ -3826,6 +3912,6 @@
   "timezone": "browser",
   "title": "JVM (Tooth)",
   "uid": "Pe1V1yV4k",
-  "version": 23,
+  "version": 28,
   "weekStart": ""
 }
