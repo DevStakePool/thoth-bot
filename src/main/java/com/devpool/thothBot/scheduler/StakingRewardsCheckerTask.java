@@ -47,7 +47,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
             // Filter out non-staking users
             Iterator<List<User>> batchIterator = batches(
                     userDao.getUsers().stream().filter(User::isStakeAddress).collect(Collectors.toList()),
-                    USERS_BATCH_SIZE).iterator();
+                    this.usersBatchSize).iterator();
 
             while (batchIterator.hasNext()) {
                 List<User> usersBatch = batchIterator.next();

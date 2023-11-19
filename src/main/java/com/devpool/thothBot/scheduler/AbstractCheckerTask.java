@@ -7,6 +7,7 @@ import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
@@ -24,8 +25,6 @@ public abstract class AbstractCheckerTask {
     private static final Logger LOG = LoggerFactory.getLogger(AbstractCheckerTask.class);
     public static final int MAX_MSG_PAYLOAD_SIZE = 4096 - 512;
 
-    public static final int MAX_BUTTON_ROWS = 100;
-
     protected static final long DEFAULT_PAGINATION_SIZE = 1000;
     public static final double LOVELACE = 1000000.0;
     public static final String ADA_SYMBOL = " " + '\u20B3';
@@ -34,7 +33,6 @@ public abstract class AbstractCheckerTask {
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
 
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
-    protected static final int USERS_BATCH_SIZE = 10;
 
     public static final String ADA_HANDLE_POLICY_ID = "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a";
     private static final String ADA_HANDLE_PREFIX = "$";
@@ -48,6 +46,9 @@ public abstract class AbstractCheckerTask {
     protected KoiosFacade koiosFacade;
     @Autowired
     protected CoinPaprikaOracle oracle;
+
+    @Value("${thoth.users-batch-size:100}")
+    protected Integer usersBatchSize;
 
     protected String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
         if (poolAddress == null) return null;

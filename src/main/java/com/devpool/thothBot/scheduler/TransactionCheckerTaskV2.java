@@ -110,7 +110,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     @Override
     public void run() {
         LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
-        Iterator<List<User>> batchIterator = batches(userDao.getUsers(), USERS_BATCH_SIZE).iterator();
+        Iterator<List<User>> batchIterator = batches(userDao.getUsers(), this.usersBatchSize).iterator();
 
         while (batchIterator.hasNext()) {
             List<User> usersBatch = batchIterator.next();
