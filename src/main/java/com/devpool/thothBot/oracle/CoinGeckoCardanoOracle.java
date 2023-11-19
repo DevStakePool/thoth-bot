@@ -15,8 +15,6 @@ import org.springframework.web.reactive.function.client.WebClientRequestExceptio
 import reactor.core.publisher.Mono;
 import reactor.netty.http.client.HttpClient;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import java.time.Duration;
 import java.util.Map;
 import java.util.concurrent.Executors;
@@ -68,7 +66,7 @@ public class CoinGeckoCardanoOracle implements ICardanoOracle, Runnable {
         LOG.info("CoinGecko Oracle created");
     }
 
-    @PreDestroy
+    //@PreDestroy
     public void shutdown() {
         LOG.info("Shutting down executor services");
         this.scheduledExecutorService.shutdown();
