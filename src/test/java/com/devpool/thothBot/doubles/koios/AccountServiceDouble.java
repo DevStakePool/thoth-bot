@@ -101,12 +101,34 @@ public class AccountServiceDouble implements AccountService {
 
     @Override
     public Result<List<AccountAsset>> getAccountAssets(List<String> addressList, Integer epochNo, Options options) throws ApiException {
+        // only single iteration
+        Optional<Option> optionOffset = Optional.empty();
+        if (options != null) {
+            optionOffset = options.getOptionList().stream().filter(o -> o.getOptionType() == OptionType.OFFSET).findAny();
+        }
+
+        if (optionOffset.isPresent() && ((Offset) optionOffset.get()).getOffset() > 0) {
+            return Result.<List<AccountAsset>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
+        }
+
         try {
             List<AccountAsset> data = KoiosDataBuilder.getAccountAssets();
             // For testing purposes, we make sure the account "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy" does not have any handle
             data.removeIf(a -> a.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy") &&
                     a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
-            return Result.<List<AccountAsset>>builder().code(200).response("").successful(true).value(data).build();
+
+            // Thoth NFTs
+            if (addressList.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
+                List<AccountAsset> thothNFTs = KoiosDataBuilder.getThothNfts("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz");
+                data.addAll(thothNFTs);
+            }
+
+            return Result.<List<AccountAsset>>builder()
+                    .code(200)
+                    .response("")
+                    .successful(true)
+                    .value(data.stream().filter(d -> addressList.contains(d.getStakeAddress())).collect(Collectors.toList()))
+                    .build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }

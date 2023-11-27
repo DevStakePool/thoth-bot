@@ -29,9 +29,12 @@ thoth:
   admin:
     username: test_admin
   disable-scheduler: true
-  max-user-registrations: 5
   test:
     allow-jumbo-message: true
+  subscription:
+    nft:
+      stake-policy-id: 4e22095c8ffb8113206e788af55986eb70577f4e7b32f6ded0b0a855
+      free-for-all-policy-id: f7a721351f7b121a7c0f853a0216d28dae80d0fb13f1aa96e8d78b5f
   dapps:
     contracts:
       addr1w9qzpelu9hn45pefc0xr4ac4kdxeswq7pndul2vuj59u8tqaxdznu: SundaeSwap

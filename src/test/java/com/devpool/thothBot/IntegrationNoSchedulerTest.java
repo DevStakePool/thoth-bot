@@ -44,7 +44,8 @@ public class IntegrationNoSchedulerTest {
     static {
         TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
         TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0));
-        TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0));
+        //TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0)); // Reserved for Thoth NFTs tests
+        TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
         TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
         TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
     }
@@ -124,7 +125,7 @@ public class IntegrationNoSchedulerTest {
     }
 
     @Test
-    public void userCommandAddrForSubscribeTest() throws Exception {
+    public void userCommandAddrForSubscribeNominalTest() throws Exception {
         // Testing Address command
         Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
                 "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", -1000);
@@ -219,7 +220,7 @@ public class IntegrationNoSchedulerTest {
                         .toString().contains("please send your address")).count());
         Assertions.assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
-                        .equals("The provided address \"" + addr + "\" does not exist on-chain or it's invalid")).count());
+                        .equals("The provided address \"" + addr + "\" does not exist on-chain or it is not valid")).count());
     }
 
     @Test
@@ -269,7 +270,7 @@ public class IntegrationNoSchedulerTest {
                         .toString().contains("please send your address")).count());
         Assertions.assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
-                        .equals("The provided address \"" + addr + "\" does not exist on-chain or it's invalid")).count());
+                        .equals("The provided address \"" + addr + "\" does not exist on-chain or it is not valid")).count());
     }
 
     @Test
@@ -356,16 +357,16 @@ public class IntegrationNoSchedulerTest {
                         .toString().contains("Assets for address $")).count());
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1gc08w2lamu0zvcx7rxz7l86xlpfzy00qygdt0z\">COC</a> 26,845,000,000")));
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1wwyy88f8u937hz7kunlkss7gu446p6ed5gdfp6\">AGIX</a> 277.84")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset18dhkz9yshg4sf45k7c9vcqvxxrpmuch3zhkvqm\">0x616461</a> 1")));
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1sqgf4u09yskj8t3tngwzpkl9g276gl8t38lrcv\">Cardano Summit 2023 NFT 1571</a> 1")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Shown 10/76")));
+                .anyMatch(t -> t.contains("Shown 10/50")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Page 1/8")));
+                .anyMatch(t -> t.contains("Page 1/5")));
 
         // get assets as reply markup
         Optional<SendMessage> markupAssetsMsg = sentMessages.stream().filter(m -> m.getParameters().get("text")
