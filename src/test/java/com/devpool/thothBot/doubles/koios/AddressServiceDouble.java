@@ -1,5 +1,6 @@
 package com.devpool.thothBot.doubles.koios;
 
+import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.AddressService;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
@@ -7,13 +8,12 @@ import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.common.TxHash;
 import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
-import rest.koios.client.backend.factory.options.OptionType;
-import rest.koios.client.backend.factory.options.Options;
-import rest.koios.client.backend.factory.options.SortType;
+import rest.koios.client.backend.factory.options.*;
 
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AddressServiceDouble implements AddressService {
@@ -78,6 +78,15 @@ public class AddressServiceDouble implements AddressService {
     public Result<List<AddressAsset>> getAddressAssets(List<String> addressList, Options options) throws ApiException {
         try {
             List<AddressAsset> data = KoiosDataBuilder.getAddressAssets();
+
+            Optional<Option> optionOffset = Optional.empty();
+            if (options != null) {
+                optionOffset = options.getOptionList().stream().filter(o -> o.getOptionType() == OptionType.OFFSET).findAny();
+            }
+
+            if (optionOffset.isPresent() && ((Offset) optionOffset.get()).getOffset() > 0) {
+                return Result.<List<AddressAsset>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
+            }
 
             return Result.<List<AddressAsset>>builder().code(200).response("")
                     .successful(true)

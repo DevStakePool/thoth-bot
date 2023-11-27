@@ -2,9 +2,11 @@ package com.devpool.thothBot.telegram.command;
 
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
-import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
+import com.devpool.thothBot.exceptions.KoiosResponseException;
+import com.devpool.thothBot.exceptions.SubscriptionException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -46,6 +48,9 @@ public class AddressCmd implements IBotCommand {
 
     @Autowired
     private AssetFacade assetFacade;
+
+    @Autowired
+    private SubscriptionManager subscriptionManager;
 
     @Override
     public boolean canTrigger(String username, String message) {
@@ -117,6 +122,15 @@ public class AddressCmd implements IBotCommand {
         String addr = update.message().text().trim();
 
         try {
+            if (!isValidAddress(addr)) {
+                bot.execute(new SendMessage(update.message().chat().id(),
+                        String.format("The provided address \"%s\" does not exist on-chain or it is not valid", addr)));
+
+                return;
+            }
+
+            this.subscriptionManager.verifyUserSubscription(addr, update.message().chat().id());
+
             // Get block height
             Result<Tip> tipResult = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
             if (!tipResult.isSuccessful()) {
@@ -128,12 +142,7 @@ public class AddressCmd implements IBotCommand {
 
                 return;
             }
-            if (!isValidAddress(addr)) {
-                bot.execute(new SendMessage(update.message().chat().id(),
-                        String.format("The provided address \"%s\" does not exist on-chain or it's invalid", addr)));
 
-                return;
-            }
 
             userDao.addNewUser(
                     new User(update.message().chat().id(),
@@ -149,15 +158,39 @@ public class AddressCmd implements IBotCommand {
             LOG.warn("Error in command address: {}", e, e);
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("The address seems to be invalid: %s", e.getMessage())));
-        } catch (MaxRegistrationsExceededException e) {
-            LOG.warn("Max number of registrations exceeded for user {}: {}", update.message().chat().id(), e.getMessage());
-            bot.execute(new SendMessage(update.message().chat().id(),
-                    String.format("Max number of registrations exceeded. You can only register a maximum of %d wallets. Try to de-register some.",
-                            e.getMaxRegistrationsAllowed())));
         } catch (DuplicateKeyException e) {
             LOG.info("Duplicated key when registering a new wallet {}", e.toString());
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("It looks like the address %s has been already registered in this chat.", addr)));
+        } catch (KoiosResponseException e) {
+            LOG.warn("Something went wrong with the Koios call", e);
+            bot.execute(new SendMessage(update.message().chat().id(),
+                    String.format("Could not get on-chain information. Please try later again: %s", e.getMessage())));
+
+        } catch (SubscriptionException e) {
+            // TODO handle this
+            switch (e.getExceptionCause()) {
+                case FREE_SLOTS_EXCEEDED: {
+                    LOG.warn("Max number of subscriptions exceeded for user {}: {}", update.message().chat().id(), e.getMessage());
+                    bot.execute(new SendMessage(update.message().chat().id(),
+                            String.format("Max number of subscriptions exceeded. You currently own a total of %d Thoth NFTs. " +
+                                            "If you want to subscribe to more cardano accounts or addresses, " +
+                                            "please purchase more Thoth Plus One NFTs. Follow the instructions TODO",
+                                    // TODO complete this
+                                    e.getNumberOfOwnedNfts())));
+                }
+                case ADDRESS_ALREADY_OWNED_BY_OTHERS: {
+                    LOG.warn("Address already used by other users and contains Thoth NFTs user: {}: {}",
+                            update.message().chat().id(), e.getMessage());
+                    bot.execute(new SendMessage(update.message().chat().id(),
+                            String.format("The address %s that you are trying to subscribe to, contains Thoth NFTs but " +
+                                            "it is currently used by another Telegram user. If you believe this address " +
+                                            "is yours, please contact the creator of the Thoth Bot.",
+                                    // TODO complete this
+                                    e.getAddress())));
+
+                }
+            }
         }
     }
 

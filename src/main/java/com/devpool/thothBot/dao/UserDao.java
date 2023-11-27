@@ -1,13 +1,11 @@
 package com.devpool.thothBot.dao;
 
 import com.devpool.thothBot.dao.data.User;
-import com.devpool.thothBot.exceptions.MaxRegistrationsExceededException;
 import com.devpool.thothBot.exceptions.UserNotFoundException;
 import org.apache.commons.collections4.map.HashedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -33,9 +31,6 @@ public class UserDao {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
-
-    @Value("${thoth.max-user-registrations:5}")
-    private Integer maxUserRegistrations;
 
     @PostConstruct
     public void post() {
@@ -72,18 +67,7 @@ public class UserDao {
         else return outcome;
     }
 
-    public void addNewUser(User user) throws MaxRegistrationsExceededException {
-        // First, check if the user exists, and it has more than this.maxUserRegistrations address already registered
-        Long counter = this.namedParameterJdbcTemplate.queryForObject("select count(u.id) as registrations from users as u where chat_id = :chat_id",
-                new MapSqlParameterSource(Map.of(FIELD_CHAT_ID, user.getChatId())), Long.class);
-
-        if (counter >= this.maxUserRegistrations) {
-            MaxRegistrationsExceededException exception = new MaxRegistrationsExceededException(
-                    "The max number of registered wallets (" + this.maxUserRegistrations + ") has been reached");
-            exception.setMaxRegistrationsAllowed(this.maxUserRegistrations);
-            throw exception;
-        }
-
+    public void addNewUser(User user) {
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
         namedParameterJdbcTemplate.update(
                 "insert into users (chat_id, stake_addr, last_block_height, last_epoch_number) values (:chat_id, :stake_addr, :last_block_height, :last_epoch_number)",

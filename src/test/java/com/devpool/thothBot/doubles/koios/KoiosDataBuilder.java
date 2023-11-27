@@ -35,6 +35,7 @@ public class KoiosDataBuilder {
     private static final String ACCOUNT_UTXOS_JSON_FILE = "test-data/accounts_utxos.json";
     private static final String ADDRESSES_UTXOS_JSON_FILE = "test-data/addresses_utxos.json";
     private static final String ASSET_INFORMATION_PREFIX_JSON_FILE = "test-data/assets/asset_";
+    private static final String THOTH_NFTS_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_stake.json";
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
@@ -122,6 +123,21 @@ public class KoiosDataBuilder {
 
         List<AccountAsset> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
+
+        return data;
+    }
+
+    public static List<AccountAsset> getThothNfts(String stakeAddress) throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = classLoader.getResource(THOTH_NFTS_JSON_FILE).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        List<AccountAsset> data = mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+
+        data.forEach(a -> a.setStakeAddress(stakeAddress));
 
         return data;
     }
