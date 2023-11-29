@@ -119,7 +119,7 @@ public class AccountServiceDouble implements AccountService {
 
             // Thoth NFTs
             if (addressList.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
-                List<AccountAsset> thothNFTs = KoiosDataBuilder.getThothNfts("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz");
+                List<AccountAsset> thothNFTs = KoiosDataBuilder.getThothNftsForAccounts("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz");
                 data.addAll(thothNFTs);
             }
 

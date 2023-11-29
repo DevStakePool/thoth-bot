@@ -93,7 +93,7 @@ public class IntegrationNoSchedulerTest {
     private UnsubscribeCmd unsubscribeCmd;
 
     @Autowired
-    private AddressCmd stakeCmd;
+    private AddressCmd addressCmd;
 
     @Autowired
     private AssetsCmd assetsCmd;
@@ -129,7 +129,7 @@ public class IntegrationNoSchedulerTest {
         // Testing Address command
         Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
                 "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", -1000);
-        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(1))
@@ -154,7 +154,7 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
 
         argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(3))
@@ -174,12 +174,11 @@ public class IntegrationNoSchedulerTest {
     }
 
     @Test
-    public void userCommandAddrInvalidForSubscribeTest() throws Exception {
+    public void userCommandAddrForSubscribeStakingWithDevNominalTest() throws Exception {
         // Testing Address command
-        String addr = "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv50000";
         Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
-                addr, -1000);
-        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+                "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", -1000);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(1))
@@ -204,7 +203,155 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
 
         argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptor.capture());
+        sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(3, sendMessages.size());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Please specify the operation first")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("please send your address")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("From now on you will receive updates")).count());
+    }
+
+    @Test
+    public void userCommandAddrForSubscribeDoubleSubscriptionNominalTest() throws Exception {
+        // Testing Address command
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
+                "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", -1000);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
+
+        // First specify the /subscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate();
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(argumentCaptor.capture());
+
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptor.capture());
+        sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(3, sendMessages.size());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Please specify the operation first")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("please send your address")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("From now on you will receive updates")).count());
+    }
+
+    @Test
+    public void userCommandAddrForSubscribeStealingNFTsTest() throws Exception {
+        // Testing Address command
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
+                "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", -1);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -1, params.get("chat_id"));
+        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
+
+        // First specify the /subscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate("-1");
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(argumentCaptor.capture());
+
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptor.capture());
+        sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(3, sendMessages.size());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Please specify the operation first")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("please send your address")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("The address addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m that you are trying to subscribe to, contains Thoth NFTs but it is currently used by another Telegram user.")).count());
+    }
+
+    @Test
+    public void userCommandAddrInvalidForSubscribeTest() throws Exception {
+        // Testing Address command
+        String addr = "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv50000";
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
+                addr, -1000);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
+
+        // First specify the /subscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate();
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(argumentCaptor.capture());
+
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(3))
@@ -229,7 +376,7 @@ public class IntegrationNoSchedulerTest {
         String addr = "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8f0000";
         Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
                 addr, -1000);
-        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(1))
@@ -254,7 +401,7 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
 
         argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(3))
@@ -287,7 +434,7 @@ public class IntegrationNoSchedulerTest {
                                 .times(1))
                 .execute(argumentCaptor.capture());
         argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        this.stakeCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(2))
@@ -440,7 +587,7 @@ public class IntegrationNoSchedulerTest {
                 .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1sdzme5cnwgqk6u94k0fnlymenvnvfv3jm78dcz\">CLAY</a> 47,500.00")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Shown 10/111")));
+                .anyMatch(t -> t.contains("Shown 10/113")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("Page 1/12")));
@@ -472,7 +619,7 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(3, sentMessages.size());
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Shown 20/111")));
+                .anyMatch(t -> t.contains("Shown 20/113")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("Page 2/12")));

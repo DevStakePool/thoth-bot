@@ -18,6 +18,10 @@ import rest.koios.client.backend.api.transactions.model.TxInfo;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.OpenOption;
+import java.nio.file.StandardCopyOption;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 public class KoiosDataBuilder {
@@ -35,7 +39,8 @@ public class KoiosDataBuilder {
     private static final String ACCOUNT_UTXOS_JSON_FILE = "test-data/accounts_utxos.json";
     private static final String ADDRESSES_UTXOS_JSON_FILE = "test-data/addresses_utxos.json";
     private static final String ASSET_INFORMATION_PREFIX_JSON_FILE = "test-data/assets/asset_";
-    private static final String THOTH_NFTS_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_stake.json";
+    private static final String THOTH_NFTS_STAKE_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_stake.json";
+    private static final String THOTH_NFTS_FFA_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_free_for_all.json";
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
@@ -127,9 +132,9 @@ public class KoiosDataBuilder {
         return data;
     }
 
-    public static List<AccountAsset> getThothNfts(String stakeAddress) throws IOException {
+    public static List<AccountAsset> getThothNftsForAccounts(String stakeAddress) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(THOTH_NFTS_JSON_FILE).getFile();
+        String f = classLoader.getResource(THOTH_NFTS_STAKE_JSON_FILE).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -140,6 +145,28 @@ public class KoiosDataBuilder {
         data.forEach(a -> a.setStakeAddress(stakeAddress));
 
         return data;
+    }
+
+    public static List<AddressAsset> getThothNftsForAddresses(String address) throws IOException {
+        File tmpFile = File.createTempFile(THOTH_NFTS_STAKE_JSON_FILE, "");
+        try {
+            ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+            String f = classLoader.getResource(THOTH_NFTS_STAKE_JSON_FILE).getFile();
+            File jsonFile = new File(f);
+            ObjectMapper mapper = new ObjectMapper()
+                    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            Files.copy(jsonFile.toPath(), tmpFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            String jsonContent = Files.readString(tmpFile.toPath()).replace("stake_address", "address");
+            Files.writeString(tmpFile.toPath(), jsonContent);
+            List<AddressAsset> data = mapper.readValue(tmpFile, new TypeReference<>() {
+            });
+
+            data.forEach(a -> a.setAddress(address));
+
+            return data;
+        } finally {
+            tmpFile.delete();
+        }
     }
 
     public static List<AddressAsset> getAddressAssets() throws IOException {
