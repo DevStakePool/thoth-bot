@@ -42,7 +42,7 @@ public class SubscriptionManager {
     private UserDao userDao;
 
     public void verifyUserSubscription(String address, Long chatId) throws KoiosResponseException, SubscriptionException {
-        if (isAccountStakingWithDev(address, chatId))
+        if (User.isStakingAddress(address) && isAccountStakingWithDev(address, chatId))
             return;
 
         LOG.debug("The stake address {} is not delegated to DEV. Checking NFTs for subscriptions and stolen NFTs", address);
@@ -153,8 +153,7 @@ public class SubscriptionManager {
                 LOG.error("No account info found for the stake address {}", address);
                 throw new KoiosResponseException(String.format("No account info found for the stake address %s", address));
             }
-
-
+            
             String delegatedToPool = accountInfoRes.getValue().get(0).getDelegatedPool();
             LOG.debug("Is the account {} delegated to DEV pool? {})", address, DEV_POOL_ID.equals(delegatedToPool));
 

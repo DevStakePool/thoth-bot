@@ -88,6 +88,11 @@ public class AddressServiceDouble implements AddressService {
                 return Result.<List<AddressAsset>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
             }
 
+            if (addressList.contains("addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m")) {
+                List<AddressAsset> thothNFTs = KoiosDataBuilder.getThothNftsForAddresses("addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m");
+                data.addAll(thothNFTs);
+            }
+
             return Result.<List<AddressAsset>>builder().code(200).response("")
                     .successful(true)
                     .value(data.stream().filter(d -> addressList.contains(d.getAddress())).collect(Collectors.toList()))

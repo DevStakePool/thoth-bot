@@ -69,7 +69,11 @@ public class TelegramUtils {
     }
 
     public static Update buildSubscribeCommandUpdate() throws IOException {
-        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(SUBSCRIBE_CMD_JSON, null);
+        return buildSubscribeCommandUpdate("-1000");
+    }
+    public static Update buildSubscribeCommandUpdate(String chatId) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(SUBSCRIBE_CMD_JSON,
+                jc -> jc.replace("$chat_id", chatId));
         return resp.updates().get(0);
     }
 
@@ -80,7 +84,7 @@ public class TelegramUtils {
 
     public static Update buildAddrCommandUpdate(String stakeAddress, int chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(STAKE_CMD_JSON,
-                jsonContent -> jsonContent.replace("$stake_addr", stakeAddress).replace("-1000", Integer.toString(chatId)));
+                jsonContent -> jsonContent.replace("$stake_addr", stakeAddress).replaceAll("-1000", Integer.toString(chatId)));
         return resp.updates().get(0);
     }
 
