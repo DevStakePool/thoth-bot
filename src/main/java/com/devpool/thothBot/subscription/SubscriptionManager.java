@@ -153,7 +153,7 @@ public class SubscriptionManager {
                 LOG.error("No account info found for the stake address {}", address);
                 throw new KoiosResponseException(String.format("No account info found for the stake address %s", address));
             }
-            
+
             String delegatedToPool = accountInfoRes.getValue().get(0).getDelegatedPool();
             LOG.debug("Is the account {} delegated to DEV pool? {})", address, DEV_POOL_ID.equals(delegatedToPool));
 
