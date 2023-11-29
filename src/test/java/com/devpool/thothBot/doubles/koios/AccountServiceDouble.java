@@ -19,6 +19,12 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AccountServiceDouble implements AccountService {
+    private final boolean disableThothNftForAccounts;
+
+    public AccountServiceDouble(boolean disableThothNftForAccounts) {
+        this.disableThothNftForAccounts = disableThothNftForAccounts;
+    }
+
     @Override
     public Result<List<StakeAddress>> getAccountList(Options options) throws ApiException {
         return null;
@@ -118,7 +124,7 @@ public class AccountServiceDouble implements AccountService {
                     a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
 
             // Thoth NFTs
-            if (addressList.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
+            if (!this.disableThothNftForAccounts && addressList.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
                 List<AccountAsset> thothNFTs = KoiosDataBuilder.getThothNftsForAccounts("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz");
                 data.addAll(thothNFTs);
             }

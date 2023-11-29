@@ -178,6 +178,7 @@ public class AddressCmd implements IBotCommand {
                                             "please purchase more Thoth Plus One NFTs. Follow the instructions TODO",
                                     // TODO complete this
                                     e.getNumberOfOwnedNfts())));
+                    break;
                 }
                 case ADDRESS_ALREADY_OWNED_BY_OTHERS: {
                     LOG.warn("Address already used by other users and contains Thoth NFTs user: {}: {}",
@@ -188,6 +189,7 @@ public class AddressCmd implements IBotCommand {
                                             "is yours, please contact the creator of the Thoth Bot.",
                                     // TODO complete this
                                     e.getAddress())));
+                    break;
 
                 }
             }

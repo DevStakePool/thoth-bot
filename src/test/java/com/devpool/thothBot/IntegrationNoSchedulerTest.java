@@ -47,6 +47,7 @@ public class IntegrationNoSchedulerTest {
         //TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0)); // Reserved for Thoth NFTs tests
         TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
         TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
+        TEST_USERS.add(new User(-4L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0));
         TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
     }
 
@@ -269,6 +270,59 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("From now on you will receive updates")).count());
+    }
+
+    @Test
+    public void userCommandAddrForSubscribeNotEnoughThothNFTsTest() throws Exception {
+        // Custom Koios backend double
+        this.backendServiceDouble = new BackendServiceDouble(true);
+        Mockito.when(this.koiosFacade.getKoiosService()).thenReturn(this.backendServiceDouble);
+
+        // Testing Address command
+        Update addrCmdUpdate = TelegramUtils.buildAddrCommandUpdate(
+                "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", -4);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -4, params.get("chat_id"));
+        Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
+
+        // First specify the /subscribe
+        ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        Update subscribeCmdUpdate = TelegramUtils.buildSubscribeCommandUpdate("-4");
+        this.subscribeCmd.execute(subscribeCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(2))
+                .execute(argumentCaptor.capture());
+
+        argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
+        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(3))
+                .execute(argumentCaptor.capture());
+        sendMessages = argumentCaptor.getAllValues();
+
+        Assertions.assertEquals(3, sendMessages.size());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Please specify the operation first")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("please send your address")).count());
+        Assertions.assertEquals(1,
+                sendMessages.stream().filter(m -> m.getParameters().get("text")
+                        .toString().contains("Max number of subscriptions exceeded")).count());
     }
 
     @Test
@@ -671,11 +725,11 @@ public class IntegrationNoSchedulerTest {
         this.adminNotifyAllCmd.execute(notifyAllCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
-                                .times(6))
+                                .times(7))
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
-        // 6 = 2 to the admin + 4 user accounts
-        Assertions.assertEquals(6, sendMessages.size());
+        // 6 = 2 to the admin + 5 user accounts
+        Assertions.assertEquals(7, sendMessages.size());
 
         for (SendMessage sendMessage : sendMessages) {
             LOG.debug("Message to chat {}: {}", sendMessage.getParameters().get("chat_id"), sendMessage.getParameters().get("text"));
@@ -688,14 +742,14 @@ public class IntegrationNoSchedulerTest {
                 sm -> (Long) sm.getParameters().get("chat_id") == 1683539744L).collect(Collectors.toList());
         Assertions.assertEquals(2, adminResponses.size());
         Assertions.assertEquals(1, adminResponses.stream().filter(
-                r -> r.getParameters().get("text").toString().contains("Ok, notifying all 4 user(s)")).count());
+                r -> r.getParameters().get("text").toString().contains("Ok, notifying all 5 user(s)")).count());
         Assertions.assertEquals(1, adminResponses.stream().filter(
-                r -> r.getParameters().get("text").toString().contains("All Done! Broadcast message(s) 4/4")).count());
+                r -> r.getParameters().get("text").toString().contains("All Done! Broadcast message(s) 5/5")).count());
 
         List<SendMessage> usersResponses = sendMessages.stream().filter(
                 sm -> (Long) sm.getParameters().get("chat_id") != 1683539744L).collect(Collectors.toList());
-        Assertions.assertEquals(4, usersResponses.size());
-        Assertions.assertEquals(4, usersResponses.stream().filter(
+        Assertions.assertEquals(5, usersResponses.size());
+        Assertions.assertEquals(5, usersResponses.stream().filter(
                 r -> r.getParameters().get("text").toString().startsWith("Good day everyone!")).count());
 
     }
