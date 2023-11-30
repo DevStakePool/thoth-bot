@@ -15,9 +15,9 @@ import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
-import rest.koios.client.backend.factory.options.*;
-import rest.koios.client.backend.factory.options.filters.Filter;
-import rest.koios.client.backend.factory.options.filters.FilterType;
+import rest.koios.client.backend.factory.options.Limit;
+import rest.koios.client.backend.factory.options.Offset;
+import rest.koios.client.backend.factory.options.Options;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -76,6 +76,9 @@ public class SubscriptionManager {
             checkForNftStealing(address, chatId, accountAssets, addressAssets);
         }
 
+        // We should not count the subscribed accounts staking with DEV
+        long devStakers = userSubscribedAccounts.isEmpty() ? 0 : countDevStakers(userSubscribedAccounts, chatId);
+
         // All good so far, sum up all the already subscribed NFTs in various accounts/addresses including the new one
         long noUserSubscriptionNfts = 1;  // with start with 1 is because one subscription is free for everyone
         noUserSubscriptionNfts += accountAssets.stream()
@@ -85,7 +88,7 @@ public class SubscriptionManager {
 
         // Get current subscriptions
         long noCurrentSubscriptions = allUsers.stream()
-                .filter(u -> u.getChatId().equals(chatId)).count();
+                .filter(u -> u.getChatId().equals(chatId)).count() - devStakers;
 
         LOG.debug("The user {} holds {} subscription NFTs, and it is currently subscribed to {} accounts/addresses",
                 chatId, noUserSubscriptionNfts, noCurrentSubscriptions);
@@ -100,6 +103,25 @@ public class SubscriptionManager {
             e.setNumberOfCurrentSubscriptions(noCurrentSubscriptions);
             e.setAddress(address);
             throw e;
+        }
+    }
+
+    private long countDevStakers(List<String> userSubscribedAccounts, long chatId) throws KoiosResponseException {
+        try {
+            Result<List<AccountInfo>> resp = this.koiosFacade.getKoiosService().getAccountService().getAccountInformation(userSubscribedAccounts, null);
+
+            if (!resp.isSuccessful()) {
+                LOG.warn("Koios call failed when retrieving the accounts information subscribed by chat-id {}: {}/{}",
+                        chatId, resp.getCode(), resp.getResponse());
+                throw new KoiosResponseException(String.format("Koios call failed when retrieving the account information for chat-id %d: %d/%s",
+                        chatId, resp.getCode(), resp.getResponse()));
+            }
+            long delegatedToDev = resp.getValue().stream().filter(i -> DEV_POOL_ID.equals(i.getDelegatedPool())).count();
+            LOG.debug("The chat-id {} is subscribed to {} account(s) delegated to DEV)", chatId, delegatedToDev);
+            return delegatedToDev;
+        } catch (ApiException e) {
+            LOG.error("API Exception while querying Koios", e);
+            throw new KoiosResponseException("Koios API exception", e);
         }
     }
 
