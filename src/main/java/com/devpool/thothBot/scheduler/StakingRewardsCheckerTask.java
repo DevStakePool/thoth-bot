@@ -2,6 +2,7 @@ package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.devpool.thothBot.util.CollectionsUtil;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +21,6 @@ import rest.koios.client.backend.factory.options.Options;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 @Component
 public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Runnable {
@@ -45,7 +44,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
 
             LOG.info("Checking staking rewards for {} wallets", this.userDao.getUsers().size());
             // Filter out non-staking users
-            Iterator<List<User>> batchIterator = batches(
+            Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(
                     userDao.getUsers().stream().filter(User::isStakeAddress).collect(Collectors.toList()),
                     this.usersBatchSize).iterator();
 
@@ -169,17 +168,5 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
         if ("treasury".equals(type))
             return "Catalyst Voting";
         return type;
-    }
-
-    public <T> Stream<List<T>> batches(List<T> source, int length) {
-        if (length <= 0)
-            throw new IllegalArgumentException("length cannot be negative, length=" + length);
-        int size = source.size();
-        if (size <= 0)
-            return Stream.empty();
-
-        int fullChunks = (size - 1) / length;
-        return IntStream.range(0, fullChunks + 1).mapToObj(
-                n -> source.subList(n * length, n == fullChunks ? size : (n + 1) * length));
     }
 }
