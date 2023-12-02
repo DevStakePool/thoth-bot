@@ -5,6 +5,7 @@ import com.devpool.thothBot.exceptions.KoiosResponseException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.devpool.thothBot.util.CollectionsUtil;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.NullNode;
@@ -31,13 +32,10 @@ import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.security.AllPermission;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 @Component
 @ConfigurationProperties("thoth.dapps")
@@ -110,7 +108,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     @Override
     public void run() {
         LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
-        Iterator<List<User>> batchIterator = batches(userDao.getUsers(), this.usersBatchSize).iterator();
+        Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(userDao.getUsers(), this.usersBatchSize).iterator();
 
         while (batchIterator.hasNext()) {
             List<User> usersBatch = batchIterator.next();
@@ -413,7 +411,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     }
 
     private void notifyTelegramUser(List<StringBuilder> txBuilders, User user, Map<String, String> handles) {
-        Iterator<List<StringBuilder>> batches = batches(txBuilders, MAX_TX_IN_TELEGRAM_NOTIFICATION).iterator();
+        Iterator<List<StringBuilder>> batches = CollectionsUtil.batchesList(txBuilders, MAX_TX_IN_TELEGRAM_NOTIFICATION).iterator();
 
         while (batches.hasNext()) {
             List<StringBuilder> batch = batches.next();
@@ -569,16 +567,6 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         messageBuilder.append("\n\n"); // Some padding between TXs
 
         return messageBuilder;
-    }
-
-
-    public <T> Stream<List<T>> batches(List<T> source, int length) {
-        if (length <= 0) throw new IllegalArgumentException("length cannot be negative, length=" + length);
-        int size = source.size();
-        if (size == 0) return Stream.empty();
-
-        int fullChunks = (size - 1) / length;
-        return IntStream.range(0, fullChunks + 1).mapToObj(n -> source.subList(n * length, n == fullChunks ? size : (n + 1) * length));
     }
 
     public Map<String, String> getContracts() {
