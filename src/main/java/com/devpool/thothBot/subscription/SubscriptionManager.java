@@ -5,6 +5,7 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.KoiosResponseException;
 import com.devpool.thothBot.exceptions.SubscriptionException;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.util.CollectionsUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ import java.util.stream.Collectors;
  * This class is responsible for validating user subscription based on the amount of NFTs that the user owns.
  */
 @Component
-public class SubscriptionManager {
+public class SubscriptionManager implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(SubscriptionManager.class);
     public static final String DEV_POOL_ID = "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv";
     @Value("${thoth.subscription.nft.stake-policy-id}")
@@ -41,8 +42,17 @@ public class SubscriptionManager {
     @Autowired
     private UserDao userDao;
 
+    /**
+     * Single shot call used when a user wants to register a new address
+     *
+     * @param address the new address
+     * @param chatId  the chat ID of the user
+     * @throws KoiosResponseException in case of issues with koios
+     * @throws SubscriptionException  is case it's not possible to subscribe this address
+     */
     public void verifyUserSubscription(String address, Long chatId) throws KoiosResponseException, SubscriptionException {
-        if (User.isStakingAddress(address) && isAccountStakingWithDev(address, chatId))
+
+        if (User.isStakingAddress(address) && countDevStakers(Map.of(chatId, List.of(address))).getOrDefault(chatId, 0L) > 0)
             return;
 
         LOG.debug("The stake address {} is not delegated to DEV. Checking NFTs for subscriptions and stolen NFTs", address);
@@ -61,8 +71,8 @@ public class SubscriptionManager {
         else
             userSubscribedAddresses.add(address);
 
-        List<AccountAsset> accountAssets = userSubscribedAccounts.isEmpty() ? Collections.emptyList() : getAccountsAssets(userSubscribedAccounts, chatId);
-        List<AddressAsset> addressAssets = userSubscribedAddresses.isEmpty() ? Collections.emptyList() : getAddressesAssets(userSubscribedAddresses, chatId);
+        List<AccountAsset> accountAssets = userSubscribedAccounts.isEmpty() ? Collections.emptyList() : getAccountsAssets(Map.of(chatId, userSubscribedAccounts)).get(chatId);
+        List<AddressAsset> addressAssets = userSubscribedAddresses.isEmpty() ? Collections.emptyList() : getAddressesAssets(Map.of(chatId, userSubscribedAddresses)).get(chatId);
 
         // Before proceeding, we need to verify that the address the user wasts to subscribe to,
         // does not have NFTs if it already belongs to someone.
@@ -77,7 +87,7 @@ public class SubscriptionManager {
         }
 
         // We should not count the subscribed accounts staking with DEV
-        long devStakers = userSubscribedAccounts.isEmpty() ? 0 : countDevStakers(userSubscribedAccounts, chatId);
+        long devStakers = userSubscribedAccounts.isEmpty() ? 0 : countDevStakers(Map.of(chatId, userSubscribedAccounts)).get(chatId);
 
         // All good so far, sum up all the already subscribed NFTs in various accounts/addresses including the new one
         long noUserSubscriptionNfts = 1;  // with start with 1 is because one subscription is free for everyone
@@ -106,23 +116,51 @@ public class SubscriptionManager {
         }
     }
 
-    private long countDevStakers(List<String> userSubscribedAccounts, long chatId) throws KoiosResponseException {
-        try {
-            Result<List<AccountInfo>> resp = this.koiosFacade.getKoiosService().getAccountService().getAccountInformation(userSubscribedAccounts, null);
+    /**
+     * Checks for each chat ID (map key) how many of the passed account addresses are staking with DEV pool and returns
+     * the total of addresses staking with DEV pool, organised by chat ID
+     *
+     * @param userSubscribedAccounts the map chat-id -> list of account addresses
+     * @return the map of how many of the input addresses are staking with DEV pool, per chat-id
+     * @throws KoiosResponseException in case of API call error
+     */
+    private Map<Long, Long> countDevStakers(Map<Long, List<String>> userSubscribedAccounts) throws KoiosResponseException {
+        List<String> allStakeAddresses = userSubscribedAccounts.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
+        Iterator<List<String>> batchesIter = CollectionsUtil.batchesList(allStakeAddresses, 100).iterator();
 
-            if (!resp.isSuccessful()) {
-                LOG.warn("Koios call failed when retrieving the accounts information subscribed by chat-id {}: {}/{}",
-                        chatId, resp.getCode(), resp.getResponse());
-                throw new KoiosResponseException(String.format("Koios call failed when retrieving the account information for chat-id %d: %d/%s",
-                        chatId, resp.getCode(), resp.getResponse()));
+        Map<String, Boolean> accountsInDevPool = new HashMap<>();
+        while (batchesIter.hasNext()) {
+            List<String> batch = batchesIter.next();
+
+            try {
+                Result<List<AccountInfo>> resp = this.koiosFacade.getKoiosService().getAccountService()
+                        .getAccountInformation(batch, null);
+
+                if (!resp.isSuccessful()) {
+                    LOG.warn("Koios call failed when retrieving the accounts information: {}/{}",
+                            resp.getCode(), resp.getResponse());
+                    throw new KoiosResponseException(String.format("Koios call failed when retrieving the account information %d/%s",
+                            resp.getCode(), resp.getResponse()));
+                }
+
+                resp.getValue().forEach(a -> accountsInDevPool.put(a.getStakeAddress(), DEV_POOL_ID.equals(a.getDelegatedPool())));
+            } catch (ApiException e) {
+                LOG.error("API Exception while querying Koios", e);
+                throw new KoiosResponseException("Koios API exception", e);
             }
-            long delegatedToDev = resp.getValue().stream().filter(i -> DEV_POOL_ID.equals(i.getDelegatedPool())).count();
-            LOG.debug("The chat-id {} is subscribed to {} account(s) delegated to DEV)", chatId, delegatedToDev);
-            return delegatedToDev;
-        } catch (ApiException e) {
-            LOG.error("API Exception while querying Koios", e);
-            throw new KoiosResponseException("Koios API exception", e);
         }
+
+        // Construct output
+        Map<Long, Long> output = new HashMap<>();
+        for (Map.Entry<Long, List<String>> entry : userSubscribedAccounts.entrySet()) {
+            Long chatId = entry.getKey();
+            output.put(chatId,
+                    entry.getValue().stream().filter(a -> accountsInDevPool.getOrDefault(a, false)).count());
+        }
+        if (LOG.isDebugEnabled())
+            LOG.debug("Calculated the following output chat-id vs how many subscribed addresses are in DEV: {}", output);
+
+        return output;
     }
 
     /**
@@ -159,94 +197,122 @@ public class SubscriptionManager {
         LOG.info("The address {} is already followed by another user, but it does not contain any thoth NFTs", address);
     }
 
-    private boolean isAccountStakingWithDev(String address, long chatId) throws KoiosResponseException {
-        try {
-            // We need to first check if this account is staking to DEV pool. In this case it's fine to be subscribed
-            Result<List<AccountInfo>> accountInfoRes = this.koiosFacade.getKoiosService().getAccountService().getAccountInformation(
-                    List.of(address), null);
-            if (!accountInfoRes.isSuccessful()) {
-                LOG.warn("Koios call failed when retrieving the account information for chat-id {}: {}/{}",
-                        chatId, accountInfoRes.getCode(), accountInfoRes.getResponse());
-                throw new KoiosResponseException(String.format("Koios call failed when retrieving the account information for chat-id %d: %d/%s",
-                        chatId, accountInfoRes.getCode(), accountInfoRes.getResponse()));
-            }
-
-            if (accountInfoRes.getValue().isEmpty()) {
-                LOG.error("No account info found for the stake address {}", address);
-                throw new KoiosResponseException(String.format("No account info found for the stake address %s", address));
-            }
-
-            String delegatedToPool = accountInfoRes.getValue().get(0).getDelegatedPool();
-            LOG.debug("Is the account {} delegated to DEV pool? {})", address, DEV_POOL_ID.equals(delegatedToPool));
-
-            return DEV_POOL_ID.equals(delegatedToPool);
-        } catch (ApiException e) {
-            LOG.error("API Exception while querying Koios", e);
-            throw new KoiosResponseException("Koios API exception", e);
-        }
-    }
-
-    private List<AccountAsset> getAccountsAssets(List<String> accountAddresses, long chatId) throws KoiosResponseException {
-        List<AccountAsset> outcome = new ArrayList<>();
+    private Map<Long, List<AccountAsset>> getAccountsAssets(Map<Long, List<String>> chatAccountAddresses) throws KoiosResponseException {
         long offset = 0;
         long pagination = 1000;
         Result<List<AccountAsset>> assetsResp;
+
+        List<String> accountAddresses = chatAccountAddresses.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
+        Iterator<List<String>> batchesIterator = CollectionsUtil.batchesList(accountAddresses, 50).iterator();
+        Map<String, List<AccountAsset>> assetsOfAccounts = new HashMap<>();
+
         try {
-            do {
-                Options options = Options.builder()
-                        .option(Limit.of(1000))
-                        .option(Offset.of(offset)).build();
-                offset += pagination;
-                assetsResp = this.koiosFacade.getKoiosService().getAccountService()
-                        .getAccountAssets(accountAddresses, null, options);
+            while (batchesIterator.hasNext()) {
+                List<String> batch = batchesIterator.next();
+                do {
+                    Options options = Options.builder()
+                            .option(Limit.of(1000))
+                            .option(Offset.of(offset)).build();
+                    offset += pagination;
+                    assetsResp = this.koiosFacade.getKoiosService().getAccountService()
+                            .getAccountAssets(batch, null, options);
 
-                if (!assetsResp.isSuccessful()) {
-                    LOG.error("Can't retrieve the asset list for user chat-id {}, due to code {} and response {}",
-                            chatId, assetsResp.getCode(), assetsResp.getResponse());
-                    throw new KoiosResponseException(String.format("Can't retrieve the asset list for user chat-id %d, due to code %d and response %s",
-                            chatId, assetsResp.getCode(), assetsResp.getResponse()));
-                }
+                    if (!assetsResp.isSuccessful()) {
+                        LOG.error("Can't retrieve the asset list, due to code {} and response {}",
+                                assetsResp.getCode(), assetsResp.getResponse());
+                        throw new KoiosResponseException(String.format("Can't retrieve the asset list, due to code %d and response %s",
+                                assetsResp.getCode(), assetsResp.getResponse()));
+                    }
 
-                outcome.addAll(assetsResp.getValue());
-
-            } while (assetsResp.isSuccessful() && !assetsResp.getValue().isEmpty());
+                    assetsResp.getValue().forEach(a -> {
+                        assetsOfAccounts.putIfAbsent(a.getStakeAddress(), new ArrayList<>());
+                        assetsOfAccounts.get(a.getStakeAddress()).add(a);
+                    });
+                } while (assetsResp.isSuccessful() && !assetsResp.getValue().isEmpty());
+            }
         } catch (ApiException e) {
             LOG.error("API Exception while querying Koios", e);
             throw new KoiosResponseException("Koios API exception", e);
         }
+
+
+        // create the output
+        Map<Long, List<AccountAsset>> outcome = new HashMap<>();
+        for (Map.Entry<Long, List<String>> entry : chatAccountAddresses.entrySet()) {
+            Long chatId = entry.getKey();
+            outcome.putIfAbsent(chatId, new ArrayList<>());
+            for (String addr : entry.getValue()) {
+                if (assetsOfAccounts.containsKey(addr)) {
+                    outcome.get(chatId).addAll(assetsOfAccounts.get(addr));
+                }
+            }
+        }
+
+        if (LOG.isDebugEnabled())
+            LOG.debug("Retrieved account assets: {}", outcome);
 
         return outcome;
     }
 
-    private List<AddressAsset> getAddressesAssets(List<String> addresses, long chatId) throws KoiosResponseException {
-        List<AddressAsset> outcome = new ArrayList<>();
+    private Map<Long, List<AddressAsset>> getAddressesAssets(Map<Long, List<String>> chatAddresses) throws KoiosResponseException {
         long offset = 0;
         long pagination = 1000;
         Result<List<AddressAsset>> assetsResp;
+
+        List<String> addresses = chatAddresses.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
+        Iterator<List<String>> batchesIterator = CollectionsUtil.batchesList(addresses, 50).iterator();
+        Map<String, List<AddressAsset>> assetsOfAddresses = new HashMap<>();
+
         try {
-            do {
-                Options options = Options.builder()
-                        .option(Limit.of(1000))
-                        .option(Offset.of(offset)).build();
-                offset += pagination;
-                assetsResp = this.koiosFacade.getKoiosService().getAddressService()
-                        .getAddressAssets(addresses, options);
+            while (batchesIterator.hasNext()) {
+                List<String> batch = batchesIterator.next();
+                do {
+                    Options options = Options.builder()
+                            .option(Limit.of(1000))
+                            .option(Offset.of(offset)).build();
+                    offset += pagination;
+                    assetsResp = this.koiosFacade.getKoiosService().getAddressService()
+                            .getAddressAssets(batch, options);
 
-                if (!assetsResp.isSuccessful()) {
-                    LOG.error("Can't retrieve the asset list for user chat-id {}, due to code {} and response {}",
-                            chatId, assetsResp.getCode(), assetsResp.getResponse());
-                    throw new KoiosResponseException(String.format("Can't retrieve the asset list for user chat-id %d, due to code %d and response %s",
-                            chatId, assetsResp.getCode(), assetsResp.getResponse()));
-                }
+                    if (!assetsResp.isSuccessful()) {
+                        LOG.error("Can't retrieve the asset list, due to code {} and response {}",
+                                assetsResp.getCode(), assetsResp.getResponse());
+                        throw new KoiosResponseException(String.format("Can't retrieve the asset list, due to code %d and response %s",
+                                assetsResp.getCode(), assetsResp.getResponse()));
+                    }
 
-                outcome.addAll(assetsResp.getValue());
-
-            } while (assetsResp.isSuccessful() && !assetsResp.getValue().isEmpty());
+                    assetsResp.getValue().forEach(a -> {
+                        assetsOfAddresses.putIfAbsent(a.getAddress(), new ArrayList<>());
+                        assetsOfAddresses.get(a.getAddress()).add(a);
+                    });
+                } while (assetsResp.isSuccessful() && !assetsResp.getValue().isEmpty());
+            }
         } catch (ApiException e) {
             LOG.error("API Exception while querying Koios", e);
             throw new KoiosResponseException("Koios API exception", e);
         }
 
+
+        // create the output
+        Map<Long, List<AddressAsset>> outcome = new HashMap<>();
+        for (Map.Entry<Long, List<String>> entry : chatAddresses.entrySet()) {
+            Long chatId = entry.getKey();
+            outcome.putIfAbsent(chatId, new ArrayList<>());
+            for (String addr : entry.getValue()) {
+                if (assetsOfAddresses.containsKey(addr)) {
+                    outcome.get(chatId).addAll(assetsOfAddresses.get(addr));
+                }
+            }
+        }
+
+        if (LOG.isDebugEnabled())
+            LOG.debug("Retrieved account assets: {}", outcome);
+
         return outcome;
+    }
+
+    @Override
+    public void run() {
+
     }
 }
