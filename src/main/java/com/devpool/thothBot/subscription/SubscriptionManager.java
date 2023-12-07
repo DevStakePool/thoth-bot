@@ -5,7 +5,9 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.KoiosResponseException;
 import com.devpool.thothBot.exceptions.SubscriptionException;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
+import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,11 +38,22 @@ public class SubscriptionManager implements Runnable {
     @Value("${thoth.subscription.nft.free-for-all-policy-id}")
     private String freeForAllNftPolicyId;
 
+
+    @Value("${thoth.subscription.info-batch-size:100}")
+    private Integer infoBatchSize;
+
+    @Value("${thoth.subscription.assets-batch-size:50}")
+    private Integer assetsBatchSize;
+
     @Autowired
     private KoiosFacade koiosFacade;
 
     @Autowired
     private UserDao userDao;
+
+    @Autowired
+    private TelegramFacade telegramFacade;
+
 
     /**
      * Single shot call used when a user wants to register a new address
@@ -52,7 +65,7 @@ public class SubscriptionManager implements Runnable {
      */
     public void verifyUserSubscription(String address, Long chatId) throws KoiosResponseException, SubscriptionException {
 
-        if (User.isStakingAddress(address) && countDevStakers(Map.of(chatId, List.of(address))).getOrDefault(chatId, 0L) > 0)
+        if (!getDevStakers(Map.of(chatId, List.of(address))).getOrDefault(chatId, Collections.emptyList()).isEmpty())
             return;
 
         LOG.debug("The stake address {} is not delegated to DEV. Checking NFTs for subscriptions and stolen NFTs", address);
@@ -87,7 +100,7 @@ public class SubscriptionManager implements Runnable {
         }
 
         // We should not count the subscribed accounts staking with DEV
-        long devStakers = userSubscribedAccounts.isEmpty() ? 0 : countDevStakers(Map.of(chatId, userSubscribedAccounts)).get(chatId);
+        long devStakers = getDevStakers(Map.of(chatId, userSubscribedAccounts)).getOrDefault(chatId, Collections.emptyList()).size();
 
         // All good so far, sum up all the already subscribed NFTs in various accounts/addresses including the new one
         long noUserSubscriptionNfts = 1;  // with start with 1 is because one subscription is free for everyone
@@ -117,22 +130,23 @@ public class SubscriptionManager implements Runnable {
     }
 
     /**
-     * Checks for each chat ID (map key) how many of the passed account addresses are staking with DEV pool and returns
-     * the total of addresses staking with DEV pool, organised by chat ID
+     * Checks for each chat ID (map key) what are the account addresses that are staking with DEV pool and returns
+     * the total list of addresses staking with DEV pool, organised by chat ID
      *
      * @param userSubscribedAccounts the map chat-id -> list of account addresses
-     * @return the map of how many of the input addresses are staking with DEV pool, per chat-id
+     * @return the map of how staking addresses that are staking with DEV pool, per chat-id
      * @throws KoiosResponseException in case of API call error
      */
-    private Map<Long, Long> countDevStakers(Map<Long, List<String>> userSubscribedAccounts) throws KoiosResponseException {
+    private Map<Long, List<String>> getDevStakers(Map<Long, List<String>> userSubscribedAccounts) throws KoiosResponseException {
         List<String> allStakeAddresses = userSubscribedAccounts.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
-        Iterator<List<String>> batchesIter = CollectionsUtil.batchesList(allStakeAddresses, 100).iterator();
+        Iterator<List<String>> batchesIter = CollectionsUtil.batchesList(
+                allStakeAddresses.stream().filter(User::isStakingAddress).collect(Collectors.toList()),
+                this.infoBatchSize).iterator();
 
         Map<String, Boolean> accountsInDevPool = new HashMap<>();
         while (batchesIter.hasNext()) {
-            List<String> batch = batchesIter.next();
-
             try {
+                List<String> batch = batchesIter.next();
                 Result<List<AccountInfo>> resp = this.koiosFacade.getKoiosService().getAccountService()
                         .getAccountInformation(batch, null);
 
@@ -151,11 +165,13 @@ public class SubscriptionManager implements Runnable {
         }
 
         // Construct output
-        Map<Long, Long> output = new HashMap<>();
+        Map<Long, List<String>> output = new HashMap<>();
         for (Map.Entry<Long, List<String>> entry : userSubscribedAccounts.entrySet()) {
             Long chatId = entry.getKey();
-            output.put(chatId,
-                    entry.getValue().stream().filter(a -> accountsInDevPool.getOrDefault(a, false)).count());
+            output.putIfAbsent(chatId, new ArrayList<>());
+            output.get(chatId).addAll(entry.getValue().stream()
+                    .filter(stakeAddr -> accountsInDevPool.getOrDefault(stakeAddr, false))
+                    .collect(Collectors.toList()));
         }
         if (LOG.isDebugEnabled())
             LOG.debug("Calculated the following output chat-id vs how many subscribed addresses are in DEV: {}", output);
@@ -203,11 +219,12 @@ public class SubscriptionManager implements Runnable {
         Result<List<AccountAsset>> assetsResp;
 
         List<String> accountAddresses = chatAccountAddresses.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
-        Iterator<List<String>> batchesIterator = CollectionsUtil.batchesList(accountAddresses, 50).iterator();
+        Iterator<List<String>> batchesIterator = CollectionsUtil.batchesList(accountAddresses, this.assetsBatchSize).iterator();
         Map<String, List<AccountAsset>> assetsOfAccounts = new HashMap<>();
 
-        try {
-            while (batchesIterator.hasNext()) {
+        while (batchesIterator.hasNext()) {
+
+            try {
                 List<String> batch = batchesIterator.next();
                 do {
                     Options options = Options.builder()
@@ -229,12 +246,11 @@ public class SubscriptionManager implements Runnable {
                         assetsOfAccounts.get(a.getStakeAddress()).add(a);
                     });
                 } while (assetsResp.isSuccessful() && !assetsResp.getValue().isEmpty());
+            } catch (ApiException e) {
+                LOG.error("API Exception while querying Koios during batch processing", e);
+                throw new KoiosResponseException("API Exception while querying Koios during batch processing", e);
             }
-        } catch (ApiException e) {
-            LOG.error("API Exception while querying Koios", e);
-            throw new KoiosResponseException("Koios API exception", e);
         }
-
 
         // create the output
         Map<Long, List<AccountAsset>> outcome = new HashMap<>();
@@ -260,11 +276,12 @@ public class SubscriptionManager implements Runnable {
         Result<List<AddressAsset>> assetsResp;
 
         List<String> addresses = chatAddresses.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
-        Iterator<List<String>> batchesIterator = CollectionsUtil.batchesList(addresses, 50).iterator();
+        Iterator<List<String>> batchesIterator = CollectionsUtil.batchesList(addresses, this.assetsBatchSize).iterator();
         Map<String, List<AddressAsset>> assetsOfAddresses = new HashMap<>();
 
-        try {
-            while (batchesIterator.hasNext()) {
+        while (batchesIterator.hasNext()) {
+            try {
+
                 List<String> batch = batchesIterator.next();
                 do {
                     Options options = Options.builder()
@@ -286,12 +303,11 @@ public class SubscriptionManager implements Runnable {
                         assetsOfAddresses.get(a.getAddress()).add(a);
                     });
                 } while (assetsResp.isSuccessful() && !assetsResp.getValue().isEmpty());
+            } catch (ApiException e) {
+                LOG.error("API Exception while querying Koios during the batch processing", e);
+                throw new KoiosResponseException("API Exception while querying Koios during the batch processing", e);
             }
-        } catch (ApiException e) {
-            LOG.error("API Exception while querying Koios", e);
-            throw new KoiosResponseException("Koios API exception", e);
         }
-
 
         // create the output
         Map<Long, List<AddressAsset>> outcome = new HashMap<>();
@@ -313,6 +329,108 @@ public class SubscriptionManager implements Runnable {
 
     @Override
     public void run() {
+        List<User> allUsers = this.userDao.getUsers();
+        Map<Long, List<String>> allSubscriptions = new HashMap<>();
+        Map<Long, List<String>> addressSubscriptions = new HashMap<>();
+        Map<Long, List<String>> accountSubscriptions = new HashMap<>();
 
+        // Prepare the input
+        for (User u : allUsers) {
+            allSubscriptions.putIfAbsent(u.getChatId(), new ArrayList<>());
+            addressSubscriptions.putIfAbsent(u.getChatId(), new ArrayList<>());
+            accountSubscriptions.putIfAbsent(u.getChatId(), new ArrayList<>());
+            allSubscriptions.get(u.getChatId()).add(u.getAddress());
+            if (u.isStakeAddress())
+                accountSubscriptions.get(u.getChatId()).add(u.getAddress());
+            else
+                addressSubscriptions.get(u.getChatId()).add(u.getAddress());
+        }
+
+        LOG.info("Checking subscriptions of {} users, of which {} address subscriptions and {} account subscriptions",
+                allSubscriptions.size(), addressSubscriptions.size(), accountSubscriptions.size());
+
+        try {
+            // Get who's staking already with dev chatId -> #accountsInDev
+            Map<Long, List<String>> stakingWithDev = getDevStakers(allSubscriptions);
+
+            // Retrieve all assets of all accounts
+            Map<Long, List<AccountAsset>> accountAssets = getAccountsAssets(accountSubscriptions);
+            Map<Long, List<AddressAsset>> addressAssets = getAddressesAssets(addressSubscriptions);
+
+            for (User u : allUsers) {
+                // TODO this part can be parallelized
+                Long chatId = u.getChatId();
+                List<AccountAsset> userAccountAssets = accountAssets.getOrDefault(chatId, Collections.emptyList());
+                List<AddressAsset> userAddressAssets = addressAssets.getOrDefault(chatId, Collections.emptyList());
+
+                List<String> userSubscriptions = allSubscriptions.getOrDefault(chatId, Collections.emptyList());
+                List<String> stakedSubscriptionsWithDev = stakingWithDev.getOrDefault(chatId, Collections.emptyList());
+                if (LOG.isDebugEnabled())
+                    LOG.debug("Checking subscription for user {}, who's subscribed to {} addresses/accounts ({} staking with DEV), " +
+                                    "against {} account assets and {} address assets",
+                            chatId, userSubscriptions.size(),
+                            stakedSubscriptionsWithDev, userAccountAssets.stream(), userAddressAssets.size());
+
+                // with start with 1 is because one subscription is free for everyone. Also staking with DEV do not count
+                long totalNFTs = 1;
+                totalNFTs += stakedSubscriptionsWithDev.size();
+                totalNFTs += userAccountAssets.stream()
+                        .filter(a -> a.getPolicyId().equals(this.freeForAllNftPolicyId) ||
+                                a.getPolicyId().equals(this.stakeNftPolicyId)).count();
+                totalNFTs += userAddressAssets.stream()
+                        .filter(a -> a.getPolicyId().equals(this.freeForAllNftPolicyId) ||
+                                a.getPolicyId().equals(this.stakeNftPolicyId)).count();
+
+                // This can be negative if you have a lot of thoth NFTs
+                long invalidNoOfSubscriptions = userSubscriptions.size() - totalNFTs;
+                LOG.debug("The user {} has a total of {} Thoth NFTs and has {} invalid subscriptions",
+                        chatId, totalNFTs, invalidNoOfSubscriptions);
+
+                if (invalidNoOfSubscriptions <= 0)
+                    continue; // User without invalid subscriptions
+                // We will need to remove subscriptions that are not staking with DEV and notify the user
+                List<String> subscriptionsAllowedToBeRemoved = userSubscriptions.stream()
+                        .filter(s -> !stakedSubscriptionsWithDev.contains(s))
+                        .collect(Collectors.toList());
+                LOG.debug("User {} has currently {} subscriptions ({} not staking with DEV), but {} of them are invalid/saturated",
+                        chatId, userSubscriptions.size(), subscriptionsAllowedToBeRemoved, invalidNoOfSubscriptions);
+
+                List<String> subscriptionsToBeRemoved = new ArrayList<>();
+                for (int i = 0; i < Math.max(0, invalidNoOfSubscriptions); i++) {
+                    if (subscriptionsAllowedToBeRemoved.isEmpty()) {
+                        // We got an issue here
+                        LOG.error("Should never happen (chatId={}}. The invalidNoOfSubscriptions {} is bigger than the subscriptionsAllowedToBeRemoved {}",
+                                chatId, invalidNoOfSubscriptions, subscriptionsAllowedToBeRemoved.size());
+                        break;
+                    }
+                    String subscriptionToBeRemoved = subscriptionsAllowedToBeRemoved.remove(0);
+                    subscriptionsToBeRemoved.add(subscriptionToBeRemoved);
+                }
+                if (LOG.isDebugEnabled())
+                    LOG.debug("The following subscriptions will be removed for the user {}: {}",
+                            chatId, subscriptionsToBeRemoved);
+                removeSubscriptionAndNotifyUser(chatId, subscriptionsToBeRemoved);
+            }
+        } catch (Exception e) {
+            LOG.error("Could not complete the subscription checks due to exception", e);
+            if (Thread.interrupted())
+                Thread.currentThread().interrupt();
+        }
+    }
+
+    private void removeSubscriptionAndNotifyUser(Long chatId, List<String> subscriptionsToBeRemoved) {
+        StringBuilder sb = new StringBuilder("Hello, you are missing Thoth NFTs and therefore ")
+                .append("the following subscriptions have been removed:<br/>");
+        for (String addr : subscriptionsToBeRemoved) {
+            this.userDao.removeAddress(chatId, addr);
+            sb.append(EmojiParser.parseToUnicode(":white_small_square: "))
+                    .append(addr)
+                    .append("<br/>");
+        }
+
+        //TODO text should be refined, also with the text above during the subscription
+        sb.append("You can obtain additional Thoth NFTs in the following ways: TODO...");
+
+        telegramFacade.sendMessageTo(chatId, sb.toString());
     }
 }
