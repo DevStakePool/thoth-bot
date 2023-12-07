@@ -29,6 +29,7 @@ thoth:
   admin:
     username: test_admin
   disable-scheduler: true
+  disable-subscription-manager: true
   test:
     allow-jumbo-message: true
   subscription:

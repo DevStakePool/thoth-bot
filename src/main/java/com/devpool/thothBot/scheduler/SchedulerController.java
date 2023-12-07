@@ -1,5 +1,6 @@
 package com.devpool.thothBot.scheduler;
 
+import com.devpool.thothBot.subscription.SubscriptionManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,23 +25,33 @@ public class SchedulerController {
     @Autowired
     private StakingRewardsCheckerTask stakingRewardsCheckerTask;
 
+    @Autowired
+    private SubscriptionManager subscriptionManager;
 
     @Value("${thoth.disable-scheduler:false}")
     private Boolean disableScheduler;
 
+    @Value("${thoth.disable-subscription-manager:false}")
+    private Boolean disableSubscriptionManager;
+
     @PostConstruct
     public void post() {
-        if (this.disableScheduler) {
-            LOG.warn("Running with scheduler disabled!");
-            return;
-        }
-
         LOG.info("Creating Scheduling Controller");
         this.executorService = Executors.newScheduledThreadPool(4,
-                new CustomizableThreadFactory("WalletActivityCheckerThread"));
+                new CustomizableThreadFactory("WalletCheckerThread"));
 
-        this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 1 * 60, TimeUnit.SECONDS);
-        this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 10 * 60, TimeUnit.SECONDS);
+        if (this.disableScheduler) {
+            LOG.warn("Running with TX and Staking scheduler disabled!");
+        } else {
+            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 1 * 60, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 10 * 60, TimeUnit.SECONDS);
+        }
+
+        if (this.disableSubscriptionManager) {
+            LOG.warn("Running with subscription manager scheduler disabled!");
+        } else {
+            this.executorService.scheduleWithFixedDelay(this.subscriptionManager, 20, 6, TimeUnit.HOURS);
+        }
     }
 
     @PreDestroy
