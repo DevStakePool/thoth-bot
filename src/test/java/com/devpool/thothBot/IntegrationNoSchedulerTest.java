@@ -275,7 +275,7 @@ public class IntegrationNoSchedulerTest {
     @Test
     public void userCommandAddrForSubscribeNotEnoughThothNFTsTest() throws Exception {
         // Custom Koios backend double
-        this.backendServiceDouble = new BackendServiceDouble(true);
+        this.backendServiceDouble = new BackendServiceDouble(BackendServiceDouble.BackendBehavior.DISABLE_THOTH_NFT_FOR_ACCOUNTS);
         Mockito.when(this.koiosFacade.getKoiosService()).thenReturn(this.backendServiceDouble);
 
         // Testing Address command

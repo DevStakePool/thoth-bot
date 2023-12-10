@@ -10,7 +10,6 @@ import rest.koios.client.backend.factory.options.Offset;
 import rest.koios.client.backend.factory.options.Option;
 import rest.koios.client.backend.factory.options.OptionType;
 import rest.koios.client.backend.factory.options.Options;
-import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -19,10 +18,10 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AccountServiceDouble implements AccountService {
-    private final boolean disableThothNftForAccounts;
+    private final BackendServiceDouble.BackendBehavior backendBehavior;
 
-    public AccountServiceDouble(boolean disableThothNftForAccounts) {
-        this.disableThothNftForAccounts = disableThothNftForAccounts;
+    public AccountServiceDouble(BackendServiceDouble.BackendBehavior backendBehavior) {
+        this.backendBehavior = backendBehavior;
     }
 
     @Override
@@ -124,7 +123,8 @@ public class AccountServiceDouble implements AccountService {
                     a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
 
             // Thoth NFTs
-            if (!this.disableThothNftForAccounts && addressList.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
+            if (!(this.backendBehavior == BackendServiceDouble.BackendBehavior.DISABLE_THOTH_NFT_FOR_ACCOUNTS)
+                    && addressList.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
                 List<AccountAsset> thothNFTs = KoiosDataBuilder.getThothNftsForAccounts("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz");
                 data.addAll(thothNFTs);
             }
