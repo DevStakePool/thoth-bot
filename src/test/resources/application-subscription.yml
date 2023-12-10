@@ -1,0 +1,45 @@
+logging:
+  file:
+    max-history: 10
+    max-size: 10MB
+    name: target/thoth-bot.log
+  level:
+    com:
+      devpool: DEBUG
+    org:
+      springframework: INFO
+    root: 'INFO '
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+spring:
+  application:
+    name: thoth-bot
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/thoth_dev_itest
+    username: postgres
+telegram:
+  bot:
+    token: CHANGE_ME
+thoth:
+  admin:
+    username: test_admin
+  disable-scheduler: true
+  disable-subscription-manager: false
+  test:
+    allow-jumbo-message: true
+  subscription:
+    nft:
+      stake-policy-id: 4e22095c8ffb8113206e788af55986eb70577f4e7b32f6ded0b0a855
+      free-for-all-policy-id: f7a721351f7b121a7c0f853a0216d28dae80d0fb13f1aa96e8d78b5f
+  dapps:
+    contracts:
+      addr1w9qzpelu9hn45pefc0xr4ac4kdxeswq7pndul2vuj59u8tqaxdznu: SundaeSwap
+      addr1z9vgl40qezca5s8ajz6wnpuwevt98l3jqx2ce5nlu8h8nnw60wckas4haxwwclas0g39cc8cvt2r8yalrfa9e8vxx92qsss9sx: VyFinance
+      addr1zxgx3far7qygq0k6epa0zcvcvrevmn0ypsnfsue94nsn3tvpw288a4x0xf8pxgcntelxmyclq83s0ykeehchz2wtspks905plm: JpegStore
+      addr1zxn9efv2f6w82hagxqtn62ju4m293tqvw0uhmdl64ch8uw6j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq6s3z70: MinSwap
+      addr1z9qndmhduxjfqvz9rm36p8vsp9vm4l40mx6ndevngkk8srm28uczn6ce6zd5nx2dgr2sza96juq73qz4uhsdxaq74ghs3mz5fw: MuesliSwap

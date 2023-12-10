@@ -18,15 +18,22 @@ import rest.koios.client.backend.factory.BackendService;
  */
 public class BackendServiceDouble implements BackendService {
 
-    private static final Logger LOG = LoggerFactory.getLogger(BackendServiceDouble.class);
-    private final boolean disableThothNftForAccounts;
-
-    public BackendServiceDouble() {
-        this(false);
+    public enum BackendBehavior {
+        NOMINAL,
+        DISABLE_THOTH_NFT_FOR_ACCOUNTS,
+        SUBSCRIPTION_SCHEDULER_SCENARIO
     }
 
-    public BackendServiceDouble(boolean disableThothNftForAccounts) {
-        this.disableThothNftForAccounts = disableThothNftForAccounts;
+    private static final Logger LOG = LoggerFactory.getLogger(BackendServiceDouble.class);
+
+    private BackendBehavior backendBehavior;
+
+    public BackendServiceDouble() {
+        this(BackendBehavior.NOMINAL);
+    }
+
+    public BackendServiceDouble(BackendBehavior backendBehavior) {
+        this.backendBehavior = backendBehavior;
     }
 
 
@@ -57,7 +64,7 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public AccountService getAccountService() {
-        return new AccountServiceDouble(this.disableThothNftForAccounts);
+        return new AccountServiceDouble(this.backendBehavior);
     }
 
     @Override
