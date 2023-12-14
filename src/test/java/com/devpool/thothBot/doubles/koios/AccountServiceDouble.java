@@ -32,7 +32,7 @@ public class AccountServiceDouble implements AccountService {
     @Override
     public Result<List<AccountInfo>> getAccountInformation(List<String> addressList, Options options) throws ApiException {
         try {
-            List<AccountInfo> data = KoiosDataBuilder.getAccountInformationTestData();
+            List<AccountInfo> data = KoiosDataBuilder.getAccountInformationTestData(this.backendBehavior);
             List<AccountInfo> filteredList = data.stream().filter(r -> addressList.contains(r.getStakeAddress())).collect(Collectors.toList());
             return Result.<List<AccountInfo>>builder().code(200).response("").successful(true).value(filteredList).build();
         } catch (IOException e) {
@@ -117,7 +117,7 @@ public class AccountServiceDouble implements AccountService {
         }
 
         try {
-            List<AccountAsset> data = KoiosDataBuilder.getAccountAssets();
+            List<AccountAsset> data = KoiosDataBuilder.getAccountAssets(this.backendBehavior);
             // For testing purposes, we make sure the account "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy" does not have any handle
             data.removeIf(a -> a.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy") &&
                     a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));

@@ -347,7 +347,9 @@ public class SubscriptionManager implements Runnable {
         }
 
         LOG.info("Checking subscriptions of {} users, of which {} address subscriptions and {} account subscriptions",
-                allSubscriptions.size(), addressSubscriptions.size(), accountSubscriptions.size());
+                allSubscriptions.size(),
+                addressSubscriptions.values().stream().mapToLong(List::size).sum(),
+                accountSubscriptions.values().stream().mapToLong(List::size).sum());
 
         try {
             // Get who's staking already with dev chatId -> #accountsInDev
@@ -357,9 +359,9 @@ public class SubscriptionManager implements Runnable {
             Map<Long, List<AccountAsset>> accountAssets = getAccountsAssets(accountSubscriptions);
             Map<Long, List<AddressAsset>> addressAssets = getAddressesAssets(addressSubscriptions);
 
-            for (User u : allUsers) {
+            for (Map.Entry<Long, List<String>> e : allSubscriptions.entrySet()) {
                 // TODO this part can be parallelized
-                Long chatId = u.getChatId();
+                Long chatId = e.getKey();
                 List<AccountAsset> userAccountAssets = accountAssets.getOrDefault(chatId, Collections.emptyList());
                 List<AddressAsset> userAddressAssets = addressAssets.getOrDefault(chatId, Collections.emptyList());
 
@@ -369,7 +371,7 @@ public class SubscriptionManager implements Runnable {
                     LOG.debug("Checking subscription for user {}, who's subscribed to {} addresses/accounts ({} staking with DEV), " +
                                     "against {} account assets and {} address assets",
                             chatId, userSubscriptions.size(),
-                            stakedSubscriptionsWithDev, userAccountAssets.stream(), userAddressAssets.size());
+                            stakedSubscriptionsWithDev, userAccountAssets.size(), userAddressAssets.size());
 
                 // with start with 1 is because one subscription is free for everyone. Also staking with DEV do not count
                 long totalNFTs = 1;

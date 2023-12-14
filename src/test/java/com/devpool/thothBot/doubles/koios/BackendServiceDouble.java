@@ -26,7 +26,7 @@ public class BackendServiceDouble implements BackendService {
 
     private static final Logger LOG = LoggerFactory.getLogger(BackendServiceDouble.class);
 
-    private BackendBehavior backendBehavior;
+    private final BackendBehavior backendBehavior;
 
     public BackendServiceDouble() {
         this(BackendBehavior.NOMINAL);
@@ -59,7 +59,7 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public AddressService getAddressService() {
-        return new AddressServiceDouble();
+        return new AddressServiceDouble(this.backendBehavior);
     }
 
     @Override

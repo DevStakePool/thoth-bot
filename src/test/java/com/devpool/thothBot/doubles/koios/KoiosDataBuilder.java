@@ -19,9 +19,7 @@ import rest.koios.client.backend.api.transactions.model.TxInfo;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.StandardCopyOption;
-import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 public class KoiosDataBuilder {
@@ -32,9 +30,12 @@ public class KoiosDataBuilder {
     private static final String ACCOUNT_REWARDS_341_JSON_FILE = "test-data/account_rewards_341.json";
     private static final String ACCOUNT_REWARDS_369_JSON_FILE = "test-data/account_rewards_369.json";
     private static final String ACCOUNT_ASSETS_JSON_FILE = "test-data/account_assets.json";
+    private static final String ACCOUNT_ASSETS_SUBSCRIPTION_JSON_FILE = "test-data/subscription_scenario/account_assets.json";
     private static final String ADDRESS_ASSETS_JSON_FILE = "test-data/address_assets.json";
+    private static final String ADDRESS_ASSETS_SUBSCRIPTION_JSON_FILE = "test-data/subscription_scenario/address_assets.json";
     private static final String POOL_INFORMATION_JSON_FILE = "test-data/pool_information.json";
     private static final String ACCOUNT_INFORMATION_JSON_FILE = "test-data/account_information.json";
+    private static final String ACCOUNT_INFORMATION_SUBSCRIPTION_JSON_FILE = "test-data/subscription_scenario/account_information.json";
     private static final String ADDRESS_INFORMATION_JSON_FILE = "test-data/address_information.json";
     private static final String ACCOUNT_UTXOS_JSON_FILE = "test-data/accounts_utxos.json";
     private static final String ADDRESSES_UTXOS_JSON_FILE = "test-data/addresses_utxos.json";
@@ -78,9 +79,14 @@ public class KoiosDataBuilder {
         return data;
     }
 
-    public static List<AccountInfo> getAccountInformationTestData() throws IOException {
+    public static List<AccountInfo> getAccountInformationTestData(BackendServiceDouble.BackendBehavior backendBehavior) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(ACCOUNT_INFORMATION_JSON_FILE).getFile();
+        String f;
+        if (backendBehavior == BackendServiceDouble.BackendBehavior.SUBSCRIPTION_SCHEDULER_SCENARIO)
+            f = classLoader.getResource(ACCOUNT_INFORMATION_SUBSCRIPTION_JSON_FILE).getFile();
+        else
+            f = classLoader.getResource(ACCOUNT_INFORMATION_JSON_FILE).getFile();
+
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
@@ -119,9 +125,13 @@ public class KoiosDataBuilder {
         return data;
     }
 
-    public static List<AccountAsset> getAccountAssets() throws IOException {
+    public static List<AccountAsset> getAccountAssets(BackendServiceDouble.BackendBehavior backendBehavior) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(ACCOUNT_ASSETS_JSON_FILE).getFile();
+        String f;
+        if (backendBehavior == BackendServiceDouble.BackendBehavior.SUBSCRIPTION_SCHEDULER_SCENARIO)
+            f = classLoader.getResource(ACCOUNT_ASSETS_SUBSCRIPTION_JSON_FILE).getFile();
+        else
+            f = classLoader.getResource(ACCOUNT_ASSETS_JSON_FILE).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -169,9 +179,13 @@ public class KoiosDataBuilder {
         }
     }
 
-    public static List<AddressAsset> getAddressAssets() throws IOException {
+    public static List<AddressAsset> getAddressAssets(BackendServiceDouble.BackendBehavior backendBehavior) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(ADDRESS_ASSETS_JSON_FILE).getFile();
+        String f;
+        if (backendBehavior == BackendServiceDouble.BackendBehavior.SUBSCRIPTION_SCHEDULER_SCENARIO)
+            f = classLoader.getResource(ADDRESS_ASSETS_SUBSCRIPTION_JSON_FILE).getFile();
+        else
+            f = classLoader.getResource(ADDRESS_ASSETS_JSON_FILE).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
