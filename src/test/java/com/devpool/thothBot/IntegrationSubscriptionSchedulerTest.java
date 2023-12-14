@@ -7,8 +7,12 @@ import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.pengrad.telegrambot.TelegramBot;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
 import org.mockito.Mockito;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,12 +33,36 @@ public class IntegrationSubscriptionSchedulerTest {
     private static List<User> TEST_USERS = new ArrayList<>();
 
     static {
-        TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
-        TEST_USERS.add(new User(-1L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0));
+        /*
+        stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr 2 tokens + 1 THOTH    DEV
+        stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32 1 token  + 0 THOTH    DEV
+        stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4 0 tokens + 2 THOTH-F  Not-Reg
+        stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy 0 tokens + 0 THOTH-F  POOLXYZ
+        stake1uyrx65wjqjgeeksd8hptmcgl5jfyrqkfq0xe8xlp367kphsckq250 0 tokens + 0 THOTH    POOLABC
+        stake1uxh7lse77csz5x7fs6hgd9uc4z9w056jgrgme28pv4n3czs495erv 0 tokens + 0 THOTH    POOL111
+        addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m 10 tokens + 3 THOTH-F
+         */
+        //TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
+        //TEST_USERS.add(new User(-1L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0));
+
+        /*
+         * User -2 follows 1 account staking with DEV and 1 non-staking with DEV. No THOTH NFTs. All good
+         */
         TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0));
-        TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
-        TEST_USERS.add(new User(-2L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
+        TEST_USERS.add(new User(-2L, "stake1uyrx65wjqjgeeksd8hptmcgl5jfyrqkfq0xe8xlp367kphsckq250", 0, 0));
+
+        /*
+         * User -3 has plenty of NFTs, so enough to monitor 1 address + 2 accounts not staking with DEV. All good
+         */
         TEST_USERS.add(new User(-3L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
+        TEST_USERS.add(new User(-3L, "stake1uyrx65wjqjgeeksd8hptmcgl5jfyrqkfq0xe8xlp367kphsckq250", 0, 0));
+        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
+
+        /*
+         * User -4 is registered to 2 accounts both NOT staking to DEV, and it has no THOTH NFTs  => 1 will be removed
+         */
+        TEST_USERS.add(new User(-4L, "stake1uyrx65wjqjgeeksd8hptmcgl5jfyrqkfq0xe8xlp367kphsckq250", 0, 0));
+        TEST_USERS.add(new User(-4L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
     }
 
     @MockBean
@@ -55,11 +83,17 @@ public class IntegrationSubscriptionSchedulerTest {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Captor
+    private ArgumentCaptor<String> messageArgCaptor;
+
+    @Captor
+    private ArgumentCaptor<Long> chatIdArgCaptor;
+
     private BackendServiceDouble backendServiceDouble;
 
     @BeforeEach
     public void beforeEach() throws Exception {
-        this.backendServiceDouble = new BackendServiceDouble();
+        this.backendServiceDouble = new BackendServiceDouble(BackendServiceDouble.BackendBehavior.SUBSCRIPTION_SCHEDULER_SCENARIO);
 
         // Purge data
         int affectedRows = jdbcTemplate.update("DELETE FROM users");
@@ -77,9 +111,19 @@ public class IntegrationSubscriptionSchedulerTest {
         Mockito.when(this.koiosFacade.getKoiosService()).thenReturn(this.backendServiceDouble);
     }
 
-    @Test
-    public void test() throws Exception {
 
+    @Test
+    public void testSubscriptionManagerScheduler() throws Exception {
+        Mockito.verify(this.telegramFacadeMock,
+                        Mockito.timeout(60 * 1000)
+                                .times(1))
+                .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
+
+        List<String> allMessages = this.messageArgCaptor.getAllValues();
+        List<Long> allChatIds = this.chatIdArgCaptor.getAllValues();
+        LOG.info("all messages {}, all chat-ids {}", allMessages, allChatIds);
+
+        Assertions.assertEquals(1, allMessages.size());
     }
 
 }

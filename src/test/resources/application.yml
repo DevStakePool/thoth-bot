@@ -25,7 +25,11 @@ spring:
 telegram:
   bot:
     token: CHANGE_ME
+
 thoth:
+  asset:
+    fetching:
+      enabled: false
   admin:
     username: test_admin
   disable-scheduler: false

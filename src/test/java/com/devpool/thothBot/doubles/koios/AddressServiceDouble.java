@@ -17,6 +17,12 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AddressServiceDouble implements AddressService {
+    private final BackendServiceDouble.BackendBehavior backendBehavior;
+
+    public AddressServiceDouble(BackendServiceDouble.BackendBehavior backendBehavior) {
+        this.backendBehavior = backendBehavior;
+    }
+
     @Override
     public Result<AddressInfo> getAddressInformation(String address) throws ApiException {
         Result<List<AddressInfo>> result = getAddressInformation(List.of(address), SortType.DESC, null);
@@ -77,7 +83,7 @@ public class AddressServiceDouble implements AddressService {
     @Override
     public Result<List<AddressAsset>> getAddressAssets(List<String> addressList, Options options) throws ApiException {
         try {
-            List<AddressAsset> data = KoiosDataBuilder.getAddressAssets();
+            List<AddressAsset> data = KoiosDataBuilder.getAddressAssets(this.backendBehavior);
 
             Optional<Option> optionOffset = Optional.empty();
             if (options != null) {
@@ -88,7 +94,8 @@ public class AddressServiceDouble implements AddressService {
                 return Result.<List<AddressAsset>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
             }
 
-            if (addressList.contains("addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m")) {
+            if (this.backendBehavior == BackendServiceDouble.BackendBehavior.NOMINAL
+                    && addressList.contains("addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m")) {
                 List<AddressAsset> thothNFTs = KoiosDataBuilder.getThothNftsForAddresses("addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m");
                 data.addAll(thothNFTs);
             }

@@ -40,25 +40,23 @@ public class SchedulerController {
         this.executorService = Executors.newScheduledThreadPool(4,
                 new CustomizableThreadFactory("WalletCheckerThread"));
 
-        if (this.disableScheduler) {
+        if (Boolean.TRUE.equals(this.disableScheduler)) {
             LOG.warn("Running with TX and Staking scheduler disabled!");
         } else {
-            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 1 * 60, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 10 * 60, TimeUnit.SECONDS);
         }
 
-        if (this.disableSubscriptionManager) {
+        if (Boolean.TRUE.equals(this.disableSubscriptionManager)) {
             LOG.warn("Running with subscription manager scheduler disabled!");
         } else {
-            this.executorService.scheduleWithFixedDelay(this.subscriptionManager, 20, 6, TimeUnit.HOURS);
+            this.executorService.scheduleWithFixedDelay(this.subscriptionManager, 20, 60 * 60 * 6, TimeUnit.SECONDS);
         }
     }
 
     @PreDestroy
     public void shutdown() {
-        if (!disableScheduler) {
-            LOG.info("Shutting down scheduler");
-            this.executorService.shutdown();
-        }
+        LOG.info("Shutting down scheduler");
+        this.executorService.shutdown();
     }
 }
