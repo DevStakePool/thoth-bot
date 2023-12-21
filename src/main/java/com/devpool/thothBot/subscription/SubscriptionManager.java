@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.account.model.AccountInfo;
@@ -22,6 +23,9 @@ import rest.koios.client.backend.factory.options.Limit;
 import rest.koios.client.backend.factory.options.Offset;
 import rest.koios.client.backend.factory.options.Options;
 
+import javax.annotation.PostConstruct;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -45,6 +49,9 @@ public class SubscriptionManager implements Runnable {
     @Value("${thoth.subscription.assets-batch-size:50}")
     private Integer assetsBatchSize;
 
+    @Value("classpath:subscription-help.html")
+    private Resource subscriptionHelpResource;
+
     @Autowired
     private KoiosFacade koiosFacade;
 
@@ -53,6 +60,13 @@ public class SubscriptionManager implements Runnable {
 
     @Autowired
     private TelegramFacade telegramFacade;
+    private String helpText;
+
+    @PostConstruct
+    public void post() throws Exception {
+        this.helpText = new BufferedReader(new InputStreamReader(
+                this.subscriptionHelpResource.getInputStream())).lines().collect(Collectors.joining("\n"));
+    }
 
 
     /**
@@ -437,9 +451,12 @@ public class SubscriptionManager implements Runnable {
                     .append("<br/>");
         }
 
-        //TODO text should be refined, also with the text above during the subscription
-        sb.append("You can obtain additional Thoth NFTs in the following ways: TODO...");
+        sb.append(this.helpText);
 
         telegramFacade.sendMessageTo(chatId, sb.toString());
+    }
+
+    public String getHelpText() {
+        return helpText;
     }
 }
