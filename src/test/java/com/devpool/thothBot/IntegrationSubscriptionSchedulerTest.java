@@ -21,6 +21,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.util.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,16 +35,23 @@ public class IntegrationSubscriptionSchedulerTest {
 
     static {
         /*
-        stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr 2 tokens + 1 THOTH    DEV
-        stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32 1 token  + 0 THOTH    DEV
-        stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4 0 tokens + 2 THOTH-F  Not-Reg
-        stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy 0 tokens + 0 THOTH-F  POOLXYZ
-        stake1uyrx65wjqjgeeksd8hptmcgl5jfyrqkfq0xe8xlp367kphsckq250 0 tokens + 0 THOTH    POOLABC
-        stake1uxh7lse77csz5x7fs6hgd9uc4z9w056jgrgme28pv4n3czs495erv 0 tokens + 0 THOTH    POOL111
-        addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m 10 tokens + 3 THOTH-F
+            stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr 2 tokens + 1 THOTH    DEV
+            stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32 1 token  + 0 THOTH    DEV
+            stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4 0 tokens + 2 THOTH-F  Not-Reg
+            stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy 0 tokens + 0 THOTH    POOLXYZ
+            stake1uyrx65wjqjgeeksd8hptmcgl5jfyrqkfq0xe8xlp367kphsckq250 0 tokens + 0 THOTH    POOLABC
+            stake1uxh7lse77csz5x7fs6hgd9uc4z9w056jgrgme28pv4n3czs495erv 0 tokens + 1 THOTH    POOL111
+            stake1uxw8wq6ceame0jh0ccj60gfyp0dwcneg422ktuz3kcd3s3srtfm9u 1 token  + 0 THOTH    POOL999
+            addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m 10 tokens + 3 THOTH-F
          */
-        //TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
-        //TEST_USERS.add(new User(-1L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0));
+
+        /*
+         * User -1 follows 4 accounts. None staking with DEV. But he has only 1 THOTH NFT. 2 will be removed
+         */
+        TEST_USERS.add(new User(-1L, "stake1uxh7lse77csz5x7fs6hgd9uc4z9w056jgrgme28pv4n3czs495erv", 0, 0));
+        TEST_USERS.add(new User(-1L, "stake1uyrx65wjqjgeeksd8hptmcgl5jfyrqkfq0xe8xlp367kphsckq250", 0, 0));
+        TEST_USERS.add(new User(-1L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
+        TEST_USERS.add(new User(-1L, "stake1uxw8wq6ceame0jh0ccj60gfyp0dwcneg422ktuz3kcd3s3srtfm9u", 0, 0));
 
         /*
          * User -2 follows 1 account staking with DEV and 1 non-staking with DEV. No THOTH NFTs. All good
@@ -116,14 +124,36 @@ public class IntegrationSubscriptionSchedulerTest {
     public void testSubscriptionManagerScheduler() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
                         Mockito.timeout(60 * 1000)
-                                .times(1))
+                                .times(2))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 
         List<String> allMessages = this.messageArgCaptor.getAllValues();
         List<Long> allChatIds = this.chatIdArgCaptor.getAllValues();
         LOG.info("all messages {}, all chat-ids {}", allMessages, allChatIds);
 
-        Assertions.assertEquals(1, allMessages.size());
+        Assertions.assertEquals(2, allMessages.size());
+
+        // User -1 will get 2 subscription removed, while user -4 will get 1 removed
+        int foundChatIds = 2;
+        for (int i = 0; i < allChatIds.size(); i++) {
+            Long chatId = allChatIds.get(i);
+            String message = allMessages.get(i);
+            Assertions.assertTrue(message.contains("you are missing Thoth NFTs"));
+
+            if (chatId == -1L) {
+                foundChatIds--;
+                Assertions.assertFalse(message.contains("stake1uxh7lse77csz5x7fs6hgd9uc4z9w056jgrgme28pv4n3czs495erv"));
+                Assertions.assertEquals(3, message.split("stake1").length);
+            } else if (chatId == -4L) {
+                foundChatIds--;
+                Assertions.assertEquals(2, message.split("stake1").length);
+
+            } else {
+                Assertions.fail("Unexpected chat ID: " + chatId + " with message: " + message);
+            }
+        }
+
+        Assertions.assertEquals(0, foundChatIds, "Did not find the correct number of chatIDs");
     }
 
 }

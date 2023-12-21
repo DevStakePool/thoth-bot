@@ -390,9 +390,16 @@ public class SubscriptionManager implements Runnable {
 
                 if (invalidNoOfSubscriptions <= 0)
                     continue; // User without invalid subscriptions
+
                 // We will need to remove subscriptions that are not staking with DEV and notify the user
+                // First let's find out all the subscriptions that have THOTH NFTs. We need to exclude these
+                List<String> accountsWithThothNfts = userAccountAssets.stream()
+                        .filter(a -> a.getPolicyId().equals(this.freeForAllNftPolicyId) ||
+                                a.getPolicyId().equals(this.stakeNftPolicyId))
+                        .map(AccountAsset::getStakeAddress).collect(Collectors.toList());
                 List<String> subscriptionsAllowedToBeRemoved = userSubscriptions.stream()
                         .filter(s -> !stakedSubscriptionsWithDev.contains(s))
+                        .filter(s -> !accountsWithThothNfts.contains(s))
                         .collect(Collectors.toList());
                 LOG.debug("User {} has currently {} subscriptions ({} not staking with DEV), but {} of them are invalid/saturated",
                         chatId, userSubscriptions.size(), subscriptionsAllowedToBeRemoved, invalidNoOfSubscriptions);
