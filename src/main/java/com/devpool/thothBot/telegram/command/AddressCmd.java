@@ -168,16 +168,13 @@ public class AddressCmd implements IBotCommand {
                     String.format("Could not get on-chain information. Please try later again: %s", e.getMessage())));
 
         } catch (SubscriptionException e) {
-            // TODO handle this
             switch (e.getExceptionCause()) {
                 case FREE_SLOTS_EXCEEDED: {
                     LOG.warn("Max number of subscriptions exceeded for user {}: {}", update.message().chat().id(), e.getMessage());
                     bot.execute(new SendMessage(update.message().chat().id(),
-                            String.format("Max number of subscriptions exceeded. You currently own a total of %d Thoth NFTs. " +
-                                            "If you want to subscribe to more cardano accounts or addresses, " +
-                                            "please purchase more Thoth Plus One NFTs. Follow the instructions TODO",
-                                    // TODO complete this
-                                    e.getNumberOfOwnedNfts())));
+                            String.format("Max number of subscriptions exceeded. You currently own a total of %d Thoth NFTs.%s",
+                                    e.getNumberOfOwnedNfts(),
+                                    this.subscriptionManager.getHelpText())));
                     break;
                 }
                 case ADDRESS_ALREADY_OWNED_BY_OTHERS: {
@@ -186,8 +183,7 @@ public class AddressCmd implements IBotCommand {
                     bot.execute(new SendMessage(update.message().chat().id(),
                             String.format("The address %s that you are trying to subscribe to, contains Thoth NFTs but " +
                                             "it is currently used by another Telegram user. If you believe this address " +
-                                            "is yours, please contact the creator of the Thoth Bot.",
-                                    // TODO complete this
+                                            "is yours, please contact the creator of the Thoth Bot @adf_1983",
                                     e.getAddress())));
                     break;
 
