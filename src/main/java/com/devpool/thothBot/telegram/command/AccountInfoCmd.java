@@ -235,7 +235,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
     @Override
     public long getCommandExecutionTimeoutSeconds() {
-        return 12L;
+        return 30L;
     }
 
     private String extractPoolName(PoolInfo poolInfo, String poolAddress) {

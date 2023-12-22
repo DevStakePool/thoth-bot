@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountAsset;
@@ -33,7 +34,7 @@ import java.util.stream.Collectors;
  * This class is responsible for validating user subscription based on the amount of NFTs that the user owns.
  */
 @Component
-public class SubscriptionManager implements Runnable {
+public class SubscriptionManager implements Runnable, ISubscriptionManager {
     private static final Logger LOG = LoggerFactory.getLogger(SubscriptionManager.class);
     public static final String DEV_POOL_ID = "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv";
     @Value("${thoth.subscription.nft.stake-policy-id}")
@@ -58,6 +59,7 @@ public class SubscriptionManager implements Runnable {
     @Autowired
     private UserDao userDao;
 
+    @Lazy
     @Autowired
     private TelegramFacade telegramFacade;
     private String helpText;
@@ -77,6 +79,7 @@ public class SubscriptionManager implements Runnable {
      * @throws KoiosResponseException in case of issues with koios
      * @throws SubscriptionException  is case it's not possible to subscribe this address
      */
+    @Override
     public void verifyUserSubscription(String address, Long chatId) throws KoiosResponseException, SubscriptionException {
 
         if (!getDevStakers(Map.of(chatId, List.of(address))).getOrDefault(chatId, Collections.emptyList()).isEmpty())
@@ -443,12 +446,12 @@ public class SubscriptionManager implements Runnable {
 
     private void removeSubscriptionAndNotifyUser(Long chatId, List<String> subscriptionsToBeRemoved) {
         StringBuilder sb = new StringBuilder("Hello, you are missing Thoth NFTs and therefore ")
-                .append("the following subscriptions have been removed:<br/>");
+                .append("the following subscriptions have been removed:\n");
         for (String addr : subscriptionsToBeRemoved) {
             this.userDao.removeAddress(chatId, addr);
-            sb.append(EmojiParser.parseToUnicode(":white_small_square: "))
+            sb.append(EmojiParser.parseToUnicode(":small_blue_diamond: "))
                     .append(addr)
-                    .append("<br/>");
+                    .append("\n");
         }
 
         sb.append(this.helpText);
@@ -456,6 +459,7 @@ public class SubscriptionManager implements Runnable {
         telegramFacade.sendMessageTo(chatId, sb.toString());
     }
 
+    @Override
     public String getHelpText() {
         return helpText;
     }

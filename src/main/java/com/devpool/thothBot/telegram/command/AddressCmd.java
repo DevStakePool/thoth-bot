@@ -6,9 +6,11 @@ import com.devpool.thothBot.exceptions.KoiosResponseException;
 import com.devpool.thothBot.exceptions.SubscriptionException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.subscription.ISubscriptionManager;
 import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
+import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,7 +52,7 @@ public class AddressCmd implements IBotCommand {
     private AssetFacade assetFacade;
 
     @Autowired
-    private SubscriptionManager subscriptionManager;
+    private ISubscriptionManager subscriptionManager;
 
     @Override
     public boolean canTrigger(String username, String message) {
@@ -98,7 +100,7 @@ public class AddressCmd implements IBotCommand {
 
     @Override
     public long getCommandExecutionTimeoutSeconds() {
-        return 6;
+        return 10;
     }
 
     private void unsubscribeNewAddress(Update update, TelegramBot bot) {
@@ -172,9 +174,10 @@ public class AddressCmd implements IBotCommand {
                 case FREE_SLOTS_EXCEEDED: {
                     LOG.warn("Max number of subscriptions exceeded for user {}: {}", update.message().chat().id(), e.getMessage());
                     bot.execute(new SendMessage(update.message().chat().id(),
-                            String.format("Max number of subscriptions exceeded. You currently own a total of %d Thoth NFTs.%s",
+                            String.format("Max number of subscriptions exceeded. You currently own a total of %d Thoth NFTs%n%s",
                                     e.getNumberOfOwnedNfts(),
-                                    this.subscriptionManager.getHelpText())));
+                                    this.subscriptionManager.getHelpText()))
+                            .parseMode(ParseMode.HTML).disableWebPagePreview(true));
                     break;
                 }
                 case ADDRESS_ALREADY_OWNED_BY_OTHERS: {
