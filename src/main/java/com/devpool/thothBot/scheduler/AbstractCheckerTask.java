@@ -70,7 +70,7 @@ public abstract class AbstractCheckerTask {
         return "pool1..." + poolAddress.substring(poolAddress.length() - 8);
     }
 
-    private String shortenAddr(String address) {
+    public static String shortenAddr(String address) {
         return address.substring(0, 6) + "..." + address.substring(address.length() - 8);
     }
 

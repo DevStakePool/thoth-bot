@@ -174,8 +174,9 @@ public class AddressCmd implements IBotCommand {
                 case FREE_SLOTS_EXCEEDED: {
                     LOG.warn("Max number of subscriptions exceeded for user {}: {}", update.message().chat().id(), e.getMessage());
                     bot.execute(new SendMessage(update.message().chat().id(),
-                            String.format("Max number of subscriptions exceeded. You currently own a total of %d Thoth NFTs%n%s",
+                            String.format("Max number of subscriptions exceeded. You are currently subscribed to %d/%d addresses%n%n%s",
                                     e.getNumberOfOwnedNfts(),
+                                    e.getNumberOfCurrentSubscriptions(),
                                     this.subscriptionManager.getHelpText()))
                             .parseMode(ParseMode.HTML).disableWebPagePreview(true));
                     break;

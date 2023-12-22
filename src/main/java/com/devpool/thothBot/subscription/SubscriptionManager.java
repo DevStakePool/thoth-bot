@@ -5,6 +5,7 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.exceptions.KoiosResponseException;
 import com.devpool.thothBot.exceptions.SubscriptionException;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.vdurmont.emoji.EmojiParser;
@@ -449,12 +450,12 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
                 .append("the following subscriptions have been removed:\n");
         for (String addr : subscriptionsToBeRemoved) {
             this.userDao.removeAddress(chatId, addr);
-            sb.append(EmojiParser.parseToUnicode(":small_blue_diamond: "))
-                    .append(addr)
+            sb.append(EmojiParser.parseToUnicode(":small_blue_diamond:"))
+                    .append(AbstractCheckerTask.shortenAddr(addr))
                     .append("\n");
         }
 
-        sb.append(this.helpText);
+        sb.append("\n").append(this.helpText);
 
         telegramFacade.sendMessageTo(chatId, sb.toString());
     }
