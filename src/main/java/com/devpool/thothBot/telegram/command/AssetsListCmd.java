@@ -154,7 +154,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                     assetsPage.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
                             .append("<a href=\"https://pool.pm/").append(asset.getFingerprint())
                             .append("\">")
-                            .append(hexToAscii(asset.getAssetName()))
+                            .append(hexToAscii(asset))
                             .append("</a> ")
                             .append(this.assetFacade.formatAssetQuantity(genericQuantity));
                     shown++;

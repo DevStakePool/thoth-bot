@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
+import rest.koios.client.backend.api.base.common.Asset;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
 import java.nio.charset.StandardCharsets;
@@ -100,7 +101,7 @@ public abstract class AbstractCheckerTask {
                         Optional<String> bestHandle = addrAssetsResp.getValue().stream()
                                 .filter(a -> a.getAddress().equals(addr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
-                                .map(a -> hexToAscii(a.getAssetName()))
+                                .map(AbstractCheckerTask::hexToAscii)
                                 .sorted().findFirst();
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
@@ -126,7 +127,7 @@ public abstract class AbstractCheckerTask {
                         Optional<String> bestHandle = accountAssetsResp.getValue().stream()
                                 .filter(a -> a.getStakeAddress().equals(stakeAddr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
-                                .map(a -> hexToAscii(a.getAssetName()))
+                                .map(AbstractCheckerTask::hexToAscii)
                                 .sorted().findFirst();
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
@@ -161,15 +162,16 @@ public abstract class AbstractCheckerTask {
         return handlesMap;
     }
 
-    public static String hexToAscii(String hexStr) {
+    public static String hexToAscii(Asset asset) {
         StringBuilder output = new StringBuilder();
-
+        boolean isHandle = asset.getPolicyId().equals(ADA_HANDLE_POLICY_ID);
+        String hexStr = asset.getAssetName();
         for (int i = 0; i < hexStr.length(); i += 2) {
             String str = hexStr.substring(i, i + 2);
             output.append((char) Integer.parseInt(str, 16));
         }
 
-        if (StandardCharsets.US_ASCII.newEncoder().canEncode(output.toString())) {
+        if (isHandle || StandardCharsets.US_ASCII.newEncoder().canEncode(output.toString())) {
             return output.toString();
         } else {
             return "..." + hexStr.substring(Math.abs(hexStr.length() - 10));

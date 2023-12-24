@@ -559,7 +559,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
                 messageBuilder
                         .append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
-                        .append(hexToAscii(asset.getAssetName())).append(" ")
+                        .append(hexToAscii(asset)).append(" ")
                         .append(this.assetFacade.formatAssetQuantity(assetQuantity));
             }
         }
