@@ -83,7 +83,8 @@ public class AssetFacade implements Runnable {
 
     public String getAssetDisplayName(String policyId, String assetName) throws ApiException {
         Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(policyId, assetName);
-        String displayName = null;
+        String displayName = AbstractCheckerTask.hexToAscii(assetName, policyId);
+
         if (cachedAsset.isEmpty()) {
             LOG.debug("Asset {}, {} not cached. Retrieving it...", policyId, assetName);
             // We need to get the decimals for the asset. Note, this will be cached
@@ -103,11 +104,11 @@ public class AssetFacade implements Runnable {
                                 assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
             }
         } else {
-            displayName = cachedAsset.get().getAssetDisplayName();
-            return displayName != null ? displayName : assetName;
+            if (cachedAsset.get().getAssetDisplayName() != null)
+                displayName = cachedAsset.get().getAssetDisplayName();
         }
 
-        return AbstractCheckerTask.hexToAscii(assetName, policyId);
+        return displayName;
     }
 
     public Object getAssetQuantity(String policyId, String assetName, Long quantity) throws ApiException {
@@ -124,7 +125,8 @@ public class AssetFacade implements Runnable {
                         policyId, assetInfoResult.getResponse(), assetInfoResult.getCode());
             } else if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
                 assetQuantity = quantity / Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
-                displayName = assetInfoResult.getValue().getTokenRegistryMetadata().getName();
+                if (assetInfoResult.getValue().getTokenRegistryMetadata().getName() != null)
+                    displayName = assetInfoResult.getValue().getTokenRegistryMetadata().getName();
             }
 
             if (assetInfoResult.isSuccessful()) {

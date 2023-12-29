@@ -2,6 +2,7 @@ package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
+import rest.koios.client.backend.api.base.common.Asset;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
 import java.nio.charset.StandardCharsets;
@@ -46,7 +48,8 @@ public abstract class AbstractCheckerTask {
     protected KoiosFacade koiosFacade;
     @Autowired
     protected CoinPaprikaOracle oracle;
-
+    @Autowired
+    protected AssetFacade assetFacade;
     @Value("${thoth.users-batch-size:100}")
     protected Integer usersBatchSize;
 
@@ -97,17 +100,23 @@ public abstract class AbstractCheckerTask {
                     Set<String> allAddresses = addrAssetsResp.getValue().stream().map(AddressAsset::getAddress).collect(Collectors.toSet());
                     for (String addr : allAddresses) {
                         processedAddresses.add(addr);
-                        Optional<String> bestHandle = addrAssetsResp.getValue().stream()
+                        Optional<Asset> bestHandle = addrAssetsResp.getValue().stream()
                                 .filter(a -> a.getAddress().equals(addr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
-                                .map(a -> hexToAscii(a.getAssetName(), a.getPolicyId())) // FIXME handle display name
-                                .sorted().findFirst();
+                                .map(a -> (Asset) a)
+                                .findFirst();
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
                             handlesMap.put(addr, shortenAddr(addr));
                         } else {
-                            LOG.debug("Found handle {} for account {}", bestHandle.get(), addr);
-                            handlesMap.put(addr, ADA_HANDLE_PREFIX + bestHandle.get());
+                            String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
+                            if (handleName.indexOf('@') != -1)
+                                handleName = handleName.substring(handleName.indexOf('@') + 1);
+
+                            if (!handleName.startsWith(ADA_HANDLE_PREFIX))
+                                handleName = ADA_HANDLE_PREFIX + handleName;
+                            LOG.debug("Found handle {} for account {}", handleName, addr);
+                            handlesMap.put(addr, handleName);
                         }
                     }
                 } else {
@@ -123,17 +132,23 @@ public abstract class AbstractCheckerTask {
                     Set<String> allStakeAddresses = accountAssetsResp.getValue().stream().map(AccountAsset::getStakeAddress).collect(Collectors.toSet());
                     for (String stakeAddr : allStakeAddresses) {
                         processedAddresses.add(stakeAddr);
-                        Optional<String> bestHandle = accountAssetsResp.getValue().stream()
+                        Optional<Asset> bestHandle = accountAssetsResp.getValue().stream()
                                 .filter(a -> a.getStakeAddress().equals(stakeAddr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
-                                .map(a -> hexToAscii(a.getAssetName(), a.getPolicyId()))// FIXME handle display name
-                                .sorted().findFirst();
+                                .map(a -> (Asset) a)
+                                .findFirst();
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
                             handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
                         } else {
-                            LOG.debug("Found handle {} for account {}", bestHandle.get(), stakeAddr);
-                            handlesMap.put(stakeAddr, ADA_HANDLE_PREFIX + bestHandle.get());
+                            String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
+                            if (handleName.indexOf('@') != -1)
+                                handleName = handleName.substring(handleName.indexOf('@') + 1);
+
+                            if (!handleName.startsWith(ADA_HANDLE_PREFIX))
+                                handleName = ADA_HANDLE_PREFIX + handleName;
+                            LOG.debug("Found handle {} for account {}", handleName, stakeAddr);
+                            handlesMap.put(stakeAddr, handleName);
                         }
                     }
                 } else {

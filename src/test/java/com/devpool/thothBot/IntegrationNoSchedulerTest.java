@@ -558,7 +558,7 @@ public class IntegrationNoSchedulerTest {
                         .toString().contains("Assets for address $")).count());
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1wwyy88f8u937hz7kunlkss7gu446p6ed5gdfp6\">AGIX</a> 277.84")));
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1wwyy88f8u937hz7kunlkss7gu446p6ed5gdfp6\">SingularityNet AGIX Token</a> 277.84")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1sqgf4u09yskj8t3tngwzpkl9g276gl8t38lrcv\">Cardano Summit 2023 NFT 1571</a> 1")));

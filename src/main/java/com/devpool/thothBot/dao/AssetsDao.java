@@ -54,8 +54,13 @@ public class AssetsDao {
 
         // Check again for existence
         if (getAssetInformation(policyId, assetName).isEmpty()) {
-            namedParameterJdbcTemplate.update("insert into assets (policy_id, asset_name, display_name, decimals) values (:policy_id, :asset_name, :display_name, :decimals)",
-                    new MapSqlParameterSource(Map.of(FIELD_POLICY_ID, policyId, FIELD_ASSET_NAME, assetName, FIELD_ASSET_DISPLAY_NAME, displayName, FIELD_DECIMALS, decimals)));
+            MapSqlParameterSource paramSource = new MapSqlParameterSource();
+            paramSource.addValue(FIELD_POLICY_ID, policyId);
+            paramSource.addValue(FIELD_ASSET_NAME, assetName);
+            paramSource.addValue(FIELD_ASSET_DISPLAY_NAME, displayName);
+            paramSource.addValue(FIELD_DECIMALS, decimals);
+            namedParameterJdbcTemplate.update("insert into assets (policy_id, asset_name, asset_display_name, decimals) values (:policy_id, :asset_name, :asset_display_name, :decimals)",
+                    paramSource);
 
             LOG.debug("Inserted new asset with policy_id {}, asset_name {}, and decimals {}", policyId, assetName, decimals);
         }

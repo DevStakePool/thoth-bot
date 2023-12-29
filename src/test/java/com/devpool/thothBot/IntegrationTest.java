@@ -395,6 +395,11 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Received Funds and Received Tokens"));
         Assertions.assertFalse(message.contains("[JpegStore]"));
         Assertions.assertEquals(2, message.split("MACH").length);
+
+        // check for null handles
+        for (String m : allMessages) {
+            Assertions.assertFalse(m.contains("null"), "message contains 'null': " + m);
+        }
     }
 
     private String retrieveMessageByString(List<String> messages, String filter1, String filter2) {
