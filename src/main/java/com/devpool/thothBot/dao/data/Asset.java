@@ -4,13 +4,15 @@ public class Asset {
     private Long id;
     private String policyId;
     private String assetName;
+    private String assetDisplayName;
     private Integer decimals;
 
-    public Asset(Long id, String policyId, String assetName, Integer decimals) {
+    public Asset(Long id, String policyId, String assetName, String assetDisplayName, Integer decimals) {
         this.id = id;
         this.policyId = policyId;
         this.assetName = assetName;
         this.decimals = decimals;
+        this.assetDisplayName = assetDisplayName;
     }
 
     public Asset() {
@@ -22,6 +24,7 @@ public class Asset {
                 "id=" + id +
                 ", policyId='" + policyId + '\'' +
                 ", assetName='" + assetName + '\'' +
+                ", assetDisplayName='" + assetDisplayName + '\'' +
                 ", decimals=" + decimals +
                 '}';
     }
@@ -56,5 +59,13 @@ public class Asset {
 
     public void setDecimals(Integer decimals) {
         this.decimals = decimals;
+    }
+
+    public String getAssetDisplayName() {
+        return assetDisplayName;
+    }
+
+    public void setAssetDisplayName(String assetDisplayName) {
+        this.assetDisplayName = assetDisplayName;
     }
 }

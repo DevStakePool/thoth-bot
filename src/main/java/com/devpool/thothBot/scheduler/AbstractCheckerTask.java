@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Value;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
-import rest.koios.client.backend.api.base.common.Asset;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
 import java.nio.charset.StandardCharsets;
@@ -101,7 +100,7 @@ public abstract class AbstractCheckerTask {
                         Optional<String> bestHandle = addrAssetsResp.getValue().stream()
                                 .filter(a -> a.getAddress().equals(addr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
-                                .map(AbstractCheckerTask::hexToAscii)
+                                .map(a -> hexToAscii(a.getAssetName(), a.getPolicyId())) // FIXME handle display name
                                 .sorted().findFirst();
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
@@ -127,7 +126,7 @@ public abstract class AbstractCheckerTask {
                         Optional<String> bestHandle = accountAssetsResp.getValue().stream()
                                 .filter(a -> a.getStakeAddress().equals(stakeAddr))
                                 .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
-                                .map(AbstractCheckerTask::hexToAscii)
+                                .map(a -> hexToAscii(a.getAssetName(), a.getPolicyId()))// FIXME handle display name
                                 .sorted().findFirst();
                         if (bestHandle.isEmpty()) {
                             // Account has no handles
@@ -162,19 +161,18 @@ public abstract class AbstractCheckerTask {
         return handlesMap;
     }
 
-    public static String hexToAscii(Asset asset) {
+    public static String hexToAscii(String assetName, String policyId) {
         StringBuilder output = new StringBuilder();
-        boolean isHandle = asset.getPolicyId().equals(ADA_HANDLE_POLICY_ID);
-        String hexStr = asset.getAssetName();
-        for (int i = 0; i < hexStr.length(); i += 2) {
-            String str = hexStr.substring(i, i + 2);
+        boolean isHandle = policyId.equals(ADA_HANDLE_POLICY_ID);
+        for (int i = 0; i < assetName.length(); i += 2) {
+            String str = assetName.substring(i, i + 2);
             output.append((char) Integer.parseInt(str, 16));
         }
 
         if (isHandle || StandardCharsets.US_ASCII.newEncoder().canEncode(output.toString())) {
             return output.toString();
         } else {
-            return "..." + hexStr.substring(Math.abs(hexStr.length() - 10));
+            return "..." + assetName.substring(Math.abs(assetName.length() - 10));
         }
     }
 }

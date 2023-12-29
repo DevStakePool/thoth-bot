@@ -550,8 +550,10 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         if (!uniqueAssets.isEmpty()) {
             for (Asset asset : uniqueAssets) {
                 Object assetQuantity = null;
+                String assetName = hexToAscii(asset.getAssetName(), asset.getPolicyId());
                 try {
                     assetQuantity = this.assetFacade.getAssetQuantity(asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
+                    assetName = this.assetFacade.getAssetDisplayName(asset.getPolicyId(), asset.getAssetName());
                 } catch (ApiException e) {
                     LOG.warn("Could not get the asset quantity for asset {}/{}: {}",
                             asset.getPolicyId(), asset.getAssetName(), e.toString());
@@ -559,7 +561,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
                 messageBuilder
                         .append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
-                        .append(hexToAscii(asset)).append(" ")
+                        .append(assetName).append(" ")
                         .append(this.assetFacade.formatAssetQuantity(assetQuantity));
             }
         }

@@ -149,12 +149,12 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                     Asset asset = assets.get(i);
                     Object genericQuantity = this.assetFacade.getAssetQuantity(
                             asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
-
+                    String assetName = this.assetFacade.getAssetDisplayName(asset.getPolicyId(), asset.getAssetName());
                     // construct the inline button
                     assetsPage.append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
                             .append("<a href=\"https://pool.pm/").append(asset.getFingerprint())
                             .append("\">")
-                            .append(hexToAscii(asset))
+                            .append(assetName)
                             .append("</a> ")
                             .append(this.assetFacade.formatAssetQuantity(genericQuantity));
                     shown++;

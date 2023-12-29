@@ -4,6 +4,7 @@ import com.devpool.thothBot.dao.AssetsDao;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.Asset;
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,9 +81,9 @@ public class AssetFacade implements Runnable {
         this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, addr, -1, -1), this.koiosFacade));
     }
 
-    public Object getAssetQuantity(String policyId, String assetName, Long quantity) throws ApiException {
+    public String getAssetDisplayName(String policyId, String assetName) throws ApiException {
         Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(policyId, assetName);
-        Object assetQuantity = quantity;
+        String displayName = null;
         if (cachedAsset.isEmpty()) {
             LOG.debug("Asset {}, {} not cached. Retrieving it...", policyId, assetName);
             // We need to get the decimals for the asset. Note, this will be cached
@@ -92,19 +93,50 @@ public class AssetFacade implements Runnable {
                 LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
                         policyId, assetInfoResult.getResponse(), assetInfoResult.getCode());
             } else if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
-                assetQuantity = Long.valueOf(quantity) / (1.0 * Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()));
+                displayName = assetInfoResult.getValue().getTokenRegistryMetadata().getName();
             }
 
             if (assetInfoResult.isSuccessful()) {
                 // Cache it for the future
-                this.assetsDao.addNewAsset(policyId, assetName,
+                this.assetsDao.addNewAsset(policyId, assetName, displayName,
+                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
+                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+            }
+        } else {
+            displayName = cachedAsset.get().getAssetDisplayName();
+            return displayName != null ? displayName : assetName;
+        }
+
+        return AbstractCheckerTask.hexToAscii(assetName, policyId);
+    }
+
+    public Object getAssetQuantity(String policyId, String assetName, Long quantity) throws ApiException {
+        Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(policyId, assetName);
+        Object assetQuantity = quantity;
+        String displayName = null;
+        if (cachedAsset.isEmpty()) {
+            LOG.debug("Asset {}, {} not cached. Retrieving it...", policyId, assetName);
+            // We need to get the decimals for the asset. Note, this will be cached
+            Result<AssetInformation> assetInfoResult = this.koiosFacade.getKoiosService()
+                    .getAssetService().getAssetInformation(policyId, assetName);
+            if (!assetInfoResult.isSuccessful()) {
+                LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
+                        policyId, assetInfoResult.getResponse(), assetInfoResult.getCode());
+            } else if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
+                assetQuantity = quantity / Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+                displayName = assetInfoResult.getValue().getTokenRegistryMetadata().getName();
+            }
+
+            if (assetInfoResult.isSuccessful()) {
+                // Cache it for the future
+                this.assetsDao.addNewAsset(policyId, assetName, displayName,
                         assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
                                 assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
             }
         } else {
             // We have it cached
             if (cachedAsset.get().getDecimals() != -1)
-                assetQuantity = Long.valueOf(quantity) / (Math.pow(10, cachedAsset.get().getDecimals()));
+                assetQuantity = quantity / Math.pow(10, cachedAsset.get().getDecimals());
         }
 
         return assetQuantity;
@@ -114,8 +146,8 @@ public class AssetFacade implements Runnable {
         if (assetQuantity == null) return "?";
 
         return assetQuantity instanceof Double ?
-                String.format("%,.2f", assetQuantity) :
-                String.format("%,d", assetQuantity);
+                String.format("%,.2f", (Double) assetQuantity) :
+                String.format("%,d", (Long) assetQuantity);
     }
 
     @Override
