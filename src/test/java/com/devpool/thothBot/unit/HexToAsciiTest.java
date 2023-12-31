@@ -1,5 +1,6 @@
 package com.devpool.thothBot.unit;
 
+import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -47,7 +48,7 @@ public class HexToAsciiTest {
     public void test_behaviour_non_us_ascii_encoding_with_handle() throws JsonProcessingException {
         String hexStr = "c3a4c3b6c3bc";
         String expected = "...a4c3b6c3bc";
-        String result = AbstractCheckerTask.hexToAscii(hexStr, AbstractCheckerTask.ADA_HANDLE_POLICY_ID);
+        String result = AbstractCheckerTask.hexToAscii(hexStr, AssetFacade.ADA_HANDLE_POLICY_ID);
         assertNotEquals(expected, result);
     }
 }

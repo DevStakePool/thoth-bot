@@ -36,9 +36,6 @@ public abstract class AbstractCheckerTask {
 
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
 
-    public static final String ADA_HANDLE_POLICY_ID = "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a";
-    private static final String ADA_HANDLE_PREFIX = "$";
-
     protected static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
 
     @Autowired
@@ -102,7 +99,7 @@ public abstract class AbstractCheckerTask {
                         processedAddresses.add(addr);
                         Optional<Asset> bestHandle = addrAssetsResp.getValue().stream()
                                 .filter(a -> a.getAddress().equals(addr))
-                                .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
+                                .filter(a -> a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID))
                                 .map(a -> (Asset) a)
                                 .findFirst();
                         if (bestHandle.isEmpty()) {
@@ -110,11 +107,7 @@ public abstract class AbstractCheckerTask {
                             handlesMap.put(addr, shortenAddr(addr));
                         } else {
                             String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
-                            if (handleName.indexOf('@') != -1)
-                                handleName = handleName.substring(handleName.indexOf('@') + 1);
 
-                            if (!handleName.startsWith(ADA_HANDLE_PREFIX))
-                                handleName = ADA_HANDLE_PREFIX + handleName;
                             LOG.debug("Found handle {} for account {}", handleName, addr);
                             handlesMap.put(addr, handleName);
                         }
@@ -134,7 +127,7 @@ public abstract class AbstractCheckerTask {
                         processedAddresses.add(stakeAddr);
                         Optional<Asset> bestHandle = accountAssetsResp.getValue().stream()
                                 .filter(a -> a.getStakeAddress().equals(stakeAddr))
-                                .filter(a -> a.getPolicyId().equals(ADA_HANDLE_POLICY_ID))
+                                .filter(a -> a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID))
                                 .map(a -> (Asset) a)
                                 .findFirst();
                         if (bestHandle.isEmpty()) {
@@ -142,11 +135,7 @@ public abstract class AbstractCheckerTask {
                             handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
                         } else {
                             String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
-                            if (handleName.indexOf('@') != -1)
-                                handleName = handleName.substring(handleName.indexOf('@') + 1);
 
-                            if (!handleName.startsWith(ADA_HANDLE_PREFIX))
-                                handleName = ADA_HANDLE_PREFIX + handleName;
                             LOG.debug("Found handle {} for account {}", handleName, stakeAddr);
                             handlesMap.put(stakeAddr, handleName);
                         }
@@ -178,7 +167,7 @@ public abstract class AbstractCheckerTask {
 
     public static String hexToAscii(String assetName, String policyId) {
         StringBuilder output = new StringBuilder();
-        boolean isHandle = policyId.equals(ADA_HANDLE_POLICY_ID);
+        boolean isHandle = policyId.equals(AssetFacade.ADA_HANDLE_POLICY_ID);
         for (int i = 0; i < assetName.length(); i += 2) {
             String str = assetName.substring(i, i + 2);
             output.append((char) Integer.parseInt(str, 16));

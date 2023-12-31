@@ -1,5 +1,6 @@
 package com.devpool.thothBot.doubles.koios;
 
+import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import rest.koios.client.backend.api.account.AccountService;
 import rest.koios.client.backend.api.account.model.*;
@@ -120,7 +121,7 @@ public class AccountServiceDouble implements AccountService {
             List<AccountAsset> data = KoiosDataBuilder.getAccountAssets(this.backendBehavior);
             // For testing purposes, we make sure the account "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy" does not have any handle
             data.removeIf(a -> a.getStakeAddress().equals("stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy") &&
-                    a.getPolicyId().equals(AbstractCheckerTask.ADA_HANDLE_POLICY_ID));
+                    a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID));
 
             // Thoth NFTs
             if (!(this.backendBehavior == BackendServiceDouble.BackendBehavior.DISABLE_THOTH_NFT_FOR_ACCOUNTS)

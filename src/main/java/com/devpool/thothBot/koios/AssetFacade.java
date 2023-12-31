@@ -31,6 +31,9 @@ import java.util.stream.Collectors;
 public class AssetFacade implements Runnable {
     public static final String UNKNOWN = "UNKNOWN";
     private static final Logger LOG = LoggerFactory.getLogger(AssetFacade.class);
+    public static final String ADA_HANDLE_PREFIX = "$";
+    public static final String ADA_HANDLE_POLICY_ID = "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a";
+
 
     @Autowired
     private KoiosFacade koiosFacade;
@@ -98,6 +101,13 @@ public class AssetFacade implements Runnable {
             }
 
             if (assetInfoResult.isSuccessful()) {
+                if (ADA_HANDLE_POLICY_ID.equals(policyId)) {
+                    // normalize ADA handle
+                    if (displayName.indexOf('@') != -1) {
+                        displayName = displayName.substring(displayName.indexOf('@') + 1);
+                    }
+                    displayName = ADA_HANDLE_PREFIX + displayName;
+                }
                 // Cache it for the future
                 this.assetsDao.addNewAsset(policyId, assetName, displayName,
                         assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
