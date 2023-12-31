@@ -22,7 +22,7 @@ import java.util.Map;
 public class UserDao {
     private static final Logger LOG = LoggerFactory.getLogger(UserDao.class);
     private static final String FIELD_CHAT_ID = "chat_id";
-    private static final String FIELD_STAKE_ADDR = "stake_addr";
+    private static final String FIELD_ADDR = "addr";
     private static final String FIELD_LAST_BLOCK_HEIGHT = "last_block_height";
     private static final String FIELD_LAST_EPOCH_NUMBER = "last_epoch_number";
 
@@ -38,16 +38,15 @@ public class UserDao {
     }
 
     public List<User> getUsers() {
-        // TODO eventually change the stake_addr to just addr (see issue #11)
         SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
-                "select id, chat_id, stake_addr, last_block_height, last_epoch_number from users");
+                "select id, chat_id, addr, last_block_height, last_epoch_number from users");
         Map<Long, User> users = new HashedMap<>();
         while (rs.next()) {
             Long userId = rs.getLong("id");
             User u = new User();
             u.setId(userId);
             u.setChatId(rs.getLong(FIELD_CHAT_ID));
-            u.setAddress(rs.getString(FIELD_STAKE_ADDR));
+            u.setAddress(rs.getString(FIELD_ADDR));
             u.setLastBlockHeight(rs.getInt(FIELD_LAST_BLOCK_HEIGHT));
             u.setLastEpochNumber(rs.getInt(FIELD_LAST_EPOCH_NUMBER));
             users.putIfAbsent(userId, u);
@@ -70,10 +69,10 @@ public class UserDao {
     public void addNewUser(User user) {
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
         namedParameterJdbcTemplate.update(
-                "insert into users (chat_id, stake_addr, last_block_height, last_epoch_number) values (:chat_id, :stake_addr, :last_block_height, :last_epoch_number)",
+                "insert into users (chat_id, addr, last_block_height, last_epoch_number) values (:chat_id, :addr, :last_block_height, :last_epoch_number)",
                 new MapSqlParameterSource(Map.of(
                         FIELD_CHAT_ID, user.getChatId(),
-                        FIELD_STAKE_ADDR, user.getAddress(),
+                        FIELD_ADDR, user.getAddress(),
                         FIELD_LAST_BLOCK_HEIGHT, user.getLastBlockHeight(),
                         FIELD_LAST_EPOCH_NUMBER, user.getLastEpochNumber())), keyHolder, new String[]{"id"});
 
@@ -110,9 +109,9 @@ public class UserDao {
 
     public boolean removeAddress(Long chatId, String addr) {
         int removedRows = this.namedParameterJdbcTemplate.update(
-                "delete from users where chat_id = :chat_id and stake_addr = :stake_addr;",
+                "delete from users where chat_id = :chat_id and addr = :addr;",
                 Map.of(FIELD_CHAT_ID, chatId,
-                        FIELD_STAKE_ADDR, addr));
+                        FIELD_ADDR, addr));
 
         if (removedRows > 1)
             LOG.error("Unexpected deletion of address {} for chat-id {}. The expected removed rows was 1 but got {}",
@@ -129,7 +128,7 @@ public class UserDao {
 
     public User getUser(long id) throws UserNotFoundException {
         SqlRowSet rs = this.namedParameterJdbcTemplate.queryForRowSet(
-                "select id, chat_id, stake_addr, last_block_height, last_epoch_number from users where id = :id",
+                "select id, chat_id, addr, last_block_height, last_epoch_number from users where id = :id",
                 Map.of("id", id));
 
         if (!rs.next()) {
@@ -140,7 +139,7 @@ public class UserDao {
         User u = new User();
         u.setId(rs.getLong("id"));
         u.setChatId(rs.getLong(FIELD_CHAT_ID));
-        u.setAddress(rs.getString(FIELD_STAKE_ADDR));
+        u.setAddress(rs.getString(FIELD_ADDR));
         u.setLastBlockHeight(rs.getInt(FIELD_LAST_BLOCK_HEIGHT));
         u.setLastEpochNumber(rs.getInt(FIELD_LAST_EPOCH_NUMBER));
 
