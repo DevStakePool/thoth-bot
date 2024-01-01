@@ -110,6 +110,7 @@ public class HelpCmd implements IBotCommand {
             helpText = helpText.replace("%coffee", EmojiParser.parseToUnicode(":coffee:"));
             helpText = helpText.replace("%information_source", EmojiParser.parseToUnicode(":information_source:"));
             helpText = helpText.replace("%speech_balloon", EmojiParser.parseToUnicode(":speech_balloon:"));
+            helpText = helpText.replace("%speaking_head_in_silhouette", EmojiParser.parseToUnicode(":speaking_head_in_silhouette:"));
             sb.append(helpText);
         } catch (IOException e) {
             LOG.error("IO Exception while loading the help text {}", e, e);

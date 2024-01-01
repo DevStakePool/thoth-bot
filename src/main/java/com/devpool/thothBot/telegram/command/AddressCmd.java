@@ -187,8 +187,8 @@ public class AddressCmd implements IBotCommand {
                     bot.execute(new SendMessage(update.message().chat().id(),
                             String.format("The address %s that you are trying to subscribe to, contains Thoth NFTs but " +
                                             "it is currently used by another Telegram user. If you believe this address " +
-                                            "is yours, please contact the creator of the Thoth Bot @adf_1983",
-                                    e.getAddress())));
+                                            "is yours, please seek out support in the <a href=\"https://t.me/cardano_thoth_bot_discussions\">Cardano Thoth Bot Discussions</a> channel",
+                                    e.getAddress())).parseMode(ParseMode.HTML).disableWebPagePreview(true));
                     break;
 
                 }

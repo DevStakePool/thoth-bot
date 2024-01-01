@@ -22,13 +22,13 @@ INSERT INTO public.users(
 
 -- NON-Staking with DEV, 0 THOTH NFTs
 INSERT INTO public.users(
-	chat_id, stake_addr, last_block_height, last_epoch_number)
+	chat_id, addr, last_block_height, last_epoch_number)
 	VALUES (1683539744, 'stake1u9jqa4a50e7sfjhqpxhdj7tanju97tdvyq75htqa66vsdfc2radah', 99999999, 9999);
 
 
 -- NON-Staking with DEV, 0 THOTH NFTs
 INSERT INTO public.users(
-	chat_id, stake_addr, last_block_height, last_epoch_number)
+	chat_id, addr, last_block_height, last_epoch_number)
 	VALUES (1683539744, 'stake1uyfwpkz2ymw2q2yvfymfm534uhc3eu2dymy6e4tsym6ygyqqdcxkn', 99999999, 9999);
 
 

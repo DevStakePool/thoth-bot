@@ -69,6 +69,8 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
     public void post() throws Exception {
         this.helpText = new BufferedReader(new InputStreamReader(
                 this.subscriptionHelpResource.getInputStream())).lines().collect(Collectors.joining("\n"));
+        this.helpText = this.helpText.replace("%white_small_square", EmojiParser.parseToUnicode(":white_small_square:"));
+        this.helpText = this.helpText.replace("%speaking_head_in_silhouette", EmojiParser.parseToUnicode(":speaking_head_in_silhouette:"));
     }
 
 
