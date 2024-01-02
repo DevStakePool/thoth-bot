@@ -43,7 +43,7 @@ public class AccountServiceDouble implements AccountService {
 
     @Override
     public Result<List<AccountInfo>> getCachedAccountInformation(List<String> stakeAddresses, Options options) throws ApiException {
-        return null;
+        return getAccountInformation(stakeAddresses, options);
     }
 
     @Override

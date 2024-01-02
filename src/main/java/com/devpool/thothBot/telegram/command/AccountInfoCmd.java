@@ -66,7 +66,6 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     @Override
     public void execute(Update update, TelegramBot bot) {
         Long chatId = update.message().chat().id();
-        boolean failure = false;
 
         try {
             List<String> addresses = this.userDao.getUsers().stream().filter(
@@ -267,7 +266,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
         @Override
         public List<AccountInfo> call() throws Exception {
-            Result<List<AccountInfo>> accountInfoRes = this.koiosFacade.getKoiosService().getAccountService().getAccountInformation(
+            Result<List<AccountInfo>> accountInfoRes = this.koiosFacade.getKoiosService().getAccountService().getCachedAccountInformation(
                     this.addresses, null);
             if (!accountInfoRes.isSuccessful()) {
                 LOG_INTERNAL.warn("Koios call failed when retrieving the account information for chat-id {}: {}/{}",
