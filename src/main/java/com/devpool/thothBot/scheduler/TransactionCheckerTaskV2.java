@@ -410,7 +410,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         return sb;
     }
 
-    private void notifyTelegramUser(List<StringBuilder> txBuilders, User user, Map<String, String> handles) {
+    public void notifyTelegramUser(List<StringBuilder> txBuilders, User user, Map<String, String> handles) {
         Iterator<List<StringBuilder>> batches = CollectionsUtil.batchesList(txBuilders, MAX_TX_IN_TELEGRAM_NOTIFICATION).iterator();
 
         while (batches.hasNext()) {
@@ -418,6 +418,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             StringBuilder messageBuilder = renderTransactionMessageHeader(user, handles, batch.size());
             for (StringBuilder m : batch) {
                 if (messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
+                    messageBuilder.delete(MAX_MSG_PAYLOAD_SIZE - 10, messageBuilder.length() - 1);
                     messageBuilder.append("\nmore...");
                     break;
                 }

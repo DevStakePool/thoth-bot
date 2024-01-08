@@ -36,7 +36,7 @@ thoth:
   disable-scheduler: true
   disable-subscription-manager: true
   test:
-    allow-jumbo-message: true
+    allow-jumbo-message: false
   subscription:
     nft:
       stake-policy-id: 4e22095c8ffb8113206e788af55986eb70577f4e7b32f6ded0b0a855
