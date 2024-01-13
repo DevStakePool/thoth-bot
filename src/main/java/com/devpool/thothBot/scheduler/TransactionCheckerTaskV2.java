@@ -22,10 +22,7 @@ import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.model.Tip;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
-import rest.koios.client.backend.api.transactions.model.TxCertificate;
-import rest.koios.client.backend.api.transactions.model.TxIO;
-import rest.koios.client.backend.api.transactions.model.TxInfo;
-import rest.koios.client.backend.api.transactions.model.TxPlutusContract;
+import rest.koios.client.backend.api.transactions.model.*;
 import rest.koios.client.backend.factory.options.*;
 import rest.koios.client.backend.factory.options.filters.Filter;
 import rest.koios.client.backend.factory.options.filters.FilterType;
@@ -298,7 +295,15 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         LOG.debug("User {} TX {} is of type {}",
                 user.getAddress(), txInfo.getTxHash(), txType);
 
-        Double fee = Long.valueOf(txInfo.getFee()) / LOVELACE;
+        Double fee = Long.parseLong(txInfo.getFee()) / LOVELACE;
+
+        double totalWithdrawals = 0d;
+        if (txInfo.getWithdrawals() != null) {
+            for (TxWithdrawal withdrawal : txInfo.getWithdrawals()) {
+                totalWithdrawals += Long.parseLong(withdrawal.getAmount()) / LOVELACE;
+            }
+            LOG.debug("Found {} ADA withdrawal for TX {}", totalWithdrawals, txInfo.getTxHash());
+        }
 
         // We check the inputs and outputs
         List<TxIO> accountOutputs = Collections.emptyList();
@@ -355,6 +360,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
         if (txType == TxType.TX_SENT) receivedOrSentFunds *= -1.0d;
 
+        receivedOrSentFunds -= totalWithdrawals;
+
         // Check for certificates in case it's a delegation TX
         String delegateToPoolName = null;
         String delegateToPoolId = null;
@@ -406,7 +413,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
         StringBuilder sb = new StringBuilder();
         renderSingleTransactionMessage(sb, txInfo, allAssets, outputAssets, txType, latestCardanoPriceUsd, fee,
-                receivedOrSentFunds, delegateToPoolName, delegateToPoolId, metadataMessage);
+                receivedOrSentFunds, delegateToPoolName, delegateToPoolId, metadataMessage, totalWithdrawals);
         return sb;
     }
 
@@ -452,7 +459,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     private StringBuilder renderSingleTransactionMessage(StringBuilder messageBuilder, TxInfo txInfo,
                                                          List<Asset> allAssets, Set<Asset> outputAssets, TxType txType,
                                                          Double latestCardanoPriceUsd, Double fee, double receivedOrSentFunds,
-                                                         String delegateToPoolName, String delegateToPoolId, String metadataMessage) {
+                                                         String delegateToPoolName, String delegateToPoolId, String metadataMessage,
+                                                         double totalWithdrawals) {
         String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
         if (!outputAssets.isEmpty())
             fundsTokenText = "Funds and Received Tokens";
@@ -503,6 +511,20 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 messageBuilder
                         .append(" (")
                         .append(String.format("%,.2f $", receivedOrSentFunds * latestCardanoPriceUsd))
+                        .append(")");
+            }
+        }
+
+        if (totalWithdrawals > 0) {
+            // We got some withdrawals
+            messageBuilder.append(EmojiParser.parseToUnicode("\n:small_red_triangle_down: Withdrawal "))
+                    .append(String.format("%,.2f", totalWithdrawals)).append(ADA_SYMBOL);
+
+            // USD value if any
+            if (latestCardanoPriceUsd != null) {
+                messageBuilder
+                        .append(" (")
+                        .append(String.format("%,.2f $", totalWithdrawals * latestCardanoPriceUsd))
                         .append(")");
             }
         }

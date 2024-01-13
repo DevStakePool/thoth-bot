@@ -395,6 +395,13 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Received Funds and Received Tokens"));
         Assertions.assertFalse(message.contains("[JpegStore]"));
         Assertions.assertEquals(2, message.split("MACH").length);
+        Assertions.assertFalse(message.contains("Withdrawal"));
+
+        // Issue 38 TX with withdrawals
+        message = retrieveMessageByString(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
+                "054ac848b8bb5a30d39ed1352bc4441f59599cce9ad3bb2b06fb46e54270e606");
+        Assertions.assertTrue(message.contains("Sent -6.50"));
+        Assertions.assertTrue(message.contains("Withdrawal 98.32"));
 
         // check for null handles
         for (String m : allMessages) {
