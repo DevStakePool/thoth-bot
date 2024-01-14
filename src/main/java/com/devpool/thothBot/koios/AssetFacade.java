@@ -124,7 +124,7 @@ public class AssetFacade implements Runnable {
     public Object getAssetQuantity(String policyId, String assetName, Long quantity) throws ApiException {
         Optional<Asset> cachedAsset = this.assetsDao.getAssetInformation(policyId, assetName);
         Object assetQuantity = quantity;
-        String displayName = null;
+        String displayName = AbstractCheckerTask.hexToAscii(assetName, policyId);
         if (cachedAsset.isEmpty()) {
             LOG.debug("Asset {}, {} not cached. Retrieving it...", policyId, assetName);
             // We need to get the decimals for the asset. Note, this will be cached
@@ -140,6 +140,13 @@ public class AssetFacade implements Runnable {
             }
 
             if (assetInfoResult.isSuccessful()) {
+                if (ADA_HANDLE_POLICY_ID.equals(policyId)) {
+                    // normalize ADA handle
+                    if (displayName.indexOf('@') != -1) {
+                        displayName = displayName.substring(displayName.indexOf('@') + 1);
+                    }
+                    displayName = ADA_HANDLE_PREFIX + displayName;
+                }
                 // Cache it for the future
                 this.assetsDao.addNewAsset(policyId, assetName, displayName,
                         assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
