@@ -113,8 +113,8 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
             }
 
             StringBuilder sb = new StringBuilder();
-            renderAccountInformation(sb, accountInfoList, poolNames, handles, latestCardanoPriceUsd);
-            renderAddressInformation(sb, addressInfoList, handles, latestCardanoPriceUsd);
+            renderAccountInformation(sb, accountInfoList, poolNames, handles, latestCardanoPriceUsd, stakingAddr);
+            renderAddressInformation(sb, addressInfoList, handles, latestCardanoPriceUsd, normalAddr);
 
             bot.execute(new SendMessage(update.message().chat().id(), sb.toString())
                     .disableWebPagePreview(true)
@@ -132,7 +132,14 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     private void renderAddressInformation(StringBuilder messageBuilder, List<AddressInfo> addressInfoList,
-                                          Map<String, String> handles, Double latestCardanoPriceUsd) {
+                                          Map<String, String> handles, Double latestCardanoPriceUsd,
+                                          List<String> addresses) {
+
+        // Koios could send empty results if data is not cached (new address)
+        List<String> unresolvedAddresses = addresses.stream()
+                .filter(a -> addressInfoList.stream().map(AddressInfo::getAddress).noneMatch(s -> s.equals(a)))
+                .collect(Collectors.toList());
+
         for (AddressInfo addrInfo : addressInfoList) {
             messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                     .append(TransactionCheckerTaskV2.CARDANO_SCAN_ADDR_KEY)
@@ -176,12 +183,28 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     .append(addrInfo.getUtxoSet().size())
                     .append("\n\n");
         }
+
+        for (String unresolvedAddress : unresolvedAddresses) {
+            messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
+                    .append(TransactionCheckerTaskV2.CARDANO_SCAN_ADDR_KEY)
+                    .append(unresolvedAddress)
+                    .append("\">")
+                    .append(handles.get(unresolvedAddress))
+                    .append("</a>\n")
+                    .append(EmojiParser.parseToUnicode(":white_small_square: Data will be available soon\n\n"));
+        }
     }
 
     private void renderAccountInformation(StringBuilder messageBuilder, List<AccountInfo> accountInfoList,
-                                          Map<String, String> poolNames, Map<String, String> handles, Double latestCardanoPriceUsd) {
-        for (AccountInfo accountInfo : accountInfoList) {
+                                          Map<String, String> poolNames, Map<String, String> handles, Double latestCardanoPriceUsd,
+                                          List<String> addresses) {
 
+        // Koios could send empty results if data is not cached (new address)
+        List<String> unresolvedAddresses = addresses.stream()
+                .filter(a -> accountInfoList.stream().map(AccountInfo::getStakeAddress).noneMatch(s -> s.equals(a)))
+                .collect(Collectors.toList());
+
+        for (AccountInfo accountInfo : accountInfoList) {
 
             messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                     .append(TransactionCheckerTaskV2.CARDANO_SCAN_STAKE_KEY)
@@ -190,9 +213,8 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     .append(handles.get(accountInfo.getStakeAddress()))
                     .append("</a>\n");
 
-            String poolName = null;
             if (accountInfo.getDelegatedPool() != null) {
-                poolName = poolNames.get(accountInfo.getDelegatedPool());
+                String poolName = poolNames.get(accountInfo.getDelegatedPool());
                 messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
                         .append("<a href=\"")
                         .append(CARDANO_SCAN_STAKE_POOL)
@@ -229,6 +251,16 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     .append(EmojiParser.parseToUnicode(":white_small_square: "))
                     .append("Status: ").append(accountInfo.getStatus())
                     .append("\n\n");
+        }
+
+        for (String unresolvedAddress : unresolvedAddresses) {
+            messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
+                    .append(TransactionCheckerTaskV2.CARDANO_SCAN_STAKE_KEY)
+                    .append(unresolvedAddress)
+                    .append("\">")
+                    .append(handles.get(unresolvedAddress))
+                    .append("</a>\n")
+                    .append(EmojiParser.parseToUnicode(":white_small_square: Data will be available soon\n\n"));
         }
     }
 
@@ -274,6 +306,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                 throw new KoiosResponseException(String.format("Koios call failed when retrieving the account information for chat-id %d: %d/%s",
                         chatId, accountInfoRes.getCode(), accountInfoRes.getResponse()));
             }
+
             return accountInfoRes.getValue();
         }
     }

@@ -46,10 +46,12 @@ public class IntegrationNoSchedulerTest {
         TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
         TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0));
         //TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0)); // Reserved for Thoth NFTs tests
+        TEST_USERS.add(new User(-2L, "stake1uxj8rc5aa4xkaejwmvx4gskyje6c283v7a7l6dyz5q2qjmqyxuqx9", 0, 0)); // Not present
         TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
         TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
         TEST_USERS.add(new User(-4L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0));
         TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
+        TEST_USERS.add(new User(-1000L, "addr1q9pzugshkxdrtcmnwppsevp6s5709j4n4ud6q7yhj5ra8e2crqz3h0a46kcklgdaa4dfhdmjhgzy64tam76dxg68t55s9ua0sz", 0, 0)); // Not present
     }
 
     @MockBean
@@ -177,6 +179,51 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("From now on you will receive updates")).count());
+    }
+
+    @Test
+    public void userCommandInfoStakeAddrEmptyDataTest() throws Exception {
+        // Testing Help command
+        Update infoCmdUpdate = TelegramUtils.buildInfoCommandUpdate("-2");
+        this.infoCmd.execute(infoCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+        Assertions.assertEquals((long) -2, params.get("chat_id"));
+        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
+        Assertions.assertEquals(3, params.get("text").toString().split("stakekey/stake1").length - 1);
+        Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
+    }
+
+    @Test
+    public void userCommandInfoNormalAddrEmptyDataTest() throws Exception {
+        // Testing Help command
+        Update infoCmdUpdate = TelegramUtils.buildInfoCommandUpdate("-1000");
+        this.infoCmd.execute(infoCmdUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertEquals(2, params.get("text").toString().split("address/addr1").length - 1);
+        Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
     }
 
     @Test
@@ -533,7 +580,7 @@ public class IntegrationNoSchedulerTest {
 
         Assertions.assertEquals("Please select an account", params.get("text"));
         InlineKeyboardMarkup markup = (InlineKeyboardMarkup) params.get("reply_markup");
-        Assertions.assertEquals(1, markup.inlineKeyboard().length);
+        Assertions.assertEquals(2, markup.inlineKeyboard().length);
         InlineKeyboardButton[] firstRow = markup.inlineKeyboard()[0];
         Assertions.assertEquals(2, firstRow.length);
         Assertions.assertFalse(firstRow[0].callbackData().isEmpty());
@@ -542,7 +589,9 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertFalse(firstRow[1].text().isEmpty());
 
         // We take the first button, so we'll get the list of assets of the account.
-        String callbackCmd = firstRow[0].callbackData();
+        String callbackCmd = firstRow[1].callbackData();
+        if (firstRow[0].text().contains("$alessio.dev"))
+            callbackCmd = firstRow[0].callbackData();
         LOG.info("Getting assets for account {}", callbackCmd);
 
         ArgumentCaptor<SendMessage> argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
@@ -557,7 +606,7 @@ public class IntegrationNoSchedulerTest {
 
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
-                        .equals(Boolean.valueOf(true))).count());
+                        .equals(Boolean.TRUE)).count());
         Assertions.assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Assets for address $")).count());
@@ -614,7 +663,7 @@ public class IntegrationNoSchedulerTest {
         InlineKeyboardMarkup markup = (InlineKeyboardMarkup) params.get("reply_markup");
         Assertions.assertEquals(1, markup.inlineKeyboard().length);
         InlineKeyboardButton[] firstRow = markup.inlineKeyboard()[0];
-        Assertions.assertEquals(1, firstRow.length);
+        Assertions.assertEquals(2, firstRow.length);
         Assertions.assertFalse(firstRow[0].callbackData().isEmpty());
         Assertions.assertFalse(firstRow[0].text().isEmpty());
 
