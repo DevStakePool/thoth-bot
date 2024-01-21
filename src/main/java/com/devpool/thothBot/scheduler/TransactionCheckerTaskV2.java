@@ -298,11 +298,14 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         Double fee = Long.parseLong(txInfo.getFee()) / LOVELACE;
 
         double totalWithdrawals = 0d;
-        if (txInfo.getWithdrawals() != null) {
+        if (txInfo.getWithdrawals() != null && !txInfo.getWithdrawals().isEmpty()) {
             for (TxWithdrawal withdrawal : txInfo.getWithdrawals()) {
-                totalWithdrawals += Long.parseLong(withdrawal.getAmount()) / LOVELACE;
+                // Let's check if the withdrawals was for us
+                if (withdrawal.getStakeAddr().equals(user.getAddress()))
+                    totalWithdrawals += Long.parseLong(withdrawal.getAmount()) / LOVELACE;
             }
             LOG.debug("Found {} ADA withdrawal for TX {}", totalWithdrawals, txInfo.getTxHash());
+
         }
 
         // We check the inputs and outputs

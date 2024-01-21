@@ -108,6 +108,8 @@ public abstract class AbstractCheckerTask {
                         } else {
                             String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
 
+                            if (handleName == null)
+                                handleName = shortenAddr(addr);
                             LOG.debug("Found handle {} for account {}", handleName, addr);
                             handlesMap.put(addr, handleName);
                         }
@@ -135,6 +137,8 @@ public abstract class AbstractCheckerTask {
                             handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
                         } else {
                             String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
+                            if (handleName == null)
+                                handleName = shortenAddr(stakeAddr);
 
                             LOG.debug("Found handle {} for account {}", handleName, stakeAddr);
                             handlesMap.put(stakeAddr, handleName);

@@ -403,6 +403,14 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Sent -6.50"));
         Assertions.assertTrue(message.contains("Withdrawal 98.32"));
 
+        // Withdrawals but not for this stake address
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "e98566e3d80b89fb96d852bd765cc8e88f28518944a60e168dbc879beea56f5");
+        Assertions.assertFalse(message.contains("Withdrawal"));
+        Assertions.assertTrue(message.contains("Received 300"));
+
+
+
         // check for null handles
         for (String m : allMessages) {
             Assertions.assertFalse(m.contains("null"), "message contains 'null': " + m);
