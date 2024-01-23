@@ -17,6 +17,7 @@ import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
@@ -43,6 +44,8 @@ public class KoiosDataBuilder {
     private static final String THOTH_NFTS_STAKE_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_stake.json";
     private static final String THOTH_NFTS_FFA_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_free_for_all.json";
 
+    private static final String ISSUES_DATA_FOLDER = "test-data/issues";
+
     public static List<TxInfo> getTxInfoTestData() throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
         String f = classLoader.getResource(TX_INFO_JSON_FILE).getFile();
@@ -52,6 +55,18 @@ public class KoiosDataBuilder {
 
         List<TxInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
+
+        // Read issues related data
+        f = classLoader.getResource(ISSUES_DATA_FOLDER).getFile();
+        File fromIssues = new File(f);
+        File[] txInfoFiles = fromIssues.listFiles((dir, name) -> name.endsWith("txs_info.json"));
+        if (txInfoFiles != null) {
+            for (File txInfo : txInfoFiles) {
+                data.addAll(mapper.readValue(txInfo, new TypeReference<>() {
+                }));
+            }
+        }
+
         return data;
     }
 
@@ -235,7 +250,21 @@ public class KoiosDataBuilder {
     }
 
     public static List<UTxO> getUTxOsForAccount() throws IOException {
-        return getUTxOsFromFile(ACCOUNT_UTXOS_JSON_FILE);
+        List<UTxO> utxos = getUTxOsFromFile(ACCOUNT_UTXOS_JSON_FILE);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = classLoader.getResource(ISSUES_DATA_FOLDER).getFile();
+        File fromIssues = new File(f);
+        File[] utxosFiles = fromIssues.listFiles((dir, name) -> name.endsWith("account_utxos.json"));
+        if (utxosFiles != null) {
+            for (File utxosFile : utxosFiles) {
+                utxos.addAll(mapper.readValue(utxosFile, new TypeReference<>() {
+                }));
+            }
+        }
+
+        return utxos;
     }
 
     public static List<UTxO> getUTxOsForAddress() throws IOException {

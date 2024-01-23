@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "aee0a0bc7f5063cec94e9e11d94e386e081aecf324be8250b613c51c",
+    "asset_name": "7241474958",
+    "asset_name_ascii": "rAGIX",
+    "fingerprint": "asset19pnfclggzpj7szjut33dwusd6qw60r3d9kgege",
+    "minting_tx_hash": "ab77d8092dd5aa937705f1c7f7b8e09a6f29a2173ce5e53f2743977ee6a3e96d",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1702512000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "aee0a0bc7f5063cec94e9e11d94e386e081aecf324be8250b613c51c": {
+          "rAGIX": {
+            "url": "https://agixevent.com",
+            "name": "AGIX Reward Token",
+            "files": [
+              {
+                "src": "ipfs://QmV7evWrSvxNx4whhx2eEX3KSdyrs9e92mQ9jerLUcJuXs",
+                "name": "rAGIX",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmV7evWrSvxNx4whhx2eEX3KSdyrs9e92mQ9jerLUcJuXs",
+            "level": "medium",
+            "symbol": "rAGIX",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 111007053
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your additional AGIX rewards at https://agixevent.com.",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

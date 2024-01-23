@@ -44,6 +44,8 @@ public class IntegrationTest {
         TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
         TEST_USERS.add(new User(-4L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
         TEST_USERS.add(new User(-5L, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv", 0, 0));
+        // Issue #43
+        TEST_USERS.add(new User(-43L, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7", 0, 0));
     }
 
     @MockBean
@@ -267,7 +269,7 @@ public class IntegrationTest {
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
                         Mockito.timeout(60 * 1000)
-                                .times(78))
+                                .times(79))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 
         List<User> allUsers = this.userDao.getUsers();
@@ -409,8 +411,15 @@ public class IntegrationTest {
         Assertions.assertFalse(message.contains("Withdrawal"));
         Assertions.assertTrue(message.contains("Received 300"));
 
+        // Issue #43
+        message = retrieveMessageByString(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7",
+                "f5401d48ac42a1199c8fbb214e63e4f350ee5a4f099ff460ca7f8f7bdcfabd4c");
 
-
+        Assertions.assertTrue(message.contains("Sent Funds and Tokens"));
+        Assertions.assertTrue(message.contains("Djed USD 746.00"));
+        Assertions.assertTrue(message.contains("-1.19"));
+        Assertions.assertFalse(message.contains("iETH"));
+        
         // check for null handles
         for (String m : allMessages) {
             Assertions.assertFalse(m.contains("null"), "message contains 'null': " + m);

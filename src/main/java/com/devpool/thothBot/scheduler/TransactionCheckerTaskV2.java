@@ -149,8 +149,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             Options options = Options.builder()
                     .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                    .option(Offset.of(offset)).
-                    option(Filter.of(BLOCK_HEIGHT_FIELD, FilterType.GT, Integer.toString(blockHeight)))
+                    .option(Offset.of(offset))
+                    .option(Filter.of(BLOCK_HEIGHT_FIELD, FilterType.GT, Integer.toString(blockHeight)))
                     .option(Order.by(BLOCK_HEIGHT_FIELD, SortType.DESC)).build();
             offset += DEFAULT_PAGINATION_SIZE;
 
