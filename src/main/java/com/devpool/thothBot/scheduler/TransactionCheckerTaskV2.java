@@ -570,15 +570,16 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
 
         // Any assets?
-        allAssets.addAll(outputAssets);
         Collection<Asset> uniqueAssets = allAssets.stream().collect(Collectors.toMap(Asset::getFingerprint, a -> a, (a, b) -> a)).values();
+        Map<String, Long> quantities = computeAssetsQuantity(allAssets);
 
         if (!uniqueAssets.isEmpty()) {
             for (Asset asset : uniqueAssets) {
                 Object assetQuantity = null;
                 String assetName = hexToAscii(asset.getAssetName(), asset.getPolicyId());
                 try {
-                    assetQuantity = this.assetFacade.getAssetQuantity(asset.getPolicyId(), asset.getAssetName(), Long.parseLong(asset.getQuantity()));
+                    assetQuantity = this.assetFacade.getAssetQuantity(asset.getPolicyId(), asset.getAssetName(),
+                            quantities.get(asset.getFingerprint()));
                     assetName = this.assetFacade.getAssetDisplayName(asset.getPolicyId(), asset.getAssetName());
                 } catch (ApiException e) {
                     LOG.warn("Could not get the asset quantity for asset {}/{}: {}",
@@ -595,6 +596,21 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         messageBuilder.append("\n\n"); // Some padding between TXs
 
         return messageBuilder;
+    }
+
+    private Map<String, Long> computeAssetsQuantity(List<Asset> assets) {
+        Map<String, Long> assetsQuantity = new HashMap<>();
+
+        for (Asset asset : assets) {
+            Long assetQuantity = Long.parseLong(asset.getQuantity());
+            if (!assetsQuantity.containsKey(asset.getFingerprint())) {
+                assetsQuantity.put(asset.getFingerprint(), assetQuantity);
+            } else {
+                assetsQuantity.put(asset.getFingerprint(), assetsQuantity.get(asset.getFingerprint()) + assetQuantity);
+            }
+        }
+
+        return assetsQuantity;
     }
 
     public Map<String, String> getContracts() {

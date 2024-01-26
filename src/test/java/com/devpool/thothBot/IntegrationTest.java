@@ -291,9 +291,10 @@ public class IntegrationTest {
         List<String> allMessages = messageArgCaptor.getAllValues();
 
         Assertions.assertEquals(8, countTxForAddress(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr"));
-        Assertions.assertEquals(86, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
+        Assertions.assertEquals(87, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
         Assertions.assertEquals(41, countTxForAddress(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz"));
         Assertions.assertEquals(16, countTxForAddress(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"));
+        Assertions.assertEquals(1, countTxForAddress(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7"));
         Assertions.assertEquals(5, countTxForAddress(allMessages, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv"));
         Assertions.assertEquals(58, countTxForAddress(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m"));
         Assertions.assertEquals(4, allMessages.stream().filter(m -> m.contains("reward(s)")).count());
@@ -419,7 +420,15 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Djed USD 746.00"));
         Assertions.assertTrue(message.contains("-1.19"));
         Assertions.assertFalse(message.contains("iETH"));
-        
+
+        // Issue #39
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "0a416d362c9e1884292c4160254a7a8afc4b3921c783114d3d7574a8087ba3da");
+        Assertions.assertTrue(message.contains("Sent Funds and Tokens"));
+        Assertions.assertTrue(message.contains("Dexhunter Trade"));
+        Assertions.assertTrue(message.contains("Empowa 3,025"));
+        Assertions.assertTrue(message.contains("Sent -14"));
+
         // check for null handles
         for (String m : allMessages) {
             Assertions.assertFalse(m.contains("null"), "message contains 'null': " + m);

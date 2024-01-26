@@ -166,6 +166,10 @@ public abstract class AbstractCheckerTask {
             handlesMap.put(addr, shortenAddr(addr));
         }
 
+        if (LOG.isTraceEnabled()) {
+            LOG.trace("Found handles {}", handlesMap);
+        }
+
         return handlesMap;
     }
 
