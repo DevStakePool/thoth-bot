@@ -427,12 +427,15 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             List<StringBuilder> batch = batches.next();
             StringBuilder messageBuilder = renderTransactionMessageHeader(user, handles, batch.size());
             for (StringBuilder m : batch) {
+                messageBuilder.append(m.toString());
                 if (messageBuilder.toString().length() >= MAX_MSG_PAYLOAD_SIZE) {
+                    long exceededSize = messageBuilder.length();
                     messageBuilder.delete(MAX_MSG_PAYLOAD_SIZE - 10, messageBuilder.length() - 1);
                     messageBuilder.append("\nmore...");
+                    LOG.info("Truncating telegram message that is too long (original size = {}, trimmed size = {}): {}",
+                            exceededSize, messageBuilder.length(), messageBuilder);
                     break;
                 }
-                messageBuilder.append(m.toString());
             }
 
             if (LOG.isTraceEnabled()) {
@@ -450,7 +453,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         messageBuilder.append(EmojiParser.parseToUnicode(":key: <a href=\""))
                 .append(u.isStakeAddress() ? CARDANO_SCAN_STAKE_KEY : CARDANO_SCAN_ADDR_KEY)
                 .append(u.getAddress()).append("\">")
-                .append(handles.get(u.getAddress()))
+                .append(handles.getOrDefault(u.getAddress(), shortenAddr(u.getAddress())))
                 .append("</a>\n")
                 .append(EmojiParser.parseToUnicode(":envelope: "))
                 .append(noTxs)

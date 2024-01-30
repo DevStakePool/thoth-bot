@@ -120,7 +120,7 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
                         .append(CARDANO_SCAN_STAKE_KEY)
                         .append(accountRewards.getStakeAddress())
                         .append("\">")
-                        .append(handles.get(accountRewards.getStakeAddress()))
+                        .append(handles.getOrDefault(accountRewards.getStakeAddress(), shortenAddr(accountRewards.getStakeAddress())))
                         .append("</a>\n")
                         .append((EmojiParser.parseToUnicode(":envelope: ")))
                         .append(accountRewards.getRewards().size())

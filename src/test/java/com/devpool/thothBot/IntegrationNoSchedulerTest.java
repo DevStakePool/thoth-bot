@@ -809,13 +809,35 @@ public class IntegrationNoSchedulerTest {
     }
 
     @Test
-    void longTextTest() throws Exception {
+    void longTextMultiTxTest() throws Exception {
         Map<String, String> handles = Collections.emptyMap();
         User user = new User(1000L, "XYZ_Address", 999, 999);
         List<StringBuilder> txBuilders = new ArrayList<>();
         txBuilders.add(createText("A"));
         txBuilders.add(createText("B"));
         txBuilders.add(createText("C"));
+        transactionCheckerTaskV2.notifyTelegramUser(txBuilders, user, handles);
+
+        // Verify
+        Mockito.verify(this.telegramFacadeMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
+        List<Long> chatIdArgCaptorAllValues = this.chatIdArgCaptor.getAllValues();
+        List<String> messageArgCaptorAllValues = this.messageArgCaptor.getAllValues();
+        Assertions.assertEquals(1, messageArgCaptorAllValues.size());
+        Assertions.assertEquals(1, chatIdArgCaptorAllValues.size());
+        Assertions.assertEquals(1000L, chatIdArgCaptorAllValues.get(0));
+        Assertions.assertTrue(messageArgCaptorAllValues.get(0).endsWith("more..."));
+        Assertions.assertTrue(messageArgCaptorAllValues.get(0).length() < TransactionCheckerTaskV2.MAX_MSG_PAYLOAD_SIZE);
+    }
+
+    @Test
+    void longTextSingleTxTest() throws Exception {
+        Map<String, String> handles = Collections.emptyMap();
+        User user = new User(1000L, "XYZ_Address", 999, 999);
+        List<StringBuilder> txBuilders = new ArrayList<>();
+        txBuilders.add(createText("A").append(createText("B")).append(createText("C")));
         transactionCheckerTaskV2.notifyTelegramUser(txBuilders, user, handles);
 
         // Verify
