@@ -294,7 +294,7 @@ public class IntegrationTest {
         Assertions.assertEquals(87, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
         Assertions.assertEquals(41, countTxForAddress(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz"));
         Assertions.assertEquals(16, countTxForAddress(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"));
-        Assertions.assertEquals(1, countTxForAddress(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7"));
+        Assertions.assertEquals(2, countTxForAddress(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7"));
         Assertions.assertEquals(5, countTxForAddress(allMessages, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv"));
         Assertions.assertEquals(58, countTxForAddress(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m"));
         Assertions.assertEquals(4, allMessages.stream().filter(m -> m.contains("reward(s)")).count());
@@ -341,32 +341,34 @@ public class IntegrationTest {
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "3e2e4a2b7d78bc5994773805f1376d790c8169b63297d50ef4842e22aafb1f29");
         Assertions.assertTrue(message.contains("Fee 0.39"));
         Assertions.assertTrue(message.contains("Sent -5.57"));
-        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 1939 1"));
-        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 3022 1"));
-        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 2884 1"));
-        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 5802 1"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 1939 -1"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 3022 -1"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 2884 -1"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 5802 -1"));
 
         // TX sent funds, jpeg store contract
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "e9f577499a692fc07491cd7de013ea2c3b3a37b3df616aeb39f807ed5ced8d24");
         Assertions.assertTrue(message.contains("Fee 0.46"));
         Assertions.assertTrue(message.contains("Sent -13.61"));
         Assertions.assertTrue(message.contains("JpegStore"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 1501 1"));
 
         // TX received funds, jpeg store multiple (2) contracts
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "b6170c1c89f91bb5f76c0810889ea110f34b63e7fde25b37abe269256ac2f45a");
         Assertions.assertTrue(message.contains("Fee 1.11"));
         Assertions.assertTrue(message.contains("Received 18.00"));
         message = message.substring(message.indexOf("b6170c1c89f91bb5f76c0810889ea110f34b63e7fde25b37abe269256ac2f45a"));
-        Assertions.assertEquals(2, message.split("JpegStore").length - 1);
+        Assertions.assertEquals(2, message.split("\\[JpegStore]").length - 1);
 
         // TX with ada handle
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "a6abf48aad975fac80416ce79f9a7969fe05e13a37eb8be1e917d5d84d6044");
         Assertions.assertTrue(message.contains("$alessio.dev"));
 
-        // TX sent funds and tokens (with token hash)
-        message = retrieveMessageByString(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", "69c2f2f96305b5d1eb46eb5180f9dfb0409c54919d2463ae61becf34570e504a");
-        Assertions.assertTrue(message.contains("...9d660cf6a2 498,221,110"));
-        Assertions.assertTrue(message.contains("hvADA 2,528,098"));
+        // TX sent funds and received tokens
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "2249e6906a7fba98247f22939ee102eb0ceeea207d3014a3b2cbd4944dd21513");
+        Assertions.assertTrue(message.contains("Sent 1.39"));
+        Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 6808 1"));
 
         // Pool operator rewards
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
@@ -393,7 +395,7 @@ public class IntegrationTest {
         // TX received funds, received tokens
         message = retrieveMessageByString(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy",
                 "083e302d0c5d11c07fa642c18df8fa290632c24157c676a754a5a763605ebe26");
-        Assertions.assertTrue(message.contains("MACH 3,947.00"));
+        Assertions.assertTrue(message.contains("MACH 3,947"));
         Assertions.assertTrue(message.contains("1.73"));
         Assertions.assertTrue(message.contains("Received Funds and Received Tokens"));
         Assertions.assertFalse(message.contains("[JpegStore]"));
@@ -416,18 +418,28 @@ public class IntegrationTest {
         message = retrieveMessageByString(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7",
                 "f5401d48ac42a1199c8fbb214e63e4f350ee5a4f099ff460ca7f8f7bdcfabd4c");
 
-        Assertions.assertTrue(message.contains("Sent Funds and Tokens"));
-        Assertions.assertTrue(message.contains("Djed USD 746.00"));
+        Assertions.assertTrue(message.contains("Sent Funds and Sent Tokens"));
+        Assertions.assertTrue(message.contains("Djed USD -746.00"));
         Assertions.assertTrue(message.contains("-1.19"));
         Assertions.assertFalse(message.contains("iETH"));
 
         // Issue #39
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
                 "0a416d362c9e1884292c4160254a7a8afc4b3921c783114d3d7574a8087ba3da");
-        Assertions.assertTrue(message.contains("Sent Funds and Tokens"));
+        Assertions.assertTrue(message.contains("Sent Funds and Sent Tokens"));
         Assertions.assertTrue(message.contains("Dexhunter Trade"));
-        Assertions.assertTrue(message.contains("Empowa 3,025"));
+        Assertions.assertTrue(message.contains("Empowa -3,025.28"));
         Assertions.assertTrue(message.contains("Sent -14"));
+        Assertions.assertTrue(message.contains("Fee 0.25"));
+
+        // Issue #47
+        message = retrieveMessageByString(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7",
+                "779133d969dc88440d18741dc17e536b8b1b21ac0fdb431f4d2850f028839d81");
+        Assertions.assertTrue(message.contains("Sent Funds, Sent and Received Tokens"));
+        Assertions.assertTrue(message.contains("Fee 0.32"));
+        Assertions.assertTrue(message.contains("Sent -2.00"));
+        Assertions.assertTrue(message.contains("iUSD -2,369.08"));
+        Assertions.assertTrue(message.contains("qiUSD 116,002.71"));
 
         // check for null handles
         for (String m : allMessages) {

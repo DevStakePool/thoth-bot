@@ -14,7 +14,14 @@ curl -s -X POST "https://api.koios.rest/api/v1/tx_info" \
  -H "content-type: application/json" \
  -d '{"_tx_hashes":["0a416d362c9e1884292c4160254a7a8afc4b3921c783114d3d7574a8087ba3da"]}' | jq > issues/39_txs_info.json
 
+# Issue 47
+curl -s -X POST "https://api.koios.rest/api/v1/tx_info" \
+ -H "accept: application/json"\
+ -H "content-type: application/json" \
+ -d '{"_tx_hashes":["779133d969dc88440d18741dc17e536b8b1b21ac0fdb431f4d2850f028839d81"]}' | jq > issues/47_txs_info.json
+
 # Fetching assets
 echo "Fetching all assets in all TXs"
 download_assets "issues/43_txs_info.json"
 download_assets "issues/39_txs_info.json"
+download_assets "issues/47_txs_info.json"
