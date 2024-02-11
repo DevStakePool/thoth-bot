@@ -281,58 +281,35 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
     private StringBuilder processTxForUser(TxInfo txInfo, User user) {
         // check input and output of the TX to determine the nature of the TX itself
-        Set<String> allInputAddresses = txInfo.getInputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
-        Set<String> allOutputAddresses = txInfo.getOutputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
+        long allInputValueLovelace = txInfo.getInputs()
+                .stream().filter(tx -> user.getAddress().equals(tx.getStakeAddr()) ||
+                        user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                .mapToLong(tx -> Long.parseLong(tx.getValue())).sum();
+        long allOutputValueLovelace = txInfo.getOutputs().stream()
+                .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) ||
+                        user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                .mapToLong(tx -> Long.parseLong(tx.getValue())).sum();
+        long feeLovelace = Long.parseLong(txInfo.getFee());
+        long txBalance = allOutputValueLovelace - allInputValueLovelace;
+
+        long totalWithdrawalsLovelace = getWithdrawalLovelace(txInfo, user);
+        txBalance -= totalWithdrawalsLovelace;
+
+        if (txBalance < 0 && allOutputValueLovelace > 0)
+            txBalance += feeLovelace;
 
         TxType txType;
-        if (allInputAddresses.size() == 1 && allOutputAddresses.size() == 1 &&
-                allInputAddresses.contains(user.getAddress()) && allOutputAddresses.contains(user.getAddress()))
+        if (txBalance == 0)
             txType = TxType.TX_INTERNAL;
-        else if (!allInputAddresses.contains(user.getAddress()))
+        else if (txBalance > 0)
             txType = TxType.TX_RECEIVED;
         else
             txType = TxType.TX_SENT;
 
-        LOG.debug("User {} TX {} is of type {}",
-                user.getAddress(), txInfo.getTxHash(), txType);
+        LOG.debug("User {} TX {} is of type {}, with balance {}",
+                user.getAddress(), txInfo.getTxHash(), txType, txBalance);
 
-        Double fee = Long.parseLong(txInfo.getFee()) / LOVELACE;
-
-        double totalWithdrawals = 0d;
-        if (txInfo.getWithdrawals() != null && !txInfo.getWithdrawals().isEmpty()) {
-            for (TxWithdrawal withdrawal : txInfo.getWithdrawals()) {
-                // Let's check if the withdrawals was for us
-                if (withdrawal.getStakeAddr().equals(user.getAddress()))
-                    totalWithdrawals += Long.parseLong(withdrawal.getAmount()) / LOVELACE;
-            }
-            LOG.debug("Found {} ADA withdrawal for TX {}", totalWithdrawals, txInfo.getTxHash());
-
-        }
-
-        // We check the inputs and outputs
-        List<TxIO> accountOutputs = Collections.emptyList();
-        List<TxIO> accountInputs = txInfo.getInputs().stream()
-                .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                .collect(Collectors.toList());
-
-        switch (txType) {
-            case TX_INTERNAL: {
-                accountInputs = Collections.emptyList();
-                break;
-            }
-            case TX_RECEIVED: {
-                accountOutputs = txInfo.getOutputs().stream()
-                        .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                        .collect(Collectors.toList());
-                break;
-            }
-            case TX_SENT: {
-                accountOutputs = txInfo.getOutputs().stream()
-                        .filter(tx -> !user.getAddress().equals(tx.getStakeAddr()) && !user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                        .collect(Collectors.toList());
-                break;
-            }
-        }
+        Double fee = feeLovelace / LOVELACE;
 
         // We need to check if there are new assets that we received, even if it's a "sent" TX
         // We make a diff between all input and output assets that belong to this account. The new ones are the received new assets
@@ -390,23 +367,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
 
         LOG.debug("All assets in TX: {}", assetValues);
-
-        double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.parseLong(tx.getValue())).sum() / LOVELACE;
-
-        // If it's a SENT funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
-        if (txType == TxType.TX_SENT && !accountInputs.isEmpty()) {
-            List<TxIO> txOutputsBelongingToTheUser = txInfo.getOutputs().stream()
-                    .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                    .collect(Collectors.toList());
-
-            Double inputFunds = accountInputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-            Double outputFunds = txOutputsBelongingToTheUser.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-            receivedOrSentFunds = inputFunds - outputFunds - fee;
-        }
-
-        if (txType == TxType.TX_SENT) receivedOrSentFunds *= -1.0d;
-
-        receivedOrSentFunds -= totalWithdrawals;
+        double totalWithdrawals = totalWithdrawalsLovelace / LOVELACE;
+        double receivedOrSentFunds = txBalance / LOVELACE;
 
         // Check for certificates in case it's a delegation TX
         String delegateToPoolName = null;
@@ -505,6 +467,19 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         return messageBuilder;
     }
 
+    private long getWithdrawalLovelace(TxInfo txInfo, User user) {
+        long totalWithdrawals = 0;
+        if (txInfo.getWithdrawals() != null && !txInfo.getWithdrawals().isEmpty()) {
+            for (TxWithdrawal withdrawal : txInfo.getWithdrawals()) {
+                // Let's check if the withdrawals was for us
+                if (withdrawal.getStakeAddr().equals(user.getAddress()))
+                    totalWithdrawals += Long.parseLong(withdrawal.getAmount());
+            }
+            LOG.debug("Found {} ADA withdrawal for TX {}", totalWithdrawals, txInfo.getTxHash());
+        }
+
+        return totalWithdrawals;
+    }
     private StringBuilder renderSingleTransactionMessage(StringBuilder messageBuilder, TxInfo txInfo,
                                                          Map<Asset, Number> allAssets, TxType txType,
                                                          Double latestCardanoPriceUsd, Double fee, double receivedOrSentFunds,

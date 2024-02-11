@@ -269,7 +269,7 @@ public class IntegrationTest {
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
                         Mockito.timeout(60 * 1000)
-                                .times(79))
+                                .times(80))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 
         List<User> allUsers = this.userDao.getUsers();
@@ -287,11 +287,12 @@ public class IntegrationTest {
         //Expected transactions for addresses addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv: 5
         //Expected transactions for addresses addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m: 58
         //Total expected transactions for accounts+addresses 214
+        // Numbers below differs from this due to the data added from issues
 
         List<String> allMessages = messageArgCaptor.getAllValues();
 
         Assertions.assertEquals(8, countTxForAddress(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr"));
-        Assertions.assertEquals(87, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
+        Assertions.assertEquals(88, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
         Assertions.assertEquals(41, countTxForAddress(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz"));
         Assertions.assertEquals(16, countTxForAddress(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"));
         Assertions.assertEquals(2, countTxForAddress(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7"));
@@ -316,17 +317,21 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Sent -55.00"));
 
         // TX catalyst new airdrop method
-        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "19c57aec14b9cefd4b1025c09c64bf857a4d2e3c0ee184d62b2eca8dfceb929b");
-        Assertions.assertTrue(message.contains("59.54"));
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "19c57aec14b9cefd4b1025c09c64bf857a4d2e3c0ee184d62b2eca8dfceb929b");
+        Assertions.assertTrue(message.contains("Received 59.54"));
+        Assertions.assertTrue(message.contains("Fee 0.87"));
         Assertions.assertTrue(message.contains("Fund10 Voter rewards"));
 
         // TX received funds, 1 token
-        message = retrieveMessageByString(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", "9f8067d6565c5e189551b9ca820ff27ec87dc955420ab9d8a6ce4107d5d27743");
+        message = retrieveMessageByString(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m",
+                "9f8067d6565c5e189551b9ca820ff27ec87dc955420ab9d8a6ce4107d5d27743");
         Assertions.assertTrue(message.contains("wide open 1"));
         Assertions.assertTrue(message.contains("Received 1.04"));
 
         // TX received funds, with message
-        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", "773b01dfcd7a0398a8576129410084c8797906b913bdf6437289daebb672f085");
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "773b01dfcd7a0398a8576129410084c8797906b913bdf6437289daebb672f085");
         Assertions.assertTrue(message.contains("DEV Pool patron rewards for epoch 377"));
         Assertions.assertTrue(message.contains("Sent -55.00"));
         Assertions.assertTrue(message.contains("Fee 0.20"));
@@ -367,7 +372,9 @@ public class IntegrationTest {
         // TX sent funds and received tokens
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
                 "2249e6906a7fba98247f22939ee102eb0ceeea207d3014a3b2cbd4944dd21513");
-        Assertions.assertTrue(message.contains("Sent 1.39"));
+        Assertions.assertTrue(message.contains("Received 1.09"));
+        Assertions.assertTrue(message.contains("Fee 0.30"));
+        Assertions.assertTrue(message.contains("Received Funds and Received Tokens"));
         Assertions.assertTrue(message.contains("Cardano Summit 2023 NFT 6808 1"));
 
         // Pool operator rewards
@@ -414,6 +421,16 @@ public class IntegrationTest {
         Assertions.assertFalse(message.contains("Withdrawal"));
         Assertions.assertTrue(message.contains("Received 300"));
 
+        // TX with no input but just output (simple received NFT + funds from a friend)
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "2c122a05b4cc3121e2e7225374ae8cfe74d947aa8169264878d2fd1dc0a40702");
+        Assertions.assertTrue(message.contains("Received Funds and Received Tokens"));
+        Assertions.assertTrue(message.contains("Fee 0.17"));
+        Assertions.assertTrue(message.contains("Received 1.19"));
+        Assertions.assertTrue(message.contains("CARDANO PETS-0026 1"));
+
+
+
         // Issue #43
         message = retrieveMessageByString(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7",
                 "f5401d48ac42a1199c8fbb214e63e4f350ee5a4f099ff460ca7f8f7bdcfabd4c");
@@ -440,6 +457,14 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Sent -2.00"));
         Assertions.assertTrue(message.contains("iUSD -2,369.08"));
         Assertions.assertTrue(message.contains("qiUSD 116,002.71"));
+
+        // Issue #47 - received funds and sent tokens
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "24188c3d4aa6efad2c1250705a9ee5f8acd8c59cf9e4eebf9541477af7b10d15");
+        Assertions.assertTrue(message.contains("Received Funds and Sent Tokens"));
+        Assertions.assertTrue(message.contains("Received 16.07"));
+        Assertions.assertTrue(message.contains("Fee 0.40"));
+        Assertions.assertTrue(message.contains("MalTheTrader12416 -1"));
 
         // check for null handles
         for (String m : allMessages) {
