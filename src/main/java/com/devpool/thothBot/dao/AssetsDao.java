@@ -57,7 +57,7 @@ public class AssetsDao {
             MapSqlParameterSource paramSource = new MapSqlParameterSource();
             paramSource.addValue(FIELD_POLICY_ID, policyId);
             paramSource.addValue(FIELD_ASSET_NAME, assetName);
-            paramSource.addValue(FIELD_ASSET_DISPLAY_NAME, displayName);
+            paramSource.addValue(FIELD_ASSET_DISPLAY_NAME, displayName.replace("\u0000", ""));
             paramSource.addValue(FIELD_DECIMALS, decimals);
             namedParameterJdbcTemplate.update("insert into assets (policy_id, asset_name, asset_display_name, decimals) values (:policy_id, :asset_name, :asset_display_name, :decimals)",
                     paramSource);
