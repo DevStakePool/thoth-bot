@@ -303,10 +303,12 @@ public class IntegrationTest {
         String message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
                 "3af819e5583709c9e7b5b84614c60015b9bf10deb2b20756118cba707e531e53");
         Assertions.assertTrue(message.contains("Fee 0.18"));
+        Assertions.assertTrue(message.contains("Internal Funds"));
 
         // TX internal, pool delegation
         message = retrieveMessageByString(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
                 "3f31f56afbfa4c4bdd7c33d1f1d4ae0cedece2fa2bfb2934b914ea5e0dfb0142");
+        Assertions.assertTrue(message.contains("Internal Funds"));
         Assertions.assertTrue(message.contains("[DEV]"));
 
         // TX sent funds, with message

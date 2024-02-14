@@ -509,7 +509,6 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 break;
             case TX_INTERNAL:
                 messageBuilder.append(EmojiParser.parseToUnicode(":repeat: "));
-                fundsTokenText += " (internal)";
                 break;
         }
 
