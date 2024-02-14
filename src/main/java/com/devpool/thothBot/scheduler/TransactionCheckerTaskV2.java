@@ -41,6 +41,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     private static final String DELEGATION_CERTIFICATE = "delegation";
     private static final String BLOCK_HEIGHT_FIELD = "block_height";
     private static final int MAX_TX_IN_TELEGRAM_NOTIFICATION = 3;
+
     @Value("${thoth.test.allow-jumbo-message}")
     private Boolean allowJumboMessage;
 
@@ -280,58 +281,35 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
     private StringBuilder processTxForUser(TxInfo txInfo, User user) {
         // check input and output of the TX to determine the nature of the TX itself
-        Set<String> allInputAddresses = txInfo.getInputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
-        Set<String> allOutputAddresses = txInfo.getOutputs().stream().map(tx -> tx.getStakeAddr() != null ? tx.getStakeAddr() : tx.getPaymentAddr().getBech32()).collect(Collectors.toSet());
+        long allInputValueLovelace = txInfo.getInputs()
+                .stream().filter(tx -> user.getAddress().equals(tx.getStakeAddr()) ||
+                        user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                .mapToLong(tx -> Long.parseLong(tx.getValue())).sum();
+        long allOutputValueLovelace = txInfo.getOutputs().stream()
+                .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) ||
+                        user.getAddress().equals(tx.getPaymentAddr().getBech32()))
+                .mapToLong(tx -> Long.parseLong(tx.getValue())).sum();
+        long feeLovelace = Long.parseLong(txInfo.getFee());
+        long txBalance = allOutputValueLovelace - allInputValueLovelace;
+
+        long totalWithdrawalsLovelace = getWithdrawalLovelace(txInfo, user);
+        txBalance -= totalWithdrawalsLovelace;
+
+        if (txBalance < 0 && allOutputValueLovelace > 0)
+            txBalance += feeLovelace;
 
         TxType txType;
-        if (allInputAddresses.size() == 1 && allOutputAddresses.size() == 1 &&
-                allInputAddresses.contains(user.getAddress()) && allOutputAddresses.contains(user.getAddress()))
+        if (txBalance == 0)
             txType = TxType.TX_INTERNAL;
-        else if (!allInputAddresses.contains(user.getAddress()))
+        else if (txBalance > 0)
             txType = TxType.TX_RECEIVED;
         else
             txType = TxType.TX_SENT;
 
-        LOG.debug("User {} TX {} is of type {}",
-                user.getAddress(), txInfo.getTxHash(), txType);
+        LOG.debug("User {} TX {} is of type {}, with balance {}",
+                user.getAddress(), txInfo.getTxHash(), txType, txBalance);
 
-        Double fee = Long.parseLong(txInfo.getFee()) / LOVELACE;
-
-        double totalWithdrawals = 0d;
-        if (txInfo.getWithdrawals() != null && !txInfo.getWithdrawals().isEmpty()) {
-            for (TxWithdrawal withdrawal : txInfo.getWithdrawals()) {
-                // Let's check if the withdrawals was for us
-                if (withdrawal.getStakeAddr().equals(user.getAddress()))
-                    totalWithdrawals += Long.parseLong(withdrawal.getAmount()) / LOVELACE;
-            }
-            LOG.debug("Found {} ADA withdrawal for TX {}", totalWithdrawals, txInfo.getTxHash());
-
-        }
-
-        // We check the inputs and outputs
-        List<TxIO> accountOutputs = Collections.emptyList();
-        List<TxIO> accountInputs = txInfo.getInputs().stream()
-                .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                .collect(Collectors.toList());
-
-        switch (txType) {
-            case TX_INTERNAL: {
-                accountInputs = Collections.emptyList();
-                break;
-            }
-            case TX_RECEIVED: {
-                accountOutputs = txInfo.getOutputs().stream()
-                        .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                        .collect(Collectors.toList());
-                break;
-            }
-            case TX_SENT: {
-                accountOutputs = txInfo.getOutputs().stream()
-                        .filter(tx -> !user.getAddress().equals(tx.getStakeAddr()) && !user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                        .collect(Collectors.toList());
-                break;
-            }
-        }
+        Double fee = feeLovelace / LOVELACE;
 
         // We need to check if there are new assets that we received, even if it's a "sent" TX
         // We make a diff between all input and output assets that belong to this account. The new ones are the received new assets
@@ -342,28 +320,55 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
                 .flatMap(io -> io.getAssetList().stream()).collect(Collectors.toSet());
 
-        outputAssets.removeIf(a -> inputAssets.stream().map(Asset::getFingerprint).anyMatch(x -> x.equals(a.getFingerprint())));
-
-        List<Asset> allAssets = accountOutputs.stream().flatMap(tx -> tx.getAssetList().stream()).collect(Collectors.toList());
-
-        LOG.debug("All assets:\n{}\noutput assets:\n{}", allAssets, outputAssets);
-
-        double receivedOrSentFunds = accountOutputs.stream().mapToLong(tx -> Long.parseLong(tx.getValue())).sum() / LOVELACE;
-
-        // If it's a SENT funds you need to subtract the value of receivedOrSentFunds to the sub of the input ones
-        if (txType == TxType.TX_SENT && !accountInputs.isEmpty()) {
-            List<TxIO> txOutputsBelongingToTheUser = txInfo.getOutputs().stream()
-                    .filter(tx -> user.getAddress().equals(tx.getStakeAddr()) || user.getAddress().equals(tx.getPaymentAddr().getBech32()))
-                    .collect(Collectors.toList());
-
-            Double inputFunds = accountInputs.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-            Double outputFunds = txOutputsBelongingToTheUser.stream().mapToLong(tx -> Long.valueOf(tx.getValue())).sum() / LOVELACE;
-            receivedOrSentFunds = inputFunds - outputFunds - fee;
+        Map<String, Double> inputAssetValues = new HashMap<>();
+        for (Asset ia : inputAssets) {
+            Double val = inputAssetValues.getOrDefault(ia.getFingerprint(), 0d);
+            val += Long.parseLong(ia.getQuantity()) / Math.pow(10, ia.getDecimals());
+            inputAssetValues.put(ia.getFingerprint(), val);
         }
 
-        if (txType == TxType.TX_SENT) receivedOrSentFunds *= -1.0d;
+        Map<String, Double> outputAssetValues = new HashMap<>();
+        for (Asset oa : outputAssets) {
+            Double val = outputAssetValues.getOrDefault(oa.getFingerprint(), 0d);
+            val += Long.parseLong(oa.getQuantity()) / Math.pow(10, oa.getDecimals());
+            outputAssetValues.put(oa.getFingerprint(), val);
+        }
 
-        receivedOrSentFunds -= totalWithdrawals;
+        Map<String, Double> assetValues = new HashMap<>(inputAssetValues);
+        // Input tokens shall be negative because they are leaving the wallet
+        assetValues.replaceAll((k, v) -> v *= -1);
+
+        for (Map.Entry<String, Double> a : outputAssetValues.entrySet()) {
+            if (assetValues.containsKey(a.getKey()))
+                assetValues.put(a.getKey(), assetValues.get(a.getKey()) + a.getValue());
+            else
+                assetValues.put(a.getKey(), a.getValue());
+        }
+
+        Map<Asset, Number> allAssets = new HashMap<>();
+        for (Map.Entry<String, Double> av : assetValues.entrySet()) {
+            // find the asset in input or output
+            Optional<Asset> asset = inputAssets.stream().filter(a -> a.getFingerprint().equals(av.getKey())).findFirst();
+            if (asset.isEmpty())
+                asset = outputAssets.stream().filter(a -> a.getFingerprint().equals(av.getKey())).findFirst();
+
+            if (asset.isEmpty()) {
+                LOG.error("Cannot find the asset with fingerprint {} among input/output lists, in the Tx {}",
+                        av.getKey(), txInfo.getTxHash());
+                continue;
+            }
+
+            if (av.getValue() != 0d) {
+                if (asset.get().getDecimals() > 0)
+                    allAssets.put(asset.get(), av.getValue());
+                else
+                    allAssets.put(asset.get(), av.getValue().longValue());
+            }
+        }
+
+        LOG.debug("All assets in TX: {}", assetValues);
+        double totalWithdrawals = totalWithdrawalsLovelace / LOVELACE;
+        double receivedOrSentFunds = txBalance / LOVELACE;
 
         // Check for certificates in case it's a delegation TX
         String delegateToPoolName = null;
@@ -380,7 +385,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 List<PoolInfo> poolInfoList = null;
 
                 try {
-                    Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(Arrays.asList(delegateToPoolId), options);
+                    Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(Collections.singletonList(delegateToPoolId), options);
                     if (poolInfoRes.isSuccessful()) poolInfoList = poolInfoRes.getValue();
                     else LOG.warn("Cannot retrieve pool information due to {}", poolInfoRes.getResponse());
                 } catch (ApiException e) {
@@ -411,11 +416,11 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         if (LOG.isDebugEnabled()) {
             LOG.debug("TX {} Amount {} Fees {} USD Price {} Pool Delegation {} ({}) Message {} Assets {}",
                     txInfo.getTxHash(), receivedOrSentFunds, fee, latestCardanoPriceUsd, delegateToPoolName, delegateToPoolId,
-                    metadataMessage, allAssets.stream().map(Asset::getFingerprint).collect(Collectors.joining("\n")));
+                    metadataMessage, allAssets.keySet().stream().map(Asset::getFingerprint).collect(Collectors.joining("\n")));
         }
 
         StringBuilder sb = new StringBuilder();
-        renderSingleTransactionMessage(sb, txInfo, allAssets, outputAssets, txType, latestCardanoPriceUsd, fee,
+        renderSingleTransactionMessage(sb, txInfo, allAssets, txType, latestCardanoPriceUsd, fee,
                 receivedOrSentFunds, delegateToPoolName, delegateToPoolId, metadataMessage, totalWithdrawals);
         return sb;
     }
@@ -462,14 +467,38 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         return messageBuilder;
     }
 
+    private long getWithdrawalLovelace(TxInfo txInfo, User user) {
+        long totalWithdrawals = 0;
+        if (txInfo.getWithdrawals() != null && !txInfo.getWithdrawals().isEmpty()) {
+            for (TxWithdrawal withdrawal : txInfo.getWithdrawals()) {
+                // Let's check if the withdrawals was for us
+                if (withdrawal.getStakeAddr().equals(user.getAddress()))
+                    totalWithdrawals += Long.parseLong(withdrawal.getAmount());
+            }
+            LOG.debug("Found {} ADA withdrawal for TX {}", totalWithdrawals, txInfo.getTxHash());
+        }
+
+        return totalWithdrawals;
+    }
     private StringBuilder renderSingleTransactionMessage(StringBuilder messageBuilder, TxInfo txInfo,
-                                                         List<Asset> allAssets, Set<Asset> outputAssets, TxType txType,
+                                                         Map<Asset, Number> allAssets, TxType txType,
                                                          Double latestCardanoPriceUsd, Double fee, double receivedOrSentFunds,
                                                          String delegateToPoolName, String delegateToPoolId, String metadataMessage,
                                                          double totalWithdrawals) {
-        String fundsTokenText = String.format("Funds %s", allAssets.isEmpty() ? "" : "and Tokens");
-        if (!outputAssets.isEmpty())
+
+        String fundsTokenText = "";
+        // Check how many received and sent tokens we have (negative is sent, positive is received)
+        boolean sentTokens = allAssets.values().stream().anyMatch(v -> v.doubleValue() < 0);
+        boolean receivedTokens = allAssets.values().stream().anyMatch(v -> v.doubleValue() > 0);
+
+        if (sentTokens && receivedTokens)
+            fundsTokenText = "Funds, Sent and Received Tokens";
+        else if (sentTokens)
+            fundsTokenText = "Funds and Sent Tokens";
+        else if (receivedTokens)
             fundsTokenText = "Funds and Received Tokens";
+        else
+            fundsTokenText = "Funds";
 
         switch (txType) {
             case TX_RECEIVED:
@@ -480,7 +509,6 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 break;
             case TX_INTERNAL:
                 messageBuilder.append(EmojiParser.parseToUnicode(":repeat: "));
-                fundsTokenText = String.format("Transfer %s", allAssets.isEmpty() ? "" : "and Tokens");
                 break;
         }
 
@@ -573,47 +601,24 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         }
 
         // Any assets?
-        Collection<Asset> uniqueAssets = allAssets.stream().collect(Collectors.toMap(Asset::getFingerprint, a -> a, (a, b) -> a)).values();
-        Map<String, Long> quantities = computeAssetsQuantity(allAssets);
-
-        if (!uniqueAssets.isEmpty()) {
-            for (Asset asset : uniqueAssets) {
-                Object assetQuantity = null;
-                String assetName = hexToAscii(asset.getAssetName(), asset.getPolicyId());
-                try {
-                    assetQuantity = this.assetFacade.getAssetQuantity(asset.getPolicyId(), asset.getAssetName(),
-                            quantities.get(asset.getFingerprint()));
-                    assetName = this.assetFacade.getAssetDisplayName(asset.getPolicyId(), asset.getAssetName());
-                } catch (ApiException e) {
-                    LOG.warn("Could not get the asset quantity for asset {}/{}: {}",
-                            asset.getPolicyId(), asset.getAssetName(), e.toString());
-                }
-
-                messageBuilder
-                        .append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
-                        .append(assetName).append(" ")
-                        .append(this.assetFacade.formatAssetQuantity(assetQuantity));
+        for (Map.Entry<Asset, Number> asset : allAssets.entrySet()) {
+            String assetName = hexToAscii(asset.getKey().getAssetName(), asset.getKey().getPolicyId());
+            try {
+                assetName = this.assetFacade.getAssetDisplayName(asset.getKey().getPolicyId(), asset.getKey().getAssetName());
+            } catch (ApiException e) {
+                LOG.warn("Could not get the asset quantity for asset {}/{}: {}",
+                        asset.getKey().getPolicyId(), asset.getKey().getAssetName(), e.toString());
             }
+
+            messageBuilder
+                    .append(EmojiParser.parseToUnicode("\n:small_orange_diamond:"))
+                    .append(assetName).append(" ")
+                    .append(this.assetFacade.formatAssetQuantity(asset.getValue()));
         }
 
         messageBuilder.append("\n\n"); // Some padding between TXs
 
         return messageBuilder;
-    }
-
-    private Map<String, Long> computeAssetsQuantity(List<Asset> assets) {
-        Map<String, Long> assetsQuantity = new HashMap<>();
-
-        for (Asset asset : assets) {
-            Long assetQuantity = Long.parseLong(asset.getQuantity());
-            if (!assetsQuantity.containsKey(asset.getFingerprint())) {
-                assetsQuantity.put(asset.getFingerprint(), assetQuantity);
-            } else {
-                assetsQuantity.put(asset.getFingerprint(), assetsQuantity.get(asset.getFingerprint()) + assetQuantity);
-            }
-        }
-
-        return assetsQuantity;
     }
 
     public Map<String, String> getContracts() {

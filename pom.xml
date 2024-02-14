@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.devpool</groupId>
     <artifactId>thoth-bot</artifactId>
-    <version>1.5.2</version>
+    <version>1.5.3</version>
     <name>Thoth Bot Cardano</name>
     <description>A Telegram Bot for the Cardano blockchain that monitors wallet activities and notifies users about TXs,
         etc.
@@ -64,12 +64,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
