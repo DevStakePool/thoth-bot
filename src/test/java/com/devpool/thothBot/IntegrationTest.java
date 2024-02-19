@@ -269,7 +269,7 @@ public class IntegrationTest {
     public void scheduledNotificationsTest() throws Exception {
         Mockito.verify(this.telegramFacadeMock,
                         Mockito.timeout(60 * 1000)
-                                .times(80))
+                                .times(81))
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
 
         List<User> allUsers = this.userDao.getUsers();
@@ -295,7 +295,7 @@ public class IntegrationTest {
         Assertions.assertEquals(88, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
         Assertions.assertEquals(41, countTxForAddress(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz"));
         Assertions.assertEquals(16, countTxForAddress(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"));
-        Assertions.assertEquals(2, countTxForAddress(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7"));
+        Assertions.assertEquals(4, countTxForAddress(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7"));
         Assertions.assertEquals(5, countTxForAddress(allMessages, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv"));
         Assertions.assertEquals(58, countTxForAddress(allMessages, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m"));
         Assertions.assertEquals(4, allMessages.stream().filter(m -> m.contains("reward(s)")).count());
@@ -467,6 +467,20 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Received 16.07"));
         Assertions.assertTrue(message.contains("Fee 0.40"));
         Assertions.assertTrue(message.contains("MalTheTrader12416 -1"));
+
+        // Issue #49 - zero value assets
+        message = retrieveMessageByString(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7",
+                "6ad2da8864edf66da2090de526a9c8851c41331c319896ba6d65c7a2278ecba6");
+        Assertions.assertTrue(message.contains("qiUSD -115,880.08"));
+        Assertions.assertTrue(message.contains("qDJED -1,446,879.76"));
+        Assertions.assertFalse(message.contains("0.00"));
+
+        message = retrieveMessageByString(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7",
+                "4e00fca28aaa0c5a3907290ee5f94d4c265f0f5e950585b3627d64018b5633df");
+        Assertions.assertTrue(message.contains("Fee 0.28"));
+        Assertions.assertTrue(message.contains("Sent -3,016.00"));
+        Assertions.assertTrue(message.contains("AdaMarkets_3"));
+        Assertions.assertFalse(message.contains("0.00"));
 
         // check for null handles
         for (String m : allMessages) {
