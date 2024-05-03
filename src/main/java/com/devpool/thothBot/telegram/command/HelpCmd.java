@@ -115,7 +115,7 @@ public class HelpCmd implements IBotCommand {
             helpText = helpText.replace("%information_source", EmojiParser.parseToUnicode(":information_source:"));
             helpText = helpText.replace("%speech_balloon", EmojiParser.parseToUnicode(":speech_balloon:"));
             helpText = helpText.replace("%speaking_head_in_silhouette", EmojiParser.parseToUnicode(":speaking_head_in_silhouette:"));
-            helpText = helpText.replace("%admission_ticket", EmojiParser.parseToUnicode(":admission_ticket:"));
+            helpText = helpText.replace("%art", EmojiParser.parseToUnicode(":art:"));
             sb.append(helpText);
 
             // Grab the subscription help text
