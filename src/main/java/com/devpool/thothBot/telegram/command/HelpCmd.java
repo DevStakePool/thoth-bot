@@ -33,7 +33,7 @@ public class HelpCmd implements IBotCommand {
      * Some global constants
      */
     public static final Map<String, String> CONSTANTS = Map.of(
-            "$thoth.version", "1.5.3",
+            "$thoth.version", "1.6.0",
             "$donation.handle", "$thoth-bot",
             "$url", "https://github.com/DevStakePool/thoth-bot");
 
