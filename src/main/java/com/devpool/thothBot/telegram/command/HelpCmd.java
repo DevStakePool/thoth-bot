@@ -1,5 +1,6 @@
 package com.devpool.thothBot.telegram.command;
 
+import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
@@ -32,7 +33,7 @@ public class HelpCmd implements IBotCommand {
      * Some global constants
      */
     public static final Map<String, String> CONSTANTS = Map.of(
-            "$thoth.version", "1.5.3",
+            "$thoth.version", "1.6.0",
             "$donation.handle", "$thoth-bot",
             "$url", "https://github.com/DevStakePool/thoth-bot");
 
@@ -41,6 +42,9 @@ public class HelpCmd implements IBotCommand {
 
     @Autowired
     private List<IBotCommand> commands;
+
+    @Autowired
+    private SubscriptionManager subscriptionManager;
 
     @Override
     public boolean canTrigger(String username, String message) {
@@ -111,7 +115,11 @@ public class HelpCmd implements IBotCommand {
             helpText = helpText.replace("%information_source", EmojiParser.parseToUnicode(":information_source:"));
             helpText = helpText.replace("%speech_balloon", EmojiParser.parseToUnicode(":speech_balloon:"));
             helpText = helpText.replace("%speaking_head_in_silhouette", EmojiParser.parseToUnicode(":speaking_head_in_silhouette:"));
+            helpText = helpText.replace("%art", EmojiParser.parseToUnicode(":art:"));
             sb.append(helpText);
+
+            // Grab the subscription help text
+            sb.append(this.subscriptionManager.getHelpText());
         } catch (IOException e) {
             LOG.error("IO Exception while loading the help text {}", e, e);
         }

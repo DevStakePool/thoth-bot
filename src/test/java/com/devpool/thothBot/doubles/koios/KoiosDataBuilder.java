@@ -220,7 +220,7 @@ public class KoiosDataBuilder {
      * @throws IOException
      */
     public static AssetInformation getAssetInformation(String policyId, String policyName) throws IOException {
-        String fileName = ASSET_INFORMATION_PREFIX_JSON_FILE + policyId + "_" + policyName + ".json";
+        String fileName = ASSET_INFORMATION_PREFIX_JSON_FILE + policyId + "_" + (policyName != null ? policyName : "") + ".json";
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
         LOG.info("Reading asset file {}", fileName);
         String f = classLoader.getResource(fileName).getFile();

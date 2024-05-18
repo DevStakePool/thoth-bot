@@ -120,7 +120,7 @@ public class TelegramFacade {
         } else if (update.callbackQuery() != null) {
             payload = update.callbackQuery().data();
             from = update.callbackQuery().from().username();
-            id = update.callbackQuery().message().chat().id();
+            id = update.callbackQuery().maybeInaccessibleMessage().chat().id();
         } else {
             LOG.warn("Update.message and callbackQuery are null");
             return;

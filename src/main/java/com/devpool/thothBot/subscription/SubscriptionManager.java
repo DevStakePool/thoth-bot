@@ -284,8 +284,8 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
             }
         }
 
-        if (LOG.isDebugEnabled())
-            LOG.debug("Retrieved account assets: {}", outcome);
+        if (LOG.isTraceEnabled())
+            LOG.trace("Retrieved account assets: {}", outcome);
 
         return outcome;
     }
@@ -341,8 +341,8 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
             }
         }
 
-        if (LOG.isDebugEnabled())
-            LOG.debug("Retrieved account assets: {}", outcome);
+        if (LOG.isTraceEnabled())
+            LOG.trace("Retrieved addresses assets: {}", outcome);
 
         return outcome;
     }

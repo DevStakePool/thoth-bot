@@ -42,6 +42,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     private static final String BLOCK_HEIGHT_FIELD = "block_height";
     private static final int MAX_TX_IN_TELEGRAM_NOTIFICATION = 3;
 
+    private static final double EPSILON = 0.00001d;
+
     @Value("${thoth.test.allow-jumbo-message}")
     private Boolean allowJumboMessage;
 
@@ -358,7 +360,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 continue;
             }
 
-            if (av.getValue() != 0d) {
+            // double fuzzy compare to avoid micro precision
+            if (Math.abs(av.getValue()) > EPSILON) {
                 if (asset.get().getDecimals() > 0)
                     allAssets.put(asset.get(), av.getValue());
                 else
