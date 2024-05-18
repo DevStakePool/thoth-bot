@@ -87,7 +87,8 @@ public class UserDao {
                         "id", id)));
 
         if (updatedNumOfRows != 1) {
-            LOG.error("Unexpected updated number of rows for the user with id {}, when updating the block height. This is a bug!", id);
+            LOG.error("Unexpected updated number of rows {} for the user with id {}, when updating the block height. This is a bug!",
+                    updatedNumOfRows, id);
         } else {
             LOG.debug("Updated block height to {} for user ID {}", blockHeight, id);
         }
