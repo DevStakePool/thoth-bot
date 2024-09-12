@@ -35,12 +35,22 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
+    public Result<List<AssetAddress>> getPolicyAssetAddressList(String s, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<AssetHistory>> getAssetHistory(String assetPolicy, String assetName, Options options) throws ApiException {
         return null;
     }
 
     @Override
     public Result<List<PolicyAssetInfo>> getPolicyAssetInformation(String assetPolicy, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<PolicyAssetMint>> getPolicyAssetMints(String s, Options options) throws ApiException {
         return null;
     }
 
@@ -60,7 +70,7 @@ public class AssetServiceDouble implements AssetService {
     }
 
     @Override
-    public Result<AssetInformation> getAssetInformationBulk(List<Tuple<String, String>> assetList, Options options) throws ApiException {
+    public Result<List<AssetInformation>> getAssetInformationBulk(List<Tuple<String, String>> list, Options options) throws ApiException {
         return null;
     }
 

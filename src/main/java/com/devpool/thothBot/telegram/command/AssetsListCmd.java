@@ -73,9 +73,8 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             return;
         }
 
-        Message incomingMessage = update.callbackQuery().message();
-        Long chatId = update.callbackQuery().message().chat().id();
-        Integer messageId = update.callbackQuery().message().messageId();
+        Long chatId = update.callbackQuery().maybeInaccessibleMessage().chat().id();
+        Integer messageId = update.callbackQuery().maybeInaccessibleMessage().messageId();
 
         String msgText = update.callbackQuery().data().trim();
         LOG.debug("assets list callback data (messageId={}): {}", messageId, msgText);
@@ -188,9 +187,9 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
                                     offsetNumber + ASSET_LIST_PAGE_SIZE));
 
             // Notify the user
-            if (this.liveMessages.contains(incomingMessage.messageId())) {
+            if (this.liveMessages.contains(messageId)) {
                 // It's an edit action
-                BaseResponse editResp = bot.execute(new EditMessageText(chatId, incomingMessage.messageId(), assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
+                BaseResponse editResp = bot.execute(new EditMessageText(chatId, messageId, assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
                 LOG.debug("Edit response is ok? {}, error code {}, {}", editResp.isOk(), editResp.errorCode(), editResp.description());
             } else {
