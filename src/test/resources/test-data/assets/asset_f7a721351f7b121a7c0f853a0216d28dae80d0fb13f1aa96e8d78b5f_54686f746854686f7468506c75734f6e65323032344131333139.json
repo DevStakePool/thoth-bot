@@ -1,0 +1,40 @@
+[
+  {
+    "policy_id": "f7a721351f7b121a7c0f853a0216d28dae80d0fb13f1aa96e8d78b5f",
+    "asset_name": "54686f746854686f7468506c75734f6e65323032344131333139",
+    "asset_name_ascii": "ThothThothPlusOne2024A1319",
+    "fingerprint": "asset1xk0ew54kywa6s9kqa2ldnuvjv0z9yfx8mea7vd",
+    "minting_tx_hash": "d300ccc4165809617f0310c81e7b0351af85176de45e704fe7089bbc690df8e4",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1700956800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "f7a721351f7b121a7c0f853a0216d28dae80d0fb13f1aa96e8d78b5f": {
+          "ThothThothPlusOne2024A1319": {
+            "name": "Thoth Bot 2024A Plus One #1319",
+            "files": [
+              {
+                "src": "ipfs://QmZcC8cPV31Q1YShNKByD73SWrD2cAoTy8iCJxH4SPdu8i",
+                "name": "Thoth Bot 2024A Plus One #1319",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZcC8cPV31Q1YShNKByD73SWrD2cAoTy8iCJxH4SPdu8i",
+            "origin": "free_for_all",
+            "Twitter": "https://twitter.com/thoth_cardano",
+            "website": "https://github.com/DevStakePool/thoth-bot/",
+            "telegram": "@thoth_cardano_bot",
+            "mediaType": "image/png",
+            "expiration": "1719784799",
+            "description": "Allows the Thoth Bot user to monitor 1 additional address"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

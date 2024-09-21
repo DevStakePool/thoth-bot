@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "d4a229f4f54cd4c7101ea9f18a4945071eff539d1d3bb8ef8d140a38",
+    "asset_name": "4d494e4d42",
+    "asset_name_ascii": "MINMB",
+    "fingerprint": "asset1zqu5xncwpkmn7u9c6q0lntw49m3e845c458229",
+    "minting_tx_hash": "ceb7abc3b8f146b89d35b80cf6bbfe62d9d1946c6f45a8f176537330055e05f0",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704585600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d4a229f4f54cd4c7101ea9f18a4945071eff539d1d3bb8ef8d140a38": {
+          "MINMB": {
+            "URL": "https://minswap.loan",
+            "name": "Minswap Mystery Box",
+            "files": [
+              {
+                "src": "ipfs://QmeqEwPnvvA7gQJdozfmEBQFbNyfA9gKMP9xJxKhbpvEgY",
+                "name": "MINMB",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeqEwPnvvA7gQJdozfmEBQFbNyfA9gKMP9xJxKhbpvEgY",
+            "symbol": "MINMB",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113052454
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Unbox your Mystery Box to reveal your luck.",
+            "description": "Minswap Mystery Box Event. Website: https://minswap.loan",
+            "totalSupply": 1000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

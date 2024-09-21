@@ -4,10 +4,10 @@
     "asset_name": "484f534b594361736847726162303030323130313739",
     "asset_name_ascii": "HOSKYCashGrab000210179",
     "fingerprint": "asset12rn42nem7dupmqtldzymya7h7lv8xkw7kd3zel",
-    "minting_tx_hash": "cf4e8ae7f365db26f8e71330dcfd24cc62b374a15c49e892773115bdc00db0bc",
+    "minting_tx_hash": "45e0f2e500f6188b2280fd4864ca11bc628563bfa48b6fda91abad327963c9f5",
     "total_supply": "1",
-    "mint_cnt": 1,
-    "burn_cnt": 0,
+    "mint_cnt": 2,
+    "burn_cnt": 1,
     "creation_time": 1649116800,
     "minting_tx_metadata": {
       "721": {
@@ -18,70 +18,15 @@
           "hosky.io"
         ],
         "a5bb0e5bb275a573d744a021f9b3bff73595468e002755b447e01559": {
-          "HOSKYCashGrab000210152": {
-            "name": "HOSKY C(ash Grab)NFT 210152",
-            "image": "ipfs://QmbMCG9tXecLWPrxu5SQRLffF76QCaRtxkyR2iqKcnbYh3",
+          "HOSKYCashGrab000210083": {
+            "name": "HOSKY C(ash Grab)NFT 210083",
+            "image": "ipfs://QmPdd2e6tQaCrag4vwZqDTFumFJy2GPNMEJHCJp3cF4FvT",
             "-----Traits-----": [
               {
-                "Background": "Grey"
+                "Background": "Ukraine"
               },
               {
-                "Fur": "Ghost"
-              },
-              {
-                "Eyes": "Hoskytwo Eyes"
-              },
-              {
-                "Glasses": "Visor Beam"
-              },
-              {
-                "Frame": "Gold"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210153": {
-            "name": "HOSKY C(ash Grab)NFT 210153",
-            "image": "ipfs://QmNYpP8xaY5MnnEG4YZYjqWZDCiSsqZ69xbfhuTMF1oAN3",
-            "-----Traits-----": [
-              {
-                "Background": "Underwater"
-              },
-              {
-                "Fur": "Ghost Chain"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Frame": "Gold"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210154": {
-            "name": "HOSKY C(ash Grab)NFT 210154",
-            "image": "ipfs://QmPYfqoLZQqw3bBj9ZkbvnUqtv14oQG8n5D1BG7BABFsYa",
-            "-----Traits-----": [
-              {
-                "Background": "Beige"
-              },
-              {
-                "Fur": "White"
+                "Fur": "Señor Josquí"
               },
               {
                 "Eyes": "Original"
@@ -90,10 +35,333 @@
                 "Mouth": "Original"
               },
               {
-                "Mouth Decoration": "Bone"
+                "Glasses": "Purple Eye Mask"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
               },
               {
-                "Frame": "Ikea"
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210091": {
+            "name": "HOSKY C(ash Grab)NFT 210091",
+            "image": "ipfs://QmQWNSrr1t9HYbKC2fLr6cM2ecxR97s3NuU2wmiCXdVd2x",
+            "-----Traits-----": [
+              {
+                "Background": "Red Gradient"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Hat": "Fast Food Manager"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Glasses": "3D Glasses"
+              },
+              {
+                "Frame": "Check Mate"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210093": {
+            "name": "HOSKY C(ash Grab)NFT 210093",
+            "image": "ipfs://QmaZfe5Wu4jZhDwwD7fW1EcTSBfvEKPyRyLQB8kExvvyza",
+            "-----Traits-----": [
+              {
+                "Background": "Baby Blue"
+              },
+              {
+                "Fur": "Golden Labrador"
+              },
+              {
+                "Neck": "Hawaiian"
+              },
+              {
+                "Mouth": "WTF"
+              },
+              {
+                "Glasses": "Mirrored Glasses"
+              },
+              {
+                "Frame": "Traditional Painting"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210101": {
+            "name": "HOSKY C(ash Grab)NFT 210101",
+            "image": "ipfs://QmWXFw6ZAbK3tFniVYVfx7ynunpqeyiaPmNMwk9fSyCzZm",
+            "-----Traits-----": [
+              {
+                "Background": "Hosky Code"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Eyes": "Seasick"
+              },
+              {
+                "Ear Decoration": "Double Right Rings"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Frame": "Playing Card"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210104": {
+            "name": "HOSKY C(ash Grab)NFT 210104",
+            "image": "ipfs://QmbJtExXdBaYtCNXZ8sCL7agk1WNsrxGbwGP3Aab55mRA7",
+            "-----Traits-----": [
+              {
+                "Background": "Dark Black"
+              },
+              {
+                "Fur": "Clown"
+              },
+              {
+                "Eyes": "Original"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Mouth Decoration": "Cigarette"
+              },
+              {
+                "Frame": "Pernis"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210113": {
+            "name": "HOSKY C(ash Grab)NFT 210113",
+            "image": "ipfs://QmdZxLgJmu5BsGiQeQjDpNHeRj6GeybRgUdL9NazhY4H1C",
+            "-----Traits-----": [
+              {
+                "Background": "Deep Purple"
+              },
+              {
+                "Fur": "Doberman"
+              },
+              {
+                "Eyes": "Crazy Eyes"
+              },
+              {
+                "Hat": "Fast Food Manager"
+              },
+              {
+                "Neck": "Vicar"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Glasses": "Eyepatch Left"
+              },
+              {
+                "Frame": "Check Mate"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210115": {
+            "name": "HOSKY C(ash Grab)NFT 210115",
+            "image": "ipfs://QmZnX3LqwjqbrMfe9jEt2h4r1s6Xd8kPVwZqMumb4ivHbJ",
+            "-----Traits-----": [
+              {
+                "Background": "This is Fine"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Eyes": "Pink Eye"
+              },
+              {
+                "Hat": "Yellow Feather Hat"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Glasses": "Red Eye Mask"
+              },
+              {
+                "Frame": "Gold"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210116": {
+            "name": "HOSKY C(ash Grab)NFT 210116",
+            "image": "ipfs://QmTZ9Ta6SQRw8wMnbvoKojduQ7qAaNe2jRcHnDMgMnmdYU",
+            "-----Traits-----": [
+              {
+                "Background": "Dark Black"
+              },
+              {
+                "Fur": "Hoskasaur"
+              },
+              {
+                "Hat": "Fast Food"
+              },
+              {
+                "Neck": "Hawaiian"
+              },
+              {
+                "Mouth": "Rob Boss Beard"
+              },
+              {
+                "Glasses": "3D Glasses"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210117": {
+            "name": "HOSKY C(ash Grab)NFT 210117",
+            "image": "ipfs://QmdZAxVSJMgkDLTwWw8mErBVuxDWBSzosdsdDAeZ1z7iw6",
+            "-----Traits-----": [
+              {
+                "Background": "Green"
+              },
+              {
+                "Fur": "Clown"
+              },
+              {
+                "Eyes": "Original"
+              },
+              {
+                "Ear Decoration": "Left Ring"
+              },
+              {
+                "Mouth": "Original"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210139": {
+            "name": "HOSKY C(ash Grab)NFT 210139",
+            "image": "ipfs://QmSgPfBfuG4XaWi8pi39toXS5bQDct5dAaWTjFU85bDTDV",
+            "-----Traits-----": [
+              {
+                "Background": "Green"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Eyes": "Original"
+              },
+              {
+                "Hat": "Space Invader"
+              },
+              {
+                "Mouth": "Rob Boss Beard"
+              },
+              {
+                "Frame": "Gold"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210149": {
+            "name": "HOSKY C(ash Grab)NFT 210149",
+            "image": "ipfs://Qmf8Kr4pf9X2WbKhe2JZFgCmVeb2YF7Gup6jD8x3hQ6gck",
+            "-----Traits-----": [
+              {
+                "Background": "Deep Purple"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Eyes": "Original"
+              },
+              {
+                "Hat": "Major Hosky"
+              },
+              {
+                "Neck": "Blue Collar Gold Spikes"
+              },
+              {
+                "Mouth": "Original"
               }
             ],
             "-----Product Information-----": [
@@ -107,10 +375,10 @@
           },
           "HOSKYCashGrab000210155": {
             "name": "HOSKY C(ash Grab)NFT 210155",
-            "image": "ipfs://QmYeCm72TaBWgFvmkD3K7v9Ej5F8RHLkUdW7YsgA6L7Zeh",
+            "image": "ipfs://QmSXr61CmfLyLEyjBH6bCGe3ZTDuLMWL1oW1qRRM7yVApY",
             "-----Traits-----": [
               {
-                "Background": "Matrix"
+                "Background": "Hosky Code"
               },
               {
                 "Fur": "Original"
@@ -140,522 +408,9 @@
               }
             ]
           },
-          "HOSKYCashGrab000210156": {
-            "name": "HOSKY C(ash Grab)NFT 210156",
-            "image": "ipfs://QmPHeZDeBDXYUSN9iZLPqARirDpTw4EKU3MKhi8PpcWNFH",
-            "-----Traits-----": [
-              {
-                "Background": "Ganja"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Hat": "Sweatband 2"
-              },
-              {
-                "Neck": "Red Collar Gold Spikes"
-              },
-              {
-                "Mouth": "Original"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210157": {
-            "name": "HOSKY C(ash Grab)NFT 210157",
-            "image": "ipfs://QmdEK95gjs4pPSoT9gwLmBXFXUH3ufKVovnx7a7z9HJJRJ",
-            "-----Traits-----": [
-              {
-                "Background": "Grey"
-              },
-              {
-                "Fur": "Golden Labrador"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Mouth": "Original"
-              },
-              {
-                "Glasses": "Gold Glasses"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210158": {
-            "name": "HOSKY C(ash Grab)NFT 210158",
-            "image": "ipfs://QmVKz2xsaHmH2iB9wpTjBN2aicMjZw6cV9gqkFm4Q9xind",
-            "-----Traits-----": [
-              {
-                "Background": "Blue"
-              },
-              {
-                "Fur": "Hoskrogu"
-              },
-              {
-                "Eyes": "Pink Eye"
-              },
-              {
-                "Hat": "Top Hat Red"
-              },
-              {
-                "Mouth": "Sad"
-              },
-              {
-                "Mouth Decoration": "Cigar"
-              },
-              {
-                "Glasses": "Laser Visor"
-              },
-              {
-                "Frame": "Traditional Painting"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210159": {
-            "name": "HOSKY C(ash Grab)NFT 210159",
-            "image": "ipfs://QmbmC9gMhKmYzxzwq7PEF7gs4bbjUFfJvNrP8fHQie1Y2x",
-            "-----Traits-----": [
-              {
-                "Background": "Radioactive Yellow"
-              },
-              {
-                "Fur": "Hoskrogu"
-              },
-              {
-                "Eyes": "Hoskasaur Eyes"
-              },
-              {
-                "Hat": "Pork Pie Hat"
-              },
-              {
-                "Mouth": "Original"
-              },
-              {
-                "Mouth Decoration": "Bone"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210160": {
-            "name": "HOSKY C(ash Grab)NFT 210160",
-            "image": "ipfs://QmV2YodNbqyz7WRAdF8A38YB3ZGtJ5mnCAABShpM48UBWt",
-            "-----Traits-----": [
-              {
-                "Background": "Underwater"
-              },
-              {
-                "Fur": "Charles Mask"
-              },
-              {
-                "Eyes": "Charles Eyes"
-              },
-              {
-                "Ear Decoration": "Double Left Rings"
-              },
-              {
-                "Neck": "Red Collar Gold Spikes"
-              },
-              {
-                "Mouth Decoration": "Taco"
-              },
-              {
-                "Frame": "Check Mate"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210161": {
-            "name": "HOSKY C(ash Grab)NFT 210161",
-            "image": "ipfs://Qmcph3YuuZHLnypyBwmxGepD6yYXj1CEV126TufCBhV2vG",
-            "-----Traits-----": [
-              {
-                "Background": "Blue"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Eyes": "Knackered"
-              },
-              {
-                "Hat": "Captain"
-              },
-              {
-                "Neck": "Red Collar Gold Spikes"
-              },
-              {
-                "Mouth": "WTF"
-              },
-              {
-                "Mouth Decoration": "Cigar"
-              },
-              {
-                "Glasses": "Eyepatch Left"
-              },
-              {
-                "Frame": "Gold"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210162": {
-            "name": "HOSKY C(ash Grab)NFT 210162",
-            "image": "ipfs://QmamsCSiVVMMHLPjiipPFBZ3fXs617tLwUajkEqsYnoLBP",
-            "-----Traits-----": [
-              {
-                "Background": "Landscape"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Ear Decoration": "Stud Left"
-              },
-              {
-                "Mouth": "Good Boy"
-              },
-              {
-                "Glasses": "Thug Life"
-              },
-              {
-                "Frame": "Gold"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210163": {
-            "name": "HOSKY C(ash Grab)NFT 210163",
-            "image": "ipfs://QmU3AaSqErAfPUE91onTt1boQaJskyU9qaLaurvV1kig8t",
-            "-----Traits-----": [
-              {
-                "Background": "Beige"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Hat": "Sweatband 2"
-              },
-              {
-                "Neck": "Red Collar Gold Spikes"
-              },
-              {
-                "Mouth": "WTF"
-              },
-              {
-                "Mouth Decoration": "Cigar"
-              },
-              {
-                "Glasses": "Gold Glasses"
-              },
-              {
-                "Frame": "Wood"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210164": {
-            "name": "HOSKY C(ash Grab)NFT 210164",
-            "image": "ipfs://Qmdh6PHM9K92gP317donJfux3aVeaMBwbse7qXHBtZTd9z",
-            "-----Traits-----": [
-              {
-                "Background": "Red Gradient"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Ear Decoration": "Double Left Rings"
-              },
-              {
-                "Mouth": "Original"
-              },
-              {
-                "Frame": "Gold"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210165": {
-            "name": "HOSKY C(ash Grab)NFT 210165",
-            "image": "ipfs://QmWfrEv7qRaCE7uqWsd7bnt9CkS1VmmSAocNe1Ugg1aN8y",
-            "-----Traits-----": [
-              {
-                "Background": "Navy"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Hat": "Top Hat Blue"
-              },
-              {
-                "Mouth": "Original"
-              },
-              {
-                "Mouth Decoration": "Big Moustache"
-              },
-              {
-                "Frame": "Wernis"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210166": {
-            "name": "HOSKY C(ash Grab)NFT 210166",
-            "image": "ipfs://QmTppX6auLeN9QqygYofsxeEvBXQA68R1qBB5ZvLtJR3yv",
-            "-----Traits-----": [
-              {
-                "Background": "Deep Purple"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Eyes": "Overload"
-              },
-              {
-                "Mouth": "Original"
-              },
-              {
-                "Mouth Decoration": "Eat Poo"
-              },
-              {
-                "Glasses": "Eyes Patched"
-              },
-              {
-                "Frame": "Ikea"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210167": {
-            "name": "HOSKY C(ash Grab)NFT 210167",
-            "image": "ipfs://QmYHGxApcSJqCucPzicXC6HdQfayrPfBwHBc34DXsKTRZR",
-            "-----Traits-----": [
-              {
-                "Background": "Happy Trees - JES Art"
-              },
-              {
-                "Fur": "Golden Labrador"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Hat": "Orange Hoodie"
-              },
-              {
-                "Frame": "Check Mate"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210168": {
-            "name": "HOSKY C(ash Grab)NFT 210168",
-            "image": "ipfs://QmPhjEb19BrxAA7ZfuZNzPEmBYYV2sqGGSg7ZpxM8XmiDm",
-            "-----Traits-----": [
-              {
-                "Background": "Beige"
-              },
-              {
-                "Fur": "Blue Dog"
-              },
-              {
-                "Eyes": "Whatsthat"
-              },
-              {
-                "Hat": "Hosk Cap"
-              },
-              {
-                "Mouth": "WTF"
-              },
-              {
-                "Mouth Decoration": "Eat Poo"
-              },
-              {
-                "Frame": "Gold"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210169": {
-            "name": "HOSKY C(ash Grab)NFT 210169",
-            "image": "ipfs://QmYETpaNLy9ipdrAbyKNoNUz2LSd2U9YxEEGWFVoMqjEG8",
-            "-----Traits-----": [
-              {
-                "Background": "Late Night"
-              },
-              {
-                "Fur": "Banksy"
-              },
-              {
-                "Eyes": "Original"
-              },
-              {
-                "Hat": "Pork Pie Hat"
-              },
-              {
-                "Neck": "Red Collar Gold Spikes"
-              },
-              {
-                "Mouth": "Yeh But No"
-              },
-              {
-                "Mouth Decoration": "Bubblegum"
-              },
-              {
-                "Frame": "Check Mate"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210170": {
-            "name": "HOSKY C(ash Grab)NFT 210170",
-            "image": "ipfs://QmbPhoahQXbU41uRMkGgXZ1VLtFYZCQwiZmFtnGewAPqvW",
-            "-----Traits-----": [
-              {
-                "Background": "Dark Black"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Eyes": "Banksy Eye"
-              },
-              {
-                "Neck": "Vicar"
-              },
-              {
-                "Mouth": "Original"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
           "HOSKYCashGrab000210171": {
             "name": "HOSKY C(ash Grab)NFT 210171",
-            "image": "ipfs://QmdRcbGoGNuSwKUKdaWtjFosK73XocXtYUKncN3gBveGtA",
+            "image": "ipfs://QmSiDa5ptPgQJGC6xgzx7aiC384QieC4DAFD4jT3Wz96ZL",
             "-----Traits-----": [
               {
                 "Background": "Ganja"
@@ -682,30 +437,30 @@
               }
             ]
           },
-          "HOSKYCashGrab000210172": {
-            "name": "HOSKY C(ash Grab)NFT 210172",
-            "image": "ipfs://QmNqmCB4cxJDJm8sBfpRt4RaRLbeKQXnLnqst61U9N5n6t",
+          "HOSKYCashGrab000210179": {
+            "name": "HOSKY C(ash Grab)NFT 210179",
+            "image": "ipfs://QmPHoFrbzrzcyT5NRuV5nptiQtiBhxQkcijMbfSYjc8yDM",
             "-----Traits-----": [
               {
-                "Background": "Carbon Fiber"
+                "Background": "Grey"
               },
               {
                 "Fur": "Original"
               },
               {
-                "Eyes": "Overload"
+                "Eyes": "Original"
               },
               {
-                "Hat": "Blue Hat"
+                "Hat": "Major Hosky"
               },
               {
-                "Neck": "Bow Tie"
+                "Neck": "Hawaiian"
               },
               {
                 "Mouth": "Original"
               },
               {
-                "Mouth Decoration": "Cigarette"
+                "Mouth Decoration": "Bone"
               },
               {
                 "Frame": "Gold"
@@ -720,27 +475,94 @@
               }
             ]
           },
-          "HOSKYCashGrab000210173": {
-            "name": "HOSKY C(ash Grab)NFT 210173",
-            "image": "ipfs://QmY8dDRfjQXbJDdJMajSt9x6tkapRer9DVXtEWoVgY9X5M",
+          "HOSKYCashGrab000210180": {
+            "name": "HOSKY C(ash Grab)NFT 210180",
+            "image": "ipfs://QmfWpFt65hkqSSQdXLw3HzawqimJU7bkvUTZ3hcDD1k8oy",
             "-----Traits-----": [
               {
-                "Background": "Wernis"
+                "Background": "Cyan"
               },
               {
-                "Fur": "Pink"
+                "Fur": "Original"
               },
               {
-                "Eyes": "Crazy Eyes"
-              },
-              {
-                "Ear Decoration": "Stud Left"
+                "Hat": "Trucker"
               },
               {
                 "Mouth": "Original"
               },
               {
-                "Mouth Decoration": "Bone"
+                "Glasses": "Mirrored Glasses"
+              },
+              {
+                "Frame": "Playing Card"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210182": {
+            "name": "HOSKY C(ash Grab)NFT 210182",
+            "image": "ipfs://QmbNPjnqaAJ8RaHwGq6ME5uqWewMEDJi6rQHoK7SNtdqZh",
+            "-----Traits-----": [
+              {
+                "Background": "Hosky Code"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Hat": "Hosk Cap"
+              },
+              {
+                "Neck": "Bow Tie"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Glasses": "Mirrored Glasses"
+              },
+              {
+                "Frame": "Gold"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210200": {
+            "name": "HOSKY C(ash Grab)NFT 210200",
+            "image": "ipfs://QmdnC2aFtXr3N9wZzp6gLE8hB8qBSo9j8bTacJNrLGkf2v",
+            "-----Traits-----": [
+              {
+                "Background": "Vegas"
+              },
+              {
+                "Fur": "Blue Dog"
+              },
+              {
+                "Hat": "Green Hat"
+              },
+              {
+                "Neck": "Chain"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Glasses": "Mirrored Glasses"
               },
               {
                 "Frame": "Check Mate"
@@ -755,12 +577,187 @@
               }
             ]
           },
-          "HOSKYCashGrab000210174": {
-            "name": "HOSKY C(ash Grab)NFT 210174",
-            "image": "ipfs://QmPcRVwDoB6R3xQEsGujCWA1kr275HCiaNDmkicjpE1dGc",
+          "HOSKYCashGrab000210207": {
+            "name": "HOSKY C(ash Grab)NFT 210207",
+            "image": "ipfs://QmbNtNsXyn7K5XdVcbwRqBbvj5GptmNUKEpd7LTVUNsvei",
+            "-----Traits-----": [
+              {
+                "Background": "Late Night"
+              },
+              {
+                "Fur": "Clown"
+              },
+              {
+                "Eyes": "Black Eye"
+              },
+              {
+                "Hat": "Yellow Feather Hat"
+              },
+              {
+                "Neck": "Blue Collar Gold Spikes"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Frame": "Gold"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210209": {
+            "name": "HOSKY C(ash Grab)NFT 210209",
+            "image": "ipfs://QmWfJiGAJ8AWcxN3mQgkqhcxLyJQwJ24cG66KivoGadmgB",
+            "-----Traits-----": [
+              {
+                "Background": "Ganja"
+              },
+              {
+                "Fur": "Hoskrogu"
+              },
+              {
+                "Hat": "Fast Food Manager"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Glasses": "3D Gloss"
+              },
+              {
+                "Frame": "Fish Bowl"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210225": {
+            "name": "HOSKY C(ash Grab)NFT 210225",
+            "image": "ipfs://QmQMoEn1CHR4bg2DAg8ACSXNSCb7YZwUPF4SFThqHgNiY5",
+            "-----Traits-----": [
+              {
+                "Background": "Navy"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Eyes": "Original"
+              },
+              {
+                "Hat": "Fast Food"
+              },
+              {
+                "Mouth": "WTF"
+              },
+              {
+                "Mouth Decoration": "Snorkel"
+              },
+              {
+                "Frame": "Check Mate"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210226": {
+            "name": "HOSKY C(ash Grab)NFT 210226",
+            "image": "ipfs://QmZWgjidJKJSwb35Nwkz9Zg1g9joYJ7n6Eo5kaf77LKsFi",
             "-----Traits-----": [
               {
                 "Background": "Beige"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Hat": "Silver Crown"
+              },
+              {
+                "Mouth": "WTF"
+              },
+              {
+                "Mouth Decoration": "Bubblegum Popped"
+              },
+              {
+                "Glasses": "Mirrored Glasses"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210237": {
+            "name": "HOSKY C(ash Grab)NFT 210237",
+            "image": "ipfs://QmX5wABfW2VJuMsv2SMX5kXJxgzvQP37BnsEnK5Sa94akm",
+            "-----Traits-----": [
+              {
+                "Background": "Hosky Code"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Eyes": "Original"
+              },
+              {
+                "Hat": "Poo Hat"
+              },
+              {
+                "Neck": "Red Collar Gold Spikes"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Mouth Decoration": "Goatee"
+              },
+              {
+                "Glasses": "Laser Visor"
+              },
+              {
+                "Frame": "Gold"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210239": {
+            "name": "HOSKY C(ash Grab)NFT 210239",
+            "image": "ipfs://QmecqftT7fNKHX5jV2FHxA2wU5Z9z6b9pCW8bsALBABHX3",
+            "-----Traits-----": [
+              {
+                "Background": "Dark Black"
               },
               {
                 "Fur": "White"
@@ -769,16 +766,10 @@
                 "Eyes": "Original"
               },
               {
-                "Mouth": "Hmmm"
+                "Hat": "Space Invader"
               },
               {
-                "Mouth Decoration": "Goatee"
-              },
-              {
-                "Glasses": "Visor Beam"
-              },
-              {
-                "Frame": "Wood"
+                "Mouth": "Yeh But No"
               }
             ],
             "-----Product Information-----": [
@@ -790,53 +781,24 @@
               }
             ]
           },
-          "HOSKYCashGrab000210175": {
-            "name": "HOSKY C(ash Grab)NFT 210175",
-            "image": "ipfs://QmfXXrWCHM41DqqfPWezXuTvLt9k6c6XezgsavL3wfWsmF",
+          "HOSKYCashGrab000210245": {
+            "name": "HOSKY C(ash Grab)NFT 210245",
+            "image": "ipfs://QmZB5Y45ZTdVZkaH5UxSfCBm9PTJKjFEwakD4Mg8N6NHYq",
             "-----Traits-----": [
               {
-                "Background": "Carbon Fiber"
+                "Background": "Navy"
               },
               {
-                "Fur": "Holographic"
+                "Fur": "Baby Blue"
               },
               {
-                "Hat": "Chef Hat"
-              },
-              {
-                "Mouth": "Sad"
-              },
-              {
-                "Glasses": "Upside Down"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210176": {
-            "name": "HOSKY C(ash Grab)NFT 210176",
-            "image": "ipfs://QmYGhsUi6onPmjDdTZdQg9682HPUvGiSgPeBHgvKbYzDZB",
-            "-----Traits-----": [
-              {
-                "Background": "Blue"
-              },
-              {
-                "Fur": "Golden Labrador"
-              },
-              {
-                "Eyes": "Pink Eye"
-              },
-              {
-                "Neck": "Chain"
+                "Eyes": "Original"
               },
               {
                 "Mouth": "Original"
+              },
+              {
+                "Glasses": "Orange Eye Mask"
               },
               {
                 "Frame": "Ikea"
@@ -851,21 +813,21 @@
               }
             ]
           },
-          "HOSKYCashGrab000210177": {
-            "name": "HOSKY C(ash Grab)NFT 210177",
-            "image": "ipfs://QmTdEiCuPX3ck4HSeNLc9ZXhbNAyP4rJxfnzpFr36PJEds",
+          "HOSKYCashGrab000210246": {
+            "name": "HOSKY C(ash Grab)NFT 210246",
+            "image": "ipfs://QmXT7frQ46tpXpUnFaW86zt1RaVfVP3JCsdy3hHzbnXcWA",
             "-----Traits-----": [
               {
-                "Background": "Underwater"
+                "Background": "Red"
               },
               {
-                "Fur": "Original"
+                "Fur": "Señor Josquí"
               },
               {
-                "Eyes": "Original"
+                "Hat": "Beret"
               },
               {
-                "Neck": "Hawaiian"
+                "Neck": "Red Collar Gold Spikes"
               },
               {
                 "Mouth": "Original"
@@ -874,7 +836,10 @@
                 "Mouth Decoration": "Bubblegum"
               },
               {
-                "Frame": "Check Mate"
+                "Glasses": "Mirrored Glasses"
+              },
+              {
+                "Frame": "Ikea"
               }
             ],
             "-----Product Information-----": [
@@ -886,44 +851,9 @@
               }
             ]
           },
-          "HOSKYCashGrab000210178": {
-            "name": "HOSKY C(ash Grab)NFT 210178",
-            "image": "ipfs://QmPWp5farBy3zxULTXSNJQnmGwhBEoLjKzucF5sP4GwspB",
-            "-----Traits-----": [
-              {
-                "Background": "Blue"
-              },
-              {
-                "Fur": "Original"
-              },
-              {
-                "Hat": "Beret"
-              },
-              {
-                "Mouth": "Good Boy"
-              },
-              {
-                "Mouth Decoration": "Crumpet"
-              },
-              {
-                "Glasses": "3D Gloss"
-              },
-              {
-                "Frame": "Check Mate"
-              }
-            ],
-            "-----Product Information-----": [
-              {
-                "Website": "https://hosky.io"
-              },
-              {
-                "Copyright": "HOSKY IO; all rights reserved"
-              }
-            ]
-          },
-          "HOSKYCashGrab000210179": {
-            "name": "HOSKY C(ash Grab)NFT 210179",
-            "image": "ipfs://QmUuFVUFUgRmc9sZcvUJm3MKWXHCWBWbbZEigEGHacdsNE",
+          "HOSKYCashGrab000210252": {
+            "name": "HOSKY C(ash Grab)NFT 210252",
+            "image": "ipfs://QmVFwdpcVVVUUekGATfvs5NXpu5fpwTs75UuGCRM3aqdpM",
             "-----Traits-----": [
               {
                 "Background": "Grey"
@@ -932,13 +862,313 @@
                 "Fur": "Original"
               },
               {
+                "Hat": "Sweatband 2"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Mouth Decoration": "Shizzle"
+              },
+              {
+                "Glasses": "Mirrored Glasses"
+              },
+              {
+                "Frame": "Poo"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210255": {
+            "name": "HOSKY C(ash Grab)NFT 210255",
+            "image": "ipfs://QmNMTrhWc1DXA3MGrxByT37mut7ov1cu7NHmDwyc6SxQ8k",
+            "-----Traits-----": [
+              {
+                "Background": "Hosky Code"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
                 "Eyes": "Original"
               },
               {
-                "Hat": "Bison"
+                "Ear Decoration": "Double Stud Right"
               },
               {
-                "Neck": "Hawaiian"
+                "Neck": "Red Collar Gold Spikes"
+              },
+              {
+                "Mouth": "Original"
+              },
+              {
+                "Glasses": "Visor Meh"
+              },
+              {
+                "Frame": "Ikea"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210256": {
+            "name": "HOSKY C(ash Grab)NFT 210256",
+            "image": "ipfs://QmfZDD3TUmFw1xTG5Jfqo2htDgx1b86B9APeKncLAoCQwi",
+            "-----Traits-----": [
+              {
+                "Background": "Blue"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Hat": "Fast Food Manager"
+              },
+              {
+                "Mouth": "Yeh But No"
+              },
+              {
+                "Mouth Decoration": "Shizzle"
+              },
+              {
+                "Glasses": "3D Glasses"
+              },
+              {
+                "Frame": "Warning"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210260": {
+            "name": "HOSKY C(ash Grab)NFT 210260",
+            "image": "ipfs://QmbFHxSy4s3pmz5GDdKFcyGWFmeuvuBsH9PAjP1avif5xX",
+            "-----Traits-----": [
+              {
+                "Background": "Cyan"
+              },
+              {
+                "Fur": "Golden Labrador"
+              },
+              {
+                "Hat": "Green Hat"
+              },
+              {
+                "Neck": "Red Collar Gold Spikes"
+              },
+              {
+                "Mouth": "Rob Boss Beard"
+              },
+              {
+                "Glasses": "Mirrored Glasses"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210266": {
+            "name": "HOSKY C(ash Grab)NFT 210266",
+            "image": "ipfs://QmZGDUJC2dHWp4AxGQPLStWbyZTfEVbW1GdRR2Mt68guWc",
+            "-----Traits-----": [
+              {
+                "Background": "Hosky Code"
+              },
+              {
+                "Fur": "Hoskasaur"
+              },
+              {
+                "Eyes": "Overload"
+              },
+              {
+                "Hat": "Karen"
+              },
+              {
+                "Mouth": "Rob Boss Beard"
+              },
+              {
+                "Mouth Decoration": "Bubblegum Popped"
+              },
+              {
+                "Glasses": "Visor Dead"
+              },
+              {
+                "Frame": "Check Mate"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210269": {
+            "name": "HOSKY C(ash Grab)NFT 210269",
+            "image": "ipfs://QmfALXAB1qxzbXpUfYicV7TFYYJLkfs7DRve2Nj24bPYv2",
+            "-----Traits-----": [
+              {
+                "Background": "Deep Purple"
+              },
+              {
+                "Fur": "Hoskrogu"
+              },
+              {
+                "Hat": "Space Invader"
+              },
+              {
+                "Neck": "Bow Tie"
+              },
+              {
+                "Mouth": "WTF"
+              },
+              {
+                "Glasses": "3D Glasses"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210271": {
+            "name": "HOSKY C(ash Grab)NFT 210271",
+            "image": "ipfs://QmU9XELNpWNx4VYzB5DyDomBNDAMepVSpje5eBv3MsKZrn",
+            "-----Traits-----": [
+              {
+                "Background": "This is Fine"
+              },
+              {
+                "Fur": "Radioactive Orange"
+              },
+              {
+                "Hat": "Top Hat Blue"
+              },
+              {
+                "Mouth": "Yeh But No"
+              },
+              {
+                "Glasses": "Mirrored Glasses"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210300": {
+            "name": "HOSKY C(ash Grab)NFT 210300",
+            "image": "ipfs://QmPkarJDMbV91foa5ctogPaZsY93ZichU2Xf7NfSSAxsAB",
+            "-----Traits-----": [
+              {
+                "Background": "Hosky Code"
+              },
+              {
+                "Fur": "Golden Labrador"
+              },
+              {
+                "Eyes": "Whatsthat"
+              },
+              {
+                "Hat": "Captain"
+              },
+              {
+                "Neck": "Blue Collar Gold Spikes"
+              },
+              {
+                "Mouth": "Yeh But No"
+              },
+              {
+                "Frame": "Traditional Painting"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210301": {
+            "name": "HOSKY C(ash Grab)NFT 210301",
+            "image": "ipfs://QmdvxHN4rKsivwDDRtMGmnFWywGCDgPF2Vq1Es4fU5AyFX",
+            "-----Traits-----": [
+              {
+                "Background": "Deep Purple"
+              },
+              {
+                "Fur": "Original"
+              },
+              {
+                "Eyes": "Original"
+              },
+              {
+                "Hat": "Super Hero"
+              },
+              {
+                "Mouth": "WTF"
+              },
+              {
+                "Frame": "Astronaut"
+              }
+            ],
+            "-----Product Information-----": [
+              {
+                "Website": "https://hosky.io"
+              },
+              {
+                "Copyright": "HOSKY IO; all rights reserved"
+              }
+            ]
+          },
+          "HOSKYCashGrab000210302": {
+            "name": "HOSKY C(ash Grab)NFT 210302",
+            "image": "ipfs://QmbgR763Yh2hEi9nTFDrrxUsdy1bMu5iaKnSJJeU62GD6H",
+            "-----Traits-----": [
+              {
+                "Background": "Green"
+              },
+              {
+                "Fur": "Cardano Whale"
+              },
+              {
+                "Hat": "Fast Food"
               },
               {
                 "Mouth": "Original"
@@ -947,7 +1177,10 @@
                 "Mouth Decoration": "Bone"
               },
               {
-                "Frame": "Gold"
+                "Glasses": "3D Glasses"
+              },
+              {
+                "Frame": "Pernis"
               }
             ],
             "-----Product Information-----": [

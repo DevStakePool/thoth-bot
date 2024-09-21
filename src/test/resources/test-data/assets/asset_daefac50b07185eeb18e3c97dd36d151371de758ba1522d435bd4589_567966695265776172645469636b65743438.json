@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "daefac50b07185eeb18e3c97dd36d151371de758ba1522d435bd4589",
+    "asset_name": "567966695265776172645469636b65743438",
+    "asset_name_ascii": "VyfiRewardTicket48",
+    "fingerprint": "asset1wfpakvjumtt7p7t3w3sgv8xvdhlm4x7yfdrqnn",
+    "minting_tx_hash": "0d30fc8cb7c8dcf2b4a3398d6309d4280d736e8984240a97d0db787c5cd32f2a",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "daefac50b07185eeb18e3c97dd36d151371de758ba1522d435bd4589": {
+          "VyfiRewardTicket48": {
+            "url": "https://vyfi.net",
+            "name": "Vyfi Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmcCmKUgHirte1kFmQoU7uH8sjxPHcvaepBKnm384aZFFZ",
+                "name": "VyfiRewardTicket48",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcCmKUgHirte1kFmQoU7uH8sjxPHcvaepBKnm384aZFFZ",
+            "symbol": "VyfiRewardTicket48",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113509335
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your $VYFI rewards at https://vyfi.net.",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

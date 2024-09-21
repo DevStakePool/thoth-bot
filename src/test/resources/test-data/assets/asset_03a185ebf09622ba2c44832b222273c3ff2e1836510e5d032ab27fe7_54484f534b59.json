@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "03a185ebf09622ba2c44832b222273c3ff2e1836510e5d032ab27fe7",
+    "asset_name": "54484f534b59",
+    "asset_name_ascii": "THOSKY",
+    "fingerprint": "asset1cuzfsyfjgxyu6fh6hxseuh0008sd9gnz4550l7",
+    "minting_tx_hash": "7c8c07a3742e56d3c0505d64a2da1e691e0e10cbf42bf0aced2f20bc731353e9",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704844800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "03a185ebf09622ba2c44832b222273c3ff2e1836510e5d032ab27fe7": {
+          "THOSKY": {
+            "url": "https://hosky.today",
+            "name": "Hosky Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmURG1M3L2d4GoeX8SncEWeHv7fKFFwMuGCZm7UEE3dr9U",
+                "name": "THOSKY",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmURG1M3L2d4GoeX8SncEWeHv7fKFFwMuGCZm7UEE3dr9U",
+            "symbol": "THOSKY",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113328716
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Ticket for $HOSKY reward. Website: https://hosky.today",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

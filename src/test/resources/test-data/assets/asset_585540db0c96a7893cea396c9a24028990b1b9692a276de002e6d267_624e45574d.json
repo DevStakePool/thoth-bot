@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "585540db0c96a7893cea396c9a24028990b1b9692a276de002e6d267",
+    "asset_name": "624e45574d",
+    "asset_name_ascii": "bNEWM",
+    "fingerprint": "asset1wywh5y3rdwknmrqz9frvfznkrlrjseaglwvufz",
+    "minting_tx_hash": "b850531213a5996890ff339be4c08b77dfde66b3509d0669029ac0e264c863a3",
+    "total_supply": "1000000000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "585540db0c96a7893cea396c9a24028990b1b9692a276de002e6d267": {
+          "bNEWM": {
+            "URL": "https://newm.site",
+            "name": "NEWM BONUS TOKEN",
+            "files": [
+              {
+                "src": "ipfs://QmfPxEjdRgvzGQeCzrFRSVw4ERq7fRS8JtpC5AgYpexs9V",
+                "name": "bNEWM",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfPxEjdRgvzGQeCzrFRSVw4ERq7fRS8JtpC5AgYpexs9V",
+            "symbol": "bNEWM",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113469889
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "You can swap to $NEWM here: https://newm.site",
+            "description": "You can swap to $NEWM here: https://newm.site",
+            "totalSupply": 1e+18
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

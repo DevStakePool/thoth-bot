@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "269c0c6fb54095825e7f352eb667996872af8d3a988e78595d5958f6",
+    "asset_name": "544d494e7632",
+    "asset_name_ascii": "TMINv2",
+    "fingerprint": "asset1mf6rl2w3syjl4dsvm06czm5n6ugqw2zrxn5sye",
+    "minting_tx_hash": "179cda73b6cda37d90b39ea57bfeee670e39cc17eaadf975b6776a638bc7f6c1",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1706918400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "269c0c6fb54095825e7f352eb667996872af8d3a988e78595d5958f6": {
+          "TMINv2": {
+            "URL": "https://minswap-airdrops.com",
+            "Name": "Minswap Airdrop V2 Ticket",
+            "name": "Minswap Airdrop V2 Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmUDHVUdY7MxZjXVm7J76Axe7dJyrqNjNdznH2iNMxAc5n",
+                "name": "TMINv2",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmUDHVUdY7MxZjXVm7J76Axe7dJyrqNjNdznH2iNMxAc5n",
+            "symbol": "TMINv2",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 115368508
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Minswap Airdrop Ticket. URL: https://minswap-airdrops.com",
+            "description": "Minswap Airdrop Ticket. URL: https://minswap-airdrops.com",
+            "totalSupply": 100000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

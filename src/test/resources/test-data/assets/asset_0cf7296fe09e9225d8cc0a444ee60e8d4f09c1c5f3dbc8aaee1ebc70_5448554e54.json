@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "0cf7296fe09e9225d8cc0a444ee60e8d4f09c1c5f3dbc8aaee1ebc70",
+    "asset_name": "5448554e54",
+    "asset_name_ascii": "THUNT",
+    "fingerprint": "asset1lrlcruj9mahs6uaqfe92f8he8shdy0k9g356sq",
+    "minting_tx_hash": "a90a389402f79f0d8dbdff1965e94b2b813489df5b96113cb0b2a841a29c3126",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704844800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "0cf7296fe09e9225d8cc0a444ee60e8d4f09c1c5f3dbc8aaee1ebc70": {
+          "THUNT": {
+            "URL": "https://hunt-airdrop.com",
+            "name": "HUNT Airdrop Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmcU1NBeLqVzCbzsED7YroQ5gLNG2sz4z5vWGvWg2Hjvkb",
+                "name": "THUNT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmcU1NBeLqVzCbzsED7YroQ5gLNG2sz4z5vWGvWg2Hjvkb",
+            "symbol": "THUNT",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113341496
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for HUNT Airdrop. Website: https://hunt-airdrop.com",
+            "description": "Ticket for HUNT Airdrop. Website: https://hunt-airdrop.com",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

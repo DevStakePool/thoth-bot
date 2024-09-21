@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "e1b504f6911ebfcd57010fce1ab5e74ae181ebd18623d0c60133e3bd",
+    "asset_name": "54494147",
+    "asset_name_ascii": "TIAG",
+    "fingerprint": "asset1yjg90cu5j7h3qq9v7kf3qvcqf5jj2wqnfgyvur",
+    "minting_tx_hash": "e1e98cd35b67860ca2e15104b1983621bb83421eed3fe14be5413427bdb54833",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704758400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "e1b504f6911ebfcd57010fce1ab5e74ae181ebd18623d0c60133e3bd": {
+          "TIAG": {
+            "URL": "https://iagon-airdrop.com",
+            "name": "IAGON Airdrop Ticket",
+            "files": [
+              {
+                "src": "ipfs://Qmanm4thTQSecArMJsRCFf5zRqfQRL31FKxgyA2wmYRS1Q",
+                "name": "TIAG",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmanm4thTQSecArMJsRCFf5zRqfQRL31FKxgyA2wmYRS1Q",
+            "symbol": "TIAG",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113201133
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for IAGON airdrop. Website: https://iagon-airdrop.com",
+            "description": "Ticket for IAGON airdrop. Website: https://iagon-airdrop.com",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

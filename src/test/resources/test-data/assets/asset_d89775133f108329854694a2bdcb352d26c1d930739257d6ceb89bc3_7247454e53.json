@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "d89775133f108329854694a2bdcb352d26c1d930739257d6ceb89bc3",
+    "asset_name": "7247454e53",
+    "asset_name_ascii": "rGENS",
+    "fingerprint": "asset1fgvaggwysdlqclltwshzazcpdj3d0crcl5sexd",
+    "minting_tx_hash": "aa417d26c79f60984025013fb945f0753da934f897328443895e0706e3e7e250",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1702684800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d89775133f108329854694a2bdcb352d26c1d930739257d6ceb89bc3": {
+          "rGENS": {
+            "url": "https://geniusyield.net",
+            "name": "Genius Yield Reward Token",
+            "files": [
+              {
+                "src": "ipfs://QmNWviURL8kTWNZ8jPvkQeysvnB1YR48xx3QgLvMAoGYNo",
+                "name": "rGENS",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNWviURL8kTWNZ8jPvkQeysvnB1YR48xx3QgLvMAoGYNo",
+            "level": "2",
+            "symbol": "rGENS",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 111183785
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your additional GENS rewards at https://geniusyield.ne",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

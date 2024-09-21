@@ -4,12 +4,24 @@
     "asset_name": "6c70200b",
     "asset_name_ascii": "lp \u000b",
     "fingerprint": "asset14gpkcjuf6yv6mcrdzx7ptf2r44g5ektggu5rwz",
-    "minting_tx_hash": "233c1e2c3fa60a3f8e5ce24eafc996d2bb640ff4a4c9a31c63fe4b166ac97a95",
-    "total_supply": "106123713",
-    "mint_cnt": 2339,
-    "burn_cnt": 1430,
+    "minting_tx_hash": "219ddb99e30a5a3b18f4cc26402e5f80f172396cd74730d292e2e46669c265f3",
+    "total_supply": "85039306",
+    "mint_cnt": 2340,
+    "burn_cnt": 1453,
     "creation_time": 1642636800,
-    "minting_tx_metadata": null,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "SSP: Scoop"
+        ]
+      },
+      "1998": {
+        "*": {
+          "uri": "https://sundaeswap.finance/software-license.txt",
+          "sha256": "ac2581285993a0256857617e53fdcd9d5e69b9bd09d279e56fb6a1cc53511edc"
+        }
+      }
+    },
     "token_registry_metadata": null,
     "cip68_metadata": null
   }

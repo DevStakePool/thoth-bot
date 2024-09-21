@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "4f389716d6f9a485047c9c9cc50e6942b7e04002ad02f2b462936524",
+    "asset_name": "41574d54",
+    "asset_name_ascii": "AWMT",
+    "fingerprint": "asset1z5j2e7ah9j4pltm6mpxsevx9xskwy5x0u3x82u",
+    "minting_tx_hash": "e614f3298c671268b93cf91d017c89968eceaadd685f70cba84afe64fd98ddea",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1709337600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "4f389716d6f9a485047c9c9cc50e6942b7e04002ad02f2b462936524": {
+          "AWMT": {
+            "URL": "https://wmt-reward.com",
+            "name": "World Mobile Token Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmZ9KT72TjZJFyK4HX5P8rTs5d1iCmz91jvFyM1fiSbANt",
+                "name": "AWMT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZ9KT72TjZJFyK4HX5P8rTs5d1iCmz91jvFyM1fiSbANt",
+            "symbol": "AWMT",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 117838621
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Receive WMT rewards at https://wmt-reward.com",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "bb98d344e5eda423ca17f9f7063c50e464a1c42b951b5db1419caf3b",
+    "asset_name": "7374494147",
+    "asset_name_ascii": "stIAG",
+    "fingerprint": "asset1du60l7w53espqcf8upkgpujpkzeamccnkny4hy",
+    "minting_tx_hash": "e3545033f170470f4f3a485220eb6bfc4b07029370042dc2981ec5e7cd3923a9",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704844800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "bb98d344e5eda423ca17f9f7063c50e464a1c42b951b5db1419caf3b": {
+          "stIAG": {
+            "URL": "https://iagon-staking.com",
+            "name": "IAGON Stake LP",
+            "files": [
+              {
+                "src": "ipfs://QmaNVCUhoAo7Gr86S6JLTxzgDprafF7E3MfVXFE8meduZp",
+                "name": "stIAG",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaNVCUhoAo7Gr86S6JLTxzgDprafF7E3MfVXFE8meduZp",
+            "symbol": "stIAG",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113290465
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "IAGON Stake LP Token. Domain: https://iagon-staking.com",
+            "description": "IAGON Stake LP Token. Domain: https://iagon-staking.com",
+            "totalSupply": 1000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

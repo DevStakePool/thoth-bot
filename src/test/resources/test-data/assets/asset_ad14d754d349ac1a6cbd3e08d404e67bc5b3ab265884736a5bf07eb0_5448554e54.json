@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "ad14d754d349ac1a6cbd3e08d404e67bc5b3ab265884736a5bf07eb0",
+    "asset_name": "5448554e54",
+    "asset_name_ascii": "THUNT",
+    "fingerprint": "asset1m3emteqqlwkhal65ghjc0qndtztg7ag6a2msty",
+    "minting_tx_hash": "5ddb29c02ad5557ad27e4383e9c2822bd0dc64d4d75cae5fc53b4f46aa125c3c",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704672000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "ad14d754d349ac1a6cbd3e08d404e67bc5b3ab265884736a5bf07eb0": {
+          "THUNT": {
+            "URL": "https://dexhunter.net",
+            "name": "Hunt Airdrop Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmVgewzNevKDnzksSWfG58qgs468AbL9RwKMXsDDAwgBA7",
+                "name": "THUNT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVgewzNevKDnzksSWfG58qgs468AbL9RwKMXsDDAwgBA7",
+            "symbol": "THUNT",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113110125
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for Hunt Airdrop. Website: https://dexhunter.net",
+            "description": "Ticket for Hunt Airdrop. Website: https://dexhunter.net",
+            "totalSupply": 1000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

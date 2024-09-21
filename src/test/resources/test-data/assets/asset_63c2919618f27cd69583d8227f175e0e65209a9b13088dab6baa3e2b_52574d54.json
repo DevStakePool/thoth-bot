@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "63c2919618f27cd69583d8227f175e0e65209a9b13088dab6baa3e2b",
+    "asset_name": "52574d54",
+    "asset_name_ascii": "RWMT",
+    "fingerprint": "asset1qeksxv6582v7qv9lkauutlrrrepdpeul2tt5p6",
+    "minting_tx_hash": "1466b08aaf7942661f752783a06a7a2a7f6196e1c94fad0fbbf542da43501f31",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704585600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "63c2919618f27cd69583d8227f175e0e65209a9b13088dab6baa3e2b": {
+          "RWMT": {
+            "URL": "https://wmtevent.com",
+            "name": "WMT Rewards Token",
+            "files": [
+              {
+                "src": "ipfs://QmbbdQ53tK5bNqhLpprceofCGZBm9SRsTv2mXaeXtPoDuG",
+                "name": "RWMT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbbdQ53tK5bNqhLpprceofCGZBm9SRsTv2mXaeXtPoDuG",
+            "symbol": "RWMT",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113036541
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "This is WMT Rewards Event Token to receive WMT as rewards.",
+            "description": "Claim WMT Rewards at https://wmtevent.com",
+            "totalSupply": 10000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "000dbe0b66e9ceb8357eeb7eacbdc6e2707345924ba86bf300d2ad8e",
+    "asset_name": "47656e4865726f",
+    "asset_name_ascii": "GenHero",
+    "fingerprint": "asset1fq0hdsp2lsxymy78l9en5spv8vt0jyhzpqsqfs",
+    "minting_tx_hash": "890996990db4a6b534f82703ee7b31e3a4aa8d02f6e49a3f9636bdc71f0c34fd",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "000dbe0b66e9ceb8357eeb7eacbdc6e2707345924ba86bf300d2ad8e": {
+          "GenHero": {
+            "URL": "https://chainsofwar.org",
+            "name": "Genesis Hero",
+            "files": [
+              {
+                "src": "ipfs://QmQwTGWuPtrpTwuBbRHACmR9NdMjZ1fYR4pT3LWMeDGykp",
+                "name": "GenHero",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmQwTGWuPtrpTwuBbRHACmR9NdMjZ1fYR4pT3LWMeDGykp",
+            "symbol": "GenHero",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113571347
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Genesis Hero. URL: https://chainsofwar.org",
+            "description": "Genesis Hero. URL: https://chainsofwar.org",
+            "totalSupply": 10000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

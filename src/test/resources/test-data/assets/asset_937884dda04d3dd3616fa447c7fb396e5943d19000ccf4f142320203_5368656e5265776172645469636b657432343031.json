@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "937884dda04d3dd3616fa447c7fb396e5943d19000ccf4f142320203",
+    "asset_name": "5368656e5265776172645469636b657432343031",
+    "asset_name_ascii": "ShenRewardTicket2401",
+    "fingerprint": "asset1u3p0k7p4hfd5m8l8xyye6rvl8m88vked2sjwzt",
+    "minting_tx_hash": "7d0cab4a13a66a080b96c8ffc6374582a24356ae06e97faac65f9f86675b1d32",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "937884dda04d3dd3616fa447c7fb396e5943d19000ccf4f142320203": {
+          "ShenRewardTicket2401": {
+            "url": "https://shenlabs.org",
+            "name": "SHEN Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmVFLw7d3yghhRsDo5mHcP8rcb37nZPGMMe6BBRLg9KgFH",
+                "name": "ShenRewardTicket2401",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVFLw7d3yghhRsDo5mHcP8rcb37nZPGMMe6BBRLg9KgFH",
+            "symbol": "ShenRewardTicket2401",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113601827
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your $SHEN rewards at https://shenlabs.org.",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

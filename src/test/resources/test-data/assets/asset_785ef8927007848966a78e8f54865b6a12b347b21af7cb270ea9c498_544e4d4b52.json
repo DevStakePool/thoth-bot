@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "785ef8927007848966a78e8f54865b6a12b347b21af7cb270ea9c498",
+    "asset_name": "544e4d4b52",
+    "asset_name_ascii": "TNMKR",
+    "fingerprint": "asset1x0mq50pkggcxpcxphrs8vluhuz4pgtkdyqrrr6",
+    "minting_tx_hash": "2153fbf86b04c72b13aaa59a4f8b37913adebc6ef0df393948e09ead670ae764",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "785ef8927007848966a78e8f54865b6a12b347b21af7cb270ea9c498": {
+          "TNMKR": {
+            "URL": "https://nmkr.org",
+            "name": "NMKR Airdrop Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmTGfammJibFh15WRHFwoiKrBwiQ8tePrQ1wqvdUFtktMa",
+                "name": "TNMKR",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTGfammJibFh15WRHFwoiKrBwiQ8tePrQ1wqvdUFtktMa",
+            "symbol": "TNMKR",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113485333
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for NMKR Airdrop. Website: https://nmkr.org",
+            "description": "Ticket for NMKR Airdrop. Website: https://nmkr.org",
+            "totalSupply": 100000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "policy_id": "de5837d0ec2eecdbaf335436a72d0c838cf0346a371a311e6875e7e2",
+    "asset_name": "36356438613235346230633664",
+    "asset_name_ascii": "65d8a254b0c6d",
+    "fingerprint": "asset1ya90q3xtc30520xt7tq4sfmqthm5m9d5uqmyht",
+    "minting_tx_hash": "cc4192b0617f7a5e9677d59a88878a14aa025a745052d3e976b406dd5613a754",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1708646400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "de5837d0ec2eecdbaf335436a72d0c838cf0346a371a311e6875e7e2": {
+          "65d8a254b0c6d": {
+            "name": "Free Pass",
+            "pass": "Free",
+            "files": [
+              {
+                "src": "ipfs://QmeBxgoH5iac5ELT9fftqgytwbkNWqvHhwpsnBc9pTcGPS",
+                "name": "Free Pass",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmeBxgoH5iac5ELT9fftqgytwbkNWqvHhwpsnBc9pTcGPS",
+            "mediaType": "image/png",
+            "description": "ADAmail.me - NFT driven anonymous Webmail for Cardano"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

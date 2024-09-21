@@ -1,0 +1,33 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "526573656172636820506f696e7473",
+    "asset_name_ascii": "Research Points",
+    "fingerprint": "asset1lnexwjfm59ug9769etdy30grxzsss9rh8hnrmf",
+    "minting_tx_hash": "9f9258d4b3d1301a5a04c001115d38922791041cf0649ddbc96ae4586b42e5bb",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648771200,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Research Points": {
+            "name": "Research Points",
+            "image": "ipfs://QmUGrp6kduhxFDeztSp8oQCVsqNpGjneRNQFpKmTWuYJXr",
+            "sha256": "35c1528685bafa96af2ef6a98b84e5a64e9f2995497c0af1f4a0c4a1e1b6bf50",
+            "mediaType": "image/png",
+            "description": [
+              "An aggregate score",
+              "approximating your ability to conduct investigation",
+              "into scientific and magical phenomena,",
+              "and apply findings to the material plane."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

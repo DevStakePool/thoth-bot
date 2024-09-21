@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "a7b056a94fcc220c217375cee55fe5811ee148a92463523be50f5102",
+    "asset_name": "544d454c44",
+    "asset_name_ascii": "TMELD",
+    "fingerprint": "asset1ue6f3vjtglj86uatw9mznh3xuj2v50acm887zh",
+    "minting_tx_hash": "4abea86655d6aa2825a79f6e3693d89c2690e0ea5d5137c8ef59b10991b74f93",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704758400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "a7b056a94fcc220c217375cee55fe5811ee148a92463523be50f5102": {
+          "TMELD": {
+            "URL": "https://meld-airdrop.org",
+            "name": "MELD Airdrop Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmZT5onu9cnH2fqE4ayXuhhEaVJMYPDRitw7q3ove7uKqA",
+                "name": "TMELD",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmZT5onu9cnH2fqE4ayXuhhEaVJMYPDRitw7q3ove7uKqA",
+            "symbol": "TMELD",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113197757
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for MELD Airdrop. Website: https://meld-airdrop.org",
+            "description": "Ticket for MELD Airdrop. Website: https://meld-airdrop.org",
+            "totalSupply": 10000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

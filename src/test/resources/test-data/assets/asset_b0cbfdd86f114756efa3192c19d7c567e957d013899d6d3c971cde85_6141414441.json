@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "b0cbfdd86f114756efa3192c19d7c567e957d013899d6d3c971cde85",
+    "asset_name": "6141414441",
+    "asset_name_ascii": "aAADA",
+    "fingerprint": "asset1240zc688e9dkjlr33ds74qu2k8jn7z9cw2s5ah",
+    "minting_tx_hash": "0950846300e1ed6205cdf9921bbc12eb061b5579676f3ef947fcb6b53fe597f2",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704585600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "b0cbfdd86f114756efa3192c19d7c567e957d013899d6d3c971cde85": {
+          "aAADA": {
+            "url": "https://lenfi.org",
+            "name": "Lenfi Reward Token",
+            "files": [
+              {
+                "src": "ipfs://Qme1Gj3Y8C8ZGiXkjknEzobBxfibHEckGiqhaPnud6tVf1",
+                "name": "aAADA",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qme1Gj3Y8C8ZGiXkjknEzobBxfibHEckGiqhaPnud6tVf1",
+            "level": "2",
+            "symbol": "aAADA",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113069541
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your additional LENFI rewards at https://lenfi.org.",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

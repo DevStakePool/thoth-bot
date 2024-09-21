@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "f6160cec9372cd2e7020034533d15e01e00af67566293e6bdbc7139f",
+    "asset_name": "61697254454459",
+    "asset_name_ascii": "airTEDY",
+    "fingerprint": "asset1sd9we8nazppvjazqhgau5cd0xpwrw7nkratqk9",
+    "minting_tx_hash": "7738ff4855351226abd689c23d5f8dbcdaec4f5f547e71e6913748864f6b9c10",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1699488000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "f6160cec9372cd2e7020034533d15e01e00af67566293e6bdbc7139f": {
+          "airTEDY": {
+            "name": "airTEDY",
+            "files": [
+              {
+                "src": "ipfs://Qmd3okbQJunsicWhzRNDrJLeEgYc7mK7VKeEZLhovqU6hy",
+                "name": "airTEDY",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://Qmd3okbQJunsicWhzRNDrJLeEgYc7mK7VKeEZLhovqU6hy",
+            "symbol": "airTEDY",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 107970774
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "airTEDY tokens will be convertible to TEDY after mainnet.",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

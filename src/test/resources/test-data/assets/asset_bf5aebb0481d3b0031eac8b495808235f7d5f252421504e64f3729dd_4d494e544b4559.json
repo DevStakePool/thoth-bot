@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "bf5aebb0481d3b0031eac8b495808235f7d5f252421504e64f3729dd",
+    "asset_name": "4d494e544b4559",
+    "asset_name_ascii": "MINTKEY",
+    "fingerprint": "asset1qfjk9sj646xslm9hz5dvrcaj8grd39xsl7arm7",
+    "minting_tx_hash": "d4c8bb18dc3062247a77dca3f0419bae4b4ec855b87b087988500e858b9759bd",
+    "total_supply": "1000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705536000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "bf5aebb0481d3b0031eac8b495808235f7d5f252421504e64f3729dd": {
+          "MINTKEY": {
+            "URL": "https://cornucopiasnft.com",
+            "NAME": "CORNUCOPIAS NFT MINT KEY",
+            "name": "CORNUCOPIAS NFT MINT KEY",
+            "files": [
+              {
+                "src": "ipfs://QmNnj3TjP5HTjdakXFotBx1fCMAY4ozuTocCaxYSkhqCfk",
+                "name": "MINTKEY",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNnj3TjP5HTjdakXFotBx1fCMAY4ozuTocCaxYSkhqCfk",
+            "symbol": "MINTKEY",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 114000427
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "CORNUCOPIAS FREE MINT KEY. URL: https://cornucopiasnft.com",
+            "description": "CORNUCOPIAS FREE MINT KEY. URL: https://cornucopiasnft.com",
+            "totalSupply": 1000000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "588371c0af4b5b49d7544b7d585bd7bc18adeff2f1f67296cf8beb1d",
+    "asset_name": "57494e4459",
+    "asset_name_ascii": "WINDY",
+    "fingerprint": "asset1q03s6t98y73rfumn6hgt7zdnge3x8rym7hpvra",
+    "minting_tx_hash": "95d8b48dada7d8e280ba749ee2c880e5ae65ae6e849613f02091acce84c2e81c",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704758400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "588371c0af4b5b49d7544b7d585bd7bc18adeff2f1f67296cf8beb1d": {
+          "WINDY": {
+            "URL": "https://indigodaotoken.com",
+            "name": "Indigo Dao Token Rewards",
+            "files": [
+              {
+                "src": "ipfs://QmXPBghvuvDbWTsztCkHehJZYf6yckDnrVqymQn1PVD974",
+                "name": "WINDY",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmXPBghvuvDbWTsztCkHehJZYf6yckDnrVqymQn1PVD974",
+            "symbol": "WINDY",
+            "Rewards": "50 INDY",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113212209
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "This is Indigo DAO Rewards Token to receive INDY as rewards.",
+            "description": "Receive INDY rewards at https://indigodaotoken.com",
+            "totalSupply": 10000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

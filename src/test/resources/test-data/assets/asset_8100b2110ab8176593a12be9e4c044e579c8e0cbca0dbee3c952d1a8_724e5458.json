@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "8100b2110ab8176593a12be9e4c044e579c8e0cbca0dbee3c952d1a8",
+    "asset_name": "724e5458",
+    "asset_name_ascii": "rNTX",
+    "fingerprint": "asset1kxe20k05n6w2kdkxks0xqrca2nda3u63gd9252",
+    "minting_tx_hash": "7dd87649bdd32c87e20f9bf4ef5cd178d4dab1c4b4fca019dd5835000ce866e3",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704931200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "8100b2110ab8176593a12be9e4c044e579c8e0cbca0dbee3c952d1a8": {
+          "rNTX": {
+            "URL": "https://nunet-reward.com",
+            "name": "Nunet Reward Token",
+            "files": [
+              {
+                "src": "ipfs://QmbNFpMWdAoP4xDbGCuivxuvGKVGguuWWgUZcYPhytGaDY",
+                "name": "rNTX",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmbNFpMWdAoP4xDbGCuivxuvGKVGguuWWgUZcYPhytGaDY",
+            "symbol": "rNTX",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113380111
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Nunet Reward Ticket. Website: https://nunet-reward.com",
+            "description": "Nunet Reward Ticket. Website: https://nunet-reward.com",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]
