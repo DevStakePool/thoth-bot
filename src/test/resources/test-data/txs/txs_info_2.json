@@ -947,7 +947,17 @@
     "withdrawals": [],
     "assets_minted": [],
     "metadata": null,
-    "certificates": [],
+    "certificates": [
+      {
+        "info": {
+          "pool_id_hex": "ca97f539e6a878e7a7d87d762982a016ac6959d76719c8212a4a39e0",
+          "stake_address": "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+          "pool_id_bech32": "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv"
+        },
+        "type": "pool_delegation",
+        "index": 0
+      }
+    ],
     "native_scripts": [],
     "plutus_contracts": [],
     "voting_procedures": [],
@@ -1049,7 +1059,17 @@
     "withdrawals": [],
     "assets_minted": [],
     "metadata": null,
-    "certificates": [],
+    "certificates": [
+      {
+        "info": {
+          "pool_id_hex": "38c2ea35c92392314b84f70535632b1b8ac3d3bd99fa7786296b160c",
+          "stake_address": "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+          "pool_id_bech32": "pool18rpw5dwfywfrzjuy7uzn2cetrw9v85aan8a80p3fdvtqcxykkqu"
+        },
+        "type": "pool_delegation",
+        "index": 0
+      }
+    ],
     "native_scripts": [],
     "plutus_contracts": [],
     "voting_procedures": [],
@@ -4349,7 +4369,17 @@
     ],
     "assets_minted": [],
     "metadata": null,
-    "certificates": [],
+    "certificates": [
+      {
+        "info": {
+          "drep_id": "drep1km69g7ksf8t5g0h9d9tkrcd2tezxelx0wtr76rv2mrkl5nzd6v3",
+          "drep_hex": "b6f4547ad049d7443ee5695761e1aa5e446cfccf72c7ed0d8ad8edfa",
+          "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr"
+        },
+        "type": "vote_delegation",
+        "index": 0
+      }
+    ],
     "native_scripts": [],
     "plutus_contracts": [],
     "voting_procedures": [],

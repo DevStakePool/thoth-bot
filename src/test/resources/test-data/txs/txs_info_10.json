@@ -7022,7 +7022,17 @@
     ],
     "assets_minted": [],
     "metadata": null,
-    "certificates": [],
+    "certificates": [
+      {
+        "info": {
+          "pool_id_hex": "cf0f698eaf884ea22ef9442ceda4eed30ff538f43b4f21780c60052f",
+          "stake_address": "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+          "pool_id_bech32": "pool1eu8knr403p82ythegskwmf8w6v8l2w858d8jz7qvvqzj7ryech4"
+        },
+        "type": "pool_delegation",
+        "index": 0
+      }
+    ],
     "native_scripts": [],
     "plutus_contracts": [],
     "voting_procedures": [],

@@ -4923,7 +4923,17 @@
     ],
     "assets_minted": [],
     "metadata": null,
-    "certificates": [],
+    "certificates": [
+      {
+        "info": {
+          "pool_id_hex": "a2ccd8e93f5a518d4400790cb081673e79ed41e4bf1132f740f26a28",
+          "stake_address": "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
+          "pool_id_bech32": "pool15txd36fltfgc63qq0yxtpqt88eu76s0yhugn9a6q7f4zspq6k5f"
+        },
+        "type": "pool_delegation",
+        "index": 0
+      }
+    ],
     "native_scripts": [],
     "plutus_contracts": [],
     "voting_procedures": [],

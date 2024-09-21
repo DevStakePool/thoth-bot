@@ -986,7 +986,17 @@
     "withdrawals": [],
     "assets_minted": [],
     "metadata": null,
-    "certificates": [],
+    "certificates": [
+      {
+        "info": {
+          "pool_id_hex": "1ae6ca324f47cdc2b95bb7ca15e59e56666f5112136d83f069bf583a",
+          "stake_address": "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+          "pool_id_bech32": "pool1rtnv5vj0glxu9w2mkl9ptev72enx75gjzdkc8urfhavr5reah0c"
+        },
+        "type": "pool_delegation",
+        "index": 0
+      }
+    ],
     "native_scripts": [],
     "plutus_contracts": [],
     "voting_procedures": [],

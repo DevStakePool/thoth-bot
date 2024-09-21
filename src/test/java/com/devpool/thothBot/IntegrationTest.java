@@ -191,11 +191,11 @@ public class IntegrationTest {
         Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
         Assertions.assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
-        Assertions.assertTrue(params.get("text").toString().contains("[HAMDA]"));
+        Assertions.assertTrue(params.get("text").toString().contains("pool15fxktqvd92sq8plh3rjdrksumt9p8rzsayfk4akv2hng5r8ukha"));
         Assertions.assertTrue(params.get("text").toString().contains("Status: registered"));
-        Assertions.assertTrue(params.get("text").toString().contains("Rewards: 29,581.45"));
+        Assertions.assertTrue(params.get("text").toString().contains("Rewards: 156.35"));
         Assertions.assertTrue(params.get("text").toString().contains("$0x616461"));
-        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,002.33"));
+        Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,037.79"));
     }
 
     @Test
@@ -217,7 +217,7 @@ public class IntegrationTest {
         Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
         Assertions.assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("$badfriends"));
-        Assertions.assertTrue(params.get("text").toString().contains("Balance: 176.39"));
+        Assertions.assertTrue(params.get("text").toString().contains("Balance: 176.00"));
         Assertions.assertTrue(params.get("text").toString().contains("Stake Address: NO"));
         Assertions.assertTrue(params.get("text").toString().contains("Script Address: YES"));
         Assertions.assertTrue(params.get("text").toString().contains("UTXOs: 112"));
@@ -294,8 +294,8 @@ public class IntegrationTest {
         List<String> allMessages = messageArgCaptor.getAllValues();
 
         Assertions.assertEquals(17, countTxForAddress(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr"));
-        Assertions.assertEquals(31, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"));
-        Assertions.assertEquals(45, countTxForAddress(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")); // FIXME should be 45?
+        Assertions.assertEquals(31, countTxForAddress(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")); // FIXME The script somehow gives only 30
+        Assertions.assertEquals(45, countTxForAddress(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz"));
         Assertions.assertEquals(23, countTxForAddress(allMessages, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy"));
         Assertions.assertEquals(4, countTxForAddress(allMessages, "stake1u8656c05pay70xtpcwp3dqgu4jwullv6qu9e50ykn59lz7g7vzwt7"));
         Assertions.assertEquals(5, countTxForAddress(allMessages, "addr1qy2jt0qpqz2z2z9zx5w4xemekkce7yderz53kjue53lpqv90lkfa9sgrfjuz6uvt4uqtrqhl2kj0a9lnr9ndzutx32gqleeckv"));
@@ -308,13 +308,11 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("Internal Funds"));
 
         // TX internal, pool delegation
-        // FIXME seems not to work due to a null pool name?
-        // 2024-09-21 18:21:43.221 DEBUG 58893 --- [tCheckerThread1] c.d.t.s.TransactionCheckerTaskV2         : TX f5401d48ac42a1199c8fbb214e63e4f350ee5a4f099ff460ca7f8f7bdcfabd4c Amount -1.18956 Fees 0.215837 USD Price 0.35440552137065073 Pool Delegation null (null) Message null Assets asset15f3ymkjafxxeunv5gtdl54g5qs8ty9k84tq94x
-        /*message = retrieveMessageByString(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
-                "3f31f56afbfa4c4bdd7c33d1f1d4ae0cedece2fa2bfb2934b914ea5e0dfb0142");
+        message = retrieveMessageByString(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+                "559508ea65e38bcf208b7155b0e5ca9aeade561c6a86d5a29f8dd9d97c660027");
         Assertions.assertTrue(message.contains("Internal Funds"));
-        Assertions.assertTrue(message.contains("[DEV]"));
-*/
+        Assertions.assertTrue(message.contains("[DYNO]"));
+
         // TX sent funds, with a message, with withdrawal
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
                 "fcb3febffe0ca9a204bc1358a1f3a3ab439457d95b079755172a69b367d98768");

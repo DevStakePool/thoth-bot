@@ -206,7 +206,7 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
         } catch (UserNotFoundException e) {
             bot.execute(new SendMessage(chatId, String.format("The user with ID %s cannot be found.", userId)));
         } catch (Exception e) {
-            LOG.error("Unknown error when getting assets for user-id " + userId, e);
+            LOG.error("Unknown error when getting assets for user-id {}", userId, e);
             bot.execute(new SendMessage(chatId, String.format("Unknown error when getting account for user-id %s. %s", userId, e)));
         }
     }

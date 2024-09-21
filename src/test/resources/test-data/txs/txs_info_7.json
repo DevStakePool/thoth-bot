@@ -5888,7 +5888,17 @@
     "withdrawals": [],
     "assets_minted": [],
     "metadata": null,
-    "certificates": [],
+    "certificates": [
+      {
+        "info": {
+          "drep_id": "drep1g0g4ntlgxfnanvtqaa405y3ruszqyfhx46snptktzwg8xvtce0u",
+          "drep_hex": "43d159afe83267d9b160ef6afa1223e4040226e6aea130aecb139073",
+          "stake_address": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"
+        },
+        "type": "vote_delegation",
+        "index": 0
+      }
+    ],
     "native_scripts": [],
     "plutus_contracts": [],
     "voting_procedures": [],

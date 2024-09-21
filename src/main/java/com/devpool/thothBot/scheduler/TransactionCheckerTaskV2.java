@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
 @ConfigurationProperties("thoth.dapps")
 public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTaskV2.class);
-    private static final String DELEGATION_CERTIFICATE = "delegation";
+    private static final String DELEGATION_CERTIFICATE = "pool_delegation";
     private static final String BLOCK_HEIGHT_FIELD = "block_height";
     private static final int MAX_TX_IN_TELEGRAM_NOTIFICATION = 3;
 

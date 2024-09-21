@@ -100,7 +100,7 @@ do
       curl -s -X POST "https://api.koios.rest/api/v1/tx_info" \
          -H "Accept: application/json" \
          -H "Content-Type: application/json" \
-                 -d "{\"_tx_hashes\":[${batch}],\"_inputs\":true,\"_metadata\": true,\"_assets\": true,\"_withdrawals\": true,\"_scripts\": true}" | jq > $tx_file
+                 -d "{\"_tx_hashes\":[${batch}],\"_inputs\": true, \"_metadata\": true, \"_assets\": true, \"_withdrawals\": true, \"_certs\": true, \"_scripts\": true}" | jq > $tx_file
       batch=""
       idx=1
   fi
@@ -113,7 +113,7 @@ if [ $idx -gt 1 ]; then
     curl -s -X POST "https://api.koios.rest/api/v1/tx_info" \
        -H "Accept: application/json" \
        -H "Content-Type: application/json" \
-               -d "{\"_tx_hashes\":[${batch}],\"_inputs\":true,\"_metadata\": true,\"_assets\": true,\"_withdrawals\": true,\"_scripts\": true}" | jq > $tx_file
+               -d "{\"_tx_hashes\":[${batch}],\"_inputs\": true, \"_metadata\": true, \"_assets\": true, \"_withdrawals\": true, \"_certs\": true, \"_scripts\": true}" | jq > $tx_file
     batch=""
     idx=1
 fi
