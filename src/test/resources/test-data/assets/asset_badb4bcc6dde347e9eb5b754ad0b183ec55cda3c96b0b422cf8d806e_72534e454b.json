@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "badb4bcc6dde347e9eb5b754ad0b183ec55cda3c96b0b422cf8d806e",
+    "asset_name": "72534e454b",
+    "asset_name_ascii": "rSNEK",
+    "fingerprint": "asset18yavqqfuvmwyeep37mngrkumfaysfem3ry4ec9",
+    "minting_tx_hash": "b2ce5b80a2cd36f8bf0689241c1f6f23feead20fa23fb919b88ac0f6fe55f28a",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1702771200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "badb4bcc6dde347e9eb5b754ad0b183ec55cda3c96b0b422cf8d806e": {
+          "rSNEK": {
+            "url": "https://snekevent.net",
+            "name": "SNEK Reward Token",
+            "files": [
+              {
+                "src": "ipfs://QmVrhZvQX5QiR5L2tQVwD5jcJXpFybmciK3iuMBKH3Uk6J",
+                "name": "rSNEK",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVrhZvQX5QiR5L2tQVwD5jcJXpFybmciK3iuMBKH3Uk6J",
+            "level": "medium",
+            "symbol": "rSNEK",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 111265005
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your additional SNEK rewards at https://snekevent.net.",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "73a6d4bea95901c0561cff7614f3ea527d3c43ab8370a80a7cf8da66",
+    "asset_name": "7243485259",
+    "asset_name_ascii": "rCHRY",
+    "fingerprint": "asset174h4afahlyke5wjkaqkglzthlccntr59gww3up",
+    "minting_tx_hash": "4b4d81c7bc457fc618fb9077ecab3beebebbd2370f5fe15dd0f23a5f8acdbfbe",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705190400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "73a6d4bea95901c0561cff7614f3ea527d3c43ab8370a80a7cf8da66": {
+          "rCHRY": {
+            "URL": "https://cherrylend.net",
+            "name": "CHRY Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmSoW658izfujpbKjFXB44953DHJJVufSC8rR7JjUyUAmo",
+                "name": "rCHRY",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmSoW658izfujpbKjFXB44953DHJJVufSC8rR7JjUyUAmo",
+            "symbol": "rCHRY",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113657150
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for CHRY Reward. Website: https://cherrylend.net",
+            "description": "Ticket for CHRY Reward. Website: https://cherrylend.net",
+            "totalSupply": 1000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

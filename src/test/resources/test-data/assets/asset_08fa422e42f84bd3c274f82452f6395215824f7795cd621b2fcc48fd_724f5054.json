@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "08fa422e42f84bd3c274f82452f6395215824f7795cd621b2fcc48fd",
+    "asset_name": "724f5054",
+    "asset_name_ascii": "rOPT",
+    "fingerprint": "asset1xthq94pmjxddz9xm6245l3cf79p9sm420ry328",
+    "minting_tx_hash": "af29c900e38124190754fb2812ffefb4eb34d17cc0a4018eb4e2bcf6e1d27756",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704672000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "08fa422e42f84bd3c274f82452f6395215824f7795cd621b2fcc48fd": {
+          "rOPT": {
+            "url": "https://optionflow.org",
+            "name": "OptionFlow Reward Token",
+            "files": [
+              {
+                "src": "ipfs://QmWmqPDj8Dm99n3GtmeKXe8wQd2B5uAX7bQFf3VdZTU5NP",
+                "name": "rOPT",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWmqPDj8Dm99n3GtmeKXe8wQd2B5uAX7bQFf3VdZTU5NP",
+            "symbol": "rOPT",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113115101
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your additional OPT rewards at https://optionflow.org.",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

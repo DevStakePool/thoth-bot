@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "89fe005e60e4a4bdd196b6dd1ac096f471517a7d57dbfb158e8285a6",
+    "asset_name": "624b554245",
+    "asset_name_ascii": "bKUBE",
+    "fingerprint": "asset16u5u73edjg8z58ft95el27rzufp8u86u8550s5",
+    "minting_tx_hash": "d2a54548dacae00b0ecb5fa1d09560e8ff0eaa1eb02dbf58af8e19b0ab1bbb74",
+    "total_supply": "10000000000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705017600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "89fe005e60e4a4bdd196b6dd1ac096f471517a7d57dbfb158e8285a6": {
+          "bKUBE": {
+            "URL": "https://kubecoin.net",
+            "name": "KUBE Bonus Token",
+            "files": [
+              {
+                "src": "ipfs://QmfQzUwo1dQbPxfSdFEedZS73zk7mKcL63RgRbLHsLJMB2",
+                "name": "bKUBE",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmfQzUwo1dQbPxfSdFEedZS73zk7mKcL63RgRbLHsLJMB2",
+            "symbol": "bKUBE",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113470081
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "You can swap to $KUBE here: https://kubecoin.net",
+            "description": "You can swap to $KUBE here: https://kubecoin.net",
+            "totalSupply": 1e+16
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

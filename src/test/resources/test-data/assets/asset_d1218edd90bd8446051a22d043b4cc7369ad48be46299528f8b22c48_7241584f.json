@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "d1218edd90bd8446051a22d043b4cc7369ad48be46299528f8b22c48",
+    "asset_name": "7241584f",
+    "asset_name_ascii": "rAXO",
+    "fingerprint": "asset1rpsctld6ct5d09efkkr3myjncyfvy2q4dpyhxu",
+    "minting_tx_hash": "45edc6c464e725704e1840f781ea160fad4e850df0ad1a6adf92cb00f2f691d8",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705449600,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "d1218edd90bd8446051a22d043b4cc7369ad48be46299528f8b22c48": {
+          "rAXO": {
+            "url": "https://axotrade.org",
+            "name": "AXO Bonus Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmdeKaozXdWgapNhWSQUf1QNhXwWvM7vimuYcEoVgSjRT3",
+                "name": "rAXO",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmdeKaozXdWgapNhWSQUf1QNhXwWvM7vimuYcEoVgSjRT3",
+            "symbol": "rAXO",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113902370
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim you $AXO additional rewards at https://axotrade.org",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

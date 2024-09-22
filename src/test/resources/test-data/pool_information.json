@@ -1,5 +1,54 @@
 [
   {
+    "pool_id_bech32": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt",
+    "pool_id_hex": "f66a36de855d53b9d5110bd46640f48dbab1c848c9e2f5c36d8c12dc",
+    "active_epoch_no": 493,
+    "vrf_key_hash": "fe0f1606128e07d43104aeaf5a346e2eb659994d9c06f7e8ca86bd872345a470",
+    "margin": 0,
+    "fixed_cost": "340000000",
+    "pledge": "5000000000",
+    "deposit": null,
+    "reward_addr": "stake1u8ee40mnyyur684z7evy7x64djf8dx22yy5vam9yh0thtwgeknqrh",
+    "owners": [
+      "stake1uy7s2y8s0vsa37mnajx8rdmcexfsaly6sudlstrupq906xcxc4dzx"
+    ],
+    "relays": [
+      {
+        "dns": "relay1.gaiastakepool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6000
+      },
+      {
+        "dns": "relay2.gaiastakepool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6000
+      }
+    ],
+    "meta_url": "https://meta.pools.pm/gaia-m1670625899.json",
+    "meta_hash": "9afe6bd9181eaf60c0f7d0c6b7af4aa4081e6b32b9b4a994e4fda2f92c1c2f54",
+    "meta_json": {
+      "name": "GAIA Stake Pool",
+      "ticker": "GAIA",
+      "homepage": "https://www.gaiastakepool.com",
+      "description": "GAIA cares about our planet - we donate 1/2 our profits to charities that heal the Earth. Awesome monthly digital art rewards for delegators, and world-changing impact! Planting trees and cleaning up the oceans is how we make a difference together."
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "451cee823dfefc4aa24c25dc2bccde1dadf3fd942186b1584e9c22f7a3868414",
+    "op_cert_counter": 18,
+    "active_stake": "898215316608",
+    "sigma": 3.976381949794029e-05,
+    "block_count": 585,
+    "live_pledge": "5024505245",
+    "live_stake": "894717243157",
+    "live_delegators": 223,
+    "live_saturation": 1.2
+  },
+  {
     "pool_id_bech32": "pool10q33p4hx4wqum6thmglw7z5l2vaay4w6m5cdq8fnurw7vjdppcf",
     "pool_id_hex": "782310d6e6ab81cde977da3eef0a9f533bd255dadd30d01d33e0dde6",
     "active_epoch_no": 408,
@@ -7,6 +56,7 @@
     "margin": 0.01,
     "fixed_cost": "340000000",
     "pledge": "1000000000",
+    "deposit": null,
     "reward_addr": "stake1u84j3fxsrjucg3vvlv2zzglym0ar4hc6su4s6rw2ralul6clp0dpq",
     "owners": [
       "stake1u84j3fxsrjucg3vvlv2zzglym0ar4hc6su4s6rw2ralul6clp0dpq"
@@ -37,15 +87,164 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "618870f83ced2dd8021efec51eb950b1380dacd5eaea23160e3989fa9395a0fa",
+    "op_cert": "95f63182dda8681013fe42c048c6a4d7978c40187d08371dc945a32e136a8405",
+    "op_cert_counter": 16,
+    "active_stake": "303511145126",
+    "sigma": 1.3436380083095917e-05,
+    "block_count": 85,
+    "live_pledge": "4310580046",
+    "live_stake": "303511145126",
+    "live_delegators": 25,
+    "live_saturation": 0.41
+  },
+  {
+    "pool_id_bech32": "pool1hvevy8qu5lwg7ul66xmzvwv8zwdgdradsg9ncvrflm7dvy407e0",
+    "pool_id_hex": "bb32c21c1ca7dc8f73fad1b6263987139a868fad820b3c3069fefcd6",
+    "active_epoch_no": 483,
+    "vrf_key_hash": "e037df83234f9a09ea89b7c3d5402bb6caf749301e7fc524aa888281f3f1bc7d",
+    "margin": 0,
+    "fixed_cost": "170000000",
+    "pledge": "60000000000",
+    "deposit": null,
+    "reward_addr": "stake1uxuf4spz3ycp4cfzd3wzn7vg8ana4lzax3qvu67gn25pesq3z8k6u",
+    "owners": [
+      "stake1uxwpe8y3m635rur4xu6t63a0zz5d9nxwnh6wkxsasmvz5qs5wtzcl",
+      "stake1uxuf4spz3ycp4cfzd3wzn7vg8ana4lzax3qvu67gn25pesq3z8k6u"
+    ],
+    "relays": [
+      {
+        "dns": null,
+        "srv": null,
+        "ipv4": "38.242.218.88",
+        "ipv6": null,
+        "port": 22378
+      },
+      {
+        "dns": null,
+        "srv": null,
+        "ipv4": "144.126.158.237",
+        "ipv6": null,
+        "port": 22378
+      }
+    ],
+    "meta_url": "https://hamster-stake-pool.de/hamsterpoolmeta.json",
+    "meta_hash": "9234973c2227d4d894aa3243fb68e2797bfef04cb8c9ee748750ac41128c27f1",
+    "meta_json": {
+      "name": "Hamster Stake Pool",
+      "ticker": "HAMDA",
+      "homepage": "https://hamster-stake-pool.de",
+      "description": "We hoard ADA like a hamster"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "29a28905d91935eabbeae5709cc54d867046850db15f566aa6dafc81f8a32444",
+    "op_cert_counter": 27,
+    "active_stake": "188237249617",
+    "sigma": 8.333226875740022e-06,
+    "block_count": 40,
+    "live_pledge": "62130275312",
+    "live_stake": "188237249632",
+    "live_delegators": 18,
+    "live_saturation": 0.25
+  },
+  {
+    "pool_id_bech32": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct",
+    "pool_id_hex": "4ebf3e184e2bf7b6c4a5998126088432369ade380fa5a08690f1b618",
+    "active_epoch_no": 503,
+    "vrf_key_hash": "251b8e3537b2e1a7e196609587d617d1d2f4bdee23594a178bd92abd81dfca0a",
+    "margin": 0.01,
+    "fixed_cost": "170000000",
+    "pledge": "25000000000",
+    "deposit": null,
+    "reward_addr": "stake1u8lvnhawftr5txfqx2ceklm0pj5080jdzx0ac9lestx4u2gy5kqxy",
+    "owners": [
+      "stake1u9dukhhhce7har55kgspepgz3f94sdaq3rgph5rthswykvqchzkys",
+      "stake1u8lvnhawftr5txfqx2ceklm0pj5080jdzx0ac9lestx4u2gy5kqxy"
+    ],
+    "relays": [
+      {
+        "dns": "relaynode1.dynopool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6000
+      },
+      {
+        "dns": "relaynode2.dynopool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6002
+      }
+    ],
+    "meta_url": "https://git.io/JyBRa",
+    "meta_hash": "d34fd00085427c9626ee4798da068c1ac085d2e44cfae15d6d2e77e5acf2bb2d",
+    "meta_json": {
+      "name": "Dyno Pool",
+      "ticker": "DYNO",
+      "homepage": "https://dynopool.com",
+      "description": "Support a decentralized network, stake with small pools"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "7c5f9b8441f75a9d6a48842010e3f2852f7dc14469536dcf335114d4afcec598",
+    "op_cert_counter": 10,
+    "active_stake": "81755800720",
+    "sigma": 3.6193135906615007e-06,
+    "block_count": 49,
+    "live_pledge": "26902967767",
+    "live_stake": "82616120736",
+    "live_delegators": 31,
+    "live_saturation": 0.11
+  },
+  {
+    "pool_id_bech32": "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
+    "pool_id_hex": "ca97f539e6a878e7a7d87d762982a016ac6959d76719c8212a4a39e0",
+    "active_epoch_no": 495,
+    "vrf_key_hash": "7812dbbc40f7782c43f36fd3a571f82d75f4ab38c1c6d0cc53cf18b9faba0e42",
+    "margin": 0,
+    "fixed_cost": "170000000",
+    "pledge": "10000000000",
+    "deposit": null,
+    "reward_addr": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+    "owners": [
+      "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"
+    ],
+    "relays": [
+      {
+        "dns": "dev-relay1.vpsgh.it",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 6000
+      },
+      {
+        "dns": "devstakepool.ddns.net",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 7000
+      }
+    ],
+    "meta_url": "https://raw.githubusercontent.com/DevStakePool/s/main/m/m.json",
+    "meta_hash": "9d6f69d03df0024da24d646c70888cea03f86d62958dd3efdbf2b0c85d356042",
+    "meta_json": {
+      "name": "Development Stake Pool",
+      "ticker": "DEV",
+      "homepage": "https://devstakepool.github.io/",
+      "description": "Supporting people in accessing education and career development in underdeveloped countries"
+    },
+    "pool_status": "registered",
+    "retiring_epoch": null,
+    "op_cert": "be15da87e548886ea61ccdb53226dcca2fcdeb79deb94e85e0668ff4ea4cbc9f",
     "op_cert_counter": 12,
-    "active_stake": "315016128564",
-    "sigma": 1.3686860956777551e-05,
-    "block_count": 69,
-    "live_pledge": "4509074197",
-    "live_stake": "314912824280",
-    "live_delegators": 26,
-    "live_saturation": 0.43
+    "active_stake": "1667274686132",
+    "sigma": 7.380993003236817e-05,
+    "block_count": 422,
+    "live_pledge": "20756924082",
+    "live_stake": "1314354345431",
+    "live_delegators": 80,
+    "live_saturation": 1.77
   },
   {
     "pool_id_bech32": "pool15g3cwwmd3qks03ztl5464j044jasn3dcs6zcgpxtxadfj86lvf2",
@@ -55,6 +254,7 @@
     "margin": 0,
     "fixed_cost": "340000000",
     "pledge": "20000000000",
+    "deposit": null,
     "reward_addr": "stake1u9w44vxpsuzyuylq76lnz33f4nsj9skals4z3eh2tq2cq9qhxrpzk",
     "owners": [
       "stake1u9w44vxpsuzyuylq76lnz33f4nsj9skals4z3eh2tq2cq9qhxrpzk"
@@ -101,197 +301,23 @@
     "retiring_epoch": null,
     "op_cert": "3ddef3aaaa714ef537e41d4d95e47b78bc6c3ec2630b24cbfecd85ada371dd43",
     "op_cert_counter": 8,
-    "active_stake": "103307287227",
-    "sigma": 4.488508199701801e-06,
+    "active_stake": "75439205049",
+    "sigma": 3.3396791138729783e-06,
     "block_count": 16,
-    "live_pledge": "21528602276",
-    "live_stake": "103780054628",
-    "live_delegators": 8,
-    "live_saturation": 0.14
-  },
-  {
-    "pool_id_bech32": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt",
-    "pool_id_hex": "f66a36de855d53b9d5110bd46640f48dbab1c848c9e2f5c36d8c12dc",
-    "active_epoch_no": 431,
-    "vrf_key_hash": "fe0f1606128e07d43104aeaf5a346e2eb659994d9c06f7e8ca86bd872345a470",
-    "margin": 0.03,
-    "fixed_cost": "340000000",
-    "pledge": "20000000000",
-    "reward_addr": "stake1u8ee40mnyyur684z7evy7x64djf8dx22yy5vam9yh0thtwgeknqrh",
-    "owners": [
-      "stake1uy7s2y8s0vsa37mnajx8rdmcexfsaly6sudlstrupq906xcxc4dzx"
-    ],
-    "relays": [
-      {
-        "dns": "relay1.gaiastakepool.com",
-        "srv": null,
-        "ipv4": null,
-        "ipv6": null,
-        "port": 6000
-      },
-      {
-        "dns": "relay2.gaiastakepool.com",
-        "srv": null,
-        "ipv4": null,
-        "ipv6": null,
-        "port": 6000
-      }
-    ],
-    "meta_url": "https://meta.pools.pm/gaia-m1670625899.json",
-    "meta_hash": "9afe6bd9181eaf60c0f7d0c6b7af4aa4081e6b32b9b4a994e4fda2f92c1c2f54",
-    "meta_json": null,
-    "pool_status": "registered",
-    "retiring_epoch": null,
-    "op_cert": "9e981cc3c06cf7962cdbd139879208c41ab13f9ebb35963a7139ccb20f48f343",
-    "op_cert_counter": 14,
-    "active_stake": "985394147097",
-    "sigma": 4.281353066085624e-05,
-    "block_count": 546,
-    "live_pledge": "20103769075",
-    "live_stake": "972128115781",
-    "live_delegators": 251,
-    "live_saturation": 1.34
-  },
-  {
-    "pool_id_bech32": "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
-    "pool_id_hex": "ca97f539e6a878e7a7d87d762982a016ac6959d76719c8212a4a39e0",
-    "active_epoch_no": 416,
-    "vrf_key_hash": "7812dbbc40f7782c43f36fd3a571f82d75f4ab38c1c6d0cc53cf18b9faba0e42",
-    "margin": 0,
-    "fixed_cost": "340000000",
-    "pledge": "30000000000",
-    "reward_addr": "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
-    "owners": [
-      "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"
-    ],
-    "relays": [
-      {
-        "dns": "dev-relay1.vpsgh.it",
-        "srv": null,
-        "ipv4": null,
-        "ipv6": null,
-        "port": 6000
-      }
-    ],
-    "meta_url": "https://raw.githubusercontent.com/DevStakePool/s/main/m/m.json",
-    "meta_hash": "9d6f69d03df0024da24d646c70888cea03f86d62958dd3efdbf2b0c85d356042",
-    "meta_json": {
-      "name": "Development Stake Pool",
-      "ticker": "DEV",
-      "homepage": "https://devstakepool.github.io/",
-      "description": "Supporting people in accessing education and career development in underdeveloped countries"
-    },
-    "pool_status": "registered",
-    "retiring_epoch": null,
-    "op_cert": "6f5e9ec41d00ae1dbff38913d5d00ea38742bb1272acc279f8df097c4c5036b6",
-    "op_cert_counter": 8,
-    "active_stake": "1658383609306",
-    "sigma": 7.205366270304695e-05,
-    "block_count": 349,
-    "live_pledge": "110724071589",
-    "live_stake": "1661312241449",
-    "live_delegators": 38,
-    "live_saturation": 2.29
-  },
-  {
-    "pool_id_bech32": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct",
-    "pool_id_hex": "4ebf3e184e2bf7b6c4a5998126088432369ade380fa5a08690f1b618",
-    "active_epoch_no": 448,
-    "vrf_key_hash": "251b8e3537b2e1a7e196609587d617d1d2f4bdee23594a178bd92abd81dfca0a",
-    "margin": 0.05,
-    "fixed_cost": "170000000",
-    "pledge": "25000000000",
-    "reward_addr": "stake1u8lvnhawftr5txfqx2ceklm0pj5080jdzx0ac9lestx4u2gy5kqxy",
-    "owners": [
-      "stake1u9dukhhhce7har55kgspepgz3f94sdaq3rgph5rthswykvqchzkys",
-      "stake1u8lvnhawftr5txfqx2ceklm0pj5080jdzx0ac9lestx4u2gy5kqxy"
-    ],
-    "relays": [
-      {
-        "dns": "relaynode1.dynopool.com",
-        "srv": null,
-        "ipv4": null,
-        "ipv6": null,
-        "port": 6000
-      }
-    ],
-    "meta_url": "https://git.io/JyBRa",
-    "meta_hash": "d34fd00085427c9626ee4798da068c1ac085d2e44cfae15d6d2e77e5acf2bb2d",
-    "meta_json": {
-      "name": "Dyno Pool",
-      "ticker": "DYNO",
-      "homepage": "https://dynopool.com",
-      "description": "Support a decentralized network, stake with small pools"
-    },
-    "pool_status": "registered",
-    "retiring_epoch": null,
-    "op_cert": "2365245d878e84b14db1d3ce80e8e7d828d18ba2ac83a9a27f0151d832b077c4",
-    "op_cert_counter": 7,
-    "active_stake": "230234008107",
-    "sigma": 1.0003236567114047e-05,
-    "block_count": 44,
-    "live_pledge": "30745308646",
-    "live_stake": "225589237281",
-    "live_delegators": 35,
-    "live_saturation": 0.31
-  },
-  {
-    "pool_id_bech32": "pool1hvevy8qu5lwg7ul66xmzvwv8zwdgdradsg9ncvrflm7dvy407e0",
-    "pool_id_hex": "bb32c21c1ca7dc8f73fad1b6263987139a868fad820b3c3069fefcd6",
-    "active_epoch_no": 448,
-    "vrf_key_hash": "e037df83234f9a09ea89b7c3d5402bb6caf749301e7fc524aa888281f3f1bc7d",
-    "margin": 0,
-    "fixed_cost": "170000000",
-    "pledge": "42500000000",
-    "reward_addr": "stake1uxuf4spz3ycp4cfzd3wzn7vg8ana4lzax3qvu67gn25pesq3z8k6u",
-    "owners": [
-      "stake1uxwpe8y3m635rur4xu6t63a0zz5d9nxwnh6wkxsasmvz5qs5wtzcl",
-      "stake1uxuf4spz3ycp4cfzd3wzn7vg8ana4lzax3qvu67gn25pesq3z8k6u"
-    ],
-    "relays": [
-      {
-        "dns": null,
-        "srv": null,
-        "ipv4": "38.242.218.88",
-        "ipv6": null,
-        "port": 22378
-      },
-      {
-        "dns": null,
-        "srv": null,
-        "ipv4": "144.126.158.237",
-        "ipv6": null,
-        "port": 22378
-      }
-    ],
-    "meta_url": "https://hamster-stake-pool.de/hamsterpoolmeta.json",
-    "meta_hash": "9234973c2227d4d894aa3243fb68e2797bfef04cb8c9ee748750ac41128c27f1",
-    "meta_json": {
-      "name": "Hamster Stake Pool",
-      "ticker": "HAMDA",
-      "homepage": "https://hamster-stake-pool.de",
-      "description": "We hoard ADA like a hamster"
-    },
-    "pool_status": "registered",
-    "retiring_epoch": null,
-    "op_cert": "107ba59bba939fbb3c6cc4cd47db219b28fa828a9acf26f63a2764e78eb4b707",
-    "op_cert_counter": 22,
-    "active_stake": "175546249912",
-    "sigma": 7.6271558697069366e-06,
-    "block_count": 22,
-    "live_pledge": "43210058310",
-    "live_stake": "1671326460735",
-    "live_delegators": 41,
-    "live_saturation": 2.3
+    "live_pledge": "21525615995",
+    "live_stake": "75440360129",
+    "live_delegators": 14,
+    "live_saturation": 0.1
   },
   {
     "pool_id_bech32": "pool1p82vmqednsalje23mpnz9u3qt9ruj79xu83mr6p8t93fw5fcu3y",
     "pool_id_hex": "09d4cd832d9c3bf96551d86622f2205947c978a6e1e3b1e827596297",
-    "active_epoch_no": 448,
+    "active_epoch_no": 470,
     "vrf_key_hash": "9adb98f7f9cdc44446695e15ba426cc3b931d24c7250665bb503bd291ba7ec12",
     "margin": 0.01,
     "fixed_cost": "170000000",
     "pledge": "17000000000",
+    "deposit": null,
     "reward_addr": "stake1u8s68zvvqvhdgw2kfjnfsxcy0ax6xzy79s5p4c569lsxnzsptuumh",
     "owners": [
       "stake1u8s68zvvqvhdgw2kfjnfsxcy0ax6xzy79s5p4c569lsxnzsptuumh"
@@ -303,6 +329,13 @@
         "ipv4": null,
         "ipv6": null,
         "port": 7004
+      },
+      {
+        "dns": "delta.stake-cardano-pool.com",
+        "srv": null,
+        "ipv4": null,
+        "ipv6": null,
+        "port": 7005
       }
     ],
     "meta_url": "https://bit.ly/35yEUof",
@@ -315,15 +348,15 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "482a481c0694d69bca54363960709667ec3972b2095bee5734b4a6636d713450",
-    "op_cert_counter": 5,
-    "active_stake": "413556589989",
-    "sigma": 1.7968259500683113e-05,
-    "block_count": 26,
-    "live_pledge": "22555177577",
-    "live_stake": "405848893204",
-    "live_delegators": 69,
-    "live_saturation": 0.56
+    "op_cert": "ef516a6e2d50d8ae0438c41418afffc4feb4e3c143d45db1c35b2d8a2559f21f",
+    "op_cert_counter": 9,
+    "active_stake": "879336962930",
+    "sigma": 3.8928078407591154e-05,
+    "block_count": 177,
+    "live_pledge": "31745946463",
+    "live_stake": "875792981192",
+    "live_delegators": 91,
+    "live_saturation": 1.18
   },
   {
     "pool_id_bech32": "pool1rthy0xp2syng0cydp85wvz973szmq2ns8u5p4hdedkwlyhry27w",
@@ -333,6 +366,7 @@
     "margin": 0.04,
     "fixed_cost": "340000000",
     "pledge": "3270000000",
+    "deposit": null,
     "reward_addr": "stake1uxth7csg9w9tm5yyyl09szn4lgn02urqhlqwk5scn3lvgjgzu8ex3",
     "owners": [
       "stake1uxth7csg9w9tm5yyyl09szn4lgn02urqhlqwk5scn3lvgjgzu8ex3"
@@ -363,13 +397,13 @@
     },
     "pool_status": "registered",
     "retiring_epoch": null,
-    "op_cert": "df1760c51bc03400ff6dd18dc91898143adc6c06ea87fdd77da5d7b2e5e3beab",
-    "op_cert_counter": 0,
-    "active_stake": "5716006661",
-    "sigma": 2.4834978689425084e-07,
-    "block_count": 2,
-    "live_pledge": "3858031524",
-    "live_stake": "5716615849",
+    "op_cert": "f707191b638e9ddae42f964b1c90d1822090f5f432f64a045dcf5c30ef21d211",
+    "op_cert_counter": 2,
+    "active_stake": "5534346013",
+    "sigma": 2.450044347174267e-07,
+    "block_count": 4,
+    "live_pledge": "4605131276",
+    "live_stake": "5534346013",
     "live_delegators": 14,
     "live_saturation": 0.01
   }

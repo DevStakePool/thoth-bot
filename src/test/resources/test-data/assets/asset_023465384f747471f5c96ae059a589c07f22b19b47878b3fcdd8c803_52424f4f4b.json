@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "023465384f747471f5c96ae059a589c07f22b19b47878b3fcdd8c803",
+    "asset_name": "52424f4f4b",
+    "asset_name_ascii": "RBOOK",
+    "fingerprint": "asset1gjvgjul0ykaydn6quc976z807s2f6wnw0k5s59",
+    "minting_tx_hash": "2654c61ffef8c8579435ba3d6a390b690c9f5277da06077b65f00a88b3a5c4bc",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704844800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "023465384f747471f5c96ae059a589c07f22b19b47878b3fcdd8c803": {
+          "RBOOK": {
+            "URL": "https://book-reward.com",
+            "name": "BOOK REWARD PASS",
+            "files": [
+              {
+                "src": "ipfs://QmaitvkZdhsDCmuRLbC8vTGzHaxi8skTthDdbR9gESrukx",
+                "name": "RBOOK",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaitvkZdhsDCmuRLbC8vTGzHaxi8skTthDdbR9gESrukx",
+            "symbol": "RBOOK",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113317294
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for BOOK Reward. Website: https://book-reward.com",
+            "description": "Ticket for BOOK Reward. Website: https://book-reward.com",
+            "totalSupply": 100000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

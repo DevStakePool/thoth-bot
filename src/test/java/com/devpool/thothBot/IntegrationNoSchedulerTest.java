@@ -612,13 +612,13 @@ public class IntegrationNoSchedulerTest {
                         .toString().contains("Assets for address $")).count());
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1wwyy88f8u937hz7kunlkss7gu446p6ed5gdfp6\">SingularityNet AGIX Token</a> 277.84")));
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1wwyy88f8u937hz7kunlkss7gu446p6ed5gdfp6\">SingularityNet AGIX Token</a> 0.00")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1sqgf4u09yskj8t3tngwzpkl9g276gl8t38lrcv\">Cardano Summit 2023 NFT 1571</a> 1")));
+                .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1y5ek5facnmt2h5wa8n9wrl7qxu49fv8rmz8yte\">Cardano Summit 2023 NFT 2066</a> 1")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Shown 10/50")));
+                .anyMatch(t -> t.contains("Shown 10/47")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("Page 1/5")));
@@ -695,7 +695,7 @@ public class IntegrationNoSchedulerTest {
                 .anyMatch(t -> t.contains("<a href=\"https://pool.pm/asset1sdzme5cnwgqk6u94k0fnlymenvnvfv3jm78dcz\">CLAY</a> 47,500.00")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Shown 10/113")));
+                .anyMatch(t -> t.contains("Shown 10/114")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("Page 1/12")));
@@ -727,7 +727,7 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertEquals(3, sentMessages.size());
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
-                .anyMatch(t -> t.contains("Shown 20/113")));
+                .anyMatch(t -> t.contains("Shown 20/114")));
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("Page 2/12")));

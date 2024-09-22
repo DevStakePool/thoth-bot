@@ -1,0 +1,28 @@
+[
+  {
+    "policy_id": "f40c4dc9254c660041c3159c069e5231595aa272c39dab234f4e28c6",
+    "asset_name": "6e616d65313239",
+    "asset_name_ascii": "name129",
+    "fingerprint": "asset1rs849y23gpfya55s9ldma8y04acusj3sk6npvp",
+    "minting_tx_hash": "0feeef939ebd168a80fc221be1c000ddd1e46f3e184cb53e9ec6385ccd7a0661",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1693180800,
+    "minting_tx_metadata": {
+      "721": {
+        "f40c4dc9254c660041c3159c069e5231595aa272c39dab234f4e28c6": {
+          "name129": {
+            "name": "Cardano Chest 129",
+            "image": "https://raw.githubusercontent.com/phantomwall1/2/main/129.png",
+            "project": "Cardano Chest",
+            "mediaType": "image/png",
+            "description": "Draft lottery pool of 10,000 ADA. Try your luck!"
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

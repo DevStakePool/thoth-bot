@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
 @ConfigurationProperties("thoth.dapps")
 public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTaskV2.class);
-    private static final String DELEGATION_CERTIFICATE = "delegation";
+    private static final String DELEGATION_CERTIFICATE = "pool_delegation";
     private static final String BLOCK_HEIGHT_FIELD = "block_height";
     private static final int MAX_TX_IN_TELEGRAM_NOTIFICATION = 3;
 
@@ -154,7 +154,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                     .option(Limit.of(DEFAULT_PAGINATION_SIZE))
                     .option(Offset.of(offset))
                     .option(Filter.of(BLOCK_HEIGHT_FIELD, FilterType.GT, Integer.toString(blockHeight)))
-                    .option(Order.by(BLOCK_HEIGHT_FIELD, SortType.DESC)).build();
+                    .option(Order.by(BLOCK_HEIGHT_FIELD, SortType.DESC))
+                    .build();
             offset += DEFAULT_PAGINATION_SIZE;
 
             // Retrieve all UTXOs
@@ -241,7 +242,10 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             if (LOG.isTraceEnabled())
                 LOG.trace("Getting TX information for the following TXs {}", allTxHashes);
             // No need to do multi queries here unless you got 1000+ transactions since the last check
-            Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(0)).build();
+            Options options = Options.builder()
+                    .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                    .option(Offset.of(0))
+                    .build();
             Result<List<TxInfo>> txInfoResp = this.koiosFacade.getKoiosService().getTransactionsService().getTransactionInformation(allTxHashes, options);
 
             if (!txInfoResp.isSuccessful()) {

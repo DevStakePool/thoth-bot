@@ -1,0 +1,46 @@
+[
+  {
+    "policy_id": "07985ae6165d99b4f636db0f658e40778f80055bf0de487c0871467e",
+    "asset_name": "575041564941",
+    "asset_name_ascii": "WPAVIA",
+    "fingerprint": "asset1txkcmm34kwrknlftklhjsqcewmxdtankh99dtj",
+    "minting_tx_hash": "63b49ed8ab5c1034dc30bd2de058f2c60ac12d19b161271175446fdf29475299",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704758400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "07985ae6165d99b4f636db0f658e40778f80055bf0de487c0871467e": {
+          "WPAVIA": {
+            "URL": "https://pavia-rewards.com",
+            "name": "Pavia Rewards",
+            "files": [
+              {
+                "src": "ipfs://QmPFh4X7mGDtp7LGT8pCXwCJEUywDxntxZD7zTU98CJfDb",
+                "name": "WPAVIA",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmPFh4X7mGDtp7LGT8pCXwCJEUywDxntxZD7zTU98CJfDb",
+            "symbol": "WPAVIA",
+            "Rewards": "10,000 PAVIA",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113236030
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "This is Pavia Rewards to receive PAVIA as rewards.",
+            "description": "Receive Pavia Rewards at https://pavia-rewards.com",
+            "totalSupply": 10000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

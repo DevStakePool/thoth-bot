@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "52756e6573202d204f72616e6765",
+    "asset_name_ascii": "Runes - Orange",
+    "fingerprint": "asset1d899z79gxrqmkjlguntm59gyhaqmvrfk0k9rz8",
+    "minting_tx_hash": "c6e5000a525dbe9a9f6891de43b0de7144b9b02d9ec74fac793cb0692eaf5daa",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648771200,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Runes - Orange": {
+            "name": "Runes - Orange",
+            "image": "ipfs://QmYbvkhKK3DjZQvrYvcfYCtUM28KMNiJiffBaJVd7uMNfh",
+            "sha256": "71d45ed5f800127600dc7f639c21cca251ebb32c11d3b7f24360fa24700ca7f5",
+            "mediaType": "image/png",
+            "description": [
+              "These ancient carved runestones emit a",
+              "faint orange light and are warm to the touch."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

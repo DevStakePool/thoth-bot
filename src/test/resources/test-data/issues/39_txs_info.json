@@ -11,6 +11,7 @@
     "tx_size": 1556,
     "total_output": "18456488",
     "fee": "251005",
+    "treasury_donation": "0",
     "deposit": "0",
     "invalid_before": "110312257",
     "invalid_after": "110313157",
@@ -213,6 +214,8 @@
     },
     "certificates": [],
     "native_scripts": [],
-    "plutus_contracts": []
+    "plutus_contracts": [],
+    "voting_procedures": [],
+    "proposal_procedures": []
   }
 ]

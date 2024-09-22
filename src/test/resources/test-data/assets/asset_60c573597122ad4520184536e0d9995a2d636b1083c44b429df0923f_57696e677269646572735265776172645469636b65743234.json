@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "60c573597122ad4520184536e0d9995a2d636b1083c44b429df0923f",
+    "asset_name": "57696e677269646572735265776172645469636b65743234",
+    "asset_name_ascii": "WingridersRewardTicket24",
+    "fingerprint": "asset1qwcjttcgv7uyx3g64tw7l8l2duxadkx74hfpxn",
+    "minting_tx_hash": "7d138191b58371e7dac89e8df6608fd1ba304ff40889dda9c5d06406500ea433",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704931200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "60c573597122ad4520184536e0d9995a2d636b1083c44b429df0923f": {
+          "WingridersRewardTicket24": {
+            "url": "https://wingriders.online",
+            "name": "WRT Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmNiHU3FqMSfX9LUwFsqmDoKQL1aF63igK4wByw4WTSpjU",
+                "name": "WingridersRewardTicket24",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmNiHU3FqMSfX9LUwFsqmDoKQL1aF63igK4wByw4WTSpjU",
+            "symbol": "WingridersRewardTicket24",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113433418
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your WRT rewards at https://wingriders.online.",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

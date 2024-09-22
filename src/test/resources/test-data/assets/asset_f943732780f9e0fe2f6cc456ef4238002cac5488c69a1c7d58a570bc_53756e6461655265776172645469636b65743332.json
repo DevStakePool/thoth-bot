@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "f943732780f9e0fe2f6cc456ef4238002cac5488c69a1c7d58a570bc",
+    "asset_name": "53756e6461655265776172645469636b65743332",
+    "asset_name_ascii": "SundaeRewardTicket32",
+    "fingerprint": "asset14fds30mfzf2uhezkrrvxknw7yq5qt33gehz8qg",
+    "minting_tx_hash": "455783034b81b18dbd06c43565ecd9f3b12458b7190703f1df0bc642fd693525",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704758400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "f943732780f9e0fe2f6cc456ef4238002cac5488c69a1c7d58a570bc": {
+          "SundaeRewardTicket32": {
+            "url": "https://sundaelabs.org",
+            "name": "SUNDAE Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmWPtMJdpShUngdpePnJpGjDiHRhtZxZn7PkPefobZJFsr",
+                "name": "SundaeRewardTicket32",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmWPtMJdpShUngdpePnJpGjDiHRhtZxZn7PkPefobZJFsr",
+            "symbol": "SundaeRewardTicket32",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113254806
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your SUNDAE rewards at https://sundaelabs.org.",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

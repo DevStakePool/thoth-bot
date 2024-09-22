@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "2c569f54737d81fa620c310aba148b00eae6ba2812f9d741b40cca21",
+    "asset_name": "5370665265776172645469636b65743234",
+    "asset_name_ascii": "SpfRewardTicket24",
+    "fingerprint": "asset1jf8cwnev8ekmkg0r36ewwqg6pwen4vmywl39jz",
+    "minting_tx_hash": "84cbb5ea620463a5e6cbef72bda89f4320afd86276c9fdb49c0bdcc4d4a53017",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705276800,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "2c569f54737d81fa620c310aba148b00eae6ba2812f9d741b40cca21": {
+          "SpfRewardTicket24": {
+            "url": "https://spectrumlabs.app",
+            "name": "SPF Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmVu9n3jcW4mkgPKPJBU7T2hLaZUQ7gwEtohSLWUpD2TKM",
+                "name": "SpfRewardTicket24",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmVu9n3jcW4mkgPKPJBU7T2hLaZUQ7gwEtohSLWUpD2TKM",
+            "symbol": "SpfRewardTicket24",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113758272
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "You can claim $SPF rewards at https://spectrumlabs.app.",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

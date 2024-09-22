@@ -4,12 +4,20 @@
     "asset_name": "01",
     "asset_name_ascii": "\u0001",
     "fingerprint": "asset19hze0nn590gfmy7p56vk8szu64kan3sk379lcp",
-    "minting_tx_hash": "ebd76c76860ba0616787cd7051f026696121eaf62243953631f6ebef6e847d07",
-    "total_supply": "99",
-    "mint_cnt": 4309,
-    "burn_cnt": 4210,
+    "minting_tx_hash": "8bebc085a4bce98302e27c51893f43edd74cb9cef0121712301d99fb758b4f7c",
+    "total_supply": "75",
+    "mint_cnt": 5400,
+    "burn_cnt": 5325,
     "creation_time": 1675296000,
-    "minting_tx_metadata": null,
+    "minting_tx_metadata": {
+      "674": {
+        "msg": [
+          "Liqwid Modify Ada Loan",
+          "Unlocked collateral: 4062.27 WMT (825.19 USD)",
+          "Net collateral locked: -825.19 USD"
+        ]
+      }
+    },
     "token_registry_metadata": {
       "url": "",
       "logo": "",

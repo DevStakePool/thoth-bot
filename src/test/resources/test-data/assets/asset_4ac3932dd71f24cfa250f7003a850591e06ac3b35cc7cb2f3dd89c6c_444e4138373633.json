@@ -4,66 +4,238 @@
     "asset_name": "444e4138373633",
     "asset_name_ascii": "DNA8763",
     "fingerprint": "asset1765qf7y7kgljrfy03ufy60h537gvw20rd455uj",
-    "minting_tx_hash": "0f4b70631f638716aa38783d59e94d45413f8c96456558e60cd0c5b0199a28b3",
+    "minting_tx_hash": "fe27fbfc172dde486c57ae9b4d550f4706312e6f132375a4188bfc85c9b62cb7",
     "total_supply": "0",
     "mint_cnt": 1,
     "burn_cnt": 1,
     "creation_time": 1659312000,
     "minting_tx_metadata": {
       "721": {
-        "version": "1.0",
-        "86480c36b1eb55b7385682b23c1fae29efeae71465afbae47eead9e1": {
-          "GTKIT8763": {
+        "4ac3932dd71f24cfa250f7003a850591e06ac3b35cc7cb2f3dd89c6c": {
+          "DNA1541": {
             "url": "https://goattribe.io/",
-            "name": "GOAT Tribe Test Kit L1",
-            "Model": "Deluxe",
-            "files": [
-              {
-                "src": "ipfs://QmSfvHXPw44B2qXTavkVkqgoQDdvrmGE74GkimkK85K27j",
-                "name": "GOAT Tribe L1 Deluxe Test Kit",
-                "mediaType": "image/png"
-              }
-            ],
-            "image": "ipfs://QmZD3MarHJJs9FZ3uWNAY5vD6japTkBiCsNDpL1x9j16Xt",
-            "Project": "GOAT Tribe: Test Kits",
-            "copyright": [
-              "copyright 2023 GOAT Tribe c/o Scapegoat Media Ltd.",
-              "All rights reserved"
-            ],
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
             "mediaType": "image/png",
-            "Kit contents": "Empty"
-          }
-        },
-        "bbb6c713c497b8a9c3390a2157bac72d730ce842b27b5672d3b3d51f": {
-          "Goatia37405": {
-            "name": "Goatia #37405",
-            "files": [
-              {
-                "src": "ipfs://QmZs276s5QjL3YM7T87JpsXSVHtc6YWX8LThe74PK14n4H",
-                "name": "Goatia #37405",
-                "mediaType": "image/png"
-              }
-            ],
-            "image": "ipfs://QmXYkpp6kwmozGCweLjMidsfssuNw98rWiaXZvoA5bzxu2",
-            "copyright": [
-              "Copyright 2023 GOAT Tribe c/o Scapegoat Media Ltd.",
-              "All rights reserved"
-            ],
+            "dNA kit model": "Deluxe"
+          },
+          "DNA2015": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
             "mediaType": "image/png",
-            "attributes": {
-              "Eyes": "Surfer's Sunrise",
-              "Breed": "Peanut",
-              "Mouth": "Moonshiner",
-              "Power": "Blizzard",
-              "Clothing": "Lava Lamp Tie",
-              "Headwear": "Goat Horns",
-              "Piercing": "Lightspeed",
-              "Skeleton": "Beige",
-              "Body Type": "Open for Business",
-              "Background": "#175988",
-              "Regression Potency": "Level 1"
-            },
-            "descendant": "GOAT Tribe 00616"
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA2181": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA2553": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA2957": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA3242": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA4425": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA4858": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA5199": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA5596": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA5914": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA6074": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA6334": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA6755": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA6983": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA7041": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA7363": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA7410": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA7593": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA7598": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L2",
+            "image": "ipfs://QmZJbjuZacyyz2URS81VL3qeEjsKaNhtj5Hwuapoxx38zC",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Super Deluxe"
+          },
+          "DNA7817": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA8142": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA8433": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA8759": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
+          },
+          "DNA8763": {
+            "url": "https://goattribe.io/",
+            "name": "GOAT Tribe DNA Kit L1",
+            "image": "ipfs://Qmai2zdFxj6fksSKdeaRVEnbjEExj9LysPnkVwiMbtNoVF",
+            "Project": "GOAT Tribe: DNA Test Kits",
+            "copyright": "© 2022 GOAT Tribe. All rights reserved.",
+            "mediaType": "image/png",
+            "dNA kit model": "Deluxe"
           }
         }
       }

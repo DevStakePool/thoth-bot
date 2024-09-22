@@ -188,7 +188,7 @@ public class TelegramFacade {
     public void sendMessageTo(Long chatId, String message) {
         SendMessage sm = new SendMessage(chatId, message)
                 .parseMode(ParseMode.HTML)
-                .disableWebPagePreview(true);
+                .disableWebPagePreview(true); // TODO use linkPreviewOptions
         SendResponse outcome = bot.execute(sm);
         if (outcome.isOk()) {
             LOG.debug("Sent message to {} with result isOk={} errorCode={} description={} ",

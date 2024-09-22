@@ -79,7 +79,7 @@ public class UserDao {
         LOG.debug("Inserted new user with key {}: {}", keyHolder.getKeyAs(Long.class), user);
     }
 
-    public void updateUserBlockHeight(Long id, Integer blockHeight) {
+    public void updateUserBlockHeight(Long id, long blockHeight) {
         int updatedNumOfRows = namedParameterJdbcTemplate.update(
                 "update users set last_block_height = :last_block_height where id = :id",
                 new MapSqlParameterSource(Map.of(

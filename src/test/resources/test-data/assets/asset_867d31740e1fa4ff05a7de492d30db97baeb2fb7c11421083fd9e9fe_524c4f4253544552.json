@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "867d31740e1fa4ff05a7de492d30db97baeb2fb7c11421083fd9e9fe",
+    "asset_name": "524c4f4253544552",
+    "asset_name_ascii": "RLOBSTER",
+    "fingerprint": "asset1tdwp5a68mgz9d4ngcn3l0k9k7smj4vjt0h2dhe",
+    "minting_tx_hash": "b9b066c1440bd6fdfd4ca62f387bb59842d93a5460ee2f522e5a1ca92b6649f9",
+    "total_supply": "100000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "867d31740e1fa4ff05a7de492d30db97baeb2fb7c11421083fd9e9fe": {
+          "RLOBSTER": {
+            "URL": "https://wenlobster.com",
+            "name": "LOBSTER REWARD",
+            "files": [
+              {
+                "src": "ipfs://QmTZHaLhw2nZGyhQrv54v25GbbcoNHxmERaGHgrCvCw6Bw",
+                "name": "RLOBSTER",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmTZHaLhw2nZGyhQrv54v25GbbcoNHxmERaGHgrCvCw6Bw",
+            "symbol": "RLOBSTER",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113550312
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "$LOBSTER Reward Token. URL: https://wenlobster.com",
+            "description": "$LOBSTER Reward Token. URL: https://wenlobster.com",
+            "totalSupply": 100000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

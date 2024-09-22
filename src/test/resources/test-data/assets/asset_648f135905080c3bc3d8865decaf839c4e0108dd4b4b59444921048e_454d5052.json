@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "648f135905080c3bc3d8865decaf839c4e0108dd4b4b59444921048e",
+    "asset_name": "454d5052",
+    "asset_name_ascii": "EMPR",
+    "fingerprint": "asset1dg5zgxrdv2whvm8aj56vcw5jw0j4yc7z9ffuf3",
+    "minting_tx_hash": "e33e6ae5a56c5b7be9a1b7cd97c08e80fc5d9ad540170b266ab18134f3f73369",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705363200,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "648f135905080c3bc3d8865decaf839c4e0108dd4b4b59444921048e": {
+          "EMPR": {
+            "URL": "https://empowatoken.com",
+            "name": "EMP Rewards Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmYuRZL82D82NbmMtMtkXqmgwxWuRCHBs52g7hGgUJDB73",
+                "name": "EMPR",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYuRZL82D82NbmMtMtkXqmgwxWuRCHBs52g7hGgUJDB73",
+            "symbol": "EMPR",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113812295
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim EMP Rewards at https://empowatoken.com",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

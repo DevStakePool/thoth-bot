@@ -1,0 +1,44 @@
+[
+  {
+    "policy_id": "20e95e3afabbb0fc8fd48b62877c83eb32325fc2dfa0b8ff046ff289",
+    "asset_name": "4c6966695265776172645469636b65743336",
+    "asset_name_ascii": "LifiRewardTicket36",
+    "fingerprint": "asset1kktzguknfeg7tv62579ds2n5z53gqh67xcj2hz",
+    "minting_tx_hash": "d5c93d4fbd41bb3e17db98965ab74ce553d751a1a0c7dd3cfbbcd6772a9ab78c",
+    "total_supply": "1000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705190400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "20e95e3afabbb0fc8fd48b62877c83eb32325fc2dfa0b8ff046ff289": {
+          "LifiRewardTicket36": {
+            "url": "https://linkagefinance.com",
+            "name": "LIFI Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmYVyp62YSNrvTX37EfvqDwfZUpfFZF13NTuaZkrgUpaf3",
+                "name": "LifiRewardTicket36",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYVyp62YSNrvTX37EfvqDwfZUpfFZF13NTuaZkrgUpaf3",
+            "symbol": "LifiRewardTicket36",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113693360
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "Claim your $LIFI rewards at https://linkagefinance.com",
+            "totalSupply": 1000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

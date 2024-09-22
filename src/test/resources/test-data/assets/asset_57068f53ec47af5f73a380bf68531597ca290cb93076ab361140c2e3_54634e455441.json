@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "57068f53ec47af5f73a380bf68531597ca290cb93076ab361140c2e3",
+    "asset_name": "54634e455441",
+    "asset_name_ascii": "TcNETA",
+    "fingerprint": "asset13dht3r8tegftwz7zw6g36mcvnuva4wae0ng9lu",
+    "minting_tx_hash": "d0002fe5e0a57ad2f2c9b39d9906c1ecb30838067c5cfda2bb42b62d05c66fa2",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705190400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "57068f53ec47af5f73a380bf68531597ca290cb93076ab361140c2e3": {
+          "TcNETA": {
+            "URL": "https://anetabtc.net",
+            "name": "cNETA Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmaTVx8eSTr191g9j4ej38ei84m5JtaWwatUjt7tUXvgE2",
+                "name": "TcNETA",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmaTVx8eSTr191g9j4ej38ei84m5JtaWwatUjt7tUXvgE2",
+            "symbol": "TcNETA",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113656944
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for cNETA Reward. Website: https://anetabtc.net",
+            "description": "Ticket for cNETA Reward. Website: https://anetabtc.net",
+            "totalSupply": 1000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

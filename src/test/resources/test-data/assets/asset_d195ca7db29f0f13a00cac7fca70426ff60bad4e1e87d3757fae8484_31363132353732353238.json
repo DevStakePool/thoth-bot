@@ -4,7 +4,7 @@
     "asset_name": "31363132353732353238",
     "asset_name_ascii": "1612572528",
     "fingerprint": "asset1da79s6ykp87a547nnq9ram9ezmac2zxrfep783",
-    "minting_tx_hash": "69c2f2f96305b5d1eb46eb5180f9dfb0409c54919d2463ae61becf34570e504a",
+    "minting_tx_hash": "587ee40dc442a7ef0ad082f78af67c3c923d35637222e487e3adbfe279a93bba",
     "total_supply": "0",
     "mint_cnt": 1,
     "burn_cnt": 1,
@@ -12,7 +12,10 @@
     "minting_tx_metadata": {
       "674": {
         "msg": [
-          "Minswap: Farm Migration"
+          "Minswap: Harvest reward"
+        ],
+        "extraData": [
+          "ADA:4233535"
         ]
       }
     },

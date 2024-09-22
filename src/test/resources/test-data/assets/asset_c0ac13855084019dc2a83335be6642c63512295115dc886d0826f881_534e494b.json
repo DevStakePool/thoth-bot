@@ -1,0 +1,43 @@
+[
+  {
+    "policy_id": "c0ac13855084019dc2a83335be6642c63512295115dc886d0826f881",
+    "asset_name": "534e494b",
+    "asset_name_ascii": "SNIK",
+    "fingerprint": "asset1eqzsq0wvywqan6cueugtcjar2zdmx5zrzqt5pv",
+    "minting_tx_hash": "ce28fdcea7252b2ba45f92586d4a96486eb48a84cccd17adc8fafb017fea33df",
+    "total_supply": "1000000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1705104000,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "c0ac13855084019dc2a83335be6642c63512295115dc886d0826f881": {
+          "SNIK": {
+            "name": "SNIK",
+            "files": [
+              {
+                "src": "ipfs://QmYVErUUngCh4amnthx4Rx9r955J4mkpxTwmQjoTnUgpfQ",
+                "name": "SNIK",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmYVErUUngCh4amnthx4Rx9r955J4mkpxTwmQjoTnUgpfQ",
+            "symbol": "SNIK",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113544867
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "description": "",
+            "totalSupply": 1000000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

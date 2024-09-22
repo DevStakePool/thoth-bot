@@ -1,0 +1,81 @@
+[
+  {
+    "policy_id": "e0302560ced2fdcbfcb2602697df970cd0d6a38f94b32703f51c312b",
+    "asset_name": "000de140edf88e246e798b3f94a47673392bf02140a589b01d7fc26b8b0d6c66",
+    "asset_name_ascii": "\\355\\370\\216$ny\\213?\\224\\244vs9+\\360!@\\245\\211\\260\u001d\u007f\\302k\\213\rlf",
+    "fingerprint": "asset1n4pry4rleh4g4vfuu6waw4tvz2x0ra600uafll",
+    "minting_tx_hash": "e1e8a3abecfa25e28d51831bc6b22eb1b6985227cf4fa5306ebeec68cd9383b9",
+    "total_supply": "1",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1715212800,
+    "minting_tx_metadata": null,
+    "token_registry_metadata": null,
+    "cip68_metadata": {
+      "222": {
+        "fields": [
+          {
+            "map": [
+              {
+                "k": {
+                  "bytes": "6e616d65"
+                },
+                "v": {
+                  "bytes": "4144412f574d542053756e646165207633204c6971756964697479"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "696d616765"
+                },
+                "v": {
+                  "bytes": "697066733a2f2f516d58785236675a6f756666364a634653756d726955624c4d67557356647a65586971337a7770644b794c657837"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "6d6564696154797065"
+                },
+                "v": {
+                  "bytes": "696d6167652f6a706567"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "646563696d616c73"
+                },
+                "v": {
+                  "int": 0
+                }
+              },
+              {
+                "k": {
+                  "bytes": "75726c"
+                },
+                "v": {
+                  "bytes": "68747470733a2f2f73756e6461652e6669"
+                }
+              },
+              {
+                "k": {
+                  "bytes": "76657273696f6e"
+                },
+                "v": {
+                  "int": 1
+                }
+              }
+            ]
+          },
+          {
+            "int": 1
+          },
+          {
+            "fields": [],
+            "constructor": 0
+          }
+        ],
+        "constructor": 0
+      }
+    }
+  }
+]

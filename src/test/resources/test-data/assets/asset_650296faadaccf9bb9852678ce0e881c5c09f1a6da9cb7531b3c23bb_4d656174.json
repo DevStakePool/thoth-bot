@@ -1,0 +1,30 @@
+[
+  {
+    "policy_id": "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb",
+    "asset_name": "4d656174",
+    "asset_name_ascii": "Meat",
+    "fingerprint": "asset1wnwu2x6x23gk6ypn77xntyh0h40anhc682jyah",
+    "minting_tx_hash": "a5c383d9476e20dbd9ac2d4efccd9286fee406c6f985fee54b7de36a440f1cb3",
+    "total_supply": "100000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1648684800,
+    "minting_tx_metadata": {
+      "721": {
+        "650296faadaccf9bb9852678ce0e881c5c09f1a6da9cb7531b3c23bb": {
+          "Meat": {
+            "name": "Meat",
+            "image": "ipfs://QmU2kRNEUa5AMjs6Fme6aiDebyZCSXyxcKLaDLhq7TwfWF",
+            "sha256": "5e86e19abef664930af9a70189e636a62592a0e9161ae8b9ecf7faa1931ebd37",
+            "mediaType": "image/png",
+            "description": [
+              "The edible remains of an organic lifeform. Quite nutritious."
+            ]
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

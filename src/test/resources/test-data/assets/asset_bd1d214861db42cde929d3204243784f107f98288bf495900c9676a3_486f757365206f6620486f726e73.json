@@ -4,32 +4,31 @@
     "asset_name": "486f757365206f6620486f726e73",
     "asset_name_ascii": "House of Horns",
     "fingerprint": "asset16km4w2zcsatz2h4uyavk4hu3zc20mf6mdkp6xx",
-    "minting_tx_hash": "c36a3f7ba46f71e18e15622b2cbaece0dfe2d3173779e7245383701e4e6e5106",
-    "total_supply": "2013",
-    "mint_cnt": 4,
-    "burn_cnt": 797,
+    "minting_tx_hash": "cdbc89dbcd4ac698c432b29224e82e001241ddd9260531984387d296e4a5f8f2",
+    "total_supply": "1668",
+    "mint_cnt": 5,
+    "burn_cnt": 1133,
     "creation_time": 1664150400,
     "minting_tx_metadata": {
       "721": {
-        "nonce": "8afe8ba913783cf1",
-        "0626d331edf9787e34274faedd5e49d93ba00b16e3f795fef934fc2c": {
-          "HOH_DOTD_4941": {
-            "name": "DOTD | The Insidious Bloodline and the Winding Maze",
-            "Title": "The Insidious Bloodline and the Winding Maze",
+        "version": "1.0",
+        "bd1d214861db42cde929d3204243784f107f98288bf495900c9676a3": {
+          "House of Horns": {
+            "name": "House of Horns",
             "files": [
               {
-                "src": "ipfs://QmWN3j6WwXoSZp17DCrbNqjngPNHDguFGGFobK7D1s1gzy",
-                "name": "HOH DOTD License Agreement",
-                "mediaType": "application/pdf"
+                "src": [
+                  "ipfs://bafybeicyl5ozp5n62mkcvv7mddcweiqgm5cuaz5xtqpxre2kvnsuwvtm",
+                  "2m"
+                ],
+                "name": "House of Horns",
+                "mediaType": "video/mp4"
               }
             ],
-            "image": "ipfs://QmV1mgTvihEhNQ3f25gM4Q7MyZoLfpJTU1ztpyHjK7mb59",
-            "Vessel": "Winding Maze",
-            "Identity": "Insidious Bloodline",
-            "Substrate": "Ageless Palette of Civilization",
-            "mediaType": "image/png",
-            "Backdrop Features": "Nothing",
-            "Deliberate Imperfection": "Nothing"
+            "image": "bafybeifpp2noreoqjwdjjf2w4l5bghuncvbedmdouhfx52x7fydrq3cyga",
+            "Credits": "Smithy_3D",
+            "Twitter": "twitter.com/HouseofHornsNFT",
+            "Description": "Token for minting House of Horns Genesis Collection"
           }
         }
       }

@@ -1,0 +1,45 @@
+[
+  {
+    "policy_id": "6e30b702dff799efe8d7f33fb548fc69a6e525b96c6377f7462a756c",
+    "asset_name": "544c51",
+    "asset_name_ascii": "TLQ",
+    "fingerprint": "asset13uq5nh0tv7xwcxqj933fycz4maz36qvqs9x8sq",
+    "minting_tx_hash": "f232e3346fa3c962237c0ea012d0ca6e050ccc20e02f031a588c0e8332364220",
+    "total_supply": "10000000",
+    "mint_cnt": 1,
+    "burn_cnt": 0,
+    "creation_time": 1704758400,
+    "minting_tx_metadata": {
+      "721": {
+        "version": "1.0",
+        "6e30b702dff799efe8d7f33fb548fc69a6e525b96c6377f7462a756c": {
+          "TLQ": {
+            "URL": "https://liqwid-reward.com",
+            "name": "Liqwid Reward Ticket",
+            "files": [
+              {
+                "src": "ipfs://QmY1fYPmNLk6iJikV5PbgZ63LyKAZc1hp2zt5eDNbPRaHa",
+                "name": "TLQ",
+                "mediaType": "image/png"
+              }
+            ],
+            "image": "ipfs://QmY1fYPmNLk6iJikV5PbgZ63LyKAZc1hp2zt5eDNbPRaHa",
+            "symbol": "TLQ",
+            "minting": {
+              "type": "time-lock-policy",
+              "blockchain": "cardano",
+              "mintedBeforeSlotNumber": 113242977
+            },
+            "mediaType": "image/png",
+            "tokenType": "token",
+            "Description": "Ticket for LIQWID reward. Website: https://liqwid-reward.com",
+            "description": "Ticket for LIQWID reward. Website: https://liqwid-reward.com",
+            "totalSupply": 10000000
+          }
+        }
+      }
+    },
+    "token_registry_metadata": null,
+    "cip68_metadata": null
+  }
+]

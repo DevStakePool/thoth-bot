@@ -21,12 +21,15 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class KoiosDataBuilder {
     private static final Logger LOG = LoggerFactory.getLogger(KoiosDataBuilder.class);
 
-    private static final String TX_INFO_JSON_FILE = "test-data/txs_info.json";
+    private static final String TX_INFO_FOLDER = "test-data/txs";
     private static final String ACCOUNT_ADDRESSES_JSON_FILE = "test-data/account_addresses.json";
     private static final String ACCOUNT_REWARDS_341_JSON_FILE = "test-data/account_rewards_341.json";
     private static final String ACCOUNT_REWARDS_369_JSON_FILE = "test-data/account_rewards_369.json";
@@ -47,19 +50,24 @@ public class KoiosDataBuilder {
     private static final String ISSUES_DATA_FOLDER = "test-data/issues";
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
-        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(TX_INFO_JSON_FILE).getFile();
-        File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-
-        List<TxInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
-        });
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = classLoader.getResource(TX_INFO_FOLDER).getFile();
+        File txsFolder = new File(f);
+        File[] txInfoFiles = txsFolder.listFiles((dir, name) -> name.endsWith(".json"));
+        List<TxInfo> data = new ArrayList<>();
+        if (txInfoFiles != null) {
+            for (File txInfoFile : txInfoFiles) {
+                data.addAll(mapper.readValue(txInfoFile, new TypeReference<>() {
+                }));
+            }
+        }
 
         // Read issues related data
         f = classLoader.getResource(ISSUES_DATA_FOLDER).getFile();
         File fromIssues = new File(f);
-        File[] txInfoFiles = fromIssues.listFiles((dir, name) -> name.endsWith("txs_info.json"));
+        txInfoFiles = fromIssues.listFiles((dir, name) -> name.endsWith("txs_info.json"));
         if (txInfoFiles != null) {
             for (File txInfo : txInfoFiles) {
                 data.addAll(mapper.readValue(txInfo, new TypeReference<>() {
@@ -67,7 +75,8 @@ public class KoiosDataBuilder {
             }
         }
 
-        return data;
+        // Make sure there are no TX duplicates
+        return Arrays.asList(data.stream().collect(Collectors.toMap(TxInfo::getTxHash, t -> t, (p, q) -> p)).values().toArray(new TxInfo[0]));
     }
 
     public static List<AccountAddress> getAccountAddressesTestData() throws IOException {
