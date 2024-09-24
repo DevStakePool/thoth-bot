@@ -13,6 +13,7 @@ import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.common.UTxO;
+import rest.koios.client.backend.api.governance.model.DRepInfo;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
@@ -46,6 +47,7 @@ public class KoiosDataBuilder {
     private static final String ASSET_INFORMATION_PREFIX_JSON_FILE = "test-data/assets/asset_";
     private static final String THOTH_NFTS_STAKE_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_stake.json";
     private static final String THOTH_NFTS_FFA_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_free_for_all.json";
+    private static final String DREP_INFO_JSON_FILE = "test-data/drep_info.json";
 
     private static final String ISSUES_DATA_FOLDER = "test-data/issues";
 
@@ -146,6 +148,19 @@ public class KoiosDataBuilder {
 
         List<AccountRewards> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
+        return data;
+    }
+
+    public static List<DRepInfo> getAllDrepInfo() throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = classLoader.getResource(DREP_INFO_JSON_FILE).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        List<DRepInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+
         return data;
     }
 

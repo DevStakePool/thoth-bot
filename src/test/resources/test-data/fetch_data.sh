@@ -124,6 +124,16 @@ do
   download_assets "txs/${tx_file}"
 done
 
+echo "Fetching Drep information"
+DREP_LIST=$(grep  -R drep1 --include=*.json  | awk '{print $3}')
+DREP_LIST=${DREP_LIST::-1} # remove last comma
+
+curl -s -X POST "https://api.koios.rest/api/v1/drep_info" \
+ -H "accept: application/json"\
+ -H "content-type: application/json" \
+ -d "{\"_drep_ids\":[${DREP_LIST}]}" | jq > drep_info.json
+
 echo "Fetching all assets for addresses and stake accounts"
 download_assets account_assets.json
 download_assets address_assets.json
+

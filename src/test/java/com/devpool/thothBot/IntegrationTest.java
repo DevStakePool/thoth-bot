@@ -196,6 +196,7 @@ public class IntegrationTest {
         Assertions.assertTrue(params.get("text").toString().contains("Rewards: 156.35"));
         Assertions.assertTrue(params.get("text").toString().contains("$0x616461"));
         Assertions.assertTrue(params.get("text").toString().contains("Total Balance: 3,037.79"));
+        Assertions.assertTrue(params.get("text").toString().contains("drep_always_abstain")); // The DRep name
     }
 
     @Test
