@@ -85,6 +85,6 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public GovernanceService getGovernanceService() {
-        return null;
+        return new GovernanceServiceDouble();
     }
 }

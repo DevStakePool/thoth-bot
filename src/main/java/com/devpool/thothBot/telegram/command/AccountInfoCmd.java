@@ -6,6 +6,7 @@ import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
 import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
+import com.devpool.thothBot.telegram.model.DrepMetadata;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
@@ -13,8 +14,11 @@ import com.pengrad.telegrambot.request.SendMessage;
 import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.base.Result;
@@ -31,6 +35,9 @@ import java.util.stream.Collectors;
 public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AccountInfoCmd.class);
     public static final String CMD_PREFIX = "/info";
+    private static final String DREP_HASH_PREFIX = "drep1";
+
+    private RestTemplate restTemplate;
 
     @Override
     public boolean canTrigger(String username, String message) {
@@ -55,7 +62,8 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     private ExecutorService executorService = Executors.newFixedThreadPool(6,
             new CustomizableThreadFactory("InfoCommandWorker"));
 
-    public AccountInfoCmd() {
+    public AccountInfoCmd(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
     }
 
     @PreDestroy
@@ -95,7 +103,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
             // Retrieval pool names
             List<String> allStakePools = accountInfoList.stream().map(AccountInfo::getDelegatedPool)
-                    .filter(Objects::nonNull).collect(Collectors.toList());
+                    .filter(Objects::nonNull).distinct().collect(Collectors.toList());
 
             Map<String, String> poolNames = new HashMap<>();
             allStakePools.forEach(p -> poolNames.put(p, extractPoolName(null, p))); // Let's first get defaults
@@ -112,8 +120,42 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                 LOG.warn("Cannot retrieve pool information: {}", e, e);
             }
 
+            // Retrieve Dreps info
+            List<String> allDreps = accountInfoList.stream().map(AccountInfo::getDelegatedDrep)
+                    .filter(Objects::nonNull).distinct().collect(Collectors.toList());
+            Map<String, String> drepNames = new HashMap<>();
+            allDreps.forEach(d -> drepNames.put(d, shortenDrepHash(d)));
+            try {
+                var drepResp = this.koiosFacade.getKoiosService().getGovernanceService()
+                        .getDRepsInfo(allDreps.stream()
+                                .filter(d -> d.startsWith(DREP_HASH_PREFIX))
+                                .collect(Collectors.toList()), null);
+                if (drepResp.isSuccessful()) {
+                    for (var drep : drepResp.getValue()) {
+                        var drepUrl = drep.getUrl();
+                        if (drepUrl != null) {
+                            LOG.debug("Drep {} has the url {}", drep.getDrepId(), drepUrl);
+                            try {
+                                ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(drepUrl, DrepMetadata.class);
+                                if (entity.getStatusCode().equals(HttpStatus.OK) &&
+                                        entity.getBody() != null &&
+                                        entity.getBody().getBody().getGivenName() != null) {
+                                    LOG.debug("Got a DRep name {} for ID {}", entity.getBody().getBody().getGivenName(), drep.getDrepId());
+                                    drepNames.put(drep.getDrepId(), entity.getBody().getBody().getGivenName());
+                                }
+                            } catch (Exception e) {
+                                LOG.warn("Can't get drep metadata from URL {} due to {}", drepUrl, e.toString());
+                            }
+                        }
+                    }
+                } else
+                    LOG.warn("Cannot retrieve drep information due to {}", drepResp.getResponse());
+            } catch (ApiException e) {
+                LOG.warn("Cannot retrieve drep information: {}", e, e);
+            }
+
             StringBuilder sb = new StringBuilder();
-            renderAccountInformation(sb, accountInfoList, poolNames, handles, latestCardanoPriceUsd, stakingAddr);
+            renderAccountInformation(sb, accountInfoList, poolNames, handles, latestCardanoPriceUsd, stakingAddr, drepNames);
             renderAddressInformation(sb, addressInfoList, handles, latestCardanoPriceUsd, normalAddr);
 
             bot.execute(new SendMessage(update.message().chat().id(), sb.toString())
@@ -129,6 +171,13 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     "There was a problem retrieving the requested information. Please try again later"));
 
         }
+    }
+
+    private String shortenDrepHash(String drepHash) {
+        if (drepHash.startsWith(DREP_HASH_PREFIX))
+            return DREP_HASH_PREFIX + "..." + drepHash.substring(drepHash.length() - 8);
+
+        return drepHash;
     }
 
     private void renderAddressInformation(StringBuilder messageBuilder, List<AddressInfo> addressInfoList,
@@ -197,7 +246,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
     private void renderAccountInformation(StringBuilder messageBuilder, List<AccountInfo> accountInfoList,
                                           Map<String, String> poolNames, Map<String, String> handles, Double latestCardanoPriceUsd,
-                                          List<String> addresses) {
+                                          List<String> addresses, Map<String, String> drepNames) {
 
         // Koios could send empty results if data is not cached (new address)
         List<String> unresolvedAddresses = addresses.stream()
@@ -215,12 +264,23 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
             if (accountInfo.getDelegatedPool() != null) {
                 String poolName = poolNames.get(accountInfo.getDelegatedPool());
-                messageBuilder.append(EmojiParser.parseToUnicode(":white_small_square: "))
+                messageBuilder.append(EmojiParser.parseToUnicode(":classical_building: "))
                         .append("<a href=\"")
                         .append(CARDANO_SCAN_STAKE_POOL)
                         .append(accountInfo.getDelegatedPool())
                         .append("\">")
                         .append(poolName).append("</a>\n");
+            }
+
+            if (accountInfo.getDelegatedDrep() != null) {
+                String drepFullHash = accountInfo.getDelegatedDrep();
+                messageBuilder.append(EmojiParser.parseToUnicode(":scales: "))
+                        .append("<a href=\"")
+                        .append(GOV_TOOLS_DREP)
+                        .append(drepFullHash)
+                        .append("\">")
+                        .append(drepNames.get(drepFullHash))
+                        .append("</a>\n");
             }
 
             double cardanoBalanceUsd = -1;
