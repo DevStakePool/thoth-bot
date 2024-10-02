@@ -342,6 +342,19 @@ public class IntegrationTest {
         Assertions.assertTrue(message.contains("DEV -3"));
         Assertions.assertTrue(message.contains("Sent -126.00"));
 
+        // TX with DRep delegation to always abstain
+        message = retrieveMessageByString(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+                "9c4ece21935395a36c64234ccd4937ee06404c6d292fa9317b08986af0aca599");
+        Assertions.assertTrue(message.contains("Internal Funds"));
+        Assertions.assertTrue(message.contains("Delegated to")); // Pool delegation
+        Assertions.assertTrue(message.contains("DRep delegation to drep_always_abstain"));
+
+        // TX with DRep delegation to valid DRep
+        message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
+                "5ef51012dcaa1811606a97f200892c0545d034ee45d1ae3651da62a863d25f72");
+        Assertions.assertTrue(message.contains("Internal Funds"));
+        Assertions.assertTrue(message.contains("DRep delegation to"));
+        Assertions.assertTrue(message.contains("drep1g0g4ntlgxfnanvtqaa405y3ruszqyfhx46snptktzwg8xvtce0u"));
         // TX sent funds, sent many assets
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
                 "0554d580306ccdab5267f17110d91d55ee048d971353feb64525e20ef2a5abbe");
