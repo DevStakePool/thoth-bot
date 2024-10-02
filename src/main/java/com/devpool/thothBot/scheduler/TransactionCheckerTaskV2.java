@@ -38,11 +38,14 @@ import java.util.stream.Collectors;
 @ConfigurationProperties("thoth.dapps")
 public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TransactionCheckerTaskV2.class);
-    private static final String DELEGATION_CERTIFICATE = "pool_delegation";
+    private static final String POOL_DELEGATION_CERTIFICATE = "pool_delegation";
+    private static final String DREP_DELEGATION_CERTIFICATE = "vote_delegation";
     private static final String BLOCK_HEIGHT_FIELD = "block_height";
     private static final int MAX_TX_IN_TELEGRAM_NOTIFICATION = 3;
 
     private static final double EPSILON = 0.00001d;
+    private static final String JSON_POOL_BECH32 = "pool_id_bech32";
+    private static final String JSON_DREP_ID = "drep_id";
 
     @Value("${thoth.test.allow-jumbo-message}")
     private Boolean allowJumboMessage;
@@ -380,14 +383,17 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         // Check for certificates in case it's a delegation TX
         String delegateToPoolName = null;
         String delegateToPoolId = null;
+        String delegationDrepId = null;
+        String delegationDrepName = null;
         if (txType == TxType.TX_INTERNAL && txInfo.getCertificates() != null && !txInfo.getCertificates().isEmpty()) {
             LOG.debug("The TX {} has {} certificates", txInfo.getTxHash(), txInfo.getCertificates().size());
-            Optional<TxCertificate> delegationCertOpt = txInfo.getCertificates().stream().filter(c -> c.getType().equals(DELEGATION_CERTIFICATE)).findFirst();
-            if (delegationCertOpt.isEmpty())
-                LOG.debug("None of the TX {} certificates are of type {}", txInfo.getTxHash(), DELEGATION_CERTIFICATE);
+            Optional<TxCertificate> poolDelegationCertOpt = txInfo.getCertificates().stream().filter(c -> c.getType().equals(POOL_DELEGATION_CERTIFICATE)).findFirst();
+            if (poolDelegationCertOpt.isEmpty())
+                LOG.debug("None of the TX {} certificates are of type {}", txInfo.getTxHash(), POOL_DELEGATION_CERTIFICATE);
             else {
                 Options options = Options.builder().option(Limit.of(DEFAULT_PAGINATION_SIZE)).option(Offset.of(0)).build();
-                delegateToPoolId = delegationCertOpt.get().getInfo().getPoolIdBech32();
+                var poolCertInfo = poolDelegationCertOpt.get().getInfo();
+                delegateToPoolId = poolCertInfo.get(JSON_POOL_BECH32).asText();
                 LOG.debug("New delegation for TX {} on pool-id {}", txInfo.getTxHash(), delegateToPoolId);
                 List<PoolInfo> poolInfoList = null;
 
@@ -398,8 +404,19 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 } catch (ApiException e) {
                     LOG.warn("Cannot retrieve pool information: {}", e, e);
                 }
-
                 delegateToPoolName = getPoolName(poolInfoList, delegateToPoolId);
+            }
+
+            // Drep delegation
+            Optional<TxCertificate> drepDelegationCertOpt = txInfo.getCertificates().stream().filter(c -> c.getType().equals(DREP_DELEGATION_CERTIFICATE)).findFirst();
+            if (drepDelegationCertOpt.isEmpty())
+                LOG.debug("None of the TX {} certificates are of type {}", txInfo.getTxHash(), DREP_DELEGATION_CERTIFICATE);
+            else {
+                var drepCertInfo = drepDelegationCertOpt.get().getInfo();
+                delegationDrepId = drepCertInfo.get(JSON_DREP_ID).asText();
+
+                var drepNames = getDrepNames(List.of(delegationDrepId));
+                delegationDrepName = drepNames.getOrDefault(delegationDrepId, "error");
             }
         }
 
@@ -428,7 +445,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
         StringBuilder sb = new StringBuilder();
         renderSingleTransactionMessage(sb, txInfo, allAssets, txType, latestCardanoPriceUsd, fee,
-                receivedOrSentFunds, delegateToPoolName, delegateToPoolId, metadataMessage, totalWithdrawals);
+                receivedOrSentFunds, delegateToPoolName, delegateToPoolId, metadataMessage, totalWithdrawals,
+                delegationDrepId, delegationDrepName);
         return sb;
     }
 
@@ -487,11 +505,12 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
         return totalWithdrawals;
     }
+
     private StringBuilder renderSingleTransactionMessage(StringBuilder messageBuilder, TxInfo txInfo,
                                                          Map<Asset, Number> allAssets, TxType txType,
                                                          Double latestCardanoPriceUsd, Double fee, double receivedOrSentFunds,
                                                          String delegateToPoolName, String delegateToPoolId, String metadataMessage,
-                                                         double totalWithdrawals) {
+                                                         double totalWithdrawals, String delegationDrepId, String delegationDrepName) {
 
         String fundsTokenText = "";
         // Check how many received and sent tokens we have (negative is sent, positive is received)
@@ -587,7 +606,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             }
         }
 
-        // delegation?
+        // delegation to pool?
         if (delegateToPoolName != null && delegateToPoolId != null) {
             messageBuilder
                     .append(EmojiParser.parseToUnicode("\n:classical_building:"))
@@ -598,6 +617,23 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                     .append("\">")
                     .append(delegateToPoolName)
                     .append("</a>");
+        }
+
+        // delegation to drep?
+        if (delegationDrepId != null && delegationDrepName != null) {
+            messageBuilder
+                    .append(EmojiParser.parseToUnicode("\n:scales: "))
+                    .append(" DRep delegation to ");
+            if (delegationDrepId.startsWith(DREP_HASH_PREFIX)) {
+                messageBuilder.append("<a href=\"")
+                        .append(GOV_TOOLS_DREP)
+                        .append(delegationDrepId)
+                        .append("\">");
+            }
+            messageBuilder.append(delegationDrepName);
+            if (delegationDrepId.startsWith(DREP_HASH_PREFIX)) {
+                messageBuilder.append("</a>");
+            }
         }
 
         // Message on metadata?

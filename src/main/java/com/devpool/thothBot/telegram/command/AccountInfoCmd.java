@@ -35,9 +35,6 @@ import java.util.stream.Collectors;
 public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
     private static final Logger LOG = LoggerFactory.getLogger(AccountInfoCmd.class);
     public static final String CMD_PREFIX = "/info";
-    private static final String DREP_HASH_PREFIX = "drep1";
-
-    private RestTemplate restTemplate;
 
     @Override
     public boolean canTrigger(String username, String message) {
@@ -61,10 +58,6 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
     private ExecutorService executorService = Executors.newFixedThreadPool(6,
             new CustomizableThreadFactory("InfoCommandWorker"));
-
-    public AccountInfoCmd(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-    }
 
     @PreDestroy
     public void shutdown() {
@@ -123,36 +116,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
             // Retrieve Dreps info
             List<String> allDreps = accountInfoList.stream().map(AccountInfo::getDelegatedDrep)
                     .filter(Objects::nonNull).distinct().collect(Collectors.toList());
-            Map<String, String> drepNames = new HashMap<>();
-            allDreps.forEach(d -> drepNames.put(d, shortenDrepHash(d)));
-            try {
-                var drepResp = this.koiosFacade.getKoiosService().getGovernanceService()
-                        .getDRepsInfo(allDreps.stream()
-                                .filter(d -> d.startsWith(DREP_HASH_PREFIX))
-                                .collect(Collectors.toList()), null);
-                if (drepResp.isSuccessful()) {
-                    for (var drep : drepResp.getValue()) {
-                        var drepUrl = drep.getUrl();
-                        if (drepUrl != null) {
-                            LOG.debug("Drep {} has the url {}", drep.getDrepId(), drepUrl);
-                            try {
-                                ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(drepUrl, DrepMetadata.class);
-                                if (entity.getStatusCode().equals(HttpStatus.OK) &&
-                                        entity.getBody() != null &&
-                                        entity.getBody().getBody().getGivenName() != null) {
-                                    LOG.debug("Got a DRep name {} for ID {}", entity.getBody().getBody().getGivenName(), drep.getDrepId());
-                                    drepNames.put(drep.getDrepId(), entity.getBody().getBody().getGivenName());
-                                }
-                            } catch (Exception e) {
-                                LOG.warn("Can't get drep metadata from URL {} due to {}", drepUrl, e.toString());
-                            }
-                        }
-                    }
-                } else
-                    LOG.warn("Cannot retrieve drep information due to {}", drepResp.getResponse());
-            } catch (ApiException e) {
-                LOG.warn("Cannot retrieve drep information: {}", e, e);
-            }
+            var drepNames = getDrepNames(allDreps);
 
             StringBuilder sb = new StringBuilder();
             renderAccountInformation(sb, accountInfoList, poolNames, handles, latestCardanoPriceUsd, stakingAddr, drepNames);
@@ -171,13 +135,6 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                     "There was a problem retrieving the requested information. Please try again later"));
 
         }
-    }
-
-    private String shortenDrepHash(String drepHash) {
-        if (drepHash.startsWith(DREP_HASH_PREFIX))
-            return DREP_HASH_PREFIX + "..." + drepHash.substring(drepHash.length() - 8);
-
-        return drepHash;
     }
 
     private void renderAddressInformation(StringBuilder messageBuilder, List<AddressInfo> addressInfoList,

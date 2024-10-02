@@ -5,14 +5,19 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
+import com.devpool.thothBot.telegram.model.DrepMetadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.common.Asset;
+import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
 import java.nio.charset.StandardCharsets;
@@ -24,6 +29,7 @@ import java.util.stream.Collectors;
  * Abstract checker task component holding generic data and utilities
  */
 public abstract class AbstractCheckerTask {
+    protected static final String DREP_HASH_PREFIX = "drep1";
     private static final Logger LOG = LoggerFactory.getLogger(AbstractCheckerTask.class);
     public static final int MAX_MSG_PAYLOAD_SIZE = 4096 - 512;
 
@@ -34,7 +40,6 @@ public abstract class AbstractCheckerTask {
     public static final String CARDANO_SCAN_ADDR_KEY = "https://cardanoscan.io/address/";
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
     public static final String GOV_TOOLS_DREP = "https://gov.tools/drep_directory/";
-
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
 
     protected static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
@@ -50,6 +55,9 @@ public abstract class AbstractCheckerTask {
     protected AssetFacade assetFacade;
     @Value("${thoth.users-batch-size:100}")
     protected Integer usersBatchSize;
+    @Autowired
+    protected RestTemplate restTemplate;
+
 
     protected String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
         if (poolAddress == null) return null;
@@ -174,6 +182,41 @@ public abstract class AbstractCheckerTask {
         return handlesMap;
     }
 
+    protected Map<String, String> getDrepNames(List<String> drepIds) {
+        Map<String, String> drepNames = new HashMap<>();
+        drepIds.forEach(d -> drepNames.put(d, shortenDrepHash(d)));
+        try {
+            var drepResp = this.koiosFacade.getKoiosService().getGovernanceService()
+                    .getDRepsInfo(drepIds.stream()
+                            .filter(d -> d.startsWith(DREP_HASH_PREFIX))
+                            .collect(Collectors.toList()), null);
+            if (drepResp.isSuccessful()) {
+                for (var drep : drepResp.getValue()) {
+                    var drepUrl = drep.getUrl();
+                    if (drepUrl != null) {
+                        LOG.debug("Drep {} has the url {}", drep.getDrepId(), drepUrl);
+                        try {
+                            ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(drepUrl, DrepMetadata.class);
+                            if (entity.getStatusCode().equals(HttpStatus.OK) &&
+                                    entity.getBody() != null &&
+                                    entity.getBody().getBody().getGivenName() != null) {
+                                LOG.debug("Got a DRep name {} for ID {}", entity.getBody().getBody().getGivenName(), drep.getDrepId());
+                                drepNames.put(drep.getDrepId(), entity.getBody().getBody().getGivenName());
+                            }
+                        } catch (Exception e) {
+                            LOG.warn("Can't get drep metadata from URL {} due to {}", drepUrl, e.toString());
+                        }
+                    }
+                }
+            } else
+                LOG.warn("Cannot retrieve drep information due to {}", drepResp.getResponse());
+        } catch (ApiException e) {
+            LOG.warn("Cannot retrieve drep information: {}", e, e);
+        }
+
+        return drepNames;
+    }
+
     public static String hexToAscii(String assetName, String policyId) {
         StringBuilder output = new StringBuilder();
         boolean isHandle = policyId.equals(AssetFacade.ADA_HANDLE_POLICY_ID);
@@ -187,5 +230,12 @@ public abstract class AbstractCheckerTask {
         } else {
             return "..." + assetName.substring(Math.abs(assetName.length() - 10));
         }
+    }
+
+    protected String shortenDrepHash(String drepHash) {
+        if (drepHash.startsWith(DREP_HASH_PREFIX))
+            return DREP_HASH_PREFIX + "..." + drepHash.substring(drepHash.length() - 8);
+
+        return drepHash;
     }
 }
