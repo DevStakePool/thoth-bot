@@ -231,13 +231,18 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
             if (accountInfo.getDelegatedDrep() != null) {
                 String drepFullHash = accountInfo.getDelegatedDrep();
-                messageBuilder.append(EmojiParser.parseToUnicode(":scales: "))
-                        .append("<a href=\"")
-                        .append(GOV_TOOLS_DREP)
-                        .append(drepFullHash)
-                        .append("\">")
-                        .append(drepNames.get(drepFullHash))
-                        .append("</a>\n");
+                messageBuilder.append(EmojiParser.parseToUnicode(":scales: "));
+                if (drepFullHash.startsWith(DREP_HASH_PREFIX)) {
+                    messageBuilder.append("<a href=\"")
+                            .append(GOV_TOOLS_DREP)
+                            .append(drepFullHash)
+                            .append("\">");
+                }
+                messageBuilder.append(drepNames.get(drepFullHash));
+                if (drepFullHash.startsWith(DREP_HASH_PREFIX)) {
+                    messageBuilder.append("</a>");
+                }
+                messageBuilder.append("\n");
             }
 
             double cardanoBalanceUsd = -1;
