@@ -10,12 +10,14 @@ public class User {
     private String address;
     private Integer lastBlockHeight;
     private Integer lastEpochNumber;
+    private Long lastGovVotesBlockTime;
 
-    public User(Long chatId, String address, Integer blockNumber, Integer lastEpochNumber) {
+    public User(Long chatId, String address, Integer blockNumber, Integer lastEpochNumber, Long lastGovVotesBlockTime) {
         this.chatId = chatId;
         this.address = address;
         this.lastBlockHeight = blockNumber;
         this.lastEpochNumber = lastEpochNumber;
+        this.lastGovVotesBlockTime = lastGovVotesBlockTime;
     }
 
     public User() {
@@ -24,10 +26,12 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "chatId=" + chatId +
+                "id=" + id +
+                ", chatId=" + chatId +
                 ", address='" + address + '\'' +
                 ", lastBlockHeight=" + lastBlockHeight +
                 ", lastEpochNumber=" + lastEpochNumber +
+                ", lastGovVotesBlockTime=" + lastGovVotesBlockTime +
                 '}';
     }
 
@@ -85,5 +89,13 @@ public class User {
 
     public static boolean isNormalAddress(String address) {
         return !isStakingAddress(address);
+    }
+
+    public Long getLastGovVotesBlockTime() {
+        return lastGovVotesBlockTime;
+    }
+
+    public void setLastGovVotesBlockTime(Long lastGovVotesBlockTime) {
+        this.lastGovVotesBlockTime = lastGovVotesBlockTime;
     }
 }

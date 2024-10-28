@@ -19,20 +19,24 @@ public class SchedulerController {
     private static final Logger LOG = LoggerFactory.getLogger(SchedulerController.class);
     private ScheduledExecutorService executorService;
 
-    @Autowired
-    private TransactionCheckerTaskV2 transactionCheckerTask;
-
-    @Autowired
-    private StakingRewardsCheckerTask stakingRewardsCheckerTask;
-
-    @Autowired
-    private SubscriptionManager subscriptionManager;
+    final private TransactionCheckerTaskV2 transactionCheckerTask;
+    final private StakingRewardsCheckerTask stakingRewardsCheckerTask;
+    final private SubscriptionManager subscriptionManager;
+    final private GovernanceVotesCheckerTask governanceVotesCheckerTask;
 
     @Value("${thoth.disable-scheduler:false}")
     private Boolean disableScheduler;
 
     @Value("${thoth.disable-subscription-manager:false}")
     private Boolean disableSubscriptionManager;
+
+    public SchedulerController(TransactionCheckerTaskV2 transactionCheckerTask, StakingRewardsCheckerTask stakingRewardsCheckerTask,
+                               SubscriptionManager subscriptionManager, GovernanceVotesCheckerTask governanceVotesCheckerTask) {
+        this.transactionCheckerTask = transactionCheckerTask;
+        this.stakingRewardsCheckerTask = stakingRewardsCheckerTask;
+        this.subscriptionManager = subscriptionManager;
+        this.governanceVotesCheckerTask = governanceVotesCheckerTask;
+    }
 
     @PostConstruct
     public void post() {
@@ -45,6 +49,7 @@ public class SchedulerController {
         } else {
             this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 10 * 60, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.governanceVotesCheckerTask, 10, 60 * 60, TimeUnit.SECONDS);
         }
 
         if (Boolean.TRUE.equals(this.disableSubscriptionManager)) {

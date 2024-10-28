@@ -43,15 +43,15 @@ public class IntegrationNoSchedulerTest {
     private static List<User> TEST_USERS = new ArrayList<>();
 
     static {
-        TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
-        TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0));
-        //TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0)); // Reserved for Thoth NFTs tests
-        TEST_USERS.add(new User(-2L, "stake1uxj8rc5aa4xkaejwmvx4gskyje6c283v7a7l6dyz5q2qjmqyxuqx9", 0, 0)); // Not present
-        TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0));
-        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0));
-        TEST_USERS.add(new User(-4L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0));
-        TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0));
-        TEST_USERS.add(new User(-1000L, "addr1q9pzugshkxdrtcmnwppsevp6s5709j4n4ud6q7yhj5ra8e2crqz3h0a46kcklgdaa4dfhdmjhgzy64tam76dxg68t55s9ua0sz", 0, 0)); // Not present
+        TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0, 0L));
+        TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0, 0L));
+        //TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0, 0L)); // Reserved for Thoth NFTs tests
+        TEST_USERS.add(new User(-2L, "stake1uxj8rc5aa4xkaejwmvx4gskyje6c283v7a7l6dyz5q2qjmqyxuqx9", 0, 0, 0L)); // Not present
+        TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0, 0L));
+        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0, 0L));
+        TEST_USERS.add(new User(-4L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0, 0L));
+        TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0, 0L));
+        TEST_USERS.add(new User(-1000L, "addr1q9pzugshkxdrtcmnwppsevp6s5709j4n4ud6q7yhj5ra8e2crqz3h0a46kcklgdaa4dfhdmjhgzy64tam76dxg68t55s9ua0sz", 0, 0, 0L)); // Not present
     }
 
     @MockBean
@@ -813,7 +813,7 @@ public class IntegrationNoSchedulerTest {
     @Test
     void longTextMultiTxTest() throws Exception {
         Map<String, String> handles = Collections.emptyMap();
-        User user = new User(1000L, "XYZ_Address", 999, 999);
+        User user = new User(1000L, "XYZ_Address", 999, 999, 0L);
         List<StringBuilder> txBuilders = new ArrayList<>();
         txBuilders.add(createText("A"));
         txBuilders.add(createText("B"));
@@ -837,7 +837,7 @@ public class IntegrationNoSchedulerTest {
     @Test
     void longTextSingleTxTest() throws Exception {
         Map<String, String> handles = Collections.emptyMap();
-        User user = new User(1000L, "XYZ_Address", 999, 999);
+        User user = new User(1000L, "XYZ_Address", 999, 999, 0L);
         List<StringBuilder> txBuilders = new ArrayList<>();
         txBuilders.add(createText("A").append(createText("B")).append(createText("C")));
         transactionCheckerTaskV2.notifyTelegramUser(txBuilders, user, handles);
