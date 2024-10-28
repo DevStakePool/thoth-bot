@@ -148,7 +148,8 @@ public class AddressCmd implements IBotCommand {
 
             userDao.addNewUser(
                     new User(update.message().chat().id(),
-                            addr, tipResult.getValue().getBlockNo(), tipResult.getValue().getEpochNo()));
+                            addr, tipResult.getValue().getBlockNo(), tipResult.getValue().getEpochNo(),
+                            System.currentTimeMillis() / 1000));
 
             bot.execute(new SendMessage(update.message().chat().id(),
                     String.format("Thank you %s! From now on you will receive updates every time a transaction appears or when you receive funds", name)));

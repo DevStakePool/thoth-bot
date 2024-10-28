@@ -81,7 +81,7 @@ public class AssetFacade implements Runnable {
     }
 
     public void refreshAssetsForUserNow(String addr) {
-        this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, addr, -1, -1), this.koiosFacade));
+        this.usersExecutorService.submit(new UserScannerWorker(new User(-1L, addr, -1, -1, 0L), this.koiosFacade));
     }
 
     public String getAssetDisplayName(String policyId, String assetName) throws ApiException {
