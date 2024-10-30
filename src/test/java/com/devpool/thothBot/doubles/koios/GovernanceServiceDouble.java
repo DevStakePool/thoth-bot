@@ -45,7 +45,12 @@ public class GovernanceServiceDouble implements GovernanceService {
 
     @Override
     public Result<List<DRepVote>> getDRepsVotes(String drepId, Options options) throws ApiException {
-        return null;
+        try {
+            List<DRepVote> allDrepVotes = KoiosDataBuilder.getDrepVotes(drepId);
+            return Result.<List<DRepVote>>builder().code(200).response("").successful(true).value(allDrepVotes).build();
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override

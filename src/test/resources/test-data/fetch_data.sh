@@ -133,6 +133,13 @@ curl -s -X POST "https://api.koios.rest/api/v1/drep_info" \
  -H "content-type: application/json" \
  -d "{\"_drep_ids\":[${DREP_LIST}]}" | jq > drep_info.json
 
+echo "Fetching Drep votes"
+for drep in ` egrep -o -R 'drep1[a-Z0-9]+' --include=*.json | awk -vFS=':' '{print $2}' | sort | uniq`
+do
+  curl -s -X GET "https://api.koios.rest/api/v1/drep_votes?_drep_id=${drep}" \
+   -H "accept: application/json" | jq > gov/drep_votes_${drep}.json
+done
+
 echo "Fetching all assets for addresses and stake accounts"
 download_assets account_assets.json
 download_assets address_assets.json

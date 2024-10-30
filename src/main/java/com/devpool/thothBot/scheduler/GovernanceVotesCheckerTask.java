@@ -145,7 +145,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
 
         for (var vote : drepVotes) {
             sb.append(EmojiParser.parseToUnicode(":small_blue_diamond: "))
-                    .append("<a hrep=\"")
+                    .append("Gov Action <a hrep=\"")
                     .append(String.format(GOV_TOOLS_PROPOSAL, vote.getProposalTxHash(), vote.getProposalIndex()))
                     .append("\">")
                     .append(vote.getProposalTxHash().substring(vote.getProposalTxHash().length() - 8))

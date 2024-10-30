@@ -39,7 +39,7 @@ public abstract class AbstractCheckerTask {
     public static final String CARDANO_SCAN_STAKE_KEY = "https://cardanoscan.io/stakekey/";
     public static final String CARDANO_SCAN_ADDR_KEY = "https://cardanoscan.io/address/";
     public static final String CARDANO_SCAN_STAKE_POOL = "https://cardanoscan.io/pool/";
-    public static final String GOV_TOOLS_DREP = "https://gov.tools/drep_directory/";
+    public static final String GOV_TOOLS_DREP = "https://cardanoscan.io/dRep/";
     public static final String GOV_TOOLS_PROPOSAL = "https://gov.tools/connected/governance_actions/%s#%d";
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
 
