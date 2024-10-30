@@ -14,6 +14,7 @@ import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.governance.model.DRepInfo;
+import rest.koios.client.backend.api.governance.model.DRepVote;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
@@ -21,10 +22,12 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class KoiosDataBuilder {
@@ -48,6 +51,7 @@ public class KoiosDataBuilder {
     private static final String THOTH_NFTS_STAKE_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_stake.json";
     private static final String THOTH_NFTS_FFA_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_free_for_all.json";
     private static final String DREP_INFO_JSON_FILE = "test-data/drep_info.json";
+    private static final String DREP_VOTES_FOLDER = "test-data/gov";
 
     private static final String ISSUES_DATA_FOLDER = "test-data/issues";
 
@@ -278,7 +282,7 @@ public class KoiosDataBuilder {
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = classLoader.getResource(ISSUES_DATA_FOLDER).getFile();
+        String f = Objects.requireNonNull(classLoader.getResource(ISSUES_DATA_FOLDER)).getFile();
         File fromIssues = new File(f);
         File[] utxosFiles = fromIssues.listFiles((dir, name) -> name.endsWith("account_utxos.json"));
         if (utxosFiles != null) {
@@ -293,5 +297,18 @@ public class KoiosDataBuilder {
 
     public static List<UTxO> getUTxOsForAddress() throws IOException {
         return getUTxOsFromFile(ADDRESSES_UTXOS_JSON_FILE);
+    }
+
+    public static List<DRepVote> getDrepVotes(String drepId) throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        LOG.info("Reading drep votes for ID {}", drepId);
+        String file = DREP_VOTES_FOLDER + "/drep_votes_" + drepId + ".json";
+        String f = Objects.requireNonNull(classLoader.getResource(file)).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        return mapper.readValue(jsonFile, new TypeReference<>() {
+        });
     }
 }

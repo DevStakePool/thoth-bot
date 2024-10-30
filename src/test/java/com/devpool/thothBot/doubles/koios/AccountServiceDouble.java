@@ -48,7 +48,7 @@ public class AccountServiceDouble implements AccountService {
 
     @Override
     public Result<List<UTxO>> getAccountUTxOs(List<String> addresses, boolean extended, Options options) throws ApiException {
-        Integer offset = Integer.parseInt(options.toMap().getOrDefault(OptionType.OFFSET.name().toLowerCase(), "0"));
+        int offset = Integer.parseInt(options.toMap().getOrDefault(OptionType.OFFSET.name().toLowerCase(), "0"));
         if (offset > 0) {
             return Result.<List<UTxO>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
         }
