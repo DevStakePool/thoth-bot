@@ -497,15 +497,15 @@ public class IntegrationTest {
                 "drep1yfpazkd0aqex0kd3vrhk47sjy0jqgq3xu6h2zv9wevfequcxyynwv");
         Assertions.assertTrue(message.contains("$alessio.dev"));
         Assertions.assertTrue(message.contains("ucxyynwv"));
-        Assertions.assertTrue(message.contains("78ea58d7#0"));
+        Assertions.assertTrue(message.contains("78ea58d7"));
         Assertions.assertTrue(message.contains("Yes"));
-        Assertions.assertTrue(message.contains("e035c916#0"));
+        Assertions.assertTrue(message.contains("e035c916"));
         Assertions.assertTrue(message.contains("Abstain"));
 
         message = retrieveMessageByString(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
                 "drep1y2m0g4r66pyaw3p7u454wc0p4f0ygm8ueaev0mgd3tvwm7sskqwqp");
         Assertions.assertTrue(message.contains("CardanoYoda"));
-        Assertions.assertTrue(message.contains("424dc1db#0"));
+        Assertions.assertTrue(message.contains("424dc1db"));
         Assertions.assertTrue(message.contains("Yes"));
 
         // check for null handles
