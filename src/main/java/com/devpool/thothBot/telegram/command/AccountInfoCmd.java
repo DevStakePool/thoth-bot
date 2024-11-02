@@ -233,7 +233,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
                 String drepFullHash = accountInfo.getDelegatedDrep();
                 messageBuilder.append(EmojiParser.parseToUnicode(":scales: "));
                 if (drepFullHash.startsWith(DREP_HASH_PREFIX)) {
-                    messageBuilder.append("<a href=\"")
+                    messageBuilder.append("DRep <a href=\"")
                             .append(GOV_TOOLS_DREP)
                             .append(drepFullHash)
                             .append("\">");
