@@ -16,6 +16,8 @@ import rest.koios.client.backend.factory.options.Options;
 import rest.koios.client.backend.factory.options.filters.Filter;
 import rest.koios.client.backend.factory.options.filters.FilterType;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -94,7 +96,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
         }
 
         var drepNames = super.getDrepNames(batchDreps.values().stream().distinct().collect(Collectors.toList()));
-
+        var handles = super.getAdaHandleForAccount(batchDreps.keySet().toArray(new String[0]));
         for (var user : batchDreps.entrySet()) {
             var drepName = drepNames.get(user.getValue());
             LOG.trace("Processing votes for user {} with drep {} (name {})",
@@ -126,7 +128,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
                         user.getKey(), user.getValue(), drepName, drepVotes.size());
 
                 userDao.updateUserGovVotesBlockTime(userEntity.getId(), currentTs);
-                renderUserNotification(userEntity, user.getValue(), drepName, drepVotes);
+                renderUserNotification(userEntity, user.getValue(), drepName, drepVotes, handles);
             } catch (ApiException e) {
                 LOG.warn("Can't check governance votes for user {} and drep {} due to {}",
                         user.getKey(), user.getValue(), e, e);
@@ -134,18 +136,24 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
         }
     }
 
-    private void renderUserNotification(User user, String drepId, String drepName, List<DRepVote> drepVotes) {
+    private void renderUserNotification(User user, String drepId, String drepName, List<DRepVote> drepVotes, Map<String, String> handles) {
         StringBuilder sb = new StringBuilder();
         sb.append(EmojiParser.parseToUnicode(":memo: The DRep <a href=\""))
                 .append(GOV_TOOLS_DREP)
                 .append(drepId)
                 .append("\">")
                 .append(drepName)
-                .append("</a> has voted:\n");
+                .append("</a> followed by ")
+                .append("<href=\"")
+                .append(CARDANO_SCAN_STAKE_KEY)
+                .append(user.getAddress())
+                .append("\">")
+                .append(handles.get(user.getAddress()))
+                .append("</a>, has voted:\n");
 
         for (var vote : drepVotes) {
             sb.append(EmojiParser.parseToUnicode(":small_blue_diamond: "))
-                    .append("Gov Action <a hrep=\"")
+                    .append("Action <a hrep=\"")
                     .append(String.format(GOV_TOOLS_PROPOSAL, vote.getProposalTxHash(), vote.getProposalIndex()))
                     .append("\">")
                     .append(vote.getProposalTxHash().substring(vote.getProposalTxHash().length() - 8))
@@ -154,7 +162,9 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
                     .append("</a>")
                     .append(EmojiParser.parseToUnicode(" :arrow_right: "))
                     .append(vote.getVote())
-                    .append("\n");
+                    .append(" (<i>")
+                    .append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(vote.getBlockTime(), 0, ZoneOffset.UTC)))
+                    .append("</i>)\n");
         }
 
         this.telegramFacade.sendMessageTo(user.getChatId(), sb.toString());
