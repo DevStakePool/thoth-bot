@@ -144,7 +144,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
                 .append("\">")
                 .append(drepName)
                 .append("</a> followed by ")
-                .append("<href=\"")
+                .append("<a href=\"")
                 .append(CARDANO_SCAN_STAKE_KEY)
                 .append(user.getAddress())
                 .append("\">")
@@ -153,12 +153,10 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
 
         for (var vote : drepVotes) {
             sb.append(EmojiParser.parseToUnicode(":small_blue_diamond: "))
-                    .append("Action <a hrep=\"")
-                    .append(String.format(GOV_TOOLS_PROPOSAL, vote.getProposalTxHash(), vote.getProposalIndex()))
+                    .append("Action <a href=\"")
+                    .append(String.format(GOV_TOOLS_PROPOSAL, vote.getProposalId()))
                     .append("\">")
                     .append(vote.getProposalTxHash().substring(vote.getProposalTxHash().length() - 8))
-                    .append("#")
-                    .append(vote.getProposalIndex())
                     .append("</a>")
                     .append(EmojiParser.parseToUnicode(" :arrow_right: "))
                     .append(vote.getVote())
