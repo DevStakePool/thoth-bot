@@ -37,7 +37,6 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
     @Override
     public void run() {
         LOG.info("Checking for new governance votes");
-        Map<String, List<DRepVote>> votesCache = new HashMap<>();
 
         try {
 
@@ -51,7 +50,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
                 List<User> usersBatch = batchIterator.next();
                 LOG.debug("Processing users batch size {}", usersBatch.size());
 
-                processUserBatch(usersBatch, votesCache);
+                processUserBatch(usersBatch);
             }
         } catch (Exception e) {
             LOG.error("Caught throwable while checking governance votes", e);
@@ -60,7 +59,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
         }
     }
 
-    private void processUserBatch(List<User> usersBatch, Map<String, List<DRepVote>> votesCache) {
+    private void processUserBatch(List<User> usersBatch) {
         // 1. for the batch, grab the cached info and get the drep they delegate (if any)
         // 2. for each user, check the drep votes (cache it locally in case more users are delegating to the same drep)
         // 2.1 check if there are new votes since last time we checked (last gov votes block time)
@@ -105,30 +104,27 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
             var userEntity = usersBatch.stream()
                     .filter(u -> u.getAddress().equals(user.getKey())).findAny().orElseThrow();
             try {
-                List<DRepVote> drepVotes = votesCache.get(user.getValue());
                 long currentTs = System.currentTimeMillis() / 1000;
 
-                // Not in cache?
-                if (drepVotes == null) {
-                    // We get the new votes only
-                    var filteredOptions = Options.builder()
-                            .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                            .option(Offset.of(0))
-                            .option(Filter.of(FIELD_BLOCK_TIME, FilterType.GT, userEntity.getLastGovVotesBlockTime().toString()))
-                            .build();
-                    var response = koiosFacade.getKoiosService().getGovernanceService().getDRepsVotes(user.getValue(), filteredOptions);
-                    if (!response.isSuccessful())
-                        throw new ApiException("response was not successful.");
+                // We get the new votes only
+                var filteredOptions = Options.builder()
+                        .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                        .option(Offset.of(0))
+                        .option(Filter.of(FIELD_BLOCK_TIME, FilterType.GT, userEntity.getLastGovVotesBlockTime().toString()))
+                        .build();
+                var response = koiosFacade.getKoiosService().getGovernanceService().getDRepsVotes(user.getValue(), filteredOptions);
+                if (!response.isSuccessful())
+                    throw new ApiException("response was not successful.");
 
-                    drepVotes = response.getValue();
-                    votesCache.put(user.getValue(), drepVotes);
+                var drepVotes = response.getValue();
+
+                if (!drepVotes.isEmpty()) {
+                    LOG.debug("The user {} follows the drep {} (name {}) and got {} new vote(s)",
+                            user.getKey(), user.getValue(), drepName, drepVotes.size());
+
+                    userDao.updateUserGovVotesBlockTime(userEntity.getId(), currentTs);
+                    renderUserNotification(userEntity, user.getValue(), drepName, drepVotes, handles);
                 }
-
-                LOG.debug("The user {} follows the drep {} (name {}) and got {} new vote(s)",
-                        user.getKey(), user.getValue(), drepName, drepVotes.size());
-
-                userDao.updateUserGovVotesBlockTime(userEntity.getId(), currentTs);
-                renderUserNotification(userEntity, user.getValue(), drepName, drepVotes, handles);
             } catch (ApiException e) {
                 LOG.warn("Can't check governance votes for user {} and drep {} due to {}",
                         user.getKey(), user.getValue(), e, e);
