@@ -13,6 +13,7 @@ import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
 import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.common.UTxO;
+import rest.koios.client.backend.api.epoch.model.EpochInfo;
 import rest.koios.client.backend.api.governance.model.DRepInfo;
 import rest.koios.client.backend.api.governance.model.DRepVote;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
@@ -52,7 +53,7 @@ public class KoiosDataBuilder {
     private static final String THOTH_NFTS_FFA_JSON_FILE = "test-data/thoth-assets/thoth_nfts_template_free_for_all.json";
     private static final String DREP_INFO_JSON_FILE = "test-data/drep_info.json";
     private static final String DREP_VOTES_FOLDER = "test-data/gov";
-
+    private static final String EPOCH_INFORMATION_JSON_FILE = "test-data/epoch_information.json";
     private static final String ISSUES_DATA_FOLDER = "test-data/issues";
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
@@ -105,6 +106,18 @@ public class KoiosDataBuilder {
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
 
         List<PoolInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+        return data;
+    }
+
+    public static List<EpochInfo> getEpochInformationTestData() throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = classLoader.getResource(EPOCH_INFORMATION_JSON_FILE).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+
+        List<EpochInfo> data = mapper.readValue(jsonFile, new TypeReference<>() {
         });
         return data;
     }

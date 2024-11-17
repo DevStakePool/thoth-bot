@@ -20,6 +20,7 @@ public class TelegramUtils {
     private static final String ASSETS_CMD_JSON = "test-data/json/assets-cmd.json";
     private static final String DETAILS_CMD_JSON = "test-data/json/details-cmd.json";
     private static final String NOTIFY_ALL_CMD_JSON = "test-data/json/notifyall-cmd.json";
+    private static final String EPOCH_CMD_JSON = "test-data/json/epoch-cmd.json";
 
     private static final Gson GSON = new Gson();
 
@@ -58,6 +59,12 @@ public class TelegramUtils {
 
     public static Update buildInfoCommandUpdate(String chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(INFO_CMD_JSON,
+                j -> j.replace("$chat_id", chatId));
+        return resp.updates().get(0);
+    }
+
+    public static Update buildEpochCommandUpdate(String chatId) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(EPOCH_CMD_JSON,
                 j -> j.replace("$chat_id", chatId));
         return resp.updates().get(0);
     }

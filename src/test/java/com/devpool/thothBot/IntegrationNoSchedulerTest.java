@@ -104,6 +104,9 @@ public class IntegrationNoSchedulerTest {
     private AssetsCmd assetsCmd;
 
     @Autowired
+    private EpochCmd epochCmd;
+
+    @Autowired
     private AssetsListCmd assetsListCmd;
 
     @Autowired
@@ -204,6 +207,31 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
         Assertions.assertTrue(params.get("text").toString().contains("CardanoYoda")); // DRep with name
         Assertions.assertTrue(params.get("text").toString().contains("drep1...")); // DRep without name
+    }
+
+    @Test
+    public void userCommandEpochInfoTest() throws Exception {
+        // Testing Info command
+        Update epochCommandUpdate = TelegramUtils.buildEpochCommandUpdate("-2");
+        this.epochCmd.execute(epochCommandUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        Assertions.assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.get(0);
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        Assertions.assertEquals((long) -2, params.get("chat_id"));
+        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("ADA price"));
+        Assertions.assertTrue(params.get("text").toString().contains("TXs count: 161116"));
+        Assertions.assertTrue(params.get("text").toString().contains("Epoch 522"));
+        Assertions.assertTrue(params.get("text").toString().contains("Total stake: 22.3B"));
     }
 
     @Test

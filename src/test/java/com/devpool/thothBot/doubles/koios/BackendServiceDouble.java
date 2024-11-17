@@ -45,7 +45,7 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public EpochService getEpochService() {
-        return null;
+        return new EpochServiceDouble();
     }
 
     @Override

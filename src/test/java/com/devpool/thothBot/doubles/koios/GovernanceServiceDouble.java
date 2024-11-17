@@ -4,7 +4,6 @@ import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.governance.GovernanceService;
 import rest.koios.client.backend.api.governance.model.*;
-import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.factory.options.Options;
 
 import java.io.IOException;
