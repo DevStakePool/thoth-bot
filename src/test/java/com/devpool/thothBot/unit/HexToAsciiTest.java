@@ -3,14 +3,7 @@ package com.devpool.thothBot.unit;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
-import rest.koios.client.backend.api.account.model.AccountAsset;
-import rest.koios.client.backend.api.base.common.Asset;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;

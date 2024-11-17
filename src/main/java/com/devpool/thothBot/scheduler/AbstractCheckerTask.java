@@ -20,6 +20,7 @@ import rest.koios.client.backend.api.base.common.Asset;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
+import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -198,7 +199,7 @@ public abstract class AbstractCheckerTask {
                     if (drepUrl != null) {
                         LOG.debug("Drep {} has the url {}", drep.getDrepId(), drepUrl);
                         try {
-                            ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(drepUrl, DrepMetadata.class);
+                            ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(new URI(drepUrl), DrepMetadata.class);
                             if (entity.getStatusCode().equals(HttpStatus.OK) &&
                                     entity.getBody() != null &&
                                     entity.getBody().getBody().getGivenName() != null) {
