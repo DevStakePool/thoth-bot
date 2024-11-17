@@ -1,0 +1,115 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a401010327200621582062cd833d452140d707717681245507508bcda3afae92c4e500a57e7cb7324fa1"
+        },
+        "signature": {
+          "@value": "845829a201276761646472657373581c43d159afe83267d9b160ef6afa1223e4040226e6aea130aecb139073a166686173686564f458445665726966792044526570206472657031673067346e746c6778666e616e767471616134303579337275737a71796668783436736e70746b747a776738787674636530755840fb9f3e86b481504b70e35d7d803f1da786932facc8a270355648a7f4938d11f6c08a197f1833c0ca59c36e146bd8f3b4be53536e0b9607c06d1dae60235d010e"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Cardano SPO and DRep"
+    },
+    "email": {
+      "@value": "Empty"
+    },
+    "givenName": {
+      "@value": "PRIDE"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmVbB2Tk7aM3sautj1tm553Y9ehMy8mDjJxVQ9FE6zcjWf",
+      "sha256": "6a01f6212ffbc463723b576f796bd8a0655eb0b6b2b1ceddba515ac291b9bb7d"
+    },
+    "motivations": {
+      "@value": "Empty"
+    },
+    "objectives": {
+      "@value": "A steward of Decentralization. Protect the treasury. Focus on Impact. "
+    },
+    "paymentAddress": {
+      "@value": "Empty"
+    },
+    "qualifications": {
+      "@value": "Empty"
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "X"
+        },
+        "uri": {
+          "@value": "https://x.com/StakeWithPride"
+        }
+      }
+    ]
+  }
+}

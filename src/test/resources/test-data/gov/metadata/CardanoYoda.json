@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "CardanoYoda",
+    "motivations": "I've been a dedicated supporter of Cardano since its inception in 2017. Over the years, I've introduced many people to the project. My primary mission within the ecosystem is education. You can find my posts on the X platform.\n\nI feel a strong sense of duty to become a DRep and help enhance the decentralization of Cardano.",
+    "objectives": "As a DRep, I am committed to upholding core blockchain principles such as decentralization, liveness, security, immutability, and sustainability.\n\nIn this role, I recognize the importance of long-term economic sustainability, especially as governance bodies make decisions regarding ADA withdrawals from the treasury.\n\nI will always vote with Cardano's long-term economic sustainability in mind.\n",
+    "paymentAddress": "addr1qy90heutmu9xwssk63uk4v7jjrnaqtwwg377v5t3x9cerrnd5jt4a9xpr98a44vwvty9xq6lkv2t0pjz7gpdpczd49dqhk86wd",
+    "qualifications": "With 20 years of experience as a programmer, I've specialized in building telecommunications and embedded systems, focusing heavily on protocols throughout my career.\n\nI've been part of the Cardano community since 2017 and have served as a Cardano ambassador for a significant period. This year, I also joined Intersect.\n\nIntersect chose me as one of the DRep training leaders. I possess a strong understanding of governance. ",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X account",
+        "uri": "https://x.com/JaromirTesar"
+      },
+      {
+        "@type": "Identity",
+        "label": "Jaromir Tesar",
+        "uri": "https://raw.githubusercontent.com/Satuchac/DRep/main/DREP_CardanoYoda.vision"
+      }
+    ]
+  }
+}

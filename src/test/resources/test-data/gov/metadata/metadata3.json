@@ -1,0 +1,141 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "givenName": "CIP119:givenName",
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "doNotList": "CIP119:doNotList",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a4010103272006215820eb17e7f34b6f3341aa5ac6825abc18c3f20ccde8b0b7b38b27101abcd4078475"
+        },
+        "signature": {
+          "@value": "845829a201276761646472657373581c58ef68bf4f9140d6e67e3ea49e466e3896e0009475c7ccb986258736a166686173686564f4584456657269667920445265702064726570317472686b333036306a39716464656e3738366a6675336e77387a7477717179357768727565777678796b726e7665673738756d5840dba08def8785ecdb8f133490b6e6ddac8c1e4207120b8b309fc41d52b39a492f3015f859c6b3ac0ce4059887744f9953751d07834c1e9a6c30e82c6974f22e02"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Intersect Budget. Cardano Ambassador. GM Cardano Host. "
+    },
+    "doNotList": {
+      "@value": "false"
+    },
+    "email": {
+      "@value": "lloydduhon@gmail.com"
+    },
+    "givenName": {
+      "@value": "LloydDuhon"
+    },
+    "motivations": {
+      "@value": "My motivation to serve as a Cardano DREP stems from a deep-rooted passion for decentralized governance and a commitment to Cardano's transformative potential. As a long-standing community member, I've witnessed our ecosystem's growth and challenges firsthand.\n\nMy diverse roles—from hosting the GM Cardano podcast to serving on the Intersect Budget Committee and Cardano Civics Committee—have instilled in me a comprehensive understanding of our community's needs and aspirations. This multifaceted experience fuels my drive to bridge gaps between various stakeholders and ensure that every voice is heard in our governance process.\n\nMy ultimate goal is to help Cardano realize its full potential as a catalyst for positive global change. By serving as a DREP, I aim to contribute to a governance model that is truly representative, efficient, and aligned with our community's values and vision for the future.\n"
+    },
+    "objectives": {
+      "@value": "As a Cardano Ambassador, podcast host, and leader in multiple ecosystem organizations, I believe in Cardano's potential to revolutionize global systems through decentralized governance. My diverse roles have given me a comprehensive understanding of our ecosystem's challenges and opportunities.\nAs a DRep, I aim to:\n\n1. Enhance community engagement through education and inclusive decision-making.\n2. Ensure responsible treasury fund allocation, leveraging my expertise.\n3. Champion transparent and ethical governance practices.\n4. Foster collaboration between Cardano entities, bridging gaps and creating synergies.\n5. Represent diverse community voices in governance decisions.\n6. Drive real-world adoption of Cardano technology.\n7. Safeguard the network's long-term sustainability and decentralization.\n\nI bring a unique blend of technical knowledge, governance experience, and community connection. My involvement in many committees and community groups equips me to make informed decisions."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8n0l04t2cec8l9wc3qhrz0znax2377rv66paltqujv8zfq20aa6r78tnm0emlucna2ggf43qwzzdh2g4630fwz7mw6q9s3nsv"
+    },
+    "qualifications": {
+      "@value": "1. Cardano Ambassador: Officially recognized advocate for the Cardano ecosystem.\n2. Host of GM Cardano: Communicating complex Cardano concepts to a wide audience, staying current on developments.\n3. Member of Intersect: Shaping Cardano's development through participation in a key ecosystem organization.\n4. Subject matter expert Intersect Budget Committee.\n5. Member Cardano Civics Committee.\n6. Observer to the board of directors of Intersect: Oversight and strategic input at the highest organizational level.\n7. Co-Founder and elected secretary of the Community Advisory Body to Intersect: Leadership in creating structures for community representation.\n8. C-suite experience inside and outside Cardano ecosystem: Brings high-level management and strategic planning skills to the role.\n9. Extensive network within the Cardano community: Well-connected to various stakeholders, facilitating collaboration and information exchange.\n10. Proven track record of community engagement and leadership"
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "DRep Repository"
+        },
+        "uri": {
+          "@value": "https://github.com/LloydDuhon/dRep/tree/main"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "X Profile"
+        },
+        "uri": {
+          "@value": "https://x.com/radioastro"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Cardano Forum"
+        },
+        "uri": {
+          "@value": "https://forum.cardano.org/u/lloydduhon"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "LinkedIn Profile"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/lloyd-duhon/"
+        }
+      }
+    ]
+  }
+}

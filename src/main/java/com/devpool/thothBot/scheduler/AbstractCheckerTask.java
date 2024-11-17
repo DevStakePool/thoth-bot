@@ -5,7 +5,7 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
-import com.devpool.thothBot.telegram.model.DrepMetadata;
+import com.devpool.thothBot.model.model.DrepMetadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -189,7 +189,8 @@ public abstract class AbstractCheckerTask {
         try {
             var drepResp = this.koiosFacade.getKoiosService().getGovernanceService()
                     .getDRepsInfo(drepIds.stream()
-                            .filter(d -> d.startsWith(DREP_HASH_PREFIX))
+                            .filter(d -> d.startsWith
+                                    (DREP_HASH_PREFIX))
                             .collect(Collectors.toList()), null);
             if (drepResp.isSuccessful()) {
                 for (var drep : drepResp.getValue()) {
@@ -202,7 +203,7 @@ public abstract class AbstractCheckerTask {
                                     entity.getBody() != null &&
                                     entity.getBody().getBody().getGivenName() != null) {
                                 LOG.debug("Got a DRep name {} for ID {}", entity.getBody().getBody().getGivenName(), drep.getDrepId());
-                                drepNames.put(drep.getDrepId(), entity.getBody().getBody().getGivenName());
+                                drepNames.put(drep.getDrepId(), entity.getBody().getBody().getGivenName().toString());
                             }
                         } catch (Exception e) {
                             LOG.warn("Can't get drep metadata from URL {} due to {}", drepUrl, e.toString());

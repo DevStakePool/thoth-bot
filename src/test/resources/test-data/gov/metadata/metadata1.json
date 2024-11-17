@@ -1,0 +1,115 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a401010327200621582098df127f839ea39917fd9f78b866b657e1c498d82a94b29ce93b7fc4b8017b47"
+        },
+        "signature": {
+          "@value": "845846a2012767616464726573735839014f57f5a4f79c6701995a1e92202af1a3464cfaaa307966f662aac8896d1bc1a7d1620c56cc336528b084ce23b47b66015b663786f5b799d5a166686173686564f5581c0fe9c1e415633dded13c1cde1dbf665242e3647dece3ced6d98e817058402399fa535d3fd6a5567262e371a56ba67319bb6a566eef668a98a0ee8007c0d1f2c36c2a351ea9e05278d89e6dd06270dafb4b45079d98a8ce5b86ec2875ec0c"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Since joining Cardano in 2017, I have been at the forefront of promoting its adoption in the real world. Shortly after joining, I made our hotel in Barcelona the first business in the world to accept ADA, establishing a deep connection between our establishment and the Cardano ecosystem. Over the years, we've given the hotel a distinct Cardano identity, with branded keychains, staff uniforms, artwork, and more.  Located in the vibrant city of Barcelona, our hotel has become a central hub for the Cardano community, hosting over 10 events, including two support events for the Cardano Summit. As the host of \"The Cardano Hotel Podcast,\" I have recorded over 100 episodes in collaboration with around 10 other ecosystem members, fostering a platform for dialogue and growth. Additionally, I've partnered with CardanoSpot on another podcast and recently launched Media3, an ambitious project aimed at creating multiple YouTube channels featuring innovative shows that blend Cardano content with existing television game show formats."
+    },
+    "email": {
+      "@value": "alfredmoesker@gmail.com"
+    },
+    "givenName": {
+      "@value": "Alfred Moesker"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmcKy6egg2eTc1bKvjQGMKhHTeWh2fFNbgCTTfi6mL35A8",
+      "sha256": "d005397de50e97b0f6153f75eaf2ff8cf027a2ef5b157a16178ab917fa824b76"
+    },
+    "motivations": {
+      "@value": "From the moment I joined Cardano in 2017, my primary motivation has been to be a part of a global movement that redefines how people engage with technology and one another. I believe in Cardano's potential to create a more equitable world by offering everyone, regardless of their background or location, equal opportunities through its unique technology. This vision aligns with my personal values of fairness, inclusivity, and innovation. I am passionate about using my skills and experience to help build a decentralized future where new rules of engagement empower individuals and communities globally."
+    },
+    "objectives": {
+      "@value": "Develop Innovative Marketing Platforms: Create and launch new marketing platforms to promote Cardano globally, leveraging innovative content formats and channels, such as game shows and podcasts, to increase awareness and adoption of the Cardano ecosystem.\n\nSupport Sustainable Ecosystem Growth as a DRep: As a Delegated Representative (DRep), ensure that all funding decisions prioritize projects with comprehensive business plans that clearly demonstrate their potential to contribute to the growth and sustainability of the Cardano ecosystem. Advocate for responsible allocation of ADA from the Treasury to maximize the impact and benefits for the global Cardano community.\n\nFoster Community Engagement: Organize and host events, workshops, and podcasts that engage the Cardano community, encourage collaboration among ecosystem members, and provide platforms for sharing knowledge and promoting innovation.\n\nExpand Media3’s Reach and Impact: Launch and manage multiple YouTube channels under Media3, combining Cardano-related content with popular media formats to attract a broader audience and create a bridge between mainstream media and blockchain education."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9840ady77wxwqvetg0fygp27x35vn864gc8jehkv24v3ztdr0q605tzp3tvcvm99zcgfn3rk3akvq2mvcmcdadhn82se7rqak"
+    },
+    "qualifications": {
+      "@value": "Successful Entrepreneurial Background: With 30 years of experience, I built a multi-million-dollar company from the ground up, which has equipped me with the skills to identify strategic opportunities, make responsible business decisions, and drive sustainable growth.\n\nPioneer in Cardano Adoption: As the first business owner to accept ADA as payment, I have been a leader in integrating Cardano into real-world use cases, demonstrating my commitment to its ecosystem and its expansion.\n\nExpert in Marketing and Community Engagement: Through hosting over 100 episodes of \"The Cardano Hotel Podcast\" and organizing multiple Cardano events, I have developed strong marketing strategies that increase visibility and foster community engagement for Cardano worldwide.\n\nStrategic Decision-Maker as a DRep: My experience and business acumen provide a solid foundation for ensuring that funding decisions within the Cardano ecosystem are based on sound business plans, benefiting the ecosystem's growth and sustainability.\n\nInnovative Content Creator: With Media3, I aim to innovate how Cardano is presented to a global audience, combining blockchain education with popular media formats, reflecting my ability to create unique and effective marketing channels."
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "@bigezdaddy2017"
+        },
+        "uri": {
+          "@value": "www.media3.io"
+        }
+      }
+    ]
+  }
+}

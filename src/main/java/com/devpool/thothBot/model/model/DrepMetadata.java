@@ -1,4 +1,4 @@
-package com.devpool.thothBot.telegram.model;
+package com.devpool.thothBot.model.model;
 
 public class DrepMetadata {
     private Body body;
