@@ -15,24 +15,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
-public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
+public class AssetsCmd extends AbstractSubscriptionSelectionCmd {
     private static final Logger LOG = LoggerFactory.getLogger(AssetsCmd.class);
     public static final String CMD_PREFIX = "/assets";
-
-    @Override
-    public boolean canTrigger(String username, String message) {
-        return message.trim().equals(CMD_PREFIX);
-    }
-
-    @Override
-    public String getCommandPrefix() {
-        return CMD_PREFIX;
-    }
-
-    @Override
-    public boolean showHelp(String username) {
-        return true;
-    }
 
     @Override
     public String getDescription() {
@@ -40,7 +25,7 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     public AssetsCmd() {
-        // Empty
+        super(CMD_PREFIX);
     }
 
     @Override
@@ -62,26 +47,11 @@ public class AssetsCmd extends AbstractCheckerTask implements IBotCommand {
     }
 
     @Override
-    public long getCommandExecutionTimeoutSeconds() {
-        return 4;
-    }
-
-    private InlineKeyboardButton[][] createInlineKeyboardButtons(Map<String, Long> addresses) {
-        Map<String, String> handles = getAdaHandleForAccount(addresses.keySet().toArray(new String[0]));
-        int inputSize = addresses.size();
-        int numArrays = (int) Math.ceil((double) inputSize / 2);
-        InlineKeyboardButton[][] outputArray = new InlineKeyboardButton[numArrays][2];
-
-        for (int i = 0; i < numArrays; i++) {
-            int startIndex = i * 2;
-            int endIndex = Math.min(startIndex + 2, inputSize);
-            List<String> sublist = addresses.keySet().stream().collect(Collectors.toList()).subList(startIndex, endIndex);
-            outputArray[i] = sublist.stream().map(e -> new InlineKeyboardButton(handles.get(e))
-                            .callbackData(AssetsListCmd.CMD_PREFIX + AssetsListCmd.CMD_DATA_SEPARATOR + addresses.get(e)
-                            + AssetsListCmd.CMD_DATA_SEPARATOR + "0"))
-                    .collect(Collectors.toList()).toArray(new InlineKeyboardButton[0]);
-        }
-
-        return outputArray;
+    protected String createCallbackData(long chatId) {
+        return String.format("%s%s%d%s0",
+                AssetsListCmd.CMD_PREFIX,
+                AssetsListCmd.CMD_DATA_SEPARATOR,
+                chatId,
+                AssetsListCmd.CMD_DATA_SEPARATOR);
     }
 }
