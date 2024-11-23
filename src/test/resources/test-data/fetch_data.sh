@@ -18,6 +18,13 @@ curl -s -X POST "https://api.koios.rest/api/v1/account_rewards" \
  -H "content-type: application/json" \
  -d '{"_stake_addresses":["stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32","stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy","stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz","stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr"],"_epoch_no":341}' | jq > account_rewards_341.json
 
+echo "Fetching all ccount rewards for stake account"
+curl -s -X POST "https://api.koios.rest/api/v1/account_rewards" \
+ -H "accept: application/json"\
+ -H "content-type: application/json" \
+ -d '{"_stake_addresses":["stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32"]}' | jq > account_rewards_stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32.json
+
+
 ## Account Addresses
 echo "Fetching data for account addresses"
 curl -s -X POST "https://api.koios.rest/api/v1/account_addresses" \

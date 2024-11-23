@@ -120,7 +120,7 @@ public class AccountRewardsCmd extends AbstractCheckerTask implements IBotComman
                         .append("\">")
                         .append(getPoolName(poolInfoList, poolId)).append("</a>\n");
                 sb.append(EmojiParser.parseToUnicode(":arrow_heading_down: "))
-                        .append(String.format("%,.2f ", amount)).append(ADA_SYMBOL);
+                        .append(String.format("%,.2f", amount)).append(ADA_SYMBOL);
                 // USD value
                 if (latestCardanoPriceUsd != null) {
                     sb.append(" (").append(String.format("%,.2f $", amount * latestCardanoPriceUsd)).append(")");

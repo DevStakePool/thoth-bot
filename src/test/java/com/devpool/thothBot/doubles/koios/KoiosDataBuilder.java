@@ -37,6 +37,7 @@ public class KoiosDataBuilder {
     private static final String TX_INFO_FOLDER = "test-data/txs";
     private static final String ACCOUNT_ADDRESSES_JSON_FILE = "test-data/account_addresses.json";
     private static final String ACCOUNT_REWARDS_341_JSON_FILE = "test-data/account_rewards_341.json";
+    private static final String ACCOUNT_REWARDS_STAKE_ADDR_JSON_FILE = "test-data/account_rewards_%s.json";
     private static final String ACCOUNT_REWARDS_369_JSON_FILE = "test-data/account_rewards_369.json";
     private static final String ACCOUNT_ASSETS_JSON_FILE = "test-data/account_assets.json";
     private static final String ACCOUNT_ASSETS_SUBSCRIPTION_JSON_FILE = "test-data/subscription_scenario/account_assets.json";
@@ -159,6 +160,21 @@ public class KoiosDataBuilder {
 
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
         String f = classLoader.getResource(fileName).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+
+        List<AccountRewards> data = mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+        return data;
+    }
+
+    public static List<AccountRewards> getAccountRewardsTestData(List<String> addressList)  throws IOException {
+        String stakeAddr = addressList.stream().findFirst().orElseThrow();
+        String fileName = String.format(ACCOUNT_REWARDS_STAKE_ADDR_JSON_FILE, stakeAddr);
+
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = Objects.requireNonNull(classLoader.getResource(fileName)).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);

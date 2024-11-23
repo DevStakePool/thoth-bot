@@ -21,6 +21,7 @@ public class TelegramUtils {
     private static final String DETAILS_CMD_JSON = "test-data/json/details-cmd.json";
     private static final String NOTIFY_ALL_CMD_JSON = "test-data/json/notifyall-cmd.json";
     private static final String EPOCH_CMD_JSON = "test-data/json/epoch-cmd.json";
+    private static final String REWARDS_CMD_JSON = "test-data/json/rewards-cmd.json";
 
     private static final Gson GSON = new Gson();
 
@@ -75,6 +76,12 @@ public class TelegramUtils {
         return resp.updates().get(0);
     }
 
+    public static Update buildRewardsCommandUpdate(String chatId) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(REWARDS_CMD_JSON,
+                jc -> jc.replace("$chat_id", chatId));
+        return resp.updates().get(0);
+    }
+
     public static Update buildSubscribeCommandUpdate() throws IOException {
         return buildSubscribeCommandUpdate("-1000");
     }
@@ -106,7 +113,7 @@ public class TelegramUtils {
         return GSON.fromJson(json, GetUpdatesResponse.class);
     }
 
-    public static Update buildDetailsCommandUpdate(String callbackCmd) throws IOException {
+    public static Update buildCallbackCommandUpdate(String callbackCmd) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(DETAILS_CMD_JSON,
                 jsonContent -> jsonContent.replace("$details", callbackCmd));
         return resp.updates().get(0);

@@ -74,7 +74,12 @@ public class AccountServiceDouble implements AccountService {
     @Override
     public Result<List<AccountRewards>> getAccountRewards(List<String> addressList, Integer epochNo, Options options) throws ApiException {
         try {
-            List<AccountRewards> data = KoiosDataBuilder.getAccountRewardsTestData(epochNo);
+            List<AccountRewards> data;
+            if (epochNo != null) {
+                data = KoiosDataBuilder.getAccountRewardsTestData(epochNo);
+            } else {
+                data = KoiosDataBuilder.getAccountRewardsTestData(addressList);
+            }
             List<AccountRewards> filteredList = data.stream().filter(r -> addressList.contains(r.getStakeAddress())).collect(Collectors.toList());
             return Result.<List<AccountRewards>>builder().code(200).response("").successful(true).value(filteredList).build();
         } catch (IOException e) {
