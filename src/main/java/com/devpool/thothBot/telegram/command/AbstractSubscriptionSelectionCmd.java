@@ -65,7 +65,7 @@ public abstract class AbstractSubscriptionSelectionCmd extends AbstractCheckerTa
 
         if (addresses.isEmpty()) {
             bot.execute(new SendMessage(update.message().chat().id(),
-                    String.format("You have not yet registered any Cardano account or address. Please try %s", SubscribeCmd.CMD_PREFIX)));
+                    String.format("You have not yet subscribed any Cardano wallet.%nPlease try %s", SubscribeCmd.CMD_PREFIX)));
             return;
         }
 
