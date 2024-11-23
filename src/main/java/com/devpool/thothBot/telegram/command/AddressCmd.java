@@ -7,7 +7,6 @@ import com.devpool.thothBot.exceptions.SubscriptionException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.subscription.ISubscriptionManager;
-import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;

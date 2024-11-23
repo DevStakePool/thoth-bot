@@ -1,6 +1,5 @@
 package com.devpool.thothBot.doubles.koios;
 
-import rest.koios.client.backend.api.asset.model.AssetInformation;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.epoch.EpochService;

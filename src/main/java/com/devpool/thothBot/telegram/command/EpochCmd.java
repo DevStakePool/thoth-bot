@@ -1,8 +1,6 @@
 package com.devpool.thothBot.telegram.command;
 
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
-import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
-import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
@@ -11,17 +9,12 @@ import com.vdurmont.emoji.EmojiParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import rest.koios.client.backend.api.address.model.AddressInfo;
-import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.epoch.model.EpochInfo;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.time.Duration;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @Component
 public class EpochCmd extends AbstractCheckerTask implements IBotCommand {

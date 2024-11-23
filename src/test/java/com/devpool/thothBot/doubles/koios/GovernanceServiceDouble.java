@@ -25,7 +25,7 @@ public class GovernanceServiceDouble implements GovernanceService {
     public Result<List<DRepInfo>> getDRepsInfo(List<String> drepIds, Options options) throws ApiException {
         try {
             List<DRepInfo> allDreps = KoiosDataBuilder.getAllDrepInfo();
-            var filteredDreps =  allDreps.stream().filter(drep -> drepIds.contains(drep.getDrepId())).collect(Collectors.toList());
+            var filteredDreps = allDreps.stream().filter(drep -> drepIds.contains(drep.getDrepId())).collect(Collectors.toList());
             return Result.<List<DRepInfo>>builder().code(200).response("").successful(true).value(filteredDreps).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);

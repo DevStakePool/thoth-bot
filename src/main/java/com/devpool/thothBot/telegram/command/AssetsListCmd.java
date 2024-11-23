@@ -5,7 +5,6 @@ import com.devpool.thothBot.exceptions.UserNotFoundException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
-import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;

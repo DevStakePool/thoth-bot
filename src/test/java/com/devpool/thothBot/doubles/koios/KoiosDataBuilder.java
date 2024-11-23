@@ -20,10 +20,8 @@ import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -169,7 +167,7 @@ public class KoiosDataBuilder {
         return data;
     }
 
-    public static List<AccountRewards> getAccountRewardsTestData(List<String> addressList)  throws IOException {
+    public static List<AccountRewards> getAccountRewardsTestData(List<String> addressList) throws IOException {
         String stakeAddr = addressList.stream().findFirst().orElseThrow();
         String fileName = String.format(ACCOUNT_REWARDS_STAKE_ADDR_JSON_FILE, stakeAddr);
 

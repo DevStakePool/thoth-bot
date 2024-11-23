@@ -1,8 +1,5 @@
 package com.devpool.thothBot.dao.data;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class User {
     private static final String STAKE_ADDR_PREFIX = "stake1";
     private Long id;

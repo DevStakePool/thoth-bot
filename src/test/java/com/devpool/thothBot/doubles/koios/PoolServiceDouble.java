@@ -1,6 +1,5 @@
 package com.devpool.thothBot.doubles.koios;
 
-import rest.koios.client.backend.api.account.model.AccountRewards;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.pool.PoolService;

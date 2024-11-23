@@ -9,7 +9,7 @@ public interface IBotCommand {
      * Method will check if the message can trigger this command
      *
      * @param username the username of the Telegram account
-     * @param message the message sent
+     * @param message  the message sent
      * @return true if the message triggers the command, false otherwise
      */
     boolean canTrigger(String username, String message);
@@ -31,6 +31,7 @@ public interface IBotCommand {
 
     /**
      * The description of this command
+     *
      * @return the description to show in the help
      */
     String getDescription();
@@ -45,6 +46,7 @@ public interface IBotCommand {
 
     /**
      * The execution timeout after which the command will be killed if not completed.
+     *
      * @return the timeout in seconds
      */
     long getCommandExecutionTimeoutSeconds();

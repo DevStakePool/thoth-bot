@@ -5,7 +5,6 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
-import com.pengrad.telegrambot.model.request.ForceReply;
 import com.pengrad.telegrambot.request.SendMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

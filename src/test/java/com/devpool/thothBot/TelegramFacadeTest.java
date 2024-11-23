@@ -1,8 +1,8 @@
 package com.devpool.thothBot;
 
 import com.devpool.thothBot.doubles.commands.DummyCommandDouble;
-import com.devpool.thothBot.doubles.commands.LongCommandDouble;
 import com.devpool.thothBot.doubles.commands.ErrorCommandDouble;
+import com.devpool.thothBot.doubles.commands.LongCommandDouble;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.devpool.thothBot.util.TelegramUtils;

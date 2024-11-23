@@ -1,7 +1,6 @@
 package com.devpool.thothBot.doubles.koios;
 
 import com.devpool.thothBot.koios.AssetFacade;
-import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import rest.koios.client.backend.api.account.AccountService;
 import rest.koios.client.backend.api.account.model.*;
 import rest.koios.client.backend.api.base.Result;

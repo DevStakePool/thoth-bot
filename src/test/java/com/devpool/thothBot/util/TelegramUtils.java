@@ -41,7 +41,7 @@ public class TelegramUtils {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(ANY_CMD_JSON,
                 jsonContent -> {
                     jsonContent = jsonContent.replace("$USERNAME", username);
-                    jsonContent = jsonContent.replace("$COMMAND",commandTag);
+                    jsonContent = jsonContent.replace("$COMMAND", commandTag);
 
                     return jsonContent;
                 });
@@ -85,6 +85,7 @@ public class TelegramUtils {
     public static Update buildSubscribeCommandUpdate() throws IOException {
         return buildSubscribeCommandUpdate("-1000");
     }
+
     public static Update buildSubscribeCommandUpdate(String chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(SUBSCRIBE_CMD_JSON,
                 jc -> jc.replace("$chat_id", chatId));

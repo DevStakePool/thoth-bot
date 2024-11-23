@@ -11,11 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountReward;
-import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
-import rest.koios.client.backend.factory.options.Options;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
