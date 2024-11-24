@@ -99,5 +99,5 @@ public abstract class AbstractSubscriptionSelectionCmd extends AbstractCheckerTa
         return outputArray;
     }
 
-    protected abstract String createCallbackData(long chatId);
+    protected abstract String createCallbackData(long userId);
 }

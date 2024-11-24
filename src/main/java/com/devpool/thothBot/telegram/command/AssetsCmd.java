@@ -16,11 +16,11 @@ public class AssetsCmd extends AbstractSubscriptionSelectionCmd {
     }
 
     @Override
-    protected String createCallbackData(long chatId) {
+    protected String createCallbackData(long userId) {
         return String.format("%s%s%d%s0",
                 AssetsListCmd.CMD_PREFIX,
                 AssetsListCmd.CMD_DATA_SEPARATOR,
-                chatId,
+                userId,
                 AssetsListCmd.CMD_DATA_SEPARATOR);
     }
 }

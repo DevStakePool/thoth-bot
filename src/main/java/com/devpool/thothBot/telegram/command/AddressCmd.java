@@ -35,8 +35,7 @@ public class AddressCmd implements IBotCommand {
 
 
     public enum CmdOperation {
-        SUBSCRIBE,
-        UNSUBSCRIBE
+        SUBSCRIBE
     }
 
     private Map<CmdOperation, List<Long>> operationsQueue;
@@ -77,17 +76,14 @@ public class AddressCmd implements IBotCommand {
     public AddressCmd() {
         this.operationsQueue = new ConcurrentHashMap<>();
         this.operationsQueue.put(CmdOperation.SUBSCRIBE, new CopyOnWriteArrayList<>());
-        this.operationsQueue.put(CmdOperation.UNSUBSCRIBE, new CopyOnWriteArrayList<>());
     }
 
     @Override
     public void execute(Update update, TelegramBot bot) {
         Long chatId = update.message().chat().id();
 
-        if (this.operationsQueue.get(CmdOperation.UNSUBSCRIBE).contains(chatId)) {
-            unsubscribeNewAddress(update, bot);
-            this.operationsQueue.get(CmdOperation.UNSUBSCRIBE).remove(chatId);
-        } else if (this.operationsQueue.get(CmdOperation.SUBSCRIBE).contains(chatId)) {
+
+        if (this.operationsQueue.get(CmdOperation.SUBSCRIBE).contains(chatId)) {
             subscribeNewAddress(update, bot);
             this.operationsQueue.get(CmdOperation.SUBSCRIBE).remove(chatId);
         } else {
@@ -100,21 +96,6 @@ public class AddressCmd implements IBotCommand {
     @Override
     public long getCommandExecutionTimeoutSeconds() {
         return 10;
-    }
-
-    private void unsubscribeNewAddress(Update update, TelegramBot bot) {
-        String name = update.message().from().firstName() != null ? update.message().from().firstName() : update.message().from().username();
-        String addr = update.message().text().trim();
-
-        boolean outcome = this.userDao.removeAddress(update.message().chat().id(), addr);
-
-        if (outcome) {
-            bot.execute(new SendMessage(update.message().chat().id(),
-                    String.format("You have successfully unsubscribed the address %s", addr)));
-        } else {
-            bot.execute(new SendMessage(update.message().chat().id(),
-                    String.format("Sorry %s! I could not find the address %s associated to this chat", name, addr)));
-        }
     }
 
     public void subscribeNewAddress(Update update, TelegramBot bot) {

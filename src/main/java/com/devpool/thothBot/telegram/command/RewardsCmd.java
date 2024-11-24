@@ -22,9 +22,9 @@ public class RewardsCmd extends AbstractSubscriptionSelectionCmd {
     }
 
     @Override
-    protected String createCallbackData(long chatId) {
+    protected String createCallbackData(long userId) {
         return String.format("%s%d",
                 AccountRewardsCmd.CMD_PREFIX,
-                chatId);
+                userId);
     }
 }
