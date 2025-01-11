@@ -81,6 +81,21 @@ public abstract class AbstractCheckerTask {
         return "pool1..." + poolAddress.substring(poolAddress.length() - 8);
     }
 
+    protected String getPoolName(PoolInfo poolInfo) {
+            if (poolInfo.getMetaJson() != null && poolInfo.getMetaJson().getTicker() != null) {
+                StringBuilder sb = new StringBuilder();
+                sb.append("[");
+                sb.append(poolInfo.getMetaJson().getTicker());
+                sb.append("]");
+                if (poolInfo.getMetaJson().getName() != null)
+                    sb.append(" ").append(poolInfo.getMetaJson().getName());
+
+                return sb.toString();
+            }
+
+        return "pool1..." + poolInfo.getPoolIdBech32().substring(poolInfo.getPoolIdBech32().length() - 8);
+    }
+
     public static String shortenAddr(String address) {
         return address.substring(0, 6) + "..." + address.substring(address.length() - 8);
     }

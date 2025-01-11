@@ -18,10 +18,11 @@ public class SchedulerController {
     private static final Logger LOG = LoggerFactory.getLogger(SchedulerController.class);
     private ScheduledExecutorService executorService;
 
-    final private TransactionCheckerTaskV2 transactionCheckerTask;
-    final private StakingRewardsCheckerTask stakingRewardsCheckerTask;
-    final private SubscriptionManager subscriptionManager;
-    final private GovernanceVotesCheckerTask governanceVotesCheckerTask;
+    private final TransactionCheckerTaskV2 transactionCheckerTask;
+    private final StakingRewardsCheckerTask stakingRewardsCheckerTask;
+    private final SubscriptionManager subscriptionManager;
+    private final GovernanceVotesCheckerTask governanceVotesCheckerTask;
+    private final RetiredPoolCheckerTask retiredPoolCheckerTask;
 
     @Value("${thoth.disable-scheduler:false}")
     private Boolean disableScheduler;
@@ -30,11 +31,13 @@ public class SchedulerController {
     private Boolean disableSubscriptionManager;
 
     public SchedulerController(TransactionCheckerTaskV2 transactionCheckerTask, StakingRewardsCheckerTask stakingRewardsCheckerTask,
-                               SubscriptionManager subscriptionManager, GovernanceVotesCheckerTask governanceVotesCheckerTask) {
+                               SubscriptionManager subscriptionManager, GovernanceVotesCheckerTask governanceVotesCheckerTask,
+                               RetiredPoolCheckerTask retiredPoolCheckerTask) {
         this.transactionCheckerTask = transactionCheckerTask;
         this.stakingRewardsCheckerTask = stakingRewardsCheckerTask;
         this.subscriptionManager = subscriptionManager;
         this.governanceVotesCheckerTask = governanceVotesCheckerTask;
+        this.retiredPoolCheckerTask = retiredPoolCheckerTask;
     }
 
     @PostConstruct
@@ -49,6 +52,7 @@ public class SchedulerController {
             this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 120, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 15 * 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.governanceVotesCheckerTask, 10, 60 * 60 * 6, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.retiredPoolCheckerTask, 10, 60 * 60 * 24, TimeUnit.SECONDS);
         }
 
         if (Boolean.TRUE.equals(this.disableSubscriptionManager)) {
