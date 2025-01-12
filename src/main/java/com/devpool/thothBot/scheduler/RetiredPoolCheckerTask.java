@@ -122,7 +122,7 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
         for (User user : stakingUsers) {
             var userPool = stakingAddrAndPool.get(user.getAddress());
             if (userPool == null) {
-                LOG.warn("Bug! The user with ID {} and address {} should be staking but can't find the pool ID", user.getId(), user.getAddress());
+                LOG.debug("The user with ID {} and address {} is not staking with any pool", user.getId(), user.getAddress());
                 continue;
             }
 

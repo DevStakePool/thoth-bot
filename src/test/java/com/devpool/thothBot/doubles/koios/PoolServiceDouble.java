@@ -5,9 +5,11 @@ import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.pool.PoolService;
 import rest.koios.client.backend.api.pool.model.*;
 import rest.koios.client.backend.factory.options.Options;
+import rest.koios.client.backend.factory.options.filters.Filter;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class PoolServiceDouble implements PoolService {
@@ -21,6 +23,17 @@ public class PoolServiceDouble implements PoolService {
         try {
             List<PoolInfo> data = KoiosDataBuilder.getPoolInformationTestData();
             List<PoolInfo> filteredList = data.stream().filter(p -> poolIds.contains(p.getPoolIdBech32())).collect(Collectors.toList());
+
+            // Filter out retiring/retired pools?
+            if (Objects.nonNull(options) &&
+                    options.getOptionList()
+                            .stream()
+                            .filter(Filter.class::isInstance)
+                            .map(Filter.class::cast)
+                            .anyMatch(f -> f.getField().equals("pool_status"))) {
+                filteredList = filteredList.stream().filter(p -> !p.getPoolStatus().equals("registered")).collect(Collectors.toList());
+            }
+
             return Result.<List<PoolInfo>>builder().code(200).response("").successful(true).value(filteredList).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
