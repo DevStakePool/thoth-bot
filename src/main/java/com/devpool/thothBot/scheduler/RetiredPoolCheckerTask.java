@@ -151,6 +151,12 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
                         .append("\n");
             }
 
+            sb.append("\nPlease consider staking with ")
+                    .append("<a href=\"")
+                    .append(CARDANO_SCAN_STAKE_POOL).append("pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv").append("\">")
+                    .append("DEV pool!</a>")
+                    .append(EmojiParser.parseToUnicode(":pray:"));
+
             this.telegramFacade.sendMessageTo(userEntry.getKey(), sb.toString());
             if (LOG.isTraceEnabled()) {
                 LOG.trace("Sending telegram message for staking rewards: {}", sb);

@@ -30,6 +30,9 @@ public class SchedulerController {
     @Value("${thoth.disable-subscription-manager:false}")
     private Boolean disableSubscriptionManager;
 
+    @Value("${thoth.scheduler.initial-delay-secs:10}")
+    private long scheduledJobsInitialDelaySecs;
+
     public SchedulerController(TransactionCheckerTaskV2 transactionCheckerTask, StakingRewardsCheckerTask stakingRewardsCheckerTask,
                                SubscriptionManager subscriptionManager, GovernanceVotesCheckerTask governanceVotesCheckerTask,
                                RetiredPoolCheckerTask retiredPoolCheckerTask) {
@@ -49,16 +52,16 @@ public class SchedulerController {
         if (Boolean.TRUE.equals(this.disableScheduler)) {
             LOG.warn("Running with TX and Staking scheduler disabled!");
         } else {
-            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, 10, 120, TimeUnit.SECONDS);
-            this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, 10, 15 * 60, TimeUnit.SECONDS);
-            this.executorService.scheduleWithFixedDelay(this.governanceVotesCheckerTask, 10, 60 * 60 * 6, TimeUnit.SECONDS);
-            this.executorService.scheduleWithFixedDelay(this.retiredPoolCheckerTask, 10, 60 * 60 * 24, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, scheduledJobsInitialDelaySecs, 120, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, scheduledJobsInitialDelaySecs, 15 * 60, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.governanceVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 6, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.retiredPoolCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 24, TimeUnit.SECONDS);
         }
 
         if (Boolean.TRUE.equals(this.disableSubscriptionManager)) {
             LOG.warn("Running with subscription manager scheduler disabled!");
         } else {
-            this.executorService.scheduleWithFixedDelay(this.subscriptionManager, 20, 60 * 60 * 12, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.subscriptionManager, scheduledJobsInitialDelaySecs * 2, 60 * 60 * 12, TimeUnit.SECONDS);
         }
     }
 
