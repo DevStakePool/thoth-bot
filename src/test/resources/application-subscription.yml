@@ -27,6 +27,8 @@ telegram:
     token: CHANGE_ME
 
 thoth:
+  scheduler:
+    initial-delay-secs: 5
   asset:
     fetching:
       enabled: false

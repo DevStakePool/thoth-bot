@@ -30,6 +30,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.util.*;
@@ -37,6 +38,7 @@ import java.util.stream.Collectors;
 
 @SpringBootTest
 @ActiveProfiles("no-scheduler")
+@DirtiesContext
 public class IntegrationNoSchedulerTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(IntegrationNoSchedulerTest.class);

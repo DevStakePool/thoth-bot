@@ -21,11 +21,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest(classes = {DummyCommandDouble.class, ErrorCommandDouble.class, LongCommandDouble.class})
+@DirtiesContext
 public class TelegramFacadeTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(TelegramFacadeTest.class);
