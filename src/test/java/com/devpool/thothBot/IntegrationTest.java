@@ -6,7 +6,10 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
-import com.devpool.thothBot.telegram.command.*;
+import com.devpool.thothBot.telegram.command.AccountInfoCmd;
+import com.devpool.thothBot.telegram.command.AddressCmd;
+import com.devpool.thothBot.telegram.command.HelpCmd;
+import com.devpool.thothBot.telegram.command.SubscribeCmd;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
@@ -90,8 +93,6 @@ public class IntegrationTest {
     @Autowired
     private SubscribeCmd subscribeCmd;
 
-    @Autowired
-    private UnsubscribeCmd unsubscribeCmd;
 
     @Autowired
     private AddressCmd stakeCmd;
@@ -246,27 +247,6 @@ public class IntegrationTest {
         Assertions.assertEquals(-1000L, params.get("chat_id"));
         Assertions.assertEquals(ForceReply.class, params.get("reply_markup").getClass());
         Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please send your address"));
-    }
-
-    @Test
-    public void userCommandUnsubscribeTest() throws Exception {
-        // Testing Help command
-        Update unsubscribeCmdUpdate = TelegramUtils.buildUnsubscribeCommandUpdate();
-        this.unsubscribeCmd.execute(unsubscribeCmdUpdate, this.telegramBotMock);
-        Mockito.verify(this.telegramBotMock,
-                        Mockito.timeout(10 * 1000)
-                                .times(1))
-                .execute(this.sendMessageArgCaptor.capture());
-        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
-
-        Assertions.assertEquals(1, sendMessages.size());
-        SendMessage sendMessage = sendMessages.get(0);
-        LOG.debug("Message params: {}", sendMessage.getParameters());
-        Map<String, Object> params = sendMessage.getParameters();
-
-        Assertions.assertEquals(-1000L, params.get("chat_id"));
-        Assertions.assertEquals(ForceReply.class, params.get("reply_markup").getClass());
-        Assertions.assertTrue(params.get("text").toString().contains("Hi Alessio, please specify your address"));
     }
 
     @Test
