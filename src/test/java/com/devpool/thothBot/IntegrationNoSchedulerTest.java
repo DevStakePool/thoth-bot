@@ -36,10 +36,12 @@ import org.springframework.test.context.ActiveProfiles;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 @SpringBootTest
 @ActiveProfiles("no-scheduler")
 @DirtiesContext
-public class IntegrationNoSchedulerTest {
+class IntegrationNoSchedulerTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(IntegrationNoSchedulerTest.class);
     private static List<User> TEST_USERS = new ArrayList<>();
@@ -100,6 +102,9 @@ public class IntegrationNoSchedulerTest {
     private UnsubscribeCmd unsubscribeCmd;
 
     @Autowired
+    private UnsubscribeSelectionCmd unsubscribeSelectionCmd;
+
+    @Autowired
     private AddressCmd addressCmd;
 
     @Autowired
@@ -155,12 +160,12 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        assertEquals((long) -1000, params.get("chat_id"));
         Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
 
         // First specify the /subscribe
@@ -180,14 +185,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
         sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(3, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(3, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Please specify the operation first")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("please send your address")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("From now on you will receive updates")).count());
     }
@@ -203,15 +208,15 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
-        Assertions.assertEquals((long) -2, params.get("chat_id"));
-        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
-        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        assertEquals((long) -2, params.get("chat_id"));
+        assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
-        Assertions.assertEquals(3, params.get("text").toString().split("stakekey/stake1").length - 1);
+        assertEquals(3, params.get("text").toString().split("stakekey/stake1").length - 1);
         Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
         Assertions.assertTrue(params.get("text").toString().contains("CardanoYoda")); // DRep with name
         Assertions.assertTrue(params.get("text").toString().contains("drep1...")); // DRep without name
@@ -228,14 +233,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -2, params.get("chat_id"));
-        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
-        Assertions.assertEquals("HTML", params.get("parse_mode"));
+        assertEquals((long) -2, params.get("chat_id"));
+        assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("ADA price"));
         Assertions.assertTrue(params.get("text").toString().contains("TXs count: 161116"));
         Assertions.assertTrue(params.get("text").toString().contains("Epoch 522"));
@@ -253,14 +258,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
-        Assertions.assertEquals((long) -1000, params.get("chat_id"));
-        Assertions.assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
-        Assertions.assertEquals("HTML", params.get("parse_mode"));
-        Assertions.assertEquals(2, params.get("text").toString().split("address/addr1").length - 1);
+        assertEquals((long) -1000, params.get("chat_id"));
+        assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals(2, params.get("text").toString().split("address/addr1").length - 1);
         Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
     }
 
@@ -276,12 +281,12 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        assertEquals((long) -1000, params.get("chat_id"));
         Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
 
         // First specify the /subscribe
@@ -301,14 +306,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
         sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(3, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(3, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Please specify the operation first")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("please send your address")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("From now on you will receive updates")).count());
     }
@@ -325,12 +330,12 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        assertEquals((long) -1000, params.get("chat_id"));
         Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
 
         // First specify the /subscribe
@@ -350,14 +355,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
         sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(3, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(3, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Please specify the operation first")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("please send your address")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("From now on you will receive updates")).count());
     }
@@ -378,12 +383,12 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -4, params.get("chat_id"));
+        assertEquals((long) -4, params.get("chat_id"));
         Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
 
         // First specify the /subscribe
@@ -403,14 +408,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
         sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(3, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(3, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Please specify the operation first")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("please send your address")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Max number of subscriptions exceeded")).count());
     }
@@ -427,12 +432,12 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -1, params.get("chat_id"));
+        assertEquals((long) -1, params.get("chat_id"));
         Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
 
         // First specify the /subscribe
@@ -452,14 +457,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
         sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(3, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(3, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Please specify the operation first")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("please send your address")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("The address addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m that you are trying to subscribe to, contains Thoth NFTs but it is currently used by another Telegram user.")).count());
     }
@@ -477,12 +482,12 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        assertEquals((long) -1000, params.get("chat_id"));
         Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
 
         // First specify the /subscribe
@@ -502,14 +507,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
         sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(3, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(3, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Please specify the operation first")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("please send your address")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .equals("The provided address \"" + addr + "\" does not exist on-chain or it is not valid")).count());
     }
@@ -527,12 +532,12 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
 
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
 
-        Assertions.assertEquals((long) -1000, params.get("chat_id"));
+        assertEquals((long) -1000, params.get("chat_id"));
         Assertions.assertTrue(params.get("text").toString().contains("Please specify the operation first: /subscribe or /unsubscribe"));
 
         // First specify the /subscribe
@@ -552,14 +557,14 @@ public class IntegrationNoSchedulerTest {
                 .execute(argumentCaptor.capture());
         sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(3, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(3, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Please specify the operation first")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("please send your address")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .equals("The provided address \"" + addr + "\" does not exist on-chain or it is not valid")).count());
     }
@@ -577,19 +582,34 @@ public class IntegrationNoSchedulerTest {
                         Mockito.timeout(10 * 1000)
                                 .times(1))
                 .execute(argumentCaptor.capture());
+        var capturedMessages = argumentCaptor.getAllValues();
+        assertEquals(1, capturedMessages.size());
+
+        // Get reply markup with inline keyboard
+        var keyboard = (InlineKeyboardMarkup) capturedMessages.get(0).getParameters().get("reply_markup");
+        assertEquals(1, keyboard.inlineKeyboard().length); // 1 row
+        var row = keyboard.inlineKeyboard()[0];
+        assertEquals(2, row.length); // 2 columns
+        var callbackData = row[0].callbackData();
+        assertNotNull(callbackData);
+        assertTrue(callbackData.startsWith(UnsubscribeSelectionCmd.CMD_PREFIX));
+
+        Update unsubscribeSelectionCmdUpdate = TelegramUtils.buildCallbackCommandUpdate(callbackData);
+        this.unsubscribeSelectionCmd.execute(unsubscribeSelectionCmdUpdate, this.telegramBotMock);
+
+        // Reset
         argumentCaptor = ArgumentCaptor.forClass(SendMessage.class);
-        this.addressCmd.execute(addrCmdUpdate, this.telegramBotMock);
         Mockito.verify(this.telegramBotMock,
                         Mockito.timeout(10 * 1000)
                                 .times(2))
                 .execute(argumentCaptor.capture());
         List<SendMessage> sendMessages = argumentCaptor.getAllValues();
 
-        Assertions.assertEquals(2, sendMessages.size());
-        Assertions.assertEquals(1,
+        assertEquals(2, sendMessages.size());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
-                        .toString().contains("please specify your address")).count());
-        Assertions.assertEquals(1,
+                        .toString().contains("Please select an account")).count());
+        assertEquals(1,
                 sendMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("You have successfully unsubscribed the address")).count());
     }
@@ -609,18 +629,18 @@ public class IntegrationNoSchedulerTest {
                                 .times(1))
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sentMessages = this.sendMessageArgCaptor.getAllValues();
-        Assertions.assertEquals(1, sentMessages.size());
+        assertEquals(1, sentMessages.size());
         SendMessage message = sentMessages.get(0);
 
         Map<String, Object> params = message.getParameters();
         Assertions.assertTrue(params.containsKey("text"));
         Assertions.assertTrue(params.containsKey("reply_markup"));
 
-        Assertions.assertEquals("Please select an account", params.get("text"));
+        assertEquals("Please select an account", params.get("text"));
         InlineKeyboardMarkup markup = (InlineKeyboardMarkup) params.get("reply_markup");
-        Assertions.assertEquals(2, markup.inlineKeyboard().length);
+        assertEquals(2, markup.inlineKeyboard().length);
         InlineKeyboardButton[] firstRow = markup.inlineKeyboard()[0];
-        Assertions.assertEquals(2, firstRow.length);
+        assertEquals(2, firstRow.length);
         Assertions.assertFalse(firstRow[0].callbackData().isEmpty());
         Assertions.assertFalse(firstRow[0].text().isEmpty());
         Assertions.assertFalse(firstRow[1].callbackData().isEmpty());
@@ -640,12 +660,12 @@ public class IntegrationNoSchedulerTest {
                                 .times(2))
                 .execute(argumentCaptor.capture());
         sentMessages = argumentCaptor.getAllValues();
-        Assertions.assertEquals(2, sentMessages.size());
+        assertEquals(2, sentMessages.size());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
                         .equals(Boolean.TRUE)).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Assets for address $")).count());
 
@@ -666,11 +686,11 @@ public class IntegrationNoSchedulerTest {
                 .toString().contains("Assets for address")).findFirst();
         Assertions.assertTrue(markupAssetsMsg.isPresent());
         InlineKeyboardMarkup inlineKeyboardMarkup = (InlineKeyboardMarkup) markupAssetsMsg.get().getParameters().get("reply_markup");
-        Assertions.assertEquals(1, inlineKeyboardMarkup.inlineKeyboard().length);
+        assertEquals(1, inlineKeyboardMarkup.inlineKeyboard().length);
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("PREV")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[1].text().contains("NEXT")).count());
 
     }
@@ -690,18 +710,18 @@ public class IntegrationNoSchedulerTest {
                                 .times(1))
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sentMessages = this.sendMessageArgCaptor.getAllValues();
-        Assertions.assertEquals(1, sentMessages.size());
+        assertEquals(1, sentMessages.size());
         SendMessage message = sentMessages.get(0);
 
         Map<String, Object> params = message.getParameters();
         Assertions.assertTrue(params.containsKey("text"));
         Assertions.assertTrue(params.containsKey("reply_markup"));
 
-        Assertions.assertEquals("Please select an account", params.get("text"));
+        assertEquals("Please select an account", params.get("text"));
         InlineKeyboardMarkup markup = (InlineKeyboardMarkup) params.get("reply_markup");
-        Assertions.assertEquals(1, markup.inlineKeyboard().length);
+        assertEquals(1, markup.inlineKeyboard().length);
         InlineKeyboardButton[] firstRow = markup.inlineKeyboard()[0];
-        Assertions.assertEquals(2, firstRow.length);
+        assertEquals(2, firstRow.length);
         Assertions.assertFalse(firstRow[0].callbackData().isEmpty());
         Assertions.assertFalse(firstRow[0].text().isEmpty());
 
@@ -717,12 +737,12 @@ public class IntegrationNoSchedulerTest {
                                 .times(2))
                 .execute(argumentCaptor.capture());
         sentMessages = argumentCaptor.getAllValues();
-        Assertions.assertEquals(2, sentMessages.size());
+        assertEquals(2, sentMessages.size());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
                         .equals(Boolean.TRUE)).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Assets for address $")).count());
 
@@ -743,11 +763,11 @@ public class IntegrationNoSchedulerTest {
                 .toString().contains("Assets for address")).findFirst();
         Assertions.assertTrue(markupAssetsMsg.isPresent());
         InlineKeyboardMarkup inlineKeyboardMarkup = (InlineKeyboardMarkup) markupAssetsMsg.get().getParameters().get("reply_markup");
-        Assertions.assertEquals(1, inlineKeyboardMarkup.inlineKeyboard().length);
+        assertEquals(1, inlineKeyboardMarkup.inlineKeyboard().length);
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[0].text().contains("PREV")).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 Arrays.stream(inlineKeyboardMarkup.inlineKeyboard()).filter(i -> i[1].text().contains("NEXT")).count());
 
         // Next page
@@ -762,7 +782,7 @@ public class IntegrationNoSchedulerTest {
                                 .times(3))
                 .execute(argumentCaptorNextPage.capture());
         sentMessages = argumentCaptorNextPage.getAllValues();
-        Assertions.assertEquals(3, sentMessages.size());
+        assertEquals(3, sentMessages.size());
 
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("Shown 20/114")));
@@ -770,7 +790,7 @@ public class IntegrationNoSchedulerTest {
         Assertions.assertTrue(sentMessages.stream().map(m -> m.getParameters().get("text").toString())
                 .anyMatch(t -> t.contains("Page 2/12")));
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("<a href=\"https://pool.pm/asset1vl0h0ew4rn9szfedn8d750w4tl46ynjzyja5ra\">CaseyPurple0362</a> 1")).count());
     }
@@ -785,7 +805,7 @@ public class IntegrationNoSchedulerTest {
                                 .times(1))
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
@@ -801,7 +821,7 @@ public class IntegrationNoSchedulerTest {
                                 .times(1))
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
-        Assertions.assertEquals(1, sendMessages.size());
+        assertEquals(1, sendMessages.size());
         SendMessage sendMessage = sendMessages.get(0);
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
@@ -821,7 +841,7 @@ public class IntegrationNoSchedulerTest {
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
         // 6 = 2 to the admin + 5 user accounts
-        Assertions.assertEquals(7, sendMessages.size());
+        assertEquals(7, sendMessages.size());
 
         for (SendMessage sendMessage : sendMessages) {
             LOG.debug("Message to chat {}: {}", sendMessage.getParameters().get("chat_id"), sendMessage.getParameters().get("text"));
@@ -832,16 +852,16 @@ public class IntegrationNoSchedulerTest {
         //     -2, -1000, -1, -3
         List<SendMessage> adminResponses = sendMessages.stream().filter(
                 sm -> (Long) sm.getParameters().get("chat_id") == 1683539744L).collect(Collectors.toList());
-        Assertions.assertEquals(2, adminResponses.size());
-        Assertions.assertEquals(1, adminResponses.stream().filter(
+        assertEquals(2, adminResponses.size());
+        assertEquals(1, adminResponses.stream().filter(
                 r -> r.getParameters().get("text").toString().contains("Ok, notifying all 5 user(s)")).count());
-        Assertions.assertEquals(1, adminResponses.stream().filter(
+        assertEquals(1, adminResponses.stream().filter(
                 r -> r.getParameters().get("text").toString().contains("All Done! Broadcast message(s) 5/5")).count());
 
         List<SendMessage> usersResponses = sendMessages.stream().filter(
                 sm -> (Long) sm.getParameters().get("chat_id") != 1683539744L).collect(Collectors.toList());
-        Assertions.assertEquals(5, usersResponses.size());
-        Assertions.assertEquals(5, usersResponses.stream().filter(
+        assertEquals(5, usersResponses.size());
+        assertEquals(5, usersResponses.stream().filter(
                 r -> r.getParameters().get("text").toString().startsWith("Good day everyone!")).count());
 
     }
@@ -861,18 +881,18 @@ public class IntegrationNoSchedulerTest {
                                 .times(1))
                 .execute(this.sendMessageArgCaptor.capture());
         List<SendMessage> sentMessages = this.sendMessageArgCaptor.getAllValues();
-        Assertions.assertEquals(1, sentMessages.size());
+        assertEquals(1, sentMessages.size());
         SendMessage message = sentMessages.get(0);
 
         Map<String, Object> params = message.getParameters();
         Assertions.assertTrue(params.containsKey("text"));
         Assertions.assertTrue(params.containsKey("reply_markup"));
 
-        Assertions.assertEquals("Please select an account", params.get("text"));
+        assertEquals("Please select an account", params.get("text"));
         InlineKeyboardMarkup markup = (InlineKeyboardMarkup) params.get("reply_markup");
-        Assertions.assertEquals(2, markup.inlineKeyboard().length);
+        assertEquals(2, markup.inlineKeyboard().length);
         InlineKeyboardButton[] firstRow = markup.inlineKeyboard()[0];
-        Assertions.assertEquals(2, firstRow.length);
+        assertEquals(2, firstRow.length);
         Assertions.assertFalse(firstRow[0].callbackData().isEmpty());
         Assertions.assertFalse(firstRow[0].text().isEmpty());
         Assertions.assertFalse(firstRow[1].callbackData().isEmpty());
@@ -892,32 +912,32 @@ public class IntegrationNoSchedulerTest {
                                 .times(2))
                 .execute(argumentCaptor.capture());
         sentMessages = argumentCaptor.getAllValues();
-        Assertions.assertEquals(2, sentMessages.size());
+        assertEquals(2, sentMessages.size());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
                         .equals(Boolean.TRUE)).count());
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Latest rewards for")).count());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32")).count());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("$alessio.dev")).count());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv")).count());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Epoch 518")).count());
 
-        Assertions.assertEquals(1,
+        assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("177.64")).count());
     }
@@ -939,9 +959,9 @@ public class IntegrationNoSchedulerTest {
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
         List<Long> chatIdArgCaptorAllValues = this.chatIdArgCaptor.getAllValues();
         List<String> messageArgCaptorAllValues = this.messageArgCaptor.getAllValues();
-        Assertions.assertEquals(1, messageArgCaptorAllValues.size());
-        Assertions.assertEquals(1, chatIdArgCaptorAllValues.size());
-        Assertions.assertEquals(1000L, chatIdArgCaptorAllValues.get(0));
+        assertEquals(1, messageArgCaptorAllValues.size());
+        assertEquals(1, chatIdArgCaptorAllValues.size());
+        assertEquals(1000L, chatIdArgCaptorAllValues.get(0));
         Assertions.assertTrue(messageArgCaptorAllValues.get(0).endsWith("more..."));
         Assertions.assertTrue(messageArgCaptorAllValues.get(0).length() < TransactionCheckerTaskV2.MAX_MSG_PAYLOAD_SIZE);
     }
@@ -961,9 +981,9 @@ public class IntegrationNoSchedulerTest {
                 .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
         List<Long> chatIdArgCaptorAllValues = this.chatIdArgCaptor.getAllValues();
         List<String> messageArgCaptorAllValues = this.messageArgCaptor.getAllValues();
-        Assertions.assertEquals(1, messageArgCaptorAllValues.size());
-        Assertions.assertEquals(1, chatIdArgCaptorAllValues.size());
-        Assertions.assertEquals(1000L, chatIdArgCaptorAllValues.get(0));
+        assertEquals(1, messageArgCaptorAllValues.size());
+        assertEquals(1, chatIdArgCaptorAllValues.size());
+        assertEquals(1000L, chatIdArgCaptorAllValues.get(0));
         Assertions.assertTrue(messageArgCaptorAllValues.get(0).endsWith("more..."));
         Assertions.assertTrue(messageArgCaptorAllValues.get(0).length() < TransactionCheckerTaskV2.MAX_MSG_PAYLOAD_SIZE);
     }
