@@ -22,7 +22,8 @@ public class BackendServiceDouble implements BackendService {
     public enum BackendBehavior {
         NOMINAL,
         DISABLE_THOTH_NFT_FOR_ACCOUNTS,
-        SUBSCRIPTION_SCHEDULER_SCENARIO
+        SUBSCRIPTION_SCHEDULER_SCENARIO,
+        SIMULATE_RETIRING_POOLS
     }
 
     private static final Logger LOG = LoggerFactory.getLogger(BackendServiceDouble.class);
@@ -36,7 +37,6 @@ public class BackendServiceDouble implements BackendService {
     public BackendServiceDouble(BackendBehavior backendBehavior) {
         this.backendBehavior = backendBehavior;
     }
-
 
     @Override
     public NetworkService getNetworkService() {
@@ -75,7 +75,7 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public PoolService getPoolService() {
-        return new PoolServiceDouble();
+        return new PoolServiceDouble(this.backendBehavior);
     }
 
     @Override

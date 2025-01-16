@@ -26,6 +26,9 @@ public class UserDao {
     private static final String FIELD_LAST_BLOCK_HEIGHT = "last_block_height";
     private static final String FIELD_LAST_EPOCH_NUMBER = "last_epoch_number";
     private static final String FIELD_LAST_GOV_VOTES_BLOCK_TIME = "last_gov_votes_block_time";
+    private static final String FIELD_POOL_ID = "pool_id";
+    private static final String FIELD_REMAINING_NOTIFICATIONS = "remaining_notifications";
+    public static final Integer DEFAULT_RETIRING_POOL_NOTIFICATIONS = 5;
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
@@ -165,5 +168,45 @@ public class UserDao {
         u.setLastGovVotesBlockTime(rs.getLong(FIELD_LAST_GOV_VOTES_BLOCK_TIME));
 
         return u;
+    }
+
+    public int getRemainingUserNotificationForRetiringPool(long chatId, String poolId) {
+        SqlRowSet rs = this.namedParameterJdbcTemplate.queryForRowSet(
+                "select remaining_notifications from retiring_pools where chat_id = :chat_id and pool_id = :pool_id",
+                Map.of(FIELD_CHAT_ID, chatId,
+                        FIELD_POOL_ID, poolId));
+
+        if (!rs.next()) {
+            LOG.debug("Retiring pool {} for chat-id {} not found. Adding a default with {} notifications left",
+                    poolId, chatId, DEFAULT_RETIRING_POOL_NOTIFICATIONS);
+            setRemainingUserNotificationForRetiringPool(chatId, poolId, DEFAULT_RETIRING_POOL_NOTIFICATIONS);
+            return DEFAULT_RETIRING_POOL_NOTIFICATIONS;
+        }
+
+        return rs.getInt("remaining_notifications");
+    }
+
+    public void setRemainingUserNotificationForRetiringPool(long chatId, String poolId, int value) {
+        var affectedRows = this.namedParameterJdbcTemplate.update(
+                "update retiring_pools set remaining_notifications = :value where chat_id = :chat_id and pool_id = :pool_id",
+                Map.of("value", value,
+                        FIELD_CHAT_ID, chatId,
+                        FIELD_POOL_ID, poolId));
+
+        if (affectedRows == 0) {
+            LOG.debug("Adding new retiring pool for pool-id {}, chat-id {} and remaining-notifications {}",
+                    poolId, chatId, value);
+            GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
+            this.namedParameterJdbcTemplate.update(
+                    "insert into retiring_pools (chat_id, pool_id, remaining_notifications) values(:chat_id, :pool_id, :remaining_notifications)",
+                    new MapSqlParameterSource(Map.of(
+                            FIELD_CHAT_ID, chatId,
+                            FIELD_POOL_ID, poolId,
+                            FIELD_REMAINING_NOTIFICATIONS, value)),
+                    keyHolder, new String[]{"id"});
+
+            LOG.debug("Inserted new retiring pool {}, with chat-id {} and with key {}",
+                    poolId, chatId, keyHolder.getKeyAs(Long.class));
+        }
     }
 }
