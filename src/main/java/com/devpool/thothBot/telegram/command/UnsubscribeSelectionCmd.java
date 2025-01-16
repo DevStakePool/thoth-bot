@@ -56,14 +56,13 @@ public class UnsubscribeSelectionCmd extends AbstractCheckerTask implements IBot
         try {
             LOG.debug("Getting staking rewards for user {}", userId);
             var user = userDao.getUser(Long.parseLong(userId));
-
-            boolean outcome = this.userDao.removeAddress(update.message().chat().id(), user.getAddress());
+            boolean outcome = this.userDao.removeAddress(chatId, user.getAddress());
 
             if (outcome) {
-                bot.execute(new SendMessage(update.message().chat().id(),
+                bot.execute(new SendMessage(chatId,
                         String.format("You have successfully unsubscribed the address %s", user.getAddress())));
             } else {
-                bot.execute(new SendMessage(update.message().chat().id(),
+                bot.execute(new SendMessage(chatId,
                         String.format("Sorry! I could not find the address %s associated to this chat", user.getAddress())));
             }
         } catch (UserNotFoundException e) {
