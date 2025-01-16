@@ -1,5 +1,6 @@
 package com.devpool.thothBot.scheduler;
 
+import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
@@ -135,9 +136,19 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
 
         for (Map.Entry<Long, List<PoolInfo>> userEntry : usersToNotify.entrySet()) {
             StringBuilder sb = new StringBuilder();
-            sb.append(EmojiParser.parseToUnicode(":alarm_clock: One or more of your subscription is staking with a retired or retiring pools!\n"));
+            sb.append(EmojiParser.parseToUnicode(":alarm_clock:"))
+                    .append("Your wallet is staking with a retired or retiring pool!\n")
+                    .append("You will receive a maximum of ")
+                    .append(UserDao.DEFAULT_RETIRING_POOL_NOTIFICATIONS).append(" reminders.\n");
 
             for (PoolInfo poolInfo : userEntry.getValue()) {
+                int remainingNotifications = this.userDao.getRemainingUserNotificationForRetiringPool(userEntry.getKey(), poolInfo.getPoolIdBech32());
+                if (remainingNotifications <= 0) {
+                    LOG.debug("The user with chat-id {} has a pool {} that is retiring/retired but he has no left reminders",
+                            userEntry.getKey(), poolInfo.getPoolIdBech32());
+                    continue;
+                }
+
                 var poolName = getPoolName(poolInfo);
                 sb.append(EmojiParser.parseToUnicode(":skull: "))
                         .append("<a href=\"")
@@ -147,8 +158,15 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
                 var conjunction = poolInfo.getPoolStatus().equals("retired") ? "since" : "in";
                 sb.append(" ").append(conjunction)
                         .append(" epoch ")
-                        .append(poolInfo.getRetiringEpoch())
-                        .append("\n");
+                        .append(poolInfo.getRetiringEpoch());
+
+                if (remainingNotifications == 1) {
+                    sb.append(" This is the last WARNING!");
+                    sb.append(EmojiParser.parseToUnicode(":scream:"));
+                }
+                sb.append("\n");
+
+                this.userDao.setRemainingUserNotificationForRetiringPool(userEntry.getKey(), poolInfo.getPoolIdBech32(), remainingNotifications - 1);
             }
 
             sb.append("\nPlease consider staking with ")

@@ -4,6 +4,11 @@ import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.scheduler.GovernanceVotesCheckerTask;
+import com.devpool.thothBot.scheduler.RetiredPoolCheckerTask;
+import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
+import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
+import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.response.SendResponse;
@@ -26,7 +31,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-@SpringBootTest
+import static org.junit.jupiter.api.Assertions.*;
+
+@SpringBootTest(properties = "thoth.scheduler.initial-delay-secs=999")
 @DirtiesContext
 class RetiringPoolIntegrationTest {
 
@@ -61,6 +68,9 @@ class RetiringPoolIntegrationTest {
 
     private BackendServiceDouble backendServiceDouble;
 
+    @Autowired
+    private RetiredPoolCheckerTask retiredPoolCheckerTask;
+
     @BeforeEach
     public void beforeEach() throws Exception {
         this.backendServiceDouble = new BackendServiceDouble(BackendServiceDouble.BackendBehavior.SIMULATE_RETIRING_POOLS);
@@ -71,6 +81,9 @@ class RetiringPoolIntegrationTest {
 
         affectedRows = jdbcTemplate.update("DELETE FROM assets");
         LOG.info("Deleted {} rows in table assets", affectedRows);
+
+        affectedRows = jdbcTemplate.update("DELETE FROM retiring_pools");
+        LOG.info("Deleted {} rows in table retiring_pools", affectedRows);
 
         // Add test data
         for (User testUser : TEST_USERS) {
@@ -83,6 +96,10 @@ class RetiringPoolIntegrationTest {
 
     @BeforeEach
     public void beforeAll() throws Exception {
+        // Reset captors
+        this.messageArgCaptor = ArgumentCaptor.forClass(String.class);
+        this.chatIdArgCaptor = ArgumentCaptor.forClass(Long.class);
+
         SendResponse respMock = Mockito.mock(SendResponse.class);
         Mockito.when(respMock.isOk()).thenReturn(true);
         Mockito.when(this.telegramBotMock.execute(Mockito.any())).thenReturn(respMock);
@@ -90,6 +107,7 @@ class RetiringPoolIntegrationTest {
 
     @Test
     void scheduledNotificationsRetiringPoolsTest() throws Exception {
+        this.retiredPoolCheckerTask.run();
         Mockito.verify(this.telegramFacadeMock,
                         Mockito.timeout(60 * 1000)
                                 .times(1))
@@ -103,17 +121,87 @@ class RetiringPoolIntegrationTest {
         List<String> allMessages = messageArgCaptor.getAllValues();
         var message = retrieveMessageByString(allMessages, "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
                 "retiring");
-        Assertions.assertTrue(message.contains("[DEV]"));
-        Assertions.assertTrue(message.contains("retiring in epoch 999"));
+        assertTrue(message.contains("[DEV]"));
+        assertTrue(message.contains("retiring in epoch 999"));
 
         message = retrieveMessageByString(allMessages, "pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd",
                 "retired");
-        Assertions.assertTrue(message.contains("[APEX]"));
-        Assertions.assertTrue(message.contains("retired since epoch 666"));
+        assertTrue(message.contains("[APEX]"));
+        assertTrue(message.contains("retired since epoch 666"));
 
         // check for null handles
         for (String m : allMessages) {
-            Assertions.assertFalse(m.contains("null"), "message contains 'null': " + m);
+            assertFalse(m.contains("null"), "message contains 'null': " + m);
+        }
+    }
+
+    @Test
+    void scheduledNotificationsRetiringPoolsLastNotificationTest() throws Exception {
+        var affectedRows = jdbcTemplate.update("INSERT INTO public.retiring_pools(chat_id, pool_id, remaining_notifications)\n" +
+                "\tVALUES (-1, 'pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv', 1)");
+        assertEquals(1, affectedRows);
+
+        this.retiredPoolCheckerTask.run();
+
+        Mockito.verify(this.telegramFacadeMock,
+                        Mockito.timeout(60 * 1000)
+                                .times(1))
+                .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
+
+        List<User> allUsers = this.userDao.getUsers();
+        List<Long> allChatIds = allUsers.stream().map(User::getChatId).sorted().collect(Collectors.toList());
+        LOG.info("UserChatIDs={}", allChatIds);
+        LOG.info("ChatIDs={}", this.chatIdArgCaptor.getAllValues().stream().sorted().collect(Collectors.toList()));
+
+        List<String> allMessages = messageArgCaptor.getAllValues();
+        var message = retrieveMessageByString(allMessages, "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
+                "retiring");
+        assertTrue(message.contains("[DEV]"));
+        assertTrue(message.contains("retiring in epoch 999"));
+        assertTrue(message.contains("This is the last WARNING"));
+
+        message = retrieveMessageByString(allMessages, "pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd",
+                "retired");
+        assertTrue(message.contains("[APEX]"));
+        assertTrue(message.contains("retired since epoch 666"));
+
+        // check for null handles
+        for (String m : allMessages) {
+            assertFalse(m.contains("null"), "message contains 'null': " + m);
+        }
+    }
+
+    @Test
+    void scheduledNotificationsRetiringPoolsExpiredNotificationTest() throws Exception {
+        var affectedRows = jdbcTemplate.update("INSERT INTO public.retiring_pools(chat_id, pool_id, remaining_notifications)\n" +
+                "\tVALUES (-1, 'pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv', 0)");
+        assertEquals(1, affectedRows);
+
+        this.retiredPoolCheckerTask.run();
+
+        Mockito.verify(this.telegramFacadeMock,
+                        Mockito.timeout(60 * 1000)
+                                .times(1))
+                .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
+
+        List<User> allUsers = this.userDao.getUsers();
+        List<Long> allChatIds = allUsers.stream().map(User::getChatId).sorted().collect(Collectors.toList());
+        LOG.info("UserChatIDs={}", allChatIds);
+        LOG.info("ChatIDs={}", this.chatIdArgCaptor.getAllValues().stream().sorted().collect(Collectors.toList()));
+
+        List<String> allMessages = messageArgCaptor.getAllValues();
+        var message = allMessages.stream().findFirst().orElseThrow();
+        assertFalse(message.contains("[DEV]"));
+        assertFalse(message.contains("retiring in epoch 999"));
+
+        message = retrieveMessageByString(allMessages, "pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd",
+                "retired");
+        assertTrue(message.contains("[APEX]"));
+        assertTrue(message.contains("retired since epoch 666"));
+
+        // check for null handles
+        for (String m : allMessages) {
+            assertFalse(m.contains("null"), "message contains 'null': " + m);
         }
     }
 
