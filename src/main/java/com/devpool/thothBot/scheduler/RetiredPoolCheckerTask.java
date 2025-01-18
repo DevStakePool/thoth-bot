@@ -2,6 +2,7 @@ package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.vdurmont.emoji.EmojiParser;
@@ -140,7 +141,7 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
                     .append("Your wallet is staking with a retired or retiring pool!\n")
                     .append("You will receive a maximum of ")
                     .append(UserDao.DEFAULT_RETIRING_POOL_NOTIFICATIONS).append(" reminders.\n");
-
+            boolean notificationEmpty = true;
             for (PoolInfo poolInfo : userEntry.getValue()) {
                 int remainingNotifications = this.userDao.getRemainingUserNotificationForRetiringPool(userEntry.getKey(), poolInfo.getPoolIdBech32());
                 if (remainingNotifications <= 0) {
@@ -148,6 +149,7 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
                             userEntry.getKey(), poolInfo.getPoolIdBech32());
                     continue;
                 }
+                notificationEmpty = false;
 
                 var poolName = getPoolName(poolInfo);
                 sb.append(EmojiParser.parseToUnicode(":skull: "))
@@ -171,9 +173,15 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
 
             sb.append("\nPlease consider staking with ")
                     .append("<a href=\"")
-                    .append(CARDANO_SCAN_STAKE_POOL).append("pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv").append("\">")
+                    .append(CARDANO_SCAN_STAKE_POOL).append(SubscriptionManager.DEV_POOL_ID).append("\">")
                     .append("DEV pool!</a>")
                     .append(EmojiParser.parseToUnicode(":pray:"));
+
+            if (notificationEmpty) {
+                LOG.debug("The wallet {} has some retiring/retired pools, but already received all the notifications.",
+                        userEntry.getKey());
+                return;
+            }
 
             this.telegramFacade.sendMessageTo(userEntry.getKey(), sb.toString());
             if (LOG.isTraceEnabled()) {
