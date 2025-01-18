@@ -32,6 +32,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.never;
 
 @SpringBootTest(properties = "thoth.scheduler.initial-delay-secs=999")
 @DirtiesContext
@@ -203,6 +204,22 @@ class RetiringPoolIntegrationTest {
         for (String m : allMessages) {
             assertFalse(m.contains("null"), "message contains 'null': " + m);
         }
+    }
+
+    @Test
+    void scheduledNotificationsRetiringPoolsNoNotificationTest() throws Exception {
+        var affectedRows = jdbcTemplate.update("INSERT INTO public.retiring_pools(chat_id, pool_id, remaining_notifications)\n" +
+                "\tVALUES (-1, 'pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv', 0)");
+        assertEquals(1, affectedRows);
+
+        affectedRows = jdbcTemplate.update("INSERT INTO public.retiring_pools(chat_id, pool_id, remaining_notifications)\n" +
+                "\tVALUES (-1, 'pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd', 0)");
+        assertEquals(1, affectedRows);
+
+        this.retiredPoolCheckerTask.run();
+        Thread.sleep(1000);
+        Mockito.verify(this.telegramFacadeMock, never())
+                .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
     }
 
     private String retrieveMessageByString(List<String> messages, String filter1, String filter2) {
