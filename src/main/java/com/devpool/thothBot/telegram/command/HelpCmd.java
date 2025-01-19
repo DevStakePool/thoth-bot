@@ -2,6 +2,7 @@ package com.devpool.thothBot.telegram.command;
 
 import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -33,7 +34,7 @@ public class HelpCmd implements IBotCommand {
      * Some global constants
      */
     public static final Map<String, String> CONSTANTS = Map.of(
-            "$thoth.version", "1.9.1",
+            "$thoth.version", "1.9.2",
             "$donation.handle", "$thoth-bot",
             "$url", "https://github.com/DevStakePool/thoth-bot");
 
@@ -69,7 +70,7 @@ public class HelpCmd implements IBotCommand {
     @Override
     public void execute(Update update, TelegramBot bot) {
         SendResponse resp = bot.execute(new SendMessage(update.message().chat().id(), getHelpText(update.message().from().username()))
-                .disableWebPagePreview(true)
+                .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                 .parseMode(ParseMode.HTML));
         if (!resp.isOk())
             LOG.error("Error while sending the HELP text {}={}", resp.errorCode(), resp.description());

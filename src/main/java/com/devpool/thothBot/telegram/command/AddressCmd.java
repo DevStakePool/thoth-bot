@@ -8,6 +8,7 @@ import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.subscription.ISubscriptionManager;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -159,7 +160,8 @@ public class AddressCmd implements IBotCommand {
                                     e.getNumberOfOwnedNfts(),
                                     e.getNumberOfCurrentSubscriptions(),
                                     this.subscriptionManager.getHelpText()))
-                            .parseMode(ParseMode.HTML).disableWebPagePreview(true));
+                            .parseMode(ParseMode.HTML)
+                            .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true)));
                     break;
                 }
                 case ADDRESS_ALREADY_OWNED_BY_OTHERS: {
@@ -169,7 +171,9 @@ public class AddressCmd implements IBotCommand {
                             String.format("The address %s that you are trying to subscribe to, contains Thoth NFTs but " +
                                             "it is currently used by another Telegram user. If you believe this address " +
                                             "is yours, please seek out support in the <a href=\"https://t.me/cardano_thoth_bot_discussions\">Cardano Thoth Bot Discussions</a> channel",
-                                    e.getAddress())).parseMode(ParseMode.HTML).disableWebPagePreview(true));
+                                    e.getAddress()))
+                            .parseMode(ParseMode.HTML)
+                            .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true)));
                     break;
 
                 }

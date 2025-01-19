@@ -17,8 +17,8 @@ public class RestConfiguration {
     public RestTemplate restTemplate() {
 
         RestTemplate restTemplate = new RestTemplateBuilder()
-                .setConnectTimeout(Duration.ofSeconds(2))
-                .setReadTimeout(Duration.ofSeconds(2))
+                .connectTimeout(Duration.ofSeconds(2))
+                .connectTimeout(Duration.ofSeconds(2))
                 .build();
 
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();

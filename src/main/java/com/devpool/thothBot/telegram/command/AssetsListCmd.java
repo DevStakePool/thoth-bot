@@ -5,6 +5,7 @@ import com.devpool.thothBot.exceptions.UserNotFoundException;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
@@ -188,12 +189,16 @@ public class AssetsListCmd extends AbstractCheckerTask implements IBotCommand {
             // Notify the user
             if (this.liveMessages.contains(messageId)) {
                 // It's an edit action
-                BaseResponse editResp = bot.execute(new EditMessageText(chatId, messageId, assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
+                BaseResponse editResp = bot.execute(new EditMessageText(chatId, messageId, assetsPage.toString())
+                        .parseMode(ParseMode.HTML)
+                        .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
                 LOG.debug("Edit response is ok? {}, error code {}, {}", editResp.isOk(), editResp.errorCode(), editResp.description());
             } else {
                 // It's the first page and the message has to be created
-                SendResponse resp = bot.execute(new SendMessage(chatId, assetsPage.toString()).parseMode(ParseMode.HTML).disableWebPagePreview(true)
+                SendResponse resp = bot.execute(new SendMessage(chatId, assetsPage.toString())
+                        .parseMode(ParseMode.HTML)
+                        .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                         .replyMarkup(new InlineKeyboardMarkup(navigationButtons)));
                 this.liveMessages.add(resp.message().messageId());
             }

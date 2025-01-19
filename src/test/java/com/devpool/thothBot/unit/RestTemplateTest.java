@@ -9,6 +9,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RestTemplateTest {
     @Test
@@ -20,7 +21,7 @@ class RestTemplateTest {
         //ResponseEntity<DrepMetadata> resp1 = restTemplate.getForEntity(new URI(url1), DrepMetadata.class);
         //assertEquals(200, resp1.getStatusCodeValue());
         ResponseEntity<DrepMetadata> resp2 = restTemplate.getForEntity(new URI(url2), DrepMetadata.class);
-        assertEquals(200, resp2.getStatusCodeValue());
+        assertTrue(resp2.getStatusCode().is2xxSuccessful());
 
     }
 }
