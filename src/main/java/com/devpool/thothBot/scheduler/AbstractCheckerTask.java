@@ -210,7 +210,7 @@ public abstract class AbstractCheckerTask {
                             .collect(Collectors.toList()), null);
             if (drepResp.isSuccessful()) {
                 for (var drep : drepResp.getValue()) {
-                    var drepUrl = drep.getUrl();
+                    var drepUrl = drep.getMetaUrl();
                     if (drepUrl != null) {
                         LOG.debug("Drep {} has the url {}", drep.getDrepId(), drepUrl);
                         try {

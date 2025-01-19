@@ -221,7 +221,7 @@ class IntegrationNoSchedulerTest {
         assertEquals(3, params.get("text").toString().split("stakekey/stake1").length - 1);
         Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
         Assertions.assertTrue(params.get("text").toString().contains("CardanoYoda")); // DRep with name
-        Assertions.assertTrue(params.get("text").toString().contains("drep1...")); // DRep without name
+        Assertions.assertTrue(params.get("text").toString().contains("PRIDE"));
     }
 
     @Test

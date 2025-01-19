@@ -210,8 +210,10 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
 
         // Koios could send empty results if data is not cached (new address)
         List<String> unresolvedAddresses = addresses.stream()
-                .filter(a -> accountInfoList.stream().map(AccountInfo::getStakeAddress).noneMatch(s -> s.equals(a)))
-                .collect(Collectors.toList());
+                .filter(a -> accountInfoList.stream()
+                        .map(AccountInfo::getStakeAddress)
+                        .noneMatch(s -> s.equals(a)))
+                .toList();
 
         for (AccountInfo accountInfo : accountInfoList) {
 
