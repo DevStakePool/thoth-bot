@@ -2,6 +2,7 @@ package com.devpool.thothBot.telegram.command;
 
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -62,7 +63,7 @@ public class EpochCmd extends AbstractCheckerTask implements IBotCommand {
 
             var toRender = renderEpochInformation(latestCardanoPriceUsd, epochInfo.getValue());
             bot.execute(new SendMessage(update.message().chat().id(), toRender)
-                    .disableWebPagePreview(true)
+                    .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                     .parseMode(ParseMode.HTML));
 
         } catch (Exception e) {

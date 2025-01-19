@@ -7,6 +7,7 @@ import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
 import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -125,7 +126,7 @@ public class AccountInfoCmd extends AbstractCheckerTask implements IBotCommand {
             renderAddressInformation(sb, addressInfoList, handles, latestCardanoPriceUsd, normalAddr);
 
             bot.execute(new SendMessage(update.message().chat().id(), sb.toString())
-                    .disableWebPagePreview(true)
+                    .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                     .parseMode(ParseMode.HTML));
 
         } catch (InterruptedException e) {

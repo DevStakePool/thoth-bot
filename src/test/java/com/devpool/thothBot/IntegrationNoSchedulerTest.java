@@ -11,6 +11,7 @@ import com.devpool.thothBot.telegram.command.*;
 import com.devpool.thothBot.telegram.command.admin.AdminNotifyAllCmd;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
@@ -28,10 +29,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -58,13 +59,13 @@ class IntegrationNoSchedulerTest {
         TEST_USERS.add(new User(-1000L, "addr1q9pzugshkxdrtcmnwppsevp6s5709j4n4ud6q7yhj5ra8e2crqz3h0a46kcklgdaa4dfhdmjhgzy64tam76dxg68t55s9ua0sz", 0, 0, 0L)); // Not present
     }
 
-    @MockBean
+    @MockitoBean
     private TelegramFacade telegramFacadeMock;
 
-    @MockBean
+    @MockitoBean
     private TelegramBot telegramBotMock;
 
-    @MockBean
+    @MockitoBean
     private KoiosFacade koiosFacade;
 
     @Captor
@@ -213,7 +214,8 @@ class IntegrationNoSchedulerTest {
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
         assertEquals((long) -2, params.get("chat_id"));
-        assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
         assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
         assertEquals(3, params.get("text").toString().split("stakekey/stake1").length - 1);
@@ -239,8 +241,8 @@ class IntegrationNoSchedulerTest {
         Map<String, Object> params = sendMessage.getParameters();
 
         assertEquals((long) -2, params.get("chat_id"));
-        assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
-        assertEquals("HTML", params.get("parse_mode"));
+        assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());        assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("ADA price"));
         Assertions.assertTrue(params.get("text").toString().contains("TXs count: 161116"));
         Assertions.assertTrue(params.get("text").toString().contains("Epoch 522"));
@@ -263,7 +265,8 @@ class IntegrationNoSchedulerTest {
         LOG.debug("Message params: {}", sendMessage.getParameters());
         Map<String, Object> params = sendMessage.getParameters();
         assertEquals((long) -1000, params.get("chat_id"));
-        assertEquals(Boolean.TRUE, params.get("disable_web_page_preview"));
+        assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
         assertEquals("HTML", params.get("parse_mode"));
         assertEquals(2, params.get("text").toString().split("address/addr1").length - 1);
         Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
@@ -663,8 +666,11 @@ class IntegrationNoSchedulerTest {
         assertEquals(2, sentMessages.size());
 
         assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
-                        .equals(Boolean.TRUE)).count());
+                sentMessages.stream().map(m -> m.getParameters()
+                                .getOrDefault("link_preview_options", new LinkPreviewOptions().isDisabled(false)))
+                        .map(LinkPreviewOptions.class::cast)
+                        .filter(LinkPreviewOptions::isDisabled).count());
+
         assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Assets for address $")).count());
@@ -740,8 +746,11 @@ class IntegrationNoSchedulerTest {
         assertEquals(2, sentMessages.size());
 
         assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
-                        .equals(Boolean.TRUE)).count());
+                sentMessages.stream().map(m -> m.getParameters()
+                                .getOrDefault("link_preview_options", new LinkPreviewOptions().isDisabled(false)))
+                        .map(LinkPreviewOptions.class::cast)
+                        .filter(LinkPreviewOptions::isDisabled).count());
+
         assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Assets for address $")).count());
@@ -867,7 +876,7 @@ class IntegrationNoSchedulerTest {
     }
 
     @Test
-    public void userCommandRewardsTest() throws Exception {
+    void userCommandRewardsTest() throws Exception {
         // Testing Assets command
         Update rewardsCmdUpdate = TelegramUtils.buildRewardsCommandUpdate("-2");
         Message messageMock = Mockito.mock(Message.class);
@@ -915,8 +924,10 @@ class IntegrationNoSchedulerTest {
         assertEquals(2, sentMessages.size());
 
         assertEquals(1,
-                sentMessages.stream().filter(m -> m.getParameters().getOrDefault("disable_web_page_preview", false)
-                        .equals(Boolean.TRUE)).count());
+                sentMessages.stream().map(m -> m.getParameters()
+                                .getOrDefault("link_preview_options", new LinkPreviewOptions().isDisabled(false)))
+                        .map(LinkPreviewOptions.class::cast)
+                        .filter(LinkPreviewOptions::isDisabled).count());
         assertEquals(1,
                 sentMessages.stream().filter(m -> m.getParameters().get("text")
                         .toString().contains("Latest rewards for")).count());

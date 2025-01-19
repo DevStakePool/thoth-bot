@@ -82,16 +82,16 @@ public abstract class AbstractCheckerTask {
     }
 
     protected String getPoolName(PoolInfo poolInfo) {
-            if (poolInfo.getMetaJson() != null && poolInfo.getMetaJson().getTicker() != null) {
-                StringBuilder sb = new StringBuilder();
-                sb.append("[");
-                sb.append(poolInfo.getMetaJson().getTicker());
-                sb.append("]");
-                if (poolInfo.getMetaJson().getName() != null)
-                    sb.append(" ").append(poolInfo.getMetaJson().getName());
+        if (poolInfo.getMetaJson() != null && poolInfo.getMetaJson().getTicker() != null) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("[");
+            sb.append(poolInfo.getMetaJson().getTicker());
+            sb.append("]");
+            if (poolInfo.getMetaJson().getName() != null)
+                sb.append(" ").append(poolInfo.getMetaJson().getName());
 
-                return sb.toString();
-            }
+            return sb.toString();
+        }
 
         return "pool1..." + poolInfo.getPoolIdBech32().substring(poolInfo.getPoolIdBech32().length() - 8);
     }

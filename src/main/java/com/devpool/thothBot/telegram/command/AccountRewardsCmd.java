@@ -3,6 +3,7 @@ package com.devpool.thothBot.telegram.command;
 import com.devpool.thothBot.exceptions.UserNotFoundException;
 import com.devpool.thothBot.scheduler.AbstractCheckerTask;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -126,7 +127,7 @@ public class AccountRewardsCmd extends AbstractCheckerTask implements IBotComman
             }
 
             bot.execute(new SendMessage(chatId, sb.toString())
-                    .disableWebPagePreview(true)
+                    .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                     .parseMode(ParseMode.HTML));
         } catch (UserNotFoundException e) {
             bot.execute(new SendMessage(chatId, String.format("The user with ID %s cannot be found.", userId)));

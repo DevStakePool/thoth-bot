@@ -17,10 +17,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,13 +73,13 @@ public class IntegrationSubscriptionSchedulerTest {
         TEST_USERS.add(new User(-4L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0, 0L));
     }
 
-    @MockBean
+    @MockitoBean
     private TelegramFacade telegramFacadeMock;
 
-    @MockBean
+    @MockitoBean
     private TelegramBot telegramBotMock;
 
-    @MockBean
+    @MockitoBean
     private KoiosFacade koiosFacade;
 
     @Autowired

@@ -2,6 +2,7 @@ package com.devpool.thothBot.doubles.commands;
 
 import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -43,10 +44,10 @@ public class LongCommandDouble implements IBotCommand {
         try {
             Thread.sleep(1000 * 10);
             bot.execute(new SendMessage(update.message().chat().id(), "Hello from Long")
-                    .disableWebPagePreview(true)
+                    .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                     .parseMode(ParseMode.HTML));
         } catch (InterruptedException e) {
-            LOG.error(CMD_PREFIX + " command got interrupted: " + e);
+            LOG.error("{} command got interrupted: {}", CMD_PREFIX, e.toString());
             if (Thread.interrupted()) {
                 Thread.currentThread().interrupt();
             }

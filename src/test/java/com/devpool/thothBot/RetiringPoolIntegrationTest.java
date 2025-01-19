@@ -4,11 +4,7 @@ import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
-import com.devpool.thothBot.scheduler.GovernanceVotesCheckerTask;
 import com.devpool.thothBot.scheduler.RetiredPoolCheckerTask;
-import com.devpool.thothBot.scheduler.StakingRewardsCheckerTask;
-import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
-import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.response.SendResponse;
@@ -22,9 +18,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,13 +42,13 @@ class RetiringPoolIntegrationTest {
         TEST_USERS.add(new User(-1L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", Integer.MAX_VALUE, 9999, Long.MAX_VALUE));
     }
 
-    @MockBean
+    @MockitoBean
     private TelegramFacade telegramFacadeMock;
 
-    @MockBean
+    @MockitoBean
     private TelegramBot telegramBotMock;
 
-    @MockBean
+    @MockitoBean
     private KoiosFacade koiosFacade;
 
     @Captor

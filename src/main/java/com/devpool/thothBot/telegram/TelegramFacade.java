@@ -5,6 +5,7 @@ import com.devpool.thothBot.telegram.command.HelpCmd;
 import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
+import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
@@ -188,7 +189,7 @@ public class TelegramFacade {
     public void sendMessageTo(Long chatId, String message) {
         SendMessage sm = new SendMessage(chatId, message)
                 .parseMode(ParseMode.HTML)
-                .disableWebPagePreview(true); // TODO use linkPreviewOptions
+                .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true));
         SendResponse outcome = bot.execute(sm);
         if (outcome.isOk()) {
             LOG.debug("Sent message to {} with result isOk={} errorCode={} description={} ",
