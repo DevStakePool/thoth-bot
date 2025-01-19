@@ -14,9 +14,7 @@ import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountReward;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
@@ -75,14 +73,14 @@ public class AccountRewardsCmd extends AbstractCheckerTask implements IBotComman
             }
 
             var accountRewards = rewardsResp.getValue().stream().findFirst().orElseThrow(() -> new NoSuchElementException("No data returned from Koios"));
-            var lastRewards = accountRewards.getRewards()
+            var lastRewards = new ArrayList<>(accountRewards.getRewards()
                     .stream()
+                    .sorted(Comparator.comparing(AccountReward::getEarnedEpoch))
                     .skip(Math.max(0, accountRewards.getRewards().size() - MAX_LAST_REWARDS))
-                    .collect(Collectors.toList());
-            Collections.reverse(lastRewards);
+                    .toList()).reversed();
 
             // Grab pools names
-            var allPools = lastRewards.stream().map(AccountReward::getPoolId).distinct().collect(Collectors.toList());
+            var allPools = lastRewards.stream().map(AccountReward::getPoolId).distinct().toList();
 
             var poolInfoRes = this.koiosFacade.getKoiosService().getPoolService().getPoolInformation(allPools, null);
             List<PoolInfo> poolInfoList = null;
@@ -123,6 +121,8 @@ public class AccountRewardsCmd extends AbstractCheckerTask implements IBotComman
                 if (latestCardanoPriceUsd != null) {
                     sb.append(" (").append(String.format("%,.2f $", amount * latestCardanoPriceUsd)).append(")");
                 }
+                sb.append(EmojiParser.parseToUnicode("\n:label: Type "))
+                                .append(reward.getType());
                 sb.append("\n\n");
             }
 
