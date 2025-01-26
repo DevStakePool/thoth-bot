@@ -646,6 +646,11 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                     .append(metadataMessage);
         }
 
+        if (metadataMessage == null && txInfo.getMetadata() != null) {
+            messageBuilder
+                    .append(EmojiParser.parseToUnicode("\n:memo: With Metadata"));
+        }
+
         // Any assets?
         for (Map.Entry<Asset, Number> asset : allAssets.entrySet()) {
             String assetName = hexToAscii(asset.getKey().getAssetName(), asset.getKey().getPolicyId());

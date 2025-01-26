@@ -497,6 +497,12 @@ public class IntegrationTest {
         assertTrue(message.contains("424dc1db"));
         assertTrue(message.contains("Yes"));
 
+        // Internal with metadata
+        message = retrieveMessageByString(allMessages, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz",
+                "3d7d75beafc89efdc06dfadd0823b357bdb0b7c4ed22cea31eb77105d7df1738");
+        assertTrue(message.contains("Internal Funds"));
+        assertTrue(message.contains("With Metadata"));
+
         // check for null handles
         for (String m : allMessages) {
             Assertions.assertFalse(m.contains("null"), "message contains 'null': " + m);
