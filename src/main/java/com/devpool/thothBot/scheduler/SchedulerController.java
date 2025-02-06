@@ -21,7 +21,7 @@ public class SchedulerController {
     private final TransactionCheckerTaskV2 transactionCheckerTask;
     private final StakingRewardsCheckerTask stakingRewardsCheckerTask;
     private final SubscriptionManager subscriptionManager;
-    private final GovernanceVotesCheckerTask governanceVotesCheckerTask;
+    private final GovernanceDrepVotesCheckerTask governanceDrepVotesCheckerTask;
     private final RetiredPoolCheckerTask retiredPoolCheckerTask;
 
     @Value("${thoth.disable-scheduler:false}")
@@ -34,12 +34,12 @@ public class SchedulerController {
     private long scheduledJobsInitialDelaySecs;
 
     public SchedulerController(TransactionCheckerTaskV2 transactionCheckerTask, StakingRewardsCheckerTask stakingRewardsCheckerTask,
-                               SubscriptionManager subscriptionManager, GovernanceVotesCheckerTask governanceVotesCheckerTask,
+                               SubscriptionManager subscriptionManager, GovernanceDrepVotesCheckerTask governanceDrepVotesCheckerTask,
                                RetiredPoolCheckerTask retiredPoolCheckerTask) {
         this.transactionCheckerTask = transactionCheckerTask;
         this.stakingRewardsCheckerTask = stakingRewardsCheckerTask;
         this.subscriptionManager = subscriptionManager;
-        this.governanceVotesCheckerTask = governanceVotesCheckerTask;
+        this.governanceDrepVotesCheckerTask = governanceDrepVotesCheckerTask;
         this.retiredPoolCheckerTask = retiredPoolCheckerTask;
     }
 
@@ -54,7 +54,7 @@ public class SchedulerController {
         } else {
             this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, scheduledJobsInitialDelaySecs, 120, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, scheduledJobsInitialDelaySecs, 15 * 60, TimeUnit.SECONDS);
-            this.executorService.scheduleWithFixedDelay(this.governanceVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 6, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.governanceDrepVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 6, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.retiredPoolCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 24, TimeUnit.SECONDS);
         }
 

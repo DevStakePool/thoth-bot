@@ -24,25 +24,25 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
-public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements Runnable {
-    private static final Logger LOG = LoggerFactory.getLogger(GovernanceVotesCheckerTask.class);
+public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implements Runnable {
+    private static final Logger LOG = LoggerFactory.getLogger(GovernanceDrepVotesCheckerTask.class);
     private static final String FIELD_BLOCK_TIME = "block_time";
     private final TelegramFacade telegramFacade;
 
-    public GovernanceVotesCheckerTask(TelegramFacade telegramFacade) {
+    public GovernanceDrepVotesCheckerTask(TelegramFacade telegramFacade) {
         this.telegramFacade = telegramFacade;
     }
 
     @Override
     public void run() {
-        LOG.info("Checking for new governance votes");
+        LOG.info("Checking for new DRep governance votes");
 
         try {
 
             LOG.info("Checking governance votes for {} wallets", this.userDao.getUsers().size());
             // Filter out non-staking users
             Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(
-                    userDao.getUsers().stream().filter(User::isStakeAddress).collect(Collectors.toList()),
+                    userDao.getUsers().stream().filter(User::isStakeAddress).toList(),
                     this.usersBatchSize).iterator();
 
             while (batchIterator.hasNext()) {
@@ -73,7 +73,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
         Map<String, String> batchDreps;
         try {
             var response = koiosFacade.getKoiosService().getAccountService().getCachedAccountInformation(
-                    usersBatch.stream().map(User::getAddress).collect(Collectors.toList()), defaultOpts);
+                    usersBatch.stream().map(User::getAddress).toList(), defaultOpts);
 
             if (!response.isSuccessful())
                 throw new ApiException("Response was not successful.");
@@ -93,7 +93,7 @@ public class GovernanceVotesCheckerTask extends AbstractCheckerTask implements R
             return; // We'll try again later
         }
 
-        var drepNames = super.getDrepNames(batchDreps.values().stream().distinct().collect(Collectors.toList()));
+        var drepNames = super.getDrepNames(batchDreps.values().stream().distinct().toList());
         var handles = super.getAdaHandleForAccount(batchDreps.keySet().toArray(new String[0]));
         for (var user : batchDreps.entrySet()) {
             var drepName = drepNames.get(user.getValue());
