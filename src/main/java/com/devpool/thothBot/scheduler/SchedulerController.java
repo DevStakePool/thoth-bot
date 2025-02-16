@@ -22,6 +22,7 @@ public class SchedulerController {
     private final StakingRewardsCheckerTask stakingRewardsCheckerTask;
     private final SubscriptionManager subscriptionManager;
     private final GovernanceDrepVotesCheckerTask governanceDrepVotesCheckerTask;
+    private final GovernanceSpoVotesCheckerTask governanceSpoVotesCheckerTask;
     private final RetiredPoolCheckerTask retiredPoolCheckerTask;
 
     @Value("${thoth.disable-scheduler:false}")
@@ -33,14 +34,19 @@ public class SchedulerController {
     @Value("${thoth.scheduler.initial-delay-secs:10}")
     private long scheduledJobsInitialDelaySecs;
 
+    @Value("${thoth.scheduler.gov-spo-votes-enabled:true}")
+    private Boolean govSpoVotesEnabled;
+
     public SchedulerController(TransactionCheckerTaskV2 transactionCheckerTask, StakingRewardsCheckerTask stakingRewardsCheckerTask,
                                SubscriptionManager subscriptionManager, GovernanceDrepVotesCheckerTask governanceDrepVotesCheckerTask,
-                               RetiredPoolCheckerTask retiredPoolCheckerTask) {
+                               RetiredPoolCheckerTask retiredPoolCheckerTask,
+                               GovernanceSpoVotesCheckerTask governanceSpoVotesCheckerTask) {
         this.transactionCheckerTask = transactionCheckerTask;
         this.stakingRewardsCheckerTask = stakingRewardsCheckerTask;
         this.subscriptionManager = subscriptionManager;
         this.governanceDrepVotesCheckerTask = governanceDrepVotesCheckerTask;
         this.retiredPoolCheckerTask = retiredPoolCheckerTask;
+        this.governanceSpoVotesCheckerTask = governanceSpoVotesCheckerTask;
     }
 
     @PostConstruct
@@ -55,6 +61,8 @@ public class SchedulerController {
             this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, scheduledJobsInitialDelaySecs, 120, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, scheduledJobsInitialDelaySecs, 15 * 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.governanceDrepVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 6, TimeUnit.SECONDS);
+            if (Boolean.TRUE.equals(this.govSpoVotesEnabled))
+                this.executorService.scheduleWithFixedDelay(this.governanceSpoVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 25, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.retiredPoolCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 24, TimeUnit.SECONDS);
         }
 

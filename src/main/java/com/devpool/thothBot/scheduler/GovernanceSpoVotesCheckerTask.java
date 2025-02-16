@@ -17,6 +17,7 @@ import rest.koios.client.backend.factory.options.Limit;
 import rest.koios.client.backend.factory.options.Offset;
 import rest.koios.client.backend.factory.options.Options;
 import rest.koios.client.backend.factory.options.filters.Filter;
+import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -180,12 +181,16 @@ public class GovernanceSpoVotesCheckerTask extends AbstractCheckerTask implement
                 .map(ProposalVote::getVoterId)
                 .filter(poolId -> !poolNamesCache.containsKey(poolId)) // exclude it if we already have it
                 .collect(Collectors.toSet());
+        if (uniquePools.isEmpty()) return;
 
         List<PoolInfo> poolInfoList = new ArrayList<>();
-
+        var options = Options.builder()
+                .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                .option(Offset.of(0))
+                .build();
         try {
             Result<List<PoolInfo>> poolInfoRes = this.koiosFacade.getKoiosService()
-                    .getPoolService().getPoolInformation(uniquePools.stream().toList(), null);
+                    .getPoolService().getPoolInformation(uniquePools.stream().toList(), options);
             if (poolInfoRes.isSuccessful())
                 poolInfoList.addAll(poolInfoRes.getValue());
             else
