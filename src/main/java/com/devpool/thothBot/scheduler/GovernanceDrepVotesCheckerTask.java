@@ -162,7 +162,7 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
 
         this.telegramFacade.sendMessageTo(user.getChatId(), sb.toString());
         if (LOG.isTraceEnabled()) {
-            LOG.trace("Sending telegram message for governance votes: {}", sb);
+            LOG.trace("Sending telegram message for DREP governance votes: {}", sb);
         }
     }
 }
