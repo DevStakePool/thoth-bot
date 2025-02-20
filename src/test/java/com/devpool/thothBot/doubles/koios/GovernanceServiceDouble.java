@@ -1,13 +1,18 @@
 package com.devpool.thothBot.doubles.koios;
 
+import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.governance.GovernanceService;
 import rest.koios.client.backend.api.governance.model.*;
+import rest.koios.client.backend.factory.options.Option;
+import rest.koios.client.backend.factory.options.OptionType;
 import rest.koios.client.backend.factory.options.Options;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class GovernanceServiceDouble implements GovernanceService {
@@ -69,7 +74,12 @@ public class GovernanceServiceDouble implements GovernanceService {
 
     @Override
     public Result<List<Proposal>> getProposalList(Options options) throws ApiException {
-        return null;
+        try {
+            List<Proposal> proposals = KoiosDataBuilder.getSpoOnlyGovernanceActions();
+            return Result.<List<Proposal>>builder().code(200).response("").successful(true).value(proposals).build();
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override
@@ -84,7 +94,18 @@ public class GovernanceServiceDouble implements GovernanceService {
 
     @Override
     public Result<List<ProposalVote>> getProposalVotes(String proposalId, Options options) throws ApiException {
-        return null;
+        if (options != null) {
+            // Check the offset
+            Optional<Option> optionOffset = options.getOptionList().stream().filter(o -> o.getOptionType().equals(OptionType.OFFSET)).findFirst();
+            if (optionOffset.isPresent() && Integer.parseInt(optionOffset.get().getValue()) > 0)
+                return Result.<List<ProposalVote>>builder().code(200).response("").successful(true).value(Collections.emptyList()).build();
+        }
+        try {
+            List<ProposalVote> proposals = KoiosDataBuilder.getSpoOnlyGovernanceActionVotes(proposalId);
+            return Result.<List<ProposalVote>>builder().code(200).response("").successful(true).value(proposals).build();
+        } catch (IOException e) {
+            throw new ApiException(e.toString(), e);
+        }
     }
 
     @Override

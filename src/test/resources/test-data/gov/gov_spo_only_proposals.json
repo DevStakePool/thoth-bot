@@ -1,0 +1,35 @@
+[
+  {
+    "block_time": 1734779082,
+    "proposal_id": "gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525",
+    "proposal_tx_hash": "0b19476e40bbbb5e1e8ce153523762e2b6859e7ecacbaf06eae0ee6a447e79b9",
+    "proposal_index": 0,
+    "proposal_type": "HardForkInitiation",
+    "proposal_description": {
+      "tag": "HardForkInitiation",
+      "contents": [
+        null,
+        {
+          "major": 10,
+          "minor": 0
+        }
+      ]
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uyguuqwdpexmhgjd07vax5t2ay3f7qvea49ex907g6fmvjclq6l03",
+    "proposed_epoch": 529,
+    "ratified_epoch": 536,
+    "enacted_epoch": 537,
+    "dropped_epoch": null,
+    "expired_epoch": null,
+    "expiration": 536,
+    "meta_url": "https://raw.githubusercontent.com/IntersectMBO/governance-actions/refs/heads/main/mainnet/2024-10-30-hf10/metadata.jsonld",
+    "meta_hash": "8a1bd37caa6b914a8b569adb63a0f41d8f159c110dc5c8409118a3f087fffb43",
+    "meta_json": null,
+    "meta_comment": null,
+    "meta_language": null,
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  }
+]

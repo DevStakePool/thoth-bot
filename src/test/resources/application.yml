@@ -29,6 +29,7 @@ telegram:
 thoth:
   scheduler:
     initial-delay-secs: 5
+    gov-spo-votes-enabled: false
   asset:
     fetching:
       enabled: false

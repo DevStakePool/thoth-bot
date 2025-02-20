@@ -147,7 +147,7 @@ public class GovernanceSpoVotesCheckerTask extends AbstractCheckerTask implement
                     for (ProposalVote proposalVote : propVotesRes.getValue()) {
                         var blockTime = proposalVote.getBlockTime();
                         var poolId = proposalVote.getVoterId();
-                        // if the return is not empty, this means
+                        // if the return is not empty, this means4
                         var poolVotes = poolVotesDao.getVotesForGovAction(proposalId, poolId, blockTime);
                         var lastPoolVoteBlockTime = poolVotes.stream()
                                 .max(Comparator.naturalOrder())

@@ -46,7 +46,7 @@ public class AssetsDao {
 
         if (assets.isEmpty()) return Optional.empty();
 
-        return Optional.ofNullable(assets.get(0));
+        return Optional.ofNullable(assets.getFirst());
     }
 
     @Transactional(isolation = Isolation.REPEATABLE_READ)
