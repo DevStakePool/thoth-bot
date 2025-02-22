@@ -38,8 +38,8 @@ class GovPoolVotesIntegrationTest {
     private static final List<User> TEST_USERS = new ArrayList<>();
 
     static {
-        TEST_USERS.add(new User(-1L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", Integer.MAX_VALUE, 9999, Long.MAX_VALUE));
-        TEST_USERS.add(new User(-1L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", Integer.MAX_VALUE, 9999, Long.MAX_VALUE));
+        TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE));
+        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE));
     }
 
     @MockitoBean
@@ -107,7 +107,10 @@ class GovPoolVotesIntegrationTest {
     }
 
     @Test
-    void scheduledNotificationsVotingPoolsTest() throws Exception {
+    void scheduledNotificationsVotingPoolsIdempotentTest() {
+        // Running it multiple times
+        this.governanceSpoVotesCheckerTask.run();
+        this.governanceSpoVotesCheckerTask.run();
         this.governanceSpoVotesCheckerTask.run();
 
         Mockito.verify(this.telegramFacadeMock,
@@ -136,7 +139,54 @@ class GovPoolVotesIntegrationTest {
             assertFalse(m.contains("null"), "message contains 'null': " + m);
         }
     }
-    
+
+    @Test
+    void scheduledNotificationsVotingPoolsWithNewSubscriptionTest() {
+        // Running it scheduler
+        this.governanceSpoVotesCheckerTask.run();
+
+        Mockito.verify(this.telegramFacadeMock,
+                        Mockito.timeout(20 * 1000)
+                                .times(2))
+                .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
+        List<String> allMessages = messageArgCaptor.getAllValues();
+        assertEquals(2, allMessages.size());
+
+        var message = retrieveMessageByString(allMessages, "pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd",
+                "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy");
+        assertTrue(message.contains("[APEX]"));
+        assertTrue(message.contains("stake1...yqhf9jhy"));
+        assertTrue(message.contains("Yes"));
+        assertTrue(message.contains("gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525"));
+
+        message = retrieveMessageByString(allMessages, "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv",
+                "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32");
+        assertTrue(message.contains("[DEV]"));
+        assertTrue(message.contains("alessio.dev"));
+        assertTrue(message.contains("Yes"));
+        assertTrue(message.contains("gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525"));
+
+        // New subscription
+        var testUser = new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE);
+
+        LOG.debug("Adding new subscription {}", testUser);
+        this.userDao.addNewUser(testUser);
+
+        // Run scheduler again
+        this.governanceSpoVotesCheckerTask.run();
+
+        // we should still have 2 notifications
+        Mockito.verify(this.telegramFacadeMock,
+                        Mockito.timeout(20 * 1000)
+                                .times(2))
+                .sendMessageTo(this.chatIdArgCaptor.capture(), this.messageArgCaptor.capture());
+
+        // check for null handles
+        for (String m : allMessages) {
+            assertFalse(m.contains("null"), "message contains 'null': " + m);
+        }
+    }
+
     private String retrieveMessageByString(List<String> messages, String filter1, String filter2) {
         Objects.requireNonNull(messages);
         Objects.requireNonNull(filter1);
