@@ -10,6 +10,7 @@ import com.devpool.thothBot.telegram.command.AccountInfoCmd;
 import com.devpool.thothBot.telegram.command.AddressCmd;
 import com.devpool.thothBot.telegram.command.HelpCmd;
 import com.devpool.thothBot.telegram.command.SubscribeCmd;
+import com.devpool.thothBot.util.AbstractIntegrationTest;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.LinkPreviewOptions;
@@ -26,7 +27,6 @@ import org.mockito.Mockito;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
@@ -39,9 +39,8 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
 @DirtiesContext
-public class IntegrationTest {
+public class IntegrationTest extends AbstractIntegrationTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(IntegrationTest.class);
     private static List<User> TEST_USERS = new ArrayList<>();
@@ -146,7 +145,7 @@ public class IntegrationTest {
             Map<String, Object> params = sendMessage.getParameters();
             assertEquals(1683539744L, params.get("chat_id"));
             assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
-            assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
+            assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
             assertEquals("HTML", params.get("parse_mode"));
             assertTrue(params.get("text").toString().contains("THOTH BOT"));
             assertTrue(params.get("text").toString().contains("/help or /start"));
@@ -172,7 +171,8 @@ public class IntegrationTest {
         Map<String, Object> params = sendMessage.getParameters();
         assertEquals(1683539744L, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
-        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
+        assertEquals("HTML", params.get("parse_mode"));
         assertTrue(params.get("text").toString().contains("THOTH BOT"));
         assertTrue(params.get("text").toString().contains("/help or /start"));
         // We got an admin commmand
@@ -197,7 +197,7 @@ public class IntegrationTest {
         Map<String, Object> params = sendMessage.getParameters();
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
-        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
         assertEquals("HTML", params.get("parse_mode"));
         assertTrue(params.get("text").toString().contains("[DEV]"));
         assertTrue(params.get("text").toString().contains("pool15fxktqvd92sq8plh3rjdrksumt9p8rzsayfk4akv2hng5r8ukha"));
@@ -225,7 +225,7 @@ public class IntegrationTest {
         Map<String, Object> params = sendMessage.getParameters();
         assertEquals((long) -4, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
-        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
         assertEquals("HTML", params.get("parse_mode"));
         assertTrue(params.get("text").toString().contains("$badfriends"));
         assertTrue(params.get("text").toString().contains("Balance: 176.00"));

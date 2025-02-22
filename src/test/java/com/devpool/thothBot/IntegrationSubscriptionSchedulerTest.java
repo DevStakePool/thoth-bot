@@ -6,6 +6,7 @@ import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.devpool.thothBot.util.AbstractIntegrationTest;
 import com.pengrad.telegrambot.TelegramBot;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -28,7 +29,7 @@ import java.util.List;
 @SpringBootTest
 @ActiveProfiles("subscription")
 @DirtiesContext
-public class IntegrationSubscriptionSchedulerTest {
+public class IntegrationSubscriptionSchedulerTest extends AbstractIntegrationTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(IntegrationSubscriptionSchedulerTest.class);
     private static List<User> TEST_USERS = new ArrayList<>();
