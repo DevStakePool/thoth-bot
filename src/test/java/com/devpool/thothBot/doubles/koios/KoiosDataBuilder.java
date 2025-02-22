@@ -16,6 +16,8 @@ import rest.koios.client.backend.api.base.common.UTxO;
 import rest.koios.client.backend.api.epoch.model.EpochInfo;
 import rest.koios.client.backend.api.governance.model.DRepInfo;
 import rest.koios.client.backend.api.governance.model.DRepVote;
+import rest.koios.client.backend.api.governance.model.Proposal;
+import rest.koios.client.backend.api.governance.model.ProposalVote;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
 import rest.koios.client.backend.api.transactions.model.TxInfo;
 
@@ -54,6 +56,8 @@ public class KoiosDataBuilder {
     private static final String DREP_VOTES_FOLDER = "test-data/gov";
     private static final String EPOCH_INFORMATION_JSON_FILE = "test-data/epoch_information.json";
     private static final String ISSUES_DATA_FOLDER = "test-data/issues";
+    private static final String GOV_ACTIONS_SPO_ONLY = "test-data/gov/gov_spo_only_proposals.json";
+    private static final String GOV_ACTION_VOTES_SPO_ONLY = "test-data/gov/gov_spo_only_proposal_votes_%s.json";
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
         ObjectMapper mapper = new ObjectMapper()
@@ -331,6 +335,28 @@ public class KoiosDataBuilder {
         LOG.info("Reading drep votes for ID {}", drepId);
         String file = DREP_VOTES_FOLDER + "/drep_votes_" + drepId + ".json";
         String f = Objects.requireNonNull(classLoader.getResource(file)).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        return mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+    }
+
+    public static List<Proposal> getSpoOnlyGovernanceActions() throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = Objects.requireNonNull(classLoader.getResource(GOV_ACTIONS_SPO_ONLY)).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        return mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+    }
+
+    public static List<ProposalVote> getSpoOnlyGovernanceActionVotes(String proposalId) throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = Objects.requireNonNull(classLoader.getResource(GOV_ACTION_VOTES_SPO_ONLY.formatted(proposalId))).getFile();
         File jsonFile = new File(f);
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

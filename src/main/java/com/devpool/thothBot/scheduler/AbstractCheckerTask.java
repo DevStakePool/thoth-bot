@@ -6,6 +6,7 @@ import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.model.model.DrepMetadata;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
+import com.devpool.thothBot.util.CollectionsUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,11 +15,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import rest.koios.client.backend.api.account.model.AccountAsset;
+import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.common.Asset;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.pool.model.PoolInfo;
+import rest.koios.client.backend.factory.options.Limit;
+import rest.koios.client.backend.factory.options.Offset;
+import rest.koios.client.backend.factory.options.Options;
 
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
@@ -255,5 +260,38 @@ public abstract class AbstractCheckerTask {
             return DREP_HASH_PREFIX + "..." + drepHash.substring(drepHash.length() - 8);
 
         return drepHash;
+    }
+
+    protected String constructInFilter(Collection<String> items) {
+        return "(" + String.join(",", items) + ")";
+    }
+
+    // returns Staking Address -> Pool Address
+    protected Map<String, String> collectPoolAddressesAssociatedToStakingAddresses(List<String> allStakingAddresses) throws ApiException {
+        Map<String, String> allPoolIdsStakingAddresses = new HashMap<>();
+        Options options = Options.builder()
+                .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                .option(Offset.of(0))
+                .build();
+
+        var iter = CollectionsUtil.batchesList(allStakingAddresses, usersBatchSize).iterator();
+        while (iter.hasNext()) {
+            var batch = iter.next();
+            LOG.debug("Grabbing staking account info for batch of size {}", batch.size());
+            var resp = koiosFacade.getKoiosService().getAccountService().getCachedAccountInformation(batch, options);
+            if (!resp.isSuccessful()) {
+                throw new ApiException(String.format("Invalid API response while getting account infos: %d - %s",
+                        resp.getCode(), resp.getResponse()));
+            }
+
+            for (AccountInfo accountInfo : resp.getValue()) {
+                var stakingAddr = accountInfo.getStakeAddress();
+                var poolAddr = accountInfo.getDelegatedPool();
+                if (poolAddr != null)
+                    allPoolIdsStakingAddresses.put(stakingAddr, poolAddr);
+            }
+        }
+
+        return allPoolIdsStakingAddresses;
     }
 }

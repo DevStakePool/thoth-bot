@@ -152,6 +152,18 @@ do
    -H "accept: application/json" | jq > gov/drep_votes_${drep}.json
 done
 
+# Fetch proposals
+echo "Fetching proposals"
+# hard fork test governance action
+GOV_ID="gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525"
+curl -s -X GET "https://api.koios.rest/api/v1/proposal_list?proposal_id=eq.${GOV_ID}" \
+ -H "accept: application/json" | jq > gov/gov_spo_only_proposals.json
+
+echo "Fetching proposal $GOV_ID votes"
+curl -s -X GET "https://api.koios.rest/api/v1/proposal_votes?_proposal_id=${GOV_ID}" \
+ -H "accept: application/json" | jq > gov/gov_spo_only_proposal_votes_${GOV_ID}.json
+
+
 echo "Fetching all assets for addresses and stake accounts"
 download_assets account_assets.json
 download_assets address_assets.json

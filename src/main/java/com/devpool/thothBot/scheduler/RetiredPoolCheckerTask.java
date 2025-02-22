@@ -41,10 +41,10 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
             LOG.info("Checking retired/retiring pools for {} wallets", this.userDao.getUsers().size());
 
             // Filter out non-staking users
-            var stakingUsers = userDao.getUsers().stream().filter(User::isStakeAddress).collect(Collectors.toList());
+            var stakingUsers = userDao.getUsers().stream().filter(User::isStakeAddress).toList();
 
             // get all pool addresses
-            var allStakingAddresses = stakingUsers.stream().map(User::getAddress).distinct().collect(Collectors.toList());
+            var allStakingAddresses = stakingUsers.stream().map(User::getAddress).distinct().toList();
             LOG.debug("Checking for retiring/retired pools among {} staking addresses", allStakingAddresses.size());
 
             var stakingAddrAndPools = collectPoolAddressesAssociatedToStakingAddresses(allStakingAddresses);
@@ -55,36 +55,6 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
         } catch (Exception e) {
             LOG.error("Caught throwable while checking wallet retired/retiring pools", e);
         }
-    }
-
-    // returns Staking Address -> Pool Address
-    private Map<String, String> collectPoolAddressesAssociatedToStakingAddresses(List<String> allStakingAddresses) throws ApiException {
-        Map<String, String> allPoolIdsStakingAddresses = new HashMap<>();
-        Options options = Options.builder()
-                .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                .option(Offset.of(0))
-                .build();
-
-        var iter = CollectionsUtil.batchesList(allStakingAddresses, usersBatchSize).iterator();
-        while (iter.hasNext()) {
-            var batch = iter.next();
-            LOG.debug("Grabbing staking account info for batch of size {}", batch.size());
-            var resp = koiosFacade.getKoiosService().getAccountService().getCachedAccountInformation(batch, options);
-            if (!resp.isSuccessful()) {
-                throw new ApiException(String.format("Invalid API response while getting account infos: %d - %s",
-                        resp.getCode(), resp.getResponse()));
-
-            }
-
-            for (AccountInfo accountInfo : resp.getValue()) {
-                var stakingAddr = accountInfo.getStakeAddress();
-                var poolAddr = accountInfo.getDelegatedPool();
-                if (poolAddr != null)
-                    allPoolIdsStakingAddresses.put(stakingAddr, poolAddr);
-            }
-        }
-
-        return allPoolIdsStakingAddresses;
     }
 
     // PoolID -> PoolInfo
