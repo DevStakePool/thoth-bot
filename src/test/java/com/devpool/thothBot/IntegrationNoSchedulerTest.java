@@ -9,6 +9,7 @@ import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.telegram.command.*;
 import com.devpool.thothBot.telegram.command.admin.AdminNotifyAllCmd;
+import com.devpool.thothBot.util.AbstractIntegrationTest;
 import com.devpool.thothBot.util.TelegramUtils;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.LinkPreviewOptions;
@@ -42,7 +43,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @ActiveProfiles("no-scheduler")
 @DirtiesContext
-class IntegrationNoSchedulerTest {
+class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(IntegrationNoSchedulerTest.class);
     private static List<User> TEST_USERS = new ArrayList<>();

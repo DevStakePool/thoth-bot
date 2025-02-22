@@ -6,6 +6,7 @@ import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.scheduler.GovernanceSpoVotesCheckerTask;
 import com.devpool.thothBot.telegram.TelegramFacade;
+import com.devpool.thothBot.util.AbstractIntegrationTest;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.response.SendResponse;
 import org.junit.jupiter.api.Assertions;
@@ -32,7 +33,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @ActiveProfiles("no-scheduler")
 @DirtiesContext
-class GovPoolVotesIntegrationTest {
+class GovPoolVotesIntegrationTest extends AbstractIntegrationTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(GovPoolVotesIntegrationTest.class);
     private static final List<User> TEST_USERS = new ArrayList<>();
