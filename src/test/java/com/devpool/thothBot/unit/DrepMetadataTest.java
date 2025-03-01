@@ -21,7 +21,6 @@ class DrepMetadataTest {
         var metadata = readJsonMetadata(METADATA_FOLDER + "/metadata1.json");
         assertEquals("Alfred Moesker", metadata.getBody().getGivenName().toString());
 
-
         metadata = readJsonMetadata(METADATA_FOLDER + "/metadata2.json");
         assertEquals("PRIDE", metadata.getBody().getGivenName().toString());
 
@@ -31,8 +30,7 @@ class DrepMetadataTest {
         metadata = readJsonMetadata(METADATA_FOLDER + "/metadata3.json");
         assertEquals("LloydDuhon", metadata.getBody().getGivenName().toString());
     }
-
-
+    
     private DrepMetadata readJsonMetadata(String filePath) throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
         String f = Objects.requireNonNull(classLoader.getResource(filePath)).getFile();

@@ -4,6 +4,7 @@ import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.model.model.Body;
 import com.devpool.thothBot.model.model.DrepMetadata;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import com.devpool.thothBot.util.CollectionsUtil;
@@ -26,6 +27,7 @@ import rest.koios.client.backend.factory.options.Offset;
 import rest.koios.client.backend.factory.options.Options;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -50,6 +52,8 @@ public abstract class AbstractCheckerTask {
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
 
     protected static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
+    protected static final String IPFS_SCHEME = "ipfs";
+    protected static final String IPFS_HTTP_URI = "https://c-ipfs-gw.nmkr.io/ipfs/%s";
 
     @Autowired
     protected UserDao userDao;
@@ -218,13 +222,20 @@ public abstract class AbstractCheckerTask {
                     var drepUrl = drep.getMetaUrl();
                     if (drepUrl != null) {
                         LOG.debug("Drep {} has the url {}", drep.getDrepId(), drepUrl);
+
                         try {
-                            ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(new URI(drepUrl), DrepMetadata.class);
-                            if (entity.getStatusCode().equals(HttpStatus.OK) &&
-                                    entity.getBody() != null &&
-                                    entity.getBody().getBody().getGivenName() != null) {
-                                LOG.debug("Got a DRep name {} for ID {}", entity.getBody().getBody().getGivenName(), drep.getDrepId());
-                                drepNames.put(drep.getDrepId(), entity.getBody().getBody().getGivenName().toString());
+                            var uri = new URI(drepUrl);
+                            uri = handleIpfsUri(uri);
+                            ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(uri, DrepMetadata.class);
+                            var givenName = Optional.ofNullable(entity.getBody())
+                                    .map(DrepMetadata::getBody)
+                                    .map(Body::getGivenName)
+                                    .map(Object::toString)
+                                    .orElse(null);
+
+                            if (entity.getStatusCode().equals(HttpStatus.OK) && givenName != null) {
+                                LOG.debug("Got a DRep name {} for ID {}", givenName, drep.getDrepId());
+                                drepNames.put(drep.getDrepId(), givenName);
                             }
                         } catch (Exception e) {
                             LOG.warn("Can't get drep metadata from URL {} due to {}", drepUrl, e.toString());
@@ -238,6 +249,17 @@ public abstract class AbstractCheckerTask {
         }
 
         return drepNames;
+    }
+
+    protected URI handleIpfsUri(URI uri) throws URISyntaxException {
+        if (!IPFS_SCHEME.equals(uri.getScheme()))
+            return uri;
+
+
+        var httpUri = new URI(IPFS_HTTP_URI.formatted(uri.getSchemeSpecificPart()));
+        LOG.debug("Converted IPFS uri {} to HTTP uri {}", uri, httpUri);
+
+        return httpUri;
     }
 
     public static String hexToAscii(String assetName, String policyId) {

@@ -8,13 +8,16 @@ public class User {
     private Integer lastBlockHeight;
     private Integer lastEpochNumber;
     private Long lastGovVotesBlockTime;
+    private Long lastGovActionBlockTime;
 
-    public User(Long chatId, String address, Integer blockNumber, Integer lastEpochNumber, Long lastGovVotesBlockTime) {
+    public User(Long chatId, String address, Integer blockNumber, Integer lastEpochNumber,
+                Long lastGovVotesBlockTime, Long lastGovActionBlockTime) {
         this.chatId = chatId;
         this.address = address;
         this.lastBlockHeight = blockNumber;
         this.lastEpochNumber = lastEpochNumber;
         this.lastGovVotesBlockTime = lastGovVotesBlockTime;
+        this.lastGovActionBlockTime = lastGovActionBlockTime;
     }
 
     public User() {
@@ -94,5 +97,13 @@ public class User {
 
     public void setLastGovVotesBlockTime(Long lastGovVotesBlockTime) {
         this.lastGovVotesBlockTime = lastGovVotesBlockTime;
+    }
+
+    public Long getLastGovActionBlockTime() {
+        return lastGovActionBlockTime;
+    }
+
+    public void setLastGovActionBlockTime(Long lastGovActionBlockTime) {
+        this.lastGovActionBlockTime = lastGovActionBlockTime;
     }
 }
