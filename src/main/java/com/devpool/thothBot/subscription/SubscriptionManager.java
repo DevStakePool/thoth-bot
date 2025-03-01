@@ -37,7 +37,10 @@ import java.util.stream.Collectors;
 @Component
 public class SubscriptionManager implements Runnable, ISubscriptionManager {
     private static final Logger LOG = LoggerFactory.getLogger(SubscriptionManager.class);
+    private static final int BATCH_SIZE_ASSETS_RETRIEVAL = 500;
+
     public static final String DEV_POOL_ID = "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv";
+
     @Value("${thoth.subscription.nft.stake-policy-id}")
     private String stakeNftPolicyId;
 
@@ -292,7 +295,7 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
 
     private Map<Long, List<AddressAsset>> getAddressesAssets(Map<Long, List<String>> chatAddresses) throws KoiosResponseException {
         long offset = 0;
-        long pagination = 1000;
+        long pagination = BATCH_SIZE_ASSETS_RETRIEVAL;
         Result<List<AddressAsset>> assetsResp;
 
         List<String> addresses = chatAddresses.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
@@ -305,7 +308,7 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
                 List<String> batch = batchesIterator.next();
                 do {
                     Options options = Options.builder()
-                            .option(Limit.of(1000))
+                            .option(Limit.of(BATCH_SIZE_ASSETS_RETRIEVAL))
                             .option(Offset.of(offset)).build();
                     offset += pagination;
                     assetsResp = this.koiosFacade.getKoiosService().getAddressService()
