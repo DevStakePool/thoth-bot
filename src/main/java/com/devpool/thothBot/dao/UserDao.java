@@ -118,6 +118,21 @@ public class UserDao {
         }
     }
 
+    public void updateUserGovActionBlockTime(Long id, long timestamp) {
+        int updatedNumOfRows = namedParameterJdbcTemplate.update(
+                "update users set last_gov_action_block_time = :last_gov_action_block_time where id = :id",
+                new MapSqlParameterSource(Map.of(
+                        FIELD_LAST_GOV_ACTION_BLOCK_TIME, timestamp,
+                        "id", id)));
+
+        if (updatedNumOfRows != 1) {
+            LOG.error("Unexpected updated number of rows {} for the user with id {}, when updating the governance action block time. This is a bug!",
+                    updatedNumOfRows, id);
+        } else {
+            LOG.debug("Updated governance action block time to {} for user ID {}", timestamp, id);
+        }
+    }
+
     public void updateUserEpochNumber(Long id, Integer epochNumber) {
         int updatedNumOfRows = namedParameterJdbcTemplate.update(
                 "update users set last_epoch_number = :last_epoch_number where id = :id",

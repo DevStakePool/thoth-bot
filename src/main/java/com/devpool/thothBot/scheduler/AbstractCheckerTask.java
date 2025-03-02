@@ -6,8 +6,15 @@ import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.model.model.Body;
 import com.devpool.thothBot.model.model.DrepMetadata;
+import com.devpool.thothBot.model.model.proposal.ProposalAuthors;
+import com.devpool.thothBot.model.model.proposal.ProposalBody;
+import com.devpool.thothBot.model.model.proposal.ProposalContent;
+import com.devpool.thothBot.model.model.proposal.ProposalMetadata;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import com.devpool.thothBot.util.CollectionsUtil;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.NullNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +61,7 @@ public abstract class AbstractCheckerTask {
     protected static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
     protected static final String IPFS_SCHEME = "ipfs";
     protected static final String IPFS_HTTP_URI = "https://c-ipfs-gw.nmkr.io/ipfs/%s";
+    private static final int MAX_GOV_ACTION_ABSTRACT_LEN = 500;
 
     @Autowired
     protected UserDao userDao;
@@ -315,5 +323,56 @@ public abstract class AbstractCheckerTask {
         }
 
         return allPoolIdsStakingAddresses;
+    }
+
+    protected ProposalContent getProposalContent(JsonNode metaJson, String metaUrl, String proposalId) throws URISyntaxException {
+        var titleDefault = proposalId.substring(proposalId.length() - 8);
+        if (metaJson != null && !(metaJson instanceof NullNode)) {
+            var titleNode = metaJson.findValue("title");
+            var abstractNode = metaJson.findValue("abstract");
+            var title = Optional.ofNullable(titleNode)
+                    .map(JsonNode::textValue)
+                    .orElse(titleDefault);
+            var abstractText = Optional.ofNullable(abstractNode)
+                    .map(JsonNode::textValue)
+                    .map(s -> s.length() > MAX_GOV_ACTION_ABSTRACT_LEN ?
+                            s.substring(0, MAX_GOV_ACTION_ABSTRACT_LEN) + "..." : s)
+                    .orElse(null);
+
+            // Get authors
+            var authorsNode = metaJson.findValue("authors");
+            List<String> authorNames = new ArrayList<>();
+            if (authorsNode instanceof ArrayNode) {
+                for (JsonNode authorChildNode : (ArrayNode) authorsNode.elements()) {
+                    var name = Optional.ofNullable(authorChildNode.findValue("name"))
+                            .map(JsonNode::textValue);
+                    name.ifPresent(authorNames::add);
+                }
+            }
+            return new ProposalContent(title, abstractText, authorNames);
+        }
+
+        // try resolving the URL
+        var uri = new URI(metaUrl);
+        uri = handleIpfsUri(uri);
+        ResponseEntity<ProposalMetadata> entity = restTemplate.getForEntity(uri, ProposalMetadata.class);
+        if (entity.getStatusCode() != HttpStatus.OK || entity.getBody() == null) {
+            LOG.warn("Cannot retrieve the proposal metadata using URL {}, due to http code {}",
+                    uri, entity.getStatusCode());
+            return new ProposalContent(titleDefault, null, null);
+        }
+
+        var title = Optional.ofNullable(entity.getBody().body())
+                .map(ProposalBody::title).orElse(titleDefault);
+        var abstractText = Optional.ofNullable(entity.getBody().body())
+                .map(ProposalBody::abstractValue)
+                .map(s -> s.length() > MAX_GOV_ACTION_ABSTRACT_LEN ?
+                        s.substring(0, MAX_GOV_ACTION_ABSTRACT_LEN) + "..." : s)
+                .orElse(null);
+
+        var authors = Optional.ofNullable(entity.getBody().authors()).orElse(List.of());
+        return new ProposalContent(title, abstractText,
+                authors.stream().map(ProposalAuthors::name).toList());
+
     }
 }
