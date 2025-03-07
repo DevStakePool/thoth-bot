@@ -13,7 +13,6 @@ import com.devpool.thothBot.model.model.proposal.ProposalMetadata;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.NullNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.account.model.AccountInfo;
@@ -342,12 +342,11 @@ public abstract class AbstractCheckerTask {
             // Get authors
             var authorsNode = metaJson.findValue("authors");
             List<String> authorNames = new ArrayList<>();
-            if (authorsNode instanceof ArrayNode) {
-                for (JsonNode authorChildNode : (ArrayNode) authorsNode.elements()) {
-                    var name = Optional.ofNullable(authorChildNode.findValue("name"))
-                            .map(JsonNode::textValue);
-                    name.ifPresent(authorNames::add);
-                }
+            for (Iterator<JsonNode> it = authorsNode.elements(); it.hasNext(); ) {
+                JsonNode authorChildNode = it.next();
+                var name = Optional.ofNullable(authorChildNode.findValue("name"))
+                        .map(JsonNode::textValue);
+                name.ifPresent(authorNames::add);
             }
             return new ProposalContent(title, abstractText, authorNames);
         }
@@ -355,24 +354,28 @@ public abstract class AbstractCheckerTask {
         // try resolving the URL
         var uri = new URI(metaUrl);
         uri = handleIpfsUri(uri);
-        ResponseEntity<ProposalMetadata> entity = restTemplate.getForEntity(uri, ProposalMetadata.class);
-        if (entity.getStatusCode() != HttpStatus.OK || entity.getBody() == null) {
-            LOG.warn("Cannot retrieve the proposal metadata using URL {}, due to http code {}",
-                    uri, entity.getStatusCode());
+        try {
+            ResponseEntity<ProposalMetadata> entity = restTemplate.getForEntity(uri, ProposalMetadata.class);
+            if (entity.getStatusCode() != HttpStatus.OK || entity.getBody() == null) {
+                throw new RestClientException("Returned status code %s".formatted(entity.getStatusCode()));
+            }
+
+            var title = Optional.ofNullable(entity.getBody().body())
+                    .map(ProposalBody::title).orElse(titleDefault);
+            var abstractText = Optional.ofNullable(entity.getBody().body())
+                    .map(ProposalBody::abstractValue)
+                    .map(s -> s.length() > MAX_GOV_ACTION_ABSTRACT_LEN ?
+                            s.substring(0, MAX_GOV_ACTION_ABSTRACT_LEN) + "..." : s)
+                    .orElse(null);
+
+            var authors = Optional.ofNullable(entity.getBody().authors()).orElse(List.of());
+            return new ProposalContent(title, abstractText,
+                    authors.stream().map(ProposalAuthors::name).toList());
+
+        } catch (RestClientException e) {
+            LOG.info("Cannot retrieve the proposal metadata using URL {}, due to {}",
+                    uri, e.getMessage());
             return new ProposalContent(titleDefault, null, null);
         }
-
-        var title = Optional.ofNullable(entity.getBody().body())
-                .map(ProposalBody::title).orElse(titleDefault);
-        var abstractText = Optional.ofNullable(entity.getBody().body())
-                .map(ProposalBody::abstractValue)
-                .map(s -> s.length() > MAX_GOV_ACTION_ABSTRACT_LEN ?
-                        s.substring(0, MAX_GOV_ACTION_ABSTRACT_LEN) + "..." : s)
-                .orElse(null);
-
-        var authors = Optional.ofNullable(entity.getBody().authors()).orElse(List.of());
-        return new ProposalContent(title, abstractText,
-                authors.stream().map(ProposalAuthors::name).toList());
-
     }
 }

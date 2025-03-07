@@ -1,0 +1,1474 @@
+[
+  {
+    "block_time": 1740759800,
+    "proposal_id": "gov_action12meeq4r43udremwpm6fzt4nt7fctvt0ah7798x036m2r4nhlccmqqhmr9wx",
+    "proposal_tx_hash": "56f39054758f1a3cedc1de9225d66bf270b62dfdbfbc5399f1d6d43aceffc636",
+    "proposal_index": 0,
+    "proposal_type": "InfoAction",
+    "proposal_description": {
+      "tag": "InfoAction"
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uyguuqwdpexmhgjd07vax5t2ay3f7qvea49ex907g6fmvjclq6l03",
+    "proposed_epoch": 542,
+    "ratified_epoch": null,
+    "enacted_epoch": null,
+    "dropped_epoch": null,
+    "expired_epoch": null,
+    "expiration": 549,
+    "meta_url": "ipfs://bafkreiada4nn5eaezg43esieduks6l57vzkjdo2yfby7yxv6jrat7ilrdq",
+    "meta_hash": "b160033b47dfc31885c297c55ba6b68afaf7561da3070eced93d84ad70d8f5b3",
+    "meta_json": {
+      "body": {
+        "title": "Defining the Cardano Vision and Roadmap for 2025 and beyond",
+        "abstract": "This Info Action calls for a vote by Cardano Delegate Representatives (DReps) on the proposed future roadmap for Cardano. This roadmap, developed by the Cardano Product Committee of Intersect with consultation from key technical stakeholders, outlines key development priorities, technological advancements, and strategic goals for the Cardano ecosystem. The DRep vote will provide crucial input for strategic alignment and inform future budget proposals, including the current budget conversations.",
+        "rationale": "This vote is important for gathering community consensus on the vision and roadmap priorities for Cardano in 2025. While the focus is on near-term deliverables which add real value, we envisage some of the items outlined in the roadmap to be a multi-year endeavor, so it is important to provide the broader context. By participating, DReps can ensure that the development trajectory of Cardano reflects the collective will of their constituents. A clear and community-backed roadmap is essential for aligning development efforts with the shared vision for Cardano's future, maximizing the impact of resources, and fostering a cohesive ecosystem. This process promotes transparency and ensures accountability in shaping the future of the Cardano blockchain.",
+        "motivation": "The long-term success and adoption of the Cardano blockchain depend on a clear and community-backed roadmap. DReps play a vital role in shaping Cardano's future. This vote empowers DReps to exercise their governance rights and directly influence the development trajectory of Cardano, reflecting the collective will of their constituents through liquid democracy. A well-defined roadmap, endorsed by DReps, ensures that development efforts are focused and aligned with the shared vision for Cardano, maximizing the impact of development resources and fostering a cohesive ecosystem. This roadmap will also inform the budget proposals developed by Intersect.\n\nDuring the lifetime of the governance action, the Product Committee will iterate upon the roadmap based upon DRep feedback, adjusting the referenced roadmap. DReps are encouraged to attach metadata to their votes, providing rationale; these rationales will be reviewed by the Product Committee. A *yes* vote for this action signals support for the proposed roadmap. A *no* vote on this action signals a lack of support for the roadmap. An *abstain* vote means signals neither in favor nor against. While the referenced roadmap develops, DReps should consider submitting multiple votes to signal approval across versions.",
+        "references": [
+          {
+            "uri": "https://product.cardano.intersectmbo.org/vision-roadmap-2025",
+            "@type": "Other",
+            "label": "Product Vision and Roadmap for 2025"
+          }
+        ]
+      },
+      "authors": [
+        {
+          "name": "Samuel Leathers (Intersect Product Committee Chair)",
+          "witness": {
+            "publicKey": "7f42934d3195440f9cc1ac5814ddb70b5da585f9bb2b077edf72694cd03e6a0b",
+            "signature": "44c15a95775d16f5d0c9cc5b7b0b1b5661ce42f0b8288228db8f9e71c7d66dcd92854b3ad3ad7eb61c3103e173ec3026d2d07174db471fee33161721add0d70c",
+            "witnessAlgorithm": "ed25519"
+          }
+        }
+      ],
+      "@context": {
+        "body": {
+          "@id": "CIP108:body",
+          "@context": {
+            "title": "CIP108:title",
+            "comment": "CIP100:comment",
+            "abstract": "CIP108:abstract",
+            "rationale": "CIP108:rationale",
+            "motivation": "CIP108:motivation",
+            "references": {
+              "@id": "CIP108:references",
+              "@context": {
+                "uri": "CIP100:reference-uri",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@id": "CIP108:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP108:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                },
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference"
+              },
+              "@container": "@set"
+            },
+            "externalUpdates": {
+              "@id": "CIP100:externalUpdates",
+              "@context": {
+                "uri": "CIP100:update-uri",
+                "title": "CIP100:update-title"
+              }
+            }
+          }
+        },
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "authors": {
+          "@id": "CIP100:authors",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              }
+            }
+          },
+          "@container": "@set"
+        },
+        "@language": "en-us",
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "hashAlgorithm": "blake2b-256"
+    },
+    "meta_comment": null,
+    "meta_language": "en-us",
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  },
+  {
+    "block_time": 1739453533,
+    "proposal_id": "gov_action1js2s9v92zpxg2rge0y3jt9zy626he2m67x9kx9phw4r942kvsn6sqfym0d7",
+    "proposal_tx_hash": "941502b0aa104c850d197923259444d2b57cab7af18b63143775465aaacc84f5",
+    "proposal_index": 0,
+    "proposal_type": "ParameterChange",
+    "proposal_description": {
+      "tag": "ParameterChange",
+      "contents": [
+        {
+          "txId": "b2a591ac219ce6dcca5847e0248015209c7cb0436aa6bd6863d0c1f152a60bc5",
+          "govActionIx": 0
+        },
+        {
+          "treasuryCut": 0.1
+        },
+        "fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64"
+      ]
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1u9jxe8jlwjzw3tkwh229v6mnhz6s898td0a4fan6cky96kgv7haes",
+    "proposed_epoch": 539,
+    "ratified_epoch": null,
+    "enacted_epoch": null,
+    "dropped_epoch": null,
+    "expired_epoch": null,
+    "expiration": 546,
+    "meta_url": "ipfs://QmcKQggcpouuhAAvUYGDzoKgMwbZSkWqiEeE6c67SJ3kEq",
+    "meta_hash": "9b2438f0032a0c24ed62d12d6bdb79b47e2bd0c4d2dd4f4936c055ead7109caf",
+    "meta_json": {
+      "body": {
+        "title": "Decrease Treasury Tax from 20% to 10%",
+        "abstract": "This governance proposal seeks to reduce the treasury cut from 20% to 10% to enhance staking incentives, improve decentralization, and align economic sustainability with the Cardano ecosystem's long term growth. The adjustment aims to optimize staking rewards without compromising the financial health of the treasury, ensuring a balanced economic model that incentivizes participation and network security.",
+        "rationale": "## Rationale\n\nThe proposal seeks to reduce the treasury cut from 20% to 10%, increasing staking rewards and incentivizing greater participation in governance. This adjustment strengthens decentralization and network security while maintaining a sustainable treasury.\n\n## Precedent: Plutus V3 Cost Model Update\n\nThe Plutus V3 cost model update demonstrates how governance-driven parameter adjustments can optimize Cardano's economic and technical framework. That update enabled new cryptographic primitives without disrupting existing functionality. This proposal follows a similar structured approach to fine-tune economic incentives while adhering to governance protocols.\n\nRather than equating this action with the Plutus cost model update, it should be framed as a governance-driven economic refinement. The similarity lies in their procedural approach. Both actions modify key parameters through structured governance processes to optimize Cardano's functionality and incentive structures.\n\n## Mathematical Justification\n\nCardano's staking reward system is governed by the formula:\n\n$$ R_{\\text{epoch}} = M \\times (\\text{monetaryExpansion}) + T $$\n\nwhere $`R_{\\text{epoch}}`$ is the total rewards distributed per epoch, $`M`$ represents the remaining ADA reserves, and $`T`$ is the total transaction fees collected in that epoch. The treasury cut is applied before distribution:\n\n$$ R_{\\text{stakers}} = (1 - \\text{treasuryCut}) \\times R_{\\text{epoch}} $$\n\nUnder the current 20% tax:\n\n$$ R_{\\text{stakers}} = 0.80 \\times R_{\\text{epoch}} $$\n\nReducing the tax to 10% results in:\n\n$$ R_{\\text{stakers}} = 0.90 \\times R_{\\text{epoch}} $$\n\nThis equates to a 12.5% increase in staking rewards across the network. Assuming a baseline staking APY of 4.0%, the reduction would increase APY to approximately 4.5%.\n\n## Constitutional Alignment\n\nThe new constitution explicitly permits treasury cuts between 10% and 30% (Appendix I, Section 2.1: TC-01, TC-02). The interim constitution also establishes governance guidelines that align with maintaining financial stability (Article III, Section 3). This governance action remains within those limits and upholds fiscal sustainability principles. It does not alter governance structures but optimizes staking incentives.\n\n## Justification Based on Cardano's Economic Landscape\n\nThis proposal should be justified by Cardano's staking participation rates, treasury utilization, and historical transaction volume. Rather than relying on direct comparisons to external blockchains, the focus should be on positioning Cardano as a highly competitive ecosystem that maximizes staking incentives and treasury efficiency. Ensuring an optimal balance between treasury funding and staking rewards will attract users and developers, particularly during the most competitive phases of market cycles, reinforcing Cardano's long-term adoption and growth.\n\n## Governance Transition Considerations\n\nThe new constitution introduces improved treasury oversight and decentralized decision-making (Article IV, Sections 1-3). This proposal aligns with those mechanisms. It acknowledges the strengthened governance framework and ensures compliance with voting requirements for economic parameter changes.\n\n## Referencing Constitutional Guardrails\n\nThe original 20% treasury cut was an arbitrary level set at the beginning of Shelley and has never been reassessed. It was not based on economic modeling or sustainability projections but rather as a starting point in the early phases of the network. Now, with a more mature ecosystem, this governance action proposes an adjustment to align with long-term realities.\n\nThe primary mechanism that ensures treasury sustainability is **ADA price appreciation** rather than relying solely on transaction volume growth. At significantly higher ADA valuations, the treasury will remain well-funded even with a lower tax rate. This can be expressed as:\n\n$$ T_{\\text{future}} = T_{\\text{current}} \\times \\frac{P_{\\text{future}}}{P_{\\text{current}}} $$\n\nwhere $`T_{\\text{future}}`$ represents the future treasury value, $`T_{\\text{current}}`$ is the current treasury balance, and $`P_{\\text{future}}`$ and $`P_{\\text{current}}`$ represent the future and current price of ADA, respectively.\n\nAt higher ADA valuations, treasury reserves will remain sufficient to fund governance, development, and long-term initiatives without over-relying on a high tax rate. This adjustment strikes a balance between incentivizing participation and ensuring treasury sustainability.\n\n## Benefits to the Ecosystem\n\nReducing the treasury cut increases direct staking incentives, strengthening security by encouraging wider participation in staking. Higher staking rewards improve decentralization, as more ADA holders are motivated to delegate, reducing centralization risks among stake pools.\n\nThis change strengthens staking incentives and decentralization while ensuring the treasury remains well-funded under a sustainable long-term model. The original 20% treasury cut was set arbitrarily at the start of Shelley and has never been adjusted. Now that Cardano has matured, a lower treasury cut realigns incentives with network security and participant rewards.\n\nAt higher ADA prices, the treasury retains substantial purchasing power even with a reduced cut. This can be expressed as:\n\n$$ T_{\\text{future}} = T_{\\text{current}} \\times \\frac{P_{\\text{future}}}{P_{\\text{current}}} + \\sum_{i=1}^{n} \\alpha \\cdot T_0 \\cdot (1 + g)^i $$\n\nwhere $`T_{{future}}`$ represents the future treasury value, $`T_{\\text{current}}`$ is the current treasury balance, $`P_{\\text{future}}`$ and $`P_{\\text{current}}`$ represent the future and current price of ADA, and the second term accounts for treasury inflows from transaction fees, where $`\\alpha`$ is the proportion allocated to the treasury, $`T_0`$ is the initial transaction revenue, and $`g`$ is the growth rate of transaction volume.\n\nA lower treasury cut not only increases staking rewards but also shifts economic incentives toward sustainable growth. Developers and projects will be encouraged to build products that drive real transaction activity rather than focusing on treasury allocations as a primary funding source. While increased transaction volume contributes to treasury inflows, the most significant long-term driver of treasury sustainability remains **ADA price appreciation**.\n\nThis adjustment enhances network security, incentivizes ecosystem participation, and promotes a more organic and sustainable approach to funding, ensuring that Cardano remains competitive while maintaining financial stability.\n\n## Governance Efficiency and Competitive Resource Allocation\n\nA leaner treasury encourages competitive grant proposals and more strategic allocation of resources. With a more dynamic and utility-driven economic model, Cardano strengthens its position as an attractive environment for developers and enterprises looking to build scalable blockchain applications.\n\n## Ensuring Continuity and Preventing Disruptions\n\nTo prevent conflicts with the governance transition, this proposal recognizes the role of **DReps, SPOs, and the Constitutional Committee** in treasury management (Article III, Section 2). It remains within the guardrails and economic sustainability principles of both the interim and new constitutional frameworks. A structured review mechanism can be introduced to assess its impact over time and make future adjustments if needed.\n\n## Review and Governance Compliance\n\nThis proposal follows past governance action formats, incorporates economic impact analysis, and ensures alignment with constitutional parameters. It prioritizes Cardano's staking and treasury ecosystem without introducing unnecessary external references. The focus remains on sustainable network incentives and broad economic viability.",
+        "motivation": "The initial 20% treasury cut was set arbitrarily at the launch of Shelley and has never been reassessed. With Cardano's ecosystem maturing and a more structured governance framework in place, it is now possible to refine economic parameters to better align with network incentives. A lower treasury cut increases staking rewards, encourages broader participation, and strengthens security while maintaining a sustainable treasury. This adjustment ensures that governance decisions support long term ecosystem growth.",
+        "references": [
+          {
+            "uri": "https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-04/draft-constitution-converted.md",
+            "@type": "Other",
+            "label": "Cardano Interim Constitution"
+          },
+          {
+            "uri": "https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md",
+            "@type": "Other",
+            "label": "Cardano New Constitution"
+          },
+          {
+            "uri": "https://docs.cardano.org/about-cardano/learn/delegation",
+            "@type": "Other",
+            "label": "Staking and Rewards Mechanics:"
+          },
+          {
+            "uri": "https://github.com/IntersectMBO/cardano-world/blob/51f271a3d6fb1142b167868c506048226ab2021c/docs/environments/mainnet/shelley-genesis.json",
+            "@type": "Other",
+            "label": "Cardano Shelley Genesis File"
+          },
+          {
+            "uri": "https://quality-assurance-dao.gitbook.io/community-governance-oversight/catalyst-parameters/governance-parameters/cardano-treasury-with-kevin-hammond",
+            "@type": "Other",
+            "label": "Cardano Treasury with Kevin Hammond"
+          }
+        ]
+      },
+      "authors": [],
+      "@context": {
+        "body": {
+          "@id": "CIP108:body",
+          "@context": {
+            "title": "CIP108:title",
+            "abstract": "CIP108:abstract",
+            "rationale": "CIP108:rationale",
+            "motivation": "CIP108:motivation",
+            "references": {
+              "@id": "CIP108:references",
+              "@context": {
+                "uri": "CIP100:reference-uri",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@id": "CIP108:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP108:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                },
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference"
+              },
+              "@container": "@set"
+            }
+          }
+        },
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "authors": {
+          "@id": "CIP100:authors",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              }
+            }
+          },
+          "@container": "@set"
+        },
+        "@language": "en",
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "hashAlgorithm": "blake2b-256"
+    },
+    "meta_comment": null,
+    "meta_language": "en",
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": {
+      "treasury_growth_rate": 0.1
+    }
+  },
+  {
+    "block_time": 1738257458,
+    "proposal_id": "gov_action133jnaewfsq8x6v08ndd87l2yqryp63r30t2dkceacxx5cply5n7sqzlcyqf",
+    "proposal_tx_hash": "8c653ee5c9800e6d31e79b5a7f7d4400c81d44717ad4db633dc18d4c07e4a4fd",
+    "proposal_index": 0,
+    "proposal_type": "NewConstitution",
+    "proposal_description": {
+      "tag": "NewConstitution",
+      "contents": [
+        null,
+        {
+          "anchor": {
+            "url": "ipfs://bafkreiazhhawe7sjwuthcfgl3mmv2swec7sukvclu3oli7qdyz4uhhuvmy",
+            "dataHash": "2a61e2f4b63442978140c77a70daab3961b22b12b63b13949a390c097214d1c5"
+          },
+          "script": "fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64"
+        }
+      ]
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uyguuqwdpexmhgjd07vax5t2ay3f7qvea49ex907g6fmvjclq6l03",
+    "proposed_epoch": 537,
+    "ratified_epoch": 541,
+    "enacted_epoch": 542,
+    "dropped_epoch": null,
+    "expired_epoch": null,
+    "expiration": 544,
+    "meta_url": "ipfs://bafkreiehcekhhsq34ccezwn46brg3euj6tbs4g4yjkav34ukqvbnzaya2a",
+    "meta_hash": "d085e5af96521ae2670400e76c3a1e4b4eb902139ddaa83bde7580e7e9d7ddec",
+    "meta_json": null,
+    "meta_comment": null,
+    "meta_language": null,
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  },
+  {
+    "block_time": 1734779082,
+    "proposal_id": "gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525",
+    "proposal_tx_hash": "0b19476e40bbbb5e1e8ce153523762e2b6859e7ecacbaf06eae0ee6a447e79b9",
+    "proposal_index": 0,
+    "proposal_type": "HardForkInitiation",
+    "proposal_description": {
+      "tag": "HardForkInitiation",
+      "contents": [
+        null,
+        {
+          "major": 10,
+          "minor": 0
+        }
+      ]
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uyguuqwdpexmhgjd07vax5t2ay3f7qvea49ex907g6fmvjclq6l03",
+    "proposed_epoch": 529,
+    "ratified_epoch": 536,
+    "enacted_epoch": 537,
+    "dropped_epoch": null,
+    "expired_epoch": null,
+    "expiration": 536,
+    "meta_url": "https://raw.githubusercontent.com/IntersectMBO/governance-actions/refs/heads/main/mainnet/2024-10-30-hf10/metadata.jsonld",
+    "meta_hash": "8a1bd37caa6b914a8b569adb63a0f41d8f159c110dc5c8409118a3f087fffb43",
+    "meta_json": null,
+    "meta_comment": null,
+    "meta_language": null,
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  },
+  {
+    "block_time": 1732096267,
+    "proposal_id": "gov_action1llcd7ezdx299xeep9azm4dvsvz7783qfrhykcu3sv2ykl4sewv2qq4myfpk",
+    "proposal_tx_hash": "fff0df644d328a5367212f45bab59060bde3c4091dc96c723062896fd6197314",
+    "proposal_index": 0,
+    "proposal_type": "InfoAction",
+    "proposal_description": {
+      "tag": "InfoAction"
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uyguuqwdpexmhgjd07vax5t2ay3f7qvea49ex907g6fmvjclq6l03",
+    "proposed_epoch": 522,
+    "ratified_epoch": null,
+    "enacted_epoch": null,
+    "dropped_epoch": 530,
+    "expired_epoch": 529,
+    "expiration": 529,
+    "meta_url": "https://raw.githubusercontent.com/IntersectMBO/governance-actions/refs/heads/main/mainnet/2024-11-19-infohf/metadata.jsonld",
+    "meta_hash": "93106d082a93e94df5aff74f678438bae3a647dac63465fbfcde6a3058f41a1e",
+    "meta_json": {
+      "body": {
+        "title": "Rename the Chang 2 Hard Fork to the Plomin Hard Fork",
+        "abstract": "The Intersect Hard Fork Working Group proposes to name the next Cardano hard fork the “Plomin Hard Fork” in memory of Cardano community contributor Matthew Plomin.",
+        "rationale": "Renaming the “Second Chang Hard Fork” (Chang 2) to the Plomin Hard Fork, in memory of Cardano community contributor Matthew Plomin, reflects a natural progression of Cardano’s governance growth. Phil Chang was an employee of Input Output who made significant contributions to Cardano’s governance system to help transfer control and responsibility of the blockchain into the hands of the community. Matthew Plomin was an exemplar of the Cardano community, representing every individual who stands ready to pick up the torch and carry the ecosystem forward.\n\nMatthew was a much loved and respected member of the Cardano community. He passed unexpectedly on November 14th, 2024. Originally hailing from Indiana, USA; he earned a Bachelor of Science in Management degree from Purdue University where he met and married the love of his life, Jillian (Shaw). He went on to receive his Master of Business Administration Degree from George Washington University before joining the DWS Group (Deutsche Bank) and rising to the Head of the US Money Market Credit Research team. His expertise in the traditional finance world was instrumental in his journey to found $USDM, a Cardano-native stable coin pegged to the US Dollar and fully backed by dollar reserves.\n\nAs a Cardano community member, Matthew was always eager to learn more and excited to help others work through issues they encountered with their projects in the ecosystem. He taught himself how to mint native assets, experimenting with social games and helping Jillian to publish a book she authored in a serialized, token-based format. Seeing the need for a US Dollar-backed Stablecoin on Cardano, Matthew assembled a team that would become the Moneta project. Despite limited institutional backing during a market bottom, the community stepped up to champion him and their support helped his dream become a reality.\n\nMatthew leaves behind his wife, Jillian, their seven children, and the Moneta team. His legacy lives on through the work that he accomplished and the inspiration that he kindled in others. As a devout Roman Catholic Christian, Matthew lived out the “Golden Rule” to “do unto others as you would have them do unto you,” and the world is a better place for him being in it.",
+        "motivation": "There is a tradition of naming hard forks in memory of notable historical figures or significant contributors to the Cardano community. Naming this hard fork in memory of Matthew Plomin would memorialize his actions in life to selflessly support and contribute to the Cardano blockchain ecosystem.",
+        "references": [
+          {
+            "uri": "https://docs.cardano.org/about-cardano/evolution/upgrades/vasil/",
+            "@type": "Other",
+            "label": "Vasil Hard Fork | Cardano Docs"
+          },
+          {
+            "uri": "https://www.intersectmbo.org/news/chang-upgrade-1-hard-fork-achieved",
+            "@type": "Other",
+            "label": "Chang upgrade #1 hard fork achieved! | Intersect MBO"
+          }
+        ]
+      },
+      "authors": [
+        {
+          "name": "Adam Dean, Adam Rusch",
+          "witness": {
+            "publicKey": "d57dcc6fef949f9e159e4b33b7b60691bf9c48e6f58fb4709809dde8d822ef54",
+            "signature": "4bb55fa3f66ed5bf4e934061b35d18473462b64357222e4ad5f37568c3ea57bc350bae9cf0843c14e30bade86533149e34b4d3c57b5df30e1d3ca5f326df2d0c",
+            "witnessAlgorithm": "ed25519"
+          }
+        }
+      ],
+      "@context": {
+        "body": {
+          "@id": "CIP108:body",
+          "@context": {
+            "title": "CIP108:title",
+            "abstract": "CIP108:abstract",
+            "rationale": "CIP108:rationale",
+            "motivation": "CIP108:motivation",
+            "references": {
+              "@id": "CIP108:references",
+              "@context": {
+                "uri": "CIP100:reference-uri",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@id": "CIP108:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP108:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                },
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference"
+              },
+              "@container": "@set"
+            }
+          }
+        },
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "authors": {
+          "@id": "CIP100:authors",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              }
+            }
+          },
+          "@container": "@set"
+        },
+        "@language": "en",
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "hashAlgorithm": "blake2b-256"
+    },
+    "meta_comment": null,
+    "meta_language": "en",
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  },
+  {
+    "block_time": 1730828519,
+    "proposal_id": "gov_action1k2jertppnnndejjcglszfqq4yzw8evzrd2nt66rr6rqlz54xp0zsq05ecsn",
+    "proposal_tx_hash": "b2a591ac219ce6dcca5847e0248015209c7cb0436aa6bd6863d0c1f152a60bc5",
+    "proposal_index": 0,
+    "proposal_type": "ParameterChange",
+    "proposal_description": {
+      "tag": "ParameterChange",
+      "contents": [
+        null,
+        {
+          "costModels": {
+            "PlutusV3": [
+              100788,
+              420,
+              1,
+              1,
+              1000,
+              173,
+              0,
+              1,
+              1000,
+              59957,
+              4,
+              1,
+              11183,
+              32,
+              201305,
+              8356,
+              4,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              100,
+              100,
+              16000,
+              100,
+              94375,
+              32,
+              132994,
+              32,
+              61462,
+              4,
+              72010,
+              178,
+              0,
+              1,
+              22151,
+              32,
+              91189,
+              769,
+              4,
+              2,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              1,
+              1000,
+              42921,
+              4,
+              2,
+              24548,
+              29498,
+              38,
+              1,
+              898148,
+              27279,
+              1,
+              51775,
+              558,
+              1,
+              39184,
+              1000,
+              60594,
+              1,
+              141895,
+              32,
+              83150,
+              32,
+              15299,
+              32,
+              76049,
+              1,
+              13169,
+              4,
+              22100,
+              10,
+              28999,
+              74,
+              1,
+              28999,
+              74,
+              1,
+              43285,
+              552,
+              1,
+              44749,
+              541,
+              1,
+              33852,
+              32,
+              68246,
+              32,
+              72362,
+              32,
+              7243,
+              32,
+              7391,
+              32,
+              11546,
+              32,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              90434,
+              519,
+              0,
+              1,
+              74433,
+              32,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              1,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              955506,
+              213312,
+              0,
+              2,
+              270652,
+              22588,
+              4,
+              1457325,
+              64566,
+              4,
+              20467,
+              1,
+              4,
+              0,
+              141992,
+              32,
+              100788,
+              420,
+              1,
+              1,
+              81663,
+              32,
+              59498,
+              32,
+              20142,
+              32,
+              24588,
+              32,
+              20744,
+              32,
+              25933,
+              32,
+              24623,
+              32,
+              43053543,
+              10,
+              53384111,
+              14333,
+              10,
+              43574283,
+              26308,
+              10,
+              16000,
+              100,
+              16000,
+              100,
+              962335,
+              18,
+              2780678,
+              6,
+              442008,
+              1,
+              52538055,
+              3756,
+              18,
+              267929,
+              18,
+              76433006,
+              8868,
+              18,
+              52948122,
+              18,
+              1995836,
+              36,
+              3227919,
+              12,
+              901022,
+              1,
+              166917843,
+              4307,
+              36,
+              284546,
+              36,
+              158221314,
+              26549,
+              36,
+              74698472,
+              36,
+              333849714,
+              1,
+              254006273,
+              72,
+              2174038,
+              72,
+              2261318,
+              64571,
+              4,
+              207616,
+              8310,
+              4,
+              1293828,
+              28716,
+              63,
+              0,
+              1,
+              1006041,
+              43623,
+              251,
+              0,
+              1,
+              100181,
+              726,
+              719,
+              0,
+              1,
+              100181,
+              726,
+              719,
+              0,
+              1,
+              100181,
+              726,
+              719,
+              0,
+              1,
+              107878,
+              680,
+              0,
+              1,
+              95336,
+              1,
+              281145,
+              18848,
+              0,
+              1,
+              180194,
+              159,
+              1,
+              1,
+              158519,
+              8942,
+              0,
+              1,
+              159378,
+              8813,
+              0,
+              1,
+              107490,
+              3298,
+              1,
+              106057,
+              655,
+              1,
+              1964219,
+              24520,
+              3
+            ]
+          }
+        },
+        "fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64"
+      ]
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uyguuqwdpexmhgjd07vax5t2ay3f7qvea49ex907g6fmvjclq6l03",
+    "proposed_epoch": 519,
+    "ratified_epoch": 525,
+    "enacted_epoch": 526,
+    "dropped_epoch": null,
+    "expired_epoch": null,
+    "expiration": 526,
+    "meta_url": "https://raw.githubusercontent.com/IntersectMBO/governance-actions/refs/heads/main/mainnet/2024-11-04-ppu/metadata.jsonld",
+    "meta_hash": "94deb036c455e4064f7ed4162edbdb7d892ad264094df9a26fd61b5b130d100f",
+    "meta_json": {
+      "body": {
+        "title": "Plutus V3 Cost Model Parameter Changes Prior to Chang#2",
+        "abstract": "We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang#2 hard fork (to Protocol Version 10).  Existing Plutus cost model settings will not be changed.  Note that the primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork).",
+        "rationale": "We propose to update the Plutus V3 Cost Model via a Parameter Update governance action to enable the new Plutus primitives that will be available following the Chang #2 hard fork (to Protocol Version 10).  Existing Plutus cost model settings will not be changed.  Note that the new primitives will not be enabled in Protocol version 9 (as enabled by the Chang hard fork). \n\n## Technical Evaluation\n\nThe changes described in this governance action have been recommended by Intersect’s Parameter Committee on 2024-10-10, as evidenced by [this post in the Cardano Forum](https://forum.cardano.org/t/oct-10-2024-voltaire-era-parameter-committee-intermediate-state/137361), and subsequently ratified unanimously by Intersect's Technical Steering Committee on 2024-10-18.\n\n\n### Functionality\n\nAs described below, 12 new Plutus v3 primitives will be enabled following the Chang#2 hard fork. These will provide new bitwise and cryptographic hashing functions that have a variety of uses, and which will enhance interoperability with BitCoin and Ethereum.  The revised Plutus v3 cost model will enable those new primitives.  The changes are all additions to the existing Plutus V3 cost model.  No changes will be made to the cost model values for any existing Plutus primitives or to the Plutus V1 and V2 cost nodels.\n### Security\n\n\nNo specific security concerns are raised by this change. A security report will be provided for the new Plutus primitives to support the Chang#2 hard fork.\n\n\n### Performance\n\nIn line with [Plutus benchmarking procedures](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/CostModelGeneration.md), [standard benchmarking has been undertaken on a reference machine](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/benching-conway.csv) to determine these cost model settings and to align them with existing Plutus primitives.  Since Plutus script execution times and memory usage are bounded by `maxBlockExecutionUnits[steps/memory]` and `maxTxExecutionUnits[steps/memory]`, there will be no overall performance impact on the node from these new cost model settings.\n\n### Sustainability\n\nThe upgrade provides new Plutus functionality that will enhance its bitwise and cryptographic capabilities and provide better interoperability with BitCoin and Ethereum.\n\n## New Plutus Primitives that will be Enabled after the Chang#2 Hard Fork\n\n\nThe new Plutus primitives are defined in three CIPs: [CIP-0122](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0122), [CIP-0123](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0123) and [CIP-0127](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0127).\n\n### CIP-0122\nBitwise operations, both over fixed-width and variable-width blocks of bits, have a range of uses, including data structures (especially succinct ones) and cryptography. Currently, operations on individual bits in Plutus Core are difficult, or outright impossible, while also keeping within the tight constraints required on-chain. While it is possible to some degree to work with individual bytes over BuiltinByteStrings, this isn't sufficient, or efficient, when bit manipulations are required.\n\nThe new Plutus primitives defined by CIP-0122 are:\n\n- Bitwise logical AND, OR, XOR and complement;\n- Reading a bit value at a given index;\n- Setting bits value at given indices; and\n- Replicating a byte a given number of times.\n\n> ``\n> andByteString, orByteString, xorByteString, complementByteString, readBit, writeBits, replicateByte\n> ``\n\n### CIP-0123\nThe new bitwise operations that are defined in CIP-0123 extend the set that is provided by CIP-0123 to provide a usefully 'complete' set of bitwise operations.\n\nThe new Plutus primitives defined by CIP-0123 are:\n\n- Bit shifts and rotations\n- Counting the number of set bits (popcount)\n- Finding the first set bit\n\n> ``\n> shiftByteString,\n> rotateByteString,\n> countSetBits,\n> findFirstSetBit\n> ``\n\n\n### CIP-0127\nThe integration of the ECDSA and Schnorr signatures over the secp256k1 curve into Plutus was a significant step towards interoperability with the Ethereum and Bitcoin ecosystems. However, full compatibility is still impossible due to the absence of the RIPEMD-160 hashing algorithm in the Plutus interpreter. This is a fundamental component of Bitcoin's cryptographic framework.\n\nAdding RIPEMD-160 support to Plutus enhances the potential for cross-chain solutions between Cardano and Bitcoin blockchains and complements the set of primitives which are already available. It will allow for the verification of Bitcoin addresses and transactions on-chain. This addition also enables the verification of signed messages that identify the signer by the public key hash, which has not yet been witnessed on the Bitcoin blockchain.\n\nThe new Plutus primitive defined by CIP-0127 is:\n\n- [RIPEMD-160 hashing](https://homes.esat.kuleuven.be/~bosselae/ripemd160/pdf/AB-9601/AB-9601.pdf)\n\n> ``\n> ripemd_160\n> ``\n\nEach of the new primitives has both CPU and memory unit cost models.\n\n\n## Differences to the current Plutus cost model that will be enacted by this governance action.\n\n\nThe full difference from the current on-chain Plutus V3 cost model settings is shown below.  These changes are all additions to the existing Plutus V3 cost model.  There are no changes to the Plutus V1 or V2 cost models.\n\n\n    \"andByteString\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 100181,\n               \"slope1\": 726,\n               \"slope2\": 719\n           },\n           \"type\": \"linear_in_y_and_z\"\n       },\n       \"memory\": {\n           \"arguments\": {\n               \"intercept\": 0,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_max_yz\"\n       }\n    },\n    \"orByteString\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 100181,\n               \"slope1\": 726,\n               \"slope2\": 719\n           },\n           \"type\": \"linear_in_y_and_z\"\n       },\n       \"memory\": {\n           \"arguments\": {\n               \"intercept\": 0,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_max_yz\"\n       }\n    },\n    \"xorByteString\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 100181,\n               \"slope1\": 726,\n               \"slope2\": 719\n           },\n           \"type\": \"linear_in_y_and_z\"\n       },\n       \"memory\": {\n           \"arguments\": {\n               \"intercept\": 0,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_max_yz\"\n       }\n    },\n    \"complementByteString\": {\n       \"cpu\": {\n           \"arguments\": {\n              \"intercept\": 107878,\n               \"slope\": 680\n           },\n           \"type\": \"linear_in_x\"\n       },\n       \"memory\": {\n           \"arguments\": {\n              \"intercept\": 0,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_x\"\n       }\n    },\n    \"readBit\": {\n       \"cpu\": {\n          \"arguments\": 95336,\n           \"type\": \"constant_cost\"\n       },\n       \"memory\": {\n          \"arguments\": 1,\n           \"type\": \"constant_cost\"\n       }\n    },\n    \"writeBits\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 281145,\n               \"slope\": 18848\n           },\n           \"type\": \"linear_in_y\"\n       },\n       \"memory\": {\n           \"arguments\": {\n               \"intercept\": 0,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_x\"\n       }\n    },\n    \"replicateByte\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 180194,\n               \"slope\": 159\n           },\n           \"type\": \"linear_in_x\"\n       },\n       \"memory\": {\n           \"arguments\": {\n               \"intercept\": 1,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_x\"\n       }\n    },\n    \"shiftByteString\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 158519,\n               \"slope\": 8942\n           },\n           \"type\": \"linear_in_x\"\n       },\n       \"memory\": {\n           \"arguments\": {\n               \"intercept\": 0,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_x\"\n       }\n    },\n    \"rotateByteString\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 159378,\n               \"slope\": 8813\n           },\n           \"type\": \"linear_in_x\"\n       },\n       \"memory\": {\n           \"arguments\": {\n               \"intercept\": 0,\n               \"slope\": 1\n           },\n           \"type\": \"linear_in_x\"\n       }\n    },\n    \"countSetBits\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 107490,\n               \"slope\": 3298\n           },\n           \"type\": \"linear_in_x\"\n       },\n       \"memory\": {\n           \"arguments\": 1,\n           \"type\": \"constant_cost\"\n       }\n    },\n    \"findFirstSetBit\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 106057,\n               \"slope\": 655\n           },\n           \"type\": \"linear_in_x\"\n       },\n       \"memory\": {\n           \"arguments\": 1,\n           \"type\": \"constant_cost\"\n       }\n    },\n    \"ripemd_160\": {\n       \"cpu\": {\n           \"arguments\": {\n               \"intercept\": 1964219,\n               \"slope\": 24520\n           },\n           \"type\": \"linear_in_x\"\n       },\n       \"memory\": {\n           \"arguments\": 3,\n           \"type\": \"constant_cost\"\n       }\n    }\n\n\n## Consistency with Guardrails\n\n\nThe relevant guardrails in the Interim Constitution are:\n\n\n- **PCM-01:** \"Cost model values must be set by benchmarking on a reference architecture\"\n- **PCM-02:** \"The cost model must be updated if new primitives are introduced or a new Plutus language version is added\"\n- **PCM-03:** \"Cost model values should not be negative\"\n\n\nThis governance action is consistent with all three guardrails.  None of these guardrails can be checked by the automated guardrails script.\n\n\n### Consistency with PCM-01\n\nThe new cost model settings have been validated by the IO Engineering Plutus Core developer team against the same reference machine and implementation as the existing mainnet Plutus cost model settings.\n\n\n### Consistency with PCM-02\n\nThe cost model has been updated because new Plutus primitives will be introduced following the upgrade to Protocol Version 10.\n\n\n### Consistency with PCM-03\n\nNone of the new cost model values is negative.\n\n\n\n\n## Reversion Plan\n\n\nThe changes can be reversed if necessary by reinstating the current set of Plutus cost model values, omitting any settings for the new primitives.\n",
+        "motivation": "Following the hard fork to Protocol Version 10, 12 new Plutus primitives will be available for bitwise and cryptographic operations. This governance action provides cost model settings so that these primitives can be used following the Chang#2 hard fork.",
+        "references": [
+          {
+            "uri": "https://forum.cardano.org/t/oct-10-2024-voltaire-era-parameter-committee-intermediate-state/137361",
+            "@type": "Other",
+            "label": "Public Cardano Forum Post from the Parameter Committee Describing the Proposal"
+          },
+          {
+            "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0122",
+            "@type": "Other",
+            "label": "CIP-0122"
+          },
+          {
+            "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0123",
+            "@type": "Other",
+            "label": "CIP-0123"
+          },
+          {
+            "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0127",
+            "@type": "Other",
+            "label": "CIP-0127"
+          },
+          {
+            "uri": "https://homes.esat.kuleuven.be/~bosselae/ripemd160/pdf/AB-9601/AB-9601.pdf",
+            "@type": "Other",
+            "label": "RIPEMD-160 hashing"
+          },
+          {
+            "uri": "https://github.com/IntersectMBO/plutus/blob/master/doc/cost-model-overview/cost-model-overview.pdf",
+            "@type": "Other",
+            "label": "Overview of the Plutus Primitve Benchmarking Process"
+          },
+          {
+            "uri": "https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/CostModelGeneration.md",
+            "@type": "Other",
+            "label": "Generating and Updating the Plutus Cost Model"
+          },
+          {
+            "uri": "https://github.com/IntersectMBO/plutus/tree/master/plutus-core/cost-model/create-cost-model",
+            "@type": "Other",
+            "label": "Plutus Primitive Benchmarking Code"
+          },
+          {
+            "uri": "https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/benching-conway.csv",
+            "@type": "Other",
+            "label": "Plutus Primitive Performance Results (CSV)"
+          },
+          {
+            "uri": "https://updates.cardano.intersectmbo.org/reports/2024-10-performance-10.1.1/",
+            "@type": "Other",
+            "label": "Cardano Node 10.1.1 Performance Report"
+          },
+          {
+            "uri": "https://updates.cardano.intersectmbo.org/reports/tags/benchmarking-reports",
+            "@type": "Other",
+            "label": "All Cardano Node Performance Reports"
+          },
+          {
+            "uri": "https://committees.docs.intersectmbo.org/intersect-technical-steering-committee/tsc-meeting-minutes/23rd-october",
+            "@type": "Other",
+            "label": "Technical Steering Committee Meeting Minutes 204-10-23"
+          }
+        ]
+      },
+      "authors": [],
+      "@context": {
+        "body": {
+          "@id": "CIP108:body",
+          "@context": {
+            "title": "CIP108:title",
+            "abstract": "CIP108:abstract",
+            "rationale": "CIP108:rationale",
+            "motivation": "CIP108:motivation",
+            "references": {
+              "@id": "CIP108:references",
+              "@context": {
+                "uri": "CIP100:reference-uri",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@id": "CIP108:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP108:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                },
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference"
+              },
+              "@container": "@set"
+            }
+          }
+        },
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "authors": {
+          "@id": "CIP100:authors",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              }
+            }
+          },
+          "@container": "@set"
+        },
+        "@language": "en",
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "hashAlgorithm": "blake2b-256"
+    },
+    "meta_comment": null,
+    "meta_language": "en",
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": {
+      "cost_model_id": 253
+    }
+  },
+  {
+    "block_time": 1730398704,
+    "proposal_id": "gov_action1286ft23r7jem825s4l0y5rn8sgam0tz2ce04l7a38qmnhp3l9a6qqn850dw",
+    "proposal_tx_hash": "51f495aa23f4b3b3aa90afde4a0e67823bb7ac4ac65f5ffbb138373b863f2f74",
+    "proposal_index": 0,
+    "proposal_type": "ParameterChange",
+    "proposal_description": {
+      "tag": "ParameterChange",
+      "contents": [
+        null,
+        {
+          "costModels": {
+            "PlutusV3": [
+              100788,
+              420,
+              1,
+              1,
+              1000,
+              173,
+              0,
+              1,
+              1000,
+              59957,
+              4,
+              1,
+              11183,
+              32,
+              201305,
+              8356,
+              4,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              16000,
+              100,
+              100,
+              100,
+              16000,
+              100,
+              94375,
+              32,
+              132994,
+              32,
+              61462,
+              4,
+              72010,
+              178,
+              0,
+              1,
+              22151,
+              32,
+              91189,
+              769,
+              4,
+              2,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              1,
+              1000,
+              42921,
+              4,
+              2,
+              24548,
+              29498,
+              38,
+              1,
+              898148,
+              27279,
+              1,
+              51775,
+              558,
+              1,
+              39184,
+              1000,
+              60594,
+              1,
+              141895,
+              32,
+              83150,
+              32,
+              15299,
+              32,
+              76049,
+              1,
+              13169,
+              4,
+              22100,
+              10,
+              28999,
+              74,
+              1,
+              28999,
+              74,
+              1,
+              43285,
+              552,
+              1,
+              44749,
+              541,
+              1,
+              33852,
+              32,
+              68246,
+              32,
+              72362,
+              32,
+              7243,
+              32,
+              7391,
+              32,
+              11546,
+              32,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              90434,
+              519,
+              0,
+              1,
+              74433,
+              32,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              1,
+              85848,
+              123203,
+              7305,
+              -900,
+              1716,
+              549,
+              57,
+              85848,
+              0,
+              1,
+              955506,
+              213312,
+              0,
+              2,
+              270652,
+              22588,
+              4,
+              1457325,
+              64566,
+              4,
+              20467,
+              1,
+              4,
+              0,
+              141992,
+              32,
+              100788,
+              420,
+              1,
+              1,
+              81663,
+              32,
+              59498,
+              32,
+              20142,
+              32,
+              24588,
+              32,
+              20744,
+              32,
+              25933,
+              32,
+              24623,
+              32,
+              43053543,
+              10,
+              53384111,
+              14333,
+              10,
+              43574283,
+              26308,
+              10,
+              16000,
+              100,
+              16000,
+              100,
+              962335,
+              18,
+              2780678,
+              6,
+              442008,
+              1,
+              52538055,
+              3756,
+              18,
+              267929,
+              18,
+              76433006,
+              8868,
+              18,
+              52948122,
+              18,
+              1995836,
+              36,
+              3227919,
+              12,
+              901022,
+              1,
+              166917843,
+              4307,
+              36,
+              284546,
+              36,
+              158221314,
+              26549,
+              36,
+              74698472,
+              36,
+              333849714,
+              1,
+              254006273,
+              72,
+              2174038,
+              72,
+              2261318,
+              64571,
+              4,
+              207616,
+              8310,
+              4,
+              1293828,
+              28716,
+              63,
+              0,
+              1,
+              1006041,
+              43623,
+              251,
+              0,
+              1
+            ]
+          }
+        },
+        "fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64"
+      ]
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uyguuqwdpexmhgjd07vax5t2ay3f7qvea49ex907g6fmvjclq6l03",
+    "proposed_epoch": 518,
+    "ratified_epoch": null,
+    "enacted_epoch": null,
+    "dropped_epoch": 526,
+    "expired_epoch": 525,
+    "expiration": 525,
+    "meta_url": "https://raw.githubusercontent.com/IntersectMBO/governance-actions/refs/heads/main/mainnet/2024-10-21-ppu/metadata.jsonld",
+    "meta_hash": "3e6b1083a637a740d5b84bb6edf1a5119b81440b31ea84907311b6543ebd39eb",
+    "meta_json": null,
+    "meta_comment": null,
+    "meta_language": null,
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": {
+      "cost_model_id": 251
+    }
+  },
+  {
+    "block_time": 1728664168,
+    "proposal_id": "gov_action10lty9xka3unprtvdfrqvcjgsz33sjwhv9p06afqzar8au782trtsq7dhd95",
+    "proposal_tx_hash": "7fd6429add8f2611ad8d48c0cc49101463093aec285faea402e8cfde78ea58d7",
+    "proposal_index": 0,
+    "proposal_type": "InfoAction",
+    "proposal_description": {
+      "tag": "InfoAction"
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1u9aqjs65yw0ateajgej3trlhac40m74ue9rm5wmywshl5jqjdmr4s",
+    "proposed_epoch": 514,
+    "ratified_epoch": null,
+    "enacted_epoch": null,
+    "dropped_epoch": 522,
+    "expired_epoch": 521,
+    "expiration": 521,
+    "meta_url": "https://raw.githubusercontent.com/bigpey/CardanoGovernance/refs/heads/main/infoAction3.jsonld",
+    "meta_hash": "e68cba056c70187e475f05317ce54eeade3376d5b744b32f2c60492b4984b4bf",
+    "meta_json": {
+      "body": {
+        "title": "Should K increased?",
+        "abstract": "The K parameter was created to limit the total number of ADA staked to one pool. The K parameter determines the saturation of stakepools. To calculate the saturation of stakepools you can take the total number of ADA and divide it by K. K is currently 500, and pool saturation is currently 74,551,771.86 ADA. Pool saturate will increase slightly each epoch as more ADA is minted each epoch from staking rewards.\n\nK also has a large effect on a0. a0 is another Cardano protocol paramter that determines ADA staking rewards per epoch. a0 is currently set at .3. If a stakepool operator pledges the enough ADA to saturate their pool they earn 30% more ADA rewards per epoch. If you pledge half of the pools saturation then any delegates earn 15% more ADA rewards after SPO fees. Smaller pledges have a higher impact on staking rewards with a k parameter that's higher.",
+        "rationale": "We believe that it's important to submit governance info actions to encourage community participation in Cardano's governance before larger, and potentially more serious proposals are introduced. It's also important that people have a good understanding of what protocol parameters can be changed.\n\nYou can use this official link to learn more about Cardano protocol parameters.",
+        "motivation": "This governance action is by no means a suggestion of what Cardano protocol parameters should be modified to or if they should be modified at this time. The goal of this governance action is to increase governance participation before the next hardfork. You can register to be a dRep now with your own wallet, or delegate to another dRep today.",
+        "references": [
+          {
+            "uri": "https://x.com/atrium_lab",
+            "@type": "Other",
+            "label": "Find our proposal thread if you're interested in joining the discussion."
+          },
+          {
+            "uri": "https://x.com/atrium_lab/status/1838654833806446773",
+            "@type": "Other",
+            "label": "Our introduction to Cardano governance video."
+          },
+          {
+            "uri": "https://alpha.atrium.io/education/what-is-cryptocurrency",
+            "@type": "Other",
+            "label": "Link to our full Cardano education portal."
+          }
+        ]
+      },
+      "authors": [],
+      "@context": {
+        "body": {
+          "@id": "CIP108:body",
+          "@context": {
+            "title": "CIP108:title",
+            "abstract": "CIP108:abstract",
+            "rationale": "CIP108:rationale",
+            "motivation": "CIP108:motivation",
+            "references": {
+              "@id": "CIP108:references",
+              "@context": {
+                "uri": "CIP100:reference-uri",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@id": "CIP108:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP108:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                },
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference"
+              },
+              "@container": "@set"
+            }
+          }
+        },
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "authors": {
+          "@id": "CIP100:authors",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              }
+            }
+          },
+          "@container": "@set"
+        },
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "hashAlgorithm": "blake2b-256"
+    },
+    "meta_comment": null,
+    "meta_language": "en-us",
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  },
+  {
+    "block_time": 1726673082,
+    "proposal_id": "gov_action1t87n2vjnavthuggyarerafxx8c7n9mu4c7r96qlfp5uggsjdc8dsqymg588",
+    "proposal_tx_hash": "59fd353253eb177e2104e8f23ea4c63e3d32ef95c7865d03e90d3884424dc1db",
+    "proposal_index": 0,
+    "proposal_type": "InfoAction",
+    "proposal_description": {
+      "tag": "InfoAction"
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1uys93fhep4lc2u6lu0q09kcxayxzthasded35c0x0w60ugc9s0cm5",
+    "proposed_epoch": 510,
+    "ratified_epoch": null,
+    "enacted_epoch": null,
+    "dropped_epoch": 518,
+    "expired_epoch": 517,
+    "expiration": 517,
+    "meta_url": "https://c-ipfs-gw.nmkr.io/ipfs/QmXdfDSSkR8TYBntMT4nuTL9sE9E44FJnpWVpaY8ZTfwjj",
+    "meta_hash": "d4efa9e0c3d80f5be35def08551eaf5aef17eae832fdb835e5f4b208d98f3dff",
+    "meta_json": {
+      "body": {
+        "title": "Cardanoの生きがい - Ikigai -",
+        "abstract": "この瞬間、私たちは心からの感謝と敬意を、Charles Hoskinson率いるInput Output、EMURGO、そしてCardano財団に捧げます。彼らはCardanoを世界にもたらし、その献身、ビジョン、そして揺るぎない努力によって、私たちが今立っている土台を築き上げてくれました。彼らは「生きがい(Ikigai)」の本質を体現し、自身の仕事に喜びと意味を見出しながら、より大きな善のために貢献する力を示したのです。\n次のステージに向かう私たちは、少数の努力から多くの力へと移行します。共通の目的意識を持ち、Cardanoコミュニティとして、この土台を集団の知恵、情熱、そしてエネルギーでさらに築き上げていくことを誓います。私たち一人ひとりがCardanoの未来の一端を担い、共通の目的と、共に大きなことを成し遂げられるという信念によって結ばれています。",
+        "rationale": "この瞬間を振り返りながら、私たちはこの約束を、先人たちだけでなく、自分自身や未来の人々に対しても誓います。分散型ガバナンスの時代に、このガバナンスアクションを提出することで、私たちの目的-Cardanoの「生きがい(Ikigai)」を再確認するのです。\nこのガバナンスアクションは祝意を表すものであり、Cardanoエコシステムに関してオンチェーンに対してもオフチェーンに対しても、直接的にも間接的にも、変更を求めるものではありません。DRepやSPOは、この感情に共感する場合は「YES」に投票し、共感しない場合は「NO」、または確信が持てない場合は「棄権」を選んでください。",
+        "motivation": "CharlesがTEDトークやホワイトボードビデオで示した夢は、私たちがこの旅を始めた理由を思い起こさせる灯台のような存在です。私たちは、金融システムの変革だけでなく、すべての人類に自由と繁栄をもたらす可能性を秘めたビジョンの実現に向けて動いています。この大きな変革の一翼を担い、人々が共通の目的で団結したときに何を成し遂げられるかという証を残すことができるというチャンスに、私たちはつき動かされているのです。",
+        "references": [
+          {
+            "uri": "ipfs://QmXZUBLuUV3V8e46N9AvCJJU9y5maZ3qkiaSCuKMEECsGV",
+            "@type": "Other",
+            "label": "العربية",
+            "@language": "ar"
+          },
+          {
+            "uri": "ipfs://QmWeKwFYfc47K2NKYt2h4oudHk3RG7HzyCtwrwPo99Uayj",
+            "@type": "Other",
+            "label": "বাংলা",
+            "@language": "bn"
+          },
+          {
+            "uri": "ipfs://QmYuLWBiZzNdxjzMcVmyGbpw5UGTvMfDH1sHDqrfw7pZqJ",
+            "@type": "Other",
+            "label": "Deutsch",
+            "@language": "de"
+          },
+          {
+            "uri": "ipfs://QmW6XKvnqT57FWhXVAzALVqYvFnVeyM8cTu6HFQe5JicQr",
+            "@type": "Other",
+            "label": "Ελληνικά",
+            "@language": "el"
+          },
+          {
+            "uri": "ipfs://QmfB28eTYeBsVV4WQ1WdSyZrGmrRcFQumgMDbJfhDPcnQs",
+            "@type": "Other",
+            "label": "English",
+            "@language": "en"
+          },
+          {
+            "uri": "ipfs://QmPT9f5yBQEmTxkx36HsNMAagiquYnHA3jfEumwM1M3EjG",
+            "@type": "Other",
+            "label": "español",
+            "@language": "es"
+          },
+          {
+            "uri": "ipfs://QmbvXamvY3VgE8eMfzUUxJ4LqcenPyWLLCQrHPJfb2BZgb",
+            "@type": "Other",
+            "label": "français",
+            "@language": "fr"
+          },
+          {
+            "uri": "ipfs://QmdMbc1PkdwhXMHcPs2EATq7w3JHTkK5bpddtmjgU4r2Dj",
+            "@type": "Other",
+            "label": "हिंदी",
+            "@language": "hi"
+          },
+          {
+            "uri": "ipfs://QmdVueQ5EckVhKyeUdSAnE9WFo6qT5zX8ycS9zBWjh2bR9",
+            "@type": "Other",
+            "label": "Bahasa Indonesia",
+            "@language": "id"
+          },
+          {
+            "uri": "ipfs://QmR3tAYR6w9tVKskYcv4XeNwqCYCoLvM3c7jafi97La1Ax",
+            "@type": "Other",
+            "label": "italiano",
+            "@language": "it"
+          },
+          {
+            "uri": "ipfs://QmWGxfcfZUiMNgy7T2SLFEMS9FdWc6TbsocdJhckczJ6S2",
+            "@type": "Other",
+            "label": "한국어",
+            "@language": "ko"
+          },
+          {
+            "uri": "ipfs://QmNbGsjePLT9kD1rL2z8z3gWHDuhd7C1j5AE8JTsgTJrE4",
+            "@type": "Other",
+            "label": "Te Reo Māori",
+            "@language": "mi"
+          },
+          {
+            "uri": "ipfs://QmamVhdtn4UitFNb2isFqhrPhpHMNSDKQHon8toUB6na3v",
+            "@type": "Other",
+            "label": "português",
+            "@language": "pt"
+          },
+          {
+            "uri": "ipfs://QmQSVXMEztL5AgiF4aRD9PMbTXsEnZoatx7RhWid4kqw2R",
+            "@type": "Other",
+            "label": "русский",
+            "@language": "ru"
+          },
+          {
+            "uri": "ipfs://QmTVaWmhUVWsKZcknBVmMDeN5fkdZKpszLxM8tN65op4vX",
+            "@type": "Other",
+            "label": "Kiswahili",
+            "@language": "sw"
+          },
+          {
+            "uri": "ipfs://QmTY9odd2hsJgPXCKVPSiYv48M8BDZWyuzJq5oy8kj9NBL",
+            "@type": "Other",
+            "label": "Türkçe",
+            "@language": "tr"
+          },
+          {
+            "uri": "ipfs://QmTLQZBJwYo8EhuwMSKM8FNEoLv1EECjiUBDchrETRoUkU",
+            "@type": "Other",
+            "label": "اُردو",
+            "@language": "ur"
+          },
+          {
+            "uri": "ipfs://QmbxNiEbVhyKhbycfztG18WJxCRFWn6GjF9EeoZY2eFYKj",
+            "@type": "Other",
+            "label": "Tiếng Việt",
+            "@language": "vi"
+          },
+          {
+            "uri": "ipfs://QmenMXtpbZUGJ17uWNg2r6qmxy1fKFyqzkcoN1LMf6rRhs",
+            "@type": "Other",
+            "label": "中文",
+            "@language": "zh"
+          }
+        ]
+      },
+      "authors": [
+        {
+          "name": "Cardano コミュニティ",
+          "witness": {
+            "publicKey": "fda2a51fcdfefc31161ca70f05140f679f64262f9a3e9620291de296219f099a",
+            "signature": "6db937c0eb8ff4efced92f2ffd02854b8771b53993e6d5173eec312980b5dc06362b540efc0d4f790d265d2c6c97029f54f57e8cb7a8307a139cef0c72bbc80e",
+            "witnessAlgorithm": "ed25519"
+          }
+        }
+      ],
+      "@context": {
+        "body": {
+          "@id": "CIP108:body",
+          "@context": {
+            "title": "CIP108:title",
+            "abstract": "CIP108:abstract",
+            "rationale": "CIP108:rationale",
+            "motivation": "CIP108:motivation",
+            "references": {
+              "@id": "CIP108:references",
+              "@context": {
+                "uri": "CIP100:reference-uri",
+                "Other": "CIP100:OtherReference",
+                "label": "CIP100:reference-label",
+                "referenceHash": {
+                  "@id": "CIP108:referenceHash",
+                  "@context": {
+                    "hashDigest": "CIP108:hashDigest",
+                    "hashAlgorithm": "CIP100:hashAlgorithm"
+                  }
+                },
+                "GovernanceMetadata": "CIP100:GovernanceMetadataReference"
+              },
+              "@container": "@set"
+            }
+          }
+        },
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+        "authors": {
+          "@id": "CIP100:authors",
+          "@context": {
+            "name": "http://xmlns.com/foaf/0.1/name",
+            "witness": {
+              "@id": "CIP100:witness",
+              "@context": {
+                "publicKey": "CIP100:publicKey",
+                "signature": "CIP100:signature",
+                "witnessAlgorithm": "CIP100:witnessAlgorithm"
+              }
+            }
+          },
+          "@container": "@set"
+        },
+        "@language": "ja",
+        "hashAlgorithm": "CIP100:hashAlgorithm"
+      },
+      "hashAlgorithm": "blake2b-256"
+    },
+    "meta_comment": null,
+    "meta_language": "ja",
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  },
+  {
+    "block_time": 1725392750,
+    "proposal_id": "gov_action1zhuz5djmmmjg8f9s8pe6grfc98xg3szglums8cgm6qwancp4eytqqmpu0pr",
+    "proposal_tx_hash": "15f82a365bdee483a4b03873a40d3829cc88c048ff3703e11bd01dd9e035c916",
+    "proposal_index": 0,
+    "proposal_type": "InfoAction",
+    "proposal_description": {
+      "tag": "InfoAction"
+    },
+    "deposit": "100000000000",
+    "return_address": "stake1u9zaaehwt4lkxxmzym2972w6gywy97n7s9kup9ydx8sdhfcjxtusp",
+    "proposed_epoch": 507,
+    "ratified_epoch": null,
+    "enacted_epoch": null,
+    "dropped_epoch": 515,
+    "expired_epoch": 514,
+    "expiration": 514,
+    "meta_url": "ipfs://QmWjcHsrq9kKHZZ7aPPFjqN6wLuxH9d8bcqssmrE7H4cvb",
+    "meta_hash": "2f98f57c4149fdfed2b73cbd821226fe417ef5ed49d8f836a37b31edf14dea47",
+    "meta_json": null,
+    "meta_comment": null,
+    "meta_language": null,
+    "meta_is_valid": null,
+    "withdrawal": null,
+    "param_proposal": null
+  }
+]

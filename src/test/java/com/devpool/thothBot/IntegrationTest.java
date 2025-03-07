@@ -40,7 +40,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DirtiesContext
-public class IntegrationTest extends AbstractIntegrationTest {
+class IntegrationTest extends AbstractIntegrationTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(IntegrationTest.class);
     private static List<User> TEST_USERS = new ArrayList<>();
@@ -526,7 +526,7 @@ public class IntegrationTest extends AbstractIntegrationTest {
 
     private int countTxForAddress(List<String> messages, String address) {
         List<String> messagesForAccount = messages.stream()
-                .filter(m -> m.contains(address)).collect(Collectors.toList());
+                .filter(m -> m.contains(address)).toList();
 
         return messagesForAccount.stream().mapToInt(m -> m.split("Fee").length - 1).sum();
     }

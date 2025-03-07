@@ -16,6 +16,7 @@ import rest.koios.client.backend.factory.options.filters.FilterType;
 import java.net.URISyntaxException;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Component
@@ -30,11 +31,8 @@ public class GovernanceNewProposalsTask extends AbstractCheckerTask implements R
 
     @Override
     public void run() {
-        LOG.info("Checking for new governance actions");
-
         try {
-
-            LOG.info("Checking governance votes for {} wallets", this.userDao.getUsers().size());
+            LOG.info("Checking governance new proposals for {} wallets", this.userDao.getUsers().size());
             // Filter out unique users (unique chat-ids)
             var uniqueUsers = userDao.getUsers().stream()
                     .collect(Collectors.toMap(User::getChatId, u -> u, (existing, replacement) -> existing))
@@ -74,12 +72,14 @@ public class GovernanceNewProposalsTask extends AbstractCheckerTask implements R
     }
 
     private void notifyUser(User user, List<Proposal> proposals) throws URISyntaxException {
-        var sb = new StringBuilder();
         for (Proposal proposal : proposals) {
+            var sb = new StringBuilder();
             if (proposal.getBlockTime() <= user.getLastGovActionBlockTime()) {
                 LOG.debug("Skipping proposal {} notification, for user with chat-id {}",
                         proposal.getProposalId(), user.getChatId());
                 continue;
+            } else {
+                LOG.debug("Notifying user {} about new proposal {}", user.getChatId(), proposal.getProposalId());
             }
 
             // build notification
@@ -90,18 +90,22 @@ public class GovernanceNewProposalsTask extends AbstractCheckerTask implements R
                     .append("\">")
                     .append(proposalContent.title())
                     .append("</a>\n")
-                    .append("Type: ")
+                    .append(EmojiParser.parseToUnicode(":label: "))
                     .append(proposal.getProposalType()).append("\n")
-                    .append("Valid until epoch: ")
-                    .append(proposal.getExpiration() == null ? "unknown" : proposal.getExpiration())
-                    .append("\nAuthors: ")
-                    .append(String.join(",", proposalContent.authors()))
-                    .append("\n<strong>Abstract</strong>\n<i>").append(proposalContent.abstractText()).append("</i>");
+                    .append(EmojiParser.parseToUnicode(":hourglass_flowing_sand: Expiring epoch "))
+                    .append(proposal.getExpiration() == null ? "unknown" : proposal.getExpiration());
+
+            if (!Optional.ofNullable(proposalContent.authors()).orElse(List.of()).isEmpty()) {
+                sb.append(EmojiParser.parseToUnicode("\n:black_nib: Authors "))
+                        .append(String.join(",", proposalContent.authors()));
+            }
+            sb.append(EmojiParser.parseToUnicode("\n:memo: <strong>Abstract</strong>\n<i>"))
+                    .append(Optional.ofNullable(proposalContent.abstractText()).orElse("Abstract not found")).append("</i>");
 
             telegramFacade.sendMessageTo(user.getChatId(), sb.toString());
         }
 
-        // Update latest block time to avoid spamming the user
+        // Update the latest block time to avoid spamming the user
         var latestBlockTime = proposals.stream().map(Proposal::getBlockTime).max(Comparator.naturalOrder());
         latestBlockTime.ifPresent(bt -> userDao.updateUserGovActionBlockTime(user.getId(), bt));
     }

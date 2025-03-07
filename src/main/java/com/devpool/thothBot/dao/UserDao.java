@@ -76,13 +76,19 @@ public class UserDao {
     public void addNewUser(User user) {
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
         namedParameterJdbcTemplate.update(
-                "insert into users (chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time) values (:chat_id, :addr, :last_block_height, :last_epoch_number, :last_gov_votes_block_time)",
+                """
+                        insert into users (chat_id, addr, last_block_height, last_epoch_number, 
+                        last_gov_votes_block_time, last_gov_action_block_time) 
+                        values (:chat_id, :addr, :last_block_height, :last_epoch_number, 
+                        :last_gov_votes_block_time, :last_gov_action_block_time)
+                        """,
                 new MapSqlParameterSource(Map.of(
                         FIELD_CHAT_ID, user.getChatId(),
                         FIELD_ADDR, user.getAddress(),
                         FIELD_LAST_BLOCK_HEIGHT, user.getLastBlockHeight(),
                         FIELD_LAST_EPOCH_NUMBER, user.getLastEpochNumber(),
-                        FIELD_LAST_GOV_VOTES_BLOCK_TIME, user.getLastGovVotesBlockTime())),
+                        FIELD_LAST_GOV_VOTES_BLOCK_TIME, user.getLastGovVotesBlockTime(),
+                        FIELD_LAST_GOV_ACTION_BLOCK_TIME, user.getLastGovActionBlockTime())),
                 keyHolder, new String[]{"id"});
 
         LOG.debug("Inserted new user with key {}: {}", keyHolder.getKeyAs(Long.class), user);
