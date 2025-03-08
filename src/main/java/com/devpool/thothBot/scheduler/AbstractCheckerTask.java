@@ -4,15 +4,23 @@ import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.koios.AssetFacade;
 import com.devpool.thothBot.koios.KoiosFacade;
+import com.devpool.thothBot.model.model.Body;
 import com.devpool.thothBot.model.model.DrepMetadata;
+import com.devpool.thothBot.model.model.proposal.ProposalAuthors;
+import com.devpool.thothBot.model.model.proposal.ProposalBody;
+import com.devpool.thothBot.model.model.proposal.ProposalContent;
+import com.devpool.thothBot.model.model.proposal.ProposalMetadata;
 import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import com.devpool.thothBot.util.CollectionsUtil;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.NullNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import rest.koios.client.backend.api.account.model.AccountAsset;
 import rest.koios.client.backend.api.account.model.AccountInfo;
@@ -26,6 +34,7 @@ import rest.koios.client.backend.factory.options.Offset;
 import rest.koios.client.backend.factory.options.Options;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -50,6 +59,9 @@ public abstract class AbstractCheckerTask {
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
 
     protected static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
+    protected static final String IPFS_SCHEME = "ipfs";
+    protected static final String IPFS_HTTP_URI = "https://c-ipfs-gw.nmkr.io/ipfs/%s";
+    private static final int MAX_GOV_ACTION_ABSTRACT_LEN = 500;
 
     @Autowired
     protected UserDao userDao;
@@ -218,13 +230,20 @@ public abstract class AbstractCheckerTask {
                     var drepUrl = drep.getMetaUrl();
                     if (drepUrl != null) {
                         LOG.debug("Drep {} has the url {}", drep.getDrepId(), drepUrl);
+
                         try {
-                            ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(new URI(drepUrl), DrepMetadata.class);
-                            if (entity.getStatusCode().equals(HttpStatus.OK) &&
-                                    entity.getBody() != null &&
-                                    entity.getBody().getBody().getGivenName() != null) {
-                                LOG.debug("Got a DRep name {} for ID {}", entity.getBody().getBody().getGivenName(), drep.getDrepId());
-                                drepNames.put(drep.getDrepId(), entity.getBody().getBody().getGivenName().toString());
+                            var uri = new URI(drepUrl);
+                            uri = handleIpfsUri(uri);
+                            ResponseEntity<DrepMetadata> entity = this.restTemplate.getForEntity(uri, DrepMetadata.class);
+                            var givenName = Optional.ofNullable(entity.getBody())
+                                    .map(DrepMetadata::getBody)
+                                    .map(Body::getGivenName)
+                                    .map(Object::toString)
+                                    .orElse(null);
+
+                            if (entity.getStatusCode().equals(HttpStatus.OK) && givenName != null) {
+                                LOG.debug("Got a DRep name {} for ID {}", givenName, drep.getDrepId());
+                                drepNames.put(drep.getDrepId(), givenName);
                             }
                         } catch (Exception e) {
                             LOG.warn("Can't get drep metadata from URL {} due to {}", drepUrl, e.toString());
@@ -238,6 +257,17 @@ public abstract class AbstractCheckerTask {
         }
 
         return drepNames;
+    }
+
+    protected URI handleIpfsUri(URI uri) throws URISyntaxException {
+        if (!IPFS_SCHEME.equals(uri.getScheme()))
+            return uri;
+
+
+        var httpUri = new URI(IPFS_HTTP_URI.formatted(uri.getSchemeSpecificPart()));
+        LOG.debug("Converted IPFS uri {} to HTTP uri {}", uri, httpUri);
+
+        return httpUri;
     }
 
     public static String hexToAscii(String assetName, String policyId) {
@@ -293,5 +323,59 @@ public abstract class AbstractCheckerTask {
         }
 
         return allPoolIdsStakingAddresses;
+    }
+
+    protected ProposalContent getProposalContent(JsonNode metaJson, String metaUrl, String proposalId) throws URISyntaxException {
+        var titleDefault = proposalId.substring(proposalId.length() - 8);
+        if (metaJson != null && !(metaJson instanceof NullNode)) {
+            var titleNode = metaJson.findValue("title");
+            var abstractNode = metaJson.findValue("abstract");
+            var title = Optional.ofNullable(titleNode)
+                    .map(JsonNode::textValue)
+                    .orElse(titleDefault);
+            var abstractText = Optional.ofNullable(abstractNode)
+                    .map(JsonNode::textValue)
+                    .map(s -> s.length() > MAX_GOV_ACTION_ABSTRACT_LEN ?
+                            s.substring(0, MAX_GOV_ACTION_ABSTRACT_LEN) + "..." : s)
+                    .orElse(null);
+
+            // Get authors
+            var authorsNode = metaJson.findValue("authors");
+            List<String> authorNames = new ArrayList<>();
+            for (Iterator<JsonNode> it = authorsNode.elements(); it.hasNext(); ) {
+                JsonNode authorChildNode = it.next();
+                var name = Optional.ofNullable(authorChildNode.findValue("name"))
+                        .map(JsonNode::textValue);
+                name.ifPresent(authorNames::add);
+            }
+            return new ProposalContent(title, abstractText, authorNames);
+        }
+
+        // try resolving the URL
+        var uri = new URI(metaUrl);
+        uri = handleIpfsUri(uri);
+        try {
+            ResponseEntity<ProposalMetadata> entity = restTemplate.getForEntity(uri, ProposalMetadata.class);
+            if (entity.getStatusCode() != HttpStatus.OK || entity.getBody() == null) {
+                throw new RestClientException("Returned status code %s".formatted(entity.getStatusCode()));
+            }
+
+            var title = Optional.ofNullable(entity.getBody().body())
+                    .map(ProposalBody::title).orElse(titleDefault);
+            var abstractText = Optional.ofNullable(entity.getBody().body())
+                    .map(ProposalBody::abstractValue)
+                    .map(s -> s.length() > MAX_GOV_ACTION_ABSTRACT_LEN ?
+                            s.substring(0, MAX_GOV_ACTION_ABSTRACT_LEN) + "..." : s)
+                    .orElse(null);
+
+            var authors = Optional.ofNullable(entity.getBody().authors()).orElse(List.of());
+            return new ProposalContent(title, abstractText,
+                    authors.stream().map(ProposalAuthors::name).toList());
+
+        } catch (RestClientException e) {
+            LOG.info("Cannot retrieve the proposal metadata using URL {}, due to {}",
+                    uri, e.getMessage());
+            return new ProposalContent(titleDefault, null, null);
+        }
     }
 }

@@ -1,6 +1,5 @@
 package com.devpool.thothBot.doubles.koios;
 
-import rest.koios.client.backend.api.account.model.AccountAddress;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.governance.GovernanceService;
@@ -8,6 +7,7 @@ import rest.koios.client.backend.api.governance.model.*;
 import rest.koios.client.backend.factory.options.Option;
 import rest.koios.client.backend.factory.options.OptionType;
 import rest.koios.client.backend.factory.options.Options;
+import rest.koios.client.backend.factory.options.filters.Filter;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -75,7 +75,14 @@ public class GovernanceServiceDouble implements GovernanceService {
     @Override
     public Result<List<Proposal>> getProposalList(Options options) throws ApiException {
         try {
-            List<Proposal> proposals = KoiosDataBuilder.getSpoOnlyGovernanceActions();
+            List<Proposal> proposals = null;
+            if (options.getOptionList().stream().filter(Filter.class::isInstance)
+                    .map(Filter.class::cast).anyMatch(f -> "block_time".equals(f.getField()))) {
+                // We'll get all the proposals
+                proposals = KoiosDataBuilder.getAllGovernanceActions();
+            } else {
+                proposals = KoiosDataBuilder.getSpoOnlyGovernanceActions();
+            }
             return Result.<List<Proposal>>builder().code(200).response("").successful(true).value(proposals).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
