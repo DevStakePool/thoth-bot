@@ -22,6 +22,7 @@ public class TelegramUtils {
     private static final String NOTIFY_ALL_CMD_JSON = "test-data/json/notifyall-cmd.json";
     private static final String EPOCH_CMD_JSON = "test-data/json/epoch-cmd.json";
     private static final String REWARDS_CMD_JSON = "test-data/json/rewards-cmd.json";
+    private static final String PROPOSALS_CMD_JSON = "test-data/json/proposals-cmd.json";
 
     private static final Gson GSON = new Gson();
 
@@ -34,7 +35,7 @@ public class TelegramUtils {
 
                     return jsonContent;
                 });
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildAnyCommandUpdate(String commandTag, String username) throws IOException {
@@ -45,7 +46,7 @@ public class TelegramUtils {
 
                     return jsonContent;
                 });
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildNotifyAllCommandUpdate(String username, String msg) throws IOException {
@@ -55,31 +56,37 @@ public class TelegramUtils {
                     jsonContent = jsonContent.replace("$MESSAGE", msg);
                     return jsonContent;
                 });
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildInfoCommandUpdate(String chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(INFO_CMD_JSON,
                 j -> j.replace("$chat_id", chatId));
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildEpochCommandUpdate(String chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(EPOCH_CMD_JSON,
                 j -> j.replace("$chat_id", chatId));
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
+    }
+
+    public static Update buildProposalsCommandUpdate(String chatId) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(PROPOSALS_CMD_JSON,
+                j -> j.replace("$chat_id", chatId));
+        return resp.updates().getFirst();
     }
 
     public static Update buildAssetsCommandUpdate(String chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(ASSETS_CMD_JSON,
                 jc -> jc.replace("$chat_id", chatId));
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildRewardsCommandUpdate(String chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(REWARDS_CMD_JSON,
                 jc -> jc.replace("$chat_id", chatId));
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildSubscribeCommandUpdate() throws IOException {
@@ -89,18 +96,18 @@ public class TelegramUtils {
     public static Update buildSubscribeCommandUpdate(String chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(SUBSCRIBE_CMD_JSON,
                 jc -> jc.replace("$chat_id", chatId));
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildUnsubscribeCommandUpdate() throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(UNSUBSCRIBE_CMD_JSON, null);
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     public static Update buildAddrCommandUpdate(String stakeAddress, int chatId) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(STAKE_CMD_JSON,
                 jsonContent -> jsonContent.replace("$stake_addr", stakeAddress).replaceAll("-1000", Integer.toString(chatId)));
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     private static GetUpdatesResponse buildUpdateResponseFromJsonFile(String jsonFile, JsonContentManipulator jsonContentManipulator) throws IOException {
@@ -117,7 +124,7 @@ public class TelegramUtils {
     public static Update buildCallbackCommandUpdate(String callbackCmd) throws IOException {
         GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(DETAILS_CMD_JSON,
                 jsonContent -> jsonContent.replace("$details", callbackCmd));
-        return resp.updates().get(0);
+        return resp.updates().getFirst();
     }
 
     interface JsonContentManipulator {

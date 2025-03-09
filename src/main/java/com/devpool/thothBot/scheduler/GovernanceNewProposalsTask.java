@@ -107,6 +107,6 @@ public class GovernanceNewProposalsTask extends AbstractCheckerTask implements R
 
         // Update the latest block time to avoid spamming the user
         var latestBlockTime = proposals.stream().map(Proposal::getBlockTime).max(Comparator.naturalOrder());
-        latestBlockTime.ifPresent(bt -> userDao.updateUserGovActionBlockTime(user.getId(), bt));
+        latestBlockTime.ifPresent(bt -> userDao.updateUserGovActionBlockTime(user.getChatId(), bt));
     }
 }

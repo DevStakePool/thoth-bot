@@ -4,6 +4,8 @@ import com.devpool.thothBot.dao.AssetsDao;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
+import com.devpool.thothBot.doubles.koios.KoiosDataBuilder;
+import com.devpool.thothBot.doubles.koios.NetworkServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
 import com.devpool.thothBot.telegram.TelegramFacade;
@@ -38,6 +40,7 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static com.devpool.thothBot.scheduler.AbstractCheckerTask.GOV_TOOLS_PROPOSAL;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -114,6 +117,9 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
 
     @Autowired
     private EpochCmd epochCmd;
+
+    @Autowired
+    private ProposalsCmd proposalsCmd;
 
     @Autowired
     private AssetsListCmd assetsListCmd;
@@ -243,11 +249,71 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
 
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
-        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
+        assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("ADA price"));
         Assertions.assertTrue(params.get("text").toString().contains("TXs count: 161116"));
         Assertions.assertTrue(params.get("text").toString().contains("Epoch 522"));
         Assertions.assertTrue(params.get("text").toString().contains("Total stake: 22.3B"));
+    }
+
+    @Test
+    void userCommandProposalsTest() throws Exception {
+        // Set TIP
+        System.setProperty(NetworkServiceDouble.TIP_EPOCH_NO_SYS_VAR_KEY, "544");
+
+        // Testing Info command
+        Update proposalsCommandUpdate = TelegramUtils.buildProposalsCommandUpdate("-2");
+        this.proposalsCmd.execute(proposalsCommandUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.getFirst();
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        assertEquals((long) -2, params.get("chat_id"));
+        assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
+        assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("Found 3 active proposal(s)"));
+        Assertions.assertTrue(params.get("text").toString().contains("Authors Samuel Leathers"));
+        Assertions.assertTrue(params.get("text").toString().contains("h7798x036m2r4nhlccmqqhmr9wx"));
+        Assertions.assertTrue(params.get("text").toString().contains("Defining the Cardano Vision and Roadmap for 2025 and beyond"));
+        Assertions.assertTrue(params.get("text").toString().contains("ParameterChange"));
+        Assertions.assertTrue(params.get("text").toString().contains("Expiring epoch 546"));
+        Assertions.assertTrue(params.get("text").toString().contains("Expiring epoch 544 (current)"));
+    }
+
+    @Test
+    void userCommandProposalsNoneActiveTest() throws Exception {
+        // Set TIP
+        System.setProperty(NetworkServiceDouble.TIP_EPOCH_NO_SYS_VAR_KEY, "9999");
+
+        // Testing Info command
+        Update proposalsCommandUpdate = TelegramUtils.buildProposalsCommandUpdate("-2");
+        this.proposalsCmd.execute(proposalsCommandUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.getFirst();
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        assertEquals((long) -2, params.get("chat_id"));
+        assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
+        assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("Found 0 active proposal(s)"));
+        Assertions.assertFalse(params.get("text").toString().contains(GOV_TOOLS_PROPOSAL));
     }
 
     @Test
