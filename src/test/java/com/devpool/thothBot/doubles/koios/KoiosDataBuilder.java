@@ -369,8 +369,12 @@ public class KoiosDataBuilder {
 
     public static List<ProposalVote> getSpoOnlyGovernanceActionVotes(String proposalId) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = Objects.requireNonNull(classLoader.getResource(GOV_ACTION_VOTES_SPO_ONLY.formatted(proposalId))).getFile();
-        File jsonFile = new File(f);
+        var file = classLoader.getResource(GOV_ACTION_VOTES_SPO_ONLY.formatted(proposalId));
+        if (file == null) {
+            LOG.warn("Cannot find gov proposal (SPO) for id {}", proposalId);
+            return new ArrayList<>();
+        }
+        File jsonFile = new File(file.getFile());
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
