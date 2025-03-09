@@ -1,10 +1,13 @@
 package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.vdurmont.emoji.EmojiParser;
+import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.governance.model.Proposal;
 import rest.koios.client.backend.factory.options.Limit;
@@ -24,51 +27,63 @@ public class GovernanceNewProposalsTask extends AbstractCheckerTask implements R
     private static final Logger LOG = LoggerFactory.getLogger(GovernanceNewProposalsTask.class);
     private static final String FIELD_BLOCK_TIME = "block_time";
     private final TelegramFacade telegramFacade;
+    private final MetricsHelper metricsHelper;
 
-    public GovernanceNewProposalsTask(TelegramFacade telegramFacade) {
+    @PostConstruct
+    public void post() {
+        execTimer = metricsHelper.registerNewTimer(io.micrometer.core.instrument.Timer
+                .builder("thoth.scheduler.gov.proposals.time")
+                .description("Time spent getting new governance proposals")
+                .publishPercentiles(0.9, 0.95, 0.99));
+    }
+
+    public GovernanceNewProposalsTask(TelegramFacade telegramFacade, MetricsHelper metricsHelper) {
         this.telegramFacade = telegramFacade;
+        this.metricsHelper = metricsHelper;
     }
 
     @Override
     public void run() {
-        try {
-            LOG.info("Checking governance new proposals for {} wallets", this.userDao.getUsers().size());
-            // Filter out unique users (unique chat-ids)
-            var uniqueUsers = userDao.getUsers().stream()
-                    .collect(Collectors.toMap(User::getChatId, u -> u, (existing, replacement) -> existing))
-                    .values().stream().toList();
+        execTimer.record(() -> {
+            try {
+                LOG.info("Checking governance new proposals for {} wallets", this.userDao.getUsers().size());
+                // Filter out unique users (unique chat-ids)
+                var uniqueUsers = userDao.getUsers().stream()
+                        .collect(Collectors.toMap(User::getChatId, u -> u, (existing, replacement) -> existing))
+                        .values().stream().toList();
 
-            // Grab last actions
-            Long maxBlockTimeUsers = uniqueUsers.stream()
-                    .map(User::getLastGovActionBlockTime)
-                    .max(Comparator.naturalOrder())
-                    .orElse(Long.MAX_VALUE);
+                // Grab last actions
+                Long maxBlockTimeUsers = uniqueUsers.stream()
+                        .map(User::getLastGovActionBlockTime)
+                        .max(Comparator.naturalOrder())
+                        .orElse(Long.MAX_VALUE);
 
-            var options = Options.builder()
-                    .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                    .option(Offset.of(0))
-                    .option(Filter.of(FIELD_BLOCK_TIME, FilterType.GT, maxBlockTimeUsers.toString()))
-                    .build();
-            var proposalsResp = koiosFacade.getKoiosService().getGovernanceService().getProposalList(options);
+                var options = Options.builder()
+                        .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                        .option(Offset.of(0))
+                        .option(Filter.of(FIELD_BLOCK_TIME, FilterType.GT, maxBlockTimeUsers.toString()))
+                        .build();
+                var proposalsResp = koiosFacade.getKoiosService().getGovernanceService().getProposalList(options);
 
-            if (!proposalsResp.isSuccessful()) {
-                LOG.warn("Cannot retrieve GOV proposals due to {} (code {})",
-                        proposalsResp.getResponse(), proposalsResp.getValue());
-                return;
-            }
-
-            for (User user : uniqueUsers) {
-                try {
-                    notifyUser(user, proposalsResp.getValue());
-                } catch (Exception e) {
-                    LOG.warn("Cannot notify the user {} of new proposals", user.getChatId(), e);
+                if (!proposalsResp.isSuccessful()) {
+                    LOG.warn("Cannot retrieve GOV proposals due to {} (code {})",
+                            proposalsResp.getResponse(), proposalsResp.getValue());
+                    return;
                 }
+
+                for (User user : uniqueUsers) {
+                    try {
+                        notifyUser(user, proposalsResp.getValue());
+                    } catch (Exception e) {
+                        LOG.warn("Cannot notify the user {} of new proposals", user.getChatId(), e);
+                    }
+                }
+            } catch (Exception e) {
+                LOG.error("Caught throwable while checking governance votes", e);
+            } finally {
+                LOG.info("Completed checking for new governance votes");
             }
-        } catch (Exception e) {
-            LOG.error("Caught throwable while checking governance votes", e);
-        } finally {
-            LOG.info("Completed checking for new governance votes");
-        }
+        });
     }
 
     private void notifyUser(User user, List<Proposal> proposals) throws URISyntaxException {

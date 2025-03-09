@@ -1,9 +1,11 @@
 package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.vdurmont.emoji.EmojiParser;
+import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,34 +31,47 @@ public class StakingRewardsCheckerTask extends AbstractCheckerTask implements Ru
     @Autowired
     private TelegramFacade telegramFacade;
 
+    @Autowired
+    private MetricsHelper metricsHelper;
+
+    @PostConstruct
+    public void post() {
+        execTimer = metricsHelper.registerNewTimer(io.micrometer.core.instrument.Timer
+                .builder("thoth.scheduler.staking.time")
+                .description("Time spent getting new staking rewards")
+                .publishPercentiles(0.9, 0.95, 0.99));
+    }
+
     @Override
     public void run() {
-        LOG.debug("Starting thread to check staking rewards");
+        execTimer.record(() -> {
+            LOG.debug("Starting thread to check staking rewards");
 
-        try {
-            Result<Tip> chainTipRes = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
-            if (!chainTipRes.isSuccessful()) {
-                LOG.warn("Cannot get the chain tip from main-net: {}", chainTipRes.getResponse());
-                return;
+            try {
+                Result<Tip> chainTipRes = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
+                if (!chainTipRes.isSuccessful()) {
+                    LOG.warn("Cannot get the chain tip from main-net: {}", chainTipRes.getResponse());
+                    return;
+                }
+
+                Integer currentEpochNumber = chainTipRes.getValue().getEpochNo();
+
+                LOG.info("Checking staking rewards for {} wallets", this.userDao.getUsers().size());
+                // Filter out non-staking users
+                Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(
+                        userDao.getUsers().stream().filter(User::isStakeAddress).collect(Collectors.toList()),
+                        this.usersBatchSize).iterator();
+
+                while (batchIterator.hasNext()) {
+                    List<User> usersBatch = batchIterator.next();
+                    LOG.debug("Processing users batch size {}", usersBatch.size());
+
+                    processUserBatch(usersBatch, currentEpochNumber);
+                }
+            } catch (Exception e) {
+                LOG.error("Caught throwable while checking wallet staking rewards", e);
             }
-
-            Integer currentEpochNumber = chainTipRes.getValue().getEpochNo();
-
-            LOG.info("Checking staking rewards for {} wallets", this.userDao.getUsers().size());
-            // Filter out non-staking users
-            Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(
-                    userDao.getUsers().stream().filter(User::isStakeAddress).collect(Collectors.toList()),
-                    this.usersBatchSize).iterator();
-
-            while (batchIterator.hasNext()) {
-                List<User> usersBatch = batchIterator.next();
-                LOG.debug("Processing users batch size {}", usersBatch.size());
-
-                processUserBatch(usersBatch, currentEpochNumber);
-            }
-        } catch (Exception e) {
-            LOG.error("Caught throwable while checking wallet staking rewards", e);
-        }
+        });
     }
 
     private void processUserBatch(List<User> usersBatch, Integer currentEpochNumber) {

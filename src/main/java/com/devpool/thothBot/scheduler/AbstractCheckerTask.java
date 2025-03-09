@@ -14,6 +14,7 @@ import com.devpool.thothBot.oracle.CoinPaprikaOracle;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.NullNode;
+import io.micrometer.core.instrument.Timer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -77,6 +78,7 @@ public abstract class AbstractCheckerTask {
     @Autowired
     protected RestTemplate restTemplate;
 
+    protected Timer execTimer;
 
     protected String getPoolName(List<PoolInfo> poolIds, String poolAddress) {
         if (poolAddress == null) return null;

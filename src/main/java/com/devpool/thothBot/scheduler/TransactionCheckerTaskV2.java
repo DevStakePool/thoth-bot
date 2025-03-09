@@ -66,6 +66,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     @Autowired
     private MetricsHelper metricsHelper;
 
+
     public enum TxType {
         TX_RECEIVED("Received"), TX_SENT("Sent"), TX_INTERNAL("Internal");
 
@@ -89,6 +90,11 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 sampleMetrics();
             }
         }, 1000, 5000);
+
+        execTimer = metricsHelper.registerNewTimer(io.micrometer.core.instrument.Timer
+                .builder("thoth.scheduler.txs.time")
+                .description("Time spent getting new TXs")
+                .publishPercentiles(0.9, 0.95, 0.99));
     }
 
     private void sampleMetrics() {
@@ -113,22 +119,24 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
     @Override
     public void run() {
-        LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
-        Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(userDao.getUsers(), this.usersBatchSize).iterator();
+        execTimer.record(() -> {
+            LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
+            Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(userDao.getUsers(), this.usersBatchSize).iterator();
 
-        while (batchIterator.hasNext()) {
-            List<User> usersBatch = batchIterator.next();
-            List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
-            List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
+            while (batchIterator.hasNext()) {
+                List<User> usersBatch = batchIterator.next();
+                List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
+                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
 
-            LOG.debug("Processing users batch size {}, stake batch {}, address batch{}",
-                    usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
-            try {
-                processUsersBatch(stakeUsersBatch, addrUsersBatch);
-            } catch (Exception e) {
-                LOG.error("Error while processing user batch", e);
+                LOG.debug("Processing users batch size {}, stake batch {}, address batch{}",
+                        usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
+                try {
+                    processUsersBatch(stakeUsersBatch, addrUsersBatch);
+                } catch (Exception e) {
+                    LOG.error("Error while processing user batch", e);
+                }
             }
-        }
+        });
     }
 
     private void processUsersBatch(List<User> stakeUsersBatch, List<User> addrUsersBatch) throws KoiosResponseException, ApiException {

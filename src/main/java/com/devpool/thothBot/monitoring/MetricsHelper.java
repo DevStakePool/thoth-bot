@@ -100,4 +100,8 @@ public class MetricsHelper {
         cachedMethodTimer.record(amount, timeUnit);
     }
 
+    public Timer registerNewTimer(Timer.Builder timerBuilder) {
+        initMeterRegistry();
+        return timerBuilder.register(this.meterRegistry);
+    }
 }
