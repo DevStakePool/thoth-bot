@@ -1,11 +1,14 @@
 package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.vdurmont.emoji.EmojiParser;
+import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.base.exception.ApiException;
@@ -28,34 +31,45 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
     private static final Logger LOG = LoggerFactory.getLogger(GovernanceDrepVotesCheckerTask.class);
     private static final String FIELD_BLOCK_TIME = "block_time";
     private final TelegramFacade telegramFacade;
+    private final MetricsHelper metricsHelper;
 
-    public GovernanceDrepVotesCheckerTask(TelegramFacade telegramFacade) {
+    @PostConstruct
+    public void post() {
+        execTimer = metricsHelper.registerNewTimer(io.micrometer.core.instrument.Timer
+                .builder("thoth.scheduler.gov.drep.votes.time")
+                .description("Time spent getting new DREP votes in governance action")
+                .publishPercentiles(0.9, 0.95, 0.99));
+    }
+
+    public GovernanceDrepVotesCheckerTask(TelegramFacade telegramFacade, MetricsHelper metricsHelper) {
         this.telegramFacade = telegramFacade;
+        this.metricsHelper = metricsHelper;
     }
 
     @Override
     public void run() {
-        LOG.info("Checking for new DRep governance votes");
+        execTimer.record(() -> {
+            LOG.info("Checking for new DRep governance votes");
 
-        try {
+            try {
+                LOG.info("Checking governance votes for {} wallets", this.userDao.getUsers().size());
+                // Filter out non-staking users
+                Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(
+                        userDao.getUsers().stream().filter(User::isStakeAddress).toList(),
+                        this.usersBatchSize).iterator();
 
-            LOG.info("Checking governance votes for {} wallets", this.userDao.getUsers().size());
-            // Filter out non-staking users
-            Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(
-                    userDao.getUsers().stream().filter(User::isStakeAddress).toList(),
-                    this.usersBatchSize).iterator();
+                while (batchIterator.hasNext()) {
+                    List<User> usersBatch = batchIterator.next();
+                    LOG.debug("Processing users batch size {}", usersBatch.size());
 
-            while (batchIterator.hasNext()) {
-                List<User> usersBatch = batchIterator.next();
-                LOG.debug("Processing users batch size {}", usersBatch.size());
-
-                processUserBatch(usersBatch);
+                    processUserBatch(usersBatch);
+                }
+            } catch (Exception e) {
+                LOG.error("Caught throwable while checking governance votes", e);
+            } finally {
+                LOG.info("Completed checking for new governance votes");
             }
-        } catch (Exception e) {
-            LOG.error("Caught throwable while checking governance votes", e);
-        } finally {
-            LOG.info("Completed checking for new governance votes");
-        }
+        });
     }
 
     private void processUserBatch(List<User> usersBatch) {

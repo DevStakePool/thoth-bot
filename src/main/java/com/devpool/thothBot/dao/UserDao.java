@@ -26,6 +26,7 @@ public class UserDao {
     private static final String FIELD_LAST_BLOCK_HEIGHT = "last_block_height";
     private static final String FIELD_LAST_EPOCH_NUMBER = "last_epoch_number";
     private static final String FIELD_LAST_GOV_VOTES_BLOCK_TIME = "last_gov_votes_block_time";
+    private static final String FIELD_LAST_GOV_ACTION_BLOCK_TIME = "last_gov_action_block_time";
     private static final String FIELD_POOL_ID = "pool_id";
     private static final String FIELD_REMAINING_NOTIFICATIONS = "remaining_notifications";
     public static final Integer DEFAULT_RETIRING_POOL_NOTIFICATIONS = 5;
@@ -43,7 +44,7 @@ public class UserDao {
 
     public List<User> getUsers() {
         SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
-                "select id, chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time from users");
+                "select id, chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time, last_gov_action_block_time from users");
         Map<Long, User> users = new HashedMap<>();
         while (rs.next()) {
             Long userId = rs.getLong("id");
@@ -54,6 +55,7 @@ public class UserDao {
             u.setLastBlockHeight(rs.getInt(FIELD_LAST_BLOCK_HEIGHT));
             u.setLastEpochNumber(rs.getInt(FIELD_LAST_EPOCH_NUMBER));
             u.setLastGovVotesBlockTime(rs.getLong(FIELD_LAST_GOV_VOTES_BLOCK_TIME));
+            u.setLastGovActionBlockTime(rs.getLong(FIELD_LAST_GOV_ACTION_BLOCK_TIME));
             users.putIfAbsent(userId, u);
         }
         return new ArrayList<>(users.values());
@@ -74,13 +76,19 @@ public class UserDao {
     public void addNewUser(User user) {
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
         namedParameterJdbcTemplate.update(
-                "insert into users (chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time) values (:chat_id, :addr, :last_block_height, :last_epoch_number, :last_gov_votes_block_time)",
+                """
+                        insert into users (chat_id, addr, last_block_height, last_epoch_number, 
+                        last_gov_votes_block_time, last_gov_action_block_time) 
+                        values (:chat_id, :addr, :last_block_height, :last_epoch_number, 
+                        :last_gov_votes_block_time, :last_gov_action_block_time)
+                        """,
                 new MapSqlParameterSource(Map.of(
                         FIELD_CHAT_ID, user.getChatId(),
                         FIELD_ADDR, user.getAddress(),
                         FIELD_LAST_BLOCK_HEIGHT, user.getLastBlockHeight(),
                         FIELD_LAST_EPOCH_NUMBER, user.getLastEpochNumber(),
-                        FIELD_LAST_GOV_VOTES_BLOCK_TIME, user.getLastGovVotesBlockTime())),
+                        FIELD_LAST_GOV_VOTES_BLOCK_TIME, user.getLastGovVotesBlockTime(),
+                        FIELD_LAST_GOV_ACTION_BLOCK_TIME, user.getLastGovActionBlockTime())),
                 keyHolder, new String[]{"id"});
 
         LOG.debug("Inserted new user with key {}: {}", keyHolder.getKeyAs(Long.class), user);
@@ -114,6 +122,16 @@ public class UserDao {
         } else {
             LOG.debug("Updated governance votes block time to {} for user ID {}", timestamp, id);
         }
+    }
+
+    public void updateUserGovActionBlockTime(Long chatId, long timestamp) {
+        int updatedNumOfRows = namedParameterJdbcTemplate.update(
+                "update users set last_gov_action_block_time = :last_gov_action_block_time where chat_id = :chat_id",
+                new MapSqlParameterSource(Map.of(
+                        FIELD_LAST_GOV_ACTION_BLOCK_TIME, timestamp,
+                        FIELD_CHAT_ID, chatId)));
+            LOG.debug("Updated governance action block time to {} for user CHAT-ID {}. Affected rows {}",
+                    timestamp, chatId, updatedNumOfRows);
     }
 
     public void updateUserEpochNumber(Long id, Integer epochNumber) {

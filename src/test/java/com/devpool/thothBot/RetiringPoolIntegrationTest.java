@@ -39,8 +39,8 @@ class RetiringPoolIntegrationTest extends AbstractIntegrationTest {
     private static final List<User> TEST_USERS = new ArrayList<>();
 
     static {
-        TEST_USERS.add(new User(-1L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", Integer.MAX_VALUE, 9999, Long.MAX_VALUE));
-        TEST_USERS.add(new User(-1L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", Integer.MAX_VALUE, 9999, Long.MAX_VALUE));
+        TEST_USERS.add(new User(-1L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", Integer.MAX_VALUE, 9999, Long.MAX_VALUE, Long.MAX_VALUE));
+        TEST_USERS.add(new User(-1L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", Integer.MAX_VALUE, 9999, Long.MAX_VALUE, Long.MAX_VALUE));
     }
 
     @MockitoBean

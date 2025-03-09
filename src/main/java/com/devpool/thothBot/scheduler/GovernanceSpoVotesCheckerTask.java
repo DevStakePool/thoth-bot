@@ -2,11 +2,14 @@ package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.PoolVotesDao;
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.vdurmont.emoji.EmojiParser;
+import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
@@ -40,65 +43,78 @@ public class GovernanceSpoVotesCheckerTask extends AbstractCheckerTask implement
 
     private final TelegramFacade telegramFacade;
     private final PoolVotesDao poolVotesDao;
+    private final MetricsHelper metricsHelper;
 
-    public GovernanceSpoVotesCheckerTask(TelegramFacade telegramFacade, PoolVotesDao poolVotesDao) {
+    @PostConstruct
+    public void post() {
+        execTimer = metricsHelper.registerNewTimer(io.micrometer.core.instrument.Timer
+                .builder("thoth.scheduler.gov.spo.votes.time")
+                .description("Time spent getting new governance spo votes")
+                .publishPercentiles(0.9, 0.95, 0.99));
+    }
+
+    public GovernanceSpoVotesCheckerTask(TelegramFacade telegramFacade, PoolVotesDao poolVotesDao,
+                                         MetricsHelper metricsHelper) {
         this.telegramFacade = telegramFacade;
         this.poolVotesDao = poolVotesDao;
+        this.metricsHelper = metricsHelper;
     }
 
     @Override
     public void run() {
-        LOG.info("Checking for new SPO governance votes");
+        execTimer.record(() -> {
+            LOG.info("Checking for new SPO governance votes");
 
-        try {
-            // First we get the current epoch
-            var tip = koiosFacade.getKoiosService().getNetworkService().getChainTip();
-            if (!tip.isSuccessful()) {
-                LOG.warn("Can't get network tip to check SPO governance votes: (code {}), {}",
-                        tip.getCode(), tip.getResponse());
-                return;
+            try {
+                // First we get the current epoch
+                var tip = koiosFacade.getKoiosService().getNetworkService().getChainTip();
+                if (!tip.isSuccessful()) {
+                    LOG.warn("Can't get network tip to check SPO governance votes: (code {}), {}",
+                            tip.getCode(), tip.getResponse());
+                    return;
+                }
+
+                // Now, we check for new active proposals
+                var proposalOptions = Options.builder()
+                        .option(Limit.of(DEFAULT_PAGINATION_SIZE))
+                        .option(Offset.of(0))
+                        .option(Filter.of(FIELD_EXPIRATION, GTE, tip.getValue().getEpochNo().toString()))
+                        .option(Filter.of(FIELD_PROPOSAL_TYPE, IN, constructInFilter(SPO_ALLOWED_PROPOSAL_TYPES)))
+                        .build();
+                var proposalsResp = koiosFacade.getKoiosService().getGovernanceService()
+                        .getProposalList(proposalOptions);
+
+                if (!proposalsResp.isSuccessful()) {
+                    LOG.warn("Can't get gov proposals in epoch {}, due to ({}) {}",
+                            tip.getValue().getEpochNo(),
+                            proposalsResp.getCode(), proposalsResp.getResponse());
+                    return;
+                }
+
+                // get all pool addresses
+                var stakingUsers = userDao.getUsers().stream().filter(User::isStakeAddress).toList();
+                var allStakingAddresses = stakingUsers.stream().map(User::getAddress).distinct().toList();
+
+                LOG.debug("Checking for retiring/retired pools among {} staking addresses", allStakingAddresses.size());
+
+                // Staking Address -> Pool Address
+                var stakingAddrAndPools = collectPoolAddressesAssociatedToStakingAddresses(allStakingAddresses);
+
+                // Get ADA Handles
+                Map<String, String> handles = getAdaHandleForAccount(allStakingAddresses.toArray(new String[0]));
+
+                Map<String, String> poolNamesCache = new HashMap<>();
+
+                for (Proposal proposal : proposalsResp.getValue()) {
+                    processAction(proposal, stakingUsers, stakingAddrAndPools, handles, poolNamesCache);
+                }
+
+            } catch (Exception e) {
+                LOG.error("Caught throwable while checking governance votes", e);
+            } finally {
+                LOG.info("Completed checking for new governance votes");
             }
-
-            // Now, we check for new active proposals
-            var proposalOptions = Options.builder()
-                    .option(Limit.of(DEFAULT_PAGINATION_SIZE))
-                    .option(Offset.of(0))
-                    .option(Filter.of(FIELD_EXPIRATION, GTE, tip.getValue().getEpochNo().toString()))
-                    .option(Filter.of(FIELD_PROPOSAL_TYPE, IN, constructInFilter(SPO_ALLOWED_PROPOSAL_TYPES)))
-                    .build();
-            var proposalsResp = koiosFacade.getKoiosService().getGovernanceService()
-                    .getProposalList(proposalOptions);
-
-            if (!proposalsResp.isSuccessful()) {
-                LOG.warn("Can't get gov proposals in epoch {}, due to ({}) {}",
-                        tip.getValue().getEpochNo(),
-                        proposalsResp.getCode(), proposalsResp.getResponse());
-                return;
-            }
-
-            // get all pool addresses
-            var stakingUsers = userDao.getUsers().stream().filter(User::isStakeAddress).toList();
-            var allStakingAddresses = stakingUsers.stream().map(User::getAddress).distinct().toList();
-
-            LOG.debug("Checking for retiring/retired pools among {} staking addresses", allStakingAddresses.size());
-
-            // Staking Address -> Pool Address
-            var stakingAddrAndPools = collectPoolAddressesAssociatedToStakingAddresses(allStakingAddresses);
-
-            // Get ADA Handles
-            Map<String, String> handles = getAdaHandleForAccount(allStakingAddresses.toArray(new String[0]));
-
-            Map<String, String> poolNamesCache = new HashMap<>();
-
-            for (Proposal proposal : proposalsResp.getValue()) {
-                processAction(proposal, stakingUsers, stakingAddrAndPools, handles, poolNamesCache);
-            }
-
-        } catch (Exception e) {
-            LOG.error("Caught throwable while checking governance votes", e);
-        } finally {
-            LOG.info("Completed checking for new governance votes");
-        }
+        });
     }
 
     private void processAction(Proposal proposal,

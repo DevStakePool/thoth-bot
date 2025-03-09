@@ -58,6 +58,8 @@ public class KoiosDataBuilder {
     private static final String ISSUES_DATA_FOLDER = "test-data/issues";
     private static final String GOV_ACTIONS_SPO_ONLY = "test-data/gov/gov_spo_only_proposals.json";
     private static final String GOV_ACTION_VOTES_SPO_ONLY = "test-data/gov/gov_spo_only_proposal_votes_%s.json";
+    private static final String GOV_ACTIONS_ALL = "test-data/gov/gov_all_proposals.json";
+
 
     public static List<TxInfo> getTxInfoTestData() throws IOException {
         ObjectMapper mapper = new ObjectMapper()
@@ -354,10 +356,25 @@ public class KoiosDataBuilder {
         });
     }
 
+    public static List<Proposal> getAllGovernanceActions() throws IOException {
+        ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
+        String f = Objects.requireNonNull(classLoader.getResource(GOV_ACTIONS_ALL)).getFile();
+        File jsonFile = new File(f);
+        ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        return mapper.readValue(jsonFile, new TypeReference<>() {
+        });
+    }
+
     public static List<ProposalVote> getSpoOnlyGovernanceActionVotes(String proposalId) throws IOException {
         ClassLoader classLoader = KoiosDataBuilder.class.getClassLoader();
-        String f = Objects.requireNonNull(classLoader.getResource(GOV_ACTION_VOTES_SPO_ONLY.formatted(proposalId))).getFile();
-        File jsonFile = new File(f);
+        var file = classLoader.getResource(GOV_ACTION_VOTES_SPO_ONLY.formatted(proposalId));
+        if (file == null) {
+            LOG.warn("Cannot find gov proposal (SPO) for id {}", proposalId);
+            return new ArrayList<>();
+        }
+        File jsonFile = new File(file.getFile());
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 

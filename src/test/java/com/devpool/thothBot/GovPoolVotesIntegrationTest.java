@@ -39,8 +39,8 @@ class GovPoolVotesIntegrationTest extends AbstractIntegrationTest {
     private static final List<User> TEST_USERS = new ArrayList<>();
 
     static {
-        TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE));
-        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE));
+        TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE, Long.MAX_VALUE));
+        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE, Long.MAX_VALUE));
     }
 
     @MockitoBean
@@ -168,7 +168,7 @@ class GovPoolVotesIntegrationTest extends AbstractIntegrationTest {
         assertTrue(message.contains("gov_action1pvv5wmjqhwa4u85vu9f4ydmzu2mgt8n7et967ph2urhx53r70xusqnmm525"));
 
         // New subscription
-        var testUser = new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE);
+        var testUser = new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", Integer.MAX_VALUE, Integer.MAX_VALUE, Long.MAX_VALUE, Long.MAX_VALUE);
 
         LOG.debug("Adding new subscription {}", testUser);
         this.userDao.addNewUser(testUser);

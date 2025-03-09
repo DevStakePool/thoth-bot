@@ -4,6 +4,8 @@ import com.devpool.thothBot.dao.AssetsDao;
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
+import com.devpool.thothBot.doubles.koios.KoiosDataBuilder;
+import com.devpool.thothBot.doubles.koios.NetworkServiceDouble;
 import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.scheduler.TransactionCheckerTaskV2;
 import com.devpool.thothBot.telegram.TelegramFacade;
@@ -38,6 +40,7 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static com.devpool.thothBot.scheduler.AbstractCheckerTask.GOV_TOOLS_PROPOSAL;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -49,15 +52,15 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
     private static List<User> TEST_USERS = new ArrayList<>();
 
     static {
-        TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0, 0L));
-        TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0, 0L));
-        //TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0, 0L)); // Reserved for Thoth NFTs tests
-        TEST_USERS.add(new User(-2L, "stake1uxj8rc5aa4xkaejwmvx4gskyje6c283v7a7l6dyz5q2qjmqyxuqx9", 0, 0, 0L)); // Not present
-        TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0, 0L));
-        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0, 0L));
-        TEST_USERS.add(new User(-4L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0, 0L));
-        TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0, 0L));
-        TEST_USERS.add(new User(-1000L, "addr1q9pzugshkxdrtcmnwppsevp6s5709j4n4ud6q7yhj5ra8e2crqz3h0a46kcklgdaa4dfhdmjhgzy64tam76dxg68t55s9ua0sz", 0, 0, 0L)); // Not present
+        TEST_USERS.add(new User(-1L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0, 0L, 0L));
+        TEST_USERS.add(new User(-2L, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32", 0, 0, 0L, 0L));
+        //TEST_USERS.add(new User(-2L, "stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz", 0, 0, 0L, 0L)); // Reserved for Thoth NFTs tests
+        TEST_USERS.add(new User(-2L, "stake1uxj8rc5aa4xkaejwmvx4gskyje6c283v7a7l6dyz5q2qjmqyxuqx9", 0, 0, 0L, 0L)); // Not present
+        TEST_USERS.add(new User(-2L, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr", 0, 0, 0L, 0L));
+        TEST_USERS.add(new User(-3L, "stake1uxpdrerp9wrxunfh6ukyv5267j70fzxgw0fr3z8zeac5vyqhf9jhy", 0, 0, 0L, 0L));
+        TEST_USERS.add(new User(-4L, "stake1uyc8nhmxhnzsyc2s2kwdd2gy9k00ky0qakv58v5fusuve9sgealu4", 0, 0, 0L, 0L));
+        TEST_USERS.add(new User(-1000L, "addr1wxwrp3hhg8xdddx7ecg6el2s2dj6h2c5g582yg2yxhupyns8feg4m", 0, 0, 0L, 0L));
+        TEST_USERS.add(new User(-1000L, "addr1q9pzugshkxdrtcmnwppsevp6s5709j4n4ud6q7yhj5ra8e2crqz3h0a46kcklgdaa4dfhdmjhgzy64tam76dxg68t55s9ua0sz", 0, 0, 0L, 0L)); // Not present
     }
 
     @MockitoBean
@@ -114,6 +117,9 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
 
     @Autowired
     private EpochCmd epochCmd;
+
+    @Autowired
+    private ProposalsCmd proposalsCmd;
 
     @Autowired
     private AssetsListCmd assetsListCmd;
@@ -243,11 +249,71 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
 
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
-        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
+        assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("ADA price"));
         Assertions.assertTrue(params.get("text").toString().contains("TXs count: 161116"));
         Assertions.assertTrue(params.get("text").toString().contains("Epoch 522"));
         Assertions.assertTrue(params.get("text").toString().contains("Total stake: 22.3B"));
+    }
+
+    @Test
+    void userCommandProposalsTest() throws Exception {
+        // Set TIP
+        System.setProperty(NetworkServiceDouble.TIP_EPOCH_NO_SYS_VAR_KEY, "544");
+
+        // Testing Info command
+        Update proposalsCommandUpdate = TelegramUtils.buildProposalsCommandUpdate("-2");
+        this.proposalsCmd.execute(proposalsCommandUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.getFirst();
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        assertEquals((long) -2, params.get("chat_id"));
+        assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
+        assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("Found 3 active proposal(s)"));
+        Assertions.assertTrue(params.get("text").toString().contains("Authors Samuel Leathers"));
+        Assertions.assertTrue(params.get("text").toString().contains("h7798x036m2r4nhlccmqqhmr9wx"));
+        Assertions.assertTrue(params.get("text").toString().contains("Defining the Cardano Vision and Roadmap for 2025 and beyond"));
+        Assertions.assertTrue(params.get("text").toString().contains("ParameterChange"));
+        Assertions.assertTrue(params.get("text").toString().contains("Expiring epoch 546"));
+        Assertions.assertTrue(params.get("text").toString().contains("Expiring epoch 544 (current)"));
+    }
+
+    @Test
+    void userCommandProposalsNoneActiveTest() throws Exception {
+        // Set TIP
+        System.setProperty(NetworkServiceDouble.TIP_EPOCH_NO_SYS_VAR_KEY, "9999");
+
+        // Testing Info command
+        Update proposalsCommandUpdate = TelegramUtils.buildProposalsCommandUpdate("-2");
+        this.proposalsCmd.execute(proposalsCommandUpdate, this.telegramBotMock);
+        Mockito.verify(this.telegramBotMock,
+                        Mockito.timeout(10 * 1000)
+                                .times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        List<SendMessage> sendMessages = this.sendMessageArgCaptor.getAllValues();
+
+        assertEquals(1, sendMessages.size());
+        SendMessage sendMessage = sendMessages.getFirst();
+        LOG.debug("Message params: {}", sendMessage.getParameters());
+        Map<String, Object> params = sendMessage.getParameters();
+
+        assertEquals((long) -2, params.get("chat_id"));
+        assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
+        assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
+        assertEquals("HTML", params.get("parse_mode"));
+        Assertions.assertTrue(params.get("text").toString().contains("Found 0 active proposal(s)"));
+        Assertions.assertFalse(params.get("text").toString().contains(GOV_TOOLS_PROPOSAL));
     }
 
     @Test
@@ -957,7 +1023,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
     @Test
     void longTextMultiTxTest() throws Exception {
         Map<String, String> handles = Collections.emptyMap();
-        User user = new User(1000L, "XYZ_Address", 999, 999, 0L);
+        User user = new User(1000L, "XYZ_Address", 999, 999, 0L, 0L);
         List<StringBuilder> txBuilders = new ArrayList<>();
         txBuilders.add(createText("A"));
         txBuilders.add(createText("B"));
@@ -981,7 +1047,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
     @Test
     void longTextSingleTxTest() throws Exception {
         Map<String, String> handles = Collections.emptyMap();
-        User user = new User(1000L, "XYZ_Address", 999, 999, 0L);
+        User user = new User(1000L, "XYZ_Address", 999, 999, 0L, 0L);
         List<StringBuilder> txBuilders = new ArrayList<>();
         txBuilders.add(createText("A").append(createText("B")).append(createText("C")));
         transactionCheckerTaskV2.notifyTelegramUser(txBuilders, user, handles);

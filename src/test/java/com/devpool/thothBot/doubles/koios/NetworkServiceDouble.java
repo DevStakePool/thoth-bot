@@ -9,11 +9,18 @@ import rest.koios.client.backend.factory.options.Options;
 import java.util.List;
 
 public class NetworkServiceDouble implements NetworkService {
+    public static final String TIP_EPOCH_NO_SYS_VAR_KEY = "tip_epoch_no";
+    public static final String TIP_BLOCK_NO_SYS_VAR_KEY = "tip_block_no";
+
     @Override
     public Result<Tip> getChainTip() throws ApiException {
+        // Check if the tip is defined in the system variables
+        var epochNo = System.getProperty(TIP_EPOCH_NO_SYS_VAR_KEY, "371");
+        var blockNo = System.getProperty(TIP_BLOCK_NO_SYS_VAR_KEY, "1234");
+
         Tip tip = new Tip();
-        tip.setEpochNo(371);
-        tip.setBlockNo(1234);
+        tip.setEpochNo(Integer.valueOf(epochNo));
+        tip.setBlockNo(Integer.valueOf(blockNo));
         return Result.<Tip>builder().successful(true).response("").code(200).value(tip).build();
     }
 

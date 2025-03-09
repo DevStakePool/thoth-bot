@@ -26,6 +26,7 @@ thoth:
   scheduler:
     initial-delay-secs: 5
     gov-spo-votes-enabled: false
+    gov-new-prop-enabled: false
   asset:
     fetching:
       enabled: false

@@ -2,10 +2,12 @@ package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.subscription.SubscriptionManager;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
 import com.vdurmont.emoji.EmojiParser;
+import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,28 +35,41 @@ public class RetiredPoolCheckerTask extends AbstractCheckerTask implements Runna
     @Autowired
     private TelegramFacade telegramFacade;
 
+    @Autowired
+    private MetricsHelper metricsHelper;
+
+    @PostConstruct
+    public void post() {
+        execTimer = metricsHelper.registerNewTimer(io.micrometer.core.instrument.Timer
+                .builder("thoth.scheduler.retired.pools.time")
+                .description("Time spent getting retired pools")
+                .publishPercentiles(0.9, 0.95, 0.99));
+    }
+
     @Override
     public void run() {
-        LOG.debug("Starting thread to check for retired/retiring pools");
+        execTimer.record(() -> {
+            LOG.debug("Starting thread to check for retired/retiring pools");
 
-        try {
-            LOG.info("Checking retired/retiring pools for {} wallets", this.userDao.getUsers().size());
+            try {
+                LOG.info("Checking retired/retiring pools for {} wallets", this.userDao.getUsers().size());
 
-            // Filter out non-staking users
-            var stakingUsers = userDao.getUsers().stream().filter(User::isStakeAddress).toList();
+                // Filter out non-staking users
+                var stakingUsers = userDao.getUsers().stream().filter(User::isStakeAddress).toList();
 
-            // get all pool addresses
-            var allStakingAddresses = stakingUsers.stream().map(User::getAddress).distinct().toList();
-            LOG.debug("Checking for retiring/retired pools among {} staking addresses", allStakingAddresses.size());
+                // get all pool addresses
+                var allStakingAddresses = stakingUsers.stream().map(User::getAddress).distinct().toList();
+                LOG.debug("Checking for retiring/retired pools among {} staking addresses", allStakingAddresses.size());
 
-            var stakingAddrAndPools = collectPoolAddressesAssociatedToStakingAddresses(allStakingAddresses);
+                var stakingAddrAndPools = collectPoolAddressesAssociatedToStakingAddresses(allStakingAddresses);
 
-            var allRetiringRetiredPools = collectAllRetiringOrRetiredPools(stakingAddrAndPools.values().stream().distinct().collect(Collectors.toList()));
+                var allRetiringRetiredPools = collectAllRetiringOrRetiredPools(stakingAddrAndPools.values().stream().distinct().collect(Collectors.toList()));
 
-            notifyUsers(stakingAddrAndPools, allRetiringRetiredPools, stakingUsers);
-        } catch (Exception e) {
-            LOG.error("Caught throwable while checking wallet retired/retiring pools", e);
-        }
+                notifyUsers(stakingAddrAndPools, allRetiringRetiredPools, stakingUsers);
+            } catch (Exception e) {
+                LOG.error("Caught throwable while checking wallet retired/retiring pools", e);
+            }
+        });
     }
 
     // PoolID -> PoolInfo

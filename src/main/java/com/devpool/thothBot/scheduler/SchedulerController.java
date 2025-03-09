@@ -23,6 +23,7 @@ public class SchedulerController {
     private final SubscriptionManager subscriptionManager;
     private final GovernanceDrepVotesCheckerTask governanceDrepVotesCheckerTask;
     private final GovernanceSpoVotesCheckerTask governanceSpoVotesCheckerTask;
+    private final GovernanceNewProposalsTask governanceNewProposalsTask;
     private final RetiredPoolCheckerTask retiredPoolCheckerTask;
 
     @Value("${thoth.disable-scheduler:false}")
@@ -37,16 +38,21 @@ public class SchedulerController {
     @Value("${thoth.scheduler.gov-spo-votes-enabled:true}")
     private Boolean govSpoVotesEnabled;
 
+    @Value("${thoth.scheduler.gov-new-prop-enabled:true}")
+    private Boolean govNewPropEnabled;
+
     public SchedulerController(TransactionCheckerTaskV2 transactionCheckerTask, StakingRewardsCheckerTask stakingRewardsCheckerTask,
                                SubscriptionManager subscriptionManager, GovernanceDrepVotesCheckerTask governanceDrepVotesCheckerTask,
                                RetiredPoolCheckerTask retiredPoolCheckerTask,
-                               GovernanceSpoVotesCheckerTask governanceSpoVotesCheckerTask) {
+                               GovernanceSpoVotesCheckerTask governanceSpoVotesCheckerTask,
+                               GovernanceNewProposalsTask governanceNewProposalsTask) {
         this.transactionCheckerTask = transactionCheckerTask;
         this.stakingRewardsCheckerTask = stakingRewardsCheckerTask;
         this.subscriptionManager = subscriptionManager;
         this.governanceDrepVotesCheckerTask = governanceDrepVotesCheckerTask;
         this.retiredPoolCheckerTask = retiredPoolCheckerTask;
         this.governanceSpoVotesCheckerTask = governanceSpoVotesCheckerTask;
+        this.governanceNewProposalsTask = governanceNewProposalsTask;
     }
 
     @PostConstruct
@@ -61,9 +67,13 @@ public class SchedulerController {
             this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, scheduledJobsInitialDelaySecs, 120, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, scheduledJobsInitialDelaySecs, 15 * 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.governanceDrepVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 6, TimeUnit.SECONDS);
-            if (Boolean.TRUE.equals(this.govSpoVotesEnabled))
-                this.executorService.scheduleWithFixedDelay(this.governanceSpoVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 25, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.retiredPoolCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 24, TimeUnit.SECONDS);
+            if (Boolean.TRUE.equals(this.govSpoVotesEnabled)) {
+                this.executorService.scheduleWithFixedDelay(this.governanceSpoVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 25, TimeUnit.SECONDS);
+            }
+            if (Boolean.TRUE.equals(this.govNewPropEnabled)) {
+                this.executorService.scheduleWithFixedDelay(this.governanceNewProposalsTask, scheduledJobsInitialDelaySecs, 60 * 60 * 22, TimeUnit.SECONDS);
+            }
         }
 
         if (Boolean.TRUE.equals(this.disableSubscriptionManager)) {
