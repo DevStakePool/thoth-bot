@@ -262,9 +262,13 @@ public abstract class AbstractCheckerTask {
     }
 
     protected URI handleIpfsUri(URI uri) throws URISyntaxException {
+        if (uri.getHost().equals("ipfs.io")) {
+            var ipsHash = uri.getPath().substring(uri.getPath().lastIndexOf('/')+1);
+            return new URI(IPFS_HTTP_URI.formatted(ipsHash));
+        }
+
         if (!IPFS_SCHEME.equals(uri.getScheme()))
             return uri;
-
 
         var httpUri = new URI(IPFS_HTTP_URI.formatted(uri.getSchemeSpecificPart()));
         LOG.debug("Converted IPFS uri {} to HTTP uri {}", uri, httpUri);
