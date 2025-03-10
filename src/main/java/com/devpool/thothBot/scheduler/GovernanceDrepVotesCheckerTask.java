@@ -1,6 +1,7 @@
 package com.devpool.thothBot.scheduler;
 
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.model.model.proposal.ProposalContent;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.util.CollectionsUtil;
@@ -8,22 +9,21 @@ import com.vdurmont.emoji.EmojiParser;
 import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rest.koios.client.backend.api.account.model.AccountInfo;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.governance.model.DRepVote;
+import rest.koios.client.backend.api.governance.model.Proposal;
 import rest.koios.client.backend.factory.options.Limit;
 import rest.koios.client.backend.factory.options.Offset;
 import rest.koios.client.backend.factory.options.Options;
 import rest.koios.client.backend.factory.options.filters.Filter;
 import rest.koios.client.backend.factory.options.filters.FilterType;
 
+import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
@@ -50,8 +50,27 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
     public void run() {
         execTimer.record(() -> {
             LOG.info("Checking for new DRep governance votes");
-
+            Map<String, ProposalContent> proposalsContent = new HashMap<>();
+            Optional<List<Proposal>> allProposals = Optional.empty();
             try {
+                var tip = koiosFacade.getKoiosService().getNetworkService().getChainTip();
+                if (!tip.isSuccessful()) {
+                    LOG.warn("Cannot get TIP: {}, {}", tip.getCode(), tip.getResponse());
+                } else {
+                    // Only active proposals
+                    var options = Options.builder()
+                            .option(
+                                    Filter.of("expiration", FilterType.GTE, tip.getValue().getEpochNo().toString()))
+                            .build();
+
+                    var proposals = this.koiosFacade.getKoiosService().getGovernanceService().getProposalList(options);
+                    if (!proposals.isSuccessful()) {
+                        LOG.warn("Cannot get proposals: {}, {}", proposals.getCode(), proposals.getResponse());
+                    } else {
+                        allProposals = Optional.of(proposals.getValue());
+                    }
+                }
+
                 LOG.info("Checking governance votes for {} wallets", this.userDao.getUsers().size());
                 // Filter out non-staking users
                 Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(
@@ -62,7 +81,7 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
                     List<User> usersBatch = batchIterator.next();
                     LOG.debug("Processing users batch size {}", usersBatch.size());
 
-                    processUserBatch(usersBatch);
+                    processUserBatch(usersBatch, proposalsContent, allProposals);
                 }
             } catch (Exception e) {
                 LOG.error("Caught throwable while checking governance votes", e);
@@ -72,7 +91,7 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
         });
     }
 
-    private void processUserBatch(List<User> usersBatch) {
+    private void processUserBatch(List<User> usersBatch, Map<String, ProposalContent> proposalsContent, Optional<List<Proposal>> proposals) {
         // 1. for the batch, grab the cached info and get the drep they delegate (if any)
         // 2. for each user, check the drep votes (cache it locally in case more users are delegating to the same drep)
         // 2.1 check if there are new votes since last time we checked (last gov votes block time)
@@ -135,8 +154,27 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
                     LOG.debug("The user {} follows the drep {} (name {}) and got {} new vote(s)",
                             user.getKey(), user.getValue(), drepName, drepVotes.size());
 
+                    // Get the proposal content (cached)
+                    for (String proposalId : drepVotes.stream().map(DRepVote::getProposalId).toList()) {
+                        if (!proposalsContent.containsKey(proposalId)) {
+                            var prop = proposals
+                                    .orElse(List.of())
+                                    .stream()
+                                    .filter(p -> p.getProposalId().equals(proposalId)).findAny();
+
+                            if (prop.isEmpty()) continue;
+
+                            try {
+                                var content = getProposalContent(prop.get().getMetaJson(), prop.get().getMetaUrl(), proposalId);
+                                proposalsContent.put(proposalId, content);
+                            } catch (URISyntaxException e) {
+                                LOG.warn("URI syntax for URL {} and proposalID {}: {}",
+                                        prop.get().getMetaUrl(), proposalId, e.toString());
+                            }
+                        }
+                    }
                     userDao.updateUserGovVotesBlockTime(userEntity.getId(), currentTs);
-                    renderUserNotification(userEntity, user.getValue(), drepName, drepVotes, handles);
+                    renderUserNotification(userEntity, user.getValue(), drepName, drepVotes, handles, proposalsContent);
                 }
             } catch (ApiException e) {
                 LOG.warn("Can't check governance votes for user {} and drep {} due to {}",
@@ -145,7 +183,9 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
         }
     }
 
-    private void renderUserNotification(User user, String drepId, String drepName, List<DRepVote> drepVotes, Map<String, String> handles) {
+    private void renderUserNotification(User user, String drepId, String drepName,
+                                        List<DRepVote> drepVotes, Map<String, String> handles,
+                                        Map<String, ProposalContent> proposalsContent) {
         StringBuilder sb = new StringBuilder();
         sb.append(EmojiParser.parseToUnicode(":memo: The DRep <a href=\""))
                 .append(GOV_TOOLS_DREP)
@@ -161,11 +201,15 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
                 .append("</a>, has voted:\n");
 
         for (var vote : drepVotes) {
+            var content = Optional.ofNullable(proposalsContent.get(vote.getProposalId()))
+                    .orElse(new ProposalContent(vote.getProposalId().substring(vote.getProposalId().length() - 8),
+                            null, null));
+
             sb.append(EmojiParser.parseToUnicode(":small_blue_diamond: "))
                     .append("Action <a href=\"")
                     .append(String.format(GOV_TOOLS_PROPOSAL, vote.getProposalId()))
                     .append("\">")
-                    .append(vote.getProposalTxHash().substring(vote.getProposalTxHash().length() - 8))
+                    .append(content.title())
                     .append("</a>")
                     .append(EmojiParser.parseToUnicode(" :arrow_right: "))
                     .append(vote.getVote())

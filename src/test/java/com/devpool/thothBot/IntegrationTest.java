@@ -485,16 +485,16 @@ class IntegrationTest extends AbstractIntegrationTest {
         message = retrieveMessageByString(allMessages, "stake1u8uekde7k8x8n9lh0zjnhymz66sqdpa0ms02z8cshajptac0d3j32",
                 "drep1yfpazkd0aqex0kd3vrhk47sjy0jqgq3xu6h2zv9wevfequcxyynwv");
         assertTrue(message.contains("$alessio.dev"));
-        assertTrue(message.contains("ucxyynwv"));
-        assertTrue(message.contains("78ea58d7"));
+        assertTrue(message.contains("Rename the Chang 2 Hard Fork to the Plomin Hard Fork"));
+        assertTrue(message.contains("Should K increased?"));
         assertTrue(message.contains("Yes"));
-        assertTrue(message.contains("e035c916"));
+        assertTrue(message.contains("Name the next hard fork HOSKY"));
         assertTrue(message.contains("Abstain"));
 
         message = retrieveMessageByString(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
                 "drep1y2m0g4r66pyaw3p7u454wc0p4f0ygm8ueaev0mgd3tvwm7sskqwqp");
         assertTrue(message.contains("CardanoYoda"));
-        assertTrue(message.contains("424dc1db"));
+        assertTrue(message.contains("Ikigai"));
         assertTrue(message.contains("Yes"));
 
         // Internal with metadata
