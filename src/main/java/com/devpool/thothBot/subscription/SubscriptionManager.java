@@ -37,7 +37,7 @@ import java.util.stream.Collectors;
 @Component
 public class SubscriptionManager implements Runnable, ISubscriptionManager {
     private static final Logger LOG = LoggerFactory.getLogger(SubscriptionManager.class);
-    private static final int BATCH_SIZE_ASSETS_RETRIEVAL = 500;
+    private static final int BATCH_SIZE_ASSETS_RETRIEVAL = 100;
 
     public static final String DEV_POOL_ID = "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv";
 
