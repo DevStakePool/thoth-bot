@@ -168,7 +168,7 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
                                 var content = getProposalContent(prop.get().getMetaJson(), prop.get().getMetaUrl(), proposalId);
                                 proposalsContent.put(proposalId, content);
                             } catch (URISyntaxException e) {
-                                LOG.warn("URI syntax for URL {} and proposalID {}: {}",
+                                LOG.warn("URI syntax error for URL {} and proposalID {}: {}",
                                         prop.get().getMetaUrl(), proposalId, e.toString());
                             }
                         }
@@ -198,24 +198,24 @@ public class GovernanceDrepVotesCheckerTask extends AbstractCheckerTask implemen
                 .append(user.getAddress())
                 .append("\">")
                 .append(handles.get(user.getAddress()))
-                .append("</a>, has voted:\n");
+                .append("</a>, has voted:\n\n");
 
         for (var vote : drepVotes) {
             var content = Optional.ofNullable(proposalsContent.get(vote.getProposalId()))
                     .orElse(new ProposalContent(vote.getProposalId().substring(vote.getProposalId().length() - 8),
                             null, null));
 
-            sb.append(EmojiParser.parseToUnicode(":small_blue_diamond: "))
+            sb.append(EmojiParser.parseToUnicode(":page_with_curl: "))
                     .append("Action <a href=\"")
                     .append(String.format(GOV_TOOLS_PROPOSAL, vote.getProposalId()))
                     .append("\">")
                     .append(content.title())
-                    .append("</a>")
-                    .append(EmojiParser.parseToUnicode(" :arrow_right: "))
+                    .append("</a>\n")
+                    .append(EmojiParser.parseToUnicode(" :black_nib: "))
                     .append(vote.getVote())
                     .append(" (<i>")
                     .append(TX_DATETIME_FORMATTER.format(LocalDateTime.ofEpochSecond(vote.getBlockTime(), 0, ZoneOffset.UTC)))
-                    .append("</i>)\n");
+                    .append("</i>)\n\n");
         }
 
         this.telegramFacade.sendMessageTo(user.getChatId(), sb.toString());
