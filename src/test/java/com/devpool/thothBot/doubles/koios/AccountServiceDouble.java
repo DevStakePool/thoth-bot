@@ -111,7 +111,7 @@ public class AccountServiceDouble implements AccountService {
 
     @Override
     public Result<List<AccountAsset>> getAccountAssets(List<String> addressList, Integer epochNo, Options options) throws ApiException {
-        // only single iteration
+        // only a single iteration
         Optional<Option> optionOffset = Optional.empty();
         if (options != null) {
             optionOffset = options.getOptionList().stream().filter(o -> o.getOptionType() == OptionType.OFFSET).findAny();
@@ -128,7 +128,7 @@ public class AccountServiceDouble implements AccountService {
                     a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID));
 
             // Thoth NFTs
-            if (!(this.backendBehavior == BackendServiceDouble.BackendBehavior.DISABLE_THOTH_NFT_FOR_ACCOUNTS)
+            if (this.backendBehavior != BackendServiceDouble.BackendBehavior.DISABLE_THOTH_NFT_FOR_ACCOUNTS
                     && addressList.contains("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz")) {
                 List<AccountAsset> thothNFTs = KoiosDataBuilder.getThothNftsForAccounts("stake1u9ttjzthgk2y7x55c9f363a6vpcthv0ukl2d5mhtxvv4kusv5fmtz");
                 data.addAll(thothNFTs);
@@ -138,8 +138,7 @@ public class AccountServiceDouble implements AccountService {
                     .code(200)
                     .response("")
                     .successful(true)
-                    .value(data.stream().filter(d -> addressList.contains(d.getStakeAddress())).collect(Collectors.toList()))
-                    .build();
+                    .value(data.stream().filter(d -> addressList.contains(d.getStakeAddress())).toList()).build();
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }
