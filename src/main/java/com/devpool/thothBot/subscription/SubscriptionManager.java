@@ -37,7 +37,7 @@ import java.util.stream.Collectors;
 @Component
 public class SubscriptionManager implements Runnable, ISubscriptionManager {
     private static final Logger LOG = LoggerFactory.getLogger(SubscriptionManager.class);
-    private static final int BATCH_SIZE_ASSETS_RETRIEVAL = 100;
+    private static final int BATCH_SIZE_ASSETS_RETRIEVAL = 10;
 
     public static final String DEV_POOL_ID = "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv";
 
@@ -48,10 +48,10 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
     private String freeForAllNftPolicyId;
 
 
-    @Value("${thoth.subscription.info-batch-size:100}")
+    @Value("${thoth.subscription.info-batch-size:10}")
     private Integer infoBatchSize;
 
-    @Value("${thoth.subscription.assets-batch-size:50}")
+    @Value("${thoth.subscription.assets-batch-size:10}")
     private Integer assetsBatchSize;
 
     @Value("classpath:subscription-help.html")
@@ -161,9 +161,9 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
      * @throws KoiosResponseException in case of API call error
      */
     private Map<Long, List<String>> getDevStakers(Map<Long, List<String>> userSubscribedAccounts) throws KoiosResponseException {
-        List<String> allStakeAddresses = userSubscribedAccounts.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
+        List<String> allStakeAddresses = userSubscribedAccounts.values().stream().flatMap(List::stream).distinct().toList();
         Iterator<List<String>> batchesIter = CollectionsUtil.batchesList(
-                allStakeAddresses.stream().filter(User::isStakingAddress).collect(Collectors.toList()),
+                allStakeAddresses.stream().filter(User::isStakingAddress).toList(),
                 this.infoBatchSize).iterator();
 
         Map<String, Boolean> accountsInDevPool = new HashMap<>();
@@ -295,28 +295,26 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
 
     private Map<Long, List<AddressAsset>> getAddressesAssets(Map<Long, List<String>> chatAddresses) throws KoiosResponseException {
         long offset = 0;
-        long pagination = BATCH_SIZE_ASSETS_RETRIEVAL;
         Result<List<AddressAsset>> assetsResp;
 
-        List<String> addresses = chatAddresses.values().stream().flatMap(List::stream).distinct().collect(Collectors.toList());
+        List<String> addresses = chatAddresses.values().stream().flatMap(List::stream).distinct().toList();
         Iterator<List<String>> batchesIterator = CollectionsUtil.batchesList(addresses, this.assetsBatchSize).iterator();
         Map<String, List<AddressAsset>> assetsOfAddresses = new HashMap<>();
 
         while (batchesIterator.hasNext()) {
             try {
-
                 List<String> batch = batchesIterator.next();
                 do {
                     Options options = Options.builder()
                             .option(Limit.of(BATCH_SIZE_ASSETS_RETRIEVAL))
                             .option(Offset.of(offset)).build();
-                    offset += pagination;
+                    offset += BATCH_SIZE_ASSETS_RETRIEVAL;
                     assetsResp = this.koiosFacade.getKoiosService().getAddressService()
                             .getAddressAssets(batch, options);
 
                     if (!assetsResp.isSuccessful()) {
-                        LOG.error("Can't retrieve the asset list, due to code {} and response {}",
-                                assetsResp.getCode(), assetsResp.getResponse());
+                        LOG.error("Can't retrieve the asset list, due to code {} and response {}. Payload {}",
+                                assetsResp.getCode(), assetsResp.getResponse(), batch);
                         throw new KoiosResponseException(String.format("Can't retrieve the asset list, due to code %d and response %s",
                                 assetsResp.getCode(), assetsResp.getResponse()));
                     }
@@ -327,7 +325,6 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
                     });
                 } while (assetsResp.isSuccessful() && !assetsResp.getValue().isEmpty());
             } catch (ApiException e) {
-                LOG.error("API Exception while querying Koios during the batch processing", e);
                 throw new KoiosResponseException("API Exception while querying Koios during the batch processing", e);
             }
         }

@@ -77,6 +77,8 @@ public abstract class AbstractCheckerTask {
     protected Integer usersBatchSize;
     @Autowired
     protected RestTemplate restTemplate;
+    @Value("${thoth.ada-handle-assets-batch-size:20}")
+    protected Integer adaHandleAssetsBatchSize;
 
     protected Timer execTimer;
 
@@ -121,78 +123,102 @@ public abstract class AbstractCheckerTask {
 
     /**
      * Get the ADA Handle associated to the stake address stakeAddr, if any.
-     * If there's no handle the shortenStakeAddr() will be returned.
+     * If there's no handle, the shortenStakeAddr() will be returned.
      * If there are multiple handles, the first in alphabetical order will be shown (usually the most valuable)
      *
      * @param addresses list
-     * @return the handle or short stake address organised by staking address
+     * @return the handle or short stake address organized by staking address
      */
     protected Map<String, String> getAdaHandleForAccount(String... addresses) {
         Map<String, String> handlesMap = new HashMap<>();
 
-        List<String> stakingAddresses = Arrays.stream(addresses).filter(User::isStakingAddress).collect(Collectors.toList());
         List<String> normalAddresses = Arrays.stream(addresses).filter(User::isNormalAddress).collect(Collectors.toList());
+        List<String> stakingAddresses = Arrays.stream(addresses).filter(User::isStakingAddress).collect(Collectors.toList());
 
         Set<String> processedAddresses = new HashSet<>();
         try {
             // Nominal address
             if (!normalAddresses.isEmpty()) {
-                Result<List<AddressAsset>> addrAssetsResp = this.koiosFacade.getKoiosService().getAddressService().getAddressAssets(normalAddresses, null);
-                if (addrAssetsResp.isSuccessful()) {
-                    Set<String> allAddresses = addrAssetsResp.getValue().stream().map(AddressAsset::getAddress).collect(Collectors.toSet());
-                    for (String addr : allAddresses) {
-                        processedAddresses.add(addr);
-                        Optional<Asset> bestHandle = addrAssetsResp.getValue().stream()
-                                .filter(a -> a.getAddress().equals(addr))
-                                .filter(a -> a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID))
-                                .map(a -> (Asset) a)
-                                .findFirst();
-                        if (bestHandle.isEmpty()) {
-                            // Account has no handles
-                            handlesMap.put(addr, shortenAddr(addr));
-                        } else {
-                            String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
+                long offset = 0;
+                Result<List<AddressAsset>> addrAssetsResp;
+                do {
+                    Options options = Options.builder()
+                            .option(Limit.of(adaHandleAssetsBatchSize))
+                            .option(Offset.of(offset))
+                            .build();
+                    offset += adaHandleAssetsBatchSize;
+                    addrAssetsResp = this.koiosFacade.getKoiosService()
+                            .getAddressService().getAddressAssets(normalAddresses, options);
+                    if (addrAssetsResp.isSuccessful()) {
+                        Set<String> allAddresses = addrAssetsResp.getValue().stream().map(AddressAsset::getAddress).collect(Collectors.toSet());
+                        for (String addr : allAddresses) {
+                            processedAddresses.add(addr);
+                            Optional<Asset> bestHandle = addrAssetsResp.getValue().stream()
+                                    .filter(a -> a.getAddress().equals(addr))
+                                    .filter(a -> a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID))
+                                    .map(a -> (Asset) a)
+                                    .findFirst();
+                            if (bestHandle.isEmpty()) {
+                                // Account has no handles
+                                handlesMap.put(addr, shortenAddr(addr));
+                            } else {
+                                String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
 
-                            if (handleName == null)
-                                handleName = shortenAddr(addr);
-                            LOG.debug("Found handle {} for account {}", handleName, addr);
-                            handlesMap.put(addr, handleName);
+                                if (handleName == null)
+                                    handleName = shortenAddr(addr);
+                                LOG.debug("Found handle {} for account {}", handleName, addr);
+                                handlesMap.put(addr, handleName);
+                            }
                         }
+                    } else {
+                        LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}). Returning the address shortened instead",
+                                normalAddresses, addrAssetsResp.getResponse(), addrAssetsResp.getCode(),
+                                new Exception("Error: reduce batch size")); // Exception needed temporarily for the stack trace
+                        break;
                     }
-                } else {
-                    LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the address shortened instead",
-                            normalAddresses, addrAssetsResp.getResponse(), addrAssetsResp.getCode());
-                }
+                } while (addrAssetsResp.isSuccessful() && !addrAssetsResp.getValue().isEmpty());
             }
 
             // Staking address?
             if (!stakingAddresses.isEmpty()) {
-                Result<List<AccountAsset>> accountAssetsResp = this.koiosFacade.getKoiosService().getAccountService().getAccountAssets(stakingAddresses, null, null);
-                if (accountAssetsResp.isSuccessful()) {
-                    Set<String> allStakeAddresses = accountAssetsResp.getValue().stream().map(AccountAsset::getStakeAddress).collect(Collectors.toSet());
-                    for (String stakeAddr : allStakeAddresses) {
-                        processedAddresses.add(stakeAddr);
-                        Optional<Asset> bestHandle = accountAssetsResp.getValue().stream()
-                                .filter(a -> a.getStakeAddress().equals(stakeAddr))
-                                .filter(a -> a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID))
-                                .map(a -> (Asset) a)
-                                .findFirst();
-                        if (bestHandle.isEmpty()) {
-                            // Account has no handles
-                            handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
-                        } else {
-                            String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
-                            if (handleName == null)
-                                handleName = shortenAddr(stakeAddr);
+                long offset = 0;
+                Result<List<AccountAsset>> accountAssetsResp;
+                do {
+                    Options options = Options.builder()
+                            .option(Limit.of(adaHandleAssetsBatchSize))
+                            .option(Offset.of(offset))
+                            .build();
+                    offset += adaHandleAssetsBatchSize;
+                    accountAssetsResp = this.koiosFacade.getKoiosService()
+                            .getAccountService().getAccountAssets(stakingAddresses, null, options);
+                    if (accountAssetsResp.isSuccessful()) {
+                        Set<String> allStakeAddresses = accountAssetsResp.getValue().stream().map(AccountAsset::getStakeAddress).collect(Collectors.toSet());
+                        for (String stakeAddr : allStakeAddresses) {
+                            processedAddresses.add(stakeAddr);
+                            Optional<Asset> bestHandle = accountAssetsResp.getValue().stream()
+                                    .filter(a -> a.getStakeAddress().equals(stakeAddr))
+                                    .filter(a -> a.getPolicyId().equals(AssetFacade.ADA_HANDLE_POLICY_ID))
+                                    .map(a -> (Asset) a)
+                                    .findFirst();
+                            if (bestHandle.isEmpty()) {
+                                // Account has no handles
+                                handlesMap.put(stakeAddr, shortenAddr(stakeAddr));
+                            } else {
+                                String handleName = this.assetFacade.getAssetDisplayName(bestHandle.get().getPolicyId(), bestHandle.get().getAssetName());
+                                if (handleName == null)
+                                    handleName = shortenAddr(stakeAddr);
 
-                            LOG.debug("Found handle {} for account {}", handleName, stakeAddr);
-                            handlesMap.put(stakeAddr, handleName);
+                                LOG.debug("Found handle {} for account {}", handleName, stakeAddr);
+                                handlesMap.put(stakeAddr, handleName);
+                            }
                         }
+                    } else {
+                        LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the stake address shortened instead",
+                                stakingAddresses, accountAssetsResp.getResponse(), accountAssetsResp.getCode(),
+                                new Exception("Error: reduce batch size")); // Exception needed temporarily for the stack trace
+                        break;
                     }
-                } else {
-                    LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the stake address shortened instead",
-                            stakingAddresses, accountAssetsResp.getResponse(), accountAssetsResp.getCode());
-                }
+                } while (accountAssetsResp.isSuccessful() && !accountAssetsResp.getValue().isEmpty());
             }
         } catch (Exception e) {
             LOG.warn("Exception while getting the assets for accounts {}, due to '{}'. Returning the address shortened instead",
@@ -263,7 +289,7 @@ public abstract class AbstractCheckerTask {
 
     protected URI handleIpfsUri(URI uri) throws URISyntaxException {
         if (uri.getHost().equals("ipfs.io")) {
-            var ipsHash = uri.getPath().substring(uri.getPath().lastIndexOf('/')+1);
+            var ipsHash = uri.getPath().substring(uri.getPath().lastIndexOf('/') + 1);
             return new URI(IPFS_HTTP_URI.formatted(ipsHash));
         }
 
