@@ -160,9 +160,9 @@ public abstract class AbstractCheckerTask {
                         }
                     }
                 } else {
-                    LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the address shortened instead",
+                    LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}). Returning the address shortened instead",
                             normalAddresses, addrAssetsResp.getResponse(), addrAssetsResp.getCode(),
-                            new Exception("TODO: reduce batch size")); // Exception needed temporarily for the stack trace
+                            new Exception("Error: reduce batch size")); // Exception needed temporarily for the stack trace
                 }
             }
 
@@ -192,7 +192,8 @@ public abstract class AbstractCheckerTask {
                     }
                 } else {
                     LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the stake address shortened instead",
-                            stakingAddresses, accountAssetsResp.getResponse(), accountAssetsResp.getCode());
+                            stakingAddresses, accountAssetsResp.getResponse(), accountAssetsResp.getCode(),
+                            new Exception("Error: reduce batch size")); // Exception needed temporarily for the stack trace
                 }
             }
         } catch (Exception e) {
