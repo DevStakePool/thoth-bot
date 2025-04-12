@@ -315,8 +315,8 @@ public class SubscriptionManager implements Runnable, ISubscriptionManager {
                             .getAddressAssets(batch, options);
 
                     if (!assetsResp.isSuccessful()) {
-                        LOG.error("Can't retrieve the asset list, due to code {} and response {}",
-                                assetsResp.getCode(), assetsResp.getResponse());
+                        LOG.error("Can't retrieve the asset list, due to code {} and response {}. Payload {}",
+                                assetsResp.getCode(), assetsResp.getResponse(), batch);
                         throw new KoiosResponseException(String.format("Can't retrieve the asset list, due to code %d and response %s",
                                 assetsResp.getCode(), assetsResp.getResponse()));
                     }
