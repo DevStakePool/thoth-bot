@@ -161,7 +161,8 @@ public abstract class AbstractCheckerTask {
                     }
                 } else {
                     LOG.warn("Can't get the assets for accounts {}, due to '{}' (code {}}. Returning the address shortened instead",
-                            normalAddresses, addrAssetsResp.getResponse(), addrAssetsResp.getCode());
+                            normalAddresses, addrAssetsResp.getResponse(), addrAssetsResp.getCode(),
+                            new Exception("TODO: reduce batch size")); // Exception needed temporarily for the stack trace
                 }
             }
 
