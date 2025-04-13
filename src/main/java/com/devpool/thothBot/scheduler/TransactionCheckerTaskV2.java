@@ -125,8 +125,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             while (batchIterator.hasNext()) {
                 List<User> usersBatch = batchIterator.next();
-                List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).collect(Collectors.toList());
-                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).collect(Collectors.toList());
+                List<User> addrUsersBatch = usersBatch.stream().filter(User::isNormalAddress).toList();
+                List<User> stakeUsersBatch = usersBatch.stream().filter(User::isStakeAddress).toList();
 
                 LOG.debug("Processing users batch size {}, stake batch {}, address batch{}",
                         usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
@@ -174,7 +174,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             // Retrieve all UTXOs
             resp = this.koiosFacade.getKoiosService().getAccountService().getAccountUTxOs(
-                    stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
+                    stakeUsersBatch.stream().map(User::getAddress).toList(), false, options);
 
             if (!resp.isSuccessful()) {
                 LOG.warn("Failed to retrieve staking address UTXOs. Code {}, Response {}",
@@ -204,7 +204,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             // Retrieve all UTXOs
             resp = this.koiosFacade.getKoiosService().getAddressService().getAddressUTxOs(
-                    addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
+                    addrUsersBatch.stream().map(User::getAddress).toList(), false, options);
 
             if (!resp.isSuccessful()) {
                 LOG.warn("Failed to retrieve normal address UTXOs. Code {}, Response {}",
@@ -220,7 +220,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
         // Get ADA Handles
         List<String> userAddresses = stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList());
-        userAddresses.addAll(addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()));
+        userAddresses.addAll(addrUsersBatch.stream().map(User::getAddress).toList());
         Map<String, String> handles = getAdaHandleForAccount(userAddresses.toArray(new String[0]));
 
         // Eventually it can be parallelized
@@ -250,7 +250,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             }
 
             // Get all UTxOs TX hashes
-            List<String> allTxHashes = uTxOS.stream().map(UTxO::getTxHash).distinct().collect(Collectors.toList());
+            List<String> allTxHashes = uTxOS.stream().map(UTxO::getTxHash).distinct().toList();
             LOG.debug("Getting TX information for {} TX(s), for a the user with address {}",
                     allTxHashes.size(), user.getAddress());
             if (LOG.isTraceEnabled())
@@ -356,7 +356,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
         Map<String, Double> assetValues = new HashMap<>(inputAssetValues);
         // Input tokens shall be negative because they are leaving the wallet
-        assetValues.replaceAll((k, v) -> v *= -1);
+        assetValues.replaceAll((k, v) -> v * -1);
 
         for (Map.Entry<String, Double> a : outputAssetValues.entrySet()) {
             if (assetValues.containsKey(a.getKey()))

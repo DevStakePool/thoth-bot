@@ -64,15 +64,15 @@ public class SchedulerController {
         if (Boolean.TRUE.equals(this.disableScheduler)) {
             LOG.warn("Running with TX and Staking scheduler disabled!");
         } else {
-            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, scheduledJobsInitialDelaySecs, 120, TimeUnit.SECONDS);
+            this.executorService.scheduleWithFixedDelay(this.transactionCheckerTask, scheduledJobsInitialDelaySecs, 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.stakingRewardsCheckerTask, scheduledJobsInitialDelaySecs, 15 * 60, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.governanceDrepVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 6, TimeUnit.SECONDS);
             this.executorService.scheduleWithFixedDelay(this.retiredPoolCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 24, TimeUnit.SECONDS);
             if (Boolean.TRUE.equals(this.govSpoVotesEnabled)) {
-                this.executorService.scheduleWithFixedDelay(this.governanceSpoVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 25, TimeUnit.SECONDS);
+                this.executorService.scheduleWithFixedDelay(this.governanceSpoVotesCheckerTask, scheduledJobsInitialDelaySecs, 60 * 60 * 7, TimeUnit.SECONDS);
             }
             if (Boolean.TRUE.equals(this.govNewPropEnabled)) {
-                this.executorService.scheduleWithFixedDelay(this.governanceNewProposalsTask, scheduledJobsInitialDelaySecs, 60 * 60 * 22, TimeUnit.SECONDS);
+                this.executorService.scheduleWithFixedDelay(this.governanceNewProposalsTask, scheduledJobsInitialDelaySecs, 60 * 60 * 3, TimeUnit.SECONDS);
             }
         }
 
