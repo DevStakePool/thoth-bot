@@ -87,6 +87,11 @@ public class PoolServiceDouble implements PoolService {
     }
 
     @Override
+    public Result<List<PoolOwnerHistory>> getPoolOwnerHistory(List<String> list, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<PoolHistory> getPoolHistoryByEpoch(String poolBech32, Integer epochNo, Options options) throws ApiException {
         return null;
     }
@@ -122,12 +127,22 @@ public class PoolServiceDouble implements PoolService {
     }
 
     @Override
+    public Result<List<PoolGroup>> getPoolGroups(Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<PoolMetadata>> getPoolMetadata(Options options) throws ApiException {
         return null;
     }
 
     @Override
     public Result<List<PoolMetadata>> getPoolMetadata(List<String> poolIds, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<PoolCalidusKey>> getPoolCalidusKeys(Options options) throws ApiException {
         return null;
     }
 }

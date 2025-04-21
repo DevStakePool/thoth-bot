@@ -3,6 +3,7 @@ package com.devpool.thothBot.doubles.koios;
 import rest.koios.client.backend.api.address.AddressService;
 import rest.koios.client.backend.api.address.model.AddressAsset;
 import rest.koios.client.backend.api.address.model.AddressInfo;
+import rest.koios.client.backend.api.address.model.AddressOutput;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.common.TxHash;
 import rest.koios.client.backend.api.base.common.UTxO;
@@ -62,6 +63,11 @@ public class AddressServiceDouble implements AddressService {
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }
+    }
+
+    @Override
+    public Result<List<AddressOutput>> getAddressOutputs(List<String> list, Integer integer, Options options) throws ApiException {
+        return null;
     }
 
     @Override
