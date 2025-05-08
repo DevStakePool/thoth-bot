@@ -129,7 +129,7 @@ public class AddressCmd implements IBotCommand {
             var ts = System.currentTimeMillis() / 1000;
             userDao.addNewUser(
                     new User(update.message().chat().id(),
-                            addr, tipResult.getValue().getBlockNo(), tipResult.getValue().getEpochNo(),
+                            addr, tipResult.getValue().getBlockHeight(), tipResult.getValue().getEpochNo(),
                             ts, ts));
 
             bot.execute(new SendMessage(update.message().chat().id(),

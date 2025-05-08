@@ -7,6 +7,7 @@ import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.vdurmont.emoji.EmojiParser;
+import org.apache.commons.text.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -72,7 +73,6 @@ public class ProposalsCmd extends AbstractCheckerTask implements IBotCommand {
             bot.execute(new SendMessage(update.message().chat().id(), toRender)
                     .linkPreviewOptions(new LinkPreviewOptions().isDisabled(true))
                     .parseMode(ParseMode.HTML));
-
         } catch (Exception e) {
             LOG.warn("Could not get proposals information due to {}", e, e);
             sendBackIssueMessage(bot, chatId,
@@ -100,8 +100,8 @@ public class ProposalsCmd extends AbstractCheckerTask implements IBotCommand {
                 sb.append(" (current)");
 
             if (!Optional.ofNullable(proposalContent.authors()).orElse(List.of()).isEmpty()) {
-                sb.append(EmojiParser.parseToUnicode("\n:black_nib: Authors "))
-                        .append(String.join(",", proposalContent.authors()));
+                sb.append(EmojiParser.parseToUnicode("\n:black_nib: Authors\n"))
+                        .append(StringEscapeUtils.escapeHtml4(String.join("\n", proposalContent.authors())));
             }
             sb.append("\n\n");
         }

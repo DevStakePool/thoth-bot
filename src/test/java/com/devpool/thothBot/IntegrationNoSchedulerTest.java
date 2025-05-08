@@ -281,7 +281,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
         assertEquals("HTML", params.get("parse_mode"));
         Assertions.assertTrue(params.get("text").toString().contains("Found 3 active proposal(s)"));
-        Assertions.assertTrue(params.get("text").toString().contains("Authors Samuel Leathers"));
+        Assertions.assertTrue(params.get("text").toString().contains("Samuel Leathers"));
         Assertions.assertTrue(params.get("text").toString().contains("h7798x036m2r4nhlccmqqhmr9wx"));
         Assertions.assertTrue(params.get("text").toString().contains("Defining the Cardano Vision and Roadmap for 2025 and beyond"));
         Assertions.assertTrue(params.get("text").toString().contains("ParameterChange"));

@@ -22,6 +22,7 @@ public class NetworkServiceDouble implements NetworkService {
         Tip tip = new Tip();
         tip.setEpochNo(Integer.valueOf(epochNo));
         tip.setBlockNo(Integer.valueOf(blockNo));
+        tip.setBlockHeight(Integer.valueOf(blockNo));
         return Result.<Tip>builder().successful(true).response("").code(200).value(tip).build();
     }
 
