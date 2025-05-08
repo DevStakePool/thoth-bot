@@ -110,8 +110,9 @@ public class AssetFacade implements Runnable {
                 }
                 // Cache it for the future
                 this.assetsDao.addNewAsset(policyId, assetName, displayName,
-                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
-                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ||
+                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals() == null ? -1 :
+                                    assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
             }
         } else {
             if (cachedAsset.get().getAssetDisplayName() != null)
@@ -134,7 +135,7 @@ public class AssetFacade implements Runnable {
                 LOG.warn("Failed to retrieve asset {} information from KOIOS, due to {} ({})",
                         policyId, assetInfoResult.getResponse(), assetInfoResult.getCode());
             } else if (assetInfoResult.isSuccessful() && assetInfoResult.getValue().getTokenRegistryMetadata() != null) {
-                assetQuantity = quantity / Math.pow(10, assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+                assetQuantity = quantity / Math.pow(10, Optional.ofNullable(assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals()).orElse(1));
                 if (assetInfoResult.getValue().getTokenRegistryMetadata().getName() != null)
                     displayName = assetInfoResult.getValue().getTokenRegistryMetadata().getName();
             }
@@ -149,8 +150,9 @@ public class AssetFacade implements Runnable {
                 }
                 // Cache it for the future
                 this.assetsDao.addNewAsset(policyId, assetName, displayName,
-                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ? -1 :
-                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
+                        assetInfoResult.getValue().getTokenRegistryMetadata() == null ||
+                                assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals() == null ? -1 :
+                                    assetInfoResult.getValue().getTokenRegistryMetadata().getDecimals());
             }
         } else {
             // We have it cached

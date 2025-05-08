@@ -343,14 +343,14 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         Map<String, Double> inputAssetValues = new HashMap<>();
         for (Asset ia : inputAssets) {
             Double val = inputAssetValues.getOrDefault(ia.getFingerprint(), 0d);
-            val += Long.parseLong(ia.getQuantity()) / Math.pow(10, ia.getDecimals());
+            val += Long.parseLong(ia.getQuantity()) / Math.pow(10, Optional.ofNullable(ia.getDecimals()).orElse(1));
             inputAssetValues.put(ia.getFingerprint(), val);
         }
 
         Map<String, Double> outputAssetValues = new HashMap<>();
         for (Asset oa : outputAssets) {
             Double val = outputAssetValues.getOrDefault(oa.getFingerprint(), 0d);
-            val += Long.parseLong(oa.getQuantity()) / Math.pow(10, oa.getDecimals());
+            val += Long.parseLong(oa.getQuantity()) / Math.pow(10, Optional.ofNullable(oa.getDecimals()).orElse(1));
             outputAssetValues.put(oa.getFingerprint(), val);
         }
 
@@ -380,7 +380,8 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
 
             // double fuzzy compare to avoid micro precision
             if (Math.abs(av.getValue()) > EPSILON) {
-                if (asset.get().getDecimals() > 0)
+                var decimals = Optional.ofNullable(asset.get().getDecimals()).orElse(0);
+                if (decimals > 0)
                     allAssets.put(asset.get(), av.getValue());
                 else
                     allAssets.put(asset.get(), av.getValue().longValue());
