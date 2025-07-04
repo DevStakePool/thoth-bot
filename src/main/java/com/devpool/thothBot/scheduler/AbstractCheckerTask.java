@@ -252,7 +252,7 @@ public abstract class AbstractCheckerTask {
                     .getDRepsInfo(drepIds.stream()
                             .filter(d -> d.startsWith
                                     (DREP_HASH_PREFIX))
-                            .collect(Collectors.toList()), null);
+                            .toList(), null);
             if (drepResp.isSuccessful()) {
                 for (var drep : drepResp.getValue()) {
                     var drepUrl = drep.getMetaUrl();
