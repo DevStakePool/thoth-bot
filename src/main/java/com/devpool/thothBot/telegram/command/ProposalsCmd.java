@@ -17,9 +17,12 @@ import rest.koios.client.backend.factory.options.filters.Filter;
 import rest.koios.client.backend.factory.options.filters.FilterType;
 
 import java.net.URISyntaxException;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Component
 public class ProposalsCmd extends AbstractCheckerTask implements IBotCommand {
@@ -81,7 +84,17 @@ public class ProposalsCmd extends AbstractCheckerTask implements IBotCommand {
         }
     }
 
-    private String renderProposals(List<Proposal> proposals, Integer epochNo) throws URISyntaxException {
+    private String renderProposals(List<Proposal> proposalsInput, Integer epochNo) throws URISyntaxException {
+        // Koios issue: temporary work around to remove duplicated proposals
+        var proposals = proposalsInput.stream()
+                .collect(Collectors.toMap(
+                        Proposal::getProposalId,                // key extractor
+                        Function.identity(),                    // value mapper
+                        (existing, replacement) -> existing,    // keep first encountered
+                        LinkedHashMap::new                      // preserve order
+                ))
+                .values().stream().toList();
+
         StringBuilder sb = new StringBuilder("Found ").append(proposals.size()).append(" active proposal(s)\n\n");
 
         for (Proposal proposal : proposals) {
