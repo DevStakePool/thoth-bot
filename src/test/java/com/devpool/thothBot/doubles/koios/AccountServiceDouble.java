@@ -87,7 +87,17 @@ public class AccountServiceDouble implements AccountService {
     }
 
     @Override
+    public Result<List<AccountRewardHistory>> getAccountRewardHistory(List<String> addressList, Integer epochNo, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<AccountUpdates>> getAccountUpdates(List<String> addressList, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<AccountUpdateHistory>> getAccountUpdateHistory(List<String> addressList, Options options) throws ApiException {
         return null;
     }
 
@@ -147,6 +157,11 @@ public class AccountServiceDouble implements AccountService {
 
     @Override
     public Result<List<AccountHistory>> getAccountHistory(List<String> addressList, Integer epochNo, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<AccountStakeHistory>> getAccountStakeHistory(List<String> addressList, Options options) throws ApiException {
         return null;
     }
 }
