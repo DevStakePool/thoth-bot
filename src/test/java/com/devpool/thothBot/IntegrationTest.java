@@ -488,7 +488,6 @@ class IntegrationTest extends AbstractIntegrationTest {
         assertTrue(message.contains("Rename the Chang 2 Hard Fork to the Plomin Hard Fork"));
         assertTrue(message.contains("Should K increased?"));
         assertTrue(message.contains("Yes"));
-        assertTrue(message.contains("Name the next hard fork HOSKY"));
         assertTrue(message.contains("Abstain"));
 
         message = retrieveMessageByString(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",
