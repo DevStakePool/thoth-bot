@@ -1,5 +1,6 @@
 package com.devpool.thothBot.doubles.koios;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import rest.koios.client.backend.api.base.Result;
 import rest.koios.client.backend.api.base.exception.ApiException;
 import rest.koios.client.backend.api.network.NetworkService;
@@ -41,6 +42,11 @@ public class NetworkServiceDouble implements NetworkService {
 
     @Override
     public Result<List<ParamUpdateProposal>> getParamUpdateProposals(Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<JsonNode> getCliProtocolParameters(Options options) throws ApiException {
         return null;
     }
 

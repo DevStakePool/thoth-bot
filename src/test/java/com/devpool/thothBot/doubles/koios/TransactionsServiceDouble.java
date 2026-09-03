@@ -39,6 +39,16 @@ public class TransactionsServiceDouble implements TransactionsService {
     }
 
     @Override
+    public Result<TxInfo> getTransactionInformation(String txHash, boolean isInputs, boolean isMetadata, boolean isAssets, boolean isWithdrawals, boolean isCertificates, boolean isScripts, boolean isByteCode) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<TxInfo>> getTransactionInformation(List<String> txHashes, boolean isInputs, boolean isMetadata, boolean isAssets, boolean isWithdrawals, boolean isCertificates, boolean isScripts, boolean isByteCode, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<TxMetadata>> getTransactionMetadata(List<String> txHashes, Options options) throws ApiException {
         return null;
     }

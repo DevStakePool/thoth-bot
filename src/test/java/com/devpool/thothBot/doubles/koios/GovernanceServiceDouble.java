@@ -48,6 +48,11 @@ public class GovernanceServiceDouble implements GovernanceService {
     }
 
     @Override
+    public Result<List<DRepVotingPowerHistory>> getDRepsVotingPowerHistory(String drepId, Integer epochNo, Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<DRepVote>> getDRepsVotes(String drepId, Options options) throws ApiException {
         try {
             List<DRepVote> allDrepVotes = KoiosDataBuilder.getDrepVotes(drepId);
@@ -127,6 +132,16 @@ public class GovernanceServiceDouble implements GovernanceService {
         } catch (IOException e) {
             throw new ApiException(e.toString(), e);
         }
+    }
+
+    @Override
+    public Result<List<Vote>> getVoteList(Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
+    public Result<List<PoolsVotingPowerHistory>> getPoolsVotingPowerHistory(String poolBech32, Integer epochNo, Options options) throws ApiException {
+        return null;
     }
 
     @Override

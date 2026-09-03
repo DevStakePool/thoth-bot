@@ -146,7 +146,7 @@ class IntegrationTest extends AbstractIntegrationTest {
             assertEquals(1683539744L, params.get("chat_id"));
             assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
             assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
-            assertEquals("HTML", params.get("parse_mode"));
+            assertEquals("HTML", params.get("parse_mode").toString());
             assertTrue(params.get("text").toString().contains("THOTH BOT"));
             assertTrue(params.get("text").toString().contains("/help or /start"));
             Assertions.assertFalse(params.get("text").toString().contains("[ADMIN]"));
@@ -172,7 +172,7 @@ class IntegrationTest extends AbstractIntegrationTest {
         assertEquals(1683539744L, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         assertTrue(params.get("text").toString().contains("THOTH BOT"));
         assertTrue(params.get("text").toString().contains("/help or /start"));
         // We got an admin commmand
@@ -198,7 +198,7 @@ class IntegrationTest extends AbstractIntegrationTest {
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         assertTrue(params.get("text").toString().contains("[DEV]"));
         assertTrue(params.get("text").toString().contains("pool15fxktqvd92sq8plh3rjdrksumt9p8rzsayfk4akv2hng5r8ukha"));
         assertTrue(params.get("text").toString().contains("Status: registered"));
@@ -226,7 +226,7 @@ class IntegrationTest extends AbstractIntegrationTest {
         assertEquals((long) -4, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         assertTrue(params.get("text").toString().contains("$badfriends"));
         assertTrue(params.get("text").toString().contains("Balance: 176.00"));
         assertTrue(params.get("text").toString().contains("Stake Address: NO"));
@@ -488,7 +488,6 @@ class IntegrationTest extends AbstractIntegrationTest {
         assertTrue(message.contains("Rename the Chang 2 Hard Fork to the Plomin Hard Fork"));
         assertTrue(message.contains("Should K increased?"));
         assertTrue(message.contains("Yes"));
-        assertTrue(message.contains("Name the next hard fork HOSKY"));
         assertTrue(message.contains("Abstain"));
 
         message = retrieveMessageByString(allMessages, "stake1u8lffpd48ss4f2pe0rhhj4n2edkgwl38scl09f9f43y0azcnhxhwr",

@@ -223,7 +223,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         Assertions.assertTrue(params.get("text").toString().contains("[DEV]"));
         assertEquals(3, params.get("text").toString().split("stakekey/stake1").length - 1);
         Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
@@ -250,7 +250,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         Assertions.assertTrue(params.get("text").toString().contains("ADA price"));
         Assertions.assertTrue(params.get("text").toString().contains("TXs count: 161116"));
         Assertions.assertTrue(params.get("text").toString().contains("Epoch 522"));
@@ -279,7 +279,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions)params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         Assertions.assertTrue(params.get("text").toString().contains("Found 3 active proposal(s)"));
         Assertions.assertTrue(params.get("text").toString().contains("Authors Samuel Leathers"));
         Assertions.assertTrue(params.get("text").toString().contains("h7798x036m2r4nhlccmqqhmr9wx"));
@@ -311,7 +311,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
         assertEquals((long) -2, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         Assertions.assertTrue(params.get("text").toString().contains("Found 0 active proposal(s)"));
         Assertions.assertFalse(params.get("text").toString().contains(GOV_TOOLS_PROPOSAL));
     }
@@ -334,7 +334,7 @@ class IntegrationNoSchedulerTest extends AbstractIntegrationTest {
         assertEquals((long) -1000, params.get("chat_id"));
         assertInstanceOf(LinkPreviewOptions.class, params.get("link_preview_options"));
         assertEquals(Boolean.TRUE, ((LinkPreviewOptions) params.get("link_preview_options")).isDisabled());
-        assertEquals("HTML", params.get("parse_mode"));
+        assertEquals("HTML", params.get("parse_mode").toString());
         assertEquals(2, params.get("text").toString().split("address/addr1").length - 1);
         Assertions.assertTrue(params.get("text").toString().contains("Data will be available soon"));
     }

@@ -20,10 +20,10 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
-        <telegram-java-bot-api.version>7.11.0</telegram-java-bot-api.version>
-        <koios-java.version>1.20.1</koios-java.version>
+        <telegram-java-bot-api.version>10.1.0</telegram-java-bot-api.version>
+        <koios-java.version>1.21.1</koios-java.version>
         <emoji-java.version>5.1.1</emoji-java.version>
-        <testcontainers.version>1.20.5</testcontainers.version>
+        <testcontainers.version>1.21.4</testcontainers.version>
     </properties>
 
     <dependencyManagement>
