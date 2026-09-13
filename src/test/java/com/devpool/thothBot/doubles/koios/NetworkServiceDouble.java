@@ -51,6 +51,11 @@ public class NetworkServiceDouble implements NetworkService {
     }
 
     @Override
+    public Result<List<EraSummary>> getEraSummaries(Options options) throws ApiException {
+        return null;
+    }
+
+    @Override
     public Result<List<Withdrawal>> getReserveWithdrawals(Options options) throws ApiException {
         return null;
     }
