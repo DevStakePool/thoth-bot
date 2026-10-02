@@ -44,7 +44,7 @@ public class UserDao {
 
     public List<User> getUsers() {
         SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
-                "select id, chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time, last_gov_action_block_time from users");
+                "select id, chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time, last_gov_action_block_time from users where active = true");
         Map<Long, User> users = new HashedMap<>();
         while (rs.next()) {
             Long userId = rs.getLong("id");
@@ -62,15 +62,78 @@ public class UserDao {
     }
 
     public long countSubscriptions() {
-        Long outcome = this.jdbcTemplate.queryForObject("select count(id) as users_counter from users", Long.class);
+        Long outcome = this.jdbcTemplate.queryForObject("select count(id) as users_counter from users where active = true", Long.class);
         if (outcome == null) return -1;
         return outcome;
     }
 
     public long countUniqueUsers() {
-        Long outcome = this.jdbcTemplate.queryForObject("select count (distinct chat_id) as tot_users from users", Long.class);
+        Long outcome = this.jdbcTemplate.queryForObject("select count (distinct chat_id) as tot_users from users where active = true", Long.class);
         if (outcome == null) return -1;
         else return outcome;
+    }
+
+    public long countInactiveUsers() {
+        Long outcome = this.jdbcTemplate.queryForObject("select count (distinct chat_id) as tot_users from users where active = false", Long.class);
+        if (outcome == null) return -1;
+        else return outcome;
+    }
+
+    /**
+     * Marks all the subscriptions of a chat as inactive, e.g. because the user blocked the bot.
+     *
+     * @param chatId the chat ID
+     * @return the number of subscriptions deactivated
+     */
+    public int deactivateChat(long chatId) {
+        int rows = this.namedParameterJdbcTemplate.update(
+                "update users set active = false where chat_id = :chat_id and active = true",
+                Map.of(FIELD_CHAT_ID, chatId));
+
+        if (rows > 0)
+            LOG.info("Deactivated {} subscription(s) of chat-id {}", rows, chatId);
+
+        return rows;
+    }
+
+    public boolean hasInactiveSubscriptions(long chatId) {
+        Boolean outcome = this.namedParameterJdbcTemplate.queryForObject(
+                "select exists(select 1 from users where chat_id = :chat_id and active = false)",
+                Map.of(FIELD_CHAT_ID, chatId), Boolean.class);
+        return Boolean.TRUE.equals(outcome);
+    }
+
+    /**
+     * Reactivates all the subscriptions of a chat and fast-forwards their checkpoints, so that the
+     * user does not receive notifications about what happened while the chat was inactive.
+     *
+     * @param chatId      the chat ID
+     * @param blockHeight the current chain tip block height, or null to keep the stored one
+     * @param epochNumber the current epoch number, or null to keep the stored one
+     * @param timestamp   the current time in epoch seconds
+     * @return the number of subscriptions reactivated
+     */
+    public int reactivateChat(long chatId, Integer blockHeight, Integer epochNumber, long timestamp) {
+        var params = new MapSqlParameterSource()
+                .addValue(FIELD_CHAT_ID, chatId)
+                .addValue(FIELD_LAST_BLOCK_HEIGHT, blockHeight)
+                .addValue(FIELD_LAST_EPOCH_NUMBER, epochNumber)
+                .addValue("ts", timestamp);
+
+        int rows = this.namedParameterJdbcTemplate.update(
+                """
+                        update users set active = true,
+                        last_block_height = coalesce(cast(:last_block_height as integer), last_block_height),
+                        last_epoch_number = coalesce(cast(:last_epoch_number as integer), last_epoch_number),
+                        last_gov_votes_block_time = :ts,
+                        last_gov_action_block_time = :ts
+                        where chat_id = :chat_id and active = false
+                        """, params);
+
+        if (rows > 0)
+            LOG.info("Reactivated {} subscription(s) of chat-id {}", rows, chatId);
+
+        return rows;
     }
 
     public void addNewUser(User user) {

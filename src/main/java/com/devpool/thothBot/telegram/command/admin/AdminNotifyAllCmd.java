@@ -2,10 +2,12 @@ package com.devpool.thothBot.telegram.command.admin;
 
 import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.dao.data.User;
+import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.SendResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -121,7 +123,12 @@ public class AdminNotifyAllCmd implements IBotCommand {
         @Override
         public Boolean call() throws Exception {
             try {
-                this.bot.execute(new SendMessage(this.chatId, this.message));
+                SendResponse resp = this.bot.execute(new SendMessage(this.chatId, this.message));
+                if (TelegramFacade.isChatUnreachable(resp)) {
+                    LOG.warn("Chat {} is unreachable ({}), marking it as inactive", this.chatId, resp.description());
+                    userDao.deactivateChat(this.chatId);
+                    return false;
+                }
             } catch (Exception e) {
                 LOG.error("Unknown error while notifying the user from the " + AdminNotifyAllCmd.CMD_PREFIX + " command: " + e, e);
                 return false;

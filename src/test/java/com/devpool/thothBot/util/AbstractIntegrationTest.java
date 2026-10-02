@@ -34,7 +34,8 @@ public abstract class AbstractIntegrationTest {
             "db-migration/alter-1.7.0-TO-1.8.0.sql",
             "db-migration/alter-1.8.0-TO-1.9.1.sql",
             "db-migration/alter-1.9.1-TO-1.9.2.sql",
-            "db-migration/alter-1.9.2-TO-2.0.0.sql"
+            "db-migration/alter-1.9.2-TO-2.0.0.sql",
+            "db-migration/alter-2.0.3-TO-2.1.0.sql"
     );
 
     @Container
