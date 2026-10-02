@@ -107,6 +107,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             this.metricsHelper.hitGauge("total_subscriptions", subscriptionsCounter);
             this.metricsHelper.hitGauge("cached_assets", assetsCacheCounter);
             this.metricsHelper.hitGauge("unique_users", uniqueUsersCounter);
+            this.metricsHelper.hitGauge("users_inactive", this.userDao.countInactiveUsers());
             LOG.trace("Calculated new gauge sample for TX processing: {} subscription(s), {} cached asset(s), {} user(s)",
                     subscriptionsCounter, assetsCacheCounter, uniqueUsersCounter);
         }

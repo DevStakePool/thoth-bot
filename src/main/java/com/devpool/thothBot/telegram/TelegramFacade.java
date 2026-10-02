@@ -1,5 +1,7 @@
 package com.devpool.thothBot.telegram;
 
+import com.devpool.thothBot.dao.UserDao;
+import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.monitoring.MetricsHelper;
 import com.devpool.thothBot.telegram.command.HelpCmd;
 import com.devpool.thothBot.telegram.command.IBotCommand;
@@ -9,6 +11,7 @@ import com.pengrad.telegrambot.model.LinkPreviewOptions;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.response.BaseResponse;
 import com.pengrad.telegrambot.response.SendResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,6 +38,12 @@ public class TelegramFacade {
 
     @Autowired
     private MetricsHelper metricsHelper;
+
+    @Autowired
+    private UserDao userDao;
+
+    @Autowired
+    private KoiosFacade koiosFacade;
 
     private long totalMessages;
     private long totalCommands;
@@ -134,8 +143,12 @@ public class TelegramFacade {
         List<IBotCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(from, payload)).collect(Collectors.toList());
         if (matchingCommands.isEmpty()) {
             LOG.debug("Unknown command {}", payload);
-            bot.execute(new SendMessage(id,
-                    "Unknown command. Try " + HelpCmd.CMD_PREFIX + " or " + HelpCmd.CMD_PREFIX_ALIAS));
+            final Long unknownCmdChatId = id;
+            this.commandRunnerExecutor.submit(() -> {
+                reactivateIfNeeded(unknownCmdChatId);
+                bot.execute(new SendMessage(unknownCmdChatId,
+                        "Unknown command. Try " + HelpCmd.CMD_PREFIX + " or " + HelpCmd.CMD_PREFIX_ALIAS));
+            });
             return;
         }
 
@@ -150,7 +163,12 @@ public class TelegramFacade {
         }
 
         TelegramMessageCallable commandCallable = new TelegramMessageCallable(id, command, update, this.bot, from, payload);
-        Future<Boolean> commandFuture = this.commandRunnerExecutor.submit(commandCallable);
+        final Long chatId = id;
+        Future<Boolean> commandFuture = this.commandRunnerExecutor.submit(() -> {
+            // A chat that wrote to us is reachable again
+            reactivateIfNeeded(chatId);
+            return commandCallable.call();
+        });
 
         // check after XYZ secs if the command is completed. If not, we kill it.
         // This way we don't block other commands in the pipeline
@@ -198,16 +216,74 @@ public class TelegramFacade {
                 this.totalNotificationsSentSuccessful++;
             }
         } else {
-            LOG.error("Can't send message due to code={} description={} message={}", outcome.errorCode(), outcome.description(), message);
+            if (isChatUnreachable(outcome)) {
+                LOG.warn("Chat {} is unreachable (code={} description={}). Marking its subscriptions as inactive",
+                        chatId, outcome.errorCode(), outcome.description());
+                try {
+                    this.userDao.deactivateChat(chatId);
+                } catch (Exception e) {
+                    LOG.error("Can't deactivate the chat {}: {}", chatId, e.toString());
+                }
+            } else {
+                LOG.error("Can't send message due to code={} description={} message={}", outcome.errorCode(), outcome.description(), message);
+            }
             synchronized (this.performanceSampler) {
                 this.totalNotificationsSentFailed++;
             }
         }
     }
 
+    /**
+     * @param response the Telegram response
+     * @return true if the response is a 403 Forbidden, e.g. the user blocked the bot, deleted the account or kicked the bot
+     */
+    public static boolean isChatUnreachable(BaseResponse response) {
+        return response != null && !response.isOk() && response.errorCode() == 403;
+    }
+
+    /**
+     * If the chat has inactive subscriptions, reactivates them fast-forwarding their checkpoints to the chain tip.
+     * Never throws: failing to reactivate must not prevent the user from using the bot.
+     */
+    private void reactivateIfNeeded(Long chatId) {
+        try {
+            if (!this.userDao.hasInactiveSubscriptions(chatId))
+                return;
+
+            Integer blockHeight = null;
+            Integer epochNumber = null;
+            try {
+                var tipResult = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
+                if (tipResult.isSuccessful()) {
+                    blockHeight = tipResult.getValue().getBlockNo();
+                    epochNumber = tipResult.getValue().getEpochNo();
+                } else {
+                    LOG.warn("Can't get the chain tip to reactivate chat {}: {} {}",
+                            chatId, tipResult.getCode(), tipResult.getResponse());
+                }
+            } catch (Exception e) {
+                LOG.warn("Can't get the chain tip to reactivate chat {}: {}", chatId, e.toString());
+            }
+
+            this.userDao.reactivateChat(chatId, blockHeight, epochNumber, System.currentTimeMillis() / 1000);
+        } catch (Exception e) {
+            LOG.error("Can't reactivate the chat {}: {}", chatId, e.toString());
+        }
+    }
+
     // Needed for testing only
     public void setCommands(List<IBotCommand> commands) {
         this.commands = commands;
+    }
+
+    // Needed for testing only
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
+    // Needed for testing only
+    public void setKoiosFacade(KoiosFacade koiosFacade) {
+        this.koiosFacade = koiosFacade;
     }
 
     // Needed for testing only

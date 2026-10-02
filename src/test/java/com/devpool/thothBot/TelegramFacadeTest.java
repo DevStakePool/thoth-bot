@@ -2,7 +2,10 @@ package com.devpool.thothBot;
 
 import com.devpool.thothBot.doubles.commands.DummyCommandDouble;
 import com.devpool.thothBot.doubles.commands.ErrorCommandDouble;
+import com.devpool.thothBot.dao.UserDao;
 import com.devpool.thothBot.doubles.commands.LongCommandDouble;
+import com.devpool.thothBot.doubles.koios.BackendServiceDouble;
+import com.devpool.thothBot.koios.KoiosFacade;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.devpool.thothBot.util.TelegramUtils;
@@ -43,6 +46,8 @@ class TelegramFacadeTest {
 
     private TelegramFacade telegramFacade;
 
+    private UserDao userDaoMock;
+
 
     @BeforeEach
     public void beforeEach() throws Exception {
@@ -52,6 +57,75 @@ class TelegramFacadeTest {
         this.telegramFacade = new TelegramFacade();
         this.telegramFacade.setBot(this.telegramBotMock);
         this.telegramFacade.setCommands(this.doubleCommands);
+
+        this.userDaoMock = Mockito.mock(UserDao.class);
+        KoiosFacade koiosFacadeMock = Mockito.mock(KoiosFacade.class);
+        Mockito.when(koiosFacadeMock.getKoiosService()).thenReturn(new BackendServiceDouble());
+        this.telegramFacade.setUserDao(this.userDaoMock);
+        this.telegramFacade.setKoiosFacade(koiosFacadeMock);
+    }
+
+    @Test
+    public void testSendMessageForbiddenDeactivatesChat() {
+        SendResponse forbidden = Mockito.mock(SendResponse.class);
+        Mockito.when(forbidden.isOk()).thenReturn(false);
+        Mockito.when(forbidden.errorCode()).thenReturn(403);
+        Mockito.when(forbidden.description()).thenReturn("Forbidden: bot was blocked by the user");
+        Mockito.when(this.telegramBotMock.execute(Mockito.any(SendMessage.class))).thenReturn(forbidden);
+
+        this.telegramFacade.sendMessageTo(42L, "hello");
+
+        Mockito.verify(this.userDaoMock, Mockito.times(1)).deactivateChat(42L);
+    }
+
+    @Test
+    public void testSendMessageOtherErrorDoesNotDeactivateChat() {
+        SendResponse failure = Mockito.mock(SendResponse.class);
+        Mockito.when(failure.isOk()).thenReturn(false);
+        Mockito.when(failure.errorCode()).thenReturn(400);
+        Mockito.when(this.telegramBotMock.execute(Mockito.any(SendMessage.class))).thenReturn(failure);
+
+        this.telegramFacade.sendMessageTo(42L, "hello");
+
+        Mockito.verify(this.userDaoMock, Mockito.never()).deactivateChat(Mockito.anyLong());
+    }
+
+    @Test
+    public void testIncomingMessageReactivatesInactiveChat() throws Exception {
+        Update update = TelegramUtils.buildAnyCommandUpdate("/dummy", "thor");
+        long chatId = update.message().chat().id();
+        Mockito.when(this.userDaoMock.hasInactiveSubscriptions(chatId)).thenReturn(true);
+
+        this.telegramFacade.processUpdate(update, this.telegramBotMock);
+
+        // Checkpoints are fast-forwarded to the tip returned by BackendServiceDouble (default 1234 / 371)
+        Mockito.verify(this.userDaoMock, Mockito.timeout(10 * 1000).times(1))
+                .reactivateChat(Mockito.eq(chatId), Mockito.eq(1234), Mockito.eq(371), Mockito.anyLong());
+        Mockito.verify(this.telegramBotMock, Mockito.timeout(10 * 1000).times(1)).execute(Mockito.any());
+    }
+
+    @Test
+    public void testIncomingMessageFromActiveChatDoesNotReactivate() throws Exception {
+        Update update = TelegramUtils.buildAnyCommandUpdate("/dummy", "thor");
+        Mockito.when(this.userDaoMock.hasInactiveSubscriptions(Mockito.anyLong())).thenReturn(false);
+
+        this.telegramFacade.processUpdate(update, this.telegramBotMock);
+
+        Mockito.verify(this.telegramBotMock, Mockito.timeout(10 * 1000).times(1)).execute(Mockito.any());
+        Mockito.verify(this.userDaoMock, Mockito.never())
+                .reactivateChat(Mockito.anyLong(), Mockito.any(), Mockito.any(), Mockito.anyLong());
+    }
+
+    @Test
+    public void testUnknownCommandReactivatesInactiveChat() throws Exception {
+        Update update = TelegramUtils.buildAnyCommandUpdate("hi there", "thor");
+        long chatId = update.message().chat().id();
+        Mockito.when(this.userDaoMock.hasInactiveSubscriptions(chatId)).thenReturn(true);
+
+        this.telegramFacade.processUpdate(update, this.telegramBotMock);
+
+        Mockito.verify(this.userDaoMock, Mockito.timeout(10 * 1000).times(1))
+                .reactivateChat(Mockito.eq(chatId), Mockito.any(), Mockito.any(), Mockito.anyLong());
     }
 
     @Test
