@@ -36,6 +36,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Component
 @ConfigurationProperties("thoth.dapps")
@@ -121,8 +122,27 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
     @Override
     public void run() {
         execTimer.record(() -> {
-            LOG.info("Checking activities for {} wallets", this.userDao.getUsers().size());
-            Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(userDao.getUsers(), this.usersBatchSize).iterator();
+            List<User> users = userDao.getUsers();
+            LOG.info("Checking activities for {} wallets", users.size());
+            if (users.isEmpty())
+                return;
+
+            // The chain tip is the same for all the batches of this run, so we ask for it only once
+            Tip chainTip;
+            try {
+                Result<Tip> chainTipResp = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
+                if (!chainTipResp.isSuccessful()) {
+                    LOG.error("Could not get the chain tip for the processing of the users. Code {}, Response {}",
+                            chainTipResp.getCode(), chainTipResp.getResponse());
+                    return;
+                }
+                chainTip = chainTipResp.getValue();
+            } catch (Exception e) {
+                LOG.error("Could not get the chain tip for the processing of the users", e);
+                return;
+            }
+
+            Iterator<List<User>> batchIterator = CollectionsUtil.batchesList(users, this.usersBatchSize).iterator();
 
             while (batchIterator.hasNext()) {
                 List<User> usersBatch = batchIterator.next();
@@ -132,7 +152,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
                 LOG.debug("Processing users batch size {}, stake batch {}, address batch{}",
                         usersBatch.size(), stakeUsersBatch.size(), addrUsersBatch.size());
                 try {
-                    processUsersBatch(stakeUsersBatch, addrUsersBatch);
+                    processUsersBatch(stakeUsersBatch, addrUsersBatch, chainTip);
                 } catch (Exception e) {
                     LOG.error("Error while processing user batch", e);
                 }
@@ -140,15 +160,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         });
     }
 
-    private void processUsersBatch(List<User> stakeUsersBatch, List<User> addrUsersBatch) throws KoiosResponseException, ApiException {
-        // get the network last tip
-        Result<Tip> chainTipResp = this.koiosFacade.getKoiosService().getNetworkService().getChainTip();
-        if (!chainTipResp.isSuccessful()) {
-            LOG.error("Could not get the chain tip for the processing of the batch user. Code {}, Response {}",
-                    chainTipResp.getCode(), chainTipResp.getResponse());
-            return;
-        }
-
+    private void processUsersBatch(List<User> stakeUsersBatch, List<User> addrUsersBatch, Tip chainTip) throws KoiosResponseException, ApiException {
         // Among this batch of users, get the smallest block height. Old TXs will be filtered via software later to avoid
         // duplication of notifications
         Optional<User> lowestBlockHeightForStake = stakeUsersBatch.stream().min(Comparator.comparing(User::getLastBlockHeight));
@@ -157,10 +169,9 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
         // address -> list of UTxOS
         Map<String, List<UTxO>> addressesUtxOs = new HashMap<>();
 
-        Result<List<UTxO>> resp;
         long offset = 0;
         // First staking addresses
-        do {
+        while (!stakeUsersBatch.isEmpty()) {
             int blockHeight = 0;
             if (lowestBlockHeightForStake.isPresent())
                 blockHeight = lowestBlockHeightForStake.get().getLastBlockHeight();
@@ -174,7 +185,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             offset += DEFAULT_PAGINATION_SIZE;
 
             // Retrieve all UTXOs
-            resp = this.koiosFacade.getKoiosService().getAccountService().getAccountUTxOs(
+            Result<List<UTxO>> resp = this.koiosFacade.getKoiosService().getAccountService().getAccountUTxOs(
                     stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
 
             if (!resp.isSuccessful()) {
@@ -187,11 +198,13 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             for (UTxO uTxO : resp.getValue()) {
                 addressesUtxOs.computeIfAbsent(uTxO.getStakeAddress(), u -> new ArrayList<>()).add(uTxO);
             }
-        } while (resp.isSuccessful() && !resp.getValue().isEmpty());
+            if (resp.getValue().isEmpty())
+                break;
+        }
 
         // Same for the normal address
         offset = 0;
-        do {
+        while (!addrUsersBatch.isEmpty()) {
             int blockHeight = 0;
             if (lowestBlockHeightForAddr.isPresent())
                 blockHeight = lowestBlockHeightForAddr.get().getLastBlockHeight();
@@ -204,7 +217,7 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             offset += DEFAULT_PAGINATION_SIZE;
 
             // Retrieve all UTXOs
-            resp = this.koiosFacade.getKoiosService().getAddressService().getAddressUTxOs(
+            Result<List<UTxO>> resp = this.koiosFacade.getKoiosService().getAddressService().getAddressUTxOs(
                     addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()), false, options);
 
             if (!resp.isSuccessful()) {
@@ -217,23 +230,30 @@ public class TransactionCheckerTaskV2 extends AbstractCheckerTask implements Run
             for (UTxO uTxO : resp.getValue()) {
                 addressesUtxOs.computeIfAbsent(uTxO.getAddress(), u -> new ArrayList<>()).add(uTxO);
             }
-        } while (resp.isSuccessful() && !resp.getValue().isEmpty());
+            if (resp.getValue().isEmpty())
+                break;
+        }
 
-        // Get ADA Handles
-        List<String> userAddresses = stakeUsersBatch.stream().map(User::getAddress).collect(Collectors.toList());
-        userAddresses.addAll(addrUsersBatch.stream().map(User::getAddress).collect(Collectors.toList()));
+        if (addressesUtxOs.isEmpty())
+            return; // Nothing new in this batch, no need to resolve the ADA Handles
+
+        // Get ADA Handles, only for the users that have something to be notified
+        List<String> userAddresses = Stream.concat(stakeUsersBatch.stream(), addrUsersBatch.stream())
+                .map(User::getAddress)
+                .filter(addressesUtxOs::containsKey)
+                .collect(Collectors.toList());
         Map<String, String> handles = getAdaHandleForAccount(userAddresses.toArray(new String[0]));
 
         // Eventually it can be parallelized
         for (User u : stakeUsersBatch) {
             if (addressesUtxOs.containsKey(u.getAddress())) {
-                processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
+                processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTip.getBlockNo(), handles);
             }
         }
 
         for (User u : addrUsersBatch) {
             if (addressesUtxOs.containsKey(u.getAddress())) {
-                processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTipResp.getValue().getBlockNo(), handles);
+                processUserTxs(u, addressesUtxOs.get(u.getAddress()), chainTip.getBlockNo(), handles);
             }
         }
     }

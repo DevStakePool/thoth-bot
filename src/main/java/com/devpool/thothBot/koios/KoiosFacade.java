@@ -48,6 +48,9 @@ public class KoiosFacade {
             this.koiosService = new BackendServiceImpl(this.koiosEndpoint, this.koiosEndpoint);
         }
 
+        // Count the calls by service and method to understand where the Koios usage goes
+        this.koiosService = CountingBackendService.wrap(this.koiosService, this.metricsHelper);
+
         // Create performance samples
         performanceSampler.schedule(new TimerTask() {
             @Override
