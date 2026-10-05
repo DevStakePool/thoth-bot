@@ -36,6 +36,8 @@ telegram:
 thoth:
   admin:
     username: CHANGE_ME
+    # Telegram user ID of the admin. The bot works only for this user (0 = not set, nobody can use it)
+    user-id: 0
   asset:
     caching:
       fetching: false

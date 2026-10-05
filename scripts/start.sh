@@ -11,6 +11,8 @@ DB_NAME="thoth"
 THOTH_VERSION="2.0.3"
 LOGS_FOLDER="${DIR}/logs"
 ADMIN_USERNAME="CHANGE_ME"
+# Telegram user ID of the admin (numeric). The bot works only for this user
+ADMIN_USER_ID="CHANGE_ME"
 
 # Koios lib
 export KOIOS_JAVA_LIB_RETRIES_COUNT=1
@@ -30,6 +32,7 @@ java -jar ${DIR}/../target/thoth-bot-${THOTH_VERSION}.jar \
       --logging.file.name="${LOGS_FOLDER}/thoth-bot.log" \
       --telegram.bot.token="${TELEGRAM_BOT_TOKEN}" \
       --thoth.admin.username="${ADMIN_USERNAME}" \
+      --thoth.admin.user-id="${ADMIN_USER_ID}" \
       --spring.datasource.username=${DB_USER} \
       --spring.datasource.password=${DB_PASSWORD} \
       --spring.datasource.url=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME} 2>&1

@@ -6,6 +6,7 @@ import org.apache.commons.collections4.map.HashedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -31,6 +32,13 @@ public class UserDao {
     private static final String FIELD_REMAINING_NOTIFICATIONS = "remaining_notifications";
     public static final Integer DEFAULT_RETIRING_POOL_NOTIFICATIONS = 5;
 
+    /**
+     * The Telegram user ID of the admin. In a private chat the chat ID is equal to the user ID. When it is set the bot
+     * works only for the admin, and all the users of the other chats are ignored. 0 means not set.
+     */
+    @Value("${thoth.admin.user-id:0}")
+    private long adminUserId;
+
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
@@ -42,9 +50,18 @@ public class UserDao {
         LOG.info("User DAO initialised");
     }
 
+    private String onlyAdminFilter() {
+        return this.adminUserId != 0 ? " and chat_id = :admin_chat_id" : "";
+    }
+
+    private Map<String, Object> onlyAdminParams() {
+        return Map.of("admin_chat_id", this.adminUserId);
+    }
+
     public List<User> getUsers() {
-        SqlRowSet rs = this.jdbcTemplate.queryForRowSet(
-                "select id, chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time, last_gov_action_block_time from users where active = true");
+        SqlRowSet rs = this.namedParameterJdbcTemplate.queryForRowSet(
+                "select id, chat_id, addr, last_block_height, last_epoch_number, last_gov_votes_block_time, last_gov_action_block_time from users where active = true"
+                        + onlyAdminFilter(), onlyAdminParams());
         Map<Long, User> users = new HashedMap<>();
         while (rs.next()) {
             Long userId = rs.getLong("id");
@@ -62,13 +79,17 @@ public class UserDao {
     }
 
     public long countSubscriptions() {
-        Long outcome = this.jdbcTemplate.queryForObject("select count(id) as users_counter from users where active = true", Long.class);
+        Long outcome = this.namedParameterJdbcTemplate.queryForObject(
+                "select count(id) as users_counter from users where active = true" + onlyAdminFilter(),
+                onlyAdminParams(), Long.class);
         if (outcome == null) return -1;
         return outcome;
     }
 
     public long countUniqueUsers() {
-        Long outcome = this.jdbcTemplate.queryForObject("select count (distinct chat_id) as tot_users from users where active = true", Long.class);
+        Long outcome = this.namedParameterJdbcTemplate.queryForObject(
+                "select count (distinct chat_id) as tot_users from users where active = true" + onlyAdminFilter(),
+                onlyAdminParams(), Long.class);
         if (outcome == null) return -1;
         else return outcome;
     }

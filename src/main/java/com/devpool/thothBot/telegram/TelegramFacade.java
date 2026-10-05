@@ -67,8 +67,14 @@ public class TelegramFacade {
     @Value("${telegram.bot.token}")
     private String botToken;
 
+    @Value("${thoth.admin.user-id:0}")
+    private long adminUserId;
+
     @PostConstruct
     public void post() {
+        if (this.adminUserId == 0)
+            LOG.warn("thoth.admin.user-id is not set: nobody can use the bot!");
+
         // Create your bot passing the token received from @BotFather
         this.bot = new TelegramBot(this.botToken);
 
@@ -122,14 +128,17 @@ public class TelegramFacade {
 
         String payload;
         String from;
+        Long fromUserId;
         Long id;
         if (update.message() != null && update.message().text() != null) {
             payload = update.message().text().trim();
             from = update.message().from().username();
+            fromUserId = update.message().from().id();
             id = update.message().chat().id();
         } else if (update.callbackQuery() != null) {
             payload = update.callbackQuery().data();
             from = update.callbackQuery().from().username();
+            fromUserId = update.callbackQuery().from().id();
             id = update.callbackQuery().maybeInaccessibleMessage().chat().id();
         } else {
             LOG.warn("Update.message and callbackQuery are null");
@@ -138,6 +147,14 @@ public class TelegramFacade {
 
         LOG.debug("Received message {} from {} on chat {}",
                 payload, from, id);
+
+        // The bot is private: only the admin can use it
+        if (!isAdmin(fromUserId)) {
+            LOG.info("Ignoring a message from the non-admin user {} (id {}) on chat {}", from, fromUserId, id);
+            final Long notAdminChatId = id;
+            this.commandRunnerExecutor.submit(() -> bot.execute(new SendMessage(notAdminChatId, INACTIVE_BOT_MESSAGE)));
+            return;
+        }
 
 
         List<IBotCommand> matchingCommands = this.commands.stream().filter(c -> c.canTrigger(from, payload)).collect(Collectors.toList());
@@ -237,6 +254,13 @@ public class TelegramFacade {
      * @param response the Telegram response
      * @return true if the response is a 403 Forbidden, e.g. the user blocked the bot, deleted the account or kicked the bot
      */
+    // The user ID is used instead of the username, since usernames can be changed and then claimed by someone else
+    private boolean isAdmin(Long userId) {
+        return this.adminUserId != 0 && userId != null && userId == this.adminUserId;
+    }
+
+    static final String INACTIVE_BOT_MESSAGE = "This bot is no longer active. Please use @AdaWatchBot instead.";
+
     public static boolean isChatUnreachable(BaseResponse response) {
         return response != null && !response.isOk() && response.errorCode() == 403;
     }
@@ -274,6 +298,11 @@ public class TelegramFacade {
     // Needed for testing only
     public void setCommands(List<IBotCommand> commands) {
         this.commands = commands;
+    }
+
+    // Needed for testing only
+    public void setAdminUserId(long adminUserId) {
+        this.adminUserId = adminUserId;
     }
 
     // Needed for testing only
