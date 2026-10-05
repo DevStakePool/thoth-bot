@@ -24,6 +24,10 @@ public class TelegramUtils {
     private static final String REWARDS_CMD_JSON = "test-data/json/rewards-cmd.json";
     private static final String PROPOSALS_CMD_JSON = "test-data/json/proposals-cmd.json";
 
+    // The Telegram user and chat ID used in the any-cmd.json file
+    public static final long ANY_CMD_JSON_USER_ID_VALUE = 1683539744L;
+    private static final String ANY_CMD_JSON_USER_ID = Long.toString(ANY_CMD_JSON_USER_ID_VALUE);
+
     private static final Gson GSON = new Gson();
 
     public static Update buildHelpCommandUpdate(boolean simulateStartCommand, String username) throws IOException {
@@ -43,6 +47,21 @@ public class TelegramUtils {
                 jsonContent -> {
                     jsonContent = jsonContent.replace("$USERNAME", username);
                     jsonContent = jsonContent.replace("$COMMAND", commandTag);
+
+                    return jsonContent;
+                });
+        return resp.updates().getFirst();
+    }
+
+    /**
+     * Same as {@link #buildAnyCommandUpdate(String, String)} but sent by the Telegram user (and chat) with the given ID
+     */
+    public static Update buildAnyCommandUpdate(String commandTag, String username, long userId) throws IOException {
+        GetUpdatesResponse resp = buildUpdateResponseFromJsonFile(ANY_CMD_JSON,
+                jsonContent -> {
+                    jsonContent = jsonContent.replace("$USERNAME", username);
+                    jsonContent = jsonContent.replace("$COMMAND", commandTag);
+                    jsonContent = jsonContent.replace(ANY_CMD_JSON_USER_ID, Long.toString(userId));
 
                     return jsonContent;
                 });

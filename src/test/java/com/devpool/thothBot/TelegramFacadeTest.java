@@ -57,7 +57,7 @@ class TelegramFacadeTest {
         this.telegramFacade = new TelegramFacade();
         this.telegramFacade.setBot(this.telegramBotMock);
         this.telegramFacade.setCommands(this.doubleCommands);
-        this.telegramFacade.setAdminUsername("thor");
+        this.telegramFacade.setAdminUserId(TelegramUtils.ANY_CMD_JSON_USER_ID_VALUE);
 
         this.userDaoMock = Mockito.mock(UserDao.class);
         KoiosFacade koiosFacadeMock = Mockito.mock(KoiosFacade.class);
@@ -219,7 +219,7 @@ class TelegramFacadeTest {
 
     @Test
     public void testNonAdminGetsTheInactiveBotMessageAndNothingElse() throws Exception {
-        Update update = TelegramUtils.buildAnyCommandUpdate("/dummy", "stranger");
+        Update update = TelegramUtils.buildAnyCommandUpdate("/dummy", "stranger", 42L);
         long chatId = update.message().chat().id();
         Mockito.when(this.userDaoMock.hasInactiveSubscriptions(chatId)).thenReturn(true);
 
@@ -241,11 +241,36 @@ class TelegramFacadeTest {
     }
 
     @Test
-    public void testAdminUsernameIsCaseInsensitive() throws Exception {
-        this.telegramFacade.processUpdate(TelegramUtils.buildAnyCommandUpdate("/dummy", "THOR"), this.telegramBotMock);
+    public void testAdminIsRecognisedByUserIdAndNotByUsername() throws Exception {
+        // Same ID, different username: still the admin
+        this.telegramFacade.processUpdate(TelegramUtils.buildAnyCommandUpdate("/dummy", "renamed_admin"), this.telegramBotMock);
 
         Mockito.verify(this.telegramBotMock, Mockito.timeout(10 * 1000).times(1))
                 .execute(this.sendMessageArgCaptor.capture());
         Assertions.assertTrue(this.sendMessageArgCaptor.getValue().getParameters().get("text").toString().contains("Hello from Dummy"));
+    }
+
+    @Test
+    public void testSomeoneUsingTheAdminUsernameButADifferentIdIsNotTheAdmin() throws Exception {
+        this.telegramFacade.processUpdate(TelegramUtils.buildAnyCommandUpdate("/dummy", "thor", 42L), this.telegramBotMock);
+
+        Mockito.verify(this.telegramBotMock, Mockito.timeout(10 * 1000).times(1))
+                .execute(this.sendMessageArgCaptor.capture());
+        Assertions.assertEquals("This bot is no longer active. Please use @AdaWatchBot instead.",
+                this.sendMessageArgCaptor.getValue().getParameters().get("text"));
+    }
+
+    @Test
+    public void testNobodyCanUseTheBotWhenTheAdminIsNotConfigured() throws Exception {
+        this.telegramFacade.setAdminUserId(0);
+
+        this.telegramFacade.processUpdate(TelegramUtils.buildAnyCommandUpdate("/dummy", "thor", 0L), this.telegramBotMock);
+        this.telegramFacade.processUpdate(TelegramUtils.buildAnyCommandUpdate("/dummy", "thor"), this.telegramBotMock);
+
+        Mockito.verify(this.telegramBotMock, Mockito.timeout(10 * 1000).times(2))
+                .execute(this.sendMessageArgCaptor.capture());
+        this.sendMessageArgCaptor.getAllValues().forEach(m ->
+                Assertions.assertEquals("This bot is no longer active. Please use @AdaWatchBot instead.",
+                        m.getParameters().get("text")));
     }
 }
