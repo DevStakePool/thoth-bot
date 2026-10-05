@@ -1,7 +1,6 @@
 package com.devpool.thothBot.telegram.command.admin;
 
 import com.devpool.thothBot.dao.UserDao;
-import com.devpool.thothBot.dao.data.User;
 import com.devpool.thothBot.telegram.TelegramFacade;
 import com.devpool.thothBot.telegram.command.IBotCommand;
 import com.pengrad.telegrambot.TelegramBot;
@@ -19,7 +18,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
-import java.util.stream.Collectors;
 
 @Component
 public class AdminNotifyAllCmd implements IBotCommand {
@@ -79,7 +77,8 @@ public class AdminNotifyAllCmd implements IBotCommand {
         String prefixPos0 = argsAsList.get(0);
         String notifyMsg = msg.replaceFirst(prefixPos0, "").trim();
 
-        List<Long> allUsersChatIds = userDao.getUsers().stream().map(User::getChatId).distinct().collect(Collectors.toList());
+        // All the subscribers, not only the admin ones: the bot is private but the old users must be reachable
+        List<Long> allUsersChatIds = userDao.getAllActiveChatIds();
 
         bot.execute(new SendMessage(update.message().chat().id(),
                 String.format("Ok, notifying all %d user(s) with the following message:%n%s", allUsersChatIds.size(), notifyMsg)));
@@ -103,7 +102,8 @@ public class AdminNotifyAllCmd implements IBotCommand {
 
     @Override
     public long getCommandExecutionTimeoutSeconds() {
-        return 60;
+        // Every message is sent one after the other, and there can be hundreds of subscribers
+        return 10 * 60;
     }
 
     public class AsyncMessageSender implements Callable<Boolean> {

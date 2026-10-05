@@ -57,4 +57,14 @@ class AdminOnlyUsersIntegrationTest extends AbstractIntegrationTest {
         assertEquals(2, userDao.countSubscriptions());
         assertEquals(1, userDao.countUniqueUsers());
     }
+
+    @Test
+    void broadcastReachesAllTheActiveChatsEvenIfTheBotIsAdminOnly() {
+        // Not filtered by the admin, differently from getUsers()
+        assertEquals(java.util.List.of(OTHER_CHAT, ADMIN_CHAT), userDao.getAllActiveChatIds());
+
+        // Inactive chats (e.g. the user blocked the bot) are skipped
+        userDao.deactivateChat(OTHER_CHAT);
+        assertEquals(java.util.List.of(ADMIN_CHAT), userDao.getAllActiveChatIds());
+    }
 }

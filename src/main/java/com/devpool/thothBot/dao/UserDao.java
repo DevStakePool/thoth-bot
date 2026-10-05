@@ -94,6 +94,16 @@ public class UserDao {
         else return outcome;
     }
 
+    /**
+     * The chat IDs of all the active subscribers. Differently from {@link #getUsers()} this ignores the admin-only
+     * restriction, so that the admin can broadcast a message to everyone.
+     *
+     * @return the distinct chat IDs
+     */
+    public List<Long> getAllActiveChatIds() {
+        return this.jdbcTemplate.queryForList("select distinct chat_id from users where active = true order by chat_id", Long.class);
+    }
+
     public long countInactiveUsers() {
         Long outcome = this.jdbcTemplate.queryForObject("select count (distinct chat_id) as tot_users from users where active = false", Long.class);
         if (outcome == null) return -1;
