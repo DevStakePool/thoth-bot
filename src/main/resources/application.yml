@@ -38,6 +38,12 @@ thoth:
     username: CHANGE_ME
     # Telegram user ID of the admin. The bot works only for this user (0 = not set, nobody can use it)
     user-id: 0
+  pool-blocks:
+    # Notify the admin when one of these pools mints a block
+    enabled: true
+    interval-mins: 15
+    # Comma-separated list of pool IDs (bech32)
+    pool-ids: pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv
   asset:
     caching:
       fetching: false

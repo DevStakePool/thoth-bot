@@ -25,6 +25,7 @@ public class SchedulerController {
     private final GovernanceSpoVotesCheckerTask governanceSpoVotesCheckerTask;
     private final GovernanceNewProposalsTask governanceNewProposalsTask;
     private final RetiredPoolCheckerTask retiredPoolCheckerTask;
+    private final PoolBlocksCheckerTask poolBlocksCheckerTask;
 
     @Value("${thoth.disable-scheduler:false}")
     private Boolean disableScheduler;
@@ -41,11 +42,18 @@ public class SchedulerController {
     @Value("${thoth.scheduler.gov-new-prop-enabled:true}")
     private Boolean govNewPropEnabled;
 
+    @Value("${thoth.pool-blocks.enabled:true}")
+    private Boolean poolBlocksEnabled;
+
+    @Value("${thoth.pool-blocks.interval-mins:15}")
+    private long poolBlocksIntervalMins;
+
     public SchedulerController(TransactionCheckerTaskV2 transactionCheckerTask, StakingRewardsCheckerTask stakingRewardsCheckerTask,
                                SubscriptionManager subscriptionManager, GovernanceDrepVotesCheckerTask governanceDrepVotesCheckerTask,
                                RetiredPoolCheckerTask retiredPoolCheckerTask,
                                GovernanceSpoVotesCheckerTask governanceSpoVotesCheckerTask,
-                               GovernanceNewProposalsTask governanceNewProposalsTask) {
+                               GovernanceNewProposalsTask governanceNewProposalsTask,
+                               PoolBlocksCheckerTask poolBlocksCheckerTask) {
         this.transactionCheckerTask = transactionCheckerTask;
         this.stakingRewardsCheckerTask = stakingRewardsCheckerTask;
         this.subscriptionManager = subscriptionManager;
@@ -53,12 +61,13 @@ public class SchedulerController {
         this.retiredPoolCheckerTask = retiredPoolCheckerTask;
         this.governanceSpoVotesCheckerTask = governanceSpoVotesCheckerTask;
         this.governanceNewProposalsTask = governanceNewProposalsTask;
+        this.poolBlocksCheckerTask = poolBlocksCheckerTask;
     }
 
     @PostConstruct
     public void post() {
         LOG.info("Creating Scheduling Controller");
-        this.executorService = Executors.newScheduledThreadPool(4,
+        this.executorService = Executors.newScheduledThreadPool(5,
                 new CustomizableThreadFactory("WalletCheckerThread"));
 
         if (Boolean.TRUE.equals(this.disableScheduler)) {
@@ -73,6 +82,9 @@ public class SchedulerController {
             }
             if (Boolean.TRUE.equals(this.govNewPropEnabled)) {
                 this.executorService.scheduleWithFixedDelay(this.governanceNewProposalsTask, scheduledJobsInitialDelaySecs, 60 * 60 * 22, TimeUnit.SECONDS);
+            }
+            if (Boolean.TRUE.equals(this.poolBlocksEnabled)) {
+                this.executorService.scheduleWithFixedDelay(this.poolBlocksCheckerTask, scheduledJobsInitialDelaySecs, poolBlocksIntervalMins * 60, TimeUnit.SECONDS);
             }
         }
 
