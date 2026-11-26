@@ -50,7 +50,7 @@ public class BackendServiceDouble implements BackendService {
 
     @Override
     public BlockService getBlockService() {
-        return null;
+        return new BlockServiceDouble();
     }
 
     @Override

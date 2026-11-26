@@ -58,6 +58,7 @@ public abstract class AbstractCheckerTask {
     public static final String GOV_TOOLS_DREP = "https://cardanoscan.io/dRep/";
     public static final String GOV_TOOLS_PROPOSAL = "https://cardanoscan.io/govAction/%s?tab=meta";
     public static final String CARDANO_SCAN_TX = "https://cardanoscan.io/transaction/";
+    public static final String CARDANO_SCAN_BLOCK = "https://cardanoscan.io/block/";
 
     protected static final DateTimeFormatter TX_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy, hh:mm a");
     protected static final String IPFS_SCHEME = "ipfs";
