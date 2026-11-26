@@ -8,7 +8,7 @@ DB_PASSWORD="postgres"
 DB_HOST="localhost"
 DB_PORT="5432"
 DB_NAME="thoth"
-THOTH_VERSION="2.0.3"
+THOTH_VERSION="2.2.0"
 LOGS_FOLDER="${DIR}/logs"
 ADMIN_USERNAME="CHANGE_ME"
 # Telegram user ID of the admin (numeric). The bot works only for this user
